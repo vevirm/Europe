@@ -12,7 +12,6 @@ on:
       - 'historical/index.html'
       - 'historical/manual_evidence.json'
       - 'historical/curated_seed_evidence.json'
-      - 'historical/Research_Workforce_Consolidated_25_2_historical_geopolitical_manual.xlsx'
       - 'historical/tests/**'
       - '.github/workflows/historical-scan.yml'
   schedule:
@@ -30,12 +29,11 @@ permissions:
 
 concurrency:
   group: ri-radar-research-scanners
+  queue: max
   cancel-in-progress: false
 
 jobs:
   scan:
-    env:
-      PYTHONDONTWRITEBYTECODE: "1"
     permissions:
       contents: write
       actions: write
@@ -46,6 +44,10 @@ jobs:
       - name: Check out repository without stored credentials
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
+          # Jobs can wait behind the shared scanner concurrency lock. Without an
+          # explicit branch ref, checkout may use the event SHA captured before
+          # that wait and later rebase generated radar files against a newer main.
+          ref: main
           fetch-depth: 0
           persist-credentials: false
 
@@ -67,6 +69,7 @@ jobs:
         run: python -m unittest discover -s historical/tests -p 'test_*.py'
 
       - name: Snapshot archive before scan for reader-side New tracking
+        if: github.event_name != 'push'
         shell: bash
         run: |
           set -euo pipefail
@@ -77,14 +80,16 @@ jobs:
           fi
 
       - name: Scan source-age historical top-tier evidence
+        if: github.event_name != 'push'
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
-          HISTORICAL_SCAN_BUDGET_SECONDS: '1050'
-          HISTORICAL_MIN_RUNTIME_SECONDS: '600'
+          HISTORICAL_SCAN_BUDGET_SECONDS: '1200'
+          HISTORICAL_MIN_RUNTIME_SECONDS: '1080'
           HISTORICAL_RESCUE_MODE: ${{ github.event.inputs.rescue_mode || 'false' }}
         run: python historical/scan_historical.py
 
       - name: Build reader-side latest-new index
+        if: github.event_name != 'push'
         shell: bash
         run: |
           set -euo pipefail
@@ -123,6 +128,9 @@ jobs:
           current_order=ids(after)
           current=set(current_order)
           if not current:
+              if not before_path.exists() or not ids(load(before_path,{})):
+                  print('::notice::New repository: historical archive is still empty; New tracker left empty.')
+                  raise SystemExit(0)
               raise SystemExit('Historical archive has no item IDs; refusing to rewrite New tracker.')
 
           before=load(before_path,{})
@@ -170,6 +178,7 @@ jobs:
           PY
 
       - name: Verify historical scanner changed only its own data file
+        if: github.event_name != 'push'
         shell: bash
         run: |
           set -euo pipefail
@@ -195,18 +204,23 @@ jobs:
           assert d.get('date_to')==(expected_cutoff-dt.timedelta(days=1)).isoformat()
           assert d.get('main_radar_window_months')==6
           assert isinstance(d.get('items'), list)
-          assert sum(1 for x in d['items'] if x.get('manual_curated')) >= 21
+          manual=json.loads(Path('historical/manual_evidence.json').read_text(encoding='utf-8'))
+          expected_manual=len(manual.get('items',[])) if isinstance(manual,dict) and isinstance(manual.get('items'),list) else 0
+          included_manual=sum(1 for x in d['items'] if isinstance(x,dict) and x.get('manual_curated'))
+          assert included_manual >= expected_manual, (included_manual, expected_manual)
           assert isinstance((d.get('last_scan') or {}).get('rejection_funnel'), dict)
           print('historical.json safety check passed:', len(d['items']), 'items')
           PY
 
       - name: Refresh Stuff Excel with all historical findings
+        if: github.event_name != 'push'
         shell: bash
         run: |
           set -euo pipefail
           node scripts/generate_stuff_workbook.js
 
       - name: Commit historical results
+        if: github.event_name != 'push'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
@@ -227,6 +241,7 @@ jobs:
           fi
 
       - name: Decide whether to launch one full historical rescue run
+        if: github.event_name != 'push'
         id: rescue
         env:
           RESCUE_MODE: ${{ github.event.inputs.rescue_mode || 'false' }}
@@ -252,7 +267,7 @@ jobs:
           PY
 
       - name: Launch one fresh historical rescue scan
-        if: steps.rescue.outputs.dispatch == 'true'
+        if: github.event_name != 'push' && steps.rescue.outputs.dispatch == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
