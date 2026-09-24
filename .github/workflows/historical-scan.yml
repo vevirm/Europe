@@ -12,6 +12,7 @@ on:
       - 'historical/index.html'
       - 'historical/manual_evidence.json'
       - 'historical/curated_seed_evidence.json'
+      - 'historical/Research_Workforce_Consolidated_25_2_historical_geopolitical_manual.xlsx'
       - 'historical/tests/**'
       - '.github/workflows/historical-scan.yml'
   schedule:
@@ -29,11 +30,12 @@ permissions:
 
 concurrency:
   group: ri-radar-research-scanners
-  queue: max
   cancel-in-progress: false
 
 jobs:
   scan:
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
     permissions:
       contents: write
       actions: write
@@ -44,10 +46,6 @@ jobs:
       - name: Check out repository without stored credentials
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
-          # Jobs can wait behind the shared scanner concurrency lock. Without an
-          # explicit branch ref, checkout may use the event SHA captured before
-          # that wait and later rebase generated radar files against a newer main.
-          ref: main
           fetch-depth: 0
           persist-credentials: false
 
@@ -81,8 +79,8 @@ jobs:
       - name: Scan source-age historical top-tier evidence
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
-          HISTORICAL_SCAN_BUDGET_SECONDS: '1200'
-          HISTORICAL_MIN_RUNTIME_SECONDS: '1080'
+          HISTORICAL_SCAN_BUDGET_SECONDS: '1050'
+          HISTORICAL_MIN_RUNTIME_SECONDS: '600'
           HISTORICAL_RESCUE_MODE: ${{ github.event.inputs.rescue_mode || 'false' }}
         run: python historical/scan_historical.py
 
@@ -125,9 +123,6 @@ jobs:
           current_order=ids(after)
           current=set(current_order)
           if not current:
-              if not before_path.exists() or not ids(load(before_path,{})):
-                  print('::notice::New repository: historical archive is still empty; New tracker left empty.')
-                  raise SystemExit(0)
               raise SystemExit('Historical archive has no item IDs; refusing to rewrite New tracker.')
 
           before=load(before_path,{})
