@@ -1,0 +1,234 @@
+(function(root,factory){
+  if(typeof module==='object'&&module.exports)module.exports=factory();
+  else root.RadarPhenomena=factory();
+})(typeof globalThis!=='undefined'?globalThis:this,function(){
+  'use strict';
+  const PHENOMENA=[
+    {
+      id:'research-security-openness',
+      title:'Open science keeps meeting the security desk',
+      what:'Research security keeps reshaping how Europe balances protection, openness and international collaboration.',
+      why:'The same tension appears in older work and keeps returning in current policy and research.',
+      current:/research security|knowledge security|foreign interference|trusted research|dual[- ]use|academic freedom|open science/i,
+      historical:['research-security','academic-freedom','open-science-platforms']
+    },
+    {
+      id:'talent-careers',
+      title:'Talent keeps packing a suitcase',
+      what:'Research careers, mobility and retention keep returning as questions of European scientific capacity.',
+      why:'Europe can fund ambitious research and still lose capability when people cannot build durable careers.',
+      current:/researcher mobility|research talent|scientific talent|brain drain|research workforce|doctoral|\bphd\b|postdoc|research career|talent retention|talent attraction/i,
+      historical:['talent','research-careers','doctoral-workforce']
+    },
+    {
+      id:'research-infrastructure',
+      title:'Europe keeps building the machine',
+      what:'Shared laboratories, computing facilities and other research infrastructure keep returning as strategic investments.',
+      why:'Capability depends on having places, machines and networks that researchers can actually use.',
+      current:/research infrastructure|supercomputer|eurohpc|ai factor|gigafactor|pilot line|testbed|data cent(?:re|er)|quantum facilit|research facilit/i,
+      historical:['research-infrastructure']
+    },
+    {
+      id:'ai-compute',
+      title:'Compute keeps moving the goalposts',
+      what:'Artificial intelligence and computing capacity keep resurfacing as questions of access, investment and dependence.',
+      why:'Every jump in computing needs changes what European researchers can build and who controls the bottleneck.',
+      current:/artificial intelligence|\bai\b|compute|supercomputer|\bgpu\b|foundation model|large language model/i,
+      historical:['ai-compute']
+    },
+    {
+      id:'chips',
+      title:'The chip problem refuses to leave',
+      what:'Semiconductor capability keeps returning as a constraint on European technology autonomy and research capacity.',
+      why:'Many strategic technologies still depend on chips, equipment and production capacity concentrated outside Europe.',
+      current:/semiconductor|chips? act|microelectronics|lithograph|foundry|\bfab\b|wafer/i,
+      historical:['chips']
+    },
+    {
+      id:'international-cooperation',
+      title:'Science diplomacy keeps renewing its passport',
+      what:'International research cooperation keeps being rebuilt around changing partners, risks and strategic interests.',
+      why:'Europe still needs global science while deciding where openness creates dependence or security concerns.',
+      current:/science diplomacy|scientific cooperation|research cooperation|international research|horizon europe.{0,80}associat|association to horizon|research collaboration|scientific collaboration/i,
+      historical:['global-rivalry']
+    },
+    {
+      id:'scale-up',
+      title:'The scale-up gap is still here',
+      what:'Europe keeps returning to the problem of turning research strength into firms, investment and market scale.',
+      why:'Scientific strength produces less strategic capacity when successful ideas grow elsewhere or remain too small.',
+      current:/scale[- ]?up|commerciali[sz]|technology transfer|innovation gap|competitiveness gap|venture capital|startup|start-up/i,
+      historical:['scale-up','technology-transfer']
+    },
+    {
+      id:'rules-standards',
+      title:'Europe keeps writing the rulebook',
+      what:'Rules, standards and safeguards keep returning as tools for shaping strategic technologies and research.',
+      why:'Rule-setting can create trust and influence markets, but it can also expose slow delivery.',
+      current:/standardisation|standardization|standards?|regulation|governance|rulebook|technical committee|dual-use regulation|investment screening|export control/i,
+      historical:['rules-standards']
+    },
+    {
+      id:'materials-energy',
+      title:'The important bits keep hiding upstream',
+      what:'Critical materials and energy inputs keep resurfacing behind Europe’s technology and research ambitions.',
+      why:'Advanced systems still depend on physical inputs that can become strategic bottlenecks before laboratories notice.',
+      current:/critical raw material|rare earth|lithium|cobalt|gallium|germanium|battery|hydrogen|energy technolog|critical mineral/i,
+      historical:['materials-energy']
+    },
+    {
+      id:'funding-governance',
+      title:'Research money keeps becoming strategy',
+      what:'Funding programmes keep being used to steer European research toward capability, security and competitiveness goals.',
+      why:'Budget choices determine which fields, partnerships and infrastructures gain momentum across the research system.',
+      current:/framework programme|fp10|horizon europe|research funding|innovation funding|european innovation council|european research council|state aid|funding governance|research budget/i,
+      historical:['funding-governance']
+    }
+  ];
+
+  // Topics that describe scanning/foresight methodology rather than a substantive
+  // R&I-geopolitical continuity.  Everything else in historical/config.json may
+  // automatically become an ongoing phenomenon when both evidence thresholds are met.
+  const AUTO_EXCLUDE=new Set(['foresight-methods','computational-emergence','main-a-evidence']);
+  const GENERIC_AUTO_TERMS=new Set([
+    'research','innovation','technology','technologies','europe','european','eu','policy',
+    'future','futures','governance','resilience','digital','data','strategic'
+  ]);
+
+  function clean(v){return String(v??'').replace(/\s+/g,' ').trim()}
+  function norm(v){return clean(v).toLowerCase().replace(/[^a-z0-9]+/g,' ').replace(/\s+/g,' ').trim()}
+  function dateOf(x){return clean(x?.date).slice(0,10)}
+  function textOf(x){return clean([x?.title,x?.headline,x?.summary,x?.core_message,x?.relevance_note,x?.signal_note,x?.anchor,x?.why_it_matters,x?.watch_theme].filter(Boolean).join(' '))}
+  function sourceOf(x){return clean(x?.source||x?.source_domain||x?.venue||x?.publisher||'Unknown source')}
+  function sourceCount(rows){return new Set(rows.map(sourceOf).filter(Boolean)).size}
+  function cutoff(history){return clean(history?.cutoff_exclusive||history?.date_to||'')}
+  function currentCorpus(data,history){
+    const boundary=cutoff(history);
+    const rows=[...(Array.isArray(data?.strand_a)?data.strand_a:[]),...(Array.isArray(data?.strand_c)?data.strand_c:[])];
+    return rows.filter(x=>!boundary||dateOf(x)>=boundary);
+  }
+  function historicalWeight(row){
+    const n=Number(row?.historical_reasoning_weight);
+    return Number.isFinite(n)?Math.max(0,Math.min(1,n)):1;
+  }
+  function historicalCorpus(history){return (Array.isArray(history?.items)?history.items:[]).filter(x=>historicalWeight(x)>0)}
+  function historicalSupport(rows){return rows.reduce((a,x)=>a+historicalWeight(x),0)}
+  function authoritativeHistoricalCount(rows){return rows.filter(x=>!Object.prototype.hasOwnProperty.call(x||{},'historical_reasoning_status')||x?.historical_reasoning_status==='authoritative').length}
+  function unique(rows){
+    const seen=new Set(),out=[];
+    for(const row of rows){
+      const key=clean(row?.link||row?.url||row?.title||row?.headline).toLowerCase();
+      if(!key||seen.has(key))continue;seen.add(key);out.push(row);
+    }
+    return out;
+  }
+  function identityKeys(row){
+    const out=[];
+    const id=clean(row?.id),url=clean(row?.link||row?.url).toLowerCase().replace(/\/$/,''),title=norm(row?.title||row?.headline);
+    if(id)out.push(`id:${id}`);
+    if(url)out.push(`url:${url}`);
+    if(title)out.push(`title:${title}`);
+    return out;
+  }
+  function mergeHistories(fileHistory,embeddedHistory){
+    const a=fileHistory&&typeof fileHistory==='object'?fileHistory:null;
+    const b=embeddedHistory&&typeof embeddedHistory==='object'?embeddedHistory:null;
+    if(!a)return b||{};
+    if(!b)return a;
+    const at=Date.parse(a.last_updated||'')||0,bt=Date.parse(b.last_updated||'')||0;
+    const primary=bt>at?b:a,secondary=primary===a?b:a;
+    const items=[...historicalCorpus(primary)],seen=new Set();
+    for(const row of items)for(const key of identityKeys(row))seen.add(key);
+    for(const row of historicalCorpus(secondary)){
+      const keys=identityKeys(row);
+      if(keys.length&&keys.some(key=>seen.has(key)))continue;
+      items.push(row);
+      for(const key of keys)seen.add(key);
+    }
+    return {...primary,items};
+  }
+  function topicTerms(topic){
+    const terms=[];
+    for(const raw of Array.isArray(topic?.url_terms)?topic.url_terms:[]){
+      const term=norm(raw);
+      if(!term||GENERIC_AUTO_TERMS.has(term)||term.length<4)continue;
+      terms.push(term);
+    }
+    return [...new Set(terms)].slice(0,16);
+  }
+  function textHasTerm(text,term){return (` ${norm(text)} `).includes(` ${term} `)}
+  function matchCurrent(row,p){
+    const text=textOf(row);
+    if(p.current&&p.current.test(text))return true;
+    const terms=Array.isArray(p.currentTerms)?p.currentTerms:[];
+    return terms.some(term=>textHasTerm(text,term));
+  }
+  function matchHistorical(row,p){
+    const topics=Array.isArray(row?.topics)?row.topics:[];
+    return p.historical.some(t=>topics.includes(t));
+  }
+  function automaticDefinitions(config,coveredTopics){
+    const topics=Array.isArray(config?.topics)?config.topics:[];
+    const out=[];
+    for(const topic of topics){
+      const id=clean(topic?.id),label=clean(topic?.label);
+      if(!id||!label||coveredTopics.has(id)||AUTO_EXCLUDE.has(id))continue;
+      const terms=topicTerms(topic);
+      if(!terms.length)continue;
+      out.push({
+        id:`auto-${id}`,
+        title:label,
+        what:`${label} appears in both older evidence and the current six-month radar picture.`,
+        why:'The continuity is promoted automatically only when independent older and current sources both support it.',
+        historical:[id],
+        currentTerms:terms,
+        autoDetected:true
+      });
+    }
+    return out;
+  }
+  function evidenceSlice(rows,n,oldestToo=false){
+    const sorted=unique(rows).sort((a,b)=>dateOf(b).localeCompare(dateOf(a))||sourceOf(a).localeCompare(sourceOf(b)));
+    if(!oldestToo||sorted.length<=n)return sorted.slice(0,n);
+    const out=sorted.slice(0,Math.max(1,n-1));
+    const oldest=sorted[sorted.length-1];
+    if(oldest&&!out.includes(oldest))out.push(oldest);
+    return out.slice(0,n);
+  }
+  function build(data,history,config){
+    const currentRows=currentCorpus(data,history),historicalRows=historicalCorpus(history),out=[];
+    const coveredTopics=new Set(PHENOMENA.flatMap(p=>p.historical||[]));
+    const definitions=[...PHENOMENA,...automaticDefinitions(config,coveredTopics)];
+    const qualified=[];
+    for(const p of definitions){
+      const current=unique(currentRows.filter(x=>matchCurrent(x,p)));
+      const historical=unique(historicalRows.filter(x=>matchHistorical(x,p)));
+      const currentSources=sourceCount(current),historicalSources=sourceCount(historical);
+      const historicalSupportUnits=historicalSupport(historical),authoritativeHistorical=authoritativeHistoricalCount(historical);
+      // Keep the original two-record/two-source continuity gate, but require at least
+      // one full unit of trusted historical support. Two merely provisional rows
+      // therefore cannot establish persistence on their own; several can still add
+      // cautious support, and a Deep-Scan-kept row counts fully.
+      if(current.length<3||currentSources<2||historical.length<2||historicalSources<2||historicalSupportUnits<1)continue;
+      qualified.push({p,current,historical,currentSources,historicalSources,historicalSupportUnits,authoritativeHistorical});
+    }
+    const hitCount=new Map();
+    for(const q of qualified)for(const row of q.current)hitCount.set(row,(hitCount.get(row)||0)+1);
+    for(const q of qualified){
+      const {p,current,historical,currentSources,historicalSources,historicalSupportUnits,authoritativeHistorical}=q;
+      const dates=historical.map(dateOf).filter(Boolean).sort();
+      const newest=current.map(dateOf).filter(Boolean).sort().slice(-1)[0]||'';
+      const overlapRate=current.length?current.filter(row=>(hitCount.get(row)||0)>1).length/current.length:0;
+      const evidence=Math.log2(1+current.length)*2+Math.log2(1+historicalSupportUnits)+Math.min(6,currentSources)+Math.min(6,historicalSources);
+      const surprise=evidence*(1-0.55*overlapRate)*(p.autoDetected?1.12:1);
+      const score=Math.round(surprise*10)/10;
+      out.push({...p,currentCount:current.length,currentSources,historicalCount:historical.length,historicalSources,historicalSupport:Math.round(historicalSupportUnits*100)/100,authoritativeHistoricalCount:authoritativeHistorical,firstSeen:dates[0]||'',latestSeen:newest,currentEvidence:evidenceSlice(current,4),historicalEvidence:evidenceSlice(historical,3,true),overlapRate,evidenceScore:evidence,score});
+    }
+    return out.sort((a,b)=>b.score-a.score||b.currentSources-a.currentSources||a.title.localeCompare(b.title));
+  }
+  function stats(data,history){
+    const hs=historicalCorpus(history);
+    return {current:currentCorpus(data,history).length,historical:hs.length,historicalSupport:Math.round(historicalSupport(hs)*100)/100,authoritativeHistorical:authoritativeHistoricalCount(hs),cutoff:cutoff(history)};
+  }
+  return {build,stats,phenomena:PHENOMENA,currentCorpus,historicalCorpus,automaticDefinitions,mergeHistories};
+});

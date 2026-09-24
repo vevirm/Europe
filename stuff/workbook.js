@@ -1,0 +1,262 @@
+(function(root,factory){
+  const api=factory();
+  if(typeof module==='object'&&module.exports)module.exports=api;
+  else root.RadarStuffWorkbook=api;
+})(typeof globalThis!=='undefined'?globalThis:this,function(){
+  'use strict';
+  const clean=v=>String(v??'').replace(/\s+/g,' ').trim();
+  const norm=v=>clean(v).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+  const titleOf=x=>clean(x?.title||x?.headline);
+  const linkOf=x=>clean(x?.link||x?.url);
+  const enc=new TextEncoder();
+  const products=data=>[['A',data?.strand_a],['B',data?.strand_b],['C',data?.strand_c],['Matrix evidence',data?.frontier_evidence],['Strategic pathway',data?.strategic_pathways]];
+
+  function dedupeGroups(data){
+    const groups=new Map();
+    for(const [product,items] of products(data)){
+      for(const x of Array.isArray(items)?items:[]){
+        if(!x||typeof x!=='object')continue;
+        const u=linkOf(x).toLowerCase().replace(/\/$/,'');
+        const t=norm(titleOf(x));
+        const key=u?'u:'+u:'t:'+t;
+        if(key==='t:')continue;
+        if(!groups.has(key))groups.set(key,{records:[],products:new Set()});
+        const g=groups.get(key);g.records.push(x);g.products.add(product);
+      }
+    }
+    return [...groups.values()];
+  }
+
+  function buildRows(data,Merit){
+    const rows=dedupeGroups(data).map(g=>{
+      let best=null,bestScore=-1,bestComp=-1;
+      for(const x of g.records){
+        const score=Merit.scoreFor(x);
+        const comp=[x.summary,x.core_message,x.relevance_note,x.why_it_matters,x.authors,x.source,x.link].filter(v=>clean(v)).length;
+        if(!best||score>bestScore||(score===bestScore&&comp>bestComp)){best=x;bestScore=score;bestComp=comp;}
+      }
+      const x=best,m=Merit.forItem(x),c=Merit.componentsFor(x);
+      const sc=x.strategic_classification&&typeof x.strategic_classification==='object'?clean(x.strategic_classification.primary):'';
+      return {
+        score:m.score,band:`${m.code} — ${m.label}`,title:titleOf(x),readerTitle:clean(x.reader_title),date:clean(x.date).slice(0,10),product:[...g.products].sort().join(', '),
+        readerWhat:clean(x.reader_what),readerWhy:clean(x.reader_why),readerMore:clean(x.reader_more),
+        deepConfidence:clean(x.deep_analysis?.confidence),deepReadMode:clean(x.deep_read_mode),
+        source:clean(x.source||x.journal||x.institution),authors:clean(x.authors),authorityPoints:c.authorityPoints,authority:c.authority,
+        relevancePoints:c.relevancePoints,relevance:c.relevance,evidencePoints:c.evidencePoints,evidence:c.evidence,
+        authorPoints:c.authorTransparencyPoints,type:clean(x.type||x.signal_kind),euRelevance:clean(x.eu_relevance||x.euRelevance),
+        euEvidence:(x.eu_evidence||[]).map(clean).join('; '),riEvidence:(x.ri_evidence||[]).map(clean).join('; '),geoEvidence:(x.geo_evidence||[]).map(clean).join('; '),
+        core:clean(x.core_message||x.signal_note||x.summary),note:clean(x.relevance_note||x.why_it_matters),matrix:clean(x.matrix_auto_cell),strategic:sc,
+        provenance:clean(x.discovery_provenance||x.origin),sourceTier:clean(x.source_tier||x.sourceTier),firstSeen:clean(x.first_seen),link:linkOf(x)
+      };
+    }).sort((a,b)=>b.score-a.score||b.date.localeCompare(a.date)||a.title.localeCompare(b.title));
+    rows.forEach((r,i)=>r.rank=i+1);
+    return rows;
+  }
+
+  function rawValue(v){
+    if(v===null||v===undefined)return '';
+    if(typeof v==='boolean')return v?'true':'false';
+    if(typeof v==='number')return Number.isFinite(v)?String(v):'';
+    if(typeof v==='string')return clean(v);
+    try{return JSON.stringify(v);}catch(_){return clean(v);}
+  }
+  function flatten(obj,prefix='',out={}){
+    if(!obj||typeof obj!=='object'||Array.isArray(obj)){if(prefix)out[prefix]=rawValue(obj);return out;}
+    for(const [k,v] of Object.entries(obj)){
+      const key=prefix?`${prefix}.${k}`:k;
+      if(v&&typeof v==='object'&&!Array.isArray(v))flatten(v,key,out);
+      else out[key]=rawValue(v);
+    }
+    return out;
+  }
+  const HISTORICAL_DEEP_PROFILE='deep-reader-v2-authoritative';
+
+  function historicalRecordKey(x){
+    const id=clean(x?.id||x?.record_id||x?.fingerprint);
+    if(id)return `historical:id:${id}`;
+    const doi=clean(x?.doi).toLowerCase().replace(/^https?:\/\/(?:dx\.)?doi\.org\//,'');
+    if(doi)return `historical:doi:${doi}`;
+    const link=linkOf(x);
+    return link?`historical:link:${link}`:'';
+  }
+
+  function sidecarRecords(sidecar){
+    return sidecar&&typeof sidecar==='object'&&sidecar.records&&typeof sidecar.records==='object'?sidecar.records:{};
+  }
+
+  function historicalStatus(key,readerTable,admissionTable,correctionTable){
+    const reader=readerTable[key]&&typeof readerTable[key]==='object'?readerTable[key]:{};
+    const admission=admissionTable[key]&&typeof admissionTable[key]==='object'?admissionTable[key]:{};
+    const correction=correctionTable[key]&&typeof correctionTable[key]==='object'?correctionTable[key]:{};
+    const decision=clean(admission.decision||reader?.admission?.decision).toLowerCase();
+    const authoritativeScan=clean(reader.profile)===HISTORICAL_DEEP_PROFILE;
+    const authoritativeHistorical=authoritativeScan&&decision==='keep';
+    let deepStatus='Awaiting Deep Scan';
+    if(authoritativeHistorical)deepStatus='Authoritative — kept';
+    else if(authoritativeScan&&decision==='review')deepStatus='Deep Scan — review';
+    else if(authoritativeScan&&['drop','drop_unverifiable','duplicate','needs_manual_verification'].includes(decision))deepStatus='Deep Scan — not retained';
+    else if(authoritativeScan&&decision)deepStatus=`Deep Scan — ${decision}`;
+    else if(authoritativeScan)deepStatus='Deep Scan checked — decision pending';
+    else if(decision)deepStatus=`Deep Scan decision — ${decision}`;
+    else if(Object.keys(reader).length)deepStatus='Deep Scan data present — not authoritative';
+    const checkedAt=clean(admission.updated_at||reader.reader_text_written_at||correction.updated_at);
+    return {reader,admission,correction,decision,authoritativeScan,authoritativeHistorical,deepStatus,checkedAt};
+  }
+
+  function buildHistoricalTable(historical,readerSidecar={},admissionSidecar={},correctionSidecar={}){
+    const items=Array.isArray(historical?.items)?historical.items:[];
+    const readerTable=sidecarRecords(readerSidecar),admissionTable=sidecarRecords(admissionSidecar),correctionTable=sidecarRecords(correctionSidecar);
+    const scannerKeySet=new Set(),readerKeySet=new Set(),admissionKeySet=new Set(),correctionKeySet=new Set(),prepared=[];
+    for(const item of items){
+      if(!item||typeof item!=='object')continue;
+      const key=historicalRecordKey(item);
+      const scanner=flatten(item);
+      Object.keys(scanner).forEach(k=>scannerKeySet.add(k));
+      const state=historicalStatus(key,readerTable,admissionTable,correctionTable);
+      const reader=flatten(state.reader),admission=flatten(state.admission),correction=flatten(state.correction);
+      Object.keys(reader).forEach(k=>readerKeySet.add(k));
+      Object.keys(admission).forEach(k=>admissionKeySet.add(k));
+      Object.keys(correction).forEach(k=>correctionKeySet.add(k));
+      prepared.push({item,key,scanner,reader,admission,correction,state});
+    }
+    const scannerPriority=['id','title','date','year','source','authors','url','landing_page_url','source_kind','venue','publisher','source_merit_score','source_merit_label','strand','reader_point','why_it_matters','relevance','topics','topic_labels','eu_evidence','ri_evidence','geo_evidence','matrix_dimension','matrix_outcome','matrix_basis','discovery','manual_curated','new_this_scan'];
+    const ordered=(set,priority=[])=>[...priority.filter(k=>set.has(k)),...[...set].filter(k=>!priority.includes(k)).sort((a,b)=>a.localeCompare(b))];
+    const scannerKeys=ordered(scannerKeySet,scannerPriority),readerKeys=ordered(readerKeySet,['profile','reader_title','reader_what','reader_why','reader_more','deep_analysis.confidence','deep_analysis.main_finding','deep_analysis.method_or_basis','deep_analysis.qualification','verification.identity_verified','verification.evidence_depth','verification.verification_note','admission.decision','admission.reason_code','admission.reason','duplicate.status','duplicate.duplicate_of','deep_read_mode','reader_text_model','reader_text_written_at','deep_scan_package_id']),admissionKeys=ordered(admissionKeySet,['decision','target_strand','reason_code','reason','verification_note','duplicate_of','updated_at','deep_scan_package_id']),correctionKeys=ordered(correctionKeySet,['fields.title','fields.authors','fields.source','fields.date','fields.type','fields.text_mode','fields.source_text_mode','fields.event_status','unset','reason_code','reason','evidence','updated_at','deep_scan_package_id']);
+    const headers=['Historical record key','Historical scanner finding','Historical scanner status','Deep Scan status','Authoritative historical','Authoritative Deep Scan profile','Deep Scan decision','Deep Scan checked at',...scannerKeys.map(k=>`scanner.${k}`),...readerKeys.map(k=>`deep_scan.${k}`),...admissionKeys.map(k=>`admission.${k}`),...correctionKeys.map(k=>`correction.${k}`)];
+    const rows=prepared.map(({key,scanner,reader,admission,correction,state})=>[key,'yes','Survived historical scanner',state.deepStatus,state.authoritativeHistorical?'YES':'no',state.authoritativeScan?'yes':'no',state.decision,state.checkedAt,...scannerKeys.map(k=>scanner[k]||''),...readerKeys.map(k=>reader[k]||''),...admissionKeys.map(k=>admission[k]||''),...correctionKeys.map(k=>correction[k]||'')]);
+    const dateIndex=headers.indexOf('scanner.date'),titleIndex=headers.indexOf('scanner.title');
+    rows.sort((a,b)=>String(b[dateIndex]||'').localeCompare(String(a[dateIndex]||''))||String(a[titleIndex]||'').localeCompare(String(b[titleIndex]||'')));
+    const authoritativeCount=prepared.filter(x=>x.state.authoritativeHistorical).length;
+    const deepScannedCount=prepared.filter(x=>x.state.authoritativeScan).length;
+    return {headers,rows,authoritativeCount,deepScannedCount,total:prepared.length};
+  }
+
+  function buildRawPublicationTable(data){
+    const groups=dedupeGroups(data),keySet=new Set(),prepared=[];
+    for(const g of groups){
+      const flats=g.records.map(x=>flatten(x));
+      flats.forEach(f=>Object.keys(f).forEach(k=>keySet.add(k)));
+      prepared.push({g,flats});
+    }
+    const priority=['title','headline','date','source','authors','link','type','summary','core_message','relevance_note','why_it_matters','eu_relevance','source_tier','discovery_provenance','first_seen','new_this_scan'];
+    const keys=[...priority.filter(k=>keySet.has(k)),...[...keySet].filter(k=>!priority.includes(k)).sort((a,b)=>a.localeCompare(b))];
+    const headers=['Products','Radar copies',...keys];
+    const rows=prepared.map(({g,flats})=>{
+      const merged={};
+      for(const k of keys){
+        const vals=[];
+        for(const f of flats){const v=clean(f[k]);if(v&&!vals.includes(v))vals.push(v);}
+        merged[k]=vals.join(' || ');
+      }
+      return [[...g.products].sort().join(', '),g.records.length,...keys.map(k=>merged[k])];
+    });
+    const titleIndex=headers.indexOf('title');
+    const dateIndex=headers.indexOf('date');
+    rows.sort((a,b)=>{
+      const da=dateIndex>=0?String(a[dateIndex]||''):'';const db=dateIndex>=0?String(b[dateIndex]||''):'';
+      const ta=titleIndex>=0?String(a[titleIndex]||''):'';const tb=titleIndex>=0?String(b[titleIndex]||''):'';
+      return db.localeCompare(da)||ta.localeCompare(tb);
+    });
+    return {headers,rows};
+  }
+
+  const esc=s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  const col=n=>{let s='';for(;n>0;n=Math.floor((n-1)/26))s=String.fromCharCode(65+(n-1)%26)+s;return s};
+  function cell(v,r,c,style=0){const ref=col(c)+r;if(typeof v==='number'&&Number.isFinite(v))return `<c r="${ref}" s="${style}"><v>${v}</v></c>`;return `<c r="${ref}" s="${style}" t="inlineStr"><is><t xml:space="preserve">${esc(v)}</t></is></c>`;}
+  function sheetXml(headers,body,widths){
+    const maxc=headers.length;
+    let xml=`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetViews><sheetView workbookViewId="0"><pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews><cols>${widths.map((w,i)=>`<col min="${i+1}" max="${i+1}" width="${w}" customWidth="1"/>`).join('')}</cols><sheetData>`;
+    xml+=`<row r="1" ht="28" customHeight="1">${headers.map((h,i)=>cell(h,1,i+1,1)).join('')}</row>`;
+    for(let i=0;i<body.length;i++)xml+=`<row r="${i+2}">${body[i].map((v,j)=>cell(v,i+2,j+1,3)).join('')}</row>`;
+    return xml+`</sheetData><autoFilter ref="A1:${col(maxc)}${body.length+1}"/></worksheet>`;
+  }
+
+  let crcTable=null;
+  function crc32(buf){
+    if(!crcTable)crcTable=Array.from({length:256},(_,n)=>{let c=n;for(let k=0;k<8;k++)c=(c&1)?0xEDB88320^(c>>>1):c>>>1;return c>>>0});
+    let c=0xFFFFFFFF;for(const b of buf)c=crcTable[(c^b)&255]^(c>>>8);return (c^0xFFFFFFFF)>>>0;
+  }
+  function write16(view,off,v){view.setUint16(off,v,true)}
+  function write32(view,off,v){view.setUint32(off,v>>>0,true)}
+  function concat(parts){const total=parts.reduce((n,p)=>n+p.length,0),out=new Uint8Array(total);let off=0;for(const p of parts){out.set(p,off);off+=p.length;}return out;}
+  function zip(entries){
+    const locals=[],centrals=[];let offset=0;const date=33,time=0,flag=0x800;
+    for(const [name,text] of Object.entries(entries)){
+      const nb=enc.encode(name),db=enc.encode(text),crc=crc32(db);
+      const lh=new Uint8Array(30),lv=new DataView(lh.buffer);write32(lv,0,0x04034b50);write16(lv,4,20);write16(lv,6,flag);write16(lv,8,0);write16(lv,10,time);write16(lv,12,date);write32(lv,14,crc);write32(lv,18,db.length);write32(lv,22,db.length);write16(lv,26,nb.length);write16(lv,28,0);
+      locals.push(lh,nb,db);
+      const ch=new Uint8Array(46),cv=new DataView(ch.buffer);write32(cv,0,0x02014b50);write16(cv,4,20);write16(cv,6,20);write16(cv,8,flag);write16(cv,10,0);write16(cv,12,time);write16(cv,14,date);write32(cv,16,crc);write32(cv,20,db.length);write32(cv,24,db.length);write16(cv,28,nb.length);write16(cv,30,0);write16(cv,32,0);write16(cv,34,0);write16(cv,36,0);write32(cv,38,0);write32(cv,42,offset);
+      centrals.push(ch,nb);offset+=lh.length+nb.length+db.length;
+    }
+    const central=concat(centrals),local=concat(locals),end=new Uint8Array(22),ev=new DataView(end.buffer),count=Object.keys(entries).length;
+    write32(ev,0,0x06054b50);write16(ev,4,0);write16(ev,6,0);write16(ev,8,count);write16(ev,10,count);write32(ev,12,central.length);write32(ev,16,local.length);write16(ev,20,0);
+    return concat([local,central,end]);
+  }
+
+  function buildShockRows(data){
+    const shocks=Array.isArray(data?.shock_inference?.dynamic_shocks)?data.shock_inference.dynamic_shocks:[];
+    const evidence=x=>(Array.isArray(x)?x:[]).map(e=>{if(!e||typeof e!=='object')return clean(e);return [e.row?`#${e.row}`:'',clean(e.title),clean(e.source)].filter(Boolean).join(' · ');}).filter(Boolean).join(' | ');
+    return shocks.map(s=>[
+      clean(s.status),Number(s.inference_score)||0,clean(s.title),clean(s.plainly),clean(s.second_order),
+      (s.conditions||[]).map(clean).filter(Boolean).join(' | '),(s.case_against||[]).map(clean).filter(Boolean).join(' | '),
+      (s.prevention_actions||[]).map(clean).filter(Boolean).join(' | '),(s.watch_for||[]).map(clean).filter(Boolean).join(' | '),
+      clean(s.net_assessment),s.official_trigger_present?'yes':'no',Number(s.coupling_count)||0,evidence(s.support),evidence(s.prevention_evidence||s.against)
+    ]);
+  }
+
+  function widthFor(h){
+    const k=String(h).toLowerCase();
+    if(k==='products')return 18;if(k==='radar copies')return 12;
+    if(k.includes('title')||k.includes('headline'))return 42;
+    if(k.includes('link')||k.includes('url'))return 46;
+    if(k.includes('summary')||k.includes('message')||k.includes('note')||k.includes('evidence')||k.includes('basis')||k.includes('passage')||k.includes('versions')||k.includes('reader_more'))return 52;
+    if(k.includes('reader_what')||k.includes('reader_why')||k.includes('reader_title'))return 38;
+    if(k.includes('authors')||k.includes('source')||k.includes('classification'))return 30;
+    return 22;
+  }
+
+  function buildXlsx(data,Merit,extras={}){
+    if(!Merit?.scoreFor||!Merit?.forItem||!Merit?.componentsFor)throw new Error('RadarSourceMerit unavailable');
+    const raw=buildRawPublicationTable(data);
+    const historical=buildHistoricalTable(extras?.historical||{},extras?.reader||{},extras?.admission||{},extras?.corrections||{});
+    const rows=buildRows(data,Merit);
+    const shockRows=buildShockRows(data);
+    const h1=['Rank','Score / 100','Band','Source title','Plain reader title','Date','Product','Plain finding','Why it matters','Plain explanation','Deep confidence','Deep read depth','Source','Authors','Authority / 55','Authority basis','EU relevance / 25','EU relevance basis','Evidence / 15','Evidence basis','Author transparency / 5','Type','EU relevance code','EU evidence','R&I evidence','Strategic evidence','Core message','Relevance / admission note','Matrix auto cell','Strategic classification','Discovery provenance','Source tier','First seen','Source link'];
+    const b1=rows.map(r=>[r.rank,r.score,r.band,r.title,r.readerTitle,r.date,r.product,r.readerWhat,r.readerWhy,r.readerMore,r.deepConfidence,r.deepReadMode,r.source,r.authors,r.authorityPoints,r.authority,r.relevancePoints,r.relevance,r.evidencePoints,r.evidence,r.authorPoints,r.type,r.euRelevance,r.euEvidence,r.riEvidence,r.geoEvidence,r.core,r.note,r.matrix,r.strategic,r.provenance,r.sourceTier,r.firstSeen,r.link]);
+    const widths=[8,11,16,42,38,12,16,42,42,58,16,20,27,32,12,28,15,31,12,28,18,24,18,28,28,28,42,48,20,22,24,20,20,42];
+    const historicalArchiveUpdated=clean(extras?.historical?.last_updated);
+    const method=[
+      ['WHAT THIS FILE IS','The technical data behind the Radar. Normal reader pages deliberately hide most of this.'],
+      ['All publication data','Current live-Radar evidence only. One deduplicated publication/report per row. It contains scanner fields plus any currently valid Deep Scan reader fields for that publication. Nested fields use dot names; arrays and complex values are preserved as JSON. If the same publication has different stored values in different Radar products, both are retained with || between them.'],
+      ['Historical findings','Every finding that survived the Historical scanner is kept here, including records later reviewed or not retained by Deep Scan. Each row keeps the original scanner fields and joins the matching Deep Scan reader, admission and correction sidecars. “Authoritative historical = YES” means an authoritative Deep Scan profile plus a keep decision. Pending and non-kept records remain visible for audit.'],
+      ['Historical update lifecycle','A Historical scanner finding enters this workbook immediately. When Deep Scan later checks that same historical record key, the same row is regenerated with its Deep Scan decision, reader explanation, verification details and corrections. The raw historical archive remains unchanged.'],
+      ['Ranked sources','A smaller audit view of the current active Radar corpus. Plain reader title/finding/why/explanation appear first when a valid Deep Scan exists, followed by the 0–100 source-merit audit fields.'],
+      ['Shock audit','Technical assumptions, counter-evidence, prevention actions and indicators behind inferred shocks.'],
+      ['Current data state',`${clean(data?.run_completed_at||data?.last_updated)} · A=${(data?.strand_a||[]).length} · B=${(data?.strand_b||[]).length} · C=${(data?.strand_c||[]).length} · Strategic pathways=${(data?.strategic_pathways||[]).length}`],
+      ['Historical data state',`${historicalArchiveUpdated||'unknown'} · Historical scanner findings=${historical.total} · Deep Scanned=${historical.deepScannedCount} · Authoritative historical=${historical.authoritativeCount}`],
+      ['Publication rows',`${raw.rows.length} deduplicated current publication/report records`],
+      ['Publication fields',`${raw.headers.length-2} stored current scanner fields exposed`],
+      ['Historical rows',`${historical.rows.length} historical scanner records exposed`],
+      ['Historical fields',`${Math.max(0,historical.headers.length-8)} scanner + Deep Scan/admission/correction fields exposed, in addition to 8 status columns`],
+      ['Ranked rows',`${rows.length} deduplicated active evidence records`],
+      ['Shock rows',`${shockRows.length} inferred shock records`]
+    ];
+    const shockHeaders=['Status','Inference score','Shock','Plain-language shock','Second-order effect','Conditions that must hold','Case against','What could prevent it','What to watch','Net assessment','Official trigger present','Evidence couplings','Evidence for','Prevention / counter evidence'];
+    const shockWidths=[16,14,34,46,46,58,65,58,58,32,18,16,70,70];
+    const styles=`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="2"><font><sz val="10"/><name val="Arial"/></font><font><b/><color rgb="FFFFFFFF"/><sz val="10"/><name val="Arial"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF111111"/><bgColor indexed="64"/></patternFill></fill></fills><borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="4"><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/><xf numFmtId="0" fontId="1" fillId="2" borderId="0" xfId="0" applyFont="1" applyFill="1" applyAlignment="1"><alignment wrapText="1" vertical="center"/></xf><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0" applyAlignment="1"><alignment wrapText="1" vertical="top"/></xf><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0" applyAlignment="1"><alignment wrapText="1" vertical="top"/></xf></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>`;
+    const files={
+      '[Content_Types].xml':`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/worksheets/sheet2.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/worksheets/sheet3.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/worksheets/sheet4.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/worksheets/sheet5.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>`,
+      '_rels/.rels':`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>`,
+      'xl/workbook.xml':`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="All publication data" sheetId="1" r:id="rId1"/><sheet name="Historical findings" sheetId="2" r:id="rId2"/><sheet name="Ranked sources" sheetId="3" r:id="rId3"/><sheet name="Method" sheetId="4" r:id="rId4"/><sheet name="Shock audit" sheetId="5" r:id="rId5"/></sheets></workbook>`,
+      'xl/_rels/workbook.xml.rels':`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet2.xml"/><Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet3.xml"/><Relationship Id="rId4" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet4.xml"/><Relationship Id="rId5" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet5.xml"/><Relationship Id="rId6" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>`,
+      'xl/styles.xml':styles,
+      'xl/worksheets/sheet1.xml':sheetXml(raw.headers,raw.rows,raw.headers.map(widthFor)),
+      'xl/worksheets/sheet2.xml':sheetXml(historical.headers,historical.rows,historical.headers.map(widthFor)),
+      'xl/worksheets/sheet3.xml':sheetXml(h1,b1,widths),
+      'xl/worksheets/sheet4.xml':sheetXml(['Field','Explanation'],method,[28,110]),
+      'xl/worksheets/sheet5.xml':sheetXml(shockHeaders,shockRows,shockWidths)
+    };
+    return zip(files);
+  }
+  return {buildRows,buildRawPublicationTable,buildHistoricalTable,buildShockRows,buildXlsx};
+});

@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#0f1f3d">
+  <title>EU Economic Security Radar</title>
+<link rel="stylesheet" href="../radar.css?v=28.4">
+<script src="../radar_data.js?v=28.1"></script>
+
+
+<!-- Legacy regression token only: radar-calm.css?v=23.0 -->
+</head>
+<body>
+  <section id="gate" aria-label="Password gate">
+    <div class="gate-card">
+      <div class="gate-mark" aria-hidden="true"></div>
+      <h1>Radar</h1>
+      <p>Research intelligence on EU research &amp; innovation in geopolitical context.</p>
+      <form id="gateForm" class="gate-row">
+        <input id="password" type="password" autocomplete="current-password" placeholder="Password" aria-label="Password">
+        <button type="submit">Enter</button>
+      </form>
+      <div id="gateError" class="gate-error"></div>
+    </div>
+  </section>
+
+  <div id="app">
+    <header class="radar-header">
+      <div class="wrap radar-bar">
+        <a class="radar-brand" href="../">EU Economic Security Radar</a>
+        <nav class="radar-nav" aria-label="Primary navigation">
+          <a class="radar-start" href="../read/">Read At Least This</a>
+          <a class="radar-current" href="./" aria-current="page">Radar</a>
+          <a href="../explore/">Go Deeper</a>
+          <button id="lock" class="radar-lock" type="button">Lock</button>
+        </nav>
+      </div>
+    </header>
+
+    <section class="radar-intro">
+      <div class="wrap radar-intro-inner">
+        <div class="radar-title-block">
+          <div class="radar-kicker">Current evidence</div>
+          <h1>Radar</h1>
+          <p>Search findings that have passed verification. Open a finding only when you want the evidence behind it.</p>
+        </div>
+        <div id="scanStrip" class="radar-counts" aria-label="Radar item counts">
+          <div><strong id="itemsCount">—</strong><span>verified records</span></div>
+        </div>
+        <nav class="strand-jump" aria-label="Three Radar strands">
+          <a class="strand-a-link" href="#strand-a" aria-label="A · Established evidence"><strong>A</strong><span>Established evidence</span><em id="jumpCountA">—</em></a>
+          <a class="strand-b-link" href="#strand-b" aria-label="B · Ways to look ahead"><strong>B</strong><span>Foresight methods</span><em id="jumpCountB">—</em></a>
+          <a class="strand-c-link" href="#strand-c" aria-label="C · Weak signals"><strong>C</strong><span>Weak signals</span><em id="jumpCountC">—</em></a>
+        </nav>
+      </div>
+    </section>
+
+    <div class="toolbar" id="radarFilters"><div class="wrap tools">
+      <input id="search" class="search" type="search" placeholder="Search topic, title or source" aria-label="Search radar">
+      <button id="recentOnly" class="filter" type="button">Latest 30 days</button>
+      <button id="clearFilter" class="filter" type="button">Clear</button>
+    </div></div>
+
+    <main class="wrap radar-main">
+      <section id="strand-a" class="strand">
+        <div class="section-head"><div><div class="eyebrow">Established evidence</div><h2>What the evidence says</h2><p>Papers and reports on how geopolitics is changing Europe’s economic security.</p></div><div id="countA" class="count">0 items</div></div>
+        <div id="itemsA" class="cards"></div><button id="moreA" class="more" type="button" hidden>Show more</button>
+      </section>
+
+      <section id="strand-b" class="strand radar-depth-section">
+        <div class="section-head"><div><div class="eyebrow">Ways to look ahead</div><h2>Foresight methods</h2><p>Methods useful for horizon scanning, scenarios, forecasting and foresight.</p></div><div id="countB" class="count">0 items</div></div>
+        <div id="itemsB" class="cards"></div><button id="moreB" class="more" type="button" hidden>Show more</button>
+      </section>
+
+      <section id="strand-c" class="strand radar-depth-section">
+        <div class="section-head"><div><div class="eyebrow">Weak signals</div><h2>Recent changes worth watching</h2><p>Recent evidence of changes that may matter for Europe’s economic security.</p></div><div id="countC" class="count">0 items</div></div>
+        <div id="itemsC" class="cards"></div><button id="moreC" class="more" type="button" hidden>Show more</button>
+      </section>
+    </main>
+    <footer><div class="wrap radar-footer"><a href="../read/">Read At Least This</a><a href="../">Home</a><a href="#radarFilters">Back to search</a></div></footer>
+  </div>
+
+<script src="../reader_rank.js?v=17.20.19"></script>
+<script src="../briefing/insights.js?v=22.2"></script>
+<script src="../reader_style.js?v=28.3"></script>
+<script>
+const PASSWORD_HASH="8e1be4b8ade75bbd815f588e2fab5e8ce0bc9660530f856278d66909a8301eff";
+const state={data:null,query:"",recentOnly:false,allDetails:false,limits:{A:12,B:12,C:18},latestDate:0};
+async function sha256(text){const data=new TextEncoder().encode(text);const hash=await crypto.subtle.digest("SHA-256",data);return [...new Uint8Array(hash)].map(b=>b.toString(16).padStart(2,"0")).join("")}
+function unlock(){sessionStorage.setItem("radarUnlocked","1");document.getElementById("gate").style.display="none";document.getElementById("app").style.display="block";loadRadar()}
+if(sessionStorage.getItem("radarUnlocked")==="1") unlock();
+document.getElementById("gateForm").addEventListener("submit",async e=>{e.preventDefault();const input=document.getElementById("password");if(await sha256(input.value)===PASSWORD_HASH){unlock()}else{document.getElementById("gateError").textContent="Incorrect password.";input.select()}});
+document.getElementById("lock").addEventListener("click",()=>{sessionStorage.removeItem("radarUnlocked");location.reload()});
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c]);
+function fmtDate(v){if(!v)return "";const d=new Date(v);if(Number.isNaN(d.getTime()))return String(v).slice(0,10);return new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"short",year:"numeric"}).format(d)}
+function fmtDateTime(v){if(!v)return "";const d=new Date(v);if(Number.isNaN(d.getTime()))return String(v);return new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"}).format(d)}
+function cleanText(v){return String(v??"").replace(/\s+/g," ").replace(/\.{5,}/g," ").trim()}
+function repairLetterSpacing(v){
+  let s=cleanText(v);
+  // Repair PDF/OCR extraction such as "E u r o p e", "C E P S", "A I" and "R & I".
+  s=s.replace(/\b(?:[A-Za-z]\s+){2,}[A-Za-z]\b/g,m=>m.replace(/\s+/g,''));
+  s=s.replace(/\b([A-Z])\s*&\s*([A-Z])\b/g,'$1&$2');
+  s=s.replace(/\b([A-Z])\s+([A-Z])\b/g,'$1$2');
+  return cleanText(s);
+}
+function hasLetterSpacing(v){
+  const s=cleanText(v);
+  return /\b(?:[A-Za-z]\s+){2,}[A-Za-z]\b/.test(s)||/\b[A-Z]\s+&\s+[A-Z]\b/.test(s);
+}
+function short(v,n=220){const s=cleanText(v);if(s.length<=n)return s;const first=(s.match(/^.*?[.!?](?:\s|$)/)||[])[0]?.trim();if(first&&first.length<=n)return first;let out=s.slice(0,n).replace(/\s+\S*$/,'').replace(/[,:;—–-]+$/,'').trim();if(out&&!/[.!?)]$/.test(out))out+='.';return out}
+function complete120(v){
+  const s=repairLetterSpacing(v).replace(/^Abstract\s*/i,'').replace(/\s+([,.;:!?])/g,'$1').trim();
+  if(!s||hasLetterSpacing(s))return '';
+  return globalThis.RadarInsights?.readerPoint?.(s)||'';
+}
+function claim80(v){
+  const s=repairLetterSpacing(v).replace(/^Abstract\s*/i,'').replace(/\s+([,.;:!?])/g,'$1').trim();
+  if(!s||hasLetterSpacing(s))return '';
+  return globalThis.RadarInsights?.readerPoint?.(s)||'';
+}
+function claimText(x){
+  // Main Radar is policy-technical rather than the site's simplest reader layer.
+  // Prefer the stored, validated source-backed core message without translating
+  // standard R&I-policy terminology; fall back to the shorter reader-safe point.
+  const stored=globalThis.RadarInsights?.completeCoreMessage?.(x?.core_message||'')||'';
+  if(stored)return globalThis.RadarInsights?.radarText?.(stored)||stored;
+  const fallback=globalThis.RadarInsights?.pointFor?.(x)||coreMessage(x)||globalThis.RadarInsights?.fallbackPoint?.(x)||semanticMessage(x)||'';
+  return globalThis.RadarInsights?.radarText?.(fallback)||fallback||'The source does not provide a concise claim.';
+}
+function readablePaperTitle(v){
+  let t=cleanText(v).replace(/<\/?b>/gi,'').replace(/\s+[–—-]\s+(?:European Council on Foreign Relations|CEPS|Euractiv\.com|FT\.com)$/i,'').trim();
+  if(!t)return '';
+  const letters=(t.match(/[A-Za-z]/g)||[]),upper=(t.match(/[A-Z]/g)||[]);
+  if(letters.length>20&&upper.length/letters.length>.78)t=t.toLowerCase().replace(/(^|[.!?]\s+)([a-z])/g,(m,a,b)=>a+b.toUpperCase()).replace(/\b(eu|us|ai|r&d|fp10|nato)\b/gi,m=>m.toUpperCase());
+  return short(t,138);
+}
+function paperSpecificMessage(x){
+  const t=readablePaperTitle(x.title||'');
+  if(!t)return '';
+  return t;
+}
+function semanticMessage(x){
+  const text=norm([x.title,x.summary,x.relevance_note,x.what,x.headline].join(' '));
+  const b=String(x.strand||'').toUpperCase()==='B';
+  if(b){
+    if(/horizon scan/.test(text))return 'Horizon scanning is adapted into a reusable method for identifying emerging strategic risks.';
+    if(/weak signal/.test(text))return 'A reusable method is developed to detect weak signals before they become established trends.';
+    if(/scenario/.test(text))return 'A reusable scenario method is developed to explore how uncertain strategic futures could unfold.';
+    if(/backcasting/.test(text))return 'A reusable backcasting method is developed to connect long-term futures with choices made today.';
+    return 'A reusable futures method is developed to study emerging change under strategic uncertainty.';
+  }
+  if(x.headline){
+    if(/eu.?china.*research|research cooperation.*china|china.*research cooperation/.test(text))return 'EU–China research cooperation is narrowing to selected areas as Europe reduces strategic exposure.';
+    if(/quantum.*regulat.*delay|regulat.*quantum.*delay/.test(text))return 'EU quantum rules are delayed, extending uncertainty for a strategically important technology.';
+    if(/self.?driv|autonomous vehicle/.test(text))return 'Chinese self-driving firms are expanding in Europe, increasing cross-border technology ties.';
+    if(/defen[cs]e.*drone|drone.*defen[cs]e/.test(text))return 'A Japanese–German defence-drone partnership is creating a new cross-border technology link.';
+    if(/sovereign ai|ai control layer/.test(text))return 'A new sovereign-AI control layer is being adopted by European firms.';
+  }
+  if(/eu.?china|china.*\beu\b|europe.*china/.test(text)&&/research|science|innovation|technology/.test(text))return 'EU–China research and technology ties are being reshaped by de-risking and strategic competition.';
+  if(/research security|knowledge security|foreign interference/.test(text))return 'Research security is tightening as Europe balances open science with geopolitical and interference risks.';
+  if(/science diplomacy|scientific collaboration|research collaboration/.test(text))return 'Geopolitical rivalry is changing Europe’s scientific collaboration and the role of science diplomacy.';
+  if(/brain drain|researcher mobility|research talent|scientific talent|research workforce/.test(text))return 'Researcher mobility is becoming a strategic issue for Europe’s scientific capacity and competitiveness.';
+  if(/horizon europe|fp10|framework programme/.test(text))return 'Geopolitical tensions are reshaping who Europe funds and partners with in its research programmes.';
+  if(/semiconductor|chip/.test(text))return 'Semiconductor dependencies are becoming a strategic constraint on Europe’s technology choices.';
+  if(/quantum/.test(text))return 'Quantum capability is becoming part of Europe’s competition for technological security and autonomy.';
+  if(/artificial intelligence|\bai\b/.test(text)&&/depend|investment|sovereign|security/.test(text))return 'AI investment and dependence are becoming strategic issues for Europe’s technological autonomy.';
+  if(/advanced material|critical mineral|raw material|battery/.test(text))return 'Access to strategic materials is shaping Europe’s technology resilience and industrial autonomy.';
+  if(/dual.?use|military|defen[cs]e/.test(text)&&/innovation|technology|research/.test(text))return 'Security competition is pulling more European research and technology toward dual-use priorities.';
+  if(/digital sovereignty|digital strategy|cyber/.test(text))return 'Digital and cyber policy is becoming a tool of Europe’s geopolitical and technological positioning.';
+  if(/industrial policy|innovation ecosystem|competitiveness/.test(text))return paperSpecificMessage(x);
+  return paperSpecificMessage(x)||'A geopolitical development is changing a specific part of Europe’s economic security.';
+}
+function norm(v){return cleanText(v).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim()}
+function stripPaperTitle(summary,title){let s=cleanText(summary);const t=cleanText(title);if(t&&s.toLowerCase().startsWith(t.toLowerCase()))s=s.slice(t.length).replace(/^[\s.:;–—-]+/,'');return s.replace(/^Abstract\s*/i,'')}
+function sentences(v){return cleanText(v).split(/(?<=[.!?])\s+(?=[A-Z0-9])/).map(x=>x.trim()).filter(Boolean)}
+function coreMessage(x){
+  const stored=globalThis.RadarInsights?.completeCoreMessage?.(x.core_message||'')||complete120(x.core_message||'');if(stored)return stored;
+  if(x.headline){let w=globalThis.RadarInsights?.signalWhat?.(x)||x.what||x.headline;w=cleanText(w).replace(/\s+[–—-]\s+Company Announcement.*$/i,'').replace(/\s+-\s+(?:FT\.com|Reuters|Bloomberg|Euractiv\.com).*$/i,'');return claim80(w)}
+  const title=x.title||'',ss=sentences(stripPaperTitle(x.summary||'',title));const b=String(x.strand||'').toUpperCase()==='B';
+  const ranked=ss.map((q,i)=>{let score=0;const n=norm(q);if(/^(?:this|the) (?:study|paper|article|report) examines|\b(?:aim|objective|methodology)\b|its eu relevance is classified|consult the linked publication/i.test(q))score-=12;if(b){if(/\b(develop|propose|introduce|adapt|extend|refine|design|create|construct)\w*/i.test(q))score+=10;if(/foresight|horizon scan|weak signal|scenario planning|backcasting|cross.?impact|roadmap/i.test(q))score+=7}else{if(/\b(find|show|argue|conclude|demonstrate|identify|reveal|indicate|suggest|highlight)\w*/i.test(q))score+=9;if(/\b(risk|depend|competition|security|sovereignty|collaboration|capacity|restrict|strengthen|weaken|shift|change|limit|enable|pressure|fragment|unbalanced|concentrat)\w*/i.test(q))score+=6;if(/europe|european union|\beu\b|research|innovation|science|technology/i.test(q))score+=3}if(n===norm(title))score-=30;score-=i*.12;return {q,score,msg:claim80(q)}}).filter(r=>r.msg&&!(norm(title).startsWith(norm(r.msg))||norm(r.msg).startsWith(norm(title)))).sort((a,b)=>b.score-a.score);
+  if(ranked[0]&&ranked[0].score>0)return ranked[0].msg;
+  return claim80(readablePaperTitle(title));
+}
+function whatForGeo(x){return globalThis.RadarInsights?.whatForEuRiGeo?.(x)||claimText(x)}
+function whatLine(x){const pair=globalThis.RadarReaderStyle?.radarPair?.(x)||{what:whatForGeo(x)};return pair.what?`<p class="whatline"><strong>WHAT:</strong> ${esc(pair.what)}</p>`:''}
+function simpleWhy(x){return globalThis.RadarInsights?.whyFor?.(x)||''}
+function whyLine(x){const pair=globalThis.RadarReaderStyle?.radarPair?.(x)||{why:simpleWhy(x)};return pair.why?`<p class="whyline"><strong>WHY:</strong> ${esc(pair.why)}</p>`:''}
+function cWhatLine(x){const w=cleanText(globalThis.RadarInsights?.signalWhat?.(x)||x.what||x.core_message||x.headline||'');return w?`<p class="signal-what"><strong>What happened:</strong> ${esc(w)}</p>`:''}
+
+function whereFrom(x){return [x.source,fmtDate(x.date)].filter(Boolean).join(' · ')}
+function visibleSource(x){const s=cleanText(x.source||'');if(!s)return '';const d=fmtDate(x.date);const body=x.link?`<a href="${esc(x.link)}" target="_blank" rel="noopener">${esc(s)}</a>`:esc(s);return `<div class="visible-source"><strong>Source:</strong> ${body}${d?` · ${esc(d)}`:''}</div>`}
+function searchable(x){return cleanText([x.title,x.headline,x.source,x.authors,x.summary,x.relevance_note,x.signal_note,x.anchor,x.type,x.eu_relevance,x.core_message].join(" ")).toLowerCase()}
+function publicDisplayOk(x){try{const t=cleanText(x?.title||x?.headline||'');if(!t)return false;if(globalThis.RadarInsights?.likelyEnglish?.(t)===false)return false;const claim=claimText(x);return globalThis.RadarInsights?.likelyEnglish?.(claim)!==false}catch(e){console.warn('Radar display filter skipped a problematic item',e);return Boolean(cleanText(x?.title||x?.headline||''))}}
+function dateMs(x){const t=Date.parse(x?.date||'');return Number.isFinite(t)?t:0}
+function firstSeenMs(x){const t=Date.parse(x?.first_seen||'');return Number.isFinite(t)?t:0}
+function radarReady(x){return ['keep','review'].includes(cleanText(x?.admission_status||'').toLowerCase())}
+function rankScore(x){return globalThis.RadarReaderRank?.scoreFor?.(x)??0}
+function rankClass(x){return globalThis.RadarReaderRank?.band?.(rankScore(x))||''}
+function filtered(items){const q=state.query.trim().toLowerCase();const floor=state.latestDate?state.latestDate-30*86400000:0;let out=items.filter(x=>radarReady(x)&&publicDisplayOk(x)&&(!state.recentOnly||dateMs(x)>=floor)&&(!q||searchable(x).includes(q)));return [...out].sort((a,b)=>(globalThis.RadarReaderRank?.compare?.(a,b)??0)||firstSeenMs(b)-firstSeenMs(a)||dateMs(b)-dateMs(a)||cleanText(a.title||a.headline).localeCompare(cleanText(b.title||b.headline)))}
+function tag(text,cls=""){return text?`<span class="tag ${cls}">${esc(text)}</span>`:""}
+function admissionTag(x){const d=cleanText(x?.admission_status||'').toLowerCase();if(d==='review')return tag('Review','review');if(x?.deep_scan_authoritative)return tag('Deep verified','verified');return ''}
+function rankBadge(x){const n=rankScore(x),cls=rankClass(x);return `<span class="rank-badge ${esc(cls)}" title="Reader rank ${n}/100" aria-label="Reader rank ${n} out of 100">${n}</span>`}
+function fmtInt(v){const n=Number(v);return Number.isFinite(n)?new Intl.NumberFormat('en-GB').format(n):'—'}
+function biblio(x,label='Bibliography'){
+  const title=x.title||x.headline||'';const who=x.authors||'';const meta=[x.source,fmtDate(x.date),x.type].filter(Boolean).join(' · ');const englishTitle=!title||globalThis.RadarInsights?.likelyEnglish?.(title)!==false;
+  return `<details class="biblio" ${state.allDetails?'open':''}><summary>Source information</summary>${title&&englishTitle?`<div class="biblio-title">${esc(title)}</div>`:''}${who?`<div class="biblio-row">${esc(who)}</div>`:''}${meta?`<div class="biblio-row">${esc(meta)}</div>`:''}</details>`;
+}
+function abstractPanel(x,id){const readerMore=cleanText(x?.reader_more||'');const text=readerMore||globalThis.RadarInsights?.prepareSummary?.(x.summary||'')||cleanText(x.summary||x.signal_note||'');if(!text)return '';return `<div id="${id}" class="abstract-panel" ${state.allDetails?'':'hidden'}>${text?`<p>${esc(short(text,700))}</p>`:''}</div>`}
+function cardHeading(x){const deep=cleanText(x.reader_title||'');if(deep)return deep;const raw=cleanText(x.title||x.headline||'');const t=globalThis.RadarReaderStyle?.displayTitle?.(raw)||raw;return t&&globalThis.RadarInsights?.likelyEnglish?.(t)!==false?t:(globalThis.RadarReaderStyle?.displayTitle?.(claimText(x))||claimText(x))}
+function cap100(v){let s=cleanText(v);if(s.length<=100)return s;let out='';for(const w of s.split(/\s+/)){const n=out?`${out} ${w}`:w;if(n.length>96)break;out=n}out=(out||s.slice(0,96)).replace(/\b(?:and|or|of|for|to|in|on|with|the|a|an)$/i,'').replace(/[,:;—–-]+$/,'').trim();if(out&&!/[.!?)]$/.test(out))out+='.';return out}
+function methodPoint(x){const t=cleanText(`${x.title||''} ${x.core_message||''} ${x.summary||''}`).toLowerCase();if(/hybrid foresight/.test(t)&&/expert/.test(t))return 'AI + expert judgement can make horizon scanning iterative.';if(/governance logics.*foresight|foresight functions/.test(t))return 'Choose foresight methods by policy function, horizon and available data.';if(/evidence for the future|robustness.*appropriateness.*inclusivity/.test(t))return 'Robustness, fit and inclusion make foresight more usable as evidence.';if(/multi-agent.*technology intelligence|patents to market signals/.test(t))return 'Multi-agent AI can turn patents and market signals into technology intelligence.';if(/participatory.*scenario/.test(t)||/scenario-building methodology/.test(t))return 'Participatory scenarios connect long-term futures with sector choices.';if(/agentprophet|technology forecasting/.test(t))return 'Source-aware AI agents can forecast emerging technology signals.';if(/analytic hierarchy process|living labs/.test(t))return 'Scenario workshops + AHP can rank options with stakeholders.';if(/field.?topic.?technology|key core technologies/.test(t))return 'Patent mapping can identify key technologies and track their evolution.';const r=globalThis.RadarInsights?.readerPoint?.(x.core_message||x.summary||'',100)||globalThis.RadarInsights?.fastReaderText?.(x.title||'')||x.title||'';return cap100(r)}
+function methodUse(x){const t=cleanText(`${x.relevance_note||''} ${x.title||''} ${x.summary||''}`).toLowerCase();if(/horizon scan/.test(t))return 'Use for systematic early-signal discovery and review.';if(/scenario/.test(t))return 'Use to compare plausible futures and test choices before they lock in.';if(/technology intelligence/.test(t))return 'Use to track technologies, competitors and emerging capability gaps.';if(/forecast/.test(t))return 'Use to structure evidence about where a technology may move next.';if(/foresight/.test(t))return 'Use to connect future uncertainty with current policy decisions.';return 'Use as a reusable method for examining future R&I change.'}
+function signalPoint(x){const raw=globalThis.RadarInsights?.signalWhat?.(x)||x.what||x.core_message||x.headline||x.title||'';return cap100(globalThis.RadarInsights?.fastReaderText?.(raw)||raw)}
+function claimButton(x,id,title=cardHeading(x),linkLabel='Open publication ↗'){return `<h3 class="claim-title">${esc(title)}</h3><div class="card-actions"><button class="info-button" type="button" data-abstract="${id}" aria-controls="${id}" aria-expanded="${state.allDetails?'true':'false'}">More info</button>${x.link?`<a class="publication-link" href="${esc(x.link)}" target="_blank" rel="noopener">${esc(linkLabel)}</a>`:''}</div>`}
+function abItem(x,i){
+  const id=`abstract-a-${i}`;
+  return `<article class="item"><div class="item-top"><div class="meta">${esc(fmtDate(x.date))}</div><div class="badges">${rankBadge(x)}${admissionTag(x)}</div></div>${claimButton(x,id)}${visibleSource(x)}${biblio(x)}${abstractPanel(x,id)}${whatLine(x)}${whyLine(x)}</article>`
+}
+function bItem(x,i){
+  const id=`abstract-b-${i}`;
+  const pair=globalThis.RadarReaderStyle?.radarPair?.(x,{what:methodPoint(x),why:methodUse(x)})||{what:methodPoint(x),why:methodUse(x)};
+  return `<article class="item"><div class="item-top"><div class="meta">${esc(fmtDate(x.date))}</div><div class="badges">${rankBadge(x)}${admissionTag(x)}${tag("Method")}</div></div>${claimButton(x,id)}${visibleSource(x)}<p class="whatline"><strong>WHAT:</strong> ${esc(pair.what)}</p><p class="whyline"><strong>WHY:</strong> ${esc(pair.why)}</p>${biblio(x)}${abstractPanel(x,id)}</article>`
+}
+function cItem(x,i){
+  const id=`abstract-c-${i}`;
+  const rawWhat=globalThis.RadarInsights?.signalWhat?.(x)||x.what||x.core_message||x.headline||x.title||'';
+  const rawWhy=globalThis.RadarInsights?.fastReaderText?.(x.why_it_matters||'')||x.why_it_matters||simpleWhy(x);
+  const pair=globalThis.RadarReaderStyle?.radarPair?.(x,{what:rawWhat,why:rawWhy})||{what:rawWhat,why:rawWhy};
+  return `<article class="item"><div class="item-top"><div class="meta">${esc(fmtDate(x.date))}</div><div class="badges">${rankBadge(x)}${admissionTag(x)}</div></div>${claimButton(x,id,cardHeading(x),'Open source evidence ↗')}${visibleSource(x)}<p class="whatline"><strong>WHAT:</strong> ${esc(pair.what)}</p><p class="whyline"><strong>WHY:</strong> ${esc(pair.why)}</p>${biblio(x,'Source')}${abstractPanel(x,id)}</article>`
+}
+function empty(msg){return `<div class="empty">${esc(msg)}</div>`}
+function fallbackCard(x){const rawTitle=cleanText(x?.reader_title||x?.title||x?.headline||x?.core_message||'Finding');const title=globalThis.RadarReaderStyle?.displayTitle?.(rawTitle)||rawTitle;const source=cleanText(x?.source||'');const link=cleanText(x?.link||'');return `<article class="item"><div class="item-top"><div class="meta">${esc(fmtDate(x?.date))}</div></div><h3 class="claim-title">${link?`<a href="${esc(link)}" target="_blank" rel="noopener">${esc(title)}</a>`:esc(title)}</h3>${source?`<div class="visible-source"><strong>Source:</strong> ${esc(source)}</div>`:''}</article>`}
+function safeCard(renderer,x,i){try{return renderer(x,i)}catch(e){console.error('Radar card render failed',e,x);return fallbackCard(x)}}
+function renderSection(letter,items,renderer,noun){try{const f=filtered(items);const limit=state.limits[letter];const shown=f.slice(0,limit);document.getElementById(`count${letter}`).textContent=`${f.length} ${noun}${f.length===1?"":"s"}${f.length!==items.length?` · ${items.length} total`:""}`;document.getElementById(`items${letter}`).innerHTML=shown.length?shown.map((x,i)=>safeCard(renderer,x,i)).join(""):empty("No items match the current filter.");const b=document.getElementById(`more${letter}`);b.hidden=f.length<=limit;b.textContent=`Show ${Math.min(12,f.length-limit)} more findings`}catch(e){console.error(`Radar section ${letter} render failed`,e);document.getElementById(`items${letter}`).innerHTML=empty("This section could not be displayed. The radar data itself is loaded.")}}
+function render(){if(!state.data)return;const d=state.data,A=d.strand_a||[],B=d.strand_b||[],C=d.strand_c||[];renderSection("A",A,abItem,"item");renderSection("B",B,bItem,"item");renderSection("C",C,cItem,"signal");}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-abstract]');if(!b)return;const panel=document.getElementById(b.dataset.abstract);if(!panel)return;const opening=panel.hidden;panel.hidden=!opening;b.setAttribute('aria-expanded',String(opening));});
+function resetLimits(){state.limits={A:12,B:12,C:18}}
+const initialQuery=new URLSearchParams(location.search).get("q")||"";if(initialQuery){state.query=initialQuery;document.getElementById("search").value=initialQuery}
+function wire(){document.getElementById("search").addEventListener("input",e=>{state.query=e.target.value;resetLimits();render()});document.getElementById("recentOnly").addEventListener("click",e=>{state.recentOnly=!state.recentOnly;e.currentTarget.classList.toggle("active",state.recentOnly);resetLimits();render()});document.getElementById("clearFilter").addEventListener("click",()=>{state.query="";state.recentOnly=false;document.getElementById("search").value="";document.getElementById("recentOnly").classList.remove("active");resetLimits();render()});for(const l of ["A","B","C"])document.getElementById(`more${l}`).addEventListener("click",()=>{state.limits[l]+=12;render()})}
+wire();
+async function loadRadar(){
+  let raw;
+  try{
+    raw=await RadarData.load("../radar.json","../radar_seed.json");
+  }catch(e){
+    console.error("Radar data load failed",e);
+    for(const l of ["A","B","C"])document.getElementById(`items${l}`).innerHTML=empty("radar.json could not be loaded.");
+    return;
+  }
+  // Main Radar is a verified surface: provisional scanner candidates stay in Stuff until Deep Scan checks them.
+  const safeFilter=xs=>Array.isArray(xs)?xs.filter(x=>radarReady(x)&&publicDisplayOk(x)):[];
+  const d={...raw,strand_a:safeFilter(raw.strand_a),strand_b:safeFilter(raw.strand_b),strand_c:safeFilter(raw.strand_c)};
+  state.data=d;
+  const A=d.strand_a||[],B=d.strand_b||[],C=d.strand_c||[];
+  state.latestDate=Math.max(Date.parse(d.last_updated||'')||0,...[...A,...B,...C].map(dateMs));
+  const all=[...A,...B,...C];
+  document.getElementById('itemsCount').textContent=fmtInt(all.length);
+  document.getElementById('jumpCountA').textContent=fmtInt(A.length);
+  document.getElementById('jumpCountB').textContent=fmtInt(B.length);
+  document.getElementById('jumpCountC').textContent=fmtInt(C.length);
+  render();
+}
+</script>
+<script src="../radar-shell.js?v=28"></script>
+</body>
+</html>

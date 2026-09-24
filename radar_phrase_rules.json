@@ -1,0 +1,402 @@
+{
+ "version": "econsec-1",
+ "purpose": "Curator phrase ontology for the EU economic-security radar. Strand C phrases are retrieval/re-ranking aids only; C admission is relational to substantive Strand A evidence.",
+ "principles": {
+  "strand_a": "Substance: EU R&I where it meets security, sovereignty, competitiveness, dependencies and foreign policy.",
+  "strand_b": "Method: foresight/futures methodology usable to study the future of Strand A.",
+  "strand_c": "Weak signals: new facts/evidence/developments that materially reframe an existing Strand-A issue. C is a relationship to A, not a keyword class.",
+  "c_admission_rule": "Never admit to C on a C phrase alone. A C phrase may retrieve or re-rank a candidate; admission still requires a substantive Strand-A anchor plus a distinct new point/implication.",
+  "duplicate_rule": "Prior coverage of the topic is not disqualifying. Collapse only substantially the same event/claim/implication."
+ },
+ "strand_a": [
+  {
+   "id": 1,
+   "phrase": "economic security",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "Can mean household financial security or social protection.",
+   "guard": "Require trade, investment, supply, industry, coercion or geopolitical context."
+  },
+  {
+   "id": 2,
+   "phrase": "weaponised interdependence",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 3,
+   "phrase": "weaponized interdependence",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 4,
+   "phrase": "economic coercion",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 5,
+   "phrase": "anti-coercion instrument",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 6,
+   "phrase": "de-risking",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "Also used in banking/compliance (customer de-risking).",
+   "guard": "Require China, supply chain, trade or dependency context."
+  },
+  {
+   "id": 7,
+   "phrase": "strategic dependencies",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 8,
+   "phrase": "strategic dependency",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 9,
+   "phrase": "critical raw materials",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 10,
+   "phrase": "rare earths",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 2,
+   "opposition": "Geology/mining papers without policy relevance.",
+   "guard": "Require supply, dependency, export or policy context."
+  },
+  {
+   "id": 11,
+   "phrase": "investment screening",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 12,
+   "phrase": "FDI screening",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 13,
+   "phrase": "foreign subsidies regulation",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 14,
+   "phrase": "export controls",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 15,
+   "phrase": "dual-use",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 2,
+   "opposition": "Dual-use research ethics in life sciences.",
+   "guard": "Require trade, export, technology security or geopolitical context."
+  },
+  {
+   "id": 16,
+   "phrase": "open strategic autonomy",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 17,
+   "phrase": "security of supply",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 2,
+   "opposition": "Routine utility regulation.",
+   "guard": "Require geopolitical, dependency or strategic-sector context."
+  },
+  {
+   "id": 18,
+   "phrase": "supply chain resilience",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 2,
+   "opposition": "Operations-management papers on generic logistics.",
+   "guard": "Require geopolitical, dependency, Europe or policy context."
+  },
+  {
+   "id": 19,
+   "phrase": "overcapacity",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 2,
+   "opposition": "Hospitality/airline capacity management.",
+   "guard": "Require China, subsidies, trade or industry context."
+  },
+  {
+   "id": 20,
+   "phrase": "friendshoring",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 21,
+   "phrase": "friend-shoring",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 22,
+   "phrase": "geoeconomic fragmentation",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 23,
+   "phrase": "technology leakage",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 24,
+   "phrase": "outbound investment",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 25,
+   "phrase": "secondary sanctions",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 26,
+   "phrase": "sanctions circumvention",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 27,
+   "phrase": "trade defence",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 2,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 28,
+   "phrase": "like-minded partners",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 2,
+   "opposition": "Generic diplomacy.",
+   "guard": "Require trade, investment, supply or economic-security context."
+  },
+  {
+   "id": 29,
+   "phrase": "economic statecraft",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 30,
+   "phrase": "chokepoint",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 2,
+   "opposition": "Military/naval chokepoints without economic content.",
+   "guard": "Require trade, supply or technology context."
+  }
+ ],
+ "strand_b": [],
+ "strand_c_retrieval": [
+  {
+   "id": 1,
+   "phrase": "export restrictions",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 2,
+   "phrase": "export ban",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 3,
+   "phrase": "entity list",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 4,
+   "phrase": "anti-dumping",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 5,
+   "phrase": "countervailing duties",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 6,
+   "phrase": "retaliatory tariffs",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 7,
+   "phrase": "sanctions package",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 8,
+   "phrase": "foreign takeover",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 9,
+   "phrase": "golden power",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 10,
+   "phrase": "stockpile",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 2,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 11,
+   "phrase": "subsea cable",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 12,
+   "phrase": "high-risk vendor",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 13,
+   "phrase": "rare earth magnets",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 14,
+   "phrase": "gallium",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 15,
+   "phrase": "germanium",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 16,
+   "phrase": "strategic project",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 2,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 17,
+   "phrase": "critical minerals partnership",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 1,
+   "opposition": "",
+   "guard": ""
+  },
+  {
+   "id": 18,
+   "phrase": "price cap",
+   "match_rule": "Exact phrase, case-insensitive",
+   "tier": 2,
+   "opposition": "",
+   "guard": ""
+  }
+ ],
+ "audit_negative_examples": [],
+ "source_workbook": ""
+}

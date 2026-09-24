@@ -1,0 +1,832 @@
+{
+ "version": 3,
+ "profile": "radar-claims-vocabulary-v1",
+ "description": "Controlled vocabulary for Radar reasoning. Version 3 adds economic-security clusters and objects (dependencies, trade, investment, coercion, energy, partnerships, finance). Legacy R&I objects remain valid but unused. Runtime invention remains forbidden.",
+ "directions": [
+  "expands",
+  "contracts",
+  "becomes_conditional",
+  "becomes_contested",
+  "unchanged"
+ ],
+ "statuses": [
+  "intention",
+  "proposed",
+  "in_negotiation",
+  "adopted",
+  "in_force",
+  "operating",
+  "delivered",
+  "call_open",
+  "announced",
+  "abandoned",
+  "lapsed"
+ ],
+ "kinds": [
+  "action",
+  "effect",
+  "diagnosis",
+  "advocacy"
+ ],
+ "scopes": [
+  "eu",
+  "member_state",
+  "associated_country",
+  "third_country",
+  "company_in_eu",
+  "external"
+ ],
+ "actor_classes": [
+  "eu_body",
+  "member_state",
+  "national_funder",
+  "third_country",
+  "company",
+  "university_group",
+  "ngo_thinktank",
+  "court",
+  "opposition_party",
+  "other"
+ ],
+ "confidence": [
+  "high",
+  "medium",
+  "low"
+ ],
+ "origins": [
+  "backfill",
+  "deep_scan",
+  "provisional"
+ ],
+ "eras": [
+  "current",
+  "historical"
+ ],
+ "clusters": [
+  "compute_ai",
+  "permitting_siting",
+  "quantum",
+  "chips",
+  "startups_chips_industry",
+  "export_controls",
+  "eu_competence",
+  "openness",
+  "research_security",
+  "talent",
+  "funding_programme",
+  "programme_association",
+  "exclusion_conditionality",
+  "materials_energy",
+  "capital_markets",
+  "strategic_goals",
+  "health",
+  "research_system",
+  "research_infrastructure",
+  "ai_governance",
+  "digital_governance",
+  "defence_dual_use",
+  "innovation_ecosystem",
+  "industrial_competitiveness",
+  "cybersecurity",
+  "green_transition",
+  "critical_infrastructure",
+  "methods",
+  "economic_security_strategy",
+  "supply_dependencies",
+  "trade_policy",
+  "trade_defence",
+  "investment_screening",
+  "coercion_sanctions",
+  "energy_security",
+  "partnerships",
+  "finance_payments",
+  "medicines_supply"
+ ],
+ "stake_classes": [
+  "flagship",
+  "rule",
+  "budget",
+  "capability"
+ ],
+ "objects": {
+  "compute.public_procurement": {
+   "cluster": "compute_ai"
+  },
+  "compute.gigafactory": {
+   "cluster": "compute_ai",
+   "stake_class": "flagship"
+  },
+  "compute.access_time": {
+   "cluster": "compute_ai"
+  },
+  "compute.capacity": {
+   "cluster": "compute_ai",
+   "stake_class": "capability"
+  },
+  "compute.private_investment": {
+   "cluster": "compute_ai"
+  },
+  "compute.gigafactory_cofinancing": {
+   "cluster": "capital_markets",
+   "secondary_clusters": [
+    "compute_ai"
+   ],
+   "stake_class": "budget"
+  },
+  "datacentre.permitting": {
+   "cluster": "permitting_siting",
+   "stake_class": "rule"
+  },
+  "datacentre.energy_supply": {
+   "cluster": "permitting_siting"
+  },
+  "datacentre.local_opposition": {
+   "cluster": "permitting_siting"
+  },
+  "datacentre.siting": {
+   "cluster": "permitting_siting"
+  },
+  "quantum.equipment": {
+   "cluster": "quantum"
+  },
+  "quantum.testing_infrastructure": {
+   "cluster": "quantum",
+   "stake_class": "flagship"
+  },
+  "quantum.machine": {
+   "cluster": "quantum",
+   "stake_class": "capability"
+  },
+  "quantum.standards": {
+   "cluster": "quantum"
+  },
+  "quantum.pilot_line": {
+   "cluster": "quantum",
+   "stake_class": "flagship"
+  },
+  "chips.eu_inference_supplier": {
+   "cluster": "chips",
+   "secondary_clusters": [
+    "startups_chips_industry"
+   ]
+  },
+  "chips.nvidia_gpu": {
+   "cluster": "chips"
+  },
+  "chips.fab": {
+   "cluster": "chips",
+   "secondary_clusters": [
+    "startups_chips_industry"
+   ]
+  },
+  "chips.pilot_line": {
+   "cluster": "chips",
+   "secondary_clusters": [
+    "startups_chips_industry"
+   ],
+   "stake_class": "flagship"
+  },
+  "export_control.regulation": {
+   "cluster": "export_controls",
+   "stake_class": "rule"
+  },
+  "export_control.competence": {
+   "cluster": "export_controls",
+   "secondary_clusters": [
+    "eu_competence"
+   ]
+  },
+  "export_control.licence_decision": {
+   "cluster": "export_controls"
+  },
+  "research.openness": {
+   "cluster": "openness"
+  },
+  "research.open_access": {
+   "cluster": "openness"
+  },
+  "research_security.self_assessment": {
+   "cluster": "research_security"
+  },
+  "research_security.screening": {
+   "cluster": "research_security"
+  },
+  "research_security.espionage_case": {
+   "cluster": "research_security"
+  },
+  "grant.admissibility": {
+   "cluster": "research_security",
+   "stake_class": "rule"
+  },
+  "talent.recruitment_abroad": {
+   "cluster": "talent"
+  },
+  "talent.retention": {
+   "cluster": "talent",
+   "stake_class": "capability"
+  },
+  "talent.career_structure": {
+   "cluster": "talent"
+  },
+  "horizon.association": {
+   "cluster": "funding_programme",
+   "secondary_clusters": [
+    "programme_association"
+   ],
+   "stake_class": "flagship"
+  },
+  "horizon.access": {
+   "cluster": "funding_programme"
+  },
+  "horizon.exclusion": {
+   "cluster": "funding_programme",
+   "secondary_clusters": [
+    "exclusion_conditionality"
+   ]
+  },
+  "horizon.budget_2028_34": {
+   "cluster": "funding_programme",
+   "stake_class": "budget"
+  },
+  "horizon.success_rate": {
+   "cluster": "funding_programme"
+  },
+  "funding.route": {
+   "cluster": "funding_programme"
+  },
+  "eu_entities.export_access": {
+   "cluster": "eu_competence"
+  },
+  "eu_bilateral_agreements": {
+   "cluster": "eu_competence"
+  },
+  "materials.critical_raw": {
+   "cluster": "materials_energy"
+  },
+  "energy.grid": {
+   "cluster": "materials_energy"
+  },
+  "energy.zinc_air_cell": {
+   "cluster": "materials_energy"
+  },
+  "finance.us_hyperscaler_debt_exposure": {
+   "cluster": "capital_markets"
+  },
+  "finance.gulf_capital": {
+   "cluster": "capital_markets"
+  },
+  "goal.strategic_autonomy": {
+   "cluster": "strategic_goals"
+  },
+  "health.microbiome_project": {
+   "cluster": "health"
+  },
+  "research.collaboration": {
+   "cluster": "research_system"
+  },
+  "research.system_capacity": {
+   "cluster": "research_system",
+   "stake_class": "capability"
+  },
+  "research.system_governance": {
+   "cluster": "research_system",
+   "stake_class": "rule"
+  },
+  "research.assessment": {
+   "cluster": "research_system"
+  },
+  "research.system_efficiency": {
+   "cluster": "research_system",
+   "stake_class": "capability"
+  },
+  "research.knowledge_transfer": {
+   "cluster": "research_system"
+  },
+  "research.workforce_quality": {
+   "cluster": "research_system"
+  },
+  "research.infrastructure": {
+   "cluster": "research_infrastructure",
+   "stake_class": "flagship"
+  },
+  "research.infrastructure_access": {
+   "cluster": "research_infrastructure"
+  },
+  "research.public_support": {
+   "cluster": "research_infrastructure"
+  },
+  "ai.governance": {
+   "cluster": "ai_governance",
+   "stake_class": "rule"
+  },
+  "ai.adoption": {
+   "cluster": "ai_governance"
+  },
+  "ai.public_sector_capacity": {
+   "cluster": "ai_governance",
+   "stake_class": "capability"
+  },
+  "ai.research_use": {
+   "cluster": "ai_governance"
+  },
+  "ai.research_governance": {
+   "cluster": "ai_governance",
+   "stake_class": "rule"
+  },
+  "ai.workforce_evaluation": {
+   "cluster": "ai_governance"
+  },
+  "digital.sovereignty": {
+   "cluster": "digital_governance",
+   "secondary_clusters": [
+    "strategic_goals"
+   ],
+   "stake_class": "capability"
+  },
+  "digital.governance": {
+   "cluster": "digital_governance",
+   "stake_class": "rule"
+  },
+  "digital.infrastructure": {
+   "cluster": "digital_governance",
+   "stake_class": "capability"
+  },
+  "digital.international_partnerships": {
+   "cluster": "digital_governance"
+  },
+  "digital.public_procurement": {
+   "cluster": "digital_governance",
+   "stake_class": "rule"
+  },
+  "quantum.communication_infrastructure": {
+   "cluster": "quantum",
+   "stake_class": "flagship"
+  },
+  "quantum.governance": {
+   "cluster": "quantum",
+   "stake_class": "rule"
+  },
+  "materials.advanced": {
+   "cluster": "materials_energy",
+   "stake_class": "capability"
+  },
+  "defence.innovation_funding": {
+   "cluster": "defence_dual_use",
+   "stake_class": "budget"
+  },
+  "defence.drone_capability": {
+   "cluster": "defence_dual_use",
+   "stake_class": "capability"
+  },
+  "defence.drone_research": {
+   "cluster": "defence_dual_use"
+  },
+  "innovation.regional_capacity": {
+   "cluster": "innovation_ecosystem",
+   "stake_class": "capability"
+  },
+  "innovation.deep_tech_startups": {
+   "cluster": "innovation_ecosystem"
+  },
+  "innovation.system_performance": {
+   "cluster": "innovation_ecosystem",
+   "stake_class": "capability"
+  },
+  "innovation.dual_use": {
+   "cluster": "defence_dual_use"
+  },
+  "innovation.green_technology": {
+   "cluster": "green_transition"
+  },
+  "finance.strategic_investment": {
+   "cluster": "capital_markets",
+   "stake_class": "budget"
+  },
+  "finance.venture_capital": {
+   "cluster": "capital_markets"
+  },
+  "finance.digital_market_infrastructure": {
+   "cluster": "capital_markets",
+   "stake_class": "rule"
+  },
+  "industrial.ev_capacity": {
+   "cluster": "industrial_competitiveness",
+   "stake_class": "capability"
+  },
+  "industrial.technology_complexity": {
+   "cluster": "industrial_competitiveness",
+   "stake_class": "capability"
+  },
+  "industrial.competitiveness": {
+   "cluster": "industrial_competitiveness",
+   "stake_class": "capability"
+  },
+  "cybersecurity.sme_resilience": {
+   "cluster": "cybersecurity",
+   "stake_class": "capability"
+  },
+  "green.circular_economy": {
+   "cluster": "green_transition"
+  },
+  "green.innovation": {
+   "cluster": "green_transition"
+  },
+  "health.stem_cell_platform": {
+   "cluster": "health"
+  },
+  "health.data_infrastructure": {
+   "cluster": "health",
+   "stake_class": "capability"
+  },
+  "critical_infrastructure.resilience": {
+   "cluster": "critical_infrastructure",
+   "stake_class": "capability"
+  },
+  "chips.international_cooperation": {
+   "cluster": "chips"
+  },
+  "methods.creativity": {
+   "cluster": "methods"
+  },
+  "methods.foresight": {
+   "cluster": "methods"
+  },
+  "methods.horizon_scanning": {
+   "cluster": "methods"
+  },
+  "methods.delphi": {
+   "cluster": "methods"
+  },
+  "methods.scenario": {
+   "cluster": "methods"
+  },
+  "methods.roadmapping": {
+   "cluster": "methods"
+  },
+  "methods.technology_detection": {
+   "cluster": "methods"
+  },
+  "methods.evaluation": {
+   "cluster": "methods"
+  },
+  "methods.anticipatory_governance": {
+   "cluster": "methods"
+  },
+  "methods.robust_policy": {
+   "cluster": "methods"
+  },
+  "methods.system_modelling": {
+   "cluster": "methods"
+  },
+  "econsec.strategy": {
+   "cluster": "economic_security_strategy",
+   "stake_class": "rule"
+  },
+  "econsec.risk_assessment": {
+   "cluster": "economic_security_strategy",
+   "stake_class": "rule"
+  },
+  "econsec.toolbox_coordination": {
+   "cluster": "economic_security_strategy",
+   "stake_class": "rule"
+  },
+  "econsec.member_state_alignment": {
+   "cluster": "eu_competence"
+  },
+  "dependency.import_concentration": {
+   "cluster": "supply_dependencies",
+   "stake_class": "capability"
+  },
+  "dependency.single_supplier": {
+   "cluster": "supply_dependencies",
+   "stake_class": "capability"
+  },
+  "supply_chain.diversification": {
+   "cluster": "supply_dependencies",
+   "stake_class": "capability"
+  },
+  "supply_chain.stockpile": {
+   "cluster": "supply_dependencies",
+   "stake_class": "capability"
+  },
+  "materials.rare_earths": {
+   "cluster": "materials_energy",
+   "stake_class": "capability"
+  },
+  "materials.processing_capacity": {
+   "cluster": "materials_energy",
+   "stake_class": "capability"
+  },
+  "materials.strategic_project": {
+   "cluster": "materials_energy",
+   "stake_class": "flagship"
+  },
+  "materials.export_restriction": {
+   "cluster": "export_controls",
+   "stake_class": "rule"
+  },
+  "energy.gas_supply": {
+   "cluster": "energy_security",
+   "stake_class": "capability"
+  },
+  "energy.lng_imports": {
+   "cluster": "energy_security",
+   "stake_class": "capability"
+  },
+  "energy.price_level": {
+   "cluster": "energy_security"
+  },
+  "export_control.dual_use_list": {
+   "cluster": "export_controls",
+   "stake_class": "rule"
+  },
+  "export_control.third_country_regime": {
+   "cluster": "export_controls",
+   "stake_class": "rule"
+  },
+  "outbound_investment.screening": {
+   "cluster": "investment_screening",
+   "stake_class": "rule"
+  },
+  "fdi.screening_regulation": {
+   "cluster": "investment_screening",
+   "stake_class": "rule"
+  },
+  "fdi.screening_decision": {
+   "cluster": "investment_screening",
+   "stake_class": "rule"
+  },
+  "fdi.inbound_flows": {
+   "cluster": "investment_screening"
+  },
+  "fdi.strategic_acquisition": {
+   "cluster": "investment_screening"
+  },
+  "foreign_subsidies.investigation": {
+   "cluster": "trade_defence",
+   "stake_class": "rule"
+  },
+  "trade_defence.anti_dumping": {
+   "cluster": "trade_defence",
+   "stake_class": "rule"
+  },
+  "trade_defence.anti_subsidy": {
+   "cluster": "trade_defence",
+   "stake_class": "rule"
+  },
+  "trade_defence.safeguard": {
+   "cluster": "trade_defence",
+   "stake_class": "rule"
+  },
+  "trade.overcapacity": {
+   "cluster": "trade_defence"
+  },
+  "trade.tariffs_on_eu": {
+   "cluster": "trade_policy"
+  },
+  "trade.eu_countermeasures": {
+   "cluster": "trade_policy",
+   "stake_class": "rule"
+  },
+  "trade.market_access": {
+   "cluster": "trade_policy"
+  },
+  "trade.agreement": {
+   "cluster": "partnerships",
+   "stake_class": "rule"
+  },
+  "trade.wto_compatibility": {
+   "cluster": "trade_policy",
+   "stake_class": "rule"
+  },
+  "partnership.critical_minerals": {
+   "cluster": "partnerships",
+   "stake_class": "flagship"
+  },
+  "partnership.like_minded_coordination": {
+   "cluster": "partnerships"
+  },
+  "partnership.global_gateway": {
+   "cluster": "partnerships",
+   "stake_class": "budget"
+  },
+  "coercion.incident": {
+   "cluster": "coercion_sanctions"
+  },
+  "coercion.anti_coercion_instrument": {
+   "cluster": "coercion_sanctions",
+   "stake_class": "rule"
+  },
+  "sanctions.package": {
+   "cluster": "coercion_sanctions",
+   "stake_class": "rule"
+  },
+  "sanctions.circumvention": {
+   "cluster": "coercion_sanctions"
+  },
+  "sanctions.secondary_exposure": {
+   "cluster": "coercion_sanctions"
+  },
+  "infrastructure.foreign_ownership": {
+   "cluster": "critical_infrastructure"
+  },
+  "infrastructure.high_risk_vendor": {
+   "cluster": "critical_infrastructure",
+   "stake_class": "rule"
+  },
+  "infrastructure.subsea_cables": {
+   "cluster": "critical_infrastructure",
+   "stake_class": "capability"
+  },
+  "industry.manufacturing_capacity": {
+   "cluster": "industrial_competitiveness",
+   "stake_class": "capability"
+  },
+  "industry.european_preference": {
+   "cluster": "industrial_competitiveness",
+   "stake_class": "rule"
+  },
+  "industry.plant_relocation": {
+   "cluster": "industrial_competitiveness"
+  },
+  "defence.production_capacity": {
+   "cluster": "defence_dual_use",
+   "stake_class": "capability"
+  },
+  "finance.euro_international_role": {
+   "cluster": "finance_payments"
+  },
+  "finance.payment_infrastructure": {
+   "cluster": "finance_payments",
+   "stake_class": "capability"
+  },
+  "medicines.critical_supply": {
+   "cluster": "medicines_supply",
+   "stake_class": "capability"
+  }
+ },
+ "object_aliases": {
+  "compute.capacity_in_europe": "compute.capacity"
+ },
+ "mechanisms": [
+  "procures",
+  "builds",
+  "funds",
+  "recruits",
+  "retains",
+  "screens",
+  "restricts",
+  "licenses",
+  "conditions",
+  "excludes",
+  "associates",
+  "standardises",
+  "certifies",
+  "assesses",
+  "sells",
+  "supplies",
+  "proposes",
+  "adopts",
+  "evaluates",
+  "harmonises",
+  "exempts",
+  "reconciles",
+  "substitutes",
+  "diversifies",
+  "adds_capacity",
+  "regulates",
+  "requires",
+  "fast_tracks",
+  "refers",
+  "feeds_into",
+  "secures",
+  "pre_clears",
+  "measures",
+  "advocates",
+  "opposes",
+  "collaborates",
+  "coordinates",
+  "prioritises",
+  "allocates",
+  "governs",
+  "transfers",
+  "invests",
+  "trains",
+  "launches",
+  "aligns",
+  "integrates",
+  "detects",
+  "automates",
+  "supports",
+  "tariffs",
+  "retaliates",
+  "coerces",
+  "sanctions",
+  "blocks",
+  "acquires",
+  "relocates",
+  "stockpiles",
+  "partners"
+ ],
+ "absorbers": [
+  "harmonises",
+  "exempts",
+  "reconciles",
+  "substitutes",
+  "diversifies",
+  "adds_capacity",
+  "secures",
+  "pre_clears"
+ ],
+ "role_expected_kinds": {
+  "commitment": [
+   "action"
+  ],
+  "coupling": [
+   "action",
+   "effect",
+   "diagnosis"
+  ],
+  "propagation": [
+   "effect",
+   "diagnosis"
+  ],
+  "exposure": [
+   "diagnosis",
+   "effect"
+  ],
+  "trigger": [
+   "action",
+   "effect",
+   "diagnosis",
+   "advocacy"
+  ],
+  "criterion_a": [
+   "action",
+   "diagnosis"
+  ],
+  "criterion_b": [
+   "action",
+   "diagnosis"
+  ],
+  "arbitration_gap": [
+   "diagnosis"
+  ],
+  "divergence": [
+   "effect",
+   "diagnosis"
+  ],
+  "unresolved_need": [
+   "diagnosis",
+   "advocacy"
+  ],
+  "existing_structure": [
+   "action"
+  ],
+  "live_connection": [
+   "action"
+  ],
+  "receiving_instrument": [
+   "action"
+  ],
+  "precedent": [
+   "diagnosis",
+   "effect"
+  ],
+  "payoff_evidence": [
+   "effect"
+  ],
+  "protecting_instrument": [
+   "action"
+  ],
+  "conversion_condition": [
+   "diagnosis",
+   "effect"
+  ],
+  "enabling_reform": [
+   "action"
+  ],
+  "historical_relation": [
+   "diagnosis",
+   "effect"
+  ],
+  "side_a": [
+   "action",
+   "effect"
+  ],
+  "side_b": [
+   "action",
+   "effect"
+  ],
+  "success_condition": [
+   "action",
+   "advocacy"
+  ],
+  "delivery_instrument": [
+   "action"
+  ],
+  "measurement_blind_spot": [
+   "diagnosis"
+  ]
+ }
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive">
+<title>EU economic security · Trends &amp; Counter-Trends</title>
+<link rel="stylesheet" href="../radar.css?v=28">
+<script src="../radar_data.js?v=28.1"></script>
+
+
+<!-- Legacy regression tokens only: reform.css?v=23.0 · site-shell.js?v=23.0 -->
+</head>
+<body>
+<header><div class="wrap top"><div><div class="kicker">Competing directions</div><h1>Trends &amp; Counter-Trends</h1><p class="lede">Each pair shows two forces pulling in different directions. The numbers show their relative pull, not probabilities.</p></div><nav class="nav"><a href="../">Start</a><a href="../radar/">Main Radar</a><a href="../read/">Read At Least This</a><a href="../frontier/quick/">Matrix</a><a class="primary" href="./">Trends</a><a href="../priorities/">Risks &amp; Opportunities</a><a href="../shocks/">External Shocks</a></nav></div></header>
+<section class="core-flow"><div class="wrap flow"><a href="../radar/">1 · Radar</a><span>→</span><a href="../frontier/quick/">2 · Matrix</a><span>→</span><a class="current" href="./">3 · Trends</a><span>→</span><a href="../phenomena/">4 · Ongoing phenomena</a><span>→</span><a href="../priorities/">5 · Risks &amp; opportunities</a><span>→</span><a href="../shocks/">6 · External shocks</a></div></section>
+<main class="wrap">
+<section class="method"><div class="method-head"><h2>How to read these pairs</h2><p class="method-note">The two sides can strengthen at the same time. Older material is shown only when it adds useful context.</p></div><div id="corpusLine" class="corpus-line"></div></section>
+<div id="pairs" class="pair-list"><div class="empty">Loading</div></div>
+</main>
+<script src="../reader_rank.js?v=21.7"></script><script src="../reader_style.js?v=28.3"></script><script src="../historical/reasoning_context.js?v=1"></script><script src="trends.js?v=21.8"></script>
+<script>
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function surface(v){return globalThis.RadarReaderStyle?.surfaceText?.(v)||String(v||'')}
+function fmtDate(v){if(!v)return '';const d=new Date(v);if(Number.isNaN(d.getTime()))return String(v);return new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric'}).format(d)}
+function ev(xs){return `<ol class="evidence">${xs.map(e=>{const x=e.row||e,t=surface(x.title||x.headline||x.what||'Source'),link=x.link||x.url||'',source=String(x.source||'').trim(),date=fmtDate(x.date);return `<li><div class="title">${link?`<a href="${esc(link)}" target="_blank" rel="noopener">${esc(t)}</a>`:esc(t)}</div><div class="meta">${source?`<span>${esc(source)}</span>`:''}${date?`<span>${esc(date)}</span>`:''}</div></li>`}).join('')}</ol>`}
+function evidenceBlock(side){const older=side.history?.length?`<div class="older-label">Earlier sources</div>${ev(side.history.map(row=>({row})))}`:'';return `<details><summary>Sources</summary>${ev(side.evidence)}${older}</details>`}
+const TREND_DISTANCE=new Map();
+const TREND_DISPLAY_LIMIT=30;
+function trendDistance(x){return x?.emergent?(TREND_DISTANCE.get(String(x.id||'').trim())||4):2}
+function pair(x){
+  const l=globalThis.RadarReaderStyle?.pagePair?.(x.left.plain,x.left.why,20,20)||x.left;
+  const r=globalThis.RadarReaderStyle?.pagePair?.(x.right.plain,x.right.why,20,20)||x.right;
+  const lt=surface(x.left.title),rt=surface(x.right.title);
+  const ranges=x.emergent&&Array.isArray(x.pullRange?.left)&&x.pullRange.left.length===2&&Array.isArray(x.pullRange?.right)&&x.pullRange.right.length===2;
+  const st=x.actionStats||{};
+  const rangeNote='';
+  const composition=x.composition?`<p class="why">${esc(x.composition)}</p>`:'';
+  const flip=x.flip?`<p class="why"><strong>What to watch next:</strong> ${esc(x.flip)}</p>`:'';
+  return `<article class="pair" data-obviousness="${trendDistance(x)}"><div class="tug-score" aria-label="Evidence pull ${x.left.pull} to ${x.right.pull}"><strong>${x.left.pull}</strong><div class="tug-track" aria-hidden="true"><span class="tug-left" data-pull="${x.left.pull}"></span><span class="tug-right" data-pull="${x.right.pull}"></span></div><strong>${x.right.pull}</strong></div>${rangeNote}<div class="axis"><section class="side"><h3>${esc(lt)}</h3>${l.what&&l.what!==lt?`<p class="plain">${esc(l.what)}</p>`:''}${l.why&&l.why!==l.what?`<p class="why">${esc(l.why)}</p>`:''}${evidenceBlock(x.left)}</section><section class="side right"><h3>${esc(rt)}</h3>${r.what&&r.what!==rt?`<p class="plain">${esc(r.what)}</p>`:''}${r.why&&r.why!==r.what?`<p class="why">${esc(r.why)}</p>`:''}${evidenceBlock(x.right)}</section></div>${composition}${flip}</article>`;
+}
+async function loadJson(url){try{const r=await fetch(url,{cache:'no-store'});if(!r.ok)return {};return await r.json()}catch(_){return {}}}
+function wowCyclePairs(items){const buckets=new Map([5,4,3,2,1].map(w=>[w,[]]));for(const x of items||[]){const w=Math.max(1,Math.min(5,trendDistance(x)));buckets.get(w).push(x)}const out=[];for(let round=0;round<3;round++)for(const w of [5,4,3,2,1]){const x=buckets.get(w)[round];if(x)out.push(x)}return out}
+function stockWords(){return ''}
+(async()=>{try{const [data,rawHistory,admission,reader,corrections]=await Promise.all([RadarData.load('../radar.json','../radar_seed.json'),loadJson('../historical/historical.json'),loadJson('../admission_state.json'),loadJson('../reader_text.json'),loadJson('../record_corrections.json')]);const history=RadarHistoricalReasoning.build(rawHistory,admission,reader,corrections);for(const c of (data?.high_order_inference?.candidates||[])){if(c?.product==='trend')TREND_DISTANCE.set(String(c.id||'').trim(),Number(c.wow)||Number(c.inferential_distance)||3)}const all=RadarTrends.build(data,history),xs=wowCyclePairs(all).slice(0,15),sel=data?.high_order_inference?.selection?.trend||{};document.getElementById('corpusLine').textContent='';document.getElementById('pairs').innerHTML=xs.length?xs.map(pair).join(''):'<div class="empty">No trend and counter-trend pair is clear enough to show yet.</div>';document.querySelectorAll('.tug-track [data-pull]').forEach(el=>{el.style.flexGrow=String(Math.max(0,Number(el.dataset.pull)||0))})}catch(e){console.error(e);document.getElementById('pairs').innerHTML='<div class="empty">Trend evidence is unavailable.</div>'}})();
+</script><script src="../reader_language.js?v=5"></script>
+<script src="../site-shell.js?v=29"></script>
+</body></html>

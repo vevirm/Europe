@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive">
+<title>Glossary · EU Economic Security Radar</title>
+
+<link rel="stylesheet" href="../radar.css?v=28">
+
+
+<!-- Legacy regression tokens only: reform.css?v=23.0 · site-shell.js?v=23.0 -->
+</head>
+<body>
+<header><div class="wrap top"><div><div class="kicker">Plain-English helper</div><h1>Glossary</h1><p class="lede">Short explanations of the policy, technology and geopolitics terms used across the Radar.</p></div><nav class="nav" aria-label="Primary site sections"><a href="../read/">Read At Least This</a><a href="../">Start</a><a href="../radar/">Main Radar</a><a href="../radar/#strand-c">Weak signals</a><a href="../frontier/quick/">Matrix</a><a href="../trends/">Trends</a><a href="../phenomena/">Ongoing Phenomena</a><a href="../priorities/">Risks &amp; Opportunities</a><a href="../historical/">Earlier Findings</a><a href="../literature/">Sources</a><a href="../stuff/">Stuff</a><a class="primary" href="./" aria-current="page">Glossary</a></nav></div></header>
+<main class="wrap">
+  <section class="intro-card"><b>Example: dual-use</b><p>Goods, software or technology that can serve civilian as well as military purposes. In this Radar, the important question is whether controls on them change European access, markets or control.</p></section>
+  <div class="tools"><input id="q" class="search" type="search" placeholder="Search a term, e.g. dual-use, de-risking, frontier compute" aria-label="Search glossary"><span id="count" class="count"></span></div>
+  <div id="letters" class="letters"></div>
+  <div id="grid" class="grid"></div>
+</main>
+<footer><div class="wrap">Definitions are intentionally plain English. They explain how the term is used in this Radar, not every legal or academic nuance.</div></footer>
+<script src="glossary.js?v=17.20.3"></script>
+<script>
+const TERMS=RadarGlossary.terms;
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const state={q:'',letter:'All'};
+function initial(x){return x.term[0].toUpperCase()}
+function slug(s){return s.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
+function renderLetters(){const ls=['All',...new Set(TERMS.map(initial))];document.getElementById('letters').innerHTML=ls.map(l=>`<button class="${state.letter===l?'active':''}" data-letter="${l}">${l}</button>`).join('')}
+function render(){const q=state.q.trim().toLowerCase();const xs=TERMS.filter(x=>(state.letter==='All'||initial(x)===state.letter)&&(!q||[x.term,x.category,x.meaning,x.why].join(' ').toLowerCase().includes(q)));document.getElementById('count').textContent=`${xs.length} terms`;document.getElementById('grid').innerHTML=xs.length?xs.map(x=>`<article class="term" id="${slug(x.term)}"><h2>${esc(x.term)} <span class="aka">${esc(x.category)}</span></h2><div class="label">In plain English</div><p>${esc(x.meaning)}</p><div class="label">Why it matters in this Radar</div><p class="why">${esc(x.why)}</p></article>`).join(''):'<div class="empty">No matching glossary term.</div>';renderLetters()}
+document.getElementById('q').addEventListener('input',e=>{state.q=e.target.value;state.letter='All';render()});document.getElementById('letters').addEventListener('click',e=>{const b=e.target.closest('[data-letter]');if(!b)return;state.letter=b.dataset.letter;render()});
+const p=new URLSearchParams(location.search);if(p.get('q')){state.q=p.get('q');document.getElementById('q').value=state.q}render();
+
+</script>
+<script src="../reader_language.js?v=5"></script>
+<script src="../site-shell.js?v=29"></script>
+</body></html>

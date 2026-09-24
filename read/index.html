@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive">
+<title>Read At Least This · EU Economic Security Radar</title>
+<link rel="stylesheet" href="../radar.css?v=28">
+<script src="../radar_data.js?v=28.1"></script>
+
+
+<!-- Legacy regression tokens only: reform.css?v=23.0 · site-shell.js?v=23.0 -->
+</head>
+<body>
+<main class="wrap"><div class="tree-list" id="trees"><div class="empty">Loading</div></div></main>
+<script src="../briefing/insights.js?v=22.2"></script><script src="../reader_style.js?v=28.3"></script><script src="issues.js?v=22.2"></script>
+<script>
+const surface=v=>globalThis.RadarReaderStyle?.surfaceText?.(v)||String(v||'');
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function nodeContent(n){
+  const q=encodeURIComponent(n?.query||n?.label||'');
+  const label=surface(n?.label); const source=n?.sourceLink?`<a class="node-title" href="${esc(n.sourceLink)}" target="_blank" rel="noopener" title="Open strongest supporting source">${esc(label)}</a>`:`<a class="node-title" href="../radar/?q=${q}" title="Show supporting Radar material">${esc(label)}</a>`;
+  const pair=globalThis.RadarReaderStyle?.pagePair?.(n?.what||'',n?.why||'',16,16)||{what:surface(n?.what),why:surface(n?.why)};
+  const what=pair.what?`<div class="node-what">${esc(pair.what)}</div>`:'';
+  return source+what;
+}
+function chart(x,i){
+  const subs=x.subs||[], leaves=x.leaves||[];
+  return `<section class="issue-chart" aria-label="Topic ${i+1}: ${esc(x.main.label)}"><div class="tree-grid">
+    <div class="node main" data-node="main">${nodeContent(x.main)}</div>
+    <div class="node sub one" data-node="sub1">${nodeContent(subs[0]||{label:'Current movement'})}</div>
+    <div class="node sub two" data-node="sub2">${nodeContent(subs[1]||{label:'Consequences'})}</div>
+    <div class="node leaf one" data-node="leaf1">${nodeContent(leaves[0]||{label:'Connected development'})}</div>
+    <div class="node leaf two" data-node="leaf2">${nodeContent(leaves[1]||{label:'Connected development'})}</div>
+    <div class="node leaf three" data-node="leaf3">${nodeContent(leaves[2]||{label:'Connected development'})}</div>
+    <svg class="tree-connectors" aria-hidden="true"></svg>
+  </div></section>`
+}
+function connectPath(parent,child,root){
+  const a=parent.getBoundingClientRect(),b=child.getBoundingClientRect(),r=root.getBoundingClientRect();
+  const x1=a.right-r.left,y1=a.top+a.height/2-r.top,x2=b.left-r.left,y2=b.top+b.height/2-r.top,mid=x1+(x2-x1)/2;
+  return `M ${x1} ${y1} H ${mid} V ${y2} H ${x2}`;
+}
+function drawTree(section){
+  const grid=section.querySelector('.tree-grid'),svg=section.querySelector('.tree-connectors');if(!grid||!svg)return;
+  const box=grid.getBoundingClientRect();svg.setAttribute('viewBox',`0 0 ${Math.max(1,box.width)} ${Math.max(1,box.height)}`);
+  svg.setAttribute('width',String(Math.max(1,box.width)));svg.setAttribute('height',String(Math.max(1,box.height)));
+  const get=k=>grid.querySelector(`[data-node="${k}"]`);
+  const edges=[['main','sub1'],['main','sub2'],['sub1','leaf1'],['sub1','leaf2'],['sub2','leaf3']];
+  svg.innerHTML=edges.map(([a,b])=>`<path d="${connectPath(get(a),get(b),grid)}"></path>`).join('');
+}
+function drawAllTrees(){document.querySelectorAll('.issue-chart').forEach(drawTree)}
+let treeResizeTimer;addEventListener('resize',()=>{clearTimeout(treeResizeTimer);treeResizeTimer=setTimeout(drawAllTrees,80)});
+(async()=>{try{const d=await RadarData.load('../radar.json','../radar_seed.json');const items=[...(d.strand_a||[]),...(d.strand_c||[])];const trees=globalThis.RadarIssues?.buildTrees?RadarIssues.buildTrees(items,{count:8}):[];document.getElementById('trees').innerHTML=trees.length?trees.map(chart).join(''):'<div class="empty">No topic maps available.</div>';requestAnimationFrame(()=>requestAnimationFrame(drawAllTrees))}catch(e){console.error(e);document.getElementById('trees').innerHTML='<div class="empty">Topic maps unavailable.</div>'}})();
+</script>
+<script src="../reader_language.js?v=5"></script>
+<script src="../site-shell.js?v=29"></script>
+</body></html>

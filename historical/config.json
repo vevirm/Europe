@@ -1,0 +1,691 @@
+{
+ "profile_version": "v24.0-main-aligned-age-aware-a-durable-b",
+ "date_from": "2015-01-01",
+ "topics_per_scan": 4,
+ "sources_per_scan": 8,
+ "queries_per_topic": 2,
+ "openalex_per_query": 50,
+ "crossref_per_query": 50,
+ "crossref_relevance_query_mode": "title",
+ "direct_pages_per_source": 10,
+ "source_adapter_pages_per_source": 60,
+ "source_adapter_max_hub_fetches": 8,
+ "metadata_rescue_priority_enabled": true,
+ "metadata_rescue_priority_min_score": 10,
+ "openalex_missing_abstract_enrichment_per_scan": 24,
+ "openalex_missing_abstract_enrichment_per_query": 3,
+ "crossref_missing_abstract_enrichment_per_scan": 36,
+ "crossref_missing_abstract_enrichment_per_query": 3,
+ "missing_abstract_enrichment_timeout_seconds": 9,
+ "low_yield_trigger_max_new_items": 7,
+ "low_yield_fresh_topics": 4,
+ "low_yield_fresh_sources": 8,
+ "full_rescue_run_enabled": false,
+ "full_rescue_run_trigger_max_new_items": 7,
+ "max_items": 0,
+ "minimum_admission_score": 93,
+ "topics": [
+  {
+   "id": "strategy",
+   "label": "EU economic security strategy and toolbox",
+   "queries": [
+    "European Union economic security strategy toolbox",
+    "open strategic autonomy European Union trade policy"
+   ],
+   "url_terms": [
+    "economic-security",
+    "strategic-autonomy"
+   ]
+  },
+  {
+   "id": "coercion",
+   "label": "Economic coercion and weaponised interdependence",
+   "queries": [
+    "economic coercion European Union China Lithuania",
+    "weaponised interdependence Europe chokepoints"
+   ],
+   "url_terms": [
+    "coercion",
+    "anti-coercion",
+    "interdependence"
+   ]
+  },
+  {
+   "id": "dependencies",
+   "label": "Strategic dependencies and supply chains",
+   "queries": [
+    "EU strategic dependencies import concentration",
+    "European supply chain resilience geopolitics"
+   ],
+   "url_terms": [
+    "dependencies",
+    "supply-chain"
+   ]
+  },
+  {
+   "id": "raw_materials",
+   "label": "Critical raw materials",
+   "queries": [
+    "critical raw materials Europe supply security China",
+    "rare earths Europe dependency"
+   ],
+   "url_terms": [
+    "raw-materials",
+    "critical-minerals",
+    "rare-earth"
+   ]
+  },
+  {
+   "id": "energy",
+   "label": "Energy security",
+   "queries": [
+    "European energy security Russia gas dependency",
+    "EU energy diversification LNG geopolitics"
+   ],
+   "url_terms": [
+    "energy-security",
+    "gas",
+    "lng"
+   ]
+  },
+  {
+   "id": "technology",
+   "label": "Technology security and export controls",
+   "queries": [
+    "EU export controls dual-use technology",
+    "technology security Europe China semiconductors"
+   ],
+   "url_terms": [
+    "export-control",
+    "dual-use",
+    "technology-security"
+   ]
+  },
+  {
+   "id": "investment",
+   "label": "Investment screening and foreign acquisitions",
+   "queries": [
+    "FDI screening Europe national security",
+    "Chinese acquisitions Europe strategic sectors"
+   ],
+   "url_terms": [
+    "fdi",
+    "screening",
+    "acquisition"
+   ]
+  },
+  {
+   "id": "trade_defence",
+   "label": "Trade defence, subsidies and overcapacity",
+   "queries": [
+    "EU trade defence China subsidies overcapacity",
+    "EU anti-dumping solar steel China"
+   ],
+   "url_terms": [
+    "trade-defence",
+    "anti-dumping",
+    "subsidies"
+   ]
+  },
+  {
+   "id": "sanctions",
+   "label": "Sanctions and their effects",
+   "queries": [
+    "EU sanctions Russia effectiveness",
+    "financial sanctions Europe secondary sanctions"
+   ],
+   "url_terms": [
+    "sanctions"
+   ]
+  },
+  {
+   "id": "transatlantic",
+   "label": "Transatlantic economic relations",
+   "queries": [
+    "EU US trade relations tariffs economic security",
+    "transatlantic trade and technology council"
+   ],
+   "url_terms": [
+    "transatlantic",
+    "eu-us"
+   ]
+  },
+  {
+   "id": "partnerships",
+   "label": "Trade agreements and like-minded partners",
+   "queries": [
+    "EU trade agreements geopolitics partners",
+    "EU Japan economic partnership security"
+   ],
+   "url_terms": [
+    "trade-agreement",
+    "partnership"
+   ]
+  },
+  {
+   "id": "infrastructure",
+   "label": "Critical infrastructure and foreign ownership",
+   "queries": [
+    "critical infrastructure foreign ownership Europe ports",
+    "5G security high-risk vendors Europe"
+   ],
+   "url_terms": [
+    "critical-infrastructure",
+    "5g",
+    "ports"
+   ]
+  },
+  {
+   "id": "industry",
+   "label": "Industrial policy and competitiveness",
+   "queries": [
+    "European industrial policy strategic sectors competitiveness",
+    "EU state aid strategic industries geopolitics"
+   ],
+   "url_terms": [
+    "industrial-policy",
+    "competitiveness"
+   ]
+  },
+  {
+   "id": "finance",
+   "label": "Finance, payments and the euro",
+   "queries": [
+    "international role of the euro geopolitics",
+    "European payment systems sovereignty"
+   ],
+   "url_terms": [
+    "euro",
+    "payments"
+   ]
+  }
+ ],
+ "elite_sources": [
+  {
+   "name": "European Commission — Trade and Economic Security",
+   "domain": "policy.trade.ec.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "European Commission",
+   "domain": "commission.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "European Commission — Internal Market, Industry",
+   "domain": "single-market-economy.ec.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "European Commission — Economy and Finance",
+   "domain": "economy-finance.ec.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "European Commission — Energy",
+   "domain": "energy.ec.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "European Commission — Defence Industry and Space",
+   "domain": "defence-industry-space.ec.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "European Commission — Digital Strategy",
+   "domain": "digital-strategy.ec.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "European Commission — International Partnerships",
+   "domain": "international-partnerships.ec.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "Joint Research Centre",
+   "domain": "joint-research-centre.ec.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "JRC Publications Repository",
+   "domain": "publications.jrc.ec.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "JRC Raw Materials Information System",
+   "domain": "rmis.jrc.ec.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "European External Action Service",
+   "domain": "eeas.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "Council of the European Union",
+   "domain": "consilium.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "European Parliament",
+   "domain": "europarl.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "Publications Office of the EU",
+   "domain": "op.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "EUR-Lex",
+   "domain": "eur-lex.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "European Central Bank",
+   "domain": "ecb.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "European Investment Bank",
+   "domain": "eib.org",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "European Court of Auditors",
+   "domain": "eca.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "EU Institute for Security Studies",
+   "domain": "iss.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "ENISA",
+   "domain": "enisa.europa.eu",
+   "kind": "official_eu",
+   "authority": 58
+  },
+  {
+   "name": "OECD",
+   "domain": "oecd.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "IMF",
+   "domain": "imf.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "World Bank",
+   "domain": "worldbank.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "WTO",
+   "domain": "wto.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "UNCTAD",
+   "domain": "unctad.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "International Energy Agency",
+   "domain": "iea.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "Bank for International Settlements",
+   "domain": "bis.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "Bruegel",
+   "domain": "bruegel.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "European Council on Foreign Relations",
+   "domain": "ecfr.eu",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "CEPS",
+   "domain": "ceps.eu",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "Centre for European Reform",
+   "domain": "cer.eu",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "European Policy Centre",
+   "domain": "epc.eu",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "Jacques Delors Centre",
+   "domain": "delorscentre.eu",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "Institut Jacques Delors",
+   "domain": "institutdelors.eu",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "MERICS",
+   "domain": "merics.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "Kiel Institute for the World Economy",
+   "domain": "ifw-kiel.de",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "ifo Institute",
+   "domain": "ifo.de",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "CEPII",
+   "domain": "cepii.fr",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "CEPR",
+   "domain": "cepr.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "ECIPE",
+   "domain": "ecipe.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "SWP Berlin",
+   "domain": "swp-berlin.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "DGAP",
+   "domain": "dgap.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "IFRI",
+   "domain": "ifri.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "Institut Montaigne",
+   "domain": "institutmontaigne.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "Clingendael",
+   "domain": "clingendael.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "Egmont Institute",
+   "domain": "egmontinstitute.be",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "ISPI",
+   "domain": "ispionline.it",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "IAI",
+   "domain": "iai.it",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "Elcano Royal Institute",
+   "domain": "realinstitutoelcano.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "FIIA",
+   "domain": "fiia.fi",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "PISM",
+   "domain": "pism.pl",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "wiiw",
+   "domain": "wiiw.ac.at",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "CELIS Institute",
+   "domain": "celis.institute",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "Chatham House",
+   "domain": "chathamhouse.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "IISS",
+   "domain": "iiss.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "Peterson Institute for International Economics",
+   "domain": "piie.com",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "CSIS",
+   "domain": "csis.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "Rhodium Group",
+   "domain": "rhg.com",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "Carnegie Endowment",
+   "domain": "carnegieendowment.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "Atlantic Council",
+   "domain": "atlanticcouncil.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "German Marshall Fund",
+   "domain": "gmfus.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "Hinrich Foundation",
+   "domain": "hinrichfoundation.com",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "Global Trade Alert",
+   "domain": "globaltradealert.org",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "BusinessEurope",
+   "domain": "businesseurope.eu",
+   "kind": "elite_institute",
+   "authority": 50
+  },
+  {
+   "name": "EU Chamber of Commerce in China",
+   "domain": "europeanchamber.com.cn",
+   "kind": "elite_institute",
+   "authority": 50
+  }
+ ],
+ "source_adapters": {
+  "policy.trade.ec.europa.eu": [
+   "/news_en",
+   "/analysis-and-assessment_en"
+  ],
+  "joint-research-centre.ec.europa.eu": [
+   "/jrc-news-and-updates"
+  ],
+  "bruegel.org": [
+   "/publications"
+  ]
+ },
+ "top_journals": [
+  "Journal of European Public Policy",
+  "Review of International Political Economy",
+  "Journal of Common Market Studies",
+  "International Organization",
+  "International Affairs",
+  "World Trade Review",
+  "Journal of International Economic Law",
+  "The World Economy",
+  "Review of World Economics",
+  "Economic Policy",
+  "Journal of International Economics",
+  "New Political Economy",
+  "Survival",
+  "International Security",
+  "Contemporary Security Policy",
+  "European Journal of International Relations",
+  "Journal of European Integration",
+  "European Foreign Affairs Review",
+  "Common Market Law Review",
+  "Intereconomics",
+  "Energy Policy",
+  "Resources Policy",
+  "Mineral Economics",
+  "Global Policy",
+  "Business and Politics",
+  "Journal of International Business Policy",
+  "Journal of International Business Studies",
+  "The Washington Quarterly",
+  "Journal of Strategic Studies",
+  "European Security",
+  "Asia Europe Journal",
+  "Journal of Contemporary China",
+  "Politics and Governance",
+  "West European Politics",
+  "Globalizations",
+  "Security Dialogue",
+  "Research Policy",
+  "Energy Economics",
+  "European Economic Review",
+  "International Studies Quarterly"
+ ],
+ "minimum_runtime_seconds": 1080,
+ "minimum_runtime_topics_per_wave": 2,
+ "minimum_runtime_sources_per_wave": 4,
+ "minimum_runtime_max_extra_waves": 200,
+ "curated_seed_queries_per_scan": 8,
+ "source_policy_note": "Official EU and elite economic/foreign-policy institutes and top journals on economic security, trade, investment and geoeconomics.",
+ "main_radar_window_months": 6,
+ "cutoff_rule": "Historical sources are those published before the rolling main-radar boundary (today minus main_radar_window_months). Content may itself be forward-looking.",
+ "year_preference_latest_bonus": 12,
+ "year_preference_decay_per_year": 2,
+ "target_new_items_per_scan": 8,
+ "cumulative_retention": true,
+ "historical_time_band_years": 2,
+ "time_bands_per_scan": 1,
+ "gap_cells_per_scan": 2,
+ "gap_sources_per_cell": 4,
+ "direct_source_depth_pages": 4,
+ "historical_author_backfill_enabled": true,
+ "historical_authors_per_scan": 4,
+ "historical_author_results_per_query": 30,
+ "historical_author_band_lookback": true,
+ "coverage_rotation_note": "Historical discovery rotates persistently across topic families, source batches, two-year publication bands, direct-source depth pages, curated seeds, known-good authors and shared Main queries. Each run keeps rotating fresh territory for essentially the full twenty-minute research window; reaching the item target does not stop discovery, and admission quality is never lowered.",
+ "api_result_depth_pages": 3,
+ "ignore_legacy_min_runtime_env": false,
+ "budget_seconds": 1200,
+ "shared_main_queries_per_scan": 18,
+ "shared_main_query_policy": "Historical rotates through the same Main A and B query grammar, but only inside publication windows strictly older than the rolling six-month cutoff.",
+ "admission_policy": "New historical items pass the same Main A/B gate_scope and final worthiness logic as live items. Publication age determines historical placement/coverage only, not substantive admission or merit; A and B both use an age-neutral merit component. C is never reconstructed historically.",
+ "schedule_note": "Every four hours at minute 57 UTC, after Main; full 20-minute research window with only a small final save margin; same A/B gate; only publication dates older than the rolling six-month Main window.",
+ "finalize_margin_seconds": 8,
+ "scanner_repair_profile_version": "v24.0-shared-main-ab-admission-durable-b",
+ "primary_evidence_seed_urls": [],
+ "primary_evidence_seed_urls_per_scan": 6,
+ "prefer_downloadable_primary_document": true,
+ "b_age_neutral_bonus": 8,
+ "historical_age_neutral_bonus": 8
+}

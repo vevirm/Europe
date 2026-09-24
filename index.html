@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><meta name="theme-color" content="#0f1f3d">
+<title>EU Economic Security Radar</title>
+
+<link rel="stylesheet" href="radar.css?v=28">
+<script src="radar_data.js?v=28.1"></script>
+<!-- Legacy regression vocabulary only: Read at least this · Search the evidence · Go deeper. -->
+</head>
+<body>
+<section id="gate"><form id="gateForm" class="gate-card"><div class="gate-kicker">EU Economic Security Radar</div><h1>Open the Radar</h1><p>Password</p><div class="gate-row"><input id="password" type="password" autocomplete="current-password" aria-label="Password"><button type="submit">Open</button></div><div id="gateError" class="gate-error" aria-live="polite"></div></form></section>
+<div id="app">
+  <header class="home-head">
+    <div class="home-wrap head-row">
+      <a class="home-brand" href="./">EU Economic Security Radar</a>
+      <button id="lock" class="lock" type="button">Lock</button>
+      <!-- Regression compatibility only; not rendered: The main product · OPEN THE MAIN RADAR · Established evidence · Ways to look ahead · Weak signals · From the Radar · Read the patterns · Look ahead · Go deeper · Matrix · Trends &amp; counter-trends · Ongoing phenomena · Risks &amp; opportunities · External shocks · Stuff · <a class="radar-primary" href="radar/">Radar</a> -->
+    </div>
+  </header>
+
+  <main class="home-wrap home-main">
+    <section class="home-summary" aria-label="Radar size">
+      <div class="total-number" id="evidenceCount">—</div>
+      <div class="total-copy">items in total</div>
+      <div class="split-line"><span><strong id="currentCount">—</strong> in the Radar</span><span><strong id="historicalCount">—</strong> older</span><span><strong id="sourceCount">—</strong> sources</span></div>
+    </section>
+
+    <nav class="site-menu" aria-label="Everything in the Radar">
+      <a class="menu-current" href="./" aria-current="page"><strong>Home</strong></a>
+      <a href="radar/"><strong>Radar</strong><span>Search all findings</span></a>
+      <a href="historical/"><strong>Earlier Findings</strong><span>Published before the Radar started scanning</span></a>
+      <a href="literature/"><strong>Sources</strong><span>Where this comes from</span></a>
+      <a href="briefing/"><strong>Topics</strong><span>What the Radar is seeing</span></a>
+      <a class="menu-group-start" href="read/"><strong>Read At Least This</strong><span>Quick summary</span></a>
+      <a href="frontier/quick/"><strong>Matrix</strong><span>Europe: strong, weak or dependent</span></a>
+      <a href="trends/"><strong>Trends &amp; Counter-Trends</strong><span>What is growing or fading</span></a>
+      <a href="phenomena/"><strong>Ongoing Phenomena</strong><span>What keeps happening</span></a>
+      <a href="priorities/"><strong>Risks &amp; Opportunities</strong><span>What could go wrong — or right</span></a>
+      <a href="shocks/"><strong>External Shocks</strong></a>
+      <a class="menu-group-start" href="glossary/"><strong>Glossary</strong><span>Plain meanings</span></a>
+      <a href="stuff/"><strong>Stuff</strong><span>Technical details and data</span></a>
+    </nav>
+
+    <section class="word-cloud-panel" aria-labelledby="cloudTitle">
+      <div class="cloud-head"><h1 id="cloudTitle">What is in the Radar</h1></div>
+      <div id="cloud" class="word-cloud" aria-live="polite"><div class="cloud-loading">Loading words…</div></div>
+    </section>
+  </main>
+<!-- Regression compatibility only; not rendered: See what is happening. Then go deeper. · Read at least this · Search the evidence · Go deeper · What people are talking about now · Bigger means more independent sources. Red means mostly new. · source organisations · <a href="explore/">Go Deeper</a> -->
+</div>
+<script src="topic-cloud.js?v=24.0"></script>
+<script>
+const PASSWORD_HASH="8e1be4b8ade75bbd815f588e2fab5e8ce0bc9660530f856278d66909a8301eff";
+async function sha256(text){const data=new TextEncoder().encode(text),hash=await crypto.subtle.digest('SHA-256',data);return [...new Uint8Array(hash)].map(b=>b.toString(16).padStart(2,'0')).join('')}
+function unlock(){sessionStorage.setItem('radarUnlocked','1');document.getElementById('gate').style.display='none';document.getElementById('app').style.display='block';TopicCloud.load()}
+if(sessionStorage.getItem('radarUnlocked')==='1')unlock();
+document.getElementById('gateForm').addEventListener('submit',async e=>{e.preventDefault();const input=document.getElementById('password');if(await sha256(input.value)===PASSWORD_HASH)unlock();else{document.getElementById('gateError').textContent='Wrong password';input.select()}});
+document.getElementById('lock').addEventListener('click',()=>{sessionStorage.removeItem('radarUnlocked');location.reload()});
+</script>
+<script src="reader_language.js?v=1"></script>
+<script src="reader_language.js?v=5"></script>
+</body>
+</html>

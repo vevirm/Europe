@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive">
+<title>Topics · EU Economic Security Radar</title>
+<link rel="stylesheet" href="../radar.css?v=28">
+<script src="../radar_data.js?v=28.1"></script>
+
+
+<!-- Legacy regression tokens only: reform.css?v=23.0 · site-shell.js?v=23.0 -->
+</head><body>
+<header><div class="wrap top"><div><div class="kicker">Topics</div><h1>What is changing</h1><p class="lede">Recent developments across the main geopolitical themes affecting Europe’s economic security.</p><div id="state" class="state">Loading</div></div><nav class="nav"><a href="../read/">Read At Least This</a><a href="../">Start</a><a href="../radar/">Main Radar</a><a href="../radar/#strand-c">Weak signals</a><a href="../frontier/quick/">Matrix</a><a href="../trends/">Trends</a><a href="../phenomena/">Ongoing Phenomena</a><a href="../priorities/">Risks &amp; Opportunities</a><a href="../shocks/">External Shocks</a><a href="../historical/">Earlier Findings</a><a href="../literature/">Sources</a><a href="../stuff/">Stuff</a></nav></div></header>
+<main class="wrap"><div id="topics"><div class="empty">Loading</div></div></main>
+<script src="insights.js?v=22.2"></script><script src="../reader_style.js?v=28.3"></script>
+<script>
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const topicNames={
+  "Raw materials":"Raw materials",
+  "Energy":"Energy",
+  "Supply chains & dependencies":"Supply chains and dependencies",
+  "Technology security":"Technology security",
+  "Investment & ownership":"Investment and ownership",
+  "Trade policy":"Trade policy",
+  "Coercion & sanctions":"Coercion and sanctions",
+  "Industry & competitiveness":"Industry and competitiveness",
+  "Critical infrastructure":"Critical infrastructure",
+  "Defence industry":"Defence industry",
+  "Finance & the euro":"Finance and the euro",
+  "Partners & agreements":"Partners and agreements",
+  "China & the US":"China and the US",
+  "Economic security strategy":"Economic security strategy"
+};
+function sentence(v){
+  let s=String(globalThis.RadarReaderStyle?.surfaceText?.(v)||v||'').replace(/\s+/g,' ').trim();
+  s=s.replace(/^(?:WHY|WHAT)\s*:\s*/i,'').replace(/^[•·\-–—]\s*/,'');
+  if(!s)return '';
+  s=s.charAt(0).toUpperCase()+s.slice(1);
+  if(!/[.!?]$/.test(s))s+='.';
+  return s;
+}
+function render(data){
+  const groups=(globalThis.RadarInsights?.buildInsights?.(data)||[]).map(g=>({...g,items:[...(g.items||[])].sort((a,b)=>Number(!!b.new_this_scan)-Number(!!a.new_this_scan)||String(b.date||'').localeCompare(String(a.date||'')))}));
+  document.getElementById('state').textContent='';
+  document.getElementById('topics').innerHTML=groups.length?groups.map(g=>{
+    const seen=new Set(), lines=[];
+    for(const x of g.items||[]){
+      const pair=globalThis.RadarReaderStyle?.radarPair?.(x)||{why:x.why_it_matters||x.relevance_note||''};
+      const line=sentence(pair.why);
+      const key=line.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+      if(line && !seen.has(key)){seen.add(key);lines.push(line)}
+      if(lines.length>=5)break;
+    }
+    const name=topicNames[g.name]||sentence(g.name).replace(/[.!?]$/,'');
+    return `<section class="topic"><div class="topic-head"><h2>${esc(name)}</h2></div><div class="items">${lines.map(line=>`<article class="item"><div class="item-top"><div><div class="why">${esc(line)}</div></div></div></article>`).join('')}</div></section>`;
+  }).join(''):'<div class="empty">No topics to show right now.</div>';
+}
+(async()=>{try{render(await RadarData.load('../radar.json','../radar_seed.json'))}catch(e){document.getElementById('state').textContent='';document.getElementById('topics').innerHTML='<div class="empty">The Radar could not be loaded.</div>'}})();
+</script><script src="../reader_language.js?v=5"></script>
+<script src="../site-shell.js?v=29"></script>
+</body></html>

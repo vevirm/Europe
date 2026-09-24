@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>External Shock · EU Economic Security Radar</title>
+<link rel="stylesheet" href="../radar.css?v=28.3">
+<script src="../radar_data.js?v=28.1"></script>
+
+
+<!-- Legacy regression tokens only: reform.css?v=23.0 · site-shell.js?v=23.0 -->
+</head>
+<body>
+<main class="wrap external-shock-main">
+  <div id="shockSummary" class="summary">Loading</div>
+  <ol id="shockList" class="external-shock-list"><li class="empty">Loading</li></ol>
+</main>
+<script src="../reader_rank.js?v=17.20.18"></script>
+<script src="scenarios.js?v=23.3"></script>
+<script>
+const clean=v=>String(v||'').replace(/\s+/g,' ').trim();
+const esc=v=>clean(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const norm=v=>clean(v).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+const SHOCK_DISPLAY_LIMIT=30;
+const SIMPLE={
+  direct_materials_cutoff:'A supplier country cuts exports of critical raw materials Europe cannot yet replace.',
+  direct_tariff_escalation:'A major trading partner imposes sweeping new tariffs on European goods.',
+  direct_infrastructure_sabotage:'Sabotage cuts cables, pipelines or grid links the European economy relies on.',
+  direct_energy_cutoff:'Europe\u2019s main remaining energy suppliers or routes are disrupted at once.',
+  direct_secondary_sanctions:'Foreign secondary sanctions force European firms to cut ordinary business.',
+  overcapacity_hollowing:'Subsidised imports close a strategic European industry faster than trade defence can act.',
+  screening_capital_gap:'Europe blocks a foreign takeover but has no European buyer ready.',
+  coercion_split:'Coercion against one member state splits the EU over its response.',
+  derisking_cost_backlash:'The costs of de-risking trigger a backlash that stalls the agenda.',
+  partner_alignment_gap:'Partners diverge on export controls, leaving Europe exposed.'
+};
+
+function shockExplanation(v){
+  const t=norm(v);
+  if(/drone capability.*spending squeeze/.test(t))return 'A sudden funding squeeze could pause procurement and testing, leaving specialist teams and equipment without a clear continuation path.';
+  if(/funding cut.*researcher retention/.test(t))return 'A sharp cut could end contracts or career support quickly enough to push researchers toward opportunities elsewhere.';
+  if(/computing capacity.*single thread|pull one supplier.*computing/.test(t))return 'If a critical supplier, service or component is cut off, European computing could lose usable capacity faster than it can be replaced.';
+  if(/breakthrough abroad.*quantum pilot/.test(t))return 'A major leap elsewhere could shift the technical benchmark so quickly that planned European facilities are forced into catch-up mode.';
+  if(/horizon budget.*bargaining chip/.test(t))return 'A political shift could turn long-term research funding into leverage, delaying commitments and making participation less predictable.';
+  if(/grid is rationed.*drone capability/.test(t))return 'Power rationing could force energy-intensive testing and production to compete with essential uses, slowing capability when demand is highest.';
+  if(/researcher retention.*closed doors|open science to closed doors/.test(t))return 'A sudden security tightening could narrow mobility, collaboration or access, making Europe less attractive to the researchers it wants to keep.';
+  if(/computing capacity goes dark|one breach.*computing/.test(t))return 'A serious breach could take shared computing services offline and interrupt many projects at once.';
+  if(/political turn.*horizon association|horizon association.*chopping block/.test(t))return 'A political decision could narrow or suspend participation even while formal cooperation structures still exist.';
+  if(/winter power squeeze.*materials/.test(t))return 'Energy shortages could pause energy-intensive processing and experiments, creating delays that cannot be solved by funding alone.';
+  if(/pull one supplier.*quantum|quantum testing.*supplier/.test(t))return 'Loss of a single critical supplier could halt testing if specialised components have no qualified substitute.';
+  if(/quantum testing.*ransomware|ransomware.*quantum/.test(t))return 'A cyberattack could disable shared testing infrastructure and strand multiple research teams at once.';
+  if(/security label.*quantum pilot|reclassification.*quantum/.test(t))return 'Reclassification could restrict who may access facilities or data, shrinking the talent pool and slowing collaboration.';
+  if(/conflict.*horizon association|horizon association.*conflict/.test(t))return 'A wider conflict could redirect public money and specialist staff away from collaborative research programmes.';
+  if(/licence stamped abroad.*defence|export.*defence innovation/.test(t))return 'A foreign export licence could delay or block access to technology needed to turn funding into usable capability.';
+  if(/cyberattack|computing service offline/.test(t))return 'A serious cyber incident could interrupt shared computing capacity before research teams have a workable substitute.';
+  if(/critical materials|advanced chips|cutoff/.test(t))return 'A supply cutoff could stop research or production where critical inputs have no fast substitute.';
+  if(/conflict|research corridor|displaces people/.test(t))return 'Conflict could disrupt researchers, facilities and collaborations at the same time, making lost capacity difficult to replace quickly.';
+  if(/partner restricts grants|researcher participation|data exchange/.test(t))return 'New restrictions could suddenly remove funding links, people, data or expertise that European teams rely on.';
+  if(/pulling researchers home|tightens research security/.test(t))return 'Talent loss combined with tighter security checks could weaken collaboration and specialist capacity at the same time.';
+  if(/sanctions|horizon europe partnership/.test(t))return 'Sanctions could leave a formal partnership in place while practical access to funds, partners or projects disappears.';
+  if(/standards split|unable to work together/.test(t))return 'A standards split could fragment shared research systems if equipment, data or rules stop working together.';
+  if(/technology company is bought|taking key capability/.test(t))return 'An acquisition could move intellectual property, talent and growth capacity outside European control.';
+  if(/foreign control layer|ai computing capacity unusable/.test(t))return 'A foreign control layer could block access to computing capacity even when the physical infrastructure remains in Europe.';
+  if(/energy shock|ration.*computing/.test(t))return 'Scarce electricity could force research facilities to compete with other essential uses for computing capacity.';
+  if(/foreign data order|clinical research network/.test(t))return 'A foreign data order could stop cross-border studies if researchers can no longer lawfully move or access patient data.';
+  if(/security reclassification|restricts access/.test(t))return 'A sudden security decision could close projects, data or partnerships before alternatives are available.';
+  return 'A sudden external disruption could remove a capability, input or connection before European research has a workable substitute.';
+}
+
+function evidenceStats(s){
+  const ev=Array.isArray(s?.evidence)?s.evidence:[];
+  const rows=ev.map(e=>e?.row||e).filter(Boolean);
+  const sources=new Set(rows.map(r=>clean(r?.source)).filter(Boolean));
+  return {records:rows.length,sources:sources.size};
+}
+function evidenceRow(e){const r=e?.row||e||{};return {role:clean(e?.role||r?.role||''),title:clean(r?.title||'Evidence'),source:clean(r?.source||''),date:clean(r?.date||''),link:clean(r?.link||''),quality:Number(e?.quality??r?.quality)||0,sourceStatement:clean(r?.source_statement||r?.sourceStatement||''),contribution:clean(r?.evidence_contribution||r?.contribution||'')}}
+function collect(data){
+  const out=[],seen=new Map();
+  const add=(text,distance=2,stats={},score=0,explanation='',detail={})=>{
+    text=clean(text);const k=norm(text);if(!text||!k)return;
+    const item={text,distance:Number(distance)||2,records:Number(stats.records)||0,sources:Number(stats.sources)||0,score:Number(score)||0,explanation:clean(explanation),detail:detail&&typeof detail==='object'?detail:{}};
+    const old=seen.get(k);
+    if(old){if(item.score>old.score||(item.score===old.score&&item.sources>old.sources))Object.assign(old,item);return}
+    seen.set(k,item);out.push(item)
+  };
+  const hi=data?.high_order_inference&&typeof data.high_order_inference==='object'?data.high_order_inference:{};
+  const claimNative=hi?.detector_backend==='claim_native'&&Number(hi?.selection_stage||0)>=7;
+  const hids=Array.isArray(hi?.publications?.shock)?hi.publications.shock:[];
+  const hmap=new Map((Array.isArray(hi?.candidates)?hi.candidates:[]).filter(x=>x&&typeof x==='object').map(x=>[clean(x.id),x]));
+  for(const id of hids){
+    const c=hmap.get(clean(id));if(!c)continue;
+    add(c.reader_title||c.topic_label,Number(c.inferential_distance)||4,{records:c.primary_records,sources:c.primary_sources},Number(c.score)||0,c.reader_consequence||c.reader_summary||'',{
+      type:'higher-order',reasoning:[clean(c.reader_summary||'')].filter(Boolean),hidden:clean(c.why_easy_to_miss||''),
+      requiredRoles:Array.isArray(c.required_roles)?c.required_roles:[],coveredRoles:Array.isArray(c.covered_roles)?c.covered_roles:[],missingRoles:Array.isArray(c.missing_roles)?c.missing_roles:[],missingLinks:Array.isArray(c.missing_links)?c.missing_links:[],
+      denialTested:!!c.denial_tested,falsifierQueries:Array.isArray(c.falsifier_queries)?c.falsifier_queries:[],support:(Array.isArray(c.support)?c.support:[]).map(evidenceRow),against:(Array.isArray(c.against)?c.against:[]).map(evidenceRow)
+    })
+  }
+  if(claimNative){
+    return out;
+  }
+  const scenarioDetail=s=>({
+    type:s.dynamic?'dynamic':'scenario',reasoning:Array.isArray(s.reasoning)?s.reasoning:[],hidden:clean(s.hidden||''),secondOrder:clean(s.secondOrder||''),conditions:Array.isArray(s.conditions)?s.conditions:[],caseAgainst:Array.isArray(s.caseAgainst)?s.caseAgainst:[],watchFor:Array.isArray(s.watchFor)?s.watchFor:[],netAssessment:clean(s.netAssessment||''),support:(Array.isArray(s.evidence)?s.evidence:[]).map(evidenceRow),against:(Array.isArray(s.againstEvidence)?s.againstEvidence:[]).map(evidenceRow)
+  });
+  for(const s of RadarShockScenarios.buildDynamic?.(data)||[])add(s.title,3,evidenceStats(s),Number(s.inferenceScore)||0,s.plainly||'',scenarioDetail(s));
+  for(const s of RadarShockScenarios.buildDirect?.(data)||[])add(SIMPLE[s.id]||s.title,1,evidenceStats(s),Number(s.inferenceScore)||0,s.plainly||'',scenarioDetail(s));
+  for(const s of RadarShockScenarios.build?.(data)||[]){
+    if(['pilot_lines_materials','open_science_security_collision','measurement_mid_river'].includes(s.id))continue;
+    add(SIMPLE[s.id]||s.title,2,evidenceStats(s),Number(s.inferenceScore)||0,s.plainly||'',scenarioDetail(s));
+  }
+  return out.sort((a,b)=>b.score-a.score||b.sources-a.sources||b.records-a.records||a.distance-b.distance||a.text.localeCompare(b.text));
+}
+function fmtDate(v){const d=new Date(v);return Number.isNaN(d.getTime())?clean(v):`${d.getUTCDate()} ${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][d.getUTCMonth()]} ${d.getUTCFullYear()}`}
+function evidenceRowsHtml(rows,showRole=true){return (Array.isArray(rows)?rows:[]).map(e=>{const meta=[e.source,e.date?fmtDate(e.date):''].filter(Boolean).join(' — ');const label=e.title||'Source';const linked=e.link?`<a href="${esc(e.link)}" target="_blank" rel="noopener">${esc(label)}</a>`:esc(label);return `<li>${showRole&&e.role?`<strong>${esc(e.role)}:</strong> `:''}${linked}${meta?` <span class="shock-evidence-meta">— ${esc(meta)}</span>`:''}</li>`}).join('')}
+function shockDetailHtml(x,i){
+  const d=x?.detail||{},id=`shock-evidence-${i}`;let body='';
+  const roles=Array.isArray(d.requiredRoles)?d.requiredRoles:[],covered=Array.isArray(d.coveredRoles)?d.coveredRoles:[],missing=[...(Array.isArray(d.missingRoles)?d.missingRoles:[]),...(Array.isArray(d.missingLinks)?d.missingLinks:[])];
+  if(d.type==='higher-order'){
+    if(Array.isArray(d.reasoning)&&d.reasoning.length)body+=`<p><strong>What this means:</strong> ${esc(d.reasoning.join(' '))}</p>`;
+    if(Array.isArray(d.support)&&d.support.length)body+=`<p><strong>Sources:</strong></p><ul>${evidenceRowsHtml(d.support,false)}</ul>`;
+    if(Array.isArray(d.against)&&d.against.length)body+=`<p><strong>Source evidence that could weaken the finding:</strong></p><ul>${evidenceRowsHtml(d.against,false)}</ul>`;
+  }else{
+    if(d.secondOrder)body+=`<p><strong>What could follow:</strong> ${esc(d.secondOrder)}</p>`;
+    if(missing.length)body+=`<p><strong>Still unresolved:</strong> ${esc(missing.join('; '))}</p>`;
+    if(Array.isArray(d.conditions)&&d.conditions.length)body+=`<p><strong>Conditions for the shock:</strong></p><ul>${d.conditions.map(v=>`<li>${esc(v)}</li>`).join('')}</ul>`;
+    if(Array.isArray(d.support)&&d.support.length)body+=`<p><strong>Evidence:</strong></p><ul>${evidenceRowsHtml(d.support)}</ul>`;
+    if(Array.isArray(d.against)&&d.against.length)body+=`<p><strong>Counter-evidence:</strong></p><ul>${evidenceRowsHtml(d.against)}</ul>`;
+  }
+  if(Array.isArray(d.caseAgainst)&&d.caseAgainst.length)body+=`<p><strong>What could stop or weaken it:</strong></p><ul>${d.caseAgainst.map(v=>`<li>${esc(v)}</li>`).join('')}</ul>`;
+  if(Array.isArray(d.watchFor)&&d.watchFor.length)body+=`<p><strong>Watch for:</strong></p><ul>${d.watchFor.map(v=>`<li>${esc(v)}</li>`).join('')}</ul>`;
+  if(d.netAssessment)body+=`<p><strong>Net assessment:</strong> ${esc(d.netAssessment)}</p>`;
+  if(!body)return '';
+  return `<div class="shock-actions"><button class="info-button" type="button" data-shock-detail="${id}" aria-expanded="false">Sources</button></div><div id="${id}" class="shock-detail" hidden>${body}</div>`;
+}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-shock-detail]');if(!b)return;const box=document.getElementById(b.dataset.shockDetail);if(!box)return;const opening=box.hidden;box.hidden=!opening;b.setAttribute('aria-expanded',String(opening));b.textContent=opening?'Close':'Sources'});
+function visibleShockExplanation(title,text){return clean(text)||shockExplanation(title);}
+
+
+(async()=>{
+  const el=document.getElementById('shockList');
+  try{
+    const data=await RadarData.load('../radar.json','../radar_seed.json');
+    const all=collect(data),hi=data?.high_order_inference||{},sel=hi?.selection?.shock||{};
+    const claimNative=hi?.detector_backend==='claim_native'&&Number(hi?.selection_stage||0)>=7;
+    const wowCycle=items=>{const buckets=new Map([5,4,3,2,1].map(w=>[w,[]]));for(const x of items||[]){const w=Math.max(1,Math.min(5,Number(x?.distance)||3));buckets.get(w).push(x)}const out=[];for(let round=0;round<3;round++)for(const w of [5,4,3,2,1]){const x=buckets.get(w)[round];if(x)out.push(x)}return out};
+    // Stage 7 already publishes the 5-4-3-2-1 x3 shelf (with thin wow levels filled
+    // from the nearest level). Keep that order; re-bucketing here dropped findings.
+    const items=all.slice(0,15);
+    document.getElementById('shockSummary').textContent=items.length?'Possible shocks worth watching.':'No possible shock is ready to show yet.';
+    el.innerHTML=items.length?items.map((x,i)=>{const raw=x.explanation&&x.detail&&x.detail.type==='higher-order'?x.explanation:shockExplanation(x.text);const explanation=visibleShockExplanation(x.text,raw);return `<li><strong>${esc(x.text)}</strong><p>${esc(explanation)}</p>${shockDetailHtml(x,i)}</li>`}).join(''):'<li class="empty">No possible shock is ready to show yet.</li>';
+  }catch(e){console.error(e);document.getElementById('shockSummary').textContent='Shock evidence is unavailable.';el.innerHTML='<li class="empty">Unavailable.</li>'}
+})();
+</script>
+<script src="../site-shell.js?v=28"></script>
+</body>
+</html>
