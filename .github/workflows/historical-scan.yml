@@ -27,6 +27,9 @@ on:
 permissions:
   contents: read
 
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+
 concurrency:
   group: ri-radar-research-scanners
   queue: max
