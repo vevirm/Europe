@@ -107,7 +107,7 @@ jobs:
           # Persistent scanner outputs are raw radar.json plus the generated active
           # snapshot and active Excel. Sidecars are read-only during automatic scans.
           tracked_unexpected="$(git diff --name-only -- . ':!radar.json' ':!radar_active.json' ':!stuff/source_merit_ranking.xlsx' || true)"
-          untracked_unexpected="$(git ls-files --others --exclude-standard | grep -Ev '^(radar_active\.json|stuff/source_merit_ranking\.xlsx)$' || true)"
+          untracked_unexpected="$(git ls-files --others --exclude-standard | grep -Ev '^(radar\.json|radar_active\.json|stuff/source_merit_ranking\.xlsx)$' || true)"
 
           if [[ -n "$tracked_unexpected" ]]; then
             echo '::warning::Non-radar tracked working-tree changes detected; restoring them before save:'
