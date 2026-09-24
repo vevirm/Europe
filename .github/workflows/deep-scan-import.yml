@@ -1,0 +1,203 @@
+name: Deep Scan V2 — Import Returned Results
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'deep_scan_inbox/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+
+# Deep Scan and automatic scanners must never rewrite corpus state concurrently.
+concurrency:
+  group: ri-radar-research-scanners
+  queue: max
+  cancel-in-progress: false
+
+jobs:
+  import-deep-scan-results:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out main safely
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: '3.12'
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Deep Scan dependencies
+        run: pip install --quiet -r requirements.txt
+
+      - name: Import, rebuild active corpus, and validate
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp radar.json .deep_scan_combined.json
+          python scripts/import_deep_scan_results.py \
+            --corpus .deep_scan_combined.json \
+            --work-state deep_scan_work_state.json
+          python scripts/check_reader_text.py
+          python scripts/rebuild_active_radar.py --report migration-reports/latest-deep-scan-active-rebuild.json
+          python scripts/check_active_corpus.py
+          node scripts/generate_stuff_workbook.js
+
+          # Existing raw evidence is immutable: Deep Scan never edits raw A/B/C records.
+          python3 - <<'PY'
+          import json, re, subprocess
+          from pathlib import Path
+
+          def clean(v):
+              return re.sub(r'\s+', ' ', str(v or '')).strip()
+          def key(row):
+              link=clean(row.get('link') or row.get('url'))
+              if link: return 'link:'+link
+              doi=clean(row.get('doi') or row.get('_doi')).lower()
+              if doi:
+                  doi=re.sub(r'^https?://(?:dx\.)?doi\.org/', '', doi).removeprefix('doi:')
+                  return 'doi:'+doi
+              rid=clean(row.get('id') or row.get('record_id') or row.get('fingerprint'))
+              return 'id:'+rid if rid else ''
+
+          before=json.loads(subprocess.check_output(['git','show','HEAD:radar.json']).decode('utf-8'))  # import runs only after a scan has committed radar.json
+          after=json.loads(Path('radar.json').read_text(encoding='utf-8'))
+          allowed=set()
+
+          for collection in ('strand_c','frontier_evidence','ab_archive','signal_archive'):
+              if before.get(collection) != after.get(collection):
+                  raise SystemExit(f'Deep Scan unexpectedly modified protected raw collection {collection}')
+
+          for collection, strand in (('strand_a','A'),('strand_b','B')):
+              old=before.get(collection,[]) if isinstance(before.get(collection),list) else []
+              new=after.get(collection,[]) if isinstance(after.get(collection),list) else []
+              if new[:len(old)] != old:
+                  raise SystemExit(f'Deep Scan changed existing raw records in {collection}; only append-only promotion is allowed')
+              extras=new[len(old):]
+              extra_pairs={(key(x), strand) for x in extras if isinstance(x,dict)}
+              expected={(k,t) for (k,t) in allowed if t == strand}
+              if extra_pairs != expected:
+                  raise SystemExit(f'Unexpected Deep-A promotion set in {collection}: {extra_pairs!r} vs {expected!r}')
+          print('Raw evidence safety check passed; raw A/B/C unchanged.')
+          PY
+
+      - name: Refresh both persistent worker lanes
+        shell: bash
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: |
+          set -euo pipefail
+          rm -rf deep_scan_workers
+          rm -f .deep_scan_combined.json
+          cp radar.json .deep_scan_combined.json
+          python scripts/prepare_deep_scan_package.py \
+            --corpus .deep_scan_combined.json \
+            --output-dir deep_scan_workers/worker-A \
+            --lane A --lane-size 36 --batch-size 12 \
+            --work-state deep_scan_work_state.json \
+            --status-file DEEP_SCAN_STATUS.md --write-work-state
+          python scripts/prepare_deep_scan_package.py \
+            --corpus .deep_scan_combined.json \
+            --output-dir deep_scan_workers/worker-B \
+            --lane B --lane-size 36 --batch-size 12 \
+            --work-state deep_scan_work_state.json \
+            --status-file DEEP_SCAN_STATUS.md --write-work-state
+          rm -f .deep_scan_combined.json
+
+          unexpected="$(git diff --name-only -- . \
+            ':!reader_text.json' ':!admission_state.json' ':!record_corrections.json' \
+            ':!radar.json' ':!radar_active.json' ':!stuff/source_merit_ranking.xlsx' \
+            ':!migration-reports/latest-deep-scan-active-rebuild.json' \
+            ':!deep_scan_inbox/**' \
+            ':!deep_scan_work_state.json' ':!DEEP_SCAN_STATUS.md' || true)"
+          if [[ -n "$unexpected" ]]; then
+            echo '::error::Deep Scan import changed an unexpected tracked file. Refusing to save.'
+            printf '%s\n' "$unexpected"
+            exit 1
+          fi
+
+      - name: Configure secure push authentication
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'radar-deep-scan-importer'
+          git config user.email 'actions@github.com'
+          auth="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 | tr -d '\n')"
+          git config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ${auth}"
+
+      - name: Save validated Deep Scan V2 state and worker ledger
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add \
+            reader_text.json admission_state.json record_corrections.json \
+            radar.json radar_active.json stuff/source_merit_ranking.xlsx \
+            migration-reports/latest-deep-scan-active-rebuild.json \
+            deep_scan_inbox \
+            deep_scan_work_state.json DEEP_SCAN_STATUS.md
+          if git diff --cached --quiet; then
+            echo 'No valid Deep Scan results or worker-state changes to commit.'
+            exit 0
+          fi
+          git commit -m 'Deep Scan V2: verify evidence and refresh parallel queue'
+          git push origin HEAD:main
+
+      - name: Upload refreshed Worker A package
+        uses: actions/upload-artifact@v4
+        with:
+          name: deep-scan-worker-A
+          path: deep_scan_workers/worker-A/
+          if-no-files-found: error
+          retention-days: 21
+
+      - name: Upload refreshed Worker B package
+        uses: actions/upload-artifact@v4
+        with:
+          name: deep-scan-worker-B
+          path: deep_scan_workers/worker-B/
+          if-no-files-found: error
+          retention-days: 21
+
+      - name: Import summary
+        if: always()
+        shell: bash
+        run: |
+          cat >> "$GITHUB_STEP_SUMMARY" <<'EOF2'
+          ## Deep Scan V2 import
+
+          Returned work is authoritative only after validation. Existing raw scanner evidence remains preserved; a private Deep-A candidate is appended to the public corpus only after an authoritative Deep Scan KEEP. The active/readable corpus is then rebuilt in `radar_active.json`.
+
+          ### Parallel work model
+          - Worker A and Worker B are persistent, non-overlapping lanes. New assignments prioritise public unverified Strand-A records, then private Strand-A candidates, then other Main Radar work, then Historical work.
+          - A returned file may contain only a carefully completed prefix. Unfinished records stay assigned rather than being forgotten.
+          - A later lane may finish before the earlier lane; this does not let newly discovered records jump the queue because assignment itself remains FIFO.
+          - If a work's identity is confirmed but substantive evidence is still inaccessible after all six recovery steps, the worker may use `defer`; this records the audited blockage without inventing an admission decision.
+          - `DEEP_SCAN_STATUS.md` and `deep_scan_work_state.json` preserve coordination across new LLM chats.
+
+          Download **deep-scan-worker-A** and **deep-scan-worker-B** from this run for the next work. Give them to different browsing-capable LLM chats and follow `START_HERE.txt` inside each package.
+          EOF2
+
+      - name: Remove temporary repository credential
+        if: always()
+        shell: bash
+        run: git config --local --unset-all http.https://github.com/.extraheader >/dev/null 2>&1 || true

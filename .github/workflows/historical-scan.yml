@@ -1,0 +1,291 @@
+name: Historical Top-Tier Scan
+
+on:
+  # Historical code/config changes run immediately, but historical data commits do not
+  # retrigger themselves. The live radar explicitly ignores historical/** and this workflow.
+  push:
+    branches:
+      - main
+    paths:
+      - 'historical/config.json'
+      - 'historical/scan_historical.py'
+      - 'historical/index.html'
+      - 'historical/manual_evidence.json'
+      - 'historical/curated_seed_evidence.json'
+      - 'historical/tests/**'
+      - '.github/workflows/historical-scan.yml'
+  schedule:
+    - cron: '17 2,6,10,14,18,22 * * *'
+  workflow_dispatch:
+    inputs:
+      rescue_mode:
+        description: 'One full low-yield historical rescue run'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ri-radar-research-scanners
+  queue: max
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    permissions:
+      contents: write
+      actions: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out repository without stored credentials
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          # Jobs can wait behind the shared scanner concurrency lock. Without an
+          # explicit branch ref, checkout may use the event SHA captured before
+          # that wait and later rebase generated radar files against a newer main.
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run historical scanner tests
+        run: python -m unittest discover -s historical/tests -p 'test_*.py'
+
+      - name: Snapshot archive before scan for reader-side New tracking
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -f historical/historical.json ]]; then
+            cp historical/historical.json "$RUNNER_TEMP/historical-before.json"
+          else
+            printf '{"items":[]}\n' > "$RUNNER_TEMP/historical-before.json"
+          fi
+
+      - name: Scan source-age historical top-tier evidence
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          HISTORICAL_SCAN_BUDGET_SECONDS: '1200'
+          HISTORICAL_MIN_RUNTIME_SECONDS: '1080'
+          HISTORICAL_RESCUE_MODE: ${{ github.event.inputs.rescue_mode || 'false' }}
+        run: python historical/scan_historical.py
+
+      - name: Build reader-side latest-new index
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+
+          archive_path = Path('historical/historical.json')
+          sidecar_path = Path('historical/new_items.json')
+          before_path = Path(os.environ['RUNNER_TEMP']) / 'historical-before.json'
+
+          def load(path, default):
+              try:
+                  return json.loads(path.read_text(encoding='utf-8'))
+              except Exception:
+                  return default
+
+          def ids(doc):
+              out=[]; seen=set()
+              for item in doc.get('items',[]) if isinstance(doc,dict) else []:
+                  if not isinstance(item,dict): continue
+                  value=str(item.get('id') or '').strip()
+                  if value and value not in seen:
+                      seen.add(value); out.append(value)
+              return out
+
+          def git_json(commit):
+              try:
+                  raw=subprocess.check_output(['git','show',f'{commit}:historical/historical.json'],text=True,stderr=subprocess.DEVNULL)
+                  value=json.loads(raw)
+                  return value if isinstance(value,dict) else None
+              except Exception:
+                  return None
+
+          after=load(archive_path,{})
+          current_order=ids(after)
+          current=set(current_order)
+          if not current:
+              if not before_path.exists() or not ids(load(before_path,{})):
+                  print('::notice::New repository: historical archive is still empty; New tracker left empty.')
+                  raise SystemExit(0)
+              raise SystemExit('Historical archive has no item IDs; refusing to rewrite New tracker.')
+
+          before=load(before_path,{})
+          before_ids=set(ids(before))
+          batch=[x for x in current_order if x not in before_ids] if before_ids else []
+          source='current_scan_diff' if batch else ''
+          archive_commit=''
+
+          if not batch:
+              existing=load(sidecar_path,{})
+              existing_ids=[str(x).strip() for x in existing.get('item_ids',[]) if str(x).strip()] if isinstance(existing,dict) and isinstance(existing.get('item_ids',[]),list) else []
+              if existing_ids and all(x in current for x in existing_ids):
+                  batch=existing_ids
+                  source='preserved_previous_productive_batch'
+                  archive_commit=str(existing.get('archive_commit') or '')
+
+          if not batch:
+              try:
+                  commits=[x for x in subprocess.check_output(['git','log','--format=%H','--','historical/historical.json'],text=True).splitlines() if x]
+              except Exception:
+                  commits=[]
+              for newer_hash, older_hash in zip(commits, commits[1:]):
+                  newer, older = git_json(newer_hash), git_json(older_hash)
+                  if not newer or not older: continue
+                  older_ids=set(ids(older))
+                  candidate=[x for x in ids(newer) if x not in older_ids and x in current]
+                  if candidate:
+                      batch=candidate
+                      source='git_history_reconstruction'
+                      archive_commit=newer_hash
+                      break
+
+          payload={
+              'schema_version':2,
+              'mode':'latest_productive_historical_scan',
+              'archive_last_updated':after.get('last_updated') or '',
+              'count':len(batch),
+              'item_ids':batch,
+              'tracking_source':source or 'no_productive_batch_available',
+          }
+          if archive_commit:
+              payload['archive_commit']=archive_commit
+          sidecar_path.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(f"Historical New tracker: {payload['tracking_source']} -> {len(batch)} IDs")
+          PY
+
+      - name: Verify historical scanner changed only its own data file
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Python bytecode/cache paths are ignored by .gitignore. Do not delete
+          # tracked cache files here: older browser uploads may already have committed
+          # them, and deleting tracked files would itself trip this safety guard.
+          # Untracked ignored cache files are excluded by git ls-files below.
+          unexpected="$({ git diff --name-only; git ls-files --others --exclude-standard; } | sort -u | grep -Evx 'historical/historical.json|historical/new_items.json' || true)"
+          if [[ -n "$unexpected" ]]; then
+            echo "Historical scanner changed unexpected files; refusing to save anything."
+            echo "$unexpected"
+            exit 1
+          fi
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          import datetime as dt
+          from dateutil.relativedelta import relativedelta
+          d=json.loads(Path('historical/historical.json').read_text(encoding='utf-8'))
+          expected_cutoff=dt.date.today()-relativedelta(months=6)
+          assert d.get('date_from')=='2015-01-01'
+          assert d.get('cutoff_exclusive')==expected_cutoff.isoformat()
+          assert d.get('date_to')==(expected_cutoff-dt.timedelta(days=1)).isoformat()
+          assert d.get('main_radar_window_months')==6
+          assert isinstance(d.get('items'), list)
+          assert sum(1 for x in d['items'] if x.get('manual_curated')) >= 21
+          assert isinstance((d.get('last_scan') or {}).get('rejection_funnel'), dict)
+          print('historical.json safety check passed:', len(d['items']), 'items')
+          PY
+
+      - name: Refresh Stuff Excel with all historical findings
+        shell: bash
+        run: |
+          set -euo pipefail
+          node scripts/generate_stuff_workbook.js
+
+      - name: Commit historical results
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- historical/historical.json historical/new_items.json stuff/source_merit_ranking.xlsx
+          if git diff --cached --quiet; then
+            echo "No historical data change to commit."
+          else
+            git commit -m "Update historical top-tier archive"
+            auth="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 | tr -d '\n')"
+            git config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ${auth}"
+            trap 'git config --local --unset-all http.https://github.com/.extraheader >/dev/null 2>&1 || true' EXIT
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Decide whether to launch one full historical rescue run
+        id: rescue
+        env:
+          RESCUE_MODE: ${{ github.event.inputs.rescue_mode || 'false' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          d=json.loads(Path('historical/historical.json').read_text(encoding='utf-8'))
+          cfg=json.loads(Path('historical/config.json').read_text(encoding='utf-8'))
+          last=d.get('last_scan') if isinstance(d.get('last_scan'),dict) else {}
+          threshold=int(cfg.get('full_rescue_run_trigger_max_new_items',3) or 3)
+          try: new_items=int(last.get('new_items',0) or 0)
+          except Exception: new_items=0
+          already=str(os.environ.get('RESCUE_MODE','')).lower() in {'1','true','yes','on'}
+          enabled=bool(cfg.get('full_rescue_run_enabled',True))
+          dispatch=enabled and (not already) and new_items<=threshold
+          with open(os.environ['GITHUB_OUTPUT'],'a',encoding='utf-8') as out:
+              out.write(f"dispatch={'true' if dispatch else 'false'}\n")
+              out.write(f"new_items={new_items}\n")
+          print(f"Historical full-rescue decision: already_rescue={already}, new_items={new_items}, threshold={threshold}, dispatch={dispatch}")
+          PY
+
+      - name: Launch one fresh historical rescue scan
+        if: steps.rescue.outputs.dispatch == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "Historical yield stayed <=3; dispatching exactly one fresh historical rescue run."
+          curl --fail-with-body -L -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "X-GitHub-Api-Version: 2026-03-10" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/historical-scan.yml/dispatches" \
+            -d '{"ref":"main","inputs":{"rescue_mode":true}}'
+
+  publish:
+    needs: scan
+    if: needs.scan.result == 'success'
+    permissions:
+      contents: read
+      pages: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Publish historical page on GitHub Pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl --fail-with-body -L -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "X-GitHub-Api-Version: 2026-03-10" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/pages/builds"
