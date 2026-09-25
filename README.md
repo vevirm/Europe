@@ -54,3 +54,14 @@ To reuse for yet another topic, change these files; the corpus/admission/Deep Sc
 - The home-page password gate is inherited unchanged (same password as the R&I radar);
   change `PASSWORD_HASH` in `index.html` if you want a different one.
 - Some internal variable names still say `RI_*` or `research_*`; they are labels only.
+
+## Compact curated build — 2026-09-25
+
+This repository is packaged as a compact deployment while preserving the reader-facing Radar pages and the main scanner/deep-scan scripts.
+
+- Raw scanner archive remains in `radar.json` for audit/scanner continuity.
+- `admission_state.json` limits the reader-facing active corpus to 82 retained records (55 Strand A rows and 27 Strand C rows after shared-link expansion).
+- `reader_text.json` contains 73 manually curated Deep Scan V2 authoritative identities. The compact promotion uses the substantive source text, publisher abstract/metadata, or dated weak-signal evidence already recovered by the scanner; qualifications are retained where only abstract/news evidence is available.
+- Scenario frame: **guarded / strategically restricted integration ↔ open global integration** crossed with **constrained European capacity ↔ expanding European capacity**.
+- The 2035 section contains four main worlds and four variants per world (16 variants; 20 cards including the four parent worlds). These are scenarios, not forecasts.
+- Items excluded by the compact admission layer remain in the raw scanner archive so a later scan or re-curation can promote them again.
