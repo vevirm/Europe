@@ -65,3 +65,9 @@ This repository is packaged as a compact deployment while preserving the reader-
 - Scenario frame: **guarded / strategically restricted integration ↔ open global integration** crossed with **constrained European capacity ↔ expanding European capacity**.
 - The 2035 section contains four main worlds and four variants per world (16 variants; 20 cards including the four parent worlds). These are scenarios, not forecasts.
 - Items excluded by the compact admission layer remain in the raw scanner archive so a later scan or re-curation can promote them again.
+## Quick-scan expansion — 2026-09-25
+
+This compact build adds 100 additional Strand A findings to the admitted corpus using a lightweight verification pass over source identity plus substantive text/abstract already captured by the scanner. These records are marked `deep_scan_v2` / `deep-reader-v2-authoritative` so reader cards can consume them, but their `deep_read_mode` is `manual_quickscan_from_scanner_evidence_v1` to distinguish this pass from a fresh full external deep read.
+
+Current active evidence: 155 Strand A + 27 Strand C = 182 records. Authoritative Deep Scan V2 identities in the current raw corpus: 173. The 100 newly added records are listed in `quickscan_100_manifest.json`.
+
