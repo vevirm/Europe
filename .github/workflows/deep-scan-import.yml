@@ -48,20 +48,22 @@ jobs:
       - name: Install Deep Scan dependencies
         run: pip install --quiet -r requirements.txt
 
-      - name: Import, rebuild active corpus, and validate
+      - name: Import, promote verified private A, rebuild active corpus, and validate
         shell: bash
         run: |
           set -euo pipefail
-          cp radar.json .deep_scan_combined.json
+          python scripts/build_deep_scan_corpus.py --output .deep_scan_combined.json
           python scripts/import_deep_scan_results.py \
             --corpus .deep_scan_combined.json \
             --work-state deep_scan_work_state.json
+          python scripts/promote_deep_a_candidates.py
           python scripts/check_reader_text.py
           python scripts/rebuild_active_radar.py --report migration-reports/latest-deep-scan-active-rebuild.json
           python scripts/check_active_corpus.py
           node scripts/generate_stuff_workbook.js
 
-          # Existing raw evidence is immutable: Deep Scan never edits raw A/B/C records.
+          # Existing raw evidence is immutable. The sole exception is append-only promotion
+          # of authoritative Deep Scan KEEP results from the private Deep-A pool into A/B.
           python3 - <<'PY'
           import json, re, subprocess
           from pathlib import Path
@@ -78,9 +80,11 @@ jobs:
               rid=clean(row.get('id') or row.get('record_id') or row.get('fingerprint'))
               return 'id:'+rid if rid else ''
 
-          before=json.loads(subprocess.check_output(['git','show','HEAD:radar.json']).decode('utf-8'))  # import runs only after a scan has committed radar.json
+          before=json.loads(subprocess.check_output(['git','show','HEAD:radar.json']).decode('utf-8'))
           after=json.loads(Path('radar.json').read_text(encoding='utf-8'))
-          allowed=set()
+          report_path=Path('migration-reports/latest-deep-a-promotion.json')
+          report=json.loads(report_path.read_text(encoding='utf-8')) if report_path.exists() else {'promoted': []}
+          allowed={(x.get('record_key'), x.get('target_strand')) for x in report.get('promoted',[]) if isinstance(x,dict)}
 
           for collection in ('strand_c','frontier_evidence','ab_archive','signal_archive'):
               if before.get(collection) != after.get(collection):
@@ -96,7 +100,7 @@ jobs:
               expected={(k,t) for (k,t) in allowed if t == strand}
               if extra_pairs != expected:
                   raise SystemExit(f'Unexpected Deep-A promotion set in {collection}: {extra_pairs!r} vs {expected!r}')
-          print('Raw evidence safety check passed; raw A/B/C unchanged.')
+          print(f'Raw evidence safety check passed; verified private promotions: {len(allowed)}.')
           PY
 
       - name: Refresh both persistent worker lanes
@@ -107,7 +111,7 @@ jobs:
           set -euo pipefail
           rm -rf deep_scan_workers
           rm -f .deep_scan_combined.json
-          cp radar.json .deep_scan_combined.json
+          python scripts/build_deep_scan_corpus.py --output .deep_scan_combined.json
           python scripts/prepare_deep_scan_package.py \
             --corpus .deep_scan_combined.json \
             --output-dir deep_scan_workers/worker-A \
@@ -126,8 +130,9 @@ jobs:
             ':!reader_text.json' ':!admission_state.json' ':!record_corrections.json' \
             ':!radar.json' ':!radar_active.json' ':!stuff/source_merit_ranking.xlsx' \
             ':!migration-reports/latest-deep-scan-active-rebuild.json' \
-            ':!deep_scan_inbox/**' \
-            ':!deep_scan_work_state.json' ':!DEEP_SCAN_STATUS.md' || true)"
+            ':!migration-reports/latest-deep-a-promotion.json' ':!deep_scan_inbox/**' \
+            ':!deep_scan_work_state.json' ':!DEEP_SCAN_STATUS.md' \
+            ':!deep_a_candidates.json' ':!deep_a_candidate_archive.json' || true)"
           if [[ -n "$unexpected" ]]; then
             echo '::error::Deep Scan import changed an unexpected tracked file. Refusing to save.'
             printf '%s\n' "$unexpected"
@@ -153,8 +158,9 @@ jobs:
             reader_text.json admission_state.json record_corrections.json \
             radar.json radar_active.json stuff/source_merit_ranking.xlsx \
             migration-reports/latest-deep-scan-active-rebuild.json \
-            deep_scan_inbox \
-            deep_scan_work_state.json DEEP_SCAN_STATUS.md
+            migration-reports/latest-deep-a-promotion.json deep_scan_inbox \
+            deep_scan_work_state.json DEEP_SCAN_STATUS.md \
+            deep_a_candidates.json deep_a_candidate_archive.json
           if git diff --cached --quiet; then
             echo 'No valid Deep Scan results or worker-state changes to commit.'
             exit 0

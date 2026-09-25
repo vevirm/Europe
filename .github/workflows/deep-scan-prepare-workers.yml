@@ -54,7 +54,7 @@ jobs:
             exit 1
           fi
           rm -rf deep_scan_workers
-          cp radar.json .deep_scan_combined.json
+          python scripts/build_deep_scan_corpus.py --output .deep_scan_combined.json
           python scripts/prepare_deep_scan_package.py \
             --corpus .deep_scan_combined.json \
             --output-dir deep_scan_workers/worker-A \
