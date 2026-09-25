@@ -16,7 +16,7 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20260925T095801Z-87d10350b778`
+- Current package: `worker-a-20260925T111547Z-87d10350b778`
 - Assigned unresolved records: **60**
   1. `link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1` — From Periphery to Power: The Geoeconomic Case for Southeast Europe
   2. `link:https://doi.org/10.1007/s41125-026-00115-w` — EU Governance of Critical Infrastructure: Resilience and Artificial Intelligence as Policy Challenges
@@ -29,7 +29,7 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
   - … plus 52 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20260925T095822Z-046eea0afde3`
+- Current package: `worker-b-20260925T111606Z-046eea0afde3`
 - Assigned unresolved records: **60**
   1. `link:https://doi.org/10.1515/ev-2026-2001` — From Dependence to Sovereignty: Why Europe Needs a Digital Euro
   2. `link:https://doi.org/10.1111/jcms.70109` — Geopoliticization and Support for Free Trade in the European Parliament: From Rhetorical Shift to Voting Results
