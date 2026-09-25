@@ -16,7 +16,7 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20260925T123353Z-7b354dc9317b`
+- Current package: `worker-a-20260925T123845Z-7b354dc9317b`
 - Assigned unresolved records: **58**
   1. `link:https://doi.org/10.65864/bm5cpn0bpv` — Trade-related Vulnerabilities and the Controversial Boundaries of Member States’ Economic Security in the EU
   2. `link:https://doi.org/10.1080/09692290.2026.2658660` — High-road or low-road? Europe’s EV battery rollout and the tradeoffs of green industrial policy in a geoeconomic world
@@ -29,7 +29,7 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
   - … plus 50 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20260925T123408Z-a4a0383b3860`
+- Current package: `worker-b-20260925T123905Z-a4a0383b3860`
 - Assigned unresolved records: **57**
   1. `link:https://doi.org/10.1186/s43093-026-00993-5` — Climate-related financial risk and business resilience under the green transition: evidence from Central and Eastern European EU Economies
   2. `link:https://doi.org/10.1177/2336825x261473745` — European security, cooperation, and the challenge of strategic autonomy
