@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-09-25T21:20:00Z",
+  "generated_at": "2026-09-26T08:41:58Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -12685,8 +12685,137 @@
         }
       ],
       "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1186/s43093-026-00993-5": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "a73a724b",
+      "identity_hash": "3e9fcb04701f6406",
+      "reader_title": "Climate-related financial risk and business resilience under the green transition: evidence from Central and Eastern European EU Economies",
+      "reader_what": "The study links climate-related financial risk and firm resilience during the green transition in Central and Eastern European EU economies",
+      "reader_more": "The study links climate-related financial risk and firm resilience during the green transition in Central and Eastern European EU economies. The central object is climate-finance and business resilience, not a strategic dependency, coercion, critical capacity or economic-security instrument.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "What does this work establish about Climate-related financial risk and business resilience under the green transition: evidence from Central and Eastern European EU Economies?",
+        "main_finding": "The study links climate-related financial risk and firm resilience during the green transition in Central and Eastern European EU economies.",
+        "method_or_basis": "Firm/economy-level empirical analysis of climate-related financial risk and business resilience.",
+        "qualification": "The central object is climate-finance and business resilience, not a strategic dependency, coercion, critical capacity or economic-security instrument.",
+        "radar_relevance": "European scope alone does not make generic green-transition financial resilience Strand A.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened/verified the supplied work identity at https://doi.org/10.1186/s43093-026-00993-5."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1186/s43093-026-00993-5 matched title/authors/outlet; package source material is a matching substantive copy from https://link.springer.com/article/10.1186/s43093-026-00993-5."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_substantive_text",
+            "url": "https://link.springer.com/article/10.1186/s43093-026-00993-5",
+            "title": "Climate-related financial risk and business resilience under the green transition: evidence from Central and Eastern European EU Economies",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The package contains substantial matching source text/PDF and identity/provenance were independently checked; that evidence supports the decision."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_EU_NOT_SUBSTANTIVE",
+        "reason": "European scope alone does not make generic green-transition financial resilience Strand A."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-26T08:41:58Z",
+      "deep_scan_package_id": "worker-b-20260926T055127Z-871d462bffbb",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1177/2336825x261473745": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "04528067",
+      "identity_hash": "ccd3d1608be56320",
+      "reader_title": "European security, cooperation, and the challenge of strategic autonomy",
+      "reader_what": "The editorial frames European strategic autonomy around war, technology, industrial production and security cooperation",
+      "reader_more": "The editorial frames European strategic autonomy around war, technology, industrial production and security cooperation. An editorial is not a completed evidence-led economic-security study, even where it flags industrial-production concerns.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "What does this work establish about European security, cooperation, and the challenge of strategic autonomy?",
+        "main_finding": "The editorial frames European strategic autonomy around war, technology, industrial production and security cooperation.",
+        "method_or_basis": "Short editorial introducing a special issue on European security and strategic autonomy.",
+        "qualification": "An editorial is not a completed evidence-led economic-security study, even where it flags industrial-production concerns.",
+        "radar_relevance": "Useful context, but it fails the substantive-evidence-product and central-economic-security gates.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened the supplied reader URL https://doi.org/10.1177/2336825x261473745; identity matched the claimed work."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/searched DOI 10.1177/2336825x261473745; title, authors and outlet matched the recovered source."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered substantive matching evidence at https://journals.sagepub.com/doi/10.1177/2336825X261473745."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://journals.sagepub.com/doi/10.1177/2336825X261473745",
+            "title": "European security, cooperation, and the challenge of strategic autonomy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and substantive content were independently matched to the publisher/repository record; the recovered source supports the decision."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE_PRODUCT",
+        "reason": "Useful context, but it fails the substantive-evidence-product and central-economic-security gates."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-26T08:41:58Z",
+      "deep_scan_package_id": "worker-b-20260926T055127Z-871d462bffbb",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-09-25T21:20:00Z"
+  "claims_updated_at": "2026-09-26T08:41:58Z"
 }
