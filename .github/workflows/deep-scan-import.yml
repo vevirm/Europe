@@ -58,7 +58,7 @@ jobs:
             --work-state deep_scan_work_state.json
           python scripts/promote_deep_a_candidates.py
           python scripts/check_reader_text.py
-          python scripts/rebuild_active_radar.py --report migration-reports/latest-deep-scan-active-rebuild.json
+          python scripts/rebuild_active_radar.py --allow-large-change --report migration-reports/latest-deep-scan-active-rebuild.json
           python scripts/check_active_corpus.py
           node scripts/generate_stuff_workbook.js
 
