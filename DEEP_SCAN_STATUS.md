@@ -16,7 +16,7 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20260926T164804Z-3dbd0c7a2da0`
+- Current package: `worker-a-20260926T165511Z-3dbd0c7a2da0`
 - Assigned unresolved records: **36**
   1. `link:https://doi.org/10.1177/2336825x261466891` — Ukraine and the transformation of French strategic imaginaries: The discursive reconfiguration of European strategic autonomy under the presidency of Emmanuel Macron (2017-2026)
   2. `link:https://doi.org/10.1007/s13563-026-00701-3` — The Circular vs. Extraction Dilemma: Impacts of EU Critical Raw Materials Strategy on Poverty and Income Inequality – Evidence from Nickel in Finland, Greece, Poland, and Spain
@@ -29,7 +29,7 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20260926T164828Z-051798651f5d`
+- Current package: `worker-b-20260926T165531Z-051798651f5d`
 - Assigned unresolved records: **36**
   1. `link:https://doi.org/10.1093/migration/mnag042` — From stratification to coercion: EU externalization and Turkey’s differentiated return regime
   2. `link:https://doi.org/10.1093/ser/mwag003` — Green monetary transitions? Central banking and climate finance in Europe and China
