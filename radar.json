@@ -167,7 +167,7 @@
     "new_c": 4
   },
   "reader_products_refresh": {
-    "completed_at": "2026-09-26T21:08:09Z",
+    "completed_at": "2026-09-26T21:37:59Z",
     "matrix": true,
     "risks_opportunities": true,
     "external_shocks": true,
@@ -82561,16 +82561,16 @@
     "high_order_candidates_dormant": 2,
     "high_order_candidates_new_this_run": 17,
     "high_order_candidates_updated_this_run": 5,
-    "active_corpus_total": 268,
-    "active_strand_a": 226,
+    "active_corpus_total": 286,
+    "active_strand_a": 243,
     "active_strand_b": 0,
-    "active_strand_c": 42,
-    "deep_scan_v2_verified": 236,
-    "deep_scan_v2_pending": 318,
+    "active_strand_c": 43,
+    "deep_scan_v2_verified": 275,
+    "deep_scan_v2_pending": 279,
     "historical_deep_scan_v2_verified": 0,
-    "historical_deep_scan_v2_pending": 757,
-    "historical_active_a_context": 757,
-    "inactive_drop": 295,
+    "historical_deep_scan_v2_pending": 828,
+    "historical_active_a_context": 828,
+    "inactive_drop": 277,
     "inactive_unverifiable": 0,
     "inactive_manual_verification": 0,
     "inactive_duplicates": 0,
@@ -85351,373 +85351,19 @@
   },
   "shock_inference": {
     "profile_version": "23.3-context-weighted-shocks-v3",
-    "evaluated_at": "2026-09-26T21:08:09Z",
+    "evaluated_at": "2026-09-26T21:37:59Z",
     "new_count": 0,
     "updated_count": 0,
-    "unchanged_count": 1,
-    "dynamic_shocks": [
-      {
-        "id": "emergent:infrastructure:security_reclassification",
-        "asset_id": "infrastructure",
-        "pressure_id": "security_reclassification",
-        "title": "A partner weaponises Europe's dependence on critical infrastructure and networks to extract concessions",
-        "plainly": "Europe relies on critical infrastructure and networks. Separate primary evidence shows that economic coercion can change access quickly. Recent weak signals and historical material may strengthen the context, but neither can establish the shock on its own.",
-        "second_order": "Projects may keep their grants and institutions but still lose time, access or usable capacity while a replacement is found.",
-        "why_easy_to_miss": "The hypothesis appears when durable European capability evidence and a separately evidenced external pressure are read as one chain; low-weight current signals and history are then used only as context.",
-        "reasoning": [
-          "Primary retained evidence shows European reliance on or expansion of critical infrastructure and networks.",
-          "Separate primary retained evidence shows a live mechanism for economic coercion.",
-          "Primary evidence contains 1 direct capability × pressure coupling record(s).",
-          "1 recent weak-signal item(s) point in the same direction; each is capped at 30% of a primary evidence item and none satisfies a primary threshold.",
-          "3 historical Strand-A item(s) provide structural context; they cannot serve as the current trigger.",
-          "The scenario becomes a shock only if the response is slower than the disruption."
-        ],
-        "conditions": [
-          "Europe materially depends on critical infrastructure and networks for current or planned work.",
-          "Economic coercion reaches the supplier, service, partner or rule that the European capability depends on.",
-          "Europe cannot substitute, reroute or absorb the change before projects begin losing usable capacity."
-        ],
-        "case_against": [
-          "The trigger is not yet backed by an official primary source in the retained current evidence.",
-          "Only one primary retained record currently links the European capability directly to the outside pressure.",
-          "The primary direct connection is concentrated in one source, so independent confirmation is still weak.",
-          "The primary corpus contains 2 strong sign(s) of substitution, resilience or policy response that could absorb the shock.",
-          "Recent media/weak-signal corroboration is intentionally down-weighted and cannot substitute for primary evidence.",
-          "The scenario still depends on the disruption arriving faster than Europe can respond."
-        ],
-        "prevention_actions": [
-          "Screen ownership and vendors of critical infrastructure early.",
-          "Build redundancy and repair capacity for cables, ports and grids.",
-          "Make the anti-coercion response credible and fast, and coordinate it with partners."
-        ],
-        "watch_for": [
-          "A partner links trade measures to a political dispute.",
-          "The Commission opens an anti-coercion examination."
-        ],
-        "net_assessment": "Plausible, but important parts of the primary trigger or connection still need confirmation.",
-        "inference_score": 81,
-        "support": [
-          {
-            "identity": "url:https://doi.org/10.1111/jcms.70140",
-            "row": "A008",
-            "strand": "A",
-            "role": "Primary coupling evidence",
-            "evidence_role": "primary",
-            "analytical_weight": 1.0,
-            "title": "China and Limits to the European Union's Geoeconomic Turn",
-            "source": "JCMS Journal of Common Market Studies",
-            "date": "2026-07-06",
-            "link": "https://doi.org/10.1111/jcms.70140",
-            "quality": 96,
-            "new_this_scan": false,
-            "core_message": "Institutional limits reduce the EU’s ability to convert market power into coercive geoeconomic leverage toward China.",
-            "geo_evidence": [],
-            "ri_evidence": [],
-            "a_context_evidence": []
-          },
-          {
-            "identity": "url:https://doi.org/10.1007/s41125-026-00115-w",
-            "row": "A002",
-            "strand": "A",
-            "role": "Primary evidence",
-            "evidence_role": "primary",
-            "analytical_weight": 1.0,
-            "title": "EU Governance of Critical Infrastructure: Resilience and Artificial Intelligence as Policy Challenges",
-            "source": "European Journal for Security Research",
-            "date": "2026-09-17",
-            "link": "https://doi.org/10.1007/s41125-026-00115-w",
-            "quality": 92,
-            "new_this_scan": false,
-            "core_message": "EU critical-infrastructure governance is shifting from asset protection toward resilience across physical and digital systems.",
-            "geo_evidence": [],
-            "ri_evidence": [],
-            "a_context_evidence": []
-          },
-          {
-            "identity": "url:https://doi.org/10.65864/wn6xsu2byg",
-            "row": "A043",
-            "strand": "A",
-            "role": "European capability: critical infrastructure and networks",
-            "evidence_role": "primary",
-            "analytical_weight": 1.0,
-            "title": "Quantifying Non-Tariff Barriers: Brexit, Input Sourcing and Firm Performance",
-            "source": "ifo Institute",
-            "date": "2026-09-21",
-            "link": "https://doi.org/10.65864/wn6xsu2byg",
-            "quality": 98,
-            "new_this_scan": false,
-            "core_message": "Our results indicate EU membership secures large reductions in trade costs.",
-            "geo_evidence": [],
-            "ri_evidence": [
-              "tariff",
-              "ports + production",
-              "non-tariff barriers"
-            ],
-            "a_context_evidence": [
-              "rules_power",
-              "tariff",
-              "imports",
-              "costs"
-            ]
-          },
-          {
-            "identity": "url:https://doi.org/10.1163/29505720-bja00019",
-            "row": "A023",
-            "strand": "A",
-            "role": "External mechanism: economic coercion",
-            "evidence_role": "primary",
-            "analytical_weight": 1.0,
-            "title": "Economic Coercion, the World Trade Organization, and the EU’s Anti-coercion Instrument",
-            "source": "Law & Geoeconomics",
-            "date": "2026-06-10",
-            "link": "https://doi.org/10.1163/29505720-bja00019",
-            "quality": 92,
-            "new_this_scan": false,
-            "core_message": "Abstract The World Trade Organization ( WTO ) remains a cornerstone of the EU’s (EU) trade policy.",
-            "geo_evidence": [],
-            "ri_evidence": [],
-            "a_context_evidence": []
-          },
-          {
-            "identity": "url:https://news.google.com/rss/articles/cbmisgfbvv95cuxpcffiuw9xsvj5bw1rd1vhrkfkwvpfzwuwzwneqlptvf9xegthv1hodk51dzr6mljevkrtew5qtkjkrddduvldewvenxbpnutstdk0ltruwdd3mhvjthl5nun1nff4qu03tjhjd3jkslvitxbltfoymktruvhvd3k1meg3yunxme1grvrwmflnswzdugjiq1f6wm9tngwwqw1qztr5adv2shrwrzhzsvlwr0nn?oc=5",
-            "row": "C020",
-            "strand": "C",
-            "role": "Recent weak-signal context",
-            "evidence_role": "weak_signal",
-            "analytical_weight": 0.3,
-            "title": "France to Send Military Aid, Troops to Defend Saudi Oil Port",
-            "source": "Bloomberg",
-            "date": "2026-09-24T19:28Z",
-            "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcFFIUW9xSVJ5bW1rd1VHRkFkWVpFZWUwZWNEQlptVF9XeGthV1hOdk51dzR6MlJEVkRteW5QTkJKRDdDUVlDeWVENXBPNUtsTDk0LTRuWDd3MHVJTHl5NUN1NFF4QU03Tjhjd3JKSlVITXBLTFoyMktrUVhvd3k1MEg3YUNXME1GRVRwMFlNSWZDUGJiQ1F6Wm9tNGwwQW1qZTR5aDV2SHRwRzhZSVlWR0Nn?oc=5",
-            "quality": 80,
-            "new_this_scan": false,
-            "core_message": "",
-            "geo_evidence": [],
-            "ri_evidence": [],
-            "a_context_evidence": []
-          },
-          {
-            "identity": "url:https://doi.org/10.1111/jcms.13549",
-            "row": "H332",
-            "strand": "H",
-            "role": "Historical coupling context",
-            "evidence_role": "historical",
-            "analytical_weight": 0.45,
-            "title": "The EU and Russia: The War that Changed Everything",
-            "source": "Journal of Common Market Studies",
-            "date": "2023-09-01",
-            "link": "https://doi.org/10.1111/jcms.13549",
-            "quality": 90,
-            "new_this_scan": false,
-            "core_message": "The significance of Russia's war against Ukraine can hardly be overestimated. This is the biggest interstate war in Europe since the Second World War.",
-            "geo_evidence": [
-              "geopolit",
-              "strategic autonomy",
-              "economic coercion",
-              "coercion"
-            ],
-            "ri_evidence": [
-              "economic coercion",
-              "energy security",
-              "strategic partnership",
-              "strategic autonomy"
-            ],
-            "a_context_evidence": []
-          },
-          {
-            "identity": "url:https://www.enisa.europa.eu/sites/default/files/publications/enisa%205g%20threat%20landscape%20-%20update.pdf",
-            "row": "H091",
-            "strand": "H",
-            "role": "Historical structural context",
-            "evidence_role": "historical",
-            "analytical_weight": 0.45,
-            "title": "ENISA Threat Landscape for 5G Networks Report | ENISA",
-            "source": "ENISA",
-            "date": "2025-11-06",
-            "link": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%205G%20Threat%20Landscape%20-%20Update.pdf",
-            "quality": 92,
-            "new_this_scan": false,
-            "core_message": "ENISA is the EU agency dedicated to enhancing cybersecurity in Europe. They offer guidance, tools, and resources to safeguard citizens and businesses from cyber threats.",
-            "geo_evidence": [
-              "resilience"
-            ],
-            "ri_evidence": [
-              "cybersecurity + production",
-              "5g"
-            ],
-            "a_context_evidence": []
-          },
-          {
-            "identity": "url:https://www.enisa.europa.eu/sites/default/files/publications/interconnect%20security%20ss7-diameter.pdf",
-            "row": "H100",
-            "strand": "H",
-            "role": "Historical structural context",
-            "evidence_role": "historical",
-            "analytical_weight": 0.45,
-            "title": "Signalling Security in Telecom SS7/Diameter/5G | ENISA",
-            "source": "ENISA",
-            "date": "2025-09-16",
-            "link": "https://www.enisa.europa.eu/sites/default/files/publications/Interconnect%20Security%20SS7-Diameter.pdf",
-            "quality": 92,
-            "new_this_scan": false,
-            "core_message": "ENISA is the EU agency dedicated to enhancing cybersecurity in Europe. They offer guidance, tools, and resources to safeguard citizens and businesses from cyber threats.",
-            "geo_evidence": [
-              "resilience"
-            ],
-            "ri_evidence": [
-              "5g"
-            ],
-            "a_context_evidence": []
-          }
-        ],
-        "against": [
-          {
-            "identity": "url:https://doi.org/10.1080/09692290.2026.2693756",
-            "row": "A101",
-            "strand": "A",
-            "role": "Primary evidence that could absorb or prevent the shock",
-            "evidence_role": "primary",
-            "analytical_weight": 1.0,
-            "title": "Do preferential trade agreements with labor clauses displace labor abuses? The unintended consequences of global governance on labor standards",
-            "source": "Review of International Political Economy",
-            "date": "2026-07-01",
-            "link": "https://doi.org/10.1080/09692290.2026.2693756",
-            "quality": 96,
-            "new_this_scan": false,
-            "core_message": "Do preferential trade agreements with labor clauses displace labor abuses?",
-            "geo_evidence": [],
-            "ri_evidence": [
-              "trade agreement",
-              "trade agreements",
-              "ports + trade"
-            ],
-            "a_context_evidence": [
-              "international_coordination",
-              "trade agreement",
-              "united states",
-              "exports"
-            ]
-          },
-          {
-            "identity": "url:https://doi.org/10.1016/j.ijpe.2026.110226",
-            "row": "A110",
-            "strand": "A",
-            "role": "Primary evidence that could absorb or prevent the shock",
-            "evidence_role": "primary",
-            "analytical_weight": 1.0,
-            "title": "Managing geopolitical risk in global supply chains: A qualitative study of European multinational enterprises",
-            "source": "International Journal of Production Economics",
-            "date": "2026-09-01",
-            "link": "https://doi.org/10.1016/j.ijpe.2026.110226",
-            "quality": 92,
-            "new_this_scan": false,
-            "core_message": "We extend an established supply chain risk framework by conceptualizing geopolitical risk management (GRM).",
-            "geo_evidence": [
-              "geopolit",
-              "diversification",
-              "resilience"
-            ],
-            "ri_evidence": [
-              "ports + supply chain"
-            ],
-            "a_context_evidence": [
-              "international_coordination",
-              "partnership",
-              "global supply chain",
-              "resilience"
-            ]
-          }
-        ],
-        "prevention_evidence": [
-          {
-            "identity": "url:https://doi.org/10.1080/09692290.2026.2693756",
-            "row": "A101",
-            "strand": "A",
-            "role": "Primary evidence that could absorb or prevent the shock",
-            "evidence_role": "primary",
-            "analytical_weight": 1.0,
-            "title": "Do preferential trade agreements with labor clauses displace labor abuses? The unintended consequences of global governance on labor standards",
-            "source": "Review of International Political Economy",
-            "date": "2026-07-01",
-            "link": "https://doi.org/10.1080/09692290.2026.2693756",
-            "quality": 96,
-            "new_this_scan": false,
-            "core_message": "Do preferential trade agreements with labor clauses displace labor abuses?",
-            "geo_evidence": [],
-            "ri_evidence": [
-              "trade agreement",
-              "trade agreements",
-              "ports + trade"
-            ],
-            "a_context_evidence": [
-              "international_coordination",
-              "trade agreement",
-              "united states",
-              "exports"
-            ]
-          },
-          {
-            "identity": "url:https://doi.org/10.1016/j.ijpe.2026.110226",
-            "row": "A110",
-            "strand": "A",
-            "role": "Primary evidence that could absorb or prevent the shock",
-            "evidence_role": "primary",
-            "analytical_weight": 1.0,
-            "title": "Managing geopolitical risk in global supply chains: A qualitative study of European multinational enterprises",
-            "source": "International Journal of Production Economics",
-            "date": "2026-09-01",
-            "link": "https://doi.org/10.1016/j.ijpe.2026.110226",
-            "quality": 92,
-            "new_this_scan": false,
-            "core_message": "We extend an established supply chain risk framework by conceptualizing geopolitical risk management (GRM).",
-            "geo_evidence": [
-              "geopolit",
-              "diversification",
-              "resilience"
-            ],
-            "ri_evidence": [
-              "ports + supply chain"
-            ],
-            "a_context_evidence": [
-              "international_coordination",
-              "partnership",
-              "global supply chain",
-              "resilience"
-            ]
-          }
-        ],
-        "source_count": 4,
-        "primary_source_count": 4,
-        "pressure_source_count": 3,
-        "coupling_count": 1,
-        "context_coupling_count": 4,
-        "weak_signal_context_count": 1,
-        "historical_context_count": 3,
-        "context_weight_total": 1.65,
-        "context_score_bonus": 4.4,
-        "official_trigger_present": false,
-        "best_quality": 98,
-        "average_quality": 94,
-        "fresh_coupling": false,
-        "fresh_context": false,
-        "first_inferred_at": "2026-09-26T09:46:49Z",
-        "last_updated_at": "2026-09-26T21:08:09Z",
-        "fingerprint": "7ab8c1e099e763c2",
-        "new_this_scan": false,
-        "updated_this_scan": false,
-        "status": "unchanged",
-        "retrace_status": "unchanged",
-        "retrace_at": "2026-09-26T21:08:09Z"
-      }
-    ]
+    "unchanged_count": 0,
+    "dynamic_shocks": []
   },
   "high_order_inference": {
     "profile_version": "v23.5-generative-trends-level45",
-    "evaluated_at": "2026-09-26T21:08:09Z",
+    "evaluated_at": "2026-09-26T21:37:59Z",
     "new_count": 0,
     "updated_count": 0,
-    "qualified_count": 0,
-    "watch_count": 8,
+    "qualified_count": 2,
+    "watch_count": 7,
     "dormant_count": 1,
     "trigger_summary": {
       "new_primary_records_evaluated": 11,
@@ -85730,11 +85376,415 @@
       "shock": [],
       "risk": [],
       "opportunity": [],
-      "continuity": [],
+      "continuity": [
+        "l45:practice_precedes_doctrine:generic-infrastructure"
+      ],
       "trend": []
     },
     "candidate_search_policy": "Only missing-link and falsifier searches are fed back. No candidate bypasses normal A/B/C admission.",
     "candidates": [
+      {
+        "id": "l45:practice_precedes_doctrine:generic-infrastructure",
+        "grammar_id": "practice_precedes_doctrine",
+        "product": "continuity",
+        "inferential_distance": 4,
+        "topic_key": "generic:infrastructure",
+        "topic_label": "critical infrastructure",
+        "status": "qualified",
+        "score": 90,
+        "primary_role_coverage": 1.0,
+        "required_roles": [
+          "formal_doctrine",
+          "earlier_practice",
+          "doctrine_names_existing_tool",
+          "practice_has_effect"
+        ],
+        "covered_roles": [
+          "formal_doctrine",
+          "earlier_practice",
+          "doctrine_names_existing_tool",
+          "practice_has_effect"
+        ],
+        "missing_links": [],
+        "primary_records": 8,
+        "primary_sources": 8,
+        "context_records": 6,
+        "counter_records": 0,
+        "denial_tested": true,
+        "counter_penalty": 0,
+        "synthesis_across_records": true,
+        "support": [
+          {
+            "identity": "url:https://doi.org/10.1002/tie.70137",
+            "role": "formal_doctrine",
+            "strand": "A",
+            "title": "Government as a Strategic Actor: A Framework for Assessing Regulatory Risk in Digital Markets",
+            "source": "Thunderbird International Business Review",
+            "date": "2026-04-29",
+            "link": "https://doi.org/10.1002/tie.70137",
+            "quality": 89,
+            "new_this_scan": true,
+            "analytical_weight": 1.0
+          },
+          {
+            "identity": "url:https://doi.org/10.1016/j.nxsust.2026.100498",
+            "role": "formal_doctrine",
+            "strand": "A",
+            "title": "The nuclear-climate nexus for net-zero pathways: Opportunities, challenges, and policy directions: A review",
+            "source": "Next Sustainability",
+            "date": "2026-09-22",
+            "link": "https://doi.org/10.1016/j.nxsust.2026.100498",
+            "quality": 89,
+            "new_this_scan": false,
+            "analytical_weight": 1.0
+          },
+          {
+            "identity": "url:https://doi.org/10.1017/cel.2026.10028",
+            "role": "formal_doctrine",
+            "strand": "A",
+            "title": "From Post-Soviet Legacy to Present Accountability: The Emergence of a Doctrinal Framework in European Union (EU) Sanctions Law against Russia",
+            "source": "Cambridge Yearbook of European Legal Studies",
+            "date": "2026-04-28",
+            "link": "https://doi.org/10.1017/cel.2026.10028",
+            "quality": 89,
+            "new_this_scan": false,
+            "analytical_weight": 1.0
+          },
+          {
+            "identity": "url:https://doi.org/10.1007/s12198-026-00349-8",
+            "role": "earlier_practice",
+            "strand": "A",
+            "title": "Cybersecurity in critical rail infrastructure: sector specific adoption of the NIS 2 directive in Europe",
+            "source": "Journal of Transportation Security",
+            "date": "2026-04-18",
+            "link": "https://doi.org/10.1007/s12198-026-00349-8",
+            "quality": 89,
+            "new_this_scan": false,
+            "analytical_weight": 1.0
+          },
+          {
+            "identity": "url:https://doi.org/10.1111/roie.70080",
+            "role": "practice_has_effect",
+            "strand": "A",
+            "title": "Sourcing All the Eggs From One Basket: Trade Dependencies and Import Prices",
+            "source": "Review of International Economics",
+            "date": "2026-08-05",
+            "link": "https://doi.org/10.1111/roie.70080",
+            "quality": 89,
+            "new_this_scan": false,
+            "analytical_weight": 1.0
+          },
+          {
+            "identity": "url:https://doi.org/10.1111/jcms.70140",
+            "role": "practice_has_effect",
+            "strand": "A",
+            "title": "China and Limits to the European Union's Geoeconomic Turn",
+            "source": "JCMS Journal of Common Market Studies",
+            "date": "2026-07-06",
+            "link": "https://doi.org/10.1111/jcms.70140",
+            "quality": 89,
+            "new_this_scan": false,
+            "analytical_weight": 1.0
+          },
+          {
+            "identity": "url:https://doi.org/10.1016/j.telpol.2026.103222",
+            "role": "practice_has_effect",
+            "strand": "A",
+            "title": "Enabling the EU's digital Sovereignty: A Europe-level quantum internet as the key infrastructure for a European digital polity",
+            "source": "Telecommunications Policy",
+            "date": "2026-07-01",
+            "link": "https://doi.org/10.1016/j.telpol.2026.103222",
+            "quality": 89,
+            "new_this_scan": false,
+            "analytical_weight": 1.0
+          }
+        ],
+        "context": [
+          {
+            "identity": "url:https://op.europa.eu/o/opportal-service/download-handler?identifier=1e33c409-b5d0-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionsystem=cellar&part=",
+            "role": "Context only",
+            "strand": "C",
+            "title": "COMMISSION STAFF WORKING DOCUMENT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council amending Regulation (EU) 2021/1139 as regards simplification and the transposition of the WTO Agreement on Fisheries Subsidies - Publications Office of the EU",
+            "source": "Publications Office of the EU",
+            "date": "2026-09-21",
+            "link": "https://op.europa.eu/o/opportal-service/download-handler?identifier=1e33c409-b5d0-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+            "quality": 82,
+            "new_this_scan": true,
+            "analytical_weight": 0.3
+          },
+          {
+            "identity": "url:https://op.europa.eu/o/opportal-service/download-handler?identifier=df399feb-b59b-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionsystem=cellar&part=",
+            "role": "Context only",
+            "strand": "C",
+            "title": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) 2021/1139 as regards simplification and the transposition of the WTO Agreement on Fisheries Subsidies - Publications Office of the EU",
+            "source": "Publications Office of the EU",
+            "date": "2026-09-21",
+            "link": "https://op.europa.eu/o/opportal-service/download-handler?identifier=df399feb-b59b-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+            "quality": 82,
+            "new_this_scan": true,
+            "analytical_weight": 0.3
+          },
+          {
+            "identity": "url:https://eur-lex.europa.eu/eli/reg/2021/821/oj/eng",
+            "role": "Context only",
+            "strand": "C",
+            "title": "2026 Update of the EU Control List of Dual-Use Items",
+            "source": "European Commission — Trade and Economic Security",
+            "date": "2026-09-14",
+            "link": "https://eur-lex.europa.eu/eli/reg/2021/821/oj/eng",
+            "quality": 96,
+            "new_this_scan": false,
+            "analytical_weight": 0.3
+          },
+          {
+            "identity": "url:https://news.google.com/rss/articles/cbmivwfbvv95cuxom3nfz1dxagrroedxcerszjnzlvhpsu5kmerucgnwcdy0nmntv2rntfbglu5jztd4bwn5ufvvmfz5bwxmulrcykznctzpatz2q0xjouddrufrzezjthrtb2dkrnk3x0dfu05fuupsmgnunldksxrpc0nxqvdlufu1rtq3al9dtlzvuwrdvddyqvjgqkdcv1nyngzgegsxlw0wvetlog1snnnfvvyyc3gtbe53ukzzner4cl9gd1fmdw?oc=5",
+            "role": "Context only",
+            "strand": "C",
+            "title": "Eaton to acquire Italy's grid equipment maker COL Group for €810 million to expand in Europe",
+            "source": "Reuters",
+            "date": "2026-09-25",
+            "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOM3NfZ1dXaGRROEdXcERsZjNZLVhPSU5KMERucGNwcDY0NmNtV2RNTFBGLU5jZTd4bWN5UFVVMFZ5bWxMUlRCYkZncTZpaTZ2Q0xjOUdDRUFrZEZjTHRtb2dKRnk3X0dFU05FUUpSMGNuNldkSXRpc0NXQVdLUFU1RTQ3al9DTlZVUWRDVDdyQVJGQkdCV1NYNGZGeGsxLW0wVEtlOG1sNnNfVVYyc3gtbE53UkZZNER4cl9Gd1Fmdw?oc=5",
+            "quality": 82,
+            "new_this_scan": false,
+            "analytical_weight": 0.3
+          },
+          {
+            "identity": "url:https://news.google.com/rss/articles/cbmisgfbvv95cuxpcffiuw9xsvj5bw1rd1vhrkfkwvpfzwuwzwneqlptvf9xegthv1hodk51dzr6mljevkrtew5qtkjkrddduvldewvenxbpnutstdk0ltruwdd3mhvjthl5nun1nff4qu03tjhjd3jkslvitxbltfoymktruvhvd3k1meg3yunxme1grvrwmflnswzdugjiq1f6wm9tngwwqw1qztr5adv2shrwrzhzsvlwr0nn?oc=5",
+            "role": "Context only",
+            "strand": "C",
+            "title": "France to Send Military Aid, Troops to Defend Saudi Oil Port",
+            "source": "Bloomberg",
+            "date": "2026-09-24",
+            "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcFFIUW9xSVJ5bW1rd1VHRkFkWVpFZWUwZWNEQlptVF9XeGthV1hOdk51dzR6MlJEVkRteW5QTkJKRDdDUVlDeWVENXBPNUtsTDk0LTRuWDd3MHVJTHl5NUN1NFF4QU03Tjhjd3JKSlVITXBLTFoyMktrUVhvd3k1MEg3YUNXME1GRVRwMFlNSWZDUGJiQ1F6Wm9tNGwwQW1qZTR5aDV2SHRwRzhZSVlWR0Nn?oc=5",
+            "quality": 82,
+            "new_this_scan": false,
+            "analytical_weight": 0.3
+          },
+          {
+            "identity": "url:https://news.google.com/rss/articles/cbmijafbvv95cuxpouhrahixulrhwxjxvndrynhilxbym3lmwxewazjeoeplae9xrex6anl0ylhsunrqyu5lvhbmrmvsss12ltf5u2ziddrrunhpotbhsnl2ckdua3docur1dxrhoew0ylq4ullyafowdmd2zmj3lvhsmu5ebfrvm2rrznk0d2xyx2w1clfolq?oc=5",
+            "role": "Context only",
+            "strand": "C",
+            "title": "A new age of capital: growth, sovereignty and AI - European Central Bank",
+            "source": "ECB",
+            "date": "2026-09-14",
+            "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPOUhraHIxUlRhWXJXVndrYnhiLXBYM3lmWXEwazJEOEplaE9XREx6anl0YlhSUnRqYU5LVHBmRmVsSS12LTF5U2ZIdDRrUnhPOTBhSnl2ckdua3dOcUR1dXRHOEw0YlQ4UllyaFowdmd2ZmJ3LVhsMU5EbFRVM2RrZnk0d2xYX2w1clFOLQ?oc=5",
+            "quality": 82,
+            "new_this_scan": false,
+            "analytical_weight": 0.3
+          }
+        ],
+        "against": [],
+        "support_queries": [
+          "Europe research innovation critical infrastructure practice timeline before formal framework",
+          "Europe research innovation critical infrastructure framework names existing instrument tool"
+        ],
+        "falsifier_queries": [
+          "Europe research innovation critical infrastructure framework created new instrument no prior practice"
+        ],
+        "touched_this_scan": true,
+        "reader_eligible": true,
+        "generic_grammar": true,
+        "reader_title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+        "reader_summary": "The sequence, not topic similarity, is the finding: dated primary evidence places practice before doctrine, and the later framework explicitly names the earlier instrument while separate evidence shows that practice had real effects.",
+        "first_seen_at": "2026-09-26T21:37:59Z",
+        "last_updated_at": "2026-09-26T21:37:59Z",
+        "fingerprint": "5686a125af96d47d",
+        "new_this_scan": false,
+        "updated_this_scan": false,
+        "lifecycle": "seeded",
+        "missed_detection_scans": 0,
+        "retrace_status": "rebuilt",
+        "retrace_at": "2026-09-26T21:37:59Z"
+      },
+      {
+        "id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+        "grammar_id": "practice_precedes_doctrine",
+        "product": "continuity",
+        "inferential_distance": 4,
+        "topic_key": "generic:collaboration_diplomacy",
+        "topic_label": "partnerships/agreements",
+        "status": "qualified",
+        "score": 90,
+        "primary_role_coverage": 1.0,
+        "required_roles": [
+          "formal_doctrine",
+          "earlier_practice",
+          "doctrine_names_existing_tool",
+          "practice_has_effect"
+        ],
+        "covered_roles": [
+          "formal_doctrine",
+          "earlier_practice",
+          "doctrine_names_existing_tool",
+          "practice_has_effect"
+        ],
+        "missing_links": [],
+        "primary_records": 5,
+        "primary_sources": 5,
+        "context_records": 6,
+        "counter_records": 0,
+        "denial_tested": true,
+        "counter_penalty": 0,
+        "synthesis_across_records": true,
+        "support": [
+          {
+            "identity": "url:https://doi.org/10.1017/cel.2026.10028",
+            "role": "formal_doctrine",
+            "strand": "A",
+            "title": "From Post-Soviet Legacy to Present Accountability: The Emergence of a Doctrinal Framework in European Union (EU) Sanctions Law against Russia",
+            "source": "Cambridge Yearbook of European Legal Studies",
+            "date": "2026-04-28",
+            "link": "https://doi.org/10.1017/cel.2026.10028",
+            "quality": 89,
+            "new_this_scan": false,
+            "analytical_weight": 1.0
+          },
+          {
+            "identity": "url:https://doi.org/10.1007/s12198-026-00349-8",
+            "role": "earlier_practice",
+            "strand": "A",
+            "title": "Cybersecurity in critical rail infrastructure: sector specific adoption of the NIS 2 directive in Europe",
+            "source": "Journal of Transportation Security",
+            "date": "2026-04-18",
+            "link": "https://doi.org/10.1007/s12198-026-00349-8",
+            "quality": 89,
+            "new_this_scan": false,
+            "analytical_weight": 1.0
+          },
+          {
+            "identity": "url:https://doi.org/10.1080/07036337.2026.2652993",
+            "role": "earlier_practice",
+            "strand": "A",
+            "title": "Continuity in times of geoeconomic change: the European Union’s strategic trade relations with the Global South",
+            "source": "Journal of European Integration",
+            "date": "2026-04-02",
+            "link": "https://doi.org/10.1080/07036337.2026.2652993",
+            "quality": 89,
+            "new_this_scan": false,
+            "analytical_weight": 1.0
+          },
+          {
+            "identity": "url:https://doi.org/10.1111/1746-692x.70033",
+            "role": "earlier_practice",
+            "strand": "A",
+            "title": "Key Policy Lessons for More Sustainable Agri‐food Trade from TRADE4SD and MATS Horizon 2020 projects",
+            "source": "EuroChoices",
+            "date": "2026-04-01",
+            "link": "https://doi.org/10.1111/1746-692x.70033",
+            "quality": 89,
+            "new_this_scan": false,
+            "analytical_weight": 1.0
+          },
+          {
+            "identity": "url:https://doi.org/10.1080/09692290.2026.2693756",
+            "role": "practice_has_effect",
+            "strand": "A",
+            "title": "Do preferential trade agreements with labor clauses displace labor abuses? The unintended consequences of global governance on labor standards",
+            "source": "Review of International Political Economy",
+            "date": "2026-07-01",
+            "link": "https://doi.org/10.1080/09692290.2026.2693756",
+            "quality": 89,
+            "new_this_scan": false,
+            "analytical_weight": 1.0
+          }
+        ],
+        "context": [
+          {
+            "identity": "url:https://op.europa.eu/o/opportal-service/download-handler?identifier=1e33c409-b5d0-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionsystem=cellar&part=",
+            "role": "Context only",
+            "strand": "C",
+            "title": "COMMISSION STAFF WORKING DOCUMENT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council amending Regulation (EU) 2021/1139 as regards simplification and the transposition of the WTO Agreement on Fisheries Subsidies - Publications Office of the EU",
+            "source": "Publications Office of the EU",
+            "date": "2026-09-21",
+            "link": "https://op.europa.eu/o/opportal-service/download-handler?identifier=1e33c409-b5d0-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+            "quality": 82,
+            "new_this_scan": true,
+            "analytical_weight": 0.3
+          },
+          {
+            "identity": "url:https://eur-lex.europa.eu/eli/reg/2021/821/oj/eng",
+            "role": "Context only",
+            "strand": "C",
+            "title": "2026 Update of the EU Control List of Dual-Use Items",
+            "source": "European Commission — Trade and Economic Security",
+            "date": "2026-09-14",
+            "link": "https://eur-lex.europa.eu/eli/reg/2021/821/oj/eng",
+            "quality": 96,
+            "new_this_scan": false,
+            "analytical_weight": 0.3
+          },
+          {
+            "identity": "url:https://news.google.com/rss/articles/cbmi6gfbvv95cuxpv3bxruzfawjkzgjqbkpsc2ctbnrcdhk0a1vdrfhwltbhr01gcxe2rmfwndbirkftbgdpyvhfy00xeepprw4ws0dkc0fdowl0ze1ry3a5dkfrwuvgb1zgn0npshvbehj2wnpjr2vktjrmajriac1jtfvqm1ltnu1gdensa29fwjdyexfvqkjsa1pmdmrlajzlckpwqwdinlvqselpwhddwtbmzzu0zuxxvfowyjzloujnzk5meuxiuevlni1jx2prylv0y3zkskvhtxj3yu12zwlcn2xny2i1sw9xdxdrdeq2sxc?oc=5",
+            "role": "Context only",
+            "strand": "C",
+            "title": "EU advances Global Health Resilience Initiative with new Global Gateway investments in Africa and Latin America",
+            "source": "EEAS",
+            "date": "2026-09-25",
+            "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPV3BxRUZfaWJkZGJQbkpsc2ctbnRCdHk0a1VDRFhwLTBhR01GcXE2RmFwNDBIRkFtbGdPYVhfY00xeEppRW4wS0dKc0FDOWl0ZE1rY3A5dkFrWUVGb1ZGN0NPSHVBeHJ2WnpjR2VkTjRMajRiaC1JTFVqM1lTNU1GdENsa29FWjdyeXFvQkJSa1pMdmRLajZLckpWQWdINlVqSElPWHdDWTBmZzU0ZUxXVFowYjZlOUJNZk5meUxIUEVLNi1JX2pRYlV0Y3ZKSkVHTXJ3YU12ZWlCN2xNY2I1SW9xdXdrdEQ2SXc?oc=5",
+            "quality": 82,
+            "new_this_scan": false,
+            "analytical_weight": 0.3
+          },
+          {
+            "identity": "url:https://borderlex.net/2026/09/25/comment-mercosur-is-the-future-and-always-will-be",
+            "role": "Context only",
+            "strand": "C",
+            "title": "Comment: Mercosur is the future. And always will be. - Borderlex - European trade policy",
+            "source": "Borderlex",
+            "date": "2026-09-25",
+            "link": "https://borderlex.net/2026/09/25/comment-mercosur-is-the-future-and-always-will-be/",
+            "quality": 82,
+            "new_this_scan": false,
+            "analytical_weight": 0.3
+          },
+          {
+            "identity": "url:https://news.google.com/rss/articles/cbmitwfbvv95cuxpdxmytvgwreyxrxhzdug3vwrsbkhunuflqxrjqllhwehwr29vr1nec2fwcupothftm3zuc2xhmwtjwv8xekpnm2xns29html5wgjrulhyti11rdrlm2xmwwp0atbtxzvvatjjm29qrldudmd3afdeowrgrjv0dhjree1kvtjgnezzm1ziunrjy21jr2dqvlvtx2prmuviqnm4mv9pdvg4anhxotzxn0hengc1uzzxy1e?oc=5",
+            "role": "Context only",
+            "strand": "C",
+            "title": "EU’s top AI adviser urges commissioners to use the technology to fix bloc’s economy",
+            "source": "Politico Europe",
+            "date": "2026-09-24",
+            "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdXMyTVgwREYxRXhZdUg3VWRsbkhuNUFlQXRJQllhWEhWR29VR1NEc2FwcUpOTHFtM3ZUc2xhMWtjWV8xekpNM2xnS29hTml5WGJRUlhYTi11RDRlM2xMWWp0aTBtXzVVaTJJM29qRldUdmd3aFdEOWRGRjV0dHJreE1kVTJGNEZZM1ZiUnRjY21jR2dqVlVtX2prMUViQnM4MV9PdVg4anhXOTZxN0hENGc1UzZXY1E?oc=5",
+            "quality": 82,
+            "new_this_scan": false,
+            "analytical_weight": 0.3
+          },
+          {
+            "identity": "url:https://egmontinstitute.be/redefining-the-eu-china-economic-partnership-beyond-reciprocity-lies-strategy",
+            "role": "Context only",
+            "strand": "H",
+            "title": "Redefining the EU-China economic partnership: beyond reciprocity lies strategy - Egmont Institute",
+            "source": "Egmont Institute",
+            "date": "2026-03-25",
+            "link": "https://egmontinstitute.be/redefining-the-eu-china-economic-partnership-beyond-reciprocity-lies-strategy/",
+            "quality": 82,
+            "new_this_scan": false,
+            "analytical_weight": 0.45
+          }
+        ],
+        "against": [],
+        "support_queries": [
+          "Europe research innovation partnerships/agreements practice timeline before formal framework",
+          "Europe research innovation partnerships/agreements framework names existing instrument tool"
+        ],
+        "falsifier_queries": [
+          "Europe research innovation partnerships/agreements framework created new instrument no prior practice"
+        ],
+        "touched_this_scan": true,
+        "reader_eligible": true,
+        "generic_grammar": true,
+        "reader_title": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+        "reader_summary": "The sequence, not topic similarity, is the finding: dated primary evidence places practice before doctrine, and the later framework explicitly names the earlier instrument while separate evidence shows that practice had real effects.",
+        "first_seen_at": "2026-09-26T21:37:59Z",
+        "last_updated_at": "2026-09-26T21:37:59Z",
+        "fingerprint": "33942f737cc4ff93",
+        "new_this_scan": false,
+        "updated_this_scan": false,
+        "lifecycle": "seeded",
+        "missed_detection_scans": 0,
+        "retrace_status": "newly_inferred",
+        "retrace_at": "2026-09-26T21:37:59Z"
+      },
       {
         "id": "l45:practice_precedes_doctrine:generic-materials-energy",
         "grammar_id": "practice_precedes_doctrine",
@@ -85759,8 +85809,8 @@
         "missing_links": [
           "doctrine_names_existing_tool"
         ],
-        "primary_records": 10,
-        "primary_sources": 10,
+        "primary_records": 11,
+        "primary_sources": 11,
         "context_records": 6,
         "counter_records": 0,
         "denial_tested": true,
@@ -85804,13 +85854,13 @@
             "analytical_weight": 1.0
           },
           {
-            "identity": "url:https://doi.org/10.1007/s11367-026-02643-y",
+            "identity": "url:https://doi.org/10.1016/j.apenergy.2026.127884",
             "role": "earlier_practice",
             "strand": "A",
-            "title": "Evaluating social sustainability in European photovoltaic module supply chains through social life cycle assessment",
-            "source": "The International Journal of Life Cycle Assessment",
-            "date": "2026-04-29",
-            "link": "https://doi.org/10.1007/s11367-026-02643-y",
+            "title": "Multi-objective supply chain optimization of renewable energy carrier imports for Europe",
+            "source": "Applied Energy",
+            "date": "2026-07-01",
+            "link": "https://doi.org/10.1016/j.apenergy.2026.127884",
             "quality": 89,
             "new_this_scan": false,
             "analytical_weight": 1.0
@@ -85939,217 +85989,15 @@
         "generic_grammar": true,
         "reader_title": "Formal policy around energy/materials may be codifying a practice that was already operating.",
         "reader_summary": "The sequence, not topic similarity, is the finding: dated primary evidence places practice before doctrine, and the later framework explicitly names the earlier instrument while separate evidence shows that practice had real effects.",
-        "first_seen_at": "2026-09-26T21:08:09Z",
-        "last_updated_at": "2026-09-26T21:08:09Z",
-        "fingerprint": "f24e0ae75f1899ef",
+        "first_seen_at": "2026-09-26T21:37:59Z",
+        "last_updated_at": "2026-09-26T21:37:59Z",
+        "fingerprint": "93d0c76efbf7ef31",
         "new_this_scan": false,
         "updated_this_scan": false,
         "lifecycle": "seeded",
         "missed_detection_scans": 0,
         "retrace_status": "rebuilt",
-        "retrace_at": "2026-09-26T21:08:09Z"
-      },
-      {
-        "id": "l45:practice_precedes_doctrine:generic-infrastructure",
-        "grammar_id": "practice_precedes_doctrine",
-        "product": "continuity",
-        "inferential_distance": 4,
-        "topic_key": "generic:infrastructure",
-        "topic_label": "critical infrastructure",
-        "status": "watch",
-        "score": 85,
-        "primary_role_coverage": 0.75,
-        "required_roles": [
-          "formal_doctrine",
-          "earlier_practice",
-          "doctrine_names_existing_tool",
-          "practice_has_effect"
-        ],
-        "covered_roles": [
-          "formal_doctrine",
-          "earlier_practice",
-          "practice_has_effect"
-        ],
-        "missing_links": [
-          "doctrine_names_existing_tool"
-        ],
-        "primary_records": 7,
-        "primary_sources": 7,
-        "context_records": 6,
-        "counter_records": 0,
-        "denial_tested": true,
-        "counter_penalty": 0,
-        "synthesis_across_records": true,
-        "support": [
-          {
-            "identity": "url:https://doi.org/10.1002/tie.70137",
-            "role": "formal_doctrine",
-            "strand": "A",
-            "title": "Government as a Strategic Actor: A Framework for Assessing Regulatory Risk in Digital Markets",
-            "source": "Thunderbird International Business Review",
-            "date": "2026-04-29",
-            "link": "https://doi.org/10.1002/tie.70137",
-            "quality": 89,
-            "new_this_scan": true,
-            "analytical_weight": 1.0
-          },
-          {
-            "identity": "url:https://doi.org/10.1016/j.nxsust.2026.100498",
-            "role": "formal_doctrine",
-            "strand": "A",
-            "title": "The nuclear-climate nexus for net-zero pathways: Opportunities, challenges, and policy directions: A review",
-            "source": "Next Sustainability",
-            "date": "2026-09-22",
-            "link": "https://doi.org/10.1016/j.nxsust.2026.100498",
-            "quality": 89,
-            "new_this_scan": false,
-            "analytical_weight": 1.0
-          },
-          {
-            "identity": "url:https://doi.org/10.1080/14747731.2026.2658892",
-            "role": "earlier_practice",
-            "strand": "A",
-            "title": "The EU global gateway and energy infrastructure: navigating varieties of economic statecraft",
-            "source": "Globalizations",
-            "date": "2026-04-28",
-            "link": "https://doi.org/10.1080/14747731.2026.2658892",
-            "quality": 89,
-            "new_this_scan": false,
-            "analytical_weight": 1.0
-          },
-          {
-            "identity": "url:https://doi.org/10.1111/roie.70080",
-            "role": "practice_has_effect",
-            "strand": "A",
-            "title": "Sourcing All the Eggs From One Basket: Trade Dependencies and Import Prices",
-            "source": "Review of International Economics",
-            "date": "2026-08-05",
-            "link": "https://doi.org/10.1111/roie.70080",
-            "quality": 89,
-            "new_this_scan": false,
-            "analytical_weight": 1.0
-          },
-          {
-            "identity": "url:https://doi.org/10.1111/jcms.70140",
-            "role": "practice_has_effect",
-            "strand": "A",
-            "title": "China and Limits to the European Union's Geoeconomic Turn",
-            "source": "JCMS Journal of Common Market Studies",
-            "date": "2026-07-06",
-            "link": "https://doi.org/10.1111/jcms.70140",
-            "quality": 89,
-            "new_this_scan": false,
-            "analytical_weight": 1.0
-          },
-          {
-            "identity": "url:https://doi.org/10.1016/j.telpol.2026.103222",
-            "role": "practice_has_effect",
-            "strand": "A",
-            "title": "Enabling the EU's digital Sovereignty: A Europe-level quantum internet as the key infrastructure for a European digital polity",
-            "source": "Telecommunications Policy",
-            "date": "2026-07-01",
-            "link": "https://doi.org/10.1016/j.telpol.2026.103222",
-            "quality": 89,
-            "new_this_scan": false,
-            "analytical_weight": 1.0
-          }
-        ],
-        "context": [
-          {
-            "identity": "url:https://op.europa.eu/o/opportal-service/download-handler?identifier=1e33c409-b5d0-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionsystem=cellar&part=",
-            "role": "Context only",
-            "strand": "C",
-            "title": "COMMISSION STAFF WORKING DOCUMENT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council amending Regulation (EU) 2021/1139 as regards simplification and the transposition of the WTO Agreement on Fisheries Subsidies - Publications Office of the EU",
-            "source": "Publications Office of the EU",
-            "date": "2026-09-21",
-            "link": "https://op.europa.eu/o/opportal-service/download-handler?identifier=1e33c409-b5d0-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
-            "quality": 82,
-            "new_this_scan": true,
-            "analytical_weight": 0.3
-          },
-          {
-            "identity": "url:https://op.europa.eu/o/opportal-service/download-handler?identifier=df399feb-b59b-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionsystem=cellar&part=",
-            "role": "Context only",
-            "strand": "C",
-            "title": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) 2021/1139 as regards simplification and the transposition of the WTO Agreement on Fisheries Subsidies - Publications Office of the EU",
-            "source": "Publications Office of the EU",
-            "date": "2026-09-21",
-            "link": "https://op.europa.eu/o/opportal-service/download-handler?identifier=df399feb-b59b-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
-            "quality": 82,
-            "new_this_scan": true,
-            "analytical_weight": 0.3
-          },
-          {
-            "identity": "url:https://news.google.com/rss/articles/cbmivwfbvv95cuxom3nfz1dxagrroedxcerszjnzlvhpsu5kmerucgnwcdy0nmntv2rntfbglu5jztd4bwn5ufvvmfz5bwxmulrcykznctzpatz2q0xjouddrufrzezjthrtb2dkrnk3x0dfu05fuupsmgnunldksxrpc0nxqvdlufu1rtq3al9dtlzvuwrdvddyqvjgqkdcv1nyngzgegsxlw0wvetlog1snnnfvvyyc3gtbe53ukzzner4cl9gd1fmdw?oc=5",
-            "role": "Context only",
-            "strand": "C",
-            "title": "Eaton to acquire Italy's grid equipment maker COL Group for €810 million to expand in Europe",
-            "source": "Reuters",
-            "date": "2026-09-25",
-            "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOM3NfZ1dXaGRROEdXcERsZjNZLVhPSU5KMERucGNwcDY0NmNtV2RNTFBGLU5jZTd4bWN5UFVVMFZ5bWxMUlRCYkZncTZpaTZ2Q0xjOUdDRUFrZEZjTHRtb2dKRnk3X0dFU05FUUpSMGNuNldkSXRpc0NXQVdLUFU1RTQ3al9DTlZVUWRDVDdyQVJGQkdCV1NYNGZGeGsxLW0wVEtlOG1sNnNfVVYyc3gtbE53UkZZNER4cl9Gd1Fmdw?oc=5",
-            "quality": 82,
-            "new_this_scan": false,
-            "analytical_weight": 0.3
-          },
-          {
-            "identity": "url:https://news.google.com/rss/articles/cbmisgfbvv95cuxpcffiuw9xsvj5bw1rd1vhrkfkwvpfzwuwzwneqlptvf9xegthv1hodk51dzr6mljevkrtew5qtkjkrddduvldewvenxbpnutstdk0ltruwdd3mhvjthl5nun1nff4qu03tjhjd3jkslvitxbltfoymktruvhvd3k1meg3yunxme1grvrwmflnswzdugjiq1f6wm9tngwwqw1qztr5adv2shrwrzhzsvlwr0nn?oc=5",
-            "role": "Context only",
-            "strand": "C",
-            "title": "France to Send Military Aid, Troops to Defend Saudi Oil Port",
-            "source": "Bloomberg",
-            "date": "2026-09-24",
-            "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcFFIUW9xSVJ5bW1rd1VHRkFkWVpFZWUwZWNEQlptVF9XeGthV1hOdk51dzR6MlJEVkRteW5QTkJKRDdDUVlDeWVENXBPNUtsTDk0LTRuWDd3MHVJTHl5NUN1NFF4QU03Tjhjd3JKSlVITXBLTFoyMktrUVhvd3k1MEg3YUNXME1GRVRwMFlNSWZDUGJiQ1F6Wm9tNGwwQW1qZTR5aDV2SHRwRzhZSVlWR0Nn?oc=5",
-            "quality": 82,
-            "new_this_scan": false,
-            "analytical_weight": 0.3
-          },
-          {
-            "identity": "url:https://news.google.com/rss/articles/cbmijafbvv95cuxpouhrahixulrhwxjxvndrynhilxbym3lmwxewazjeoeplae9xrex6anl0ylhsunrqyu5lvhbmrmvsss12ltf5u2ziddrrunhpotbhsnl2ckdua3docur1dxrhoew0ylq4ullyafowdmd2zmj3lvhsmu5ebfrvm2rrznk0d2xyx2w1clfolq?oc=5",
-            "role": "Context only",
-            "strand": "C",
-            "title": "A new age of capital: growth, sovereignty and AI - European Central Bank",
-            "source": "ECB",
-            "date": "2026-09-14",
-            "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPOUhraHIxUlRhWXJXVndrYnhiLXBYM3lmWXEwazJEOEplaE9XREx6anl0YlhSUnRqYU5LVHBmRmVsSS12LTF5U2ZIdDRrUnhPOTBhSnl2ckdua3dOcUR1dXRHOEw0YlQ4UllyaFowdmd2ZmJ3LVhsMU5EbFRVM2RrZnk0d2xYX2w1clFOLQ?oc=5",
-            "quality": 82,
-            "new_this_scan": false,
-            "analytical_weight": 0.3
-          },
-          {
-            "identity": "url:https://www.enisa.europa.eu/sites/default/files/publications/enisa%205g%20threat%20landscape%20-%20update.pdf",
-            "role": "Context only",
-            "strand": "H",
-            "title": "ENISA Threat Landscape for 5G Networks Report | ENISA",
-            "source": "ENISA",
-            "date": "2025-11-06",
-            "link": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%205G%20Threat%20Landscape%20-%20Update.pdf",
-            "quality": 82,
-            "new_this_scan": false,
-            "analytical_weight": 0.45
-          }
-        ],
-        "against": [],
-        "support_queries": [
-          "Europe research innovation critical infrastructure practice timeline before formal framework",
-          "Europe research innovation critical infrastructure framework names existing instrument tool"
-        ],
-        "falsifier_queries": [
-          "Europe research innovation critical infrastructure framework created new instrument no prior practice"
-        ],
-        "touched_this_scan": true,
-        "reader_eligible": false,
-        "generic_grammar": true,
-        "reader_title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
-        "reader_summary": "The sequence, not topic similarity, is the finding: dated primary evidence places practice before doctrine, and the later framework explicitly names the earlier instrument while separate evidence shows that practice had real effects.",
-        "first_seen_at": "2026-09-26T21:08:09Z",
-        "last_updated_at": "2026-09-26T21:08:09Z",
-        "fingerprint": "2568e5793ea9b4ca",
-        "new_this_scan": false,
-        "updated_this_scan": false,
-        "lifecycle": "seeded",
-        "missed_detection_scans": 0,
-        "retrace_status": "unchanged",
-        "retrace_at": "2026-09-26T21:08:09Z"
+        "retrace_at": "2026-09-26T21:37:59Z"
       },
       {
         "id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
@@ -86343,15 +86191,15 @@
         "generic_grammar": true,
         "reader_title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
         "reader_summary": "The sequence, not topic similarity, is the finding: dated primary evidence places practice before doctrine, and the later framework explicitly names the earlier instrument while separate evidence shows that practice had real effects.",
-        "first_seen_at": "2026-09-26T21:08:09Z",
-        "last_updated_at": "2026-09-26T21:08:09Z",
+        "first_seen_at": "2026-09-26T21:37:59Z",
+        "last_updated_at": "2026-09-26T21:37:59Z",
         "fingerprint": "f939adb1853a6113",
         "new_this_scan": false,
         "updated_this_scan": false,
         "lifecycle": "seeded",
         "missed_detection_scans": 0,
-        "retrace_status": "rebuilt",
-        "retrace_at": "2026-09-26T21:08:09Z"
+        "retrace_status": "unchanged",
+        "retrace_at": "2026-09-26T21:37:59Z"
       },
       {
         "id": "l45:goal_measurement_gap:sovereignty",
@@ -86504,9 +86352,9 @@
         ],
         "touched_this_scan": true,
         "reader_eligible": false,
-        "historical_records": 57,
-        "first_seen_at": "2026-09-26T21:08:09Z",
-        "last_updated_at": "2026-09-26T21:08:09Z",
+        "historical_records": 58,
+        "first_seen_at": "2026-09-26T21:37:59Z",
+        "last_updated_at": "2026-09-26T21:37:59Z",
         "fingerprint": "699b2d5a31ed7a0b",
         "new_this_scan": false,
         "updated_this_scan": false,
@@ -86514,8 +86362,8 @@
         "missed_detection_scans": 0,
         "reader_title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
         "reader_summary": "The pattern is repeated invocation of the goal alongside sparse, fragmented or contested measurement.",
-        "retrace_status": "rebuilt",
-        "retrace_at": "2026-09-26T21:08:09Z"
+        "retrace_status": "unchanged",
+        "retrace_at": "2026-09-26T21:37:59Z"
       },
       {
         "id": "l45:conflicting_criteria_no_arbitration:infrastructure-speed-vs-safeguard",
@@ -86624,6 +86472,18 @@
             "analytical_weight": 0.3
           },
           {
+            "identity": "url:https://eur-lex.europa.eu/eli/reg/2021/821/oj/eng",
+            "role": "Context only",
+            "strand": "C",
+            "title": "2026 Update of the EU Control List of Dual-Use Items",
+            "source": "European Commission — Trade and Economic Security",
+            "date": "2026-09-14",
+            "link": "https://eur-lex.europa.eu/eli/reg/2021/821/oj/eng",
+            "quality": 96,
+            "new_this_scan": false,
+            "analytical_weight": 0.3
+          },
+          {
             "identity": "url:https://news.google.com/rss/articles/cbmivwfbvv95cuxom3nfz1dxagrroedxcerszjnzlvhpsu5kmerucgnwcdy0nmntv2rntfbglu5jztd4bwn5ufvvmfz5bwxmulrcykznctzpatz2q0xjouddrufrzezjthrtb2dkrnk3x0dfu05fuupsmgnunldksxrpc0nxqvdlufu1rtq3al9dtlzvuwrdvddyqvjgqkdcv1nyngzgegsxlw0wvetlog1snnnfvvyyc3gtbe53ukzzner4cl9gd1fmdw?oc=5",
             "role": "Context only",
             "strand": "C",
@@ -86658,18 +86518,6 @@
             "quality": 82,
             "new_this_scan": false,
             "analytical_weight": 0.3
-          },
-          {
-            "identity": "url:https://www.enisa.europa.eu/sites/default/files/publications/enisa%205g%20threat%20landscape%20-%20update.pdf",
-            "role": "Context only",
-            "strand": "H",
-            "title": "ENISA Threat Landscape for 5G Networks Report | ENISA",
-            "source": "ENISA",
-            "date": "2025-11-06",
-            "link": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%205G%20Threat%20Landscape%20-%20Update.pdf",
-            "quality": 82,
-            "new_this_scan": false,
-            "analytical_weight": 0.45
           }
         ],
         "against": [],
@@ -86686,15 +86534,15 @@
         "generic_grammar": true,
         "reader_title": "Two legitimate pulls on critical infrastructure may collide because their arbitration rule is missing.",
         "reader_summary": "The risk is not the existence of two goals; it is that both act on the same decision object while separate evidence shows missing reconciliation and uneven local implementation.",
-        "first_seen_at": "2026-09-26T21:08:09Z",
-        "last_updated_at": "2026-09-26T21:08:09Z",
-        "fingerprint": "89f847f54a94d54f",
+        "first_seen_at": "2026-09-26T21:37:59Z",
+        "last_updated_at": "2026-09-26T21:37:59Z",
+        "fingerprint": "b5fcf8a62dec68df",
         "new_this_scan": false,
         "updated_this_scan": false,
         "lifecycle": "seeded",
         "missed_detection_scans": 0,
-        "retrace_status": "unchanged",
-        "retrace_at": "2026-09-26T21:08:09Z"
+        "retrace_status": "rebuilt",
+        "retrace_at": "2026-09-26T21:37:59Z"
       },
       {
         "id": "l45:goal_measurement_gap:competitiveness",
@@ -86847,9 +86695,9 @@
         ],
         "touched_this_scan": true,
         "reader_eligible": false,
-        "historical_records": 65,
-        "first_seen_at": "2026-09-26T21:08:09Z",
-        "last_updated_at": "2026-09-26T21:08:09Z",
+        "historical_records": 74,
+        "first_seen_at": "2026-09-26T21:37:59Z",
+        "last_updated_at": "2026-09-26T21:37:59Z",
         "fingerprint": "14234f1f844ef606",
         "new_this_scan": false,
         "updated_this_scan": false,
@@ -86858,7 +86706,7 @@
         "reader_title": "Europe keeps pursuing competitiveness without a settled way to measure whether it is succeeding.",
         "reader_summary": "The pattern is repeated invocation of the goal alongside sparse, fragmented or contested measurement.",
         "retrace_status": "unchanged",
-        "retrace_at": "2026-09-26T21:08:09Z"
+        "retrace_at": "2026-09-26T21:37:59Z"
       },
       {
         "id": "l45:goal_measurement_gap:research-security",
@@ -86953,49 +86801,49 @@
             "analytical_weight": 0.45
           },
           {
-            "identity": "url:https://doi.org/10.54648/eerr2023027",
+            "identity": "url:https://www.celis.institute/celis-blog/the-eu-anti-coercion-regulation-a-new-tool-against-economic-pressure",
             "role": "Context only",
             "strand": "H",
-            "title": "The Use of Sanctions to Achieve EU Strategic Autonomy: Restrictive Measures, the Blocking Statute and the Anti-Coercion Instrument",
-            "source": "European Foreign Affairs Review",
-            "date": "2023-12-01",
-            "link": "https://doi.org/10.54648/eerr2023027",
+            "title": "The EU Anti-Coercion Regulation: A New Tool Against Economic Pressure - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "source": "CELIS Institute",
+            "date": "2025-05-19",
+            "link": "https://www.celis.institute/celis-blog/the-eu-anti-coercion-regulation-a-new-tool-against-economic-pressure/",
             "quality": 82,
             "new_this_scan": false,
             "analytical_weight": 0.45
           },
           {
-            "identity": "url:https://merics.org/sites/default/files/2023-04/230414_merics%20europe-china%20360%c2%b0_0.pdf",
+            "identity": "url:https://www.celis.institute/celis-blog/the-eu-anti-coercion-instrument-anti-what-exactly",
             "role": "Context only",
             "strand": "H",
-            "title": "De-risking viewed from China + EU anti-coercion instrument",
-            "source": "MERICS",
-            "date": "2023-04-14",
-            "link": "https://merics.org/sites/default/files/2023-04/230414_MERICS%20Europe-China%20360%C2%B0_0.pdf",
+            "title": "The EU Anti-Coercion Instrument: Anti-What, Exactly? - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "source": "CELIS Institute",
+            "date": "2024-02-19",
+            "link": "https://www.celis.institute/celis-blog/the-eu-anti-coercion-instrument-anti-what-exactly/",
             "quality": 82,
             "new_this_scan": false,
             "analytical_weight": 0.45
           },
           {
-            "identity": "url:https://merics.org/en/report/fasten-your-seatbelts-how-manage-chinas-economic-coercion",
+            "identity": "url:https://www.celis.institute/tag/anti-coercion-instrument",
             "role": "Context only",
             "strand": "H",
-            "title": "Fasten your seatbelts: How to manage China’s economic coercion",
-            "source": "MERICS",
-            "date": "2022-08-25",
-            "link": "https://merics.org/en/report/fasten-your-seatbelts-how-manage-chinas-economic-coercion",
+            "title": "Anti-Coercion Instrument - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "source": "CELIS Institute",
+            "date": "2024-02-19",
+            "link": "https://www.celis.institute/tag/anti-coercion-instrument/",
             "quality": 82,
             "new_this_scan": false,
             "analytical_weight": 0.45
           },
           {
-            "identity": "url:https://ecfr.eu/article/critical-mass-raw-materials-economic-coercion-and-transatlantic-cooperation",
+            "identity": "url:https://www.celis.institute/celis-blog/the-european-unions-anti-coercion-instrument-a-closer-look-at-decision-making-under-a-politicized-trade-instrument",
             "role": "Context only",
             "strand": "H",
-            "title": "Critical mass: Raw materials, economic coercion, and transatlantic cooperation – European Council on Foreign Relations",
-            "source": "European Council on Foreign Relations",
-            "date": "2021-12-17",
-            "link": "https://ecfr.eu/article/critical-mass-raw-materials-economic-coercion-and-transatlantic-cooperation/",
+            "title": "The European Union’s Anti-Coercion Instrument – A Closer Look at Decision-Making under a Politicized Trade Instrument - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "source": "CELIS Institute",
+            "date": "2024-01-17",
+            "link": "https://www.celis.institute/celis-blog/the-european-unions-anti-coercion-instrument-a-closer-look-at-decision-making-under-a-politicized-trade-instrument/",
             "quality": 82,
             "new_this_scan": false,
             "analytical_weight": 0.45
@@ -87011,18 +86859,18 @@
         ],
         "touched_this_scan": false,
         "reader_eligible": false,
-        "historical_records": 6,
-        "first_seen_at": "2026-09-26T21:08:09Z",
-        "last_updated_at": "2026-09-26T21:08:09Z",
-        "fingerprint": "9f048de3f31a678e",
+        "historical_records": 13,
+        "first_seen_at": "2026-09-26T21:37:59Z",
+        "last_updated_at": "2026-09-26T21:37:59Z",
+        "fingerprint": "2498d9c21d91ad4b",
         "new_this_scan": false,
         "updated_this_scan": false,
         "lifecycle": "seeded",
         "missed_detection_scans": 0,
         "reader_title": "Europe keeps pursuing coercion/weaponised interdependence without a settled way to measure whether it is succeeding.",
         "reader_summary": "The pattern is repeated invocation of the goal alongside sparse, fragmented or contested measurement.",
-        "retrace_status": "newly_inferred",
-        "retrace_at": "2026-09-26T21:08:09Z"
+        "retrace_status": "rebuilt",
+        "retrace_at": "2026-09-26T21:37:59Z"
       },
       {
         "id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
@@ -87178,15 +87026,15 @@
         "generic_grammar": true,
         "reader_title": "Europe may be measuring delivery before it can measure the resilience in energy/materials outcome it actually wants.",
         "reader_summary": "The risk appears only when primary evidence distinguishes the stated success condition from the activity being funded and separately documents a missing or still-proposed outcome measure.",
-        "first_seen_at": "2026-09-26T21:08:09Z",
-        "last_updated_at": "2026-09-26T21:08:09Z",
+        "first_seen_at": "2026-09-26T21:37:59Z",
+        "last_updated_at": "2026-09-26T21:37:59Z",
         "fingerprint": "4f8eaa4d27c5b234",
         "new_this_scan": false,
         "updated_this_scan": false,
         "lifecycle": "seeded",
         "missed_detection_scans": 0,
-        "retrace_status": "newly_inferred",
-        "retrace_at": "2026-09-26T21:08:09Z"
+        "retrace_status": "unchanged",
+        "retrace_at": "2026-09-26T21:37:59Z"
       },
       {
         "id": "l45:conflicting_criteria_no_arbitration:infrastructure-openness-vs-security",
@@ -87271,6 +87119,18 @@
             "analytical_weight": 0.3
           },
           {
+            "identity": "url:https://eur-lex.europa.eu/eli/reg/2021/821/oj/eng",
+            "role": "Context only",
+            "strand": "C",
+            "title": "2026 Update of the EU Control List of Dual-Use Items",
+            "source": "European Commission — Trade and Economic Security",
+            "date": "2026-09-14",
+            "link": "https://eur-lex.europa.eu/eli/reg/2021/821/oj/eng",
+            "quality": 96,
+            "new_this_scan": false,
+            "analytical_weight": 0.3
+          },
+          {
             "identity": "url:https://news.google.com/rss/articles/cbmivwfbvv95cuxom3nfz1dxagrroedxcerszjnzlvhpsu5kmerucgnwcdy0nmntv2rntfbglu5jztd4bwn5ufvvmfz5bwxmulrcykznctzpatz2q0xjouddrufrzezjthrtb2dkrnk3x0dfu05fuupsmgnunldksxrpc0nxqvdlufu1rtq3al9dtlzvuwrdvddyqvjgqkdcv1nyngzgegsxlw0wvetlog1snnnfvvyyc3gtbe53ukzzner4cl9gd1fmdw?oc=5",
             "role": "Context only",
             "strand": "C",
@@ -87305,18 +87165,6 @@
             "quality": 82,
             "new_this_scan": false,
             "analytical_weight": 0.3
-          },
-          {
-            "identity": "url:https://www.enisa.europa.eu/sites/default/files/publications/enisa%205g%20threat%20landscape%20-%20update.pdf",
-            "role": "Context only",
-            "strand": "H",
-            "title": "ENISA Threat Landscape for 5G Networks Report | ENISA",
-            "source": "ENISA",
-            "date": "2025-11-06",
-            "link": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%205G%20Threat%20Landscape%20-%20Update.pdf",
-            "quality": 82,
-            "new_this_scan": false,
-            "analytical_weight": 0.45
           }
         ],
         "against": [],
@@ -87333,15 +87181,15 @@
         "generic_grammar": true,
         "reader_title": "Two legitimate pulls on critical infrastructure may collide because their arbitration rule is missing.",
         "reader_summary": "The risk is not the existence of two goals; it is that both act on the same decision object while separate evidence shows missing reconciliation and uneven local implementation.",
-        "first_seen_at": "2026-09-26T21:08:09Z",
-        "last_updated_at": "2026-09-26T21:08:09Z",
-        "fingerprint": "c2c0f3bbff4fe716",
+        "first_seen_at": "2026-09-26T21:37:59Z",
+        "last_updated_at": "2026-09-26T21:37:59Z",
+        "fingerprint": "c4ce44c19a6333e2",
         "new_this_scan": false,
         "updated_this_scan": false,
         "lifecycle": "seeded",
         "missed_detection_scans": 0,
-        "retrace_status": "unchanged",
-        "retrace_at": "2026-09-26T21:08:09Z"
+        "retrace_status": "rebuilt",
+        "retrace_at": "2026-09-26T21:37:59Z"
       }
     ],
     "detector_backend": "legacy_pre_cutover_fallback",
@@ -87350,7 +87198,7 @@
   },
   "downstream_archive": {
     "profile_version": "v1.0-current-downstream-rules",
-    "updated_at": "2026-09-26T21:08:09Z",
+    "updated_at": "2026-09-26T21:37:59Z",
     "objects": [
       {
         "kind": "high_order",
@@ -92225,27 +92073,388 @@
           "first_seen": "2026-09-24T23:28Z",
           "new_this_scan": false
         }
+      },
+      {
+        "kind": "shock",
+        "id": "emergent:infrastructure:security_reclassification",
+        "title": "A partner weaponises Europe's dependence on critical infrastructure and networks to extract concessions",
+        "retrace_status": "retired",
+        "retired_at": "2026-09-26T21:37:59Z",
+        "reason": "Current cleaned evidence no longer satisfies the repository's current construction threshold for this downstream object.",
+        "previous_object": {
+          "id": "emergent:infrastructure:security_reclassification",
+          "asset_id": "infrastructure",
+          "pressure_id": "security_reclassification",
+          "title": "A partner weaponises Europe's dependence on critical infrastructure and networks to extract concessions",
+          "plainly": "Europe relies on critical infrastructure and networks. Separate primary evidence shows that economic coercion can change access quickly. Recent weak signals and historical material may strengthen the context, but neither can establish the shock on its own.",
+          "second_order": "Projects may keep their grants and institutions but still lose time, access or usable capacity while a replacement is found.",
+          "why_easy_to_miss": "The hypothesis appears when durable European capability evidence and a separately evidenced external pressure are read as one chain; low-weight current signals and history are then used only as context.",
+          "reasoning": [
+            "Primary retained evidence shows European reliance on or expansion of critical infrastructure and networks.",
+            "Separate primary retained evidence shows a live mechanism for economic coercion.",
+            "Primary evidence contains 1 direct capability × pressure coupling record(s).",
+            "1 recent weak-signal item(s) point in the same direction; each is capped at 30% of a primary evidence item and none satisfies a primary threshold.",
+            "3 historical Strand-A item(s) provide structural context; they cannot serve as the current trigger.",
+            "The scenario becomes a shock only if the response is slower than the disruption."
+          ],
+          "conditions": [
+            "Europe materially depends on critical infrastructure and networks for current or planned work.",
+            "Economic coercion reaches the supplier, service, partner or rule that the European capability depends on.",
+            "Europe cannot substitute, reroute or absorb the change before projects begin losing usable capacity."
+          ],
+          "case_against": [
+            "The trigger is not yet backed by an official primary source in the retained current evidence.",
+            "Only one primary retained record currently links the European capability directly to the outside pressure.",
+            "The primary direct connection is concentrated in one source, so independent confirmation is still weak.",
+            "The primary corpus contains 2 strong sign(s) of substitution, resilience or policy response that could absorb the shock.",
+            "Recent media/weak-signal corroboration is intentionally down-weighted and cannot substitute for primary evidence.",
+            "The scenario still depends on the disruption arriving faster than Europe can respond."
+          ],
+          "prevention_actions": [
+            "Screen ownership and vendors of critical infrastructure early.",
+            "Build redundancy and repair capacity for cables, ports and grids.",
+            "Make the anti-coercion response credible and fast, and coordinate it with partners."
+          ],
+          "watch_for": [
+            "A partner links trade measures to a political dispute.",
+            "The Commission opens an anti-coercion examination."
+          ],
+          "net_assessment": "Plausible, but important parts of the primary trigger or connection still need confirmation.",
+          "inference_score": 81,
+          "support": [
+            {
+              "identity": "url:https://doi.org/10.1111/jcms.70140",
+              "row": "A008",
+              "strand": "A",
+              "role": "Primary coupling evidence",
+              "evidence_role": "primary",
+              "analytical_weight": 1.0,
+              "title": "China and Limits to the European Union's Geoeconomic Turn",
+              "source": "JCMS Journal of Common Market Studies",
+              "date": "2026-07-06",
+              "link": "https://doi.org/10.1111/jcms.70140",
+              "quality": 96,
+              "new_this_scan": false,
+              "core_message": "Institutional limits reduce the EU’s ability to convert market power into coercive geoeconomic leverage toward China.",
+              "geo_evidence": [],
+              "ri_evidence": [],
+              "a_context_evidence": []
+            },
+            {
+              "identity": "url:https://doi.org/10.1007/s41125-026-00115-w",
+              "row": "A002",
+              "strand": "A",
+              "role": "Primary evidence",
+              "evidence_role": "primary",
+              "analytical_weight": 1.0,
+              "title": "EU Governance of Critical Infrastructure: Resilience and Artificial Intelligence as Policy Challenges",
+              "source": "European Journal for Security Research",
+              "date": "2026-09-17",
+              "link": "https://doi.org/10.1007/s41125-026-00115-w",
+              "quality": 92,
+              "new_this_scan": false,
+              "core_message": "EU critical-infrastructure governance is shifting from asset protection toward resilience across physical and digital systems.",
+              "geo_evidence": [],
+              "ri_evidence": [],
+              "a_context_evidence": []
+            },
+            {
+              "identity": "url:https://doi.org/10.65864/wn6xsu2byg",
+              "row": "A043",
+              "strand": "A",
+              "role": "European capability: critical infrastructure and networks",
+              "evidence_role": "primary",
+              "analytical_weight": 1.0,
+              "title": "Quantifying Non-Tariff Barriers: Brexit, Input Sourcing and Firm Performance",
+              "source": "ifo Institute",
+              "date": "2026-09-21",
+              "link": "https://doi.org/10.65864/wn6xsu2byg",
+              "quality": 98,
+              "new_this_scan": false,
+              "core_message": "Our results indicate EU membership secures large reductions in trade costs.",
+              "geo_evidence": [],
+              "ri_evidence": [
+                "tariff",
+                "ports + production",
+                "non-tariff barriers"
+              ],
+              "a_context_evidence": [
+                "rules_power",
+                "tariff",
+                "imports",
+                "costs"
+              ]
+            },
+            {
+              "identity": "url:https://doi.org/10.1163/29505720-bja00019",
+              "row": "A023",
+              "strand": "A",
+              "role": "External mechanism: economic coercion",
+              "evidence_role": "primary",
+              "analytical_weight": 1.0,
+              "title": "Economic Coercion, the World Trade Organization, and the EU’s Anti-coercion Instrument",
+              "source": "Law & Geoeconomics",
+              "date": "2026-06-10",
+              "link": "https://doi.org/10.1163/29505720-bja00019",
+              "quality": 92,
+              "new_this_scan": false,
+              "core_message": "Abstract The World Trade Organization ( WTO ) remains a cornerstone of the EU’s (EU) trade policy.",
+              "geo_evidence": [],
+              "ri_evidence": [],
+              "a_context_evidence": []
+            },
+            {
+              "identity": "url:https://news.google.com/rss/articles/cbmisgfbvv95cuxpcffiuw9xsvj5bw1rd1vhrkfkwvpfzwuwzwneqlptvf9xegthv1hodk51dzr6mljevkrtew5qtkjkrddduvldewvenxbpnutstdk0ltruwdd3mhvjthl5nun1nff4qu03tjhjd3jkslvitxbltfoymktruvhvd3k1meg3yunxme1grvrwmflnswzdugjiq1f6wm9tngwwqw1qztr5adv2shrwrzhzsvlwr0nn?oc=5",
+              "row": "C020",
+              "strand": "C",
+              "role": "Recent weak-signal context",
+              "evidence_role": "weak_signal",
+              "analytical_weight": 0.3,
+              "title": "France to Send Military Aid, Troops to Defend Saudi Oil Port",
+              "source": "Bloomberg",
+              "date": "2026-09-24T19:28Z",
+              "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcFFIUW9xSVJ5bW1rd1VHRkFkWVpFZWUwZWNEQlptVF9XeGthV1hOdk51dzR6MlJEVkRteW5QTkJKRDdDUVlDeWVENXBPNUtsTDk0LTRuWDd3MHVJTHl5NUN1NFF4QU03Tjhjd3JKSlVITXBLTFoyMktrUVhvd3k1MEg3YUNXME1GRVRwMFlNSWZDUGJiQ1F6Wm9tNGwwQW1qZTR5aDV2SHRwRzhZSVlWR0Nn?oc=5",
+              "quality": 80,
+              "new_this_scan": false,
+              "core_message": "",
+              "geo_evidence": [],
+              "ri_evidence": [],
+              "a_context_evidence": []
+            },
+            {
+              "identity": "url:https://doi.org/10.1111/jcms.13549",
+              "row": "H332",
+              "strand": "H",
+              "role": "Historical coupling context",
+              "evidence_role": "historical",
+              "analytical_weight": 0.45,
+              "title": "The EU and Russia: The War that Changed Everything",
+              "source": "Journal of Common Market Studies",
+              "date": "2023-09-01",
+              "link": "https://doi.org/10.1111/jcms.13549",
+              "quality": 90,
+              "new_this_scan": false,
+              "core_message": "The significance of Russia's war against Ukraine can hardly be overestimated. This is the biggest interstate war in Europe since the Second World War.",
+              "geo_evidence": [
+                "geopolit",
+                "strategic autonomy",
+                "economic coercion",
+                "coercion"
+              ],
+              "ri_evidence": [
+                "economic coercion",
+                "energy security",
+                "strategic partnership",
+                "strategic autonomy"
+              ],
+              "a_context_evidence": []
+            },
+            {
+              "identity": "url:https://www.enisa.europa.eu/sites/default/files/publications/enisa%205g%20threat%20landscape%20-%20update.pdf",
+              "row": "H091",
+              "strand": "H",
+              "role": "Historical structural context",
+              "evidence_role": "historical",
+              "analytical_weight": 0.45,
+              "title": "ENISA Threat Landscape for 5G Networks Report | ENISA",
+              "source": "ENISA",
+              "date": "2025-11-06",
+              "link": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%205G%20Threat%20Landscape%20-%20Update.pdf",
+              "quality": 92,
+              "new_this_scan": false,
+              "core_message": "ENISA is the EU agency dedicated to enhancing cybersecurity in Europe. They offer guidance, tools, and resources to safeguard citizens and businesses from cyber threats.",
+              "geo_evidence": [
+                "resilience"
+              ],
+              "ri_evidence": [
+                "cybersecurity + production",
+                "5g"
+              ],
+              "a_context_evidence": []
+            },
+            {
+              "identity": "url:https://www.enisa.europa.eu/sites/default/files/publications/interconnect%20security%20ss7-diameter.pdf",
+              "row": "H100",
+              "strand": "H",
+              "role": "Historical structural context",
+              "evidence_role": "historical",
+              "analytical_weight": 0.45,
+              "title": "Signalling Security in Telecom SS7/Diameter/5G | ENISA",
+              "source": "ENISA",
+              "date": "2025-09-16",
+              "link": "https://www.enisa.europa.eu/sites/default/files/publications/Interconnect%20Security%20SS7-Diameter.pdf",
+              "quality": 92,
+              "new_this_scan": false,
+              "core_message": "ENISA is the EU agency dedicated to enhancing cybersecurity in Europe. They offer guidance, tools, and resources to safeguard citizens and businesses from cyber threats.",
+              "geo_evidence": [
+                "resilience"
+              ],
+              "ri_evidence": [
+                "5g"
+              ],
+              "a_context_evidence": []
+            }
+          ],
+          "against": [
+            {
+              "identity": "url:https://doi.org/10.1080/09692290.2026.2693756",
+              "row": "A101",
+              "strand": "A",
+              "role": "Primary evidence that could absorb or prevent the shock",
+              "evidence_role": "primary",
+              "analytical_weight": 1.0,
+              "title": "Do preferential trade agreements with labor clauses displace labor abuses? The unintended consequences of global governance on labor standards",
+              "source": "Review of International Political Economy",
+              "date": "2026-07-01",
+              "link": "https://doi.org/10.1080/09692290.2026.2693756",
+              "quality": 96,
+              "new_this_scan": false,
+              "core_message": "Do preferential trade agreements with labor clauses displace labor abuses?",
+              "geo_evidence": [],
+              "ri_evidence": [
+                "trade agreement",
+                "trade agreements",
+                "ports + trade"
+              ],
+              "a_context_evidence": [
+                "international_coordination",
+                "trade agreement",
+                "united states",
+                "exports"
+              ]
+            },
+            {
+              "identity": "url:https://doi.org/10.1016/j.ijpe.2026.110226",
+              "row": "A110",
+              "strand": "A",
+              "role": "Primary evidence that could absorb or prevent the shock",
+              "evidence_role": "primary",
+              "analytical_weight": 1.0,
+              "title": "Managing geopolitical risk in global supply chains: A qualitative study of European multinational enterprises",
+              "source": "International Journal of Production Economics",
+              "date": "2026-09-01",
+              "link": "https://doi.org/10.1016/j.ijpe.2026.110226",
+              "quality": 92,
+              "new_this_scan": false,
+              "core_message": "We extend an established supply chain risk framework by conceptualizing geopolitical risk management (GRM).",
+              "geo_evidence": [
+                "geopolit",
+                "diversification",
+                "resilience"
+              ],
+              "ri_evidence": [
+                "ports + supply chain"
+              ],
+              "a_context_evidence": [
+                "international_coordination",
+                "partnership",
+                "global supply chain",
+                "resilience"
+              ]
+            }
+          ],
+          "prevention_evidence": [
+            {
+              "identity": "url:https://doi.org/10.1080/09692290.2026.2693756",
+              "row": "A101",
+              "strand": "A",
+              "role": "Primary evidence that could absorb or prevent the shock",
+              "evidence_role": "primary",
+              "analytical_weight": 1.0,
+              "title": "Do preferential trade agreements with labor clauses displace labor abuses? The unintended consequences of global governance on labor standards",
+              "source": "Review of International Political Economy",
+              "date": "2026-07-01",
+              "link": "https://doi.org/10.1080/09692290.2026.2693756",
+              "quality": 96,
+              "new_this_scan": false,
+              "core_message": "Do preferential trade agreements with labor clauses displace labor abuses?",
+              "geo_evidence": [],
+              "ri_evidence": [
+                "trade agreement",
+                "trade agreements",
+                "ports + trade"
+              ],
+              "a_context_evidence": [
+                "international_coordination",
+                "trade agreement",
+                "united states",
+                "exports"
+              ]
+            },
+            {
+              "identity": "url:https://doi.org/10.1016/j.ijpe.2026.110226",
+              "row": "A110",
+              "strand": "A",
+              "role": "Primary evidence that could absorb or prevent the shock",
+              "evidence_role": "primary",
+              "analytical_weight": 1.0,
+              "title": "Managing geopolitical risk in global supply chains: A qualitative study of European multinational enterprises",
+              "source": "International Journal of Production Economics",
+              "date": "2026-09-01",
+              "link": "https://doi.org/10.1016/j.ijpe.2026.110226",
+              "quality": 92,
+              "new_this_scan": false,
+              "core_message": "We extend an established supply chain risk framework by conceptualizing geopolitical risk management (GRM).",
+              "geo_evidence": [
+                "geopolit",
+                "diversification",
+                "resilience"
+              ],
+              "ri_evidence": [
+                "ports + supply chain"
+              ],
+              "a_context_evidence": [
+                "international_coordination",
+                "partnership",
+                "global supply chain",
+                "resilience"
+              ]
+            }
+          ],
+          "source_count": 4,
+          "primary_source_count": 4,
+          "pressure_source_count": 3,
+          "coupling_count": 1,
+          "context_coupling_count": 4,
+          "weak_signal_context_count": 1,
+          "historical_context_count": 3,
+          "context_weight_total": 1.65,
+          "context_score_bonus": 4.4,
+          "official_trigger_present": false,
+          "best_quality": 98,
+          "average_quality": 94,
+          "fresh_coupling": false,
+          "fresh_context": false,
+          "first_inferred_at": "2026-09-26T09:46:49Z",
+          "last_updated_at": "2026-09-26T21:08:09Z",
+          "fingerprint": "7ab8c1e099e763c2",
+          "new_this_scan": false,
+          "updated_this_scan": false,
+          "status": "unchanged",
+          "retrace_status": "unchanged",
+          "retrace_at": "2026-09-26T21:08:09Z"
+        }
       }
     ]
   },
   "downstream_retrace": {
     "tool_version": "v1.0-current-downstream-rules",
-    "completed_at": "2026-09-26T21:08:09Z",
+    "completed_at": "2026-09-26T21:37:59Z",
     "source_revalidation_report": "",
     "diagnostics": {
-      "derived_objects_checked": 10,
-      "unchanged": 5,
-      "rebuilt": 3,
+      "derived_objects_checked": 12,
+      "unchanged": 4,
+      "rebuilt": 5,
       "materially_rewritten": 0,
       "newly_inferred": 2,
-      "retired": 0,
+      "retired": 1,
       "stale_evidence_references_before": 0,
       "stale_evidence_references_removed": 0,
       "orphan_references_remaining": 0,
       "active_evidence_reference_occurrences_checked": 103,
       "shock_support_chains_changed_after_a_removal": 0,
-      "active_dynamic_shocks": 1,
-      "active_high_order_candidates": 9,
+      "active_dynamic_shocks": 0,
+      "active_high_order_candidates": 10,
       "active_strategic_pathways": 0,
       "active_possible_external_shocks": 0,
       "standalone_matrix_objects": 0,
@@ -92256,7 +92465,7 @@
   },
   "active_corpus": {
     "profile": "radar-active-corpus-v1",
-    "rebuilt_at": "2026-09-26T21:08:09Z",
+    "rebuilt_at": "2026-09-26T21:37:59Z",
     "raw_counts": {
       "strand_a": 410,
       "strand_b": 0,
@@ -92264,18 +92473,18 @@
       "frontier_evidence": 0
     },
     "active_counts": {
-      "strand_a": 226,
+      "strand_a": 243,
       "strand_b": 0,
-      "strand_c": 42,
+      "strand_c": 43,
       "frontier_evidence": 0
     },
     "raw_total": 563,
-    "active_total": 268,
+    "active_total": 286,
     "decision_counts": {
       "provisional": 56,
-      "keep": 211,
+      "keep": 229,
       "review": 1,
-      "drop": 295,
+      "drop": 277,
       "drop_unverifiable": 0,
       "duplicate": 0,
       "needs_manual_verification": 0
@@ -92284,14 +92493,14 @@
     "missing_state_is": "provisional_active",
     "deep_scan_v2": {
       "total_records": 554,
-      "v2_verified": 236,
-      "v2_pending": 318
+      "v2_verified": 275,
+      "v2_pending": 279
     },
     "historical_deep_scan_v2": {
-      "total_records": 757,
+      "total_records": 828,
       "v2_verified": 0,
-      "v2_pending": 757,
-      "active_a_context": 757
+      "v2_pending": 828,
+      "active_a_context": 828
     },
     "derived_reasoning_uses_active_corpus": true,
     "metadata_corrections_applied_to_active_view": true,
