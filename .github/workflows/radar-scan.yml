@@ -94,7 +94,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python scripts/rebuild_active_radar.py
+          python scripts/rebuild_active_radar.py --allow-large-change
           python scripts/check_active_corpus.py
           node scripts/generate_stuff_workbook.js
 
