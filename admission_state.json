@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-admission-v1",
-  "updated_at": "2026-09-26T09:46:44Z",
+  "updated_at": "2026-09-26T16:47:42Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "decision": "keep",
@@ -1000,12 +1000,16 @@
       "source": "deep_scan_v2"
     },
     "link:https://doi.org/10.1186/s40008-026-00374-9": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "A",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "A_SUBSTANTIVE_EU_RI",
+      "reason": "Persistent EU linkages limit how far UK supply relationships have diversified.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-09-26T16:47:42Z",
+      "deep_scan_package_id": "worker-b-20260926T140339Z-77ea1109a623",
+      "verification_note": "Identity and provenance were checked against the matching primary/publisher material; admission was reassessed from the recovered work rather than scanner wording.",
+      "duplicate_of": ""
     },
     "link:https://doi.org/10.1111/1758-5899.70190": {
       "decision": "drop",

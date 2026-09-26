@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-09-26T09:46:44Z",
+  "generated_at": "2026-09-26T16:47:42Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -13638,8 +13638,99 @@
       "deep_scan_package_id": "worker-a-20260926T091857Z-acd70f673165",
       "claims": [],
       "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1186/s40008-026-00374-9": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "1daa45de",
+      "identity_hash": "e7564742c19347b8",
+      "reader_title": "Brexit changed UK trade links without displacing the EU",
+      "reader_what": "Input-output analysis finds some non-EU value-added trade grew after the referendum while EU import dependence remained high.",
+      "reader_why": "Persistent EU linkages limit how far UK supply relationships have diversified.",
+      "reader_more": "Second, while value-added trade with non-EU countries—particularly Switzerland, China, India, and the US—increased after the referendum, the EU’s share in UK value-added exports stabilized or rose slightly, and reliance on EU value-added imports remained high. Despite post-Brexit adjustments and growing diversification, the EU remains a The verified source supports admission because its European relevance is substantive rather than incidental.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "",
+        "main_finding": "Input-output analysis finds some non-EU value-added trade grew after the referendum while EU import dependence remained high.",
+        "method_or_basis": "Second, while value-added trade with non-EU countries—particularly Switzerland, China, India, and the US—increased after the referendum, the EU’s share in UK value-added exports stabilized or rose slightly, and reliance on EU value-added imports remained high. Despite post-Brexit adjustments and growing",
+        "qualification": "The evidence supports the stated mechanism or diagnosis, but it should not be read as proof that the associated policy will succeed in all settings.",
+        "radar_relevance": "Persistent EU linkages limit how far UK supply relationships have diversified.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Matching substantive source recovered via https://link.springer.com/article/10.1186/s40008-026-00374-9."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/searched DOI 10.1186/s40008-026-00374-9 and matched the claimed title/identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_repository_source",
+            "url": "https://link.springer.com/article/10.1186/s40008-026-00374-9",
+            "title": "Have non-EU countries become more involved in the UK’s value-added trade? An input–output analysis following the EU referendum",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the matching primary/publisher material; admission was reassessed from the recovered work rather than scanner wording."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Persistent EU linkages limit how far UK supply relationships have diversified."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-26T16:47:42Z",
+      "deep_scan_package_id": "worker-b-20260926T140339Z-77ea1109a623",
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "United Kingdom",
+            "class": "third_country"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-04-16",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the stated mechanism or diagnosis, but it should not be read as proof that the associated policy will succeed in all settings.",
+          "text": "Input-output analysis finds some non-EU value-added trade grew after the referendum while EU import dependence remained high.",
+          "confidence": "high",
+          "record_key": "link:https://doi.org/10.1186/s40008-026-00374-9",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:e7564742c19347b8:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-09-26T09:46:44Z"
+  "claims_updated_at": "2026-09-26T16:47:42Z"
 }
