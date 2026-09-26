@@ -16,7 +16,7 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20260926T084533Z-acd70f673165`
+- Current package: `worker-a-20260926T091857Z-acd70f673165`
 - Assigned unresolved records: **36**
   1. `link:https://doi.org/10.17645/pag.11403` — Geoeconomic Exposure and EU Industrial Policy: Export Dependence Amid US–China Techno‐Nationalist Rivalry
   2. `link:https://doi.org/10.1111/jcms.70140` — China and Limits to the European Union's Geoeconomic Turn
@@ -29,7 +29,7 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20260926T084550Z-77ea1109a623`
+- Current package: `worker-b-20260926T091910Z-77ea1109a623`
 - Assigned unresolved records: **36**
   1. `link:https://doi.org/10.1186/s40008-026-00374-9` — Have non-EU countries become more involved in the UK’s value-added trade? An input–output analysis following the EU referendum
   2. `link:https://doi.org/10.1093/migration/mnag042` — From stratification to coercion: EU externalization and Turkey’s differentiated return regime
