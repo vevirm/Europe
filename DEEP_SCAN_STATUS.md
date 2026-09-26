@@ -6,26 +6,26 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **214** (Main **214** + Historical **0**)
-- Automatic queue still needing V2 verification: **1097** (Main **340** + Historical **757**)
+- Authoritative V2 verified: **236** (Main **236** + Historical **0**)
+- Automatic queue still needing V2 verification: **1075** (Main **318** + Historical **757**)
 - Currently assigned to workers: **72** (Main **72** + Historical **0**)
 - Bounded access-recovery retries still eligible: **2**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **1025**
+- Automatic queue pending and not yet assigned: **1003**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-3dbd0c7a2da0`
+- Current package: `worker-a-1ae35096240e`
 - Assigned unresolved records: **36**
   1. `link:https://doi.org/10.1177/2336825x261466891` — Ukraine and the transformation of French strategic imaginaries: The discursive reconfiguration of European strategic autonomy under the presidency of Emmanuel Macron (2017-2026)
-  2. `link:https://doi.org/10.1007/s13563-026-00701-3` — The Circular vs. Extraction Dilemma: Impacts of EU Critical Raw Materials Strategy on Poverty and Income Inequality – Evidence from Nickel in Finland, Greece, Poland, and Spain
-  3. `link:https://doi.org/10.1093/jeea/jvag051` — Exorbitant Privilege of the Periodic Table? Geoeconomics, Endogenous Centrality and Strategic Minerals for the Green Transition
-  4. `link:https://doi.org/10.1080/13501763.2026.2734066` — More than a broker: the commission in trilogues for geoeconomic instruments
-  5. `link:https://doi.org/10.1093/hrlr/ngag015` — Finding a bridge between Erga Omnes obligations and WTO agreements: the case of human rights-based export controls on cyber-surveillance items
-  6. `link:https://eur-lex.europa.eu/eli/reg/2021/821/oj/eng` — 2026 Update of the EU Control List of Dual-Use Items
-  7. `link:https://doi.org/10.1057/s41599-026-08972-5` — The impact of Trump 2.0 tariff policy on international trade: evidence from Chinese firms
-  8. `link:https://doi.org/10.1007/s43615-026-00944-w` — Resource Efficiency and Economic Resilience: Panel Evidence from the European Union
+  2. `link:https://doi.org/10.1093/hrlr/ngag015` — Finding a bridge between Erga Omnes obligations and WTO agreements: the case of human rights-based export controls on cyber-surveillance items
+  3. `link:https://eur-lex.europa.eu/eli/reg/2021/821/oj/eng` — 2026 Update of the EU Control List of Dual-Use Items
+  4. `link:https://doi.org/10.4324/9781003756637-13` — The EU-Japan Strategic Partnership Agreement (SPA)
+  5. `link:https://doi.org/10.1080/09662839.2026.2700180` — Institutionalising defence production: reconceptualising the role of institutions and states in European defence industrial policy
+  6. `link:https://doi.org/10.1177/17816858261489016` — European autonomy, competitiveness and security in the new space era
+  7. `link:https://doi.org/10.1080/09662839.2026.2700178` — European arms production: A re-conceptualisation of the defence technological and industrial base, industrial policy and hybrid governance
+  8. `link:https://doi.org/10.1186/s43093-026-00893-8` — Politics, power, and investment: geoeconomic determinants of FDI in CEE’s post-pandemic landscape
   - … plus 28 more in the package manifest
 
 ### Worker B
@@ -43,13 +43,12 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
-- Assigned unresolved records: **19**
+- Assigned unresolved records: **8**
   1. `link:https://doi.org/10.1177/2336825x261466891` — Ukraine and the transformation of French strategic imaginaries: The discursive reconfiguration of European strategic autonomy under the presidency of Emmanuel Macron (2017-2026)
-  2. `link:https://doi.org/10.1007/s13563-026-00701-3` — The Circular vs. Extraction Dilemma: Impacts of EU Critical Raw Materials Strategy on Poverty and Income Inequality – Evidence from Nickel in Finland, Greece, Poland, and Spain
-  3. `link:https://doi.org/10.1093/jeea/jvag051` — Exorbitant Privilege of the Periodic Table? Geoeconomics, Endogenous Centrality and Strategic Minerals for the Green Transition
-  4. `link:https://doi.org/10.1080/13501763.2026.2734066` — More than a broker: the commission in trilogues for geoeconomic instruments
-  5. `link:https://doi.org/10.1093/hrlr/ngag015` — Finding a bridge between Erga Omnes obligations and WTO agreements: the case of human rights-based export controls on cyber-surveillance items
-  6. `link:https://eur-lex.europa.eu/eli/reg/2021/821/oj/eng` — 2026 Update of the EU Control List of Dual-Use Items
-  7. `link:https://doi.org/10.1057/s41599-026-08972-5` — The impact of Trump 2.0 tariff policy on international trade: evidence from Chinese firms
-  8. `link:https://doi.org/10.1007/s43615-026-00944-w` — Resource Efficiency and Economic Resilience: Panel Evidence from the European Union
-  - … plus 11 more in the package manifest
+  2. `link:https://doi.org/10.1093/hrlr/ngag015` — Finding a bridge between Erga Omnes obligations and WTO agreements: the case of human rights-based export controls on cyber-surveillance items
+  3. `link:https://eur-lex.europa.eu/eli/reg/2021/821/oj/eng` — 2026 Update of the EU Control List of Dual-Use Items
+  4. `link:https://doi.org/10.4324/9781003756637-13` — The EU-Japan Strategic Partnership Agreement (SPA)
+  5. `link:https://doi.org/10.1080/09662839.2026.2700180` — Institutionalising defence production: reconceptualising the role of institutions and states in European defence industrial policy
+  6. `link:https://doi.org/10.1177/17816858261489016` — European autonomy, competitiveness and security in the new space era
+  7. `link:https://doi.org/10.1080/09662839.2026.2700178` — European arms production: A re-conceptualisation of the defence technological and industrial base, industrial policy and hybrid governance
+  8. `link:https://doi.org/10.1186/s43093-026-00893-8` — Politics, power, and investment: geoeconomic determinants of FDI in CEE’s post-pandemic landscape
