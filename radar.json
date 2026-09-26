@@ -139,7 +139,7 @@
     "new_c": 3
   },
   "reader_products_refresh": {
-    "completed_at": "2026-09-26T08:45:19Z",
+    "completed_at": "2026-09-26T09:46:49Z",
     "matrix": true,
     "risks_opportunities": true,
     "external_shocks": true,
@@ -78042,16 +78042,16 @@
     "high_order_candidates_dormant": 2,
     "high_order_candidates_new_this_run": 19,
     "high_order_candidates_updated_this_run": 1,
-    "active_corpus_total": 204,
-    "active_strand_a": 171,
+    "active_corpus_total": 211,
+    "active_strand_a": 178,
     "active_strand_b": 0,
     "active_strand_c": 33,
-    "deep_scan_v2_verified": 175,
-    "deep_scan_v2_pending": 345,
+    "deep_scan_v2_verified": 184,
+    "deep_scan_v2_pending": 336,
     "historical_deep_scan_v2_verified": 0,
     "historical_deep_scan_v2_pending": 706,
     "historical_active_a_context": 706,
-    "inactive_drop": 325,
+    "inactive_drop": 318,
     "inactive_unverifiable": 0,
     "inactive_manual_verification": 0,
     "inactive_duplicates": 0,
@@ -80771,15 +80771,291 @@
   },
   "shock_inference": {
     "profile_version": "23.3-context-weighted-shocks-v3",
-    "evaluated_at": "2026-09-26T08:45:19Z",
-    "new_count": 0,
+    "evaluated_at": "2026-09-26T09:46:49Z",
+    "new_count": 1,
     "updated_count": 0,
     "unchanged_count": 0,
-    "dynamic_shocks": []
+    "dynamic_shocks": [
+      {
+        "id": "emergent:infrastructure:security_reclassification",
+        "asset_id": "infrastructure",
+        "pressure_id": "security_reclassification",
+        "title": "A partner weaponises Europe's dependence on critical infrastructure and networks to extract concessions",
+        "plainly": "Europe relies on critical infrastructure and networks. Separate primary evidence shows that economic coercion can change access quickly. Recent weak signals and historical material may strengthen the context, but neither can establish the shock on its own.",
+        "second_order": "Projects may keep their grants and institutions but still lose time, access or usable capacity while a replacement is found.",
+        "why_easy_to_miss": "The hypothesis appears when durable European capability evidence and a separately evidenced external pressure are read as one chain; low-weight current signals and history are then used only as context.",
+        "reasoning": [
+          "Primary retained evidence shows European reliance on or expansion of critical infrastructure and networks.",
+          "Separate primary retained evidence shows a live mechanism for economic coercion.",
+          "Primary evidence contains 1 direct capability × pressure coupling record(s).",
+          "3 historical Strand-A item(s) provide structural context; they cannot serve as the current trigger.",
+          "The scenario becomes a shock only if the response is slower than the disruption."
+        ],
+        "conditions": [
+          "Europe materially depends on critical infrastructure and networks for current or planned work.",
+          "Economic coercion reaches the supplier, service, partner or rule that the European capability depends on.",
+          "Europe cannot substitute, reroute or absorb the change before projects begin losing usable capacity."
+        ],
+        "case_against": [
+          "The trigger is not yet backed by an official primary source in the retained current evidence.",
+          "Only one primary retained record currently links the European capability directly to the outside pressure.",
+          "The primary direct connection is concentrated in one source, so independent confirmation is still weak.",
+          "The primary corpus contains 1 strong sign(s) of substitution, resilience or policy response that could absorb the shock.",
+          "The scenario still depends on the disruption arriving faster than Europe can respond."
+        ],
+        "prevention_actions": [
+          "Screen ownership and vendors of critical infrastructure early.",
+          "Build redundancy and repair capacity for cables, ports and grids.",
+          "Make the anti-coercion response credible and fast, and coordinate it with partners."
+        ],
+        "watch_for": [
+          "A partner links trade measures to a political dispute.",
+          "The Commission opens an anti-coercion examination."
+        ],
+        "net_assessment": "Plausible, but important parts of the primary trigger or connection still need confirmation.",
+        "inference_score": 82,
+        "support": [
+          {
+            "identity": "url:https://doi.org/10.1111/jcms.70140",
+            "row": "A008",
+            "strand": "A",
+            "role": "Primary coupling evidence",
+            "evidence_role": "primary",
+            "analytical_weight": 1.0,
+            "title": "China and Limits to the European Union's Geoeconomic Turn",
+            "source": "JCMS Journal of Common Market Studies",
+            "date": "2026-07-06",
+            "link": "https://doi.org/10.1111/jcms.70140",
+            "quality": 96,
+            "new_this_scan": false,
+            "core_message": "Institutional limits reduce the EU’s ability to convert market power into coercive geoeconomic leverage toward China.",
+            "geo_evidence": [],
+            "ri_evidence": [],
+            "a_context_evidence": []
+          },
+          {
+            "identity": "url:https://doi.org/10.1007/s41125-026-00115-w",
+            "row": "A002",
+            "strand": "A",
+            "role": "Primary evidence",
+            "evidence_role": "primary",
+            "analytical_weight": 1.0,
+            "title": "EU Governance of Critical Infrastructure: Resilience and Artificial Intelligence as Policy Challenges",
+            "source": "European Journal for Security Research",
+            "date": "2026-09-17",
+            "link": "https://doi.org/10.1007/s41125-026-00115-w",
+            "quality": 92,
+            "new_this_scan": false,
+            "core_message": "EU critical-infrastructure governance is shifting from asset protection toward resilience across physical and digital systems.",
+            "geo_evidence": [],
+            "ri_evidence": [],
+            "a_context_evidence": []
+          },
+          {
+            "identity": "url:https://doi.org/10.65864/wn6xsu2byg",
+            "row": "A040",
+            "strand": "A",
+            "role": "European capability: critical infrastructure and networks",
+            "evidence_role": "primary",
+            "analytical_weight": 1.0,
+            "title": "Quantifying Non-Tariff Barriers: Brexit, Input Sourcing and Firm Performance",
+            "source": "ifo Institute",
+            "date": "2026-09-21",
+            "link": "https://doi.org/10.65864/wn6xsu2byg",
+            "quality": 98,
+            "new_this_scan": false,
+            "core_message": "Our results indicate EU membership secures large reductions in trade costs.",
+            "geo_evidence": [],
+            "ri_evidence": [
+              "tariff",
+              "ports + production",
+              "non-tariff barriers"
+            ],
+            "a_context_evidence": [
+              "rules_power",
+              "tariff",
+              "imports",
+              "costs"
+            ]
+          },
+          {
+            "identity": "url:https://doi.org/10.1163/29505720-bja00019",
+            "row": "A023",
+            "strand": "A",
+            "role": "External mechanism: economic coercion",
+            "evidence_role": "primary",
+            "analytical_weight": 1.0,
+            "title": "Economic Coercion, the World Trade Organization, and the EU’s Anti-coercion Instrument",
+            "source": "Law & Geoeconomics",
+            "date": "2026-06-10",
+            "link": "https://doi.org/10.1163/29505720-bja00019",
+            "quality": 92,
+            "new_this_scan": false,
+            "core_message": "Abstract The World Trade Organization ( WTO ) remains a cornerstone of the EU’s (EU) trade policy.",
+            "geo_evidence": [],
+            "ri_evidence": [],
+            "a_context_evidence": []
+          },
+          {
+            "identity": "url:https://doi.org/10.1111/jcms.13549",
+            "row": "H315",
+            "strand": "H",
+            "role": "Historical coupling context",
+            "evidence_role": "historical",
+            "analytical_weight": 0.45,
+            "title": "The EU and Russia: The War that Changed Everything",
+            "source": "Journal of Common Market Studies",
+            "date": "2023-09-01",
+            "link": "https://doi.org/10.1111/jcms.13549",
+            "quality": 90,
+            "new_this_scan": false,
+            "core_message": "The significance of Russia's war against Ukraine can hardly be overestimated. This is the biggest interstate war in Europe since the Second World War.",
+            "geo_evidence": [
+              "geopolit",
+              "strategic autonomy",
+              "economic coercion",
+              "coercion"
+            ],
+            "ri_evidence": [
+              "economic coercion",
+              "energy security",
+              "strategic partnership",
+              "strategic autonomy"
+            ],
+            "a_context_evidence": []
+          },
+          {
+            "identity": "url:https://www.enisa.europa.eu/sites/default/files/publications/enisa%205g%20threat%20landscape%20-%20update.pdf",
+            "row": "H087",
+            "strand": "H",
+            "role": "Historical structural context",
+            "evidence_role": "historical",
+            "analytical_weight": 0.45,
+            "title": "ENISA Threat Landscape for 5G Networks Report | ENISA",
+            "source": "ENISA",
+            "date": "2025-11-06",
+            "link": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%205G%20Threat%20Landscape%20-%20Update.pdf",
+            "quality": 92,
+            "new_this_scan": false,
+            "core_message": "ENISA is the EU agency dedicated to enhancing cybersecurity in Europe. They offer guidance, tools, and resources to safeguard citizens and businesses from cyber threats.",
+            "geo_evidence": [
+              "resilience"
+            ],
+            "ri_evidence": [
+              "cybersecurity + production",
+              "5g"
+            ],
+            "a_context_evidence": []
+          },
+          {
+            "identity": "url:https://www.enisa.europa.eu/sites/default/files/publications/interconnect%20security%20ss7-diameter.pdf",
+            "row": "H094",
+            "strand": "H",
+            "role": "Historical structural context",
+            "evidence_role": "historical",
+            "analytical_weight": 0.45,
+            "title": "Signalling Security in Telecom SS7/Diameter/5G | ENISA",
+            "source": "ENISA",
+            "date": "2025-09-16",
+            "link": "https://www.enisa.europa.eu/sites/default/files/publications/Interconnect%20Security%20SS7-Diameter.pdf",
+            "quality": 92,
+            "new_this_scan": false,
+            "core_message": "ENISA is the EU agency dedicated to enhancing cybersecurity in Europe. They offer guidance, tools, and resources to safeguard citizens and businesses from cyber threats.",
+            "geo_evidence": [
+              "resilience"
+            ],
+            "ri_evidence": [
+              "5g"
+            ],
+            "a_context_evidence": []
+          }
+        ],
+        "against": [
+          {
+            "identity": "url:https://doi.org/10.1080/09692290.2026.2693756",
+            "row": "A088",
+            "strand": "A",
+            "role": "Primary evidence that could absorb or prevent the shock",
+            "evidence_role": "primary",
+            "analytical_weight": 1.0,
+            "title": "Do preferential trade agreements with labor clauses displace labor abuses? The unintended consequences of global governance on labor standards",
+            "source": "Review of International Political Economy",
+            "date": "2026-07-01",
+            "link": "https://doi.org/10.1080/09692290.2026.2693756",
+            "quality": 96,
+            "new_this_scan": false,
+            "core_message": "Do preferential trade agreements with labor clauses displace labor abuses?",
+            "geo_evidence": [],
+            "ri_evidence": [
+              "trade agreement",
+              "trade agreements",
+              "ports + trade"
+            ],
+            "a_context_evidence": [
+              "international_coordination",
+              "trade agreement",
+              "united states",
+              "exports"
+            ]
+          }
+        ],
+        "prevention_evidence": [
+          {
+            "identity": "url:https://doi.org/10.1080/09692290.2026.2693756",
+            "row": "A088",
+            "strand": "A",
+            "role": "Primary evidence that could absorb or prevent the shock",
+            "evidence_role": "primary",
+            "analytical_weight": 1.0,
+            "title": "Do preferential trade agreements with labor clauses displace labor abuses? The unintended consequences of global governance on labor standards",
+            "source": "Review of International Political Economy",
+            "date": "2026-07-01",
+            "link": "https://doi.org/10.1080/09692290.2026.2693756",
+            "quality": 96,
+            "new_this_scan": false,
+            "core_message": "Do preferential trade agreements with labor clauses displace labor abuses?",
+            "geo_evidence": [],
+            "ri_evidence": [
+              "trade agreement",
+              "trade agreements",
+              "ports + trade"
+            ],
+            "a_context_evidence": [
+              "international_coordination",
+              "trade agreement",
+              "united states",
+              "exports"
+            ]
+          }
+        ],
+        "source_count": 4,
+        "primary_source_count": 4,
+        "pressure_source_count": 3,
+        "coupling_count": 1,
+        "context_coupling_count": 4,
+        "weak_signal_context_count": 0,
+        "historical_context_count": 3,
+        "context_weight_total": 1.35,
+        "context_score_bonus": 3.7,
+        "official_trigger_present": false,
+        "best_quality": 98,
+        "average_quality": 94,
+        "fresh_coupling": false,
+        "fresh_context": false,
+        "first_inferred_at": "2026-09-26T09:46:49Z",
+        "last_updated_at": "2026-09-26T09:46:49Z",
+        "fingerprint": "4b1ce878cdd02622",
+        "new_this_scan": true,
+        "updated_this_scan": false,
+        "status": "new",
+        "retrace_status": "newly_inferred",
+        "retrace_at": "2026-09-26T09:46:49Z"
+      }
+    ]
   },
   "high_order_inference": {
     "profile_version": "v23.5-generative-trends-level45",
-    "evaluated_at": "2026-09-26T08:45:19Z",
+    "evaluated_at": "2026-09-26T09:46:49Z",
     "new_count": 0,
     "updated_count": 0,
     "qualified_count": 0,
@@ -80981,15 +81257,15 @@
         "generic_grammar": true,
         "reader_title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
         "reader_summary": "The sequence, not topic similarity, is the finding: dated primary evidence places practice before doctrine, and the later framework explicitly names the earlier instrument while separate evidence shows that practice had real effects.",
-        "first_seen_at": "2026-09-26T08:45:19Z",
-        "last_updated_at": "2026-09-26T08:45:19Z",
+        "first_seen_at": "2026-09-26T09:46:49Z",
+        "last_updated_at": "2026-09-26T09:46:49Z",
         "fingerprint": "bdfe247c58940617",
         "new_this_scan": false,
         "updated_this_scan": false,
         "lifecycle": "seeded",
         "missed_detection_scans": 0,
         "retrace_status": "unchanged",
-        "retrace_at": "2026-09-26T08:45:19Z"
+        "retrace_at": "2026-09-26T09:46:49Z"
       },
       {
         "id": "l45:goal_measurement_gap:competitiveness",
@@ -81143,8 +81419,8 @@
         "touched_this_scan": false,
         "reader_eligible": false,
         "historical_records": 61,
-        "first_seen_at": "2026-09-26T08:45:19Z",
-        "last_updated_at": "2026-09-26T08:45:19Z",
+        "first_seen_at": "2026-09-26T09:46:49Z",
+        "last_updated_at": "2026-09-26T09:46:49Z",
         "fingerprint": "d8aab7e64b3d2650",
         "new_this_scan": false,
         "updated_this_scan": false,
@@ -81153,7 +81429,7 @@
         "reader_title": "Europe keeps pursuing competitiveness without a settled way to measure whether it is succeeding.",
         "reader_summary": "The pattern is repeated invocation of the goal alongside sparse, fragmented or contested measurement.",
         "retrace_status": "unchanged",
-        "retrace_at": "2026-09-26T08:45:19Z"
+        "retrace_at": "2026-09-26T09:46:49Z"
       },
       {
         "id": "l45:goal_measurement_gap:sovereignty",
@@ -81307,8 +81583,8 @@
         "touched_this_scan": false,
         "reader_eligible": false,
         "historical_records": 53,
-        "first_seen_at": "2026-09-26T08:45:19Z",
-        "last_updated_at": "2026-09-26T08:45:19Z",
+        "first_seen_at": "2026-09-26T09:46:49Z",
+        "last_updated_at": "2026-09-26T09:46:49Z",
         "fingerprint": "77a7d58e8134fd6f",
         "new_this_scan": false,
         "updated_this_scan": false,
@@ -81317,7 +81593,7 @@
         "reader_title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
         "reader_summary": "The pattern is repeated invocation of the goal alongside sparse, fragmented or contested measurement.",
         "retrace_status": "unchanged",
-        "retrace_at": "2026-09-26T08:45:19Z"
+        "retrace_at": "2026-09-26T09:46:49Z"
       },
       {
         "id": "l45:conflicting_criteria_no_arbitration:infrastructure-speed-vs-safeguard",
@@ -81464,15 +81740,15 @@
         "generic_grammar": true,
         "reader_title": "Two legitimate pulls on critical infrastructure may collide because their arbitration rule is missing.",
         "reader_summary": "The risk is not the existence of two goals; it is that both act on the same decision object while separate evidence shows missing reconciliation and uneven local implementation.",
-        "first_seen_at": "2026-09-26T08:45:19Z",
-        "last_updated_at": "2026-09-26T08:45:19Z",
+        "first_seen_at": "2026-09-26T09:46:49Z",
+        "last_updated_at": "2026-09-26T09:46:49Z",
         "fingerprint": "3ebebd3a51aef7a0",
         "new_this_scan": false,
         "updated_this_scan": false,
         "lifecycle": "seeded",
         "missed_detection_scans": 0,
         "retrace_status": "unchanged",
-        "retrace_at": "2026-09-26T08:45:19Z"
+        "retrace_at": "2026-09-26T09:46:49Z"
       }
     ],
     "detector_backend": "legacy_pre_cutover_fallback",
@@ -81481,7 +81757,7 @@
   },
   "downstream_archive": {
     "profile_version": "v1.0-current-downstream-rules",
-    "updated_at": "2026-09-26T08:45:19Z",
+    "updated_at": "2026-09-26T09:46:49Z",
     "objects": [
       {
         "kind": "high_order",
@@ -85171,21 +85447,21 @@
   },
   "downstream_retrace": {
     "tool_version": "v1.0-current-downstream-rules",
-    "completed_at": "2026-09-26T08:45:19Z",
+    "completed_at": "2026-09-26T09:46:49Z",
     "source_revalidation_report": "",
     "diagnostics": {
-      "derived_objects_checked": 4,
+      "derived_objects_checked": 5,
       "unchanged": 4,
       "rebuilt": 0,
       "materially_rewritten": 0,
-      "newly_inferred": 0,
+      "newly_inferred": 1,
       "retired": 0,
       "stale_evidence_references_before": 0,
       "stale_evidence_references_removed": 0,
       "orphan_references_remaining": 0,
-      "active_evidence_reference_occurrences_checked": 37,
+      "active_evidence_reference_occurrences_checked": 46,
       "shock_support_chains_changed_after_a_removal": 0,
-      "active_dynamic_shocks": 0,
+      "active_dynamic_shocks": 1,
       "active_high_order_candidates": 4,
       "active_strategic_pathways": 0,
       "active_possible_external_shocks": 0,
@@ -85197,7 +85473,7 @@
   },
   "active_corpus": {
     "profile": "radar-active-corpus-v1",
-    "rebuilt_at": "2026-09-26T08:45:19Z",
+    "rebuilt_at": "2026-09-26T09:46:49Z",
     "raw_counts": {
       "strand_a": 385,
       "strand_b": 0,
@@ -85205,18 +85481,18 @@
       "frontier_evidence": 0
     },
     "active_counts": {
-      "strand_a": 171,
+      "strand_a": 178,
       "strand_b": 0,
       "strand_c": 33,
       "frontier_evidence": 0
     },
     "raw_total": 529,
-    "active_total": 204,
+    "active_total": 211,
     "decision_counts": {
       "provisional": 22,
-      "keep": 182,
+      "keep": 189,
       "review": 0,
-      "drop": 325,
+      "drop": 318,
       "drop_unverifiable": 0,
       "duplicate": 0,
       "needs_manual_verification": 0
@@ -85225,8 +85501,8 @@
     "missing_state_is": "provisional_active",
     "deep_scan_v2": {
       "total_records": 520,
-      "v2_verified": 175,
-      "v2_pending": 345
+      "v2_verified": 184,
+      "v2_pending": 336
     },
     "historical_deep_scan_v2": {
       "total_records": 706,

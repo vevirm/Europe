@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-09-26T08:41:58Z",
+  "generated_at": "2026-09-26T09:46:44Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -12814,8 +12814,832 @@
       "deep_scan_package_id": "worker-b-20260926T055127Z-871d462bffbb",
       "claims": [],
       "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.17645/pag.11403": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "945ed460",
+      "identity_hash": "3f283f5c940696a6",
+      "reader_title": "Geoeconomic Exposure and EU Industrial Policy",
+      "reader_what": "EU industrial-policy preferences vary with member states’ export dependence on US and Chinese demand.",
+      "reader_why": "Export exposure can constrain how far EU governments support tariffs, export controls, or technological sovereignty.",
+      "reader_more": "EU industrial-policy preferences vary with member states’ export dependence on US and Chinese demand. Descriptive export indicators for five EU member states plus three policy vignettes on EV tariffs, luxury goods, and semiconductor controls. The framework identifies structural exposure and illustrative policy links; it does not claim export dependence mechanically determines policy.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "How does export dependence shape EU industrial-policy dynamics under US–China techno-nationalist rivalry?",
+        "main_finding": "EU industrial-policy preferences vary with member states’ export dependence on US and Chinese demand.",
+        "method_or_basis": "Descriptive export indicators for five EU member states plus three policy vignettes on EV tariffs, luxury goods, and semiconductor controls.",
+        "qualification": "The framework identifies structural exposure and illustrative policy links; it does not claim export dependence mechanically determines policy.",
+        "radar_relevance": "Direct Route 1 evidence on European trade dependence and geoeconomic leverage.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied identity https://doi.org/10.17645/pag.11403; title/DOI or issuing-page identity matched the job."
+          },
+          {
+            "step": "scanner_validation_route",
+            "outcome": "success",
+            "note": "Package source route recovered matching pdf_excerpt at https://content.openalex.org/works/W7155176101.pdf; substantive text was read and used."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.17645/pag.11403 matched the recovered work identity and bibliographic metadata."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_pdf",
+            "url": "https://content.openalex.org/works/W7155176101.pdf",
+            "title": "Geoeconomic Exposure and EU Industrial Policy: Export Dependence Amid US–China Techno‐Nationalist Rivalry",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity was matched to substantive primary/repository evidence; admission was based on the recovered work rather than scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Recovered substantive evidence establishes a central European economic-security dependency, capacity, instrument, or strategic cross-border mechanism."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-26T09:46:43Z",
+      "deep_scan_package_id": "worker-a-20260926T091857Z-acd70f673165",
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EU member-state economies",
+            "class": "member_state"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_conditional",
+          "status": "delivered",
+          "status_date": "2026",
+          "status_date_precision": "year",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The framework identifies structural exposure and illustrative policy links; it does not claim export dependence mechanically determines policy.",
+          "text": "EU industrial-policy preferences vary with member states’ export dependence on US and Chinese demand.",
+          "confidence": "high",
+          "record_key": "link:https://doi.org/10.17645/pag.11403",
+          "merit": 83,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:3f283f5c940696a6:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1111/jcms.70140": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "ee46fdfc",
+      "identity_hash": "3a0dadd04d595915",
+      "reader_title": "China and Limits to the European Union's Geoeconomic Turn",
+      "reader_what": "Institutional limits reduce the EU’s ability to convert market power into coercive geoeconomic leverage toward China.",
+      "reader_why": "Export-control competence and national implementation constrain a more centralized EU geoeconomic turn.",
+      "reader_more": "Institutional limits reduce the EU’s ability to convert market power into coercive geoeconomic leverage toward China. Comparative analysis of EU responses involving export controls and 5G, grounded in policy evidence and institutional analysis. The article diagnoses limits to EU coercive capacity; it does not show that the EU lacks all forms of geoeconomic power.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "Why has the EU’s geoeconomic turn produced limited coercive leverage toward China?",
+        "main_finding": "Institutional limits reduce the EU’s ability to convert market power into coercive geoeconomic leverage toward China.",
+        "method_or_basis": "Comparative analysis of EU responses involving export controls and 5G, grounded in policy evidence and institutional analysis.",
+        "qualification": "The article diagnoses limits to EU coercive capacity; it does not show that the EU lacks all forms of geoeconomic power.",
+        "radar_relevance": "Direct Route 3 analysis of EU economic-security instruments and competence.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied identity https://doi.org/10.1111/jcms.70140; title/DOI or issuing-page identity matched the job."
+          },
+          {
+            "step": "scanner_validation_route",
+            "outcome": "success",
+            "note": "Package source route recovered matching substantial_web_text at https://discovery.dundee.ac.uk/en/publications/china-and-limits-to-the-european-unions-geoeconomic-turn-2/; substantive text was read and used."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/jcms.70140 matched the recovered work identity and bibliographic metadata."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_full_text",
+            "url": "https://discovery.dundee.ac.uk/en/publications/china-and-limits-to-the-european-unions-geoeconomic-turn-2/",
+            "title": "China and Limits to the European Union's Geoeconomic Turn",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity was matched to substantive primary/repository evidence; admission was based on the recovered work rather than scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Recovered substantive evidence establishes a central European economic-security dependency, capacity, instrument, or strategic cross-border mechanism."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-26T09:46:43Z",
+      "deep_scan_package_id": "worker-a-20260926T091857Z-acd70f673165",
+      "claims": [
+        {
+          "object": "export_control.competence",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026",
+          "status_date_precision": "year",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The article diagnoses limits to EU coercive capacity; it does not show that the EU lacks all forms of geoeconomic power.",
+          "text": "Institutional limits reduce the EU’s ability to convert market power into coercive geoeconomic leverage toward China.",
+          "confidence": "high",
+          "record_key": "link:https://doi.org/10.1111/jcms.70140",
+          "merit": 91,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:3a0dadd04d595915:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1080/09662839.2026.2709844": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "746ed7a9",
+      "identity_hash": "c1e008d614757f39",
+      "reader_title": "Reconceptualising security of supply in European defence politics",
+      "reader_what": "European states still frame defence security of supply differently despite the post-2022 push for common capacity.",
+      "reader_why": "Divergent national frames complicate collective procurement, production planning, and reduction of defence-supply dependencies.",
+      "reader_more": "European states still frame defence security of supply differently despite the post-2022 push for common capacity. Twelve-country qualitative comparison using 62 interviews alongside parliamentary and media material. The study explains variation in security-of-supply frames rather than measuring delivered defence output.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "Did the post-2022 shock produce convergence in European security-of-supply thinking?",
+        "main_finding": "European states still frame defence security of supply differently despite the post-2022 push for common capacity.",
+        "method_or_basis": "Twelve-country qualitative comparison using 62 interviews alongside parliamentary and media material.",
+        "qualification": "The study explains variation in security-of-supply frames rather than measuring delivered defence output.",
+        "radar_relevance": "Route 2 evidence on European defence-industrial supply security and member-state alignment.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied identity https://doi.org/10.1080/09662839.2026.2709844; title/DOI or issuing-page identity matched the job."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered substantive matching source at https://www.tandfonline.com/doi/full/10.1080/09662839.2026.2709844 and verified title/authors/identifier against the job."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1080/09662839.2026.2709844 matched the recovered work identity and bibliographic metadata."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.tandfonline.com/doi/full/10.1080/09662839.2026.2709844",
+            "title": "Reconceptualising security of supply in European defence politics",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity was matched to substantive primary/repository evidence; admission was based on the recovered work rather than scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Recovered substantive evidence establishes a central European economic-security dependency, capacity, instrument, or strategic cross-border mechanism."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-26T09:46:43Z",
+      "deep_scan_package_id": "worker-a-20260926T091857Z-acd70f673165",
+      "claims": [
+        {
+          "object": "defence.production_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European defence actors",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026",
+          "status_date_precision": "year",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The study explains variation in security-of-supply frames rather than measuring delivered defence output.",
+          "text": "European states still frame defence security of supply differently despite the post-2022 push for common capacity.",
+          "confidence": "high",
+          "record_key": "link:https://doi.org/10.1080/09662839.2026.2709844",
+          "merit": 91,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:c1e008d614757f39:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1080/01402382.2026.2662873": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "063ef1fc",
+      "identity_hash": "d86d08ec9128a083",
+      "reader_title": "The EU as a global actor in the geoeconomic age",
+      "reader_what": "The EU’s open trade model creates both geoeconomic power and vulnerability, limiting coercive statecraft.",
+      "reader_why": "Dependence on external markets and rules constrains how aggressively the EU can weaponize trade.",
+      "reader_more": "The EU’s open trade model creates both geoeconomic power and vulnerability, limiting coercive statecraft. Qualitative synthesis of EU trade-statecraft episodes and institutional constraints in the geoeconomic era. The article is analytical rather than a causal estimate of any single trade instrument.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "How does the EU’s trade openness simultaneously enable and constrain geoeconomic action?",
+        "main_finding": "The EU’s open trade model creates both geoeconomic power and vulnerability, limiting coercive statecraft.",
+        "method_or_basis": "Qualitative synthesis of EU trade-statecraft episodes and institutional constraints in the geoeconomic era.",
+        "qualification": "The article is analytical rather than a causal estimate of any single trade instrument.",
+        "radar_relevance": "Direct Route 1 and Route 3 evidence on trade openness, vulnerability, and EU geoeconomic power.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied identity https://doi.org/10.1080/01402382.2026.2662873; title/DOI or issuing-page identity matched the job."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered substantive matching source at https://www.tandfonline.com/doi/full/10.1080/01402382.2026.2662873 and verified title/authors/identifier against the job."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1080/01402382.2026.2662873 matched the recovered work identity and bibliographic metadata."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.tandfonline.com/doi/full/10.1080/01402382.2026.2662873",
+            "title": "The EU as a global actor in the geoeconomic age: power and weakness in and through trade",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity was matched to substantive primary/repository evidence; admission was based on the recovered work rather than scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Recovered substantive evidence establishes a central European economic-security dependency, capacity, instrument, or strategic cross-border mechanism."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-26T09:46:43Z",
+      "deep_scan_package_id": "worker-a-20260926T091857Z-acd70f673165",
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026",
+          "status_date_precision": "year",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The article is analytical rather than a causal estimate of any single trade instrument.",
+          "text": "The EU’s open trade model creates both geoeconomic power and vulnerability, limiting coercive statecraft.",
+          "confidence": "high",
+          "record_key": "link:https://doi.org/10.1080/01402382.2026.2662873",
+          "merit": 83,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:d86d08ec9128a083:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.2478/ie-2026-0034": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "3866aad4",
+      "identity_hash": "1cb9b291ef34b780",
+      "reader_title": "Strategic Approach to Mitigating Europe’s Critical Dependencies",
+      "reader_what": "Europe should match diversification, substitution, and other tools to the criticality of specific supply dependencies.",
+      "reader_why": "Different dependency types require different instruments instead of a uniform de-risking response.",
+      "reader_more": "Europe should match diversification, substitution, and other tools to the criticality of specific supply dependencies. Policy framework combining supply-chain criticality with a structured assessment of European economic-security instruments. The paper is a policy-analytic framework; instrument effectiveness is not established through causal evaluation.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "How should Europe align economic-security instruments with the criticality of supply-chain dependencies?",
+        "main_finding": "Europe should match diversification, substitution, and other tools to the criticality of specific supply dependencies.",
+        "method_or_basis": "Policy framework combining supply-chain criticality with a structured assessment of European economic-security instruments.",
+        "qualification": "The paper is a policy-analytic framework; instrument effectiveness is not established through causal evaluation.",
+        "radar_relevance": "Direct Route 3 analysis of Europe’s dependency-mitigation toolbox.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied identity https://doi.org/10.2478/ie-2026-0034; title/DOI or issuing-page identity matched the job."
+          },
+          {
+            "step": "scanner_validation_route",
+            "outcome": "success",
+            "note": "Package source route recovered matching pdf_excerpt at https://content.openalex.org/works/W7167205201.pdf; substantive text was read and used."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.2478/ie-2026-0034 matched the recovered work identity and bibliographic metadata."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_pdf",
+            "url": "https://content.openalex.org/works/W7167205201.pdf",
+            "title": "Strategic Approach to Mitigating Europe’s Critical Dependencies: Aligning Economic Security Instruments with the Criticality of Supply Chains",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity was matched to substantive primary/repository evidence; admission was based on the recovered work rather than scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Recovered substantive evidence establishes a central European economic-security dependency, capacity, instrument, or strategic cross-border mechanism."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-26T09:46:44Z",
+      "deep_scan_package_id": "worker-a-20260926T091857Z-acd70f673165",
+      "claims": [
+        {
+          "object": "econsec.toolbox_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "aligns",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026",
+          "status_date_precision": "year",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The paper is a policy-analytic framework; instrument effectiveness is not established through causal evaluation.",
+          "text": "Europe should match diversification, substitution, and other tools to the criticality of specific supply dependencies.",
+          "confidence": "high",
+          "record_key": "link:https://doi.org/10.2478/ie-2026-0034",
+          "merit": 83,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:1cb9b291ef34b780:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1080/14747731.2026.2658892": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "73273a46",
+      "identity_hash": "4d418ea47105580d",
+      "reader_title": "The EU global gateway and energy infrastructure",
+      "reader_what": "Global Gateway energy projects mix geoeconomic aims with development and liberal economic-statecraft logics.",
+      "reader_why": "Strategic intent does not consistently translate into a uniformly geoeconomic European external-investment portfolio.",
+      "reader_more": "Global Gateway energy projects mix geoeconomic aims with development and liberal economic-statecraft logics. Mixed-method analysis built around an original database of 117 Global Gateway energy-infrastructure projects. Project classification captures programme design and intent more directly than downstream geopolitical effects.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "What variety of economic statecraft does the Global Gateway use in energy infrastructure?",
+        "main_finding": "Global Gateway energy projects mix geoeconomic aims with development and liberal economic-statecraft logics.",
+        "method_or_basis": "Mixed-method analysis built around an original database of 117 Global Gateway energy-infrastructure projects.",
+        "qualification": "Project classification captures programme design and intent more directly than downstream geopolitical effects.",
+        "radar_relevance": "Route 3 evidence on the EU’s Global Gateway as an economic-statecraft partnership instrument.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied identity https://doi.org/10.1080/14747731.2026.2658892; title/DOI or issuing-page identity matched the job."
+          },
+          {
+            "step": "scanner_validation_route",
+            "outcome": "success",
+            "note": "Package source route recovered matching pdf_excerpt at https://content.openalex.org/works/W7158095773.pdf; substantive text was read and used."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1080/14747731.2026.2658892 matched the recovered work identity and bibliographic metadata."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_pdf",
+            "url": "https://content.openalex.org/works/W7158095773.pdf",
+            "title": "The EU global gateway and energy infrastructure: navigating varieties of economic statecraft",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity was matched to substantive primary/repository evidence; admission was based on the recovered work rather than scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Recovered substantive evidence establishes a central European economic-security dependency, capacity, instrument, or strategic cross-border mechanism."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-26T09:46:44Z",
+      "deep_scan_package_id": "worker-a-20260926T091857Z-acd70f673165",
+      "claims": [
+        {
+          "object": "partnership.global_gateway",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_conditional",
+          "status": "delivered",
+          "status_date": "2026",
+          "status_date_precision": "year",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Project classification captures programme design and intent more directly than downstream geopolitical effects.",
+          "text": "Global Gateway energy projects mix geoeconomic aims with development and liberal economic-statecraft logics.",
+          "confidence": "high",
+          "record_key": "link:https://doi.org/10.1080/14747731.2026.2658892",
+          "merit": 83,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:4d418ea47105580d:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1080/07036337.2026.2652993": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "8d234d4c",
+      "identity_hash": "f286d18993ab9813",
+      "reader_title": "Continuity in times of geoeconomic change",
+      "reader_what": "EU trade relations with the Global South show strategic continuity across successive agreement regimes.",
+      "reader_why": "Strategic use of trade predates the recent economic-security vocabulary and persists across institutional forms.",
+      "reader_more": "EU trade relations with the Global South show strategic continuity across successive agreement regimes. Comparative historical analysis of Lomé, Economic Partnership Agreements, and newer Strategic Trade Agreements. The study identifies continuity in strategic trade practice; it does not imply identical leverage across partners or periods.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "How much has the EU’s strategic trade practice changed during the geoeconomic turn?",
+        "main_finding": "EU trade relations with the Global South show strategic continuity across successive agreement regimes.",
+        "method_or_basis": "Comparative historical analysis of Lomé, Economic Partnership Agreements, and newer Strategic Trade Agreements.",
+        "qualification": "The study identifies continuity in strategic trade practice; it does not imply identical leverage across partners or periods.",
+        "radar_relevance": "Route 1 evidence on the EU’s strategic use of trade agreements.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied identity https://doi.org/10.1080/07036337.2026.2652993; title/DOI or issuing-page identity matched the job."
+          },
+          {
+            "step": "scanner_validation_route",
+            "outcome": "success",
+            "note": "Package source route recovered matching abstract_or_landing_page at https://biblio.ugent.be/publication/01M342VXW2SPJRQC6X5E0973CM; substantive text was read and used."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered substantive matching source at https://www.tandfonline.com/doi/full/10.1080/07036337.2026.2652993 and verified title/authors/identifier against the job."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1080/07036337.2026.2652993 matched the recovered work identity and bibliographic metadata."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_full_text",
+            "url": "https://biblio.ugent.be/publication/01M342VXW2SPJRQC6X5E0973CM",
+            "title": "Continuity in times of geoeconomic change: the European Union’s strategic trade relations with the Global South",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.tandfonline.com/doi/full/10.1080/07036337.2026.2652993",
+            "title": "Continuity in times of geoeconomic change: the European Union’s strategic trade relations with the Global South",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity was matched to substantive primary/repository evidence; admission was based on the recovered work rather than scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Recovered substantive evidence establishes a central European economic-security dependency, capacity, instrument, or strategic cross-border mechanism."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-26T09:46:44Z",
+      "deep_scan_package_id": "worker-a-20260926T091857Z-acd70f673165",
+      "claims": [
+        {
+          "object": "trade.agreement",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "delivered",
+          "status_date": "2026",
+          "status_date_precision": "year",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The study identifies continuity in strategic trade practice; it does not imply identical leverage across partners or periods.",
+          "text": "EU trade relations with the Global South show strategic continuity across successive agreement regimes.",
+          "confidence": "high",
+          "record_key": "link:https://doi.org/10.1080/07036337.2026.2652993",
+          "merit": 83,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:f286d18993ab9813:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1007/s13347-026-01186-2": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "2674a4a2",
+      "identity_hash": "b7a1ec4c7b01772d",
+      "reader_title": "For Good or Ill? A Conceptual Analysis of the Notion of Dual-use Technology",
+      "reader_what": "The paper clarifies what “dual-use technology” means and why the concept creates ethical and governance ambiguity.",
+      "reader_more": "The paper clarifies what “dual-use technology” means and why the concept creates ethical and governance ambiguity. Conceptual philosophical analysis of the dual-use concept across technology and governance contexts. Europe appears as one governance context, but the work is not substantively about European economic security.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "",
+        "main_finding": "The paper clarifies what “dual-use technology” means and why the concept creates ethical and governance ambiguity.",
+        "method_or_basis": "Conceptual philosophical analysis of the dual-use concept across technology and governance contexts.",
+        "qualification": "Europe appears as one governance context, but the work is not substantively about European economic security.",
+        "radar_relevance": "Fails Strand A: conceptual dual-use analysis without a central European dependency, capacity, trade, investment, or economic-security mechanism.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied identity https://doi.org/10.1007/s13347-026-01186-2; title/DOI or issuing-page identity matched the job."
+          },
+          {
+            "step": "scanner_validation_route",
+            "outcome": "success",
+            "note": "Package source route recovered matching substantial_web_text at https://link.springer.com/article/10.1007/s13347-026-01186-2; substantive text was read and used."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1007/s13347-026-01186-2 matched the recovered work identity and bibliographic metadata."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_full_text",
+            "url": "https://link.springer.com/article/10.1007/s13347-026-01186-2",
+            "title": "For Good or Ill? A Conceptual Analysis of the Notion of Dual-use Technology",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity was matched to substantive primary/repository evidence; admission was based on the recovered work rather than scanner prose."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Dropped because the recovered work exists but its substantive object does not satisfy Strand A."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-26T09:46:44Z",
+      "deep_scan_package_id": "worker-a-20260926T091857Z-acd70f673165",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1016/j.gsf.2026.102444": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "d4487cb0",
+      "identity_hash": "a6915e86b3640885",
+      "reader_title": "A dynamic multi-criteria framework for national critical raw materials assessment in Iran",
+      "reader_what": "The study builds a national critical-raw-materials assessment framework for Iran.",
+      "reader_more": "The study builds a national critical-raw-materials assessment framework for Iran. Multi-criteria national critical-raw-materials assessment integrating geopolitical risk, resource security, and supply-chain resilience. EU methods are reference points, but the empirical subject and policy target are Iran.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "",
+        "main_finding": "The study builds a national critical-raw-materials assessment framework for Iran.",
+        "method_or_basis": "Multi-criteria national critical-raw-materials assessment integrating geopolitical risk, resource security, and supply-chain resilience.",
+        "qualification": "EU methods are reference points, but the empirical subject and policy target are Iran.",
+        "radar_relevance": "Fails Strand A because Europe is not the substantive subject or affected economic-security system.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied identity https://doi.org/10.1016/j.gsf.2026.102444; title/DOI or issuing-page identity matched the job."
+          },
+          {
+            "step": "scanner_validation_route",
+            "outcome": "success",
+            "note": "Package source route recovered matching pdf_excerpt at https://content.openalex.org/works/W7203992908.pdf; substantive text was read and used."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1016/j.gsf.2026.102444 matched the recovered work identity and bibliographic metadata."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_pdf",
+            "url": "https://content.openalex.org/works/W7203992908.pdf",
+            "title": "A dynamic multi-criteria framework for national critical raw materials assessment in Iran: Integrating geopolitical risk, resource security, and supply-chain resilience",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity was matched to substantive primary/repository evidence; admission was based on the recovered work rather than scanner prose."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Dropped because the recovered work exists but its substantive object does not satisfy Strand A."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-26T09:46:44Z",
+      "deep_scan_package_id": "worker-a-20260926T091857Z-acd70f673165",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-09-26T08:41:58Z"
+  "claims_updated_at": "2026-09-26T09:46:44Z"
 }
