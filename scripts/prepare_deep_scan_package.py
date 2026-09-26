@@ -382,10 +382,16 @@ def utc_now() -> str:
 
 
 def package_id_for(rows: list[tuple[str, str, str, dict[str, Any], str]], lane: str = "") -> str:
+    """Return a deterministic ID for the exact assigned work.
+
+    Re-running the generator with an unchanged lane must not manufacture a new
+    package merely because the clock changed. A changed record set/hash produces
+    a new digest and therefore a new package ID.
+    """
     seed = "\n".join(f"{key}|{h}" for _strand, key, h, _r, _reason in rows)
     digest = hashlib.sha256(seed.encode("utf-8")).hexdigest()[:12]
     prefix = f"worker-{lane.lower()}-" if lane else ""
-    return f"{prefix}{time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())}-{digest}"
+    return f"{prefix}{digest}"
 
 
 def source_for(item: tuple[str, str, str, dict[str, Any], str]):

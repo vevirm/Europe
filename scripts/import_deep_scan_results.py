@@ -495,7 +495,7 @@ def main() -> None:
     corr_table = corrections.setdefault("records", {})
     avoid_whys = [clean(v.get("reader_why")) for v in table.values() if isinstance(v, dict) and clean(v.get("reader_why"))]
     accepted_v1 = accepted_v2 = rejected_count = duplicate_count = stale_count = deferred_count = 0
-    retry_count = manual_count = 0
+    retry_count = dropped_count = 0
     work_state_changed = False
     admission_changed = False
     seen_pairs: set[tuple[str, str, str]] = set()
@@ -606,8 +606,41 @@ def main() -> None:
                     if not high_confidence_duplicate(_row, current[dup_of][1]):
                         v2_problems.append("duplicate relation is not independently high-confidence (same DOI or exact normalized title)")
                 if v2_problems:
-                    print(f"REJECT {label} result {idx}: {'; '.join(v2_problems)}")
+                    problem_text = "; ".join(v2_problems)
+                    print(f"REJECT {label} result {idx}: {problem_text}")
                     rejected_count += 1
+                    # A result for the correct current identity was actually attempted but
+                    # failed acceptance. Count it toward the same hard retry cap as a
+                    # validated access-limited defer so malformed/thin scans cannot loop forever.
+                    new_status = mark_recovery_failure(
+                        work_state, key, package_id,
+                        reason="Deep Scan return rejected: " + problem_text[:500],
+                        verification=copy.deepcopy(raw.get("verification") or {}),
+                        when=utc_now(),
+                    )
+                    work_state_changed = True
+                    if new_status == "dropped_after_3_failures":
+                        now = utc_now()
+                        rec = work_state.get("records", {}).get(key, {})
+                        admit_table[key] = {
+                            "decision": "drop_unverifiable",
+                            "target_strand": "",
+                            "reason_code": "DEEP_SCAN_FAILED_3X",
+                            "reason": (
+                                "Three Deep Scan attempts for this current record identity failed acceptance. "
+                                "The record is terminally dropped from automatic scanning and active reasoning "
+                                "to prevent an infinite retry loop."
+                            ),
+                            "source": "deep_scan_v2",
+                            "corpus_scope": "historical" if is_historical else "main",
+                            "updated_at": now,
+                            "deep_scan_package_id": package_id,
+                            "verification_note": clean((raw.get("verification") or {}).get("verification_note")),
+                            "recovery_attempts": int(rec.get("recovery_attempts") or 3),
+                        }
+                        admission_changed = True
+                        dropped_count += 1
+                        print(f"DROP {label} result {idx}: third failed scan; terminally removed from future packages")
                     continue
 
                 decision = clean((raw.get("admission") or {}).get("decision")).lower()
@@ -622,19 +655,19 @@ def main() -> None:
                     )
                     deferred_count += 1
                     work_state_changed = True
-                    if new_status == "needs_manual_verification":
+                    if new_status == "dropped_after_3_failures":
                         # After the third genuine recovery pass, stop treating this as
                         # active evidence.  Raw corpus data remains preserved, while the
                         # coordination/status ledger keeps it visible for human follow-up.
                         rec = work_state.get("records", {}).get(key, {})
                         admit_table[key] = {
-                            "decision": "needs_manual_verification",
+                            "decision": "drop_unverifiable",
                             "target_strand": "",
-                            "reason_code": "NEEDS_MANUAL_VERIFICATION",
+                            "reason_code": "EVIDENCE_ACCESS_FAILED_3X",
                             "reason": (
-                                "Identity is credible, but substantive evidence remained inaccessible "
-                                "after three validated Deep Scan recovery passes; excluded from active "
-                                "reasoning until hands-on verification supplies materially new access."
+                                "Substantive evidence remained inaccessible after three validated Deep Scan "
+                                "recovery passes. The record is terminally dropped from automatic scanning "
+                                "and active reasoning to prevent repeated retry loops."
                             ),
                             "source": "deep_scan_v2",
                             "corpus_scope": "historical" if is_historical else "main",
@@ -644,10 +677,10 @@ def main() -> None:
                             "recovery_attempts": int(rec.get("recovery_attempts") or 3),
                         }
                         admission_changed = True
-                        manual_count += 1
+                        dropped_count += 1
                         print(
-                            f"HANDS-ON {label} result {idx}: third recovery pass failed; "
-                            "removed from automatic queue and active reasoning"
+                            f"DROP {label} result {idx}: third recovery pass failed; "
+                            "terminally removed from automatic queue and active reasoning"
                         )
                     else:
                         retry_count += 1
@@ -789,6 +822,24 @@ def main() -> None:
     if work_state_changed:
         save_state(work_state, args.work_state)
 
+    # Always leave a machine-readable receipt before consuming valid inbox files.
+    # This makes "file disappeared but nothing changed" diagnosable from the repo itself.
+    report_path = args.corpus.parent / "DEEP_SCAN_LAST_IMPORT.json"
+    report_path.write_text(json.dumps({
+        "generated_at": utc_now(),
+        "input_files": [p.name for p in files],
+        "consumed_valid_files": [p.name for p in imported_files],
+        "v2_accepted": accepted_v2,
+        "legacy_v1_accepted": accepted_v1,
+        "access_limited_passes": deferred_count,
+        "retrying": retry_count,
+        "dropped_after_3_failures": dropped_count,
+        "stale": stale_count,
+        "rejected": rejected_count,
+        "duplicates": duplicate_count,
+        "invalid_files": file_failures,
+    }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
     for path in imported_files:
         try:
             path.unlink()
@@ -797,7 +848,7 @@ def main() -> None:
 
     print(
         f"Deep Scan import: V2 accepted {accepted_v2}; legacy V1 accepted {accepted_v1}; "
-        f"access-limited passes {deferred_count} (retry {retry_count}, hands-on {manual_count}); "
+        f"access-limited passes {deferred_count} (retry {retry_count}, dropped-after-3 {dropped_count}); "
         f"stale {stale_count}; rejected {rejected_count}; duplicates {duplicate_count}."
     )
     print("Raw radar.json and historical/historical.json evidence were not deleted. V2 admission/corrections are stored in sidecars for active-corpus rebuild.")

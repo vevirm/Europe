@@ -21,7 +21,7 @@ DEFAULT_LANES = ("A", "B")
 DEFAULT_LANE_SIZE = 36
 MAX_RECOVERY_ATTEMPTS = 3
 RETRY_INTERVAL = 12  # at most one retry per 12 historical/background slots while fresh history exists
-TERMINAL_MANUAL_STATUSES = {"needs_manual_verification", "deferred"}  # deferred = legacy terminal status
+TERMINAL_MANUAL_STATUSES = {"needs_manual_verification", "dropped_after_3_failures", "deferred"}  # legacy/manual + hard terminal drop
 
 
 def utc_now() -> str:
@@ -371,7 +371,7 @@ def mark_recovery_failure(
     """Record one *validated full recovery ladder* failure.
 
     Returns the new status.  Attempts 1-2 become ``recovery_retry``; attempt 3
-    becomes ``needs_manual_verification`` and is never automatically assigned again.
+    becomes ``dropped_after_3_failures`` and is never automatically assigned again.
     """
     when = when or utc_now()
     max_attempts = max(1, int(max_attempts))
@@ -389,7 +389,7 @@ def mark_recovery_failure(
     })
     terminal = attempts >= max_attempts
     rec.update({
-        "status": "needs_manual_verification" if terminal else "recovery_retry",
+        "status": "dropped_after_3_failures" if terminal else "recovery_retry",
         "recovery_attempts": attempts,
         "last_recovery_at": when,
         "last_recovery_package_id": package_id,
@@ -398,8 +398,8 @@ def mark_recovery_failure(
         "recovery_history": history,
     })
     if terminal:
-        rec["manual_verification_since"] = when
-        rec["manual_verification_reason"] = reason
+        rec["dropped_at"] = when
+        rec["drop_reason"] = reason
     if lane in state.get("lanes", {}):
         state["lanes"][lane]["assigned"] = [k for k in state["lanes"][lane].get("assigned", []) if k != key]
     return str(rec["status"])
@@ -479,16 +479,16 @@ def write_status_markdown(
         "# Deep Scan V2 work status",
         "",
         "This file is generated from the authoritative Deep Scan sidecar plus the persistent worker-assignment ledger.",
-        "It exists so a new chat or operator can see what has already been verified, what each worker owns, and what now needs hands-on verification.",
+        "It exists so a new chat or operator can see what has already been verified, what each worker owns, and what has been terminally dropped after repeated failed scans.",
         "",
         "Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.",
-        f"A validated `defer` counts as one genuine recovery pass. After **{MAX_RECOVERY_ATTEMPTS}** unsuccessful passes, the work leaves the automatic queue and enters **Hands-on verification needed**.",
+        f"A validated `defer` or rejected current-package scan return counts as a failed attempt. After **{MAX_RECOVERY_ATTEMPTS}** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.",
         "",
         f"- Authoritative V2 verified: **{counts['verified']}** (Main **{counts['verified_main']}** + Historical **{counts['verified_historical']}**)",
         f"- Automatic queue still needing V2 verification: **{counts['pending_total']}** (Main **{counts['pending_main']}** + Historical **{counts['pending_historical']}**)",
         f"- Currently assigned to workers: **{counts['assigned']}** (Main **{counts['assigned_main']}** + Historical **{counts['assigned_historical']}**)",
         f"- Bounded access-recovery retries still eligible: **{counts['recovery_retries']}**",
-        f"- Hands-on verification needed: **{counts['manual_verification']}**",
+        f"- Terminally dropped after failed scans: **{counts['manual_verification']}**",
         f"- Automatic queue pending and not yet assigned: **{counts['unassigned_pending']}**",
         "",
         "## Worker lanes",
@@ -521,9 +521,9 @@ def write_status_markdown(
     manual_rows.sort(key=lambda x: str(x[1].get("manual_verification_since") or x[1].get("deferred_at") or x[1].get("last_recovery_at") or ""))
     if manual_rows:
         lines.extend([
-            "## Hands-on verification needed",
+            "## Terminally dropped after failed scans",
             "",
-            "These works no longer consume automatic Deep Scan slots. Their identity is believed to be real, but substantive evidence could not be recovered automatically. Re-open one only when you have a new source, PDF, repository copy, or other materially new access route.",
+            "These records no longer consume automatic Deep Scan slots and are excluded from active reasoning after three failed attempts. Re-open one only by explicitly resetting its work-state entry after materially new evidence becomes available.",
             "",
         ])
         for key, row in manual_rows:
