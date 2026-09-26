@@ -482,15 +482,16 @@ def main() -> None:
         return
 
     table = sidecar.setdefault("records", {})
-    # Deep Scan V2 is deliberately FIFO. The package builder exposes the head of
-    # this same queue; enforce a consecutive prefix at import time so an LLM cannot
-    # skip a difficult earlier record and return only easier later records. Partial
-    # completion remains safe: a result file may stop after any valid prefix.
-    expected_v2_queue = prioritize_pending_keys(
+    # Deep Scan V2 results are independent within a reserved package. A worker may
+    # successfully verify later items even when an earlier item is access-limited.
+    # Do not couple acceptance to a consecutive-prefix/FIFO rule: doing so leaves
+    # valid successes assigned and causes them to reappear in future packages.
+    # Package membership is still enforced below, so a worker cannot submit an
+    # arbitrary record that was never reserved to that package.
+    current_pending_keys = set(prioritize_pending_keys(
         work_state,
         [item[1] for item in pending(doc, sidecar)] + [item[1] for item in historical_pending(historical_doc, sidecar)],
-    )
-    expected_v2_pos = 0
+    ))
     admit_table = admission_state.setdefault("records", {})
     corr_table = corrections.setdefault("records", {})
     avoid_whys = [clean(v.get("reader_why")) for v in table.values() if isinstance(v, dict) and clean(v.get("reader_why"))]
@@ -515,7 +516,7 @@ def main() -> None:
             claims_required = fmt == V2_FORMAT and clean(result_doc.get("claims_format")) == CLAIMS_FORMAT
             package_id = clean(result_doc.get("package_id")) or "unknown-package"
             package_expected = expected_remaining_for_package(work_state, package_id, sidecar) if fmt == V2_FORMAT else None
-            package_pos = 0
+            package_expected_set = set(package_expected) if package_expected is not None else None
             for idx, raw in enumerate(result_doc.get("results", []), 1):
                 if not isinstance(raw, dict):
                     print(f"REJECT {label} result {idx}: result is not an object")
@@ -546,21 +547,21 @@ def main() -> None:
                     continue
 
                 if fmt == V2_FORMAT:
-                    if package_expected is not None:
-                        expected_key = package_expected[package_pos] if package_pos < len(package_expected) else ""
-                        order_label = f"reserved worker package {package_id}"
-                    else:
-                        expected_key = expected_v2_queue[expected_v2_pos] if expected_v2_pos < len(expected_v2_queue) else ""
-                        order_label = "global FIFO queue"
-                    if key != expected_key:
+                    if package_expected_set is not None:
+                        if key not in package_expected_set:
+                            print(
+                                f"REJECT {label} result {idx}: record is not an unresolved member of "
+                                f"reserved worker package {package_id}: {key[:120]}"
+                            )
+                            rejected_count += 1
+                            continue
+                    elif key not in current_pending_keys:
                         print(
-                            f"REJECT {label} result {idx}: out of FIFO order for {order_label}. Next required record is "
-                            f"{expected_key[:120] if expected_key else '[none pending]'}"
+                            f"REJECT {label} result {idx}: record is not currently pending Deep Scan work: "
+                            f"{key[:120]}"
                         )
                         rejected_count += 1
-                        # A returned file must remain a consecutive prefix of the work
-                        # it was assigned. Other reserved worker lanes may progress independently.
-                        break
+                        continue
 
                 if fmt == V1_FORMAT:
                     if h != current_hash:
@@ -690,10 +691,9 @@ def main() -> None:
                             f"{int(rec.get('recovery_attempts') or 1)}/3 failed; item remains eligible "
                             "but retries are throttled behind fresh work"
                         )
-                    if package_expected is not None:
-                        package_pos += 1
-                    else:
-                        expected_v2_pos += 1
+                    if package_expected_set is not None:
+                        package_expected_set.discard(key)
+                    current_pending_keys.discard(key)
                     continue
 
                 normalized = {
@@ -782,10 +782,9 @@ def main() -> None:
                 accepted_v2 += 1
                 mark_verified(work_state, key, package_id, when=now)
                 work_state_changed = True
-                if package_expected is not None:
-                    package_pos += 1
-                else:
-                    expected_v2_pos += 1
+                if package_expected_set is not None:
+                    package_expected_set.discard(key)
+                current_pending_keys.discard(key)
                 if prose_problems:
                     print(f"ACCEPT {label} result {idx} with prose safeguards: {'; '.join(prose_problems)}")
         if file_had_valid_doc:
