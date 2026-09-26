@@ -6,12 +6,12 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **188** (Main **188** + Historical **0**)
-- Automatic queue still needing V2 verification: **1123** (Main **366** + Historical **757**)
+- Authoritative V2 verified: **214** (Main **214** + Historical **0**)
+- Automatic queue still needing V2 verification: **1097** (Main **340** + Historical **757**)
 - Currently assigned to workers: **72** (Main **72** + Historical **0**)
 - Bounded access-recovery retries still eligible: **2**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **1051**
+- Automatic queue pending and not yet assigned: **1025**
 
 ## Worker lanes
 
@@ -29,16 +29,16 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-cd76c0ed760a`
+- Current package: `worker-b-8e7eccd00b73`
 - Assigned unresolved records: **36**
   1. `link:https://doi.org/10.17645/pag.12525` — The Politics of Procurement: Green Industrial Policy Through Non‐Price Criteria in European Offshore Wind Auctions
-  2. `link:https://doi.org/10.1177/10242589261444001` — How can trade unions act strategically in response to decarbonisation? Union strategic capacity and automotive transition policies in Germany, Spain and the UK
-  3. `link:https://doi.org/10.1080/21582041.2026.2725729` — London’s stock exchange ten years after Brexit: from regulatory divergence to multi-channel geopolitics?
-  4. `link:https://doi.org/10.1016/j.rser.2026.117363` — Exploring future circularity scenarios of lithium-ion batteries in the European Union: A system dynamics approach
-  5. `link:https://doi.org/10.1007/s10207-026-01336-9` — From obligation to enforcement: mapping EU AI act and CRA cybersecurity requirements to technical controls for LLM-based autonomous agents
-  6. `link:https://doi.org/10.1007/s10308-026-00778-z` — Infrastructural conjunctures under the Belt and Road Initiative: the role of China-Europe Railway Express and evolution of the laptop cluster in Chongqing, China
-  7. `link:https://doi.org/10.1007/s41125-026-00116-9` — Civil Security in Europe: an Overview of Research and Innovation Activities across Traditional and Emerging Threats
-  8. `link:https://doi.org/10.1177/10245294261448607` — (S)tra(te)gic banking Europe’s geopolitical turn and the contradictory trajectory of TBTF banks
+  2. `link:https://doi.org/10.1080/21582041.2026.2725729` — London’s stock exchange ten years after Brexit: from regulatory divergence to multi-channel geopolitics?
+  3. `link:https://doi.org/10.1177/10245294261448607` — (S)tra(te)gic banking Europe’s geopolitical turn and the contradictory trajectory of TBTF banks
+  4. `link:https://doi.org/10.1177/17816858261477419` — Defence readiness 2030: The industrial dimension
+  5. `link:https://doi.org/10.1080/13501763.2026.2710717` — Promising security, delivering dependency: the material constraints of EU semiconductor collective securitisation
+  6. `link:https://doi.org/10.1080/23745118.2026.2655142` — Exporting the European third way: strategic narratives of a value-based digital order
+  7. `link:https://doi.org/10.1057/s41599-026-08829-x` — Unveiling the nexus between products and influential countries in the multi-layer trade network of global lithium battery
+  8. `link:https://doi.org/10.1016/j.apenergy.2026.127884` — Multi-objective supply chain optimization of renewable energy carrier imports for Europe
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
