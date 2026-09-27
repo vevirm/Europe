@@ -7,17 +7,17 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **275** (Main **275** + Historical **0**)
-- Automatic queue still needing V2 verification: **1107** (Main **279** + Historical **828**)
-- Currently assigned to workers: **78** (Main **78** + Historical **0**)
+- Automatic queue still needing V2 verification: **1217** (Main **293** + Historical **924**)
+- Currently assigned to workers: **86** (Main **86** + Historical **0**)
 - Bounded access-recovery retries still eligible: **35**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **1029**
+- Automatic queue pending and not yet assigned: **1131**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-b20cb369ca69`
-- Assigned unresolved records: **36**
+- Current package: `worker-a-5a95127157b9`
+- Assigned unresolved records: **40**
   1. `link:https://doi.org/10.1186/s43093-026-00965-9` — Foreign direct divestment and economic performance in central and eastern europe: evidence from pre- and post-COVID-19 dynamics
   2. `link:https://doi.org/10.1111/twec.70099` — Exploring the Role of Aid for Trade in Promoting Digital Services Trade
   3. `link:https://doi.org/10.1186/s43093-026-00853-2` — Reassessing the FDI–growth nexus: the role of institutional development in central and Eastern Europe
@@ -26,11 +26,11 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   6. `link:https://doi.org/10.5281/zenodo.22914638` — From cross-border power links to a digitalized regional market: A critical review of the ASEAN power grid as a catalyst for decarbonization
   7. `link:https://doi.org/10.1007/s10368-026-00795-8` — Governance improvements and investment in transition economies
   8. `link:https://www.cer.eu/sites/default/files/EC_ETS_2.7.26.pdf` — A stronger carbon market is necessary for a more competitive European industry
-  - … plus 28 more in the package manifest
+  - … plus 32 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-5f4dbbd4d4d5`
-- Assigned unresolved records: **36**
+- Current package: `worker-b-cae9f2e76bc3`
+- Assigned unresolved records: **40**
   1. `link:https://www.businesseurope.eu/publications/security-and-defence-policy-needs-to-be-integrated-into-europes-competitiveness-strategy/` — Security and defence policy needs to be integrated into Europe’s competitiveness strategy
   2. `link:https://arxiv.org/abs/2607.21048` — Accelerating fossil gas independence in Europe
   3. `link:https://doi.org/10.1057/s41254-026-00441-9` — From public diplomacy to branding: the European Union’s external communication through the global gateway
@@ -39,7 +39,7 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   6. `link:https://www.cer.eu/sites/default/files/EC_JS_energy_shock_14.4.26_updated.pdf` — Energy shock 2.0: Lessons from 2022 for the Hormuz crisis
   7. `link:https://www.cer.eu/sites/default/files/ST_transatlantic_divorce_7.4.26.pdf` — One year liberation day: The delusion of transatlantic economic divorce
   8. `link:https://www.cer.eu/sites/default/files/AS_WTO_reform_2.4.26_final.pdf` — WTO reform after Yaoundé: What next for the multilateral trade order?
-  - … plus 28 more in the package manifest
+  - … plus 32 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
