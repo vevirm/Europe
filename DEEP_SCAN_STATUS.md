@@ -6,27 +6,27 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **275** (Main **275** + Historical **0**)
-- Automatic queue still needing V2 verification: **1217** (Main **293** + Historical **924**)
-- Currently assigned to workers: **86** (Main **86** + Historical **0**)
-- Bounded access-recovery retries still eligible: **35**
+- Authoritative V2 verified: **303** (Main **303** + Historical **0**)
+- Automatic queue still needing V2 verification: **1189** (Main **265** + Historical **924**)
+- Currently assigned to workers: **82** (Main **82** + Historical **0**)
+- Bounded access-recovery retries still eligible: **47**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **1131**
+- Automatic queue pending and not yet assigned: **1107**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-5a95127157b9`
-- Assigned unresolved records: **40**
-  1. `link:https://doi.org/10.1186/s43093-026-00965-9` — Foreign direct divestment and economic performance in central and eastern europe: evidence from pre- and post-COVID-19 dynamics
-  2. `link:https://doi.org/10.1111/twec.70099` — Exploring the Role of Aid for Trade in Promoting Digital Services Trade
-  3. `link:https://doi.org/10.1186/s43093-026-00853-2` — Reassessing the FDI–growth nexus: the role of institutional development in central and Eastern Europe
-  4. `link:https://doi.org/10.1016/j.infsof.2026.108033` — Uncovering challenges of cybersecurity cross-regulation in EU legislation
-  5. `link:https://doi.org/10.5281/zenodo.22914639` — From cross-border power links to a digitalized regional market: A critical review of the ASEAN power grid as a catalyst for decarbonization
-  6. `link:https://doi.org/10.5281/zenodo.22914638` — From cross-border power links to a digitalized regional market: A critical review of the ASEAN power grid as a catalyst for decarbonization
-  7. `link:https://doi.org/10.1007/s10368-026-00795-8` — Governance improvements and investment in transition economies
-  8. `link:https://www.cer.eu/sites/default/files/EC_ETS_2.7.26.pdf` — A stronger carbon market is necessary for a more competitive European industry
-  - … plus 32 more in the package manifest
+- Current package: `worker-a-6fd90428172e`
+- Assigned unresolved records: **36**
+  1. `link:https://doi.org/10.1177/10245294261450371` — Disciplining venture capital? The remaking of innovation financing in the EU
+  2. `link:https://doi.org/10.1177/10245294261443734` — What drives the Spanish deindustrialization? A subsystem approach
+  3. `link:https://doi.org/10.1080/23745118.2026.2655143` — Competing visions: the impact of Franco-German narrative divergence on EU strategy
+  4. `link:https://doi.org/10.1186/s43093-026-00945-z` — The effect of institutions on foreign direct investment: What matters most?
+  5. `link:https://doi.org/10.1007/s11367-026-02643-y` — Evaluating social sustainability in European photovoltaic module supply chains through social life cycle assessment
+  6. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=7d0241d4-b3d2-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — R&I needs to reduce dependencies on critical raw materials through advanced materials in passenger vehicles - Publications Office of the EU
+  7. `link:https://doi.org/10.1093/ia/iiag046` — The EU's Indo-Pacific strategic narratives: reception and perception gaps in Japan
+  8. `link:https://doi.org/10.1007/s13132-026-03447-z` — Moral Economics: Human Capital, Gender Education and Foreign Direct Investment. Updated Empirical Results
+  - … plus 28 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-cae9f2e76bc3`
