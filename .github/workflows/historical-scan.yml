@@ -15,7 +15,7 @@ on:
       - 'historical/tests/**'
       - '.github/workflows/historical-scan.yml'
   schedule:
-    - cron: '17 2,6,10,14,18,22 * * *'
+    - cron: '17 2 * * *'
   workflow_dispatch:
     inputs:
       rescue_mode:
