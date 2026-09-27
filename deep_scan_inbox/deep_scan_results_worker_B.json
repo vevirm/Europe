@@ -1,0 +1,2903 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-b-cae9f2e76bc3",
+  "results": [
+    {
+      "record_key": "link:https://www.businesseurope.eu/publications/security-and-defence-policy-needs-to-be-integrated-into-europes-competitiveness-strategy/",
+      "source_hash": "854da4b3",
+      "identity_hash": "96651eddb74b3ce6",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://www.businesseurope.eu/publications/security-and-defence-policy-needs-to-be-integrated-into-europes-competitiveness-strategy/"
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_page",
+            "url": "https://www.businesseurope.eu/publications/security-and-defence-policy-needs-to-be-integrated-into-europes-competitiveness-strategy/",
+            "title": "Security and defence policy needs to be integrated into Europe’s competitiveness strategy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Security and defence policy needs to be integrated into Europe’s competitiveness strategy",
+      "reader_what": "Today, BusinessEurope has published its first paper on security and defence policy.",
+      "reader_why": "",
+      "reader_more": "Today, BusinessEurope has published its first paper on security and defence policy. BusinessEurope President Fredrik Persson said: “EU Member States currently spend around €343 billion on defence annually. Total spending by NATO members has increased by 41% from 2021 to 2025.",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "Today, BusinessEurope has published its first paper on security and defence policy.",
+        "main_finding": "Today, BusinessEurope has published its first paper on security and defence policy.",
+        "method_or_basis": "BusinessEurope President Fredrik Persson said: “EU Member States currently spend around €343 billion on defence annually.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://arxiv.org/abs/2607.21048",
+      "source_hash": "f1f48500",
+      "identity_hash": "b1e89629bc10cb35",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://arxiv.org/html/2607.21048"
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_full_text",
+            "url": "https://arxiv.org/html/2607.21048",
+            "title": "Accelerating fossil gas independence in Europe",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Accelerating fossil gas independence in Europe",
+      "reader_what": "Recent price shocks have prompted calls to curb Europe's dependence on fossil gas imports, but the cost of this goal,",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "Recent price shocks have prompted calls to curb Europe's dependence on fossil gas imports, but the cost of this goal, and the consumer protection it affords, remain uncertain. Here we address this gap by imposing constraints on fossil gas supply in a European energy system model that co-optimises abatement across all gas uses at high spatio-temporal resolution. Cutting import reliance proves economically compelling: through savings in power generation and low-temperature heat in industry and buildings, Europe can halve its natural gas consumption for 16bnEUR/a, aligning demand with the continent's production capacity of 200 bcm.",
+      "deep_analysis": {
+        "work_kind": "preprint",
+        "research_question": "Recent price shocks have prompted calls to curb Europe's dependence on fossil gas imports, but the cost of this goal, and the consumer protection it affords, remain uncertain.",
+        "main_finding": "Recent price shocks have prompted calls to curb Europe's dependence on fossil gas imports, but the cost of this goal, and the consumer protection it affords, remain uncertain.",
+        "method_or_basis": "Here we address this gap by imposing constraints on fossil gas supply in a European energy system model that co-optimises abatement across all gas uses at high spatio-temporal resolution.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Lukas Franken, Iegor Riepin, T H Brown",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-07-23",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "Recent price shocks have prompted calls to curb Europe's dependence on fossil gas imports, but the cost of this goal, and the consumer protection it affords, remain uncertain. Accelerating fossil gas independence in Europe. However, this",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1057/s41254-026-00441-9",
+      "source_hash": "f82acc2a",
+      "identity_hash": "b7c79af467d1581d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://link.springer.com/article/10.1057/s41254-026-00441-9"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1057/s41254-026-00441-9 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1057/s41254-026-00441-9",
+            "title": "From public diplomacy to branding: the European Union’s external communication through the global gateway",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "From public diplomacy to branding: the European Union’s external communication through the global gateway",
+      "reader_what": "The European Union has traditionally relied on public diplomacy as its primary instrument for communicating its external policies to foreign",
+      "reader_why": "",
+      "reader_more": "The European Union has traditionally relied on public diplomacy as its primary instrument for communicating its external policies to foreign publics. Yet in recent years the EU has increasingly adopted branding in its external communication, most prominently through the Global Gateway strategy. This article examines why branding emerged alongside established public diplomacy practices in the EU’s external action communication.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "The European Union has traditionally relied on public diplomacy as its primary instrument for communicating its external policies to foreign publics.",
+        "main_finding": "The European Union has traditionally relied on public diplomacy as its primary instrument for communicating its external policies to foreign publics.",
+        "method_or_basis": "Yet in recent years the EU has increasingly adopted branding in its external communication, most prominently through the Global Gateway strategy.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://www.cer.eu/sites/default/files/KP_EPF_africa_1.5.26.pdf",
+      "source_hash": "6799c1cf",
+      "identity_hash": "63c9d9d293308f93",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://www.cer.eu/sites/default/files/KP_EPF_africa_1.5.26.pdf"
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_pdf",
+            "url": "https://www.cer.eu/sites/default/files/KP_EPF_africa_1.5.26.pdf",
+            "title": "The EU is trying to speak the language of power in Africa, but what is it saying?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The EU is trying to speak the language of power in Africa, but what is it saying?",
+      "reader_what": "[PDF page 1] The EU is trying to speak the language of power in Africa, but what is it saying?",
+      "reader_why": "",
+      "reader_more": "[PDF page 1] The EU is trying to speak the language of power in Africa, but what is it saying? by Katherine Pye, 1 May 2026 CER INSIGHT: THE EU IS TRYING TO SPEAK THE LANGUAGE OF POWER IN AFRICA, BUT WHAT IS IT SAYING? 1 May 2026 INFO@CER.EU | WWW.CER.EU 1 Africa is currently the continent with the largest number of armed conflicts in the world – over 50 – representing 40 per cent of all wars globally.",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "[PDF page 1] The EU is trying to speak the language of power in Africa, but what is it saying?",
+        "main_finding": "[PDF page 1] The EU is trying to speak the language of power in Africa, but what is it saying?",
+        "method_or_basis": "by Katherine Pye, 1 May 2026 CER INSIGHT: THE EU IS TRYING TO SPEAK THE LANGUAGE OF POWER IN AFRICA, BUT WHAT IS IT SAYING?",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.ijhydene.2026.154457",
+      "source_hash": "f329d403",
+      "identity_hash": "1a695e4f884ec6db",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://vbn.aau.dk/da/publications/the-role-of-green-hydrogen-imports-under-demand-and-supply-uncert/"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1016/j.ijhydene.2026.154457 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://vbn.aau.dk/da/publications/the-role-of-green-hydrogen-imports-under-demand-and-supply-uncert/",
+            "title": "The role of green hydrogen imports under demand and supply uncertainties in Europe",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The role of green hydrogen imports under demand and supply uncertainties in Europe",
+      "reader_what": "To achieve climate neutrality, Europe’s hydrogen strategy combines domestic green hydrogen production with green hydrogen imports, but the optimal balance",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "To achieve climate neutrality, Europe’s hydrogen strategy combines domestic green hydrogen production with green hydrogen imports, but the optimal balance remains uncertain. This study applies the stochastic energy system model EMPIRE, coupled with sectoral demand projections, to quantify how variable renewable energy source (VRES) deployment trajectories and hydrogen demand pathways jointly shape Europe’s import requirements. Results show that import requirements in 2050 could range from 7.5 to 55 Mton/yr, depending on scenario developments.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "To achieve climate neutrality, Europe’s hydrogen strategy combines domestic green hydrogen production with green hydrogen imports, but the optimal balance remains uncertain.",
+        "main_finding": "To achieve climate neutrality, Europe’s hydrogen strategy combines domestic green hydrogen production with green hydrogen imports, but the optimal balance remains uncertain.",
+        "method_or_basis": "This study applies the stochastic energy system model EMPIRE, coupled with sectoral demand projections, to quantify how variable renewable energy source (VRES) deployment trajectories and hydrogen demand pathways jointly shape Europe’s import requirements.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Frederik Dahl Nielsen, Stian Backe, Benjamin Mitterrutzner, Pedro Crespo del Granado",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-04-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "The role of green hydrogen imports under demand and supply uncertainties in Europe. The item was admitted to Strand A from the source text available at scan time. Consult the linked publication for the full argument,",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://www.cer.eu/sites/default/files/EC_JS_energy_shock_14.4.26_updated.pdf",
+      "source_hash": "13636377",
+      "identity_hash": "16b3fd7f68af4c3f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://www.cer.eu/sites/default/files/EC_JS_energy_shock_14.4.26_updated.pdf"
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_pdf",
+            "url": "https://www.cer.eu/sites/default/files/EC_JS_energy_shock_14.4.26_updated.pdf",
+            "title": "Energy shock 2.0: Lessons from 2022 for the Hormuz crisis",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Energy shock 2.0: Lessons from 2022 for the Hormuz crisis",
+      "reader_what": "[PDF page 1] Energy shock 2.0: Lessons from 2022 for the Hormuz crisis by Elisabetta Cornago and John Springford, 13",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "[PDF page 1] Energy shock 2.0: Lessons from 2022 for the Hormuz crisis by Elisabetta Cornago and John Springford, 13 April 2026 CER INSIGHT: ENERGY SHOCK 2.0: LESSONS FROM 2022 FOR THE HORMUZ CRISIS 13 April 2026 INFO@CER.EU | WWW.CER.EU 1 If the Strait of Hormuz stays closed, Europe will face as serious an energy crisis as it did in 2022. This time, energy poverty policies must be more targeted, and electrification more ambitious. For the second time this decade, Europe is facing an energy crisis prompted by a war someone else started.",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "[PDF page 1] Energy shock 2.0: Lessons from 2022 for the Hormuz crisis by Elisabetta Cornago and John Springford, 13 April 2026 CER INSIGHT: ENERGY SHOCK 2.0: LESSONS FROM 2022 FOR THE",
+        "main_finding": "[PDF page 1] Energy shock 2.0: Lessons from 2022 for the Hormuz crisis by Elisabetta Cornago and John Springford, 13 April 2026 CER INSIGHT: ENERGY SHOCK 2.0: LESSONS FROM 2022 FOR THE HORMUZ CRISIS 13 April 2026 INFO@CER.EU | WWW.CER.EU 1 If the Strait of",
+        "method_or_basis": "This time, energy poverty policies must be more targeted, and electrification more ambitious.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Centre for European Reform",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-04-13",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "Today, the Hormuz chokepoint is preventing most oil and LNG exports from the region from reaching the global market. 13 July 2026 Truce or no truce, Lebanon deserves more EU support 09 July 2026 Should the",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://www.cer.eu/sites/default/files/ST_transatlantic_divorce_7.4.26.pdf",
+      "source_hash": "52cbcebe",
+      "identity_hash": "7d02f6783eb1402c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://www.cer.eu/sites/default/files/ST_transatlantic_divorce_7.4.26.pdf"
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_pdf",
+            "url": "https://www.cer.eu/sites/default/files/ST_transatlantic_divorce_7.4.26.pdf",
+            "title": "One year liberation day: The delusion of transatlantic economic divorce",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "One year liberation day: The delusion of transatlantic economic divorce",
+      "reader_what": "[PDF page 1] One year liberation day: The delusion of transatlantic economic divorce by Sander Tordoir, 7 April 2026 CER",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "[PDF page 1] One year liberation day: The delusion of transatlantic economic divorce by Sander Tordoir, 7 April 2026 CER INSIGHT: ONE YEAR LIBERATION DAY: THE DELUSION OF TRANSATLANTIC ECONOMIC DIVORCE 7 April 2026 INFO@CER.EU | WWW.CER.EU 1 A year after Liberation Day, Washington and Brussels are still fighting each other – not China. Liberation Day was meant to reset global trade. America’s fiscal and trade deficits remain near record highs, while China’s export surge continues unchecked, with Europe increasingly exposed.",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "[PDF page 1] One year liberation day: The delusion of transatlantic economic divorce by Sander Tordoir, 7 April 2026 CER INSIGHT: ONE YEAR LIBERATION DAY: THE DELUSION OF TRANSATLANTIC ECONOMIC DIVORCE 7",
+        "main_finding": "[PDF page 1] One year liberation day: The delusion of transatlantic economic divorce by Sander Tordoir, 7 April 2026 CER INSIGHT: ONE YEAR LIBERATION DAY: THE DELUSION OF TRANSATLANTIC ECONOMIC DIVORCE 7 April 2026 INFO@CER.EU | WWW.CER.EU 1 A year after Liberation Day, Washington and",
+        "method_or_basis": "Liberation Day was meant to reset global trade.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Centre for European Reform",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-04-07",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "As Council on Foreign Relations senior fellow Brad Setser has argued , this has driven a surge in EU pharmaceutical exports that is often mistaken for competitiveness, but in fact largely reflects US tax policy. With",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://www.cer.eu/sites/default/files/AS_WTO_reform_2.4.26_final.pdf",
+      "source_hash": "ae0a1c49",
+      "identity_hash": "d673a75a6817518b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://www.cer.eu/sites/default/files/AS_WTO_reform_2.4.26_final.pdf"
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_pdf",
+            "url": "https://www.cer.eu/sites/default/files/AS_WTO_reform_2.4.26_final.pdf",
+            "title": "WTO reform after Yaoundé: What next for the multilateral trade order?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "WTO reform after Yaoundé: What next for the multilateral trade order?",
+      "reader_what": "[PDF page 1] WTO reform after Yaoundé: What next for the multilateral trade order?",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "[PDF page 1] WTO reform after Yaoundé: What next for the multilateral trade order? by Anton Spisak, 2 April 2026 CER INSIGHT: WTO REFORM AFTER YAOUNDÉ: WHAT NEXT FOR THE MUL TILATERAL TRADE ORDER? 2 April 2026 INFO@CER.EU | WWW.CER.EU 1 The failure of the WTO’s ‘reform ministerial’ deepens the strain on the global trade system.",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "[PDF page 1] WTO reform after Yaoundé: What next for the multilateral trade order?",
+        "main_finding": "[PDF page 1] WTO reform after Yaoundé: What next for the multilateral trade order?",
+        "method_or_basis": "by Anton Spisak, 2 April 2026 CER INSIGHT: WTO REFORM AFTER YAOUNDÉ: WHAT NEXT FOR THE MUL TILATERAL TRADE ORDER?",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.wto_compatibility",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Centre for European Reform",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026-04-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "Unilateral tariffs, subsidy races, export restrictions, the weaponisation of dependencies, and trade’s growing entanglement with security and technology all weigh on the system, yet barely featured in discussions. Donald Trump’s grievances with global trade have become",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1163/29505720-bja00014",
+      "source_hash": "ddf9e762",
+      "identity_hash": "ae9752f9e88a3922",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "https://doi.org/10.1163/29505720-bja00014 — reader-facing URL: source retrieval failed: 405 Client Error: Not Allowed for url: https://brill.com/view/journals/lgeo/2/1/article-p50_2.xml; OpenAlex authenticated DOI lookup matched W7154725812; no substantive OpenAlex-assisted source recovered"
+          },
+          {
+            "step": "doi",
+            "outcome": "limited",
+            "note": "https://doi.org/10.1163/29505720-bja00014 — identity resolves, but substantive accessible text was not recovered."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "limited",
+            "note": "Search query: \"The Role of Private Companies in Great Powers’ Geoeconomic Competition: the Cases of TSMC and Samsung\" — matching identity/abstract found, no sufficient substantive full text."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "limited",
+            "note": "Search query: The Role of Private Companies in Great Powers’ Geoeconomic Competition: the Cases of TSMC and Samsung Maria (Mary) Papageorgiou 2026 — identity corroborated; evidence remained abstract/landing-page level."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "limited",
+            "note": "Searched Law & Geoeconomics and legitimate repository routes for \"The Role of Private Companies in Great Powers’ Geoeconomic Competition: the Cases of TSMC and Samsung\"; no sufficient accessible full text was recovered."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "limited",
+            "note": "Final bounded search using identifier/title fragment \"29505720-bja00014\" confirmed identity but did not recover substantive evidence."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Identity is corroborated, but the mandatory recovery ladder did not yield substantive accessible evidence sufficient for an admission judgment."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Verified work identity; substantive evidence remains inaccessible or too thin after recovery."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1002/sd.71311",
+      "source_hash": "338ce1f9",
+      "identity_hash": "63a953a4cfc449de",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "https://doi.org/10.1002/sd.71311 — reader-facing URL: source retrieval failed: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1002/sd.71311; OpenAlex authenticated DOI lookup matched W7163910249; no substantive OpenAlex-assisted source recovered"
+          },
+          {
+            "step": "doi",
+            "outcome": "limited",
+            "note": "https://doi.org/10.1002/sd.71311 — identity resolves, but substantive accessible text was not recovered."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "limited",
+            "note": "Search query: \"How Tariffs Shape Trade‐Embodied Emissions in the European Union: Sectoral Heterogeneity in Final Demand\" — matching identity/abstract found, no sufficient substantive full text."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "limited",
+            "note": "Search query: How Tariffs Shape Trade‐Embodied Emissions in the European Union: Sectoral Heterogeneity in Final Demand Hugo Campos‐Romero 2026 — identity corroborated; evidence remained abstract/landing-page level."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "limited",
+            "note": "Searched Sustainable Development and legitimate repository routes for \"How Tariffs Shape Trade‐Embodied Emissions in the European Union: Sectoral Heterogeneity in Final Demand\"; no sufficient accessible full text was recovered."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "limited",
+            "note": "Final bounded search using identifier/title fragment \"sd.71311\" confirmed identity but did not recover substantive evidence."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Identity is corroborated, but the mandatory recovery ladder did not yield substantive accessible evidence sufficient for an admission judgment."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Verified work identity; substantive evidence remains inaccessible or too thin after recovery."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1111/1758-5899.70190",
+      "source_hash": "b5f2eb98",
+      "identity_hash": "c596c258003fddd2",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://onlinelibrary.wiley.com/doi/10.1111/1758-5899.70190"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/1758-5899.70190 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://onlinelibrary.wiley.com/doi/10.1111/1758-5899.70190",
+            "title": "The EU –India Partnership in the Indo‐Pacific: Scope and Prospects",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The EU –India Partnership in the Indo‐Pacific: Scope and Prospects",
+      "reader_what": "The EU –India Partnership in the Indo‐Pacific: Scope and Prospects. These findings yield three policy recommendations: Scale up maritime dialogue",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "The EU –India Partnership in the Indo‐Pacific: Scope and Prospects. These findings yield three policy recommendations: Scale up maritime dialogue and interoperability, strengthen economic initiatives that leverage India's expanding network of partnerships, and deepen the social foundations underpinning the partnership beyond elite‐level engagement. ABSTRACT This article examines Indian perceptions of the EU's Indo‐Pacific Strategy through interviews with government officials and foreign policy influencers.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "The EU –India Partnership in the Indo‐Pacific: Scope and Prospects. These findings yield three policy recommendations: Scale up maritime dialogue and interoperability, strengthen economic initiatives that leverage India's expanding network of partnerships,",
+        "main_finding": "The EU –India Partnership in the Indo‐Pacific: Scope and Prospects. These findings yield three policy recommendations: Scale up maritime dialogue and interoperability, strengthen economic initiatives that leverage India's expanding network of partnerships, and deepen the social foundations underpinning the partnership beyond elite‐level engagement. ABSTRACT This",
+        "method_or_basis": "Substantive recovered source was inspected for the work’s scope, evidence and conclusions.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "partnership.like_minded_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Sheetal Sharma, Tobias Theiler",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-06-25",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "The EU –India Partnership in the Indo‐Pacific: Scope and Prospects. These findings yield three policy recommendations: Scale up maritime dialogue and interoperability, strengthen economic initiatives that leverage India's expanding network of partnerships, and deepen the social",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1186/s12992-026-01210-2",
+      "source_hash": "962b3bb6",
+      "identity_hash": "7c2c7e9f33d1851d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://link.springer.com/article/10.1186/s12992-026-01210-2"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1186/s12992-026-01210-2 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1186/s12992-026-01210-2",
+            "title": "Why health diplomacy should be understood as a deterrence instrument: evidence from Sweden’s health system",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Why health diplomacy should be understood as a deterrence instrument: evidence from Sweden’s health system",
+      "reader_what": "Sweden’s health system is increasingly exposed to strategic vulnerabilities arising from globalised pharmaceutical supply chains, medicine shortages, antimicrobial resistance, and",
+      "reader_why": "",
+      "reader_more": "Sweden’s health system is increasingly exposed to strategic vulnerabilities arising from globalised pharmaceutical supply chains, medicine shortages, antimicrobial resistance, and hybrid geopolitical threats. In a period of heightened international tension, safeguarding health security has become an urgent policy concern. While the securitisation of health diplomacy raises ethical and political challenges, this article argues that health diplomacy should be understood not only as a cooperative instrument but also as a form of deterrence that operates through governance integration, transparency, and strategic interdependence, strengthening national resilience.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "Sweden’s health system is increasingly exposed to strategic vulnerabilities arising from globalised pharmaceutical supply chains, medicine shortages, antimicrobial resistance, and hybrid geopolitical threats.",
+        "main_finding": "Sweden’s health system is increasingly exposed to strategic vulnerabilities arising from globalised pharmaceutical supply chains, medicine shortages, antimicrobial resistance, and hybrid geopolitical threats.",
+        "method_or_basis": "In a period of heightened international tension, safeguarding health security has become an urgent policy concern.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1007/s12027-026-00883-x",
+      "source_hash": "3199951f",
+      "identity_hash": "21733ed00689948e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://link.springer.com/article/10.1007/s12027-026-00883-x"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1007/s12027-026-00883-x matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1007/s12027-026-00883-x",
+            "title": "State aid for AI: strategic necessity or market distortion?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "State aid for AI: strategic necessity or market distortion?",
+      "reader_what": "This article aims to the assess the interplay between the State aid discipline and the development and uptake of artificial",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "This article aims to the assess the interplay between the State aid discipline and the development and uptake of artificial intelligence in the European Union. To this end, the article examines the possible role of State aid in the EU’s AI strategy as well as the main implications for competition, and the emergence of AI in State aid law and soft law, finally proposing some forward-looking possible avenues for the relationship between State aid and AI in the EU. This article aims to the assess the interplay between the State aid discipline and the development and uptake of artificial intelligence in the European Un State aid for AI: strategic necessity or market distortion?",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "This article aims to the assess the interplay between the State aid discipline and the development and uptake of artificial intelligence in the European Union.",
+        "main_finding": "This article aims to the assess the interplay between the State aid discipline and the development and uptake of artificial intelligence in the European Union.",
+        "method_or_basis": "To this end, the article examines the possible role of State aid in the EU’s AI strategy as well as the main implications for competition, and the emergence of AI in State aid law and soft law, finally proposing some forward-looking possible avenues for the relationship between State",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Juan Jorge Piernas López",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-05-12",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "State aid for AI: strategic necessity or market distortion?. To this end, the article examines the possible role of State aid in the EU’s AI strategy as well as the main implications for competition, and the",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.lanepe.2026.101794",
+      "source_hash": "743673ed",
+      "identity_hash": "eb9579a165b52aff",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://air.unimi.it/bitstream/2434/1264555/2/PIIS2666776226002061.pdf"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1016/j.lanepe.2026.101794 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_pdf",
+            "url": "https://air.unimi.it/bitstream/2434/1264555/2/PIIS2666776226002061.pdf",
+            "title": "The 2026 EU–India free trade agreement: why it matters for global health and trade",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The 2026 EU–India free trade agreement: why it matters for global health and trade",
+      "reader_what": "[PDF page 1] The 2026 EU–India free trade agreement: why it matters for global health and trade Astrid Berner-Rodoreda, a,∗",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "[PDF page 1] The 2026 EU–India free trade agreement: why it matters for global health and trade Astrid Berner-Rodoreda, a,∗ Pramiti Parwani, b Chetali Rao, c Emmanuel André, d Günter Fröschl, e Jolene Skordis, f Sangeeta Sharma, g Quique Bassat, h Rifat Atun, i Milena Vainieri, j Andrew Farlow, k Fabrizio Tediosi, l Raffaella Ravinetto, m Khaled M. Ismail, n Elil Renganathan, o Anniek de Ruijter, p Tim Taylor, q Gorik Ooms, m Eldrid Herrington, r Gopal Dabade, s Till Bärnighausen, a and Katrina Perehudoff p a Heidelberg Institute of Global Health, Heidelberg University, Heidelberg, Germany b Warwick Law School, University of Warwick, Warwick, UK c Third World Network, Penang, Malaysia d Laboratory of Clinical Microbiology, Department of Microbiology, Immunology and Transplantation, KU Leuven, Leuven",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "[PDF page 1] The 2026 EU–India free trade agreement: why it matters for global health and trade Astrid Berner-Rodoreda, a,∗ Pramiti Parwani, b Chetali Rao, c Emmanuel André, d Günter Fröschl, e",
+        "main_finding": "[PDF page 1] The 2026 EU–India free trade agreement: why it matters for global health and trade Astrid Berner-Rodoreda, a,∗ Pramiti Parwani, b Chetali Rao, c Emmanuel André, d Günter Fröschl, e Jolene Skordis, f Sangeeta Sharma, g Quique Bassat, h Rifat Atun, i Milena",
+        "method_or_basis": "Ismail, n Elil Renganathan, o Anniek de Ruijter, p Tim Taylor, q Gorik Ooms, m Eldrid Herrington, r Gopal Dabade, s Till Bärnighausen, a and Katrina Perehudoff p a Heidelberg Institute of Global Health, Heidelberg University, Heidelberg, Germany b Warwick Law School, University of Warwick, Warwick, UK c",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.agreement",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Astrid Berner-Rodoreda, Pramiti Parwani, Chetali Rao, Emmanuel André, Günter Fröschl, Jolene Skordis, Sangeeta Sharma, Quique Bassat, et al.",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-08-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "The 2026 EU–India free trade agreement: why it matters for global health and trade. The item was admitted to Strand A from the source text available at scan time. Consult the linked publication for the full",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.econlet.2026.113182",
+      "source_hash": "b5ffa9ea",
+      "identity_hash": "6c81315824c23cdf",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://content.openalex.org/works/W7172511927.pdf"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1016/j.econlet.2026.113182 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_pdf",
+            "url": "https://content.openalex.org/works/W7172511927.pdf",
+            "title": "Geopolitics and space access: cost asymmetries and strategic dependence",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Geopolitics and space access: cost asymmetries and strategic dependence",
+      "reader_what": "[PDF page 1] Journal Pre-proof Geopolitics and space access: cost asymmetries and strategic dependence Alessio Terzi , Francesco Nicoli PII:",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "[PDF page 1] Journal Pre-proof Geopolitics and space access: cost asymmetries and strategic dependence Alessio Terzi , Francesco Nicoli PII: S0165-1765(26)00378-2 DOI: https://doi.org/10.1016/j.econlet.2026.113182 Reference: ECOLET 113182 To appear in: Economics Letters Received date: 16 April 2026 Revised date: 17 July 2026 Accepted date: 1 August 2026 Please cite this article as: Alessio Terzi , Francesco Nicoli , Geopolitics and space access: cost asym- metries and strategic dependence, Economics Letters (2026), doi: https://doi.org/10.1016/j.econlet. 2026.113182 This is a PDF of an article that has undergone enhancements after acceptance, such as the ad- dition of a cover page and metadata, and formatting for readability. This version will undergo addi- tional copyediting, typesetting and review before it is published in its ﬁnal form.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "[PDF page 1] Journal Pre-proof Geopolitics and space access: cost asymmetries and strategic dependence Alessio Terzi , Francesco Nicoli PII: S0165-1765(26)00378-2 DOI: https://doi.org/10.1016/j.econlet.2026.113182 Reference: ECOLET 113182 To appear in: Economics Letters Received",
+        "main_finding": "[PDF page 1] Journal Pre-proof Geopolitics and space access: cost asymmetries and strategic dependence Alessio Terzi , Francesco Nicoli PII: S0165-1765(26)00378-2 DOI: https://doi.org/10.1016/j.econlet.2026.113182 Reference: ECOLET 113182 To appear in: Economics Letters Received date: 16 April 2026 Revised date: 17 July 2026 Accepted date: 1 August",
+        "method_or_basis": "2026.113182 This is a PDF of an article that has undergone enhancements after acceptance, such as the ad- dition of a cover page and metadata, and formatting for readability.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "goal.strategic_autonomy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Alessio Terzi, Francesco Nicoli",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-08-05",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "Geopolitics and space access: cost asymmetries and strategic dependence. Access to space is now a national security priority, yet its cost varies enormously across nations. These widening asymmetries reinforce strategic dependencies with economic and security implications.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1007/s43681-026-01149-5",
+      "source_hash": "d6295657",
+      "identity_hash": "a89129772aed166d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://link.springer.com/article/10.1007/s43681-026-01149-5"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1007/s43681-026-01149-5 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1007/s43681-026-01149-5",
+            "title": "Responsible Artificial Intelligence for Earth observation: human rights and the EU AI act",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Responsible Artificial Intelligence for Earth observation: human rights and the EU AI act",
+      "reader_what": "The integration of Artificial Intelligence (AI) systems into Earth Observation (EO) research and innovation has catalyzed significant advancements in environmental",
+      "reader_why": "",
+      "reader_more": "The integration of Artificial Intelligence (AI) systems into Earth Observation (EO) research and innovation has catalyzed significant advancements in environmental monitoring, humanitarian response, and urban planning. However, these developments also raise novel regulatory and ethical challenges, particularly in light of the European Union’s Artificial Intelligence Act (EU AI Act), which introduces a tiered risk-based framework for the governance of AI systems. This paper provides the first comprehensive examination of how the EU AI Act, and its provisions concerning high-risk AI systems as delineated in Annex III, apply to EO-based applications.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "The integration of Artificial Intelligence (AI) systems into Earth Observation (EO) research and innovation has catalyzed significant advancements in environmental monitoring, humanitarian response, and urban planning.",
+        "main_finding": "The integration of Artificial Intelligence (AI) systems into Earth Observation (EO) research and innovation has catalyzed significant advancements in environmental monitoring, humanitarian response, and urban planning.",
+        "method_or_basis": "However, these developments also raise novel regulatory and ethical challenges, particularly in light of the European Union’s Artificial Intelligence Act (EU AI Act), which introduces a tiered risk-based framework for the governance of AI systems.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1057/s41599-026-08097-9",
+      "source_hash": "a30f012f",
+      "identity_hash": "81d1f0c383e81094",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://www.nature.com/articles/s41599-026-08097-9"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1057/s41599-026-08097-9 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.nature.com/articles/s41599-026-08097-9",
+            "title": "Bridging ex-post and ex-ante EU social indicator trends: an explorative modelling analysis for SDG4 and SDG5",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Bridging ex-post and ex-ante EU social indicator trends: an explorative modelling analysis for SDG4 and SDG5",
+      "reader_what": "The 2030 Agenda for Sustainable Development represents a roadmap for navigating a sustainable path for global human development through 17",
+      "reader_why": "",
+      "reader_more": "The 2030 Agenda for Sustainable Development represents a roadmap for navigating a sustainable path for global human development through 17 goals spanning economic, social and environmental domains. While ex-ante modelling is frequently used to anticipate progress in the economic and environmental spheres, the social domain remains relatively neglected. To fill this gap and taking an EU perspective, this paper combines novel ex-post econometrics and ex-ante simulation modelling.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "The 2030 Agenda for Sustainable Development represents a roadmap for navigating a sustainable path for global human development through 17 goals spanning economic, social and environmental domains.",
+        "main_finding": "The 2030 Agenda for Sustainable Development represents a roadmap for navigating a sustainable path for global human development through 17 goals spanning economic, social and environmental domains.",
+        "method_or_basis": "While ex-ante modelling is frequently used to anticipate progress in the economic and environmental spheres, the social domain remains relatively neglected.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.17645/pag.12268",
+      "source_hash": "4bc1fdbb",
+      "identity_hash": "bd32f77cc5141b0f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://www.cogitatiopress.com/politicsandgovernance/article/view/12268"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.17645/pag.12268 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.cogitatiopress.com/politicsandgovernance/article/view/12268",
+            "title": "Social Impacts of the Green Transition: Prospective Environmental (In)Justice in Europe’s Peripheries",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Social Impacts of the Green Transition: Prospective Environmental (In)Justice in Europe’s Peripheries",
+      "reader_what": "Social Impacts of the Green Transition: Prospective Environmental (In)Justice in Europe’s Peripheries | Article | Politics and Governance Marcus Erridge,",
+      "reader_why": "",
+      "reader_more": "Social Impacts of the Green Transition: Prospective Environmental (In)Justice in Europe’s Peripheries | Article | Politics and Governance Marcus Erridge, Eleonora Gea Piccardi, Irina Velicu, Hestia Delibas Social Impacts of the Green Transition: Prospective Environmental (In)Justice in Europe’s Peripheries Marcus Erridge Centre for Social Studies, University of Coimbra, Portugal Eleonora Gea Piccardi Centre for Social Studies, University of Coimbra, Portugal Irina Velicu Centre for Social Studies, University of Coimbra, Portugal Hestia Delibas Centre for Social Studies, University of Coimbra, Portugal The green transition is increasingly perceived as unjust by various stakeholders. Academic debates revolve around decarbonisation and coal phase-out legislation, the rush for critical minerals, new forms of renewable energy, regional strategies and the lack of effective coordination mechanisms, and policy gaps between economic and",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "Social Impacts of the Green Transition: Prospective Environmental (In)Justice in Europe’s Peripheries | Article | Politics and Governance Marcus Erridge, Eleonora Gea Piccardi, Irina Velicu, Hestia Delibas Social Impacts of the Green",
+        "main_finding": "Social Impacts of the Green Transition: Prospective Environmental (In)Justice in Europe’s Peripheries | Article | Politics and Governance Marcus Erridge, Eleonora Gea Piccardi, Irina Velicu, Hestia Delibas Social Impacts of the Green Transition: Prospective Environmental (In)Justice in Europe’s Peripheries Marcus Erridge Centre for Social Studies,",
+        "method_or_basis": "Academic debates revolve around decarbonisation and coal phase-out legislation, the rush for critical minerals, new forms of renewable energy, regional strategies and the lack of effective coordination mechanisms, and policy gaps between economic and workforce development strategies and socio-ecological protections.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1177/1023263x261458281",
+      "source_hash": "c963abf8",
+      "identity_hash": "50148eda8dbce46c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "https://doi.org/10.1177/1023263x261458281 — reader-facing URL: source retrieval failed: 403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/10.1177/1023263X261458281; OpenAlex OA landing/repository: no substantive text; OpenAlex authenticated DOI lookup matched W7167276000; no substantive OpenAlex-assisted source recovered"
+          },
+          {
+            "step": "doi",
+            "outcome": "limited",
+            "note": "https://doi.org/10.1177/1023263x261458281 — identity resolves, but substantive accessible text was not recovered."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "limited",
+            "note": "Search query: \"Defence Loans and New Trajectories of EU Economic Integration: Are we SAFE?\" — matching identity/abstract found, no sufficient substantive full text."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "limited",
+            "note": "Search query: Defence Loans and New Trajectories of EU Economic Integration: Are we SAFE? Rosalba Famà 2026 — identity corroborated; evidence remained abstract/landing-page level."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "limited",
+            "note": "Searched Maastricht Journal of European and Comparative Law and legitimate repository routes for \"Defence Loans and New Trajectories of EU Economic Integration: Are we SAFE?\"; no sufficient accessible full text was recovered."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "limited",
+            "note": "Final bounded search using identifier/title fragment \"1023263x261458281\" confirmed identity but did not recover substantive evidence."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Identity is corroborated, but the mandatory recovery ladder did not yield substantive accessible evidence sufficient for an admission judgment."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Verified work identity; substantive evidence remains inaccessible or too thin after recovery."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1093/grurint/ikag069",
+      "source_hash": "95e9aa24",
+      "identity_hash": "f0c357367e74b3d1",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "https://doi.org/10.1093/grurint/ikag069 — reader-facing URL: source retrieval failed: 403 Client Error: Forbidden for url: https://academic.oup.com/grurint/article/75/10/901/8740541; OpenAlex authenticated DOI lookup matched W7170156803; no substantive OpenAlex-assisted source recovered"
+          },
+          {
+            "step": "doi",
+            "outcome": "limited",
+            "note": "https://doi.org/10.1093/grurint/ikag069 — identity resolves, but substantive accessible text was not recovered."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "limited",
+            "note": "Search query: \"The EU-MERCOSUR Agreement: Tariff Gains, Regulatory Costs\" — matching identity/abstract found, no sufficient substantive full text."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "limited",
+            "note": "Search query: The EU-MERCOSUR Agreement: Tariff Gains, Regulatory Costs Roxana Carmen Blasetti 2026 — identity corroborated; evidence remained abstract/landing-page level."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "limited",
+            "note": "Searched GRUR International and legitimate repository routes for \"The EU-MERCOSUR Agreement: Tariff Gains, Regulatory Costs\"; no sufficient accessible full text was recovered."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "limited",
+            "note": "Final bounded search using identifier/title fragment \"ikag069\" confirmed identity but did not recover substantive evidence."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Identity is corroborated, but the mandatory recovery ladder did not yield substantive accessible evidence sufficient for an admission judgment."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Verified work identity; substantive evidence remains inaccessible or too thin after recovery."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1007/s43253-026-00186-4",
+      "source_hash": "fde68a82",
+      "identity_hash": "16208714aae08950",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://link.springer.com/article/10.1007/s43253-026-00186-4"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1007/s43253-026-00186-4 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1007/s43253-026-00186-4",
+            "title": "Rethinking technological complexity and investment: a sectoral analysis in the EU 1995–2020",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Rethinking technological complexity and investment: a sectoral analysis in the EU 1995–2020",
+      "reader_what": "The recent commercial “war” between developed economies calls for analysis of the factors that drive investment, exports, and technological capabilities.",
+      "reader_why": "",
+      "reader_more": "The recent commercial “war” between developed economies calls for analysis of the factors that drive investment, exports, and technological capabilities. This study tries to explain the widening of technological and productive disparities in the European Union, analyzing sectoral investments, and revealing that the sectoral composition of peripheral economies has not shifted towards more technologically complex activities, highlighting the urgent need for the formulation of a new industrial policy. We develop a technological complexity index for each sector, to explore the relationship between technological complexity, investment, consumption, interest rates, and foreign direct investments, using relevant econometric techniques.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "The recent commercial “war” between developed economies calls for analysis of the factors that drive investment, exports, and technological capabilities.",
+        "main_finding": "The recent commercial “war” between developed economies calls for analysis of the factors that drive investment, exports, and technological capabilities.",
+        "method_or_basis": "This study tries to explain the widening of technological and productive disparities in the European Union, analyzing sectoral investments, and revealing that the sectoral composition of peripheral economies has not shifted towards more technologically complex activities, highlighting the urgent need for the formulation of a new industrial policy.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1007/s11301-026-00587-z",
+      "source_hash": "055b55b1",
+      "identity_hash": "15c0d3a6ea5b3ac2",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://link.springer.com/article/10.1007/s11301-026-00587-z"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1007/s11301-026-00587-z matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1007/s11301-026-00587-z",
+            "title": "Catalyzing public procurement of innovation: a typology of intermediary functions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Catalyzing public procurement of innovation: a typology of intermediary functions",
+      "reader_what": "Public procurement is increasingly recognized as a strategic lever for stimulating innovation and addressing complex societal challenges.",
+      "reader_why": "",
+      "reader_more": "Public procurement is increasingly recognized as a strategic lever for stimulating innovation and addressing complex societal challenges. Despite political commitment across Europe and beyond, the implementation of public procurement of innovation (PPoI) remains fraught with structural, procedural, and organizational challenges. Innovation intermediaries—actors that broker, coordinate, or facilitate innovation processes, demonstrate promise in overcoming these barriers.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "Public procurement is increasingly recognized as a strategic lever for stimulating innovation and addressing complex societal challenges.",
+        "main_finding": "Public procurement is increasingly recognized as a strategic lever for stimulating innovation and addressing complex societal challenges.",
+        "method_or_basis": "Despite political commitment across Europe and beyond, the implementation of public procurement of innovation (PPoI) remains fraught with structural, procedural, and organizational challenges.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/09662839.2026.2700193",
+      "source_hash": "22c99afe",
+      "identity_hash": "72e798f395f3c11b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://www.tandfonline.com/doi/full/10.1080/09662839.2026.2700193"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1080/09662839.2026.2700193 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.tandfonline.com/doi/full/10.1080/09662839.2026.2700193",
+            "title": "Disruptive technology and the high-risk/high-gain logic: societal impacts of European rearmament",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Disruptive technology and the high-risk/high-gain logic: societal impacts of European rearmament",
+      "reader_what": "European policymakers, industry actors and research institutions are responding to today’s evolving security challenges by intensifying efforts to expand dual-use",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "European policymakers, industry actors and research institutions are responding to today’s evolving security challenges by intensifying efforts to expand dual-use innovation and military research and development (R&D). Building on academic debates on the dual-use dilemma, military isomorphism, liminality and disruption, this article maps the rapid emergence of a European defence-tech ecosystem comprising startups, research consortia and research hubs. Disruptive technology and the high-risk/high-gain logic: societal impacts of European rearmament.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "European policymakers, industry actors and research institutions are responding to today’s evolving security challenges by intensifying efforts to expand dual-use innovation and military research and development (R&D). Building on academic debates on",
+        "main_finding": "European policymakers, industry actors and research institutions are responding to today’s evolving security challenges by intensifying efforts to expand dual-use innovation and military research and development (R&D). Building on academic debates on the dual-use dilemma, military isomorphism, liminality and disruption, this article maps the rapid",
+        "method_or_basis": "Substantive recovered source was inspected for the work’s scope, evidence and conclusions.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "defence.production_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Bruno Oliveira Martins, Raluca Csernatoni",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-07-03",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "European policymakers, industry actors and research institutions are responding to today’s evolving security challenges by intensifying efforts to expand dual-use innovation and military research and development (R&D). Building on academic debates on the dual-use dilemma, military",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/09662839.2026.2718107",
+      "source_hash": "4458a8e4",
+      "identity_hash": "a1ceb4ba95c6fce8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "https://doi.org/10.1080/09662839.2026.2718107 — reader-facing URL: source retrieval failed: 403 Client Error: Forbidden for url: https://www.tandfonline.com/doi/full/10.1080/09662839.2026.2718107; OpenAlex authenticated DOI lookup matched W7204483239; no substantive OpenAlex-assisted source recovered"
+          },
+          {
+            "step": "doi",
+            "outcome": "limited",
+            "note": "https://doi.org/10.1080/09662839.2026.2718107 — identity resolves, but substantive accessible text was not recovered."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "limited",
+            "note": "Search query: \"The Commission’s 2025 intelligence cell proposal: from intelligence sharing to supranational intelligence?\" — matching identity/abstract found, no sufficient substantive full text."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "limited",
+            "note": "Search query: The Commission’s 2025 intelligence cell proposal: from intelligence sharing to supranational intelligence? Oldřich Bureš 2026 — identity corroborated; evidence remained abstract/landing-page level."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "limited",
+            "note": "Searched European Security and legitimate repository routes for \"The Commission’s 2025 intelligence cell proposal: from intelligence sharing to supranational intelligence?\"; no sufficient accessible full text was recovered."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "limited",
+            "note": "Final bounded search using identifier/title fragment \"09662839.2026.2718107\" confirmed identity but did not recover substantive evidence."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Identity is corroborated, but the mandatory recovery ladder did not yield substantive accessible evidence sufficient for an admission judgment."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Verified work identity; substantive evidence remains inaccessible or too thin after recovery."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1186/s43093-026-00932-4",
+      "source_hash": "d588fe4e",
+      "identity_hash": "79732e8cd76218a4",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://link.springer.com/article/10.1186/s43093-026-00932-4"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1186/s43093-026-00932-4 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1186/s43093-026-00932-4",
+            "title": "Dependent capitalism in Central and Eastern Europe: long-term trends and new shocks",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Dependent capitalism in Central and Eastern Europe: long-term trends and new shocks",
+      "reader_what": "This article examines the long-term consequences of the development strategies adopted by post-socialist economies in Central and Eastern Europe (CEE),",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "This article examines the long-term consequences of the development strategies adopted by post-socialist economies in Central and Eastern Europe (CEE), which are characterised by large-scale inflows of foreign direct investment (FDI) and the significant involvement of foreign capital in transformational processes. It analyses how FDI has reshaped economic structures whilst creating a specific vulnerability pattern. Whilst supporting productivity growth, export expansion, and partial convergence, FDI has also deepened dependence on transnational corporations, external financing and international production networks.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "This article examines the long-term consequences of the development strategies adopted by post-socialist economies in Central and Eastern Europe (CEE), which are characterised by large-scale inflows of foreign direct investment (FDI) and",
+        "main_finding": "This article examines the long-term consequences of the development strategies adopted by post-socialist economies in Central and Eastern Europe (CEE), which are characterised by large-scale inflows of foreign direct investment (FDI) and the significant involvement of foreign capital in transformational processes.",
+        "method_or_basis": "It analyses how FDI has reshaped economic structures whilst creating a specific vulnerability pattern.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.inbound_flows",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Виталина Буткалюк",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-07-20",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "Abstract This article examines the long-term consequences of the development strategies adopted by post-socialist economies in Central and Eastern Europe (CEE), which are characterised by large-scale inflows of foreign direct investment (FDI) and the significant involvement",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1057/s42214-026-00248-8",
+      "source_hash": "9b26f80c",
+      "identity_hash": "be432f7eace848c2",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://link.springer.com/article/10.1057/s42214-026-00248-8"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1057/s42214-026-00248-8 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1057/s42214-026-00248-8",
+            "title": "Withering sustainability? The rise (and fall?) of sustainability due diligence",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Withering sustainability? The rise (and fall?) of sustainability due diligence",
+      "reader_what": "The paper examines the rise and recent contestation of sustainability due diligence as a new policy instrument for governing corporate",
+      "reader_why": "",
+      "reader_more": "The paper examines the rise and recent contestation of sustainability due diligence as a new policy instrument for governing corporate conduct in global value chains. Emerging from decades of voluntary sustainability initiatives, due diligence has evolved into a regulatory approach that translates international commitments with regard to sustainability directly into corporate obligations, enabling regulators to govern across borders. These developments appeared to constitute a significant shift in sustainability governance enabling the further pursuit of “smart mix” policies which combine public and private governance instruments.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "The paper examines the rise and recent contestation of sustainability due diligence as a new policy instrument for governing corporate conduct in global value chains.",
+        "main_finding": "The paper examines the rise and recent contestation of sustainability due diligence as a new policy instrument for governing corporate conduct in global value chains.",
+        "method_or_basis": "Emerging from decades of voluntary sustainability initiatives, due diligence has evolved into a regulatory approach that translates international commitments with regard to sustainability directly into corporate obligations, enabling regulators to govern across borders.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.scitotenv.2026.181813",
+      "source_hash": "1ae724f2",
+      "identity_hash": "685c217b36df2362",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://flore.unifi.it/handle/2158/1465892"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1016/j.scitotenv.2026.181813 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://flore.unifi.it/handle/2158/1465892",
+            "title": "From drivers to damage: A conceptual framework for integrated flood risk assessment of inland hydrological assets",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "From drivers to damage: A conceptual framework for integrated flood risk assessment of inland hydrological assets",
+      "reader_what": ": Flood risk in inland hydrological systems stems from dynamic interactions among drivers, exposure pathways, and vulnerabilities.",
+      "reader_why": "",
+      "reader_more": ": Flood risk in inland hydrological systems stems from dynamic interactions among drivers, exposure pathways, and vulnerabilities. Yet, prevailing assessment methods treat these dimensions in isolation, failing to capture cascading and compound effects. This study develops a novel conceptual framework for integrated flood risk assessment that establishes systematic linkages from drivers to damage across inland hydrological environmental assets (IHEAs).",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": ": Flood risk in inland hydrological systems stems from dynamic interactions among drivers, exposure pathways, and vulnerabilities.",
+        "main_finding": ": Flood risk in inland hydrological systems stems from dynamic interactions among drivers, exposure pathways, and vulnerabilities.",
+        "method_or_basis": "Yet, prevailing assessment methods treat these dimensions in isolation, failing to capture cascading and compound effects.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://arxiv.org/abs/2606.15662",
+      "source_hash": "8ac12268",
+      "identity_hash": "07cf52e6e2c32a68",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://arxiv.org/abs/2606.15662"
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://arxiv.org/abs/2606.15662",
+            "title": "The Digital Omnibus on AI, Legislative Legitimacy and the Dynamics of AI Regulation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The Digital Omnibus on AI, Legislative Legitimacy and the Dynamics of AI Regulation",
+      "reader_what": "Driving the Digital Omnibus on AI are growing concerns within the European Union about economic growth, competitiveness, innovation and regulatory",
+      "reader_why": "",
+      "reader_more": "Driving the Digital Omnibus on AI are growing concerns within the European Union about economic growth, competitiveness, innovation and regulatory simplification. What is particularly striking about the Digital Omnibus on AI is that it seeks to amend the AI Act that entered into force less than two years ago in August 2024. This raises the question of how we can understand both the need and urgency with which the European institutions have sought amend a centrepiece of EU legislation that is still in its infancy.",
+      "deep_analysis": {
+        "work_kind": "preprint",
+        "research_question": "Driving the Digital Omnibus on AI are growing concerns within the European Union about economic growth, competitiveness, innovation and regulatory simplification.",
+        "main_finding": "Driving the Digital Omnibus on AI are growing concerns within the European Union about economic growth, competitiveness, innovation and regulatory simplification.",
+        "method_or_basis": "What is particularly striking about the Digital Omnibus on AI is that it seeks to amend the AI Act that entered into force less than two years ago in August 2024.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://arxiv.org/abs/2606.13027",
+      "source_hash": "d3108df9",
+      "identity_hash": "2001f63899c6b82c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://arxiv.org/abs/2606.13027"
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://arxiv.org/abs/2606.13027",
+            "title": "Exploring fair access to quantum computing",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Exploring fair access to quantum computing",
+      "reader_what": "This short article - commissioned as part of the Quantum Flagship project OpenSuperQPlus - introduces the topic of fair access",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "This short article - commissioned as part of the Quantum Flagship project OpenSuperQPlus - introduces the topic of fair access to quantum computing time and argues for its relevance in current European technology policy debates. Choices about access we make today affect which applications of quantum computing are developed in the future, and by whom. Among the issues at stake are: Europe's technological autonomy and sovereignty; Europe's future economic competitiveness; knowledge security and the future of open science; and delivering upon the EU's founding values and aims.",
+      "deep_analysis": {
+        "work_kind": "preprint",
+        "research_question": "This short article - commissioned as part of the Quantum Flagship project OpenSuperQPlus - introduces the topic of fair access to quantum computing time and argues for its relevance in current European",
+        "main_finding": "This short article - commissioned as part of the Quantum Flagship project OpenSuperQPlus - introduces the topic of fair access to quantum computing time and argues for its relevance in current European technology policy debates.",
+        "method_or_basis": "Choices about access we make today affect which applications of quantum computing are developed in the future, and by whom.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "quantum.machine",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Benedict Lane, Pieter Vermaas",
+            "class": "university_group"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026-06-11",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "Among the issues at stake are: Europe's technological autonomy and sovereignty; Europe's future economic competitiveness; knowledge security and the future of open science; and delivering upon the EU's founding values and aims. This short article -",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1111/twec.70118",
+      "source_hash": "f15238a2",
+      "identity_hash": "af2509dd5ec040ef",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://hal.science/hal-05658061"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/twec.70118 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://hal.science/hal-05658061",
+            "title": "Economic Sanctions and Taxation of Natural Resource Rent: Evidence From Spatial Analysis",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Economic Sanctions and Taxation of Natural Resource Rent: Evidence From Spatial Analysis",
+      "reader_what": "You are seeing this because the administrator of this website has set up Anubis to protect the server against the",
+      "reader_why": "",
+      "reader_more": "You are seeing this because the administrator of this website has set up Anubis to protect the server against the scourge of AI companies aggressively scraping websites. This can and does cause downtime for the websites, which makes their resources inaccessible for everyone. Anubis uses a Proof-of-Work scheme in the vein of Hashcash, a proposed proof-of-work scheme for reducing email spam.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "You are seeing this because the administrator of this website has set up Anubis to protect the server against the scourge of AI companies aggressively scraping websites.",
+        "main_finding": "You are seeing this because the administrator of this website has set up Anubis to protect the server against the scourge of AI companies aggressively scraping websites.",
+        "method_or_basis": "This can and does cause downtime for the websites, which makes their resources inaccessible for everyone.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1038/d41586-026-02919-1",
+      "source_hash": "d8eb8fb9",
+      "identity_hash": "4c5ebbe451d1371e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://www.nature.com/articles/d41586-026-02919-1"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1038/d41586-026-02919-1 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.nature.com/articles/d41586-026-02919-1",
+            "title": "Europe pushes for space independence amid geopolitical rifts",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Europe pushes for space independence amid geopolitical rifts",
+      "reader_what": "The European Union is easing its reliance on US space infrastructure — and seeking to grow its satellite and launch",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "The European Union is easing its reliance on US space infrastructure — and seeking to grow its satellite and launch operations. The uncrewed Spectrum launch vehicle is the first commercial rocket to be sent into orbit from continental Europe. Credit: Isar Aerospace Momentum is growing for Europe to develop its own sovereign space capabilities, including satellite launches and human spaceflight, and reduce its dependence on the United States as divisions grow across the Atlantic.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "The European Union is easing its reliance on US space infrastructure — and seeking to grow its satellite and launch operations.",
+        "main_finding": "The European Union is easing its reliance on US space infrastructure — and seeking to grow its satellite and launch operations.",
+        "method_or_basis": "The uncrewed Spectrum launch vehicle is the first commercial rocket to be sent into orbit from continental Europe.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "goal.strategic_autonomy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Jonathan O’Callaghan",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-09-18",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "Europe pushes for space independence amid geopolitical rifts. The item was admitted to Strand A from the source text available at scan time. Consult the linked publication for the full argument, evidence and methods.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/00130095.2026.2666417",
+      "source_hash": "da14e370",
+      "identity_hash": "f6fa0956214cee17",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://content.openalex.org/works/W7162514206.pdf"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1080/00130095.2026.2666417 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_pdf",
+            "url": "https://content.openalex.org/works/W7162514206.pdf",
+            "title": "Mundane Geopolitics, Strategic (De)Coupling, and Chinese Infrastructure Investment in Europe",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Mundane Geopolitics, Strategic (De)Coupling, and Chinese Infrastructure Investment in Europe",
+      "reader_what": "[PDF page 1] Open Research Online Citation Mohan, Giles; Chen, Weiwei; Katsinas, Philipp and Schaefer, Florian (2026).",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "[PDF page 1] Open Research Online Citation Mohan, Giles; Chen, Weiwei; Katsinas, Philipp and Schaefer, Florian (2026). Mundane Geopolitics, Strategic (De)Coupling, and Chinese Infrastructure Investment in Europe. Economic Geography (Early access).",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "[PDF page 1] Open Research Online Citation Mohan, Giles; Chen, Weiwei; Katsinas, Philipp and Schaefer, Florian (2026).",
+        "main_finding": "[PDF page 1] Open Research Online Citation Mohan, Giles; Chen, Weiwei; Katsinas, Philipp and Schaefer, Florian (2026).",
+        "method_or_basis": "Mundane Geopolitics, Strategic (De)Coupling, and Chinese Infrastructure Investment in Europe.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "infrastructure.foreign_ownership",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Giles Mohan, Weiwei Chen, Philipp Katsinas, Florian Schaefer",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-05-04",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "Our cases demonstrate that rather than high-profile ruptures in the coupling process the (re-)emergence of geopolitics is driving a process of dealignment between national-level priorities, such as de-risking, and the developmental aims of city-regions. Mundane Geopolitics,",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1017/err.2026.10146",
+      "source_hash": "7b79b609",
+      "identity_hash": "0987211a34c08cac",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/digital-fairness-act-mapping-the-expectations/6C046E86BCCD193D00497931C1F16907"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1017/err.2026.10146 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/digital-fairness-act-mapping-the-expectations/6C046E86BCCD193D00497931C1F16907",
+            "title": "Digital Fairness Act: Mapping the Expectations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Digital Fairness Act: Mapping the Expectations",
+      "reader_what": "This paper examines the emerging Digital Fairness Act (DFA) against the development of the EU consumer law safety net, the",
+      "reader_why": "",
+      "reader_more": "This paper examines the emerging Digital Fairness Act (DFA) against the development of the EU consumer law safety net, the 2024 Fitness Check and the Consumer Agenda 2030. It explores how EU consumer law should address data-driven commercial practices that leverage digital asymmetries and vulnerabilities without adding to regulatory fragmentation and legal uncertainty. The key challenge is applying technology-neutral consumer rules effectively to modern choice architectures in a way that is sufficiently specific, coherent and, importantly, enforceable.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "This paper examines the emerging Digital Fairness Act (DFA) against the development of the EU consumer law safety net, the 2024 Fitness Check and the Consumer Agenda 2030.",
+        "main_finding": "This paper examines the emerging Digital Fairness Act (DFA) against the development of the EU consumer law safety net, the 2024 Fitness Check and the Consumer Agenda 2030.",
+        "method_or_basis": "It explores how EU consumer law should address data-driven commercial practices that leverage digital asymmetries and vulnerabilities without adding to regulatory fragmentation and legal uncertainty.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1093/hrlr/ngag016",
+      "source_hash": "0897f87a",
+      "identity_hash": "61596ddc4d84517a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://air.unimi.it/bitstream/2434/1259555/2/ngag016.pdf"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1093/hrlr/ngag016 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_pdf",
+            "url": "https://air.unimi.it/bitstream/2434/1259555/2/ngag016.pdf",
+            "title": "Unilateral human rights sanctions: enforcement, selectivity, and the limits of the Magnitsky model",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Unilateral human rights sanctions: enforcement, selectivity, and the limits of the Magnitsky model",
+      "reader_what": "[PDF page 1] Received: 22 October 2025 .",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "[PDF page 1] Received: 22 October 2025 . Accepted: 12 May 2026 © The Author(s) 2026. Published by Oxford University Press.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "[PDF page 1] Received: 22 October 2025 .",
+        "main_finding": "[PDF page 1] Received: 22 October 2025 .",
+        "method_or_basis": "Accepted: 12 May 2026 © The Author(s) 2026.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Stefano Silingardi",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-06-12",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "Unilateral human rights sanctions: enforcement, selectivity, and the limits of the Magnitsky model. Abstract This article examines the emergence and implications of unilateral human rights-based (Magnitsky-like) sanctions as a tool for enforcing human rights protections globally.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/00128775.2026.2704578",
+      "source_hash": "664f2263",
+      "identity_hash": "3502abd8cc212125",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "https://doi.org/10.1080/00128775.2026.2704578 — reader-facing URL: source retrieval failed: 403 Client Error: Forbidden for url: https://www.tandfonline.com/doi/full/10.1080/00128775.2026.2704578; OpenAlex authenticated DOI lookup matched W7170473914; no substantive OpenAlex-assisted source recovered"
+          },
+          {
+            "step": "doi",
+            "outcome": "limited",
+            "note": "https://doi.org/10.1080/00128775.2026.2704578 — identity resolves, but substantive accessible text was not recovered."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "limited",
+            "note": "Search query: \"Sanctions, Substitution, and the Informal Margin: Geoeconomic Spillovers in Eastern Europe\" — matching identity/abstract found, no sufficient substantive full text."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "limited",
+            "note": "Search query: Sanctions, Substitution, and the Informal Margin: Geoeconomic Spillovers in Eastern Europe Ceyhun Elgin 2026 — identity corroborated; evidence remained abstract/landing-page level."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "limited",
+            "note": "Searched Eastern European Economics and legitimate repository routes for \"Sanctions, Substitution, and the Informal Margin: Geoeconomic Spillovers in Eastern Europe\"; no sufficient accessible full text was recovered."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "limited",
+            "note": "Final bounded search using identifier/title fragment \"00128775.2026.2704578\" confirmed identity but did not recover substantive evidence."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Identity is corroborated, but the mandatory recovery ladder did not yield substantive accessible evidence sufficient for an admission judgment."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Verified work identity; substantive evidence remains inaccessible or too thin after recovery."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.65864/wn6xsu2byg",
+      "source_hash": "1005735c",
+      "identity_hash": "134621f02706130f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://content.openalex.org/works/W7214065994.pdf"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.65864/wn6xsu2byg matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_pdf",
+            "url": "https://content.openalex.org/works/W7214065994.pdf",
+            "title": "Quantifying Non-Tariff Barriers: Brexit, Input Sourcing and Firm Performance",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Quantifying Non-Tariff Barriers: Brexit, Input Sourcing and Firm Performance",
+      "reader_what": "[PDF page 1] Quantifying Non - Tariff Barriers: Brexit, Input Sourcing and Firm Performance Gustaf Dillner, Rebecca Freeman, Kalina Manova,",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "[PDF page 1] Quantifying Non - Tariff Barriers: Brexit, Input Sourcing and Firm Performance Gustaf Dillner, Rebecca Freeman, Kalina Manova, Thomas Sampson Working Papers 13007 202 6 September 202 6 [PDF page 2] Imprint: CESifo Working Papers ISSN 2364 - 1428 ( digital ) Publisher and distributor: Munich Society for the Promotion of Economic Research - CESifo GmbH Poschingerstr. 5, 81679 Munich, Germany Telephone +49 (0)89 2180 - 2740 E mail office@cesifo.d e https://www.cesifo.org Editor: Clemens Fuest An electronic version of the paper may be downloaded free of charge · from the CESifo website : www.ifo.de/en/cesifo/publications/cesifo - working - papers · from the SSRN website: www.ssrn.com/index.cfm/en/cesifo/ · from the RePEc website: https://ideas.repec.org/s/ces/ceswps.html [PDF page 3] Quantifying Non-Tariff Barriers: Brexit, Input Sourcing and Firm Performance* Gustaf",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "[PDF page 1] Quantifying Non - Tariff Barriers: Brexit, Input Sourcing and Firm Performance Gustaf Dillner, Rebecca Freeman, Kalina Manova, Thomas Sampson Working Papers 13007 202 6 September 202 6 [PDF page",
+        "main_finding": "[PDF page 1] Quantifying Non - Tariff Barriers: Brexit, Input Sourcing and Firm Performance Gustaf Dillner, Rebecca Freeman, Kalina Manova, Thomas Sampson Working Papers 13007 202 6 September 202 6 [PDF page 2] Imprint: CESifo Working Papers ISSN 2364 - 1428 ( digital ) Publisher",
+        "method_or_basis": "5, 81679 Munich, Germany Telephone +49 (0)89 2180 - 2740 E mail office@cesifo.d e https://www.cesifo.org Editor: Clemens Fuest An electronic version of the paper may be downloaded free of charge · from the CESifo website : www.ifo.de/en/cesifo/publications/cesifo - working - papers · from the SSRN website: www.ssrn.com/index.cfm/en/cesifo/ ·",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Gustaf Dillner, Rebecca Freeman, Kalina B. Manova, Thomas Sampson",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-09-21",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "Through the lens of a trade model, the switch in input sourcing implies the TCA increased trade costs on EU imports by 21% and raised unit production costs by 3.1% for the average UK importer. Quantifying",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1186/s40309-025-00262-8",
+      "source_hash": "357268c2",
+      "identity_hash": "55fe0ae766fe2c8d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://link.springer.com/article/10.1186/s40309-025-00262-8"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1186/s40309-025-00262-8 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1186/s40309-025-00262-8",
+            "title": "Cold War 2.0 and defence readiness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Cold War 2.0 and defence readiness",
+      "reader_what": "In the context of simultaneous rise of external threats through CRINK and the reprioritisation of transatlantic ally’s&nbsp;global posture, we study",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "In the context of simultaneous rise of external threats through CRINK and the reprioritisation of transatlantic ally’s&nbsp;global posture, we study how a protracted low intensity conflict with CRINK would affect European allies’ preparedness to protect the security of the citizens and the integrity of the territory. As a worst case, we investigate the trade channel of geo-economic fragmentation in a Cold War 2.0 implying a complete cessation of trade with CRINK and a full blockade of Taiwan in an international multi-sectoral macroeconomic model featuring the defence sector and interlinking countries via global supply chains. Even this less kinetic conflict will create challenges for Europe’s security—challenges that will only grow more acute as the crisis worsens.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "In the context of simultaneous rise of external threats through CRINK and the reprioritisation of transatlantic ally’s&nbsp;global posture, we study how a protracted low intensity conflict with CRINK would affect European allies’",
+        "main_finding": "In the context of simultaneous rise of external threats through CRINK and the reprioritisation of transatlantic ally’s&nbsp;global posture, we study how a protracted low intensity conflict with CRINK would affect European allies’ preparedness to protect the security of the citizens and the integrity of the",
+        "method_or_basis": "As a worst case, we investigate the trade channel of geo-economic fragmentation in a Cold War 2.0 implying a complete cessation of trade with CRINK and a full blockade of Taiwan in an international multi-sectoral macroeconomic model featuring the defence sector and interlinking countries via global supply chains.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "defence.production_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "d’Artis Kancs",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-06-11",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "By quantifying the cost of unpreparedness, we provide an evidence-based rationale for European allies to embark on a gradual de-risking of trade trajectory rather than waiting for a much more costly “abrupt shock” trigger dictated by",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://www.businesseurope.eu/wp-content/uploads/2026/04/2026-04-15-Joint-statement-on-the-Combined-Transport-Directive.pdf",
+      "source_hash": "b06dba47",
+      "identity_hash": "6b6e58adae02b89f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://www.businesseurope.eu/wp-content/uploads/2026/04/2026-04-15-Joint-statement-on-the-Combined-Transport-Directive.pdf"
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_pdf",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2026/04/2026-04-15-Joint-statement-on-the-Combined-Transport-Directive.pdf",
+            "title": "Combined Transport Directive - Joint industry position paper",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Combined Transport Directive - Joint industry position paper",
+      "reader_what": "[PDF page 1] Joint industry position paper on the Combined Transport Directive April 2026 For logistics and transport operators, as",
+      "reader_why": "",
+      "reader_more": "[PDF page 1] Joint industry position paper on the Combined Transport Directive April 2026 For logistics and transport operators, as well as for European industry, access to reliable, competitive and predictable freight services by railway, inland waterways and short sea shipping largely depends on a well-functioning Combined Transport system. Combined Transport (CT) is a key contributor to achieving the EU Green Deal’s ambition, which targets the reduction of transport greenhouse gas emissions by 90% until 2050. Moreover, CT plays a crucial role in improving energy efficiency, reducing road congestion and tackling driver shortages.",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "[PDF page 1] Joint industry position paper on the Combined Transport Directive April 2026 For logistics and transport operators, as well as for European industry, access to reliable, competitive and predictable freight",
+        "main_finding": "[PDF page 1] Joint industry position paper on the Combined Transport Directive April 2026 For logistics and transport operators, as well as for European industry, access to reliable, competitive and predictable freight services by railway, inland waterways and short sea shipping largely depends on a",
+        "method_or_basis": "Combined Transport (CT) is a key contributor to achieving the EU Green Deal’s ambition, which targets the reduction of transport greenhouse gas emissions by 90% until 2050.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.cej.2026.179105",
+      "source_hash": "04a080e3",
+      "identity_hash": "b616d2cb6f11faa3",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://content.openalex.org/works/W7167919681.pdf"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1016/j.cej.2026.179105 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_pdf",
+            "url": "https://content.openalex.org/works/W7167919681.pdf",
+            "title": "Recovery of rare earth metals from NdFeB magnets using antisolvent crystallization: scale up and life cycle assessment",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Recovery of rare earth metals from NdFeB magnets using antisolvent crystallization: scale up and life cycle assessment",
+      "reader_what": "[PDF page 1] Journal Pre-proof Recovery of rare earth metals from NdFeB magnets using antisolvent crystallization: scale up and life",
+      "reader_why": "",
+      "reader_more": "[PDF page 1] Journal Pre-proof Recovery of rare earth metals from NdFeB magnets using antisolvent crystallization: scale up and life cycle assessment Nitin Pawar, Vishal Khanpit, Michael Svärd, Olaf Hinrichsen, S. Viswanathan, Kerstin Forsberg PII: S1385-8947(26)06566-6 DOI: https://doi.org/10.1016/j.cej.2026.179105 Reference: CEJ 179105 To appear in: Received date: 3 April 2026 Revised date: 10 June 2026 Accepted date: 3 July 2026 Please cite this article as: N. Svärd, et al., Recovery of rare earth metals from NdFeB magnets using antisolvent crystallization: scale up and life cycle assessment, (2026), https://doi.org/10.1016/j.cej.2026.179105 This is a PDF of an article that has undergone enhancements after acceptance, such as the addition of a cover page and metadata, and formatting for readability.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "[PDF page 1] Journal Pre-proof Recovery of rare earth metals from NdFeB magnets using antisolvent crystallization: scale up and life cycle assessment Nitin Pawar, Vishal Khanpit, Michael Svärd, Olaf Hinrichsen, S.",
+        "main_finding": "[PDF page 1] Journal Pre-proof Recovery of rare earth metals from NdFeB magnets using antisolvent crystallization: scale up and life cycle assessment Nitin Pawar, Vishal Khanpit, Michael Svärd, Olaf Hinrichsen, S.",
+        "method_or_basis": "Viswanathan, Kerstin Forsberg PII: S1385-8947(26)06566-6 DOI: https://doi.org/10.1016/j.cej.2026.179105 Reference: CEJ 179105 To appear in: Received date: 3 April 2026 Revised date: 10 June 2026 Accepted date: 3 July 2026 Please cite this article as: N.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "The work exists and is substantive, but economic security is not sufficiently central or European relevance is only incidental/comparative.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1111/1758-5899.70198",
+      "source_hash": "e179cf47",
+      "identity_hash": "0420bd878fbab283",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened matching work route: https://onlinelibrary.wiley.com/doi/full/10.1111/1758-5899.70198"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/1758-5899.70198 matches the recovered title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/1758-5899.70198",
+            "title": "Navigating the Indo‐Pacific: The EU 's 2025 Council Conclusions Amidst Geopolitical Uncertainty",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered source matches the supplied work identity and was used for the admission judgment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European economic-security relevance is central to the work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Navigating the Indo‐Pacific: The EU 's 2025 Council Conclusions Amidst Geopolitical Uncertainty",
+      "reader_what": "While the Conclusions feature harder security language and an elevated economic security agenda, the empirical data reveals a persistent gap",
+      "reader_why": "Substantive European economic-security relevance is central to the work.",
+      "reader_more": "While the Conclusions feature harder security language and an elevated economic security agenda, the empirical data reveals a persistent gap between EU ambitions and Indo‐Pacific elite perceptions. Navigating the Indo‐Pacific: The EU 's 2025 Council Conclusions Amidst Geopolitical Uncertainty. The article concludes that the 2025 Council Conclusions represent a modest, incremental response to the changing geopolitics of the Indo‐Pacific, but prevailing issues around the EU's global actorness mean it will continue to fall short in its efforts to assert geopolitical relevance.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "While the Conclusions feature harder security language and an elevated economic security agenda, the empirical data reveals a persistent gap between EU ambitions and Indo‐Pacific elite perceptions. Navigating the Indo‐Pacific: The EU",
+        "main_finding": "While the Conclusions feature harder security language and an elevated economic security agenda, the empirical data reveals a persistent gap between EU ambitions and Indo‐Pacific elite perceptions. Navigating the Indo‐Pacific: The EU 's 2025 Council Conclusions Amidst Geopolitical Uncertainty. The article concludes that the 2025",
+        "method_or_basis": "Substantive recovered source was inspected for the work’s scope, evidence and conclusions.",
+        "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+        "radar_relevance": "Substantive European economic-security relevance is central to the work.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Nicholas Ross Smith, Richard G Whitman, Paul Bacon, Martin Holland",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-06-23",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated scope; conclusions should not be generalized beyond the studied cases, data or model assumptions.",
+          "text": "While the Conclusions feature harder security language and an elevated economic security agenda, the empirical data reveals a persistent gap between EU ambitions and Indo‐Pacific elite perceptions. Navigating the Indo‐Pacific: The EU 's 2025 Council Conclusions",
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}
