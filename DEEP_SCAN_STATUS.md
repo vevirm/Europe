@@ -6,12 +6,12 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **303** (Main **303** + Historical **0**)
-- Automatic queue still needing V2 verification: **1189** (Main **265** + Historical **924**)
-- Currently assigned to workers: **82** (Main **82** + Historical **0**)
-- Bounded access-recovery retries still eligible: **47**
+- Authoritative V2 verified: **336** (Main **336** + Historical **0**)
+- Automatic queue still needing V2 verification: **1156** (Main **232** + Historical **924**)
+- Currently assigned to workers: **78** (Main **78** + Historical **0**)
+- Bounded access-recovery retries still eligible: **54**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **1107**
+- Automatic queue pending and not yet assigned: **1078**
 
 ## Worker lanes
 
@@ -29,17 +29,17 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-cae9f2e76bc3`
-- Assigned unresolved records: **40**
-  1. `link:https://www.businesseurope.eu/publications/security-and-defence-policy-needs-to-be-integrated-into-europes-competitiveness-strategy/` — Security and defence policy needs to be integrated into Europe’s competitiveness strategy
-  2. `link:https://arxiv.org/abs/2607.21048` — Accelerating fossil gas independence in Europe
-  3. `link:https://doi.org/10.1057/s41254-026-00441-9` — From public diplomacy to branding: the European Union’s external communication through the global gateway
-  4. `link:https://www.cer.eu/sites/default/files/KP_EPF_africa_1.5.26.pdf` — The EU is trying to speak the language of power in Africa, but what is it saying?
-  5. `link:https://doi.org/10.1016/j.ijhydene.2026.154457` — The role of green hydrogen imports under demand and supply uncertainties in Europe
-  6. `link:https://www.cer.eu/sites/default/files/EC_JS_energy_shock_14.4.26_updated.pdf` — Energy shock 2.0: Lessons from 2022 for the Hormuz crisis
-  7. `link:https://www.cer.eu/sites/default/files/ST_transatlantic_divorce_7.4.26.pdf` — One year liberation day: The delusion of transatlantic economic divorce
-  8. `link:https://www.cer.eu/sites/default/files/AS_WTO_reform_2.4.26_final.pdf` — WTO reform after Yaoundé: What next for the multilateral trade order?
-  - … plus 32 more in the package manifest
+- Current package: `worker-b-4a5d0616dd2f`
+- Assigned unresolved records: **36**
+  1. `link:https://doi.org/10.1007/s11625-026-01872-2` — Leveraging change: a soft systems approach to transforming the EU food system
+  2. `link:https://doi.org/10.1007/s11115-026-01001-8` — Failed Procurements as a Measure of Public Procurement Performance
+  3. `link:https://doi.org/10.1016/j.future.2026.108672` — AI4EOSC: A federated cloud platform for Artificial Intelligence in scientific research
+  4. `link:https://doi.org/10.1186/s41120-026-00188-w` — Real-time release testing: a review of global regulatory frameworks and application by the industry
+  5. `link:https://doi.org/10.1016/j.ocecoaman.2026.108239` — Between giving and taking: unpacking EU sectoral support in African Sustainable Fisheries Partnership Agreements
+  6. `link:https://news.google.com/rss/articles/CBMinwFBVV95cUxOd3Y2RWUwcjVhQjNwdC1hZ1JFT1ZuT1J5T29PR01OTXNldC1sOFdEeHJINTQzY043c3ZHUkNxNm9fV3hyb0lldFFBNzhUV0hqSnZlTUpwMGdqaTBIRFlmSDB0RVN0Njk3dndhblVnLUlVRWtrWDJwdVQzNGJJWW1NWHA0aHRKb2Y1aDZjM1B3ZmlvdEtvNmxhVWEtZ0hNaTQ?oc=5` — EU launches diplomatic offensive to stop Trump’s diesel export ban
+  7. `link:https://borderlex.net/2026/09/23/eu-india-series-wine-and-spirits-tariff-cuts-come-with-limits/` — EU-India series: Wine and spirits tariff cuts come with limits - Borderlex - European trade policy
+  8. `link:https://news.google.com/rss/articles/CBMisAFBVV95cUxNMnhFeHB1dlJzNUFaZkYzM0d3cFNyaDI3bFo3VjJFYW5wc0dhandneXlLVkstbVhfd0REaXJrUmx2TF9tRTd0QzdoTExocDNHSFhwVTlVRkZ6RzhKMU4yckMwNzEzS0xtalhQQl9vSkpBdjRxbUFVczFVc1NEQVJQM3R0NEdaQThjX0owTkdxbUcxb3JuM1c3XzNCVGN4dXV4OTNBeEQ3bURQWGxnRmdaVw?oc=5` — EU renews Russia sanctions, drops Russian billionaires Usmanov and Fridman
+  - … plus 28 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
