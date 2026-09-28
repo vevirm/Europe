@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-admission-v1",
-  "updated_at": "2026-09-28T16:07:05Z",
+  "updated_at": "2026-09-28T16:09:21Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "decision": "keep",
@@ -3696,12 +3696,16 @@
       "source": "manual_compact_curator_v1"
     },
     "link:https://borderlex.net/2026/09/24/eu-to-defend-carbon-border-levy-in-russian-wto-challenge/": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_CURRENT",
+      "reason": "EU is defending its carbon-border mechanism in a WTO dispute brought by Russia, a concrete trade-policy action.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-09-28T16:09:21Z",
+      "deep_scan_package_id": "worker-b-78d35a36b3db",
+      "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence.",
+      "duplicate_of": ""
     },
     "link:https://borderlex.net/2026/09/24/eu-ministers-still-split-on-scope-of-made-in-europe-preference/": {
       "decision": "drop",
