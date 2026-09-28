@@ -6,27 +6,27 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **336** (Main **336** + Historical **0**)
-- Automatic queue still needing V2 verification: **1186** (Main **262** + Historical **924**)
-- Currently assigned to workers: **86** (Main **86** + Historical **0**)
-- Bounded access-recovery retries still eligible: **54**
+- Authoritative V2 verified: **369** (Main **369** + Historical **0**)
+- Automatic queue still needing V2 verification: **1153** (Main **229** + Historical **924**)
+- Currently assigned to workers: **82** (Main **82** + Historical **0**)
+- Bounded access-recovery retries still eligible: **60**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **1100**
+- Automatic queue pending and not yet assigned: **1071**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-92d219939bf9`
-- Assigned unresolved records: **40**
-  1. `link:https://doi.org/10.1177/10245294261450371` — Disciplining venture capital? The remaking of innovation financing in the EU
-  2. `link:https://doi.org/10.1177/10245294261443734` — What drives the Spanish deindustrialization? A subsystem approach
-  3. `link:https://doi.org/10.1080/23745118.2026.2655143` — Competing visions: the impact of Franco-German narrative divergence on EU strategy
-  4. `link:https://doi.org/10.1186/s43093-026-00945-z` — The effect of institutions on foreign direct investment: What matters most?
-  5. `link:https://doi.org/10.1007/s11367-026-02643-y` — Evaluating social sustainability in European photovoltaic module supply chains through social life cycle assessment
-  6. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=7d0241d4-b3d2-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — R&I needs to reduce dependencies on critical raw materials through advanced materials in passenger vehicles - Publications Office of the EU
-  7. `link:https://doi.org/10.1093/ia/iiag046` — The EU's Indo-Pacific strategic narratives: reception and perception gaps in Japan
-  8. `link:https://doi.org/10.1007/s13132-026-03447-z` — Moral Economics: Human Capital, Gender Education and Foreign Direct Investment. Updated Empirical Results
-  - … plus 32 more in the package manifest
+- Current package: `worker-a-f683543333a5`
+- Assigned unresolved records: **36**
+  1. `link:https://doi.org/10.2478/jlst-2026-0010` — Corridor X: Strategic significance for logistics and transport in the Republic of Serbia
+  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=95d507ec-b88a-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Enhancing competitiveness, sovereignty and security of the European Union in frontier AI - Publications Office of the EU
+  3. `link:https://doi.org/10.1111/rego.70156` — Chain Reactions: How Businesses Plan to Respond to the EU Deforestation Regulation in Brazil, the Congo Basin, and Europe
+  4. `link:https://doi.org/10.1017/elo.2025.10056` — Europe and the race to structural transformation: a narrow path ahead
+  5. `link:https://doi.org/10.1371/journal.pstr.0000265` — Conflicts and energy transitions: The case of the 2026 Iran War
+  6. `link:https://doi.org/10.48550/arxiv.2607.09951` — Macroeconomic Risks from Maritime Trade Disruptions
+  7. `link:https://www.atlanticcouncil.org/issue/geopolitics-energy-security/` — Geopolitics & Energy Security
+  8. `link:https://www.atlanticcouncil.org/issue/security-defense/` — Security & Defense
+  - … plus 28 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-d7633140a07b`
