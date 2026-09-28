@@ -1,0 +1,2055 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-a-f683543333a5",
+  "results": [
+    {
+      "record_key": "link:https://doi.org/10.2478/jlst-2026-0010",
+      "source_hash": "69d2d77e",
+      "identity_hash": "af4b1e9499230911",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching substantial_web_text from the supplied route; identity/provenance checked against the named publisher/source."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI identity matched the recovered publication: https://doi.org/10.2478/jlst-2026-0010."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://reference-global.com/article/10.2478/jlst-2026-0010",
+            "title": "Corridor X: Strategic significance for logistics and transport in the Republic of Serbia",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_ECONSEC",
+        "reason": "Transport/logistics study is about Serbian corridor performance and competitiveness, not a substantive European economic-security mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Corridor X: Strategic significance for logistics and transport in the Republic of Serbia",
+      "reader_what": "Corridor X: Strategic significance for logistics and transport in the Republic of Serbia.",
+      "reader_why": "",
+      "reader_more": "Transport/logistics study is about Serbian corridor performance and competitiveness, not a substantive European economic-security mechanism.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "Corridor X: Strategic significance for logistics and transport in the Republic of Serbia.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Transport/logistics study is about Serbian corridor performance and competitiveness, not a substantive European economic-security mechanism.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=95d507ec-b88a-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "source_hash": "70e4e60c",
+      "identity_hash": "a39c774b197a0a86",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching pdf_excerpt from the supplied route; identity/provenance checked against the named publisher/source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://digital-strategy.ec.europa.eu/en/library/ai-office-publishes-frontier-ai-expert-findings-eu-competitiveness-sovereignty-and-security",
+            "title": "Enhancing competitiveness, sovereignty and security of the European Union in frontier AI - Publications Office of the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Official expert report directly assesses EU frontier-AI competitiveness, sovereignty, access and control."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Enhancing competitiveness, sovereignty and security of the European Union in frontier AI - Publicat…",
+      "reader_what": "Publication Viewer Document viewer Open web version in a separate window Your browser does not support IFrames.",
+      "reader_why": "Official expert report directly assesses EU frontier-AI competitiveness, sovereignty, access and control.",
+      "reader_more": "Official expert report directly assesses EU frontier-AI competitiveness, sovereignty, access and control. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "Publication Viewer Document viewer Open web version in a separate window Your browser does not support IFrames.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Official expert report directly assesses EU frontier-AI competitiveness, sovereignty, access and control.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "digital.sovereignty",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Publications Office of the EU",
+            "class": "other"
+          },
+          "mechanism": "secures",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026-09-23",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Enhancing competitiveness, sovereignty and security of the European Union in frontier AI - Publications Office of the EU",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1111/rego.70156",
+      "source_hash": "0245553f",
+      "identity_hash": "734a182e796d463b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://onlinelibrary.wiley.com/doi/10.1111/rego.70156."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI identity matched the recovered publication: https://doi.org/10.1111/rego.70156."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://onlinelibrary.wiley.com/doi/10.1111/rego.70156",
+            "title": "Chain Reactions: How Businesses Plan to Respond to the EU Deforestation Regulation in Brazil, the Congo Basin, and Europe",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_ECONSEC",
+        "reason": "EUDR study concerns environmental-regulatory business behaviour; its main object is not European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Chain Reactions: How Businesses Plan to Respond to the EU Deforestation Regulation in Brazil, the C…",
+      "reader_what": "Chain Reactions: How Businesses Plan to Respond to the EU Deforestation Regulation in Brazil, the Congo Basin.",
+      "reader_why": "",
+      "reader_more": "EUDR study concerns environmental-regulatory business behaviour; its main object is not European economic security.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "Chain Reactions: How Businesses Plan to Respond to the EU Deforestation Regulation in Brazil, the Congo Basin.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "EUDR study concerns environmental-regulatory business behaviour; its main object is not European economic security.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1017/elo.2025.10056",
+      "source_hash": "ef96f67f",
+      "identity_hash": "3a041254f5f1e053",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching substantial_web_text from the supplied route; identity/provenance checked against the named publisher/source."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI identity matched the recovered publication: https://doi.org/10.1017/elo.2025.10056."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://doi.org/10.1017/elo.2025.10056",
+            "title": "Europe and the race to structural transformation: a narrow path ahead",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Substantive analysis of EU industrial transformation and policy capacity has an economic-security connection, but breadth makes admission judgment-sensitive."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Europe and the race to structural transformation: a narrow path ahead",
+      "reader_what": "Abstract Since the Global Financial Crisis, the EU (EU) has gone from crisis to crisis.",
+      "reader_why": "Substantive analysis of EU industrial transformation and policy capacity has an economic-security connection, but bread…",
+      "reader_more": "Substantive analysis of EU industrial transformation and policy capacity has an economic-security connection, but breadth makes admission judgment-sensitive. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "Abstract Since the Global Financial Crisis, the EU (EU) has gone from crisis to crisis.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Substantive analysis of EU industrial transformation and policy capacity has an economic-security connection, but breadth makes admission judgment-sensitive.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Law Open",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "announced",
+          "status_date": "2026-03-30",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Europe and the race to structural transformation: a narrow path ahead",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1371/journal.pstr.0000265",
+      "source_hash": "d569415a",
+      "identity_hash": "a2fb18aed5e7c085",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching substantial_web_text from the supplied route; identity/provenance checked against the named publisher/source."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI identity matched the recovered publication: https://doi.org/10.1371/journal.pstr.0000265."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://journals.plos.org/sustainabilitytransformation/article?id=10.1371%2Fjournal.pstr.0000265",
+            "title": "Conflicts and energy transitions: The case of the 2026 Iran War",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_ECONSEC",
+        "reason": "Opinion article on conflict and energy transition is global and does not establish a sufficiently substantive European economic-security finding."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Conflicts and energy transitions: The case of the 2026 Iran War",
+      "reader_what": "Oil and LNG price shocks will be global.",
+      "reader_why": "",
+      "reader_more": "Opinion article on conflict and energy transition is global and does not establish a sufficiently substantive European economic-security finding.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "Oil and LNG price shocks will be global.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Opinion article on conflict and energy transition is global and does not establish a sufficiently substantive European economic-security finding.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.48550/arxiv.2607.09951",
+      "source_hash": "80e9137a",
+      "identity_hash": "6d2bd5a548730614",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching substantial_web_text from the supplied route; identity/provenance checked against the named publisher/source."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI identity matched the recovered publication: https://doi.org/10.48550/arxiv.2607.09951."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://arxiv.org/abs/2607.09951",
+            "title": "Macroeconomic Risks from Maritime Trade Disruptions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Model quantifies macroeconomic exposure to maritime chokepoint disruption including a Russia-Europe closure scenario; Europe is substantive but not the sole focus."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Macroeconomic Risks from Maritime Trade Disruptions",
+      "reader_what": "The losses stem from disruptions to the flow of intermediate inputs that are complementary in downstream production.",
+      "reader_why": "Model quantifies macroeconomic exposure to maritime chokepoint disruption including a Russia-Europe closure scenario; E…",
+      "reader_more": "Model quantifies macroeconomic exposure to maritime chokepoint disruption including a Russia-Europe closure scenario; Europe is substantive but not the sole focus. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "The losses stem from disruptions to the flow of intermediate inputs that are complementary in downstream production.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Model quantifies macroeconomic exposure to maritime chokepoint disruption including a Russia-Europe closure scenario; Europe is substantive but not the sole focus.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "supply_chain.diversification",
+          "secondary_objects": [],
+          "actor": {
+            "name": "arXiv",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-07-10",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Macroeconomic Risks from Maritime Trade Disruptions",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://www.atlanticcouncil.org/issue/geopolitics-energy-security/",
+      "source_hash": "a061598e",
+      "identity_hash": "dd86e541c14d27a7",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching substantial_web_text from the supplied route; identity/provenance checked against the named publisher/source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.atlanticcouncil.org/issue/geopolitics-energy-security/",
+            "title": "Geopolitics & Energy Security",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_GENERIC_PAGE",
+        "reason": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Geopolitics & Energy Security",
+      "reader_what": "as a global power, write Maksym Beznosiuk and Will Dixon.",
+      "reader_why": "",
+      "reader_more": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product.",
+      "deep_analysis": {
+        "work_kind": "topic page",
+        "research_question": "",
+        "main_finding": "as a global power, write Maksym Beznosiuk and Will Dixon.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://www.atlanticcouncil.org/issue/security-defense/",
+      "source_hash": "7c69d1e2",
+      "identity_hash": "d3b973f4e7b1ad76",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching substantial_web_text from the supplied route; identity/provenance checked against the named publisher/source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.atlanticcouncil.org/issue/security-defense/",
+            "title": "Security & Defense",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_GENERIC_PAGE",
+        "reason": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Security & Defense",
+      "reader_what": "Policy makers must prepare for potential conventional warfare, terrorism and other asymmetrical attacks.",
+      "reader_why": "",
+      "reader_more": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product.",
+      "deep_analysis": {
+        "work_kind": "topic page",
+        "research_question": "",
+        "main_finding": "Policy makers must prepare for potential conventional warfare, terrorism and other asymmetrical attacks.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://op.europa.eu/en/publication-detail/-/publication/47375ce5-b14b-11f1-b9e5-01aa75ed71a1/language-en",
+      "source_hash": "8b57256b",
+      "identity_hash": "a3741d64f3fac08c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://op.europa.eu/en/publication-detail/-/publication/47375ce5-b14b-11f1-b9e5-01aa75ed71a1/language-en."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://op.europa.eu/en/publication-detail/-/publication/47375ce5-b14b-11f1-b9e5-01aa75ed71a1/language-en",
+            "title": "Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2): Title IV: Security of ICT Supply Chains: Guiding questions - Non-Paper by EE, FI, NL, PL and SE - Publications Office of the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Official member-state non-paper addresses ICT supply-chain security within the proposed EU Cybersecurity Act 2."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Proposal for a Regulation of the European Parliament and of the Council on the European Union Agenc…",
+      "reader_what": "Back to list of results Publication Details Links Portlet View in EUR-Lex.",
+      "reader_why": "Official member-state non-paper addresses ICT supply-chain security within the proposed EU Cybersecurity Act 2.",
+      "reader_more": "Official member-state non-paper addresses ICT supply-chain security within the proposed EU Cybersecurity Act 2. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "Back to list of results Publication Details Links Portlet View in EUR-Lex.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Official member-state non-paper addresses ICT supply-chain security within the proposed EU Cybersecurity Act 2.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "digital.sovereignty",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Publications Office of the EU",
+            "class": "other"
+          },
+          "mechanism": "secures",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026-09-14",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework,…",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1002/ese3.70648",
+      "source_hash": "fda60e67",
+      "identity_hash": "ba6d1bfaedc7a645",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching pdf_excerpt from the supplied route; identity/provenance checked against the named publisher/source."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI identity matched the recovered publication: https://doi.org/10.1002/ese3.70648."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://doi.org/10.1002/ese3.70648",
+            "title": "Introduction of the SHIMMER Database for Safe Hydrogen Injection in the European Natural Gas Infrastructure",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_ECONSEC",
+        "reason": "Technical hydrogen-infrastructure safety database does not substantively analyse European economic-security dependencies, coercion, capacity or policy."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Introduction of the SHIMMER Database for Safe Hydrogen Injection in the European Natural Gas Infras…",
+      "reader_what": "ABSTRACT Hydrogen is considered a low‐carbon‐emission gas when produced from renewable energy sources such.",
+      "reader_why": "",
+      "reader_more": "Technical hydrogen-infrastructure safety database does not substantively analyse European economic-security dependencies, coercion, capacity or policy.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "ABSTRACT Hydrogen is considered a low‐carbon‐emission gas when produced from renewable energy sources such.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Technical hydrogen-infrastructure safety database does not substantively analyse European economic-security dependencies, coercion, capacity or policy.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.rset.2026.100151",
+      "source_hash": "c3af6f00",
+      "identity_hash": "a14eb69a2fbe2ba8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.sciencedirect.com/science/article/pii/S2667095X26000152."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI identity matched the recovered publication: https://doi.org/10.1016/j.rset.2026.100151."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.sciencedirect.com/science/article/pii/S2667095X26000152",
+            "title": "Undermining sustainability: the EU’s push for competitiveness and its consequences for Africa’s critical minerals sector",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Review directly analyses EU competitiveness policy and its implications for strategic critical-mineral sourcing partnerships in Africa."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Undermining sustainability: the EU’s push for competitiveness and its consequences for Africa’s cri…",
+      "reader_what": "The item was admitted to Strand A from the source text available at scan time.",
+      "reader_why": "Review directly analyses EU competitiveness policy and its implications for strategic critical-mineral sourcing partner…",
+      "reader_more": "Review directly analyses EU competitiveness policy and its implications for strategic critical-mineral sourcing partnerships in Africa. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "The item was admitted to Strand A from the source text available at scan time.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Review directly analyses EU competitiveness policy and its implications for strategic critical-mineral sourcing partnerships in Africa.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "materials.critical_raw",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Renewable and Sustainable Energy Transition",
+            "class": "other"
+          },
+          "mechanism": "secures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-06-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Undermining sustainability: the EU’s push for competitiveness and its consequences for Africa’s critical minerals sector",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1093/inteam/vjag069",
+      "source_hash": "dfb052db",
+      "identity_hash": "787661c744bec5f3",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://pubmed.ncbi.nlm.nih.gov/42083261/."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI identity matched the recovered publication: https://doi.org/10.1093/inteam/vjag069."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42083261/",
+            "title": "A framework to identify high-priority legacy active pharmaceutical ingredients for environmental risk assessment",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_ECONSEC",
+        "reason": "Pharmaceutical environmental-risk prioritisation is regulatory science, not economic-security analysis."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "A framework to identify high-priority legacy active pharmaceutical ingredients for environmental ri…",
+      "reader_what": "Abstract Active pharmaceutical ingredients (APIs) from human medicinal products are detected in surface waters globally.",
+      "reader_why": "",
+      "reader_more": "Pharmaceutical environmental-risk prioritisation is regulatory science, not economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "Abstract Active pharmaceutical ingredients (APIs) from human medicinal products are detected in surface waters globally.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Pharmaceutical environmental-risk prioritisation is regulatory science, not economic-security analysis.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=0d84688f-b794-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "source_hash": "c0efd7d5",
+      "identity_hash": "b22ec6c530567897",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://op.europa.eu/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://op.europa.eu/",
+            "title": "WORKING PARTY ON COMPETITIVENESS AND GROWTH (Internal Market) - AFFORDABLE HOUSING ACT - Publications Office of the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_ECONSEC",
+        "reason": "Affordable-housing working-party material is ordinary social/internal-market policy and not economic-security evidence."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "WORKING PARTY ON COMPETITIVENESS AND GROWTH (Internal Market) - AFFORDABLE HOUSING ACT - Publicatio…",
+      "reader_what": "Back to list of results Publication Details Links Portlet View in EUR-Lex.",
+      "reader_why": "",
+      "reader_more": "Affordable-housing working-party material is ordinary social/internal-market policy and not economic-security evidence.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "Back to list of results Publication Details Links Portlet View in EUR-Lex.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Affordable-housing working-party material is ordinary social/internal-market policy and not economic-security evidence.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=e156afd5-b1ce-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "source_hash": "8a10e968",
+      "identity_hash": "6bcb9bf22ec6bd98",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching pdf_excerpt from the supplied route; identity/provenance checked against the named publisher/source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://op.europa.eu/",
+            "title": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on temporary trade-liberalisation measures applicable to Armenian products - Outcome of the European Parliament’s first reading (Strasbourg, 14 to 17 September 2026) - Publications Office of the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_EVIDENCE_PRODUCT",
+        "reason": "Parliamentary first-reading outcome is a formal trade measure, but not a completed analytical evidence product for Strand A."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on temporary trade-liberali…",
+      "reader_what": "without amendments, the Council would approve the European Parliament's position.",
+      "reader_why": "",
+      "reader_more": "Parliamentary first-reading outcome is a formal trade measure, but not a completed analytical evidence product for Strand A.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "without amendments, the Council would approve the European Parliament's position.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Parliamentary first-reading outcome is a formal trade measure, but not a completed analytical evidence product for Strand A.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://www.atlanticcouncil.org/issue/space-security/",
+      "source_hash": "3990425c",
+      "identity_hash": "711542e7e9f938c3",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching substantial_web_text from the supplied route; identity/provenance checked against the named publisher/source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.atlanticcouncil.org/issue/space-security/",
+            "title": "Space Security",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_GENERIC_PAGE",
+        "reason": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Space Security",
+      "reader_what": "Developments in counter-space assets have serious implications for security and stability in the 21st century.",
+      "reader_why": "",
+      "reader_more": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product.",
+      "deep_analysis": {
+        "work_kind": "topic page",
+        "research_question": "",
+        "main_finding": "Developments in counter-space assets have serious implications for security and stability in the 21st century.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMisAFBVV95cUxOQjRvVmg0d0MzSkY1OUprdGlXa1Z4cmJLY2dsWEptR0QyQ3YxNFVDWTRtQjQ1UmZsNEc1LWNjMU1TZjhFSVRvWWVCRWJmc2szU2tnb1JUR1hJZWlvZTJUUlBoN3RqLTFtOUtEalY5cnlrMUNPMDR5VF9yS0o1ODFOUlhyakx3X0VOYjdRS3BNQXVXZ0VveTM0aDlHc0NQMjQwLXhuUndNcGdYMnBjaUhiUw?oc=5",
+      "source_hash": "b62b7c6a",
+      "identity_hash": "ae851a47eaed68b0",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.investing.com/news/world-news/eu-faces-backlash-after-lifting-sanctions-on-russian-billionaires-4913564."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.investing.com/news/world-news/eu-faces-backlash-after-lifting-sanctions-on-russian-billionaires-4913564",
+            "title": "EU faces backlash after lifting sanctions on Russian billionaires",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "EU removal of sanctions from two Russian billionaires is a completed sanctions-policy development with direct economic-security relevance."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU faces backlash after lifting sanctions on Russian billionaires",
+      "reader_what": "EU faces backlash after lifting sanctions on Russian billionaires.",
+      "reader_why": "EU removal of sanctions from two Russian billionaires is a completed sanctions-policy development with direct economic-…",
+      "reader_more": "EU removal of sanctions from two Russian billionaires is a completed sanctions-policy development with direct economic-security relevance. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "EU faces backlash after lifting sanctions on Russian billionaires.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "EU removal of sanctions from two Russian billionaires is a completed sanctions-policy development with direct economic-security relevance.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Reuters",
+            "class": "other"
+          },
+          "mechanism": "exempts",
+          "direction": "becomes_conditional",
+          "status": "adopted",
+          "status_date": "2026-09-23",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "EU faces backlash after lifting sanctions on Russian billionaires",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMi6AFBVV95cUxPWjEwRl8wNDV1T0ZzbFNzODZILXFBVVJES05oVUI4S3lxaG42d1VhN0dzQWtLaExJREplWEh6eTlQT1VndlRnclg4ZnVRT280MFJfWV9tNHNxZW1SZ1JiR0dBRkp5SW1qVXBfSzdHanZ1dDhiamVfNVplMWdzbklmdFoxZGlvYV8xS3FOdnpIU3hJRF9fNXdtNTFmVTZqQjZiZi1xU1Bybm93VVprSlNlaGJud3kzRFpuajdwZ2NEVUJxVjl2V2FHc2FIQTZXamprY09SVjBJMk50TDNRenVyeXBSakhZMXdh?oc=5",
+      "source_hash": "8eba921a",
+      "identity_hash": "43a6e8cc3b0f7665",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.lemonde.fr/en/international/article/2026/09/22/alisher-usmanov-russian-uzbek-oligarch-escapes-eu-sanctions-at-france-s-request_6757823_4.html."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.lemonde.fr/en/international/article/2026/09/22/alisher-usmanov-russian-uzbek-oligarch-escapes-eu-sanctions-at-france-s-request_6757823_4.html",
+            "title": "Alisher Usmanov, Russian-Uzbek oligarch, escapes EU sanctions at France's request",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "Removal of Alisher Usmanov from EU sanctions is a completed sanctions-policy development."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Alisher Usmanov, Russian-Uzbek oligarch, escapes EU sanctions at France's request",
+      "reader_what": "Alisher Usmanov, Russian-Uzbek oligarch, escapes EU sanctions at France's request",
+      "reader_why": "Removal of Alisher Usmanov from EU sanctions is a completed sanctions-policy development.",
+      "reader_more": "Removal of Alisher Usmanov from EU sanctions is a completed sanctions-policy development. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Alisher Usmanov, Russian-Uzbek oligarch, escapes EU sanctions at France's request",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Removal of Alisher Usmanov from EU sanctions is a completed sanctions-policy development.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Le Monde",
+            "class": "other"
+          },
+          "mechanism": "sanctions",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2026-09-22",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Alisher Usmanov, Russian-Uzbek oligarch, escapes EU sanctions at France's request",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMUtSTnNSMDliWUl5WWpXbmZfNENGVFNJaFZfeGFqUlQ2N25fd0g0RTZLNDZDOHlJWTItcEJhSzhiMFVOLU1VcEM5bU1rWkVqbEZSeUNDYUFWWmpSQzhhMktmc0FMOFpxOGJqbHAxLUdCelRxZDBRT2RPTUFCeTl4UVQ0MVZFaHpHR3hwOUtlakw2S3E4cDBJMzg1eEVQaWRwczNfeHpyVG5jU00?oc=5",
+      "source_hash": "1fc99499",
+      "identity_hash": "1408de41df34bea6",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.reuters.com/world/china/bmw-ceo-sees-risk-cheap-chinese-cars-europe-opposes-tariffs-2026-09-22/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.reuters.com/world/china/bmw-ceo-sees-risk-cheap-chinese-cars-europe-opposes-tariffs-2026-09-22/",
+            "title": "BMW CEO sees risk of cheap Chinese cars in Europe but opposes tariffs",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "C",
+        "reason_code": "C_COMMENTARY_OR_ADVOCACY",
+        "reason": "CEO comments on Chinese car pricing and tariffs are advocacy/market commentary rather than a substantive policy or evidence event."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "BMW CEO sees risk of cheap Chinese cars in Europe but opposes tariffs",
+      "reader_what": "BMW CEO sees risk of cheap Chinese cars in Europe but opposes tariffs",
+      "reader_why": "",
+      "reader_more": "CEO comments on Chinese car pricing and tariffs are advocacy/market commentary rather than a substantive policy or evidence event.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "BMW CEO sees risk of cheap Chinese cars in Europe but opposes tariffs",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "CEO comments on Chinese car pricing and tariffs are advocacy/market commentary rather than a substantive policy or evidence event.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://www.eib.org/files/publications/20260252-220926-investing-in-european-security-and-defence-en.pdf",
+      "source_hash": "0573c16e",
+      "identity_hash": "8546e82f7beea87a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching pdf_excerpt from the supplied route; identity/provenance checked against the named publisher/source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.eib.org/en/projects/topics/security-defence/index",
+            "title": "Investing in European security and defence",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "EIB released a current guide documenting expanded financing support for European security and defence capacity."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Investing in European security and defence",
+      "reader_what": "Investing in European security and defence",
+      "reader_why": "EIB released a current guide documenting expanded financing support for European security and defence capacity.",
+      "reader_more": "EIB released a current guide documenting expanded financing support for European security and defence capacity. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Investing in European security and defence",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "EIB released a current guide documenting expanded financing support for European security and defence capacity.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "defence.production_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Investment Bank",
+            "class": "other"
+          },
+          "mechanism": "funds",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026-09-22",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Investing in European security and defence",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMirwFBVV95cUxNcEVKdjlhcGtLRzFtNF9yOExCc0JNZG9VazZPNlpqdG1rQWc5ejhjMjdPSF9uSjJ3UnJxcXBKMWkyMXhOSUJleEZObXNlVzB5VHA2UUhpRGRNSHA3dXNqekZ0Y0EtMEhxMjNyeHBMLXhGM2hYa3ZvMXdFUWhnZ1Mxb1hpN1BCTVdMOFhoQlBTM3F1dGZPVTBZdTlyUjZjYjJBODJjaFJDbFE4MnpaNDlZ?oc=5",
+      "source_hash": "10534a26",
+      "identity_hash": "70c0c6451573ea5e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.reuters.com/world/europe/eu-lift-sanctions-russia-linked-usmanov-fridman-diplomats-say-2026-09-21/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.reuters.com/world/europe/eu-lift-sanctions-russia-linked-usmanov-fridman-diplomats-say-2026-09-21/",
+            "title": "EU continues talks on deal to lift sanctions on Russia-linked billionaires Usmanov and Fridman, diplomats say",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "EU negotiations over delisting Usmanov and Fridman were an active sanctions-policy process with material consequences."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU continues talks on deal to lift sanctions on Russia-linked billionaires Usmanov and Fridman, dip…",
+      "reader_what": "EU continues talks on deal to lift sanctions on Russia-linked billionaires Usmanov and Fridman, diplomats say.",
+      "reader_why": "EU negotiations over delisting Usmanov and Fridman were an active sanctions-policy process with material consequences.",
+      "reader_more": "EU negotiations over delisting Usmanov and Fridman were an active sanctions-policy process with material consequences. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "EU continues talks on deal to lift sanctions on Russia-linked billionaires Usmanov and Fridman, diplomats say.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "EU negotiations over delisting Usmanov and Fridman were an active sanctions-policy process with material consequences.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Reuters",
+            "class": "other"
+          },
+          "mechanism": "exempts",
+          "direction": "becomes_conditional",
+          "status": "in_negotiation",
+          "status_date": "2026-09-21",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "EU continues talks on deal to lift sanctions on Russia-linked billionaires Usmanov and Fridman, diplomats say",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMisAFBVV95cUxOTXVoTjloQ1ZXZEdCWEVTZVN2YVBGd1FJMlc4NkRDMmFsQy1jclZ2VzhEUk9LajRqZjhWcU91UkR3VlNMd3ctVGg0RDZDMkxKNWd4SVZXRWctRlBzZHJuRjEyMndCb2o0TGYyWTVWcV9zZU9WS1NfLUZ1TmFkVDZtaFM2Y1VYbnVJWUdtZVdaTjZLRGZKWW1xdHpERlk2RlJDVTlwNDhDZUNjTlg4azNwMA?oc=5",
+      "source_hash": "3c205eb1",
+      "identity_hash": "7097e17ee03e4435",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://policy.trade.ec.europa.eu/consultations/targeted-consultation-overall-evaluation-dual-use-regulation_en."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://policy.trade.ec.europa.eu/consultations/targeted-consultation-overall-evaluation-dual-use-regulation_en",
+            "title": "Targeted consultation on the overall evaluation of the Dual-Use Regulation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "C",
+        "reason_code": "C_STALE_OR_LISTING",
+        "reason": "Consultation was opened in July and closed on 11 September; the later feed item does not itself report a new development."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Targeted consultation on the overall evaluation of the Dual-Use Regulation",
+      "reader_what": "Targeted consultation on the overall evaluation of the Dual-Use Regulation.",
+      "reader_why": "",
+      "reader_more": "Consultation was opened in July and closed on 11 September; the later feed item does not itself report a new development.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Targeted consultation on the overall evaluation of the Dual-Use Regulation.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Consultation was opened in July and closed on 11 September; the later feed item does not itself report a new development.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxPazBKNVd0WnNOOUx4ZzY4Nm83ZDJfcjh5VXdneVJvOUJTdnNrOGhldy1oY2FRUXdhX0RFUHNoSXpaS2ZMc2ZlT1dWZFJlNlA4NVJZdWRyT0xDbXl1d3F4MjVaTTk3Z1hGbjVFNENuSlhWMWpoZnQwNlNyODI2VUtQN0ZWMk0?oc=5",
+      "source_hash": "d03ffe30",
+      "identity_hash": "2881abaab9f2386d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.ft.com/content/7265f15f-c1e4-49c5-b6e0-8c3a29e70892."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.ft.com/content/7265f15f-c1e4-49c5-b6e0-8c3a29e70892",
+            "title": "UK and Japan seek to fully benefit from ‘Made in Europe’ car sector rules",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "UK and Japan are actively seeking inclusion in EU Made-in-Europe industrial rules, a live market-access and partnership negotiation."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "UK and Japan seek to fully benefit from ‘Made in Europe’ car sector rules",
+      "reader_what": "UK and Japan seek to fully benefit from ‘Made in Europe’ car sector rules",
+      "reader_why": "UK and Japan are actively seeking inclusion in EU Made-in-Europe industrial rules, a live market-access and partnership…",
+      "reader_more": "UK and Japan are actively seeking inclusion in EU Made-in-Europe industrial rules, a live market-access and partnership negotiation. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "UK and Japan seek to fully benefit from ‘Made in Europe’ car sector rules",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "UK and Japan are actively seeking inclusion in EU Made-in-Europe industrial rules, a live market-access and partnership negotiation.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.agreement",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Financial Times",
+            "class": "other"
+          },
+          "mechanism": "partners",
+          "direction": "expands",
+          "status": "in_negotiation",
+          "status_date": "2026-09-14",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "UK and Japan seek to fully benefit from ‘Made in Europe’ car sector rules",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMikAFBVV95cUxPZEV0SmRDTGhaSkh2MnBPTjBsWjh4VGpLWGFESlYwSklXUUxBVkhIMXdDZGNaR2hZVFE1VXVxV0Q2VlJwYjV0alVxRnVpeERjY3NEMmZkNm91Tk5BYW1QU05DVmpyNGM1ZkN4aUlCLXFzbWNHUHZIZWw4a3V1OVA3cElQQWo2dGRBSzYwZW1DQXo?oc=5",
+      "source_hash": "ec5bb6a1",
+      "identity_hash": "2a53e7660c5bb664",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.euractiv.com/news/europe-must-tighten-grip-on-ai-supply-chain-experts-warn/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.euractiv.com/news/europe-must-tighten-grip-on-ai-supply-chain-experts-warn/",
+            "title": "Europe must tighten grip on AI supply chain, experts warn",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "New expert report diagnoses EU frontier-AI supply-chain dependence and recommends coordinated leverage and compute expansion."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Europe must tighten grip on AI supply chain, experts warn",
+      "reader_what": "Europe must tighten grip on AI supply chain, experts warn.",
+      "reader_why": "New expert report diagnoses EU frontier-AI supply-chain dependence and recommends coordinated leverage and compute expa…",
+      "reader_more": "New expert report diagnoses EU frontier-AI supply-chain dependence and recommends coordinated leverage and compute expansion. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Europe must tighten grip on AI supply chain, experts warn.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "New expert report diagnoses EU frontier-AI supply-chain dependence and recommends coordinated leverage and compute expansion.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "digital.sovereignty",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Euractiv",
+            "class": "other"
+          },
+          "mechanism": "secures",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026-09-14",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Europe must tighten grip on AI supply chain, experts warn",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdXBmd2t3RHo5bzlFMEQ1TEgyaTRmMHlKNVN4MEpZVWU0V1p0dDIzTXV5WVpfSl9lQ0ZQcExxRXlob3EzdTRtU19QQkhsdlQ4ejNGQkYwNnFDWlhnVkxQTTUxX0VsMGl4NjRHdUhHY1d2R2t0SFI3VW1SbnlncnFlUk4xWlRmRlFTaDlaTUtMaE9vbG1Pckh0bmtQS0ZQYl81WG9ZOXg3aHM0cnp1aXZQVmxZUkVCN1RaSDIyMmJEdVhKbmM0OEJhR3M3YkhpUEViLWF6eUZn?oc=5",
+      "source_hash": "86a41270",
+      "identity_hash": "30de41157cf81c2f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://euobserver.com/235763/interview-europe-needs-to-finish-single-market-or-lose-more-scale-ups-to-china-and-the-us-warns-enrico-letta/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://euobserver.com/235763/interview-europe-needs-to-finish-single-market-or-lose-more-scale-ups-to-china-and-the-us-warns-enrico-letta/",
+            "title": "[Interview] Europe needs to finish single market or lose more scale-ups to China and the US, warns Enrico Letta",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "C",
+        "reason_code": "C_COMMENTARY_OR_ADVOCACY",
+        "reason": "Interview is primarily advocacy about completing the single market, not a new policy decision or evidence release."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "[Interview] Europe needs to finish single market or lose more scale-ups to China and the US, warns…",
+      "reader_what": "[Interview] Europe needs to finish single market or lose more scale-ups to China and the US, warns Enrico Letta.",
+      "reader_why": "",
+      "reader_more": "Interview is primarily advocacy about completing the single market, not a new policy decision or evidence release.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "[Interview] Europe needs to finish single market or lose more scale-ups to China and the US, warns Enrico Letta.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Interview is primarily advocacy about completing the single market, not a new policy decision or evidence release.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVnhHa3pMVHB4TzBwMmZZd3NGb1hYSERTNmJIRXZyY0twUlhRMnRwdGt3dzNRRHhKVkk1WDdyTnNLVnRsdWVlUXFEdXR1eWdLQml2Q1hOM1pfRk5MRFYwX2ZQRmdkRDdjZkFMa2p3NjVpTUpIMDY1cThnVkt4SDZTNnBFazkxcC1TWTVRdTF2QWdWU2NNWnZHUGdlWGc0X2JBTDNLcDJRcS0?oc=5",
+      "source_hash": "28b59e6c",
+      "identity_hash": "27154680633b57ed",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.reuters.com/world/europe/german-power-grid-under-fresh-sabotage-attack-police-say-2026-09-02/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.reuters.com/world/europe/german-power-grid-under-fresh-sabotage-attack-police-say-2026-09-02/",
+            "title": "Germany probes second power grid sabotage case, fears of hybrid warfare grow",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "Germany is investigating fresh power-grid sabotage incidents, a concrete critical-infrastructure resilience event."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Germany probes second power grid sabotage case, fears of hybrid warfare grow",
+      "reader_what": "Germany probes second power grid sabotage case, fears of hybrid warfare grow",
+      "reader_why": "Germany is investigating fresh power-grid sabotage incidents, a concrete critical-infrastructure resilience event.",
+      "reader_more": "Germany is investigating fresh power-grid sabotage incidents, a concrete critical-infrastructure resilience event. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Germany probes second power grid sabotage case, fears of hybrid warfare grow",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Germany is investigating fresh power-grid sabotage incidents, a concrete critical-infrastructure resilience event.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "critical_infrastructure.resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Reuters",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "operating",
+          "status_date": "2026-09-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Germany probes second power grid sabotage case, fears of hybrid warfare grow",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxNSmZ4bUVGX2tHdUM1VWFFaGpuSXZiY0VuUXNxUkRrMDRyYW1pck9yLVZqd2thUmM5dW9CTVdGZFkzdTJGUUhtcWhoZ0lxQkxrc2RPcDhnQzdGTFNGai13a1RoSDlTakFEWGJ4R0w4dHpqR3hwd1FKNk5sTmdYcGw3a2ZNZWc?oc=5",
+      "source_hash": "4c49ebbf",
+      "identity_hash": "a59b2e5523e96d40",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.ft.com/content/3cb40de7-89f5-4c64-b769-70da374dcd4a."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.ft.com/content/3cb40de7-89f5-4c64-b769-70da374dcd4a",
+            "title": "How four Russian bankers made millions from EU sanctions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "Financial Times investigation documents sanctions-enforcement gaps and profits made around Russian bond restrictions."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "How four Russian bankers made millions from EU sanctions",
+      "reader_what": "How four Russian bankers made millions from EU sanctions",
+      "reader_why": "Financial Times investigation documents sanctions-enforcement gaps and profits made around Russian bond restrictions.",
+      "reader_more": "Financial Times investigation documents sanctions-enforcement gaps and profits made around Russian bond restrictions. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "How four Russian bankers made millions from EU sanctions",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Financial Times investigation documents sanctions-enforcement gaps and profits made around Russian bond restrictions.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Financial Times",
+            "class": "other"
+          },
+          "mechanism": "sanctions",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2026-08-25",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "How four Russian bankers made millions from EU sanctions",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMimAFBVV95cUxPRWV4dHR3NHZrdHpqc0Jkd19faUI4Mkx3elg5VjBvZ2lBR2QxOEQtUjc5QVFPZkJ1Vy1IMlpkR3VwUkd1dkhpcUU0YmU2bHdibHRQMDY3UTNQenZIUzM4OTdfdnY4SjdKUDk0RENjOXZHdHRJbkhpNzI1cUN4dlhZV2ZLRHR5bXBTa05hbXhiRDdNYVdiQkY3NA?oc=5",
+      "source_hash": "cffdd418",
+      "identity_hash": "bcfab611fd796048",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://euobserver.com/232888/irish-alumina-refinery-is-russian-trojan-horse-in-eu-sanctions/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://euobserver.com/232888/irish-alumina-refinery-is-russian-trojan-horse-in-eu-sanctions/",
+            "title": "Irish alumina refinery is Russian Trojan Horse in EU sanctions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "C",
+        "reason_code": "C_COMMENTARY_OR_ADVOCACY",
+        "reason": "EUobserver item is an opinion argument about an existing alumina-sanctions gap rather than a new current event."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Irish alumina refinery is Russian Trojan Horse in EU sanctions",
+      "reader_what": "Irish alumina refinery is Russian Trojan Horse in EU sanctions.",
+      "reader_why": "",
+      "reader_more": "EUobserver item is an opinion argument about an existing alumina-sanctions gap rather than a new current event.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Irish alumina refinery is Russian Trojan Horse in EU sanctions.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "EUobserver item is an opinion argument about an existing alumina-sanctions gap rather than a new current event.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbk1aZnI3eEd5X0NiUWJ6M005Sm9hekNHZkFDX21fcHQ5QTdnajFBV2xQalhOOFJHTWRmMlJXQ1ViXzIzdnFzb1YyMnpVWGRPNG1fUlNDZzVGb3VjN1I5RjVtZ05DdzlCU2RNNkhkTkNCWjNISnZuLWxzZjRFZlMyNEo1YjVvTVRsRnFBVklaWTZWcDZxSWN0SWlwdTJ4RW1VTnFhdXhtajlCbXRnUVA4Um44ZGVEZTFpTVNYYnMzWGJTcXU1RHdSag?oc=5",
+      "source_hash": "90db4a4a",
+      "identity_hash": "5288ab31503eae59",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.reuters.com/world/europe/eu-plans-most-far-reaching-sanctions-package-against-russia-autumn-foreign-chief-2026-08-17/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.reuters.com/world/europe/eu-plans-most-far-reaching-sanctions-package-against-russia-autumn-foreign-chief-2026-08-17/",
+            "title": "EU plans most far-reaching sanctions against Russia in coming months, Kallas says",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "EU foreign-policy chief announced preparation of a major expansion of Russia sanctions listings."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU plans most far-reaching sanctions against Russia in coming months, Kallas says",
+      "reader_what": "EU plans most far-reaching sanctions against Russia in coming months, Kallas says.",
+      "reader_why": "EU foreign-policy chief announced preparation of a major expansion of Russia sanctions listings.",
+      "reader_more": "EU foreign-policy chief announced preparation of a major expansion of Russia sanctions listings. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "EU plans most far-reaching sanctions against Russia in coming months, Kallas says.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "EU foreign-policy chief announced preparation of a major expansion of Russia sanctions listings.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Reuters",
+            "class": "other"
+          },
+          "mechanism": "sanctions",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2026-08-17",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "EU plans most far-reaching sanctions against Russia in coming months, Kallas says",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMigAFBVV95cUxNQ1lwZGdINkpxSVBYN1o2eEw0U2FlM1A0WHNUZW5BNDYzcFFNZGtPbW03TlV3Ymh6ZktiMlJQc0IzT1c3TkVtM0pndDJISXo1S2dGTllpUEtUTHJ1c2NBa1pzclZsaXJJRE9MYVVXVmdJNXZtc21zTzFaRXIwV0thMQ?oc=5",
+      "source_hash": "f6dfc341",
+      "identity_hash": "95ccda7e46b9872c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.consilium.europa.eu/en/policies/the-critical-raw-materials-act/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.consilium.europa.eu/en/policies/the-critical-raw-materials-act/",
+            "title": "The critical raw materials act: an EU pivot",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "C",
+        "reason_code": "C_STALE_OR_LISTING",
+        "reason": "Council CRMA page is an explanatory policy page; its review date is not itself a substantive new development."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The critical raw materials act: an EU pivot",
+      "reader_what": "The critical raw materials act: an EU pivot.",
+      "reader_why": "",
+      "reader_more": "Council CRMA page is an explanatory policy page; its review date is not itself a substantive new development.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "The critical raw materials act: an EU pivot.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Council CRMA page is an explanatory policy page; its review date is not itself a substantive new development.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    }
+  ]
+}
