@@ -1,0 +1,1741 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-b-78d35a36b3db",
+  "results": [
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMisgFBVV95cUxPb1duUkszRE5ZVnF4dTNyaVpQbUdVOEhrNmJxQTYxN2ZlVC1TdER1eko4M2Y4SUNpZllIMGdQamJfdDdOTURfNGtyYUQ3SkRFS1Z0OUswSlBVQ0xnZ3BOaE5BcUdzdmQxRWdmQTVyUjUtemNqVkxIalBXbGs1VmpDN1FGaHdydC1ZcXhLUW8telVIYXBmM29mTVZLRktMd2lJSGRaSmNSaUJzdGJ5MHRDM1NB?oc=5",
+      "source_hash": "b58f78ce",
+      "identity_hash": "92d7534500d16a0b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://bloomberg.com/news/articles/2026-09-14/germany-to-lobby-eu-on-new-china-policy-may-seek-more-tariffs."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://bloomberg.com/news/articles/2026-09-14/germany-to-lobby-eu-on-new-china-policy-may-seek-more-tariffs",
+            "title": "Germany to Lobby EU on China Policy, May Seek More Tariffs",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "German ministries are preparing an economic-security package on China including possible tariffs, screening and export-control measures."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Germany to Lobby EU on China Policy, May Seek More Tariffs",
+      "reader_what": "Germany to Lobby EU on China Policy, May Seek More Tariffs.",
+      "reader_why": "German ministries are preparing an economic-security package on China including possible tariffs, screening and export-…",
+      "reader_more": "German ministries are preparing an economic-security package on China including possible tariffs, screening and export-control measures. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Germany to Lobby EU on China Policy, May Seek More Tariffs.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "German ministries are preparing an economic-security package on China including possible tariffs, screening and export-control measures.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.eu_countermeasures",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Bloomberg",
+            "class": "other"
+          },
+          "mechanism": "tariffs",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2026-09-14",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Germany to Lobby EU on China Policy, May Seek More Tariffs",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMivgFBVV95cUxQUURnbnNMX3ZZUFNzdFEzSlQ2SV9aelhVaHhBYUdhTHRHMjhVdHVkS1RCUm1FSE1NdDVkYTdFS1NEbTlMeHRxdGxHTlhTZ2hDMFhXYlh0M0RQNWhyTFZ2bWFpZ0x5dWpqRHZvWEo2eXlJNXZRTUs2TDdjcHFLNTFnOVdoNVF0SzIwT19BZXdOUHFld0F0eG5xdHUtUm9ybmpkWE9DQnpLM09mTUxDcWFXMEZTTWRwMkJ2S0lZUXlR?oc=5",
+      "source_hash": "2c4a67ad",
+      "identity_hash": "63d28fe8caf38bf1",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.reuters.com/world/china/german-state-politician-calls-eu-tariffs-chinese-hybrid-cars-letter-shows-2026-08-21/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.reuters.com/world/china/german-state-politician-calls-eu-tariffs-chinese-hybrid-cars-letter-shows-2026-08-21/",
+            "title": "German state politician calls for EU tariffs on Chinese hybrid cars, letter shows",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "C",
+        "reason_code": "C_COMMENTARY_OR_ADVOCACY",
+        "reason": "A regional party leader called for tariffs, but no EU or federal measure had been adopted or formally proposed."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "German state politician calls for EU tariffs on Chinese hybrid cars, letter shows",
+      "reader_what": "German state politician calls for EU tariffs on Chinese hybrid cars, letter shows.",
+      "reader_why": "",
+      "reader_more": "A regional party leader called for tariffs, but no EU or federal measure had been adopted or formally proposed.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "German state politician calls for EU tariffs on Chinese hybrid cars, letter shows.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "A regional party leader called for tariffs, but no EU or federal measure had been adopted or formally proposed.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMijgFBVV95cUxQeUIwaTZaTUNUTWJpV09qa1hfYzlPamQ5T3FNX0M0bWozMGFoYXl1WE4wY3VUS3c1dVpvYU54QVRVWlpNbGpBR1lOTVhIa2ZfUnJBa0cyWF8zQnFDT3NYeDdCTWZXalRja213bE82YjZZVUVUeVpuVVpDMTIzUzEtWVd2Vk9PNERRNm9SNFln?oc=5",
+      "source_hash": "a693a96b",
+      "identity_hash": "1d7cb4d8e9b026c2",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.euractiv.com/news/ireland-floats-rethink-of-eus-sanctions-against-russia/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.euractiv.com/news/ireland-floats-rethink-of-eus-sanctions-against-russia/",
+            "title": "INTERVIEW: Ireland floats rethink of EU’s sanctions against Russia",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "Ireland’s foreign minister described an active EU rethink toward more frequent, targeted Russia sanctions."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "INTERVIEW: Ireland floats rethink of EU’s sanctions against Russia",
+      "reader_what": "INTERVIEW: Ireland floats rethink of EU’s sanctions against Russia",
+      "reader_why": "Ireland’s foreign minister described an active EU rethink toward more frequent, targeted Russia sanctions.",
+      "reader_more": "Ireland’s foreign minister described an active EU rethink toward more frequent, targeted Russia sanctions. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "INTERVIEW: Ireland floats rethink of EU’s sanctions against Russia",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Ireland’s foreign minister described an active EU rethink toward more frequent, targeted Russia sanctions.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Euractiv",
+            "class": "other"
+          },
+          "mechanism": "sanctions",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2026-07-30",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "INTERVIEW: Ireland floats rethink of EU’s sanctions against Russia",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://borderlex.net/2026/09/24/eu-to-defend-carbon-border-levy-in-russian-wto-challenge/",
+      "source_hash": "c30dda16",
+      "identity_hash": "560c95090c763938",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching substantial_web_text from the supplied route; identity/provenance checked against the named publisher/source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://borderlex.net/2026/09/24/eu-to-defend-carbon-border-levy-in-russian-wto-challenge/",
+            "title": "EU to defend carbon border levy in Russian WTO challenge - Borderlex - European trade policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "EU is defending its carbon-border mechanism in a WTO dispute brought by Russia, a concrete trade-policy action."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU to defend carbon border levy in Russian WTO challenge - Borderlex - European trade policy",
+      "reader_what": "EU to defend carbon border levy in Russian WTO challenge - Borderlex - European trade policy",
+      "reader_why": "EU is defending its carbon-border mechanism in a WTO dispute brought by Russia, a concrete trade-policy action.",
+      "reader_more": "EU is defending its carbon-border mechanism in a WTO dispute brought by Russia, a concrete trade-policy action. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "EU to defend carbon border levy in Russian WTO challenge - Borderlex - European trade policy",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "EU is defending its carbon-border mechanism in a WTO dispute brought by Russia, a concrete trade-policy action.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.eu_countermeasures",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Borderlex",
+            "class": "other"
+          },
+          "mechanism": "regulates",
+          "direction": "expands",
+          "status": "adopted",
+          "status_date": "2026-09-24",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "EU to defend carbon border levy in Russian WTO challenge - Borderlex - European trade policy",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMi6AFBVV95cUxOcklqRlhTMXhFX3lfVHl5Zy1wRHQ1cDY2ZUdrRk5ENGtCeWt3bGpmZ1hwbF9fbzZCdDlwQzNNbmFNeUFBRHR6N1M4SEFjakhZM19SNE1FVHJWeVRZTENnT3psNGpDMDdVU3FIZGFvQzhuWlF3bFZkYk1IVjRZY0lzR1Q3blAtRFBpYUdaOXdwUk9tc3JjQVJfakllb2hoZ0RFbUtGbTZGRUUwTVhDYVBnUmswQnc4OUt1bVROY3VzNVoydDN5UkVleXE1ZVFtTVkxR2w3YlJNYjFfY0s5aEVrQ1NLa0lrcEdy?oc=5",
+      "source_hash": "d1b3982d",
+      "identity_hash": "a1b46642ebd2de9d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.lemonde.fr/en/international/article/2026/09/22/usmanov-and-fridman-two-oligarchs-close-to-putin-are-exempted-from-eu-sanctions_6757821_4.html."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.lemonde.fr/en/international/article/2026/09/22/usmanov-and-fridman-two-oligarchs-close-to-putin-are-exempted-from-eu-sanctions_6757821_4.html",
+            "title": "EU removes two oligarchs reputedly close to Putin from sanctions list - Le Monde.fr",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "EU removed Usmanov and Fridman from its Russia sanctions list while renewing the wider regime."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU removes two oligarchs reputedly close to Putin from sanctions list - Le Monde.fr",
+      "reader_what": "EU removes two oligarchs reputedly close to Putin from sanctions list Le Monde.fr.",
+      "reader_why": "EU removed Usmanov and Fridman from its Russia sanctions list while renewing the wider regime.",
+      "reader_more": "EU removed Usmanov and Fridman from its Russia sanctions list while renewing the wider regime. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "EU removes two oligarchs reputedly close to Putin from sanctions list Le Monde.fr.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "EU removed Usmanov and Fridman from its Russia sanctions list while renewing the wider regime.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Le Monde",
+            "class": "other"
+          },
+          "mechanism": "exempts",
+          "direction": "becomes_conditional",
+          "status": "adopted",
+          "status_date": "2026-09-22",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "EU removes two oligarchs reputedly close to Putin from sanctions list - Le Monde.fr",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMixwFBVV95cUxPT0hnZ2xNOE9GNzIyWG0talpiRFRMemZJZmtNVVBCMEY5eEtDbUdvWlJ0UFNha014aF9fd1pwQnVEMDJXSE53eUktekstUTItU3h1Wm8tNWZOOTdnOERTTVZUcjVYSmNNSXB2TjZwaTc3ajJxSkhLcGVEdjEyNXFCdXMtQmJCdHkzOEJfNk52RmlKV2NWOUFJSllkUFRXemlRVUFhbWJfTkJpZzBBT1JzUlY5YmIwdDZXUl9lQzBpR1YyQVE4V2J3?oc=5",
+      "source_hash": "b42dabc3",
+      "identity_hash": "36414e3e508860ae",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.reuters.com/world/asia-pacific/china-supports-investment-by-its-automakers-europe-commerce-minister-says-2026-09-22/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.reuters.com/world/asia-pacific/china-supports-investment-by-its-automakers-europe-commerce-minister-says-2026-09-22/",
+            "title": "China supports investment by its automakers in Europe, commerce minister says",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "China’s commerce minister formally backed Chinese automaker investment in Europe amid EU trade measures; significance depends on whether policy support translates into action."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "China supports investment by its automakers in Europe, commerce minister says",
+      "reader_what": "China supports investment by its automakers in Europe, commerce minister says.",
+      "reader_why": "China’s commerce minister formally backed Chinese automaker investment in Europe amid EU trade measures; significance d…",
+      "reader_more": "China’s commerce minister formally backed Chinese automaker investment in Europe amid EU trade measures; significance depends on whether policy support translates into action. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "China supports investment by its automakers in Europe, commerce minister says.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "China’s commerce minister formally backed Chinese automaker investment in Europe amid EU trade measures; significance depends on whether policy support translates into action.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Reuters",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "announced",
+          "status_date": "2026-09-22",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "China supports investment by its automakers in Europe, commerce minister says",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMipwFBVV95cUxQUUswdG5RR3A3czVTQV82SzUwWDh1ZDZrYjNXcld1cUQwOW9nZENwVlhQRVpfMXRQY2RXZ1pLcVlnal9jeGJxelREVVpWeTZyTTI2bnJKUXlIYUNtNklZQnkyWHNPX1NzZ1lIRVB2SVFfWkJTWkg4ZFM5WE5rdTVISldEczdQX1BIdkRyd21lYVhibzVLRkwwOGVIWXdfODNPRzloNWhEWQ?oc=5",
+      "source_hash": "0caff486",
+      "identity_hash": "6a7aae1d68822c2f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.reuters.com/world/europe/greenland-denmark-say-us-deal-will-not-cede-sovereignty-2026-09-19/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.reuters.com/world/europe/greenland-denmark-say-us-deal-will-not-cede-sovereignty-2026-09-19/",
+            "title": "Denmark says Greenland sovereignty safe under Trump's deal",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "Denmark and Greenland described a US security deal preserving sovereignty while constraining strategic adversary presence and investment."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Denmark says Greenland sovereignty safe under Trump's deal",
+      "reader_what": "without cutting itself off from others.",
+      "reader_why": "Denmark and Greenland described a US security deal preserving sovereignty while constraining strategic adversary presen…",
+      "reader_more": "Denmark and Greenland described a US security deal preserving sovereignty while constraining strategic adversary presence and investment. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "without cutting itself off from others.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Denmark and Greenland described a US security deal preserving sovereignty while constraining strategic adversary presence and investment.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Reuters",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "announced",
+          "status_date": "2026-09-20",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Denmark says Greenland sovereignty safe under Trump's deal",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMiowFBVV95cUxNekNBZWwxSDJKTHl3ZUNJZ0Mwd0xDbERTVXFOcXZxa3hVejJfdDZGWTVMcEhhbXlkaW5nTm9JVEF0N1ZBdnF1bWZHeGRDWDBoTnZMVlBiTWZDQ3lUUF9teU9ndmZvdHZCM0EtWTRfaEFTTTE0VlBxWG5NZkkzOHBmSXFTZ2w2Y1BrVmJHUmgxRVR2YkN6SF83M3ZhQkdrSENqbTJF?oc=5",
+      "source_hash": "e098fc4f",
+      "identity_hash": "81f6c3303c144c53",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.reuters.com/world/india/india-gains-wider-eu-steel-access-carbon-levy-remains-2026-09-14/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.reuters.com/world/india/india-gains-wider-eu-steel-access-carbon-levy-remains-2026-09-14/",
+            "title": "India gains wider EU steel access, but carbon levy remains",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "EU-India trade terms widen steel market access while retaining CBAM costs and quota limits."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "India gains wider EU steel access, but carbon levy remains",
+      "reader_what": "India gains wider EU steel access, but carbon levy remains.",
+      "reader_why": "EU-India trade terms widen steel market access while retaining CBAM costs and quota limits.",
+      "reader_more": "EU-India trade terms widen steel market access while retaining CBAM costs and quota limits. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "India gains wider EU steel access, but carbon levy remains.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "EU-India trade terms widen steel market access while retaining CBAM costs and quota limits.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.eu_countermeasures",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Reuters",
+            "class": "other"
+          },
+          "mechanism": "regulates",
+          "direction": "expands",
+          "status": "adopted",
+          "status_date": "2026-09-14",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "India gains wider EU steel access, but carbon levy remains",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMimwFBVV95cUxOaWtudVNmS3RIb25nVW5rRjdiNTIyYm1xX2t5Z3dMNzliZW9YdDA5eFpmVEdNUXlQS0lRckMwbW1hN1JkcEtQdGRzZllBZHVfRldzV3ZMYzRDU1hXeTc1RTUwRmRKVlR4UFl0SXh5empPQU1uOWYxR2pCU3VSZnJBRmo2Nk5PRXVWZHp5MlFKbFlGb0wzVm55bXFnTQ?oc=5",
+      "source_hash": "68080800",
+      "identity_hash": "faf5aa76d97007f5",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://dailyguardian.eu/eu-trade-chief-to-meet-ceos-over-china-strategy-politico/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://dailyguardian.eu/eu-trade-chief-to-meet-ceos-over-china-strategy-politico/",
+            "title": "EU trade chief to meet CEOs over China strategy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "EU trade chief’s CEO forum is part of live China de-risking strategy formation, but it is consultative rather than a decision."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU trade chief to meet CEOs over China strategy",
+      "reader_what": "EU trade chief to meet CEOs over China strategy",
+      "reader_why": "EU trade chief’s CEO forum is part of live China de-risking strategy formation, but it is consultative rather than a de…",
+      "reader_more": "EU trade chief’s CEO forum is part of live China de-risking strategy formation, but it is consultative rather than a decision. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "EU trade chief to meet CEOs over China strategy",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "EU trade chief’s CEO forum is part of live China de-risking strategy formation, but it is consultative rather than a decision.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Politico Europe",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "announced",
+          "status_date": "2026-09-07",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "EU trade chief to meet CEOs over China strategy",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMitgFBVV95cUxOX2hISF94TEZGRzNlMGV1NjA4NjBVU2hWMm5JZGJHOHBtSUxFME9uZEE3TUQwTDRHS1lrd3lRdGRQS1NrSGJSTWdZek8zbkw2a25rMFFFYWJENnBBTV9MTWZ4TUhtTjJfZHZCTW1LMW9NTi12bHRuMVp0d2dGVHM1TTBrUjJYUXVFcnVvb0RMUEsyX1V3SlZvb2tvd3NuWWtaa0NsQjNkNmM0em1sUVdMWUZ1THBOUQ?oc=5",
+      "source_hash": "829272b5",
+      "identity_hash": "23da5b8fd9204f86",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.reuters.com/business/autos-transportation/german-industry-presses-merz-tougher-china-policy-2026-08-28/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.reuters.com/business/autos-transportation/german-industry-presses-merz-tougher-china-policy-2026-08-28/",
+            "title": "German industry presses Merz for tougher China policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "C",
+        "reason_code": "C_COMMENTARY_OR_ADVOCACY",
+        "reason": "Industry lobbying for tougher China policy is advocacy rather than a policy decision or completed evidence release."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "German industry presses Merz for tougher China policy",
+      "reader_what": "German industry presses Merz for tougher China policy",
+      "reader_why": "",
+      "reader_more": "Industry lobbying for tougher China policy is advocacy rather than a policy decision or completed evidence release.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "German industry presses Merz for tougher China policy",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Industry lobbying for tougher China policy is advocacy rather than a policy decision or completed evidence release.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMiswFBVV95cUxQcGRtUVpOeWFvQWFUbmNJeGxjYlRuaktxd1AtbUw2bFAtOWJCbjBfSmNfMlJYT2xMcThMOUQ4bXNQUzV2N19kNHBkWGtOZXd1aHRfZTV5WXNsZ2RyR1hhcFB5MGN2VTlCSGYzaGJUYUpnWWZQSHVzN3plaDY0V2VtNzlYMFV4WG9NR2JIalFfeFdkWG1pQ1hnSFdCMTdFVHJXNWdIeUQwUktVeUxHM0NRdTJjQQ?oc=5",
+      "source_hash": "ece6cdd0",
+      "identity_hash": "df23089ab7d42fb2",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.investing.com/news/economy-news/some-chinese-workers-see-an-ally-in-brussels-as-eu-trade-tensions-mount-4876411."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.investing.com/news/economy-news/some-chinese-workers-see-an-ally-in-brussels-as-eu-trade-tensions-mount-4876411",
+            "title": "Some Chinese workers see an ally in Brussels as EU trade tensions mount",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "C",
+        "reason_code": "C_FEATURE_OR_COMMENTARY",
+        "reason": "Feature on Chinese worker sentiment explains trade tensions but does not establish a discrete European policy or economic-security event."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Some Chinese workers see an ally in Brussels as EU trade tensions mount",
+      "reader_what": "Some Chinese workers see an ally in Brussels as EU trade tensions mount",
+      "reader_why": "",
+      "reader_more": "Feature on Chinese worker sentiment explains trade tensions but does not establish a discrete European policy or economic-security event.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Some Chinese workers see an ally in Brussels as EU trade tensions mount",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Feature on Chinese worker sentiment explains trade tensions but does not establish a discrete European policy or economic-security event.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMitAFBVV95cUxQdHl5VFZkOV9NSnVKamtaaVZjUXhpVjJoLVUweGtSek5KbkhWdDE1ekpOeWlTUHE1REduby15ZGxjY0Rka3FValJzYjR1TFFUZFRJcFNmX3pqT29KcElSOEtUTHRpNmxXV1pNV1lNWXRQcGNtOW9ldEx0WTFqZ1NzblN3UEZtWm1NakJKVTZwRVBsaG1USlF6cUxrUEVXVm81YzdwMk9zWmxNZ2sxVEc5bmFpdng?oc=5",
+      "source_hash": "dc644b03",
+      "identity_hash": "f44fecd71f3ee3f7",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://finance.yahoo.com/markets/stocks/articles/europe-luxury-giants-discern-green-070000126.html."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/europe-luxury-giants-discern-green-070000126.html",
+            "title": "Europe’s Luxury Giants Discern Green Shoots in Key China Market",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "C",
+        "reason_code": "C_ORDINARY_MARKET_TREND",
+        "reason": "Luxury-sales recovery in China is an ordinary commercial trend without a sufficiently direct economic-security nexus."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Europe’s Luxury Giants Discern Green Shoots in Key China Market",
+      "reader_what": "Europe’s Luxury Giants Discern Green Shoots in Key China Market",
+      "reader_why": "",
+      "reader_more": "Luxury-sales recovery in China is an ordinary commercial trend without a sufficiently direct economic-security nexus.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Europe’s Luxury Giants Discern Green Shoots in Key China Market",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Luxury-sales recovery in China is an ordinary commercial trend without a sufficiently direct economic-security nexus.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxPeENyVVNXOU9ZdUl0MFJQWGlVcjlEc041b0t1RU44alpxTHVYQ3ZwcE5fZHVEMFNHUHVqaTdLZFdSYjdWODRJd011MFh0OUlOMWd2MGg3TjI0X1hsUm91TWt4T3JvRlQwZjVPanh4bkhnaGpqcllqTzZCWGRpUU9yQ05kdHY?oc=5",
+      "source_hash": "f9b62937",
+      "identity_hash": "40485bd2b7ad21fb",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.ft.com/content/c6220205-ee40-4b71-95c0-d53399a17cd1."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.ft.com/content/c6220205-ee40-4b71-95c0-d53399a17cd1",
+            "title": "EU slips further behind US in race for critical minerals",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "New reporting documents the EU’s financing and project gap versus the US in securing critical minerals."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU slips further behind US in race for critical minerals",
+      "reader_what": "EU slips further behind US in race for critical minerals",
+      "reader_why": "New reporting documents the EU’s financing and project gap versus the US in securing critical minerals.",
+      "reader_more": "New reporting documents the EU’s financing and project gap versus the US in securing critical minerals. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "EU slips further behind US in race for critical minerals",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "New reporting documents the EU’s financing and project gap versus the US in securing critical minerals.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "materials.critical_raw",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Financial Times",
+            "class": "other"
+          },
+          "mechanism": "secures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-08-21",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "EU slips further behind US in race for critical minerals",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMizwFBVV95cUxQV1kyWGRJRFg2YURDZDlvOEtjaFlOYWQxRW1Pcml0UjNkVEJ4R0lnVk9hNmtJQkRWbnNZVHpBa2tnV0JpVWRWcURVVHBqOVU0Y0lKM1ZVOWZld21XS1k5SVU0Umk0ckZDckZCbllRbnFCRmRQaEdIZDdHcVJHYzRnN1hpQVRzbWdaMzh0UVljYzNEQ2lHaDU0dy1tejhSVGI2LWVXS0UtTFFiZ1h6MjVWdDhiYTNuQ0lEZHhqWU9NaUxhQ3dmeVZpb0xZZE5KM1E?oc=5",
+      "source_hash": "0c0de164",
+      "identity_hash": "a9bb8b6f072499b9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.reuters.com/business/retail-consumer/chinese-e-commerce-giant-jdcom-offers-eu-remedies-ceconomy-takeover-probe-2026-08-20/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.reuters.com/business/retail-consumer/chinese-e-commerce-giant-jdcom-offers-eu-remedies-ceconomy-takeover-probe-2026-08-20/",
+            "title": "Chinese e-commerce giant JD.com offers EU remedies in Ceconomy takeover probe",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "JD.com offered remedies in an EU Foreign Subsidies Regulation probe of its Ceconomy acquisition."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Chinese e-commerce giant JD.com offers EU remedies in Ceconomy takeover probe",
+      "reader_what": "Chinese e-commerce giant JD.com offers EU remedies in Ceconomy takeover probe.",
+      "reader_why": "JD.com offered remedies in an EU Foreign Subsidies Regulation probe of its Ceconomy acquisition.",
+      "reader_more": "JD.com offered remedies in an EU Foreign Subsidies Regulation probe of its Ceconomy acquisition. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Chinese e-commerce giant JD.com offers EU remedies in Ceconomy takeover probe.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "JD.com offered remedies in an EU Foreign Subsidies Regulation probe of its Ceconomy acquisition.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "foreign_subsidies.investigation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Reuters",
+            "class": "other"
+          },
+          "mechanism": "screens",
+          "direction": "becomes_conditional",
+          "status": "in_force",
+          "status_date": "2026-08-20",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Chinese e-commerce giant JD.com offers EU remedies in Ceconomy takeover probe",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1RhLXdTMHhVRW1NWHBBV3hocl9ZWlFMZ2FVRWhnLUI4ZC1GNC16aWkyUW1sRWlLa25ySTBwMWxBbjlqTkE5UDNESjZ3bFFmeWFZWkxuYkRMS2tZVFk0bzFXM3VycnRMYkUwUl9tckJ3SVo2QTNvWWZXUlItTjdCeEZPVDZQSlRTdHdfbEhBbFl3amxmT041NmF2OWVOYnZ2ZnFTV2x0REtjZV9kR2NBdDg0NE9Edw?oc=5",
+      "source_hash": "32cd5454",
+      "identity_hash": "01aa827ab2b4bcea",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://news.bloomberglaw.com/international-trade/iran-war-made-belgium-wholly-dependent-on-russia-for-lng-in-july."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://news.bloomberglaw.com/international-trade/iran-war-made-belgium-wholly-dependent-on-russia-for-lng-in-july",
+            "title": "Iran War Made Belgium Wholly Dependent on Russia for LNG in July",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "Belgium’s LNG imports became wholly Russian in July amid Middle East supply disruption, a sharp energy-dependence signal."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Iran War Made Belgium Wholly Dependent on Russia for LNG in July",
+      "reader_what": "Iran War Made Belgium Wholly Dependent on Russia for LNG in July.",
+      "reader_why": "Belgium’s LNG imports became wholly Russian in July amid Middle East supply disruption, a sharp energy-dependence signa…",
+      "reader_more": "Belgium’s LNG imports became wholly Russian in July amid Middle East supply disruption, a sharp energy-dependence signal. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Iran War Made Belgium Wholly Dependent on Russia for LNG in July.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Belgium’s LNG imports became wholly Russian in July amid Middle East supply disruption, a sharp energy-dependence signal.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.lng_imports",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Bloomberg",
+            "class": "other"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_conditional",
+          "status": "delivered",
+          "status_date": "2026-08-03",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Iran War Made Belgium Wholly Dependent on Russia for LNG in July",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMivwFBVV95cUxOUmtoaXJpTG1DbVNCNEExcUNWTklka2FKd1V1M1d2c2c4VVMzLXVOWTNacFgwcUtxeW1Rb1RqU2s1Q2gycmx5bkcyangyUWt3VlB4RXpWUnJMR0pWQkRKczNXN0RQX25ySjRSUXgzcHljeU1OUlNfZVJPTU8tSmZPbThEQkRSc0VyUXdZNk5qcUY4ZVgxUG0tZDdRa0JJUzZqeWFtcXBYVlAtZjRDWlN6SUVUeVQ4QUxsMGE1MzZ0dw?oc=5",
+      "source_hash": "fabeb28f",
+      "identity_hash": "b94ea52d0e9054df",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.reuters.com/world/china/volkswagen-takeover-talks-with-chinese-partner-spanish-battery-plant-trade-2026-07-27/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.reuters.com/world/china/volkswagen-takeover-talks-with-chinese-partner-spanish-battery-plant-trade-2026-07-27/",
+            "title": "Volkswagen in talks with Chinese partner on Spanish battery plant, trade outlet reports",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "Volkswagen and Gotion are in talks over Chinese investment in a Spanish battery plant, a live strategic-manufacturing ownership issue."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Volkswagen in talks with Chinese partner on Spanish battery plant, trade outlet reports",
+      "reader_what": "Volkswagen in talks with Chinese partner on Spanish battery plant, trade outlet reports.",
+      "reader_why": "Volkswagen and Gotion are in talks over Chinese investment in a Spanish battery plant, a live strategic-manufacturing o…",
+      "reader_more": "Volkswagen and Gotion are in talks over Chinese investment in a Spanish battery plant, a live strategic-manufacturing ownership issue. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Volkswagen in talks with Chinese partner on Spanish battery plant, trade outlet reports.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Volkswagen and Gotion are in talks over Chinese investment in a Spanish battery plant, a live strategic-manufacturing ownership issue.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.strategic_acquisition",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Reuters",
+            "class": "other"
+          },
+          "mechanism": "invests",
+          "direction": "expands",
+          "status": "in_negotiation",
+          "status_date": "2026-07-27",
+          "scope": {
+            "level": "company_in_eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Volkswagen in talks with Chinese partner on Spanish battery plant, trade outlet reports",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMivAFBVV95cUxNOHQ3NF85YV9QZnRjTEZIZUtBUFE0NUFLVmtFY1JEaGdiZXhPRXVGaHVSN1liV1RXc0huVUZPcV9WQmZZTFdrVlZnaFZQWk5GdFhIN0VzclpieGp4V0c4eXJQQmlvV1pWM0c3M2NmQThBVW9QeUgtc1dheTNWTDFFWWVFQ05aV1FwUjllRi14TjlmdFZMck5tY1hRcmZfVmJmcFRYNmhOR1VTS24waXdPZDZPQmxyODJGT2VCTw?oc=5",
+      "source_hash": "f751cad5",
+      "identity_hash": "8275fba0b9f3c477",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://euobserver.com/230246/brussels-found-russias-lng-weak-spot-then-carved-out-an-exception-for-a-greek-billionaire/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://euobserver.com/230246/brussels-found-russias-lng-weak-spot-then-carved-out-an-exception-for-a-greek-billionaire/",
+            "title": "Brussels found Russia’s LNG weak spot — then carved out an exception for a Greek billionaire",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "C",
+        "reason_code": "C_COMMENTARY_OR_ADVOCACY",
+        "reason": "EUobserver item is opinion analysis of an already-adopted LNG sanctions exemption, not a new event."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Brussels found Russia’s LNG weak spot — then carved out an exception for a Greek billionaire",
+      "reader_what": "Brussels found Russia’s LNG weak spot — then carved out an exception for a Greek billionaire",
+      "reader_why": "",
+      "reader_more": "EUobserver item is opinion analysis of an already-adopted LNG sanctions exemption, not a new event.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Brussels found Russia’s LNG weak spot — then carved out an exception for a Greek billionaire",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "EUobserver item is opinion analysis of an already-adopted LNG sanctions exemption, not a new event.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMivwFBVV95cUxOak9rOXBJRzhwYzJ3emNxMTNrOFhGOVpWN0F2UFNvbm0wbnNZbWxHY0VHbEJldFRtX3VvTHBHV2xXTUZmSmNVLTFGT245ekpKUUtDaFN1bXRXVXNyRmZPclR0MEJjZWFma2pVTnZhdzdHZU54cVFEbDZ2dno5cmFZeXJCVXdGNmNabWZjc01lSUxZbXZ4Z3FiblFkOUxkMFVkREE0ZC0yd2t4cTloRy1QNU10VDlqajc3NHFHblp5MA?oc=5",
+      "source_hash": "5ed4f975",
+      "identity_hash": "df030ece23ab01e5",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.eeas.europa.eu/delegations/philippines/eu-and-philippines-reach-substantial-agreement-free-trade-agreement_en."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.eeas.europa.eu/delegations/philippines/eu-and-philippines-reach-substantial-agreement-free-trade-agreement_en",
+            "title": "Free trade agreement: What the EU and the Philippines have agreed on – and what remains - Table.Briefings",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "EU and Philippines reached substantial agreement on an FTA aimed at diversifying and strengthening supply chains."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Free trade agreement: What the EU and the Philippines have agreed on – and what remains - Table.Bri…",
+      "reader_what": "Free trade agreement: What the EU and the Philippines have agreed on – and what remains Table.Briefings.",
+      "reader_why": "EU and Philippines reached substantial agreement on an FTA aimed at diversifying and strengthening supply chains.",
+      "reader_more": "EU and Philippines reached substantial agreement on an FTA aimed at diversifying and strengthening supply chains. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Free trade agreement: What the EU and the Philippines have agreed on – and what remains Table.Briefings.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "EU and Philippines reached substantial agreement on an FTA aimed at diversifying and strengthening supply chains.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.agreement",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Table.Media",
+            "class": "other"
+          },
+          "mechanism": "partners",
+          "direction": "expands",
+          "status": "announced",
+          "status_date": "2026-09-22",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Free trade agreement: What the EU and the Philippines have agreed on – and what remains - Table.Briefings",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMitgFBVV95cUxNa2hkNDhERVk5MC02LW84MnA5QllIYWNuRzc3TjhYTEMwSHFlaHd5R3UxNzhpOVRxRTV3dTdCQnRyT1JwYzliMmxXVG5LUXFRd2F3TjI1SFQ3X0VPVk5WM0NiZTE1SzdaeG9DZDh1ZUZVQUFwVklkejgxR3ltY0FPOUd1M1lpZG5NMjVZQ3lvbENQVmFNbUIzbnJtOTF2cVNsWHFPRmh0X1k0LVc5SzMzNU9VdS11UQ?oc=5",
+      "source_hash": "f67de603",
+      "identity_hash": "5302c0e3425626f2",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.reuters.com/world/europe/new-group-us-troops-on-its-way-lithuania-says-lithuanian-president-2026-09-22/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.reuters.com/world/europe/new-group-us-troops-on-its-way-lithuania-says-lithuanian-president-2026-09-22/",
+            "title": "Lithuania says Trump deploys fresh US troops to the country",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "C",
+        "reason_code": "C_WEAK_ECONSEC_NEXUS",
+        "reason": "US troop rotation to Lithuania is a defence development without a sufficiently direct economic-security mechanism in this record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Lithuania says Trump deploys fresh US troops to the country",
+      "reader_what": "Lithuania says Trump deploys fresh US troops to the country.",
+      "reader_why": "",
+      "reader_more": "US troop rotation to Lithuania is a defence development without a sufficiently direct economic-security mechanism in this record.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Lithuania says Trump deploys fresh US troops to the country.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "US troop rotation to Lithuania is a defence development without a sufficiently direct economic-security mechanism in this record.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxQRnk5eVlWbG9mNWoxbG1nNE5iY3lSMFpBSkhINWRHWUR4bDdQSXAycm02TGY5ekNHNkhtN1ljT2RmRDlCT2QtRkRfV1hCYnlpUkFFY0pyU3Fob2RpNUxGNUVWZE8yd0xvTTJMdHBjMUdkYVQzdkdna0lUejlBRE9zTnctdzA?oc=5",
+      "source_hash": "43c89b80",
+      "identity_hash": "3d82009b835472da",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.ft.com/content/31b63337-0531-47a6-a0ce-83f0dd7f395b."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.ft.com/content/31b63337-0531-47a6-a0ce-83f0dd7f395b",
+            "title": "European fusion start-up pushes for local supply chain as US dominates funding",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "European fusion start-up announced major German investment to localise superconducting-tape supply and reduce external dependence."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "European fusion start-up pushes for local supply chain as US dominates funding",
+      "reader_what": "European fusion start-up pushes for local supply chain as US dominates funding.",
+      "reader_why": "European fusion start-up announced major German investment to localise superconducting-tape supply and reduce external…",
+      "reader_more": "European fusion start-up announced major German investment to localise superconducting-tape supply and reduce external dependence. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "European fusion start-up pushes for local supply chain as US dominates funding.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "European fusion start-up announced major German investment to localise superconducting-tape supply and reduce external dependence.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "digital.sovereignty",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Financial Times",
+            "class": "other"
+          },
+          "mechanism": "secures",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026-09-22",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "European fusion start-up pushes for local supply chain as US dominates funding",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMivgFBVV95cUxQbDNsQ2VSNjNiSS1SbldyMVoxc0hOckhsa0dnX21XRTE4WWs0RlkxUmtlWkgwRnFkYjh6UWwxdGMzRTR4YTZvcFhSa1NJSHlPWmlkN1JnR29mT084RE9xc3N5dERrZVEySV81YnpobV8wZnVrUDZ3UFRKaVowTmgwZUFvV3A5eEt4RWNYQ3dMY3dSaHdIbFhzbUZHY2tpM1lkZGZScEtJeXpBLWdqZklpcUVjRHNXNWVCTkFNQV9R?oc=5",
+      "source_hash": "d3a8058c",
+      "identity_hash": "f6eca13224daaafe",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://www.eeas.europa.eu/delegations/philippines/eu-and-philippines-reach-substantial-agreement-free-trade-agreement_en."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.eeas.europa.eu/delegations/philippines/eu-and-philippines-reach-substantial-agreement-free-trade-agreement_en",
+            "title": "EU and Philippines reach substantial agreement on Free Trade Agreement",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "EU and Philippines reached substantial agreement on an FTA with explicit supply-chain resilience objectives."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU and Philippines reach substantial agreement on Free Trade Agreement",
+      "reader_what": "EU and Philippines reach substantial agreement on Free Trade Agreement.",
+      "reader_why": "EU and Philippines reached substantial agreement on an FTA with explicit supply-chain resilience objectives.",
+      "reader_more": "EU and Philippines reached substantial agreement on an FTA with explicit supply-chain resilience objectives. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "EU and Philippines reach substantial agreement on Free Trade Agreement.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "EU and Philippines reached substantial agreement on an FTA with explicit supply-chain resilience objectives.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.agreement",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EEAS",
+            "class": "other"
+          },
+          "mechanism": "partners",
+          "direction": "expands",
+          "status": "in_negotiation",
+          "status_date": "2026-09-22",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "EU and Philippines reach substantial agreement on Free Trade Agreement",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMikwFBVV95cUxNTmZDNkg5QmxRaXNCWjlsMFpGRGxVQWZQLVBjcUYwcFZ1WFdfVHhKWERBaGFVNVdPWW5jUjV6NXc0T3dNRW5LN1paSXIxMjQwTHZrNDFVUkFLSXBvdkRyNVNyUXFFNkpxLVM0dU5fZ2I3cEYxZEtFZ0hKTWp6Tlk1QS10UHJKdmVIMnlwLXJvbmVuZnM?oc=5",
+      "source_hash": "21c030bc",
+      "identity_hash": "fbcee40e9d91a8d5",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://euobserver.com/238539/trumps-joke-greenland-deal-offers-hope-for-us-eu-diplomacy/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://euobserver.com/238539/trumps-joke-greenland-deal-offers-hope-for-us-eu-diplomacy/",
+            "title": "Trump’s joke Greenland deal offers hope for US-EU diplomacy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "C",
+        "reason_code": "C_COMMENTARY_OR_ADVOCACY",
+        "reason": "EUobserver voice article is commentary on Greenland diplomacy rather than a new economic-security event."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Trump’s joke Greenland deal offers hope for US-EU diplomacy",
+      "reader_what": "Trump’s joke Greenland deal offers hope for US-EU diplomacy.",
+      "reader_why": "",
+      "reader_more": "EUobserver voice article is commentary on Greenland diplomacy rather than a new economic-security event.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Trump’s joke Greenland deal offers hope for US-EU diplomacy.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "EUobserver voice article is commentary on Greenland diplomacy rather than a new economic-security event.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMizgFBVV95cUxPNjNPQWxyaU81b0JsYVI5WTJyN0lBY3BabFFKOTl3NFh5UXJ2NllMQWtLcWh2N0VEay1iUE93eDhfSm45bjNIZ3Z4ZmFUVTlwdWljTjVOUm5ISGpFYUVSUGxsbGNXVHdJbVpmaGRWSkIySG8yRDY1RlprWGV5Z09FQ2JCdThZTjU2ZktoS0xMWmpoLS1SNWJYSkdGM1AtdmowQ1JIMkt6aEl1UzY4LXZzTU5aY01nNGFDQ1NmVlQ2T1pnV0hzU0pyQkNjVVNXQQ?oc=5",
+      "source_hash": "58218c6d",
+      "identity_hash": "84d8c56f3671bbeb",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin_or_redirect",
+            "note": "Supplied record was a feed/landing route without sufficient substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching substantive source at https://policy.trade.ec.europa.eu/news/demand-trade-defence-action-eu-commitment-tackle-unfair-trade-remain-strong-2025-2026-09-18_en."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://policy.trade.ec.europa.eu/news/demand-trade-defence-action-eu-commitment-tackle-unfair-trade-remain-strong-2025-2026-09-18_en",
+            "title": "Demand for trade defence action, EU commitment to tackle unfair trade remain strong in 2025",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "Commission’s new annual report documents continued high use of EU trade-defence investigations and measures."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Demand for trade defence action, EU commitment to tackle unfair trade remain strong in 2025",
+      "reader_what": "Demand for trade defence action, EU commitment to tackle unfair trade remain strong in 2025.",
+      "reader_why": "Commission’s new annual report documents continued high use of EU trade-defence investigations and measures.",
+      "reader_more": "Commission’s new annual report documents continued high use of EU trade-defence investigations and measures. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Demand for trade defence action, EU commitment to tackle unfair trade remain strong in 2025.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Commission’s new annual report documents continued high use of EU trade-defence investigations and measures.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.eu_countermeasures",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EU Trade",
+            "class": "other"
+          },
+          "mechanism": "regulates",
+          "direction": "expands",
+          "status": "adopted",
+          "status_date": "2026-09-18",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Demand for trade defence action, EU commitment to tackle unfair trade remain strong in 2025",
+          "confidence": "high"
+        }
+      ]
+    }
+  ]
+}
