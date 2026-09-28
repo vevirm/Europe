@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-09-28T07:39:00Z",
+  "generated_at": "2026-09-28T16:07:05Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -30179,8 +30179,771 @@
       "deep_scan_package_id": "worker-b-d7633140a07b",
       "claims": [],
       "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.2478/jlst-2026-0010": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "69d2d77e",
+      "identity_hash": "af4b1e9499230911",
+      "reader_title": "Corridor X: Strategic significance for logistics and transport in the Republic of Serbia",
+      "reader_what": "Corridor X: Strategic significance for logistics and transport in the Republic of Serbia.",
+      "reader_more": "Transport/logistics study is about Serbian corridor performance and competitiveness, not a substantive European economic-security mechanism.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "Corridor X: Strategic significance for logistics and transport in the Republic of Serbia.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Transport/logistics study is about Serbian corridor performance and competitiveness, not a substantive European economic-security mechanism.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching substantial_web_text from the supplied route; identity/provenance checked against the named publisher/source."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI identity matched the recovered publication: https://doi.org/10.2478/jlst-2026-0010."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://reference-global.com/article/10.2478/jlst-2026-0010",
+            "title": "Corridor X: Strategic significance for logistics and transport in the Republic of Serbia",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_ECONSEC",
+        "reason": "Transport/logistics study is about Serbian corridor performance and competitiveness, not a substantive European economic-security mechanism."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-28T16:07:04Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=95d507ec-b88a-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "70e4e60c",
+      "identity_hash": "a39c774b197a0a86",
+      "reader_what": "Publication Viewer Document viewer Open web version in a separate window Your browser does not support IFrames.",
+      "reader_why": "Official expert report directly assesses EU frontier-AI competitiveness, sovereignty, access and control.",
+      "reader_more": "Official expert report directly assesses EU frontier-AI competitiveness, sovereignty, access and control. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "Publication Viewer Document viewer Open web version in a separate window Your browser does not support IFrames.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Official expert report directly assesses EU frontier-AI competitiveness, sovereignty, access and control.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching pdf_excerpt from the supplied route; identity/provenance checked against the named publisher/source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://digital-strategy.ec.europa.eu/en/library/ai-office-publishes-frontier-ai-expert-findings-eu-competitiveness-sovereignty-and-security",
+            "title": "Enhancing competitiveness, sovereignty and security of the European Union in frontier AI - Publications Office of the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Official expert report directly assesses EU frontier-AI competitiveness, sovereignty, access and control."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "claims": [
+        {
+          "object": "digital.sovereignty",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Publications Office of the EU",
+            "class": "other"
+          },
+          "mechanism": "secures",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026-09-23",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Enhancing competitiveness, sovereignty and security of the European Union in frontier AI - Publications Office of the EU",
+          "confidence": "high",
+          "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=95d507ec-b88a-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+          "merit": 100,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:a39c774b197a0a86:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1017/elo.2025.10056": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "ef96f67f",
+      "identity_hash": "3a041254f5f1e053",
+      "reader_title": "Europe and the race to structural transformation: a narrow path ahead",
+      "reader_what": "Abstract Since the Global Financial Crisis, the EU (EU) has gone from crisis to crisis.",
+      "reader_more": "Substantive analysis of EU industrial transformation and policy capacity has an economic-security connection, but breadth makes admission judgment-sensitive. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "Abstract Since the Global Financial Crisis, the EU (EU) has gone from crisis to crisis.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Substantive analysis of EU industrial transformation and policy capacity has an economic-security connection, but breadth makes admission judgment-sensitive.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching substantial_web_text from the supplied route; identity/provenance checked against the named publisher/source."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI identity matched the recovered publication: https://doi.org/10.1017/elo.2025.10056."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://doi.org/10.1017/elo.2025.10056",
+            "title": "Europe and the race to structural transformation: a narrow path ahead",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Substantive analysis of EU industrial transformation and policy capacity has an economic-security connection, but breadth makes admission judgment-sensitive."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Law Open",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "announced",
+          "status_date": "2026-03-30",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Europe and the race to structural transformation: a narrow path ahead",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1017/elo.2025.10056",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:3a041254f5f1e053:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1371/journal.pstr.0000265": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "d569415a",
+      "identity_hash": "a2fb18aed5e7c085",
+      "reader_title": "Conflicts and energy transitions: The case of the 2026 Iran War",
+      "reader_what": "Oil and LNG price shocks will be global.",
+      "reader_more": "Opinion article on conflict and energy transition is global and does not establish a sufficiently substantive European economic-security finding.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "Oil and LNG price shocks will be global.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Opinion article on conflict and energy transition is global and does not establish a sufficiently substantive European economic-security finding.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching substantial_web_text from the supplied route; identity/provenance checked against the named publisher/source."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI identity matched the recovered publication: https://doi.org/10.1371/journal.pstr.0000265."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://journals.plos.org/sustainabilitytransformation/article?id=10.1371%2Fjournal.pstr.0000265",
+            "title": "Conflicts and energy transitions: The case of the 2026 Iran War",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_ECONSEC",
+        "reason": "Opinion article on conflict and energy transition is global and does not establish a sufficiently substantive European economic-security finding."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.48550/arxiv.2607.09951": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "80e9137a",
+      "identity_hash": "6d2bd5a548730614",
+      "reader_title": "Macroeconomic Risks from Maritime Trade Disruptions",
+      "reader_what": "The losses stem from disruptions to the flow of intermediate inputs that are complementary in downstream production.",
+      "reader_more": "Model quantifies macroeconomic exposure to maritime chokepoint disruption including a Russia-Europe closure scenario; Europe is substantive but not the sole focus. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "The losses stem from disruptions to the flow of intermediate inputs that are complementary in downstream production.",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Model quantifies macroeconomic exposure to maritime chokepoint disruption including a Russia-Europe closure scenario; Europe is substantive but not the sole focus.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching substantial_web_text from the supplied route; identity/provenance checked against the named publisher/source."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI identity matched the recovered publication: https://doi.org/10.48550/arxiv.2607.09951."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://arxiv.org/abs/2607.09951",
+            "title": "Macroeconomic Risks from Maritime Trade Disruptions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Model quantifies macroeconomic exposure to maritime chokepoint disruption including a Russia-Europe closure scenario; Europe is substantive but not the sole focus."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "claims": [
+        {
+          "object": "supply_chain.diversification",
+          "secondary_objects": [],
+          "actor": {
+            "name": "arXiv",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-07-10",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Macroeconomic Risks from Maritime Trade Disruptions",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.48550/arxiv.2607.09951",
+          "merit": 51,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:6d2bd5a548730614:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.atlanticcouncil.org/issue/geopolitics-energy-security/": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "a061598e",
+      "identity_hash": "dd86e541c14d27a7",
+      "reader_title": "Geopolitics & Energy Security",
+      "reader_what": "as a global power, write Maksym Beznosiuk and Will Dixon.",
+      "reader_more": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product.",
+      "deep_analysis": {
+        "work_kind": "topic page",
+        "research_question": "",
+        "main_finding": "as a global power, write Maksym Beznosiuk and Will Dixon.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching substantial_web_text from the supplied route; identity/provenance checked against the named publisher/source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.atlanticcouncil.org/issue/geopolitics-energy-security/",
+            "title": "Geopolitics & Energy Security",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_GENERIC_PAGE",
+        "reason": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.atlanticcouncil.org/issue/security-defense/": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "7c69d1e2",
+      "identity_hash": "d3b973f4e7b1ad76",
+      "reader_title": "Security & Defense",
+      "reader_what": "Policy makers must prepare for potential conventional warfare, terrorism and other asymmetrical attacks.",
+      "reader_more": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product.",
+      "deep_analysis": {
+        "work_kind": "topic page",
+        "research_question": "",
+        "main_finding": "Policy makers must prepare for potential conventional warfare, terrorism and other asymmetrical attacks.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching substantial_web_text from the supplied route; identity/provenance checked against the named publisher/source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.atlanticcouncil.org/issue/security-defense/",
+            "title": "Security & Defense",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_GENERIC_PAGE",
+        "reason": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1002/ese3.70648": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "fda60e67",
+      "identity_hash": "ba6d1bfaedc7a645",
+      "reader_what": "ABSTRACT Hydrogen is considered a low‐carbon‐emission gas when produced from renewable energy sources such.",
+      "reader_more": "Technical hydrogen-infrastructure safety database does not substantively analyse European economic-security dependencies, coercion, capacity or policy.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "ABSTRACT Hydrogen is considered a low‐carbon‐emission gas when produced from renewable energy sources such.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Technical hydrogen-infrastructure safety database does not substantively analyse European economic-security dependencies, coercion, capacity or policy.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching pdf_excerpt from the supplied route; identity/provenance checked against the named publisher/source."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI identity matched the recovered publication: https://doi.org/10.1002/ese3.70648."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://doi.org/10.1002/ese3.70648",
+            "title": "Introduction of the SHIMMER Database for Safe Hydrogen Injection in the European Natural Gas Infrastructure",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_ECONSEC",
+        "reason": "Technical hydrogen-infrastructure safety database does not substantively analyse European economic-security dependencies, coercion, capacity or policy."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=e156afd5-b1ce-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "8a10e968",
+      "identity_hash": "6bcb9bf22ec6bd98",
+      "reader_what": "without amendments, the Council would approve the European Parliament's position.",
+      "reader_more": "Parliamentary first-reading outcome is a formal trade measure, but not a completed analytical evidence product for Strand A.",
+      "deep_analysis": {
+        "work_kind": "policy/report analysis",
+        "research_question": "",
+        "main_finding": "without amendments, the Council would approve the European Parliament's position.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Parliamentary first-reading outcome is a formal trade measure, but not a completed analytical evidence product for Strand A.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching pdf_excerpt from the supplied route; identity/provenance checked against the named publisher/source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://op.europa.eu/",
+            "title": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on temporary trade-liberalisation measures applicable to Armenian products - Outcome of the European Parliament’s first reading (Strasbourg, 14 to 17 September 2026) - Publications Office of the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_EVIDENCE_PRODUCT",
+        "reason": "Parliamentary first-reading outcome is a formal trade measure, but not a completed analytical evidence product for Strand A."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.atlanticcouncil.org/issue/space-security/": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "3990425c",
+      "identity_hash": "711542e7e9f938c3",
+      "reader_title": "Space Security",
+      "reader_what": "Developments in counter-space assets have serious implications for security and stability in the 21st century.",
+      "reader_more": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product.",
+      "deep_analysis": {
+        "work_kind": "topic page",
+        "research_question": "",
+        "main_finding": "Developments in counter-space assets have serious implications for security and stability in the 21st century.",
+        "method_or_basis": "Recovered source and bibliographic/event identity were checked against the supplied record.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching substantial_web_text from the supplied route; identity/provenance checked against the named publisher/source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.atlanticcouncil.org/issue/space-security/",
+            "title": "Space Security",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_GENERIC_PAGE",
+        "reason": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.eib.org/files/publications/20260252-220926-investing-in-european-security-and-defence-en.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_c",
+      "corpus_scope": "main",
+      "source_hash": "0573c16e",
+      "identity_hash": "8546e82f7beea87a",
+      "reader_title": "Investing in European security and defence",
+      "reader_what": "Investing in European security and defence",
+      "reader_why": "EIB released a current guide documenting expanded financing support for European security and defence capacity.",
+      "reader_more": "EIB released a current guide documenting expanded financing support for European security and defence capacity. The result is grounded in the recovered source rather than scanner wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Investing in European security and defence",
+        "method_or_basis": "Recovered primary/publisher material and source metadata were used; no causal claims were added beyond the source.",
+        "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+        "radar_relevance": "EIB released a current guide documenting expanded financing support for European security and defence capacity.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contained matching pdf_excerpt from the supplied route; identity/provenance checked against the named publisher/source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_primary_source",
+            "url": "https://www.eib.org/en/projects/topics/security-defence/index",
+            "title": "Investing in European security and defence",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "EIB released a current guide documenting expanded financing support for European security and defence capacity."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "claims": [
+        {
+          "object": "defence.production_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Investment Bank",
+            "class": "other"
+          },
+          "mechanism": "funds",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026-09-22",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Source supports the stated finding; interpretation is limited to what the recovered work or event establishes.",
+          "text": "Investing in European security and defence",
+          "confidence": "high",
+          "record_key": "link:https://www.eib.org/files/publications/20260252-220926-investing-in-european-security-and-defence-en.pdf",
+          "merit": 97,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:8546e82f7beea87a:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-09-28T07:39:00Z"
+  "claims_updated_at": "2026-09-28T16:07:05Z"
 }

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-admission-v1",
-  "updated_at": "2026-09-28T07:39:00Z",
+  "updated_at": "2026-09-28T16:07:05Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "decision": "keep",
@@ -3948,12 +3948,16 @@
       "source": "manual_compact_curator_v1"
     },
     "link:https://www.eib.org/files/publications/20260252-220926-investing-in-european-security-and-defence-en.pdf": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_CURRENT",
+      "reason": "EIB released a current guide documenting expanded financing support for European security and defence capacity.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMisgFBVV95cUxQYVFOM2RjbEFhMF81X0tCT2hIdVp0RWtJdjFKUDdTY0VKWDdkWlExR051LUt0NWg1RW5XQ3gzM0lfQ3E1dGQxRUxrcVJoNHBCeE5NLVlYN1dwZ25XN0NzYUN6Tnc0MzVCMGtueEtyMThzSVpOT0NBNEQwTlNTQVNxbEl3ZnNZX1pEVGNIYnY4YzdzZER6Tm5XV0dvU3RQM09kQ21pd19wVWVsbHNkNVJTOG1n?oc=5": {
       "decision": "keep",
@@ -5217,6 +5221,126 @@
       "updated_at": "2026-09-28T07:39:00Z",
       "deep_scan_package_id": "worker-b-d7633140a07b",
       "verification_note": "Identity and substantive evidence were matched to the supplied record; the admission decision is based on the recovered work rather than scanner interpretation.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.2478/jlst-2026-0010": {
+      "decision": "drop",
+      "target_strand": "A",
+      "reason_code": "A_NOT_SUBSTANTIVE_ECONSEC",
+      "reason": "Transport/logistics study is about Serbian corridor performance and competitiveness, not a substantive European economic-security mechanism.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-09-28T16:07:04Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence.",
+      "duplicate_of": ""
+    },
+    "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=95d507ec-b88a-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
+      "decision": "keep",
+      "target_strand": "A",
+      "reason_code": "A_SUBSTANTIVE_EU_RI",
+      "reason": "Official expert report directly assesses EU frontier-AI competitiveness, sovereignty, access and control.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.1017/elo.2025.10056": {
+      "decision": "review",
+      "target_strand": "A",
+      "reason_code": "A_SUBSTANTIVE_EU_RI",
+      "reason": "Substantive analysis of EU industrial transformation and policy capacity has an economic-security connection, but breadth makes admission judgment-sensitive.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.1371/journal.pstr.0000265": {
+      "decision": "drop",
+      "target_strand": "A",
+      "reason_code": "A_NOT_SUBSTANTIVE_ECONSEC",
+      "reason": "Opinion article on conflict and energy transition is global and does not establish a sufficiently substantive European economic-security finding.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.48550/arxiv.2607.09951": {
+      "decision": "review",
+      "target_strand": "A",
+      "reason_code": "A_SUBSTANTIVE_EU_RI",
+      "reason": "Model quantifies macroeconomic exposure to maritime chokepoint disruption including a Russia-Europe closure scenario; Europe is substantive but not the sole focus.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence.",
+      "duplicate_of": ""
+    },
+    "link:https://www.atlanticcouncil.org/issue/geopolitics-energy-security/": {
+      "decision": "drop",
+      "target_strand": "A",
+      "reason_code": "A_GENERIC_PAGE",
+      "reason": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence.",
+      "duplicate_of": ""
+    },
+    "link:https://www.atlanticcouncil.org/issue/security-defense/": {
+      "decision": "drop",
+      "target_strand": "A",
+      "reason_code": "A_GENERIC_PAGE",
+      "reason": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.1002/ese3.70648": {
+      "decision": "drop",
+      "target_strand": "A",
+      "reason_code": "A_NOT_SUBSTANTIVE_ECONSEC",
+      "reason": "Technical hydrogen-infrastructure safety database does not substantively analyse European economic-security dependencies, coercion, capacity or policy.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence.",
+      "duplicate_of": ""
+    },
+    "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=e156afd5-b1ce-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
+      "decision": "drop",
+      "target_strand": "A",
+      "reason_code": "A_NOT_EVIDENCE_PRODUCT",
+      "reason": "Parliamentary first-reading outcome is a formal trade measure, but not a completed analytical evidence product for Strand A.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence.",
+      "duplicate_of": ""
+    },
+    "link:https://www.atlanticcouncil.org/issue/space-security/": {
+      "decision": "drop",
+      "target_strand": "A",
+      "reason_code": "A_GENERIC_PAGE",
+      "reason": "Atlantic Council issue hub is a navigation/topic page, not a discrete completed evidence product.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-09-28T16:07:05Z",
+      "deep_scan_package_id": "worker-a-f683543333a5",
+      "verification_note": "Identity and provenance matched the supplied record; admission was reassessed from recovered evidence.",
       "duplicate_of": ""
     }
   }

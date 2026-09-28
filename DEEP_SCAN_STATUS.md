@@ -6,26 +6,26 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **389** (Main **389** + Historical **0**)
-- Automatic queue still needing V2 verification: **1167** (Main **209** + Historical **958**)
+- Authoritative V2 verified: **400** (Main **400** + Historical **0**)
+- Automatic queue still needing V2 verification: **1156** (Main **198** + Historical **958**)
 - Currently assigned to workers: **78** (Main **78** + Historical **0**)
-- Bounded access-recovery retries still eligible: **78**
+- Bounded access-recovery retries still eligible: **96**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **1089**
+- Automatic queue pending and not yet assigned: **1078**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-f683543333a5`
+- Current package: `worker-a-9116ea06edf4`
 - Assigned unresolved records: **36**
-  1. `link:https://doi.org/10.2478/jlst-2026-0010` — Corridor X: Strategic significance for logistics and transport in the Republic of Serbia
-  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=95d507ec-b88a-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Enhancing competitiveness, sovereignty and security of the European Union in frontier AI - Publications Office of the EU
-  3. `link:https://doi.org/10.1111/rego.70156` — Chain Reactions: How Businesses Plan to Respond to the EU Deforestation Regulation in Brazil, the Congo Basin, and Europe
-  4. `link:https://doi.org/10.1017/elo.2025.10056` — Europe and the race to structural transformation: a narrow path ahead
-  5. `link:https://doi.org/10.1371/journal.pstr.0000265` — Conflicts and energy transitions: The case of the 2026 Iran War
-  6. `link:https://doi.org/10.48550/arxiv.2607.09951` — Macroeconomic Risks from Maritime Trade Disruptions
-  7. `link:https://www.atlanticcouncil.org/issue/geopolitics-energy-security/` — Geopolitics & Energy Security
-  8. `link:https://www.atlanticcouncil.org/issue/security-defense/` — Security & Defense
+  1. `link:https://news.google.com/rss/articles/CBMihAFBVV95cUxQWDlTbEtkcmpvbDkxaVFjaFdzMkpjWXJXRUdvcERmb2NQZXIzdjNyRjdmMmlEd2tsYVpsMkNQbFlMU2w1dnhvM09ZbjNMRGZpd3hjMVZWZW1MYmxnQVoxOThpSmRvLXRTU3JiUWEtbktMY1h1S2VFclozOFJ3QXI3dnVYZ0w?oc=5` — European diesel prices climb over prospect of US export ban
+  2. `link:https://news.google.com/rss/articles/CBMiswFBVV95cUxQRGNmdDc5NllJOGQyamFRNXBnT2RleXZsMlN0aG90SzA5RlBoMkx2UGdQRElpNTNSREQtdldfcTVkMEZwbFBZU2QxcjhlNTFYQ3hGSGtOak16WW5oWUdCaUNxZGJnQ3k4RzlhNkl3cW9RT01ReGRiN0w2R2piZUhPV01lOFpWd2NLVVlkQ2laQUFDTHBMaWVhVnhsUm5tM3F4YV9HVXdEbXRsV2dWaEhvNWkxcw?oc=5` — Azerbaijan frees French prisoner after EU lifts sanctions on Russian billionaire
+  3. `link:https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdm9BcWNoRlkzRVA1RVFkRUNuZ3pmVzVPNXdmMDFzWjg4RGlEcmY5RkxPWmhVWGYyTXotZ3B0d2xMWWZmcDV5QV9NNGp2d1p4enBBZElLbjNlNzdKMHpMajd2ZlJiM0pscDhlTGNlSXc4QXQ5aUtJMEpONHlWTTd5SDV1ZlNvOGx4Z3AwU3ZsWUs3MVYzdGV3SlZjQ3J2X29GS1NWWlR2VzdPT2tRdUJNc0ZVY0tuc1lxN3dfYVhmNGtndw?oc=5` — Portugal says entry into grid operator REN won't affect China's State Grid
+  4. `link:https://news.google.com/rss/articles/CBMimAFBVV95cUxOMHp3OHZFbmpMOEFGSXF6VnJxNE5TTTQxREVVaVE3UU9GZ0tkdmQzZ1otXzd1RXMwVmFJVEktV3JQUnZ3eU9fd1E2cGE0enVhZmFDZy04T2JIZ2tJSjU0UnU3UDJmaUdKV2dCQlFuM2paVWFYRlVMVEdlcmlFY0lwQkhUNm90ZThCQmhMdEE0bF9kRnE1TzZ1bg?oc=5` — France and Slovakia remove Russian oligarchs from EU sanctions
+  5. `link:https://news.google.com/rss/articles/CBMilAFBVV95cUxONFVVc3ZMMlVNd21TMjAtZ0lSOVQ1Y1FZZXgzaTI2dVMtZk9OeHN2YXdQYTY4NlFCWEFXRldKQ3FEb3RLR2FldUo3c0VseHByOWMwMFljZ3Y5c3Zyc0dZaFdzR2NXcTR5eFhCMnZYVjFET1IxT0pTQ3ZBUEl0Z05JdTdRRnRsSFJrVFBybkpzMU9EN0lw?oc=5` — EU deadlocked over France’s bid to take Russian tycoon off sanctions list
+  6. `link:https://news.google.com/rss/articles/CBMivAFBVV95cUxOUjd6SnhEMGdGc0lCWnRQZk1EcEFCcHBoamZJR0ZDQnJRNVVHVHdTbU1RT0Ywc2g3ZEgtX014NTJObldia1NXWjl1N1psZlRVTTVkaThLRXA0Rk83WG1LcnVab1o5MHVSX3h1emVqOHJocmdnMU1YbHV3NzZwX2xzcUtyZEpfTHl0N2VBWVk1cHM2bjFMcmZpTEJSVV9HdGdleWxhSU9FbWd1U2hTVUxUZnUxYzZ1YUtSb1h5UQ?oc=5` — Russia’s hybrid war and Trump’s tantrums are pushing Europe towards real strategic autonomy
+  7. `link:https://news.google.com/rss/articles/CBMipwFBVV95cUxNQVo4aDNrTmNzMllrUVotRWpBOHFjYkRrRmNHUVNtczZKQkl2SVlGYUhoTGcxVEdNRFh1QlFJem5EQTFYYlVMNWhfYUVIUVppYVlTNUhwdzBHT3BHV0hudlF4SFQxazhxcnVQczhCM1ZwZlRnMVBtUjdkanEwcE5nMjhWYzNEZFFZT1Q4VS13TEhJdTFUU1p3Y0lfM2toQTZVYmh5X1A2Zw?oc=5` — Rare earths: Chinese study gives Europe reason to diversify - Table.Briefings
+  8. `link:https://borderlex.net/2026/09/18/wto-reform-push-takes-aim-at-most-favoured-nation-rule/` — WTO reform push takes aim at most-favoured nation rule - Borderlex - European trade policy
   - … plus 28 more in the package manifest
 
 ### Worker B
