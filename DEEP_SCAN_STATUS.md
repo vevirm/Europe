@@ -6,12 +6,12 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **464** (Main **464** + Historical **0**)
-- Automatic queue still needing V2 verification: **1110** (Main **152** + Historical **958**)
+- Authoritative V2 verified: **472** (Main **464** + Historical **8**)
+- Automatic queue still needing V2 verification: **1102** (Main **152** + Historical **950**)
 - Currently assigned to workers: **78** (Main **20** + Historical **58**)
-- Bounded access-recovery retries still eligible: **138**
+- Bounded access-recovery retries still eligible: **139**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **1032**
+- Automatic queue pending and not yet assigned: **1024**
 
 ## Worker lanes
 
@@ -29,16 +29,16 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-4eb7623e3b6c`
+- Current package: `worker-b-2d171e1839d6`
 - Assigned unresolved records: **36**
-  1. `historical:id:64f7d996c94f7cd1` — “Economic Security” Done Badly Will Make Us Less Economically Secure
-  2. `historical:id:6d00e26535bd49ca` — Let’s Get Critical: Critical Minerals Mini Deals as Evolving Models of Trade Cooperation
-  3. `historical:id:910592fe83ac1500` — The digital euro - strengthening Europe's payments ecosystem | Bank for International Settlements
-  4. `historical:id:2433c92388ae268b` — Mining for Europe's future: Critical raw materials, public attitudes and risks in enlargement partners
-  5. `historical:id:250a74bab8cf52ee` — How EU industrial policy got its groove back: securitisation and governance shifts in the geoeconomic era
-  6. `historical:id:0e3b1813e6c28103` — Centimanes v. Titans: right-wing populist governments’ treatment of foreign multinationals in East Central Europe
-  7. `historical:id:56f43b36e4bd7bd7` — A pivot or a saga? How Turkish foreign policy is torn between domestic pressures and economic needs – CEPS
-  8. `historical:id:2b9abbfbed136d9d` — China and the EU-US rift + Economic security + Car imports from China
+  1. `historical:id:2433c92388ae268b` — Mining for Europe's future: Critical raw materials, public attitudes and risks in enlargement partners
+  2. `historical:id:0e3b1813e6c28103` — Centimanes v. Titans: right-wing populist governments’ treatment of foreign multinationals in East Central Europe
+  3. `historical:id:9a02512190d6359b` — Out of Many, Many: Variation in East Central Europe Financial Governance Despite the EU's Single Market
+  4. `historical:id:973f522e3a37f35a` — Put to the test: the Eastern Partnership and the EU - Institut Jacques Delors
+  5. `historical:id:e7b6ff5842d21c18` — Transatlantic Approaches to Outbound Investment Screening
+  6. `historical:id:2728752f23f2af6b` — Trade and Economic Security
+  7. `historical:id:7ad55e27f4a2ce70` — The digital euro in a fragmenting world - ensuring Europe's resilience and autonomy in payments | Bank for International Settlements
+  8. `historical:id:2ecd9537efd7b69d` — The digital euro - anchoring Europe's strategic autonomy in a digital future | Bank for International Settlements
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
