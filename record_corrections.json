@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-record-corrections-v1",
-  "updated_at": "2026-09-29T15:24:56Z",
+  "updated_at": "2026-09-29T15:55:53Z",
   "records": {
     "link:https://doi.org/10.1080/09662839.2026.2709844": {
       "fields": {
@@ -93,6 +93,39 @@
       ],
       "updated_at": "2026-09-29T15:24:41Z",
       "deep_scan_package_id": "worker-b-e4f5ce344574"
+    },
+    "link:https://www.atlanticcouncil.org/wp-content/uploads/2026/07/beyond-the-corridor-imec-as-a-network-of-routes.pdf": {
+      "fields": {
+        "title": "Beyond the corridor: IMEC as a network of routes",
+        "authors": "Afaq Hussain; Maisoon H. Kafafy",
+        "date": "2026-06-30"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "The PDF cover and Atlantic Council report page identify the underlying report and authors more accurately than the scanner headline/byline.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "evidence": [
+        "https://www.atlanticcouncil.org/wp-content/uploads/2026/07/beyond-the-corridor-imec-as-a-network-of-routes.pdf",
+        "https://www.atlanticcouncil.org/in-depth-research-reports/report/a-network-of-corridors-is-the-only-reliable-hedge-against-middle-east-chokepoint-disruptions/"
+      ],
+      "updated_at": "2026-09-29T15:44:04Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56"
+    },
+    "historical:id:2e7d584322aa1076": {
+      "fields": {
+        "date": "2022-05-10"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "The recovered publisher/issuer evidence gives the corrected bibliographic date/type rather than the scanner placeholder.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://egmontinstitute.be/preventing-the-critical-minerals-crisis/"
+      ],
+      "updated_at": "2026-09-29T15:46:05Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56"
     }
   }
 }

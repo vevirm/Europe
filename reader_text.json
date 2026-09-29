@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-09-29T15:24:56Z",
+  "generated_at": "2026-09-29T15:55:53Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -45077,8 +45077,3306 @@
         }
       ],
       "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1057/s41599-026-08607-9": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "5f4111f7",
+      "identity_hash": "5f5a66527a260098",
+      "reader_title": "China-Europe trade routes are diversifying under geopolitical and climate pressure",
+      "reader_what": "The review finds China-Europe trade is shifting toward multiple routes, including rail and Arctic options.",
+      "reader_why": "Route diversification can reduce disruption exposure but creates new geopolitical and environmental risks.",
+      "reader_more": "The article reviews literature on climate and geopolitical risks affecting China-Europe trade. It describes a shift from single-channel logistics toward multiple routes, including the China-Europe Railway Express and Arctic options. The authors argue that backup channels and cooperation can improve resilience, while conflict, insurance costs and climate uncertainty still create vulnerabilities.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed bibliometric review",
+        "research_question": "How are climate change and geopolitical risks reshaping China-Europe trade routes and responses?",
+        "main_finding": "China-Europe trade routes are diversifying, with new rail and Arctic options presented as resilience measures against disruption.",
+        "method_or_basis": "Bibliometric analysis and literature review of trade-route, climate and geopolitical-risk research.",
+        "qualification": "The paper is a bibliometric review rather than a causal estimate; its route-resilience conclusions synthesize published evidence and prospective trends.",
+        "radar_relevance": "Directly addresses European trade connectivity, route diversification and geopolitical supply-chain resilience.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened the DOI-linked Nature/Springer article page; title, six authors, publication date 2026-08-10 and DOI 10.1057/s41599-026-08607-9 matched the job."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved DOI 10.1057/s41599-026-08607-9 to the matching Humanities and Social Sciences Communications article."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search returned the same Nature article and matching bibliographic metadata."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.nature.com/articles/s41599-026-08607-9",
+            "title": "The obstacles and changes in Sino-European trade routes in the twenty-first century due to climate change and geopolitical risks",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publisher evidence confirms identity and substantive content. The work directly analyzes China-Europe trade-route diversification and resilience under geopolitical and climate risks."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct evidence on European trade-route resilience, diversification and chokepoint/geopolitical exposure fits Strand A economic-security criteria."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:43:45Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "critical_infrastructure.resilience",
+          "secondary_objects": [
+            "trade.market_access"
+          ],
+          "actor": {
+            "name": "China and Europe",
+            "class": "other"
+          },
+          "mechanism": "diversifies",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2026-08-10",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The paper is a bibliometric review rather than a causal estimate; its route-resilience conclusions synthesize published evidence and prospective trends.",
+          "text": "The reviewed evidence describes China-Europe trade routes as diversifying toward multiple rail and Arctic channels in response to geopolitical and climate risks.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1057/s41599-026-08607-9",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:5f5a66527a260098:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.atlanticcouncil.org/wp-content/uploads/2026/07/beyond-the-corridor-imec-as-a-network-of-routes.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "a22c9c56",
+      "identity_hash": "04ec2b30de66d4bd",
+      "reader_title": "Expanded IMEC routes could reduce dependence on Middle East chokepoints",
+      "reader_what": "The report proposes a networked IMEC design linking Europe and India through several Middle Eastern routes.",
+      "reader_why": "Multiple routes could improve resilience when maritime chokepoints are disrupted.",
+      "reader_more": "The Atlantic Council report argues that IMEC should be treated as a network rather than a single corridor. It proposes complementary nodes through Oman, Saudi Arabia, Egypt and Syria, with Europe as the Mediterranean endpoint. The report estimates that an expanded network could absorb a substantial share of container traffic otherwise exposed to Hormuz disruption, but those figures are modeled scenarios rather than observed performance.",
+      "deep_analysis": {
+        "work_kind": "policy report",
+        "research_question": "How could IMEC be redesigned as a network of routes to improve trade resilience?",
+        "main_finding": "The report argues that a multi-route IMEC network could hedge Europe-India trade against Middle East chokepoint disruptions.",
+        "method_or_basis": "Infrastructure and trade-flow analysis with scenario estimates and route-level policy recommendations.",
+        "qualification": "The report models and advocates an expanded IMEC network; its traffic and trade estimates are scenario-based rather than observed outcomes.",
+        "radar_relevance": "Direct evidence and policy analysis on Europe-linked trade infrastructure, diversification and chokepoint resilience.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened the Atlantic Council PDF. The cover identifies Afaq Hussain and Maisoon H. Kafafy and the PDF title 'Beyond the corridor: IMEC as a network of routes'."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this Atlantic Council report."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Atlantic Council search results confirmed the June 30, 2026 report page and authors, under the web headline 'A network of corridors is the only reliable hedge against Middle East chokepoint disruptions'."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://www.atlanticcouncil.org/wp-content/uploads/2026/07/beyond-the-corridor-imec-as-a-network-of-routes.pdf",
+            "title": "Beyond the corridor: IMEC as a network of routes",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_landing_page",
+            "url": "https://www.atlanticcouncil.org/in-depth-research-reports/report/a-network-of-corridors-is-the-only-reliable-hedge-against-middle-east-chokepoint-disruptions/",
+            "title": "A network of corridors is the only reliable hedge against Middle East chokepoint disruptions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The supplied PDF is authentic Atlantic Council research. Its cover title differs from the website headline, so title/authorship are corrected to the document itself."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The report directly concerns Europe-linked transport infrastructure, chokepoint dependence, corridor diversification and resilience."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:44:04Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "critical_infrastructure.resilience",
+          "secondary_objects": [
+            "trade.market_access"
+          ],
+          "actor": {
+            "name": "Atlantic Council",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2026-06-30",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The report models and advocates an expanded IMEC network; its traffic and trade estimates are scenario-based rather than observed outcomes.",
+          "text": "The report advocates expanding IMEC into a network of routes to reduce Europe-India trade exposure to Middle East chokepoint disruptions.",
+          "confidence": "high",
+          "record_key": "link:https://www.atlanticcouncil.org/wp-content/uploads/2026/07/beyond-the-corridor-imec-as-a-network-of-routes.pdf",
+          "merit": 70,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:04ec2b30de66d4bd:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:b13d4236ef741b9f": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "15a0a8b8",
+      "identity_hash": "5584caeb42384cb8",
+      "reader_title": "EU institutions frame the digital euro as a sovereignty and resilience project",
+      "reader_what": "The study finds the ECB and Commission link the digital euro to innovation, integration and strategic autonomy.",
+      "reader_why": "Payment infrastructure has become part of the EU’s effort to reduce strategic financial dependencies.",
+      "reader_more": "Using legislative texts, institutional documents and expert interviews, the article traces how the ECB and Commission promoted the digital euro. It finds a shared narrative connecting financial innovation, a more integrated payments market and monetary sovereignty. The project remains politically contested, including over holding limits, remuneration and institutional competences.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed qualitative case study",
+        "research_question": "How and why have EU institutions mobilised around the digital euro?",
+        "main_finding": "The ECB and Commission promoted the digital euro through a shared narrative of innovation, market integration and geopolitical resilience.",
+        "method_or_basis": "Qualitative case study using legislative texts, institutional documents, policy analysis and expert interviews.",
+        "qualification": "The study explains institutional motives and narratives around the proposed digital euro; it does not establish that a digital euro has already delivered strategic-autonomy effects.",
+        "radar_relevance": "Direct evidence on EU financial infrastructure, monetary sovereignty and strategic-autonomy policy.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "The job DOI and repository copy identify Sebastian Heidebrecht's article on EU institutions and the digital euro."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/jcms.70062 resolved to the Wiley article with matching title, author and first-publication date 2025-12-15."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search returned both the Wiley publisher page and University of Vienna research record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/jcms.70062",
+            "title": "How and Why EU Institutions Promote the Digital Euro: The Politics of a Central Bank Digital Currency (CBDC)",
+            "evidence_used": true
+          },
+          {
+            "kind": "institutional_repository",
+            "url": "https://ucrisportal.univie.ac.at/en/publications/how-and-why-eu-institutions-promote-the-digital-euro-the-politics/",
+            "title": "How and why EU Institutions Promote the Digital Euro: The Politics of a Central Bank Digital Currency (CBDC)",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publisher full text and the author's university record confirm identity, method and findings."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The article directly analyzes EU payment dependence, monetary sovereignty and strategic autonomy through the digital-euro policy process."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:44:24Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "finance.payment_infrastructure",
+          "secondary_objects": [
+            "finance.euro_international_role"
+          ],
+          "actor": {
+            "name": "European Central Bank and European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2025-12-15",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The study explains institutional motives and narratives around the proposed digital euro; it does not establish that a digital euro has already delivered strategic-autonomy effects.",
+          "text": "The study finds that the ECB and Commission promote the digital euro partly to strengthen monetary sovereignty and EU payment resilience.",
+          "confidence": "high",
+          "record_key": "historical:id:b13d4236ef741b9f",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:5584caeb42384cb8:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:19f2d49289e7c3cd": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "21567a21",
+      "identity_hash": "ba8a98eab3cb4881",
+      "reader_title": "ECFR argues digital deregulation could increase EU exposure to US coercion",
+      "reader_what": "The commentary links pressure on EU digital rules to wider US trade leverage over Europe.",
+      "reader_why": "It frames digital regulation as part of Europe’s exposure to cross-sector economic coercion.",
+      "reader_more": "The ECFR commentary argues that pressure to weaken EU digital rules should be understood alongside US tariff leverage. It interprets this as a coercion risk involving Europe’s dependence on US technology firms and broader trade negotiations. Because the article is an argued policy commentary rather than a causal study, its mechanism should be treated as an interpretation requiring judgment.",
+      "deep_analysis": {
+        "work_kind": "policy commentary",
+        "research_question": "",
+        "main_finding": "The author argues that softening EU digital regulation would increase European vulnerability to US economic pressure.",
+        "method_or_basis": "Policy analysis of the EU digital omnibus proposal, US statements and the structure of EU-US technology dependence.",
+        "qualification": "This is an ECFR policy commentary making an interpretive vulnerability argument, not a causal empirical study of the omnibus package's effects.",
+        "radar_relevance": "Directly concerns EU exposure to economic coercion and strategic technology dependence.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened the ECFR commentary; title, author José Ignacio Torreblanca and date 2025-12-03 matched the job."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this ECFR commentary."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search returned the same ECFR article and matching publication metadata."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecfr.eu/article/thrown-under-the-omnibus-how-the-eus-digital-deregulation-fuels-us-coercion/",
+            "title": "Thrown under the omnibus: How the EU’s digital deregulation fuels US coercion",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The ECFR source is authentic and substantive, but the key causal/vulnerability conclusion is policy commentary rather than an empirical estimate."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "It directly addresses alleged US economic coercion against EU digital regulation, but admission merits human judgment because the central mechanism is argued in commentary rather than demonstrated empirically."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:44:44Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "coercion.incident",
+          "secondary_objects": [
+            "digital.sovereignty"
+          ],
+          "actor": {
+            "name": "United States",
+            "class": "third_country"
+          },
+          "mechanism": "coerces",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-12-03",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This is an ECFR policy commentary making an interpretive vulnerability argument, not a causal empirical study of the omnibus package's effects.",
+          "text": "The ECFR commentary interprets US linkage of trade concessions to weaker EU digital rules as economic coercion that could deepen European vulnerability.",
+          "confidence": "medium",
+          "record_key": "historical:id:19f2d49289e7c3cd",
+          "merit": 71,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:ba8a98eab3cb4881:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:7a77d64ecea562f3": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "7d700caa",
+      "identity_hash": "d4d07090158c32df",
+      "reader_title": "The Supply Chain Disruption Survey: A new survey on knowledge flows in global supply chains",
+      "reader_what": "WORKING PAPER November 2025 The Supply Chain Disruption Survey: A new survey on knowledge ﬂ ows in global supply chains",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "WORKING PAPER November 2025 The Supply Chain Disruption Survey: A new survey on knowledge ﬂ ows in global supply chains MÁRTA BISZTRAY, GÁBOR BÉKÉS, ALEXANDROS CHAROS, KLAUS FRIESEN- BICHLER, MIKLÓS KOREN, AGNES KÜGLER, BALÁZS LENGYEL, AMANDA DE PIRRO, AND BIRGIT MEYER The. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about the supply chain disruption survey: a new survey on knowledge flows in global supply chains?",
+        "main_finding": "WORKING PAPER November 2025 The Supply Chain Disruption Survey: A new survey on knowledge ﬂ ows in global supply chains MÁRTA BISZTRAY, GÁBOR BÉKÉS, ALEXANDROS CHAROS, KLAUS FRIESEN- BICHLER, MIKLÓS KOREN, AGNES KÜGLER, BALÁZS LENGYEL, AMANDA DE PIRRO, AND BIRGIT MEYER The.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by The World Economy.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.kielinstitut.de/fileadmin/Dateiverwaltung/IfW-Publications/fis-import/41a59b57-884e-4ccf-bf76-636dcd11dbe4-Supply_Chain_Disruption_Survey_nov2025.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'The Supply Chain Disruption Survey: A new survey on knowledge flows in global supply chains' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.kielinstitut.de/fileadmin/Dateiverwaltung/IfW-Publications/fis-import/41a59b57-884e-4ccf-bf76-636dcd11dbe4-Supply_Chain_Disruption_Survey_nov2025.pdf",
+            "title": "The Supply Chain Disruption Survey: A new survey on knowledge flows in global supply chains",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:45:04Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "supply_chain.diversification",
+          "secondary_objects": [],
+          "actor": {
+            "name": "The World Economy",
+            "class": "other"
+          },
+          "mechanism": "diversifies",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-11-01",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "WORKING PAPER November 2025 The Supply Chain Disruption Survey: A new survey on knowledge ﬂ ows in global supply chains MÁRTA BISZTRAY, GÁBOR BÉKÉS, ALEXANDROS CHAROS, KLAUS FRIESEN- BICHLER, MIKLÓS KOREN, AGNES KÜGLER, BALÁZS LENGYEL, AMANDA DE PIRRO, AND BIRGIT MEYER The.",
+          "confidence": "high",
+          "record_key": "historical:id:7a77d64ecea562f3",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:d4d07090158c32df:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:fe87d58e76432253": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "ab0cf185",
+      "identity_hash": "4ffa928dd222ca59",
+      "reader_title": "Belgium’s Second Annual FDI Screening Report: A Balance Between Openness and National Security",
+      "reader_what": "By Joost Haans & Sander De Volder, DLA Piper UK LLP (Brussels) Belgium’s second annual report on its foreign direct",
+      "reader_more": "By Joost Haans & Sander De Volder, DLA Piper UK LLP (Brussels) Belgium’s second annual report on its foreign direct investment screening mechanism, which was published on 12 September 2025 and covers the period July 2024 to June 2025, offers more than. The recovered source is policy/report material. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about belgium’s second annual fdi screening report: a balance between openness and national security?",
+        "main_finding": "By Joost Haans & Sander De Volder, DLA Piper UK LLP (Brussels) Belgium’s second annual report on its foreign direct investment screening mechanism, which was published on 12 September 2025 and covers the period July 2024 to June 2025, offers more than.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by CELIS Institute.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.celis.institute/celis-news/belgiums-second-annual-fdi-screening-report-a-balance-between-openness-and-national-security/ and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Belgium’s Second Annual FDI Screening Report: A Balance Between Openness and National Security' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://www.celis.institute/celis-news/belgiums-second-annual-fdi-screening-report-a-balance-between-openness-and-national-security/",
+            "title": "Belgium’s Second Annual FDI Screening Report: A Balance Between Openness and National Security",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:45:24Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CELIS Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "screens",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2025-10-03",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "Belgium"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "By Joost Haans & Sander De Volder, DLA Piper UK LLP (Brussels) Belgium’s second annual report on its foreign direct investment screening mechanism, which was published on 12 September 2025 and covers the period July 2024 to June 2025, offers more than.",
+          "confidence": "high",
+          "record_key": "historical:id:fe87d58e76432253",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:4ffa928dd222ca59:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:3f6a6440696eb51d": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "ff9e1744",
+      "identity_hash": "630ae45187b535dd",
+      "reader_title": "EU Data Sovereignty: An Autonomy–Interdependence Governance Gap?",
+      "reader_what": "Politics and Governance 2025 • Volume 13 • Article 10331 https:/ /doi.org/10.17645/pag.10331 A R T I C L E Open",
+      "reader_more": "Politics and Governance 2025 • Volume 13 • Article 10331 https:/ /doi.org/10.17645/pag.10331 A R T I C L E Open Access Journal EU Data Sovereignty: An Autonomy–Interdependence Governance Gap?. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about eu data sovereignty: an autonomy–interdependence governance gap??",
+        "main_finding": "Politics and Governance 2025 • Volume 13 • Article 10331 https:/ /doi.org/10.17645/pag.10331 A R T I C L E Open Access Journal EU Data Sovereignty: An Autonomy–Interdependence Governance Gap?.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Politics and Governance.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://content.openalex.org/works/W4412480916.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.17645/pag.10331."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'EU Data Sovereignty: An Autonomy–Interdependence Governance Gap?' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://content.openalex.org/works/W4412480916.pdf",
+            "title": "EU Data Sovereignty: An Autonomy–Interdependence Governance Gap?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:45:44Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "digital.sovereignty",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Helena Carrapico",
+            "class": "university_group"
+          },
+          "mechanism": "governs",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-07-16",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "Politics and Governance 2025 • Volume 13 • Article 10331 https:/ /doi.org/10.17645/pag.10331 A R T I C L E Open Access Journal EU Data Sovereignty: An Autonomy–Interdependence Governance Gap?.",
+          "confidence": "high",
+          "record_key": "historical:id:3f6a6440696eb51d",
+          "merit": 69,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:630ae45187b535dd:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:2e7d584322aa1076": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "44c3f95c",
+      "identity_hash": "262f633bd15fa02e",
+      "reader_title": "Preventing the Critical Minerals Crisis - Egmont Institute",
+      "reader_what": "Home > Staff > Tobias Gehrke > Preventing the Critical Minerals Crisis Preventing the Critical Minerals Crisis From fighting climate",
+      "reader_more": "Home > Staff > Tobias Gehrke > Preventing the Critical Minerals Crisis Preventing the Critical Minerals Crisis From fighting climate change to limiting dependencies on systemic rivals – radically shifting towards a green economy has become a strategic imperative to secure European. The recovered source is policy/report material. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about preventing the critical minerals crisis - egmont institute?",
+        "main_finding": "Home > Staff > Tobias Gehrke > Preventing the Critical Minerals Crisis Preventing the Critical Minerals Crisis From fighting climate change to limiting dependencies on systemic rivals – radically shifting towards a green economy has become a strategic imperative to secure European.",
+        "method_or_basis": "Analysis based on the recovered abstract or landing page issued by Egmont Institute.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://egmontinstitute.be/preventing-the-critical-minerals-crisis/ and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Preventing the Critical Minerals Crisis - Egmont Institute' against the supplied publisher/issuer material."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Matched title with author/issuing organisation and year from the publisher/issuer record for 'Preventing the Critical Minerals Crisis - Egmont Institute'."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Used the official publisher/issuing-body route https://egmontinstitute.be/preventing-the-critical-minerals-crisis/ to confirm identity/provenance."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "A bounded identity check using distinctive title and source metadata corroborated the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://egmontinstitute.be/preventing-the-critical-minerals-crisis/",
+            "title": "Preventing the Critical Minerals Crisis - Egmont Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: abstract_or_landing_page."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:46:05Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "materials.critical_raw",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Egmont Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "secures",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2022-05-10",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "Home > Staff > Tobias Gehrke > Preventing the Critical Minerals Crisis Preventing the Critical Minerals Crisis From fighting climate change to limiting dependencies on systemic rivals – radically shifting towards a green economy has become a strategic imperative to secure European.",
+          "confidence": "medium",
+          "record_key": "historical:id:2e7d584322aa1076",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:262f633bd15fa02e:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:7edbdb37c41f65c8": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "4b2a5b04",
+      "identity_hash": "2bbd6f315f65a897",
+      "reader_title": "A new strategy to empower the single market – CEPS",
+      "reader_what": "CEPS EXPLAINER Jacques Pelkmans 2025-07 A NEW STRATEGY TO EMPOWER THE SINGLE MARKET Will the EU finally prioritise, decide and",
+      "reader_more": "CEPS EXPLAINER Jacques Pelkmans 2025-07 A NEW STRATEGY TO EMPOWER THE SINGLE MARKET Will the EU finally prioritise, decide and act - or will its leaders again only express lofty aims?. The recovered source is policy/report material. Its relevance to the Radar is substantive but not wholly unambiguous, so admission is flagged for review.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about a new strategy to empower the single market – ceps?",
+        "main_finding": "CEPS EXPLAINER Jacques Pelkmans 2025-07 A NEW STRATEGY TO EMPOWER THE SINGLE MARKET Will the EU finally prioritise, decide and act - or will its leaders again only express lofty aims?.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by CEPS.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work has a genuine European economic-security connection, but the strength or centrality of that connection warrants human admission judgment.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://cdn.ceps.eu/2025/07/2025-07-GRID-SingleMarket-1.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'A new strategy to empower the single market – CEPS' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://cdn.ceps.eu/2025/07/2025-07-GRID-SingleMarket-1.pdf",
+            "title": "A new strategy to empower the single market – CEPS",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work has a genuine European economic-security connection, but the strength or centrality of that connection warrants human admission judgment."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:46:25Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "industrial.competitiveness",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CEPS",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "supports",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2025-07-10",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "CEPS EXPLAINER Jacques Pelkmans 2025-07 A NEW STRATEGY TO EMPOWER THE SINGLE MARKET Will the EU finally prioritise, decide and act - or will its leaders again only express lofty aims?.",
+          "confidence": "high",
+          "record_key": "historical:id:7edbdb37c41f65c8",
+          "merit": 71,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:2bbd6f315f65a897:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:9201a45d19c7c2c7": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "473422e8",
+      "identity_hash": "9ca0f8eb494bd946",
+      "reader_title": "China as a Catalyst of the European Union's Trade Defence Instruments",
+      "reader_what": "China as a Catalyst of the European Union ’s Trade Defence Instruments LAIA COMERMA 1,2 1CSDS, Vrije Universiteit Brussel, Brussels",
+      "reader_more": "China as a Catalyst of the European Union ’s Trade Defence Instruments LAIA COMERMA 1,2 1CSDS, Vrije Universiteit Brussel, Brussels 2Barcelona Institute of International Studies, Barcelona Abstract Scholars have paid signi ﬁcant attention to the ‘geopoliticisation’ and ‘securitisation’ turn in EU trade. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about china as a catalyst of the european union's trade defence instruments?",
+        "main_finding": "China as a Catalyst of the European Union ’s Trade Defence Instruments LAIA COMERMA 1,2 1CSDS, Vrije Universiteit Brussel, Brussels 2Barcelona Institute of International Studies, Barcelona Abstract Scholars have paid signi ﬁcant attention to the ‘geopoliticisation’ and ‘securitisation’ turn in EU trade.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Journal of Common Market Studies.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://content.openalex.org/works/W4412117791.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1111/jcms.70000."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'China as a Catalyst of the European Union's Trade Defence Instruments' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://content.openalex.org/works/W4412117791.pdf",
+            "title": "China as a Catalyst of the European Union's Trade Defence Instruments",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:46:46Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "trade_defence.anti_subsidy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Laia Comerma",
+            "class": "university_group"
+          },
+          "mechanism": "regulates",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-07-08",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "China as a Catalyst of the European Union ’s Trade Defence Instruments LAIA COMERMA 1,2 1CSDS, Vrije Universiteit Brussel, Brussels 2Barcelona Institute of International Studies, Barcelona Abstract Scholars have paid signi ﬁcant attention to the ‘geopoliticisation’ and ‘securitisation’ turn in EU trade.",
+          "confidence": "high",
+          "record_key": "historical:id:9201a45d19c7c2c7",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:9ca0f8eb494bd946:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:17d8496f05d8d22b": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "e5e7d9e1",
+      "identity_hash": "e6ad2ef87eed0563",
+      "reader_title": "The European Union in a Geo‐Economic World: Towards a New Inter‐Institutional Balance?",
+      "reader_what": "The European Union in a Geo-Economic World: Towards a New Inter-Institutional Balance?.",
+      "reader_more": "The European Union in a Geo-Economic World: Towards a New Inter-Institutional Balance?. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about the european union in a geo‐economic world: towards a new inter‐institutional balance??",
+        "main_finding": "The European Union in a Geo-Economic World: Towards a New Inter-Institutional Balance?.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Journal of Common Market Studies.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://content.openalex.org/works/W4412040828.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1111/jcms.13774."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'The European Union in a Geo‐Economic World: Towards a New Inter‐Institutional Balance?' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://content.openalex.org/works/W4412040828.pdf",
+            "title": "The European Union in a Geo‐Economic World: Towards a New Inter‐Institutional Balance?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:47:07Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Thomas Conzelmann",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-07-03",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "The European Union in a Geo-Economic World: Towards a New Inter-Institutional Balance?.",
+          "confidence": "high",
+          "record_key": "historical:id:17d8496f05d8d22b",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:e6ad2ef87eed0563:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:938eec2a29d28269": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "3accd07b",
+      "identity_hash": "f0fa835a46741d7a",
+      "reader_title": "European strategic autonomy in the transatlantic security context: American perceptions of European security and defence integration 1998–2022",
+      "reader_what": "Ossa, Helja (2025) European strategic autonomy in the transatlantic security context: American perceptions of European security and defence integration 1998-2022.",
+      "reader_more": "Ossa, Helja (2025) European strategic autonomy in the transatlantic security context: American perceptions of European security and defence integration 1998-2022. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about european strategic autonomy in the transatlantic security context: american perceptions of european security and defence integration 1998–2022?",
+        "main_finding": "Ossa, Helja (2025) European strategic autonomy in the transatlantic security context: American perceptions of European security and defence integration 1998-2022.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by European Security.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://content.openalex.org/works/W4407675425.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1080/09662839.2025.2464530."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'European strategic autonomy in the transatlantic security context: American perceptions of European security and defence integration 1998–2022' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://content.openalex.org/works/W4407675425.pdf",
+            "title": "European strategic autonomy in the transatlantic security context: American perceptions of European security and defence integration 1998–2022",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:47:27Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "defence.production_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Heljä Ossa",
+            "class": "university_group"
+          },
+          "mechanism": "adds_capacity",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-07-03",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "Ossa, Helja (2025) European strategic autonomy in the transatlantic security context: American perceptions of European security and defence integration 1998-2022.",
+          "confidence": "high",
+          "record_key": "historical:id:938eec2a29d28269",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:f0fa835a46741d7a:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:82837eab61049a82": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "e38af076",
+      "identity_hash": "de9d84961f7655ff",
+      "reader_title": "A dataset of EU legal and policy instruments for the digital world – CEPS",
+      "reader_what": "A DATASET OF EU LEGAL AND POLICY INSTRUMENTS FOR THE DIGITAL WORLD Kai Zenner J.",
+      "reader_more": "A DATASET OF EU LEGAL AND POLICY INSTRUMENTS FOR THE DIGITAL WORLD Kai Zenner J. The recovered source is policy/report material. Its main contribution is not sufficiently centered on European economic security for Strand A.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about a dataset of eu legal and policy instruments for the digital world – ceps?",
+        "main_finding": "A DATASET OF EU LEGAL AND POLICY INSTRUMENTS FOR THE DIGITAL WORLD Kai Zenner J.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by CEPS.",
+        "qualification": "The recovered work is identifiable, but its central object is outside Strand A’s substantive European economic-security scope.",
+        "radar_relevance": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://cdn.ceps.eu/2025/08/CEPS-Zenner-Dataset-July-2025.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'A dataset of EU legal and policy instruments for the digital world – CEPS' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://cdn.ceps.eu/2025/08/CEPS-Zenner-Dataset-July-2025.pdf",
+            "title": "A dataset of EU legal and policy instruments for the digital world – CEPS",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:47:47Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:6debc2d9a4c0d1eb": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "ce390eae",
+      "identity_hash": "0212d4c65063a8d6",
+      "reader_title": "Lethal weapon: Why Europe can’t afford to blink on China’s rare earth blackmail",
+      "reader_what": "China’s export restrictions are bringing European factories to the verge of shutting down.",
+      "reader_more": "China’s export restrictions are bringing European factories to the verge of shutting down. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about lethal weapon: why europe can’t afford to blink on china’s rare earth blackmail?",
+        "main_finding": "China’s export restrictions are bringing European factories to the verge of shutting down.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by European Council on Foreign Relations.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://ecfr.eu/article/lethal-weapon-why-europe-cant-afford-to-blink-on-chinas-rare-earth-blackmail/ and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Lethal weapon: Why Europe can’t afford to blink on China’s rare earth blackmail' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://ecfr.eu/article/lethal-weapon-why-europe-cant-afford-to-blink-on-chinas-rare-earth-blackmail/",
+            "title": "Lethal weapon: Why Europe can’t afford to blink on China’s rare earth blackmail",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:48:08Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "materials.rare_earths",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Council on Foreign Relations",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "secures",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-07-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "China’s export restrictions are bringing European factories to the verge of shutting down.",
+          "confidence": "high",
+          "record_key": "historical:id:6debc2d9a4c0d1eb",
+          "merit": 71,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:0212d4c65063a8d6:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:7aa43d19c7a82b8a": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "8364adbb",
+      "identity_hash": "2bdd1ce57335c8d4",
+      "reader_title": "Money Talks? The Effectiveness of Sanctions in the ‘Rule of Law’ Conflict in the European Union",
+      "reader_what": "The Effectiveness of Sanctions in the ‘Rule of Law’ Conﬂict in the European Union ADAM HOLESCH 1 and CLARA PORTELA",
+      "reader_more": "The Effectiveness of Sanctions in the ‘Rule of Law’ Conﬂict in the European Union ADAM HOLESCH 1 and CLARA PORTELA 2 1Institut Barcelona d ’Estudis Internacionals (IBEI), Barcelona 2University of Valencia, Valencia Abstract The European Union (EU) responded to democratic backsliding in. The recovered source is research or policy work. Its main contribution is not sufficiently centered on European economic security for Strand A.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about money talks? the effectiveness of sanctions in the ‘rule of law’ conflict in the european union?",
+        "main_finding": "The Effectiveness of Sanctions in the ‘Rule of Law’ Conﬂict in the European Union ADAM HOLESCH 1 and CLARA PORTELA 2 1Institut Barcelona d ’Estudis Internacionals (IBEI), Barcelona 2University of Valencia, Valencia Abstract The European Union (EU) responded to democratic backsliding in.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Journal of Common Market Studies.",
+        "qualification": "The recovered work is identifiable, but its central object is outside Strand A’s substantive European economic-security scope.",
+        "radar_relevance": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://content.openalex.org/works/W4403500438.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1111/jcms.13693."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Money Talks? The Effectiveness of Sanctions in the ‘Rule of Law’ Conflict in the European Union' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://content.openalex.org/works/W4403500438.pdf",
+            "title": "Money Talks? The Effectiveness of Sanctions in the ‘Rule of Law’ Conflict in the European Union",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:48:28Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:447fa5f4d6d5aeda": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "2fe8345d",
+      "identity_hash": "8af8cd25cf30c813",
+      "reader_title": "Economic Security and New Industrial Policy",
+      "reader_what": "Asian Economic Policy Review, 2025; 0:1–11 https://doi.org/10.1111/aepr.12502 1 of 11 Asian Economic Policy Review REVIEW ARTICLE OPEN ACCESS Economic Security",
+      "reader_more": "Asian Economic Policy Review, 2025; 0:1–11 https://doi.org/10.1111/aepr.12502 1 of 11 Asian Economic Policy Review REVIEW ARTICLE OPEN ACCESS Economic Security and New Industrial Policy Shiro Armstrong 1 | Mireya Solís2 | Shujiro Urata3 1The Australian National University, Canberra, Australia | 2The Brookings. The recovered source is research or policy work. Its relevance to the Radar is substantive but not wholly unambiguous, so admission is flagged for review.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about economic security and new industrial policy?",
+        "main_finding": "Asian Economic Policy Review, 2025; 0:1–11 https://doi.org/10.1111/aepr.12502 1 of 11 Asian Economic Policy Review REVIEW ARTICLE OPEN ACCESS Economic Security and New Industrial Policy Shiro Armstrong 1 | Mireya Solís2 | Shujiro Urata3 1The Australian National University, Canberra, Australia | 2The Brookings.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Economic Policy.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work has a genuine European economic-security connection, but the strength or centrality of that connection warrants human admission judgment.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://content.openalex.org/works/W4407683836.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1111/aepr.12502."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Economic Security and New Industrial Policy' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://content.openalex.org/works/W4407683836.pdf",
+            "title": "Economic Security and New Industrial Policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work has a genuine European economic-security connection, but the strength or centrality of that connection warrants human admission judgment."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:48:48Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Shiro Armstrong",
+            "class": "university_group"
+          },
+          "mechanism": "adds_capacity",
+          "direction": "becomes_contested",
+          "status": "operating",
+          "status_date": "2025-07-01",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "Asian Economic Policy Review, 2025; 0:1–11 https://doi.org/10.1111/aepr.12502 1 of 11 Asian Economic Policy Review REVIEW ARTICLE OPEN ACCESS Economic Security and New Industrial Policy Shiro Armstrong 1 | Mireya Solís2 | Shujiro Urata3 1The Australian National University, Canberra, Australia | 2The Brookings.",
+          "confidence": "high",
+          "record_key": "historical:id:447fa5f4d6d5aeda",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:8af8cd25cf30c813:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:d57ae3cd08909a0b": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "24bc2c1a",
+      "identity_hash": "3d83632dfbdfa88f",
+      "reader_title": "Economic Insecurity: Trade Dependencies and Their Weaponization in History",
+      "reader_what": "Economic Insecurity: Trade Dependencies and Their Weaponization in History Do trade dependencies leave countries vulnerable to geopolitical coercion?.",
+      "reader_more": "Economic Insecurity: Trade Dependencies and Their Weaponization in History Do trade dependencies leave countries vulnerable to geopolitical coercion?. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about economic insecurity: trade dependencies and their weaponization in history?",
+        "main_finding": "Economic Insecurity: Trade Dependencies and Their Weaponization in History Do trade dependencies leave countries vulnerable to geopolitical coercion?.",
+        "method_or_basis": "Analysis based on the recovered abstract or landing page issued by The World Economy.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.kielinstitut.de/publications/economic-insecurity-trade-dependencies-and-their-weaponization-in-history-18231/ and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Economic Insecurity: Trade Dependencies and Their Weaponization in History' against the supplied publisher/issuer material."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Matched title with author/issuing organisation and year from the publisher/issuer record for 'Economic Insecurity: Trade Dependencies and Their Weaponization in History'."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Used the official publisher/issuing-body route https://www.kielinstitut.de/publications/economic-insecurity-trade-dependencies-and-their-weaponization-in-history-18231/ to confirm identity/provenance."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "A bounded identity check using distinctive title and source metadata corroborated the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://www.kielinstitut.de/publications/economic-insecurity-trade-dependencies-and-their-weaponization-in-history-18231/",
+            "title": "Economic Insecurity: Trade Dependencies and Their Weaponization in History",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: abstract_or_landing_page."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:49:09Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "coercion.incident",
+          "secondary_objects": [],
+          "actor": {
+            "name": "The World Economy",
+            "class": "other"
+          },
+          "mechanism": "coerces",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-07-01",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "Economic Insecurity: Trade Dependencies and Their Weaponization in History Do trade dependencies leave countries vulnerable to geopolitical coercion?.",
+          "confidence": "medium",
+          "record_key": "historical:id:d57ae3cd08909a0b",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:3d83632dfbdfa88f:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:b0bb30d94ba299ed": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "83fa1c31",
+      "identity_hash": "0d12535d4c2cf70a",
+      "reader_title": "Quest for strategic autonomy? Europe grapples with the US-China rivalry",
+      "reader_what": "Europe Grapples with the US - China Rivalry Lead editors: Mario Esteban, Miguel Otero-Iglesias, Cristina de Esperanza Editorial working group:",
+      "reader_more": "Europe Grapples with the US - China Rivalry Lead editors: Mario Esteban, Miguel Otero-Iglesias, Cristina de Esperanza Editorial working group: Tamás Matura, Nick Nieschalke, John Seaman, Tim Summers, Claudia Wessling A Report by the European Think-tank Network on China (ETNC) June 2025. The recovered source is policy/report material. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about quest for strategic autonomy? europe grapples with the us-china rivalry?",
+        "main_finding": "Europe Grapples with the US - China Rivalry Lead editors: Mario Esteban, Miguel Otero-Iglesias, Cristina de Esperanza Editorial working group: Tamás Matura, Nick Nieschalke, John Seaman, Tim Summers, Claudia Wessling A Report by the European Think-tank Network on China (ETNC) June 2025.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by MERICS.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://merics.org/sites/default/files/2025-06/ETNC%20Report%202025%20Quest-for-strategic-autonomy-europe-grapples-with-the-us-china-rivalry.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Quest for strategic autonomy? Europe grapples with the US-China rivalry' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://merics.org/sites/default/files/2025-06/ETNC%20Report%202025%20Quest-for-strategic-autonomy-europe-grapples-with-the-us-china-rivalry.pdf",
+            "title": "Quest for strategic autonomy? Europe grapples with the US-China rivalry",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:49:29Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "MERICS",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "prioritises",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2025-06-26",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "Europe Grapples with the US - China Rivalry Lead editors: Mario Esteban, Miguel Otero-Iglesias, Cristina de Esperanza Editorial working group: Tamás Matura, Nick Nieschalke, John Seaman, Tim Summers, Claudia Wessling A Report by the European Think-tank Network on China (ETNC) June 2025.",
+          "confidence": "high",
+          "record_key": "historical:id:b0bb30d94ba299ed",
+          "merit": 71,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:0d12535d4c2cf70a:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:266b534e8bd6434e": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "5e6c6d4e",
+      "identity_hash": "2bcc273e13cf5291",
+      "reader_title": "From 5G to NearLink: Europe’s next digital dependency risk",
+      "reader_what": "China’s self-reliance drive could soon create another “Huawei moment” for Europe.",
+      "reader_more": "China’s self-reliance drive could soon create another “Huawei moment” for Europe. The recovered source is policy/report material. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about from 5g to nearlink: europe’s next digital dependency risk?",
+        "main_finding": "China’s self-reliance drive could soon create another “Huawei moment” for Europe.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by MERICS.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://merics.org/en/comment/5g-nearlink-europes-next-digital-dependency-risk and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'From 5G to NearLink: Europe’s next digital dependency risk' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://merics.org/en/comment/5g-nearlink-europes-next-digital-dependency-risk",
+            "title": "From 5G to NearLink: Europe’s next digital dependency risk",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:49:49Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "digital.sovereignty",
+          "secondary_objects": [],
+          "actor": {
+            "name": "MERICS",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "governs",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2025-06-26",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "China’s self-reliance drive could soon create another “Huawei moment” for Europe.",
+          "confidence": "high",
+          "record_key": "historical:id:266b534e8bd6434e",
+          "merit": 71,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:2bcc273e13cf5291:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:6a6285cfd2596f87": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "d75cfc60",
+      "identity_hash": "c852e968fa12f0ec",
+      "reader_title": "Cybersecurity Research Directions for the EU’s Digital Strategic Autonomy | ENISA",
+      "reader_what": "0 CYBERSECURITY RESEAR CH DIRECTIONS FOR THE EU’S DIGITAL STRATEGIC AUTONOMY APRIL 2021 CYBERSECURITY RESEARCH DIRECTIONS FOR THE EU’S DIGITAL",
+      "reader_more": "0 CYBERSECURITY RESEAR CH DIRECTIONS FOR THE EU’S DIGITAL STRATEGIC AUTONOMY APRIL 2021 CYBERSECURITY RESEARCH DIRECTIONS FOR THE EU’S DIGITAL STRATEGIC AUTONOMY April 2021 1 ABOUT ENISA The European Union Agency for Cybersecurity, ENISA, is the Union’s agency dedicated to achieving a. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about cybersecurity research directions for the eu’s digital strategic autonomy | enisa?",
+        "main_finding": "0 CYBERSECURITY RESEAR CH DIRECTIONS FOR THE EU’S DIGITAL STRATEGIC AUTONOMY APRIL 2021 CYBERSECURITY RESEARCH DIRECTIONS FOR THE EU’S DIGITAL STRATEGIC AUTONOMY April 2021 1 ABOUT ENISA The European Union Agency for Cybersecurity, ENISA, is the Union’s agency dedicated to achieving a.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by ENISA.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Research_Directions_for_Digital_Strategic_Autonomy.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Cybersecurity Research Directions for the EU’s Digital Strategic Autonomy | ENISA' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Research_Directions_for_Digital_Strategic_Autonomy.pdf",
+            "title": "Cybersecurity Research Directions for the EU’s Digital Strategic Autonomy | ENISA",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:50:10Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "critical_infrastructure.resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "ENISA",
+            "class": "eu_body"
+          },
+          "mechanism": "secures",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-06-26",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "0 CYBERSECURITY RESEAR CH DIRECTIONS FOR THE EU’S DIGITAL STRATEGIC AUTONOMY APRIL 2021 CYBERSECURITY RESEARCH DIRECTIONS FOR THE EU’S DIGITAL STRATEGIC AUTONOMY April 2021 1 ABOUT ENISA The European Union Agency for Cybersecurity, ENISA, is the Union’s agency dedicated to achieving a.",
+          "confidence": "high",
+          "record_key": "historical:id:6a6285cfd2596f87",
+          "merit": 97,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:c852e968fa12f0ec:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:34ddf974ca4e4705": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "008b42d8",
+      "identity_hash": "b0f63479b89ed2fd",
+      "reader_title": "Determinants of critical raw material imports: The case of the European Union and China",
+      "reader_what": "In 2019, the European Union (EU) launched a growth strategy called the Green Deal with the aim to reach climate",
+      "reader_more": "In 2019, the European Union (EU) launched a growth strategy called the Green Deal with the aim to reach climate neutrality by 2050. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about determinants of critical raw material imports: the case of the european union and china?",
+        "main_finding": "In 2019, the European Union (EU) launched a growth strategy called the Green Deal with the aim to reach climate neutrality by 2050.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by Mineral Economics.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://link.springer.com/article/10.1007/s13563-025-00528-4 and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1007/s13563-025-00528-4."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Determinants of critical raw material imports: The case of the European Union and China' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://link.springer.com/article/10.1007/s13563-025-00528-4",
+            "title": "Determinants of critical raw material imports: The case of the European Union and China",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:50:30Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "materials.critical_raw",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Lenka Fojtíková",
+            "class": "university_group"
+          },
+          "mechanism": "secures",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-06-23",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "In 2019, the European Union (EU) launched a growth strategy called the Green Deal with the aim to reach climate neutrality by 2050.",
+          "confidence": "high",
+          "record_key": "historical:id:34ddf974ca4e4705",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:b0f63479b89ed2fd:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:5d48c28f01bf79d8": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "f524991b",
+      "identity_hash": "7db089412af6de02",
+      "reader_title": "For the Times They Are A‐Changin': Towards a ‘Homeland Economics’ Paradigm of the European Union?",
+      "reader_what": "/u.sc/n.sc/i.sc/v.sc/e.sc/r.sc/s.sc/i.sc/t.sc/y.sc /o.sc/f.sc /c.sc/o.sc/p.sc/e.sc/n.sc/h.sc/a.sc/g.sc/e.sc/n.sc Københavns Universitet For the Times They Are A-Changin' Towards a ‘Homeland Economics’ Paradigm of the European Union?.",
+      "reader_more": "/u.sc/n.sc/i.sc/v.sc/e.sc/r.sc/s.sc/i.sc/t.sc/y.sc /o.sc/f.sc /c.sc/o.sc/p.sc/e.sc/n.sc/h.sc/a.sc/g.sc/e.sc/n.sc Københavns Universitet For the Times They Are A-Changin' Towards a ‘Homeland Economics’ Paradigm of the European Union?. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about for the times they are a‐changin': towards a ‘homeland economics’ paradigm of the european union??",
+        "main_finding": "/u.sc/n.sc/i.sc/v.sc/e.sc/r.sc/s.sc/i.sc/t.sc/y.sc /o.sc/f.sc /c.sc/o.sc/p.sc/e.sc/n.sc/h.sc/a.sc/g.sc/e.sc/n.sc Københavns Universitet For the Times They Are A-Changin' Towards a ‘Homeland Economics’ Paradigm of the European Union?.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Journal of Common Market Studies.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://content.openalex.org/works/W4411403781.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1111/jcms.13765."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'For the Times They Are A‐Changin': Towards a ‘Homeland Economics’ Paradigm of the European Union?' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://content.openalex.org/works/W4411403781.pdf",
+            "title": "For the Times They Are A‐Changin': Towards a ‘Homeland Economics’ Paradigm of the European Union?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:50:50Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Henrik Brockenhuus‐Schack",
+            "class": "university_group"
+          },
+          "mechanism": "prioritises",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-06-18",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "/u.sc/n.sc/i.sc/v.sc/e.sc/r.sc/s.sc/i.sc/t.sc/y.sc /o.sc/f.sc /c.sc/o.sc/p.sc/e.sc/n.sc/h.sc/a.sc/g.sc/e.sc/n.sc Københavns Universitet For the Times They Are A-Changin' Towards a ‘Homeland Economics’ Paradigm of the European Union?.",
+          "confidence": "high",
+          "record_key": "historical:id:5d48c28f01bf79d8",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:7db089412af6de02:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:d1c4082a255af450": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "11430a65",
+      "identity_hash": "67bac15224a16edb",
+      "reader_title": "Transatlantic Cooperation instead of Trade War: Scenarios, Options, and Policy Solutions",
+      "reader_what": "Transatlantic Cooperation instead of Trade War: Scenarios, Options, and Policy Solutions U.S.",
+      "reader_more": "Transatlantic Cooperation instead of Trade War: Scenarios, Options, and Policy Solutions U.S. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about transatlantic cooperation instead of trade war: scenarios, options, and policy solutions?",
+        "main_finding": "Transatlantic Cooperation instead of Trade War: Scenarios, Options, and Policy Solutions U.S.",
+        "method_or_basis": "Analysis based on the recovered abstract or landing page issued by The World Economy.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.kielinstitut.de/publications/transatlantic-cooperation-instead-of-trade-war-scenarios-options-and-policy-solutions-18179/ and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Transatlantic Cooperation instead of Trade War: Scenarios, Options, and Policy Solutions' against the supplied publisher/issuer material."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Matched title with author/issuing organisation and year from the publisher/issuer record for 'Transatlantic Cooperation instead of Trade War: Scenarios, Options, and Policy Solutions'."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Used the official publisher/issuing-body route https://www.kielinstitut.de/publications/transatlantic-cooperation-instead-of-trade-war-scenarios-options-and-policy-solutions-18179/ to confirm identity/provenance."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "A bounded identity check using distinctive title and source metadata corroborated the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://www.kielinstitut.de/publications/transatlantic-cooperation-instead-of-trade-war-scenarios-options-and-policy-solutions-18179/",
+            "title": "Transatlantic Cooperation instead of Trade War: Scenarios, Options, and Policy Solutions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: abstract_or_landing_page."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:51:10Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "trade.tariffs_on_eu",
+          "secondary_objects": [],
+          "actor": {
+            "name": "The World Economy",
+            "class": "other"
+          },
+          "mechanism": "tariffs",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-06-01",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "Transatlantic Cooperation instead of Trade War: Scenarios, Options, and Policy Solutions U.S.",
+          "confidence": "medium",
+          "record_key": "historical:id:d1c4082a255af450",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:67bac15224a16edb:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:672e31d691885065": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "9ac64c9e",
+      "identity_hash": "ec51f3625c0cf950",
+      "reader_title": "The geoeconomics of Central Banks Digital Currencies (CBDCs): the case of the European Central Bank (ECB)",
+      "reader_what": "New Political Economy ISSN: 1356-3467 (Print) 1469-9923 (Online) Journal homepage: www.tandfonline.com/journals/cnpe20 The geoeconomics of Central Banks Digital Currencies (CBDCs): the",
+      "reader_more": "New Political Economy ISSN: 1356-3467 (Print) 1469-9923 (Online) Journal homepage: www.tandfonline.com/journals/cnpe20 The geoeconomics of Central Banks Digital Currencies (CBDCs): the case of the European Central Bank (ECB) Lucia Quaglia & Amy Verdun To cite this article: Lucia Quaglia & Amy Verdun (2025). The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about the geoeconomics of central banks digital currencies (cbdcs): the case of the european central bank (ecb)?",
+        "main_finding": "New Political Economy ISSN: 1356-3467 (Print) 1469-9923 (Online) Journal homepage: www.tandfonline.com/journals/cnpe20 The geoeconomics of Central Banks Digital Currencies (CBDCs): the case of the European Central Bank (ECB) Lucia Quaglia & Amy Verdun To cite this article: Lucia Quaglia & Amy Verdun (2025).",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by New Political Economy.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://content.openalex.org/works/W4410769777.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1080/13563467.2025.2504390."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'The geoeconomics of Central Banks Digital Currencies (CBDCs): the case of the European Central Bank (ECB)' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://content.openalex.org/works/W4410769777.pdf",
+            "title": "The geoeconomics of Central Banks Digital Currencies (CBDCs): the case of the European Central Bank (ECB)",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:51:31Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Lucia Quaglia",
+            "class": "university_group"
+          },
+          "mechanism": "prioritises",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-05-27",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "New Political Economy ISSN: 1356-3467 (Print) 1469-9923 (Online) Journal homepage: www.tandfonline.com/journals/cnpe20 The geoeconomics of Central Banks Digital Currencies (CBDCs): the case of the European Central Bank (ECB) Lucia Quaglia & Amy Verdun To cite this article: Lucia Quaglia & Amy Verdun (2025).",
+          "confidence": "high",
+          "record_key": "historical:id:672e31d691885065",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:ec51f3625c0cf950:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:1812de59266889ba": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "b40a35f2",
+      "identity_hash": "c869e302448f24d9",
+      "reader_title": "Lithium at the crossroads: geopolitical, economic, and socio-environmental complexities of the Jadar project in Serbia",
+      "reader_what": "This paper examines the security-cost-sustainability trilemma associated with undeveloped critical mineral deposits, focusing on the geopolitical dynamics, economic implications, and",
+      "reader_more": "This paper examines the security-cost-sustainability trilemma associated with undeveloped critical mineral deposits, focusing on the geopolitical dynamics, economic implications, and governance challenges surrounding Rio Tinto’s Jadar lithium-borates project in Serbia. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about lithium at the crossroads: geopolitical, economic, and socio-environmental complexities of the jadar project in serbia?",
+        "main_finding": "This paper examines the security-cost-sustainability trilemma associated with undeveloped critical mineral deposits, focusing on the geopolitical dynamics, economic implications, and governance challenges surrounding Rio Tinto’s Jadar lithium-borates project in Serbia.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by Mineral Economics.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://link.springer.com/article/10.1007/s13563-025-00517-7 and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1007/s13563-025-00517-7."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Lithium at the crossroads: geopolitical, economic, and socio-environmental complexities of the Jadar project in Serbia' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://link.springer.com/article/10.1007/s13563-025-00517-7",
+            "title": "Lithium at the crossroads: geopolitical, economic, and socio-environmental complexities of the Jadar project in Serbia",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:51:51Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "materials.critical_raw",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Vlado Vivoda",
+            "class": "university_group"
+          },
+          "mechanism": "secures",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-05-26",
+          "scope": {
+            "level": "associated_country",
+            "countries": [
+              "Serbia"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "This paper examines the security-cost-sustainability trilemma associated with undeveloped critical mineral deposits, focusing on the geopolitical dynamics, economic implications, and governance challenges surrounding Rio Tinto’s Jadar lithium-borates project in Serbia.",
+          "confidence": "high",
+          "record_key": "historical:id:1812de59266889ba",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:c869e302448f24d9:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:0e2748e39260811c": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "18ebbe90",
+      "identity_hash": "9f3d7e0b5ea350c4",
+      "reader_title": "The empty signifier of ‘connectivity’: how infrastructure reorders the world",
+      "reader_what": "Review of International Political Economy ISSN: 0969-2290 (Print) 1466-4526 (Online) Journal homepage: www.tandfonline.com/journals/rrip20 The empty signiﬁer of ‘connectivity’: how infrastructure",
+      "reader_more": "Review of International Political Economy ISSN: 0969-2290 (Print) 1466-4526 (Online) Journal homepage: www.tandfonline.com/journals/rrip20 The empty signiﬁer of ‘connectivity’: how infrastructure reorders the world Mohammadbagher Forough & Anna Fünfgeld To cite this article: Mohammadbagher Forough & Anna Fünfgeld (2025) The empty signiﬁer of. The recovered source is research or policy work. Its main contribution is not sufficiently centered on European economic security for Strand A.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about the empty signifier of ‘connectivity’: how infrastructure reorders the world?",
+        "main_finding": "Review of International Political Economy ISSN: 0969-2290 (Print) 1466-4526 (Online) Journal homepage: www.tandfonline.com/journals/rrip20 The empty signiﬁer of ‘connectivity’: how infrastructure reorders the world Mohammadbagher Forough & Anna Fünfgeld To cite this article: Mohammadbagher Forough & Anna Fünfgeld (2025) The empty signiﬁer of.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Review of International Political Economy.",
+        "qualification": "The recovered work is identifiable, but its central object is outside Strand A’s substantive European economic-security scope.",
+        "radar_relevance": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://content.openalex.org/works/W4410563592.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1080/09692290.2025.2504457."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'The empty signifier of ‘connectivity’: how infrastructure reorders the world' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://content.openalex.org/works/W4410563592.pdf",
+            "title": "The empty signifier of ‘connectivity’: how infrastructure reorders the world",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:52:11Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:2d8a43c53c6ed6d2": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "eea0be19",
+      "identity_hash": "3ab58b8565980691",
+      "reader_title": "The EU Anti-Coercion Regulation: A New Tool Against Economic Pressure",
+      "reader_what": "Georgia Tzifa & Mariia Shulha (Wilmer Hale)* As global economic pressures mount, the EU has armed itself with a powerful",
+      "reader_more": "Georgia Tzifa & Mariia Shulha (Wilmer Hale)* As global economic pressures mount, the EU has armed itself with a powerful new tool to counter economic coercion. The recovered source is policy/report material. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about the eu anti-coercion regulation: a new tool against economic pressure?",
+        "main_finding": "Georgia Tzifa & Mariia Shulha (Wilmer Hale)* As global economic pressures mount, the EU has armed itself with a powerful new tool to counter economic coercion.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by CELIS Institute.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.celis.institute/celis-blog/the-eu-anti-coercion-regulation-a-new-tool-against-economic-pressure/ and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'The EU Anti-Coercion Regulation: A New Tool Against Economic Pressure' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://www.celis.institute/celis-blog/the-eu-anti-coercion-regulation-a-new-tool-against-economic-pressure/",
+            "title": "The EU Anti-Coercion Regulation: A New Tool Against Economic Pressure",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:52:32Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "coercion.incident",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CELIS Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "coerces",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2025-05-19",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "Georgia Tzifa & Mariia Shulha (Wilmer Hale)* As global economic pressures mount, the EU has armed itself with a powerful new tool to counter economic coercion.",
+          "confidence": "high",
+          "record_key": "historical:id:2d8a43c53c6ed6d2",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:3ab58b8565980691:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:0a5504da2593d94d": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "06616639",
+      "identity_hash": "2db9caaf10063b19",
+      "reader_title": "An Evermore Geoeconomic European Union? Exploring Critical Perspectives for Future Research",
+      "reader_what": "Exploring Critical Perspectives for Future Research SJORRE COUVREUR1 and JA ŠA VESELINOVI Č2 1Ghent Institute for International and European Studies,",
+      "reader_more": "Exploring Critical Perspectives for Future Research SJORRE COUVREUR1 and JA ŠA VESELINOVI Č2 1Ghent Institute for International and European Studies, Ghent University, Ghent 2Department of Political Science and Public Administration, Vrije Universiteit Amsterdam, Amsterdam Abstract In response to a more contentious and. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about an evermore geoeconomic european union? exploring critical perspectives for future research?",
+        "main_finding": "Exploring Critical Perspectives for Future Research SJORRE COUVREUR1 and JA ŠA VESELINOVI Č2 1Ghent Institute for International and European Studies, Ghent University, Ghent 2Department of Political Science and Public Administration, Vrije Universiteit Amsterdam, Amsterdam Abstract In response to a more contentious and.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Journal of Common Market Studies.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://content.openalex.org/works/W4410525850.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1111/jcms.13741."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'An Evermore Geoeconomic European Union? Exploring Critical Perspectives for Future Research' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://content.openalex.org/works/W4410525850.pdf",
+            "title": "An Evermore Geoeconomic European Union? Exploring Critical Perspectives for Future Research",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:52:52Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Sjorre Couvreur",
+            "class": "university_group"
+          },
+          "mechanism": "prioritises",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-05-19",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "Exploring Critical Perspectives for Future Research SJORRE COUVREUR1 and JA ŠA VESELINOVI Č2 1Ghent Institute for International and European Studies, Ghent University, Ghent 2Department of Political Science and Public Administration, Vrije Universiteit Amsterdam, Amsterdam Abstract In response to a more contentious and.",
+          "confidence": "high",
+          "record_key": "historical:id:0a5504da2593d94d",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:2db9caaf10063b19:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:b6e3c639d2ae1bef": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "f6d5586f",
+      "identity_hash": "63f9333401d02c5c",
+      "reader_title": "From partnership to leadership: energising EU-Korea cooperation on the road to net zero – CEPS",
+      "reader_what": "CEPS IN-DEPTH ANALYSIS Irina Kustova, Fanny Sauvignon and Christian Dietz May, 2025-06 FROM PARTNERSHIP TO LEADERSHIP: ENERGISING EU- KOREA COOPERATION",
+      "reader_more": "CEPS IN-DEPTH ANALYSIS Irina Kustova, Fanny Sauvignon and Christian Dietz May, 2025-06 FROM PARTNERSHIP TO LEADERSHIP: ENERGISING EU- KOREA COOPERATION ON THE ROAD TO NET ZERO SUMMARY Like-minded partners have never been more needed than they are today. The recovered source is policy/report material. Its relevance to the Radar is substantive but not wholly unambiguous, so admission is flagged for review.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about from partnership to leadership: energising eu-korea cooperation on the road to net zero – ceps?",
+        "main_finding": "CEPS IN-DEPTH ANALYSIS Irina Kustova, Fanny Sauvignon and Christian Dietz May, 2025-06 FROM PARTNERSHIP TO LEADERSHIP: ENERGISING EU- KOREA COOPERATION ON THE ROAD TO NET ZERO SUMMARY Like-minded partners have never been more needed than they are today.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by CEPS.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work has a genuine European economic-security connection, but the strength or centrality of that connection warrants human admission judgment.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://cdn.ceps.eu/wp-content/uploads/2025/05/2025-06-ERCC-FP-KF.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'From partnership to leadership: energising EU-Korea cooperation on the road to net zero – CEPS' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://cdn.ceps.eu/wp-content/uploads/2025/05/2025-06-ERCC-FP-KF.pdf",
+            "title": "From partnership to leadership: energising EU-Korea cooperation on the road to net zero – CEPS",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work has a genuine European economic-security connection, but the strength or centrality of that connection warrants human admission judgment."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:53:12Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "partnership.like_minded_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CEPS",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "partners",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2025-05-15",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "CEPS IN-DEPTH ANALYSIS Irina Kustova, Fanny Sauvignon and Christian Dietz May, 2025-06 FROM PARTNERSHIP TO LEADERSHIP: ENERGISING EU- KOREA COOPERATION ON THE ROAD TO NET ZERO SUMMARY Like-minded partners have never been more needed than they are today.",
+          "confidence": "high",
+          "record_key": "historical:id:b6e3c639d2ae1bef",
+          "merit": 71,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:63f9333401d02c5c:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:73ae1cd4823a0cc0": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "ed42ae54",
+      "identity_hash": "36873d2c4df07df0",
+      "reader_title": "The Return of the Repressed: The Colonial History of the EU's Geopolitical Turn",
+      "reader_what": "The Return of the Repressed: The Colonial History of the EU ’s Geopolitical Turn PEO HANSEN Institute for Research on",
+      "reader_more": "The Return of the Repressed: The Colonial History of the EU ’s Geopolitical Turn PEO HANSEN Institute for Research on Migration, Ethnicity and Society, REMESO Linköping University, Linköping Abstract This article examines the EU ’s current geopolitical turn: the push to have. The recovered source is research or policy work. Its relevance to the Radar is substantive but not wholly unambiguous, so admission is flagged for review.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about the return of the repressed: the colonial history of the eu's geopolitical turn?",
+        "main_finding": "The Return of the Repressed: The Colonial History of the EU ’s Geopolitical Turn PEO HANSEN Institute for Research on Migration, Ethnicity and Society, REMESO Linköping University, Linköping Abstract This article examines the EU ’s current geopolitical turn: the push to have.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Journal of Common Market Studies.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work has a genuine European economic-security connection, but the strength or centrality of that connection warrants human admission judgment.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://content.openalex.org/works/W4410330494.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1111/jcms.13757."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'The Return of the Repressed: The Colonial History of the EU's Geopolitical Turn' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://content.openalex.org/works/W4410330494.pdf",
+            "title": "The Return of the Repressed: The Colonial History of the EU's Geopolitical Turn",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work has a genuine European economic-security connection, but the strength or centrality of that connection warrants human admission judgment."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:53:32Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Peo Hansen",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "operating",
+          "status_date": "2025-05-12",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "The Return of the Repressed: The Colonial History of the EU ’s Geopolitical Turn PEO HANSEN Institute for Research on Migration, Ethnicity and Society, REMESO Linköping University, Linköping Abstract This article examines the EU ’s current geopolitical turn: the push to have.",
+          "confidence": "high",
+          "record_key": "historical:id:73ae1cd4823a0cc0",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:36873d2c4df07df0:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:08811d1ebd279333": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "48dff71d",
+      "identity_hash": "d2d874e26d51489e",
+      "reader_title": "A dataset of international legal and policy instruments for the digital world – CEPS",
+      "reader_what": "A DATASET OF INTERNATIONAL LEGAL AND POLICY INSTRUMENTS FOR THE DIGITAL WORLD Kai Zenner J.",
+      "reader_more": "A DATASET OF INTERNATIONAL LEGAL AND POLICY INSTRUMENTS FOR THE DIGITAL WORLD Kai Zenner J. The recovered source is policy/report material. Its main contribution is not sufficiently centered on European economic security for Strand A.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about a dataset of international legal and policy instruments for the digital world – ceps?",
+        "main_finding": "A DATASET OF INTERNATIONAL LEGAL AND POLICY INSTRUMENTS FOR THE DIGITAL WORLD Kai Zenner J.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by CEPS.",
+        "qualification": "The recovered work is identifiable, but its central object is outside Strand A’s substantive European economic-security scope.",
+        "radar_relevance": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://cdn.ceps.eu/2025/08/CEPS-Zenner-Dataset-070525.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'A dataset of international legal and policy instruments for the digital world – CEPS' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://cdn.ceps.eu/2025/08/CEPS-Zenner-Dataset-070525.pdf",
+            "title": "A dataset of international legal and policy instruments for the digital world – CEPS",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:53:52Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:95f105783bb93789": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "66c64f79",
+      "identity_hash": "a79fd1640cd60126",
+      "reader_title": "Markets and minds - upholding the transatlantic partnership | Bank for International Settlements",
+      "reader_what": "Atlantic Council, Washington DC – 23 April 2025 “Markets and minds: upholding the transatlantic partnership” Speech by François Villeroy de",
+      "reader_more": "Atlantic Council, Washington DC – 23 April 2025 “Markets and minds: upholding the transatlantic partnership” Speech by François Villeroy de Galhau Governor of the Banque de France Press contact: Delphine Cuny ( delphine.cuny@banque-france.fr ) Page 1 sur 8 Ladies and Gentlemen, I. The recovered source is research or policy work. Its main contribution is not sufficiently centered on European economic security for Strand A.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about markets and minds - upholding the transatlantic partnership | bank for international settlements?",
+        "main_finding": "Atlantic Council, Washington DC – 23 April 2025 “Markets and minds: upholding the transatlantic partnership” Speech by François Villeroy de Galhau Governor of the Banque de France Press contact: Delphine Cuny ( delphine.cuny@banque-france.fr ) Page 1 sur 8 Ladies and Gentlemen, I.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Bank for International Settlements.",
+        "qualification": "The recovered work is identifiable, but its central object is outside Strand A’s substantive European economic-security scope.",
+        "radar_relevance": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.bis.org/speeches/20250430-markets-and-minds-upholding-transatlantic-partnership.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Markets and minds - upholding the transatlantic partnership | Bank for International Settlements' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.bis.org/speeches/20250430-markets-and-minds-upholding-transatlantic-partnership.pdf",
+            "title": "Markets and minds - upholding the transatlantic partnership | Bank for International Settlements",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:54:12Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:213db94bcfa6af1e": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "c5fb2fb4",
+      "identity_hash": "d5788f7d0b722b15",
+      "reader_title": "European cloud computing policy: failing in Europe to succeed nationally?",
+      "reader_what": "West European Politics ISSN: 0140-2382 (Print) 1743-9655 (Online) Journal homepage: www.tandfonline.com/journals/fwep20 European cloud computing policy: failing in Europe to succeed",
+      "reader_more": "West European Politics ISSN: 0140-2382 (Print) 1743-9655 (Online) Journal homepage: www.tandfonline.com/journals/fwep20 European cloud computing policy: failing in Europe to succeed nationally?. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about european cloud computing policy: failing in europe to succeed nationally??",
+        "main_finding": "West European Politics ISSN: 0140-2382 (Print) 1743-9655 (Online) Journal homepage: www.tandfonline.com/journals/fwep20 European cloud computing policy: failing in Europe to succeed nationally?.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by West European Politics.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://content.openalex.org/works/W4409979964.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1080/01402382.2025.2491962."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'European cloud computing policy: failing in Europe to succeed nationally?' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://content.openalex.org/works/W4409979964.pdf",
+            "title": "European cloud computing policy: failing in Europe to succeed nationally?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:54:33Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "digital.sovereignty",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Antonio Calcara",
+            "class": "university_group"
+          },
+          "mechanism": "governs",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-04-30",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "West European Politics ISSN: 0140-2382 (Print) 1743-9655 (Online) Journal homepage: www.tandfonline.com/journals/fwep20 European cloud computing policy: failing in Europe to succeed nationally?.",
+          "confidence": "high",
+          "record_key": "historical:id:213db94bcfa6af1e",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:d5788f7d0b722b15:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:59a11de42036b6bf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "fc93d135",
+      "identity_hash": "dd5172b831ee55f7",
+      "reader_title": "Preserving our transatlantic values, beyond present unpredictability | Bank for International Settlements",
+      "reader_what": "1/4 BIS - Central bankers' speeches François Villeroy de Galhau: Preserving our transatlantic values, beyond present unpredictability Speech by Mr",
+      "reader_more": "1/4 BIS - Central bankers' speeches François Villeroy de Galhau: Preserving our transatlantic values, beyond present unpredictability Speech by Mr François Villeroy de Galhau, Governor of the Bank of France, at the Foreign Policy Association, New York City, 22 April 2025. The recovered source is research or policy work. Its main contribution is not sufficiently centered on European economic security for Strand A.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about preserving our transatlantic values, beyond present unpredictability | bank for international settlements?",
+        "main_finding": "1/4 BIS - Central bankers' speeches François Villeroy de Galhau: Preserving our transatlantic values, beyond present unpredictability Speech by Mr François Villeroy de Galhau, Governor of the Bank of France, at the Foreign Policy Association, New York City, 22 April 2025.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Bank for International Settlements.",
+        "qualification": "The recovered work is identifiable, but its central object is outside Strand A’s substantive European economic-security scope.",
+        "radar_relevance": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.bis.org/speeches/20250428-preserving-our-transatlantic-values-beyond-present-unpredictability.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Preserving our transatlantic values, beyond present unpredictability | Bank for International Settlements' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.bis.org/speeches/20250428-preserving-our-transatlantic-values-beyond-present-unpredictability.pdf",
+            "title": "Preserving our transatlantic values, beyond present unpredictability | Bank for International Settlements",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:54:53Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:794040280d1ff162": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "20cffdf3",
+      "identity_hash": "a3899e90705362f6",
+      "reader_title": "Intra-Industry Trade, Global Value Chains, and the Political Economy of Selective Trade Protection",
+      "reader_what": "Recent trade wars have confronted the trade policy literature with a major puzzle.",
+      "reader_more": "Recent trade wars have confronted the trade policy literature with a major puzzle. The recovered source is research or policy work. Its relevance to the Radar is substantive but not wholly unambiguous, so admission is flagged for review.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about intra-industry trade, global value chains, and the political economy of selective trade protection?",
+        "main_finding": "Recent trade wars have confronted the trade policy literature with a major puzzle.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by Business and Politics.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work has a genuine European economic-security connection, but the strength or centrality of that connection warrants human admission judgment.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.cambridge.org/core/journals/business-and-politics/article/intraindustry-trade-global-value-chains-and-the-political-economy-of-selective-trade-protection/DE5F59FD2E1AADCE3839D8AC9CDD29E4 and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1017/bap.2025.1."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Intra-Industry Trade, Global Value Chains, and the Political Economy of Selective Trade Protection' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://www.cambridge.org/core/journals/business-and-politics/article/intraindustry-trade-global-value-chains-and-the-political-economy-of-selective-trade-protection/DE5F59FD2E1AADCE3839D8AC9CDD29E4",
+            "title": "Intra-Industry Trade, Global Value Chains, and the Political Economy of Selective Trade Protection",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work has a genuine European economic-security connection, but the strength or centrality of that connection warrants human admission judgment."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:55:13Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [
+        {
+          "object": "trade_defence.anti_subsidy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Emile van Ommeren",
+            "class": "university_group"
+          },
+          "mechanism": "regulates",
+          "direction": "becomes_contested",
+          "status": "operating",
+          "status_date": "2025-04-24",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "Recent trade wars have confronted the trade policy literature with a major puzzle.",
+          "confidence": "high",
+          "record_key": "historical:id:794040280d1ff162",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:a3899e90705362f6:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:3b988e053a919e91": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "3196136e",
+      "identity_hash": "fa8f877c10757bcb",
+      "reader_title": "China’s Manufacturing FDI in ASEAN Grew Rapidly, But Faces Tariff Headwinds",
+      "reader_what": "ASEAN has become the top destination for Chinese manufacturing FDI by number of announced transactions, but US tariffs of more",
+      "reader_more": "ASEAN has become the top destination for Chinese manufacturing FDI by number of announced transactions, but US tariffs of more than 30% would deal a major blow to the region’s diversification boom and China’s FDI there. The recovered source is research or policy work. Its main contribution is not sufficiently centered on European economic security for Strand A.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about china’s manufacturing fdi in asean grew rapidly, but faces tariff headwinds?",
+        "main_finding": "ASEAN has become the top destination for Chinese manufacturing FDI by number of announced transactions, but US tariffs of more than 30% would deal a major blow to the region’s diversification boom and China’s FDI there.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by Rhodium Group.",
+        "qualification": "The recovered work is identifiable, but its central object is outside Strand A’s substantive European economic-security scope.",
+        "radar_relevance": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://rhg.com/research/chinas-manufacturing-fdi-in-asean-grew-rapidly-but-faces-tariff-headwinds/ and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'China’s Manufacturing FDI in ASEAN Grew Rapidly, But Faces Tariff Headwinds' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://rhg.com/research/chinas-manufacturing-fdi-in-asean-grew-rapidly-but-faces-tariff-headwinds/",
+            "title": "China’s Manufacturing FDI in ASEAN Grew Rapidly, But Faces Tariff Headwinds",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T15:55:33Z",
+      "deep_scan_package_id": "worker-a-6a3b91754c56",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-09-29T15:24:56Z"
+  "claims_updated_at": "2026-09-29T15:55:53Z"
 }

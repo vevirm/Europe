@@ -6,26 +6,26 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **588** (Main **479** + Historical **109**)
-- Automatic queue still needing V2 verification: **1037** (Main **155** + Historical **882**)
-- Currently assigned to workers: **78** (Main **8** + Historical **70**)
+- Authoritative V2 verified: **624** (Main **481** + Historical **143**)
+- Automatic queue still needing V2 verification: **1001** (Main **153** + Historical **848**)
+- Currently assigned to workers: **78** (Main **6** + Historical **72**)
 - Bounded access-recovery retries still eligible: **181**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **959**
+- Automatic queue pending and not yet assigned: **923**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-6a3b91754c56`
+- Current package: `worker-a-263494cb1fb0`
 - Assigned unresolved records: **36**
-  1. `link:https://doi.org/10.1057/s41599-026-08607-9` — The obstacles and changes in Sino-European trade routes in the twenty-first century due to climate change and geopolitical risks
-  2. `link:https://www.atlanticcouncil.org/wp-content/uploads/2026/07/beyond-the-corridor-imec-as-a-network-of-routes.pdf` — A network of corridors is the only reliable hedge against Middle East chokepoint disruptions
-  3. `historical:id:b13d4236ef741b9f` — How and Why EU Institutions Promote the Digital Euro: The Politics of a Central Bank Digital Currency (CBDC)
-  4. `historical:id:19f2d49289e7c3cd` — Thrown under the omnibus: How the EU’s digital deregulation fuels US coercion – European Council on Foreign Relations
-  5. `historical:id:7a77d64ecea562f3` — The Supply Chain Disruption Survey: A new survey on knowledge flows in global supply chains - Kiel Institute
-  6. `historical:id:fe87d58e76432253` — Belgium’s Second Annual FDI Screening Report: A Balance Between Openness and National Security - CELIS Institute - Investment Screening | National Security | Competitiveness
-  7. `historical:id:3f6a6440696eb51d` — EU Data Sovereignty: An Autonomy–Interdependence Governance Gap?
-  8. `historical:id:2e7d584322aa1076` — Preventing the Critical Minerals Crisis - Egmont Institute
+  1. `historical:id:52ee9b435418d418` — Spillovers to the EU from US tariffs imposed on third countries – model-based simulations
+  2. `historical:id:57350d1b81a67917` — Selective Industrial Policy for the EU Open Strategic Autonomy: the Role of Products' Relatedness
+  3. `historical:id:67d42817310851ea` — Presentation of the paper : The European pilar of NATO - Institut Jacques Delors
+  4. `historical:id:eb40900c031cf2f7` — Pending legislation 2014 - Business input to the screening exercise by vice-president Timmermans
+  5. `historical:id:a98f78be76f69e69` — Over-dependencies in services: A blind spot in the EU economic security strategy? - Institut Jacques Delors
+  6. `historical:id:9aed1fea861ced82` — Market analysis
+  7. `historical:id:7d9119823a96094f` — Institut Jacques Delors - Background Paper : Energy Trends in Europe
+  8. `historical:id:e934dfafdbba1834` — Institut Jacques Delors - An external strategy for European agriculture
   - … plus 28 more in the package manifest
 
 ### Worker B
