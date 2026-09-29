@@ -1,0 +1,3009 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-b-cf8b3f0e0b5f",
+  "results": [
+    {
+      "record_key": "historical:id:f342875f1a3c6fd4",
+      "source_hash": "a388da45",
+      "identity_hash": "cdb964dcccbfeed7",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened the CELIS article by Verónica Fraile del Álamo and Darren J. Lim, published 2026-05-20, which explicitly points to their Law & Geoeconomics article."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Recovered the underlying peer-reviewed article DOI 10.1163/29505720-bja00002 from Brill; title and authors match the CELIS authors' description."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search recovered the Brill full-text article 'Supply Chain Secondary Sanctions' and ANU publication record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "first_party_commentary",
+            "url": "https://www.celis.institute/celis-institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/",
+            "title": "Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_full_text",
+            "url": "https://brill.com/downloadpdf/view/journals/lgeo/1/1/article-p110_7.pdf",
+            "title": "Supply Chain Secondary Sanctions",
+            "evidence_used": true
+          },
+          {
+            "kind": "institutional_repository",
+            "url": "https://researchportalplus.anu.edu.au/en/publications/supply-chain-secondary-sanctions/",
+            "title": "Supply Chain Secondary Sanctions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The CELIS piece is substantiated by the authors' peer-reviewed Brill article and ANU publication record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work directly analyzes China's coercive use of third-party supply-chain links against Lithuania, an EU member state."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "China’s Lithuania pressure illustrates supply-chain secondary sanctions",
+      "reader_what": "The authors model how a state can pressure third-country firms to amplify coercion against a target.",
+      "reader_why": "Supply-chain links can transmit coercive pressure beyond a target’s direct bilateral trade.",
+      "reader_more": "The authors examine China’s coercive campaign against Lithuania after the Taiwan dispute. They describe pressure on third-country firms whose supply chains involved Lithuania and use the case to develop a model of 'supply-chain secondary sanctions.' The study combines descriptive evidence with theory-building rather than estimating a general causal effect.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed geoeconomics article with first-party commentary",
+        "research_question": "How can states exploit a target's links to third-party firms to impose economic sanctions?",
+        "main_finding": "The Lithuania case shows how coercive pressure can be transmitted through third-country firms embedded in a target's supply chains.",
+        "method_or_basis": "Case study, descriptive evidence and theory-building around China's 2021-onward coercion campaign against Lithuania.",
+        "qualification": "The article uses the Lithuania case heuristically to build a model of supply-chain secondary sanctions; it provides descriptive evidence but does not claim a general causal estimate.",
+        "radar_relevance": "Direct evidence on economic coercion against an EU member state and the supply-chain mechanisms that transmit it.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "coercion.incident",
+          "secondary_objects": [
+            "dependency.single_supplier"
+          ],
+          "actor": {
+            "name": "China",
+            "class": "third_country"
+          },
+          "mechanism": "coerces",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2021",
+          "status_date_precision": "year",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "Lithuania"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "The article uses the Lithuania case heuristically to build a model of supply-chain secondary sanctions; it provides descriptive evidence but does not claim a general causal estimate.",
+          "text": "The study describes China's campaign against Lithuania as economic coercion extended through third-country firms and supply-chain links.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:40a6b5f31d319cbf",
+      "source_hash": "25087151",
+      "identity_hash": "78f5b0595c1af055",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened the Common Market Law Review/Kluwer article page; title, author Rens G J Stegink and DOI matched the job."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.54648/COLA2025064 matched the Common Market Law Review article."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search returned the Kluwer journal page and independent bibliographic records for the same article."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_article",
+            "url": "https://kluwerlawonline.com/journalarticle/Common%2BMarket%2BLaw%2BReview/62.3/COLA2025064",
+            "title": "Comparing complements: The concept of foreign subsidy under the EU Foreign Subsidies Regulation in light of EU State aid law and WTO subsidy law",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publisher evidence confirms the work and its substantive comparative legal analysis of the EU Foreign Subsidies Regulation."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "A completed scholarly analysis of a core EU economic-security/trade-defence instrument and its legal interpretation fits Strand A Route 3."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Foreign Subsidies Regulation interpretation sits between EU state-aid and WTO subsidy law",
+      "reader_what": "The article proposes how each element of the FSR’s foreign-subsidy definition should be interpreted.",
+      "reader_why": "Legal clarity affects how the EU screens and regulates state-backed economic activity from third countries.",
+      "reader_more": "The article compares the FSR definition of a foreign subsidy with EU state-aid law and WTO subsidy law. It argues that different elements should draw differently on those two legal regimes to preserve consistency and legal certainty. The work is doctrinal legal analysis, so it clarifies the instrument rather than measuring whether the FSR changes investment or competition outcomes.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed doctrinal legal article",
+        "research_question": "How should the FSR's definition of a foreign subsidy be interpreted in light of EU state-aid and WTO subsidy law?",
+        "main_finding": "The article proposes element-by-element interpretive frameworks drawing selectively on EU state-aid and WTO subsidy law.",
+        "method_or_basis": "Comparative doctrinal analysis of the FSR, EU state-aid law and WTO subsidy law.",
+        "qualification": "This is doctrinal legal analysis of how the FSR's 'foreign subsidy' definition should be interpreted; it does not measure the Regulation's economic effects.",
+        "radar_relevance": "Direct analysis of the design and interpretation of an EU economic-security and trade-defence instrument.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.toolbox_coordination",
+          "secondary_objects": [
+            "trade.wto_compatibility"
+          ],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "regulates",
+          "direction": "becomes_contested",
+          "status": "in_force",
+          "status_date": "2025-08",
+          "status_date_precision": "month",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This is doctrinal legal analysis of how the FSR's 'foreign subsidy' definition should be interpreted; it does not measure the Regulation's economic effects.",
+          "text": "The article finds that interpreting the FSR's foreign-subsidy concept requires reconciling EU state-aid and WTO subsidy-law approaches.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:d5a511bb499c8787",
+      "source_hash": "af444d06",
+      "identity_hash": "e570800a2862c7a8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "The repository copy identifies the JCMS article by Frederik Stender, Tim Vogel and Niels Keijzer."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/jcms.70001 resolved to Wiley with matching title, authors and first-publication date 2025-07-17."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search returned the Wiley publisher record and matching abstract."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_article",
+            "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/jcms.70001",
+            "title": "Policy Coherence in the Time of Economic Insecurity: Balancing the Sustainable Trade and Development Playbook of the New European Commission",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publisher metadata and the full repository copy confirm a substantive policy commentary on economic security, trade and development coherence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work directly analyzes the EU's economic-security agenda, trade partnerships, critical-raw-material access and policy trade-offs."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Economic security complicates EU trade and development policy coherence",
+      "reader_what": "The commentary argues that security, competitiveness and development priorities are increasingly difficult to align.",
+      "reader_why": "EU partnerships for raw materials and geopolitical competition can pull trade and development policy in different directions.",
+      "reader_more": "The article examines the second von der Leyen Commission’s stronger emphasis on economic security and competitiveness. It argues that securing critical raw materials and building partnerships with the Global South must be reconciled with sustainability and development objectives. The authors stress that the agenda was still emerging and had not yet translated into many concrete trade-policy measures.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed policy commentary",
+        "research_question": "How can the EU maintain coherent trade and development policy as economic security becomes a higher priority?",
+        "main_finding": "The authors argue that the EU faces growing tensions between economic-security, competitiveness, sustainability and development objectives.",
+        "method_or_basis": "Policy analysis of recent EU trade, development, competitiveness and critical-raw-material initiatives.",
+        "qualification": "The article is a policy commentary assessing coherence and trade-offs; it notes that the second von der Leyen Commission's economic-security priority had not yet produced many tangible trade-policy actions.",
+        "radar_relevance": "Directly analyzes the EU economic-security agenda and its trade, partnership and critical-material dimensions.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [
+            "partnership.critical_minerals"
+          ],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "prioritises",
+          "direction": "expands",
+          "status": "announced",
+          "status_date": "2025-07-17",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The article is a policy commentary assessing coherence and trade-offs; it notes that the second von der Leyen Commission's economic-security priority had not yet produced many tangible trade-policy actions.",
+          "text": "The commentary identifies economic security and competitiveness as stronger Commission priorities that complicate coherence with EU trade and development goals.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:298747664b0b7e07",
+      "source_hash": "7960508f",
+      "identity_hash": "5607ca137a6020b6",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "The package contains a matching full PDF of the Global Policy article with title, authors and DOI."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/1758-5899.70009 resolved to the Wiley article with matching title and authors."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search returned the Wiley full-text article and journal issue listing."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://onlinelibrary.wiley.com/doi/10.1111/1758-5899.70009",
+            "title": "Human Rights and Environmental Due Diligence Regulations for Deforestation-Free Value Chains? Exploring the Implementation of the EU Regulation on Deforestation-Free Products in the Cocoa and Coffee Sectors of Peru",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and full substantive evidence are strong. The study focuses on environmental due-diligence implementation in Peru rather than Europe's economic-security dependencies or tools."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "Although EU-relevant and trade-related, the work's substantive object is environmental due-diligence implementation and forest governance, not European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EUDR implementation in Peru faces local due-diligence and cost challenges",
+      "reader_what": "The study examines how Peru’s cocoa and coffee sectors are adapting to EU deforestation rules.",
+      "reader_why": "",
+      "reader_more": "The study documents implementation challenges around legality, farm geolocation, costs and country-risk benchmarking. It is a substantive analysis of environmental and human-rights due diligence in agricultural value chains. Its focus is forest governance and local implementation rather than European economic-security dependencies, coercion, strategic supply or related instruments.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed empirical case study",
+        "research_question": "What challenges and opportunities arise when implementing the EUDR in Peru's cocoa and coffee sectors?",
+        "main_finding": "Implementation faces legal, geolocation, cost and coordination challenges and may change production practices.",
+        "method_or_basis": "Exploratory inductive case study of EUDR implementation in Peru's cocoa and coffee sectors.",
+        "qualification": "The study concerns environmental trade regulation and producer-country implementation; it does not substantively analyze European economic security.",
+        "radar_relevance": "Fails Strand A because EU relevance is environmental trade governance rather than economic-security dependence, coercion, strategic capacity or toolbox analysis.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:a59129e23f173be6",
+      "source_hash": "99422f01",
+      "identity_hash": "0a2aca0e67da0ff3",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/less-food-waste-could-bring-lower-eu-food-prices-and-decrease-greenhouse-gas-emissions-2023-07-06_en and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Less food waste could bring lower EU food prices and decrease greenhouse gas emissions' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/less-food-waste-could-bring-lower-eu-food-prices-and-decrease-greenhouse-gas-emissions-2023-07-06_en",
+            "title": "Less food waste could bring lower EU food prices and decrease greenhouse gas emissions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Less food waste could bring lower EU food prices and decrease greenhouse gas emissions",
+      "reader_what": "The JRC estimated the potential impacts of decreasing food waste in the EU to inform new policies.",
+      "reader_why": "",
+      "reader_more": "The JRC estimated the potential impacts of decreasing food waste in the EU to inform new policies. The recovered source is research or policy work. Its main contribution is not sufficiently centered on European economic security for Strand A.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about less food waste could bring lower eu food prices and decrease greenhouse gas emissions?",
+        "main_finding": "The JRC estimated the potential impacts of decreasing food waste in the EU to inform new policies.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by Joint Research Centre.",
+        "qualification": "The recovered work is identifiable, but its central object is outside Strand A’s substantive European economic-security scope.",
+        "radar_relevance": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:49366cd6741e9019",
+      "source_hash": "6db1bc95",
+      "identity_hash": "bd98278cfa87dd21",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://econjournals.com/index.php/ijeep/article/view/19649 and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.32479/ijeep.19649."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Detecting Cybersecurity Threats in Digital Energy Systems Using Deep learning for Imbalanced Datasets' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://econjournals.com/index.php/ijeep/article/view/19649",
+            "title": "Detecting Cybersecurity Threats in Digital Energy Systems Using Deep learning for Imbalanced Datasets",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Detecting Cybersecurity Threats in Digital Energy Systems Using Deep learning for Imbalanced Datasets",
+      "reader_what": "Abstract Energy management systems are experiencing significant transformations due to the adoption of innovative business models and advanced digital technologies.",
+      "reader_why": "",
+      "reader_more": "Abstract Energy management systems are experiencing significant transformations due to the adoption of innovative business models and advanced digital technologies. The recovered source is research or policy work. Its main contribution is not sufficiently centered on European economic security for Strand A.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about detecting cybersecurity threats in digital energy systems using deep learning for imbalanced datasets?",
+        "main_finding": "Abstract Energy management systems are experiencing significant transformations due to the adoption of innovative business models and advanced digital technologies.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by Energy Economics.",
+        "qualification": "The recovered work is identifiable, but its central object is outside Strand A’s substantive European economic-security scope.",
+        "radar_relevance": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:0d88769ecda78716",
+      "source_hash": "ca0b5414",
+      "identity_hash": "a36c437982cf49b2",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://content.openalex.org/works/W4409554553.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1080/14747731.2025.2491973."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Dependent development under geopolitical reconfiguration: the Orbán regime in Hungary' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://content.openalex.org/works/W4409554553.pdf",
+            "title": "Dependent development under geopolitical reconfiguration: the Orbán regime in Hungary",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work has a genuine European economic-security connection, but the strength or centrality of that connection warrants human admission judgment."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Dependent development under geopolitical reconfiguration: the Orbán regime in Hungary",
+      "reader_what": "Globalizations ISSN: 1474-7731 (Print) 1474-774X (Online) Journal homepage: www.tandfonline.com/journals/rglo20 Dependent development under geopolitical reconﬁguration: the Orbán regime in Hungary Agnes",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "Globalizations ISSN: 1474-7731 (Print) 1474-774X (Online) Journal homepage: www.tandfonline.com/journals/rglo20 Dependent development under geopolitical reconﬁguration: the Orbán regime in Hungary Agnes Gagyi & Tamás Gerőcs To cite this article: Agnes Gagyi & Tamás Gerőcs (17 Apr 2025): Dependent development under geopolitical reconﬁguration: the. The recovered source is research or policy work. Its relevance to the Radar is substantive but not wholly unambiguous, so admission is flagged for review.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about dependent development under geopolitical reconfiguration: the orbán regime in hungary?",
+        "main_finding": "Globalizations ISSN: 1474-7731 (Print) 1474-774X (Online) Journal homepage: www.tandfonline.com/journals/rglo20 Dependent development under geopolitical reconﬁguration: the Orbán regime in Hungary Agnes Gagyi & Tamás Gerőcs To cite this article: Agnes Gagyi & Tamás Gerőcs (17 Apr 2025): Dependent development under geopolitical reconﬁguration: the.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Globalizations.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work has a genuine European economic-security connection, but the strength or centrality of that connection warrants human admission judgment.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Ágnes Gagyi",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "operating",
+          "status_date": "2025-04-17",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "Hungary"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "Globalizations ISSN: 1474-7731 (Print) 1474-774X (Online) Journal homepage: www.tandfonline.com/journals/rglo20 Dependent development under geopolitical reconﬁguration: the Orbán regime in Hungary Agnes Gagyi & Tamás Gerőcs To cite this article: Agnes Gagyi & Tamás Gerőcs (17 Apr 2025): Dependent development under geopolitical reconﬁguration: the.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:03d67ae8db1449d4",
+      "source_hash": "4455fc40",
+      "identity_hash": "a285def8fb409191",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.celis.institute/celis-blog/bdi-celis-german-chapter-conference-report/ and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Conference Report: BDI/CELIS German Chapter – Investment Screening Conference' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://www.celis.institute/celis-blog/bdi-celis-german-chapter-conference-report/",
+            "title": "Conference Report: BDI/CELIS German Chapter – Investment Screening Conference",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Conference Report: BDI/CELIS German Chapter – Investment Screening Conference",
+      "reader_what": "Kilian Wagner From 27th to 28th March, the BDI and CELIS German Chapter organized the second joint conference on investment",
+      "reader_why": "",
+      "reader_more": "Kilian Wagner From 27th to 28th March, the BDI and CELIS German Chapter organized the second joint conference on investment screening in Berlin. The recovered source is policy/report material. Its main contribution is not sufficiently centered on European economic security for Strand A.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about conference report: bdi/celis german chapter – investment screening conference?",
+        "main_finding": "Kilian Wagner From 27th to 28th March, the BDI and CELIS German Chapter organized the second joint conference on investment screening in Berlin.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by CELIS Institute.",
+        "qualification": "The recovered work is identifiable, but its central object is outside Strand A’s substantive European economic-security scope.",
+        "radar_relevance": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:ced5782b23693b87",
+      "source_hash": "e72e06f7",
+      "identity_hash": "263baad7c346fee8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.bis.org/speeches/20250409-empowering-europe-boosting-strategic-autonomy-through-digital-euro.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Empowering Europe - boosting strategic autonomy through the digital euro | Bank for International Settlements' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.bis.org/speeches/20250409-empowering-europe-boosting-strategic-autonomy-through-digital-euro.pdf",
+            "title": "Empowering Europe - boosting strategic autonomy through the digital euro | Bank for International Settlements",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Empowering Europe - boosting strategic autonomy through the digital euro | Bank for International Settlements",
+      "reader_what": "SPEECH Empowering Europe: boosting strategic autonomy through the digital euro Introductory statement by Piero Cipollone, Member of the Executive Board",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "SPEECH Empowering Europe: boosting strategic autonomy through the digital euro Introductory statement by Piero Cipollone, Member of the Executive Board of the ECB, at the Committee on Economic and Monetary Affairs of the European Parliament Brussels, 8 April 2025 It is a. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about empowering europe - boosting strategic autonomy through the digital euro | bank for international settlements?",
+        "main_finding": "SPEECH Empowering Europe: boosting strategic autonomy through the digital euro Introductory statement by Piero Cipollone, Member of the Executive Board of the ECB, at the Committee on Economic and Monetary Affairs of the European Parliament Brussels, 8 April 2025 It is a.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Bank for International Settlements.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "finance.payment_infrastructure",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Bank for International Settlements",
+            "class": "other"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-04-09",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "SPEECH Empowering Europe: boosting strategic autonomy through the digital euro Introductory statement by Piero Cipollone, Member of the Executive Board of the ECB, at the Committee on Economic and Monetary Affairs of the European Parliament Brussels, 8 April 2025 It is a.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:c75472ab58871265",
+      "source_hash": "f863faee",
+      "identity_hash": "ea1a98fd33ab6bbd",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://content.openalex.org/works/W4409036148.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1111/jcms.13743."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Between Geopolitics and Political Economy: The European Union–Mercosur Negotiation to Form a Trade Agreement' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://content.openalex.org/works/W4409036148.pdf",
+            "title": "Between Geopolitics and Political Economy: The European Union–Mercosur Negotiation to Form a Trade Agreement",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Between Geopolitics and Political Economy: The European Union–Mercosur Negotiation to Form a Trade Agreement",
+      "reader_what": "Between Geopolitics and Political Economy: The European Union–Mercosur Negotiation to Form a Trade Agreement NICOLÁS POSE-FERRARO School of Social Sciences,",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "Between Geopolitics and Political Economy: The European Union–Mercosur Negotiation to Form a Trade Agreement NICOLÁS POSE-FERRARO School of Social Sciences, University of the Republic, Montevideo Abstract This article explores the reasons for the latest push to conclude the European Union (EU) –. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about between geopolitics and political economy: the european union–mercosur negotiation to form a trade agreement?",
+        "main_finding": "Between Geopolitics and Political Economy: The European Union–Mercosur Negotiation to Form a Trade Agreement NICOLÁS POSE-FERRARO School of Social Sciences, University of the Republic, Montevideo Abstract This article explores the reasons for the latest push to conclude the European Union (EU) –.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Journal of Common Market Studies.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.agreement",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Nicolás Pose",
+            "class": "university_group"
+          },
+          "mechanism": "partners",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-03-31",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "Between Geopolitics and Political Economy: The European Union–Mercosur Negotiation to Form a Trade Agreement NICOLÁS POSE-FERRARO School of Social Sciences, University of the Republic, Montevideo Abstract This article explores the reasons for the latest push to conclude the European Union (EU) –.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:aabc78fba37266b6",
+      "source_hash": "59de8ea4",
+      "identity_hash": "a7087ff99e85e18e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.celis.institute/celis-blog/russian-investments-and-corporate-relocation-economic-strategy-or-threat-to-democracies/ and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Russian Investments and Corporate Relocation: Economic Strategy or Threat to Democracies' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://www.celis.institute/celis-blog/russian-investments-and-corporate-relocation-economic-strategy-or-threat-to-democracies/",
+            "title": "Russian Investments and Corporate Relocation: Economic Strategy or Threat to Democracies",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Russian Investments and Corporate Relocation: Economic Strategy or Threat to Democracies",
+      "reader_what": "By Davit Maisuradze and Zurab Gvelesiani, Structural Reforms Center (SRC) All Eyes on Ukraine and Quiet Capture of Georgia While",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "By Davit Maisuradze and Zurab Gvelesiani, Structural Reforms Center (SRC) All Eyes on Ukraine and Quiet Capture of Georgia While the global community is fixated on Russia’s brutal war in Ukraine, a parallel but less visible development has been unfolding in the. The recovered source is policy/report material. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about russian investments and corporate relocation: economic strategy or threat to democracies?",
+        "main_finding": "By Davit Maisuradze and Zurab Gvelesiani, Structural Reforms Center (SRC) All Eyes on Ukraine and Quiet Capture of Georgia While the global community is fixated on Russia’s brutal war in Ukraine, a parallel but less visible development has been unfolding in the.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by CELIS Institute.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CELIS Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2025-03-27",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "By Davit Maisuradze and Zurab Gvelesiani, Structural Reforms Center (SRC) All Eyes on Ukraine and Quiet Capture of Georgia While the global community is fixated on Russia’s brutal war in Ukraine, a parallel but less visible development has been unfolding in the.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:d6b2ecd8a91382c3",
+      "source_hash": "fbbf56b7",
+      "identity_hash": "650cb843aae7c5c2",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.ceps.eu/ceps-publications/unpredictable-tariffs-by-the-us-implications-for-the-euro-area-and-its-monetary-policy/ and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Unpredictable tariffs by the US: implications for the euro area and its monetary policy – CEPS' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://www.ceps.eu/ceps-publications/unpredictable-tariffs-by-the-us-implications-for-the-euro-area-and-its-monetary-policy/",
+            "title": "Unpredictable tariffs by the US: implications for the euro area and its monetary policy – CEPS",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Unpredictable tariffs by the US: implications for the euro area and its monetary policy – CEPS",
+      "reader_what": "Leading Independent Think Tank on European Policies What are the likely consequences of uncertain US tariffs on the euro area",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "Leading Independent Think Tank on European Policies What are the likely consequences of uncertain US tariffs on the euro area economy and its monetary policy?. The recovered source is policy/report material. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about unpredictable tariffs by the us: implications for the euro area and its monetary policy – ceps?",
+        "main_finding": "Leading Independent Think Tank on European Policies What are the likely consequences of uncertain US tariffs on the euro area economy and its monetary policy?.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by CEPS.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.tariffs_on_eu",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CEPS",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "tariffs",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2025-03-20",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "Leading Independent Think Tank on European Policies What are the likely consequences of uncertain US tariffs on the euro area economy and its monetary policy?.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:757f95483e8a014c",
+      "source_hash": "1b6ee229",
+      "identity_hash": "706a79334505e52d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.celis.institute/celis-blog/transatlantic-insecurity-revaluation-of-economic-security-policys-business-impacts-amid-us-european-turbulence/ and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Transatlantic Insecurity: Revaluation of Economic Security Policy’s Business Impacts Amid US-European Turbulence' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://www.celis.institute/celis-blog/transatlantic-insecurity-revaluation-of-economic-security-policys-business-impacts-amid-us-european-turbulence/",
+            "title": "Transatlantic Insecurity: Revaluation of Economic Security Policy’s Business Impacts Amid US-European Turbulence",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Transatlantic Insecurity: Revaluation of Economic Security Policy’s Business Impacts Amid US-European Turbulence",
+      "reader_what": "By John Kay* The recent foreign policy shifts in Washington have triggered a radical reassessment of the U.S.-European relationship, creating",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "By John Kay* The recent foreign policy shifts in Washington have triggered a radical reassessment of the U.S.-European relationship, creating an evolving landscape that the transatlantic business community must closely monitor. The recovered source is policy/report material. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about transatlantic insecurity: revaluation of economic security policy’s business impacts amid us-european turbulence?",
+        "main_finding": "By John Kay* The recent foreign policy shifts in Washington have triggered a radical reassessment of the U.S.-European relationship, creating an evolving landscape that the transatlantic business community must closely monitor.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by CELIS Institute.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CELIS Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "prioritises",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2025-03-18",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "By John Kay* The recent foreign policy shifts in Washington have triggered a radical reassessment of the U.S.-European relationship, creating an evolving landscape that the transatlantic business community must closely monitor.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:a74e00ec02d80d7e",
+      "source_hash": "2deee933",
+      "identity_hash": "e5b093eaae2594e9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://rhg.com/wp-content/uploads/2025/03/Transatlantic-Clean-Investment-Monitor_A-Perspective-on-Batteries-1.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Transatlantic Clean Investment Monitor: A Perspective on Batteries' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://rhg.com/wp-content/uploads/2025/03/Transatlantic-Clean-Investment-Monitor_A-Perspective-on-Batteries-1.pdf",
+            "title": "Transatlantic Clean Investment Monitor: A Perspective on Batteries",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Transatlantic Clean Investment Monitor: A Perspective on Batteries",
+      "reader_what": "RHODIUM GROUP | ENERGY & CLIMATE TRANSATLANTIC CLEAN INVESTMENT MONITOR: BATTERIES FOR MORE INFORMATION REGARDING OUR RESEARCH, PLEASE EMAIL CLIENTSERVICE@RHG.COM",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "RHODIUM GROUP | ENERGY & CLIMATE TRANSATLANTIC CLEAN INVESTMENT MONITOR: BATTERIES FOR MORE INFORMATION REGARDING OUR RESEARCH, PLEASE EMAIL CLIENTSERVICE@RHG.COM 1 Transatlantic Clean Investment Monitor: A Perspective on Batteries March 6, 2025 Hannah Pitt, Ben McWilliams, Ugnė Keliauskaitė, Kate Larsen, Marie Jugé,. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about transatlantic clean investment monitor: a perspective on batteries?",
+        "main_finding": "RHODIUM GROUP | ENERGY & CLIMATE TRANSATLANTIC CLEAN INVESTMENT MONITOR: BATTERIES FOR MORE INFORMATION REGARDING OUR RESEARCH, PLEASE EMAIL CLIENTSERVICE@RHG.COM 1 Transatlantic Clean Investment Monitor: A Perspective on Batteries March 6, 2025 Hannah Pitt, Ben McWilliams, Ugnė Keliauskaitė, Kate Larsen, Marie Jugé,.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Rhodium Group.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Rhodium Group",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-03-06",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "RHODIUM GROUP | ENERGY & CLIMATE TRANSATLANTIC CLEAN INVESTMENT MONITOR: BATTERIES FOR MORE INFORMATION REGARDING OUR RESEARCH, PLEASE EMAIL CLIENTSERVICE@RHG.COM 1 Transatlantic Clean Investment Monitor: A Perspective on Batteries March 6, 2025 Hannah Pitt, Ben McWilliams, Ugnė Keliauskaitė, Kate Larsen, Marie Jugé,.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:7a05de873011487b",
+      "source_hash": "d5c7dfd5",
+      "identity_hash": "4c803ed0b6afdfcd",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://doi.org/10.1093/ia/iiaf026 and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1093/ia/iiaf026."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Autocracy, Inc.: the dictators who want to run the world' against the supplied publisher/issuer material."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Matched title with author/issuing organisation and year from the publisher/issuer record for 'Autocracy, Inc.: the dictators who want to run the world'."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Used the official publisher/issuing-body route https://doi.org/10.1093/ia/iiaf026 to confirm identity/provenance."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "A bounded identity check using distinctive title and source metadata corroborated the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://doi.org/10.1093/ia/iiaf026",
+            "title": "Autocracy, Inc.: the dictators who want to run the world",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: stored_only."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2025-03-03",
+          "type": "book review"
+        },
+        "unset": [],
+        "reason": "The recovered publisher/issuer evidence gives the corrected bibliographic date/type rather than the scanner placeholder."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Autocracy, Inc.: the dictators who want to run the world",
+      "reader_what": "The work examines Autocracy, Inc.: the dictators who want to run the world.",
+      "reader_why": "",
+      "reader_more": "The work examines Autocracy, Inc.: the dictators who want to run the world. The recovered source is research or policy work. Its main contribution is not sufficiently centered on European economic security for Strand A.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about autocracy, inc.: the dictators who want to run the world?",
+        "main_finding": "The work examines Autocracy, Inc.: the dictators who want to run the world.",
+        "method_or_basis": "Analysis based on the recovered stored only issued by International Affairs.",
+        "qualification": "The recovered work is identifiable, but its central object is outside Strand A’s substantive European economic-security scope.",
+        "radar_relevance": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:ed8c5cbda3d1e9ad",
+      "source_hash": "04ea2b31",
+      "identity_hash": "d56f4daa37cedcd8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.celis.institute/celis-blog/the-eus-evolving-approach-to-open-strategic-autonomy-a-critical-perspective-on-the-competitiveness-compass-for-the-eu-and-other-recent-policy-developments/ and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'The EU’s Evolving Approach to Open Strategic Autonomy: a Critical Perspective on the Competitiveness Compass for the EU and Other Recent Policy Developments' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://www.celis.institute/celis-blog/the-eus-evolving-approach-to-open-strategic-autonomy-a-critical-perspective-on-the-competitiveness-compass-for-the-eu-and-other-recent-policy-developments/",
+            "title": "The EU’s Evolving Approach to Open Strategic Autonomy: a Critical Perspective on the Competitiveness Compass for the EU and Other Recent Policy Developments",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The EU’s Evolving Approach to Open Strategic Autonomy: a Critical Perspective on the Competitiveness Compass for the EU…",
+      "reader_what": "By Professor Sergio Mariotti, Department of Management, Economics and Industrial Engineering, Politecnico di Milano Open Strategic Autonomy (OSA) has emerged",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "By Professor Sergio Mariotti, Department of Management, Economics and Industrial Engineering, Politecnico di Milano Open Strategic Autonomy (OSA) has emerged as a defining concept in the evolution of European policy, shaped by an increasingly complex economic and geopolitical landscape. The recovered source is policy/report material. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about the eu’s evolving approach to open strategic autonomy: a critical perspective on the competitiveness compass for the eu and other recent policy developments?",
+        "main_finding": "By Professor Sergio Mariotti, Department of Management, Economics and Industrial Engineering, Politecnico di Milano Open Strategic Autonomy (OSA) has emerged as a defining concept in the evolution of European policy, shaped by an increasingly complex economic and geopolitical landscape.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by CELIS Institute.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CELIS Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "prioritises",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2025-02-25",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "By Professor Sergio Mariotti, Department of Management, Economics and Industrial Engineering, Politecnico di Milano Open Strategic Autonomy (OSA) has emerged as a defining concept in the evolution of European policy, shaped by an increasingly complex economic and geopolitical landscape.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:7f71c98532147435",
+      "source_hash": "d792686c",
+      "identity_hash": "1b11a6bcf3de83da",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://econjournals.com/index.php/ijeep/article/view/18503 and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.32479/ijeep.18503."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Quantile Analysis of Oil Price Shocks and Stock Market Performance: A European Perspective' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://econjournals.com/index.php/ijeep/article/view/18503",
+            "title": "Quantile Analysis of Oil Price Shocks and Stock Market Performance: A European Perspective",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Quantile Analysis of Oil Price Shocks and Stock Market Performance: A European Perspective",
+      "reader_what": "Abstract This study investigates the interplay between oil price variations and stock market performance in Europe over the period 1991–2023.",
+      "reader_why": "",
+      "reader_more": "Abstract This study investigates the interplay between oil price variations and stock market performance in Europe over the period 1991–2023. The recovered source is research or policy work. Its main contribution is not sufficiently centered on European economic security for Strand A.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about quantile analysis of oil price shocks and stock market performance: a european perspective?",
+        "main_finding": "Abstract This study investigates the interplay between oil price variations and stock market performance in Europe over the period 1991–2023.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by Energy Economics.",
+        "qualification": "The recovered work is identifiable, but its central object is outside Strand A’s substantive European economic-security scope.",
+        "radar_relevance": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:9c411b73c153ca59",
+      "source_hash": "21e579c8",
+      "identity_hash": "77b8a1b78c222058",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.ceps.eu/an-ai-liability-regulation-would-complete-the-eus-ai-strategy/ and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'An AI Liability Regulation would complete the EU’s AI strategy – CEPS' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://www.ceps.eu/an-ai-liability-regulation-would-complete-the-eus-ai-strategy/",
+            "title": "An AI Liability Regulation would complete the EU’s AI strategy – CEPS",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "An AI Liability Regulation would complete the EU’s AI strategy – CEPS",
+      "reader_what": "Leading Independent Think Tank on European Policies In its 2025 work programme , the European Commission effectively scrapped the AI",
+      "reader_why": "",
+      "reader_more": "Leading Independent Think Tank on European Policies In its 2025 work programme , the European Commission effectively scrapped the AI Liability Directive (AILD) – a move that threatens to unravel trust in the EU’s These are essential for the website to function. The recovered source is policy/report material. Its main contribution is not sufficiently centered on European economic security for Strand A.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about an ai liability regulation would complete the eu’s ai strategy – ceps?",
+        "main_finding": "Leading Independent Think Tank on European Policies In its 2025 work programme , the European Commission effectively scrapped the AI Liability Directive (AILD) – a move that threatens to unravel trust in the EU’s These are essential for the website to function.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by CEPS.",
+        "qualification": "The recovered work is identifiable, but its central object is outside Strand A’s substantive European economic-security scope.",
+        "radar_relevance": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:b1ad663531619ad2",
+      "source_hash": "6ada188d",
+      "identity_hash": "886bfe1cf0bf4f65",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://ecfr.eu/article/collaborate-to-innovate-three-ways-the-eu-and-india-can-upgrade-their-tech-partnership/ and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Collaborate to innovate: Three ways the EU and India can upgrade their tech partnership' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://ecfr.eu/article/collaborate-to-innovate-three-ways-the-eu-and-india-can-upgrade-their-tech-partnership/",
+            "title": "Collaborate to innovate: Three ways the EU and India can upgrade their tech partnership",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Collaborate to innovate: Three ways the EU and India can upgrade their tech partnership",
+      "reader_what": "America’s increasingly draconian approach to tech is threatening Europe’s digital sovereignty.",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "America’s increasingly draconian approach to tech is threatening Europe’s digital sovereignty. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about collaborate to innovate: three ways the eu and india can upgrade their tech partnership?",
+        "main_finding": "America’s increasingly draconian approach to tech is threatening Europe’s digital sovereignty.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by European Council on Foreign Relations.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "partnership.like_minded_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Council on Foreign Relations",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "partners",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-02-21",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "America’s increasingly draconian approach to tech is threatening Europe’s digital sovereignty.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:a383f6637fbba8cf",
+      "source_hash": "3fc82ea0",
+      "identity_hash": "7c3a066bc2d32314",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.bis.org/publications/cpmi-brief-7-acta-non-verba-interlinking-fast-payment-systems-enhance-cross-border-payments.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Acta non verba: interlinking fast payment systems to enhance cross-border payments | Bank for International Settlements' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.bis.org/publications/cpmi-brief-7-acta-non-verba-interlinking-fast-payment-systems-enhance-cross-border-payments.pdf",
+            "title": "Acta non verba: interlinking fast payment systems to enhance cross-border payments | Bank for International Settlements",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work has a genuine European economic-security connection, but the strength or centrality of that connection warrants human admission judgment."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Acta non verba: interlinking fast payment systems to enhance cross-border payments | Bank for International Settlements",
+      "reader_what": "month and year February 2025 Acta, non verba: interlinking fast payment systems to enhance cross-border payments CPMI Brief No 7",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "month and year February 2025 Acta, non verba: interlinking fast payment systems to enhance cross-border payments CPMI Brief No 7 CPMI Briefs are written by staff members of the Bank for International Settlements’ Committee on Payments and Market Infrastructures (CPMI) secretariat, sometimes. The recovered source is research or policy work. Its relevance to the Radar is substantive but not wholly unambiguous, so admission is flagged for review.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about acta non verba: interlinking fast payment systems to enhance cross-border payments | bank for international settlements?",
+        "main_finding": "month and year February 2025 Acta, non verba: interlinking fast payment systems to enhance cross-border payments CPMI Brief No 7 CPMI Briefs are written by staff members of the Bank for International Settlements’ Committee on Payments and Market Infrastructures (CPMI) secretariat, sometimes.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Bank for International Settlements.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work has a genuine European economic-security connection, but the strength or centrality of that connection warrants human admission judgment.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "finance.payment_infrastructure",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Bank for International Settlements",
+            "class": "other"
+          },
+          "mechanism": "advocates",
+          "direction": "becomes_contested",
+          "status": "operating",
+          "status_date": "2025-02-20",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "month and year February 2025 Acta, non verba: interlinking fast payment systems to enhance cross-border payments CPMI Brief No 7 CPMI Briefs are written by staff members of the Bank for International Settlements’ Committee on Payments and Market Infrastructures (CPMI) secretariat, sometimes.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:5aa72cc2e2690d24",
+      "source_hash": "ce781d92",
+      "identity_hash": "ccf6d22252a22a63",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://link.springer.com/article/10.1007/s10290-024-00579-9 and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1007/s10290-024-00579-9."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Do deep regional trade agreements facilitate regional production networks in Latin American and Caribbean countries?' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://link.springer.com/article/10.1007/s10290-024-00579-9",
+            "title": "Do deep regional trade agreements facilitate regional production networks in Latin American and Caribbean countries?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Do deep regional trade agreements facilitate regional production networks in Latin American and Caribbean countries?",
+      "reader_what": "Applying a generalized event study design to a structural gravity model, this study analyzes the dynamic effects of the depth",
+      "reader_why": "",
+      "reader_more": "Applying a generalized event study design to a structural gravity model, this study analyzes the dynamic effects of the depth of regional trade agreements (RTAs)—measured by the coverage and legal enforceability of World Trade Organization (WTO)-plus and WTO-extra policy areas—on production network. The recovered source is research or policy work. Its main contribution is not sufficiently centered on European economic security for Strand A.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about do deep regional trade agreements facilitate regional production networks in latin american and caribbean countries??",
+        "main_finding": "Applying a generalized event study design to a structural gravity model, this study analyzes the dynamic effects of the depth of regional trade agreements (RTAs)—measured by the coverage and legal enforceability of World Trade Organization (WTO)-plus and WTO-extra policy areas—on production network.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by Review of World Economics.",
+        "qualification": "The recovered work is identifiable, but its central object is outside Strand A’s substantive European economic-security scope.",
+        "radar_relevance": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:6110e2b74193bceb",
+      "source_hash": "611e6ec7",
+      "identity_hash": "f750bc7216b46c45",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.bis.org/speeches/20250217-financing-transition-greenhouse-gas-neutrality-how-much-and-which-instruments.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Financing the transition to greenhouse gas neutrality - how much and with which instruments? | Bank for International Settlements' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.bis.org/speeches/20250217-financing-transition-greenhouse-gas-neutrality-how-much-and-which-instruments.pdf",
+            "title": "Financing the transition to greenhouse gas neutrality - how much and with which instruments? | Bank for International Settlements",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Financing the transition to greenhouse gas neutrality - how much and with which instruments? | Bank for International…",
+      "reader_what": "1/6 BIS - Central bankers' speeches Joachim Nagel: Financing the transition to greenhouse gas neutrality - how much and with",
+      "reader_why": "",
+      "reader_more": "1/6 BIS - Central bankers' speeches Joachim Nagel: Financing the transition to greenhouse gas neutrality - how much and with which instruments?. The recovered source is research or policy work. Its main contribution is not sufficiently centered on European economic security for Strand A.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about financing the transition to greenhouse gas neutrality - how much and with which instruments? | bank for international settlements?",
+        "main_finding": "1/6 BIS - Central bankers' speeches Joachim Nagel: Financing the transition to greenhouse gas neutrality - how much and with which instruments?.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Bank for International Settlements.",
+        "qualification": "The recovered work is identifiable, but its central object is outside Strand A’s substantive European economic-security scope.",
+        "radar_relevance": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:1fa874df17380766",
+      "source_hash": "997c84aa",
+      "identity_hash": "ecaf700aaecb29f5",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://link.springer.com/article/10.1057/s42214-024-00207-1 and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1057/s42214-024-00207-1."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Exploring factors influencing manufacturing home-shoring strategies: insights from three diverse geographical regions' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://link.springer.com/article/10.1057/s42214-024-00207-1",
+            "title": "Exploring factors influencing manufacturing home-shoring strategies: insights from three diverse geographical regions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Exploring factors influencing manufacturing home-shoring strategies: insights from three diverse geographical regions",
+      "reader_what": "Due to the ongoing political instability and economic disruptions in the environments where firms operate, the shift towards regional value",
+      "reader_why": "",
+      "reader_more": "Due to the ongoing political instability and economic disruptions in the environments where firms operate, the shift towards regional value chains is redefining global supply chains. The recovered source is research or policy work. Its main contribution is not sufficiently centered on European economic security for Strand A.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about exploring factors influencing manufacturing home-shoring strategies: insights from three diverse geographical regions?",
+        "main_finding": "Due to the ongoing political instability and economic disruptions in the environments where firms operate, the shift towards regional value chains is redefining global supply chains.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by Journal of International Business Policy.",
+        "qualification": "The recovered work is identifiable, but its central object is outside Strand A’s substantive European economic-security scope.",
+        "radar_relevance": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:d53b414fa2c90ef2",
+      "source_hash": "4e898844",
+      "identity_hash": "bfae05a757037dc1",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.cambridge.org/core/journals/world-trade-review/article/multipurpose-green-industrial-policy-and-the-wto-an-unavoidable-clash/32BD7A22DF987FB53B760D7E38B5D2B2 and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1017/s1474745624000168."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Multi-Purpose Green Industrial Policy and the WTO: An Unavoidable Clash?' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://www.cambridge.org/core/journals/world-trade-review/article/multipurpose-green-industrial-policy-and-the-wto-an-unavoidable-clash/32BD7A22DF987FB53B760D7E38B5D2B2",
+            "title": "Multi-Purpose Green Industrial Policy and the WTO: An Unavoidable Clash?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Multi-Purpose Green Industrial Policy and the WTO: An Unavoidable Clash?",
+      "reader_what": "Amid a new era of disruption spawned by looming climate threats and significant geopolitical tensions, an increasing number of countries",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "Amid a new era of disruption spawned by looming climate threats and significant geopolitical tensions, an increasing number of countries have favored a more robust green industrial policy (GIP) to reduce carbon emissions and achieve other economic, political, and geostrategic objectives. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about multi-purpose green industrial policy and the wto: an unavoidable clash??",
+        "main_finding": "Amid a new era of disruption spawned by looming climate threats and significant geopolitical tensions, an increasing number of countries have favored a more robust green industrial policy (GIP) to reduce carbon emissions and achieve other economic, political, and geostrategic objectives.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by World Trade Review.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Mandy Meng Fang",
+            "class": "university_group"
+          },
+          "mechanism": "adds_capacity",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-02-03",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "Amid a new era of disruption spawned by looming climate threats and significant geopolitical tensions, an increasing number of countries have favored a more robust green industrial policy (GIP) to reduce carbon emissions and achieve other economic, political, and geostrategic objectives.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:19488269c18248bf",
+      "source_hash": "b1fc16c6",
+      "identity_hash": "bfee1f8981ac3559",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://joint-research-centre.ec.europa.eu/calls-proposals/fmr-fuels-and-materials-research-actuslab-2025-1-rd-actuslab-fmr_en and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'FMR, Fuels and Materials Research (ActUsLab) 2025-1-RD-ActUsLab-FMR' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://joint-research-centre.ec.europa.eu/calls-proposals/fmr-fuels-and-materials-research-actuslab-2025-1-rd-actuslab-fmr_en",
+            "title": "FMR, Fuels and Materials Research (ActUsLab) 2025-1-RD-ActUsLab-FMR",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "FMR, Fuels and Materials Research (ActUsLab) 2025-1-RD-ActUsLab-FMR",
+      "reader_what": "The Fuels and Materials Research (FMR) laboratory's main activities involve the synthesis and characterisation of actinide-containing materials (including plutonium and",
+      "reader_why": "",
+      "reader_more": "The Fuels and Materials Research (FMR) laboratory's main activities involve the synthesis and characterisation of actinide-containing materials (including plutonium and minor actinides). The recovered source is research or policy work. Its main contribution is not sufficiently centered on European economic security for Strand A.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about fmr, fuels and materials research (actuslab) 2025-1-rd-actuslab-fmr?",
+        "main_finding": "The Fuels and Materials Research (FMR) laboratory's main activities involve the synthesis and characterisation of actinide-containing materials (including plutonium and minor actinides).",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by Joint Research Centre.",
+        "qualification": "The recovered work is identifiable, but its central object is outside Strand A’s substantive European economic-security scope.",
+        "radar_relevance": "The recovered work exists, but its central subject does not satisfy Strand A’s substantive European economic-security criteria.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:e77aa397288b37ae",
+      "source_hash": "2f475389",
+      "identity_hash": "4b3203710cc6c767",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.cambridge.org/core/journals/world-trade-review/article/critical-raw-materials-the-netzero-transition-and-the-securitization-of-the-trade-and-climate-change-mitigation-nexus-pinpointing-environmental-risks-and-charting-a-new-path-for-transnational-decarbonization/47DC2958B3ACB6E11FE8EF1ED6D6BEEF and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/matched DOI 10.1017/s1474745624000430."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Critical Raw Materials, the Net-Zero Transition and the ‘Securitization’ of the Trade and Climate Change Mitigation Nexus: Pinpointing Environmental Risks and Charting a New Path for Transnational Decarbonization' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://www.cambridge.org/core/journals/world-trade-review/article/critical-raw-materials-the-netzero-transition-and-the-securitization-of-the-trade-and-climate-change-mitigation-nexus-pinpointing-environmental-risks-and-charting-a-new-path-for-transnational-decarbonization/47DC2958B3ACB6E11FE8EF1ED6D6BEEF",
+            "title": "Critical Raw Materials, the Net-Zero Transition and the ‘Securitization’ of the Trade and Climate Change Mitigation Nexus: Pinpointing Environmental Risks and Charting a New Path for Transnational Decarbonization",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Critical Raw Materials, the Net-Zero Transition and the ‘Securitization’ of the Trade and Climate Change Mitigation Nexus: Pinpointing…",
+      "reader_what": "The exercise of environmental ‘leverage’ via trade-related measures and trade in environmental goods offers opportunities to tackle the climate crisis",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "The exercise of environmental ‘leverage’ via trade-related measures and trade in environmental goods offers opportunities to tackle the climate crisis and advance transnational decarbonization. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about critical raw materials, the net-zero transition and the ‘securitization’ of the trade and climate change mitigation nexus: pinpointing environmental risks and charting a new path for transnational decarbonization?",
+        "main_finding": "The exercise of environmental ‘leverage’ via trade-related measures and trade in environmental goods offers opportunities to tackle the climate crisis and advance transnational decarbonization.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by World Trade Review.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "materials.critical_raw",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Giulia Claudia Leonelli",
+            "class": "university_group"
+          },
+          "mechanism": "secures",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-01-30",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "The exercise of environmental ‘leverage’ via trade-related measures and trade in environmental goods offers opportunities to tackle the climate crisis and advance transnational decarbonization.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:9db2677316b33abc",
+      "source_hash": "4299755e",
+      "identity_hash": "b350678956754081",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://cdn.ceps.eu/wp-content/uploads/2025/01/2025-02_ERCC_Raw-Materials-Standardisation.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Setting standards for critical raw materials – CEPS' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://cdn.ceps.eu/wp-content/uploads/2025/01/2025-02_ERCC_Raw-Materials-Standardisation.pdf",
+            "title": "Setting standards for critical raw materials – CEPS",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Setting standards for critical raw materials – CEPS",
+      "reader_what": "CEPS IN-DEPTH ANALYSIS Edoardo Righetti, Vasileios Rizos and Marika Moreschi January, 2025-02 SETTING STANDARDS FOR CRITICAL RAW MATERIALS State of",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "CEPS IN-DEPTH ANALYSIS Edoardo Righetti, Vasileios Rizos and Marika Moreschi January, 2025-02 SETTING STANDARDS FOR CRITICAL RAW MATERIALS State of play and future prospects SUMMARY As the EU seeks to secure access to Critical Raw Materials (CRMs), CRM-related technical standardisation has been. The recovered source is policy/report material. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about setting standards for critical raw materials – ceps?",
+        "main_finding": "CEPS IN-DEPTH ANALYSIS Edoardo Righetti, Vasileios Rizos and Marika Moreschi January, 2025-02 SETTING STANDARDS FOR CRITICAL RAW MATERIALS State of play and future prospects SUMMARY As the EU seeks to secure access to Critical Raw Materials (CRMs), CRM-related technical standardisation has been.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by CEPS.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "materials.critical_raw",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CEPS",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "secures",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2025-01-24",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "CEPS IN-DEPTH ANALYSIS Edoardo Righetti, Vasileios Rizos and Marika Moreschi January, 2025-02 SETTING STANDARDS FOR CRITICAL RAW MATERIALS State of play and future prospects SUMMARY As the EU seeks to secure access to Critical Raw Materials (CRMs), CRM-related technical standardisation has been.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:5e66db9a82746f3d",
+      "source_hash": "b87da63e",
+      "identity_hash": "f3e1f1f26ffa271b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.iss.europa.eu/publications/commentary/new-transatlantic-trade-and-tech-agenda-economic-security-standards-can and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'A new transatlantic trade and tech agenda: economic security standards can address the EU’s and Washington’s concerns about China' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://www.iss.europa.eu/publications/commentary/new-transatlantic-trade-and-tech-agenda-economic-security-standards-can",
+            "title": "A new transatlantic trade and tech agenda: economic security standards can address the EU’s and Washington’s concerns about China",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "A new transatlantic trade and tech agenda: economic security standards can address the EU’s and Washington’s concerns about…",
+      "reader_what": "If the EU does not engage proactively with Washington, the new Trump 2.0 administration may proceed without taking the bloc’s",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "If the EU does not engage proactively with Washington, the new Trump 2.0 administration may proceed without taking the bloc’s interests into account. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about a new transatlantic trade and tech agenda: economic security standards can address the eu’s and washington’s concerns about china?",
+        "main_finding": "If the EU does not engage proactively with Washington, the new Trump 2.0 administration may proceed without taking the bloc’s interests into account.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by EU Institute for Security Studies.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EU Institute for Security Studies",
+            "class": "other"
+          },
+          "mechanism": "prioritises",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-01-20",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "If the EU does not engage proactively with Washington, the new Trump 2.0 administration may proceed without taking the bloc’s interests into account.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:3bec79b411b6a4c6",
+      "source_hash": "069ac4b8",
+      "identity_hash": "97f237b7083a5e72",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://ecfr.eu/article/britains-risky-re-engagement-why-its-china-policy-could-strain-the-eu-uk-reset/ and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Britain’s risky re-engagement: Why its China policy could strain the EU-UK reset' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://ecfr.eu/article/britains-risky-re-engagement-why-its-china-policy-could-strain-the-eu-uk-reset/",
+            "title": "Britain’s risky re-engagement: Why its China policy could strain the EU-UK reset",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Britain’s risky re-engagement: Why its China policy could strain the EU-UK reset",
+      "reader_what": "British chancellor Rachel Reeves’s visit to Beijing over the weekend shows the Labour government’s willingness to re-engage with China.",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "British chancellor Rachel Reeves’s visit to Beijing over the weekend shows the Labour government’s willingness to re-engage with China. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about britain’s risky re-engagement: why its china policy could strain the eu-uk reset?",
+        "main_finding": "British chancellor Rachel Reeves’s visit to Beijing over the weekend shows the Labour government’s willingness to re-engage with China.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by European Council on Foreign Relations.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Council on Foreign Relations",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-01-15",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "British chancellor Rachel Reeves’s visit to Beijing over the weekend shows the Labour government’s willingness to re-engage with China.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:5baeb29cf95d557f",
+      "source_hash": "825772e4",
+      "identity_hash": "79d55b7ffebd5bed",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://institutdelors.eu/en/evenements/fr-euroquestions-106-eu-africa-a-strategic-partnership-in-need-of-reinvention/ and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title '[FR] Euroquestions #106 | EU–Africa: a strategic partnership in need of reinvention?' against the supplied publisher/issuer material."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Matched title with author/issuing organisation and year from the publisher/issuer record for '[FR] Euroquestions #106 | EU–Africa: a strategic partnership in need of reinvention?'."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Used the official publisher/issuing-body route https://institutdelors.eu/en/evenements/fr-euroquestions-106-eu-africa-a-strategic-partnership-in-need-of-reinvention/ to confirm identity/provenance."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "A bounded identity check using distinctive title and source metadata corroborated the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://institutdelors.eu/en/evenements/fr-euroquestions-106-eu-africa-a-strategic-partnership-in-need-of-reinvention/",
+            "title": "[FR] Euroquestions #106 | EU–Africa: a strategic partnership in need of reinvention?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: abstract_or_landing_page."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work has a genuine European economic-security connection, but the strength or centrality of that connection warrants human admission judgment."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2025-12-03"
+        },
+        "unset": [],
+        "reason": "The recovered publisher/issuer evidence gives the corrected bibliographic date/type rather than the scanner placeholder."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "[FR] Euroquestions #106 | EU–Africa: a strategic partnership in need of reinvention?",
+      "reader_what": "Guillaume Arditti Associate Research Fellow, EU-Africa See author Wednesday, 3 December, 3:00–3:30 p.m.",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "Guillaume Arditti Associate Research Fellow, EU-Africa See author Wednesday, 3 December, 3:00–3:30 p.m. The recovered source is research or policy work. Its relevance to the Radar is substantive but not wholly unambiguous, so admission is flagged for review.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about [fr] euroquestions #106 | eu–africa: a strategic partnership in need of reinvention??",
+        "main_finding": "Guillaume Arditti Associate Research Fellow, EU-Africa See author Wednesday, 3 December, 3:00–3:30 p.m.",
+        "method_or_basis": "Analysis based on the recovered abstract or landing page issued by Institut Jacques Delors.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work has a genuine European economic-security connection, but the strength or centrality of that connection warrants human admission judgment.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "partnership.like_minded_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Institut Jacques Delors",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "partners",
+          "direction": "becomes_contested",
+          "status": "operating",
+          "status_date": "2025-12-03",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "Guillaume Arditti Associate Research Fellow, EU-Africa See author Wednesday, 3 December, 3:00–3:30 p.m.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:e39a3ebd63e535b4",
+      "source_hash": "2e6598cb",
+      "identity_hash": "30070b6d472ebb0e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://defence-industry-space.ec.europa.eu/eu-defence-industry/white-paper-european-defence-readiness-2030_en and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'White paper for European defence - Readiness 2030' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://defence-industry-space.ec.europa.eu/eu-defence-industry/white-paper-european-defence-readiness-2030_en",
+            "title": "White paper for European defence - Readiness 2030",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: substantial_web_text."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2025-03-19"
+        },
+        "unset": [],
+        "reason": "The recovered publisher/issuer evidence gives the corrected bibliographic date/type rather than the scanner placeholder."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "White paper for European defence - Readiness 2030",
+      "reader_what": "The Commission and the High Representative have presented a White Paper for European Defence – Readiness 2030 on 19 March",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "The Commission and the High Representative have presented a White Paper for European Defence – Readiness 2030 on 19 March 2025. The recovered source is policy/report material. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about white paper for european defence - readiness 2030?",
+        "main_finding": "The Commission and the High Representative have presented a White Paper for European Defence – Readiness 2030 on 19 March 2025.",
+        "method_or_basis": "Analysis based on the recovered substantial web text issued by European Commission — Defence Industry and Space.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "defence.production_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission — Defence Industry and Space",
+            "class": "eu_body"
+          },
+          "mechanism": "adds_capacity",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2025-03-19",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "The Commission and the High Representative have presented a White Paper for European Defence – Readiness 2030 on 19 March 2025.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:18276d59bfe51394",
+      "source_hash": "9515c050",
+      "identity_hash": "4692b8b0535e884b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://institutdelors.eu/content/uploads/2025/04/trade-wto-transatlantictapf_02-2.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Transatlantic market and WTO-related issues' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://institutdelors.eu/content/uploads/2025/04/trade-wto-transatlantictapf_02-2.pdf",
+            "title": "Transatlantic market and WTO-related issues",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2008-12"
+        },
+        "unset": [],
+        "reason": "The recovered publisher/issuer evidence gives the corrected bibliographic date/type rather than the scanner placeholder."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Transatlantic market and WTO-related issues",
+      "reader_what": "TRANSATLANTIC POLICY FORUM Trade December 2008 Leading Partner: Project partners: Project is supported by the European Commission Delegation in Washington",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "TRANSATLANTIC POLICY FORUM Trade December 2008 Leading Partner: Project partners: Project is supported by the European Commission Delegation in Washington D.C. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about transatlantic market and wto-related issues?",
+        "main_finding": "TRANSATLANTIC POLICY FORUM Trade December 2008 Leading Partner: Project partners: Project is supported by the European Commission Delegation in Washington D.C.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Institut Jacques Delors.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Institut Jacques Delors",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2008-12",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "TRANSATLANTIC POLICY FORUM Trade December 2008 Leading Partner: Project partners: Project is supported by the European Commission Delegation in Washington D.C.",
+          "confidence": "high",
+          "status_date_precision": "month"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:25df66eaf90ddb51",
+      "source_hash": "f35fe464",
+      "identity_hash": "8f3778fb0869bae1",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://www.businesseurope.eu/wp-content/uploads/2025/02/2014-00496-E-138-1.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Transatlantic Trade and Investment Partnership (TTIP): the regulatory component - Joint paper by BusinessEurope and the US Chamber of Commerce' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2014-00496-E-138-1.pdf",
+            "title": "Transatlantic Trade and Investment Partnership (TTIP): the regulatory component - Joint paper by BusinessEurope and the US Chamber of Commerce",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2014"
+        },
+        "unset": [],
+        "reason": "The recovered publisher/issuer evidence gives the corrected bibliographic date/type rather than the scanner placeholder."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Transatlantic Trade and Investment Partnership (TTIP): the regulatory component - Joint paper by BusinessEurope and the US Chamber…",
+      "reader_what": "Transatlantic Trade and Investment Partnership (TTIP) Copyright © 2014 by the United States Chamber of Commerce.",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "Transatlantic Trade and Investment Partnership (TTIP) Copyright © 2014 by the United States Chamber of Commerce. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about transatlantic trade and investment partnership (ttip): the regulatory component - joint paper by businesseurope and the us chamber of commerce?",
+        "main_finding": "Transatlantic Trade and Investment Partnership (TTIP) Copyright © 2014 by the United States Chamber of Commerce.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by BusinessEurope.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.agreement",
+          "secondary_objects": [],
+          "actor": {
+            "name": "BusinessEurope",
+            "class": "other"
+          },
+          "mechanism": "partners",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2014",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "Transatlantic Trade and Investment Partnership (TTIP) Copyright © 2014 by the United States Chamber of Commerce.",
+          "confidence": "high",
+          "status_date_precision": "year"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:3acbfdaaedb55f14",
+      "source_hash": "44797c16",
+      "identity_hash": "a7a86f4589f2c4b6",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://single-market-economy.ec.europa.eu/publications/new-clean-industrial-deal-how-can-new-eu-industrial-policy-support-sustainability-transitions_en and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'The new Clean Industrial Deal – How can new EU industrial policy support sustainability transitions, competitiveness and resilience?' against the supplied publisher/issuer material."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Matched title with author/issuing organisation and year from the publisher/issuer record for 'The new Clean Industrial Deal – How can new EU industrial policy support sustainability transitions, competitiveness and resilience?'."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Used the official publisher/issuing-body route https://single-market-economy.ec.europa.eu/publications/new-clean-industrial-deal-how-can-new-eu-industrial-policy-support-sustainability-transitions_en to confirm identity/provenance."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "A bounded identity check using distinctive title and source metadata corroborated the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://single-market-economy.ec.europa.eu/publications/new-clean-industrial-deal-how-can-new-eu-industrial-policy-support-sustainability-transitions_en",
+            "title": "The new Clean Industrial Deal – How can new EU industrial policy support sustainability transitions, competitiveness and resilience?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: abstract_or_landing_page."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2025-12-22"
+        },
+        "unset": [],
+        "reason": "The recovered publisher/issuer evidence gives the corrected bibliographic date/type rather than the scanner placeholder."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The new Clean Industrial Deal – How can new EU industrial policy support sustainability transitions, competitiveness and resilience?",
+      "reader_what": "GROW Fellowship programme - This paper examines the new industrial policy of the European Commission – the Clean Industrial Deal",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "GROW Fellowship programme - This paper examines the new industrial policy of the European Commission – the Clean Industrial Deal – based on a historical context of industrial policy development in the European Union and perspectives from sustainability transitions research. The recovered source is policy/report material. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about the new clean industrial deal – how can new eu industrial policy support sustainability transitions, competitiveness and resilience??",
+        "main_finding": "GROW Fellowship programme - This paper examines the new industrial policy of the European Commission – the Clean Industrial Deal – based on a historical context of industrial policy development in the European Union and perspectives from sustainability transitions research.",
+        "method_or_basis": "Analysis based on the recovered abstract or landing page issued by European Commission — Internal Market, Industry.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission — Internal Market, Industry",
+            "class": "eu_body"
+          },
+          "mechanism": "adds_capacity",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2025-12-22",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "GROW Fellowship programme - This paper examines the new industrial policy of the European Commission – the Clean Industrial Deal – based on a historical context of industrial policy development in the European Union and perspectives from sustainability transitions research.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:366cbbce36d554e1",
+      "source_hash": "8c69ff87",
+      "identity_hash": "f9969e52cd17bf70",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://institutdelors.eu/content/uploads/2025/09/Infographie_Mercosur_Fabry_A4_EN.pdf and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'The EU-Mercosur trade agreement at a time of trade diversification' against the supplied publisher/issuer material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://institutdelors.eu/content/uploads/2025/09/Infographie_Mercosur_Fabry_A4_EN.pdf",
+            "title": "The EU-Mercosur trade agreement at a time of trade diversification",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: pdf_excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The EU-Mercosur trade agreement at a time of trade diversification",
+      "reader_what": "The EU-Mercosur trade agreement at a time of trade diversiﬁcation 1999-2024 : 25 years to get an agrement Strategic issues",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "The EU-Mercosur trade agreement at a time of trade diversiﬁcation 1999-2024 : 25 years to get an agrement Strategic issues /gid00132/gid00140/gid00140/gid00140 The Council gives a mandate to the Commission to negotiate with Mercosur UruguayParaguayBrazilArgentina Agreement signed after 5 years of active negotiation,. The recovered source is research or policy work. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "research or policy work",
+        "research_question": "What does the work establish about the eu-mercosur trade agreement at a time of trade diversification?",
+        "main_finding": "The EU-Mercosur trade agreement at a time of trade diversiﬁcation 1999-2024 : 25 years to get an agrement Strategic issues /gid00132/gid00140/gid00140/gid00140 The Council gives a mandate to the Commission to negotiate with Mercosur UruguayParaguayBrazilArgentina Agreement signed after 5 years of active negotiation,.",
+        "method_or_basis": "Analysis based on the recovered pdf excerpt issued by Institut Jacques Delors.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.agreement",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Institut Jacques Delors",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "partners",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2025-01-01",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "The EU-Mercosur trade agreement at a time of trade diversiﬁcation 1999-2024 : 25 years to get an agrement Strategic issues /gid00132/gid00140/gid00140/gid00140 The Council gives a mandate to the Commission to negotiate with Mercosur UruguayParaguayBrazilArgentina Agreement signed after 5 years of active negotiation,.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:29d9bfc45257d2fb",
+      "source_hash": "1d8a98a0",
+      "identity_hash": "1eaee6875814e73a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the supplied/recovered source route https://egmontinstitute.be/summits-and-sanctions-war-and-peace-is-the-eu-still-in-the-game/ and matched it to the job metadata and source material."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the exact title 'Summits and Sanctions, War and Peace: Is the EU Still in the Game? - Egmont Institute' against the supplied publisher/issuer material."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Matched title with author/issuing organisation and year from the publisher/issuer record for 'Summits and Sanctions, War and Peace: Is the EU Still in the Game? - Egmont Institute'."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Used the official publisher/issuing-body route https://egmontinstitute.be/summits-and-sanctions-war-and-peace-is-the-eu-still-in-the-game/ to confirm identity/provenance."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "A bounded identity check using distinctive title and source metadata corroborated the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_issuer_page",
+            "url": "https://egmontinstitute.be/summits-and-sanctions-war-and-peace-is-the-eu-still-in-the-game/",
+            "title": "Summits and Sanctions, War and Peace: Is the EU Still in the Game? - Egmont Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance were checked against the package's recovered source material. Evidence mode: abstract_or_landing_page."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2025-08-29"
+        },
+        "unset": [],
+        "reason": "The recovered publisher/issuer evidence gives the corrected bibliographic date/type rather than the scanner placeholder."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Summits and Sanctions, War and Peace: Is the EU Still in the Game? - Egmont Institute",
+      "reader_what": "Home > Publications > Summits and Sanctions, War and Peace: Is the EU Still in the Game?.",
+      "reader_why": "It helps assess European strategic dependencies, resilience, market exposure or policy capacity in the domain studied.",
+      "reader_more": "Home > Publications > Summits and Sanctions, War and Peace: Is the EU Still in the Game?. The recovered source is policy/report material. It provides historical or current context for European economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "policy/report material",
+        "research_question": "What does the work establish about summits and sanctions, war and peace: is the eu still in the game? - egmont institute?",
+        "main_finding": "Home > Publications > Summits and Sanctions, War and Peace: Is the EU Still in the Game?.",
+        "method_or_basis": "Analysis based on the recovered abstract or landing page issued by Egmont Institute.",
+        "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+        "radar_relevance": "The work substantively addresses a European dependency, strategic capacity, geoeconomic exposure, partnership, or economic-security policy/tool.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Egmont Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "sanctions",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2025-08-29",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The evidence supports the work’s stated analysis, but policy proposals, modeled scenarios, interpretations, and associations should not be read as observed causal effects unless the work demonstrates them.",
+          "text": "Home > Publications > Summits and Sanctions, War and Peace: Is the EU Still in the Game?.",
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}
