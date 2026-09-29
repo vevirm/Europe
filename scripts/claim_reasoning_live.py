@@ -13,6 +13,8 @@ lifecycle/publication shell until Stage 7.  It is fail-closed:
   may enter the primary frontier but at conservative merit.
 - New claim-native Level-5 candidates are publication locked until candidate-
   specific falsifier execution, wow/oddity and Stage-7 selection are wired.
+- The claim-native detector starts after an absolute authoritative-record floor;
+  corpus coverage and graph expressiveness are diagnostics, not global kill switches.
 - Existing reader publications are carried as a compatibility shell; no legacy
   regex detector is allowed to create a new candidate once the authority gate
   passes.
@@ -84,8 +86,7 @@ except ModuleNotFoundError:  # direct execution from scripts/
 
 ROOT = Path(__file__).resolve().parents[1]
 PROFILE = "radar-claim-reasoning-live-v1-stage7"
-AUTHORITY_MIN_CLAIMS = 100
-AUTHORITY_MIN_COVERAGE = 0.50
+AUTHORITY_MIN_RECORDS = 100
 
 _READER_CLAIM_COUNT_CACHE: dict[tuple[str, int, int], int] = {}
 _LIVE_DETECTION_CACHE: dict[tuple[Any, ...], dict[str, Any]] = {}
@@ -143,8 +144,11 @@ def _empty_detection(raw: dict[str, Any], evaluated_at: str | None, *, reason: s
         "authoritative_claims": max(_inline_claim_count(raw), reader_claims),
         "current_world_records": sum(len(raw.get(k, [])) if isinstance(raw.get(k), list) else 0 for k in ("strand_a", "frontier_evidence", "strand_c")),
         "records_with_any_claim": 0, "coverage": 0.0,
-        "min_authoritative_claims": AUTHORITY_MIN_CLAIMS, "min_coverage": AUTHORITY_MIN_COVERAGE,
-        "authority_ready": False, "semantic_quality_ready": False, "ready": False, "reason": reason,
+        "records_with_authoritative_claims": 0,
+        "min_authoritative_records": AUTHORITY_MIN_RECORDS,
+        "coverage_is_diagnostic": True,
+        "authority_ready": False, "semantic_quality_ready": False,
+        "semantic_quality_blocks_reasoning": False, "ready": False, "reason": reason,
     }
     return {
         "profile": PROFILE, "evaluated_at": _date_only(evaluated_at or raw.get("run_completed_at") or raw.get("last_updated")),
@@ -1153,7 +1157,7 @@ def provisional_claim_for_row(row: dict[str, Any], vocab: dict[str, Any]) -> dic
         "origin": "provisional",
         "era": "current",
         "provisional": True,
-        "attributes": {"world_reasoning": True, "provisional_adapter": "stage6"},
+        "attributes": {"world_reasoning": True, "provisional_adapter": "stage7"},
     }
     precision = date_precision(status_date)
     if precision in {"year", "month"}:
@@ -1178,25 +1182,82 @@ def build_active_from_raw(raw: dict[str, Any], root: Path = ROOT) -> dict[str, A
     return active
 
 
+def _world_reasoning_enabled(claim: dict[str, Any]) -> bool:
+    attrs = claim.get("attributes") if isinstance(claim.get("attributes"), dict) else {}
+    return attrs.get("world_reasoning", True) is not False
+
+
 def attach_provisional_claims(active: dict[str, Any], vocab: dict[str, Any]) -> dict[str, int]:
-    generated = skipped = 0
+    """Attach a conservative current-world role wherever no usable claim exists.
+
+    Deep Scan claims remain authoritative.  A legacy/invalid claim must not make a
+    record analytically invisible: if a current-world row has claims but none of its
+    world-reasoning claims validates against the current vocabulary, append a
+    provisional claim in memory.  The source sidecar is never rewritten here.
+    """
+    generated = skipped = fallback_invalid = world_disabled = 0
     by_collection = Counter()
     for collection in ("strand_a", "frontier_evidence", "strand_c"):
         rows = active.get(collection) if isinstance(active.get(collection), list) else []
         for row in rows:
             if not isinstance(row, dict):
                 continue
-            if isinstance(row.get("claims"), list) and row.get("claims"):
+            claims = [c for c in (row.get("claims") if isinstance(row.get("claims"), list) else []) if isinstance(c, dict)]
+            world_claims = [c for c in claims if _world_reasoning_enabled(c)]
+            valid_world_claims = [c for c in world_claims if not validate_claim(c, vocab)]
+            if valid_world_claims:
+                continue
+            # Claims explicitly marked world_reasoning=false are intentionally out of
+            # this graph; do not manufacture a role merely because they are present.
+            if claims and not world_claims:
+                world_disabled += 1
                 continue
             claim = provisional_claim_for_row(row, vocab)
             if claim is None:
                 skipped += 1
                 continue
-            row["claims"] = [claim]
-            row["claims_profile"] = "radar-claims-v1-provisional-stage6"
+            if claims:
+                row["claims"] = claims + [claim]
+                fallback_invalid += 1
+                row["claims_profile"] = "radar-claims-v1-provisional-invalid-fallback-stage7"
+            else:
+                row["claims"] = [claim]
+                row["claims_profile"] = "radar-claims-v1-provisional-stage7"
             generated += 1
             by_collection[collection] += 1
-    return {"generated": generated, "skipped_unmappable": skipped, **{f"generated_{k}": v for k, v in by_collection.items()}}
+    return {
+        "generated": generated,
+        "generated_for_invalid_legacy_claims": fallback_invalid,
+        "world_disabled_rows_skipped": world_disabled,
+        "skipped_unmappable": skipped,
+        **{f"generated_{k}": v for k, v in by_collection.items()},
+    }
+
+
+def _authority_gate_status(
+    *,
+    authoritative_claims: int,
+    current_world_records: int,
+    records_with_any_claim: int,
+    records_with_authoritative_claims: int,
+) -> dict[str, Any]:
+    """Absolute startup floor for claim-native reasoning.
+
+    Coverage remains useful telemetry, but it is deliberately not a switch.  Once
+    100 current-world records carry valid authoritative claims, ingesting a batch of
+    new/unscanned records cannot lower a percentage and turn reasoning off again.
+    """
+    coverage = records_with_authoritative_claims / current_world_records if current_world_records else 0.0
+    return {
+        "authoritative_claims": int(authoritative_claims),
+        "current_world_records": int(current_world_records),
+        "records_with_any_claim": int(records_with_any_claim),
+        "records_with_authoritative_claims": int(records_with_authoritative_claims),
+        "coverage": round(coverage, 4),
+        "min_authoritative_records": AUTHORITY_MIN_RECORDS,
+        "coverage_is_diagnostic": True,
+        "authority_ready": records_with_authoritative_claims >= AUTHORITY_MIN_RECORDS,
+    }
 
 
 def live_claim_graph(raw: dict[str, Any], root: Path = ROOT) -> tuple[list[dict[str, Any]], dict[str, Any], dict[str, Any], dict[str, Any]]:
@@ -1214,17 +1275,12 @@ def live_claim_graph(raw: dict[str, Any], root: Path = ROOT) -> tuple[list[dict[
         clean(n.get("_record_id")) for n in authoritative
         if clean(n.get("era")) == "current" and clean(n.get("_record_id"))
     })
-    coverage = records_with_authoritative_claims / current_world_rows if current_world_rows else 0.0
-    gate = {
-        "authoritative_claims": len(authoritative),
-        "current_world_records": current_world_rows,
-        "records_with_any_claim": records_with_claims,
-        "records_with_authoritative_claims": records_with_authoritative_claims,
-        "coverage": round(coverage, 4),
-        "min_authoritative_claims": AUTHORITY_MIN_CLAIMS,
-        "min_coverage": AUTHORITY_MIN_COVERAGE,
-        "authority_ready": len(authoritative) >= AUTHORITY_MIN_CLAIMS and coverage >= AUTHORITY_MIN_COVERAGE,
-    }
+    gate = _authority_gate_status(
+        authoritative_claims=len(authoritative),
+        current_world_records=current_world_rows,
+        records_with_any_claim=records_with_claims,
+        records_with_authoritative_claims=records_with_authoritative_claims,
+    )
     diagnostics = {**diagnostics, "authoritative_claims": len(authoritative), **provisional}
     return nodes, diagnostics, gate, vocab
 
@@ -1234,26 +1290,25 @@ def detect_claim_reasoning(raw: dict[str, Any], root: Path = ROOT, evaluated_at:
     cached = _LIVE_DETECTION_CACHE.get(cache_key)
     if cached is not None:
         return cached
-    # Cheap preflight for legacy/synthetic repositories. Production Stage 6 has
-    # hundreds of authoritative claims in reader_text.json, so it proceeds to the
-    # active-corpus overlay. This avoids repeatedly rebuilding a claimless corpus in
-    # legacy unit tests and also fails closed if the claims sidecar disappears.
-    inline_count = _inline_claim_count(raw)
-    reader_count = _reader_claim_count(root)
-    if max(inline_count, reader_count) < AUTHORITY_MIN_CLAIMS:
-        result = _empty_detection(raw, evaluated_at, reason="claim authority preflight not ready", reader_claims=reader_count)
+    # Empty/synthetic corpora can exit cheaply.  For a non-empty corpus we build the
+    # active overlay because the startup threshold is defined in *records*, not raw
+    # claim counts in a sidecar.
+    current_row_count = sum(
+        len(raw.get(k, [])) if isinstance(raw.get(k), list) else 0
+        for k in ("strand_a", "frontier_evidence", "strand_c")
+    )
+    if current_row_count == 0:
+        result = _empty_detection(raw, evaluated_at, reason="no current-world records")
         _LIVE_DETECTION_CACHE.clear(); _LIVE_DETECTION_CACHE[cache_key] = result
         return result
     nodes, diagnostics, gate, vocab = live_claim_graph(raw, root)
-    # Provisional scanner claims are an anti-blindness bridge, not a semantic
-    # quality sample.  The detector-switch gate is judged only on authoritative
-    # backfill/Deep-Scan claims.
+    # Provisional scanner claims are an anti-blindness bridge.  The one startup
+    # switch is an absolute count of current-world records with valid authoritative
+    # claims; corpus coverage and semantic expressiveness remain diagnostics only.
     authoritative_nodes = [n for n in nodes if clean(n.get("origin")) != "provisional"]
-    # Fail fast when the repository has not reached the claim-authority floor. This
-    # keeps rollback/synthetic legacy calls cheap and prevents partial claim imports
-    # from running an expensive half-switched detector pass.
     if not gate.get("authority_ready"):
         gate["semantic_quality_ready"] = False
+        gate["semantic_quality_blocks_reasoning"] = False
         gate["ready"] = False
         result = {
             "profile": PROFILE,
@@ -1261,7 +1316,7 @@ def detect_claim_reasoning(raw: dict[str, Any], root: Path = ROOT, evaluated_at:
             "nodes": nodes,
             "claim_diagnostics": diagnostics,
             "authority_gate": gate,
-            "claim_expressiveness": {"ready_for_detector_switch": False, "warnings": ["claim authority gate not ready"]},
+            "claim_expressiveness": {"ready_for_detector_switch": False, "warnings": ["absolute authoritative-record floor not reached"]},
             "distance_table": {"N": 0, "clusters": {}, "pairs": {}},
             "groups": {
                 "level2_corroborated": [], "level2_named_continuity": [], "level3_sequence_gap": [], "level3_era_conjunction": [],
@@ -1274,22 +1329,8 @@ def detect_claim_reasoning(raw: dict[str, Any], root: Path = ROOT, evaluated_at:
         return result
     expressiveness = claim_expressiveness(authoritative_nodes)
     gate["semantic_quality_ready"] = bool(expressiveness.get("ready_for_detector_switch"))
-    gate["ready"] = bool(gate["authority_ready"] and gate["semantic_quality_ready"])
-    if not gate["ready"]:
-        result = {
-            "profile": PROFILE,
-            "evaluated_at": _date_only(evaluated_at or raw.get("run_completed_at") or raw.get("last_updated")),
-            "nodes": nodes, "claim_diagnostics": diagnostics, "authority_gate": gate,
-            "claim_expressiveness": expressiveness, "distance_table": {"N": 0, "clusters": {}, "pairs": {}},
-            "groups": {
-                "level2_corroborated": [], "level2_named_continuity": [], "level3_sequence_gap": [], "level3_era_conjunction": [],
-                "level4_opposing_movements": [], "level5_dependency_pathway": [], "future_shock_hypothesis": [],
-                "level4_5_conflicting_criteria": [], "level5_latent_channel": [],
-                "level5_anchor_demand": [], "level5_split_recurrence": [],
-            },
-        }
-        _LIVE_DETECTION_CACHE.clear(); _LIVE_DETECTION_CACHE[cache_key] = result
-        return result
+    gate["semantic_quality_blocks_reasoning"] = False
+    gate["ready"] = True
     ev = _date_only(evaluated_at or raw.get("run_completed_at") or raw.get("last_updated"))
     ev_date = dt.date.fromisoformat(ev) if date_precision(ev) == "day" else dt.datetime.now(dt.timezone.utc).date()
     distance = build_distance_table(nodes)
