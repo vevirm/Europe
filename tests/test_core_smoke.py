@@ -79,12 +79,76 @@ class CoreSmoke(unittest.TestCase):
         from scripts.claims_schema import load_vocabulary
         self.assertTrue(load_vocabulary())
 
+    def test_claim_authority_uses_absolute_record_floor(self):
+        from scripts.claim_reasoning_live import AUTHORITY_MIN_RECORDS, _authority_gate_status
+        self.assertEqual(AUTHORITY_MIN_RECORDS, 100)
+        ready = _authority_gate_status(
+            authoritative_claims=105, current_world_records=1000,
+            records_with_any_claim=150, records_with_authoritative_claims=100,
+        )
+        self.assertTrue(ready["authority_ready"])
+        self.assertEqual(ready["coverage"], 0.1)
+        below = _authority_gate_status(
+            authoritative_claims=500, current_world_records=1000,
+            records_with_any_claim=500, records_with_authoritative_claims=99,
+        )
+        self.assertFalse(below["authority_ready"])
+
+    def test_secondary_object_sparsity_is_advisory_not_detector_gate(self):
+        from scripts.claim_reasoning_shadow import claim_expressiveness
+        report = claim_expressiveness([{
+            "era": "current", "_primary": True, "_collection": "strand_a",
+            "mechanism": "assesses", "kind": "diagnosis", "secondary_objects": [],
+        }])
+        self.assertTrue(report["ready_for_detector_switch"])
+        self.assertTrue(any("secondary_objects" in x for x in report["advisories"]))
+
+    def test_invalid_legacy_claim_gets_provisional_fallback(self):
+        from scripts.claim_reasoning_live import attach_provisional_claims
+        from scripts.claims_schema import load_vocabulary, validate_claim
+        active = {
+            "strand_a": [{
+                "link": "https://example.test/legacy",
+                "date": "2026-09-01",
+                "title": "EU export control regulation restricts advanced chips",
+                "source": "Example",
+                "type": "report",
+                "claims": [{"claim_id": "legacy", "object": "econsec.trade_security"}],
+            }],
+            "frontier_evidence": [], "strand_c": [],
+        }
+        stats = attach_provisional_claims(active, load_vocabulary())
+        self.assertEqual(stats["generated_for_invalid_legacy_claims"], 1)
+        claims = active["strand_a"][0]["claims"]
+        provisional = [c for c in claims if c.get("origin") == "provisional"]
+        self.assertEqual(len(provisional), 1)
+        self.assertFalse(validate_claim(provisional[0], load_vocabulary()))
+
     def test_reasoning_runs_on_empty_corpus(self):
         from scripts.high_order_inference import refresh_high_order_inference
         from scripts.shock_inference import refresh_shock_inference
         doc = {"strand_a": [], "strand_b": [], "strand_c": []}
         self.assertIsInstance(refresh_shock_inference(doc, {}, "2026-01-01T00:00:00Z"), dict)
         self.assertIsInstance(refresh_high_order_inference(doc, {}, "2026-01-01T00:00:00Z"), dict)
+
+    def test_claim_native_hold_is_sticky_across_repeated_gate_misses(self):
+        from unittest.mock import patch
+        from scripts.high_order_inference import refresh_high_order_inference
+        from scripts.shock_inference import refresh_shock_inference
+        previous = {
+            "detector_backend": "claim_native_hold",
+            "candidates": [{"id": "claim:test"}],
+            "publications": {"trend": ["claim:test"]},
+            "dynamic_shocks": [{"id": "claim:shock"}],
+        }
+        with patch("scripts.claim_reasoning_live.refresh_claim_high_order", return_value=None):
+            high = refresh_high_order_inference({}, previous, "2026-01-01T00:00:00Z")
+        with patch("scripts.claim_reasoning_live.refresh_claim_shocks", return_value=None):
+            shock = refresh_shock_inference({}, previous, "2026-01-01T00:00:00Z")
+        self.assertEqual(high["detector_backend"], "claim_native_hold")
+        self.assertEqual(shock["detector_backend"], "claim_native_hold")
+        self.assertEqual(high["candidates"], previous["candidates"])
+        self.assertEqual(shock["dynamic_shocks"], previous["dynamic_shocks"])
 
     def test_rebuild_active_on_empty_repo(self):
         with tempfile.TemporaryDirectory() as tmp:
