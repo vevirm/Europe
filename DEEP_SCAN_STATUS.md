@@ -6,12 +6,12 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **557** (Main **479** + Historical **78**)
-- Automatic queue still needing V2 verification: **1068** (Main **155** + Historical **913**)
+- Authoritative V2 verified: **588** (Main **479** + Historical **109**)
+- Automatic queue still needing V2 verification: **1037** (Main **155** + Historical **882**)
 - Currently assigned to workers: **78** (Main **8** + Historical **70**)
-- Bounded access-recovery retries still eligible: **179**
+- Bounded access-recovery retries still eligible: **181**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **990**
+- Automatic queue pending and not yet assigned: **959**
 
 ## Worker lanes
 
@@ -29,16 +29,16 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-e4f5ce344574`
+- Current package: `worker-b-cf8b3f0e0b5f`
 - Assigned unresolved records: **36**
-  1. `historical:id:2433c92388ae268b` — Mining for Europe's future: Critical raw materials, public attitudes and risks in enlargement partners
-  2. `historical:id:0e3b1813e6c28103` — Centimanes v. Titans: right-wing populist governments’ treatment of foreign multinationals in East Central Europe
-  3. `historical:id:9a02512190d6359b` — Out of Many, Many: Variation in East Central Europe Financial Governance Despite the EU's Single Market
-  4. `historical:id:e7b6ff5842d21c18` — Transatlantic Approaches to Outbound Investment Screening
-  5. `historical:id:2ecd9537efd7b69d` — The digital euro - anchoring Europe's strategic autonomy in a digital future | Bank for International Settlements
-  6. `historical:id:83f1f6fff8bda2c1` — The European Union’s Economic Security Strategy Update
-  7. `historical:id:f342875f1a3c6fd4` — Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links - CELIS Institute - Investment Screening | National Security | Competitiveness
-  8. `historical:id:b774f5d0aa10d3e3` — Nostalgia is a Broken Compass for Industrial Policy
+  1. `historical:id:f342875f1a3c6fd4` — Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links - CELIS Institute - Investment Screening | National Security | Competitiveness
+  2. `historical:id:40a6b5f31d319cbf` — Comparing Complements: The Concept of Foreign Subsidy Under The EU Foreign Subsidies Regulation In Light of EU State Aid Law and WTO Subsidy Law
+  3. `historical:id:d5a511bb499c8787` — Policy Coherence in the Time of Economic Insecurity: Balancing the Sustainable Trade and Development Playbook of the New European Commission
+  4. `historical:id:298747664b0b7e07` — Human Rights and Environmental Due Diligence Regulations for Deforestation‐Free Value Chains? Exploring the Implementation of the EU Regulation on Deforestation‐Free Products in the Cocoa and Coffee Sectors of Peru
+  5. `historical:id:a59129e23f173be6` — Less food waste could bring lower EU food prices and decrease greenhouse gas emissions
+  6. `historical:id:49366cd6741e9019` — Detecting Cybersecurity Threats in Digital Energy Systems Using Deep learning for Imbalanced Datasets
+  7. `historical:id:0d88769ecda78716` — Dependent development under geopolitical reconfiguration: the Orbán regime in Hungary
+  8. `historical:id:03d67ae8db1449d4` — Conference Report: BDI/CELIS German Chapter – Investment Screening Conference - CELIS Institute - Investment Screening | National Security | Competitiveness
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE

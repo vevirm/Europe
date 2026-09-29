@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-record-corrections-v1",
-  "updated_at": "2026-09-29T15:15:03Z",
+  "updated_at": "2026-09-29T15:24:56Z",
   "records": {
     "link:https://doi.org/10.1080/09662839.2026.2709844": {
       "fields": {
@@ -78,6 +78,21 @@
       ],
       "updated_at": "2026-09-29T11:53:10Z",
       "deep_scan_package_id": "worker-a-d437a695376f"
+    },
+    "historical:id:87c6928debb0ec10": {
+      "fields": {
+        "source": "Journal of European Integration"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "The packaged PDF was unrelated; the recovered publisher PDF verifies the journal source.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://www.tandfonline.com/doi/pdf/10.1080/07036337.2025.2537377"
+      ],
+      "updated_at": "2026-09-29T15:24:41Z",
+      "deep_scan_package_id": "worker-b-e4f5ce344574"
     }
   }
 }
