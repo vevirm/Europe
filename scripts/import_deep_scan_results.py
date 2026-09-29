@@ -755,6 +755,7 @@ def main() -> None:
                 # Fast transactional preflight: validate only this proposed entry.
                 # The full sidecar is still checked once later by check_reader_text.py.
                 why_value = clean(entry.get("reader_why"))
+                table[key] = entry
                 introduced_failures = validate_reader_text_entry(
                     entry,
                     why_count_before=reader_why_counts.get(why_value, 0) if why_value else 0,
