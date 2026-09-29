@@ -6,26 +6,26 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **458** (Main **458** + Historical **0**)
-- Automatic queue still needing V2 verification: **1116** (Main **158** + Historical **958**)
-- Currently assigned to workers: **78** (Main **27** + Historical **51**)
-- Bounded access-recovery retries still eligible: **132**
+- Authoritative V2 verified: **464** (Main **464** + Historical **0**)
+- Automatic queue still needing V2 verification: **1110** (Main **152** + Historical **958**)
+- Currently assigned to workers: **78** (Main **20** + Historical **58**)
+- Bounded access-recovery retries still eligible: **138**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **1038**
+- Automatic queue pending and not yet assigned: **1032**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-8bd82ab3b71d`
+- Current package: `worker-a-c5abcfce1620`
 - Assigned unresolved records: **36**
-  1. `link:https://doi.org/10.1016/j.marpol.2026.107297` — Balancing blue growth and the ecosystem approach: policy coherence in Sweden’s Marine Spatial Plan for the Baltic Sea
-  2. `link:https://doi.org/10.1163/22119000-bja10101` — Assessing the Barriers to the EU’s Green and Low-Carbon Hydrogen Imports
-  3. `link:https://doi.org/10.1111/jcms.70168` — Migration Power Europe: Diplomacy, Crises and Power Struggles at the EU Periphery
-  4. `link:https://doi.org/10.1016/j.accinf.2026.100791` — A new way to analyze ESG reports: A theme based model supported by AI
-  5. `link:https://www.ispionline.it/wp-content/uploads/2026/09/ISPI-POLICY-PAPER-2026-ISPI-Study-for-AHK-Italien-2.pdf` — Under Pressure: Europe, Italy and Germany in a Weaponised Global Economy | ISPI
-  6. `link:https://doi.org/10.1016/j.jimonfin.2026.103682` — Tax harmonization and the innovation–FDI trade-off: A quantitative analysis
-  7. `link:https://www.businesseurope.eu/wp-content/uploads/2026/09/2026-09-28-Draft-Regional-Aid-Guidelines-Amendments-Reply-to-Commission-consultation.pdf` — Guidelines on regional state aid – Proposed amendments - BusinessEurope reply to the European Commission consultation
-  8. `link:https://www.ispionline.it/wp-content/uploads/2026/09/ISPI-REPORT-2026-the-new-centrality-of-the-adriatic-sea-and-napa-in-the-age-of-fragmentation-2.pdf` — The New Centrality of the Adriatic Sea and NAPA in the Age of Fragmentation | ISPI
+  1. `link:https://news.google.com/rss/articles/CBMirwFBVV95cUxOX1pLOFFWZURhd3NXNS1LMXM5aFludFpVRjY2bGpIN0hIVkRNR25jWVF0TG1qazZZUXk1NHVlUnhQQmJHVHlJckYwblI0SWVEZENvTGZfYTBZYlZBNFpiVXVXZXk4Z3AtSTBkeE13MUxPY2lCeUFVbWlicENRUEp6TGsxOTlBRGZ4RzlCT1N3SHJHVTI5aVk1QS01VWlpSkVrVmRGcTBQeDhIb0VMTldz?oc=5` — Trump’s diesel export threat meets a shrug in fuel-strapped Europe
+  2. `link:https://news.google.com/rss/articles/CBMirgFBVV95cUxPM1BDVkFhTlFidkFYaXA2Wk54T1NWT19JQ0FtTF81bE5yUC1KbnAxYlVMRU80cEp2WlpTTjN5ZzZiV3R4MVBxNGFmTEptdGRMcHM4VXpwUEc4ck1OcHhrbjJFM0Y4WWhYbG0xRHhkZlZHaTNuLTRYMlVnOU9ocWdwb3I3NTZCSWVZTFlTVWt5VV9ma3VLU2FLQjFHcmFNYmE4RWFEbXpSNERSOWZLMlE?oc=5` — EU to Exempt Two Russian Tycoons in Sanctions Renewal Deal
+  3. `link:https://news.google.com/rss/articles/CBMiygFBVV95cUxPNEU3cG0xb2xfWXdEaVhqMEQ3cEVhZTJFX2tMVEo5YkFXVXF3YmJQSUU5eGxJbHcteEQ3ZWlidmhabTRFazM5MzRIbjQ1aWRhUHQ4LURidWtLdEM4ekdRb1A0RlFGWWloT0lBbWxkQUZhR2tVVy1vSndNeXZGSUR0cDBtRHFMRTNOY3RMUmo4MWtpN2lGYnRuSlJXYm9sZUhwa3JCMHZ3RjVXVnBCMDhIeU9CSkRyZFJsbUtpODZsckNSZjBYWWZwNWJB?oc=5` — Volkswagen benefited from €1.5bn in German EV subsidies as it lobbies EU to hit Chinese cars harder
+  4. `link:https://news.google.com/rss/articles/CBMiiwFBVV95cUxPaGlTdkJldUN6aWwyNFFnUVBEWEtnZWVPQUp4VGpPNGZMRTI4bE9fZlVOTEhZZ2VqcVpfS3N3S0d2UlhPcUp3Vk1WT1pES1ctVlFZZ1UydWNTbWxHVGwzbGNlbGE0TUJBMUJldVpZUFN0ZXBla3ZhM3pTMjF6UFdVY3ZtZnBtMldWVERZ?oc=5` — EU’s Russia sanctions are running out of easy targets
+  5. `link:https://news.google.com/rss/articles/CBMi_gFBVV95cUxNbko3RENKVG5HMTNYczRtOVpwTHJQNmJFN20xT0ZKSzBuTEM2VzMxZkZGMmZFUWZxYUx2OFByS0U5aTVteDNIeG5rRXhENldSZmFsRWlPRl9aUVkyVFRycFZkUTBlQWtBNmJxTG4wTmpvazNBRWtiZ2JrZHd2UXZLZzZ2Qk56U25KRnVnNXhyeTFINElNZ2s3QXhmWU1NNHhwTkNvRHhoZjhkenA0dWt2ejcydkNWOTM1elY4Q0lwZ0VxeUJ1SUZYcjNnVExyZlVtNk16ZFQ3SFNHbjFSakJSOE40dGU4RF9peWJHQi16dGJmN2ZlREpYRzJpLThYdw?oc=5` — EU sanctions 10 individuals and 17 entities over unlawful deportation of Ukrainian children to Russia
+  6. `link:https://news.google.com/rss/articles/CBMi6wFBVV95cUxNeEVJUmhhejd3Y0xuTFFPWnlGOXdrSmR4MDFmYm1jZDFTR2RNUlFhVmxwOC1rNzlzdy1BYW9kNi1LaEFUTEFzR0Eyck5nVGZoN2lSUFE5anBIVVhGbzg1LVNtV09GaUVHYmFnR2U4cFlBV3hWZEpZR3lKS3llQUFPUlBCQUFEMmpWdG13NDNINkxJeTZHNHRVMWtib19IcDVOWFlxcXMtcEpiWDhCMWtnc2pMazRWU2dSOWg3c1dsbTZrUHFYWTVMQVhhNnR0MG9HTWVPemltdDJRSXRSWjRsNzhxTzk5UkxjMXEw?oc=5` — European defence industry: Council identifies the first five projects of common interest
+  7. `link:https://news.google.com/rss/articles/CBMisgFBVV95cUxQdkJsS2FSMnQzd1dNc0ZfS0hJRlRONktheHk4R0dicVhoOGpmNEV0aXFFZ3pHLUNZVUZ0Qml3Z2FzUkZZc3Z3ZjRFbFZKM3E3U2pTcUxfOHdRaklMR2tIYjVtNnNtYTlKU18yZkFDNVZvMHpRV3VwSDJFX2s1c1lNTE5FMFNhOVJsSFZWbU5yQV9yUUZyRTNGU09QcDJTVXF1RDRCTVQ1MTNvTHRtQmlKZTNn?oc=5` — Europe Draws More LNG as Hormuz Crisis Tightens Global Market
+  8. `link:https://news.google.com/rss/articles/CBMivgFBVV95cUxOVDRjSXY3THA4d0lJaGlLM05DM3FVeDc3TFVFa3p2d1Z5OWRiNnBxbVhqMkVoZmw0M0xNeDVaNXhrTVN6bnhTRy1Pc0E4VXEwSjhsS3VkcE9BSjZMQ0hUM0FfM010Zk8zNGlZTUN0MmRZbS1ZTEhxQUFGWUVDUFBESzRKWkYxUUZMVjJIZzd0ZjZVbDViRFRDTkFpUjlCalJfODhOQUk5OC1Nc3d1X2NOdE5aUk1tWS1PdDdJZkNR?oc=5` — German gas supply is secure despite low storage levels, VNG chief says
   - … plus 28 more in the package manifest
 
 ### Worker B
