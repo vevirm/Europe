@@ -77988,7 +77988,2581 @@
     ],
     "detector_backend": "legacy_pre_cutover_fallback",
     "claim_switch_error": "claim_authority_gate_not_ready",
-    "publication_compatibility_lock": true
+    "publication_compatibility_lock": true,
+    "scenarios_2035": {
+      "horizon": 2035,
+      "evaluated_at": "2026-09-29T06:11:49Z",
+      "model": "fixed-major-2x2__evidence-selected-sub-2x2__four-conditional-variants",
+      "counts": {
+        "major": 4,
+        "subscenarios": 16,
+        "leaf_variants": 64,
+        "total_nodes": 84
+      },
+      "axes": {
+        "x": {
+          "id": "global_connectedness",
+          "title": "Global economic connectedness",
+          "low": "More fragmented / guarded",
+          "high": "More connected / open",
+          "low_short": "Fragmented links",
+          "high_short": "Connected links",
+          "question": "How open are trade, investment, technology and partner networks around Europe?"
+        },
+        "y": {
+          "id": "strategic_capacity",
+          "title": "European strategic capacity",
+          "low": "Thin capacity / few buffers",
+          "high": "Deep capacity / more buffers",
+          "low_short": "Thin capacity",
+          "high_short": "Deep capacity",
+          "question": "How much industrial, financial, energy and supply capacity can Europe mobilise?"
+        }
+      },
+      "axis_library": [
+        {
+          "id": "input_resilience",
+          "category": "inputs",
+          "title": "Critical-input resilience",
+          "low": "Concentrated / brittle inputs",
+          "high": "Diversified / buffered inputs",
+          "low_short": "Input exposure",
+          "high_short": "Input resilience",
+          "question": "Are critical materials, components and supply routes concentrated or buffered?"
+        },
+        {
+          "id": "technology_control",
+          "category": "technology",
+          "title": "Control of critical technology",
+          "low": "External technology dependence",
+          "high": "European technology control",
+          "low_short": "Tech dependence",
+          "high_short": "Tech control",
+          "question": "Who controls the critical technologies, compute, infrastructure and know-how Europe depends on?"
+        },
+        {
+          "id": "capital_mobilisation",
+          "category": "capital",
+          "title": "Strategic capital mobilisation",
+          "low": "Capital constrained",
+          "high": "Investment at scale",
+          "low_short": "Capital constraint",
+          "high_short": "Capital at scale",
+          "question": "Can Europe mobilise enough public and private capital for strategic projects?"
+        },
+        {
+          "id": "partner_diversification",
+          "category": "external",
+          "title": "Partner diversification",
+          "low": "Narrow / concentrated partners",
+          "high": "Broad / diversified partners",
+          "low_short": "Narrow partners",
+          "high_short": "Diversified partners",
+          "question": "Does Europe depend on a narrow partner set or maintain multiple credible economic routes?"
+        },
+        {
+          "id": "economic_security_controls",
+          "category": "controls",
+          "title": "Economic-security controls",
+          "low": "Light / permissive controls",
+          "high": "Tight / interventionist controls",
+          "low_short": "Light controls",
+          "high_short": "Tight controls",
+          "question": "How strongly are investment, exports, subsidies, suppliers and trade screened or restricted?"
+        },
+        {
+          "id": "european_coordination",
+          "category": "governance",
+          "title": "European coordination",
+          "low": "Fragmented national action",
+          "high": "Coordinated European action",
+          "low_short": "Fragmented action",
+          "high_short": "EU coordination",
+          "question": "Do European actors pool decisions and capacity, or respond mainly through separate national choices?"
+        },
+        {
+          "id": "energy_resilience",
+          "category": "energy",
+          "title": "Energy-system resilience",
+          "low": "Constrained / volatile energy",
+          "high": "Secure / flexible energy",
+          "low_short": "Energy constraint",
+          "high_short": "Energy resilience",
+          "question": "Can Europe's energy system absorb supply, price and infrastructure stress?"
+        },
+        {
+          "id": "industrial_capacity",
+          "category": "industry",
+          "title": "Industrial mobilisation",
+          "low": "Thin production base",
+          "high": "Scaled production base",
+          "low_short": "Thin production",
+          "high_short": "Scaled production",
+          "question": "Can Europe expand strategic production fast enough when demand or security needs rise?"
+        }
+      ],
+      "method": {
+        "major": "The first 2x2 is fixed in advance: global economic connectedness × European strategic capacity.",
+        "sub": "Each major world independently selects a 2x2 from a stable library using the current Radar candidates and evidence.",
+        "leaf": "Each sub-scenario keeps its structural assumptions and receives four conditional branches: shock, opportunity, trend acceleration and risk crystallisation."
+      },
+      "evidence_pool_size": 64,
+      "scenarios": [
+        {
+          "id": "independent_scale",
+          "legacy_id": "fortress_frontier",
+          "name": "Independent Scale",
+          "tagline": "Deep European capacity, but weaker global links.",
+          "x_side": "low",
+          "y_side": "high",
+          "story": "Europe reaches 2035 with stronger industrial, technology and financing capacity, while trade and investment run through a narrower, more controlled set of relationships.",
+          "tradeoff": "Europe gains room to act, but pays for it through narrower access, higher friction and possible retaliation.",
+          "order": 1,
+          "coordinates": {
+            "x": "More fragmented / guarded",
+            "y": "Deep capacity / more buffers"
+          },
+          "subframe": {
+            "id": "independent_scale:frame",
+            "title": "Inside Independent Scale",
+            "question": "Which two uncertainties matter most inside Independent Scale given the current Radar?",
+            "x_axis": {
+              "id": "economic_security_controls",
+              "category": "controls",
+              "title": "Economic-security controls",
+              "low": "Light / permissive controls",
+              "high": "Tight / interventionist controls",
+              "low_short": "Light controls",
+              "high_short": "Tight controls",
+              "question": "How strongly are investment, exports, subsidies, suppliers and trade screened or restricted?",
+              "keywords": [
+                "sanction",
+                "screening",
+                "export control",
+                "dual-use",
+                "dual use",
+                "trade defence",
+                "trade defense",
+                "foreign subsidies",
+                "anti-coercion",
+                "anti coercion",
+                "high-risk vendor",
+                "high risk vendor",
+                "tariff",
+                "economic security",
+                "de-risk",
+                "derisk",
+                "restrict",
+                "control list"
+              ],
+              "selection_score": 42.301,
+              "basis": [
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                  "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                  "weight": 7.115
+                },
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                  "title": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+                  "weight": 5.832
+                },
+                {
+                  "finding_id": "l45:goal_measurement_gap:competitiveness",
+                  "title": "Europe keeps pursuing competitiveness without a settled way to measure whether it is succeeding.",
+                  "weight": 3.744
+                },
+                {
+                  "finding_id": "l45:goal_measurement_gap:research-security",
+                  "title": "Europe keeps pursuing coercion/weaponised interdependence without a settled way to measure whether it is succeeding.",
+                  "weight": 3.107
+                }
+              ]
+            },
+            "y_axis": {
+              "id": "technology_control",
+              "category": "technology",
+              "title": "Control of critical technology",
+              "low": "External technology dependence",
+              "high": "European technology control",
+              "low_short": "Tech dependence",
+              "high_short": "Tech control",
+              "question": "Who controls the critical technologies, compute, infrastructure and know-how Europe depends on?",
+              "keywords": [
+                "technology",
+                "digital sovereignty",
+                "quantum",
+                "ai ",
+                "artificial intelligence",
+                "compute",
+                "chips",
+                "semiconductor",
+                "dual-use",
+                "dual use",
+                "research security",
+                "export control",
+                "cyber",
+                "data",
+                "telecom"
+              ],
+              "selection_score": 27.725,
+              "basis": [
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                  "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                  "weight": 7.115
+                },
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                  "title": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+                  "weight": 3.726
+                },
+                {
+                  "finding_id": "l45:goal_measurement_gap:competitiveness",
+                  "title": "Europe keeps pursuing competitiveness without a settled way to measure whether it is succeeding.",
+                  "weight": 2.392
+                },
+                {
+                  "finding_id": "l45:goal_measurement_gap:sovereignty",
+                  "title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
+                  "weight": 1.782
+                }
+              ]
+            },
+            "selection": {
+              "method": "Two highest evidence-relevant axes from the fixed axis library, with near-duplicate categories prevented and a world-context relevance prior.",
+              "ranked_axes": [
+                {
+                  "id": "economic_security_controls",
+                  "title": "Economic-security controls",
+                  "score": 42.301,
+                  "basis": [
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                      "weight": 7.115
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+                      "weight": 5.832
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:competitiveness",
+                      "title": "Europe keeps pursuing competitiveness without a settled way to measure whether it is succeeding.",
+                      "weight": 3.744
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:research-security",
+                      "title": "Europe keeps pursuing coercion/weaponised interdependence without a settled way to measure whether it is succeeding.",
+                      "weight": 3.107
+                    }
+                  ]
+                },
+                {
+                  "id": "technology_control",
+                  "title": "Control of critical technology",
+                  "score": 27.725,
+                  "basis": [
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                      "weight": 7.115
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+                      "weight": 3.726
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:competitiveness",
+                      "title": "Europe keeps pursuing competitiveness without a settled way to measure whether it is succeeding.",
+                      "weight": 2.392
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:sovereignty",
+                      "title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
+                      "weight": 1.782
+                    }
+                  ]
+                },
+                {
+                  "id": "european_coordination",
+                  "title": "European coordination",
+                  "score": 24.581,
+                  "basis": [
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                      "weight": 8.4
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+                      "weight": 5.832
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                      "weight": 4.08
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:sovereignty",
+                      "title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
+                      "weight": 3.888
+                    }
+                  ]
+                },
+                {
+                  "id": "industrial_capacity",
+                  "title": "Industrial mobilisation",
+                  "score": 18.985,
+                  "basis": [
+                    {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "Europe may be measuring delivery before it can measure the resilience in energy/materials outcome it actually wants.",
+                      "weight": 4.965
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                      "weight": 4.817
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                      "weight": 3.261
+                    }
+                  ]
+                }
+              ]
+            },
+            "scenarios": [
+              {
+                "id": "independent_scale:sub:1",
+                "name": "Tech control + Light controls",
+                "tagline": "Economic-security controls: Light controls · Control of critical technology: Tech control",
+                "x_side": "low",
+                "y_side": "high",
+                "story": "Inside Independent Scale, this branch combines light controls with tech control. The parent world's assumptions stay fixed; only these two second-order uncertainties are resolved differently.",
+                "order": 1,
+                "variants": [
+                  {
+                    "id": "independent_scale:sub:1:shock",
+                    "kind": "shock",
+                    "label": "Shock inserted",
+                    "name": "Shock inserted: Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links…",
+                    "trigger": "Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                    "story": [
+                      "Stress test: if the pressure visible in “Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links - CELIS Institute - Investment Screening | National Security | Competitiveness” becomes a larger external shock, this branch is forced to react quickly.",
+                      "Because the system leans toward light / permissive controls, while the system leans toward european technology control, the shock tests which dependency or buffer fails first."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:goal_measurement_gap:competitiveness",
+                      "title": "Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                      "source": "CELIS Institute",
+                      "date": "2026-01-01",
+                      "link": "https://www.celis.institute/celis-institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/",
+                      "product": "continuity"
+                    },
+                    "order": 1
+                  },
+                  {
+                    "id": "independent_scale:sub:1:opportunity",
+                    "kind": "opportunity",
+                    "label": "Opportunity inserted",
+                    "name": "Opportunity inserted: EU advances Global Health Resilience Initiative with new Global Gateway investm…",
+                    "trigger": "EU advances Global Health Resilience Initiative with new Global Gateway investments in Africa and Latin America",
+                    "story": [
+                      "Upside branch: if the opening visible in “EU advances Global Health Resilience Initiative with new Global Gateway investments in Africa and Latin America” scales, Europe gets a chance to improve its position inside this scenario.",
+                      "Because the system leans toward light / permissive controls, while the system leans toward european technology control, the opportunity changes who can invest, supply or cooperate without changing the parent world itself."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "EU advances Global Health Resilience Initiative with new Global Gateway investments in Africa and Latin America",
+                      "source": "EEAS",
+                      "date": "2026-09-25",
+                      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPV3BxRUZfaWJkZGJQbkpsc2ctbnRCdHk0a1VDRFhwLTBhR01GcXE2RmFwNDBIRkFtbGdPYVhfY00xeEppRW4wS0dKc0FDOWl0ZE1rY3A5dkFrWUVGb1ZGN0NPSHVBeHJ2WnpjR2VkTjRMajRiaC1JTFVqM1lTNU1GdENsa29FWjdyeXFvQkJSa1pMdmRLajZLckpWQWdINlVqSElPWHdDWTBmZzU0ZUxXVFowYjZlOUJNZk5meUxIUEVLNi1JX2pRYlV0Y3ZKSkVHTXJ3YU12ZWlCN2xNY2I1SW9xdXdrdEQ2SXc?oc=5",
+                      "product": "continuity"
+                    },
+                    "order": 2
+                  },
+                  {
+                    "id": "independent_scale:sub:1:trend",
+                    "kind": "trend",
+                    "label": "Trend accelerated",
+                    "name": "Trend accelerated: Enabling the EU's digital Sovereignty: A Europe-level quantum internet as the k…",
+                    "trigger": "Enabling the EU's digital Sovereignty: A Europe-level quantum internet as the key infrastructure for a European digital polity",
+                    "story": [
+                      "Acceleration branch: if the direction visible in “Enabling the EU's digital Sovereignty: A Europe-level quantum internet as the key infrastructure for a European digital polity” persists toward 2035, it becomes part of the operating environment.",
+                      "Because the system leans toward light / permissive controls, while the system leans toward european technology control, the trend reinforces one side of this sub-scenario and makes reversal harder."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Enabling the EU's digital Sovereignty: A Europe-level quantum internet as the key infrastructure for a European digital polity",
+                      "source": "Telecommunications Policy",
+                      "date": "2026-07-01",
+                      "link": "https://doi.org/10.1016/j.telpol.2026.103222",
+                      "product": "continuity"
+                    },
+                    "order": 3
+                  },
+                  {
+                    "id": "independent_scale:sub:1:risk",
+                    "kind": "risk",
+                    "label": "Risk crystallises",
+                    "name": "Risk crystallises: The EU Anti-Coercion Regulation: A New Tool Against Economic Pressure - CELIS I…",
+                    "trigger": "The EU Anti-Coercion Regulation: A New Tool Against Economic Pressure - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                    "story": [
+                      "Failure branch: if the weakness visible in “The EU Anti-Coercion Regulation: A New Tool Against Economic Pressure - CELIS Institute - Investment Screening | National Security | Competitiveness” hardens, a manageable exposure becomes a structural constraint.",
+                      "Because the system leans toward light / permissive controls, while the system leans toward european technology control, the cost appears as lost choice, slower adjustment or greater dependence."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:goal_measurement_gap:research-security",
+                      "title": "The EU Anti-Coercion Regulation: A New Tool Against Economic Pressure - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                      "source": "CELIS Institute",
+                      "date": "2025-05-19",
+                      "link": "https://www.celis.institute/celis-blog/the-eu-anti-coercion-regulation-a-new-tool-against-economic-pressure/",
+                      "product": "continuity"
+                    },
+                    "order": 4
+                  }
+                ]
+              },
+              {
+                "id": "independent_scale:sub:2",
+                "name": "Tech control + Tight controls",
+                "tagline": "Economic-security controls: Tight controls · Control of critical technology: Tech control",
+                "x_side": "high",
+                "y_side": "high",
+                "story": "Inside Independent Scale, this branch combines tight controls with tech control. The parent world's assumptions stay fixed; only these two second-order uncertainties are resolved differently.",
+                "order": 2,
+                "variants": [
+                  {
+                    "id": "independent_scale:sub:2:shock",
+                    "kind": "shock",
+                    "label": "Shock inserted",
+                    "name": "Shock inserted: 2026 Update of the EU Control List of Dual-Use Items",
+                    "trigger": "2026 Update of the EU Control List of Dual-Use Items",
+                    "story": [
+                      "Stress test: if the pressure visible in “2026 Update of the EU Control List of Dual-Use Items” becomes a larger external shock, this branch is forced to react quickly.",
+                      "Because the system leans toward tight / interventionist controls, while the system leans toward european technology control, the shock tests which dependency or buffer fails first."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "2026 Update of the EU Control List of Dual-Use Items",
+                      "source": "European Commission — Trade and Economic Security",
+                      "date": "2026-09-14",
+                      "link": "https://eur-lex.europa.eu/eli/reg/2021/821/oj/eng",
+                      "product": "continuity"
+                    },
+                    "order": 1
+                  },
+                  {
+                    "id": "independent_scale:sub:2:opportunity",
+                    "kind": "opportunity",
+                    "label": "Opportunity inserted",
+                    "name": "Opportunity inserted: The EU Anti-Coercion Instrument: Anti-What, Exactly? - CELIS Institute - Invest…",
+                    "trigger": "The EU Anti-Coercion Instrument: Anti-What, Exactly? - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                    "story": [
+                      "Upside branch: if the opening visible in “The EU Anti-Coercion Instrument: Anti-What, Exactly? - CELIS Institute - Investment Screening | National Security | Competitiveness” scales, Europe gets a chance to improve its position inside this scenario.",
+                      "Because the system leans toward tight / interventionist controls, while the system leans toward european technology control, the opportunity changes who can invest, supply or cooperate without changing the parent world itself."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:goal_measurement_gap:research-security",
+                      "title": "The EU Anti-Coercion Instrument: Anti-What, Exactly? - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                      "source": "CELIS Institute",
+                      "date": "2024-02-19",
+                      "link": "https://www.celis.institute/celis-blog/the-eu-anti-coercion-instrument-anti-what-exactly/",
+                      "product": "continuity"
+                    },
+                    "order": 2
+                  },
+                  {
+                    "id": "independent_scale:sub:2:trend",
+                    "kind": "trend",
+                    "label": "Trend accelerated",
+                    "name": "Trend accelerated: Cybersecurity in critical rail infrastructure: sector specific adoption of the…",
+                    "trigger": "Cybersecurity in critical rail infrastructure: sector specific adoption of the NIS 2 directive in Europe",
+                    "story": [
+                      "Acceleration branch: if the direction visible in “Cybersecurity in critical rail infrastructure: sector specific adoption of the NIS 2 directive in Europe” persists toward 2035, it becomes part of the operating environment.",
+                      "Because the system leans toward tight / interventionist controls, while the system leans toward european technology control, the trend reinforces one side of this sub-scenario and makes reversal harder."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Cybersecurity in critical rail infrastructure: sector specific adoption of the NIS 2 directive in Europe",
+                      "source": "Journal of Transportation Security",
+                      "date": "2026-04-18",
+                      "link": "https://doi.org/10.1007/s12198-026-00349-8",
+                      "product": "continuity"
+                    },
+                    "order": 3
+                  },
+                  {
+                    "id": "independent_scale:sub:2:risk",
+                    "kind": "risk",
+                    "label": "Risk crystallises",
+                    "name": "Risk crystallises: German gas supply is secure despite low storage levels, VNG chief says",
+                    "trigger": "German gas supply is secure despite low storage levels, VNG chief says",
+                    "story": [
+                      "Failure branch: if the weakness visible in “German gas supply is secure despite low storage levels, VNG chief says” hardens, a manageable exposure becomes a structural constraint.",
+                      "Because the system leans toward tight / interventionist controls, while the system leans toward european technology control, the cost appears as lost choice, slower adjustment or greater dependence."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "German gas supply is secure despite low storage levels, VNG chief says",
+                      "source": "Reuters",
+                      "date": "2026-09-28",
+                      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVDRjSXY3THA4d0lJaGlLM05DM3FVeDc3TFVFa3p2d1Z5OWRiNnBxbVhqMkVoZmw0M0xNeDVaNXhrTVN6bnhTRy1Pc0E4VXEwSjhsS3VkcE9BSjZMQ0hUM0FfM010Zk8zNGlZTUN0MmRZbS1ZTEhxQUFGWUVDUFBESzRKWkYxUUZMVjJIZzd0ZjZVbDViRFRDTkFpUjlCalJfODhOQUk5OC1Nc3d1X2NOdE5aUk1tWS1PdDdJZkNR?oc=5",
+                      "product": "risk"
+                    },
+                    "order": 4
+                  }
+                ]
+              },
+              {
+                "id": "independent_scale:sub:3",
+                "name": "Tech dependence + Light controls",
+                "tagline": "Economic-security controls: Light controls · Control of critical technology: Tech dependence",
+                "x_side": "low",
+                "y_side": "low",
+                "story": "Inside Independent Scale, this branch combines light controls with tech dependence. The parent world's assumptions stay fixed; only these two second-order uncertainties are resolved differently.",
+                "order": 3,
+                "variants": [
+                  {
+                    "id": "independent_scale:sub:3:shock",
+                    "kind": "shock",
+                    "label": "Shock inserted",
+                    "name": "Shock inserted: How a Chinese ‘smart sex toys’ company fed Russian war tech against Ukraine — a…",
+                    "trigger": "How a Chinese ‘smart sex toys’ company fed Russian war tech against Ukraine — and exposed an EU sanctions blind spot",
+                    "story": [
+                      "Stress test: if the pressure visible in “How a Chinese ‘smart sex toys’ company fed Russian war tech against Ukraine — and exposed an EU sanctions blind spot” becomes a larger external shock, this branch is forced to react quickly.",
+                      "Because the system leans toward light / permissive controls, while the system leans toward external technology dependence, the shock tests which dependency or buffer fails first."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "How a Chinese ‘smart sex toys’ company fed Russian war tech against Ukraine — and exposed an EU sanctions blind spot",
+                      "source": "EUobserver",
+                      "date": "2026-09-25",
+                      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQMWNldktBaDNRMW00ZFotekpxVXpJMEdvajloN2VJaVZZUkFMYmFtTGRzWm5TbC10WXVRRE5QWFh0SHZlS1NKSmNBWVhzWkVabFZ0V211OWJQU0lZMFVycW55V2lqcTBkWHpGcVhsLU5RaDZ3cW1GQ19fbWlCeXlxdjJtdUgyYlBIbTRUTldnUGhJWEtrZFItR19JMDY4NVk0QlQ4WHRRZVJHem1OcnlLX1RiTkNneUdseWIwTXppXy1VWlNCVnhVOE5YWFZrMmo2c2w5YjJ3dHdJUUk?oc=5",
+                      "product": "continuity"
+                    },
+                    "order": 1
+                  },
+                  {
+                    "id": "independent_scale:sub:3:opportunity",
+                    "kind": "opportunity",
+                    "label": "Opportunity inserted",
+                    "name": "Opportunity inserted: Do preferential trade agreements with labor clauses displace labor abuses? The…",
+                    "trigger": "Do preferential trade agreements with labor clauses displace labor abuses? The unintended consequences of global governance on labor standards",
+                    "story": [
+                      "Upside branch: if the opening visible in “Do preferential trade agreements with labor clauses displace labor abuses? The unintended consequences of global governance on labor standards” scales, Europe gets a chance to improve its position inside this scenario.",
+                      "Because the system leans toward light / permissive controls, while the system leans toward external technology dependence, the opportunity changes who can invest, supply or cooperate without changing the parent world itself."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Do preferential trade agreements with labor clauses displace labor abuses? The unintended consequences of global governance on labor standards",
+                      "source": "Review of International Political Economy",
+                      "date": "2026-07-01",
+                      "link": "https://doi.org/10.1080/09692290.2026.2693756",
+                      "product": "continuity"
+                    },
+                    "order": 2
+                  },
+                  {
+                    "id": "independent_scale:sub:3:trend",
+                    "kind": "trend",
+                    "label": "Trend accelerated",
+                    "name": "Trend accelerated: From Post-Soviet Legacy to Present Accountability: The Emergence of a Doctrinal…",
+                    "trigger": "From Post-Soviet Legacy to Present Accountability: The Emergence of a Doctrinal Framework in European Union (EU) Sanctions Law against Russia",
+                    "story": [
+                      "Acceleration branch: if the direction visible in “From Post-Soviet Legacy to Present Accountability: The Emergence of a Doctrinal Framework in European Union (EU) Sanctions Law against Russia” persists toward 2035, it becomes part of the operating environment.",
+                      "Because the system leans toward light / permissive controls, while the system leans toward external technology dependence, the trend reinforces one side of this sub-scenario and makes reversal harder."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "From Post-Soviet Legacy to Present Accountability: The Emergence of a Doctrinal Framework in European Union (EU) Sanctions Law against Russia",
+                      "source": "Cambridge Yearbook of European Legal Studies",
+                      "date": "2026-04-28",
+                      "link": "https://doi.org/10.1017/cel.2026.10028",
+                      "product": "continuity"
+                    },
+                    "order": 3
+                  },
+                  {
+                    "id": "independent_scale:sub:3:risk",
+                    "kind": "risk",
+                    "label": "Risk crystallises",
+                    "name": "Risk crystallises: Diversification of gas supply sources and routes",
+                    "trigger": "Diversification of gas supply sources and routes",
+                    "story": [
+                      "Failure branch: if the weakness visible in “Diversification of gas supply sources and routes” hardens, a manageable exposure becomes a structural constraint.",
+                      "Because the system leans toward light / permissive controls, while the system leans toward external technology dependence, the cost appears as lost choice, slower adjustment or greater dependence."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "Diversification of gas supply sources and routes",
+                      "source": "European Commission — Energy",
+                      "date": "2026-08-25",
+                      "link": "https://energy.ec.europa.eu/topics/energy-security/diversification-gas-supply-sources-and-routes_en",
+                      "product": "risk"
+                    },
+                    "order": 4
+                  }
+                ]
+              },
+              {
+                "id": "independent_scale:sub:4",
+                "name": "Tech dependence + Tight controls",
+                "tagline": "Economic-security controls: Tight controls · Control of critical technology: Tech dependence",
+                "x_side": "high",
+                "y_side": "low",
+                "story": "Inside Independent Scale, this branch combines tight controls with tech dependence. The parent world's assumptions stay fixed; only these two second-order uncertainties are resolved differently.",
+                "order": 4,
+                "variants": [
+                  {
+                    "id": "independent_scale:sub:4:shock",
+                    "kind": "shock",
+                    "label": "Shock inserted",
+                    "name": "Shock inserted: Notice for the attention of the data subjects to whom the restrictive measures…",
+                    "trigger": "Notice for the attention of the data subjects to whom the restrictive measures provided for in Council Decision 2011/486/CFSP and Council Regulation (EU) No 753/2011 concerning restrictive measures directed against certain individuals, groups, undertakings and entities in view of the situation in Afghanistan apply",
+                    "story": [
+                      "Stress test: if the pressure visible in “Notice for the attention of the data subjects to whom the restrictive measures provided for in Council Decision 2011/486/CFSP and Council Regulation (EU) No 753/2011 concerning restrictive measures directed against certain individuals, groups, undertakings and entities in view of the situation in Afghanistan apply” becomes a larger external shock, this branch is forced to react quickly.",
+                      "Because the system leans toward tight / interventionist controls, while the system leans toward external technology dependence, the shock tests which dependency or buffer fails first."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:goal_measurement_gap:research-security",
+                      "title": "Notice for the attention of the data subjects to whom the restrictive measures provided for in Council Decision 2011/486/CFSP and Council Regulation (EU) No 753/2011 concerning restrictive measures directed against certain individuals, groups, undertakings and entities in view of the situation in Afghanistan apply",
+                      "source": "EUR-Lex",
+                      "date": "2026-09-23",
+                      "link": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026XG04980",
+                      "product": "continuity"
+                    },
+                    "order": 1
+                  },
+                  {
+                    "id": "independent_scale:sub:4:opportunity",
+                    "kind": "opportunity",
+                    "label": "Opportunity inserted",
+                    "name": "Opportunity inserted: Continuity in times of geoeconomic change: the European Union’s strategic trade…",
+                    "trigger": "Continuity in times of geoeconomic change: the European Union’s strategic trade relations with the Global South",
+                    "story": [
+                      "Upside branch: if the opening visible in “Continuity in times of geoeconomic change: the European Union’s strategic trade relations with the Global South” scales, Europe gets a chance to improve its position inside this scenario.",
+                      "Because the system leans toward tight / interventionist controls, while the system leans toward external technology dependence, the opportunity changes who can invest, supply or cooperate without changing the parent world itself."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Continuity in times of geoeconomic change: the European Union’s strategic trade relations with the Global South",
+                      "source": "Journal of European Integration",
+                      "date": "2026-04-02",
+                      "link": "https://doi.org/10.1080/07036337.2026.2652993",
+                      "product": "continuity"
+                    },
+                    "order": 2
+                  },
+                  {
+                    "id": "independent_scale:sub:4:trend",
+                    "kind": "trend",
+                    "label": "Trend accelerated",
+                    "name": "Trend accelerated: China and Limits to the European Union's Geoeconomic Turn",
+                    "trigger": "China and Limits to the European Union's Geoeconomic Turn",
+                    "story": [
+                      "Acceleration branch: if the direction visible in “China and Limits to the European Union's Geoeconomic Turn” persists toward 2035, it becomes part of the operating environment.",
+                      "Because the system leans toward tight / interventionist controls, while the system leans toward external technology dependence, the trend reinforces one side of this sub-scenario and makes reversal harder."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "China and Limits to the European Union's Geoeconomic Turn",
+                      "source": "JCMS Journal of Common Market Studies",
+                      "date": "2026-07-06",
+                      "link": "https://doi.org/10.1111/jcms.70140",
+                      "product": "continuity"
+                    },
+                    "order": 3
+                  },
+                  {
+                    "id": "independent_scale:sub:4:risk",
+                    "kind": "risk",
+                    "label": "Risk crystallises",
+                    "name": "Risk crystallises: EU Energy and Raw Materials Platform",
+                    "trigger": "EU Energy and Raw Materials Platform",
+                    "story": [
+                      "Failure branch: if the weakness visible in “EU Energy and Raw Materials Platform” hardens, a manageable exposure becomes a structural constraint.",
+                      "Because the system leans toward tight / interventionist controls, while the system leans toward external technology dependence, the cost appears as lost choice, slower adjustment or greater dependence."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "EU Energy and Raw Materials Platform",
+                      "source": "European Commission — Energy",
+                      "date": "2026-06-25",
+                      "link": "https://energy.ec.europa.eu/topics/energy-security/eu-energy-and-raw-materials-platform_en",
+                      "product": "risk"
+                    },
+                    "order": 4
+                  }
+                ]
+              }
+            ]
+          },
+          "bullets": [
+            {
+              "label": "2035 picture",
+              "text": "Europe reaches 2035 with stronger industrial, technology and financing capacity, while trade and investment run through a narrower, more controlled set of relationships."
+            },
+            {
+              "label": "Trade-off",
+              "text": "Europe gains room to act, but pays for it through narrower access, higher friction and possible retaliation."
+            },
+            {
+              "label": "Sub-frame",
+              "text": "The current Radar selects Economic-security controls and Control of critical technology as the two second-order uncertainties for this world."
+            }
+          ],
+          "variants": []
+        },
+        {
+          "id": "connected_growth",
+          "legacy_id": "big_commons",
+          "name": "Connected Growth",
+          "tagline": "Deep European capacity and strong global links.",
+          "x_side": "high",
+          "y_side": "high",
+          "story": "Europe reaches 2035 with more industrial, technology and financing capacity while remaining strongly connected to global trade, investment and research networks.",
+          "tradeoff": "Scale and openness reinforce each other, but external dependencies still transmit shocks quickly.",
+          "order": 2,
+          "coordinates": {
+            "x": "More connected / open",
+            "y": "Deep capacity / more buffers"
+          },
+          "subframe": {
+            "id": "connected_growth:frame",
+            "title": "Inside Connected Growth",
+            "question": "Which two uncertainties matter most inside Connected Growth given the current Radar?",
+            "x_axis": {
+              "id": "partner_diversification",
+              "category": "external",
+              "title": "Partner diversification",
+              "low": "Narrow / concentrated partners",
+              "high": "Broad / diversified partners",
+              "low_short": "Narrow partners",
+              "high_short": "Diversified partners",
+              "question": "Does Europe depend on a narrow partner set or maintain multiple credible economic routes?",
+              "keywords": [
+                "partnership",
+                "agreement",
+                "market access",
+                "trade",
+                "wto",
+                "global gateway",
+                "cooperation",
+                "alliance",
+                "china",
+                "united states",
+                " u.s.",
+                " us ",
+                "africa",
+                "latin america",
+                "india",
+                "japan",
+                "partner"
+              ],
+              "selection_score": 44.483,
+              "basis": [
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                  "title": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+                  "weight": 8.1
+                },
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                  "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                  "weight": 7.115
+                },
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                  "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                  "weight": 4.817
+                },
+                {
+                  "finding_id": "l45:goal_measurement_gap:sovereignty",
+                  "title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
+                  "weight": 3.186
+                }
+              ]
+            },
+            "y_axis": {
+              "id": "technology_control",
+              "category": "technology",
+              "title": "Control of critical technology",
+              "low": "External technology dependence",
+              "high": "European technology control",
+              "low_short": "Tech dependence",
+              "high_short": "Tech control",
+              "question": "Who controls the critical technologies, compute, infrastructure and know-how Europe depends on?",
+              "keywords": [
+                "technology",
+                "digital sovereignty",
+                "quantum",
+                "ai ",
+                "artificial intelligence",
+                "compute",
+                "chips",
+                "semiconductor",
+                "dual-use",
+                "dual use",
+                "research security",
+                "export control",
+                "cyber",
+                "data",
+                "telecom"
+              ],
+              "selection_score": 30.245,
+              "basis": [
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                  "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                  "weight": 7.115
+                },
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                  "title": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+                  "weight": 3.726
+                },
+                {
+                  "finding_id": "l45:goal_measurement_gap:competitiveness",
+                  "title": "Europe keeps pursuing competitiveness without a settled way to measure whether it is succeeding.",
+                  "weight": 2.392
+                },
+                {
+                  "finding_id": "l45:goal_measurement_gap:sovereignty",
+                  "title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
+                  "weight": 1.782
+                }
+              ]
+            },
+            "selection": {
+              "method": "Two highest evidence-relevant axes from the fixed axis library, with near-duplicate categories prevented and a world-context relevance prior.",
+              "ranked_axes": [
+                {
+                  "id": "partner_diversification",
+                  "title": "Partner diversification",
+                  "score": 44.483,
+                  "basis": [
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+                      "weight": 8.1
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                      "weight": 7.115
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                      "weight": 4.817
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:sovereignty",
+                      "title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
+                      "weight": 3.186
+                    }
+                  ]
+                },
+                {
+                  "id": "technology_control",
+                  "title": "Control of critical technology",
+                  "score": 30.245,
+                  "basis": [
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                      "weight": 7.115
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+                      "weight": 3.726
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:competitiveness",
+                      "title": "Europe keeps pursuing competitiveness without a settled way to measure whether it is succeeding.",
+                      "weight": 2.392
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:sovereignty",
+                      "title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
+                      "weight": 1.782
+                    }
+                  ]
+                },
+                {
+                  "id": "input_resilience",
+                  "title": "Critical-input resilience",
+                  "score": 25.775,
+                  "basis": [
+                    {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "Europe may be measuring delivery before it can measure the resilience in energy/materials outcome it actually wants.",
+                      "weight": 5.067
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                      "weight": 4.817
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                      "weight": 4.546
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:sovereignty",
+                      "title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
+                      "weight": 3.888
+                    }
+                  ]
+                },
+                {
+                  "id": "capital_mobilisation",
+                  "title": "Strategic capital mobilisation",
+                  "score": 25.301,
+                  "basis": [
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+                      "weight": 3.726
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                      "weight": 3.343
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                      "weight": 3.261
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:research-security",
+                      "title": "Europe keeps pursuing coercion/weaponised interdependence without a settled way to measure whether it is succeeding.",
+                      "weight": 2.423
+                    }
+                  ]
+                }
+              ]
+            },
+            "scenarios": [
+              {
+                "id": "connected_growth:sub:1",
+                "name": "Tech control + Narrow partners",
+                "tagline": "Partner diversification: Narrow partners · Control of critical technology: Tech control",
+                "x_side": "low",
+                "y_side": "high",
+                "story": "Inside Connected Growth, this branch combines narrow partners with tech control. The parent world's assumptions stay fixed; only these two second-order uncertainties are resolved differently.",
+                "order": 1,
+                "variants": [
+                  {
+                    "id": "connected_growth:sub:1:shock",
+                    "kind": "shock",
+                    "label": "Shock inserted",
+                    "name": "Shock inserted: Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links…",
+                    "trigger": "Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                    "story": [
+                      "Stress test: if the pressure visible in “Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links - CELIS Institute - Investment Screening | National Security | Competitiveness” becomes a larger external shock, this branch is forced to react quickly.",
+                      "Because the system leans toward narrow / concentrated partners, while the system leans toward european technology control, the shock tests which dependency or buffer fails first."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:goal_measurement_gap:competitiveness",
+                      "title": "Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                      "source": "CELIS Institute",
+                      "date": "2026-01-01",
+                      "link": "https://www.celis.institute/celis-institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/",
+                      "product": "continuity"
+                    },
+                    "order": 1
+                  },
+                  {
+                    "id": "connected_growth:sub:1:opportunity",
+                    "kind": "opportunity",
+                    "label": "Opportunity inserted",
+                    "name": "Opportunity inserted: EU advances Global Health Resilience Initiative with new Global Gateway investm…",
+                    "trigger": "EU advances Global Health Resilience Initiative with new Global Gateway investments in Africa and Latin America",
+                    "story": [
+                      "Upside branch: if the opening visible in “EU advances Global Health Resilience Initiative with new Global Gateway investments in Africa and Latin America” scales, Europe gets a chance to improve its position inside this scenario.",
+                      "Because the system leans toward narrow / concentrated partners, while the system leans toward european technology control, the opportunity changes who can invest, supply or cooperate without changing the parent world itself."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "EU advances Global Health Resilience Initiative with new Global Gateway investments in Africa and Latin America",
+                      "source": "EEAS",
+                      "date": "2026-09-25",
+                      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPV3BxRUZfaWJkZGJQbkpsc2ctbnRCdHk0a1VDRFhwLTBhR01GcXE2RmFwNDBIRkFtbGdPYVhfY00xeEppRW4wS0dKc0FDOWl0ZE1rY3A5dkFrWUVGb1ZGN0NPSHVBeHJ2WnpjR2VkTjRMajRiaC1JTFVqM1lTNU1GdENsa29FWjdyeXFvQkJSa1pMdmRLajZLckpWQWdINlVqSElPWHdDWTBmZzU0ZUxXVFowYjZlOUJNZk5meUxIUEVLNi1JX2pRYlV0Y3ZKSkVHTXJ3YU12ZWlCN2xNY2I1SW9xdXdrdEQ2SXc?oc=5",
+                      "product": "continuity"
+                    },
+                    "order": 2
+                  },
+                  {
+                    "id": "connected_growth:sub:1:trend",
+                    "kind": "trend",
+                    "label": "Trend accelerated",
+                    "name": "Trend accelerated: Enabling the EU's digital Sovereignty: A Europe-level quantum internet as the k…",
+                    "trigger": "Enabling the EU's digital Sovereignty: A Europe-level quantum internet as the key infrastructure for a European digital polity",
+                    "story": [
+                      "Acceleration branch: if the direction visible in “Enabling the EU's digital Sovereignty: A Europe-level quantum internet as the key infrastructure for a European digital polity” persists toward 2035, it becomes part of the operating environment.",
+                      "Because the system leans toward narrow / concentrated partners, while the system leans toward european technology control, the trend reinforces one side of this sub-scenario and makes reversal harder."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Enabling the EU's digital Sovereignty: A Europe-level quantum internet as the key infrastructure for a European digital polity",
+                      "source": "Telecommunications Policy",
+                      "date": "2026-07-01",
+                      "link": "https://doi.org/10.1016/j.telpol.2026.103222",
+                      "product": "continuity"
+                    },
+                    "order": 3
+                  },
+                  {
+                    "id": "connected_growth:sub:1:risk",
+                    "kind": "risk",
+                    "label": "Risk crystallises",
+                    "name": "Risk crystallises: German gas supply is secure despite low storage levels, VNG chief says",
+                    "trigger": "German gas supply is secure despite low storage levels, VNG chief says",
+                    "story": [
+                      "Failure branch: if the weakness visible in “German gas supply is secure despite low storage levels, VNG chief says” hardens, a manageable exposure becomes a structural constraint.",
+                      "Because the system leans toward narrow / concentrated partners, while the system leans toward european technology control, the cost appears as lost choice, slower adjustment or greater dependence."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "German gas supply is secure despite low storage levels, VNG chief says",
+                      "source": "Reuters",
+                      "date": "2026-09-28",
+                      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVDRjSXY3THA4d0lJaGlLM05DM3FVeDc3TFVFa3p2d1Z5OWRiNnBxbVhqMkVoZmw0M0xNeDVaNXhrTVN6bnhTRy1Pc0E4VXEwSjhsS3VkcE9BSjZMQ0hUM0FfM010Zk8zNGlZTUN0MmRZbS1ZTEhxQUFGWUVDUFBESzRKWkYxUUZMVjJIZzd0ZjZVbDViRFRDTkFpUjlCalJfODhOQUk5OC1Nc3d1X2NOdE5aUk1tWS1PdDdJZkNR?oc=5",
+                      "product": "risk"
+                    },
+                    "order": 4
+                  }
+                ]
+              },
+              {
+                "id": "connected_growth:sub:2",
+                "name": "Tech control + Diversified partners",
+                "tagline": "Partner diversification: Diversified partners · Control of critical technology: Tech control",
+                "x_side": "high",
+                "y_side": "high",
+                "story": "Inside Connected Growth, this branch combines diversified partners with tech control. The parent world's assumptions stay fixed; only these two second-order uncertainties are resolved differently.",
+                "order": 2,
+                "variants": [
+                  {
+                    "id": "connected_growth:sub:2:shock",
+                    "kind": "shock",
+                    "label": "Shock inserted",
+                    "name": "Shock inserted: Continuity in times of geoeconomic change: the European Union’s strategic trade…",
+                    "trigger": "Continuity in times of geoeconomic change: the European Union’s strategic trade relations with the Global South",
+                    "story": [
+                      "Stress test: if the pressure visible in “Continuity in times of geoeconomic change: the European Union’s strategic trade relations with the Global South” becomes a larger external shock, this branch is forced to react quickly.",
+                      "Because the system leans toward broad / diversified partners, while the system leans toward european technology control, the shock tests which dependency or buffer fails first."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Continuity in times of geoeconomic change: the European Union’s strategic trade relations with the Global South",
+                      "source": "Journal of European Integration",
+                      "date": "2026-04-02",
+                      "link": "https://doi.org/10.1080/07036337.2026.2652993",
+                      "product": "continuity"
+                    },
+                    "order": 1
+                  },
+                  {
+                    "id": "connected_growth:sub:2:opportunity",
+                    "kind": "opportunity",
+                    "label": "Opportunity inserted",
+                    "name": "Opportunity inserted: Do preferential trade agreements with labor clauses displace labor abuses? The…",
+                    "trigger": "Do preferential trade agreements with labor clauses displace labor abuses? The unintended consequences of global governance on labor standards",
+                    "story": [
+                      "Upside branch: if the opening visible in “Do preferential trade agreements with labor clauses displace labor abuses? The unintended consequences of global governance on labor standards” scales, Europe gets a chance to improve its position inside this scenario.",
+                      "Because the system leans toward broad / diversified partners, while the system leans toward european technology control, the opportunity changes who can invest, supply or cooperate without changing the parent world itself."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Do preferential trade agreements with labor clauses displace labor abuses? The unintended consequences of global governance on labor standards",
+                      "source": "Review of International Political Economy",
+                      "date": "2026-07-01",
+                      "link": "https://doi.org/10.1080/09692290.2026.2693756",
+                      "product": "continuity"
+                    },
+                    "order": 2
+                  },
+                  {
+                    "id": "connected_growth:sub:2:trend",
+                    "kind": "trend",
+                    "label": "Trend accelerated",
+                    "name": "Trend accelerated: Mining firms’ plea for EU critical minerals budget falls on deaf ears",
+                    "trigger": "Mining firms’ plea for EU critical minerals budget falls on deaf ears",
+                    "story": [
+                      "Acceleration branch: if the direction visible in “Mining firms’ plea for EU critical minerals budget falls on deaf ears” persists toward 2035, it becomes part of the operating environment.",
+                      "Because the system leans toward broad / diversified partners, while the system leans toward european technology control, the trend reinforces one side of this sub-scenario and makes reversal harder."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Mining firms’ plea for EU critical minerals budget falls on deaf ears",
+                      "source": "EUobserver",
+                      "date": "2026-09-24",
+                      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVW5pc0lQdTY4aGtUMmhJNFR3SnZrNmtqcEVWanlDeVFCTnpIeUNjT3VqQlZSckVpM3FMclp2a0p1SnBSSzhITVBrSmtMUkZhdkVkSzZNWUNfV1hqdktGTXVNVndVOGpqcWZfWnIySGx3WXVIM0RqN3NaNkJGQ1F5N01Xb2xTTVBnb3pyclhHMmtqWHZWVXVmQ2FEVUV0b2Nj?oc=5",
+                      "product": "continuity"
+                    },
+                    "order": 3
+                  },
+                  {
+                    "id": "connected_growth:sub:2:risk",
+                    "kind": "risk",
+                    "label": "Risk crystallises",
+                    "name": "Risk crystallises: Portugal says entry into grid operator REN won't affect China's State Grid",
+                    "trigger": "Portugal says entry into grid operator REN won't affect China's State Grid",
+                    "story": [
+                      "Failure branch: if the weakness visible in “Portugal says entry into grid operator REN won't affect China's State Grid” hardens, a manageable exposure becomes a structural constraint.",
+                      "Because the system leans toward broad / diversified partners, while the system leans toward european technology control, the cost appears as lost choice, slower adjustment or greater dependence."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "Portugal says entry into grid operator REN won't affect China's State Grid",
+                      "source": "Reuters",
+                      "date": "2026-09-23",
+                      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdm9BcWNoRlkzRVA1RVFkRUNuZ3pmVzVPNXdmMDFzWjg4RGlEcmY5RkxPWmhVWGYyTXotZ3B0d2xMWWZmcDV5QV9NNGp2d1p4enBBZElLbjNlNzdKMHpMajd2ZlJiM0pscDhlTGNlSXc4QXQ5aUtJMEpONHlWTTd5SDV1ZlNvOGx4Z3AwU3ZsWUs3MVYzdGV3SlZjQ3J2X29GS1NWWlR2VzdPT2tRdUJNc0ZVY0tuc1lxN3dfYVhmNGtndw?oc=5",
+                      "product": "risk"
+                    },
+                    "order": 4
+                  }
+                ]
+              },
+              {
+                "id": "connected_growth:sub:3",
+                "name": "Tech dependence + Narrow partners",
+                "tagline": "Partner diversification: Narrow partners · Control of critical technology: Tech dependence",
+                "x_side": "low",
+                "y_side": "low",
+                "story": "Inside Connected Growth, this branch combines narrow partners with tech dependence. The parent world's assumptions stay fixed; only these two second-order uncertainties are resolved differently.",
+                "order": 3,
+                "variants": [
+                  {
+                    "id": "connected_growth:sub:3:shock",
+                    "kind": "shock",
+                    "label": "Shock inserted",
+                    "name": "Shock inserted: EU to push for interim fix on stalled WTO investment pact - Borderlex - Europea…",
+                    "trigger": "EU to push for interim fix on stalled WTO investment pact - Borderlex - European trade policy",
+                    "story": [
+                      "Stress test: if the pressure visible in “EU to push for interim fix on stalled WTO investment pact - Borderlex - European trade policy” becomes a larger external shock, this branch is forced to react quickly.",
+                      "Because the system leans toward narrow / concentrated partners, while the system leans toward external technology dependence, the shock tests which dependency or buffer fails first."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:goal_measurement_gap:research-security",
+                      "title": "EU to push for interim fix on stalled WTO investment pact - Borderlex - European trade policy",
+                      "source": "Borderlex",
+                      "date": "2026-09-02",
+                      "link": "https://borderlex.net/2026/09/02/eu-to-push-for-interim-fix-on-stalled-wto-investment-pact/",
+                      "product": "continuity"
+                    },
+                    "order": 1
+                  },
+                  {
+                    "id": "connected_growth:sub:3:opportunity",
+                    "kind": "opportunity",
+                    "label": "Opportunity inserted",
+                    "name": "Opportunity inserted: Formal policy around partnerships/agreements may be codifying a practice that w…",
+                    "trigger": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+                    "story": [
+                      "Upside branch: if the opening visible in “Formal policy around partnerships/agreements may be codifying a practice that was already operating.” scales, Europe gets a chance to improve its position inside this scenario.",
+                      "Because the system leans toward narrow / concentrated partners, while the system leans toward external technology dependence, the opportunity changes who can invest, supply or cooperate without changing the parent world itself."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+                      "source": "Radar finding",
+                      "date": "2026-09-29",
+                      "link": "",
+                      "product": "continuity"
+                    },
+                    "order": 2
+                  },
+                  {
+                    "id": "connected_growth:sub:3:trend",
+                    "kind": "trend",
+                    "label": "Trend accelerated",
+                    "name": "Trend accelerated: China and Limits to the European Union's Geoeconomic Turn",
+                    "trigger": "China and Limits to the European Union's Geoeconomic Turn",
+                    "story": [
+                      "Acceleration branch: if the direction visible in “China and Limits to the European Union's Geoeconomic Turn” persists toward 2035, it becomes part of the operating environment.",
+                      "Because the system leans toward narrow / concentrated partners, while the system leans toward external technology dependence, the trend reinforces one side of this sub-scenario and makes reversal harder."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "China and Limits to the European Union's Geoeconomic Turn",
+                      "source": "JCMS Journal of Common Market Studies",
+                      "date": "2026-07-06",
+                      "link": "https://doi.org/10.1111/jcms.70140",
+                      "product": "continuity"
+                    },
+                    "order": 3
+                  },
+                  {
+                    "id": "connected_growth:sub:3:risk",
+                    "kind": "risk",
+                    "label": "Risk crystallises",
+                    "name": "Risk crystallises: EU Energy and Raw Materials Platform",
+                    "trigger": "EU Energy and Raw Materials Platform",
+                    "story": [
+                      "Failure branch: if the weakness visible in “EU Energy and Raw Materials Platform” hardens, a manageable exposure becomes a structural constraint.",
+                      "Because the system leans toward narrow / concentrated partners, while the system leans toward external technology dependence, the cost appears as lost choice, slower adjustment or greater dependence."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "EU Energy and Raw Materials Platform",
+                      "source": "European Commission — Energy",
+                      "date": "2026-06-25",
+                      "link": "https://energy.ec.europa.eu/topics/energy-security/eu-energy-and-raw-materials-platform_en",
+                      "product": "risk"
+                    },
+                    "order": 4
+                  }
+                ]
+              },
+              {
+                "id": "connected_growth:sub:4",
+                "name": "Tech dependence + Diversified partners",
+                "tagline": "Partner diversification: Diversified partners · Control of critical technology: Tech dependence",
+                "x_side": "high",
+                "y_side": "low",
+                "story": "Inside Connected Growth, this branch combines diversified partners with tech dependence. The parent world's assumptions stay fixed; only these two second-order uncertainties are resolved differently.",
+                "order": 4,
+                "variants": [
+                  {
+                    "id": "connected_growth:sub:4:shock",
+                    "kind": "shock",
+                    "label": "Shock inserted",
+                    "name": "Shock inserted: Cambodia joins WTO's interim appeals arrangement - Borderlex - European trade p…",
+                    "trigger": "Cambodia joins WTO's interim appeals arrangement - Borderlex - European trade policy",
+                    "story": [
+                      "Stress test: if the pressure visible in “Cambodia joins WTO's interim appeals arrangement - Borderlex - European trade policy” becomes a larger external shock, this branch is forced to react quickly.",
+                      "Because the system leans toward broad / diversified partners, while the system leans toward external technology dependence, the shock tests which dependency or buffer fails first."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:goal_measurement_gap:research-security",
+                      "title": "Cambodia joins WTO's interim appeals arrangement - Borderlex - European trade policy",
+                      "source": "Borderlex",
+                      "date": "2026-09-09",
+                      "link": "https://borderlex.net/2026/09/09/cambodia-joins-wtos-interim-appeals-arrangement/",
+                      "product": "continuity"
+                    },
+                    "order": 1
+                  },
+                  {
+                    "id": "connected_growth:sub:4:opportunity",
+                    "kind": "opportunity",
+                    "label": "Opportunity inserted",
+                    "name": "Opportunity inserted: Eaton to acquire Italy's grid equipment maker COL Group for €810 million to exp…",
+                    "trigger": "Eaton to acquire Italy's grid equipment maker COL Group for €810 million to expand in Europe",
+                    "story": [
+                      "Upside branch: if the opening visible in “Eaton to acquire Italy's grid equipment maker COL Group for €810 million to expand in Europe” scales, Europe gets a chance to improve its position inside this scenario.",
+                      "Because the system leans toward broad / diversified partners, while the system leans toward external technology dependence, the opportunity changes who can invest, supply or cooperate without changing the parent world itself."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Eaton to acquire Italy's grid equipment maker COL Group for €810 million to expand in Europe",
+                      "source": "Reuters",
+                      "date": "2026-09-25",
+                      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOM3NfZ1dXaGRROEdXcERsZjNZLVhPSU5KMERucGNwcDY0NmNtV2RNTFBGLU5jZTd4bWN5UFVVMFZ5bWxMUlRCYkZncTZpaTZ2Q0xjOUdDRUFrZEZjTHRtb2dKRnk3X0dFU05FUUpSMGNuNldkSXRpc0NXQVdLUFU1RTQ3al9DTlZVUWRDVDdyQVJGQkdCV1NYNGZGeGsxLW0wVEtlOG1sNnNfVVYyc3gtbE53UkZZNER4cl9Gd1Fmdw?oc=5",
+                      "product": "continuity"
+                    },
+                    "order": 2
+                  },
+                  {
+                    "id": "connected_growth:sub:4:trend",
+                    "kind": "trend",
+                    "label": "Trend accelerated",
+                    "name": "Trend accelerated: Cybersecurity in critical rail infrastructure: sector specific adoption of the…",
+                    "trigger": "Cybersecurity in critical rail infrastructure: sector specific adoption of the NIS 2 directive in Europe",
+                    "story": [
+                      "Acceleration branch: if the direction visible in “Cybersecurity in critical rail infrastructure: sector specific adoption of the NIS 2 directive in Europe” persists toward 2035, it becomes part of the operating environment.",
+                      "Because the system leans toward broad / diversified partners, while the system leans toward external technology dependence, the trend reinforces one side of this sub-scenario and makes reversal harder."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Cybersecurity in critical rail infrastructure: sector specific adoption of the NIS 2 directive in Europe",
+                      "source": "Journal of Transportation Security",
+                      "date": "2026-04-18",
+                      "link": "https://doi.org/10.1007/s12198-026-00349-8",
+                      "product": "continuity"
+                    },
+                    "order": 3
+                  },
+                  {
+                    "id": "connected_growth:sub:4:risk",
+                    "kind": "risk",
+                    "label": "Risk crystallises",
+                    "name": "Risk crystallises: Diversification of gas supply sources and routes",
+                    "trigger": "Diversification of gas supply sources and routes",
+                    "story": [
+                      "Failure branch: if the weakness visible in “Diversification of gas supply sources and routes” hardens, a manageable exposure becomes a structural constraint.",
+                      "Because the system leans toward broad / diversified partners, while the system leans toward external technology dependence, the cost appears as lost choice, slower adjustment or greater dependence."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "Diversification of gas supply sources and routes",
+                      "source": "European Commission — Energy",
+                      "date": "2026-08-25",
+                      "link": "https://energy.ec.europa.eu/topics/energy-security/diversification-gas-supply-sources-and-routes_en",
+                      "product": "risk"
+                    },
+                    "order": 4
+                  }
+                ]
+              }
+            ]
+          },
+          "bullets": [
+            {
+              "label": "2035 picture",
+              "text": "Europe reaches 2035 with more industrial, technology and financing capacity while remaining strongly connected to global trade, investment and research networks."
+            },
+            {
+              "label": "Trade-off",
+              "text": "Scale and openness reinforce each other, but external dependencies still transmit shocks quickly."
+            },
+            {
+              "label": "Sub-frame",
+              "text": "The current Radar selects Partner diversification and Control of critical technology as the two second-order uncertainties for this world."
+            }
+          ],
+          "variants": []
+        },
+        {
+          "id": "constrained_europe",
+          "legacy_id": "quiet_retreat",
+          "name": "Constrained Europe",
+          "tagline": "Thin European capacity and weaker global links.",
+          "x_side": "low",
+          "y_side": "low",
+          "story": "Europe reaches 2035 with fewer buffers and weaker global economic links. Governments protect a smaller strategic core while investment, market access and room for manoeuvre tighten.",
+          "tradeoff": "Exposure is reduced in some areas, but so are scale, choice and the resources available to adapt.",
+          "order": 3,
+          "coordinates": {
+            "x": "More fragmented / guarded",
+            "y": "Thin capacity / few buffers"
+          },
+          "subframe": {
+            "id": "constrained_europe:frame",
+            "title": "Inside Constrained Europe",
+            "question": "Which two uncertainties matter most inside Constrained Europe given the current Radar?",
+            "x_axis": {
+              "id": "input_resilience",
+              "category": "inputs",
+              "title": "Critical-input resilience",
+              "low": "Concentrated / brittle inputs",
+              "high": "Diversified / buffered inputs",
+              "low_short": "Input exposure",
+              "high_short": "Input resilience",
+              "question": "Are critical materials, components and supply routes concentrated or buffered?",
+              "keywords": [
+                "critical raw",
+                "raw material",
+                "materials",
+                "supply chain",
+                "supplier",
+                "dependency",
+                "dependencies",
+                "chokepoint",
+                "shortage",
+                "storage",
+                "resilience",
+                "diversification",
+                "lng",
+                "gas supply",
+                "semiconductor"
+              ],
+              "selection_score": 39.834,
+              "basis": [
+                {
+                  "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                  "title": "Europe may be measuring delivery before it can measure the resilience in energy/materials outcome it actually wants.",
+                  "weight": 5.067
+                },
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                  "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                  "weight": 4.817
+                },
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                  "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                  "weight": 4.546
+                },
+                {
+                  "finding_id": "l45:goal_measurement_gap:sovereignty",
+                  "title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
+                  "weight": 3.888
+                }
+              ]
+            },
+            "y_axis": {
+              "id": "energy_resilience",
+              "category": "energy",
+              "title": "Energy-system resilience",
+              "low": "Constrained / volatile energy",
+              "high": "Secure / flexible energy",
+              "low_short": "Energy constraint",
+              "high_short": "Energy resilience",
+              "question": "Can Europe's energy system absorb supply, price and infrastructure stress?",
+              "keywords": [
+                "energy",
+                "gas",
+                "lng",
+                "electricity",
+                "grid",
+                "hydrogen",
+                "storage",
+                "power",
+                "renewable",
+                "oil",
+                "energy security",
+                "pipeline",
+                "interconnector"
+              ],
+              "selection_score": 27.422,
+              "basis": [
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                  "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                  "weight": 5.83
+                },
+                {
+                  "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                  "title": "Europe may be measuring delivery before it can measure the resilience in energy/materials outcome it actually wants.",
+                  "weight": 4.965
+                },
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                  "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                  "weight": 2.607
+                },
+                {
+                  "finding_id": "l45:goal_measurement_gap:sovereignty",
+                  "title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
+                  "weight": 1.782
+                }
+              ]
+            },
+            "selection": {
+              "method": "Two highest evidence-relevant axes from the fixed axis library, with near-duplicate categories prevented and a world-context relevance prior.",
+              "ranked_axes": [
+                {
+                  "id": "input_resilience",
+                  "title": "Critical-input resilience",
+                  "score": 39.834,
+                  "basis": [
+                    {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "Europe may be measuring delivery before it can measure the resilience in energy/materials outcome it actually wants.",
+                      "weight": 5.067
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                      "weight": 4.817
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                      "weight": 4.546
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:sovereignty",
+                      "title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
+                      "weight": 3.888
+                    }
+                  ]
+                },
+                {
+                  "id": "energy_resilience",
+                  "title": "Energy-system resilience",
+                  "score": 27.422,
+                  "basis": [
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                      "weight": 5.83
+                    },
+                    {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "Europe may be measuring delivery before it can measure the resilience in energy/materials outcome it actually wants.",
+                      "weight": 4.965
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                      "weight": 2.607
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:sovereignty",
+                      "title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
+                      "weight": 1.782
+                    }
+                  ]
+                },
+                {
+                  "id": "capital_mobilisation",
+                  "title": "Strategic capital mobilisation",
+                  "score": 25.301,
+                  "basis": [
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+                      "weight": 3.726
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                      "weight": 3.343
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                      "weight": 3.261
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:research-security",
+                      "title": "Europe keeps pursuing coercion/weaponised interdependence without a settled way to measure whether it is succeeding.",
+                      "weight": 2.423
+                    }
+                  ]
+                },
+                {
+                  "id": "european_coordination",
+                  "title": "European coordination",
+                  "score": 22.943,
+                  "basis": [
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                      "weight": 8.4
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+                      "weight": 5.832
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                      "weight": 4.08
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:sovereignty",
+                      "title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
+                      "weight": 3.888
+                    }
+                  ]
+                }
+              ]
+            },
+            "scenarios": [
+              {
+                "id": "constrained_europe:sub:1",
+                "name": "Energy resilience + Input exposure",
+                "tagline": "Critical-input resilience: Input exposure · Energy-system resilience: Energy resilience",
+                "x_side": "low",
+                "y_side": "high",
+                "story": "Inside Constrained Europe, this branch combines input exposure with energy resilience. The parent world's assumptions stay fixed; only these two second-order uncertainties are resolved differently.",
+                "order": 1,
+                "variants": [
+                  {
+                    "id": "constrained_europe:sub:1:shock",
+                    "kind": "shock",
+                    "label": "Shock inserted",
+                    "name": "Shock inserted: Europe Draws More LNG as Hormuz Crisis Tightens Global Market",
+                    "trigger": "Europe Draws More LNG as Hormuz Crisis Tightens Global Market",
+                    "story": [
+                      "Stress test: if the pressure visible in “Europe Draws More LNG as Hormuz Crisis Tightens Global Market” becomes a larger external shock, this branch is forced to react quickly.",
+                      "Because the system leans toward concentrated / brittle inputs, while the system leans toward secure / flexible energy, the shock tests which dependency or buffer fails first."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "Europe Draws More LNG as Hormuz Crisis Tightens Global Market",
+                      "source": "Bloomberg",
+                      "date": "2026-09-28",
+                      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdkJsS2FSMnQzd1dNc0ZfS0hJRlRONktheHk4R0dicVhoOGpmNEV0aXFFZ3pHLUNZVUZ0Qml3Z2FzUkZZc3Z3ZjRFbFZKM3E3U2pTcUxfOHdRaklMR2tIYjVtNnNtYTlKU18yZkFDNVZvMHpRV3VwSDJFX2s1c1lNTE5FMFNhOVJsSFZWbU5yQV9yUUZyRTNGU09QcDJTVXF1RDRCTVQ1MTNvTHRtQmlKZTNn?oc=5",
+                      "product": "risk"
+                    },
+                    "order": 1
+                  },
+                  {
+                    "id": "constrained_europe:sub:1:opportunity",
+                    "kind": "opportunity",
+                    "label": "Opportunity inserted",
+                    "name": "Opportunity inserted: German gas supply is secure despite low storage levels, VNG chief says",
+                    "trigger": "German gas supply is secure despite low storage levels, VNG chief says",
+                    "story": [
+                      "Upside branch: if the opening visible in “German gas supply is secure despite low storage levels, VNG chief says” scales, Europe gets a chance to improve its position inside this scenario.",
+                      "Because the system leans toward concentrated / brittle inputs, while the system leans toward secure / flexible energy, the opportunity changes who can invest, supply or cooperate without changing the parent world itself."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "German gas supply is secure despite low storage levels, VNG chief says",
+                      "source": "Reuters",
+                      "date": "2026-09-28",
+                      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVDRjSXY3THA4d0lJaGlLM05DM3FVeDc3TFVFa3p2d1Z5OWRiNnBxbVhqMkVoZmw0M0xNeDVaNXhrTVN6bnhTRy1Pc0E4VXEwSjhsS3VkcE9BSjZMQ0hUM0FfM010Zk8zNGlZTUN0MmRZbS1ZTEhxQUFGWUVDUFBESzRKWkYxUUZMVjJIZzd0ZjZVbDViRFRDTkFpUjlCalJfODhOQUk5OC1Nc3d1X2NOdE5aUk1tWS1PdDdJZkNR?oc=5",
+                      "product": "risk"
+                    },
+                    "order": 2
+                  },
+                  {
+                    "id": "constrained_europe:sub:1:trend",
+                    "kind": "trend",
+                    "label": "Trend accelerated",
+                    "name": "Trend accelerated: The impact of hydrogen underground storage on export dynamics and system resili…",
+                    "trigger": "The impact of hydrogen underground storage on export dynamics and system resilience: A GIS-based integration of salt caverns into PyPSA-Earth",
+                    "story": [
+                      "Acceleration branch: if the direction visible in “The impact of hydrogen underground storage on export dynamics and system resilience: A GIS-based integration of salt caverns into PyPSA-Earth” persists toward 2035, it becomes part of the operating environment.",
+                      "Because the system leans toward concentrated / brittle inputs, while the system leans toward secure / flexible energy, the trend reinforces one side of this sub-scenario and makes reversal harder."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "The impact of hydrogen underground storage on export dynamics and system resilience: A GIS-based integration of salt caverns into PyPSA-Earth",
+                      "source": "Energy",
+                      "date": "2026-07-03",
+                      "link": "https://doi.org/10.1016/j.energy.2026.141729",
+                      "product": "continuity"
+                    },
+                    "order": 3
+                  },
+                  {
+                    "id": "constrained_europe:sub:1:risk",
+                    "kind": "risk",
+                    "label": "Risk crystallises",
+                    "name": "Risk crystallises: Diversification of gas supply sources and routes",
+                    "trigger": "Diversification of gas supply sources and routes",
+                    "story": [
+                      "Failure branch: if the weakness visible in “Diversification of gas supply sources and routes” hardens, a manageable exposure becomes a structural constraint.",
+                      "Because the system leans toward concentrated / brittle inputs, while the system leans toward secure / flexible energy, the cost appears as lost choice, slower adjustment or greater dependence."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "Diversification of gas supply sources and routes",
+                      "source": "European Commission — Energy",
+                      "date": "2026-08-25",
+                      "link": "https://energy.ec.europa.eu/topics/energy-security/diversification-gas-supply-sources-and-routes_en",
+                      "product": "risk"
+                    },
+                    "order": 4
+                  }
+                ]
+              },
+              {
+                "id": "constrained_europe:sub:2",
+                "name": "Energy resilience + Input resilience",
+                "tagline": "Critical-input resilience: Input resilience · Energy-system resilience: Energy resilience",
+                "x_side": "high",
+                "y_side": "high",
+                "story": "Inside Constrained Europe, this branch combines input resilience with energy resilience. The parent world's assumptions stay fixed; only these two second-order uncertainties are resolved differently.",
+                "order": 2,
+                "variants": [
+                  {
+                    "id": "constrained_europe:sub:2:shock",
+                    "kind": "shock",
+                    "label": "Shock inserted",
+                    "name": "Shock inserted: Institutional capacity and sustainable critical raw material supply chains: A c…",
+                    "trigger": "Institutional capacity and sustainable critical raw material supply chains: A comparative analysis of extractive governance",
+                    "story": [
+                      "Stress test: if the pressure visible in “Institutional capacity and sustainable critical raw material supply chains: A comparative analysis of extractive governance” becomes a larger external shock, this branch is forced to react quickly.",
+                      "Because the system leans toward diversified / buffered inputs, while the system leans toward secure / flexible energy, the shock tests which dependency or buffer fails first."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "Institutional capacity and sustainable critical raw material supply chains: A comparative analysis of extractive governance",
+                      "source": "The Extractive Industries and Society",
+                      "date": "2026-08-22",
+                      "link": "https://doi.org/10.1016/j.exis.2026.102034",
+                      "product": "risk"
+                    },
+                    "order": 1
+                  },
+                  {
+                    "id": "constrained_europe:sub:2:opportunity",
+                    "kind": "opportunity",
+                    "label": "Opportunity inserted",
+                    "name": "Opportunity inserted: EU advances Global Health Resilience Initiative with new Global Gateway investm…",
+                    "trigger": "EU advances Global Health Resilience Initiative with new Global Gateway investments in Africa and Latin America",
+                    "story": [
+                      "Upside branch: if the opening visible in “EU advances Global Health Resilience Initiative with new Global Gateway investments in Africa and Latin America” scales, Europe gets a chance to improve its position inside this scenario.",
+                      "Because the system leans toward diversified / buffered inputs, while the system leans toward secure / flexible energy, the opportunity changes who can invest, supply or cooperate without changing the parent world itself."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "EU advances Global Health Resilience Initiative with new Global Gateway investments in Africa and Latin America",
+                      "source": "EEAS",
+                      "date": "2026-09-25",
+                      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPV3BxRUZfaWJkZGJQbkpsc2ctbnRCdHk0a1VDRFhwLTBhR01GcXE2RmFwNDBIRkFtbGdPYVhfY00xeEppRW4wS0dKc0FDOWl0ZE1rY3A5dkFrWUVGb1ZGN0NPSHVBeHJ2WnpjR2VkTjRMajRiaC1JTFVqM1lTNU1GdENsa29FWjdyeXFvQkJSa1pMdmRLajZLckpWQWdINlVqSElPWHdDWTBmZzU0ZUxXVFowYjZlOUJNZk5meUxIUEVLNi1JX2pRYlV0Y3ZKSkVHTXJ3YU12ZWlCN2xNY2I1SW9xdXdrdEQ2SXc?oc=5",
+                      "product": "continuity"
+                    },
+                    "order": 2
+                  },
+                  {
+                    "id": "constrained_europe:sub:2:trend",
+                    "kind": "trend",
+                    "label": "Trend accelerated",
+                    "name": "Trend accelerated: R&I needs to reduce dependencies on critical raw materials through advanced mat…",
+                    "trigger": "R&I needs to reduce dependencies on critical raw materials through advanced materials in passenger vehicles - Publications Office of the EU",
+                    "story": [
+                      "Acceleration branch: if the direction visible in “R&I needs to reduce dependencies on critical raw materials through advanced materials in passenger vehicles - Publications Office of the EU” persists toward 2035, it becomes part of the operating environment.",
+                      "Because the system leans toward diversified / buffered inputs, while the system leans toward secure / flexible energy, the trend reinforces one side of this sub-scenario and makes reversal harder."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "R&I needs to reduce dependencies on critical raw materials through advanced materials in passenger vehicles - Publications Office of the EU",
+                      "source": "Publications Office of the EU",
+                      "date": "2026-09-18",
+                      "link": "https://op.europa.eu/o/opportal-service/download-handler?identifier=7d0241d4-b3d2-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+                      "product": "continuity"
+                    },
+                    "order": 3
+                  },
+                  {
+                    "id": "constrained_europe:sub:2:risk",
+                    "kind": "risk",
+                    "label": "Risk crystallises",
+                    "name": "Risk crystallises: EU Energy and Raw Materials Platform",
+                    "trigger": "EU Energy and Raw Materials Platform",
+                    "story": [
+                      "Failure branch: if the weakness visible in “EU Energy and Raw Materials Platform” hardens, a manageable exposure becomes a structural constraint.",
+                      "Because the system leans toward diversified / buffered inputs, while the system leans toward secure / flexible energy, the cost appears as lost choice, slower adjustment or greater dependence."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "EU Energy and Raw Materials Platform",
+                      "source": "European Commission — Energy",
+                      "date": "2026-06-25",
+                      "link": "https://energy.ec.europa.eu/topics/energy-security/eu-energy-and-raw-materials-platform_en",
+                      "product": "risk"
+                    },
+                    "order": 4
+                  }
+                ]
+              },
+              {
+                "id": "constrained_europe:sub:3",
+                "name": "Energy constraint + Input exposure",
+                "tagline": "Critical-input resilience: Input exposure · Energy-system resilience: Energy constraint",
+                "x_side": "low",
+                "y_side": "low",
+                "story": "Inside Constrained Europe, this branch combines input exposure with energy constraint. The parent world's assumptions stay fixed; only these two second-order uncertainties are resolved differently.",
+                "order": 3,
+                "variants": [
+                  {
+                    "id": "constrained_europe:sub:3:shock",
+                    "kind": "shock",
+                    "label": "Shock inserted",
+                    "name": "Shock inserted: Portugal says entry into grid operator REN won't affect China's State Grid",
+                    "trigger": "Portugal says entry into grid operator REN won't affect China's State Grid",
+                    "story": [
+                      "Stress test: if the pressure visible in “Portugal says entry into grid operator REN won't affect China's State Grid” becomes a larger external shock, this branch is forced to react quickly.",
+                      "Because the system leans toward concentrated / brittle inputs, while the system leans toward constrained / volatile energy, the shock tests which dependency or buffer fails first."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "Portugal says entry into grid operator REN won't affect China's State Grid",
+                      "source": "Reuters",
+                      "date": "2026-09-23",
+                      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdm9BcWNoRlkzRVA1RVFkRUNuZ3pmVzVPNXdmMDFzWjg4RGlEcmY5RkxPWmhVWGYyTXotZ3B0d2xMWWZmcDV5QV9NNGp2d1p4enBBZElLbjNlNzdKMHpMajd2ZlJiM0pscDhlTGNlSXc4QXQ5aUtJMEpONHlWTTd5SDV1ZlNvOGx4Z3AwU3ZsWUs3MVYzdGV3SlZjQ3J2X29GS1NWWlR2VzdPT2tRdUJNc0ZVY0tuc1lxN3dfYVhmNGtndw?oc=5",
+                      "product": "risk"
+                    },
+                    "order": 1
+                  },
+                  {
+                    "id": "constrained_europe:sub:3:opportunity",
+                    "kind": "opportunity",
+                    "label": "Opportunity inserted",
+                    "name": "Opportunity inserted: Eaton to acquire Italy's grid equipment maker COL Group for €810 million to exp…",
+                    "trigger": "Eaton to acquire Italy's grid equipment maker COL Group for €810 million to expand in Europe",
+                    "story": [
+                      "Upside branch: if the opening visible in “Eaton to acquire Italy's grid equipment maker COL Group for €810 million to expand in Europe” scales, Europe gets a chance to improve its position inside this scenario.",
+                      "Because the system leans toward concentrated / brittle inputs, while the system leans toward constrained / volatile energy, the opportunity changes who can invest, supply or cooperate without changing the parent world itself."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Eaton to acquire Italy's grid equipment maker COL Group for €810 million to expand in Europe",
+                      "source": "Reuters",
+                      "date": "2026-09-25",
+                      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOM3NfZ1dXaGRROEdXcERsZjNZLVhPSU5KMERucGNwcDY0NmNtV2RNTFBGLU5jZTd4bWN5UFVVMFZ5bWxMUlRCYkZncTZpaTZ2Q0xjOUdDRUFrZEZjTHRtb2dKRnk3X0dFU05FUUpSMGNuNldkSXRpc0NXQVdLUFU1RTQ3al9DTlZVUWRDVDdyQVJGQkdCV1NYNGZGeGsxLW0wVEtlOG1sNnNfVVYyc3gtbE53UkZZNER4cl9Gd1Fmdw?oc=5",
+                      "product": "continuity"
+                    },
+                    "order": 2
+                  },
+                  {
+                    "id": "constrained_europe:sub:3:trend",
+                    "kind": "trend",
+                    "label": "Trend accelerated",
+                    "name": "Trend accelerated: DRAFT REPORT - on the proposal for a regulation of the European Parliament and…",
+                    "trigger": "DRAFT REPORT - on the proposal for a regulation of the European Parliament and of the Council establishing a framework of measures for the acceleration of industrial capacity and decarbonisation in strategic sectors and amending Regulations (EU) 2018/1724, (EU) 2024/1735 and (EU) 2024/3110 - (COM(2026)0100 - C10-0067/2026 - 2026/0068(COD)) - Committee on International Trade - Committee on Industry, Research and Energy - Committee on the Internal Market and Consumer Protection - (Joint committee procedure - Rule 59 of the Rules of Procedure) - Rapporteurs: Anna Cavazzini, Christophe Grudler, Pierre Jouvet - Publications Office of the EU",
+                    "story": [
+                      "Acceleration branch: if the direction visible in “DRAFT REPORT - on the proposal for a regulation of the European Parliament and of the Council establishing a framework of measures for the acceleration of industrial capacity and decarbonisation in strategic sectors and amending Regulations (EU) 2018/1724, (EU) 2024/1735 and (EU) 2024/3110 - (COM(2026)0100 - C10-0067/2026 - 2026/0068(COD)) - Committee on International Trade - Committee on Industry, Research and Energy - Committee on the Internal Market and Consumer Protection - (Joint committee procedure - Rule 59 of the Rules of Procedure) - Rapporteurs: Anna Cavazzini, Christophe Grudler, Pierre Jouvet - Publications Office of the EU” persists toward 2035, it becomes part of the operating environment.",
+                      "Because the system leans toward concentrated / brittle inputs, while the system leans toward constrained / volatile energy, the trend reinforces one side of this sub-scenario and makes reversal harder."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "DRAFT REPORT - on the proposal for a regulation of the European Parliament and of the Council establishing a framework of measures for the acceleration of industrial capacity and decarbonisation in strategic sectors and amending Regulations (EU) 2018/1724, (EU) 2024/1735 and (EU) 2024/3110 - (COM(2026)0100 - C10-0067/2026 - 2026/0068(COD)) - Committee on International Trade - Committee on Industry, Research and Energy - Committee on the Internal Market and Consumer Protection - (Joint committee procedure - Rule 59 of the Rules of Procedure) - Rapporteurs: Anna Cavazzini, Christophe Grudler, Pierre Jouvet - Publications Office of the EU",
+                      "source": "Publications Office of the EU",
+                      "date": "2026-09-11",
+                      "link": "https://op.europa.eu/o/opportal-service/download-handler?identifier=0ab1fab8-ae32-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+                      "product": "continuity"
+                    },
+                    "order": 3
+                  },
+                  {
+                    "id": "constrained_europe:sub:3:risk",
+                    "kind": "risk",
+                    "label": "Risk crystallises",
+                    "name": "Risk crystallises: France to Send Military Aid, Troops to Defend Saudi Oil Port",
+                    "trigger": "France to Send Military Aid, Troops to Defend Saudi Oil Port",
+                    "story": [
+                      "Failure branch: if the weakness visible in “France to Send Military Aid, Troops to Defend Saudi Oil Port” hardens, a manageable exposure becomes a structural constraint.",
+                      "Because the system leans toward concentrated / brittle inputs, while the system leans toward constrained / volatile energy, the cost appears as lost choice, slower adjustment or greater dependence."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "France to Send Military Aid, Troops to Defend Saudi Oil Port",
+                      "source": "Bloomberg",
+                      "date": "2026-09-24",
+                      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcFFIUW9xSVJ5bW1rd1VHRkFkWVpFZWUwZWNEQlptVF9XeGthV1hOdk51dzR6MlJEVkRteW5QTkJKRDdDUVlDeWVENXBPNUtsTDk0LTRuWDd3MHVJTHl5NUN1NFF4QU03Tjhjd3JKSlVITXBLTFoyMktrUVhvd3k1MEg3YUNXME1GRVRwMFlNSWZDUGJiQ1F6Wm9tNGwwQW1qZTR5aDV2SHRwRzhZSVlWR0Nn?oc=5",
+                      "product": "risk"
+                    },
+                    "order": 4
+                  }
+                ]
+              },
+              {
+                "id": "constrained_europe:sub:4",
+                "name": "Energy constraint + Input resilience",
+                "tagline": "Critical-input resilience: Input resilience · Energy-system resilience: Energy constraint",
+                "x_side": "high",
+                "y_side": "low",
+                "story": "Inside Constrained Europe, this branch combines input resilience with energy constraint. The parent world's assumptions stay fixed; only these two second-order uncertainties are resolved differently.",
+                "order": 4,
+                "variants": [
+                  {
+                    "id": "constrained_europe:sub:4:shock",
+                    "kind": "shock",
+                    "label": "Shock inserted",
+                    "name": "Shock inserted: Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links…",
+                    "trigger": "Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                    "story": [
+                      "Stress test: if the pressure visible in “Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links - CELIS Institute - Investment Screening | National Security | Competitiveness” becomes a larger external shock, this branch is forced to react quickly.",
+                      "Because the system leans toward diversified / buffered inputs, while the system leans toward constrained / volatile energy, the shock tests which dependency or buffer fails first."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:goal_measurement_gap:competitiveness",
+                      "title": "Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                      "source": "CELIS Institute",
+                      "date": "2026-01-01",
+                      "link": "https://www.celis.institute/celis-institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/",
+                      "product": "continuity"
+                    },
+                    "order": 1
+                  },
+                  {
+                    "id": "constrained_europe:sub:4:opportunity",
+                    "kind": "opportunity",
+                    "label": "Opportunity inserted",
+                    "name": "Opportunity inserted: Do preferential trade agreements with labor clauses displace labor abuses? The…",
+                    "trigger": "Do preferential trade agreements with labor clauses displace labor abuses? The unintended consequences of global governance on labor standards",
+                    "story": [
+                      "Upside branch: if the opening visible in “Do preferential trade agreements with labor clauses displace labor abuses? The unintended consequences of global governance on labor standards” scales, Europe gets a chance to improve its position inside this scenario.",
+                      "Because the system leans toward diversified / buffered inputs, while the system leans toward constrained / volatile energy, the opportunity changes who can invest, supply or cooperate without changing the parent world itself."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Do preferential trade agreements with labor clauses displace labor abuses? The unintended consequences of global governance on labor standards",
+                      "source": "Review of International Political Economy",
+                      "date": "2026-07-01",
+                      "link": "https://doi.org/10.1080/09692290.2026.2693756",
+                      "product": "continuity"
+                    },
+                    "order": 2
+                  },
+                  {
+                    "id": "constrained_europe:sub:4:trend",
+                    "kind": "trend",
+                    "label": "Trend accelerated",
+                    "name": "Trend accelerated: The role of green hydrogen imports under demand and supply uncertainties in Europe",
+                    "trigger": "The role of green hydrogen imports under demand and supply uncertainties in Europe",
+                    "story": [
+                      "Acceleration branch: if the direction visible in “The role of green hydrogen imports under demand and supply uncertainties in Europe” persists toward 2035, it becomes part of the operating environment.",
+                      "Because the system leans toward diversified / buffered inputs, while the system leans toward constrained / volatile energy, the trend reinforces one side of this sub-scenario and makes reversal harder."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "The role of green hydrogen imports under demand and supply uncertainties in Europe",
+                      "source": "International Journal of Hydrogen Energy",
+                      "date": "2026-04-01",
+                      "link": "https://doi.org/10.1016/j.ijhydene.2026.154457",
+                      "product": "continuity"
+                    },
+                    "order": 3
+                  },
+                  {
+                    "id": "constrained_europe:sub:4:risk",
+                    "kind": "risk",
+                    "label": "Risk crystallises",
+                    "name": "Risk crystallises: German gas supply is secure despite low storage levels, VNG chief says",
+                    "trigger": "German gas supply is secure despite low storage levels, VNG chief says",
+                    "story": [
+                      "Failure branch: if the weakness visible in “German gas supply is secure despite low storage levels, VNG chief says” hardens, a manageable exposure becomes a structural constraint.",
+                      "Because the system leans toward diversified / buffered inputs, while the system leans toward constrained / volatile energy, the cost appears as lost choice, slower adjustment or greater dependence."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "German gas supply is secure despite low storage levels, VNG chief says",
+                      "source": "Reuters",
+                      "date": "2026-09-28",
+                      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVDRjSXY3THA4d0lJaGlLM05DM3FVeDc3TFVFa3p2d1Z5OWRiNnBxbVhqMkVoZmw0M0xNeDVaNXhrTVN6bnhTRy1Pc0E4VXEwSjhsS3VkcE9BSjZMQ0hUM0FfM010Zk8zNGlZTUN0MmRZbS1ZTEhxQUFGWUVDUFBESzRKWkYxUUZMVjJIZzd0ZjZVbDViRFRDTkFpUjlCalJfODhOQUk5OC1Nc3d1X2NOdE5aUk1tWS1PdDdJZkNR?oc=5",
+                      "product": "risk"
+                    },
+                    "order": 4
+                  }
+                ]
+              }
+            ]
+          },
+          "bullets": [
+            {
+              "label": "2035 picture",
+              "text": "Europe reaches 2035 with fewer buffers and weaker global economic links. Governments protect a smaller strategic core while investment, market access and room for manoeuvre tighten."
+            },
+            {
+              "label": "Trade-off",
+              "text": "Exposure is reduced in some areas, but so are scale, choice and the resources available to adapt."
+            },
+            {
+              "label": "Sub-frame",
+              "text": "The current Radar selects Critical-input resilience and Energy-system resilience as the two second-order uncertainties for this world."
+            }
+          ],
+          "variants": []
+        },
+        {
+          "id": "open_under_pressure",
+          "legacy_id": "brilliant_but_broke",
+          "name": "Open Under Pressure",
+          "tagline": "Thin European capacity, but strong global links.",
+          "x_side": "high",
+          "y_side": "low",
+          "story": "Europe remains strongly connected to trade, capital and partners in 2035, but carries thin domestic buffers and depends heavily on outside suppliers, finance and markets.",
+          "tradeoff": "Openness preserves access and choice, but weak buffers make concentrated dependencies harder to absorb.",
+          "order": 4,
+          "coordinates": {
+            "x": "More connected / open",
+            "y": "Thin capacity / few buffers"
+          },
+          "subframe": {
+            "id": "open_under_pressure:frame",
+            "title": "Inside Open Under Pressure",
+            "question": "Which two uncertainties matter most inside Open Under Pressure given the current Radar?",
+            "x_axis": {
+              "id": "input_resilience",
+              "category": "inputs",
+              "title": "Critical-input resilience",
+              "low": "Concentrated / brittle inputs",
+              "high": "Diversified / buffered inputs",
+              "low_short": "Input exposure",
+              "high_short": "Input resilience",
+              "question": "Are critical materials, components and supply routes concentrated or buffered?",
+              "keywords": [
+                "critical raw",
+                "raw material",
+                "materials",
+                "supply chain",
+                "supplier",
+                "dependency",
+                "dependencies",
+                "chokepoint",
+                "shortage",
+                "storage",
+                "resilience",
+                "diversification",
+                "lng",
+                "gas supply",
+                "semiconductor"
+              ],
+              "selection_score": 39.834,
+              "basis": [
+                {
+                  "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                  "title": "Europe may be measuring delivery before it can measure the resilience in energy/materials outcome it actually wants.",
+                  "weight": 5.067
+                },
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                  "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                  "weight": 4.817
+                },
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                  "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                  "weight": 4.546
+                },
+                {
+                  "finding_id": "l45:goal_measurement_gap:sovereignty",
+                  "title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
+                  "weight": 3.888
+                }
+              ]
+            },
+            "y_axis": {
+              "id": "capital_mobilisation",
+              "category": "capital",
+              "title": "Strategic capital mobilisation",
+              "low": "Capital constrained",
+              "high": "Investment at scale",
+              "low_short": "Capital constraint",
+              "high_short": "Capital at scale",
+              "question": "Can Europe mobilise enough public and private capital for strategic projects?",
+              "keywords": [
+                "funding",
+                "finance",
+                "financing",
+                "investment",
+                "capital",
+                "budget",
+                "eib",
+                "state aid",
+                "fund",
+                "acquisition",
+                "industrial policy",
+                "competitiveness",
+                "scale-up",
+                "scale up"
+              ],
+              "selection_score": 28.674,
+              "basis": [
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                  "title": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+                  "weight": 3.726
+                },
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                  "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                  "weight": 3.343
+                },
+                {
+                  "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                  "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                  "weight": 3.261
+                },
+                {
+                  "finding_id": "l45:goal_measurement_gap:research-security",
+                  "title": "Europe keeps pursuing coercion/weaponised interdependence without a settled way to measure whether it is succeeding.",
+                  "weight": 2.423
+                }
+              ]
+            },
+            "selection": {
+              "method": "Two highest evidence-relevant axes from the fixed axis library, with near-duplicate categories prevented and a world-context relevance prior.",
+              "ranked_axes": [
+                {
+                  "id": "input_resilience",
+                  "title": "Critical-input resilience",
+                  "score": 39.834,
+                  "basis": [
+                    {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "Europe may be measuring delivery before it can measure the resilience in energy/materials outcome it actually wants.",
+                      "weight": 5.067
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                      "weight": 4.817
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                      "weight": 4.546
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:sovereignty",
+                      "title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
+                      "weight": 3.888
+                    }
+                  ]
+                },
+                {
+                  "id": "capital_mobilisation",
+                  "title": "Strategic capital mobilisation",
+                  "score": 28.674,
+                  "basis": [
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+                      "weight": 3.726
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                      "weight": 3.343
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                      "weight": 3.261
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:research-security",
+                      "title": "Europe keeps pursuing coercion/weaponised interdependence without a settled way to measure whether it is succeeding.",
+                      "weight": 2.423
+                    }
+                  ]
+                },
+                {
+                  "id": "partner_diversification",
+                  "title": "Partner diversification",
+                  "score": 28.596,
+                  "basis": [
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Formal policy around partnerships/agreements may be codifying a practice that was already operating.",
+                      "weight": 8.1
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                      "weight": 7.115
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                      "weight": 4.817
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:sovereignty",
+                      "title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
+                      "weight": 3.186
+                    }
+                  ]
+                },
+                {
+                  "id": "energy_resilience",
+                  "title": "Energy-system resilience",
+                  "score": 22.852,
+                  "basis": [
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Formal policy around critical infrastructure may be codifying a practice that was already operating.",
+                      "weight": 5.83
+                    },
+                    {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "Europe may be measuring delivery before it can measure the resilience in energy/materials outcome it actually wants.",
+                      "weight": 4.965
+                    },
+                    {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "Formal policy around industry and firms may be codifying a practice that was already operating.",
+                      "weight": 2.607
+                    },
+                    {
+                      "finding_id": "l45:goal_measurement_gap:sovereignty",
+                      "title": "Europe keeps pursuing strategic autonomy/sovereignty without a settled way to measure whether it is succeeding.",
+                      "weight": 1.782
+                    }
+                  ]
+                }
+              ]
+            },
+            "scenarios": [
+              {
+                "id": "open_under_pressure:sub:1",
+                "name": "Capital at scale + Input exposure",
+                "tagline": "Critical-input resilience: Input exposure · Strategic capital mobilisation: Capital at scale",
+                "x_side": "low",
+                "y_side": "high",
+                "story": "Inside Open Under Pressure, this branch combines input exposure with capital at scale. The parent world's assumptions stay fixed; only these two second-order uncertainties are resolved differently.",
+                "order": 1,
+                "variants": [
+                  {
+                    "id": "open_under_pressure:sub:1:shock",
+                    "kind": "shock",
+                    "label": "Shock inserted",
+                    "name": "Shock inserted: Europe Draws More LNG as Hormuz Crisis Tightens Global Market",
+                    "trigger": "Europe Draws More LNG as Hormuz Crisis Tightens Global Market",
+                    "story": [
+                      "Stress test: if the pressure visible in “Europe Draws More LNG as Hormuz Crisis Tightens Global Market” becomes a larger external shock, this branch is forced to react quickly.",
+                      "Because the system leans toward concentrated / brittle inputs, while the system leans toward investment at scale, the shock tests which dependency or buffer fails first."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "Europe Draws More LNG as Hormuz Crisis Tightens Global Market",
+                      "source": "Bloomberg",
+                      "date": "2026-09-28",
+                      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdkJsS2FSMnQzd1dNc0ZfS0hJRlRONktheHk4R0dicVhoOGpmNEV0aXFFZ3pHLUNZVUZ0Qml3Z2FzUkZZc3Z3ZjRFbFZKM3E3U2pTcUxfOHdRaklMR2tIYjVtNnNtYTlKU18yZkFDNVZvMHpRV3VwSDJFX2s1c1lNTE5FMFNhOVJsSFZWbU5yQV9yUUZyRTNGU09QcDJTVXF1RDRCTVQ1MTNvTHRtQmlKZTNn?oc=5",
+                      "product": "risk"
+                    },
+                    "order": 1
+                  },
+                  {
+                    "id": "open_under_pressure:sub:1:opportunity",
+                    "kind": "opportunity",
+                    "label": "Opportunity inserted",
+                    "name": "Opportunity inserted: EU advances Global Health Resilience Initiative with new Global Gateway investm…",
+                    "trigger": "EU advances Global Health Resilience Initiative with new Global Gateway investments in Africa and Latin America",
+                    "story": [
+                      "Upside branch: if the opening visible in “EU advances Global Health Resilience Initiative with new Global Gateway investments in Africa and Latin America” scales, Europe gets a chance to improve its position inside this scenario.",
+                      "Because the system leans toward concentrated / brittle inputs, while the system leans toward investment at scale, the opportunity changes who can invest, supply or cooperate without changing the parent world itself."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "EU advances Global Health Resilience Initiative with new Global Gateway investments in Africa and Latin America",
+                      "source": "EEAS",
+                      "date": "2026-09-25",
+                      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPV3BxRUZfaWJkZGJQbkpsc2ctbnRCdHk0a1VDRFhwLTBhR01GcXE2RmFwNDBIRkFtbGdPYVhfY00xeEppRW4wS0dKc0FDOWl0ZE1rY3A5dkFrWUVGb1ZGN0NPSHVBeHJ2WnpjR2VkTjRMajRiaC1JTFVqM1lTNU1GdENsa29FWjdyeXFvQkJSa1pMdmRLajZLckpWQWdINlVqSElPWHdDWTBmZzU0ZUxXVFowYjZlOUJNZk5meUxIUEVLNi1JX2pRYlV0Y3ZKSkVHTXJ3YU12ZWlCN2xNY2I1SW9xdXdrdEQ2SXc?oc=5",
+                      "product": "continuity"
+                    },
+                    "order": 2
+                  },
+                  {
+                    "id": "open_under_pressure:sub:1:trend",
+                    "kind": "trend",
+                    "label": "Trend accelerated",
+                    "name": "Trend accelerated: R&I needs to reduce dependencies on critical raw materials through advanced mat…",
+                    "trigger": "R&I needs to reduce dependencies on critical raw materials through advanced materials in passenger vehicles - Publications Office of the EU",
+                    "story": [
+                      "Acceleration branch: if the direction visible in “R&I needs to reduce dependencies on critical raw materials through advanced materials in passenger vehicles - Publications Office of the EU” persists toward 2035, it becomes part of the operating environment.",
+                      "Because the system leans toward concentrated / brittle inputs, while the system leans toward investment at scale, the trend reinforces one side of this sub-scenario and makes reversal harder."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "R&I needs to reduce dependencies on critical raw materials through advanced materials in passenger vehicles - Publications Office of the EU",
+                      "source": "Publications Office of the EU",
+                      "date": "2026-09-18",
+                      "link": "https://op.europa.eu/o/opportal-service/download-handler?identifier=7d0241d4-b3d2-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+                      "product": "continuity"
+                    },
+                    "order": 3
+                  },
+                  {
+                    "id": "open_under_pressure:sub:1:risk",
+                    "kind": "risk",
+                    "label": "Risk crystallises",
+                    "name": "Risk crystallises: German gas supply is secure despite low storage levels, VNG chief says",
+                    "trigger": "German gas supply is secure despite low storage levels, VNG chief says",
+                    "story": [
+                      "Failure branch: if the weakness visible in “German gas supply is secure despite low storage levels, VNG chief says” hardens, a manageable exposure becomes a structural constraint.",
+                      "Because the system leans toward concentrated / brittle inputs, while the system leans toward investment at scale, the cost appears as lost choice, slower adjustment or greater dependence."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "German gas supply is secure despite low storage levels, VNG chief says",
+                      "source": "Reuters",
+                      "date": "2026-09-28",
+                      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVDRjSXY3THA4d0lJaGlLM05DM3FVeDc3TFVFa3p2d1Z5OWRiNnBxbVhqMkVoZmw0M0xNeDVaNXhrTVN6bnhTRy1Pc0E4VXEwSjhsS3VkcE9BSjZMQ0hUM0FfM010Zk8zNGlZTUN0MmRZbS1ZTEhxQUFGWUVDUFBESzRKWkYxUUZMVjJIZzd0ZjZVbDViRFRDTkFpUjlCalJfODhOQUk5OC1Nc3d1X2NOdE5aUk1tWS1PdDdJZkNR?oc=5",
+                      "product": "risk"
+                    },
+                    "order": 4
+                  }
+                ]
+              },
+              {
+                "id": "open_under_pressure:sub:2",
+                "name": "Capital at scale + Input resilience",
+                "tagline": "Critical-input resilience: Input resilience · Strategic capital mobilisation: Capital at scale",
+                "x_side": "high",
+                "y_side": "high",
+                "story": "Inside Open Under Pressure, this branch combines input resilience with capital at scale. The parent world's assumptions stay fixed; only these two second-order uncertainties are resolved differently.",
+                "order": 2,
+                "variants": [
+                  {
+                    "id": "open_under_pressure:sub:2:shock",
+                    "kind": "shock",
+                    "label": "Shock inserted",
+                    "name": "Shock inserted: Institutional capacity and sustainable critical raw material supply chains: A c…",
+                    "trigger": "Institutional capacity and sustainable critical raw material supply chains: A comparative analysis of extractive governance",
+                    "story": [
+                      "Stress test: if the pressure visible in “Institutional capacity and sustainable critical raw material supply chains: A comparative analysis of extractive governance” becomes a larger external shock, this branch is forced to react quickly.",
+                      "Because the system leans toward diversified / buffered inputs, while the system leans toward investment at scale, the shock tests which dependency or buffer fails first."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "Institutional capacity and sustainable critical raw material supply chains: A comparative analysis of extractive governance",
+                      "source": "The Extractive Industries and Society",
+                      "date": "2026-08-22",
+                      "link": "https://doi.org/10.1016/j.exis.2026.102034",
+                      "product": "risk"
+                    },
+                    "order": 1
+                  },
+                  {
+                    "id": "open_under_pressure:sub:2:opportunity",
+                    "kind": "opportunity",
+                    "label": "Opportunity inserted",
+                    "name": "Opportunity inserted: EU Energy and Raw Materials Platform",
+                    "trigger": "EU Energy and Raw Materials Platform",
+                    "story": [
+                      "Upside branch: if the opening visible in “EU Energy and Raw Materials Platform” scales, Europe gets a chance to improve its position inside this scenario.",
+                      "Because the system leans toward diversified / buffered inputs, while the system leans toward investment at scale, the opportunity changes who can invest, supply or cooperate without changing the parent world itself."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "EU Energy and Raw Materials Platform",
+                      "source": "European Commission — Energy",
+                      "date": "2026-06-25",
+                      "link": "https://energy.ec.europa.eu/topics/energy-security/eu-energy-and-raw-materials-platform_en",
+                      "product": "risk"
+                    },
+                    "order": 2
+                  },
+                  {
+                    "id": "open_under_pressure:sub:2:trend",
+                    "kind": "trend",
+                    "label": "Trend accelerated",
+                    "name": "Trend accelerated: The impact of hydrogen underground storage on export dynamics and system resili…",
+                    "trigger": "The impact of hydrogen underground storage on export dynamics and system resilience: A GIS-based integration of salt caverns into PyPSA-Earth",
+                    "story": [
+                      "Acceleration branch: if the direction visible in “The impact of hydrogen underground storage on export dynamics and system resilience: A GIS-based integration of salt caverns into PyPSA-Earth” persists toward 2035, it becomes part of the operating environment.",
+                      "Because the system leans toward diversified / buffered inputs, while the system leans toward investment at scale, the trend reinforces one side of this sub-scenario and makes reversal harder."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "The impact of hydrogen underground storage on export dynamics and system resilience: A GIS-based integration of salt caverns into PyPSA-Earth",
+                      "source": "Energy",
+                      "date": "2026-07-03",
+                      "link": "https://doi.org/10.1016/j.energy.2026.141729",
+                      "product": "continuity"
+                    },
+                    "order": 3
+                  },
+                  {
+                    "id": "open_under_pressure:sub:2:risk",
+                    "kind": "risk",
+                    "label": "Risk crystallises",
+                    "name": "Risk crystallises: Diversification of gas supply sources and routes",
+                    "trigger": "Diversification of gas supply sources and routes",
+                    "story": [
+                      "Failure branch: if the weakness visible in “Diversification of gas supply sources and routes” hardens, a manageable exposure becomes a structural constraint.",
+                      "Because the system leans toward diversified / buffered inputs, while the system leans toward investment at scale, the cost appears as lost choice, slower adjustment or greater dependence."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "Diversification of gas supply sources and routes",
+                      "source": "European Commission — Energy",
+                      "date": "2026-08-25",
+                      "link": "https://energy.ec.europa.eu/topics/energy-security/diversification-gas-supply-sources-and-routes_en",
+                      "product": "risk"
+                    },
+                    "order": 4
+                  }
+                ]
+              },
+              {
+                "id": "open_under_pressure:sub:3",
+                "name": "Capital constraint + Input exposure",
+                "tagline": "Critical-input resilience: Input exposure · Strategic capital mobilisation: Capital constraint",
+                "x_side": "low",
+                "y_side": "low",
+                "story": "Inside Open Under Pressure, this branch combines input exposure with capital constraint. The parent world's assumptions stay fixed; only these two second-order uncertainties are resolved differently.",
+                "order": 3,
+                "variants": [
+                  {
+                    "id": "open_under_pressure:sub:3:shock",
+                    "kind": "shock",
+                    "label": "Shock inserted",
+                    "name": "Shock inserted: Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links…",
+                    "trigger": "Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                    "story": [
+                      "Stress test: if the pressure visible in “Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links - CELIS Institute - Investment Screening | National Security | Competitiveness” becomes a larger external shock, this branch is forced to react quickly.",
+                      "Because the system leans toward concentrated / brittle inputs, while the system leans toward capital constrained, the shock tests which dependency or buffer fails first."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:goal_measurement_gap:competitiveness",
+                      "title": "Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                      "source": "CELIS Institute",
+                      "date": "2026-01-01",
+                      "link": "https://www.celis.institute/celis-institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/",
+                      "product": "continuity"
+                    },
+                    "order": 1
+                  },
+                  {
+                    "id": "open_under_pressure:sub:3:opportunity",
+                    "kind": "opportunity",
+                    "label": "Opportunity inserted",
+                    "name": "Opportunity inserted: Mining firms’ plea for EU critical minerals budget falls on deaf ears",
+                    "trigger": "Mining firms’ plea for EU critical minerals budget falls on deaf ears",
+                    "story": [
+                      "Upside branch: if the opening visible in “Mining firms’ plea for EU critical minerals budget falls on deaf ears” scales, Europe gets a chance to improve its position inside this scenario.",
+                      "Because the system leans toward concentrated / brittle inputs, while the system leans toward capital constrained, the opportunity changes who can invest, supply or cooperate without changing the parent world itself."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-collaboration-diplomacy",
+                      "title": "Mining firms’ plea for EU critical minerals budget falls on deaf ears",
+                      "source": "EUobserver",
+                      "date": "2026-09-24",
+                      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVW5pc0lQdTY4aGtUMmhJNFR3SnZrNmtqcEVWanlDeVFCTnpIeUNjT3VqQlZSckVpM3FMclp2a0p1SnBSSzhITVBrSmtMUkZhdkVkSzZNWUNfV1hqdktGTXVNVndVOGpqcWZfWnIySGx3WXVIM0RqN3NaNkJGQ1F5N01Xb2xTTVBnb3pyclhHMmtqWHZWVXVmQ2FEVUV0b2Nj?oc=5",
+                      "product": "continuity"
+                    },
+                    "order": 2
+                  },
+                  {
+                    "id": "open_under_pressure:sub:3:trend",
+                    "kind": "trend",
+                    "label": "Trend accelerated",
+                    "name": "Trend accelerated: State aid control as a coordinating instrument for EU industrial policy in the…",
+                    "trigger": "State aid control as a coordinating instrument for EU industrial policy in the internal market",
+                    "story": [
+                      "Acceleration branch: if the direction visible in “State aid control as a coordinating instrument for EU industrial policy in the internal market” persists toward 2035, it becomes part of the operating environment.",
+                      "Because the system leans toward concentrated / brittle inputs, while the system leans toward capital constrained, the trend reinforces one side of this sub-scenario and makes reversal harder."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-startups-scaleup",
+                      "title": "State aid control as a coordinating instrument for EU industrial policy in the internal market",
+                      "source": "Yearbook of European Law",
+                      "date": "2026-04-01",
+                      "link": "https://doi.org/10.1093/yel/yeag004",
+                      "product": "continuity"
+                    },
+                    "order": 3
+                  },
+                  {
+                    "id": "open_under_pressure:sub:3:risk",
+                    "kind": "risk",
+                    "label": "Risk crystallises",
+                    "name": "Risk crystallises: France to Send Military Aid, Troops to Defend Saudi Oil Port",
+                    "trigger": "France to Send Military Aid, Troops to Defend Saudi Oil Port",
+                    "story": [
+                      "Failure branch: if the weakness visible in “France to Send Military Aid, Troops to Defend Saudi Oil Port” hardens, a manageable exposure becomes a structural constraint.",
+                      "Because the system leans toward concentrated / brittle inputs, while the system leans toward capital constrained, the cost appears as lost choice, slower adjustment or greater dependence."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "France to Send Military Aid, Troops to Defend Saudi Oil Port",
+                      "source": "Bloomberg",
+                      "date": "2026-09-24",
+                      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcFFIUW9xSVJ5bW1rd1VHRkFkWVpFZWUwZWNEQlptVF9XeGthV1hOdk51dzR6MlJEVkRteW5QTkJKRDdDUVlDeWVENXBPNUtsTDk0LTRuWDd3MHVJTHl5NUN1NFF4QU03Tjhjd3JKSlVITXBLTFoyMktrUVhvd3k1MEg3YUNXME1GRVRwMFlNSWZDUGJiQ1F6Wm9tNGwwQW1qZTR5aDV2SHRwRzhZSVlWR0Nn?oc=5",
+                      "product": "risk"
+                    },
+                    "order": 4
+                  }
+                ]
+              },
+              {
+                "id": "open_under_pressure:sub:4",
+                "name": "Capital constraint + Input resilience",
+                "tagline": "Critical-input resilience: Input resilience · Strategic capital mobilisation: Capital constraint",
+                "x_side": "high",
+                "y_side": "low",
+                "story": "Inside Open Under Pressure, this branch combines input resilience with capital constraint. The parent world's assumptions stay fixed; only these two second-order uncertainties are resolved differently.",
+                "order": 4,
+                "variants": [
+                  {
+                    "id": "open_under_pressure:sub:4:shock",
+                    "kind": "shock",
+                    "label": "Shock inserted",
+                    "name": "Shock inserted: The EU Anti-Coercion Regulation: A New Tool Against Economic Pressure - CELIS I…",
+                    "trigger": "The EU Anti-Coercion Regulation: A New Tool Against Economic Pressure - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                    "story": [
+                      "Stress test: if the pressure visible in “The EU Anti-Coercion Regulation: A New Tool Against Economic Pressure - CELIS Institute - Investment Screening | National Security | Competitiveness” becomes a larger external shock, this branch is forced to react quickly.",
+                      "Because the system leans toward diversified / buffered inputs, while the system leans toward capital constrained, the shock tests which dependency or buffer fails first."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:goal_measurement_gap:research-security",
+                      "title": "The EU Anti-Coercion Regulation: A New Tool Against Economic Pressure - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                      "source": "CELIS Institute",
+                      "date": "2025-05-19",
+                      "link": "https://www.celis.institute/celis-blog/the-eu-anti-coercion-regulation-a-new-tool-against-economic-pressure/",
+                      "product": "continuity"
+                    },
+                    "order": 1
+                  },
+                  {
+                    "id": "open_under_pressure:sub:4:opportunity",
+                    "kind": "opportunity",
+                    "label": "Opportunity inserted",
+                    "name": "Opportunity inserted: The Meta–Manus Veto and the Rise of 'National Security Unbound': Tech-Sector In…",
+                    "trigger": "The Meta–Manus Veto and the Rise of 'National Security Unbound': Tech-Sector Investment Screening and the Reshaping of International Investment Law - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                    "story": [
+                      "Upside branch: if the opening visible in “The Meta–Manus Veto and the Rise of 'National Security Unbound': Tech-Sector Investment Screening and the Reshaping of International Investment Law - CELIS Institute - Investment Screening | National Security | Competitiveness” scales, Europe gets a chance to improve its position inside this scenario.",
+                      "Because the system leans toward diversified / buffered inputs, while the system leans toward capital constrained, the opportunity changes who can invest, supply or cooperate without changing the parent world itself."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:goal_measurement_gap:competitiveness",
+                      "title": "The Meta–Manus Veto and the Rise of 'National Security Unbound': Tech-Sector Investment Screening and the Reshaping of International Investment Law - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                      "source": "CELIS Institute",
+                      "date": "2026-09-24",
+                      "link": "https://www.celis.institute/posts-celis-2019/meta-manus_veto_and_national_security_unbound/",
+                      "product": "continuity"
+                    },
+                    "order": 2
+                  },
+                  {
+                    "id": "open_under_pressure:sub:4:trend",
+                    "kind": "trend",
+                    "label": "Trend accelerated",
+                    "name": "Trend accelerated: Cybersecurity in critical rail infrastructure: sector specific adoption of the…",
+                    "trigger": "Cybersecurity in critical rail infrastructure: sector specific adoption of the NIS 2 directive in Europe",
+                    "story": [
+                      "Acceleration branch: if the direction visible in “Cybersecurity in critical rail infrastructure: sector specific adoption of the NIS 2 directive in Europe” persists toward 2035, it becomes part of the operating environment.",
+                      "Because the system leans toward diversified / buffered inputs, while the system leans toward capital constrained, the trend reinforces one side of this sub-scenario and makes reversal harder."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:practice_precedes_doctrine:generic-infrastructure",
+                      "title": "Cybersecurity in critical rail infrastructure: sector specific adoption of the NIS 2 directive in Europe",
+                      "source": "Journal of Transportation Security",
+                      "date": "2026-04-18",
+                      "link": "https://doi.org/10.1007/s12198-026-00349-8",
+                      "product": "continuity"
+                    },
+                    "order": 3
+                  },
+                  {
+                    "id": "open_under_pressure:sub:4:risk",
+                    "kind": "risk",
+                    "label": "Risk crystallises",
+                    "name": "Risk crystallises: Portugal says entry into grid operator REN won't affect China's State Grid",
+                    "trigger": "Portugal says entry into grid operator REN won't affect China's State Grid",
+                    "story": [
+                      "Failure branch: if the weakness visible in “Portugal says entry into grid operator REN won't affect China's State Grid” hardens, a manageable exposure becomes a structural constraint.",
+                      "Because the system leans toward diversified / buffered inputs, while the system leans toward capital constrained, the cost appears as lost choice, slower adjustment or greater dependence."
+                    ],
+                    "evidence": {
+                      "finding_id": "l45:success_metric_blind_spot:generic-resilience-materials-energy",
+                      "title": "Portugal says entry into grid operator REN won't affect China's State Grid",
+                      "source": "Reuters",
+                      "date": "2026-09-23",
+                      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdm9BcWNoRlkzRVA1RVFkRUNuZ3pmVzVPNXdmMDFzWjg4RGlEcmY5RkxPWmhVWGYyTXotZ3B0d2xMWWZmcDV5QV9NNGp2d1p4enBBZElLbjNlNzdKMHpMajd2ZlJiM0pscDhlTGNlSXc4QXQ5aUtJMEpONHlWTTd5SDV1ZlNvOGx4Z3AwU3ZsWUs3MVYzdGV3SlZjQ3J2X29GS1NWWlR2VzdPT2tRdUJNc0ZVY0tuc1lxN3dfYVhmNGtndw?oc=5",
+                      "product": "risk"
+                    },
+                    "order": 4
+                  }
+                ]
+              }
+            ]
+          },
+          "bullets": [
+            {
+              "label": "2035 picture",
+              "text": "Europe remains strongly connected to trade, capital and partners in 2035, but carries thin domestic buffers and depends heavily on outside suppliers, finance and markets."
+            },
+            {
+              "label": "Trade-off",
+              "text": "Openness preserves access and choice, but weak buffers make concentrated dependencies harder to absorb."
+            },
+            {
+              "label": "Sub-frame",
+              "text": "The current Radar selects Critical-input resilience and Strategic capital mobilisation as the two second-order uncertainties for this world."
+            }
+          ],
+          "variants": []
+        }
+      ]
+    }
   },
   "downstream_archive": {
     "profile_version": "v1.0-current-downstream-rules",
