@@ -6,12 +6,12 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **624** (Main **481** + Historical **143**)
-- Automatic queue still needing V2 verification: **1001** (Main **153** + Historical **848**)
+- Authoritative V2 verified: **660** (Main **481** + Historical **179**)
+- Automatic queue still needing V2 verification: **965** (Main **153** + Historical **812**)
 - Currently assigned to workers: **78** (Main **6** + Historical **72**)
 - Bounded access-recovery retries still eligible: **181**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **923**
+- Automatic queue pending and not yet assigned: **887**
 
 ## Worker lanes
 
@@ -29,16 +29,16 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-cf8b3f0e0b5f`
+- Current package: `worker-b-60389f6094bf`
 - Assigned unresolved records: **36**
-  1. `historical:id:f342875f1a3c6fd4` — Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links - CELIS Institute - Investment Screening | National Security | Competitiveness
-  2. `historical:id:40a6b5f31d319cbf` — Comparing Complements: The Concept of Foreign Subsidy Under The EU Foreign Subsidies Regulation In Light of EU State Aid Law and WTO Subsidy Law
-  3. `historical:id:d5a511bb499c8787` — Policy Coherence in the Time of Economic Insecurity: Balancing the Sustainable Trade and Development Playbook of the New European Commission
-  4. `historical:id:298747664b0b7e07` — Human Rights and Environmental Due Diligence Regulations for Deforestation‐Free Value Chains? Exploring the Implementation of the EU Regulation on Deforestation‐Free Products in the Cocoa and Coffee Sectors of Peru
-  5. `historical:id:a59129e23f173be6` — Less food waste could bring lower EU food prices and decrease greenhouse gas emissions
-  6. `historical:id:49366cd6741e9019` — Detecting Cybersecurity Threats in Digital Energy Systems Using Deep learning for Imbalanced Datasets
-  7. `historical:id:0d88769ecda78716` — Dependent development under geopolitical reconfiguration: the Orbán regime in Hungary
-  8. `historical:id:03d67ae8db1449d4` — Conference Report: BDI/CELIS German Chapter – Investment Screening Conference - CELIS Institute - Investment Screening | National Security | Competitiveness
+  1. `historical:id:a33a7348262884f0` — Legal Convergence Through Soft Law? The EU–US Trade and Technology Council (TTC)
+  2. `historical:id:31654575c0798757` — Global Greenhouse Gas Emissions: 1990-2022 and Preliminary 2023 Estimates
+  3. `historical:id:0b734410a1aff56b` — A Geoeconomic Fix? European Industrial Policy on Semiconductors Amidst Global Competition
+  4. `historical:id:228414398c910b57` — Strategic Autonomy in Security and Defence as an Impracticability? How the European Union’s Rhetoric Meets Reality
+  5. `historical:id:3d6dca3dd8918ca5` — Looking for Resource Sovereignty in a Fragmenting Global Order: The EU’s Response to Critical Raw Materials Challenges
+  6. `historical:id:4ee82ade88d10254` — EU Trade Policy in Light of a Fragmented Liberal International Order
+  7. `historical:id:37cd926025b1714d` — EU Foreign Policy and the Fragmentation of the International Order: A Framework for Analysis
+  8. `historical:id:ea967d90699d9808` — Belgium - Screening of Foreign Direct Investment - Annual Report 2023-2024 (30 September 2024) - CELIS Institute - Investment Screening | National Security | Competitiveness
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
