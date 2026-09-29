@@ -1,49 +1,49 @@
 {
   "version": 1,
   "profile": "radar-deep-scan-work-state-v1",
-  "updated_at": "2026-09-29T16:41:45Z",
+  "updated_at": "2026-09-29T16:52:15Z",
   "lanes": {
     "A": {
       "target_size": 36,
       "assigned": [
-        "historical:id:52ee9b435418d418",
-        "historical:id:57350d1b81a67917",
-        "historical:id:67d42817310851ea",
-        "historical:id:eb40900c031cf2f7",
-        "historical:id:a98f78be76f69e69",
-        "historical:id:9aed1fea861ced82",
-        "historical:id:7d9119823a96094f",
-        "historical:id:e934dfafdbba1834",
-        "historical:id:37d8ec770d30d294",
-        "historical:id:4476952afda5f60c",
-        "historical:id:8946b1fda4509b28",
-        "historical:id:a85745f31f345964",
-        "historical:id:7dd38123de2a1bdf",
-        "historical:id:b45faf5213380b92",
-        "historical:id:eaf956a878c684e0",
-        "historical:id:e7a856999390575a",
-        "historical:id:2f1cef4af1dbbe1e",
-        "historical:id:a19368614fa60a9c",
-        "historical:id:9fbc4bb6fdcf3e9a",
-        "historical:id:02f5abbe88f501b9",
-        "historical:id:dab5d3869d515fac",
-        "historical:id:32544a694cc1d67e",
-        "historical:id:3d5e2b697466e9c4",
-        "historical:id:ce0b05ebc64d0aeb",
-        "historical:id:43e7340ea4a606aa",
-        "historical:id:4ec8870977e17c86",
-        "historical:id:24a029e8fd6cf225",
-        "historical:id:4404e7958d22a7c8",
-        "historical:id:d94cc8f41f3286a3",
-        "historical:id:ba8f7f2b6b256e5a",
-        "historical:id:19af4ea97510c6f5",
-        "historical:id:6ff8f4d27635ce69",
-        "historical:id:9997e4f9c39a0d66",
-        "historical:id:853be62d49ad17a7",
-        "historical:id:ad4b954dfa046419",
-        "historical:id:968581335da5df7f"
+        "historical:id:1c3787825c7eaba9",
+        "historical:id:619afd9b2e54522a",
+        "historical:id:4fae2465c66e1e62",
+        "historical:id:545828b798d1afdc",
+        "historical:id:e131adface871dcc",
+        "historical:id:dc297ea0893bebfc",
+        "historical:id:d6927e5d67613596",
+        "historical:id:82f5d7056730dd54",
+        "historical:id:857d2be06bb032e1",
+        "historical:id:b065cc32a53578cb",
+        "historical:id:18bcf7cd838e421a",
+        "historical:id:81a58ca01ffe2409",
+        "historical:id:37738e41c1f77622",
+        "historical:id:a74b5fbc4a6673dd",
+        "historical:id:2c25430929fd5f5c",
+        "historical:id:303d26a5661ad7bd",
+        "historical:id:defa6ea9c2305a52",
+        "historical:id:99b8aa5e9b669ceb",
+        "historical:id:b8a22ce35456c805",
+        "historical:id:3c5ae477f4c2d5cf",
+        "historical:id:2927bf0cc5d101ab",
+        "historical:id:783dc3f245a8d2ad",
+        "historical:id:1152d2ea5bbe51b3",
+        "historical:id:34c7fa878d53dc71",
+        "historical:id:9ff79cb6307776bd",
+        "historical:id:038b13a85ced7b67",
+        "historical:id:6eee06b67d4b9540",
+        "historical:id:47df43b518228456",
+        "historical:id:6b762358ffa446d6",
+        "historical:id:0c04c5e576165e85",
+        "historical:id:f7df9fa3cd3572e5",
+        "historical:id:8814bb9906ef8a3b",
+        "historical:id:91f52a7b5ae1171b",
+        "historical:id:bb8575127b29d36c",
+        "historical:id:109b067d15280d3c",
+        "historical:id:c14b75e8413047c5"
       ],
-      "current_package_id": "worker-a-263494cb1fb0",
+      "current_package_id": "worker-a-d28b6a43fdb6",
       "package_history": [
         "worker-a-20260925T095801Z-87d10350b778",
         "worker-a-20260925T111547Z-87d10350b778",
@@ -76,7 +76,8 @@
         "worker-a-d437a695376f",
         "worker-a-d5b4cd36d0a9",
         "worker-a-6a3b91754c56",
-        "worker-a-263494cb1fb0"
+        "worker-a-263494cb1fb0",
+        "worker-a-d28b6a43fdb6"
       ]
     },
     "B": {
@@ -17545,10 +17546,72 @@
       "url": "https://single-market-economy.ec.europa.eu/publications/selective-industrial-policy-eu-open-strategic-autonomy-role-products-relatedness_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:56Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://single-market-economy.ec.europa.eu/publications/selective-industrial-policy-eu-open-strategic-autonomy-role-products-relatedness_en; package snapshot matched the claimed work/title."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered/confirmed at https://single-market-economy.ec.europa.eu/publications/selective-industrial-policy-eu-open-strategic-autonomy-role-products-relatedness_en; official publisher page confirmed report, authors, DOI and downloadable PDF."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://single-market-economy.ec.europa.eu/publications/selective-industrial-policy-eu-open-strategic-autonomy-role-products-relatedness_en",
+            "title": "Selective Industrial Policy for the EU Open Strategic Autonomy: the Role of Products' Relatedness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity/provenance matched the supplied source; where the package source was thin, an official publisher or institutional repository route was used when recovered."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:56Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://single-market-economy.ec.europa.eu/publications/selective-industrial-policy-eu-open-strategic-autonomy-role-products-relatedness_en; package snapshot matched the claimed work/title."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Recovered/confirmed at https://single-market-economy.ec.europa.eu/publications/selective-industrial-policy-eu-open-strategic-autonomy-role-products-relatedness_en; official publisher page confirmed report, authors, DOI and downloadable PDF."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://single-market-economy.ec.europa.eu/publications/selective-industrial-policy-eu-open-strategic-autonomy-role-products-relatedness_en",
+                "title": "Selective Industrial Policy for the EU Open Strategic Autonomy: the Role of Products' Relatedness",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity/provenance matched the supplied source; where the package source was thin, an official publisher or institutional repository route was used when recovered."
+          }
+        }
+      ]
     },
     "historical:id:7d9119823a96094f": {
       "title": "Institut Jacques Delors - Background Paper : Energy Trends in Europe",
@@ -17557,10 +17620,12 @@
       "url": "https://institutdelors.eu/content/uploads/2025/04/energy_project_note-1.pdf",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:57Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:e934dfafdbba1834": {
       "title": "Institut Jacques Delors - An external strategy for European agriculture",
@@ -17569,10 +17634,12 @@
       "url": "https://institutdelors.eu/content/uploads/2025/04/agriculture-chambon-ne-jdi-march13-3.pdf",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:57Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:37d8ec770d30d294": {
       "title": "Institut Jacques Delors - A White Paper on the future of European defence: what for?",
@@ -17581,10 +17648,12 @@
       "url": "https://institutdelors.eu/content/uploads/2025/02/BP_250213_Defense_White_Paper_deCordoue_EN.pdf",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:57Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:8946b1fda4509b28": {
       "title": "Implementation Dialogue on the EU Defence Industry: Industrial Ramp-up and Supply Chain resilience",
@@ -17593,10 +17662,12 @@
       "url": "https://defence-industry-space.ec.europa.eu/implementation-dialogue-eu-defence-industry-industrial-ramp-and-supply-chain-resilience-2026-06-17_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:57Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:a85745f31f345964": {
       "title": "How can we maintain the competitiveness of energy-intensive industries and avoid inefficient subsidy races? - Institut Jacques Delors",
@@ -17605,10 +17676,12 @@
       "url": "https://institutdelors.eu/en/publications/how-can-we-maintain-the-competitiveness-of-energy-intensive-industries-and-avoid-inefficient-subsidy-races/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:57Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:e7a856999390575a": {
       "title": "European Commission Initiates Strategic Study on Key Ground Infrastructure to Enhance Space Access",
@@ -17617,10 +17690,72 @@
       "url": "https://defence-industry-space.ec.europa.eu/european-commission-initiates-strategic-study-key-ground-infrastructure-enhance-space-access-2025-07-31_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:57Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://defence-industry-space.ec.europa.eu/european-commission-initiates-strategic-study-key-ground-infrastructure-enhance-space-access-2025-07-31_en; package snapshot matched the claimed work/title."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered/confirmed at https://defence-industry-space.ec.europa.eu/european-commission-initiates-strategic-study-key-ground-infrastructure-enhance-space-access-2025-07-31_en; official Commission news article confirmed strategic study and autonomous-access rationale."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://defence-industry-space.ec.europa.eu/european-commission-initiates-strategic-study-key-ground-infrastructure-enhance-space-access-2025-07-31_en",
+            "title": "European Commission Initiates Strategic Study on Key Ground Infrastructure to Enhance Space Access",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity/provenance matched the supplied source; where the package source was thin, an official publisher or institutional repository route was used when recovered."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:57Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://defence-industry-space.ec.europa.eu/european-commission-initiates-strategic-study-key-ground-infrastructure-enhance-space-access-2025-07-31_en; package snapshot matched the claimed work/title."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Recovered/confirmed at https://defence-industry-space.ec.europa.eu/european-commission-initiates-strategic-study-key-ground-infrastructure-enhance-space-access-2025-07-31_en; official Commission news article confirmed strategic study and autonomous-access rationale."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://defence-industry-space.ec.europa.eu/european-commission-initiates-strategic-study-key-ground-infrastructure-enhance-space-access-2025-07-31_en",
+                "title": "European Commission Initiates Strategic Study on Key Ground Infrastructure to Enhance Space Access",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity/provenance matched the supplied source; where the package source was thin, an official publisher or institutional repository route was used when recovered."
+          }
+        }
+      ]
     },
     "historical:id:2f1cef4af1dbbe1e": {
       "title": "Enhancing the competitiveness of Ethiopia’s horticultural sector (MAHEBER)",
@@ -17629,10 +17764,62 @@
       "url": "https://international-partnerships.ec.europa.eu/eu-due-diligence-navigator-partner-countries/enhancing-competitiveness-ethiopias-horticultural-sector-maheber_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:57Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: missing/invalid admission reason_code; substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://international-partnerships.ec.europa.eu/eu-due-diligence-navigator-partner-countries/enhancing-competitiveness-ethiopias-horticultural-sector-maheber_en; package snapshot matched the claimed work/title."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://international-partnerships.ec.europa.eu/eu-due-diligence-navigator-partner-countries/enhancing-competitiveness-ethiopias-horticultural-sector-maheber_en",
+            "title": "Enhancing the competitiveness of Ethiopia’s horticultural sector (MAHEBER)",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:57Z",
+          "reason": "Deep Scan return rejected: missing/invalid admission reason_code; substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://international-partnerships.ec.europa.eu/eu-due-diligence-navigator-partner-countries/enhancing-competitiveness-ethiopias-horticultural-sector-maheber_en; package snapshot matched the claimed work/title."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://international-partnerships.ec.europa.eu/eu-due-diligence-navigator-partner-countries/enhancing-competitiveness-ethiopias-horticultural-sector-maheber_en",
+                "title": "Enhancing the competitiveness of Ethiopia’s horticultural sector (MAHEBER)",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+          }
+        }
+      ]
     },
     "historical:id:9fbc4bb6fdcf3e9a": {
       "title": "Economic Security: Trade, Foreign Investment and Global Value Chains",
@@ -17641,10 +17828,12 @@
       "url": "https://joint-research-centre.ec.europa.eu/scientific-activities/economic-security-trade-foreign-investment-and-global-value-chains_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:57Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:32544a694cc1d67e": {
       "title": "EU Unilateral and Bilateral Approaches in Anti-deforestation Efforts: Analysis of Trade Agreements with Chile and the Andean Community",
@@ -17653,10 +17842,62 @@
       "url": "https://doi.org/10.54648/eerr2025003",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:57Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://kluwerlawonline.com/journalarticle/European+Foreign+Affairs+Review/30.1/EERR2025003; package snapshot matched the claimed work/title."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://kluwerlawonline.com/journalarticle/European+Foreign+Affairs+Review/30.1/EERR2025003",
+            "title": "EU Unilateral and Bilateral Approaches in Anti-deforestation Efforts: Analysis of Trade Agreements with Chile and the Andean Community",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:57Z",
+          "reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://kluwerlawonline.com/journalarticle/European+Foreign+Affairs+Review/30.1/EERR2025003; package snapshot matched the claimed work/title."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://kluwerlawonline.com/journalarticle/European+Foreign+Affairs+Review/30.1/EERR2025003",
+                "title": "EU Unilateral and Bilateral Approaches in Anti-deforestation Efforts: Analysis of Trade Agreements with Chile and the Andean Community",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+          }
+        }
+      ]
     },
     "historical:id:3d5e2b697466e9c4": {
       "title": "EU Launches Ambitious Space Package to Boost Innovation, Safety, and Competitiveness",
@@ -17665,10 +17906,12 @@
       "url": "https://defence-industry-space.ec.europa.eu/eu-launches-ambitious-space-package-boost-innovation-safety-and-competitiveness-2025-06-26_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:57Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:ce0b05ebc64d0aeb": {
       "title": "EU Global Health Policy Forum",
@@ -17677,10 +17920,62 @@
       "url": "https://international-partnerships.ec.europa.eu/eu-global-health-policy-forum_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:57Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://international-partnerships.ec.europa.eu/eu-global-health-policy-forum_en; package snapshot matched the claimed work/title."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://international-partnerships.ec.europa.eu/eu-global-health-policy-forum_en",
+            "title": "EU Global Health Policy Forum",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:57Z",
+          "reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://international-partnerships.ec.europa.eu/eu-global-health-policy-forum_en; package snapshot matched the claimed work/title."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://international-partnerships.ec.europa.eu/eu-global-health-policy-forum_en",
+                "title": "EU Global Health Policy Forum",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+          }
+        }
+      ]
     },
     "historical:id:4ec8870977e17c86": {
       "title": "Commission launches Call for Evidence to support first-ever EU-wide Fusion Strategy",
@@ -17689,10 +17984,72 @@
       "url": "https://energy.ec.europa.eu/news/commission-launches-call-evidence-support-first-ever-eu-wide-fusion-strategy-2025-06-06_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:57Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://energy.ec.europa.eu/news/commission-launches-call-evidence-support-first-ever-eu-wide-fusion-strategy-2025-06-06_en; package snapshot matched the claimed work/title."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered/confirmed at https://energy.ec.europa.eu/news/commission-launches-call-evidence-support-first-ever-eu-wide-fusion-strategy-2025-06-06_en; official Commission announcement confirmed strategy scope, date and industrial-supply-chain objectives."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://energy.ec.europa.eu/news/commission-launches-call-evidence-support-first-ever-eu-wide-fusion-strategy-2025-06-06_en",
+            "title": "Commission launches Call for Evidence to support first-ever EU-wide Fusion Strategy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity/provenance matched the supplied source; where the package source was thin, an official publisher or institutional repository route was used when recovered."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:57Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://energy.ec.europa.eu/news/commission-launches-call-evidence-support-first-ever-eu-wide-fusion-strategy-2025-06-06_en; package snapshot matched the claimed work/title."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Recovered/confirmed at https://energy.ec.europa.eu/news/commission-launches-call-evidence-support-first-ever-eu-wide-fusion-strategy-2025-06-06_en; official Commission announcement confirmed strategy scope, date and industrial-supply-chain objectives."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://energy.ec.europa.eu/news/commission-launches-call-evidence-support-first-ever-eu-wide-fusion-strategy-2025-06-06_en",
+                "title": "Commission launches Call for Evidence to support first-ever EU-wide Fusion Strategy",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity/provenance matched the supplied source; where the package source was thin, an official publisher or institutional repository route was used when recovered."
+          }
+        }
+      ]
     },
     "historical:id:24a029e8fd6cf225": {
       "title": "Clean energy competitiveness",
@@ -17701,10 +18058,12 @@
       "url": "https://energy.ec.europa.eu/topics/research-and-technology/clean-energy-competitiveness_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:57Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:4404e7958d22a7c8": {
       "title": "Austria's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
@@ -17713,10 +18072,62 @@
       "url": "https://digital-strategy.ec.europa.eu/en/factpages/austrias-2026-digital-decade-country-report",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:57Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://digital-strategy.ec.europa.eu/en/factpages/austrias-2026-digital-decade-country-report; package snapshot matched the claimed work/title."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://digital-strategy.ec.europa.eu/en/factpages/austrias-2026-digital-decade-country-report",
+            "title": "Austria's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:57Z",
+          "reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://digital-strategy.ec.europa.eu/en/factpages/austrias-2026-digital-decade-country-report; package snapshot matched the claimed work/title."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://digital-strategy.ec.europa.eu/en/factpages/austrias-2026-digital-decade-country-report",
+                "title": "Austria's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+          }
+        }
+      ]
     },
     "historical:id:ba8f7f2b6b256e5a": {
       "title": "Apply AI strategy - an overview | Shaping Europe’s digital future",
@@ -17725,10 +18136,72 @@
       "url": "https://digital-strategy.ec.europa.eu/en/factpages/apply-ai-strategy-overview",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:58Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://digital-strategy.ec.europa.eu/en/factpages/apply-ai-strategy-overview; package snapshot matched the claimed work/title."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered/confirmed at https://digital-strategy.ec.europa.eu/en/factpages/apply-ai-strategy-overview; official Commission fact page confirmed strategic-sector AI adoption and technological-sovereignty objective."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://digital-strategy.ec.europa.eu/en/factpages/apply-ai-strategy-overview",
+            "title": "Apply AI strategy - an overview | Shaping Europe’s digital future",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity/provenance matched the supplied source; where the package source was thin, an official publisher or institutional repository route was used when recovered."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:58Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://digital-strategy.ec.europa.eu/en/factpages/apply-ai-strategy-overview; package snapshot matched the claimed work/title."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Recovered/confirmed at https://digital-strategy.ec.europa.eu/en/factpages/apply-ai-strategy-overview; official Commission fact page confirmed strategic-sector AI adoption and technological-sovereignty objective."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://digital-strategy.ec.europa.eu/en/factpages/apply-ai-strategy-overview",
+                "title": "Apply AI strategy - an overview | Shaping Europe’s digital future",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity/provenance matched the supplied source; where the package source was thin, an official publisher or institutional repository route was used when recovered."
+          }
+        }
+      ]
     },
     "historical:id:9997e4f9c39a0d66": {
       "title": "(Conference paper) A modernised European single market for a new reality of economic security",
@@ -17737,10 +18210,72 @@
       "url": "https://single-market-economy.ec.europa.eu/publications/conference-paper-modernised-european-single-market-new-reality-economic-security_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:58Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://single-market-economy.ec.europa.eu/publications/conference-paper-modernised-european-single-market-new-reality-economic-security_en; package snapshot matched the claimed work/title."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered/confirmed at https://single-market-economy.ec.europa.eu/publications/conference-paper-modernised-european-single-market-new-reality-economic-security_en; official Commission publication page confirmed paper and economic-security focus."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://single-market-economy.ec.europa.eu/publications/conference-paper-modernised-european-single-market-new-reality-economic-security_en",
+            "title": "(Conference paper) A modernised European single market for a new reality of economic security",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity/provenance matched the supplied source; where the package source was thin, an official publisher or institutional repository route was used when recovered."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:58Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://single-market-economy.ec.europa.eu/publications/conference-paper-modernised-european-single-market-new-reality-economic-security_en; package snapshot matched the claimed work/title."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Recovered/confirmed at https://single-market-economy.ec.europa.eu/publications/conference-paper-modernised-european-single-market-new-reality-economic-security_en; official Commission publication page confirmed paper and economic-security focus."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://single-market-economy.ec.europa.eu/publications/conference-paper-modernised-european-single-market-new-reality-economic-security_en",
+                "title": "(Conference paper) A modernised European single market for a new reality of economic security",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity/provenance matched the supplied source; where the package source was thin, an official publisher or institutional repository route was used when recovered."
+          }
+        }
+      ]
     },
     "historical:id:ad4b954dfa046419": {
       "title": "The economic rise of China – an analysis of China’s growth drivers",
@@ -17749,10 +18284,62 @@
       "url": "https://doi.org/10.1007/s10368-024-00640-w",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:58Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://link.springer.com/article/10.1007/s10368-024-00640-w; package snapshot matched the claimed work/title."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://link.springer.com/article/10.1007/s10368-024-00640-w",
+            "title": "The economic rise of China – an analysis of China’s growth drivers",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:58Z",
+          "reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://link.springer.com/article/10.1007/s10368-024-00640-w; package snapshot matched the claimed work/title."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://link.springer.com/article/10.1007/s10368-024-00640-w",
+                "title": "The economic rise of China – an analysis of China’s growth drivers",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+          }
+        }
+      ]
     },
     "historical:id:968581335da5df7f": {
       "title": "Second-Generation Flanking Policies: Addressing Extraterritorial and Non-Economic Costs of Trade Liberalization",
@@ -17761,10 +18348,62 @@
       "url": "https://doi.org/10.1017/s1474745624000338",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:58Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://www.cambridge.org/core/journals/world-trade-review/article/secondgeneration-flanking-policies-addressing-extraterritorial-and-noneconomic-costs-of-trade-liberalization/88DE862F0F3DB25494996CD3FB99355A; package snapshot matched the claimed work/title."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://www.cambridge.org/core/journals/world-trade-review/article/secondgeneration-flanking-policies-addressing-extraterritorial-and-noneconomic-costs-of-trade-liberalization/88DE862F0F3DB25494996CD3FB99355A",
+            "title": "Second-Generation Flanking Policies: Addressing Extraterritorial and Non-Economic Costs of Trade Liberalization",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:58Z",
+          "reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://www.cambridge.org/core/journals/world-trade-review/article/secondgeneration-flanking-policies-addressing-extraterritorial-and-noneconomic-costs-of-trade-liberalization/88DE862F0F3DB25494996CD3FB99355A; package snapshot matched the claimed work/title."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://www.cambridge.org/core/journals/world-trade-review/article/secondgeneration-flanking-policies-addressing-extraterritorial-and-noneconomic-costs-of-trade-liberalization/88DE862F0F3DB25494996CD3FB99355A",
+                "title": "Second-Generation Flanking Policies: Addressing Extraterritorial and Non-Economic Costs of Trade Liberalization",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+          }
+        }
+      ]
     },
     "historical:id:a33a7348262884f0": {
       "title": "Legal Convergence Through Soft Law? The EU–US Trade and Technology Council (TTC)",
@@ -18000,7 +18639,11 @@
       "date": "2024-07-02",
       "url": "https://doi.org/10.1016/j.enpol.2024.114233",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:4fae2465c66e1e62": {
       "title": "The Ideational Power of Strategic Autonomy in EU Security and External Economic Policies",
@@ -18008,7 +18651,11 @@
       "date": "2024-07-01",
       "url": "https://doi.org/10.1111/jcms.13597",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:dc297ea0893bebfc": {
       "title": "Europe must end its quantum technology research with China",
@@ -18016,7 +18663,11 @@
       "date": "2024-06-25",
       "url": "https://merics.org/en/comment/europe-must-end-its-quantum-technology-research-china",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:d6927e5d67613596": {
       "title": "Balancing security and economics: domestic state-firm relations and investment screening mechanisms in Europe",
@@ -18024,7 +18675,11 @@
       "date": "2024-06-24",
       "url": "https://doi.org/10.1080/09692290.2024.2368601",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:857d2be06bb032e1": {
       "title": "The Geoeconomic Turn in EU Trade and Investment Policy: Implications for Developing Countries",
@@ -18032,7 +18687,11 @@
       "date": "2024-06-19",
       "url": "https://doi.org/10.17645/pag.8217",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:37738e41c1f77622": {
       "title": "Chinese FDI in Europe: 2023 Update",
@@ -18040,7 +18699,11 @@
       "date": "2024-06-06",
       "url": "https://rhg.com/wp-content/uploads/2024/06/Chinese-FDI-in-Europe-2023-Update_MERICS-Rhodium-Group.pdf",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:a74b5fbc4a6673dd": {
       "title": "Government Subsidies and Trade",
@@ -18048,7 +18711,11 @@
       "date": "2024-06-04",
       "url": "https://thedocs.worldbank.org/en/doc/0534eca53121c137d3766a02320d0310-0430012022/related/Unfair-Advantage-Distortive-Subsidies-and-Their-Effects-on-Global-Trade-2023.pdf",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:303d26a5661ad7bd": {
       "title": "Inside the European Union's Trade Machinery: Institutional Changes in an Age of Geoeconomics",
@@ -18056,7 +18723,11 @@
       "date": "2024-05-27",
       "url": "https://doi.org/10.1111/jcms.13625",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:99b8aa5e9b669ceb": {
       "title": "The geopolitics of supply chains: EU efforts to ensure security of supply",
@@ -18064,7 +18735,11 @@
       "date": "2024-05-07",
       "url": "https://doi.org/10.1111/1758-5899.13388",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:3c5ae477f4c2d5cf": {
       "title": "Sink or Swim: The EU as a Strategic Maritime Security Actor",
@@ -18072,7 +18747,11 @@
       "date": "2024-05-01",
       "url": "https://doi.org/10.54648/eerr2024009",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:783dc3f245a8d2ad": {
       "title": "The EU Economic Security Strategy: a Novel Approach or the Reemergence of an Old Idea? - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -18080,7 +18759,11 @@
       "date": "2024-04-19",
       "url": "https://www.celis.institute/celis-blog/the-eu-economic-security-strategy-a-novel-approach-or-the-reemergence-of-an-old-idea/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:1152d2ea5bbe51b3": {
       "title": "Geoeconomic Power Europe: When Global Power Competition Drives EU Integration",
@@ -18088,7 +18771,11 @@
       "date": "2024-04-18",
       "url": "https://doi.org/10.1111/jcms.13596",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:34c7fa878d53dc71": {
       "title": "KlimaSeniorinnen: how did the ECtHR define States' climate policy obligations? - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -18096,7 +18783,11 @@
       "date": "2024-04-16",
       "url": "https://www.celis.institute/celis-blog/klimaseniorinnen-how-did-the-ecthr-define-states-climate-policy-obligations/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:9ff79cb6307776bd": {
       "title": "The Geoeconomic Turn of the Single European Market? Conceptual Challenges and Empirical Trends",
@@ -18104,7 +18795,11 @@
       "date": "2024-04-14",
       "url": "https://doi.org/10.1111/jcms.13591",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:038b13a85ced7b67": {
       "title": "Germany needs a show of self confidence in its China policy",
@@ -18112,7 +18807,11 @@
       "date": "2024-04-12",
       "url": "https://merics.org/en/comment/germany-needs-show-self-confidence-its-china-policy",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:f7df9fa3cd3572e5": {
       "title": "Transatlantic leadership in an era of human rights-based export controls",
@@ -18120,7 +18819,11 @@
       "date": "2024-03-14",
       "url": "https://doi.org/10.1093/jiel/jgae005",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:c14b75e8413047c5": {
       "title": "When Foreign Policy Becomes Trade Policy: The EU's Anti‐Coercion Instrument",
@@ -18128,7 +18831,11 @@
       "date": "2024-02-27",
       "url": "https://doi.org/10.1111/jcms.13593",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:3116640c2f52b338": {
       "title": "From Liberalisation to Industrial Policy: Towards a Geoeconomic Turn in the European Defence Market?",
@@ -23122,10 +23829,62 @@
       "url": "https://institutdelors.eu/en/evenements/presentation-of-the-paper-the-european-pilar-of-nato/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:56Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://institutdelors.eu/en/evenements/presentation-of-the-paper-the-european-pilar-of-nato/; package snapshot matched the claimed work/title."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://institutdelors.eu/en/evenements/presentation-of-the-paper-the-european-pilar-of-nato/",
+            "title": "Presentation of the paper : The European pilar of NATO - Institut Jacques Delors",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:56Z",
+          "reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://institutdelors.eu/en/evenements/presentation-of-the-paper-the-european-pilar-of-nato/; package snapshot matched the claimed work/title."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://institutdelors.eu/en/evenements/presentation-of-the-paper-the-european-pilar-of-nato/",
+                "title": "Presentation of the paper : The European pilar of NATO - Institut Jacques Delors",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+          }
+        }
+      ]
     },
     "historical:id:eb40900c031cf2f7": {
       "title": "Pending legislation 2014 - Business input to the screening exercise by vice-president Timmermans",
@@ -23134,10 +23893,62 @@
       "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2014-01070-E-d7f-1.pdf",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:56Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://www.businesseurope.eu/wp-content/uploads/2025/02/2014-01070-E-d7f-1.pdf; package snapshot matched the claimed work/title."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2014-01070-E-d7f-1.pdf",
+            "title": "Pending legislation 2014 - Business input to the screening exercise by vice-president Timmermans",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:56Z",
+          "reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_repository_copy",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://www.businesseurope.eu/wp-content/uploads/2025/02/2014-01070-E-d7f-1.pdf; package snapshot matched the claimed work/title."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2014-01070-E-d7f-1.pdf",
+                "title": "Pending legislation 2014 - Business input to the screening exercise by vice-president Timmermans",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+          }
+        }
+      ]
     },
     "historical:id:7dd38123de2a1bdf": {
       "title": "Finland's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
@@ -23146,10 +23957,62 @@
       "url": "https://digital-strategy.ec.europa.eu/en/factpages/finlands-2026-digital-decade-country-report",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:57Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://digital-strategy.ec.europa.eu/en/factpages/finlands-2026-digital-decade-country-report; package snapshot matched the claimed work/title."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://digital-strategy.ec.europa.eu/en/factpages/finlands-2026-digital-decade-country-report",
+            "title": "Finland's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:57Z",
+          "reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://digital-strategy.ec.europa.eu/en/factpages/finlands-2026-digital-decade-country-report; package snapshot matched the claimed work/title."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://digital-strategy.ec.europa.eu/en/factpages/finlands-2026-digital-decade-country-report",
+                "title": "Finland's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+          }
+        }
+      ]
     },
     "historical:id:eaf956a878c684e0": {
       "title": "European Competitiveness Fund",
@@ -23158,10 +24021,12 @@
       "url": "https://single-market-economy.ec.europa.eu/access-finance/european-competitiveness-fund_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:57Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:a19368614fa60a9c": {
       "title": "Energy prices and costs in Europe",
@@ -23170,10 +24035,12 @@
       "url": "https://energy.ec.europa.eu/data-and-analysis/energy-prices-and-costs-europe_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:57Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:3d6dca3dd8918ca5": {
       "title": "Looking for Resource Sovereignty in a Fragmenting Global Order: The EU’s Response to Critical Raw Materials Challenges",
@@ -23313,7 +24180,11 @@
       "date": "2024-06-23",
       "url": "https://doi.org/10.1111/jcms.13595",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:b065cc32a53578cb": {
       "title": "Populists in the Shadow of Unanimity: Contestation of EU Foreign and Security Policy",
@@ -23321,7 +24192,11 @@
       "date": "2024-06-18",
       "url": "https://doi.org/10.17645/pag.8099",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:18bcf7cd838e421a": {
       "title": "Climate Action and Competitiveness: The Rise of Border Carbon Adjustments",
@@ -23329,7 +24204,11 @@
       "date": "2024-06-11",
       "url": "https://rhg.com/wp-content/uploads/2024/06/Climate-Action-and-Competitiveness-The-Rise-of-Border-Carbon-Adjustments-1.pdf",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:6eee06b67d4b9540": {
       "title": "economic sanctions - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -23337,7 +24216,11 @@
       "date": "2024-04-10",
       "url": "https://www.celis.institute/tag/economic-sanctions/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:47df43b518228456": {
       "title": "EU sanctions - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -23345,7 +24228,11 @@
       "date": "2024-04-10",
       "url": "https://www.celis.institute/tag/eu-sanctions/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:91f52a7b5ae1171b": {
       "title": "Business Power and the Geoeconomic Turn in the Single European Market",
@@ -23353,7 +24240,11 @@
       "date": "2024-03-03",
       "url": "https://doi.org/10.1111/jcms.13604",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:bb8575127b29d36c": {
       "title": "Calling on the EU-US Trade and Technology Council: How to Deliver for the Planet and the Economy",
@@ -23361,7 +24252,11 @@
       "date": "2024-02-29",
       "url": "https://ecipe.org/publications/eu-us-ttc-how-to-deliver-for-planet-economy/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:b66e6e7dc8fb0a6b": {
       "title": "How Huawei Weathered the Storm: Resilience, Market Conditions or Failed Sanctions?",
@@ -24792,10 +25687,72 @@
       "url": "https://single-market-economy.ec.europa.eu/publications/conference-paper-state-aid-control-coordinating-instrument-eu-industrial-policy-internal-market_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:58Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://single-market-economy.ec.europa.eu/publications/conference-paper-state-aid-control-coordinating-instrument-eu-industrial-policy-internal-market_en; package snapshot matched the claimed work/title."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered/confirmed at https://single-market-economy.ec.europa.eu/publications/conference-paper-state-aid-control-coordinating-instrument-eu-industrial-policy-internal-market_en; official Commission publication page confirmed conference paper, authors, DOI and PDF."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://single-market-economy.ec.europa.eu/publications/conference-paper-state-aid-control-coordinating-instrument-eu-industrial-policy-internal-market_en",
+            "title": "(Conference paper) State Aid Control as a Coordinating Instrument for EU Industrial Policy in the Internal Market",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity/provenance matched the supplied source; where the package source was thin, an official publisher or institutional repository route was used when recovered."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:58Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://single-market-economy.ec.europa.eu/publications/conference-paper-state-aid-control-coordinating-instrument-eu-industrial-policy-internal-market_en; package snapshot matched the claimed work/title."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Recovered/confirmed at https://single-market-economy.ec.europa.eu/publications/conference-paper-state-aid-control-coordinating-instrument-eu-industrial-policy-internal-market_en; official Commission publication page confirmed conference paper, authors, DOI and PDF."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://single-market-economy.ec.europa.eu/publications/conference-paper-state-aid-control-coordinating-instrument-eu-industrial-policy-internal-market_en",
+                "title": "(Conference paper) State Aid Control as a Coordinating Instrument for EU Industrial Policy in the Internal Market",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity/provenance matched the supplied source; where the package source was thin, an official publisher or institutional repository route was used when recovered."
+          }
+        }
+      ]
     },
     "historical:id:7df60321eab9f4a0": {
       "title": "Dual-Use - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -25601,10 +26558,12 @@
       "url": "https://institutdelors.eu/en/publications/over-dependencies-in-services-a-blind-spot-in-the-eu-economic-security-strategy/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:56Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:897868ca5d89b56c": {
       "title": "Institut Jacques Delors - Rising Blocs in Trade and Industrial Policy: is the Economic Security the future?",
@@ -26301,10 +27260,12 @@
       "url": "https://economy-finance.ec.europa.eu/spillovers-eu-us-tariffs-imposed-third-countries-model-based-simulations_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:56Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:b45faf5213380b92": {
       "title": "European Union and Germany Secure €9 Million to Boost Competitiveness of Companies in BiH",
@@ -26313,10 +27274,62 @@
       "url": "https://www.eeas.europa.eu/delegations/bosnia-and-herzegovina/european-union-and-germany-secure-%E2%82%AC9-million-boost-competitiveness-companies-bih_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:57Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://www.eeas.europa.eu/delegations/bosnia-and-herzegovina/european-union-and-germany-secure-%E2%82%AC9-million-boost-competitiveness-companies-bih_en; package snapshot matched the claimed work/title."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://www.eeas.europa.eu/delegations/bosnia-and-herzegovina/european-union-and-germany-secure-%E2%82%AC9-million-boost-competitiveness-companies-bih_en",
+            "title": "European Union and Germany Secure €9 Million to Boost Competitiveness of Companies in BiH",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:57Z",
+          "reason": "Deep Scan return rejected: missing/invalid admission reason_code",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://www.eeas.europa.eu/delegations/bosnia-and-herzegovina/european-union-and-germany-secure-%E2%82%AC9-million-boost-competitiveness-companies-bih_en; package snapshot matched the claimed work/title."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://www.eeas.europa.eu/delegations/bosnia-and-herzegovina/european-union-and-germany-secure-%E2%82%AC9-million-boost-competitiveness-companies-bih_en",
+                "title": "European Union and Germany Secure €9 Million to Boost Competitiveness of Companies in BiH",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+          }
+        }
+      ]
     },
     "historical:id:43e7340ea4a606aa": {
       "title": "Critical infrastructure and cybersecurity",
@@ -26325,10 +27338,12 @@
       "url": "https://energy.ec.europa.eu/topics/energy-security/critical-infrastructure-and-cybersecurity_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:57Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:19af4ea97510c6f5": {
       "title": "5G Observatory report 2025",
@@ -26337,10 +27352,12 @@
       "url": "https://ec.europa.eu/newsroom/dae/redirection/document/116970",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:58Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:853be62d49ad17a7": {
       "title": "Starting with the end in mind: Fully de-risked gallium, germanium, and rare earth value chains by 2030",
@@ -26349,10 +27366,12 @@
       "url": "https://www.iss.europa.eu/sites/default/files/2025-03/EUISS%20workshop%20outcomes%3B%20De-risked%20Ga%20Ge%20and%20REE%20value%20chains%20-%20FINAL.pdf",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:58Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:81a58ca01ffe2409": {
       "title": "EU - In Depth Analysis: European Economic Security: Current practices and further development - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -26360,7 +27379,11 @@
       "date": "2024-06-06",
       "url": "https://www.celis.institute/celis-content/eu-in-depth-analysis-european-economic-security-current-practices-and-further-development/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:defa6ea9c2305a52": {
       "title": "The EU’s sanctions odyssey: Understanding the proposed restrictions on Russian LNG and helium – European Council on Foreign Relations",
@@ -26368,7 +27391,11 @@
       "date": "2024-05-09",
       "url": "https://ecfr.eu/article/the-eus-sanctions-odyssey-understanding-the-proposed-restrictions-on-russian-lng-and-helium/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:dc5698f4b73b354a": {
       "title": "The EU Anti-Coercion Instrument: Anti-What, Exactly? - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -27499,10 +28526,72 @@
       "url": "https://single-market-economy.ec.europa.eu/publications/eu-economic-security-confronting-dual-challenge-china-and-us_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:57Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://single-market-economy.ec.europa.eu/publications/eu-economic-security-confronting-dual-challenge-china-and-us_en; package snapshot matched the claimed work/title."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered/confirmed at https://single-market-economy.ec.europa.eu/publications/eu-economic-security-confronting-dual-challenge-china-and-us_en; official Commission publication page confirmed report identity and downloadable PDF."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://single-market-economy.ec.europa.eu/publications/eu-economic-security-confronting-dual-challenge-china-and-us_en",
+            "title": "EU economic security: Confronting the dual challenge of China and the US",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity/provenance matched the supplied source; where the package source was thin, an official publisher or institutional repository route was used when recovered."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:57Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://single-market-economy.ec.europa.eu/publications/eu-economic-security-confronting-dual-challenge-china-and-us_en; package snapshot matched the claimed work/title."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Recovered/confirmed at https://single-market-economy.ec.europa.eu/publications/eu-economic-security-confronting-dual-challenge-china-and-us_en; official Commission publication page confirmed report identity and downloadable PDF."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://single-market-economy.ec.europa.eu/publications/eu-economic-security-confronting-dual-challenge-china-and-us_en",
+                "title": "EU economic security: Confronting the dual challenge of China and the US",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity/provenance matched the supplied source; where the package source was thin, an official publisher or institutional repository route was used when recovered."
+          }
+        }
+      ]
     },
     "historical:id:31654575c0798757": {
       "title": "Global Greenhouse Gas Emissions: 1990-2022 and Preliminary 2023 Estimates",
@@ -27546,7 +28635,11 @@
       "date": "2024-07-02",
       "url": "https://doi.org/10.1080/09662839.2024.2376612",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:545828b798d1afdc": {
       "title": "supply chain - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -27554,7 +28647,11 @@
       "date": "2024-06-27",
       "url": "https://www.celis.institute/tag/supply-chain/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:e131adface871dcc": {
       "title": "The European Union’s Critical Raw Materials Act: How Effective In Addressing Supply Chains Risks? - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -27562,7 +28659,11 @@
       "date": "2024-06-27",
       "url": "https://www.celis.institute/celis-blog/the-european-unions-critical-raw-materials-act-how-effective-in-addressing-supply-chains-risks/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:2c25430929fd5f5c": {
       "title": "BRICS: World Heavyweight in Agricultural Trade",
@@ -27570,7 +28671,11 @@
       "date": "2024-06-01",
       "url": "https://doi.org/10.2478/ie-2024-0033",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:2927bf0cc5d101ab": {
       "title": "Analysis of developments in EU capital flows in the global context (2023) – CEPS",
@@ -27578,7 +28683,11 @@
       "date": "2024-04-22",
       "url": "https://cdn.ceps.eu/wp-content/uploads/2024/04/CEPS-K_flows-2023_Final.pdf",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:6b762358ffa446d6": {
       "title": "Huawei is quietly dominating China’s semiconductor supply chain",
@@ -27586,7 +28695,11 @@
       "date": "2024-04-09",
       "url": "https://merics.org/sites/default/files/2024-04/Hmaidi-Huawei%20Supply%20Chain-04.05.24.pdf",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:0c04c5e576165e85": {
       "title": "The European Union's Global Gateway: An institutional and economic overview",
@@ -27594,7 +28707,11 @@
       "date": "2024-04-01",
       "url": "https://doi.org/10.1111/twec.13551",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:9c6246c518128c75": {
       "title": "The Road Ahead: Rethinking the Transatlantic Partnership - Egmont Institute",
@@ -29593,10 +30710,12 @@
       "url": "https://energy.ec.europa.eu/data-and-analysis/market-analysis_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:56Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:02f5abbe88f501b9": {
       "title": "EU energy statistical pocketbook and country datasheets",
@@ -29605,10 +30724,62 @@
       "url": "https://energy.ec.europa.eu/data-and-analysis/eu-energy-statistical-pocketbook-and-country-datasheets_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-09-29T16:50:57Z",
+      "last_recovery_package_id": "worker-a-263494cb1fb0",
+      "recovery_reason": "Deep Scan return rejected: missing/invalid admission reason_code; substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied source at https://energy.ec.europa.eu/data-and-analysis/eu-energy-statistical-pocketbook-and-country-datasheets_en; package snapshot matched the claimed work/title."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://energy.ec.europa.eu/data-and-analysis/eu-energy-statistical-pocketbook-and-country-datasheets_en",
+            "title": "EU energy statistical pocketbook and country datasheets",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-263494cb1fb0",
+          "at": "2026-09-29T16:50:57Z",
+          "reason": "Deep Scan return rejected: missing/invalid admission reason_code; substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Opened supplied source at https://energy.ec.europa.eu/data-and-analysis/eu-energy-statistical-pocketbook-and-country-datasheets_en; package snapshot matched the claimed work/title."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_source",
+                "url": "https://energy.ec.europa.eu/data-and-analysis/eu-energy-statistical-pocketbook-and-country-datasheets_en",
+                "title": "EU energy statistical pocketbook and country datasheets",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity matched the supplied/recovered source. Decision is based on the work/page itself rather than scanner interpretation."
+          }
+        }
+      ]
     },
     "historical:id:3b8806de4609909d": {
       "title": "Cold rush: How a transatlantic ship pact can win the race for the Arctic – European Council on Foreign Relations",
@@ -29628,7 +30799,11 @@
       "date": "2024-05-06",
       "url": "https://www.celis.institute/celis-content/belgium-guidance-on-the-application-of-the-belgian-fdi-screening-regime-4-april-2024-dutch/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:d870c8b293eff27f": {
       "title": "Carolina Dackö, Charlotta Brodin and Alice Arlebo, The FDI Screening Mechanisms and the Draft EU Foreign Subsidy Regulation – Potential Conflicts of Interests and in Application - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -31571,10 +32746,12 @@
       "url": "https://institutdelors.eu/en/publications/a-european-approach-to-financing-the-eus-new-industrial-policy/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:57Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:d94cc8f41f3286a3": {
       "title": "Arms export control: Council reviews EU framework strengthening the control and accountability of international arms trade",
@@ -31583,10 +32760,12 @@
       "url": "https://www.eeas.europa.eu/delegations/chile/arms-export-control-council-reviews-eu-framework-strengthening-control-and-accountability_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-09-29T15:56:38Z",
-      "last_package_id": "worker-a-263494cb1fb0"
+      "last_package_id": "worker-a-263494cb1fb0",
+      "verified_at": "2026-09-29T16:50:58Z",
+      "verified_package_id": "worker-a-263494cb1fb0"
     },
     "historical:id:87947ef0a7883245": {
       "title": "A critical first response to Mario Draghi’s competitiveness report – CEPS",
@@ -31618,7 +32797,11 @@
       "date": "2024-03-04",
       "url": "https://merics.org/en/comment/de-risking-not-new-china-so-why-surprise-eus-new-policy",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:109b067d15280d3c": {
       "title": "The Quest for Policy Coherence between Competition Law and Foreign Investment Screening in the EU: Consistency or Disruption? - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -31626,7 +32809,11 @@
       "date": "2024-02-28",
       "url": "https://www.celis.institute/celis-blog/the-quest-for-policy-coherence-between-competition-law-and-foreign-investment-screening-in-the-eu-consistency-or-disruption/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-09-29T16:51:27Z",
+      "last_package_id": "worker-a-d28b6a43fdb6"
     },
     "historical:id:58a5cdd792a54be8": {
       "title": "Chinese responses to Germany’s China strategy: Attack abroad, assuage at home",
@@ -34841,7 +36028,7 @@
     },
     "worker-b-60389f6094bf": {
       "lane": "B",
-      "created_at": "2026-09-29T16:41:45Z",
+      "created_at": "2026-09-29T16:52:15Z",
       "record_keys": [
         "historical:id:a33a7348262884f0",
         "historical:id:31654575c0798757",
@@ -34879,6 +36066,48 @@
         "historical:id:ba2f66df3c6afeca",
         "historical:id:c84f21e07c1a34d4",
         "historical:id:6ec62f0c4c0364d3"
+      ]
+    },
+    "worker-a-d28b6a43fdb6": {
+      "lane": "A",
+      "created_at": "2026-09-29T16:52:01Z",
+      "record_keys": [
+        "historical:id:1c3787825c7eaba9",
+        "historical:id:619afd9b2e54522a",
+        "historical:id:4fae2465c66e1e62",
+        "historical:id:545828b798d1afdc",
+        "historical:id:e131adface871dcc",
+        "historical:id:dc297ea0893bebfc",
+        "historical:id:d6927e5d67613596",
+        "historical:id:82f5d7056730dd54",
+        "historical:id:857d2be06bb032e1",
+        "historical:id:b065cc32a53578cb",
+        "historical:id:18bcf7cd838e421a",
+        "historical:id:81a58ca01ffe2409",
+        "historical:id:37738e41c1f77622",
+        "historical:id:a74b5fbc4a6673dd",
+        "historical:id:2c25430929fd5f5c",
+        "historical:id:303d26a5661ad7bd",
+        "historical:id:defa6ea9c2305a52",
+        "historical:id:99b8aa5e9b669ceb",
+        "historical:id:b8a22ce35456c805",
+        "historical:id:3c5ae477f4c2d5cf",
+        "historical:id:2927bf0cc5d101ab",
+        "historical:id:783dc3f245a8d2ad",
+        "historical:id:1152d2ea5bbe51b3",
+        "historical:id:34c7fa878d53dc71",
+        "historical:id:9ff79cb6307776bd",
+        "historical:id:038b13a85ced7b67",
+        "historical:id:6eee06b67d4b9540",
+        "historical:id:47df43b518228456",
+        "historical:id:6b762358ffa446d6",
+        "historical:id:0c04c5e576165e85",
+        "historical:id:f7df9fa3cd3572e5",
+        "historical:id:8814bb9906ef8a3b",
+        "historical:id:91f52a7b5ae1171b",
+        "historical:id:bb8575127b29d36c",
+        "historical:id:109b067d15280d3c",
+        "historical:id:c14b75e8413047c5"
       ]
     }
   }
