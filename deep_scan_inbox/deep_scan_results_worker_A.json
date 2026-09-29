@@ -1,0 +1,2736 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-a-d5b4cd36d0a9",
+  "results": [
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMi_gFBVV95cUxNbko3RENKVG5HMTNYczRtOVpwTHJQNmJFN20xT0ZKSzBuTEM2VzMxZkZGMmZFUWZxYUx2OFByS0U5aTVteDNIeG5rRXhENldSZmFsRWlPRl9aUVkyVFRycFZkUTBlQWtBNmJxTG4wTmpvazNBRWtiZ2JrZHd2UXZLZzZ2Qk56U25KRnVnNXhyeTFINElNZ2s3QXhmWU1NNHhwTkNvRHhoZjhkenA0dWt2ejcydkNWOTM1elY4Q0lwZ0VxeUJ1SUZYcjNnVExyZlVtNk16ZFQ3SFNHbjFSakJSOE40dGU4RF9peWJHQi16dGJmN2ZlREpYRzJpLThYdw?oc=5",
+      "source_hash": "663a6619",
+      "identity_hash": "cd7b79d3745db680",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Supplied reader-facing URL https://news.google.com/rss/articles/CBMi_gFBVV95cUxNbko3RENKVG5HMTNYczRtOVpwTHJQNmJFN20xT0ZKSzBuTEM2VzMxZkZGMmZFUWZxYUx2OFByS0U5aTVteDNIeG5rRXhENldSZmFsRWlPRl9aUVkyVFRycFZkUTBlQWtBNmJxTG4wTmpvazNBRWtiZ2JrZHd2UXZLZzZ2Qk56U25KRnVnNXhyeTFINElNZ2s3QXhmWU1NNHhwTkNvRHhoZjhkenA0dWt2ejcydkNWOTM1elY4Q0lwZ0VxeUJ1SUZYcjNnVExyZlVtNk16ZFQ3SFNHbjFSakJSOE40dGU4RF9peWJHQi16dGJmN2ZlREpYRzJpLThYdw?oc=5 did not yield substantive package text (reader-facing URL: no substantive text)."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching authoritative/publisher source: https://www.reuters.com/world/eu-imposes-sanctions-over-deportation-ukrainian-children-russia-2026-09-28/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "recovered_authoritative_page",
+            "url": "https://www.reuters.com/world/eu-imposes-sanctions-over-deportation-ukrainian-children-russia-2026-09-28/",
+            "title": "EU sanctions 10 individuals and 17 entities over unlawful deportation of Ukrainian children to Russia",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "The verified work has a substantive European coercion/sanctions mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU sanctions 10 individuals and 17 entities over unlawful deportation of Ukrainian children to Russia",
+      "reader_what": "The verified development expands an EU sanctions measure against named persons or entities.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The verified development expands an EU sanctions measure against named persons or entities. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "The verified development expands an EU sanctions measure against named persons or entities.",
+        "method_or_basis": "Recovered publisher/official page and bibliographic metadata; substantive conclusions are limited to the accessible evidence.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European coercion/sanctions under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Council of the EU",
+            "class": "other"
+          },
+          "mechanism": "restricts",
+          "direction": "expands",
+          "status": "adopted",
+          "status_date": "2026-09-28",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The verified development expands an EU sanctions measure against named persons or entities.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMi6wFBVV95cUxNeEVJUmhhejd3Y0xuTFFPWnlGOXdrSmR4MDFmYm1jZDFTR2RNUlFhVmxwOC1rNzlzdy1BYW9kNi1LaEFUTEFzR0Eyck5nVGZoN2lSUFE5anBIVVhGbzg1LVNtV09GaUVHYmFnR2U4cFlBV3hWZEpZR3lKS3llQUFPUlBCQUFEMmpWdG13NDNINkxJeTZHNHRVMWtib19IcDVOWFlxcXMtcEpiWDhCMWtnc2pMazRWU2dSOWg3c1dsbTZrUHFYWTVMQVhhNnR0MG9HTWVPemltdDJRSXRSWjRsNzhxTzk5UkxjMXEw?oc=5",
+      "source_hash": "f9d2fc4a",
+      "identity_hash": "be0b85183cb0cf95",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Supplied reader-facing URL https://news.google.com/rss/articles/CBMi6wFBVV95cUxNeEVJUmhhejd3Y0xuTFFPWnlGOXdrSmR4MDFmYm1jZDFTR2RNUlFhVmxwOC1rNzlzdy1BYW9kNi1LaEFUTEFzR0Eyck5nVGZoN2lSUFE5anBIVVhGbzg1LVNtV09GaUVHYmFnR2U4cFlBV3hWZEpZR3lKS3llQUFPUlBCQUFEMmpWdG13NDNINkxJeTZHNHRVMWtib19IcDVOWFlxcXMtcEpiWDhCMWtnc2pMazRWU2dSOWg3c1dsbTZrUHFYWTVMQVhhNnR0MG9HTWVPemltdDJRSXRSWjRsNzhxTzk5UkxjMXEw?oc=5 did not yield substantive package text (reader-facing URL: no substantive text)."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching authoritative/publisher source: https://www.consilium.europa.eu/en/policies/defence-industry-programme/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "recovered_authoritative_page",
+            "url": "https://www.consilium.europa.eu/en/policies/defence-industry-programme/",
+            "title": "European defence industry: Council identifies the first five projects of common interest",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "The verified work has a substantive European defence-industrial capacity mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "European defence industry: Council identifies the first five projects of common interest",
+      "reader_what": "The work concerns European defence-industrial capacity, cooperation, or strategic capability development.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work concerns European defence-industrial capacity, cooperation, or strategic capability development. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "The work concerns European defence-industrial capacity, cooperation, or strategic capability development.",
+        "method_or_basis": "Recovered publisher/official page and bibliographic metadata; substantive conclusions are limited to the accessible evidence.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European defence-industrial capacity under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "defence.production_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Council of the EU",
+            "class": "other"
+          },
+          "mechanism": "supports",
+          "direction": "expands",
+          "status": "adopted",
+          "status_date": "2026-09-28",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work concerns European defence-industrial capacity, cooperation, or strategic capability development.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:5859fd808f9576e5",
+      "source_hash": "67a8ddb6",
+      "identity_hash": "2566899cbf423734",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching substantial_web_text from https://merics.org/en/comment/europes-research-dilemma-balancing-security-and-scientific-cooperation-china; title/content correspond to the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://merics.org/en/comment/europes-research-dilemma-balancing-security-and-scientific-cooperation-china",
+            "title": "Europe’s research dilemma – balancing security and scientific cooperation with China",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European research security mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Europe’s research dilemma – balancing security and scientific cooperation with China",
+      "reader_what": "The work provides evidence relevant to European research security.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work provides evidence relevant to European research security. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work provides evidence relevant to European research security.",
+        "method_or_basis": "Substantive first-party or publisher web text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European research security under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "research.collaboration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "MERICS",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-03-18",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work provides evidence relevant to European research security.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:3788a70d3bd5491a",
+      "source_hash": "776cf843",
+      "identity_hash": "6421d8a9467acf49",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching pdf_excerpt from https://www.bis.org/speeches/20260305-european-finance-fault-lines-transatlantic-relations.pdf; title/content correspond to the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://www.bis.org/speeches/20260305-european-finance-fault-lines-transatlantic-relations.pdf",
+            "title": "European finance at the fault lines of transatlantic relations | Bank for International Settlements",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European financial statecraft mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "European finance at the fault lines of transatlantic relations | Bank for International Settlements",
+      "reader_what": "The work provides evidence relevant to European financial statecraft.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work provides evidence relevant to European financial statecraft. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work provides evidence relevant to European financial statecraft.",
+        "method_or_basis": "Substantive PDF text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European financial statecraft under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "finance.euro_international_role",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Bank for International Settlements",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-03-05",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work provides evidence relevant to European financial statecraft.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1057/s41599-026-08607-9",
+      "source_hash": "5f4111f7",
+      "identity_hash": "5f5a66527a260098",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching substantial_web_text from https://www.nature.com/articles/s41599-026-08607-9; title/content correspond to the claimed work."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching authoritative/publisher source: https://www.nature.com/articles/s41599-026-08607-9."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1057/s41599-026-08607-9 matches the claimed title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://www.nature.com/articles/s41599-026-08607-9",
+            "title": "The obstacles and changes in Sino-European trade routes in the twenty-first century due to climate change and geopolitical risks",
+            "evidence_used": true
+          },
+          {
+            "kind": "recovered_authoritative_page",
+            "url": "https://www.nature.com/articles/s41599-026-08607-9",
+            "title": "The obstacles and changes in Sino-European trade routes in the twenty-first century due to climate change and geopolitical risks",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European trade exposure mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The obstacles and changes in Sino-European trade routes in the twenty-first century due to climate change and geopolitical",
+      "reader_what": "The work examines how trade dependencies, policy instruments, or geopolitical competition affect Europe.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work examines how trade dependencies, policy instruments, or geopolitical competition affect Europe. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work examines how trade dependencies, policy instruments, or geopolitical competition affect Europe.",
+        "method_or_basis": "Substantive first-party or publisher web text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European trade exposure under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Humanities and Social Sciences Communications",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-08-10",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work examines how trade dependencies, policy instruments, or geopolitical competition affect Europe.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.48550/arxiv.2606.12201",
+      "source_hash": "47da0796",
+      "identity_hash": "4fe5a2ad808a3916",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching substantial_web_text from https://arxiv.org/abs/2606.12201; title/content correspond to the claimed work."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching authoritative/publisher source: https://arxiv.org/abs/2606.12201."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.48550/arxiv.2606.12201 matches the claimed title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://arxiv.org/abs/2606.12201",
+            "title": "Materealistic? How European energy system models exceed raw material reserves",
+            "evidence_used": true
+          },
+          {
+            "kind": "recovered_authoritative_page",
+            "url": "https://arxiv.org/abs/2606.12201",
+            "title": "Materealistic? How European energy system models exceed raw material reserves",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European critical-material dependencies mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Materealistic? How European energy system models exceed raw material reserves",
+      "reader_what": "The work identifies material dependencies and examines diversification, domestic capacity, or circularity as resilience options for Europe.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work identifies material dependencies and examines diversification, domestic capacity, or circularity as resilience options for Europe. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work identifies material dependencies and examines diversification, domestic capacity, or circularity as resilience options for Europe.",
+        "method_or_basis": "Substantive first-party or publisher web text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European critical-material dependencies under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "materials.critical_raw",
+          "secondary_objects": [],
+          "actor": {
+            "name": "arXiv",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-06-10",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work identifies material dependencies and examines diversification, domestic capacity, or circularity as resilience options for Europe.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:a8a46f983eb65387",
+      "source_hash": "58ec464e",
+      "identity_hash": "834660aa5810a2f6",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching substantial_web_text from https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/spring-2026-economic-forecast-slowdown-growth-energy-shock-drives-inflation/how-do-eu-manufacturing-firms-navigate-tensions-disruptions-and-policy-changes-foreign-markets_en; title/content correspond to the claimed work."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching authoritative/publisher source: https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/spring-2026-economic-forecast-slowdown-growth-energy-shock-drives-inflation/how-do-eu-manufacturing-firms-navigate-tensions-disruptions-and-policy-changes-foreign-markets_en."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/spring-2026-economic-forecast-slowdown-growth-energy-shock-drives-inflation/how-do-eu-manufacturing-firms-navigate-tensions-disruptions-and-policy-changes-foreign-markets_en",
+            "title": "How do EU manufacturing firms navigate tensions, disruptions, and policy changes in foreign markets?",
+            "evidence_used": true
+          },
+          {
+            "kind": "recovered_authoritative_page",
+            "url": "https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/spring-2026-economic-forecast-slowdown-growth-energy-shock-drives-inflation/how-do-eu-manufacturing-firms-navigate-tensions-disruptions-and-policy-changes-foreign-markets_en",
+            "title": "How do EU manufacturing firms navigate tensions, disruptions, and policy changes in foreign markets?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European industrial capacity mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "How do EU manufacturing firms navigate tensions, disruptions, and policy changes in foreign markets?",
+      "reader_what": "The work provides evidence relevant to European industrial capacity.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work provides evidence relevant to European industrial capacity. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work provides evidence relevant to European industrial capacity.",
+        "method_or_basis": "Substantive first-party or publisher web text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European industrial capacity under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission — Economy and Finance",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work provides evidence relevant to European industrial capacity.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.36074/logos-05.06.2026.003",
+      "source_hash": "2d3441b7",
+      "identity_hash": "df401e264ae47961",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching pdf_excerpt from https://content.openalex.org/works/W7172505026.pdf; title/content correspond to the claimed work."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.36074/logos-05.06.2026.003 matches the claimed title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://content.openalex.org/works/W7172505026.pdf",
+            "title": "INSTITUTIONAL DE-RISKING AS A NEW STATE FINANCIAL MODEL FOR STRATEGIC INDUSTRIES: THE CASE OF GREEN HYDROGEN IN UKRAINE",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European energy security mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "INSTITUTIONAL DE-RISKING AS A NEW STATE FINANCIAL MODEL FOR STRATEGIC INDUSTRIES: THE CASE OF GREEN HYDROGEN IN UKRAINE",
+      "reader_what": "The work examines European energy-security exposure and the role of external supply or partnerships.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work examines European energy-security exposure and the role of external supply or partnerships. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work examines European energy-security exposure and the role of external supply or partnerships.",
+        "method_or_basis": "Substantive PDF text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European energy security under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission — Energy",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-06-30",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work examines European energy-security exposure and the role of external supply or partnerships.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://digital-strategy.ec.europa.eu/en/library/study-eus-strategic-digital-technologies-next-eu-research-innovation-programme",
+      "source_hash": "ad8d22db",
+      "identity_hash": "24d79b5e99239673",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching substantial_web_text from https://digital-strategy.ec.europa.eu/en/library/study-eus-strategic-digital-technologies-next-eu-research-innovation-programme; title/content correspond to the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://digital-strategy.ec.europa.eu/en/library/study-eus-strategic-digital-technologies-next-eu-research-innovation-programme",
+            "title": "Study on the EU's strategic digital technologies for the next EU research & innovation programme",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European digital sovereignty mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Study on the EU's strategic digital technologies for the next EU research & innovation programme",
+      "reader_what": "The work provides evidence relevant to European digital sovereignty.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work provides evidence relevant to European digital sovereignty. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work provides evidence relevant to European digital sovereignty.",
+        "method_or_basis": "Substantive first-party or publisher web text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European digital sovereignty under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "digital.sovereignty",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission — Digital Strategy",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026-09-29",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work provides evidence relevant to European digital sovereignty.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://www.atlanticcouncil.org/wp-content/uploads/2026/07/beyond-the-corridor-imec-as-a-network-of-routes.pdf",
+      "source_hash": "a22c9c56",
+      "identity_hash": "04ec2b30de66d4bd",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching pdf_excerpt from https://www.atlanticcouncil.org/wp-content/uploads/2026/07/beyond-the-corridor-imec-as-a-network-of-routes.pdf; title/content correspond to the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://www.atlanticcouncil.org/wp-content/uploads/2026/07/beyond-the-corridor-imec-as-a-network-of-routes.pdf",
+            "title": "A network of corridors is the only reliable hedge against Middle East chokepoint disruptions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European infrastructure resilience mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "A network of corridors is the only reliable hedge against Middle East chokepoint disruptions",
+      "reader_what": "The work provides evidence relevant to European infrastructure resilience.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work provides evidence relevant to European infrastructure resilience. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work provides evidence relevant to European infrastructure resilience.",
+        "method_or_basis": "Substantive PDF text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European infrastructure resilience under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "critical_infrastructure.resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Atlantic Council",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "supports",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026-06-30",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work provides evidence relevant to European infrastructure resilience.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/looking-to-a-decade-of-delivery-the-three-seas-initiative-charts-its-course-forward/",
+      "source_hash": "e68f561a",
+      "identity_hash": "d5860eb735d18da9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching substantial_web_text from https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/looking-to-a-decade-of-delivery-the-three-seas-initiative-charts-its-course-forward/; title/content correspond to the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/looking-to-a-decade-of-delivery-the-three-seas-initiative-charts-its-course-forward/",
+            "title": "Looking to a decade of delivery: The Three Seas Initiative charts its course forward",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European infrastructure resilience mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Looking to a decade of delivery: The Three Seas Initiative charts its course forward",
+      "reader_what": "The work provides evidence relevant to European infrastructure resilience.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work provides evidence relevant to European infrastructure resilience. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work provides evidence relevant to European infrastructure resilience.",
+        "method_or_basis": "Substantive first-party or publisher web text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European infrastructure resilience under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "critical_infrastructure.resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Atlantic Council",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "supports",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026-06-30",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work provides evidence relevant to European infrastructure resilience.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:f918730fae0ce857",
+      "source_hash": "c0f86ae1",
+      "identity_hash": "60c34d9c9cb33004",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching pdf_excerpt from https://content.openalex.org/works/W4405530003.pdf; title/content correspond to the claimed work."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching authoritative/publisher source: https://onlinelibrary.wiley.com/doi/10.1111/jcms.13717."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/jcms.13717 matches the claimed title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://content.openalex.org/works/W4405530003.pdf",
+            "title": "All in this Together? Communities of Practice in UK–EU Cybersecurity Relations Post‐Brexit and Differentiated Re‐engagement",
+            "evidence_used": true
+          },
+          {
+            "kind": "recovered_authoritative_page",
+            "url": "https://onlinelibrary.wiley.com/doi/10.1111/jcms.13717",
+            "title": "All in this Together? Communities of Practice in UK–EU Cybersecurity Relations Post‐Brexit and Differentiated Re‐engagement",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European critical-infrastructure resilience mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "All in this Together? Communities of Practice in UK–EU Cybersecurity Relations Post‐Brexit and Differentiated Re‐engagement",
+      "reader_what": "The work examines resilience or security of European digital and communications infrastructure.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work examines resilience or security of European digital and communications infrastructure. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work examines resilience or security of European digital and communications infrastructure.",
+        "method_or_basis": "Substantive PDF text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European critical-infrastructure resilience under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "critical_infrastructure.resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Journal of Common Market Studies",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work examines resilience or security of European digital and communications infrastructure.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:f3ae742ce8c4b8ae",
+      "source_hash": "2a92d951",
+      "identity_hash": "0b2a33f35e2218b2",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Supplied reader-facing URL https://www.csis.org/analysis/global-dimension-renewed-transatlantic-partnership did not yield substantive package text (retrieved via reader-facing URL; strongest available package material was abstract_or_landing_page)."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "limited",
+            "note": "Exact-title search for “A Global Dimension for a Renewed Transatlantic Partnership” confirmed identity but did not recover enough substantive text for an authoritative admission judgement."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "limited",
+            "note": "Title plus available source/year metadata was checked for A Global Dimension for a Renewed Transatlantic Partnership; identity was consistent but evidence remained insufficient."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "limited",
+            "note": "Publisher/issuing-body route for https://www.csis.org/analysis/global-dimension-renewed-transatlantic-partnership was checked; no accessible substantive full text beyond the thin landing material was available in this pass."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "limited",
+            "note": "Bounded search using distinctive title fragments from A Global Dimension for a Renewed Transatlantic Partnership found no stronger accessible substantive copy in this pass."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Identity is credible, but substantive accessible evidence was insufficient for authoritative admission in this pass."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Identity verified; substantive evidence remained too thin after the required recovery ladder."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:f0cd14ea5371e07b",
+      "source_hash": "aa56af9e",
+      "identity_hash": "204c19987393e212",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Supplied reader-facing URL https://digital-strategy.ec.europa.eu/en/policies/5g-indicators-sa-and-nsa-availability did not yield substantive package text (retrieved via reader-facing URL; strongest available package material was abstract_or_landing_page)."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching authoritative/publisher source: https://digital-strategy.ec.europa.eu/en/policies/5g-indicators-sa-and-nsa-availability."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "recovered_authoritative_page",
+            "url": "https://digital-strategy.ec.europa.eu/en/policies/5g-indicators-sa-and-nsa-availability",
+            "title": "5G indicators: standalone and non-standalone availability",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "The work is verified, but its central contribution is generic, non-European, or outside the Radar economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "5G indicators: standalone and non-standalone availability",
+      "reader_what": "The work examines resilience or security of European digital and communications infrastructure.",
+      "reader_why": "",
+      "reader_more": "The work examines resilience or security of European digital and communications infrastructure. Its subject matter does not meet the Radar’s central economic-security test despite the verified identity.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work examines resilience or security of European digital and communications infrastructure.",
+        "method_or_basis": "Recovered publisher/official page and bibliographic metadata; substantive conclusions are limited to the accessible evidence.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "The verified work is real, but its central object is outside the Radar’s economic-security admission criteria or is too generic to qualify.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:12a8716c18440b86",
+      "source_hash": "d0295b82",
+      "identity_hash": "961a9f0ba0de03b4",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching substantial_web_text from https://institutdelors.eu/en/publications/investing-in-human-capital-a-social-promise-or-just-another-guise-of-competitiveness/; title/content correspond to the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://institutdelors.eu/en/publications/investing-in-human-capital-a-social-promise-or-just-another-guise-of-competitiveness/",
+            "title": "'Investing in human capital’: A social promise or just another guise of competitiveness? - Institut Jacques Delors",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "The work is verified, but its central contribution is generic, non-European, or outside the Radar economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "'Investing in human capital’: A social promise or just another guise of competitiveness? - Institut Jacques Delors",
+      "reader_what": "The work provides evidence relevant to European economic-security exposure.",
+      "reader_why": "",
+      "reader_more": "The work provides evidence relevant to European economic-security exposure. Its subject matter does not meet the Radar’s central economic-security test despite the verified identity.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work provides evidence relevant to European economic-security exposure.",
+        "method_or_basis": "Substantive first-party or publisher web text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "The verified work is real, but its central object is outside the Radar’s economic-security admission criteria or is too generic to qualify.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:b13d4236ef741b9f",
+      "source_hash": "15a0a8b8",
+      "identity_hash": "5584caeb42384cb8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching pdf_excerpt from https://content.openalex.org/works/W7115564353.pdf; title/content correspond to the claimed work."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/jcms.70062 matches the claimed title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://content.openalex.org/works/W7115564353.pdf",
+            "title": "How and Why EU Institutions Promote the Digital Euro: The Politics of a Central Bank Digital Currency (CBDC)",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European payment resilience mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "How and Why EU Institutions Promote the Digital Euro: The Politics of a Central Bank Digital Currency (CBDC)",
+      "reader_what": "The work presents the digital euro as a way to strengthen European payment resilience and strategic autonomy.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work presents the digital euro as a way to strengthen European payment resilience and strategic autonomy. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work presents the digital euro as a way to strengthen European payment resilience and strategic autonomy.",
+        "method_or_basis": "Substantive PDF text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European payment resilience under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "finance.payment_infrastructure",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Journal of Common Market Studies",
+            "class": "university_group"
+          },
+          "mechanism": "builds",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2025-12-15",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work presents the digital euro as a way to strengthen European payment resilience and strategic autonomy.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:9cf1b0662691399c",
+      "source_hash": "3cafd910",
+      "identity_hash": "6a31f6539cd360e9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching pdf_excerpt from https://content.openalex.org/works/W4417248657.pdf; title/content correspond to the claimed work."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1080/13523260.2025.2599280 matches the claimed title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://content.openalex.org/works/W4417248657.pdf",
+            "title": "War economy vs European Silicon Valley? The EU's competing sociotechnical imaginaries of defence innovation and industry",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European defence-industrial capacity mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "War economy vs European Silicon Valley? The EU's competing sociotechnical imaginaries of defence innovation and industry",
+      "reader_what": "The work concerns European defence-industrial capacity, cooperation, or strategic capability development.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work concerns European defence-industrial capacity, cooperation, or strategic capability development. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work concerns European defence-industrial capacity, cooperation, or strategic capability development.",
+        "method_or_basis": "Substantive PDF text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European defence-industrial capacity under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "defence.production_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Contemporary Security Policy",
+            "class": "other"
+          },
+          "mechanism": "supports",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2025-12-11",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work concerns European defence-industrial capacity, cooperation, or strategic capability development.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:848de13fdc37ce92",
+      "source_hash": "26b02779",
+      "identity_hash": "27d5ef66fde90431",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching substantial_web_text from https://ecfr.eu/article/understanding-the-eus-new-economic-security-playbook/; title/content correspond to the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://ecfr.eu/article/understanding-the-eus-new-economic-security-playbook/",
+            "title": "Understanding the EU’s new economic security playbook – European Council on Foreign Relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European economic-security strategy mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Understanding the EU’s new economic security playbook – European Council on Foreign Relations",
+      "reader_what": "The work directly analyses the EU economic-security agenda, its instruments, or its implementation.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work directly analyses the EU economic-security agenda, its instruments, or its implementation. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work directly analyses the EU economic-security agenda, its instruments, or its implementation.",
+        "method_or_basis": "Substantive first-party or publisher web text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European economic-security strategy under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Council on Foreign Relations",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2025-12-04",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work directly analyses the EU economic-security agenda, its instruments, or its implementation.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:2de28e1110dbc43a",
+      "source_hash": "6fe51a8a",
+      "identity_hash": "28d27e0869afd3e9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching pdf_excerpt from https://rhg.com/wp-content/uploads/2025/12/Global-Greenhouse-Gas-Emissions-1990-2023-and-2024-Estimates.pdf; title/content correspond to the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://rhg.com/wp-content/uploads/2025/12/Global-Greenhouse-Gas-Emissions-1990-2023-and-2024-Estimates.pdf",
+            "title": "Global Greenhouse Gas Emissions: 1990-2023 and Preliminary 2024 Estimates",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "The work is verified, but its central contribution is generic, non-European, or outside the Radar economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Global Greenhouse Gas Emissions: 1990-2023 and Preliminary 2024 Estimates",
+      "reader_what": "The work provides evidence relevant to European economic-security exposure.",
+      "reader_why": "",
+      "reader_more": "The work provides evidence relevant to European economic-security exposure. Its subject matter does not meet the Radar’s central economic-security test despite the verified identity.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work provides evidence relevant to European economic-security exposure.",
+        "method_or_basis": "Substantive PDF text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "The verified work is real, but its central object is outside the Radar’s economic-security admission criteria or is too generic to qualify.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:19f2d49289e7c3cd",
+      "source_hash": "21567a21",
+      "identity_hash": "ba8a98eab3cb4881",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching substantial_web_text from https://ecfr.eu/article/thrown-under-the-omnibus-how-the-eus-digital-deregulation-fuels-us-coercion/; title/content correspond to the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://ecfr.eu/article/thrown-under-the-omnibus-how-the-eus-digital-deregulation-fuels-us-coercion/",
+            "title": "Thrown under the omnibus: How the EU’s digital deregulation fuels US coercion – European Council on Foreign Relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European economic coercion mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Thrown under the omnibus: How the EU’s digital deregulation fuels US coercion – European Council on Foreign Relations",
+      "reader_what": "The work examines economic coercion affecting Europe and the policy tools used to limit exposure.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work examines economic coercion affecting Europe and the policy tools used to limit exposure. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work examines economic coercion affecting Europe and the policy tools used to limit exposure.",
+        "method_or_basis": "Substantive first-party or publisher web text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European economic coercion under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "coercion.incident",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Council on Foreign Relations",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2025-12-03",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work examines economic coercion affecting Europe and the policy tools used to limit exposure.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:790c8479801cfa28",
+      "source_hash": "eb028a30",
+      "identity_hash": "be0ee02c324464cc",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Supplied reader-facing URL https://doi.org/10.1016/j.resourpol.2025.105793 did not yield substantive package text (reader-facing URL: no substantive text; OpenAlex OA PDF/location: source retrieval failed: Stream has ended unexpectedly; OpenAlex OA landing/repository: source retrieval failed: 403 Client Error: Forbidden for url: https://www.sciencedirect.com/science/article/pii/S0301420725003356; OpenAlex authenticated DOI lookup matched W4416375508; no substantive OpenAlex-assisted source recovered)."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching authoritative/publisher source: https://www.sciencedirect.com/science/article/pii/S0301420725003356."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1016/j.resourpol.2025.105793 matches the claimed title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "recovered_authoritative_page",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0301420725003356",
+            "title": "The benefits of enhanced circularity on strategic autonomy: Titanium metal in the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European critical-material dependencies mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The benefits of enhanced circularity on strategic autonomy: Titanium metal in the EU",
+      "reader_what": "The work identifies material dependencies and examines diversification, domestic capacity, or circularity as resilience options for Europe.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work identifies material dependencies and examines diversification, domestic capacity, or circularity as resilience options for Europe. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work identifies material dependencies and examines diversification, domestic capacity, or circularity as resilience options for Europe.",
+        "method_or_basis": "Recovered publisher/official page and bibliographic metadata; substantive conclusions are limited to the accessible evidence.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European critical-material dependencies under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "materials.critical_raw",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Resources Policy",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2025-12-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work identifies material dependencies and examines diversification, domestic capacity, or circularity as resilience options for Europe.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:3328788c1c3af717",
+      "source_hash": "43af49e5",
+      "identity_hash": "d1d33cc3474adaa9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Supplied reader-facing URL https://doi.org/10.1111/jcms.70052 did not yield substantive package text (reader-facing URL: source retrieval failed: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/jcms.70052; OpenAlex OA PDF/location: source retrieval failed: HTTPConnectionPool(host='publications.rifs-potsdam.de', port=80): Max retries exceeded with url: /rest/items/item_6004854_1/component/file_6004855/content (Caused by ConnectTimeout; OpenAlex OA landing/repository: source retrieval failed: HTTPConnectionPool(host='publications.rifs-potsdam.de', port=80): Max retries exceeded with url: /pubman/faces/ViewItemOverviewPage.jsp?itemId=item_6004854 (Caused by ConnectTimeou; OpenAlex authenticated DOI lookup matched W4416455993; no substantive OpenAlex-assisted source recovered)."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching authoritative/publisher source: https://onlinelibrary.wiley.com/doi/10.1111/jcms.70052."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/jcms.70052 matches the claimed title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "recovered_authoritative_page",
+            "url": "https://onlinelibrary.wiley.com/doi/10.1111/jcms.70052",
+            "title": "From External Governance to Energy Diplomacy: The European Pursuit of Green Hydrogen",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European energy security mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "From External Governance to Energy Diplomacy: The European Pursuit of Green Hydrogen",
+      "reader_what": "The work examines European energy-security exposure and the role of external supply or partnerships.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work examines European energy-security exposure and the role of external supply or partnerships. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work examines European energy-security exposure and the role of external supply or partnerships.",
+        "method_or_basis": "Recovered publisher/official page and bibliographic metadata; substantive conclusions are limited to the accessible evidence.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European energy security under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Journal of Common Market Studies",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2025-11-21",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work examines European energy-security exposure and the role of external supply or partnerships.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:0be5aaed28368ca0",
+      "source_hash": "03f81daf",
+      "identity_hash": "3bec22977498f19b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Supplied reader-facing URL https://publications.jrc.ec.europa.eu/repository/handle/JRC144736 did not yield substantive package text (retrieved via reader-facing URL; strongest available package material was abstract_or_landing_page)."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching authoritative/publisher source: https://publications.jrc.ec.europa.eu/repository/handle/JRC144736."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "recovered_authoritative_page",
+            "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC144736",
+            "title": "Throwing sand in the chips: unintended effects of export controls",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European export controls mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Throwing sand in the chips: unintended effects of export controls",
+      "reader_what": "The work analyses how export controls reshape technology trade and can generate spillovers for European suppliers.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work analyses how export controls reshape technology trade and can generate spillovers for European suppliers. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work analyses how export controls reshape technology trade and can generate spillovers for European suppliers.",
+        "method_or_basis": "Recovered publisher/official page and bibliographic metadata; substantive conclusions are limited to the accessible evidence.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European export controls under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "export_control.regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "JRC Publications Repository",
+            "class": "eu_body"
+          },
+          "mechanism": "restricts",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2025-11-20",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work analyses how export controls reshape technology trade and can generate spillovers for European suppliers.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:23e64af790e94567",
+      "source_hash": "680e9dd6",
+      "identity_hash": "b6797e96db2cddf7",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching pdf_excerpt from https://content.openalex.org/works/W4416415709.pdf; title/content correspond to the claimed work."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.17645/pag.10239 matches the claimed title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://content.openalex.org/works/W4416415709.pdf",
+            "title": "Virtual Worlds, Real Politics: A Cross‐National Comparative Study of Metaverse Policy Approaches",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "The work is verified, but its central contribution is generic, non-European, or outside the Radar economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Virtual Worlds, Real Politics: A Cross‐National Comparative Study of Metaverse Policy Approaches",
+      "reader_what": "The work provides evidence relevant to European economic-security exposure.",
+      "reader_why": "",
+      "reader_more": "The work provides evidence relevant to European economic-security exposure. Its subject matter does not meet the Radar’s central economic-security test despite the verified identity.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work provides evidence relevant to European economic-security exposure.",
+        "method_or_basis": "Substantive PDF text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "The verified work is real, but its central object is outside the Radar’s economic-security admission criteria or is too generic to qualify.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:6406e063fe71d115",
+      "source_hash": "1b510472",
+      "identity_hash": "41613b4aec85c99b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching substantial_web_text from https://www.ceps.eu/ceps-publications/risks-and-opportunities-in-evolving-eu-us-financial-and-economic-relations/; title/content correspond to the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://www.ceps.eu/ceps-publications/risks-and-opportunities-in-evolving-eu-us-financial-and-economic-relations/",
+            "title": "Risks and opportunities in evolving EU–US financial and economic relations – CEPS",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European financial statecraft mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Risks and opportunities in evolving EU–US financial and economic relations – CEPS",
+      "reader_what": "The work provides evidence relevant to European financial statecraft.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work provides evidence relevant to European financial statecraft. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work provides evidence relevant to European financial statecraft.",
+        "method_or_basis": "Substantive first-party or publisher web text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European financial statecraft under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "finance.euro_international_role",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CEPS",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2025-11-12",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work provides evidence relevant to European financial statecraft.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:e3cbc066087d3afd",
+      "source_hash": "407f9587",
+      "identity_hash": "be346e857d01cb64",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching pdf_excerpt from https://content.openalex.org/works/W4416157760.pdf; title/content correspond to the claimed work."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/1758-5899.70108 matches the claimed title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://content.openalex.org/works/W4416157760.pdf",
+            "title": "Evolving Geopolitics and Japan's Economic Security–Trade Nexus: ‘New Capitalism’ as a Balancing Act?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European trade exposure mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Evolving Geopolitics and Japan's Economic Security–Trade Nexus: ‘New Capitalism’ as a Balancing Act?",
+      "reader_what": "The work examines how trade dependencies, policy instruments, or geopolitical competition affect Europe.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work examines how trade dependencies, policy instruments, or geopolitical competition affect Europe. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work examines how trade dependencies, policy instruments, or geopolitical competition affect Europe.",
+        "method_or_basis": "Substantive PDF text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European trade exposure under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Global Policy",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2025-11-12",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work examines how trade dependencies, policy instruments, or geopolitical competition affect Europe.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:2ccb8c3af031dfc5",
+      "source_hash": "4e0f5e12",
+      "identity_hash": "73173f80b2694108",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching pdf_excerpt from https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Threat%20Landscape%20for%20Supply%20Chain%20Attacks.pdf; title/content correspond to the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Threat%20Landscape%20for%20Supply%20Chain%20Attacks.pdf",
+            "title": "Threat Landscape for Supply Chain Attacks | ENISA",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European critical-infrastructure resilience mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Threat Landscape for Supply Chain Attacks | ENISA",
+      "reader_what": "The work provides evidence relevant to European critical-infrastructure resilience.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work provides evidence relevant to European critical-infrastructure resilience. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work provides evidence relevant to European critical-infrastructure resilience.",
+        "method_or_basis": "Substantive PDF text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European critical-infrastructure resilience under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "critical_infrastructure.resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "ENISA",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2025-11-06",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work provides evidence relevant to European critical-infrastructure resilience.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:189beeee76c362e2",
+      "source_hash": "1e7a9017",
+      "identity_hash": "067c63fe740786c9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching pdf_excerpt from https://www.enisa.europa.eu/sites/default/files/publications/ENISA%205G%20Threat%20Landscape%20-%20Update.pdf; title/content correspond to the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%205G%20Threat%20Landscape%20-%20Update.pdf",
+            "title": "ENISA Threat Landscape for 5G Networks Report | ENISA",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European critical-infrastructure resilience mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "ENISA Threat Landscape for 5G Networks Report | ENISA",
+      "reader_what": "The work examines resilience or security of European digital and communications infrastructure.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work examines resilience or security of European digital and communications infrastructure. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work examines resilience or security of European digital and communications infrastructure.",
+        "method_or_basis": "Substantive PDF text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European critical-infrastructure resilience under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "critical_infrastructure.resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "ENISA",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2025-11-06",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work examines resilience or security of European digital and communications infrastructure.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:7a77d64ecea562f3",
+      "source_hash": "7d700caa",
+      "identity_hash": "d4d07090158c32df",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching pdf_excerpt from https://www.kielinstitut.de/fileadmin/Dateiverwaltung/IfW-Publications/fis-import/41a59b57-884e-4ccf-bf76-636dcd11dbe4-Supply_Chain_Disruption_Survey_nov2025.pdf; title/content correspond to the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://www.kielinstitut.de/fileadmin/Dateiverwaltung/IfW-Publications/fis-import/41a59b57-884e-4ccf-bf76-636dcd11dbe4-Supply_Chain_Disruption_Survey_nov2025.pdf",
+            "title": "The Supply Chain Disruption Survey: A new survey on knowledge flows in global supply chains - Kiel Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "The work is verified, but its central contribution is generic, non-European, or outside the Radar economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The Supply Chain Disruption Survey: A new survey on knowledge flows in global supply chains - Kiel Institute",
+      "reader_what": "The work provides evidence relevant to European supply-chain resilience.",
+      "reader_why": "",
+      "reader_more": "The work provides evidence relevant to European supply-chain resilience. Its subject matter does not meet the Radar’s central economic-security test despite the verified identity.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work provides evidence relevant to European supply-chain resilience.",
+        "method_or_basis": "Substantive PDF text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "The verified work is real, but its central object is outside the Radar’s economic-security admission criteria or is too generic to qualify.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:6a7bfe27981beec5",
+      "source_hash": "dee4d71e",
+      "identity_hash": "a26d7f0cafbde067",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching substantial_web_text from https://www.ceps.eu/a-new-vision-for-eu-ri-policy-shouldnt-just-address-brain-drain-but-other-pressing-global-challenges-as-well/; title/content correspond to the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://www.ceps.eu/a-new-vision-for-eu-ri-policy-shouldnt-just-address-brain-drain-but-other-pressing-global-challenges-as-well/",
+            "title": "A new vision for EU R&I policy shouldn’t just address brain drain but other pressing global challenges as well – CEPS",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "The work is verified, but its central contribution is generic, non-European, or outside the Radar economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "A new vision for EU R&I policy shouldn’t just address brain drain but other pressing global challenges as",
+      "reader_what": "The work provides evidence relevant to European economic-security exposure.",
+      "reader_why": "",
+      "reader_more": "The work provides evidence relevant to European economic-security exposure. Its subject matter does not meet the Radar’s central economic-security test despite the verified identity.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work provides evidence relevant to European economic-security exposure.",
+        "method_or_basis": "Substantive first-party or publisher web text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "The verified work is real, but its central object is outside the Radar’s economic-security admission criteria or is too generic to qualify.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:bdbee3e432e90ea0",
+      "source_hash": "162d741d",
+      "identity_hash": "4c2b9cf668af85fe",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching substantial_web_text from https://www.ceps.eu/carbon-credits-could-help-turn-coals-phase-out-into-a-global-climate-partnership-opportunity/; title/content correspond to the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://www.ceps.eu/carbon-credits-could-help-turn-coals-phase-out-into-a-global-climate-partnership-opportunity/",
+            "title": "Carbon credits could help turn coal’s phase-out into a global climate partnership opportunity – CEPS",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "The work is verified, but its central contribution is generic, non-European, or outside the Radar economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Carbon credits could help turn coal’s phase-out into a global climate partnership opportunity – CEPS",
+      "reader_what": "The work provides evidence relevant to European economic-security exposure.",
+      "reader_why": "",
+      "reader_more": "The work provides evidence relevant to European economic-security exposure. Its subject matter does not meet the Radar’s central economic-security test despite the verified identity.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work provides evidence relevant to European economic-security exposure.",
+        "method_or_basis": "Substantive first-party or publisher web text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "The verified work is real, but its central object is outside the Radar’s economic-security admission criteria or is too generic to qualify.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:bf949c3d14fea079",
+      "source_hash": "6fcdff0d",
+      "identity_hash": "8def63339d8f9ae3",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Supplied reader-facing URL https://doi.org/10.1111/jcms.70041 did not yield substantive package text (reader-facing URL: source retrieval failed: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/jcms.70041; OpenAlex authenticated DOI lookup matched W4415043391; no substantive OpenAlex-assisted source recovered)."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located a matching authoritative/publisher source: https://onlinelibrary.wiley.com/doi/10.1111/jcms.70041."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/jcms.70041 matches the claimed title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "recovered_authoritative_page",
+            "url": "https://onlinelibrary.wiley.com/doi/10.1111/jcms.70041",
+            "title": "The Animals Will Have to Wait: How the EU–Mercosur Deal Helped Derail Animal Welfare Legislation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "The work is verified, but its central contribution is generic, non-European, or outside the Radar economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The Animals Will Have to Wait: How the EU–Mercosur Deal Helped Derail Animal Welfare Legislation",
+      "reader_what": "The work provides evidence relevant to European trade agreements.",
+      "reader_why": "",
+      "reader_more": "The work provides evidence relevant to European trade agreements. Its subject matter does not meet the Radar’s central economic-security test despite the verified identity.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work provides evidence relevant to European trade agreements.",
+        "method_or_basis": "Recovered publisher/official page and bibliographic metadata; substantive conclusions are limited to the accessible evidence.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "The verified work is real, but its central object is outside the Radar’s economic-security admission criteria or is too generic to qualify.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:fe87d58e76432253",
+      "source_hash": "ab0cf185",
+      "identity_hash": "4ffa928dd222ca59",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching substantial_web_text from https://www.celis.institute/celis-news/belgiums-second-annual-fdi-screening-report-a-balance-between-openness-and-national-security/; title/content correspond to the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://www.celis.institute/celis-news/belgiums-second-annual-fdi-screening-report-a-balance-between-openness-and-national-security/",
+            "title": "Belgium’s Second Annual FDI Screening Report: A Balance Between Openness and National Security - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European FDI screening mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Belgium’s Second Annual FDI Screening Report: A Balance Between Openness and National Security - CELIS Institute - Investment",
+      "reader_what": "The work examines European investment-screening rules or practice and their balance between openness and security.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work examines European investment-screening rules or practice and their balance between openness and security. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work examines European investment-screening rules or practice and their balance between openness and security.",
+        "method_or_basis": "Substantive first-party or publisher web text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European FDI screening under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CELIS Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "screens",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2025-10-03",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work examines European investment-screening rules or practice and their balance between openness and security.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:68d0d3338d61b183",
+      "source_hash": "219cb27e",
+      "identity_hash": "050eb704780bd416",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching pdf_excerpt from https://content.openalex.org/works/W4417313805.pdf; title/content correspond to the claimed work."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1080/09662839.2025.2580242 matches the claimed title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://content.openalex.org/works/W4417313805.pdf",
+            "title": "Exercising power in the common neighbourhood: the EU and Russia between cooperation, competition, and conflict",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European economic-security exposure mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Exercising power in the common neighbourhood: the EU and Russia between cooperation, competition, and conflict",
+      "reader_what": "The work provides evidence relevant to European economic-security exposure.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work provides evidence relevant to European economic-security exposure. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work provides evidence relevant to European economic-security exposure.",
+        "method_or_basis": "Substantive PDF text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European economic-security exposure under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.risk_assessment",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Security",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2025-10-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work provides evidence relevant to European economic-security exposure.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:6e5fb01f233a40bc",
+      "source_hash": "e617715a",
+      "identity_hash": "0a29d9dd8cdd4926",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching pdf_excerpt from https://content.openalex.org/works/W4415953115.pdf; title/content correspond to the claimed work."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1080/17487870.2025.2571479 matches the claimed title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://content.openalex.org/works/W4415953115.pdf",
+            "title": "EU competitiveness: the critical role of intangible assets in labour productivity growth",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "The work is verified, but its central contribution is generic, non-European, or outside the Radar economic-security criteria."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU competitiveness: the critical role of intangible assets in labour productivity growth",
+      "reader_what": "The work provides evidence relevant to European economic-security exposure.",
+      "reader_why": "",
+      "reader_more": "The work provides evidence relevant to European economic-security exposure. Its subject matter does not meet the Radar’s central economic-security test despite the verified identity.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work provides evidence relevant to European economic-security exposure.",
+        "method_or_basis": "Substantive PDF text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "The verified work is real, but its central object is outside the Radar’s economic-security admission criteria or is too generic to qualify.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:1a87baeaa3b803fe",
+      "source_hash": "a34c559d",
+      "identity_hash": "2ff385e4b3c764e0",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains matching substantial_web_text from https://forskning.ruc.dk/da/publications/energy-transition-under-twin-shocks-geopolitical-and-macrofinanci/; title/content correspond to the claimed work."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1016/j.eneco.2025.108949 matches the claimed title/work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_text",
+            "url": "https://forskning.ruc.dk/da/publications/energy-transition-under-twin-shocks-geopolitical-and-macrofinanci/",
+            "title": "Energy transition under twin shocks: Geopolitical and macrofinancial risks",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, source identity and substantive content were checked against package evidence and, where needed, recovered authoritative/publisher material."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The verified work has a substantive European energy security mechanism central to the record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Energy transition under twin shocks: Geopolitical and macrofinancial risks",
+      "reader_what": "The work examines European energy-security exposure and the role of external supply or partnerships.",
+      "reader_why": "It clarifies a concrete European exposure, policy instrument, or resilience mechanism relevant to economic security.",
+      "reader_more": "The work examines European energy-security exposure and the role of external supply or partnerships. The source provides enough substantive evidence for a cautious admission judgement.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "",
+        "main_finding": "The work examines European energy-security exposure and the role of external supply or partnerships.",
+        "method_or_basis": "Substantive first-party or publisher web text supplied in the package, checked against the work identity and scope.",
+        "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+        "radar_relevance": "Substantive connection to European energy security under Strand A/C criteria; evidence is tied to the verified work rather than inferred from keywords.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Energy Economics",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2025-09-30",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This verifies the work and its stated mechanism, but does not establish broader causal effects beyond the evidence and scope examined.",
+          "text": "The work examines European energy-security exposure and the role of external supply or partnerships.",
+          "confidence": "high"
+        }
+      ]
+    }
+  ]
+}
