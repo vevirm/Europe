@@ -693,11 +693,11 @@ def refresh_shock_inference(
     previous_state: dict[str, Any] | None = None,
     completed_iso: str | None = None,
 ) -> dict[str, Any]:
-    """Stage-6 shock-detector switch to claim dependency pathways.
+    """Shock-detector switch to claim-native dependency reasoning.
 
-    The reader-visible dynamic_shocks list is intentionally compatibility-frozen
-    until Stage 7.  Claim-native shock candidates drive downstream feedback, while
-    the legacy detector is used only when the authoritative claim gate is not ready.
+    The legacy detector is only a pre-cutover fallback.  After claim-native mode has
+    existed, a temporary authority shortfall freezes the claim state rather than
+    sending shock reasoning back into legacy detection.
     """
     previous_state = previous_state if isinstance(previous_state, dict) else {}
     try:
@@ -709,7 +709,7 @@ def refresh_shock_inference(
         if isinstance(live, dict):
             return live
     except Exception as exc:
-        if previous_state.get("detector_backend") == "claim_native":
+        if _clean(previous_state.get("detector_backend")).startswith("claim_native"):
             hold = copy.deepcopy(previous_state)
             hold["detector_backend"] = "claim_native_hold"
             hold["claim_switch_error"] = type(exc).__name__
@@ -723,7 +723,7 @@ def refresh_shock_inference(
         fallback["claim_switch_error"] = type(exc).__name__
         fallback["publication_compatibility_lock"] = True
         return fallback
-    if previous_state.get("detector_backend") == "claim_native":
+    if _clean(previous_state.get("detector_backend")).startswith("claim_native"):
         hold = copy.deepcopy(previous_state)
         hold["detector_backend"] = "claim_native_hold"
         hold["claim_switch_error"] = "claim_authority_gate_not_ready"
@@ -749,7 +749,7 @@ def feedback_queries(state: dict[str, Any] | None, limit: int = 6) -> list[str]:
     """
     if not isinstance(state, dict):
         return []
-    if state.get("detector_backend") == "claim_native":
+    if _clean(state.get("detector_backend")).startswith("claim_native"):
         try:
             try:
                 from scripts.claim_reasoning_live import claim_feedback_queries
