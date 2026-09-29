@@ -2023,7 +2023,7 @@ def claim_expressiveness(nodes: Iterable[dict[str, Any]]) -> dict[str, Any]:
     if assesses_share > 0.60:
         advisories.append("Most current primary diagnoses use mechanism=assesses. This is acceptable for descriptive diagnoses, but relational diagnoses should continue to be enriched when Deep Scan states an explicit dependency or restriction.")
     if secondary_share < 0.10:
-        warnings.append("Fewer than 10% of current primary claims carry secondary_objects; multi-object graph expansion may be sparse.")
+        advisories.append("Fewer than 10% of current primary claims carry secondary_objects; multi-object graph expansion may be sparse. This is diagnostic and does not block single-object or continuity/trend reasoning.")
     if len(suspicious_c_diagnosis) > 0:
         warnings.append("Some primary Strand C diagnosis claims contain explicit event/action cues in the Deep Scan main finding and need semantic review before detector switch.")
     return {
