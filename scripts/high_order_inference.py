@@ -1756,12 +1756,12 @@ def refresh_high_order_inference(
     previous_state: dict[str, Any] | None = None,
     completed_iso: str | None = None,
 ) -> dict[str, Any]:
-    """Stage-6 detector switch: claim-native by default, legacy only as fail-closed fallback.
+    """Claim-native detector switch with an absolute authoritative-record floor.
 
-    The legacy grammar implementation remains in this module for rollback, historical
-    tests, and repositories whose authoritative claim layer is not ready.  Once the
-    claim authority/semantic gate passes, no regex detector in DETECTORS is called.
-    Reader publication IDs are deliberately frozen until Stage 7.
+    The legacy grammar implementation remains for rollback, historical tests, and
+    repositories that have never reached the startup floor.  Once a claim-native
+    state exists, temporary incompleteness freezes that state instead of re-entering
+    regex detection.
     """
     previous_state = previous_state if isinstance(previous_state, dict) else {}
     try:
@@ -1776,7 +1776,7 @@ def refresh_high_order_inference(
         # Before the first successful cut-over, legacy is still the rollback path.
         # After a claim-native state exists, fail *closed*: freeze that state rather
         # than re-enter regex detection and accidentally create a new legacy finding.
-        if previous_state.get("detector_backend") == "claim_native":
+        if _clean(previous_state.get("detector_backend")).startswith("claim_native"):
             hold = copy.deepcopy(previous_state)
             hold["detector_backend"] = "claim_native_hold"
             hold["claim_switch_error"] = type(exc).__name__
@@ -1790,7 +1790,7 @@ def refresh_high_order_inference(
         fallback["claim_switch_error"] = type(exc).__name__
         fallback["publication_compatibility_lock"] = True
         return fallback
-    if previous_state.get("detector_backend") == "claim_native":
+    if _clean(previous_state.get("detector_backend")).startswith("claim_native"):
         hold = copy.deepcopy(previous_state)
         hold["detector_backend"] = "claim_native_hold"
         hold["claim_switch_error"] = "claim_authority_gate_not_ready"
@@ -1810,7 +1810,7 @@ def feedback_queries(state: dict[str, Any] | None, limit: int = 8) -> list[str]:
     """Return a balanced support/falsifier query bank from unfinished candidates."""
     if not isinstance(state, dict):
         return []
-    if state.get("detector_backend") == "claim_native":
+    if _clean(state.get("detector_backend")).startswith("claim_native"):
         try:
             try:
                 from scripts.claim_reasoning_live import claim_feedback_queries
