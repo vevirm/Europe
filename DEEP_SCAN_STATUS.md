@@ -6,26 +6,26 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **530** (Main **474** + Historical **56**)
-- Automatic queue still needing V2 verification: **1095** (Main **160** + Historical **935**)
-- Currently assigned to workers: **78** (Main **14** + Historical **64**)
-- Bounded access-recovery retries still eligible: **176**
+- Authoritative V2 verified: **557** (Main **479** + Historical **78**)
+- Automatic queue still needing V2 verification: **1068** (Main **155** + Historical **913**)
+- Currently assigned to workers: **78** (Main **8** + Historical **70**)
+- Bounded access-recovery retries still eligible: **179**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **1017**
+- Automatic queue pending and not yet assigned: **990**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-d5b4cd36d0a9`
+- Current package: `worker-a-6a3b91754c56`
 - Assigned unresolved records: **36**
-  1. `link:https://news.google.com/rss/articles/CBMi_gFBVV95cUxNbko3RENKVG5HMTNYczRtOVpwTHJQNmJFN20xT0ZKSzBuTEM2VzMxZkZGMmZFUWZxYUx2OFByS0U5aTVteDNIeG5rRXhENldSZmFsRWlPRl9aUVkyVFRycFZkUTBlQWtBNmJxTG4wTmpvazNBRWtiZ2JrZHd2UXZLZzZ2Qk56U25KRnVnNXhyeTFINElNZ2s3QXhmWU1NNHhwTkNvRHhoZjhkenA0dWt2ejcydkNWOTM1elY4Q0lwZ0VxeUJ1SUZYcjNnVExyZlVtNk16ZFQ3SFNHbjFSakJSOE40dGU4RF9peWJHQi16dGJmN2ZlREpYRzJpLThYdw?oc=5` — EU sanctions 10 individuals and 17 entities over unlawful deportation of Ukrainian children to Russia
-  2. `link:https://news.google.com/rss/articles/CBMi6wFBVV95cUxNeEVJUmhhejd3Y0xuTFFPWnlGOXdrSmR4MDFmYm1jZDFTR2RNUlFhVmxwOC1rNzlzdy1BYW9kNi1LaEFUTEFzR0Eyck5nVGZoN2lSUFE5anBIVVhGbzg1LVNtV09GaUVHYmFnR2U4cFlBV3hWZEpZR3lKS3llQUFPUlBCQUFEMmpWdG13NDNINkxJeTZHNHRVMWtib19IcDVOWFlxcXMtcEpiWDhCMWtnc2pMazRWU2dSOWg3c1dsbTZrUHFYWTVMQVhhNnR0MG9HTWVPemltdDJRSXRSWjRsNzhxTzk5UkxjMXEw?oc=5` — European defence industry: Council identifies the first five projects of common interest
-  3. `historical:id:5859fd808f9576e5` — Europe’s research dilemma – balancing security and scientific cooperation with China
-  4. `historical:id:3788a70d3bd5491a` — European finance at the fault lines of transatlantic relations | Bank for International Settlements
-  5. `link:https://doi.org/10.1057/s41599-026-08607-9` — The obstacles and changes in Sino-European trade routes in the twenty-first century due to climate change and geopolitical risks
-  6. `link:https://doi.org/10.48550/arxiv.2606.12201` — Materealistic? How European energy system models exceed raw material reserves
-  7. `historical:id:a8a46f983eb65387` — How do EU manufacturing firms navigate tensions, disruptions, and policy changes in foreign markets?
-  8. `link:https://doi.org/10.36074/logos-05.06.2026.003` — INSTITUTIONAL DE-RISKING AS A NEW STATE FINANCIAL MODEL FOR STRATEGIC INDUSTRIES: THE CASE OF GREEN HYDROGEN IN UKRAINE
+  1. `link:https://doi.org/10.1057/s41599-026-08607-9` — The obstacles and changes in Sino-European trade routes in the twenty-first century due to climate change and geopolitical risks
+  2. `link:https://www.atlanticcouncil.org/wp-content/uploads/2026/07/beyond-the-corridor-imec-as-a-network-of-routes.pdf` — A network of corridors is the only reliable hedge against Middle East chokepoint disruptions
+  3. `historical:id:b13d4236ef741b9f` — How and Why EU Institutions Promote the Digital Euro: The Politics of a Central Bank Digital Currency (CBDC)
+  4. `historical:id:19f2d49289e7c3cd` — Thrown under the omnibus: How the EU’s digital deregulation fuels US coercion – European Council on Foreign Relations
+  5. `historical:id:7a77d64ecea562f3` — The Supply Chain Disruption Survey: A new survey on knowledge flows in global supply chains - Kiel Institute
+  6. `historical:id:fe87d58e76432253` — Belgium’s Second Annual FDI Screening Report: A Balance Between Openness and National Security - CELIS Institute - Investment Screening | National Security | Competitiveness
+  7. `historical:id:3f6a6440696eb51d` — EU Data Sovereignty: An Autonomy–Interdependence Governance Gap?
+  8. `historical:id:2e7d584322aa1076` — Preventing the Critical Minerals Crisis - Egmont Institute
   - … plus 28 more in the package manifest
 
 ### Worker B
