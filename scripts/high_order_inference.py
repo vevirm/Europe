@@ -1751,6 +1751,33 @@ def _refresh_high_order_inference_legacy(
     }
 
 
+def _attach_scenarios_2035(state: dict[str, Any], completed_iso: str | None = None) -> dict[str, Any]:
+    """Attach the 2035 scenario presentation to either detector backend.
+
+    The scenario machine consumes the backend's own publications/candidates, so
+    the reader page keeps working during the legacy pre-cutover fallback as well
+    as after the claim-native switch.  Failure here must never block a scan.
+    """
+    try:
+        try:
+            from scripts.scenarios_2035 import build_scenarios_2035
+        except ModuleNotFoundError:
+            from scenarios_2035 import build_scenarios_2035  # type: ignore
+        state["scenarios_2035"] = build_scenarios_2035(
+            state.get("publications") if isinstance(state.get("publications"), dict) else {},
+            state.get("candidates") if isinstance(state.get("candidates"), list) else [],
+            completed_iso or _clean(state.get("evaluated_at")),
+        )
+    except Exception as exc:  # pragma: no cover - presentation must not block scanning
+        state["scenarios_2035"] = {
+            "horizon": 2035,
+            "evaluated_at": completed_iso or _clean(state.get("evaluated_at")),
+            "scenarios": [],
+            "error": f"{type(exc).__name__}: {exc}",
+        }
+    return state
+
+
 def refresh_high_order_inference(
     data: dict[str, Any],
     previous_state: dict[str, Any] | None = None,
@@ -1771,6 +1798,8 @@ def refresh_high_order_inference(
             from claim_reasoning_live import refresh_claim_high_order  # type: ignore
         live = refresh_claim_high_order(data, previous_state, completed_iso)
         if isinstance(live, dict):
+            if not isinstance(live.get("scenarios_2035"), dict):
+                _attach_scenarios_2035(live, completed_iso)
             return live
     except Exception as exc:
         # Before the first successful cut-over, legacy is still the rollback path.
@@ -1789,7 +1818,7 @@ def refresh_high_order_inference(
         fallback["detector_backend"] = "legacy_pre_cutover_fallback"
         fallback["claim_switch_error"] = type(exc).__name__
         fallback["publication_compatibility_lock"] = True
-        return fallback
+        return _attach_scenarios_2035(fallback, completed_iso)
     if _clean(previous_state.get("detector_backend")).startswith("claim_native"):
         hold = copy.deepcopy(previous_state)
         hold["detector_backend"] = "claim_native_hold"
@@ -1803,7 +1832,7 @@ def refresh_high_order_inference(
     fallback["detector_backend"] = "legacy_pre_cutover_fallback"
     fallback["claim_switch_error"] = "claim_authority_gate_not_ready"
     fallback["publication_compatibility_lock"] = True
-    return fallback
+    return _attach_scenarios_2035(fallback, completed_iso)
 
 
 def feedback_queries(state: dict[str, Any] | None, limit: int = 8) -> list[str]:
