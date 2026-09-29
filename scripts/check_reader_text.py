@@ -24,15 +24,16 @@ def clean(v):
     return re.sub(r"\s+", " ", str(v or "")).strip()
 
 
-def main():
-    if not SIDE.exists():
-        print("reader_text.json absent: Deep Scan layer is safely disabled")
-        return
-    doc = json.loads(SIDE.read_text(encoding="utf-8"))
+def validate_reader_text_doc(doc):
+    """Return (failures, warnings, stats) using the exact CLI validation rules.
+
+    Importers call this before committing an individual Deep Scan result so a bad
+    reader-text field cannot abort the whole workflow after valid records were
+    already marked complete.
+    """
     records = doc.get("records", {}) if isinstance(doc, dict) else {}
     if not isinstance(records, dict):
-        print("FAIL: sidecar records is not an object")
-        sys.exit(1)
+        return ["sidecar records is not an object"], [], {"entries": 0, "whys": 0, "distinct_whys": 0}
     entries = [v for v in records.values() if isinstance(v, dict)]
     fails, warns = [], []
     whys = [clean(v.get("reader_why")) for v in entries if clean(v.get("reader_why"))]
@@ -69,7 +70,16 @@ def main():
                 fails.append("deep_analysis confidence must be high/medium/low")
             if deep and not deep.get("why_supported", False) and clean(v.get("reader_why")):
                 fails.append("reader_why present although deep_analysis.why_supported is false")
-    print(f"reader entries {len(entries)} | WHY {len(whys)} | distinct WHY {len(set(whys))}")
+    return fails, warns, {"entries": len(entries), "whys": len(whys), "distinct_whys": len(set(whys))}
+
+
+def main():
+    if not SIDE.exists():
+        print("reader_text.json absent: Deep Scan layer is safely disabled")
+        return
+    doc = json.loads(SIDE.read_text(encoding="utf-8"))
+    fails, warns, stats = validate_reader_text_doc(doc)
+    print(f"reader entries {stats['entries']} | WHY {stats['whys']} | distinct WHY {stats['distinct_whys']}")
     for x in warns[:30]:
         print("warn:", x)
     for x in fails:

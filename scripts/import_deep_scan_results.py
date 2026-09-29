@@ -8,6 +8,7 @@ Raw scanner evidence in radar.json is never deleted or rewritten here.
 from __future__ import annotations
 
 import argparse
+import collections
 import copy
 import hashlib
 import json
@@ -33,6 +34,7 @@ try:
         update_record_metadata,
     )
     from scripts.claims_schema import load_vocabulary, validate_claims
+    from scripts.check_reader_text import validate_reader_text_doc
 except ModuleNotFoundError:
     from active_corpus import (  # type: ignore
         DEFAULT_ADMISSION, DEFAULT_CORRECTIONS, SAFE_CORRECTION_FIELDS, SAFE_UNSET_FIELDS,
@@ -48,6 +50,7 @@ except ModuleNotFoundError:
         update_record_metadata,
     )
     from claims_schema import load_vocabulary, validate_claims  # type: ignore
+    from check_reader_text import validate_reader_text_doc  # type: ignore
 
 V1_FORMAT = "radar-deep-scan-results-v1"
 V2_FORMAT = "radar-deep-scan-results-v2"
@@ -748,7 +751,26 @@ def main() -> None:
                     entry["claims_profile"] = CLAIMS_FORMAT
                 if legacy_versions:
                     entry["legacy_versions"] = legacy_versions
+                # Transactional reader-text preflight: use the exact same rules as
+                # scripts/check_reader_text.py *before* this result can be marked verified.
+                # A malformed result is rejected individually, leaving it unresolved for a
+                # corrected return, while other valid results in the same package continue.
+                before_failures = collections.Counter(validate_reader_text_doc(sidecar)[0])
                 table[key] = entry
+                after_failures = collections.Counter(validate_reader_text_doc(sidecar)[0])
+                introduced_failures = list((after_failures - before_failures).elements())
+                if introduced_failures:
+                    if previous is None:
+                        table.pop(key, None)
+                    else:
+                        table[key] = previous
+                    print(
+                        f"REJECT {label} result {idx}: reader-text preflight failed: "
+                        + "; ".join(introduced_failures[:4])
+                    )
+                    rejected_count += 1
+                    continue
+
                 if entry.get("reader_why"):
                     avoid_whys.append(entry["reader_why"])
 
