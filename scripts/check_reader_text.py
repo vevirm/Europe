@@ -23,6 +23,45 @@ JARGON = [
 def clean(v):
     return re.sub(r"\s+", " ", str(v or "")).strip()
 
+def validate_reader_text_entry(entry, why_count_before=0):
+    """Validate one proposed reader-text entry without rescanning the whole sidecar."""
+    fails = []
+    if not isinstance(entry, dict):
+        return ["entry is not an object"]
+
+    if not clean(entry.get("source_hash")):
+        fails.append("entry missing source_hash")
+
+    for field, cap in CAP.items():
+        value = clean(entry.get(field))
+        if value and len(value.split()) > cap:
+            fails.append(f"{field} over {cap} words: {value[:60]}")
+        if value.endswith(("...", "…")):
+            fails.append(f"{field} ends in ellipsis: {value[:60]}")
+        for term in JARGON:
+            if value and re.search(rf"\b{re.escape(term)}\b", value, re.I):
+                fails.append(f"{field} uses '{term}': {value[:60]}")
+
+    more = clean(entry.get("reader_more"))
+    if more and len(more.split()) > MORE_CAP:
+        fails.append(f"reader_more over {MORE_CAP} words")
+
+    deep = entry.get("deep_analysis")
+    if entry.get("profile", "").startswith("deep-reader"):
+        if not isinstance(deep, dict):
+            fails.append("deep-reader entry missing deep_analysis object")
+        elif clean(deep.get("confidence")) not in {"high", "medium", "low"}:
+            fails.append("deep_analysis confidence must be high/medium/low")
+        if deep and not deep.get("why_supported", False) and clean(entry.get("reader_why")):
+            fails.append("reader_why present although deep_analysis.why_supported is false")
+
+    why = clean(entry.get("reader_why"))
+    if why and why_count_before + 1 > MAX_REPEATS:
+        fails.append(f"WHY repeats {why_count_before + 1} times: {why[:70]}")
+
+    return fails
+
+
 
 def validate_reader_text_doc(doc):
     """Return (failures, warnings, stats) using the exact CLI validation rules.

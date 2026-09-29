@@ -34,7 +34,7 @@ try:
         update_record_metadata,
     )
     from scripts.claims_schema import load_vocabulary, validate_claims
-    from scripts.check_reader_text import validate_reader_text_doc
+    from scripts.check_reader_text import validate_reader_text_entry
 except ModuleNotFoundError:
     from active_corpus import (  # type: ignore
         DEFAULT_ADMISSION, DEFAULT_CORRECTIONS, SAFE_CORRECTION_FIELDS, SAFE_UNSET_FIELDS,
@@ -50,7 +50,7 @@ except ModuleNotFoundError:
         update_record_metadata,
     )
     from claims_schema import load_vocabulary, validate_claims  # type: ignore
-    from check_reader_text import validate_reader_text_doc  # type: ignore
+    from check_reader_text import validate_reader_text_entry  # type: ignore
 
 V1_FORMAT = "radar-deep-scan-results-v1"
 V2_FORMAT = "radar-deep-scan-results-v2"
@@ -498,6 +498,7 @@ def main() -> None:
     admit_table = admission_state.setdefault("records", {})
     corr_table = corrections.setdefault("records", {})
     avoid_whys = [clean(v.get("reader_why")) for v in table.values() if isinstance(v, dict) and clean(v.get("reader_why"))]
+    reader_why_counts = collections.Counter(avoid_whys)
     accepted_v1 = accepted_v2 = rejected_count = duplicate_count = stale_count = deferred_count = 0
     retry_count = dropped_count = 0
     work_state_changed = False
@@ -751,14 +752,13 @@ def main() -> None:
                     entry["claims_profile"] = CLAIMS_FORMAT
                 if legacy_versions:
                     entry["legacy_versions"] = legacy_versions
-                # Transactional reader-text preflight: use the exact same rules as
-                # scripts/check_reader_text.py *before* this result can be marked verified.
-                # A malformed result is rejected individually, leaving it unresolved for a
-                # corrected return, while other valid results in the same package continue.
-                before_failures = collections.Counter(validate_reader_text_doc(sidecar)[0])
-                table[key] = entry
-                after_failures = collections.Counter(validate_reader_text_doc(sidecar)[0])
-                introduced_failures = list((after_failures - before_failures).elements())
+                # Fast transactional preflight: validate only this proposed entry.
+                # The full sidecar is still checked once later by check_reader_text.py.
+                why_value = clean(entry.get("reader_why"))
+                introduced_failures = validate_reader_text_entry(
+                    entry,
+                    why_count_before=reader_why_counts.get(why_value, 0) if why_value else 0,
+                )
                 if introduced_failures:
                     if previous is None:
                         table.pop(key, None)
@@ -771,8 +771,9 @@ def main() -> None:
                     rejected_count += 1
                     continue
 
-                if entry.get("reader_why"):
-                    avoid_whys.append(entry["reader_why"])
+                if why_value:
+                    avoid_whys.append(why_value)
+                    reader_why_counts[why_value] += 1
 
                 adm = raw.get("admission") or {}
                 dup = raw.get("duplicate") or {}
