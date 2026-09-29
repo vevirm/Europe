@@ -7,17 +7,17 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **472** (Main **464** + Historical **8**)
-- Automatic queue still needing V2 verification: **1102** (Main **152** + Historical **950**)
-- Currently assigned to workers: **78** (Main **20** + Historical **58**)
+- Automatic queue still needing V2 verification: **1153** (Main **170** + Historical **983**)
+- Currently assigned to workers: **126** (Main **38** + Historical **88**)
 - Bounded access-recovery retries still eligible: **139**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **1024**
+- Automatic queue pending and not yet assigned: **1027**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-c5abcfce1620`
-- Assigned unresolved records: **36**
+- Current package: `worker-a-d437a695376f`
+- Assigned unresolved records: **60**
   1. `link:https://news.google.com/rss/articles/CBMirwFBVV95cUxOX1pLOFFWZURhd3NXNS1LMXM5aFludFpVRjY2bGpIN0hIVkRNR25jWVF0TG1qazZZUXk1NHVlUnhQQmJHVHlJckYwblI0SWVEZENvTGZfYTBZYlZBNFpiVXVXZXk4Z3AtSTBkeE13MUxPY2lCeUFVbWlicENRUEp6TGsxOTlBRGZ4RzlCT1N3SHJHVTI5aVk1QS01VWlpSkVrVmRGcTBQeDhIb0VMTldz?oc=5` — Trump’s diesel export threat meets a shrug in fuel-strapped Europe
   2. `link:https://news.google.com/rss/articles/CBMirgFBVV95cUxPM1BDVkFhTlFidkFYaXA2Wk54T1NWT19JQ0FtTF81bE5yUC1KbnAxYlVMRU80cEp2WlpTTjN5ZzZiV3R4MVBxNGFmTEptdGRMcHM4VXpwUEc4ck1OcHhrbjJFM0Y4WWhYbG0xRHhkZlZHaTNuLTRYMlVnOU9ocWdwb3I3NTZCSWVZTFlTVWt5VV9ma3VLU2FLQjFHcmFNYmE4RWFEbXpSNERSOWZLMlE?oc=5` — EU to Exempt Two Russian Tycoons in Sanctions Renewal Deal
   3. `link:https://news.google.com/rss/articles/CBMiygFBVV95cUxPNEU3cG0xb2xfWXdEaVhqMEQ3cEVhZTJFX2tMVEo5YkFXVXF3YmJQSUU5eGxJbHcteEQ3ZWlidmhabTRFazM5MzRIbjQ1aWRhUHQ4LURidWtLdEM4ekdRb1A0RlFGWWloT0lBbWxkQUZhR2tVVy1vSndNeXZGSUR0cDBtRHFMRTNOY3RMUmo4MWtpN2lGYnRuSlJXYm9sZUhwa3JCMHZ3RjVXVnBCMDhIeU9CSkRyZFJsbUtpODZsckNSZjBYWWZwNWJB?oc=5` — Volkswagen benefited from €1.5bn in German EV subsidies as it lobbies EU to hit Chinese cars harder
@@ -26,11 +26,11 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   6. `link:https://news.google.com/rss/articles/CBMi6wFBVV95cUxNeEVJUmhhejd3Y0xuTFFPWnlGOXdrSmR4MDFmYm1jZDFTR2RNUlFhVmxwOC1rNzlzdy1BYW9kNi1LaEFUTEFzR0Eyck5nVGZoN2lSUFE5anBIVVhGbzg1LVNtV09GaUVHYmFnR2U4cFlBV3hWZEpZR3lKS3llQUFPUlBCQUFEMmpWdG13NDNINkxJeTZHNHRVMWtib19IcDVOWFlxcXMtcEpiWDhCMWtnc2pMazRWU2dSOWg3c1dsbTZrUHFYWTVMQVhhNnR0MG9HTWVPemltdDJRSXRSWjRsNzhxTzk5UkxjMXEw?oc=5` — European defence industry: Council identifies the first five projects of common interest
   7. `link:https://news.google.com/rss/articles/CBMisgFBVV95cUxQdkJsS2FSMnQzd1dNc0ZfS0hJRlRONktheHk4R0dicVhoOGpmNEV0aXFFZ3pHLUNZVUZ0Qml3Z2FzUkZZc3Z3ZjRFbFZKM3E3U2pTcUxfOHdRaklMR2tIYjVtNnNtYTlKU18yZkFDNVZvMHpRV3VwSDJFX2s1c1lNTE5FMFNhOVJsSFZWbU5yQV9yUUZyRTNGU09QcDJTVXF1RDRCTVQ1MTNvTHRtQmlKZTNn?oc=5` — Europe Draws More LNG as Hormuz Crisis Tightens Global Market
   8. `link:https://news.google.com/rss/articles/CBMivgFBVV95cUxOVDRjSXY3THA4d0lJaGlLM05DM3FVeDc3TFVFa3p2d1Z5OWRiNnBxbVhqMkVoZmw0M0xNeDVaNXhrTVN6bnhTRy1Pc0E4VXEwSjhsS3VkcE9BSjZMQ0hUM0FfM010Zk8zNGlZTUN0MmRZbS1ZTEhxQUFGWUVDUFBESzRKWkYxUUZMVjJIZzd0ZjZVbDViRFRDTkFpUjlCalJfODhOQUk5OC1Nc3d1X2NOdE5aUk1tWS1PdDdJZkNR?oc=5` — German gas supply is secure despite low storage levels, VNG chief says
-  - … plus 28 more in the package manifest
+  - … plus 52 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-2d171e1839d6`
-- Assigned unresolved records: **36**
+- Current package: `worker-b-aa9eadcfc41a`
+- Assigned unresolved records: **60**
   1. `historical:id:2433c92388ae268b` — Mining for Europe's future: Critical raw materials, public attitudes and risks in enlargement partners
   2. `historical:id:0e3b1813e6c28103` — Centimanes v. Titans: right-wing populist governments’ treatment of foreign multinationals in East Central Europe
   3. `historical:id:9a02512190d6359b` — Out of Many, Many: Variation in East Central Europe Financial Governance Despite the EU's Single Market
@@ -39,7 +39,7 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   6. `historical:id:2728752f23f2af6b` — Trade and Economic Security
   7. `historical:id:7ad55e27f4a2ce70` — The digital euro in a fragmenting world - ensuring Europe's resilience and autonomy in payments | Bank for International Settlements
   8. `historical:id:2ecd9537efd7b69d` — The digital euro - anchoring Europe's strategic autonomy in a digital future | Bank for International Settlements
-  - … plus 28 more in the package manifest
+  - … plus 52 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
