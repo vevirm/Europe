@@ -5,15 +5,41 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <title>2035 · EU Economic Security Radar</title>
-<link rel="stylesheet" href="../radar.css?v=28.4"><link rel="stylesheet" href="scenarios.css?v=4">
+<link rel="stylesheet" href="../radar.css?v=28.4"><link rel="stylesheet" href="scenarios.css?v=6">
 <script src="../radar_data.js?v=28.1"></script>
 </head><body>
 <main class="wrap future-main">
-<section class="axis-pair-intro" aria-labelledby="axisPairTitle"><p class="taxonomy-kicker">2035 economic-security scenario spaces</p><h1 id="axisPairTitle">Choose an axis pair</h1><p class="future-lede">Four different pairs of security uncertainties open four different views of Europe in 2035. Each axis pair leads to 4 scenarios, and each scenario has 4 findings-driven variants.</p></section>
-<div id="axisLensGrid" class="axis-lens-grid"><p class="empty">Loading</p></div>
+<section class="future-intro" aria-labelledby="futureTitle">
+  <p class="taxonomy-kicker">2035 economic-security scenarios</p>
+  <h1 id="futureTitle">Four possible Europes</h1>
+  <p class="future-lede">The first frame is fixed: global economic connectedness × European strategic capacity. Open one major scenario to see a second 2×2 selected from the current Radar, then four detailed branches under each sub-scenario.</p>
+</section>
+<div id="majorFrame"><p class="empty">Loading scenarios…</p></div>
 </main>
 <script>
 const clean=v=>String(v||'').replace(/\s+/g,' ').trim();
 const esc=v=>clean(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-(async()=>{try{const data=await RadarData.load('../radar.json','../radar_seed.json');const frames=data?.high_order_inference?.scenarios_2035?.frames||[];document.getElementById('axisLensGrid').innerHTML=frames.map((f,i)=>`<article class="axis-lens-card"><a href="lens/?frame=${encodeURIComponent(f.id)}"><p class="lens-number">0${i+1}</p><h2>${esc(f.title)}</h2><p>${esc(f.question)}</p><div class="lens-meta"><span>4 scenarios</span><span>4 variants each</span></div><strong>Explore this axis pair →</strong></a></article>`).join('')||'<p class="empty">Scenario lenses are unavailable.</p>';}catch(e){console.error(e);document.getElementById('axisLensGrid').innerHTML='<p class="empty">Scenario lenses are unavailable.</p>';}})();
-</script><script src="../site-shell.js?v=28.1"></script></body></html>
+const worldCell=w=>`<article class="scenario-cell"><a href="scenario/?world=${encodeURIComponent(w.id)}"><div><p class="cell-axis">${esc(w.coordinates?.y||'')} · ${esc(w.coordinates?.x||'')}</p><h2>${esc(w.name)}</h2><p>${esc(w.tagline)}</p></div><span class="open-cue">Open scenario →</span></a></article>`;
+const matrix=(sc)=>{
+  const axes=sc.axes||{},x=axes.x||{},y=axes.y||{},worlds=(sc.scenarios||[]).slice(0,4);
+  return `<section class="scenario-frame" aria-label="2035 major scenario matrix">
+    <div class="scenario-matrix-wrap">
+      <div class="axis-y-high">${esc(y.high)}</div>
+      <div class="axis-y-title">${esc(y.title)}</div>
+      <div class="scenario-matrix">${worlds.map(worldCell).join('')}</div>
+      <div class="axis-y-low">${esc(y.low)}</div>
+      <div class="axis-x"><b>${esc(x.title)}</b></div>
+      <div class="axis-x-labels"><span>${esc(x.low)}</span><span>${esc(x.high)}</span></div>
+    </div>
+    <p class="scenario-note"><strong>Fixed major frame.</strong> The first two axes do not change from scan to scan. The Radar changes the second-level axes inside each major world.</p>
+  </section>`;
+};
+(async()=>{try{
+  const data=await RadarData.load('../radar.json','../radar_seed.json');
+  const sc=data?.high_order_inference?.scenarios_2035;
+  if(!sc?.scenarios?.length) throw new Error('Scenario machine not present in radar.json');
+  document.getElementById('majorFrame').innerHTML=matrix(sc);
+}catch(e){console.error(e);document.getElementById('majorFrame').innerHTML='<p class="empty">Scenarios are unavailable. Rebuild the 2035 scenario data first.</p>';}})();
+</script>
+<script src="../site-shell.js?v=28.1"></script>
+</body></html>
