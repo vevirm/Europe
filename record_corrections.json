@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-record-corrections-v1",
-  "updated_at": "2026-09-29T06:11:41Z",
+  "updated_at": "2026-09-29T11:53:10Z",
   "records": {
     "link:https://doi.org/10.1080/09662839.2026.2709844": {
       "fields": {
@@ -17,6 +17,67 @@
       ],
       "updated_at": "2026-09-26T09:46:43Z",
       "deep_scan_package_id": "worker-a-20260926T091857Z-acd70f673165"
+    },
+    "historical:id:ba96b5d15415a3d0": {
+      "fields": {
+        "date": "2012-04"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Matching Egmont policy brief is from April 2012.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://egmontinstitute.be/app/uploads/2014/01/PB3_China_EU_Summit.pdf?type=pdf"
+      ],
+      "updated_at": "2026-09-29T11:53:09Z",
+      "deep_scan_package_id": "worker-a-d437a695376f"
+    },
+    "historical:id:f29c0d5aaeeac501": {
+      "fields": {
+        "date": "2020-04-10"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Egmont publication date recovered from the matching article page.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://egmontinstitute.be/why-now-is-the-time-to-get-real-on-eu-economic-security/"
+      ],
+      "updated_at": "2026-09-29T11:53:09Z",
+      "deep_scan_package_id": "worker-a-d437a695376f"
+    },
+    "historical:id:b9b3f470b827bf62": {
+      "fields": {
+        "date": "2015-05-05"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Egmont publication date recovered from the matching article page.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://egmontinstitute.be/ttip-or-tttf-why-the-transatlantic-trade-and-investment-partnership-will-most-likely-become-a-trade-treaty-too-far/"
+      ],
+      "updated_at": "2026-09-29T11:53:09Z",
+      "deep_scan_package_id": "worker-a-d437a695376f"
+    },
+    "link:https://www.atlanticcouncil.org/wp-content/uploads/2023/06/FP-2023.pdf": {
+      "fields": {
+        "source": "Atlantic Council",
+        "date": "2026-07-15"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "The packaged PDF was the 2023 index report; the claimed 2026 report was recovered on the Atlantic Council site.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "evidence": [
+        "https://www.atlanticcouncil.org/in-depth-research-reports/report/2026-freedom-and-prosperity-indexes-the-legal-foundations-that-enable-prosperity-are-rapidly-eroding/"
+      ],
+      "updated_at": "2026-09-29T11:53:10Z",
+      "deep_scan_package_id": "worker-a-d437a695376f"
     }
   }
 }

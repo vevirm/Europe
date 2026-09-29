@@ -6,27 +6,27 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **472** (Main **464** + Historical **8**)
-- Automatic queue still needing V2 verification: **1153** (Main **170** + Historical **983**)
-- Currently assigned to workers: **126** (Main **38** + Historical **88**)
-- Bounded access-recovery retries still eligible: **139**
+- Authoritative V2 verified: **498** (Main **473** + Historical **25**)
+- Automatic queue still needing V2 verification: **1127** (Main **161** + Historical **966**)
+- Currently assigned to workers: **102** (Main **15** + Historical **87**)
+- Bounded access-recovery retries still eligible: **162**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **1027**
+- Automatic queue pending and not yet assigned: **1025**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-d437a695376f`
-- Assigned unresolved records: **60**
-  1. `link:https://news.google.com/rss/articles/CBMirwFBVV95cUxOX1pLOFFWZURhd3NXNS1LMXM5aFludFpVRjY2bGpIN0hIVkRNR25jWVF0TG1qazZZUXk1NHVlUnhQQmJHVHlJckYwblI0SWVEZENvTGZfYTBZYlZBNFpiVXVXZXk4Z3AtSTBkeE13MUxPY2lCeUFVbWlicENRUEp6TGsxOTlBRGZ4RzlCT1N3SHJHVTI5aVk1QS01VWlpSkVrVmRGcTBQeDhIb0VMTldz?oc=5` — Trump’s diesel export threat meets a shrug in fuel-strapped Europe
-  2. `link:https://news.google.com/rss/articles/CBMirgFBVV95cUxPM1BDVkFhTlFidkFYaXA2Wk54T1NWT19JQ0FtTF81bE5yUC1KbnAxYlVMRU80cEp2WlpTTjN5ZzZiV3R4MVBxNGFmTEptdGRMcHM4VXpwUEc4ck1OcHhrbjJFM0Y4WWhYbG0xRHhkZlZHaTNuLTRYMlVnOU9ocWdwb3I3NTZCSWVZTFlTVWt5VV9ma3VLU2FLQjFHcmFNYmE4RWFEbXpSNERSOWZLMlE?oc=5` — EU to Exempt Two Russian Tycoons in Sanctions Renewal Deal
-  3. `link:https://news.google.com/rss/articles/CBMiygFBVV95cUxPNEU3cG0xb2xfWXdEaVhqMEQ3cEVhZTJFX2tMVEo5YkFXVXF3YmJQSUU5eGxJbHcteEQ3ZWlidmhabTRFazM5MzRIbjQ1aWRhUHQ4LURidWtLdEM4ekdRb1A0RlFGWWloT0lBbWxkQUZhR2tVVy1vSndNeXZGSUR0cDBtRHFMRTNOY3RMUmo4MWtpN2lGYnRuSlJXYm9sZUhwa3JCMHZ3RjVXVnBCMDhIeU9CSkRyZFJsbUtpODZsckNSZjBYWWZwNWJB?oc=5` — Volkswagen benefited from €1.5bn in German EV subsidies as it lobbies EU to hit Chinese cars harder
-  4. `link:https://news.google.com/rss/articles/CBMiiwFBVV95cUxPaGlTdkJldUN6aWwyNFFnUVBEWEtnZWVPQUp4VGpPNGZMRTI4bE9fZlVOTEhZZ2VqcVpfS3N3S0d2UlhPcUp3Vk1WT1pES1ctVlFZZ1UydWNTbWxHVGwzbGNlbGE0TUJBMUJldVpZUFN0ZXBla3ZhM3pTMjF6UFdVY3ZtZnBtMldWVERZ?oc=5` — EU’s Russia sanctions are running out of easy targets
-  5. `link:https://news.google.com/rss/articles/CBMi_gFBVV95cUxNbko3RENKVG5HMTNYczRtOVpwTHJQNmJFN20xT0ZKSzBuTEM2VzMxZkZGMmZFUWZxYUx2OFByS0U5aTVteDNIeG5rRXhENldSZmFsRWlPRl9aUVkyVFRycFZkUTBlQWtBNmJxTG4wTmpvazNBRWtiZ2JrZHd2UXZLZzZ2Qk56U25KRnVnNXhyeTFINElNZ2s3QXhmWU1NNHhwTkNvRHhoZjhkenA0dWt2ejcydkNWOTM1elY4Q0lwZ0VxeUJ1SUZYcjNnVExyZlVtNk16ZFQ3SFNHbjFSakJSOE40dGU4RF9peWJHQi16dGJmN2ZlREpYRzJpLThYdw?oc=5` — EU sanctions 10 individuals and 17 entities over unlawful deportation of Ukrainian children to Russia
-  6. `link:https://news.google.com/rss/articles/CBMi6wFBVV95cUxNeEVJUmhhejd3Y0xuTFFPWnlGOXdrSmR4MDFmYm1jZDFTR2RNUlFhVmxwOC1rNzlzdy1BYW9kNi1LaEFUTEFzR0Eyck5nVGZoN2lSUFE5anBIVVhGbzg1LVNtV09GaUVHYmFnR2U4cFlBV3hWZEpZR3lKS3llQUFPUlBCQUFEMmpWdG13NDNINkxJeTZHNHRVMWtib19IcDVOWFlxcXMtcEpiWDhCMWtnc2pMazRWU2dSOWg3c1dsbTZrUHFYWTVMQVhhNnR0MG9HTWVPemltdDJRSXRSWjRsNzhxTzk5UkxjMXEw?oc=5` — European defence industry: Council identifies the first five projects of common interest
-  7. `link:https://news.google.com/rss/articles/CBMisgFBVV95cUxQdkJsS2FSMnQzd1dNc0ZfS0hJRlRONktheHk4R0dicVhoOGpmNEV0aXFFZ3pHLUNZVUZ0Qml3Z2FzUkZZc3Z3ZjRFbFZKM3E3U2pTcUxfOHdRaklMR2tIYjVtNnNtYTlKU18yZkFDNVZvMHpRV3VwSDJFX2s1c1lNTE5FMFNhOVJsSFZWbU5yQV9yUUZyRTNGU09QcDJTVXF1RDRCTVQ1MTNvTHRtQmlKZTNn?oc=5` — Europe Draws More LNG as Hormuz Crisis Tightens Global Market
-  8. `link:https://news.google.com/rss/articles/CBMivgFBVV95cUxOVDRjSXY3THA4d0lJaGlLM05DM3FVeDc3TFVFa3p2d1Z5OWRiNnBxbVhqMkVoZmw0M0xNeDVaNXhrTVN6bnhTRy1Pc0E4VXEwSjhsS3VkcE9BSjZMQ0hUM0FfM010Zk8zNGlZTUN0MmRZbS1ZTEhxQUFGWUVDUFBESzRKWkYxUUZMVjJIZzd0ZjZVbDViRFRDTkFpUjlCalJfODhOQUk5OC1Nc3d1X2NOdE5aUk1tWS1PdDdJZkNR?oc=5` — German gas supply is secure despite low storage levels, VNG chief says
-  - … plus 52 more in the package manifest
+- Current package: `worker-a-d5b4cd36d0a9`
+- Assigned unresolved records: **36**
+  1. `link:https://news.google.com/rss/articles/CBMi_gFBVV95cUxNbko3RENKVG5HMTNYczRtOVpwTHJQNmJFN20xT0ZKSzBuTEM2VzMxZkZGMmZFUWZxYUx2OFByS0U5aTVteDNIeG5rRXhENldSZmFsRWlPRl9aUVkyVFRycFZkUTBlQWtBNmJxTG4wTmpvazNBRWtiZ2JrZHd2UXZLZzZ2Qk56U25KRnVnNXhyeTFINElNZ2s3QXhmWU1NNHhwTkNvRHhoZjhkenA0dWt2ejcydkNWOTM1elY4Q0lwZ0VxeUJ1SUZYcjNnVExyZlVtNk16ZFQ3SFNHbjFSakJSOE40dGU4RF9peWJHQi16dGJmN2ZlREpYRzJpLThYdw?oc=5` — EU sanctions 10 individuals and 17 entities over unlawful deportation of Ukrainian children to Russia
+  2. `link:https://news.google.com/rss/articles/CBMi6wFBVV95cUxNeEVJUmhhejd3Y0xuTFFPWnlGOXdrSmR4MDFmYm1jZDFTR2RNUlFhVmxwOC1rNzlzdy1BYW9kNi1LaEFUTEFzR0Eyck5nVGZoN2lSUFE5anBIVVhGbzg1LVNtV09GaUVHYmFnR2U4cFlBV3hWZEpZR3lKS3llQUFPUlBCQUFEMmpWdG13NDNINkxJeTZHNHRVMWtib19IcDVOWFlxcXMtcEpiWDhCMWtnc2pMazRWU2dSOWg3c1dsbTZrUHFYWTVMQVhhNnR0MG9HTWVPemltdDJRSXRSWjRsNzhxTzk5UkxjMXEw?oc=5` — European defence industry: Council identifies the first five projects of common interest
+  3. `historical:id:5859fd808f9576e5` — Europe’s research dilemma – balancing security and scientific cooperation with China
+  4. `historical:id:3788a70d3bd5491a` — European finance at the fault lines of transatlantic relations | Bank for International Settlements
+  5. `link:https://doi.org/10.1057/s41599-026-08607-9` — The obstacles and changes in Sino-European trade routes in the twenty-first century due to climate change and geopolitical risks
+  6. `link:https://doi.org/10.48550/arxiv.2606.12201` — Materealistic? How European energy system models exceed raw material reserves
+  7. `historical:id:a8a46f983eb65387` — How do EU manufacturing firms navigate tensions, disruptions, and policy changes in foreign markets?
+  8. `link:https://doi.org/10.36074/logos-05.06.2026.003` — INSTITUTIONAL DE-RISKING AS A NEW STATE FINANCIAL MODEL FOR STRATEGIC INDUSTRIES: THE CASE OF GREEN HYDROGEN IN UKRAINE
+  - … plus 28 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-aa9eadcfc41a`
