@@ -1,95 +1,82 @@
-.page-future .future-main{padding-bottom:64px}
-.page-future .future-lede{max-width:760px;font-size:18px;line-height:1.55;margin:0 0 18px}
-.page-future .scenario-count{display:inline-flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 0 28px;padding:11px 15px;border-left:5px solid var(--red);background:#fff7f5;color:var(--ink)}
-.page-future .scenario-count strong{font-size:18px}.page-future .scenario-count span{font-size:15px;font-weight:700;color:var(--quiet)}
-.page-future .scenario-frame{margin:22px 0 46px}
-.page-future .scenario-matrix-wrap{display:grid;grid-template-columns:54px minmax(0,720px);grid-template-rows:auto 1fr auto;gap:10px 12px;align-items:center;max-width:820px}
-.page-future .axis-y-title{grid-column:1;grid-row:2;writing-mode:vertical-rl;transform:rotate(180deg);text-align:center;font-weight:800;letter-spacing:.02em;color:var(--ink)}
-.page-future .axis-y-high,.page-future .axis-y-low{grid-column:2;font-size:13px;font-weight:800;color:var(--quiet)}
+.page-future .future-main{padding-bottom:72px}
+.page-future .future-intro{max-width:930px;margin:0 0 28px}
+.page-future .future-intro h1{font-size:clamp(40px,6vw,64px);line-height:.98;margin:0 0 14px}
+.page-future .future-lede{max-width:880px;font-size:18px;line-height:1.55;margin:0}
+.page-future .taxonomy-kicker{margin:0 0 7px!important;color:var(--red)!important;font-size:13px!important;font-weight:850;text-transform:uppercase;letter-spacing:.08em}
+
+/* Shared 2x2 matrix */
+.page-future .scenario-frame{margin:24px 0 48px}
+.page-future .scenario-matrix-wrap{display:grid;grid-template-columns:58px minmax(0,780px);grid-template-rows:auto auto auto auto;gap:10px 12px;align-items:center;max-width:870px}
+.page-future .axis-y-title{grid-column:1;grid-row:2;writing-mode:vertical-rl;transform:rotate(180deg);text-align:center;font-weight:850;letter-spacing:.02em;color:var(--ink)}
+.page-future .axis-y-high,.page-future .axis-y-low{grid-column:2;font-size:13px;font-weight:850;color:var(--quiet)}
 .page-future .axis-y-high{grid-row:1}.page-future .axis-y-low{grid-row:3}
-.page-future .scenario-matrix{grid-column:2;grid-row:2;display:grid;grid-template-columns:1fr 1fr;min-height:470px;border:2px solid var(--ink);background:var(--ink);gap:2px;box-shadow:0 10px 28px rgba(20,20,20,.08)}
-.page-future .scenario-cell{position:relative;background:var(--paper);min-height:232px}
-.page-future .scenario-cell a{height:100%;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;padding:28px;text-decoration:none;color:var(--ink);transition:transform .14s ease,background .14s ease}
+.page-future .scenario-matrix{grid-column:2;grid-row:2;display:grid;grid-template-columns:1fr 1fr;min-height:480px;border:2px solid var(--ink);background:var(--ink);gap:2px;box-shadow:0 10px 28px rgba(20,20,20,.08)}
+.page-future .scenario-cell{position:relative;background:var(--paper);min-height:238px}
+.page-future .scenario-cell a{height:100%;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;padding:27px;text-decoration:none;color:var(--ink);transition:background .14s ease,transform .14s ease}
 .page-future .scenario-cell a:hover,.page-future .scenario-cell a:focus{background:#fff7f5;outline:0}
 .page-future .scenario-cell:nth-child(1),.page-future .scenario-cell:nth-child(4){background:#fff8f6}
 .page-future .scenario-cell:nth-child(2){border-top:7px solid var(--red)}
 .page-future .scenario-cell:nth-child(3){border-bottom:7px solid var(--red)}
-.page-future .scenario-cell .cell-axis{font-size:12px;line-height:1.35;text-transform:uppercase;letter-spacing:.08em;font-weight:800;color:var(--red);margin-bottom:14px}
-.page-future .scenario-cell h2{font-size:clamp(23px,3vw,34px);line-height:1.03;margin:0 0 10px;max-width:12ch}
-.page-future .scenario-cell p{font-size:15px;line-height:1.45;margin:0;color:var(--quiet);max-width:32ch}
-.page-future .scenario-cell .open-cue{margin-top:18px;font-size:13px;font-weight:800;color:var(--ink)}
-.page-future .axis-x{grid-column:2;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;margin-top:2px;font-size:13px;font-weight:800;color:var(--quiet)}
+.page-future .scenario-cell .cell-axis{font-size:11px;line-height:1.38;text-transform:uppercase;letter-spacing:.06em;font-weight:850;color:var(--red);margin:0 0 12px}
+.page-future .scenario-cell h2{font-size:clamp(23px,3vw,34px);line-height:1.04;margin:0 0 10px;max-width:15ch}
+.page-future .scenario-cell p{font-size:15px;line-height:1.45;margin:0;color:var(--quiet);max-width:36ch}
+.page-future .scenario-cell .open-cue{display:block;margin-top:18px;font-size:13px;font-weight:850;color:var(--ink)}
+.page-future .axis-x{grid-column:2;grid-row:4;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;margin-top:2px;font-size:13px;font-weight:850;color:var(--quiet)}
 .page-future .axis-x::before,.page-future .axis-x::after{content:"";height:1px;background:var(--rule)}
 .page-future .axis-x b{color:var(--ink)}
-.page-future .axis-x-labels{grid-column:2;display:flex;justify-content:space-between;font-size:13px;font-weight:800;color:var(--quiet);margin-top:-2px}
-.page-future .scenario-note{max-width:760px;color:var(--ink);font-size:16px;line-height:1.5;margin:18px 0 0 66px;padding:13px 16px;background:#fff7f5;border-left:5px solid var(--red)}
-.page-future .scenario-note strong{font-weight:850}
-.page-future .taxonomy-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin:46px 0 18px;padding:26px 0 0;border-top:3px solid var(--red)}
-.page-future .taxonomy-kicker{margin:0 0 4px!important;color:var(--red)!important;font-size:13px!important;font-weight:850;text-transform:uppercase;letter-spacing:.08em}
-.page-future .taxonomy-head h2{font-size:34px;margin:0}.page-future .taxonomy-head>p{margin:0;color:var(--ink);font-size:16px;line-height:1.45;font-weight:650;max-width:560px}
-.page-future .scenario-taxonomy{display:grid;gap:18px}
-.page-future .tax-family{border:1px solid var(--rule);background:var(--paper);padding:22px 24px;border-left:5px solid var(--red)}
-.page-future .tax-family-top{display:grid;grid-template-columns:minmax(200px,.8fr) 2.2fr;gap:28px;align-items:start}
-.page-future .tax-family h3{font-size:24px;margin:0 0 6px}.page-future .tax-family .tagline{margin:0;color:var(--quiet);font-size:15px}
-.page-future .tax-variants{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-.page-future .tax-variant{border:1px solid var(--rule);padding:12px 13px;background:#fff;min-height:72px}
-.page-future .tax-variant small{display:block;color:var(--red);font-weight:800;text-transform:uppercase;letter-spacing:.04em;margin-bottom:5px}
-.page-future .tax-variant span{font-weight:700;font-size:14px;line-height:1.25}
-.page-future .tax-open{display:inline-block;margin-top:13px;font-weight:800;text-decoration:none;color:var(--ink);border-bottom:2px solid var(--red)}
+.page-future .axis-x-labels{grid-column:2;display:flex;justify-content:space-between;font-size:13px;font-weight:850;color:var(--quiet);margin-top:-2px}
+.page-future .scenario-note{max-width:790px;color:var(--ink);font-size:15px;line-height:1.5;margin:18px 0 0 70px;padding:13px 16px;background:#fff7f5;border-left:5px solid var(--red)}
 
-.page-future .scenario-detail{max-width:1060px}
-.page-future .scenario-back{display:inline-block;margin:0 0 24px;font-weight:800;text-decoration:none;color:var(--ink);border-bottom:2px solid var(--red)}
-.page-future .scenario-hero{border:2px solid var(--ink);border-left:9px solid var(--red);padding:30px 34px;margin:0 0 30px;background:var(--paper)}
-.page-future .scenario-hero .coords{font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:var(--red);font-weight:800;margin:0 0 8px}
-.page-future .scenario-hero h2{font-size:clamp(34px,5vw,54px);line-height:1;margin:0 0 10px}
-.page-future .scenario-hero .scenario-tagline{font-size:20px;font-weight:700;margin:0 0 20px}
-.page-future .scenario-hero .scenario-summary{font-size:18px;line-height:1.55;max-width:760px;margin:0}
-.page-future .scenario-variants-title{font-size:28px;margin:34px 0 8px}
-.page-future .scenario-variants-intro{color:var(--quiet);margin:0 0 18px}
-.page-future .scenario-variant-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;align-items:start}
-.page-future .scenario-variant-card{border:1px solid var(--rule);background:#fff;padding:18px;min-height:250px}
-.page-future .scenario-variant-card:nth-child(1){border-top:5px solid var(--red)}
-.page-future .scenario-variant-card .kind{color:var(--red);font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:800;margin:0 0 8px}
-.page-future .scenario-variant-card h3{font-size:20px;line-height:1.16;margin:0 0 12px}
-.page-future .scenario-variant-card p{font-size:15px;line-height:1.48;margin:0 0 12px}
-.page-future .scenario-variant-card details{margin-top:12px}.page-future .scenario-variant-card summary{font-weight:800;color:var(--ink)}
-.page-future .scenario-section{margin:34px 0 0;padding-top:25px;border-top:1px solid var(--rule)}
-.page-future .scenario-section h3{font-size:25px;margin:0 0 12px}
-.page-future .scenario-facts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 26px;max-width:900px}
-.page-future .scenario-fact{padding:11px 0;border-bottom:1px solid var(--rule)}
-.page-future .scenario-fact strong{display:block;font-size:13px;color:var(--red);margin-bottom:3px}
-.page-future .scenario-sources{padding-left:18px}.page-future .scenario-sources li{margin:5px 0}
+/* Major scenario subpage */
+.page-future .scenario-detail{max-width:1180px}
+.page-future .scenario-back{display:inline-block;margin:0 0 24px;font-weight:850;text-decoration:none;color:var(--ink);border-bottom:2px solid var(--red)}
+.page-future .scenario-hero{border:2px solid var(--ink);border-left:9px solid var(--red);padding:30px 34px;margin:0 0 36px;background:var(--paper);max-width:1040px}
+.page-future .scenario-hero .coords{font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:var(--red);font-weight:850;margin:0 0 8px}
+.page-future .scenario-hero h1{font-size:clamp(38px,5vw,58px);line-height:1;margin:0 0 10px}
+.page-future .scenario-hero .scenario-tagline{font-size:20px;font-weight:750;margin:0 0 18px;color:var(--ink)}
+.page-future .scenario-hero .scenario-summary{font-size:18px;line-height:1.55;max-width:820px;margin:0 0 14px}
+.page-future .scenario-hero .scenario-tradeoff{font-size:15px;line-height:1.5;max-width:820px;margin:0;color:var(--quiet)}
 
-@media(max-width:900px){
- .page-future .tax-family-top{grid-template-columns:1fr}.page-future .tax-variants,.page-future .scenario-variant-grid{grid-template-columns:repeat(2,1fr)}
+.page-future .frame-intro{max-width:900px;margin:0 0 18px}
+.page-future .frame-intro h2{font-size:clamp(30px,4vw,44px);line-height:1.04;margin:0 0 10px}
+.page-future .sub-frame .scenario-matrix{min-height:500px}
+.page-future .sub-cell{min-height:248px}
+.page-future .sub-cell h2{font-size:clamp(20px,2.3vw,28px);max-width:18ch}
+.page-future .sub-cell p{font-size:13px}
+
+/* The 4 variants stay on the same page under each sub-scenario. */
+.page-future .sub-details-intro{margin:56px 0 22px;padding-top:28px;border-top:3px solid var(--red);max-width:940px}
+.page-future .sub-details-intro h2{font-size:34px;line-height:1.06;margin:0 0 9px}
+.page-future .sub-details-intro>p:last-child{font-size:16px;line-height:1.5;max-width:840px;margin:0;color:var(--quiet)}
+.page-future .sub-details{display:grid;gap:34px}
+.page-future .sub-detail{scroll-margin-top:24px;border:1px solid var(--rule);background:var(--paper);padding:24px}
+.page-future .sub-detail-head{display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start;margin:0 0 18px}
+.page-future .sub-number{margin:2px 0 0;color:var(--red);font-weight:850;font-size:14px;letter-spacing:.08em}
+.page-future .sub-detail-head h3{font-size:27px;line-height:1.08;margin:0 0 8px}
+.page-future .sub-detail-head p:last-child{font-size:15px;line-height:1.5;color:var(--quiet);margin:0;max-width:860px}
+.page-future .leaf-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.page-future .leaf-card{border:1px solid var(--rule);background:#fff;padding:16px;min-height:250px;display:flex;flex-direction:column}
+.page-future .leaf-card:first-child{border-top:5px solid var(--red)}
+.page-future .leaf-card .kind{color:var(--red);font-size:11px;letter-spacing:.07em;text-transform:uppercase;font-weight:850;margin:0 0 8px}
+.page-future .leaf-card h4{font-size:17px;line-height:1.22;margin:0 0 11px}
+.page-future .leaf-card>p:not(.kind):not(.variant-source){font-size:13px;line-height:1.48;margin:0 0 10px;color:var(--ink)}
+.page-future .variant-source{font-size:11px!important;line-height:1.42!important;color:var(--quiet)!important;margin:auto 0 0!important;padding-top:10px;border-top:1px solid var(--rule)}
+.page-future .variant-source a{color:inherit;text-decoration-thickness:1px}
+
+@media(max-width:1000px){
+ .page-future .leaf-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
-@media(max-width:650px){
- .page-future .scenario-matrix-wrap{grid-template-columns:30px 1fr}.page-future .scenario-matrix{min-height:0}.page-future .scenario-cell{min-height:190px}.page-future .scenario-cell a{padding:18px}.page-future .scenario-cell h2{font-size:22px}.page-future .scenario-cell p{font-size:13px}.page-future .scenario-note{margin-left:42px}.page-future .tax-variants,.page-future .scenario-variant-grid,.page-future .scenario-facts{grid-template-columns:1fr}.page-future .taxonomy-head{display:block}.page-future .taxonomy-head p{margin-top:8px}
-}
-
-/* Multi-axis 2035 navigation */
-.page-future .axis-pair-intro{margin:0 0 30px;max-width:980px}
-.page-future .axis-pair-intro h1{font-size:clamp(38px,5vw,58px);line-height:1;margin:0 0 14px}
-.page-future .axis-pair-intro .future-lede{max-width:900px;margin:0}
-.page-future .axis-lens-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;width:100%;max-width:none;align-items:stretch}
-.page-future .axis-lens-card{border:1px solid var(--rule);background:var(--paper);min-width:0;position:relative}
-.page-future .axis-lens-card a{display:flex;box-sizing:border-box;min-height:330px;height:100%;padding:22px;flex-direction:column;text-decoration:none;color:var(--ink);border-top:6px solid var(--red);transition:background .14s ease,transform .14s ease}
-.page-future .axis-lens-card a:hover,.page-future .axis-lens-card a:focus{background:#fff7f5;transform:translateY(-2px);outline:0}
-.page-future .axis-lens-card .lens-number{margin:0 0 22px;color:var(--red);font-size:13px;font-weight:850;letter-spacing:.08em}
-.page-future .axis-lens-card h2{margin:0 0 12px;font-size:clamp(22px,2.1vw,30px);line-height:1.08;max-width:none}
-.page-future .axis-lens-card> a > p:not(.lens-number){font-size:15px;line-height:1.48;color:var(--quiet);margin:0 0 20px;max-width:none}
-.page-future .axis-lens-card strong{margin-top:auto;font-size:14px}
-.page-future .lens-meta{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 18px}
-.page-future .lens-meta span{font-size:11px;font-weight:800;padding:5px 7px;border:1px solid var(--rule);background:#fff}
-.page-future .frame-intro{max-width:820px;margin:0 0 14px}
-.page-future .frame-intro h2{font-size:clamp(34px,5vw,52px);line-height:1.02;margin:0 0 10px}
-.page-future .frame-intro .future-lede{margin-bottom:0}
-
-@media(max-width:1180px){
- .page-future .axis-lens-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
- .page-future .axis-lens-card a{min-height:265px}
-}
-@media(max-width:650px){
- .page-future .axis-lens-grid{grid-template-columns:1fr}
- .page-future .axis-lens-card a{min-height:220px}
+@media(max-width:700px){
+ .page-future .scenario-matrix-wrap{grid-template-columns:30px 1fr}
+ .page-future .scenario-matrix{min-height:0}
+ .page-future .scenario-cell,.page-future .sub-cell{min-height:200px}
+ .page-future .scenario-cell a{padding:18px}
+ .page-future .scenario-cell h2{font-size:21px}
+ .page-future .scenario-cell p{font-size:12px}
+ .page-future .scenario-note{margin-left:42px}
+ .page-future .scenario-hero{padding:24px 22px}
+ .page-future .leaf-grid{grid-template-columns:1fr}
+ .page-future .sub-detail{padding:18px}
+ .page-future .sub-detail-head{grid-template-columns:1fr}
+ .page-future .sub-number{margin:0}
 }
