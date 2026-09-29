@@ -6,12 +6,12 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **498** (Main **473** + Historical **25**)
-- Automatic queue still needing V2 verification: **1127** (Main **161** + Historical **966**)
-- Currently assigned to workers: **102** (Main **15** + Historical **87**)
-- Bounded access-recovery retries still eligible: **162**
+- Authoritative V2 verified: **530** (Main **474** + Historical **56**)
+- Automatic queue still needing V2 verification: **1095** (Main **160** + Historical **935**)
+- Currently assigned to workers: **78** (Main **14** + Historical **64**)
+- Bounded access-recovery retries still eligible: **176**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **1025**
+- Automatic queue pending and not yet assigned: **1017**
 
 ## Worker lanes
 
@@ -29,17 +29,17 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-aa9eadcfc41a`
-- Assigned unresolved records: **60**
+- Current package: `worker-b-e4f5ce344574`
+- Assigned unresolved records: **36**
   1. `historical:id:2433c92388ae268b` — Mining for Europe's future: Critical raw materials, public attitudes and risks in enlargement partners
   2. `historical:id:0e3b1813e6c28103` — Centimanes v. Titans: right-wing populist governments’ treatment of foreign multinationals in East Central Europe
   3. `historical:id:9a02512190d6359b` — Out of Many, Many: Variation in East Central Europe Financial Governance Despite the EU's Single Market
-  4. `historical:id:973f522e3a37f35a` — Put to the test: the Eastern Partnership and the EU - Institut Jacques Delors
-  5. `historical:id:e7b6ff5842d21c18` — Transatlantic Approaches to Outbound Investment Screening
-  6. `historical:id:2728752f23f2af6b` — Trade and Economic Security
-  7. `historical:id:7ad55e27f4a2ce70` — The digital euro in a fragmenting world - ensuring Europe's resilience and autonomy in payments | Bank for International Settlements
-  8. `historical:id:2ecd9537efd7b69d` — The digital euro - anchoring Europe's strategic autonomy in a digital future | Bank for International Settlements
-  - … plus 52 more in the package manifest
+  4. `historical:id:e7b6ff5842d21c18` — Transatlantic Approaches to Outbound Investment Screening
+  5. `historical:id:2ecd9537efd7b69d` — The digital euro - anchoring Europe's strategic autonomy in a digital future | Bank for International Settlements
+  6. `historical:id:83f1f6fff8bda2c1` — The European Union’s Economic Security Strategy Update
+  7. `historical:id:f342875f1a3c6fd4` — Supply Chain Secondary Sanctions: How China Weaponised Lithuania's Trade Links - CELIS Institute - Investment Screening | National Security | Competitiveness
+  8. `historical:id:b774f5d0aa10d3e3` — Nostalgia is a Broken Compass for Industrial Policy
+  - … plus 28 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`

@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-09-29T11:53:10Z",
+  "generated_at": "2026-09-29T11:56:42Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -38499,8 +38499,2084 @@
         }
       ],
       "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:973f522e3a37f35a": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "9c8597cd",
+      "identity_hash": "471c35d2114fd94c",
+      "reader_title": "Put to the test: the Eastern Partnership and the EU - Institut Jacques Delors",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The work exists, but its central object is outside the Radar’s European economic-security remit; European references are contextual rather than the substantive object.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The work exists, but its central object is outside the Radar’s European economic-security remit; European references are contextual rather than the substantive object.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching pdf_excerpt material from https://institutdelors.eu/content/uploads/2025/04/easternpartnershipvilniussubmitflorentparmentierne-jdinov2013-1.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://institutdelors.eu/content/uploads/2025/04/easternpartnershipvilniussubmitflorentparmentierne-jdinov2013-1.pdf",
+            "title": "Put to the test: the Eastern Partnership and the EU - Institut Jacques Delors",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The work exists, but its central object is outside the Radar’s European economic-security remit; European references are contextual rather than the substantive object."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:40Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:7ad55e27f4a2ce70": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "6e513a52",
+      "identity_hash": "a895f2596ec07775",
+      "reader_what": "The speech argues that a digital euro could strengthen European payment resilience and reduce strategic dependence on non-European payment providers.",
+      "reader_more": "The speech argues that a digital euro could strengthen European payment resilience and reduce strategic dependence on non-European payment providers. The digital euro remains a policy project; the speech does not establish realised resilience gains from deployment.",
+      "deep_analysis": {
+        "work_kind": "policy/research analysis",
+        "research_question": "",
+        "main_finding": "The speech argues that a digital euro could strengthen European payment resilience and reduce strategic dependence on non-European payment providers.",
+        "method_or_basis": "Based on the matching substantive source material recovered for this record.",
+        "qualification": "The digital euro remains a policy project; the speech does not establish realised resilience gains from deployment.",
+        "radar_relevance": "Directly relevant to European economic security, strategic dependencies, resilience, geoeconomic policy or strategic industrial capacity.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching pdf_excerpt material from https://www.bis.org/speeches/20260416-digital-euro-fragmenting-world-ensuring-europes-resilience-and-autonomy-payments.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://www.bis.org/speeches/20260416-digital-euro-fragmenting-world-ensuring-europes-resilience-and-autonomy-payments.pdf",
+            "title": "The digital euro in a fragmenting world - ensuring Europe's resilience and autonomy in payments | Bank for International Settlements",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Recovered evidence directly addresses a substantive European economic-security development, dependency, policy instrument or strategic-capacity question."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:40Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [
+        {
+          "object": "finance.payment_infrastructure",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Deutsche Bundesbank",
+            "class": "member_state"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The digital euro remains a policy project; the speech does not establish realised resilience gains from deployment.",
+          "text": "The speech argues that a digital euro could strengthen European payment resilience and reduce strategic dependence on non-European payment providers.",
+          "confidence": "high",
+          "status_date_precision": "year",
+          "record_key": "historical:id:7ad55e27f4a2ce70",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:a895f2596ec07775:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1080/13501763.2026.2710717": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "73c3e701",
+      "identity_hash": "9b22e568c4c4b98e",
+      "reader_title": "Promising security, delivering dependency: the material constraints of EU semiconductor collective securitisation",
+      "reader_what": "The article argues that EU semiconductor securitisation exceeds Europe’s material capacity because fabrication infrastructure, skills and raw-material access remain constrained.",
+      "reader_more": "The article argues that EU semiconductor securitisation exceeds Europe’s material capacity because fabrication infrastructure, skills and raw-material access remain constrained. The study analyses structural constraints to the EU semiconductor strategy; it does not imply that all Chips Act measures have failed or cannot improve capacity.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "",
+        "main_finding": "The article argues that EU semiconductor securitisation exceeds Europe’s material capacity because fabrication infrastructure, skills and raw-material access remain constrained.",
+        "method_or_basis": "Based on the matching substantive source material recovered for this record.",
+        "qualification": "The study analyses structural constraints to the EU semiconductor strategy; it does not imply that all Chips Act measures have failed or cannot improve capacity.",
+        "radar_relevance": "Directly relevant to European economic security, strategic dependencies, resilience, geoeconomic policy or strategic industrial capacity.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin",
+            "note": "Inspected https://doi.org/10.1080/13501763.2026.2710717; packaged evidence was empty or mismatched."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved https://doi.org/10.1080/13501763.2026.2710717 and matched the bibliographic identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.tandfonline.com/doi/full/10.1080/13501763.2026.2710717",
+            "title": "Promising security, delivering dependency: the material constraints of EU semiconductor collective securitisation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Recovered evidence directly addresses a substantive European economic-security development, dependency, policy instrument or strategic-capacity question."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:40Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [
+        {
+          "object": "chips.fab",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Manakos, Carrapico and Farrand",
+            "class": "university_group"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-08-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The study analyses structural constraints to the EU semiconductor strategy; it does not imply that all Chips Act measures have failed or cannot improve capacity.",
+          "text": "The article argues that EU semiconductor securitisation exceeds Europe’s material capacity because fabrication infrastructure, skills and raw-material access remain constrained.",
+          "confidence": "high",
+          "record_key": "link:https://doi.org/10.1080/13501763.2026.2710717",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:9b22e568c4c4b98e:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:283ee6d8430cf041": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "7e7661a3",
+      "identity_hash": "31cb71a6cc45814d",
+      "reader_title": "The Alluring Potential of an Integrated Venezuelan Gas Industry",
+      "reader_what": "The analysis argues that an integrated Venezuelan gas sector could eventually add Atlantic-basin LNG supply relevant to European diversification.",
+      "reader_more": "The analysis argues that an integrated Venezuelan gas sector could eventually add Atlantic-basin LNG supply relevant to European diversification. The supply contribution is prospective and depends on major political, legal, infrastructure and investment conditions.",
+      "deep_analysis": {
+        "work_kind": "policy/research analysis",
+        "research_question": "",
+        "main_finding": "The analysis argues that an integrated Venezuelan gas sector could eventually add Atlantic-basin LNG supply relevant to European diversification.",
+        "method_or_basis": "Based on the matching substantive source material recovered for this record.",
+        "qualification": "The supply contribution is prospective and depends on major political, legal, infrastructure and investment conditions.",
+        "radar_relevance": "Directly relevant to European economic security, strategic dependencies, resilience, geoeconomic policy or strategic industrial capacity.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://www.csis.org/analysis/alluring-potential-integrated-venezuelan-gas-industry."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://www.csis.org/analysis/alluring-potential-integrated-venezuelan-gas-industry",
+            "title": "The Alluring Potential of an Integrated Venezuelan Gas Industry",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Recovered evidence directly addresses a substantive European economic-security development, dependency, policy instrument or strategic-capacity question."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:41Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [
+        {
+          "object": "energy.lng_imports",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Center for Strategic and International Studies",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The supply contribution is prospective and depends on major political, legal, infrastructure and investment conditions.",
+          "text": "The analysis argues that an integrated Venezuelan gas sector could eventually add Atlantic-basin LNG supply relevant to European diversification.",
+          "confidence": "high",
+          "status_date_precision": "year",
+          "record_key": "historical:id:283ee6d8430cf041",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:31cb71a6cc45814d:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:f61fb2a2c775e69f": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "0d43072d",
+      "identity_hash": "2afed87689a4073e",
+      "reader_title": "Tabletop Exercise: Coherent Resilience Arctic 2025 (CORE 25-A)",
+      "reader_what": "The CORE 25-A exercise tested cross-sector responses to hybrid threats against Arctic maritime critical energy infrastructure.",
+      "reader_more": "The CORE 25-A exercise tested cross-sector responses to hybrid threats against Arctic maritime critical energy infrastructure. A tabletop exercise tests preparedness and coordination; it does not demonstrate real-world performance under an actual attack.",
+      "deep_analysis": {
+        "work_kind": "policy/research analysis",
+        "research_question": "",
+        "main_finding": "The CORE 25-A exercise tested cross-sector responses to hybrid threats against Arctic maritime critical energy infrastructure.",
+        "method_or_basis": "Based on the matching substantive source material recovered for this record.",
+        "qualification": "A tabletop exercise tests preparedness and coordination; it does not demonstrate real-world performance under an actual attack.",
+        "radar_relevance": "Directly relevant to European economic security, strategic dependencies, resilience, geoeconomic policy or strategic industrial capacity.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://publications.jrc.ec.europa.eu/repository/handle/JRC146781."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC146781",
+            "title": "Tabletop Exercise: Coherent Resilience Arctic 2025 (CORE 25-A)",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Recovered evidence directly addresses a substantive European economic-security development, dependency, policy instrument or strategic-capacity question."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:41Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [
+        {
+          "object": "critical_infrastructure.resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission Joint Research Centre",
+            "class": "eu_body"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "A tabletop exercise tests preparedness and coordination; it does not demonstrate real-world performance under an actual attack.",
+          "text": "The CORE 25-A exercise tested cross-sector responses to hybrid threats against Arctic maritime critical energy infrastructure.",
+          "confidence": "high",
+          "status_date_precision": "year",
+          "record_key": "historical:id:f61fb2a2c775e69f",
+          "merit": 100,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:2afed87689a4073e:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:81f4b85c7275e561": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "5d4007da",
+      "identity_hash": "5424394a16e1a929",
+      "reader_title": "Scenario Analysis",
+      "reader_what": "The Commission scenario analysis quantifies macroeconomic and energy-price exposure to a Middle East conflict shock affecting oil and gas supply.",
+      "reader_more": "The Commission scenario analysis quantifies macroeconomic and energy-price exposure to a Middle East conflict shock affecting oil and gas supply. The results are modelled scenarios, not observed outcomes or forecasts that the specified shock will occur.",
+      "deep_analysis": {
+        "work_kind": "policy/research analysis",
+        "research_question": "",
+        "main_finding": "The Commission scenario analysis quantifies macroeconomic and energy-price exposure to a Middle East conflict shock affecting oil and gas supply.",
+        "method_or_basis": "Based on the matching substantive source material recovered for this record.",
+        "qualification": "The results are modelled scenarios, not observed outcomes or forecasts that the specified shock will occur.",
+        "radar_relevance": "Directly relevant to European economic security, strategic dependencies, resilience, geoeconomic policy or strategic industrial capacity.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/spring-2026-economic-forecast-slowdown-growth-energy-shock-drives-inflation/scenario-analysis_en."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/spring-2026-economic-forecast-slowdown-growth-energy-shock-drives-inflation/scenario-analysis_en",
+            "title": "Scenario Analysis",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Recovered evidence directly addresses a substantive European economic-security development, dependency, policy instrument or strategic-capacity question."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:41Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [
+        {
+          "object": "energy.price_level",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The results are modelled scenarios, not observed outcomes or forecasts that the specified shock will occur.",
+          "text": "The Commission scenario analysis quantifies macroeconomic and energy-price exposure to a Middle East conflict shock affecting oil and gas supply.",
+          "confidence": "high",
+          "status_date_precision": "year",
+          "record_key": "historical:id:81f4b85c7275e561",
+          "merit": 97,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:5424394a16e1a929:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:23e68d120ef9032f": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "c55f6be0",
+      "identity_hash": "26752c173684c6aa",
+      "reader_title": "Romania's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+      "reader_what": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://digital-strategy.ec.europa.eu/en/factpages/romanias-2026-digital-decade-country-report."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://digital-strategy.ec.europa.eu/en/factpages/romanias-2026-digital-decade-country-report",
+            "title": "Romania's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:41Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:417dd6e84ba6cd1b": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "a8e7b946",
+      "identity_hash": "94072072ac7ce627",
+      "reader_title": "Portugal's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+      "reader_what": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://digital-strategy.ec.europa.eu/en/factpages/portugals-2026-digital-decade-country-report."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://digital-strategy.ec.europa.eu/en/factpages/portugals-2026-digital-decade-country-report",
+            "title": "Portugal's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:41Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:4be07552a9daa341": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "47c3b4dc",
+      "identity_hash": "08970ba47bbcc82d",
+      "reader_title": "Policy Analyst – Economic Security and Technology",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://www.iss.europa.eu/about-us/opportunities/policy-analyst-economic-security-and-technology."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://www.iss.europa.eu/about-us/opportunities/policy-analyst-economic-security-and-technology",
+            "title": "Policy Analyst – Economic Security and Technology",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:41Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:9760c004d270dfcb": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "9cc5013b",
+      "identity_hash": "c3e6b179ea6e37a3",
+      "reader_title": "One year on - why the transatlantic partnership remains of mutual interest | Bank for International Settlements",
+      "reader_what": "The speech assesses transatlantic economic relations after renewed tariff and trade tensions, arguing that continued cooperation remains mutually important.",
+      "reader_more": "The speech assesses transatlantic economic relations after renewed tariff and trade tensions, arguing that continued cooperation remains mutually important. This is a central-bank policy speech, not causal evidence on the total economic effects of transatlantic tariffs.",
+      "deep_analysis": {
+        "work_kind": "policy/research analysis",
+        "research_question": "",
+        "main_finding": "The speech assesses transatlantic economic relations after renewed tariff and trade tensions, arguing that continued cooperation remains mutually important.",
+        "method_or_basis": "Based on the matching substantive source material recovered for this record.",
+        "qualification": "This is a central-bank policy speech, not causal evidence on the total economic effects of transatlantic tariffs.",
+        "radar_relevance": "Directly relevant to European economic security, strategic dependencies, resilience, geoeconomic policy or strategic industrial capacity.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching pdf_excerpt material from https://www.bis.org/speeches/20260420-one-year-why-transatlantic-partnership-remains-mutual-interest.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://www.bis.org/speeches/20260420-one-year-why-transatlantic-partnership-remains-mutual-interest.pdf",
+            "title": "One year on - why the transatlantic partnership remains of mutual interest | Bank for International Settlements",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Recovered evidence directly addresses a substantive European economic-security development, dependency, policy instrument or strategic-capacity question."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:41Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [
+        {
+          "object": "trade.tariffs_on_eu",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Banque de France",
+            "class": "member_state"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This is a central-bank policy speech, not causal evidence on the total economic effects of transatlantic tariffs.",
+          "text": "The speech assesses transatlantic economic relations after renewed tariff and trade tensions, arguing that continued cooperation remains mutually important.",
+          "confidence": "high",
+          "status_date_precision": "year",
+          "record_key": "historical:id:9760c004d270dfcb",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:c3e6b179ea6e37a3:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:ca25aad4ae880d76": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "b0d55ba3",
+      "identity_hash": "965996c10c87f8f0",
+      "reader_title": "Mitigating carbon leakage under the EU ETS: How does State Aid for Indirect Emission Costs affect firm profits?",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://research.rug.nl/en/publications/mitigating-carbon-leakage-under-the-eu-ets-how-does-state-aid-for-2/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://research.rug.nl/en/publications/mitigating-carbon-leakage-under-the-eu-ets-how-does-state-aid-for-2/",
+            "title": "Mitigating carbon leakage under the EU ETS: How does State Aid for Indirect Emission Costs affect firm profits?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:41Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:cc3564bc44ca0876": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "42359fd1",
+      "identity_hash": "911d3ffac6d5230d",
+      "reader_title": "Industrial Policy Returns",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://www.csis.org/analysis/industrial-policy-returns."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://www.csis.org/analysis/industrial-policy-returns",
+            "title": "Industrial Policy Returns",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:41Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:caf307b74c457960": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "01637cd2",
+      "identity_hash": "f06571b0600bb0ae",
+      "reader_title": "France's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+      "reader_what": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://digital-strategy.ec.europa.eu/en/factpages/frances-2026-digital-decade-country-report."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://digital-strategy.ec.europa.eu/en/factpages/frances-2026-digital-decade-country-report",
+            "title": "France's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:41Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:79ac10726e4a9896": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "78c97573",
+      "identity_hash": "b403df83208e2f58",
+      "reader_title": "FMR, Fuels and Materials Research (ActUsLab) 2026-1-RD-ActUsLab-FMR",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://joint-research-centre.ec.europa.eu/calls-proposals/fmr-fuels-and-materials-research-actuslab-2026-1-rd-actuslab-fmr_en."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://joint-research-centre.ec.europa.eu/calls-proposals/fmr-fuels-and-materials-research-actuslab-2026-1-rd-actuslab-fmr_en",
+            "title": "FMR, Fuels and Materials Research (ActUsLab) 2026-1-RD-ActUsLab-FMR",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:41Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:e04259a00420b174": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "77d19055",
+      "identity_hash": "bcb1f7cde6271060",
+      "reader_title": "Evaluating Europe's Economic Security Strategy",
+      "reader_what": "The commentary evaluates Europe’s expanding economic-security toolkit and its convergence and differences with US approaches.",
+      "reader_more": "The commentary evaluates Europe’s expanding economic-security toolkit and its convergence and differences with US approaches. This is an external policy assessment and should not be treated as an official measure of policy effectiveness.",
+      "deep_analysis": {
+        "work_kind": "policy/research analysis",
+        "research_question": "",
+        "main_finding": "The commentary evaluates Europe’s expanding economic-security toolkit and its convergence and differences with US approaches.",
+        "method_or_basis": "Based on the matching substantive source material recovered for this record.",
+        "qualification": "This is an external policy assessment and should not be treated as an official measure of policy effectiveness.",
+        "radar_relevance": "Directly relevant to European economic security, strategic dependencies, resilience, geoeconomic policy or strategic industrial capacity.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://www.csis.org/analysis/evaluating-europes-economic-security-strategy."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://www.csis.org/analysis/evaluating-europes-economic-security-strategy",
+            "title": "Evaluating Europe's Economic Security Strategy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Recovered evidence directly addresses a substantive European economic-security development, dependency, policy instrument or strategic-capacity question."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:41Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Center for Strategic and International Studies",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_conditional",
+          "status": "delivered",
+          "status_date": "2026",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This is an external policy assessment and should not be treated as an official measure of policy effectiveness.",
+          "text": "The commentary evaluates Europe’s expanding economic-security toolkit and its convergence and differences with US approaches.",
+          "confidence": "high",
+          "status_date_precision": "year",
+          "record_key": "historical:id:e04259a00420b174",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:bcb1f7cde6271060:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:09db42152473e6c0": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "3ecb021f",
+      "identity_hash": "37ba2013fa8ca789",
+      "reader_title": "European AI-powered advanced screening centres",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://digital-strategy.ec.europa.eu/en/policies/ai-screening-centres."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-screening-centres",
+            "title": "European AI-powered advanced screening centres",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:41Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:e915b645055027c4": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "9989583f",
+      "identity_hash": "eaa624b8069cdbd6",
+      "reader_title": "Eurobarometers on energy",
+      "reader_what": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://energy.ec.europa.eu/data-and-analysis/eurobarometers-energy_en."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://energy.ec.europa.eu/data-and-analysis/eurobarometers-energy_en",
+            "title": "Eurobarometers on energy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:41Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:90828ac6dc710789": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "4d0178f1",
+      "identity_hash": "f7c945e96b2d3fc2",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://institutdelors.eu/en/evenements/euroquestions-one-europe-one-market-after-the-letta-report-where-does-eu-single-market-integration-stand-with-tullio-ambrosone-2/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://institutdelors.eu/en/evenements/euroquestions-one-europe-one-market-after-the-letta-report-where-does-eu-single-market-integration-stand-with-tullio-ambrosone-2/",
+            "title": "EuroQuestions | \"One Europe, One Market\": After the Letta Report, where does EU Single Market integration stand? with Tullio Ambrosone - Institut Jacques Delors",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:41Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:d00708d7bdb374f4": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "1f465776",
+      "identity_hash": "ae4f0de121e4783f",
+      "reader_title": "Estonia’s 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+      "reader_what": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://digital-strategy.ec.europa.eu/en/factpages/estonias-2026-digital-decade-country-report."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://digital-strategy.ec.europa.eu/en/factpages/estonias-2026-digital-decade-country-report",
+            "title": "Estonia’s 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:41Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:64cf0c996d53178a": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "4848fe77",
+      "identity_hash": "be7dbc3c39f40642",
+      "reader_what": "The legal analysis examines how EU sanctions interact with investment arbitration claims brought by sanctioned Russian investors.",
+      "reader_more": "The legal analysis examines how EU sanctions interact with investment arbitration claims brought by sanctioned Russian investors. The article analyses legal arguments and securitisation dynamics; it does not resolve pending arbitral or judicial outcomes.",
+      "deep_analysis": {
+        "work_kind": "policy/research analysis",
+        "research_question": "",
+        "main_finding": "The legal analysis examines how EU sanctions interact with investment arbitration claims brought by sanctioned Russian investors.",
+        "method_or_basis": "Based on the matching substantive source material recovered for this record.",
+        "qualification": "The article analyses legal arguments and securitisation dynamics; it does not resolve pending arbitral or judicial outcomes.",
+        "radar_relevance": "Directly relevant to European economic security, strategic dependencies, resilience, geoeconomic policy or strategic industrial capacity.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://www.celis.institute/posts-celis-2019/eu_sanctions_and_arbitration_an_attempt_at_moving_the_goalposts/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://www.celis.institute/posts-celis-2019/eu_sanctions_and_arbitration_an_attempt_at_moving_the_goalposts/",
+            "title": "EU Sanctions and Investment Arbitration: An Attempt at Moving the Goalposts through Increased Securitisation? - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Recovered evidence directly addresses a substantive European economic-security development, dependency, policy instrument or strategic-capacity question."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:42Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [
+        {
+          "object": "sanctions.secondary_exposure",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Alexandros Bakos",
+            "class": "university_group"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The article analyses legal arguments and securitisation dynamics; it does not resolve pending arbitral or judicial outcomes.",
+          "text": "The legal analysis examines how EU sanctions interact with investment arbitration claims brought by sanctioned Russian investors.",
+          "confidence": "high",
+          "status_date_precision": "year",
+          "record_key": "historical:id:64cf0c996d53178a",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:be7dbc3c39f40642:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:2cc4d437897e34ea": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "f920bac5",
+      "identity_hash": "97e9c654dd9fa001",
+      "reader_title": "Denmark's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+      "reader_what": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://digital-strategy.ec.europa.eu/en/factpages/denmarks-2026-digital-decade-country-report."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://digital-strategy.ec.europa.eu/en/factpages/denmarks-2026-digital-decade-country-report",
+            "title": "Denmark's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:42Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:64f39dfe8f0bcda3": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "0d4e0e37",
+      "identity_hash": "074f2c6bb8281544",
+      "reader_title": "DIVERIS meeting calls for diversity and inclusion to become a core strategy in Europe’s space and defence sectors",
+      "reader_what": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://defence-industry-space.ec.europa.eu/diveris-meeting-calls-diversity-and-inclusion-become-core-strategy-europes-space-and-defence-sectors-2026-06-10_en."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://defence-industry-space.ec.europa.eu/diveris-meeting-calls-diversity-and-inclusion-become-core-strategy-europes-space-and-defence-sectors-2026-06-10_en",
+            "title": "DIVERIS meeting calls for diversity and inclusion to become a core strategy in Europe’s space and defence sectors",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:42Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:d8d521e670c2882e": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "6f68e1e2",
+      "identity_hash": "c944b60747d12134",
+      "reader_title": "Czechia's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+      "reader_what": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://digital-strategy.ec.europa.eu/en/factpages/czechias-2026-digital-decade-country-report."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://digital-strategy.ec.europa.eu/en/factpages/czechias-2026-digital-decade-country-report",
+            "title": "Czechia's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:42Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:b06e11a2c8cd2850": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "3a295a48",
+      "identity_hash": "9ceffd17b4bc4ab9",
+      "reader_title": "Cyprus's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+      "reader_what": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://digital-strategy.ec.europa.eu/en/factpages/cypruss-2026-digital-decade-country-report."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://digital-strategy.ec.europa.eu/en/factpages/cypruss-2026-digital-decade-country-report",
+            "title": "Cyprus's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:42Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:bf39ef72b6366e96": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "3c0d1246",
+      "identity_hash": "62162be84dc988e8",
+      "reader_title": "Croatia's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+      "reader_what": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://digital-strategy.ec.europa.eu/en/factpages/croatias-2026-digital-decade-country-report."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://digital-strategy.ec.europa.eu/en/factpages/croatias-2026-digital-decade-country-report",
+            "title": "Croatia's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:42Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:8367808957bc2000": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "4c9caacf",
+      "identity_hash": "216523e12b5ffb91",
+      "reader_title": "Critical Mineral Chokepoints Could Threaten the US Nuclear Energy Renaissance",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching pdf_excerpt material from https://rhg.com/wp-content/uploads/2026/08/Critical-Mineral-Chokepoints-Could-Threaten-the-US-Nuclear-Energy-Renaissance.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://rhg.com/wp-content/uploads/2026/08/Critical-Mineral-Chokepoints-Could-Threaten-the-US-Nuclear-Energy-Renaissance.pdf",
+            "title": "Critical Mineral Chokepoints Could Threaten the US Nuclear Energy Renaissance",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:42Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:4628db57ae14c1d9": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "b5213012",
+      "identity_hash": "8ef48fe347c59984",
+      "reader_title": "Commission continues to strengthen European collaborative defence research and development with additional EUR 1 billion",
+      "reader_what": "The Commission adopted the 2026 European Defence Fund work programme with €1 billion for collaborative defence research and development.",
+      "reader_more": "The Commission adopted the 2026 European Defence Fund work programme with €1 billion for collaborative defence research and development. The adopted budget supports R&D calls; funded projects still need selection and delivery before capability effects can be observed.",
+      "deep_analysis": {
+        "work_kind": "policy/research analysis",
+        "research_question": "",
+        "main_finding": "The Commission adopted the 2026 European Defence Fund work programme with €1 billion for collaborative defence research and development.",
+        "method_or_basis": "Based on the matching substantive source material recovered for this record.",
+        "qualification": "The adopted budget supports R&D calls; funded projects still need selection and delivery before capability effects can be observed.",
+        "radar_relevance": "Directly relevant to European economic security, strategic dependencies, resilience, geoeconomic policy or strategic industrial capacity.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://defence-industry-space.ec.europa.eu/commission-continues-strengthen-european-collaborative-defence-research-and-development-additional-2025-12-17_en."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://defence-industry-space.ec.europa.eu/commission-continues-strengthen-european-collaborative-defence-research-and-development-additional-2025-12-17_en",
+            "title": "Commission continues to strengthen European collaborative defence research and development with additional EUR 1 billion",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Recovered evidence directly addresses a substantive European economic-security development, dependency, policy instrument or strategic-capacity question."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:42Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [
+        {
+          "object": "defence.innovation_funding",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "funds",
+          "direction": "expands",
+          "status": "adopted",
+          "status_date": "2026",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "The adopted budget supports R&D calls; funded projects still need selection and delivery before capability effects can be observed.",
+          "text": "The Commission adopted the 2026 European Defence Fund work programme with €1 billion for collaborative defence research and development.",
+          "confidence": "high",
+          "status_date_precision": "year",
+          "record_key": "historical:id:4628db57ae14c1d9",
+          "merit": 97,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:8ef48fe347c59984:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:0cb6e55ee746fb5d": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "cbce7b32",
+      "identity_hash": "98520d3a2694dd02",
+      "reader_title": "Civil Society Dialogue on economic security",
+      "reader_what": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://policy.trade.ec.europa.eu/eu-trade-meetings-civil-society/civil-society-dialogue-economic-security-2026-10-27_en."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://policy.trade.ec.europa.eu/eu-trade-meetings-civil-society/civil-society-dialogue-economic-security-2026-10-27_en",
+            "title": "Civil Society Dialogue on economic security",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:42Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:557d241119512b8b": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "81e0d03c",
+      "identity_hash": "1eba430ded52bdcb",
+      "reader_title": "Civil Society Dialogue on EU-US trade relations – State-of-play and outlook",
+      "reader_what": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://policy.trade.ec.europa.eu/eu-trade-meetings-civil-society/civil-society-dialogue-eu-us-trade-relations-state-play-and-outlook-2026-04-15_en."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://policy.trade.ec.europa.eu/eu-trade-meetings-civil-society/civil-society-dialogue-eu-us-trade-relations-state-play-and-outlook-2026-04-15_en",
+            "title": "Civil Society Dialogue on EU-US trade relations – State-of-play and outlook",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:42Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:b7af90a0217faccb": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "38ef5fc3",
+      "identity_hash": "e265a6454681fc78",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://policy.trade.ec.europa.eu/consultations/business-survey-trade-sustainability-impact-assessment-sia-support-free-trade-agreement-negotiations_en."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://policy.trade.ec.europa.eu/consultations/business-survey-trade-sustainability-impact-assessment-sia-support-free-trade-agreement-negotiations_en",
+            "title": "Business survey on the Trade Sustainability Impact Assessment (SIA) in support of Free Trade Agreement negotiations between the EU and the GCC countries",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The work exists and was recovered, but the substantive content does not meet Strand A/C economic-security admission criteria strongly enough to retain it."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:42Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:e77540925f363add": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "ac21c5e0",
+      "identity_hash": "46a8fec1b38950a9",
+      "reader_title": "Bulgaria's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+      "reader_what": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://digital-strategy.ec.europa.eu/en/factpages/bulgarias-2026-digital-decade-country-report."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://digital-strategy.ec.europa.eu/en/factpages/bulgarias-2026-digital-decade-country-report",
+            "title": "Bulgaria's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:42Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:01fad8875d71addf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "be45847e",
+      "identity_hash": "0c4282af1cbfe249",
+      "reader_title": "Belgium's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+      "reader_what": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+      "reader_more": "The matching work was recovered and read. Its actual central object or document type does not satisfy the strand gate.",
+      "deep_analysis": {
+        "work_kind": "publication / web item",
+        "research_question": "",
+        "main_finding": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "method_or_basis": "Recovered source material was read to establish the work’s actual scope and object.",
+        "qualification": "The decision is about Radar admission, not a judgement on the work’s general quality.",
+        "radar_relevance": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read matching substantial_web_text material from https://digital-strategy.ec.europa.eu/en/factpages/belgiums-2026-digital-decade-country-report."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_source",
+            "url": "https://digital-strategy.ec.europa.eu/en/factpages/belgiums-2026-digital-decade-country-report",
+            "title": "Belgium's 2026 Digital Decade Country Report | Shaping Europe’s digital future",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity/provenance was matched to the recovered source and the decision was based on substantive source content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_OR_NON_SUBSTANTIVE",
+        "reason": "The recovered item is a generic programme, country-report, event, vacancy or navigation page rather than a substantive economic-security evidence product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-09-29T11:56:42Z",
+      "deep_scan_package_id": "worker-b-aa9eadcfc41a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-09-29T11:53:10Z"
+  "claims_updated_at": "2026-09-29T11:56:42Z"
 }
