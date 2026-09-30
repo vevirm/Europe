@@ -6,26 +6,26 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **678** (Main **481** + Historical **197**)
-- Automatic queue still needing V2 verification: **971** (Main **177** + Historical **794**)
-- Currently assigned to workers: **78** (Main **6** + Historical **72**)
-- Bounded access-recovery retries still eligible: **199**
+- Authoritative V2 verified: **707** (Main **481** + Historical **226**)
+- Automatic queue still needing V2 verification: **942** (Main **177** + Historical **765**)
+- Currently assigned to workers: **78** (Main **30** + Historical **48**)
+- Bounded access-recovery retries still eligible: **206**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **893**
+- Automatic queue pending and not yet assigned: **864**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-d28b6a43fdb6`
+- Current package: `worker-a-7fb25109b0f5`
 - Assigned unresolved records: **36**
-  1. `historical:id:1c3787825c7eaba9` — The EU’s global strategic partner(ship): a tool for the maturation of European foreign policy?
-  2. `historical:id:619afd9b2e54522a` — Slowly but surely? Assessing EU actorness in energy sanctions against Russia
-  3. `historical:id:4fae2465c66e1e62` — The Ideational Power of Strategic Autonomy in EU Security and External Economic Policies
-  4. `historical:id:545828b798d1afdc` — supply chain - CELIS Institute - Investment Screening | National Security | Competitiveness
-  5. `historical:id:e131adface871dcc` — The European Union’s Critical Raw Materials Act: How Effective In Addressing Supply Chains Risks? - CELIS Institute - Investment Screening | National Security | Competitiveness
-  6. `historical:id:dc297ea0893bebfc` — Europe must end its quantum technology research with China
-  7. `historical:id:d6927e5d67613596` — Balancing security and economics: domestic state-firm relations and investment screening mechanisms in Europe
-  8. `historical:id:82f5d7056730dd54` — The Geoeconomics of the Single Market for Financial Services
+  1. `link:https://dfrlab.org/2026/08/17/sovereignty-without-borders-decoding-the-transatlantic-digital-relationship-at-a-time-of-change/` — Sovereignty without borders: Decoding the transatlantic digital relationship at a time of change
+  2. `link:https://ecfr.eu/wp-content/uploads/2026/09/Little-Venice-little-Sparta-The-UAEs-statecraft-meets-the-war-on-Iran-v2.pdf` — Little Venice, little Sparta: The UAE’s statecraft meets the war on Iran – European Council on Foreign Relations
+  3. `link:https://doi.org/10.1177/01956574261473489` — Can Domestic Carbon Markets Buffer the Impact of EU Border Taxes? A Stochastic Frontier Analysis of Decarbonization Costs in India’s Energy-Intensive Industries
+  4. `link:https://doi.org/10.4324/9781003669654-6` — Introducing Hydrogen to the European Energy Market
+  5. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=35040186-bc4b-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Explanatory note on Title IV (Security of ICT Supply Chains) - Publications Office of the EU
+  6. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=21553fa5-bc4b-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Presidency first compromise text Title IV (Security of ICT Supply Chains) - Publications Office of the EU
+  7. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=b26447fa-bc09-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Commission Proposal for a Regulation of the European Parliament and of the Council establishing diversification instrument to address critical strategic dependencies that expose the Union to economic security risks - Publications Office of the EU
+  8. `link:https://doi.org/10.1016/j.rspp.2026.100336` — Divergent futures and structural change: Regional economic scenarios and resilience for trade shocks
   - … plus 28 more in the package manifest
 
 ### Worker B
