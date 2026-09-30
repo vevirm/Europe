@@ -1,0 +1,2808 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-a-d28b6a43fdb6",
+  "results": [
+    {
+      "record_key": "historical:id:1c3787825c7eaba9",
+      "source_hash": "adffbe4b",
+      "identity_hash": "20db135e1d2f14ff",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://doi.org/10.1080/09662839.2024.2376612; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1080/09662839.2024.2376612 matches the recovered bibliographic title/source information."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive text from https://content.openalex.org/works/W4402716728.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_or_publisher_full_text",
+            "url": "https://content.openalex.org/works/W4402716728.pdf",
+            "title": "The EU’s global strategic partner(ship): a tool for the maturation of European foreign policy?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_SCOPE_OR_PRODUCT_FAIL",
+        "reason": "The work is about maturation of EU foreign policy through strategic partnerships; economic-security mechanisms are not its central object."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2024-09-16"
+        },
+        "unset": [],
+        "reason": "Recovered publisher PDF states Published online: 16 Sep 2024; the stored 2 July date is the acceptance date."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The EU’s global strategic partner(ship): a tool for the maturation of European foreign policy?",
+      "reader_what": "Examines EU’s global strategic partner(ship): a tool for the maturation of European foreign policy?",
+      "reader_why": "",
+      "reader_more": "We argue that the utilisation of EU strategic partners emerges as an area with varied degrees of maturation. The recovered source is treated as historical context from 2024. It is excluded because the economic-security scope or substantive-product gate is not met.",
+      "deep_analysis": {
+        "work_kind": "recovered article/report/page",
+        "research_question": "What does the work establish about economic-security policy and its European relevance?",
+        "main_finding": "We argue that the utilisation of EU strategic partners emerges as an area with varied degrees of maturation.",
+        "method_or_basis": "Uses case-study analysis, document analysis.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "The work is about maturation of EU foreign policy through strategic partnerships; economic-security mechanisms are not its central object.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:619afd9b2e54522a",
+      "source_hash": "b02884dc",
+      "identity_hash": "ace1cc9a8b792ad4",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://doi.org/10.1016/j.enpol.2024.114233; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1016/j.enpol.2024.114233 matches the recovered bibliographic title/source information."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive text from https://discovery.ucl.ac.uk/id/eprint/10203735/1/1-s2.0-S0301421524002532-main.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_or_publisher_full_text",
+            "url": "https://discovery.ucl.ac.uk/id/eprint/10203735/1/1-s2.0-S0301421524002532-main.pdf",
+            "title": "Slowly but surely? Assessing EU actorness in energy sanctions against Russia",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns sanctions and exposure and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Slowly but surely? Assessing EU actorness in energy sanctions against Russia",
+      "reader_what": "Analyses sanctions and exposure in the European context",
+      "reader_why": "Shows how sanctions and exposure affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "It argues that the variety of preferences across the member states impact on the ability of the EU to impose sanctions against Russia and, in turn, on its role as an actor beyond its borders. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses sanctions and exposure.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about sanctions and exposure and its European relevance?",
+        "main_finding": "It argues that the variety of preferences across the member states impact on the ability of the EU to impose sanctions against Russia and, in turn, on its role as an actor beyond its borders.",
+        "method_or_basis": "Uses process tracing, case-study analysis, document analysis.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns sanctions and exposure and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-07-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "It argues that the variety of preferences across the member states impact on the ability of the EU to impose sanctions against Russia and, in turn, on its role as an actor beyond its borders.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:4fae2465c66e1e62",
+      "source_hash": "fe00fea2",
+      "identity_hash": "8a68f58e890987bf",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://doi.org/10.1111/jcms.13597; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/jcms.13597 matches the recovered bibliographic title/source information."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive text from https://cris.maastrichtuniversity.nl/en/publications/the-ideational-power-of-strategic-autonomy-in-eu-security-and-ext/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_institution_full_text",
+            "url": "https://cris.maastrichtuniversity.nl/en/publications/the-ideational-power-of-strategic-autonomy-in-eu-security-and-ext/",
+            "title": "The Ideational Power of Strategic Autonomy in EU Security and External Economic Policies",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns strategic industrial capacity and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The Ideational Power of Strategic Autonomy in EU Security and External Economic Policies",
+      "reader_what": "Analyses strategic industrial capacity in the European context",
+      "reader_why": "Shows how strategic industrial capacity affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "The evidence, based on documentary analysis and interviews, demonstrates that though SA presented a more significant challenge to pre-established paradigms in external economic relations, the role of the Commission as an ideational entrepreneur, supported by its coercive power, facilitated the adoption of the idea of (open) SA. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses strategic industrial capacity.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about strategic industrial capacity and its European relevance?",
+        "main_finding": "The evidence, based on documentary analysis and interviews, demonstrates that though SA presented a more significant challenge to pre-established paradigms in external economic relations, the role of the Commission as an ideational entrepreneur, supported by its coercive power, facilitated the adoption of the idea of (open) SA.",
+        "method_or_basis": "Uses interviews, document analysis.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns strategic industrial capacity and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-07-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "The evidence, based on documentary analysis and interviews, demonstrates that though SA presented a more significant challenge to pre-established paradigms in external economic relations, the role of the Commission as an ideational entrepreneur, supported by its coercive power, facilitated the adoption of the idea of",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:545828b798d1afdc",
+      "source_hash": "d3970258",
+      "identity_hash": "5208ff5cb981822a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://www.celis.institute/tag/supply-chain/; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "substantive_primary_page",
+            "url": "https://www.celis.institute/tag/supply-chain/",
+            "title": "supply chain - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_SCOPE_OR_PRODUCT_FAIL",
+        "reason": "This is a CELIS topic/tag listing rather than a substantive standalone evidence product."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "supply chain",
+      "reader_what": "Examines supply chain",
+      "reader_why": "",
+      "reader_more": "Introduction In May 2024, Regulation (EU) 2024/1252, establishing a framework for ensuring a secure and sustainable supply of Critical Raw Materials, came into force. The recovered source is treated as historical context from 2024. It is excluded because the economic-security scope or substantive-product gate is not met.",
+      "deep_analysis": {
+        "work_kind": "recovered article/report/page",
+        "research_question": "What does the work establish about investment screening and its European relevance?",
+        "main_finding": "Introduction In May 2024, Regulation (EU) 2024/1252, establishing a framework for ensuring a secure and sustainable supply of Critical Raw Materials, came into force.",
+        "method_or_basis": "Uses the substantive analysis, cited evidence, and policy/legal material in the recovered source.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "This is a CELIS topic/tag listing rather than a substantive standalone evidence product.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:e131adface871dcc",
+      "source_hash": "dd6d9196",
+      "identity_hash": "c82126336dd69af4",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://www.celis.institute/celis-blog/the-european-unions-critical-raw-materials-act-how-effective-in-addressing-supply-chains-risks/; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_institution_full_text",
+            "url": "https://www.celis.institute/celis-blog/the-european-unions-critical-raw-materials-act-how-effective-in-addressing-supply-chains-risks/",
+            "title": "The European Union’s Critical Raw Materials Act: How Effective In Addressing Supply Chains Risks? - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns investment screening and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The European Union’s Critical Raw Materials Act: How Effective In Addressing Supply Chains Risks?",
+      "reader_what": "Analyses investment screening in the European context",
+      "reader_why": "Shows how investment screening affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "The study’s findings highlighted the need for proactive measures to ensure a stable supply of CRMs essential for the EU’s industrial and technological sectors, particularly in the context of the green transition. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses investment screening.",
+      "deep_analysis": {
+        "work_kind": "policy commentary",
+        "research_question": "What does the work establish about investment screening and its European relevance?",
+        "main_finding": "The study’s findings highlighted the need for proactive measures to ensure a stable supply of CRMs essential for the EU’s industrial and technological sectors, particularly in the context of the green transition.",
+        "method_or_basis": "Uses the substantive analysis, cited evidence, and policy/legal material in the recovered source.",
+        "qualification": "This is analytical or policy commentary rather than a causal-effect study; claims should be read as argument and evidence synthesis.",
+        "radar_relevance": "Recovered evidence centrally concerns investment screening and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-06-27",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This is analytical or policy commentary rather than a causal-effect study; claims should be read as argument and evidence synthesis.",
+          "text": "The study’s findings highlighted the need for proactive measures to ensure a stable supply of CRMs essential for the EU’s industrial and technological sectors, particularly in the context of the green transition.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:dc297ea0893bebfc",
+      "source_hash": "667c5de3",
+      "identity_hash": "64c0b8d7d8c2842e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://merics.org/en/comment/europe-must-end-its-quantum-technology-research-china; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_institution_full_text",
+            "url": "https://merics.org/en/comment/europe-must-end-its-quantum-technology-research-china",
+            "title": "Europe must end its quantum technology research with China",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns sanctions and exposure and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Europe must end its quantum technology research with China",
+      "reader_what": "Analyses sanctions and exposure in the European context",
+      "reader_why": "Shows how sanctions and exposure affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "Quantum technology, the immensely fast and powerful successor to digital technologies, is now moving out of the lab. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses sanctions and exposure.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about sanctions and exposure and its European relevance?",
+        "main_finding": "Quantum technology, the immensely fast and powerful successor to digital technologies, is now moving out of the lab.",
+        "method_or_basis": "Uses the substantive analysis, cited evidence, and policy/legal material in the recovered source.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns sanctions and exposure and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Netherlands",
+            "class": "member_state"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-06-25",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "NL"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "Quantum technology, the immensely fast and powerful successor to digital technologies, is now moving out of the lab.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:d6927e5d67613596",
+      "source_hash": "dbe2d19b",
+      "identity_hash": "4e03dc964a5f7e7b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://doi.org/10.1080/09692290.2024.2368601; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1080/09692290.2024.2368601 matches the recovered bibliographic title/source information."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive text from https://pmc.ncbi.nlm.nih.gov/articles/PMC11614038/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_institution_full_text",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11614038/",
+            "title": "Balancing security and economics: domestic state-firm relations and investment screening mechanisms in Europe",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns investment screening and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Balancing security and economics: domestic state-firm relations and investment screening mechanisms in Europe",
+      "reader_what": "Analyses investment screening in the European context",
+      "reader_why": "Shows how investment screening affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "We argue that the existing structure of state-firm relations decisively shapes the institutional configuration of European ISMs at the national level. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses investment screening.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about investment screening and its European relevance?",
+        "main_finding": "We argue that the existing structure of state-firm relations decisively shapes the institutional configuration of European ISMs at the national level.",
+        "method_or_basis": "Uses firm-level data.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns investment screening and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Belgium",
+            "class": "member_state"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "operating",
+          "status_date": "2024-06-24",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "BE"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "We argue that the existing structure of state-firm relations decisively shapes the institutional configuration of European ISMs at the national level.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:82f5d7056730dd54",
+      "source_hash": "e71e22e0",
+      "identity_hash": "82e7cf8284603ca5",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://doi.org/10.1111/jcms.13595; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/jcms.13595 matches the recovered bibliographic title/source information."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive text from https://content.openalex.org/works/W4399930043.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_or_publisher_full_text",
+            "url": "https://content.openalex.org/works/W4399930043.pdf",
+            "title": "The Geoeconomics of the Single Market for Financial Services",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns cross-border capital and financial exposure and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The Geoeconomics of the Single Market for Financial Services",
+      "reader_what": "Analyses cross-border capital and financial exposure in the European context",
+      "reader_why": "Shows how cross-border capital and financial exposure affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "The geoeconomics of the Single Market for financial services Quaglia, L.; Verdun, A.C. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses cross-border capital and financial exposure.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about cross-border capital and financial exposure and its European relevance?",
+        "main_finding": "The geoeconomics of the Single Market for financial services Quaglia, L.; Verdun, A.C.",
+        "method_or_basis": "Uses the study/report evidence and analysis presented in the recovered full-document text.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns cross-border capital and financial exposure and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.inbound_flows",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "measures",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-06-23",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "The geoeconomics of the Single Market for financial services Quaglia, L.; Verdun, A.C.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:857d2be06bb032e1",
+      "source_hash": "66f6b3a0",
+      "identity_hash": "04c8535ce4572a9b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://doi.org/10.17645/pag.8217; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.17645/pag.8217 matches the recovered bibliographic title/source information."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive text from https://cris.maastrichtuniversity.nl/en/publications/the-geoeconomic-turn-in-eu-trade-and-investment-policy-implicatio/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_institution_full_text",
+            "url": "https://cris.maastrichtuniversity.nl/en/publications/the-geoeconomic-turn-in-eu-trade-and-investment-policy-implicatio/",
+            "title": "The Geoeconomic Turn in EU Trade and Investment Policy: Implications for Developing Countries",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns strategic industrial capacity and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The Geoeconomic Turn in EU Trade and Investment Policy: Implications for Developing Countries",
+      "reader_what": "Analyses strategic industrial capacity in the European context",
+      "reader_why": "Shows how strategic industrial capacity affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "We find that a trade-off between geoeconomic and development objectives is more pertinent in sustainability-related than in competitiveness- and security-oriented instruments. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses strategic industrial capacity.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about strategic industrial capacity and its European relevance?",
+        "main_finding": "We find that a trade-off between geoeconomic and development objectives is more pertinent in sustainability-related than in competitiveness- and security-oriented instruments.",
+        "method_or_basis": "Uses interviews, document analysis, trade data.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns strategic industrial capacity and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-06-19",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "We find that a trade-off between geoeconomic and development objectives is more pertinent in sustainability-related than in competitiveness- and security-oriented instruments.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:b065cc32a53578cb",
+      "source_hash": "ff4c8cfa",
+      "identity_hash": "5fa2baf2f42e672d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://doi.org/10.17645/pag.8099; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.17645/pag.8099 matches the recovered bibliographic title/source information."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive text from https://scholarlypublications.universiteitleiden.nl/access/item%3A4177685/view."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_or_publisher_full_text",
+            "url": "https://scholarlypublications.universiteitleiden.nl/access/item%3A4177685/view",
+            "title": "Populists in the Shadow of Unanimity: Contestation of EU Foreign and Security Policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_SCOPE_OR_PRODUCT_FAIL",
+        "reason": "The article studies populist contestation of EU foreign and security policy, not a central economic-security mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Populists in the Shadow of Unanimity: Contestation of EU Foreign and Security Policy",
+      "reader_what": "Examines Populists in the Shadow of Unanimity: Contestation of EU Foreign and Security Policy",
+      "reader_why": "",
+      "reader_more": "Therefore, we argue that foreign policy is increasingly subjected to domestication, with an almost exclusive focus on domestic audiences. The recovered source is treated as historical context from 2024. It is excluded because the economic-security scope or substantive-product gate is not met.",
+      "deep_analysis": {
+        "work_kind": "recovered article/report/page",
+        "research_question": "What does the work establish about economic-security policy and its European relevance?",
+        "main_finding": "Therefore, we argue that foreign policy is increasingly subjected to domestication, with an almost exclusive focus on domestic audiences.",
+        "method_or_basis": "Uses interviews, case-study analysis, document analysis.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "The article studies populist contestation of EU foreign and security policy, not a central economic-security mechanism.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:18bcf7cd838e421a",
+      "source_hash": "8997f050",
+      "identity_hash": "6081ce209ea9f3c4",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://rhg.com/wp-content/uploads/2024/06/Climate-Action-and-Competitiveness-The-Rise-of-Border-Carbon-Adjustments-1.pdf; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_or_publisher_full_text",
+            "url": "https://rhg.com/wp-content/uploads/2024/06/Climate-Action-and-Competitiveness-The-Rise-of-Border-Carbon-Adjustments-1.pdf",
+            "title": "Climate Action and Competitiveness: The Rise of Border Carbon Adjustments",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_SCOPE_OR_PRODUCT_FAIL",
+        "reason": "The report studies border carbon adjustments primarily as climate and competitiveness instruments; EU economic security is not the central analytical object."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Climate Action and Competitiveness: The Rise of Border Carbon Adjustments",
+      "reader_what": "Examines Climate Action and Competitiveness: The Rise of Border Carbon Adjustments",
+      "reader_why": "",
+      "reader_more": "The 2023 Rhodium Climate Outlook a lso shows that the geographical distribution of industrial emissions is likely to shift quite drastically over the next few decades. The recovered source is treated as historical context from 2024. It is excluded because the economic-security scope or substantive-product gate is not met.",
+      "deep_analysis": {
+        "work_kind": "recovered article/report/page",
+        "research_question": "What does the work establish about trade defence and subsidies and its European relevance?",
+        "main_finding": "The 2023 Rhodium Climate Outlook a lso shows that the geographical distribution of industrial emissions is likely to shift quite drastically over the next few decades.",
+        "method_or_basis": "Uses the study/report evidence and analysis presented in the recovered full-document text.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "The report studies border carbon adjustments primarily as climate and competitiveness instruments; EU economic security is not the central analytical object.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:81a58ca01ffe2409",
+      "source_hash": "5781a2fa",
+      "identity_hash": "227f8acec5fd550a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://www.celis.institute/celis-content/eu-in-depth-analysis-european-economic-security-current-practices-and-further-development/; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "substantive_primary_page",
+            "url": "https://www.celis.institute/celis-content/eu-in-depth-analysis-european-economic-security-current-practices-and-further-development/",
+            "title": "EU - In Depth Analysis: European Economic Security: Current practices and further development - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns investment screening and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU - In Depth Analysis: European Economic Security: Current practices and further development",
+      "reader_what": "Analyses investment screening in the European context",
+      "reader_why": "Shows how investment screening affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "On 2 May 2024, the European Commission published its In-Depth Analysis „European Economic Security: Current practices and future developments\", placing the initiatives at EU level in this area in an overarching framework. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses investment screening.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about investment screening and its European relevance?",
+        "main_finding": "On 2 May 2024, the European Commission published its In-Depth Analysis „European Economic Security: Current practices and future developments\", placing the initiatives at EU level in this area in an overarching framework.",
+        "method_or_basis": "Uses the substantive analysis, cited evidence, and policy/legal material in the recovered source.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns investment screening and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-06-06",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "On 2 May 2024, the European Commission published its In-Depth Analysis „European Economic Security: Current practices and future developments\", placing the initiatives at EU level in this area in an overarching framework.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:37738e41c1f77622",
+      "source_hash": "d55e59f3",
+      "identity_hash": "640067a125b77728",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://rhg.com/wp-content/uploads/2024/06/Chinese-FDI-in-Europe-2023-Update_MERICS-Rhodium-Group.pdf; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_or_publisher_full_text",
+            "url": "https://rhg.com/wp-content/uploads/2024/06/Chinese-FDI-in-Europe-2023-Update_MERICS-Rhodium-Group.pdf",
+            "title": "Chinese FDI in Europe: 2023 Update",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns investment screening and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Chinese FDI in Europe: 2023 Update",
+      "reader_what": "Analyses investment screening in the European context",
+      "reader_why": "Shows how investment screening affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "Key findings | 4 MERICS Report | June 2024 1. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses investment screening.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about investment screening and its European relevance?",
+        "main_finding": "Key findings | 4 MERICS Report | June 2024 1.",
+        "method_or_basis": "Uses the study/report evidence and analysis presented in the recovered full-document text.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns investment screening and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Germany",
+            "class": "member_state"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-06-06",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "DE"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "Key findings | 4 MERICS Report | June 2024 1.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:a74b5fbc4a6673dd",
+      "source_hash": "df791fb0",
+      "identity_hash": "6305ca91c9e7bf37",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://thedocs.worldbank.org/en/doc/0534eca53121c137d3766a02320d0310-0430012022/related/Unfair-Advantage-Distortive-Subsidies-and-Their-Effects-on-Global-Trade-2023.pdf; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_or_publisher_full_text",
+            "url": "https://thedocs.worldbank.org/en/doc/0534eca53121c137d3766a02320d0310-0430012022/related/Unfair-Advantage-Distortive-Subsidies-and-Their-Effects-on-Global-Trade-2023.pdf",
+            "title": "Government Subsidies and Trade",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_SCOPE_OR_PRODUCT_FAIL",
+        "reason": "The report is a global study of subsidies and trade and does not have substantive European economic-security scope."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Government Subsidies and Trade",
+      "reader_what": "Examines Government Subsidies and Trade",
+      "reader_why": "",
+      "reader_more": "The findings, interpretations, and conclusions expressed in this work do not necessarily reflect the views of The World Bank, its Board of Executive Directors, or the governments they represent. The recovered source is treated as historical context from 2024. It is excluded because the economic-security scope or substantive-product gate is not met.",
+      "deep_analysis": {
+        "work_kind": "recovered article/report/page",
+        "research_question": "What does the work establish about trade defence and subsidies and its European relevance?",
+        "main_finding": "The findings, interpretations, and conclusions expressed in this work do not necessarily reflect the views of The World Bank, its Board of Executive Directors, or the governments they represent.",
+        "method_or_basis": "Uses quantitative analysis.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "The report is a global study of subsidies and trade and does not have substantive European economic-security scope.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:2c25430929fd5f5c",
+      "source_hash": "1c5bbe4f",
+      "identity_hash": "360d72797e5e7e74",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://doi.org/10.2478/ie-2024-0033; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.2478/ie-2024-0033 matches the recovered bibliographic title/source information."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive text from https://reference-global.com/article/10.2478/ie-2024-0033."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_institution_full_text",
+            "url": "https://reference-global.com/article/10.2478/ie-2024-0033",
+            "title": "BRICS: World Heavyweight in Agricultural Trade",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_SCOPE_OR_PRODUCT_FAIL",
+        "reason": "The article focuses on BRICS agricultural trade; Europe is not the substantive object of analysis."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "BRICS: World Heavyweight in Agricultural Trade",
+      "reader_what": "Examines BRICS: World Heavyweight in Agricultural Trade",
+      "reader_why": "",
+      "reader_more": "<p>BRICS, the 15-year-old alliance of Brazil, Russia, India, China and South Africa, has emerged as an important actor on the global political and economic stage, not least by expanding its membership to include middle-power states Egypt, Ethiopia, Iran, Saudi Arabia and the United Arab Emirates in early 2024. The recovered source is treated as historical context from 2024. It is excluded because the economic-security scope or substantive-product gate is not met.",
+      "deep_analysis": {
+        "work_kind": "recovered article/report/page",
+        "research_question": "What does the work establish about sanctions and exposure and its European relevance?",
+        "main_finding": "<p>BRICS, the 15-year-old alliance of Brazil, Russia, India, China and South Africa, has emerged as an important actor on the global political and economic stage, not least by expanding its membership to include middle-power states Egypt, Ethiopia, Iran, Saudi Arabia and the United Arab Emirates in early 2024.",
+        "method_or_basis": "Uses the substantive analysis, cited evidence, and policy/legal material in the recovered source.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "The article focuses on BRICS agricultural trade; Europe is not the substantive object of analysis.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:303d26a5661ad7bd",
+      "source_hash": "1af19b15",
+      "identity_hash": "1d0675cc6edf2366",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://doi.org/10.1111/jcms.13625; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/jcms.13625 matches the recovered bibliographic title/source information."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive text from https://content.openalex.org/works/W4399097447.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_or_publisher_full_text",
+            "url": "https://content.openalex.org/works/W4399097447.pdf",
+            "title": "Inside the European Union's Trade Machinery: Institutional Changes in an Age of Geoeconomics",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns geoeconomic trade and market policy and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Inside the European Union's Trade Machinery: Institutional Changes in an Age of Geoeconomics",
+      "reader_what": "Analyses geoeconomic trade and market policy in the European context",
+      "reader_why": "Shows how geoeconomic trade and market policy affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "( 2020) argue that DG Trade and the EEAS ’so f ﬁcials operate in separate policy worlds. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses geoeconomic trade and market policy.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about geoeconomic trade and market policy and its European relevance?",
+        "main_finding": "( 2020) argue that DG Trade and the EEAS ’so f ﬁcials operate in separate policy worlds.",
+        "method_or_basis": "Uses interviews, document analysis.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns geoeconomic trade and market policy and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-05-27",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "( 2020) argue that DG Trade and the EEAS ’so f ﬁcials operate in separate policy worlds.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:defa6ea9c2305a52",
+      "source_hash": "0730f195",
+      "identity_hash": "0ecb184aeac2d795",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://ecfr.eu/article/the-eus-sanctions-odyssey-understanding-the-proposed-restrictions-on-russian-lng-and-helium/; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_institution_full_text",
+            "url": "https://ecfr.eu/article/the-eus-sanctions-odyssey-understanding-the-proposed-restrictions-on-russian-lng-and-helium/",
+            "title": "The EU’s sanctions odyssey: Understanding the proposed restrictions on Russian LNG and helium – European Council on Foreign Relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns sanctions and exposure and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The EU’s sanctions odyssey: Understanding the proposed restrictions on Russian LNG and helium",
+      "reader_what": "Analyses sanctions and exposure in the European context",
+      "reader_why": "Shows how sanctions and exposure affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "Disagreement over expanding the EU’s energy-related restrictions makes a ban on Russian LNG imports unlikely. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses sanctions and exposure.",
+      "deep_analysis": {
+        "work_kind": "policy commentary",
+        "research_question": "What does the work establish about sanctions and exposure and its European relevance?",
+        "main_finding": "Disagreement over expanding the EU’s energy-related restrictions makes a ban on Russian LNG imports unlikely.",
+        "method_or_basis": "Uses the substantive analysis, cited evidence, and policy/legal material in the recovered source.",
+        "qualification": "This is analytical or policy commentary rather than a causal-effect study; claims should be read as argument and evidence synthesis.",
+        "radar_relevance": "Recovered evidence centrally concerns sanctions and exposure and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Belgium",
+            "class": "member_state"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-05-09",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "BE"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "This is analytical or policy commentary rather than a causal-effect study; claims should be read as argument and evidence synthesis.",
+          "text": "Disagreement over expanding the EU’s energy-related restrictions makes a ban on Russian LNG imports unlikely.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:99b8aa5e9b669ceb",
+      "source_hash": "68124721",
+      "identity_hash": "e726ff6cd2a476a8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://doi.org/10.1111/1758-5899.13388; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/1758-5899.13388 matches the recovered bibliographic title/source information."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive text from https://content.openalex.org/works/W4396742858.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_or_publisher_full_text",
+            "url": "https://content.openalex.org/works/W4396742858.pdf",
+            "title": "The geopolitics of supply chains: EU efforts to ensure security of supply",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns critical-material supply security and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The geopolitics of supply chains: EU efforts to ensure security of supply",
+      "reader_what": "Analyses critical-material supply security in the European context",
+      "reader_why": "Shows how critical-material supply security affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "However, as this article argues, the EU's approach to ensuring resilient supply chains now comes in the form of policies that call into question Europe's adherence to a liberal international order privileging free markets and comparative advantage via universal and recipro - cal trade rules. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses critical-material supply security.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about critical-material supply security and its European relevance?",
+        "main_finding": "However, as this article argues, the EU's approach to ensuring resilient supply chains now comes in the form of policies that call into question Europe's adherence to a liberal international order privileging free markets and comparative advantage via universal and recipro - cal trade rules.",
+        "method_or_basis": "Uses document analysis.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns critical-material supply security and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "materials.rare_earths",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-05-07",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "However, as this article argues, the EU's approach to ensuring resilient supply chains now comes in the form of policies that call into question Europe's adherence to a liberal international order privileging free markets and comparative advantage via universal and recipro - cal trade rules.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:b8a22ce35456c805",
+      "source_hash": "c4311d8a",
+      "identity_hash": "1dc355c8f0314474",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://www.celis.institute/celis-content/belgium-guidance-on-the-application-of-the-belgian-fdi-screening-regime-4-april-2024-dutch/; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "substantive_primary_page",
+            "url": "https://www.celis.institute/celis-content/belgium-guidance-on-the-application-of-the-belgian-fdi-screening-regime-4-april-2024-dutch/",
+            "title": "Belgium - Guidance on the application of the Belgian FDI screening regime (4 April 2024) (Dutch) - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns investment screening and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Belgium - Guidance on the application of the Belgian FDI screening regime (4 April 2024) (Dutch)",
+      "reader_what": "Analyses investment screening in the European context",
+      "reader_why": "Shows how investment screening affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "On 4 April 2024, the Interfederal Screening Commission (ISC) published guidelines to provide further clarification on the Belgian rules on the screening of foreign direct investments. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses investment screening.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about investment screening and its European relevance?",
+        "main_finding": "On 4 April 2024, the Interfederal Screening Commission (ISC) published guidelines to provide further clarification on the Belgian rules on the screening of foreign direct investments.",
+        "method_or_basis": "Uses the substantive analysis, cited evidence, and policy/legal material in the recovered source.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns investment screening and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Belgium",
+            "class": "member_state"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-05-06",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "BE"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "On 4 April 2024, the Interfederal Screening Commission (ISC) published guidelines to provide further clarification on the Belgian rules on the screening of foreign direct investments.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:3c5ae477f4c2d5cf",
+      "source_hash": "99675b5f",
+      "identity_hash": "62b9734e730404ef",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://doi.org/10.54648/eerr2024009; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.54648/eerr2024009 matches the recovered bibliographic title/source information."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive text from https://kluwerlawonline.com/journalarticle/European+Foreign+Affairs+Review/29.4/EERR2024009."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "substantive_primary_page",
+            "url": "https://kluwerlawonline.com/journalarticle/European+Foreign+Affairs+Review/29.4/EERR2024009",
+            "title": "Sink or Swim: The EU as a Strategic Maritime Security Actor",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_SCOPE_OR_PRODUCT_FAIL",
+        "reason": "The article concerns the EU as a maritime security actor rather than a central economic-security dependency, capacity, trade, investment, or coercion mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Sink or Swim: The EU as a Strategic Maritime Security Actor",
+      "reader_what": "Examines Sink or Swim: The EU as a Strategic Maritime Security Actor",
+      "reader_why": "",
+      "reader_more": "<p><i>Over the past decades, the European Union (EU) has rapidly emerged as a maritime security actor on the international scene. The recovered source is treated as historical context from 2024. It is excluded because the economic-security scope or substantive-product gate is not met.",
+      "deep_analysis": {
+        "work_kind": "recovered article/report/page",
+        "research_question": "What does the work establish about economic-security strategy and governance and its European relevance?",
+        "main_finding": "<p><i>Over the past decades, the European Union (EU) has rapidly emerged as a maritime security actor on the international scene.",
+        "method_or_basis": "Uses the substantive analysis, cited evidence, and policy/legal material in the recovered source.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "The article concerns the EU as a maritime security actor rather than a central economic-security dependency, capacity, trade, investment, or coercion mechanism.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:2927bf0cc5d101ab",
+      "source_hash": "40a01e89",
+      "identity_hash": "8deb8757e7e10330",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://cdn.ceps.eu/wp-content/uploads/2024/04/CEPS-K_flows-2023_Final.pdf; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_or_publisher_full_text",
+            "url": "https://cdn.ceps.eu/wp-content/uploads/2024/04/CEPS-K_flows-2023_Final.pdf",
+            "title": "Analysis of developments in EU capital flows in the global context (2023) – CEPS",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns investment screening and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Analysis of developments in EU capital flows in the global context (2023) – CEPS",
+      "reader_what": "Analyses investment screening in the European context",
+      "reader_why": "Shows how investment screening affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "Analysis of developments in EU capital flows in the global context (2023) Geo-economics and the risk of fragmentation Written by Cinzia Alcidi, Farzaneh Shamsfakhr, Doina Postica, and Damir Gojsic. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses investment screening.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about investment screening and its European relevance?",
+        "main_finding": "Analysis of developments in EU capital flows in the global context (2023) Geo-economics and the risk of fragmentation Written by Cinzia Alcidi, Farzaneh Shamsfakhr, Doina Postica, and Damir Gojsic.",
+        "method_or_basis": "Uses document analysis, firm-level data, survey evidence.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns investment screening and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-04-22",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "Analysis of developments in EU capital flows in the global context (2023) Geo-economics and the risk of fragmentation Written by Cinzia Alcidi, Farzaneh Shamsfakhr, Doina Postica, and Damir Gojsic.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:783dc3f245a8d2ad",
+      "source_hash": "cfe143ed",
+      "identity_hash": "eca763a993dad8d4",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://www.celis.institute/celis-blog/the-eu-economic-security-strategy-a-novel-approach-or-the-reemergence-of-an-old-idea/; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_institution_full_text",
+            "url": "https://www.celis.institute/celis-blog/the-eu-economic-security-strategy-a-novel-approach-or-the-reemergence-of-an-old-idea/",
+            "title": "The EU Economic Security Strategy: a Novel Approach or the Reemergence of an Old Idea? - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns coercion and resilience and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The EU Economic Security Strategy: a Novel Approach or the Reemergence of an Old Idea?",
+      "reader_what": "Analyses coercion and resilience in the European context",
+      "reader_why": "Shows how coercion and resilience affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "This blog post will show that calls to adjust the block’s trade policy can be traced back to the 2019 Franco-German Manifesto for a European industrial policy fit for the 21 st century (Manifesto). The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses coercion and resilience.",
+      "deep_analysis": {
+        "work_kind": "policy commentary",
+        "research_question": "What does the work establish about coercion and resilience and its European relevance?",
+        "main_finding": "This blog post will show that calls to adjust the block’s trade policy can be traced back to the 2019 Franco-German Manifesto for a European industrial policy fit for the 21 st century (Manifesto).",
+        "method_or_basis": "Uses document analysis.",
+        "qualification": "This is analytical or policy commentary rather than a causal-effect study; claims should be read as argument and evidence synthesis.",
+        "radar_relevance": "Recovered evidence centrally concerns coercion and resilience and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "coercion.anti_coercion_instrument",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-04-19",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This is analytical or policy commentary rather than a causal-effect study; claims should be read as argument and evidence synthesis.",
+          "text": "This blog post will show that calls to adjust the block’s trade policy can be traced back to the 2019 Franco-German Manifesto for a European industrial policy fit for the 21 st century (Manifesto).",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:1152d2ea5bbe51b3",
+      "source_hash": "c3f3568c",
+      "identity_hash": "65204bffd6dcc47d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://doi.org/10.1111/jcms.13596; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/jcms.13596 matches the recovered bibliographic title/source information."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive text from https://hal.science/hal-04673485/document."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "substantive_primary_page",
+            "url": "https://hal.science/hal-04673485/document",
+            "title": "Geoeconomic Power Europe: When Global Power Competition Drives EU Integration",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns geoeconomic trade and market policy and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Geoeconomic Power Europe: When Global Power Competition Drives EU Integration",
+      "reader_what": "Analyses geoeconomic trade and market policy in the European context",
+      "reader_why": "Shows how geoeconomic trade and market policy affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "You are seeing this because the administrator of this website has set up Anubis to protect the server against the scourge of AI companies aggressively scraping websites. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses geoeconomic trade and market policy.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about geoeconomic trade and market policy and its European relevance?",
+        "main_finding": "You are seeing this because the administrator of this website has set up Anubis to protect the server against the scourge of AI companies aggressively scraping websites.",
+        "method_or_basis": "Uses the substantive analysis, cited evidence, and policy/legal material in the recovered source.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns geoeconomic trade and market policy and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-04-18",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "You are seeing this because the administrator of this website has set up Anubis to protect the server against the scourge of AI companies aggressively scraping websites.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:34c7fa878d53dc71",
+      "source_hash": "a7738017",
+      "identity_hash": "82322cdf257c945a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://www.celis.institute/celis-blog/klimaseniorinnen-how-did-the-ecthr-define-states-climate-policy-obligations/; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_institution_full_text",
+            "url": "https://www.celis.institute/celis-blog/klimaseniorinnen-how-did-the-ecthr-define-states-climate-policy-obligations/",
+            "title": "KlimaSeniorinnen: how did the ECtHR define States' climate policy obligations? - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_SCOPE_OR_PRODUCT_FAIL",
+        "reason": "The post analyses ECtHR climate-policy obligations; it is not a substantive economic-security work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "KlimaSeniorinnen: how did the ECtHR define States' climate policy obligations?",
+      "reader_what": "Examines KlimaSeniorinnen: how did the ECtHR define States' climate policy obligations?",
+      "reader_why": "",
+      "reader_more": "Since international environmental treaties show that States are aware of climate dangers and agree to take action in this regard, they render it easier for judges to invalidate choices made by the legislative or executive power on the appropriate balance between economic, human rights and environmental interests. The recovered source is treated as historical context from 2024. It is excluded because the economic-security scope or substantive-product gate is not met.",
+      "deep_analysis": {
+        "work_kind": "policy commentary",
+        "research_question": "What does the work establish about investment screening and its European relevance?",
+        "main_finding": "Since international environmental treaties show that States are aware of climate dangers and agree to take action in this regard, they render it easier for judges to invalidate choices made by the legislative or executive power on the appropriate balance between economic, human rights and environmental interests.",
+        "method_or_basis": "Uses the substantive analysis, cited evidence, and policy/legal material in the recovered source.",
+        "qualification": "This is analytical or policy commentary rather than a causal-effect study; claims should be read as argument and evidence synthesis.",
+        "radar_relevance": "The post analyses ECtHR climate-policy obligations; it is not a substantive economic-security work.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:9ff79cb6307776bd",
+      "source_hash": "e7a696fa",
+      "identity_hash": "355dd84b138ec99e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://doi.org/10.1111/jcms.13591; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/jcms.13591 matches the recovered bibliographic title/source information."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive text from https://content.openalex.org/works/W4394797823.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_or_publisher_full_text",
+            "url": "https://content.openalex.org/works/W4394797823.pdf",
+            "title": "The Geoeconomic Turn of the Single European Market? Conceptual Challenges and Empirical Trends",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns strategic industrial capacity and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The Geoeconomic Turn of the Single European Market? Conceptual Challenges and Empirical Trends",
+      "reader_what": "Analyses strategic industrial capacity in the European context",
+      "reader_why": "Shows how strategic industrial capacity affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "606) argue that geoeconomic measures are characterised by the fact that their main rationale is not mutually bene ﬁcial economic gains, but the geostrategic advantage they may bring for one of the parties involved (see also Wesley, 2016, p. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses strategic industrial capacity.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about strategic industrial capacity and its European relevance?",
+        "main_finding": "606) argue that geoeconomic measures are characterised by the fact that their main rationale is not mutually bene ﬁcial economic gains, but the geostrategic advantage they may bring for one of the parties involved (see also Wesley, 2016, p.",
+        "method_or_basis": "Uses the study/report evidence and analysis presented in the recovered full-document text.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns strategic industrial capacity and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-04-14",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "606) argue that geoeconomic measures are characterised by the fact that their main rationale is not mutually bene ﬁcial economic gains, but the geostrategic advantage they may bring for one of the parties involved (see also Wesley, 2016, p.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:038b13a85ced7b67",
+      "source_hash": "a7739033",
+      "identity_hash": "f6356453e9f8e955",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://merics.org/en/comment/germany-needs-show-self-confidence-its-china-policy; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_institution_full_text",
+            "url": "https://merics.org/en/comment/germany-needs-show-self-confidence-its-china-policy",
+            "title": "Germany needs a show of self confidence in its China policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns investment screening and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Germany needs a show of self confidence in its China policy",
+      "reader_what": "Analyses investment screening in the European context",
+      "reader_why": "Shows how investment screening affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "Even before the findings are out, the German car industry is positioning itself against any punitive tariffs because it dreads possible Chinese retaliatory measures. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses investment screening.",
+      "deep_analysis": {
+        "work_kind": "policy commentary",
+        "research_question": "What does the work establish about investment screening and its European relevance?",
+        "main_finding": "Even before the findings are out, the German car industry is positioning itself against any punitive tariffs because it dreads possible Chinese retaliatory measures.",
+        "method_or_basis": "Uses the substantive analysis, cited evidence, and policy/legal material in the recovered source.",
+        "qualification": "This is analytical or policy commentary rather than a causal-effect study; claims should be read as argument and evidence synthesis.",
+        "radar_relevance": "Recovered evidence centrally concerns investment screening and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Germany",
+            "class": "member_state"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-04-12",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "DE"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "This is analytical or policy commentary rather than a causal-effect study; claims should be read as argument and evidence synthesis.",
+          "text": "Even before the findings are out, the German car industry is positioning itself against any punitive tariffs because it dreads possible Chinese retaliatory measures.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:6eee06b67d4b9540",
+      "source_hash": "9cbe4b7b",
+      "identity_hash": "a54f97f23503e951",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://www.celis.institute/tag/economic-sanctions/; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "substantive_primary_page",
+            "url": "https://www.celis.institute/tag/economic-sanctions/",
+            "title": "economic sanctions - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_SCOPE_OR_PRODUCT_FAIL",
+        "reason": "This is a topic/tag listing for economic sanctions rather than a standalone evidence product."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "economic sanctions",
+      "reader_what": "Examines economic sanctions",
+      "reader_why": "",
+      "reader_more": "Dr Matthias Bauer, Director at ECIPE and Ms Dyuti Pandya, Junior Analyst at ECIPE Industry data point to a considerable investment disparity between US and EU digital companies, underscoring the role of US tech investments in the EU’s Information and Communications Technology (ICT) sector and highlighting the mutual interdependence between the two The recovered source is treated as historical context from 2024. It is excluded because the economic-security scope or substantive-product gate is not met.",
+      "deep_analysis": {
+        "work_kind": "recovered article/report/page",
+        "research_question": "What does the work establish about sanctions and exposure and its European relevance?",
+        "main_finding": "Dr Matthias Bauer, Director at ECIPE and Ms Dyuti Pandya, Junior Analyst at ECIPE Industry data point to a considerable investment disparity between US and EU digital companies, underscoring the role of US tech investments in the EU’s Information and Communications Technology (ICT) sector and highlighting the mutual interdependence between the two",
+        "method_or_basis": "Uses the substantive analysis, cited evidence, and policy/legal material in the recovered source.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "This is a topic/tag listing for economic sanctions rather than a standalone evidence product.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:47df43b518228456",
+      "source_hash": "f7af6e22",
+      "identity_hash": "3934d17012a7135f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://www.celis.institute/tag/eu-sanctions/; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "substantive_primary_page",
+            "url": "https://www.celis.institute/tag/eu-sanctions/",
+            "title": "EU sanctions - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_SCOPE_OR_PRODUCT_FAIL",
+        "reason": "This is a topic/tag listing for EU sanctions rather than a standalone evidence product."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU sanctions",
+      "reader_what": "Examines EU sanctions",
+      "reader_why": "",
+      "reader_more": "Dr Matthias Bauer, Director at ECIPE and Ms Dyuti Pandya, Junior Analyst at ECIPE Industry data point to a considerable investment disparity between US and EU digital companies, underscoring the role of US tech investments in the EU’s Information and Communications Technology (ICT) sector and highlighting the mutual interdependence between the two The recovered source is treated as historical context from 2024. It is excluded because the economic-security scope or substantive-product gate is not met.",
+      "deep_analysis": {
+        "work_kind": "recovered article/report/page",
+        "research_question": "What does the work establish about sanctions and exposure and its European relevance?",
+        "main_finding": "Dr Matthias Bauer, Director at ECIPE and Ms Dyuti Pandya, Junior Analyst at ECIPE Industry data point to a considerable investment disparity between US and EU digital companies, underscoring the role of US tech investments in the EU’s Information and Communications Technology (ICT) sector and highlighting the mutual interdependence between the two",
+        "method_or_basis": "Uses the substantive analysis, cited evidence, and policy/legal material in the recovered source.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "This is a topic/tag listing for EU sanctions rather than a standalone evidence product.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:6b762358ffa446d6",
+      "source_hash": "542ec3c9",
+      "identity_hash": "697646c7d557befc",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://merics.org/sites/default/files/2024-04/Hmaidi-Huawei%20Supply%20Chain-04.05.24.pdf; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_or_publisher_full_text",
+            "url": "https://merics.org/sites/default/files/2024-04/Hmaidi-Huawei%20Supply%20Chain-04.05.24.pdf",
+            "title": "Huawei is quietly dominating China’s semiconductor supply chain",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_SCOPE_OR_PRODUCT_FAIL",
+        "reason": "The report’s substantive object is Huawei and China’s domestic semiconductor supply chain; EU relevance is incidental rather than central."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Huawei is quietly dominating China’s semiconductor supply chain",
+      "reader_what": "Examines Huawei is quietly dominating China’s semiconductor supply chain",
+      "reader_why": "",
+      "reader_more": "2 IGCC • MERICS • April 2024 Huawei is Quietly Dominating China’s Semiconductor Supply Chain Key Findings • Huawei is emerging as the leader of a national team in semiconductors. The recovered source is treated as historical context from 2024. It is excluded because the economic-security scope or substantive-product gate is not met.",
+      "deep_analysis": {
+        "work_kind": "recovered article/report/page",
+        "research_question": "What does the work establish about semiconductor capacity and dependencies and its European relevance?",
+        "main_finding": "2 IGCC • MERICS • April 2024 Huawei is Quietly Dominating China’s Semiconductor Supply Chain Key Findings • Huawei is emerging as the leader of a national team in semiconductors.",
+        "method_or_basis": "Uses the study/report evidence and analysis presented in the recovered full-document text.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "The report’s substantive object is Huawei and China’s domestic semiconductor supply chain; EU relevance is incidental rather than central.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:0c04c5e576165e85",
+      "source_hash": "207402af",
+      "identity_hash": "90f32c7d0b5b7334",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://doi.org/10.1111/twec.13551; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/twec.13551 matches the recovered bibliographic title/source information."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive text from https://content.openalex.org/works/W4390815724.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_or_publisher_full_text",
+            "url": "https://content.openalex.org/works/W4390815724.pdf",
+            "title": "The European Union's Global Gateway: An institutional and economic overview",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns strategic external investment partnerships and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The European Union's Global Gateway: An institutional and economic overview",
+      "reader_what": "Analyses strategic external investment partnerships in the European context",
+      "reader_why": "Shows how strategic external investment partnerships affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "The World Economy published by John Wiley & Sons Ltd. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses strategic external investment partnerships.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about strategic external investment partnerships and its European relevance?",
+        "main_finding": "The World Economy published by John Wiley & Sons Ltd.",
+        "method_or_basis": "Uses the study/report evidence and analysis presented in the recovered full-document text.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns strategic external investment partnerships and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "partnership.global_gateway",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Belgium",
+            "class": "member_state"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-04-01",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "BE"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "The World Economy published by John Wiley & Sons Ltd.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:f7df9fa3cd3572e5",
+      "source_hash": "cdcfe546",
+      "identity_hash": "f9227d066653be9c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://doi.org/10.1093/jiel/jgae005; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1093/jiel/jgae005 matches the recovered bibliographic title/source information."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive text from https://kclpure.kcl.ac.uk/ws/files/355288180/Transatlantic_leadership_in_an_era_of_human_rights-based_export_controls_Version_of_Record.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_or_publisher_full_text",
+            "url": "https://kclpure.kcl.ac.uk/ws/files/355288180/Transatlantic_leadership_in_an_era_of_human_rights-based_export_controls_Version_of_Record.pdf",
+            "title": "Transatlantic leadership in an era of human rights-based export controls",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns coercion and resilience and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Transatlantic leadership in an era of human rights-based export controls",
+      "reader_what": "Analyses coercion and resilience in the European context",
+      "reader_why": "Shows how coercion and resilience affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "King’s Research Portal DOI: 10.1093/jiel/jgae005 Document Version Publisher's PDF, also known as Version of record Link to publication record in King's Research Portal Citation for published version (APA): Hart, N., & Casey, C. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses coercion and resilience.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about coercion and resilience and its European relevance?",
+        "main_finding": "King’s Research Portal DOI: 10.1093/jiel/jgae005 Document Version Publisher's PDF, also known as Version of record Link to publication record in King's Research Portal Citation for published version (APA): Hart, N., & Casey, C.",
+        "method_or_basis": "Uses document analysis.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns coercion and resilience and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "coercion.anti_coercion_instrument",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-03-14",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "King’s Research Portal DOI: 10.1093/jiel/jgae005 Document Version Publisher's PDF, also known as Version of record Link to publication record in King's Research Portal Citation for published version (APA): Hart, N., & Casey, C.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:8814bb9906ef8a3b",
+      "source_hash": "0a339ed7",
+      "identity_hash": "dbf0db0c246640b0",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://merics.org/en/comment/de-risking-not-new-china-so-why-surprise-eus-new-policy; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_institution_full_text",
+            "url": "https://merics.org/en/comment/de-risking-not-new-china-so-why-surprise-eus-new-policy",
+            "title": "De-risking is not new to China, so why the surprise at the EU’s new policy?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns economic-security policy and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "De-risking is not new to China, so why the surprise at the EU’s new policy?",
+      "reader_what": "Analyses economic-security policy in the European context",
+      "reader_why": "Shows how economic-security policy affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "China has been practicing a policy of de-risking for decades, couched in terms of self-sufficiency, writes Francesca Ghiretti. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses economic-security policy.",
+      "deep_analysis": {
+        "work_kind": "policy commentary",
+        "research_question": "What does the work establish about economic-security policy and its European relevance?",
+        "main_finding": "China has been practicing a policy of de-risking for decades, couched in terms of self-sufficiency, writes Francesca Ghiretti.",
+        "method_or_basis": "Uses the substantive analysis, cited evidence, and policy/legal material in the recovered source.",
+        "qualification": "This is analytical or policy commentary rather than a causal-effect study; claims should be read as argument and evidence synthesis.",
+        "radar_relevance": "Recovered evidence centrally concerns economic-security policy and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-03-04",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This is analytical or policy commentary rather than a causal-effect study; claims should be read as argument and evidence synthesis.",
+          "text": "China has been practicing a policy of de-risking for decades, couched in terms of self-sufficiency, writes Francesca Ghiretti.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:91f52a7b5ae1171b",
+      "source_hash": "8918365c",
+      "identity_hash": "fdcb30885e32bf3e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://doi.org/10.1111/jcms.13604; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/jcms.13604 matches the recovered bibliographic title/source information."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive text from https://content.openalex.org/works/W4392401870.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_or_publisher_full_text",
+            "url": "https://content.openalex.org/works/W4392401870.pdf",
+            "title": "Business Power and the Geoeconomic Turn in the Single European Market",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns sanctions and exposure and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Business Power and the Geoeconomic Turn in the Single European Market",
+      "reader_what": "Analyses sanctions and exposure in the European context",
+      "reader_why": "Shows how sanctions and exposure affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "These illustrative examples show that whilst most business actors have adapted their strategies, there are also cases where business actors adhere to and defend the status quo. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses sanctions and exposure.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about sanctions and exposure and its European relevance?",
+        "main_finding": "These illustrative examples show that whilst most business actors have adapted their strategies, there are also cases where business actors adhere to and defend the status quo.",
+        "method_or_basis": "Uses document analysis.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns sanctions and exposure and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-03-03",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "These illustrative examples show that whilst most business actors have adapted their strategies, there are also cases where business actors adhere to and defend the status quo.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:bb8575127b29d36c",
+      "source_hash": "5b2b631f",
+      "identity_hash": "de6b17f29e5024c4",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://ecipe.org/publications/eu-us-ttc-how-to-deliver-for-planet-economy/; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_institution_full_text",
+            "url": "https://ecipe.org/publications/eu-us-ttc-how-to-deliver-for-planet-economy/",
+            "title": "Calling on the EU-US Trade and Technology Council: How to Deliver for the Planet and the Economy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_SCOPE_OR_PRODUCT_FAIL",
+        "reason": "The brief proposes conformity-assessment cooperation for trade facilitation and climate/economic goals, without a central economic-security mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Calling on the EU-US Trade and Technology Council: How to Deliver for the Planet and the Economy",
+      "reader_what": "Examines Calling on the EU-US Trade and Technology Council: How to Deliver for the Planet and the Economy",
+      "reader_why": "",
+      "reader_more": "Figure 1 shows that the EU’s market share in the US across the three product categories has been relatively stable, only dropping from 12 percent to 7 percent between 2021 and 2022. The recovered source is treated as historical context from 2024. It is excluded because the economic-security scope or substantive-product gate is not met.",
+      "deep_analysis": {
+        "work_kind": "recovered article/report/page",
+        "research_question": "What does the work establish about trade defence and subsidies and its European relevance?",
+        "main_finding": "Figure 1 shows that the EU’s market share in the US across the three product categories has been relatively stable, only dropping from 12 percent to 7 percent between 2021 and 2022.",
+        "method_or_basis": "Uses document analysis.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "The brief proposes conformity-assessment cooperation for trade facilitation and climate/economic goals, without a central economic-security mechanism.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:109b067d15280d3c",
+      "source_hash": "b44fab23",
+      "identity_hash": "75a45576d529993e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://www.celis.institute/celis-blog/the-quest-for-policy-coherence-between-competition-law-and-foreign-investment-screening-in-the-eu-consistency-or-disruption/; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_institution_full_text",
+            "url": "https://www.celis.institute/celis-blog/the-quest-for-policy-coherence-between-competition-law-and-foreign-investment-screening-in-the-eu-consistency-or-disruption/",
+            "title": "The Quest for Policy Coherence between Competition Law and Foreign Investment Screening in the EU: Consistency or Disruption? - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns investment screening and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The Quest for Policy Coherence between Competition Law and Foreign Investment Screening in the EU: Consistency or Disruption?",
+      "reader_what": "Analyses investment screening in the European context",
+      "reader_why": "Shows how investment screening affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "By Pietro Chiarelli, European Central Bank Disclaimer: This blog post was prepared by the author in his personal capacity. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses investment screening.",
+      "deep_analysis": {
+        "work_kind": "policy commentary",
+        "research_question": "What does the work establish about investment screening and its European relevance?",
+        "main_finding": "By Pietro Chiarelli, European Central Bank Disclaimer: This blog post was prepared by the author in his personal capacity.",
+        "method_or_basis": "Uses document analysis.",
+        "qualification": "This is analytical or policy commentary rather than a causal-effect study; claims should be read as argument and evidence synthesis.",
+        "radar_relevance": "Recovered evidence centrally concerns investment screening and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-02-28",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This is analytical or policy commentary rather than a causal-effect study; claims should be read as argument and evidence synthesis.",
+          "text": "By Pietro Chiarelli, European Central Bank Disclaimer: This blog post was prepared by the author in his personal capacity.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:c14b75e8413047c5",
+      "source_hash": "450d4a5c",
+      "identity_hash": "4cede949cc77a83f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the supplied work identity https://doi.org/10.1111/jcms.13593; packaged/recovered text matches the claimed title or page function."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1111/jcms.13593 matches the recovered bibliographic title/source information."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive text from https://content.openalex.org/works/W4392236297.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_or_publisher_full_text",
+            "url": "https://content.openalex.org/works/W4392236297.pdf",
+            "title": "When Foreign Policy Becomes Trade Policy: The EU's Anti‐Coercion Instrument",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and provenance checked against recovered source text and bibliographic markers. Decision based on the work itself, not scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Recovered evidence centrally concerns coercion and resilience and substantively connects it to European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "When Foreign Policy Becomes Trade Policy: The EU's Anti‐Coercion Instrument",
+      "reader_what": "Analyses coercion and resilience in the European context",
+      "reader_why": "Shows how coercion and resilience affects European exposure, resilience, policy capacity, or strategic room for manoeuvre.",
+      "reader_more": "Using process tracing based on interviews and primary and secondary materials, we argue that ‘foreign policy becoming trade policy’ through the ACI was an unintended consequence both of external pressures to institution- alise the trade – security nexus and of the EU ’s uneven internal competence base. The recovered source is treated as historical context from 2024. It is relevant to the Radar because it directly addresses coercion and resilience.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "What does the work establish about coercion and resilience and its European relevance?",
+        "main_finding": "Using process tracing based on interviews and primary and secondary materials, we argue that ‘foreign policy becoming trade policy’ through the ACI was an unintended consequence both of external pressures to institution- alise the trade – security nexus and of the EU ’s uneven internal competence base.",
+        "method_or_basis": "Uses interviews, process tracing.",
+        "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+        "radar_relevance": "Recovered evidence centrally concerns coercion and resilience and substantively connects it to European economic security.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "coercion.anti_coercion_instrument",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2024-02-27",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2024 evidence; conclusions are specific to the cases, data, and institutional setting analysed.",
+          "text": "Using process tracing based on interviews and primary and secondary materials, we argue that ‘foreign policy becoming trade policy’ through the ACI was an unintended consequence both of external pressures to institution- alise the trade – security nexus and of the EU ’s uneven internal",
+          "confidence": "high"
+        }
+      ]
+    }
+  ]
+}
