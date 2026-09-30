@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-record-corrections-v1",
-  "updated_at": "2026-09-30T06:17:25Z",
+  "updated_at": "2026-09-30T06:20:09Z",
   "records": {
     "link:https://doi.org/10.1080/09662839.2026.2709844": {
       "fields": {
@@ -322,6 +322,21 @@
       ],
       "updated_at": "2026-09-30T06:17:23Z",
       "deep_scan_package_id": "worker-a-d28b6a43fdb6"
+    },
+    "historical:id:b3c33b824538e7fe": {
+      "fields": {
+        "date": "2024-07-25"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Newcastle repository metadata gives online publication date 25 July 2024 for DOI 10.1111/jcms.13654.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://eprints.ncl.ac.uk/299217"
+      ],
+      "updated_at": "2026-09-30T06:20:08Z",
+      "deep_scan_package_id": "worker-b-60389f6094bf"
     }
   }
 }
