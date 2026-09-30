@@ -6,12 +6,12 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **774** (Main **496** + Historical **278**)
-- Automatic queue still needing V2 verification: **911** (Main **174** + Historical **737**)
-- Currently assigned to workers: **102** (Main **19** + Historical **83**)
-- Bounded access-recovery retries still eligible: **217**
+- Authoritative V2 verified: **814** (Main **497** + Historical **317**)
+- Automatic queue still needing V2 verification: **871** (Main **173** + Historical **698**)
+- Currently assigned to workers: **78** (Main **18** + Historical **60**)
+- Bounded access-recovery retries still eligible: **221**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **809**
+- Automatic queue pending and not yet assigned: **793**
 
 ## Worker lanes
 
@@ -29,17 +29,17 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-a63c8e4cc360`
-- Assigned unresolved records: **60**
+- Current package: `worker-b-d68a90fcd27e`
+- Assigned unresolved records: **36**
   1. `historical:id:88559fe23454a413` — The EU's Autonomous Sanctions Against Russia in 2014 Versus 2022: How Does the Bureaucratic Politics Model Bring in the Institutional ‘Balance of Power’ Within the EU?
   2. `historical:id:80eb832655ab55c6` — Reducing supply risks for critical raw materials – CEPS
   3. `historical:id:8fb9f913c823aa60` — The European Union’s Anti-Coercion Instrument – A Closer Look at Decision-Making under a Politicized Trade Instrument - CELIS Institute - Investment Screening | National Security | Competitiveness
-  4. `historical:id:1affa1e7472fa213` — The Anti-Coercion Instrument – The Practical Repercussions of the ACI’s Entry into Force (Part II) - CELIS Institute - Investment Screening | National Security | Competitiveness
-  5. `historical:id:38d0b2113c15e254` — Geopolitics in Space and the Role of the European Union
-  6. `historical:id:4f61830879536ff7` — The Anti-Coercion Instrument – The Practical Repercussions of the ACI’s Entry into Force (Part I) - CELIS Institute - Investment Screening | National Security | Competitiveness
-  7. `historical:id:eaa38a5bf01b6baf` — How does politicisation affect the ratification of mixed EU trade agreements? The case of CETA
-  8. `historical:id:187e92e588f38ea9` — European Strategic Autonomy: The Path to a Geopolitical Europe
-  - … plus 52 more in the package manifest
+  4. `historical:id:9ecab69560a01cc0` — What's at Stake in the EU Elections: Industrial Policy
+  5. `historical:id:695fc8261096919a` — Reassessing the Impact of the Single Market and Its Ability to Help Build Strategic Autonomy
+  6. `historical:id:6c5e8252ab75fa85` — Institut Jacques Delors - Strengthening EU green sovereignty through the Critical Raw Materials Act
+  7. `historical:id:3c6350161fe3195c` — Green transition, single market and EU’s open strategic autonomy: the impact of state aid
+  8. `historical:id:ba386ea6bfad7db0` — Geopolitics and Trade: German Economists Experts' Assessment of Dependencies on China | ifo Institute
+  - … plus 28 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
