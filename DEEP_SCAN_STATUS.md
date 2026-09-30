@@ -6,27 +6,27 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **740** (Main **481** + Historical **259**)
-- Automatic queue still needing V2 verification: **945** (Main **189** + Historical **756**)
-- Currently assigned to workers: **126** (Main **43** + Historical **83**)
-- Bounded access-recovery retries still eligible: **208**
+- Authoritative V2 verified: **774** (Main **496** + Historical **278**)
+- Automatic queue still needing V2 verification: **911** (Main **174** + Historical **737**)
+- Currently assigned to workers: **102** (Main **19** + Historical **83**)
+- Bounded access-recovery retries still eligible: **217**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **819**
+- Automatic queue pending and not yet assigned: **809**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-286a6356bae3`
-- Assigned unresolved records: **60**
+- Current package: `worker-a-78ee99f76019`
+- Assigned unresolved records: **36**
   1. `link:https://dfrlab.org/2026/08/17/sovereignty-without-borders-decoding-the-transatlantic-digital-relationship-at-a-time-of-change/` — Sovereignty without borders: Decoding the transatlantic digital relationship at a time of change
   2. `link:https://ecfr.eu/wp-content/uploads/2026/09/Little-Venice-little-Sparta-The-UAEs-statecraft-meets-the-war-on-Iran-v2.pdf` — Little Venice, little Sparta: The UAE’s statecraft meets the war on Iran – European Council on Foreign Relations
   3. `link:https://doi.org/10.1177/01956574261473489` — Can Domestic Carbon Markets Buffer the Impact of EU Border Taxes? A Stochastic Frontier Analysis of Decarbonization Costs in India’s Energy-Intensive Industries
-  4. `link:https://doi.org/10.4324/9781003669654-6` — Introducing Hydrogen to the European Energy Market
-  5. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=35040186-bc4b-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Explanatory note on Title IV (Security of ICT Supply Chains) - Publications Office of the EU
-  6. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=21553fa5-bc4b-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Presidency first compromise text Title IV (Security of ICT Supply Chains) - Publications Office of the EU
-  7. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=b26447fa-bc09-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Commission Proposal for a Regulation of the European Parliament and of the Council establishing diversification instrument to address critical strategic dependencies that expose the Union to economic security risks - Publications Office of the EU
-  8. `link:https://doi.org/10.1016/j.rspp.2026.100336` — Divergent futures and structural change: Regional economic scenarios and resilience for trade shocks
-  - … plus 52 more in the package manifest
+  4. `link:https://digital-strategy.ec.europa.eu/en/activities/study-identify-digital-technologies-next-eu-research-and-innovation-fund` — Study to identify key strategic digital technologies for EU research and innovation funding beyond 2027
+  5. `link:https://doi.org/10.18288/1994-5124-2026-4-94-109` — Assessing the Impact of Sanctions on the Dynamics of the Russian Economy From 2022 to 2024
+  6. `link:https://news.google.com/rss/articles/CBMipwFBVV95cUxObk80WDhOeFJjTzFUMDY5dElGaGdHbFhkWElPSlZDU3psZWU2ZVpxNWRYejYzZHJhOHIwMWI0SEw3eHQ1N1BaMnVoOE5hbzBMRWJWbWF6RFpZOUFIN0l6ZUowSFZoaDMteW9aTFhNQkxPaHlqWDdDZlVYUHVGUTdwbnZIYnJKdjBUQXNJejRWRDBxNXVzNm1reVNTOGF6eW42NWViLWhTQQ?oc=5` — EIB and BNP Paribas sign €700 million grid guarantee deal
+  7. `historical:id:dc5698f4b73b354a` — The EU Anti-Coercion Instrument: Anti-What, Exactly? - CELIS Institute - Investment Screening | National Security | Competitiveness
+  8. `historical:id:c8968a614fe33647` — Economic nationalists, regional investment aid, and the stability of FDI-led growth in East Central Europe
+  - … plus 28 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-a63c8e4cc360`
