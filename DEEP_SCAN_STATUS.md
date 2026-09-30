@@ -7,17 +7,17 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **740** (Main **481** + Historical **259**)
-- Automatic queue still needing V2 verification: **909** (Main **177** + Historical **732**)
-- Currently assigned to workers: **78** (Main **30** + Historical **48**)
-- Bounded access-recovery retries still eligible: **209**
+- Automatic queue still needing V2 verification: **945** (Main **189** + Historical **756**)
+- Currently assigned to workers: **126** (Main **43** + Historical **83**)
+- Bounded access-recovery retries still eligible: **208**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **831**
+- Automatic queue pending and not yet assigned: **819**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-7fb25109b0f5`
-- Assigned unresolved records: **36**
+- Current package: `worker-a-286a6356bae3`
+- Assigned unresolved records: **60**
   1. `link:https://dfrlab.org/2026/08/17/sovereignty-without-borders-decoding-the-transatlantic-digital-relationship-at-a-time-of-change/` — Sovereignty without borders: Decoding the transatlantic digital relationship at a time of change
   2. `link:https://ecfr.eu/wp-content/uploads/2026/09/Little-Venice-little-Sparta-The-UAEs-statecraft-meets-the-war-on-Iran-v2.pdf` — Little Venice, little Sparta: The UAE’s statecraft meets the war on Iran – European Council on Foreign Relations
   3. `link:https://doi.org/10.1177/01956574261473489` — Can Domestic Carbon Markets Buffer the Impact of EU Border Taxes? A Stochastic Frontier Analysis of Decarbonization Costs in India’s Energy-Intensive Industries
@@ -26,11 +26,11 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   6. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=21553fa5-bc4b-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Presidency first compromise text Title IV (Security of ICT Supply Chains) - Publications Office of the EU
   7. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=b26447fa-bc09-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Commission Proposal for a Regulation of the European Parliament and of the Council establishing diversification instrument to address critical strategic dependencies that expose the Union to economic security risks - Publications Office of the EU
   8. `link:https://doi.org/10.1016/j.rspp.2026.100336` — Divergent futures and structural change: Regional economic scenarios and resilience for trade shocks
-  - … plus 28 more in the package manifest
+  - … plus 52 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-883e5523df7e`
-- Assigned unresolved records: **36**
+- Current package: `worker-b-a63c8e4cc360`
+- Assigned unresolved records: **60**
   1. `historical:id:88559fe23454a413` — The EU's Autonomous Sanctions Against Russia in 2014 Versus 2022: How Does the Bureaucratic Politics Model Bring in the Institutional ‘Balance of Power’ Within the EU?
   2. `historical:id:80eb832655ab55c6` — Reducing supply risks for critical raw materials – CEPS
   3. `historical:id:8fb9f913c823aa60` — The European Union’s Anti-Coercion Instrument – A Closer Look at Decision-Making under a Politicized Trade Instrument - CELIS Institute - Investment Screening | National Security | Competitiveness
@@ -39,7 +39,7 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   6. `historical:id:4f61830879536ff7` — The Anti-Coercion Instrument – The Practical Repercussions of the ACI’s Entry into Force (Part I) - CELIS Institute - Investment Screening | National Security | Competitiveness
   7. `historical:id:eaa38a5bf01b6baf` — How does politicisation affect the ratification of mixed EU trade agreements? The case of CETA
   8. `historical:id:187e92e588f38ea9` — European Strategic Autonomy: The Path to a Geopolitical Europe
-  - … plus 28 more in the package manifest
+  - … plus 52 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
