@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-record-corrections-v1",
-  "updated_at": "2026-10-01T13:49:49Z",
+  "updated_at": "2026-10-01T13:56:53Z",
   "records": {
     "link:https://doi.org/10.1080/09662839.2026.2709844": {
       "fields": {
@@ -677,6 +677,38 @@
       ],
       "updated_at": "2026-10-01T13:49:48Z",
       "deep_scan_package_id": "worker-a-3c304429875d"
+    },
+    "historical:id:adbe422d0af80f0c": {
+      "fields": {
+        "source": "Cambridge Review of International Affairs"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "The DOI and recovered author copy identify Cambridge Review of International Affairs as the journal.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://www.researchgate.net/publication/334637160_The_EU_China_trade_dependence_and_human_rights"
+      ],
+      "updated_at": "2026-10-01T13:56:52Z",
+      "deep_scan_package_id": "worker-b-a0e68cb2055f"
+    },
+    "historical:id:3b233e92681c776a": {
+      "fields": {
+        "title": "EU strategic dependencies and capacities: second stage of in-depth reviews (SWD(2022) 41 final)",
+        "source": "European Commission",
+        "date": "2022-02-22"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "The official Commission staff working document supplies the canonical issuing body, title, and final-document date.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=SWD:2022:41:FIN"
+      ],
+      "updated_at": "2026-10-01T13:56:53Z",
+      "deep_scan_package_id": "worker-b-a0e68cb2055f"
     }
   }
 }
