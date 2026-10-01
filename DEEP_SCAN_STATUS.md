@@ -6,12 +6,12 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **967** (Main **527** + Historical **440**)
-- Automatic queue still needing V2 verification: **757** (Main **158** + Historical **599**)
+- Authoritative V2 verified: **1003** (Main **527** + Historical **476**)
+- Automatic queue still needing V2 verification: **721** (Main **158** + Historical **563**)
 - Currently assigned to workers: **78** (Main **6** + Historical **72**)
 - Bounded access-recovery retries still eligible: **220**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **679**
+- Automatic queue pending and not yet assigned: **643**
 
 ## Worker lanes
 
@@ -29,16 +29,16 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-866c3aaf0914`
+- Current package: `worker-b-a0e68cb2055f`
 - Assigned unresolved records: **36**
-  1. `historical:id:d47b3c10f2ea639f` — Geopolitics of the green transition and improving EU’s economic security
-  2. `historical:id:1beafac8cb12a4af` — France 2024 Digital Decade Country Report | Shaping Europe’s digital future
-  3. `historical:id:ce044422ec4b9617` — Foreign Subsidies Instrument - BusinessEurope comments on the draft implementing regulation
-  4. `historical:id:15ab47a803eb4167` — Finland 2025 Digital Decade Country Report | Shaping Europe’s digital future
-  5. `historical:id:f2b04839b1a9ca0a` — Finland 2024 Digital Decade Country Report | Shaping Europe’s digital future
-  6. `historical:id:414317a08015bf8c` — Evaluation and possible revision of the current EU framework for the screening of investments into the Union - Letter from Markus J. Beyrer to Valdis Dombrovskis
-  7. `historical:id:2a5bccb5c473c329` — European Critical Raw Materials Act
-  8. `historical:id:6952f3749b24463e` — Estonia 2025 Digital Decade Country Report | Shaping Europe’s digital future
+  1. `historical:id:15a4aaa21e800f8b` — Fasten your seatbelts: How to manage China’s economic coercion
+  2. `historical:id:d0da4842f39bdbb5` — Arm for the storm: Germany’s new security strategy – European Council on Foreign Relations
+  3. `historical:id:8f33f16ed878a657` — Maritime container terminal infrastructure, network corporatization, and global terminal operators: Implications for international business policy
+  4. `historical:id:73037cd02fa30791` — Saudi Arabia’s once marginal relationship with China has grown into a comprehensive strategic partnership
+  5. `historical:id:09c656f173cb5cb4` — Green energy depends on critical minerals. Who controls the supply chains?
+  6. `historical:id:eca6a3a49c50254c` — A Transatlantic Energy and Climate Pact Is Now More Necessary Than Ever
+  7. `historical:id:dc1dfdcc7b9544ff` — The WMD Non-proliferation Clause in EU Trade Agreements
+  8. `historical:id:a4030651b6a84432` — Bond villains: The European Central Bank’s new strategy – European Council on Foreign Relations
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
