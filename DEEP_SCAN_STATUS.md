@@ -7,17 +7,17 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **814** (Main **497** + Historical **317**)
-- Automatic queue still needing V2 verification: **871** (Main **173** + Historical **698**)
-- Currently assigned to workers: **78** (Main **18** + Historical **60**)
-- Bounded access-recovery retries still eligible: **221**
+- Automatic queue still needing V2 verification: **873** (Main **175** + Historical **698**)
+- Currently assigned to workers: **126** (Main **23** + Historical **103**)
+- Bounded access-recovery retries still eligible: **218**
 - Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **793**
+- Automatic queue pending and not yet assigned: **747**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-78ee99f76019`
-- Assigned unresolved records: **36**
+- Current package: `worker-a-e29593a73a40`
+- Assigned unresolved records: **60**
   1. `link:https://dfrlab.org/2026/08/17/sovereignty-without-borders-decoding-the-transatlantic-digital-relationship-at-a-time-of-change/` — Sovereignty without borders: Decoding the transatlantic digital relationship at a time of change
   2. `link:https://ecfr.eu/wp-content/uploads/2026/09/Little-Venice-little-Sparta-The-UAEs-statecraft-meets-the-war-on-Iran-v2.pdf` — Little Venice, little Sparta: The UAE’s statecraft meets the war on Iran – European Council on Foreign Relations
   3. `link:https://doi.org/10.1177/01956574261473489` — Can Domestic Carbon Markets Buffer the Impact of EU Border Taxes? A Stochastic Frontier Analysis of Decarbonization Costs in India’s Energy-Intensive Industries
@@ -26,11 +26,11 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   6. `link:https://news.google.com/rss/articles/CBMipwFBVV95cUxObk80WDhOeFJjTzFUMDY5dElGaGdHbFhkWElPSlZDU3psZWU2ZVpxNWRYejYzZHJhOHIwMWI0SEw3eHQ1N1BaMnVoOE5hbzBMRWJWbWF6RFpZOUFIN0l6ZUowSFZoaDMteW9aTFhNQkxPaHlqWDdDZlVYUHVGUTdwbnZIYnJKdjBUQXNJejRWRDBxNXVzNm1reVNTOGF6eW42NWViLWhTQQ?oc=5` — EIB and BNP Paribas sign €700 million grid guarantee deal
   7. `historical:id:dc5698f4b73b354a` — The EU Anti-Coercion Instrument: Anti-What, Exactly? - CELIS Institute - Investment Screening | National Security | Competitiveness
   8. `historical:id:c8968a614fe33647` — Economic nationalists, regional investment aid, and the stability of FDI-led growth in East Central Europe
-  - … plus 28 more in the package manifest
+  - … plus 52 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-d68a90fcd27e`
-- Assigned unresolved records: **36**
+- Current package: `worker-b-99d853700bb3`
+- Assigned unresolved records: **60**
   1. `historical:id:88559fe23454a413` — The EU's Autonomous Sanctions Against Russia in 2014 Versus 2022: How Does the Bureaucratic Politics Model Bring in the Institutional ‘Balance of Power’ Within the EU?
   2. `historical:id:80eb832655ab55c6` — Reducing supply risks for critical raw materials – CEPS
   3. `historical:id:8fb9f913c823aa60` — The European Union’s Anti-Coercion Instrument – A Closer Look at Decision-Making under a Politicized Trade Instrument - CELIS Institute - Investment Screening | National Security | Competitiveness
@@ -39,7 +39,7 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   6. `historical:id:6c5e8252ab75fa85` — Institut Jacques Delors - Strengthening EU green sovereignty through the Critical Raw Materials Act
   7. `historical:id:3c6350161fe3195c` — Green transition, single market and EU’s open strategic autonomy: the impact of state aid
   8. `historical:id:ba386ea6bfad7db0` — Geopolitics and Trade: German Economists Experts' Assessment of Dependencies on China | ifo Institute
-  - … plus 28 more in the package manifest
+  - … plus 52 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
