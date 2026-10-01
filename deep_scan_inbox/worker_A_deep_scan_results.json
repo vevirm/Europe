@@ -1,0 +1,2617 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-a-3c304429875d",
+  "results": [
+    {
+      "record_key": "historical:id:7006a14c63116431",
+      "source_hash": "0dd69a4a",
+      "identity_hash": "f9e78ddc43dd3fdf",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "full_document_excerpt",
+            "url": "https://institutdelors.eu/content/uploads/2026/06/TEMPLATE-BLOGPOST-PIERRAKAKIS-EN.pdf",
+            "title": "A Conversation with Kyriakos Pierrakakis : Competitiveness, Investment and Resilience: Europe’s Economic Future in a Fragmented World",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The matching work/source was recovered and used to assess scope and substantive subject matter."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_EVIDENCE_PRODUCT",
+        "reason": "The recovered item is a policy speech/blog post rather than a completed evidence-led economic-security study."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "Competitiveness, Investment and Resilience: Europe’s Economic Future in a Fragmented World",
+          "authors": "Kyriakos Pierrakakis",
+          "date": "2026-06-02"
+        },
+        "unset": [],
+        "reason": "The PDF front page supplies the canonical title, author, and publication date."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Competitiveness, Investment and Resilience: Europe’s Economic Future in a Fragmented World",
+      "reader_what": "Recovered and verified, but outside historical Strand A.",
+      "reader_why": "",
+      "reader_more": "The recovered source was checked for its central subject and European relevance. The recovered item is a policy speech/blog post rather than a completed evidence-led economic-security study.",
+      "deep_analysis": {
+        "work_kind": "recovered publication",
+        "research_question": "",
+        "main_finding": "The recovered work does not meet the package’s substantive historical Strand A criteria.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The work was recovered and checked, but its central subject or evidence format does not satisfy historical Strand A.",
+        "radar_relevance": "The recovered item is a policy speech/blog post rather than a completed evidence-led economic-security study.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:4a0cea8a5f3dab21",
+      "source_hash": "b3c90651",
+      "identity_hash": "0ea462206557dd1f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "full_document_excerpt",
+            "url": "https://egmontinstitute.be/app/uploads/2015/01/Background-paper-Energy.pdf?type=pdf",
+            "title": "Revisiting energy security in turbulent times",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Clémentine d’Oultremont; Aurélie Faure; Marco Giuli",
+          "date": "2015-01-28"
+        },
+        "unset": [],
+        "reason": "The discussion paper front page identifies the three authors and the 28 January 2015 Brussels date."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Europe’s exposure to energy-supply disruption and the policy trade-offs around resilience",
+      "reader_what": "Europe’s exposure to energy-supply disruption and the policy trade-offs around resilience",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines Europe’s exposure to energy-supply disruption and the policy trade-offs around resilience. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize Europe’s exposure to energy-supply disruption and the policy trade-offs around resilience?",
+        "main_finding": "The work provides substantive evidence or analysis on Europe’s exposure to energy-supply disruption and the policy trade-offs around resilience.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Egmont Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2015-01-28",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents Europe’s exposure to energy-supply disruption and the policy trade-offs around resilience.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:a976e9a09aec9a79",
+      "source_hash": "fe81ff0f",
+      "identity_hash": "8e79e79410b699d2",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL; strongest available package material was abstract_or_landing_page"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_page",
+            "url": "https://egmontinstitute.be/gulliver-unchained-europes-changing-relations-with-oil-and-gas-producers/",
+            "title": "Gulliver Unchained? Europe’s Changing Relations with Oil and Gas Producers",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Thijs Van de Graaf",
+          "date": "2023-12-14"
+        },
+        "unset": [],
+        "reason": "The Egmont publication page identifies the author and publication date."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Europe’s changing dependence on oil and gas suppliers after russia weaponised gas exports",
+      "reader_what": "Europe’s changing dependence on oil and gas suppliers after Russia weaponised gas exports",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines Europe’s changing dependence on oil and gas suppliers after Russia weaponised gas exports. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize Europe’s changing dependence on oil and gas suppliers after Russia weaponised gas exports?",
+        "main_finding": "The work provides substantive evidence or analysis on Europe’s changing dependence on oil and gas suppliers after Russia weaponised gas exports.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Thijs Van de Graaf",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2023-12-14",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents Europe’s changing dependence on oil and gas suppliers after Russia weaponised gas exports.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:ae831ab770fead22",
+      "source_hash": "06926707",
+      "identity_hash": "0c3dfd8392c76d1f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://egmontinstitute.be/eu-dependence-on-russian-gas-there-is-no-short-term-alternative-2/",
+            "title": "EU Dependence on Russian gas: There is no short-term alternative",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Tania Zgajewski",
+          "date": "2014-04-07"
+        },
+        "unset": [],
+        "reason": "The Egmont publication page identifies the author and publication date."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Eu’s short-term dependence on russian gas and limited substitution options",
+      "reader_what": "The EU’s short-term dependence on Russian gas and limited substitution options",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines the EU’s short-term dependence on Russian gas and limited substitution options. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize the EU’s short-term dependence on Russian gas and limited substitution options?",
+        "main_finding": "The work provides substantive evidence or analysis on the EU’s short-term dependence on Russian gas and limited substitution options.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "dependency.single_supplier",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Tania Zgajewski",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2014-04-07",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents the EU’s short-term dependence on Russian gas and limited substitution options.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:622afe532fddcd84",
+      "source_hash": "96bd4ba4",
+      "identity_hash": "9a8466ae2c4f07c8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.iss.europa.eu/publications/briefs/when-stars-align-leveraging-european-defence-budgets-drive-dual-use-tech-boom",
+            "title": "When stars align: Leveraging European defence budgets to drive a dual-use tech boom",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "How larger european defence budgets could support dual-use technology and industrial capability",
+      "reader_what": "How larger European defence budgets could support dual-use technology and industrial capability",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines how larger European defence budgets could support dual-use technology and industrial capability. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize how larger European defence budgets could support dual-use technology and industrial capability?",
+        "main_finding": "The work provides substantive evidence or analysis on how larger European defence budgets could support dual-use technology and industrial capability.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "innovation.dual_use",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EUISS",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2025-07-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents how larger European defence budgets could support dual-use technology and industrial capability.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:a6ede7b145800daa",
+      "source_hash": "40cdf978",
+      "identity_hash": "7990fb58bf2b9b6d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "full_document_excerpt",
+            "url": "https://www.iss.europa.eu/sites/default/files/2025-02/Brief_2025-6_Energy%20security_0.pdf",
+            "title": "Reimagining European energy security: Towards a whole-of-system approach",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "System-wide approach to european energy security spanning supply, infrastructure and demand",
+      "reader_what": "A system-wide approach to European energy security spanning supply, infrastructure and demand",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines a system-wide approach to European energy security spanning supply, infrastructure and demand. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize a system-wide approach to European energy security spanning supply, infrastructure and demand?",
+        "main_finding": "The work provides substantive evidence or analysis on a system-wide approach to European energy security spanning supply, infrastructure and demand.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EUISS",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2025-02-18",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents a system-wide approach to European energy security spanning supply, infrastructure and demand.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:2911c35b8b8ffc22",
+      "source_hash": "64686fbe",
+      "identity_hash": "640d0be1fb72173d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.iss.europa.eu/publications/commentary/playing-games-energy-security",
+            "title": "Playing games with energy security?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "How geopolitical bargaining and market dynamics affect european gas and energy security",
+      "reader_what": "How geopolitical bargaining and market dynamics affect European gas and energy security",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines how geopolitical bargaining and market dynamics affect European gas and energy security. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize how geopolitical bargaining and market dynamics affect European gas and energy security?",
+        "main_finding": "The work provides substantive evidence or analysis on how geopolitical bargaining and market dynamics affect European gas and energy security.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EUISS",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2024-12-16",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents how geopolitical bargaining and market dynamics affect European gas and energy security.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:249ca8b8cd62520e",
+      "source_hash": "2ebef026",
+      "identity_hash": "efce77ee779d0795",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.iss.europa.eu/publications/commentary/us-pause-lng-terminals-will-not-put-europe-risk",
+            "title": "The US pause on LNG terminals will not put Europe at risk",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Why a pause in new us lng export terminals did not create an immediate european supply risk",
+      "reader_what": "Why a pause in new US LNG export terminals did not create an immediate European supply risk",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines why a pause in new US LNG export terminals did not create an immediate European supply risk. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize why a pause in new US LNG export terminals did not create an immediate European supply risk?",
+        "main_finding": "The work provides substantive evidence or analysis on why a pause in new US LNG export terminals did not create an immediate European supply risk.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.lng_imports",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EUISS",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "delivered",
+          "status_date": "2024-01-31",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents why a pause in new US LNG export terminals did not create an immediate European supply risk.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:2fdb5e046c57307a",
+      "source_hash": "e158eb63",
+      "identity_hash": "b57fa503cd763a52",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "full_document_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2023-05-31_tald_joint_statement_on_forced_labor-dfa-1.pdf",
+            "title": "U.S.-EU Tripartite Trade and Labor Dialogue (TALD) - Social partner joint statement on transatlantic forced labour trade strategy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The matching work/source was recovered and used to assess scope and substantive subject matter."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_SUBJECT",
+        "reason": "The joint labour statement concerns forced-labour trade policy, not a central European economic-security exposure or instrument."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2023-05-31"
+        },
+        "unset": [],
+        "reason": "The joint-statement PDF filename and document date support 31 May 2023 rather than the scanner placeholder."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "U.S.-EU Tripartite Trade and Labor Dialogue (TALD) - Social partner joint statement on transatlantic forced labour trade strategy",
+      "reader_what": "Recovered and verified, but outside historical Strand A.",
+      "reader_why": "",
+      "reader_more": "The recovered source was checked for its central subject and European relevance. The joint labour statement concerns forced-labour trade policy, not a central European economic-security exposure or instrument.",
+      "deep_analysis": {
+        "work_kind": "recovered publication",
+        "research_question": "",
+        "main_finding": "The recovered work does not meet the package’s substantive historical Strand A criteria.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The work was recovered and checked, but its central subject or evidence format does not satisfy historical Strand A.",
+        "radar_relevance": "The joint labour statement concerns forced-labour trade policy, not a central European economic-security exposure or instrument.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:70bb70db1d4036f0",
+      "source_hash": "665c725b",
+      "identity_hash": "bbbd9d0fadc456d3",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.ceps.eu/ceps-publications/the-revision-of-the-third-energy-package-for-gas/",
+            "title": "The Revision of the Third Energy Package for Gas – CEPS",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Eu gas-market reform and its implications for resilience, decarbonisation and supply security",
+      "reader_what": "The EU gas-market reform and its implications for resilience, decarbonisation and supply security",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines the EU gas-market reform and its implications for resilience, decarbonisation and supply security. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize the EU gas-market reform and its implications for resilience, decarbonisation and supply security?",
+        "main_finding": "The work provides substantive evidence or analysis on the EU gas-market reform and its implications for resilience, decarbonisation and supply security.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CEPS",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_conditional",
+          "status": "delivered",
+          "status_date": "2022-12-13",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents the EU gas-market reform and its implications for resilience, decarbonisation and supply security.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:2f23452f41a0be99",
+      "source_hash": "6e914691",
+      "identity_hash": "97c66ada1cb66e10",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecfr.eu/article/setting-the-tone-the-value-of-the-eu-us-trade-and-technology-council/",
+            "title": "Setting the tone: The value of the EU-US Trade and Technology Council – European Council on Foreign Relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Eu-us trade and technology council as a venue for managing strategic trade and technology frictions",
+      "reader_what": "The EU-US Trade and Technology Council as a venue for managing strategic trade and technology frictions",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines the EU-US Trade and Technology Council as a venue for managing strategic trade and technology frictions. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize the EU-US Trade and Technology Council as a venue for managing strategic trade and technology frictions?",
+        "main_finding": "The work provides substantive evidence or analysis on the EU-US Trade and Technology Council as a venue for managing strategic trade and technology frictions.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "partnership.like_minded_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "ECFR",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2022-12-09",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents the EU-US Trade and Technology Council as a venue for managing strategic trade and technology frictions.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:0eaf8e63a288d835",
+      "source_hash": "09a56ca7",
+      "identity_hash": "5cbfc18e4d5a6059",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "full_document_excerpt",
+            "url": "https://merics.org/sites/default/files/2022-12/MERICS%20Europe-China%20360%C2%B0%208%20December%202022_0.pdf",
+            "title": "EU-China relations in 2022 + Managing dependencies",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "European economic dependencies on china and options for managing strategic exposure",
+      "reader_what": "European economic dependencies on China and options for managing strategic exposure",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines European economic dependencies on China and options for managing strategic exposure. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize European economic dependencies on China and options for managing strategic exposure?",
+        "main_finding": "The work provides substantive evidence or analysis on European economic dependencies on China and options for managing strategic exposure.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "MERICS",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2022-12-08",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents European economic dependencies on China and options for managing strategic exposure.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:3052e7b1d7c9627a",
+      "source_hash": "601e308f",
+      "identity_hash": "861311d8a2e73441",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecipe.org/publications/smes-international-trade-supply-chain-important-direct-exports/",
+            "title": "The New Globalisation: SMEs and International Trade – The Supply Chain is as Important as Direct Exports",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The matching work/source was recovered and used to assess scope and substantive subject matter."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_SUBJECT",
+        "reason": "The work is a general study of SME internationalisation and supply chains rather than European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The New Globalisation: SMEs and International Trade – The Supply Chain is as Important as Direct Exports",
+      "reader_what": "Recovered and verified, but outside historical Strand A.",
+      "reader_why": "",
+      "reader_more": "The recovered source was checked for its central subject and European relevance. The work is a general study of SME internationalisation and supply chains rather than European economic security.",
+      "deep_analysis": {
+        "work_kind": "recovered publication",
+        "research_question": "",
+        "main_finding": "The recovered work does not meet the package’s substantive historical Strand A criteria.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The work was recovered and checked, but its central subject or evidence format does not satisfy historical Strand A.",
+        "radar_relevance": "The work is a general study of SME internationalisation and supply chains rather than European economic security.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:4c46535d5997e2a7",
+      "source_hash": "d05e00c6",
+      "identity_hash": "e6afae9f7d914084",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.ecb.europa.eu/ecb/orga/tasks/stability/strategy/html/index.en.html",
+            "title": "Macroprudential policy strategy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The matching work/source was recovered and used to assess scope and substantive subject matter."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_SUBJECT",
+        "reason": "The ECB piece concerns macroprudential policy strategy, not a central economic-security domain."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Macroprudential policy strategy",
+      "reader_what": "Recovered and verified, but outside historical Strand A.",
+      "reader_why": "",
+      "reader_more": "The recovered source was checked for its central subject and European relevance. The ECB piece concerns macroprudential policy strategy, not a central economic-security domain.",
+      "deep_analysis": {
+        "work_kind": "recovered publication",
+        "research_question": "",
+        "main_finding": "The recovered work does not meet the package’s substantive historical Strand A criteria.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The work was recovered and checked, but its central subject or evidence format does not satisfy historical Strand A.",
+        "radar_relevance": "The ECB piece concerns macroprudential policy strategy, not a central economic-security domain.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:2b561a1992d61d3d",
+      "source_hash": "fa1e61a5",
+      "identity_hash": "9173e0a2ac3ef775",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin",
+            "note": "The CELIS wrapper was thin and did not provide report substance."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Innovation, Science and Economic Development Canada supplied the complete 2021–2022 Investment Canada Act annual report."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://ised-isde.canada.ca/site/investment-canada-act/en/investment-canada-act/annual-report-2021-2022",
+            "title": "Canada - Annual Report of Canada Investment Act 2021-2022 (English) - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The matching work/source was recovered and used to assess scope and substantive subject matter."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_EU",
+        "reason": "The recovered official report concerns Canadian investment screening and does not have substantive European scope."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "Annual report 2021–2022 — Investment Canada Act",
+          "source": "Innovation, Science and Economic Development Canada"
+        },
+        "unset": [],
+        "reason": "The official Canadian government publication is the underlying work linked by the CELIS wrapper."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Annual report 2021–2022 — Investment Canada Act",
+      "reader_what": "Recovered and verified, but outside historical Strand A.",
+      "reader_why": "",
+      "reader_more": "The recovered source was checked for its central subject and European relevance. The recovered official report concerns Canadian investment screening and does not have substantive European scope.",
+      "deep_analysis": {
+        "work_kind": "recovered publication",
+        "research_question": "",
+        "main_finding": "The recovered work does not meet the package’s substantive historical Strand A criteria.",
+        "method_or_basis": "Documented policy/economic analysis using the evidence and cases presented in the recovered work.",
+        "qualification": "The work was recovered and checked, but its central subject or evidence format does not satisfy historical Strand A.",
+        "radar_relevance": "The recovered official report concerns Canadian investment screening and does not have substantive European scope.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:0abd9e7af25fc45e",
+      "source_hash": "9ae6f0ae",
+      "identity_hash": "2bc9822487cb1124",
+      "verification": {
+        "identity_verified": false,
+        "evidence_depth": "",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "The supplied Egmont reader-facing URL did not yield recoverable substantive text in the package/browser pass."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI was supplied or located for this Egmont item."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "no_substantive_match",
+            "note": "Exact-title web search for “EU seen as struggling on path to strategic autonomy” did not recover a substantive matching work."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "no_substantive_match",
+            "note": "A title/year search around Egmont and 2022 did not recover substantive text attributable to the claimed item."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "no_substantive_match",
+            "note": "Egmont publisher-domain recovery did not expose a matching substantive page or document for verification."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_substantive_match",
+            "note": "A bounded broader search using the distinctive title phrase and strategic-autonomy terms did not substantiate the claimed work."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "The full mandatory recovery ladder did not substantiate the claimed work with a matching source."
+      },
+      "admission": {
+        "decision": "drop_unverifiable",
+        "target_strand": "A",
+        "reason_code": "WORK_NOT_SUBSTANTIATED",
+        "reason": "No authoritative or substantive matching work was recovered after the required retrieval ladder."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:adf38324ab1d3325",
+      "source_hash": "ebca33a3",
+      "identity_hash": "b915b77d96c474bb",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "OpenAlex authenticated DOI lookup matched W4309915230; retrieved via OpenAlex cached full-text PDF"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_full_text",
+            "url": "https://content.openalex.org/works/W4309915230.pdf",
+            "title": "A ‘Geopolitical Commission’: Supranationalism Meets Global Power Competition",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "How geoeconomic competition pushed the european commission toward open strategic autonomy",
+      "reader_what": "How geoeconomic competition pushed the European Commission toward open strategic autonomy",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines how geoeconomic competition pushed the European Commission toward open strategic autonomy. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize how geoeconomic competition pushed the European Commission toward open strategic autonomy?",
+        "main_finding": "The work provides substantive evidence or analysis on how geoeconomic competition pushed the European Commission toward open strategic autonomy.",
+        "method_or_basis": "Academic analysis using the conceptual and empirical basis described in the recovered article.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "goal.strategic_autonomy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Pierre Haroche",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2022-11-24",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents how geoeconomic competition pushed the European Commission toward open strategic autonomy.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:161ac51defb1d79e",
+      "source_hash": "9e7b0535",
+      "identity_hash": "085b1a44aa8f5c69",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1007/s10308-022-00652-8",
+            "title": "Building resilient supply chains in uncertain times: a comparative study of EU and ASEAN approaches to supply chain resilience",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Eu and asean approaches to supply-chain resilience and security of supply",
+      "reader_what": "EU and ASEAN approaches to supply-chain resilience and security of supply",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines EU and ASEAN approaches to supply-chain resilience and security of supply. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize EU and ASEAN approaches to supply-chain resilience and security of supply?",
+        "main_finding": "The work provides substantive evidence or analysis on EU and ASEAN approaches to supply-chain resilience and security of supply.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "supply_chain.diversification",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Study authors",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2022-11-12",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents EU and ASEAN approaches to supply-chain resilience and security of supply.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:7937f5a2a3930331",
+      "source_hash": "bfa5b475",
+      "identity_hash": "43c3096fe2e8faa9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL; strongest available package material was abstract_or_landing_page"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_page",
+            "url": "https://www.ifw-kiel.de/publications/china-becomes-top-exporter-to-russia-as-sanctions-hit-moscows-trade-with-eu-20623/",
+            "title": "China becomes top exporter to Russia as sanctions hit Moscow’s trade with EU - Kiel Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The matching work/source was recovered and used to assess scope and substantive subject matter."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_EVIDENCE_PRODUCT",
+        "reason": "The recovered Kiel record is an in-the-news listing pointing to a Financial Times item, not a substantive evidence product."
+      },
+      "metadata_correction": {
+        "fields": {
+          "source": "Kiel Institute in the News / Financial Times",
+          "date": "2022-11"
+        },
+        "unset": [],
+        "reason": "The Kiel page labels this as an in-the-news item from the Financial Times in November 2022, not a World Economy article."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "China becomes top exporter to Russia as sanctions hit Moscow’s trade with EU - Kiel Institute",
+      "reader_what": "Recovered and verified, but outside historical Strand A.",
+      "reader_why": "",
+      "reader_more": "The recovered source was checked for its central subject and European relevance. The recovered Kiel record is an in-the-news listing pointing to a Financial Times item, not a substantive evidence product.",
+      "deep_analysis": {
+        "work_kind": "recovered publication",
+        "research_question": "",
+        "main_finding": "The recovered work does not meet the package’s substantive historical Strand A criteria.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The work was recovered and checked, but its central subject or evidence format does not satisfy historical Strand A.",
+        "radar_relevance": "The recovered Kiel record is an in-the-news listing pointing to a Financial Times item, not a substantive evidence product.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:8f61e950c352b8bf",
+      "source_hash": "2414ffff",
+      "identity_hash": "004aaa7ad1f14c94",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin",
+            "note": "The CELIS wrapper identified the work but supplied only a thin landing-page extract."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery found the Swedish National Board of Trade publication page with findings and a 32-page PDF link."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_page",
+            "url": "https://www.kommerskollegium.se/en/analyses-and-seminars/published/analysis/2022/perspectives-on-the-economic-effects-of-fdi-and-investment-screening/",
+            "title": "Jonas Hallberg and Patrik Tingvall, Analysis: Perspectives on the Economic Effects of FDI and Investment Screening - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "Perspectives on the Economic Effects of FDI and Investment Screening",
+          "authors": "Jonas Hallberg; Patrik Tingvall",
+          "source": "National Board of Trade Sweden"
+        },
+        "unset": [],
+        "reason": "The Swedish National Board of Trade publication page gives the canonical title, authors, and issuing body."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Economic trade-offs created by foreign-investment screening, with sweden preparing a security-based regime",
+      "reader_what": "The economic trade-offs created by foreign-investment screening, with Sweden preparing a security-based regime",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines the economic trade-offs created by foreign-investment screening, with Sweden preparing a security-based regime. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize the economic trade-offs created by foreign-investment screening, with Sweden preparing a security-based regime?",
+        "main_finding": "The work provides substantive evidence or analysis on the economic trade-offs created by foreign-investment screening, with Sweden preparing a security-based regime.",
+        "method_or_basis": "Documented policy/economic analysis using the evidence and cases presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "National Board of Trade Sweden",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_conditional",
+          "status": "delivered",
+          "status_date": "2022-10-20",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents the economic trade-offs created by foreign-investment screening, with Sweden preparing a security-based regime.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:6410a90f979773ea",
+      "source_hash": "306dcac7",
+      "identity_hash": "866102f51a41d04c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "OpenAlex authenticated DOI lookup matched W4312881923; retrieved via OpenAlex OA landing/repository"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_full_text",
+            "url": "https://zenodo.org/records/7286384",
+            "title": "Economic component of the security of the EU countries and Ukraine",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {
+          "source": "Technology Center PC"
+        },
+        "unset": [],
+        "reason": "The DOI resolves to a chapter published by Technology Center PC rather than a journal named International Security."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Economic-security indicators and comparative assessment for eu countries and ukraine",
+      "reader_what": "Economic-security indicators and comparative assessment for EU countries and Ukraine",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines economic-security indicators and comparative assessment for EU countries and Ukraine. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize economic-security indicators and comparative assessment for EU countries and Ukraine?",
+        "main_finding": "The work provides substantive evidence or analysis on economic-security indicators and comparative assessment for EU countries and Ukraine.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.risk_assessment",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Study authors",
+            "class": "other"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2022-10-15",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents economic-security indicators and comparative assessment for EU countries and Ukraine.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:da3055ced919c660",
+      "source_hash": "48070495",
+      "identity_hash": "f0597e6643f06226",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecfr.eu/article/escape-routes-how-the-eu-can-help-moldova-end-its-dependence-on-russian-gas/",
+            "title": "Escape routes: How the EU can help Moldova end its dependence on Russian gas – European Council on Foreign Relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Moldova’s dependence on russian gas and eu-backed options to reduce that exposure",
+      "reader_what": "Moldova’s dependence on Russian gas and EU-backed options to reduce that exposure",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines Moldova’s dependence on Russian gas and EU-backed options to reduce that exposure. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize Moldova’s dependence on Russian gas and EU-backed options to reduce that exposure?",
+        "main_finding": "The work provides substantive evidence or analysis on Moldova’s dependence on Russian gas and EU-backed options to reduce that exposure.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "ECFR",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "contracts",
+          "status": "delivered",
+          "status_date": "2022-10-13",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents Moldova’s dependence on Russian gas and EU-backed options to reduce that exposure.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:b3d931f9fe77b22b",
+      "source_hash": "ce5782f6",
+      "identity_hash": "be2e15ff9d7f1613",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1007/s10272-022-1074-1",
+            "title": "The Economic Effects of Potential EU Tariff Sanctions on Russia — A Sectoral Approach",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Estimated economic effects of possible eu tariff sanctions on russia",
+      "reader_what": "Estimated economic effects of possible EU tariff sanctions on Russia",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines estimated economic effects of possible EU tariff sanctions on Russia. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize estimated economic effects of possible EU tariff sanctions on Russia?",
+        "main_finding": "The work provides substantive evidence or analysis on estimated economic effects of possible EU tariff sanctions on Russia.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.eu_countermeasures",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Study authors",
+            "class": "other"
+          },
+          "mechanism": "measures",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2022-10-10",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents estimated economic effects of possible EU tariff sanctions on Russia.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:d870c8b293eff27f",
+      "source_hash": "274a8cac",
+      "identity_hash": "d0b9cf4d8e15d478",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "thin",
+            "note": "The CELIS wrapper identified the citation but did not contain the article text."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.5771/1435-439X-2022-3-505 recovered the open-access ZEuS article PDF from Nomos."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.nomos-elibrary.de/10.5771/1435-439X-2022-3-505.pdf",
+            "title": "Carolina Dackö, Charlotta Brodin and Alice Arlebo, The FDI Screening Mechanisms and the Draft EU Foreign Subsidy Regulation – Potential Conflicts of Interests and in Application - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "The FDI Screening Mechanisms and the Draft EU Foreign Subsidy Regulation – Potential Conflicts of Interests and in Application",
+          "authors": "Carolina Dackö; Charlotta Brodin; Alice Arlebo",
+          "source": "ZEuS – Zeitschrift für Europarechtliche Studien"
+        },
+        "unset": [],
+        "reason": "The open-access journal PDF supplies the canonical article title, authors, journal, and DOI."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Overlap between eu investment screening and the proposed foreign-subsidy regime",
+      "reader_what": "Overlap between EU investment screening and the proposed foreign-subsidy regime",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines overlap between EU investment screening and the proposed foreign-subsidy regime. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize overlap between EU investment screening and the proposed foreign-subsidy regime?",
+        "main_finding": "The work provides substantive evidence or analysis on overlap between EU investment screening and the proposed foreign-subsidy regime.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Study authors",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_conditional",
+          "status": "delivered",
+          "status_date": "2022-10-10",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents overlap between EU investment screening and the proposed foreign-subsidy regime.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:b1f38cfef4101b64",
+      "source_hash": "b84911f8",
+      "identity_hash": "4eca803ac607b621",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecfr.eu/article/the-coming-transatlantic-rift-over-ukraine/",
+            "title": "The coming transatlantic rift over Ukraine – European Council on Foreign Relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The matching work/source was recovered and used to assess scope and substantive subject matter."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_SUBJECT",
+        "reason": "The analysis is primarily about transatlantic political and military burden-sharing around Ukraine, with economic security secondary."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The coming transatlantic rift over Ukraine – European Council on Foreign Relations",
+      "reader_what": "Recovered and verified, but outside historical Strand A.",
+      "reader_why": "",
+      "reader_more": "The recovered source was checked for its central subject and European relevance. The analysis is primarily about transatlantic political and military burden-sharing around Ukraine, with economic security secondary.",
+      "deep_analysis": {
+        "work_kind": "recovered publication",
+        "research_question": "",
+        "main_finding": "The recovered work does not meet the package’s substantive historical Strand A criteria.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The work was recovered and checked, but its central subject or evidence format does not satisfy historical Strand A.",
+        "radar_relevance": "The analysis is primarily about transatlantic political and military burden-sharing around Ukraine, with economic security secondary.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:f5373dffde32e4e5",
+      "source_hash": "ad79efbf",
+      "identity_hash": "385a8d5da0c77f49",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "OpenAlex authenticated DOI lookup matched W4306674418; retrieved via OpenAlex cached full-text PDF"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_full_text",
+            "url": "https://content.openalex.org/works/W4306674418.pdf",
+            "title": "EU COVID-19 purchase and export mechanism: A framework for EU operational autonomy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Eu covid-19 purchase and export mechanism as a test of operational autonomy over critical goods",
+      "reader_what": "The EU COVID-19 purchase and export mechanism as a test of operational autonomy over critical goods",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines the EU COVID-19 purchase and export mechanism as a test of operational autonomy over critical goods. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize the EU COVID-19 purchase and export mechanism as a test of operational autonomy over critical goods?",
+        "main_finding": "The work provides substantive evidence or analysis on the EU COVID-19 purchase and export mechanism as a test of operational autonomy over critical goods.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.toolbox_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Alessandro Petti",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2022-10-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents the EU COVID-19 purchase and export mechanism as a test of operational autonomy over critical goods.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:88885362f734d808",
+      "source_hash": "9539b3c9",
+      "identity_hash": "502988f702a1eba5",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecfr.eu/article/chinas-wolf-warriors-and-feminist-foreign-policy-a-german-approach/",
+            "title": "China’s wolf warriors and feminist foreign policy: A German approach – European Council on Foreign Relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The matching work/source was recovered and used to assess scope and substantive subject matter."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_SUBJECT",
+        "reason": "The article is principally about German diplomacy and feminist foreign policy toward China, not a central economic-security mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "China’s wolf warriors and feminist foreign policy: A German approach – European Council on Foreign Relations",
+      "reader_what": "Recovered and verified, but outside historical Strand A.",
+      "reader_why": "",
+      "reader_more": "The recovered source was checked for its central subject and European relevance. The article is principally about German diplomacy and feminist foreign policy toward China, not a central economic-security mechanism.",
+      "deep_analysis": {
+        "work_kind": "recovered publication",
+        "research_question": "",
+        "main_finding": "The recovered work does not meet the package’s substantive historical Strand A criteria.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The work was recovered and checked, but its central subject or evidence format does not satisfy historical Strand A.",
+        "radar_relevance": "The article is principally about German diplomacy and feminist foreign policy toward China, not a central economic-security mechanism.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:31466d37947c3780",
+      "source_hash": "04f0f2af",
+      "identity_hash": "506d316599a64c33",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "OpenAlex authenticated DOI lookup matched W4297105180; retrieved via OpenAlex cached full-text PDF"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_full_text",
+            "url": "https://content.openalex.org/works/W4297105180.pdf",
+            "title": "As Open as Possible, as Autonomous as Necessary: Understanding the Rise of Open Strategic Autonomy in EU Trade Policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Rise and policy meaning of open strategic autonomy in eu trade policy",
+      "reader_what": "The rise and policy meaning of open strategic autonomy in EU trade policy",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines the rise and policy meaning of open strategic autonomy in EU trade policy. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize the rise and policy meaning of open strategic autonomy in EU trade policy?",
+        "main_finding": "The work provides substantive evidence or analysis on the rise and policy meaning of open strategic autonomy in EU trade policy.",
+        "method_or_basis": "Academic analysis using the conceptual and empirical basis described in the recovered article.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "goal.strategic_autonomy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Study authors",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2022-09-26",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents the rise and policy meaning of open strategic autonomy in EU trade policy.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:4a9b7e9f38f3e407",
+      "source_hash": "26c6ffba",
+      "identity_hash": "c9b6da89766b8b97",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "The DOI identifies the Energy Policy article."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "The DOI resolved to an open-access ScienceDirect article with substantive methods and results."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0301421522004645",
+            "title": "Making the EU Carbon Border Adjustment Mechanism acceptable and climate friendly for least developed countries",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The matching work/source was recovered and used to assess scope and substantive subject matter."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_SUBJECT",
+        "reason": "The modelling study evaluates CBAM impacts on least-developed countries as climate and trade policy, not European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Making the EU Carbon Border Adjustment Mechanism acceptable and climate friendly for least developed countries",
+      "reader_what": "Recovered and verified, but outside historical Strand A.",
+      "reader_why": "",
+      "reader_more": "The recovered source was checked for its central subject and European relevance. The modelling study evaluates CBAM impacts on least-developed countries as climate and trade policy, not European economic security.",
+      "deep_analysis": {
+        "work_kind": "recovered publication",
+        "research_question": "",
+        "main_finding": "The recovered work does not meet the package’s substantive historical Strand A criteria.",
+        "method_or_basis": "Empirical/model-based analysis described in the recovered work.",
+        "qualification": "The work was recovered and checked, but its central subject or evidence format does not satisfy historical Strand A.",
+        "radar_relevance": "The modelling study evaluates CBAM impacts on least-developed countries as climate and trade policy, not European economic security.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:39bfa85bd0b312dc",
+      "source_hash": "af0b1a54",
+      "identity_hash": "ec3d333a9497a19b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecfr.eu/article/the-power-of-interdependence-europes-under-rated-influence-over-russia/",
+            "title": "The power of interdependence: Europe’s under-rated influence over Russia – European Council on Foreign Relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Europe’s economic interdependence with russia as both a vulnerability and a source of leverage",
+      "reader_what": "Europe’s economic interdependence with Russia as both a vulnerability and a source of leverage",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines Europe’s economic interdependence with Russia as both a vulnerability and a source of leverage. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize Europe’s economic interdependence with Russia as both a vulnerability and a source of leverage?",
+        "main_finding": "The work provides substantive evidence or analysis on Europe’s economic interdependence with Russia as both a vulnerability and a source of leverage.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "ECFR",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2022-09-15",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents Europe’s economic interdependence with Russia as both a vulnerability and a source of leverage.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:1dfd4bb57317d86a",
+      "source_hash": "c34ce8b8",
+      "identity_hash": "f555e15965a2d7eb",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecipe.org/insights/eu-strategic-autonomy-agenda/",
+            "title": "The Costs of the EU’s Strategic Autonomy Agenda – Why Member States Should Stop Ignoring Them",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Economic costs and trade-offs associated with the eu strategic-autonomy agenda",
+      "reader_what": "The economic costs and trade-offs associated with the EU strategic-autonomy agenda",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines the economic costs and trade-offs associated with the EU strategic-autonomy agenda. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize the economic costs and trade-offs associated with the EU strategic-autonomy agenda?",
+        "main_finding": "The work provides substantive evidence or analysis on the economic costs and trade-offs associated with the EU strategic-autonomy agenda.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "goal.strategic_autonomy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "ECIPE",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_conditional",
+          "status": "delivered",
+          "status_date": "2022-09-15",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents the economic costs and trade-offs associated with the EU strategic-autonomy agenda.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:3428b9a23f69924d",
+      "source_hash": "27aedc63",
+      "identity_hash": "485330972f4645de",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://rhg.com/research/minimizing-the-economic-pain-of-european-industrial-gas-rationing/",
+            "title": "Minimizing the Economic Pain of European Industrial Gas Rationing",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "How industrial gas rationing could affect european production and how allocation choices could limit losses",
+      "reader_what": "How industrial gas rationing could affect European production and how allocation choices could limit losses",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines how industrial gas rationing could affect European production and how allocation choices could limit losses. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize how industrial gas rationing could affect European production and how allocation choices could limit losses?",
+        "main_finding": "The work provides substantive evidence or analysis on how industrial gas rationing could affect European production and how allocation choices could limit losses.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Rhodium Group",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "measures",
+          "direction": "contracts",
+          "status": "delivered",
+          "status_date": "2022-09-13",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents how industrial gas rationing could affect European production and how allocation choices could limit losses.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:bf1aa26f8f4bec4a",
+      "source_hash": "c8742a12",
+      "identity_hash": "139cbf6f01eba8d3",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecfr.eu/article/europes-other-transatlantic-friend-germanys-and-canadas-new-energy-partnership/",
+            "title": "Europe’s other transatlantic friend: Germany’s and Canada’s new energy partnership – European Council on Foreign Relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Germany-canada energy cooperation as europe diversified away from russian supply",
+      "reader_what": "Germany-Canada energy cooperation as Europe diversified away from Russian supply",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines Germany-Canada energy cooperation as Europe diversified away from Russian supply. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize Germany-Canada energy cooperation as Europe diversified away from Russian supply?",
+        "main_finding": "The work provides substantive evidence or analysis on Germany-Canada energy cooperation as Europe diversified away from Russian supply.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "partnership.like_minded_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "ECFR",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2022-09-07",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents Germany-Canada energy cooperation as Europe diversified away from Russian supply.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:b352aa53baf6a5ee",
+      "source_hash": "8b48c225",
+      "identity_hash": "be0d6711a6922023",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.ceps.eu/why-gas-price-caps-and-consumer-subsidies-are-both-extremely-costly-and-ultimately-futile/",
+            "title": "Why gas price caps and consumer subsidies are both extremely costly and ultimately futile – CEPS",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Economic costs and incentive effects of european gas-price caps and consumer subsidies",
+      "reader_what": "The economic costs and incentive effects of European gas-price caps and consumer subsidies",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines the economic costs and incentive effects of European gas-price caps and consumer subsidies. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize the economic costs and incentive effects of European gas-price caps and consumer subsidies?",
+        "main_finding": "The work provides substantive evidence or analysis on the economic costs and incentive effects of European gas-price caps and consumer subsidies.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.price_level",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CEPS",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2022-09-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents the economic costs and incentive effects of European gas-price caps and consumer subsidies.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:a13ec9047ee118ba",
+      "source_hash": "3c56cc4b",
+      "identity_hash": "3ef0383a4006f428",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1007/s10308-022-00646-6",
+            "title": "The impact of the Japan-European Union Economic Partnership Agreement on the trade and income of Japan, the European Union, and South Korea",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The matching work/source was recovered and used to assess scope and substantive subject matter."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_SUBJECT",
+        "reason": "The study estimates ordinary sectoral trade and income effects of the Japan-EU EPA without a central strategic-security mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The impact of the Japan-European Union Economic Partnership Agreement on the trade and income of Japan, the European",
+      "reader_what": "Recovered and verified, but outside historical Strand A.",
+      "reader_why": "",
+      "reader_more": "The recovered source was checked for its central subject and European relevance. The study estimates ordinary sectoral trade and income effects of the Japan-EU EPA without a central strategic-security mechanism.",
+      "deep_analysis": {
+        "work_kind": "recovered publication",
+        "research_question": "",
+        "main_finding": "The recovered work does not meet the package’s substantive historical Strand A criteria.",
+        "method_or_basis": "Empirical/model-based analysis described in the recovered work.",
+        "qualification": "The work was recovered and checked, but its central subject or evidence format does not satisfy historical Strand A.",
+        "radar_relevance": "The study estimates ordinary sectoral trade and income effects of the Japan-EU EPA without a central strategic-security mechanism.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:923fdd9e28b8ad44",
+      "source_hash": "c1ea0625",
+      "identity_hash": "75e4d6b42d4f0a9c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "retrieved via reader-facing URL"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://merics.org/en/comment/china-moves-fill-void-left-russian-sanctions-its-own-terms",
+            "title": "China moves to fill the void left by Russian sanctions – on its own terms",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantive content were checked against the recovered matching source; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The recovered work has substantive European scope and a central economic-security dependency, resilience, strategic-capacity, sanctions, trade, investment, energy, or geoeconomic mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "How sanctions on russia reshaped trade flows and increased china’s role in russia’s economy",
+      "reader_what": "How sanctions on Russia reshaped trade flows and increased China’s role in Russia’s economy",
+      "reader_why": "It documents a substantive European economic-security exposure, instrument, or strategic trade-off.",
+      "reader_more": "The recovered work examines how sanctions on Russia reshaped trade flows and increased China’s role in Russia’s economy. It is useful historical context because the subject is directly connected to European dependencies, resilience, strategic capacity, or geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "substantive policy/academic analysis",
+        "research_question": "How does the recovered work characterize how sanctions on Russia reshaped trade flows and increased China’s role in Russia’s economy?",
+        "main_finding": "The work provides substantive evidence or analysis on how sanctions on Russia reshaped trade flows and increased China’s role in Russia’s economy.",
+        "method_or_basis": "Substantive analysis based on the cases, policy documents, data, or literature presented in the recovered work.",
+        "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+        "radar_relevance": "Qualifies for historical Strand A because European economic security is substantive rather than incidental.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.secondary_exposure",
+          "secondary_objects": [],
+          "actor": {
+            "name": "MERICS",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2022-08-26",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding is historical context tied to the evidence and policy setting at the work’s publication date; it does not establish current conditions.",
+          "text": "The recovered work documents how sanctions on Russia reshaped trade flows and increased China’s role in Russia’s economy.",
+          "confidence": "high"
+        }
+      ]
+    }
+  ]
+}
