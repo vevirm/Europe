@@ -1,0 +1,2734 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-a-72864c47788f",
+  "results": [
+    {
+      "record_key": "link:https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Trade.pdf",
+      "source_hash": "f2a4bbd1",
+      "identity_hash": "8f41faa062767891",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Trade.pdf; package contains matching pdf_excerpt source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_pdf",
+            "url": "https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Trade.pdf",
+            "title": "Trade and connectivity in the Europe-Gulf strategic partnership",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Diversified trade routes can reduce exposure to chokepoints and strengthen supply resilience."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Europe-Gulf trade connectivity",
+      "reader_what": "The brief argues for advancing Europe-Gulf trade corridors and connectivity after new geopolitical disruptions.",
+      "reader_why": "Diversified trade routes can reduce exposure to chokepoints and strengthen supply resilience.",
+      "reader_more": "The brief argues for advancing Europe-Gulf trade corridors and connectivity after new geopolitical disruptions. Diversified trade routes can reduce exposure to chokepoints and strengthen supply resilience.",
+      "deep_analysis": {
+        "work_kind": "policy report",
+        "research_question": "",
+        "main_finding": "The brief argues for advancing Europe-Gulf trade corridors and connectivity after new geopolitical disruptions.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+        "radar_relevance": "Diversified trade routes can reduce exposure to chokepoints and strengthen supply resilience.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Atlantic Council",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "measures",
+          "direction": "unchanged",
+          "status": "adopted",
+          "status_date": "2026-09-29",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+          "text": "The brief argues for advancing Europe-Gulf trade corridors and connectivity after new geopolitical disruptions.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/09654313.2026.2684528",
+      "source_hash": "737dd63a",
+      "identity_hash": "90cadac1d29e7323",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Opened https://doi.org/10.1080/09654313.2026.2684528; package retrieval contained no substantive text."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/searched DOI https://doi.org/10.1080/09654313.2026.2684528; matching publisher/repository evidence recovered."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Searched exact title \"Technological diversification through global value chains in European regions\"; matching record recovered."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched title with author/organisation/year metadata; confirmed matching identity at https://doi.org/10.1080/09654313.2026.2684528."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Publisher page confirms title, author, date and abstract; full text remained access-limited."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found corroborating metadata consistent with the recovered work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_article",
+            "url": "https://doi.org/10.1080/09654313.2026.2684528",
+            "title": "Technological diversification through global value chains in European regions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work is substantive and European, but its economic-security nexus is indirect enough to warrant human judgement."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "GVCs and regional technology diversification",
+      "reader_what": "The study links global-value-chain participation to technological diversification across 243 European regions.",
+      "reader_why": "The economic-security fit is borderline because the study focuses regional innovation, not strategic dependency directly.",
+      "reader_more": "The study links global-value-chain participation to technological diversification across 243 European regions. The economic-security fit is borderline because the study focuses regional innovation, not strategic dependency directly.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed study",
+        "research_question": "",
+        "main_finding": "The study links global-value-chain participation to technological diversification across 243 European regions.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "Admission is borderline because the economic-security mechanism is indirect.",
+        "radar_relevance": "The economic-security fit is borderline because the study focuses regional innovation, not strategic dependency directly.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Eduardo Hernández-Rodríguez",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "unchanged",
+          "status": "delivered",
+          "status_date": "2026-06-08",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Admission is borderline because the economic-security mechanism is indirect.",
+          "text": "The study links global-value-chain participation to technological diversification across 243 European regions.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Investment.pdf",
+      "source_hash": "bf6b0a32",
+      "identity_hash": "6ae98ce6ad53b8a1",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Investment.pdf; package contains matching pdf_excerpt source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_pdf",
+            "url": "https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Investment.pdf",
+            "title": "The strategic rationale for closer investment ties between Europe and the Gulf",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Investment partnerships can add capital to sectors where Europe seeks stronger industrial capacity."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Europe-Gulf strategic investment",
+      "reader_what": "The brief argues that Gulf capital can support European strategic sectors while Europe offers investable capabilities.",
+      "reader_why": "Investment partnerships can add capital to sectors where Europe seeks stronger industrial capacity.",
+      "reader_more": "The brief argues that Gulf capital can support European strategic sectors while Europe offers investable capabilities. Investment partnerships can add capital to sectors where Europe seeks stronger industrial capacity.",
+      "deep_analysis": {
+        "work_kind": "policy report",
+        "research_question": "",
+        "main_finding": "The brief argues that Gulf capital can support European strategic sectors while Europe offers investable capabilities.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+        "radar_relevance": "Investment partnerships can add capital to sectors where Europe seeks stronger industrial capacity.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "finance.strategic_investment",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Atlantic Council",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "invests",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026-09-29",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+          "text": "The brief argues that Gulf capital can support European strategic sectors while Europe offers investable capabilities.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/00343404.2026.2681659",
+      "source_hash": "44a9616c",
+      "identity_hash": "a251bb5b1ee81831",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Opened https://doi.org/10.1080/00343404.2026.2681659; package retrieval contained no substantive text."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/searched DOI https://doi.org/10.1080/00343404.2026.2681659; matching publisher/repository evidence recovered."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Searched exact title \"The geography of artificial intelligence in European regions: innovation, exposure and use\"; matching record recovered."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched title with author/organisation/year metadata; confirmed matching identity at https://www.tandfonline.com/doi/full/10.1080/00343404.2026.2681659."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Open-access publisher page recovered substantive article text."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found corroborating metadata consistent with the recovered work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.tandfonline.com/doi/full/10.1080/00343404.2026.2681659",
+            "title": "The geography of artificial intelligence in European regions: innovation, exposure and use",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Concentration maps where Europe’s AI capability is strong and where strategic technology capacity remains thin."
+      },
+      "metadata_correction": {
+        "fields": {
+          "source": "Regional Studies"
+        },
+        "unset": [],
+        "reason": "Publisher page identifies the journal as Regional Studies rather than the repository label."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Europe’s uneven AI geography",
+      "reader_what": "AI innovation and firm adoption are concentrated in richer, human-capital-intensive European regional hubs.",
+      "reader_why": "Concentration maps where Europe’s AI capability is strong and where strategic technology capacity remains thin.",
+      "reader_more": "AI innovation and firm adoption are concentrated in richer, human-capital-intensive European regional hubs. Concentration maps where Europe’s AI capability is strong and where strategic technology capacity remains thin.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed study",
+        "research_question": "",
+        "main_finding": "AI innovation and firm adoption are concentrated in richer, human-capital-intensive European regional hubs.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+        "radar_relevance": "Concentration maps where Europe’s AI capability is strong and where strategic technology capacity remains thin.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "industrial.technology_complexity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "JRC Publications Repository",
+            "class": "eu_body"
+          },
+          "mechanism": "measures",
+          "direction": "unchanged",
+          "status": "delivered",
+          "status_date": "2026-06-25",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+          "text": "AI innovation and firm adoption are concentrated in richer, human-capital-intensive European regional hubs.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Energy.pdf",
+      "source_hash": "b0ce49a5",
+      "identity_hash": "7541a9c2b436ef26",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Energy.pdf; package contains matching pdf_excerpt source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_pdf",
+            "url": "https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Energy.pdf",
+            "title": "How Europe and the Gulf can unite behind an energy-transition agenda",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Broader energy partnerships can diversify supply, infrastructure and investment channels."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Europe-Gulf energy transition",
+      "reader_what": "The brief proposes deeper Europe-Gulf cooperation on energy security and transition infrastructure.",
+      "reader_why": "Broader energy partnerships can diversify supply, infrastructure and investment channels.",
+      "reader_more": "The brief proposes deeper Europe-Gulf cooperation on energy security and transition infrastructure. Broader energy partnerships can diversify supply, infrastructure and investment channels.",
+      "deep_analysis": {
+        "work_kind": "policy report",
+        "research_question": "",
+        "main_finding": "The brief proposes deeper Europe-Gulf cooperation on energy security and transition infrastructure.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+        "radar_relevance": "Broader energy partnerships can diversify supply, infrastructure and investment channels.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Atlantic Council",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "diversifies",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2026-09-29",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+          "text": "The brief proposes deeper Europe-Gulf cooperation on energy security and transition infrastructure.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Defense-1.pdf",
+      "source_hash": "0515cfd9",
+      "identity_hash": "d4250021ae734ee8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Defense-1.pdf; package contains matching pdf_excerpt source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_pdf",
+            "url": "https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Defense-1.pdf",
+            "title": "Three principles to guide European-Gulf defense cooperation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Cooperation can affect defence-industrial capacity, technology access and resilience across both regions."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "European-Gulf defence cooperation",
+      "reader_what": "The brief sets principles for deeper Europe-Gulf defence and technology cooperation.",
+      "reader_why": "Cooperation can affect defence-industrial capacity, technology access and resilience across both regions.",
+      "reader_more": "The brief sets principles for deeper Europe-Gulf defence and technology cooperation. Cooperation can affect defence-industrial capacity, technology access and resilience across both regions.",
+      "deep_analysis": {
+        "work_kind": "policy report",
+        "research_question": "",
+        "main_finding": "The brief sets principles for deeper Europe-Gulf defence and technology cooperation.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+        "radar_relevance": "Cooperation can affect defence-industrial capacity, technology access and resilience across both regions.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "defence.production_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Atlantic Council",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "supports",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026-09-29",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+          "text": "The brief sets principles for deeper Europe-Gulf defence and technology cooperation.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1007/s00168-026-01555-x",
+      "source_hash": "33aa2861",
+      "identity_hash": "c19a584792d23943",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://link.springer.com/article/10.1007/s00168-026-01555-x; package contains matching substantial_web_text source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1007/s00168-026-01555-x",
+            "title": "The role of twin skills in attracting FDI: evidence from European regions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_GENERIC_REGIONAL",
+        "reason": "The regional FDI-attractiveness study concerns skills and location choice, not strategic investment exposure or screening."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The role of twin skills in attracting FDI: evidence from European regions",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "recovered work",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "Recovered source material was sufficient to determine non-admission.",
+        "qualification": "",
+        "radar_relevance": "The regional FDI-attractiveness study concerns skills and location choice, not strategic investment exposure or screening.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.glt.2026.06.001",
+      "source_hash": "a01bef4c",
+      "identity_hash": "905c3aa45f7da471",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Opened https://doi.org/10.1016/j.glt.2026.06.001; package retrieval contained no substantive text."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/searched DOI https://doi.org/10.1016/j.glt.2026.06.001; matching publisher/repository evidence recovered."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Searched exact title \"Agricultural sustainable development goals in the EU: The role of global value chains\"; matching record recovered."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched title with author/organisation/year metadata; confirmed matching identity at https://www.sciencedirect.com/science/article/pii/S2589791826000228."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Open-access ScienceDirect page recovered methods, results and conclusions."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found corroborating metadata consistent with the recovered work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.sciencedirect.com/science/article/pii/S2589791826000228",
+            "title": "Agricultural sustainable development goals in the EU: The role of global value chains",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Backward-oriented participation points to supply dependencies that policy may need to reduce."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU agricultural GVC dependencies",
+      "reader_what": "EU agricultural GVC participation is associated with different sustainability outcomes, including imported-input and energy dependence.",
+      "reader_why": "Backward-oriented participation points to supply dependencies that policy may need to reduce.",
+      "reader_more": "EU agricultural GVC participation is associated with different sustainability outcomes, including imported-input and energy dependence. Backward-oriented participation points to supply dependencies that policy may need to reduce.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed study",
+        "research_question": "",
+        "main_finding": "EU agricultural GVC participation is associated with different sustainability outcomes, including imported-input and energy dependence.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+        "radar_relevance": "Backward-oriented participation points to supply dependencies that policy may need to reduce.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Lei Zha",
+            "class": "university_group"
+          },
+          "mechanism": "diversifies",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026-10-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+          "text": "EU agricultural GVC participation is associated with different sustainability outcomes, including imported-input and energy dependence.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1017/s1474745626101591",
+      "source_hash": "22ff9cf9",
+      "identity_hash": "8fa338355d651895",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://www.cambridge.org/core/journals/world-trade-review/article/exploring-the-complexity-of-international-trade-networks-with-terra/58E2D97F1A1A4179E52C602F9450C4FE; package contains matching substantial_web_text source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.cambridge.org/core/journals/world-trade-review/article/exploring-the-complexity-of-international-trade-networks-with-terra/58E2D97F1A1A4179E52C602F9450C4FE",
+            "title": "Exploring the Complexity of International Trade Networks with TERRA",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "It gives European policymakers a repeatable way to monitor trade dependencies and emerging concentration risks."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "TERRA maps trade vulnerabilities",
+      "reader_what": "TERRA uses high-frequency Eurostat trade data to detect concentrations, structural vulnerabilities and changing network roles.",
+      "reader_why": "It gives European policymakers a repeatable way to monitor trade dependencies and emerging concentration risks.",
+      "reader_more": "TERRA uses high-frequency Eurostat trade data to detect concentrations, structural vulnerabilities and changing network roles. It gives European policymakers a repeatable way to monitor trade dependencies and emerging concentration risks.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed study",
+        "research_question": "",
+        "main_finding": "TERRA uses high-frequency Eurostat trade data to detect concentrations, structural vulnerabilities and changing network roles.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+        "radar_relevance": "It gives European policymakers a repeatable way to monitor trade dependencies and emerging concentration risks.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Mauro Bruno",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "unchanged",
+          "status": "delivered",
+          "status_date": "2026-10-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+          "text": "TERRA uses high-frequency Eurostat trade data to detect concentrations, structural vulnerabilities and changing network roles.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.tranpol.2026.104296",
+      "source_hash": "27186cfd",
+      "identity_hash": "244497b1befcbec8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://www.research.ed.ac.uk/en/publications/is-state-aid-associated-with-the-technical-efficiency-of-european/; package contains matching substantial_web_text source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.research.ed.ac.uk/en/publications/is-state-aid-associated-with-the-technical-efficiency-of-european/",
+            "title": "Is state aid associated with the technical efficiency of European airlines in a post-COVID-19 setting?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_GENERIC_SECTOR",
+        "reason": "The airline-efficiency study is sectoral firm-performance analysis, not a strategic or cross-border economic-security mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Is state aid associated with the technical efficiency of European airlines in a post-COVID-19 setting?",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "recovered work",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "Recovered source material was sufficient to determine non-admission.",
+        "qualification": "",
+        "radar_relevance": "The airline-efficiency study is sectoral firm-performance analysis, not a strategic or cross-border economic-security mechanism.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMimgFBVV95cUxPYk1kMGpnZHpNenUtaFdENlVFSkhKQmhsZnlHb2N0WkNkYnJ5TW40UVZVWmRYRUVyZDBmTnFWSlBPU2d5SDg5U0NrT0lCbHdLY0NHYXYtMmZEdm50VlBJUXY0ZXBzZGstbkZOeDhTYVUzejF3OUFJRWZDOHZWSjR5R0VDTGthX2VtbHBveEZYUGg1dmFkVHJrNGR3?oc=5",
+      "source_hash": "77be7b3a",
+      "identity_hash": "ff3b48ca1fc22bac",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Opened https://news.google.com/rss/articles/CBMimgFBVV95cUxPYk1kMGpnZHpNenUtaFdENlVFSkhKQmhsZnlHb2N0WkNkYnJ5TW40UVZVWmRYRUVyZDBmTnFWSlBPU2d5SDg5U0NrT0lCbHdLY0NHYXYtMmZEdm50VlBJUXY0ZXBzZGstbkZOeDhTYVUzejF3OUFJRWZDOHZWSjR5R0VDTGthX2VtbHBveEZYUGg1dmFkVHJrNGR3?oc=5; package retrieval contained no substantive text."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Searched exact title \"Europe’s energy security has a Black Sea opportunity\"; matching record recovered."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched title with author/organisation/year metadata; confirmed matching identity at https://internationly.com/news/europes-energy-security-has-a-black-sea-opportunity."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Matching syndicated copy identifies the underlying piece as Black Sea Petroleum business/promotional content and reproduces substantive text."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found corroborating metadata consistent with the recovered work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "syndicated_copy",
+            "url": "https://internationly.com/news/europes-energy-security-has-a-black-sea-opportunity",
+            "title": "Europe’s energy security has a Black Sea opportunity",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "C",
+        "reason_code": "C_PROMOTIONAL",
+        "reason": "The matching piece is company-promotional business content, not an independent current-development report suitable for the Radar."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "Europe’s energy security has a Black Sea opportunity"
+        },
+        "unset": [],
+        "reason": "Recovered source confirms the headline as the work title."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Europe’s energy security has a Black Sea opportunity",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "recovered work",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "Recovered source material was sufficient to determine non-admission.",
+        "qualification": "",
+        "radar_relevance": "The matching piece is company-promotional business content, not an independent current-development report suitable for the Radar.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMivwFBVV95cUxPSkxwenNTdXBkRVlxN1VNMmlCeHpGbVFZeWRqYkQyZTdkQzY4RDV2RXY2NkhxQjVneDZDR1NWSmRhS1NmUWlWMHNTdWdXdFZtU3lzRXVhM0dPeW1HbXRmTDYzUHIxNWNOdkhGa2dMMHZlZEg2T1F5UThHMVgxX09vSWltbTF0NElWRkRJbTRWUWRCbFVUSzJXMFotSU5GamRHWW5pSUZIR0Q3REhONndYT3o1M3paX1cycVNiUnRBRQ?oc=5",
+      "source_hash": "81af5797",
+      "identity_hash": "fcce5a75352319bf",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Opened https://news.google.com/rss/articles/CBMivwFBVV95cUxPSkxwenNTdXBkRVlxN1VNMmlCeHpGbVFZeWRqYkQyZTdkQzY4RDV2RXY2NkhxQjVneDZDR1NWSmRhS1NmUWlWMHNTdWdXdFZtU3lzRXVhM0dPeW1HbXRmTDYzUHIxNWNOdkhGa2dMMHZlZEg2T1F5UThHMVgxX09vSWltbTF0NElWRkRJbTRWUWRCbFVUSzJXMFotSU5GamRHWW5pSUZIR0Q3REhONndYT3o1M3paX1cycVNiUnRBRQ?oc=5; package retrieval contained no substantive text."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Searched exact title \"Spain, France align on welcoming UK back to EU, strengthening China trade defences\"; matching record recovered."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched title with author/organisation/year metadata; confirmed matching identity at https://www.reuters.com/world/china/spain-france-align-welcoming-uk-back-eu-strengthening-china-trade-defences-2026-09-30/."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Reuters page recovered the matching current-development report."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found corroborating metadata consistent with the recovered work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_article",
+            "url": "https://www.reuters.com/world/china/spain-france-align-welcoming-uk-back-eu-strengthening-china-trade-defences-2026-09-30/",
+            "title": "Spain, France align on welcoming UK back to EU, strengthening China trade defences",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+        "reason": "The position concerns how Europe responds to Chinese competition while managing openness."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "Spain, France align on welcoming UK back to EU, strengthening China trade defences"
+        },
+        "unset": [],
+        "reason": "Recovered source confirms the headline as the work title."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "France and Spain seek stronger China trade defences",
+      "reader_what": "French and Spanish leaders called for stronger EU trade safeguards and commitments from Chinese investors.",
+      "reader_why": "The position concerns how Europe responds to Chinese competition while managing openness.",
+      "reader_more": "French and Spanish leaders called for stronger EU trade safeguards and commitments from Chinese investors. The position concerns how Europe responds to Chinese competition while managing openness.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "French and Spanish leaders called for stronger EU trade safeguards and commitments from Chinese investors.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+        "radar_relevance": "The position concerns how Europe responds to Chinese competition while managing openness.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade_defence.anti_subsidy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Reuters",
+            "class": "other"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2026-09-30",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+          "text": "French and Spanish leaders called for stronger EU trade safeguards and commitments from Chinese investors.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMirwFBVV95cUxQSkZRYm1lZnZUZm5XUkZKT2pGYVRPRkdlWEdtRXNPQ2tIZTMtbDc3TTRPdmhHb0IwNjNjamd5dnJzNVpCcmYyRkpKLVJSMGJYamRKbXBrZTZfVF9wNDRmVTBoeUtpQkJabVM4R0dwSUtwdzRVVUd3SnFiM0pnS29IUUVFdWJYNkwwUlJHcktXV0V1ODF5YmlwWXloY0p1ZmF1UkFPakdDeklGNnA3OE9J?oc=5",
+      "source_hash": "9f26c36c",
+      "identity_hash": "cf66154753bab4e9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Opened https://news.google.com/rss/articles/CBMirwFBVV95cUxQSkZRYm1lZnZUZm5XUkZKT2pGYVRPRkdlWEdtRXNPQ2tIZTMtbDc3TTRPdmhHb0IwNjNjamd5dnJzNVpCcmYyRkpKLVJSMGJYamRKbXBrZTZfVF9wNDRmVTBoeUtpQkJabVM4R0dwSUtwdzRVVUd3SnFiM0pnS29IUUVFdWJYNkwwUlJHcktXV0V1ODF5YmlwWXloY0p1ZmF1UkFPakdDeklGNnA3OE9J?oc=5; package retrieval contained no substantive text."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Searched exact title \"Two Workshops on EU-China ETS Cooperation Successfully Held in Wuhan\"; matching record recovered."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched title with author/organisation/year metadata; confirmed matching identity at https://www.eeas.europa.eu/delegations/china/two-workshops-eu-china-ets-cooperation-successfully-held-wuhan_en."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "EEAS page recovered the matching workshop announcement."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found corroborating metadata consistent with the recovered work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_page",
+            "url": "https://www.eeas.europa.eu/delegations/china/two-workshops-eu-china-ets-cooperation-successfully-held-wuhan_en",
+            "title": "Two Workshops on EU-China ETS Cooperation Successfully Held in Wuhan",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "C",
+        "reason_code": "A_EVENT_PAGE",
+        "reason": "The item is primarily an event/workshop page rather than a substantive economic-security evidence product."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "Two Workshops on EU-China ETS Cooperation Successfully Held in Wuhan"
+        },
+        "unset": [],
+        "reason": "Recovered source confirms the headline as the work title."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Two Workshops on EU-China ETS Cooperation Successfully Held in Wuhan",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "recovered work",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "Recovered source material was sufficient to determine non-admission.",
+        "qualification": "",
+        "radar_relevance": "The item is primarily an event/workshop page rather than a substantive economic-security evidence product.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://borderlex.net/2026/09/30/eu-court-rejects-polish-bid-to-suspend-mercosur-deal/",
+      "source_hash": "c66e90fe",
+      "identity_hash": "be30801bd1fb66cf",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://borderlex.net/2026/09/30/eu-court-rejects-polish-bid-to-suspend-mercosur-deal/; package contains matching substantial_web_text source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://borderlex.net/2026/09/30/eu-court-rejects-polish-bid-to-suspend-mercosur-deal/",
+            "title": "EU court rejects Polish bid to suspend Mercosur deal - Borderlex - European trade policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+        "reason": "The ruling affects the implementation path of a major EU trade agreement."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "EU court rejects Polish bid to suspend Mercosur deal - Borderlex - European trade policy"
+        },
+        "unset": [],
+        "reason": "Recovered source confirms the headline as the work title."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU court rejects bid to suspend Mercosur deal",
+      "reader_what": "The EU court rejected Poland’s attempt to suspend the Mercosur agreement, leaving the trade deal on its legal track.",
+      "reader_why": "The ruling affects the implementation path of a major EU trade agreement.",
+      "reader_more": "The EU court rejected Poland’s attempt to suspend the Mercosur agreement, leaving the trade deal on its legal track. The ruling affects the implementation path of a major EU trade agreement.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "The EU court rejected Poland’s attempt to suspend the Mercosur agreement, leaving the trade deal on its legal track.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+        "radar_relevance": "The ruling affects the implementation path of a major EU trade agreement.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.agreement",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Borderlex",
+            "class": "other"
+          },
+          "mechanism": "adopts",
+          "direction": "expands",
+          "status": "adopted",
+          "status_date": "2026-09-30",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "The finding should be read within the scope and evidence of the recovered source.",
+          "text": "The EU court rejected Poland’s attempt to suspend the Mercosur agreement, leaving the trade deal on its legal track.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:3102b1c3a54b6707",
+      "source_hash": "48c56ecc",
+      "identity_hash": "1f52fce8c4742aee",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://ecfr.eu/article/coming-of-age-how-young-diplomats-see-the-future-of-the-eus-eastern-partnership-initiative/; package contains matching substantial_web_text source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecfr.eu/article/coming-of-age-how-young-diplomats-see-the-future-of-the-eus-eastern-partnership-initiative/",
+            "title": "Coming of age: How young diplomats see the future of the EU’s Eastern Partnership initiative – European Council on Foreign Relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_ECONSEC_NOT_CENTRAL",
+        "reason": "The diplomatic-perspectives piece is not centrally about European economic-security dependencies, tools or strategic capacity."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Coming of age: How young diplomats see the future of the EU’s Eastern Partnership initiative – European Council",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "recovered work",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "Recovered source material was sufficient to determine non-admission.",
+        "qualification": "",
+        "radar_relevance": "The diplomatic-perspectives piece is not centrally about European economic-security dependencies, tools or strategic capacity.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:6afd61eacff01cf3",
+      "source_hash": "77afaf5f",
+      "identity_hash": "ade518c324c22f4d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Opened https://doi.org/10.1080/01402382.2022.2155906; package retrieval contained no substantive text."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/searched DOI https://doi.org/10.1080/01402382.2022.2155906; matching publisher/repository evidence recovered."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Searched exact title \"Weaponisation of finance: the role of European central banks and financial sanctions against Russia\"; matching record recovered."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched title with author/organisation/year metadata; confirmed matching identity at https://www.tandfonline.com/doi/full/10.1080/01402382.2022.2155906."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Open-access publisher page recovered abstract and article text."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found corroborating metadata consistent with the recovered work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.tandfonline.com/doi/full/10.1080/01402382.2022.2155906",
+            "title": "Weaponisation of finance: the role of European central banks and financial sanctions against Russia",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Financial sanctions turned central-bank functions into instruments of geopolitical economic pressure."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Central banks in financial sanctions",
+      "reader_what": "The study examines how EU financial sanctions against Russia enlisted the ECB and Eurosystem central banks.",
+      "reader_why": "Financial sanctions turned central-bank functions into instruments of geopolitical economic pressure.",
+      "reader_more": "The study examines how EU financial sanctions against Russia enlisted the ECB and Eurosystem central banks. Financial sanctions turned central-bank functions into instruments of geopolitical economic pressure.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed study",
+        "research_question": "",
+        "main_finding": "The study examines how EU financial sanctions against Russia enlisted the ECB and Eurosystem central banks.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "Historical evidence; it should not be read as a current development.",
+        "radar_relevance": "Financial sanctions turned central-bank functions into instruments of geopolitical economic pressure.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Lucia Quaglia",
+            "class": "university_group"
+          },
+          "mechanism": "sanctions",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2023-01-27",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Historical evidence; it should not be read as a current development.",
+          "text": "The study examines how EU financial sanctions against Russia enlisted the ECB and Eurosystem central banks.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:b42850ec212274f8",
+      "source_hash": "7aee38a6",
+      "identity_hash": "08266033b802b9cf",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Opened https://doi.org/10.1080/09662839.2022.2085997; package retrieval contained no substantive text."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/searched DOI https://doi.org/10.1080/09662839.2022.2085997; matching publisher/repository evidence recovered."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Searched exact title \"The EU, sanctions and regional leadership\"; matching record recovered."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched title with author/organisation/year metadata; confirmed matching identity at https://kclpure.kcl.ac.uk/portal/en/publications/the-eu-sanctions-and-regional-leadership/."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "University repository confirms identity and substantive abstract."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found corroborating metadata consistent with the recovered work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_record",
+            "url": "https://kclpure.kcl.ac.uk/portal/en/publications/the-eu-sanctions-and-regional-leadership/",
+            "title": "The EU, sanctions and regional leadership",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Sanctions alignment shows how EU economic power can shape external partners’ restrictive measures."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU sanctions and regional leadership",
+      "reader_what": "The article finds the EU has a demonstrable regional leadership role in sanctions through third-country alignment.",
+      "reader_why": "Sanctions alignment shows how EU economic power can shape external partners’ restrictive measures.",
+      "reader_more": "The article finds the EU has a demonstrable regional leadership role in sanctions through third-country alignment. Sanctions alignment shows how EU economic power can shape external partners’ restrictive measures.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed study",
+        "research_question": "",
+        "main_finding": "The article finds the EU has a demonstrable regional leadership role in sanctions through third-country alignment.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "Historical evidence; it should not be read as a current development.",
+        "radar_relevance": "Sanctions alignment shows how EU economic power can shape external partners’ restrictive measures.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Paul James Cardwell",
+            "class": "university_group"
+          },
+          "mechanism": "sanctions",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2023-01-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Historical evidence; it should not be read as a current development.",
+          "text": "The article finds the EU has a demonstrable regional leadership role in sanctions through third-country alignment.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:03b1467eace60864",
+      "source_hash": "ef5fbd59",
+      "identity_hash": "165e74dbbb385e3e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Opened https://doi.org/10.1080/0163660x.2023.2188829; package retrieval contained no substantive text."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/searched DOI https://doi.org/10.1080/0163660x.2023.2188829; matching publisher/repository evidence recovered."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Searched exact title \"Lessons in Sanctions-Proofing from Russia\"; matching record recovered."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched title with author/organisation/year metadata; confirmed matching identity at https://dspace.mit.edu/entities/publication/21e63c4c-d6ba-49d0-bba2-e6fad99895c4."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "MIT repository confirms final published article and provides the PDF."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found corroborating metadata consistent with the recovered work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_full_text",
+            "url": "https://dspace.mit.edu/entities/publication/21e63c4c-d6ba-49d0-bba2-e6fad99895c4",
+            "title": "Lessons in Sanctions-Proofing from Russia",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "It shows how multilateral financial reach and speed can limit sanctions-proofing strategies."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Russia’s sanctions-proofing limits",
+      "reader_what": "The article evaluates Russia’s efforts to insulate its economy from Western sanctions after 2014.",
+      "reader_why": "It shows how multilateral financial reach and speed can limit sanctions-proofing strategies.",
+      "reader_more": "The article evaluates Russia’s efforts to insulate its economy from Western sanctions after 2014. It shows how multilateral financial reach and speed can limit sanctions-proofing strategies.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed study",
+        "research_question": "",
+        "main_finding": "The article evaluates Russia’s efforts to insulate its economy from Western sanctions after 2014.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "Historical evidence; it should not be read as a current development.",
+        "radar_relevance": "It shows how multilateral financial reach and speed can limit sanctions-proofing strategies.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Caileigh Glenn",
+            "class": "university_group"
+          },
+          "mechanism": "sanctions",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2023-01-02",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Historical evidence; it should not be read as a current development.",
+          "text": "The article evaluates Russia’s efforts to insulate its economy from Western sanctions after 2014.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:1beb424f95aa1b21",
+      "source_hash": "697260a3",
+      "identity_hash": "40f76f3657ede11c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://www.eeas.europa.eu/delegations/ukraine/high-representative-together-european-commission-submits-proposals-12th-package-sanctions-against_en; package contains matching substantial_web_text source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.eeas.europa.eu/delegations/ukraine/high-representative-together-european-commission-submits-proposals-12th-package-sanctions-against_en",
+            "title": "The High Representative, together with the European Commission submits proposals for 12th package of sanctions against Russia",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The package extended the EU’s use of economic restrictions in response to Russia’s war."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU proposes a twelfth Russia sanctions package",
+      "reader_what": "The Commission and High Representative submitted proposals for a twelfth package of Russia sanctions.",
+      "reader_why": "The package extended the EU’s use of economic restrictions in response to Russia’s war.",
+      "reader_more": "The Commission and High Representative submitted proposals for a twelfth package of Russia sanctions. The package extended the EU’s use of economic restrictions in response to Russia’s war.",
+      "deep_analysis": {
+        "work_kind": "policy/official document",
+        "research_question": "",
+        "main_finding": "The Commission and High Representative submitted proposals for a twelfth package of Russia sanctions.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "Historical evidence; it should not be read as a current development.",
+        "radar_relevance": "The package extended the EU’s use of economic restrictions in response to Russia’s war.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European External Action Service",
+            "class": "eu_body"
+          },
+          "mechanism": "sanctions",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2023",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Historical evidence; it should not be read as a current development.",
+          "text": "The Commission and High Representative submitted proposals for a twelfth package of Russia sanctions.",
+          "confidence": "high",
+          "status_date_precision": "year"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:25ebd84feff79afd",
+      "source_hash": "674b3a66",
+      "identity_hash": "0bec0ceb5fb6b220",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://www.businesseurope.eu/wp-content/uploads/2025/02/2023-05-22_crma_proposal_-_businesseuropes_comments_and_amendments-b56-1.pdf; package contains matching pdf_excerpt source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_pdf",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2023-05-22_crma_proposal_-_businesseuropes_comments_and_amendments-b56-1.pdf",
+            "title": "The Critical Raw Materials Act - Comments and proposals for amendments",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_ADVOCACY_THIN",
+        "reason": "The industry position paper is advocacy on legislation rather than an independent evidence-led economic-security study."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The Critical Raw Materials Act - Comments and proposals for amendments",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "recovered work",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "Recovered source material was sufficient to determine non-admission.",
+        "qualification": "",
+        "radar_relevance": "The industry position paper is advocacy on legislation rather than an independent evidence-led economic-security study.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:9017e4d936446e60",
+      "source_hash": "bdf22cd0",
+      "identity_hash": "bf7ebf2ac6ef5115",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://e-jlia.com/index.php/jlia/article/view/1207; package contains matching substantial_web_text source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://e-jlia.com/index.php/jlia/article/view/1207",
+            "title": "THE EUROPEAN UNION AND CHINA TRADE PRESENCE IN SERBIA",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "It provides historical evidence on competing external economic relationships in an EU candidate country."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU-China trade presence in Serbia",
+      "reader_what": "The article examines the relative trade presence of the EU and China in Serbia.",
+      "reader_why": "It provides historical evidence on competing external economic relationships in an EU candidate country.",
+      "reader_more": "The article examines the relative trade presence of the EU and China in Serbia. It provides historical evidence on competing external economic relationships in an EU candidate country.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed study",
+        "research_question": "",
+        "main_finding": "The article examines the relative trade presence of the EU and China in Serbia.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "Historical evidence; it should not be read as a current development.",
+        "radar_relevance": "It provides historical evidence on competing external economic relationships in an EU candidate country.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "L'ubica Zubal'ová",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "unchanged",
+          "status": "delivered",
+          "status_date": "2023",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical evidence; it should not be read as a current development.",
+          "text": "The article examines the relative trade presence of the EU and China in Serbia.",
+          "confidence": "high",
+          "status_date_precision": "year"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:5aaa8370d46e44bf",
+      "source_hash": "917ef577",
+      "identity_hash": "865a4bbf9c1f3eed",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://international-partnerships.ec.europa.eu/policies/global-gateway/strategic-partnership-critical-raw-materials-being-explored-democratic-republic-congo_en; package contains matching abstract_or_landing_page source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_page",
+            "url": "https://international-partnerships.ec.europa.eu/policies/global-gateway/strategic-partnership-critical-raw-materials-being-explored-democratic-republic-congo_en",
+            "title": "Strategic partnership on critical raw materials being explored in the Democratic Republic of the Congo",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Such partnerships seek to diversify and secure access to inputs important for European industry."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU explores DRC critical-minerals partnership",
+      "reader_what": "The EU and DRC explored a strategic partnership covering critical raw materials.",
+      "reader_why": "Such partnerships seek to diversify and secure access to inputs important for European industry.",
+      "reader_more": "The EU and DRC explored a strategic partnership covering critical raw materials. Such partnerships seek to diversify and secure access to inputs important for European industry.",
+      "deep_analysis": {
+        "work_kind": "policy/official document",
+        "research_question": "",
+        "main_finding": "The EU and DRC explored a strategic partnership covering critical raw materials.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "Historical evidence; it should not be read as a current development.",
+        "radar_relevance": "Such partnerships seek to diversify and secure access to inputs important for European industry.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "materials.critical_raw",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission — International Partnerships",
+            "class": "eu_body"
+          },
+          "mechanism": "secures",
+          "direction": "expands",
+          "status": "adopted",
+          "status_date": "2023",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Historical evidence; it should not be read as a current development.",
+          "text": "The EU and DRC explored a strategic partnership covering critical raw materials.",
+          "confidence": "high",
+          "status_date_precision": "year"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:f215bb383377741f",
+      "source_hash": "9eeeb22b",
+      "identity_hash": "4d4e7376dc83dfdf",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/spring-2023-economic-forecast-improved-outlook-amid-persistent-challenges_en; package contains matching substantial_web_text source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/spring-2023-economic-forecast-improved-outlook-amid-persistent-challenges_en",
+            "title": "Spring 2023 Economic Forecast: an improved outlook amid persistent challenges",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_GENERIC_MACRO",
+        "reason": "The work is a general macroeconomic forecast rather than a central economic-security study."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Spring 2023 Economic Forecast: an improved outlook amid persistent challenges",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "recovered work",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "Recovered source material was sufficient to determine non-admission.",
+        "qualification": "",
+        "radar_relevance": "The work is a general macroeconomic forecast rather than a central economic-security study.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:4f019593ee62da90",
+      "source_hash": "5f85cd37",
+      "identity_hash": "0ceeb6e0253590bf",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://defence-industry-space.ec.europa.eu/sst-front-desk-successfully-transferred-euspa-and-eu-sst-partnership-takes-over-provision-eu-sst-2023-07-01_en; package contains matching substantial_web_text source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://defence-industry-space.ec.europa.eu/sst-front-desk-successfully-transferred-euspa-and-eu-sst-partnership-takes-over-provision-eu-sst-2023-07-01_en",
+            "title": "SST Front Desk successfully transferred to EUSPA, and EU SST Partnership takes over provision of EU SST services",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_ECONSEC_NOT_CENTRAL",
+        "reason": "The operational space-service transfer is not presented as an economic-security evidence product."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "SST Front Desk successfully transferred to EUSPA, and EU SST Partnership takes over provision of EU SST services",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "recovered work",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "Recovered source material was sufficient to determine non-admission.",
+        "qualification": "",
+        "radar_relevance": "The operational space-service transfer is not presented as an economic-security evidence product.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:7bd97b5994e88436",
+      "source_hash": "e273f5b6",
+      "identity_hash": "35a0295f9bda0f51",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://defence-industry-space.ec.europa.eu/eu-space/research-development-and-innovation_en; package contains matching substantial_web_text source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://defence-industry-space.ec.europa.eu/eu-space/research-development-and-innovation_en",
+            "title": "Research, Development and Innovation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NAVIGATION_PAGE",
+        "reason": "The page is a generic programme/navigation page without a substantive economic-security finding."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Research, Development and Innovation",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "recovered work",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "Recovered source material was sufficient to determine non-admission.",
+        "qualification": "",
+        "radar_relevance": "The page is a generic programme/navigation page without a substantive economic-security finding.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:28857adbdbb8930f",
+      "source_hash": "c79027df",
+      "identity_hash": "ca5e363ca1f205d2",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://e-jlia.com/index.php/jlia/article/view/846; package contains matching substantial_web_text source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://e-jlia.com/index.php/jlia/article/view/846",
+            "title": "RETHINKING STRATEGIC AUTONOMY IN TIMES OF NEXT GENERATION EU: NEW DIGITAL AGENDA",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Digital capability and governance are part of Europe’s ability to reduce strategic technological dependence."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Strategic autonomy and the EU digital agenda",
+      "reader_what": "The article links the EU digital agenda and NextGenerationEU to debates over strategic autonomy.",
+      "reader_why": "Digital capability and governance are part of Europe’s ability to reduce strategic technological dependence.",
+      "reader_more": "The article links the EU digital agenda and NextGenerationEU to debates over strategic autonomy. Digital capability and governance are part of Europe’s ability to reduce strategic technological dependence.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed study",
+        "research_question": "",
+        "main_finding": "The article links the EU digital agenda and NextGenerationEU to debates over strategic autonomy.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "Historical evidence; it should not be read as a current development.",
+        "radar_relevance": "Digital capability and governance are part of Europe’s ability to reduce strategic technological dependence.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "digital.international_partnerships",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Miguel Angel Benedicto Solsona",
+            "class": "university_group"
+          },
+          "mechanism": "partners",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2023",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Historical evidence; it should not be read as a current development.",
+          "text": "The article links the EU digital agenda and NextGenerationEU to debates over strategic autonomy.",
+          "confidence": "high",
+          "status_date_precision": "year"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:f9a8102f1a482e56",
+      "source_hash": "648ad415",
+      "identity_hash": "34ce16a87a1e9a14",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://www.businesseurope.eu/wp-content/uploads/2025/02/2023-03-20_message_to_the_spring_european_council_23-24_march_2023-4e6-1.pdf; package contains matching pdf_excerpt source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_pdf",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2023-03-20_message_to_the_spring_european_council_23-24_march_2023-4e6-1.pdf",
+            "title": "Putting in place an ambitious and effective long-term EU competitiveness strategy - BusinessEurope message to the European Council meeting on 23-24 March 2023",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_ADVOCACY_THIN",
+        "reason": "The item is a stakeholder advocacy submission rather than a completed evidence-led study."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Putting in place an ambitious and effective long-term EU competitiveness strategy - BusinessEurope message to the Europe",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "recovered work",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "Recovered source material was sufficient to determine non-admission.",
+        "qualification": "",
+        "radar_relevance": "The item is a stakeholder advocacy submission rather than a completed evidence-led study.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:2f6b8353f1dc6331",
+      "source_hash": "6017e965",
+      "identity_hash": "835e63216ae253ce",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://www.businesseurope.eu/publications/proposal-for-the-critical-raw-materials-act-good-start-now-make-the-act-workable-for-businesses/; package contains matching substantial_web_text source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.businesseurope.eu/publications/proposal-for-the-critical-raw-materials-act-good-start-now-make-the-act-workable-for-businesses/",
+            "title": "Proposal for the Critical Raw Materials Act: “Good start, now make the Act workable for businesses”",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_ADVOCACY_THIN",
+        "reason": "The industry position paper is advocacy on legislation rather than an independent evidence-led economic-security study."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Proposal for the Critical Raw Materials Act: “Good start, now make the Act workable for businesses”",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "recovered work",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "Recovered source material was sufficient to determine non-admission.",
+        "qualification": "",
+        "radar_relevance": "The industry position paper is advocacy on legislation rather than an independent evidence-led economic-security study.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:b5b230d30ee099a4",
+      "source_hash": "bcb1e0ff",
+      "identity_hash": "9e84ace1b79d7477",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://www.businesseurope.eu/wp-content/uploads/2025/02/2023-05-23_trade_and_copetitiveness_final-261-1.pdf; package contains matching pdf_excerpt source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_pdf",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2023-05-23_trade_and_copetitiveness_final-261-1.pdf",
+            "title": "Open strategic autonomy - How trade policy can best support European competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "It directly addresses the protection-openness trade-off in Europe’s geoeconomic policy."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Trade policy for open strategic autonomy",
+      "reader_what": "The BusinessEurope paper argues how EU trade policy should support competitiveness under open strategic autonomy.",
+      "reader_why": "It directly addresses the protection-openness trade-off in Europe’s geoeconomic policy.",
+      "reader_more": "The BusinessEurope paper argues how EU trade policy should support competitiveness under open strategic autonomy. It directly addresses the protection-openness trade-off in Europe’s geoeconomic policy.",
+      "deep_analysis": {
+        "work_kind": "policy/official document",
+        "research_question": "",
+        "main_finding": "The BusinessEurope paper argues how EU trade policy should support competitiveness under open strategic autonomy.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "Historical evidence; it should not be read as a current development.",
+        "radar_relevance": "It directly addresses the protection-openness trade-off in Europe’s geoeconomic policy.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "BusinessEurope",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "measures",
+          "direction": "unchanged",
+          "status": "delivered",
+          "status_date": "2023",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical evidence; it should not be read as a current development.",
+          "text": "The BusinessEurope paper argues how EU trade policy should support competitiveness under open strategic autonomy.",
+          "confidence": "high",
+          "status_date_precision": "year"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:e1b6dc64f1aa7fd2",
+      "source_hash": "1fc9f670",
+      "identity_hash": "9a7a361b3d6e7a48",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Opened https://energy.ec.europa.eu/publications/memorandum-understanding-between-european-union-and-ukraine-strategic-partnership-biomethane_en; package retrieval contained no substantive text."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Searched exact title \"Memorandum of understanding between the European Union and Ukraine on a Strategic Partnership on Biomethane, Hydrogen and other Synthetic Gases\"; matching record recovered."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched title with author/organisation/year metadata; confirmed matching identity at https://energy.ec.europa.eu/publications/memorandum-understanding-between-european-union-and-ukraine-strategic-partnership-biomethane_en."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Commission page confirms the 2 February 2023 memorandum and official PDF."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found corroborating metadata consistent with the recovered work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_document",
+            "url": "https://energy.ec.europa.eu/publications/memorandum-understanding-between-european-union-and-ukraine-strategic-partnership-biomethane_en",
+            "title": "Memorandum of understanding between the European Union and Ukraine on a Strategic Partnership on Biomethane, Hydrogen and other Synthetic Gases",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The partnership supports diversification and cross-border energy integration."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2023-02-02"
+        },
+        "unset": [],
+        "reason": "European Commission publication page gives 2 February 2023."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU-Ukraine renewable-gas partnership",
+      "reader_what": "The EU and Ukraine established a strategic partnership on biomethane, hydrogen and synthetic gases.",
+      "reader_why": "The partnership supports diversification and cross-border energy integration.",
+      "reader_more": "The EU and Ukraine established a strategic partnership on biomethane, hydrogen and synthetic gases. The partnership supports diversification and cross-border energy integration.",
+      "deep_analysis": {
+        "work_kind": "policy/official document",
+        "research_question": "",
+        "main_finding": "The EU and Ukraine established a strategic partnership on biomethane, hydrogen and synthetic gases.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "Historical evidence; it should not be read as a current development.",
+        "radar_relevance": "The partnership supports diversification and cross-border energy integration.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission — Energy",
+            "class": "eu_body"
+          },
+          "mechanism": "diversifies",
+          "direction": "expands",
+          "status": "adopted",
+          "status_date": "2023",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Historical evidence; it should not be read as a current development.",
+          "text": "The EU and Ukraine established a strategic partnership on biomethane, hydrogen and synthetic gases.",
+          "confidence": "high",
+          "status_date_precision": "year"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:08ac064e9140ace0",
+      "source_hash": "1cf7ea05",
+      "identity_hash": "fc688b2b10f1c3cd",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://nbpublish.com/library_read_article.php?id=40014; package contains matching substantial_web_text source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://nbpublish.com/library_read_article.php?id=40014",
+            "title": "Legal Framework for the Regulation of Sanctions Measures in the European Union",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Legal design determines how the EU can deploy and administer economic restrictions."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU sanctions legal framework",
+      "reader_what": "The work analyses the EU legal framework governing sanctions measures.",
+      "reader_why": "Legal design determines how the EU can deploy and administer economic restrictions.",
+      "reader_more": "The work analyses the EU legal framework governing sanctions measures. Legal design determines how the EU can deploy and administer economic restrictions.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed study",
+        "research_question": "",
+        "main_finding": "The work analyses the EU legal framework governing sanctions measures.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "Historical evidence; it should not be read as a current development.",
+        "radar_relevance": "Legal design determines how the EU can deploy and administer economic restrictions.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Nikolai Borisovich Topornin",
+            "class": "university_group"
+          },
+          "mechanism": "sanctions",
+          "direction": "expands",
+          "status": "delivered",
+          "status_date": "2023",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Historical evidence; it should not be read as a current development.",
+          "text": "The work analyses the EU legal framework governing sanctions measures.",
+          "confidence": "high",
+          "status_date_precision": "year"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:b7c37b8af80c7dbc",
+      "source_hash": "336ce076",
+      "identity_hash": "68183ff9683f1e57",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://institutdelors.eu/en/evenements/fr-euroquestions-63-economic-security-a-new-european-imperative/; package contains matching abstract_or_landing_page source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_page",
+            "url": "https://institutdelors.eu/en/evenements/fr-euroquestions-63-economic-security-a-new-european-imperative/",
+            "title": "Institut Jacques Delors - [FR] Euroquestions #63 | Economic security: a new European imperative?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_EVENT_PAGE",
+        "reason": "The item is primarily an event/workshop page rather than a substantive economic-security evidence product."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Institut Jacques Delors - [FR] Euroquestions #63 | Economic security: a new European imperative?",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "recovered work",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "Recovered source material was sufficient to determine non-admission.",
+        "qualification": "",
+        "radar_relevance": "The item is primarily an event/workshop page rather than a substantive economic-security evidence product.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:184e08f88ea7337a",
+      "source_hash": "c2c36e34",
+      "identity_hash": "5f0f36918eebd4c7",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://digital-strategy.ec.europa.eu/en/factpages/greece-2025-digital-decade-country-report; package contains matching substantial_web_text source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://digital-strategy.ec.europa.eu/en/factpages/greece-2025-digital-decade-country-report",
+            "title": "Greece 2025 Digital Decade Country Report | Shaping Europe’s digital future",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_GENERIC_DIGITAL",
+        "reason": "Country-level digital-performance reporting is useful background but lacks a central economic-security mechanism or strategic cross-border exposure."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Greece 2025 Digital Decade Country Report | Shaping Europe’s digital future",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "recovered work",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "Recovered source material was sufficient to determine non-admission.",
+        "qualification": "",
+        "radar_relevance": "Country-level digital-performance reporting is useful background but lacks a central economic-security mechanism or strategic cross-border exposure.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:298bfb93c3dc8487",
+      "source_hash": "34b13f96",
+      "identity_hash": "5550f145336e50e5",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://digital-strategy.ec.europa.eu/en/factpages/greece-2024-digital-decade-country-report; package contains matching substantial_web_text source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://digital-strategy.ec.europa.eu/en/factpages/greece-2024-digital-decade-country-report",
+            "title": "Greece 2024 Digital Decade Country Report | Shaping Europe’s digital future",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_GENERIC_DIGITAL",
+        "reason": "Country-level digital-performance reporting is useful background but lacks a central economic-security mechanism or strategic cross-border exposure."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Greece 2024 Digital Decade Country Report | Shaping Europe’s digital future",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "recovered work",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "Recovered source material was sufficient to determine non-admission.",
+        "qualification": "",
+        "radar_relevance": "Country-level digital-performance reporting is useful background but lacks a central economic-security mechanism or strategic cross-border exposure.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:87b577141369e617",
+      "source_hash": "0519cf15",
+      "identity_hash": "45a38bcafe781b73",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/autumn-2024-economic-forecast-gradual-rebound-adverse-environment/global-trade-outlook-and-resilience-global-value-chains_en; package contains matching substantial_web_text source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/autumn-2024-economic-forecast-gradual-rebound-adverse-environment/global-trade-outlook-and-resilience-global-value-chains_en",
+            "title": "Global trade outlook and the resilience of Global Value Chains",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "It provides context for European exposure to trade disruption and supply-chain concentration."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Trade resilience in global value chains",
+      "reader_what": "The Commission analysis examines global trade conditions and the resilience of global value chains.",
+      "reader_why": "It provides context for European exposure to trade disruption and supply-chain concentration.",
+      "reader_more": "The Commission analysis examines global trade conditions and the resilience of global value chains. It provides context for European exposure to trade disruption and supply-chain concentration.",
+      "deep_analysis": {
+        "work_kind": "policy/official document",
+        "research_question": "",
+        "main_finding": "The Commission analysis examines global trade conditions and the resilience of global value chains.",
+        "method_or_basis": "Recovered primary/publisher material and the evidence described in the work.",
+        "qualification": "Historical evidence; it should not be read as a current development.",
+        "radar_relevance": "It provides context for European exposure to trade disruption and supply-chain concentration.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission — Economy and Finance",
+            "class": "eu_body"
+          },
+          "mechanism": "measures",
+          "direction": "unchanged",
+          "status": "delivered",
+          "status_date": "2023",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical evidence; it should not be read as a current development.",
+          "text": "The Commission analysis examines global trade conditions and the resilience of global value chains.",
+          "confidence": "high",
+          "status_date_precision": "year"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:9d536b07037cf044",
+      "source_hash": "fb513342",
+      "identity_hash": "4041bd1c8a955688",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://digital-strategy.ec.europa.eu/en/factpages/germany-2024-digital-decade-country-report; package contains matching substantial_web_text source material."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://digital-strategy.ec.europa.eu/en/factpages/germany-2024-digital-decade-country-report",
+            "title": "Germany 2024 Digital Decade Country Report | Shaping Europe’s digital future",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and admission were checked against matching source material; scanner prose was not treated as evidence."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_GENERIC_DIGITAL",
+        "reason": "Country-level digital-performance reporting is useful background but lacks a central economic-security mechanism or strategic cross-border exposure."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Germany 2024 Digital Decade Country Report | Shaping Europe’s digital future",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "recovered work",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "Recovered source material was sufficient to determine non-admission.",
+        "qualification": "",
+        "radar_relevance": "Country-level digital-performance reporting is useful background but lacks a central economic-security mechanism or strategic cross-border exposure.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    }
+  ]
+}
