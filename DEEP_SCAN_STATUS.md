@@ -6,26 +6,26 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **931** (Main **513** + Historical **418**)
-- Automatic queue still needing V2 verification: **793** (Main **172** + Historical **621**)
-- Currently assigned to workers: **78** (Main **20** + Historical **58**)
+- Authoritative V2 verified: **967** (Main **527** + Historical **440**)
+- Automatic queue still needing V2 verification: **757** (Main **158** + Historical **599**)
+- Currently assigned to workers: **78** (Main **6** + Historical **72**)
 - Bounded access-recovery retries still eligible: **220**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **715**
+- Automatic queue pending and not yet assigned: **679**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-72864c47788f`
+- Current package: `worker-a-3c304429875d`
 - Assigned unresolved records: **36**
-  1. `link:https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Trade.pdf` — Trade and connectivity in the Europe-Gulf strategic partnership
-  2. `link:https://doi.org/10.1080/09654313.2026.2684528` — Technological diversification through global value chains in European regions
-  3. `link:https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Investment.pdf` — The strategic rationale for closer investment ties between Europe and the Gulf
-  4. `link:https://doi.org/10.1080/00343404.2026.2681659` — The geography of artificial intelligence in European regions: innovation, exposure and use
-  5. `link:https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Energy.pdf` — How Europe and the Gulf can unite behind an energy-transition agenda
-  6. `link:https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Defense-1.pdf` — Three principles to guide European-Gulf defense cooperation
-  7. `link:https://doi.org/10.1007/s00168-026-01555-x` — The role of twin skills in attracting FDI: evidence from European regions
-  8. `link:https://doi.org/10.1016/j.glt.2026.06.001` — Agricultural sustainable development goals in the EU: The role of global value chains
+  1. `historical:id:7006a14c63116431` — A Conversation with Kyriakos Pierrakakis : Competitiveness, Investment and Resilience: Europe’s Economic Future in a Fragmented World - Institut Jacques Delors
+  2. `historical:id:4a0cea8a5f3dab21` — Revisiting energy security in turbulent times - Egmont Institute
+  3. `historical:id:a976e9a09aec9a79` — Gulliver Unchained? Europe’s Changing Relations with Oil and Gas Producers - Egmont Institute
+  4. `historical:id:ae831ab770fead22` — EU Dependence on Russian gas: There is no short-term alternative - Egmont Institute
+  5. `historical:id:622afe532fddcd84` — When stars align: Leveraging European defence budgets to drive a dual-use tech boom
+  6. `historical:id:a6ede7b145800daa` — Reimagining European energy security: Towards a whole-of-system approach
+  7. `historical:id:2911c35b8b8ffc22` — Playing games with energy security?
+  8. `historical:id:249ca8b8cd62520e` — The US pause on LNG terminals will not put Europe at risk
   - … plus 28 more in the package manifest
 
 ### Worker B
