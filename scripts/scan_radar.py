@@ -514,6 +514,11 @@ if RADAR_QUICK_STRAND not in {"", "A", "B", "C"}:
     raise SystemExit(f"Invalid RADAR_QUICK_STRAND={RADAR_QUICK_STRAND!r}; expected A, B, C, or empty")
 if RADAR_QUICK_STRAND and not RADAR_QUICK_SCAN:
     raise SystemExit("RADAR_QUICK_STRAND is only valid together with RADAR_QUICK_SCAN=true")
+# The repository may keep Strand B disabled for normal mixed/scheduled production,
+# while still allowing an explicit human-commanded focused B scan. This override is
+# intentionally narrow: A/C/ALL runs continue to honour radar_config.json unchanged.
+if RADAR_QUICK_STRAND == "B":
+    STRAND_B_ENABLED = True
 RADAR_PRIORITY_SCAN = os.environ.get("RADAR_PRIORITY_SCAN", "").strip().lower() in {"1", "true", "yes", "on"}
 RADAR_DIAGNOSTIC_RUN = False  # v19 production: the temporary five-minute bootstrap/debug mode is retired
 
@@ -22840,13 +22845,11 @@ def main() -> int:
         CONFIG["network_reserve_seconds"] = original_network_reserve
     full_budget_continuation["seconds_remaining_at_end"] = max(0, int(total_budget_remaining()))
 
-    # Focused A/B/C quick-strand continuation. The workflow budget is ten minutes and,
-    # unlike a generic quick sweep, a focused button is expected to use essentially the
-    # whole allocation on its selected lane. Earlier builds disabled full-budget
-    # continuation and then capped the quick tail at three A+C waves, so a B run could
-    # finish after ~4 minutes while its remaining time was unusable. Keep rotating fresh
-    # selected-strand territory until the finalisation reserve, with a 9-minute minimum
-    # runtime contract for the 600-second workflow. Admission gates remain unchanged.
+    # Focused A/B/C quick-strand continuation. A focused manual run is expected to use
+    # essentially its whole configured allocation on the selected lane (the GitHub manual
+    # selector currently supplies a 20-minute / 1200-second budget). Keep rotating fresh
+    # selected-strand territory until the finalisation reserve; the workflow can supply a
+    # minimum-runtime contract appropriate to its budget. Admission gates remain unchanged.
     quick_strand_continuation = {
         "enabled": bool(RADAR_QUICK_SCAN and RADAR_QUICK_STRAND in {"A", "B", "C"}),
         "strand": RADAR_QUICK_STRAND or "",
