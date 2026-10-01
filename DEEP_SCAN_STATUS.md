@@ -6,27 +6,27 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **814** (Main **497** + Historical **317**)
-- Automatic queue still needing V2 verification: **873** (Main **175** + Historical **698**)
-- Currently assigned to workers: **126** (Main **23** + Historical **103**)
+- Authoritative V2 verified: **873** (Main **511** + Historical **362**)
+- Automatic queue still needing V2 verification: **827** (Main **174** + Historical **653**)
+- Currently assigned to workers: **102** (Main **22** + Historical **80**)
 - Bounded access-recovery retries still eligible: **218**
-- Terminally dropped after failed scans: **0**
-- Automatic queue pending and not yet assigned: **747**
+- Terminally dropped after failed scans: **1**
+- Automatic queue pending and not yet assigned: **725**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-e29593a73a40`
-- Assigned unresolved records: **60**
-  1. `link:https://dfrlab.org/2026/08/17/sovereignty-without-borders-decoding-the-transatlantic-digital-relationship-at-a-time-of-change/` — Sovereignty without borders: Decoding the transatlantic digital relationship at a time of change
-  2. `link:https://ecfr.eu/wp-content/uploads/2026/09/Little-Venice-little-Sparta-The-UAEs-statecraft-meets-the-war-on-Iran-v2.pdf` — Little Venice, little Sparta: The UAE’s statecraft meets the war on Iran – European Council on Foreign Relations
-  3. `link:https://doi.org/10.1177/01956574261473489` — Can Domestic Carbon Markets Buffer the Impact of EU Border Taxes? A Stochastic Frontier Analysis of Decarbonization Costs in India’s Energy-Intensive Industries
-  4. `link:https://digital-strategy.ec.europa.eu/en/activities/study-identify-digital-technologies-next-eu-research-and-innovation-fund` — Study to identify key strategic digital technologies for EU research and innovation funding beyond 2027
-  5. `link:https://doi.org/10.18288/1994-5124-2026-4-94-109` — Assessing the Impact of Sanctions on the Dynamics of the Russian Economy From 2022 to 2024
-  6. `link:https://news.google.com/rss/articles/CBMipwFBVV95cUxObk80WDhOeFJjTzFUMDY5dElGaGdHbFhkWElPSlZDU3psZWU2ZVpxNWRYejYzZHJhOHIwMWI0SEw3eHQ1N1BaMnVoOE5hbzBMRWJWbWF6RFpZOUFIN0l6ZUowSFZoaDMteW9aTFhNQkxPaHlqWDdDZlVYUHVGUTdwbnZIYnJKdjBUQXNJejRWRDBxNXVzNm1reVNTOGF6eW42NWViLWhTQQ?oc=5` — EIB and BNP Paribas sign €700 million grid guarantee deal
-  7. `historical:id:dc5698f4b73b354a` — The EU Anti-Coercion Instrument: Anti-What, Exactly? - CELIS Institute - Investment Screening | National Security | Competitiveness
-  8. `historical:id:c8968a614fe33647` — Economic nationalists, regional investment aid, and the stability of FDI-led growth in East Central Europe
-  - … plus 52 more in the package manifest
+- Current package: `worker-a-72864c47788f`
+- Assigned unresolved records: **36**
+  1. `link:https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Trade.pdf` — Trade and connectivity in the Europe-Gulf strategic partnership
+  2. `link:https://doi.org/10.1080/09654313.2026.2684528` — Technological diversification through global value chains in European regions
+  3. `link:https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Investment.pdf` — The strategic rationale for closer investment ties between Europe and the Gulf
+  4. `link:https://doi.org/10.1080/00343404.2026.2681659` — The geography of artificial intelligence in European regions: innovation, exposure and use
+  5. `link:https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Energy.pdf` — How Europe and the Gulf can unite behind an energy-transition agenda
+  6. `link:https://www.atlanticcouncil.org/wp-content/uploads/2026/09/Europe-Gulf-Forum-Policy-Brief-Defense-1.pdf` — Three principles to guide European-Gulf defense cooperation
+  7. `link:https://doi.org/10.1007/s00168-026-01555-x` — The role of twin skills in attracting FDI: evidence from European regions
+  8. `link:https://doi.org/10.1016/j.glt.2026.06.001` — Agricultural sustainable development goals in the EU: The role of global value chains
+  - … plus 28 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-99d853700bb3`
@@ -50,3 +50,9 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   4. `link:https://doi.org/10.1080/09662839.2026.2700180` — Institutionalising defence production: reconceptualising the role of institutions and states in European defence industrial policy — recovery attempt 2/3
   5. `link:https://doi.org/10.1177/17816858261489016` — European autonomy, competitiveness and security in the new space era — recovery attempt 2/3
   6. `link:https://doi.org/10.1080/09662839.2026.2700178` — European arms production: A re-conceptualisation of the defence technological and industrial base, industrial policy and hybrid governance — recovery attempt 2/3
+
+## Terminally dropped after failed scans
+
+These records no longer consume automatic Deep Scan slots and are excluded from active reasoning after three failed attempts. Re-open one only by explicitly resetting its work-state entry after materially new evidence becomes available.
+
+- `link:https://doi.org/10.1093/ser/mwag003` — **Green monetary transitions? Central banking and climate finance in Europe and China** — attempts: 3/3 — Socio-Economic Review — 2026-07-09 — Identity was verified, but substantive evidence remained inaccessible or too thin after the required recovery search. — https://doi.org/10.1093/ser/mwag003
