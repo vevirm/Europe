@@ -6,12 +6,12 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **873** (Main **511** + Historical **362**)
-- Automatic queue still needing V2 verification: **827** (Main **174** + Historical **653**)
-- Currently assigned to workers: **102** (Main **22** + Historical **80**)
-- Bounded access-recovery retries still eligible: **218**
+- Authoritative V2 verified: **931** (Main **513** + Historical **418**)
+- Automatic queue still needing V2 verification: **769** (Main **172** + Historical **597**)
+- Currently assigned to workers: **78** (Main **20** + Historical **58**)
+- Bounded access-recovery retries still eligible: **220**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **725**
+- Automatic queue pending and not yet assigned: **691**
 
 ## Worker lanes
 
@@ -29,17 +29,17 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-99d853700bb3`
-- Assigned unresolved records: **60**
-  1. `historical:id:88559fe23454a413` — The EU's Autonomous Sanctions Against Russia in 2014 Versus 2022: How Does the Bureaucratic Politics Model Bring in the Institutional ‘Balance of Power’ Within the EU?
-  2. `historical:id:80eb832655ab55c6` — Reducing supply risks for critical raw materials – CEPS
-  3. `historical:id:8fb9f913c823aa60` — The European Union’s Anti-Coercion Instrument – A Closer Look at Decision-Making under a Politicized Trade Instrument - CELIS Institute - Investment Screening | National Security | Competitiveness
-  4. `historical:id:9ecab69560a01cc0` — What's at Stake in the EU Elections: Industrial Policy
-  5. `historical:id:695fc8261096919a` — Reassessing the Impact of the Single Market and Its Ability to Help Build Strategic Autonomy
-  6. `historical:id:6c5e8252ab75fa85` — Institut Jacques Delors - Strengthening EU green sovereignty through the Critical Raw Materials Act
-  7. `historical:id:3c6350161fe3195c` — Green transition, single market and EU’s open strategic autonomy: the impact of state aid
-  8. `historical:id:ba386ea6bfad7db0` — Geopolitics and Trade: German Economists Experts' Assessment of Dependencies on China | ifo Institute
-  - … plus 52 more in the package manifest
+- Current package: `worker-b-866c3aaf0914`
+- Assigned unresolved records: **36**
+  1. `historical:id:d47b3c10f2ea639f` — Geopolitics of the green transition and improving EU’s economic security
+  2. `historical:id:1beafac8cb12a4af` — France 2024 Digital Decade Country Report | Shaping Europe’s digital future
+  3. `historical:id:ce044422ec4b9617` — Foreign Subsidies Instrument - BusinessEurope comments on the draft implementing regulation
+  4. `historical:id:15ab47a803eb4167` — Finland 2025 Digital Decade Country Report | Shaping Europe’s digital future
+  5. `historical:id:f2b04839b1a9ca0a` — Finland 2024 Digital Decade Country Report | Shaping Europe’s digital future
+  6. `historical:id:414317a08015bf8c` — Evaluation and possible revision of the current EU framework for the screening of investments into the Union - Letter from Markus J. Beyrer to Valdis Dombrovskis
+  7. `historical:id:2a5bccb5c473c329` — European Critical Raw Materials Act
+  8. `historical:id:6952f3749b24463e` — Estonia 2025 Digital Decade Country Report | Shaping Europe’s digital future
+  - … plus 28 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
