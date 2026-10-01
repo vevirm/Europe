@@ -7,11 +7,11 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **1003** (Main **527** + Historical **476**)
-- Automatic queue still needing V2 verification: **721** (Main **158** + Historical **563**)
+- Automatic queue still needing V2 verification: **728** (Main **165** + Historical **563**)
 - Currently assigned to workers: **78** (Main **6** + Historical **72**)
 - Bounded access-recovery retries still eligible: **220**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **643**
+- Automatic queue pending and not yet assigned: **650**
 
 ## Worker lanes
 
