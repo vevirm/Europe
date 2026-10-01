@@ -6,26 +6,26 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1003** (Main **527** + Historical **476**)
-- Automatic queue still needing V2 verification: **728** (Main **165** + Historical **563**)
-- Currently assigned to workers: **78** (Main **6** + Historical **72**)
-- Bounded access-recovery retries still eligible: **220**
+- Authoritative V2 verified: **1037** (Main **527** + Historical **510**)
+- Automatic queue still needing V2 verification: **694** (Main **165** + Historical **529**)
+- Currently assigned to workers: **78** (Main **13** + Historical **65**)
+- Bounded access-recovery retries still eligible: **222**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **650**
+- Automatic queue pending and not yet assigned: **616**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-3c304429875d`
+- Current package: `worker-a-e8fc5ec3b4b8`
 - Assigned unresolved records: **36**
-  1. `historical:id:7006a14c63116431` — A Conversation with Kyriakos Pierrakakis : Competitiveness, Investment and Resilience: Europe’s Economic Future in a Fragmented World - Institut Jacques Delors
-  2. `historical:id:4a0cea8a5f3dab21` — Revisiting energy security in turbulent times - Egmont Institute
-  3. `historical:id:a976e9a09aec9a79` — Gulliver Unchained? Europe’s Changing Relations with Oil and Gas Producers - Egmont Institute
-  4. `historical:id:ae831ab770fead22` — EU Dependence on Russian gas: There is no short-term alternative - Egmont Institute
-  5. `historical:id:622afe532fddcd84` — When stars align: Leveraging European defence budgets to drive a dual-use tech boom
-  6. `historical:id:a6ede7b145800daa` — Reimagining European energy security: Towards a whole-of-system approach
-  7. `historical:id:2911c35b8b8ffc22` — Playing games with energy security?
-  8. `historical:id:249ca8b8cd62520e` — The US pause on LNG terminals will not put Europe at risk
+  1. `link:https://doi.org/10.1080/13563467.2026.2737133` — From Pontes to Appia, but not to an Agorá: strategic hedging and infrastructural geoeconomics in the ECB's wCBDC initiative
+  2. `link:https://ecipe.org/publications/6g-wake-up-call-for-europe/#_ftnref1` — The 6G Wake-up Call for Europe: Reforms Urgently Needed to Sustain Europe’s Telecommunications Leadership
+  3. `link:https://doi.org/10.1016/j.lanepe.2026.101778` — Rebalancing innovation, affordability, and access for orphan drugs in the European Union
+  4. `link:https://doi.org/10.1111/agec.70148` — The Impact of the EU Common Agricultural Policy on Regional Agricultural Productivity
+  5. `link:https://doi.org/10.1016/j.crsus.2026.100836` — Interannual weather variability reshapes Europe’s cost-optimal hydrogen supply strategy
+  6. `link:https://doi.org/10.1177/1087724x261471186` — Post-Brexit Import Control Infrastructure: Analysing the National Border Control Post Programme and its Impact on Ports Around Great Britain
+  7. `link:https://doi.org/10.1080/00396338.2026.2730899` — Canada: Off the Menu?
+  8. `historical:id:5ca9ab64874aebce` — Analysis of Developments in EU Capital Flows in the Global Context (2021) – CEPS
   - … plus 28 more in the package manifest
 
 ### Worker B
