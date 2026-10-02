@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-deep-scan-work-state-v1",
-  "updated_at": "2026-10-02T12:14:16Z",
+  "updated_at": "2026-10-02T12:16:58Z",
   "lanes": {
     "A": {
       "target_size": 36,
@@ -90,54 +90,45 @@
     "B": {
       "target_size": 36,
       "assigned": [
-        "historical:id:f68f8cbc3fa26d95",
-        "historical:id:9a4d2017dd999a02",
-        "historical:id:c8ae8635441e9f45",
-        "historical:id:2a72a684c174cd12",
-        "historical:id:f6eb1edca5fe2bc9",
-        "historical:id:3708dadbe84f22b7",
-        "historical:id:7f3dbfa63e0cfbe7",
-        "historical:id:2ec5741eef07ddfb",
-        "historical:id:f1127532083c7859",
-        "historical:id:9b46212c8de85baa",
-        "historical:id:99b2ecc1e4922ded",
-        "historical:id:f6f3941f4fa8385f",
-        "historical:id:4dbd66b4318033b2",
-        "historical:id:c25bd3cbc061a286",
-        "historical:id:4520150e3d2d3353",
-        "historical:id:1a2ba11e87e8055f",
-        "historical:id:5a59d8510049e18e",
-        "historical:id:903a466a3a717fb1",
-        "historical:id:d5b4751b4d4b374c",
-        "historical:id:b152ec1817b7d938",
-        "historical:id:b04b27fdbb6fdc93",
-        "historical:id:11d9ea14e1baebae",
-        "historical:id:c86416dab28975c3",
-        "historical:id:e822daf27eed5c39",
-        "historical:id:c2794dc8eed3a10a",
-        "historical:id:55f0b5661716622d",
-        "historical:id:de4c38494250228c",
-        "historical:id:3a8d50adcc94e8df",
-        "historical:id:d604d723ff342ddb",
-        "historical:id:201b4b0199551f0b",
-        "historical:id:05650cb90588e1cb",
-        "historical:id:92bd6ff2f2270074",
-        "historical:id:7261ccd03601e698",
-        "historical:id:0e38ff24f282c0c9",
-        "historical:id:5e88103a1a6a0724",
-        "historical:id:81208025c31d7bb4",
-        "historical:id:64085dedf44f41e4",
-        "historical:id:39ef8e6b80fe90cf",
-        "historical:id:38f3a1e60f3979a0",
-        "link:https://doi.org/10.1080/23745118.2026.2655142",
-        "historical:id:9e95ef4f053c19ec",
-        "historical:id:8f0d9a232522df6e",
-        "historical:id:b4a8661a16beaabd",
-        "historical:id:9b6645ed62de9077"
+        "historical:id:b5f69d8b6041f4e0",
+        "historical:id:66f19100fb976326",
+        "historical:id:793989ef48865f7b",
+        "historical:id:a4ff9ac2ff0bc41c",
+        "historical:id:fe143829cd1df8a5",
+        "historical:id:531ce5b68383dea2",
+        "historical:id:bdbb295000ade531",
+        "historical:id:0063fada1e94cb03",
+        "historical:id:ca79b6c5a8c3ada4",
+        "historical:id:81015110fa4552ea",
+        "historical:id:82d1dcba1878ddb4",
+        "historical:id:b0554359ea27ff9c",
+        "historical:id:5e83017dae2d8853",
+        "historical:id:4504781eca8fcb9b",
+        "historical:id:56087313384f16b3",
+        "historical:id:f1a78ad8ec19a12b",
+        "historical:id:3292b6b8c09d274c",
+        "historical:id:d339d0d900da48e0",
+        "historical:id:7fb91b3a7d235106",
+        "historical:id:b89818031fd714ae",
+        "historical:id:45fc333b36b4d97b",
+        "historical:id:fbe851df28b497b6",
+        "historical:id:b9768257cccc2480",
+        "historical:id:4e342d23da20af7e",
+        "historical:id:a7aee623cd41df90",
+        "historical:id:e6673ae0db83d324",
+        "historical:id:baae0e51b0de7e86",
+        "historical:id:3fbdf7ede7f49927",
+        "historical:id:2b087fedfb9c59da",
+        "historical:id:3c71fdf34f279c1f",
+        "historical:id:4df8d18153c397c3",
+        "historical:id:c3cc9780600df86b",
+        "historical:id:e3b09c5be1ad5a44",
+        "historical:id:2276c36f03bb313a",
+        "historical:id:e052f0ec2502eb50",
+        "historical:id:bc85425a6c67e719"
       ],
-      "current_package_id": "worker-b-83f2b59de0bf",
+      "current_package_id": "worker-b-6cf3818fc76e",
       "package_history": [
-        "worker-b-20260925T112655Z-046eea0afde3",
         "worker-b-20260925T112957Z-a4a0383b3860",
         "worker-b-20260925T123408Z-a4a0383b3860",
         "worker-b-20260925T123905Z-a4a0383b3860",
@@ -176,7 +167,8 @@
         "worker-b-97a9ce319daa",
         "worker-b-4f3865965194",
         "worker-b-c0d843c5704a",
-        "worker-b-83f2b59de0bf"
+        "worker-b-83f2b59de0bf",
+        "worker-b-6cf3818fc76e"
       ]
     },
     "SINGLE": {
@@ -2874,35 +2866,41 @@
       "url": "https://doi.org/10.1080/23745118.2026.2655142",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-09-25T09:58:22Z",
       "last_package_id": "worker-b-83f2b59de0bf",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-09-26T21:37:51Z",
-      "last_recovery_package_id": "worker-b-8e7eccd00b73",
-      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,exact_title,title_author_year",
+      "recovery_attempts": 2,
+      "last_recovery_at": "2026-10-02T12:15:39Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,official_publisher_or_repository,title_author_year",
       "verification": {
         "identity_verified": true,
         "evidence_depth": "substantive_primary_after_recovery",
         "retrieval_attempts": [
           {
             "step": "supplied_url",
-            "outcome": "partial",
-            "note": "Supplied URL/DOI was checked for the matching work: https://doi.org/10.1080/23745118.2026.2655142."
+            "outcome": "success",
+            "note": "Inspected https://doi.org/10.1080/23745118.2026.2655142; package material matched the claimed work and contained substantive text."
           },
           {
             "step": "doi",
             "outcome": "success",
-            "note": "DOI search/resolution matched the title and publication metadata: https://doi.org/10.1080/23745118.2026.2655142."
+            "note": "Resolved DOI 10.1080/23745118.2026.2655142; bibliographic identity matched the supplied record."
           },
           {
-            "step": "official_publisher_or_repository",
+            "step": "exact_title",
             "outcome": "success",
-            "note": "Recovered substantive matching material from https://www.tandfonline.com/doi/full/10.1080/23745118.2026.2655142."
+            "note": "Exact-title recovery located https://www.tandfonline.com/doi/full/10.1080/23745118.2026.2655142, matching the claimed work/development."
           }
         ],
         "recovered_sources": [
+          {
+            "kind": "publisher_or_official_web",
+            "url": "https://www.econstor.eu/handle/10419/340882",
+            "title": "Exporting the European third way: strategic narratives of a value-based digital order",
+            "evidence_used": true
+          },
           {
             "kind": "publisher_full_text",
             "url": "https://www.tandfonline.com/doi/full/10.1080/23745118.2026.2655142",
@@ -2910,7 +2908,7 @@
             "evidence_used": true
           }
         ],
-        "verification_note": "Identity and substantive evidence were checked against the recovered primary/publisher material; scanner prose was treated only as a navigation aid."
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
       },
       "recovery_history": [
         {
@@ -2947,6 +2945,48 @@
               }
             ],
             "verification_note": "Identity and substantive evidence were checked against the recovered primary/publisher material; scanner prose was treated only as a navigation aid."
+          }
+        },
+        {
+          "attempt": 2,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:39Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected https://doi.org/10.1080/23745118.2026.2655142; package material matched the claimed work and contained substantive text."
+              },
+              {
+                "step": "doi",
+                "outcome": "success",
+                "note": "Resolved DOI 10.1080/23745118.2026.2655142; bibliographic identity matched the supplied record."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Exact-title recovery located https://www.tandfonline.com/doi/full/10.1080/23745118.2026.2655142, matching the claimed work/development."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_web",
+                "url": "https://www.econstor.eu/handle/10419/340882",
+                "title": "Exporting the European third way: strategic narratives of a value-based digital order",
+                "evidence_used": true
+              },
+              {
+                "kind": "publisher_full_text",
+                "url": "https://www.tandfonline.com/doi/full/10.1080/23745118.2026.2655142",
+                "title": "Exporting the European third way: strategic narratives of a value-based digital order",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
           }
         }
       ]
@@ -22318,10 +22358,72 @@
       "url": "https://egmontinstitute.be/the-eu-and-china-sanctions-signals-and-interests/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:37Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Inspected https://egmontinstitute.be/the-eu-and-china-sanctions-signals-and-interests/; the supplied route contained no substantive text, so recovery continued."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located https://egmontinstitute.be/the-eu-and-china-sanctions-signals-and-interests/, matching the claimed work/development."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://egmontinstitute.be/the-eu-and-china-sanctions-signals-and-interests/",
+            "title": "The EU and China: sanctions, signals, and interests",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:37Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "limited",
+                "note": "Inspected https://egmontinstitute.be/the-eu-and-china-sanctions-signals-and-interests/; the supplied route contained no substantive text, so recovery continued."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Exact-title recovery located https://egmontinstitute.be/the-eu-and-china-sanctions-signals-and-interests/, matching the claimed work/development."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_full_text",
+                "url": "https://egmontinstitute.be/the-eu-and-china-sanctions-signals-and-interests/",
+                "title": "The EU and China: sanctions, signals, and interests",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+          }
+        }
+      ]
     },
     "historical:id:9a4d2017dd999a02": {
       "title": "Strengthened EU export control rules kick in",
@@ -22330,10 +22432,62 @@
       "url": "https://www.eeas.europa.eu/delegations/japan/strengthened-eu-export-control-rules-kick_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:37Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected https://www.eeas.europa.eu/delegations/japan/strengthened-eu-export-control-rules-kick_en; package material matched the claimed work and contained substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_web",
+            "url": "https://www.eeas.europa.eu/delegations/japan/strengthened-eu-export-control-rules-kick_en",
+            "title": "Strengthened EU export control rules kick in",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:37Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected https://www.eeas.europa.eu/delegations/japan/strengthened-eu-export-control-rules-kick_en; package material matched the claimed work and contained substantive text."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_web",
+                "url": "https://www.eeas.europa.eu/delegations/japan/strengthened-eu-export-control-rules-kick_en",
+                "title": "Strengthened EU export control rules kick in",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+          }
+        }
+      ]
     },
     "historical:id:f6eb1edca5fe2bc9": {
       "title": "Security Relations Between the EU and ASEAN",
@@ -22342,10 +22496,12 @@
       "url": "https://doi.org/10.1007/978-3-030-69966-6_14",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:3708dadbe84f22b7": {
       "title": "Secondary sanctions and multilateralism – the way ahead - Egmont Institute",
@@ -22354,10 +22510,72 @@
       "url": "https://egmontinstitute.be/secondary-sanctions-and-multilateralism-the-way-ahead/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:38Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Inspected https://egmontinstitute.be/secondary-sanctions-and-multilateralism-the-way-ahead/; the supplied route contained no substantive text, so recovery continued."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located https://www.egmontinstitute.be/app/uploads/2021/05/EPB70.pdf?type=pdf, matching the claimed work/development."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.egmontinstitute.be/app/uploads/2021/05/EPB70.pdf?type=pdf",
+            "title": "Secondary sanctions and multilateralism – the way ahead",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:38Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "limited",
+                "note": "Inspected https://egmontinstitute.be/secondary-sanctions-and-multilateralism-the-way-ahead/; the supplied route contained no substantive text, so recovery continued."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Exact-title recovery located https://www.egmontinstitute.be/app/uploads/2021/05/EPB70.pdf?type=pdf, matching the claimed work/development."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_full_text",
+                "url": "https://www.egmontinstitute.be/app/uploads/2021/05/EPB70.pdf?type=pdf",
+                "title": "Secondary sanctions and multilateralism – the way ahead",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+          }
+        }
+      ]
     },
     "historical:id:99b2ecc1e4922ded": {
       "title": "EU–China Security Relations",
@@ -22366,10 +22584,12 @@
       "url": "https://doi.org/10.1007/978-3-030-69966-6_16",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:f6f3941f4fa8385f": {
       "title": "EU–Asia Security Relations in a Global Context: Geoeconomics and Geopolitics",
@@ -22378,10 +22598,12 @@
       "url": "https://doi.org/10.1007/978-3-030-69966-6_2",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:5a59d8510049e18e": {
       "title": "EU Security Structure, Key for Strategic Autonomy– A proposal",
@@ -22390,10 +22612,12 @@
       "url": "https://doi.org/10.5771/9783748929796-127",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:903a466a3a717fb1": {
       "title": "EU Cybersecurity Strategy for the Digital Decade: Questions and Answers",
@@ -22402,10 +22626,12 @@
       "url": "https://digital-strategy.ec.europa.eu/en/faqs/eu-cybersecurity-strategy-digital-decade-questions-and-answers",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:b152ec1817b7d938": {
       "title": "Commission presents an updated in-depth review of Europe's strategic dependencies",
@@ -22414,10 +22640,12 @@
       "url": "https://single-market-economy.ec.europa.eu/news/commission-presents-updated-depth-review-europes-strategic-dependencies-2022-02-23_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:e822daf27eed5c39": {
       "title": "A New Arctic Strategy for the EU",
@@ -22426,10 +22654,12 @@
       "url": "https://www.swp-berlin.org/publikation/a-new-arctic-strategy-for-the-eu",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:c2794dc8eed3a10a": {
       "title": "Forging their path in the Brussels bubble? Civil society resistance within the domestic advisory groups created under the EU trade agreements",
@@ -22438,10 +22668,12 @@
       "url": "https://doi.org/10.1080/09557571.2020.1855110",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:de4c38494250228c": {
       "title": "The European space sector as an enabler of EU strategic autonomy",
@@ -22450,10 +22682,84 @@
       "url": "https://www.iss.europa.eu/publications/analysis/european-space-sector-enabler-eu-strategic-autonomy",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:38Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected https://www.iss.europa.eu/publications/analysis/european-space-sector-enabler-eu-strategic-autonomy; package material matched the claimed work and contained substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located https://op.europa.eu/en/publication-detail/-/publication/a125a1db-5ebd-11eb-b487-01aa75ed71a1/language-en, matching the claimed work/development."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_web",
+            "url": "https://www.iss.europa.eu/publications/analysis/european-space-sector-enabler-eu-strategic-autonomy",
+            "title": "The European space sector as an enabler of EU strategic autonomy",
+            "evidence_used": true
+          },
+          {
+            "kind": "official_analysis",
+            "url": "https://op.europa.eu/en/publication-detail/-/publication/a125a1db-5ebd-11eb-b487-01aa75ed71a1/language-en",
+            "title": "The European space sector as an enabler of EU strategic autonomy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:38Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected https://www.iss.europa.eu/publications/analysis/european-space-sector-enabler-eu-strategic-autonomy; package material matched the claimed work and contained substantive text."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Exact-title recovery located https://op.europa.eu/en/publication-detail/-/publication/a125a1db-5ebd-11eb-b487-01aa75ed71a1/language-en, matching the claimed work/development."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_web",
+                "url": "https://www.iss.europa.eu/publications/analysis/european-space-sector-enabler-eu-strategic-autonomy",
+                "title": "The European space sector as an enabler of EU strategic autonomy",
+                "evidence_used": true
+              },
+              {
+                "kind": "official_analysis",
+                "url": "https://op.europa.eu/en/publication-detail/-/publication/a125a1db-5ebd-11eb-b487-01aa75ed71a1/language-en",
+                "title": "The European space sector as an enabler of EU strategic autonomy",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+          }
+        }
+      ]
     },
     "historical:id:92bd6ff2f2270074": {
       "title": "Discursive continuity and change in the time of Covid-19: the case of EU cybersecurity policy",
@@ -22462,10 +22768,12 @@
       "url": "https://doi.org/10.1080/07036337.2020.1853122",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:7261ccd03601e698": {
       "title": "Chinese whispers: COVID-19, global supply chains in essential goods, and public policy",
@@ -22474,10 +22782,12 @@
       "url": "https://doi.org/10.1057/s42214-020-00075-5",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:0e38ff24f282c0c9": {
       "title": "How many hands to make sanctions work? Comparing EU and US sanctioning efforts",
@@ -22486,10 +22796,12 @@
       "url": "https://doi.org/10.1016/j.euroecorev.2020.103595",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:81208025c31d7bb4": {
       "title": "Playing the enemies: Belarus finds in between EU and Russian sanctions regimes",
@@ -22498,10 +22810,12 @@
       "url": "https://doi.org/10.24241/rcai.2020.125.2.113/en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:39Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:8f0d9a232522df6e": {
       "title": "Russian Foreign Energy Policy Towards the European Union",
@@ -22510,10 +22824,112 @@
       "url": "https://doi.org/10.18192/potentia.v11i0.4568",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T11:59:25Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:39Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Identity was substantiated, but accessible substantive evidence remained insufficient after the required recovery ladder.",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "The University of Ottawa OJS page confirmed title, author and a substantive abstract."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.18192/potentia.v11i0.4568 resolved to Riley Black’s article."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search confirmed the same work and abstract."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title plus Riley Black and 2020 matched the Potentia publication."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "limited",
+            "note": "The journal landing page was accessible but a legitimate full-text article copy was not recovered."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "limited",
+            "note": "Broader DOI/PDF searching found citations and abstract mirrors, but no substantive full text suitable for authoritative verification."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "identity_source",
+            "url": "https://uottawa.scholarsportal.info/ojs/index.php/potentia/article/view/4568",
+            "title": "Russian Foreign Energy Policy Towards the European Union",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Identity verified, but substantive evidence remained inaccessible or too thin for an authoritative admission judgement."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:39Z",
+          "reason": "Identity was substantiated, but accessible substantive evidence remained insufficient after the required recovery ladder.",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "The University of Ottawa OJS page confirmed title, author and a substantive abstract."
+              },
+              {
+                "step": "doi",
+                "outcome": "success",
+                "note": "DOI 10.18192/potentia.v11i0.4568 resolved to Riley Black’s article."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Exact-title search confirmed the same work and abstract."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "success",
+                "note": "Title plus Riley Black and 2020 matched the Potentia publication."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "limited",
+                "note": "The journal landing page was accessible but a legitimate full-text article copy was not recovered."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "limited",
+                "note": "Broader DOI/PDF searching found citations and abstract mirrors, but no substantive full text suitable for authoritative verification."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "identity_source",
+                "url": "https://uottawa.scholarsportal.info/ojs/index.php/potentia/article/view/4568",
+                "title": "Russian Foreign Energy Policy Towards the European Union",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "Identity verified, but substantive evidence remained inaccessible or too thin for an authoritative admission judgement."
+          }
+        }
+      ]
     },
     "historical:id:9726206567bb5144": {
       "title": "Andrea Biondi, Michael Bowsher, Christopher Yukins, Luca Rubini and Gabriele Carovano, “The EU Gives Foreign Subsidies Its Best Shot”: One Take on White Paper on Levelling the Playing Field as Regards Foreign Subsidies - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -22713,7 +23129,11 @@
       "date": "2020-02-13",
       "url": "https://economy-finance.ec.europa.eu/calls-tenders/pre-information-notice-low-value-contract-study-explaining-low-level-investment-slovenia_en",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:a4ff9ac2ff0bc41c": {
       "title": "A chance for leadership: German foreign policy after the killing of Qassem Soleimani – European Council on Foreign Relations",
@@ -22721,7 +23141,11 @@
       "date": "2020-01-22",
       "url": "https://ecfr.eu/article/commentary_a_chance_for_leadership_german_foreign_policy_after_soleimani/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:fe143829cd1df8a5": {
       "title": "“An example of Europe’s strategic autonomy”: Commissioner Breton announces the successful Sentinel-6 launch",
@@ -22729,7 +23153,11 @@
       "date": "2020-01-01",
       "url": "https://defence-industry-space.ec.europa.eu/example-europes-strategic-autonomy-commissioner-breton-announces-successful-sentinel-6-launch-2020-11-22_en",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:531ce5b68383dea2": {
       "title": "Why European strategic autonomy matters",
@@ -22737,7 +23165,11 @@
       "date": "2020-01-01",
       "url": "https://www.eeas.europa.eu/eeas/why-european-strategic-autonomy-matters_en",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:b0554359ea27ff9c": {
       "title": "Reset transatlantic trade through cooperation on technology - Egmont Institute",
@@ -22745,7 +23177,11 @@
       "date": "2020-01-01",
       "url": "https://egmontinstitute.be/reset-transatlantic-trade-through-cooperation-on-technology/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:5e83017dae2d8853": {
       "title": "Rare earth elements, permanent magnets, and motors",
@@ -22753,7 +23189,11 @@
       "date": "2020-01-01",
       "url": "https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/rare-earth-elements-permanent-magnets-and-motors_en",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:4504781eca8fcb9b": {
       "title": "Quantum Technologies",
@@ -22761,7 +23201,11 @@
       "date": "2020-01-01",
       "url": "https://defence-industry-space.ec.europa.eu/eu-space/research-development-and-innovation/quantum-technologies_en",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:d339d0d900da48e0": {
       "title": "Joint Task Force – JTF Evolution: powering strategic autonomy in space",
@@ -22769,7 +23213,11 @@
       "date": "2020-01-01",
       "url": "https://defence-industry-space.ec.europa.eu/joint-task-force-jtf-evolution-powering-strategic-autonomy-space-2023-05-10_en",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:45fc333b36b4d97b": {
       "title": "European Raw Materials Alliance",
@@ -22777,7 +23225,11 @@
       "date": "2020-01-01",
       "url": "https://single-market-economy.ec.europa.eu/industry/industrial-alliances/european-raw-materials-alliance_en",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:fbe851df28b497b6": {
       "title": "Economic analysis",
@@ -22785,7 +23237,11 @@
       "date": "2020-01-01",
       "url": "https://policy.trade.ec.europa.eu/analysis-and-assessment/economic-analysis_en",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:a7aee623cd41df90": {
       "title": "EU services trade liberalization and economic regulation: Complements or substitutes?",
@@ -22793,7 +23249,11 @@
       "date": "2020-01-01",
       "url": "https://doi.org/10.1007/s11558-018-9333-4",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:e6673ae0db83d324": {
       "title": "Commission publishes final SIA and Position Paper on EU-Mercosur trade agreement",
@@ -22801,7 +23261,11 @@
       "date": "2020-01-01",
       "url": "https://policy.trade.ec.europa.eu/news/commission-publishes-final-sia-and-position-paper-eu-mercosur-trade-agreement-2021-03-29_en",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:baae0e51b0de7e86": {
       "title": "Commission proposes new regulation to address distortions caused by foreign subsidies in the Single Market",
@@ -22809,7 +23273,11 @@
       "date": "2020-01-01",
       "url": "https://single-market-economy.ec.europa.eu/news/commission-proposes-new-regulation-address-distortions-caused-foreign-subsidies-single-market-2021-05-05_en",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:3fbdf7ede7f49927": {
       "title": "Commission adopts white paper on foreign subsidies in the single market",
@@ -22817,7 +23285,11 @@
       "date": "2020-01-01",
       "url": "https://single-market-economy.ec.europa.eu/news/commission-adopts-white-paper-foreign-subsidies-single-market-2020-06-17_en",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:2b087fedfb9c59da": {
       "title": "Brexit: A Pragmatic Trade Agreement?",
@@ -22825,7 +23297,11 @@
       "date": "2020-01-01",
       "url": "https://www.swp-berlin.org/publikation/brexit-a-pragmatic-trade-agreement",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:3c71fdf34f279c1f": {
       "title": "A More Robust Russia Policy for the EU",
@@ -22833,7 +23309,11 @@
       "date": "2020-01-01",
       "url": "https://www.swp-berlin.org/publikation/a-more-robust-russia-policy-for-the-eu",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:4df8d18153c397c3": {
       "title": "Daniel Fiott, Making geopolitical sense of the EU’s defence industrial policy - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -22841,7 +23321,11 @@
       "date": "2019-12-29",
       "url": "https://www.celis.institute/celis-content/daniel-fiott-making-geopolitical-sense-of-the-eus-defence-industrial-policy/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:bc85425a6c67e719": {
       "title": "German Federal Ministry for Economic Affairs and Energy report: Industrial Strategy 2030 Guidelines for a German and European industrial policy, November 2019 - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -22849,7 +23333,11 @@
       "date": "2019-11-29",
       "url": "https://www.celis.institute/celis-content/german-federal-ministry-for-economic-affairs-and-energy-report-industrial-strategy-2030-guidelines-for-a-german-and-european-industrial-policy-november-2019/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:0c48320e2b8b0468": {
       "title": "Continental drift? - Transatlantic economic relations in turbulent times | Bank for International Settlements",
@@ -27759,10 +28247,12 @@
       "url": "https://doi.org/10.1007/978-3-030-69966-6_15",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:9b46212c8de85baa": {
       "title": "Hydrogen and decarbonised gas package - BusinessEurope reply to the 'gas networks' consultation",
@@ -27771,10 +28261,12 @@
       "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2021-06-18_gas_networks_-_reply_to_consultation-c7d-1.pdf",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:4520150e3d2d3353": {
       "title": "EU migration and asylum policy: a fresh start? - Institut Jacques Delors",
@@ -27783,10 +28275,62 @@
       "url": "https://institutdelors.eu/en/evenements/eu-migration-and-asylum-policy-a-fresh-start/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:38Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected https://institutdelors.eu/en/evenements/eu-migration-and-asylum-policy-a-fresh-start/; package material matched the claimed work and contained substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_web",
+            "url": "https://institutdelors.eu/en/evenements/eu-migration-and-asylum-policy-a-fresh-start/",
+            "title": "EU migration and asylum policy: a fresh start? - Institut Jacques Delors",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:38Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected https://institutdelors.eu/en/evenements/eu-migration-and-asylum-policy-a-fresh-start/; package material matched the claimed work and contained substantive text."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_web",
+                "url": "https://institutdelors.eu/en/evenements/eu-migration-and-asylum-policy-a-fresh-start/",
+                "title": "EU migration and asylum policy: a fresh start? - Institut Jacques Delors",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+          }
+        }
+      ]
     },
     "historical:id:d5b4751b4d4b374c": {
       "title": "Czech Republic: Introduction of new FDI screening regime - Global Trade Alert",
@@ -27795,10 +28339,62 @@
       "url": "https://globaltradealert.org/state-act/47424-czech-republic-introduction-of-new-fdi-screening-regime/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:38Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected https://globaltradealert.org/state-act/47424-czech-republic-introduction-of-new-fdi-screening-regime/; package material matched the claimed work and contained substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_web",
+            "url": "https://globaltradealert.org/state-act/47424-czech-republic-introduction-of-new-fdi-screening-regime/",
+            "title": "Czech Republic: Introduction of new FDI screening regime - Global Trade Alert",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:38Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected https://globaltradealert.org/state-act/47424-czech-republic-introduction-of-new-fdi-screening-regime/; package material matched the claimed work and contained substantive text."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_web",
+                "url": "https://globaltradealert.org/state-act/47424-czech-republic-introduction-of-new-fdi-screening-regime/",
+                "title": "Czech Republic: Introduction of new FDI screening regime - Global Trade Alert",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+          }
+        }
+      ]
     },
     "historical:id:b04b27fdbb6fdc93": {
       "title": "Breaking the law of opposite effects: Europe’s Strategic Autonomy and the revived Transatlantic Partnership - Egmont Institute",
@@ -27807,10 +28403,72 @@
       "url": "https://egmontinstitute.be/breaking-the-law-of-opposite-effects-europes-strategic-autonomy-and-the-revived-transatlantic-partnership/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:38Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Inspected https://egmontinstitute.be/breaking-the-law-of-opposite-effects-europes-strategic-autonomy-and-the-revived-transatlantic-partnership/; the supplied route contained no substantive text, so recovery continued."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located https://egmontinstitute.be/breaking-the-law-of-opposite-effects-europes-strategic-autonomy-and-the-revived-transatlantic-partnership/, matching the claimed work/development."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://egmontinstitute.be/breaking-the-law-of-opposite-effects-europes-strategic-autonomy-and-the-revived-transatlantic-partnership/",
+            "title": "Breaking the law of opposite effects",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:38Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "limited",
+                "note": "Inspected https://egmontinstitute.be/breaking-the-law-of-opposite-effects-europes-strategic-autonomy-and-the-revived-transatlantic-partnership/; the supplied route contained no substantive text, so recovery continued."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Exact-title recovery located https://egmontinstitute.be/breaking-the-law-of-opposite-effects-europes-strategic-autonomy-and-the-revived-transatlantic-partnership/, matching the claimed work/development."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_full_text",
+                "url": "https://egmontinstitute.be/breaking-the-law-of-opposite-effects-europes-strategic-autonomy-and-the-revived-transatlantic-partnership/",
+                "title": "Breaking the law of opposite effects",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+          }
+        }
+      ]
     },
     "historical:id:3a8d50adcc94e8df": {
       "title": "Italy's China Card in EU-US Relations - The Diplomat - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -27819,10 +28477,84 @@
       "url": "https://www.celis.institute/celis-news/italys-china-card-in-eu-us-relations-the-diplomat/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:38Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected https://www.celis.institute/celis-news/italys-china-card-in-eu-us-relations-the-diplomat/; package material matched the claimed work and contained substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located https://thediplomat.com/2020/12/italys-china-card-in-eu-us-relations/, matching the claimed work/development."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_web",
+            "url": "https://www.celis.institute/celis-news/italys-china-card-in-eu-us-relations-the-diplomat/",
+            "title": "Italy's China Card in EU-US Relations - The Diplomat - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          },
+          {
+            "kind": "primary_article",
+            "url": "https://thediplomat.com/2020/12/italys-china-card-in-eu-us-relations/",
+            "title": "Italy’s China Card in EU-US Relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:38Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected https://www.celis.institute/celis-news/italys-china-card-in-eu-us-relations-the-diplomat/; package material matched the claimed work and contained substantive text."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Exact-title recovery located https://thediplomat.com/2020/12/italys-china-card-in-eu-us-relations/, matching the claimed work/development."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_web",
+                "url": "https://www.celis.institute/celis-news/italys-china-card-in-eu-us-relations-the-diplomat/",
+                "title": "Italy's China Card in EU-US Relations - The Diplomat - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                "evidence_used": true
+              },
+              {
+                "kind": "primary_article",
+                "url": "https://thediplomat.com/2020/12/italys-china-card-in-eu-us-relations/",
+                "title": "Italy’s China Card in EU-US Relations",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+          }
+        }
+      ]
     },
     "historical:id:201b4b0199551f0b": {
       "title": "Second acts: How Europe can renew the transatlantic partnership - European Council on Foreign Relations - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -27831,10 +28563,62 @@
       "url": "https://www.celis.institute/celis-news/second-acts-how-europe-can-renew-the-transatlantic-partnership-european-council-on-foreign-relations/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:38Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected https://www.celis.institute/celis-news/second-acts-how-europe-can-renew-the-transatlantic-partnership-european-council-on-foreign-relations/; package material matched the claimed work and contained substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_web",
+            "url": "https://www.celis.institute/celis-news/second-acts-how-europe-can-renew-the-transatlantic-partnership-european-council-on-foreign-relations/",
+            "title": "Second acts: How Europe can renew the transatlantic partnership - European Council on Foreign Relations - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:38Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected https://www.celis.institute/celis-news/second-acts-how-europe-can-renew-the-transatlantic-partnership-european-council-on-foreign-relations/; package material matched the claimed work and contained substantive text."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_web",
+                "url": "https://www.celis.institute/celis-news/second-acts-how-europe-can-renew-the-transatlantic-partnership-european-council-on-foreign-relations/",
+                "title": "Second acts: How Europe can renew the transatlantic partnership - European Council on Foreign Relations - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+          }
+        }
+      ]
     },
     "historical:id:08f6b68fe4abbdf9": {
       "title": "Calls for Chinese-Style Tech Industrial Policy Won’t Make Europe More Digital Sovereign",
@@ -27902,7 +28686,11 @@
       "date": "2020-02-18",
       "url": "https://ecfr.eu/article/commentary_europe_5g_and_munich_the_china_challenge_and_american_mission/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:793989ef48865f7b": {
       "title": "On 5G, Brussels is up to the job – European Council on Foreign Relations",
@@ -27910,7 +28698,11 @@
       "date": "2020-02-03",
       "url": "https://ecfr.eu/article/commentary_on_5g_brussels_is_up_to_the_job/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:82d1dcba1878ddb4": {
       "title": "Spain: Government announces new economic and FDI screening measures (COVID-19) - Global Trade Alert",
@@ -27918,7 +28710,11 @@
       "date": "2020-01-01",
       "url": "https://globaltradealert.org/state-act/46664-spain-government-announces-new-economic-and-fdi-screening-measures-covid-19/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:f1a78ad8ec19a12b": {
       "title": "Poland: Introduction of new FDI screening rules due to COVID-19 - Global Trade Alert",
@@ -27926,7 +28722,11 @@
       "date": "2020-01-01",
       "url": "https://globaltradealert.org/state-act/47305-poland-introduction-of-new-fdi-screening-rules-due-to-covid-19/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:3292b6b8c09d274c": {
       "title": "Joint statement by European business on the recast of the EU Regulation on Dual-Use Export Controls",
@@ -27934,7 +28734,11 @@
       "date": "2020-01-01",
       "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2020-01-29_dual-use_export_controls_-_joint_business_statement-5b6-1.pdf",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:7fb91b3a7d235106": {
       "title": "Germany: Government introduced tighter FDI Screening Regime - Global Trade Alert",
@@ -27942,7 +28746,11 @@
       "date": "2020-01-01",
       "url": "https://globaltradealert.org/state-act/47333-germany-government-introduced-tighter-fdi-screening-regime/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:4e342d23da20af7e": {
       "title": "EU-funded space R&I in previous EU Framework programmes for Research and Innovation",
@@ -27950,7 +28758,11 @@
       "date": "2020-01-01",
       "url": "https://defence-industry-space.ec.europa.eu/eu-space/research-development-and-innovation/eu-funded-space-ri-previous-eu-framework-programmes-research-and-innovation_en",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:c3cc9780600df86b": {
       "title": "INDUSTRIAL SUBSIDIES, STATE-OWNED ENTERPRISES AND MARKET DISTORTIONS – CEPS",
@@ -27958,7 +28770,11 @@
       "date": "2019-12-20",
       "url": "https://www.ceps.eu/industrial-subsidies-state-owned-enterprises-and-market-distortions/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:e3b09c5be1ad5a44": {
       "title": "Europe and China after Brexit: The 5G question – European Council on Foreign Relations",
@@ -27966,7 +28782,11 @@
       "date": "2019-12-19",
       "url": "https://ecfr.eu/article/commentary_europe_and_china_after_brexit_the_5g_question/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:e052f0ec2502eb50": {
       "title": "Could Germany make a geopolitical turn on financial policy? – European Council on Foreign Relations",
@@ -27974,7 +28794,11 @@
       "date": "2019-12-09",
       "url": "https://ecfr.eu/article/commentary_could_germany_make_a_geopolitical_turn_on_financial_policy/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:9c9a8dc4cbf78476": {
       "title": "Rare Earths in the Trade Dispute Between the US and China: A Déjà Vu",
@@ -28775,10 +29599,62 @@
       "url": "https://institutdelors.eu/en/evenements/eu-strategic-autonomy-and-trade-policy-in-a-post-covid-world/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:38Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected https://institutdelors.eu/en/evenements/eu-strategic-autonomy-and-trade-policy-in-a-post-covid-world/; package material matched the claimed work and contained substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_web",
+            "url": "https://institutdelors.eu/en/evenements/eu-strategic-autonomy-and-trade-policy-in-a-post-covid-world/",
+            "title": "EU strategic autonomy and trade policy in a post-Covid world - Institut Jacques Delors",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:38Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected https://institutdelors.eu/en/evenements/eu-strategic-autonomy-and-trade-policy-in-a-post-covid-world/; package material matched the claimed work and contained substantive text."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_web",
+                "url": "https://institutdelors.eu/en/evenements/eu-strategic-autonomy-and-trade-policy-in-a-post-covid-world/",
+                "title": "EU strategic autonomy and trade policy in a post-Covid world - Institut Jacques Delors",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+          }
+        }
+      ]
     },
     "historical:id:601f1659d0e32c89": {
       "title": "Why the EU now needs a deliberate Belarus policy – European Council on Foreign Relations",
@@ -30084,10 +30960,12 @@
       "url": "https://institutdelors.eu/en/publications/strategic-autonomy-in-post-covid-trade-policy-2/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:7f3dbfa63e0cfbe7": {
       "title": "Nord Stream 2 and the Energy Security Dilemma",
@@ -30096,10 +30974,12 @@
       "url": "https://www.swp-berlin.org/publikation/nord-stream-2-and-the-energy-security-dilemma",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:c86416dab28975c3": {
       "title": "ASEAN Resilience and European Strategic Autonomy: Converging Operational Concepts? - Institut Jacques Delors",
@@ -30108,10 +30988,62 @@
       "url": "https://institutdelors.eu/en/evenements/asean-resilience-and-european-strategic-autonomy-converging-operational-concepts-2/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:38Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected https://institutdelors.eu/en/evenements/asean-resilience-and-european-strategic-autonomy-converging-operational-concepts-2/; package material matched the claimed work and contained substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_web",
+            "url": "https://institutdelors.eu/en/evenements/asean-resilience-and-european-strategic-autonomy-converging-operational-concepts-2/",
+            "title": "ASEAN Resilience and European Strategic Autonomy: Converging Operational Concepts? - Institut Jacques Delors",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:38Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected https://institutdelors.eu/en/evenements/asean-resilience-and-european-strategic-autonomy-converging-operational-concepts-2/; package material matched the claimed work and contained substantive text."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_web",
+                "url": "https://institutdelors.eu/en/evenements/asean-resilience-and-european-strategic-autonomy-converging-operational-concepts-2/",
+                "title": "ASEAN Resilience and European Strategic Autonomy: Converging Operational Concepts? - Institut Jacques Delors",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+          }
+        }
+      ]
     },
     "historical:id:55f0b5661716622d": {
       "title": "EU states make headway with 5G security measures - TelecomTV - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -30120,10 +31052,84 @@
       "url": "https://www.celis.institute/celis-news/eu-states-make-headway-with-5g-security-measures-telecomtv/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:38Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected https://www.celis.institute/celis-news/eu-states-make-headway-with-5g-security-measures-telecomtv/; package material matched the claimed work and contained substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located https://www.telecomtv.com/content/security/eu-states-make-headway-with-5g-security-measures-40484/amp/, matching the claimed work/development."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_web",
+            "url": "https://www.celis.institute/celis-news/eu-states-make-headway-with-5g-security-measures-telecomtv/",
+            "title": "EU states make headway with 5G security measures - TelecomTV - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          },
+          {
+            "kind": "independent_full_text",
+            "url": "https://www.telecomtv.com/content/security/eu-states-make-headway-with-5g-security-measures-40484/amp/",
+            "title": "EU states make headway with 5G security measures",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:38Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected https://www.celis.institute/celis-news/eu-states-make-headway-with-5g-security-measures-telecomtv/; package material matched the claimed work and contained substantive text."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Exact-title recovery located https://www.telecomtv.com/content/security/eu-states-make-headway-with-5g-security-measures-40484/amp/, matching the claimed work/development."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_web",
+                "url": "https://www.celis.institute/celis-news/eu-states-make-headway-with-5g-security-measures-telecomtv/",
+                "title": "EU states make headway with 5G security measures - TelecomTV - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                "evidence_used": true
+              },
+              {
+                "kind": "independent_full_text",
+                "url": "https://www.telecomtv.com/content/security/eu-states-make-headway-with-5g-security-measures-40484/amp/",
+                "title": "EU states make headway with 5G security measures",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+          }
+        }
+      ]
     },
     "historical:id:05650cb90588e1cb": {
       "title": "Mapping and recalibrating Europe’s economic interdependence with China",
@@ -30132,10 +31138,12 @@
       "url": "https://merics.org/sites/default/files/2020-11/Merics%20ChinaMonitor_Mapping%20and%20recalibrating%20%281%29.pdf",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:c3128e43246c118c": {
       "title": "New horizons in EU–Japan security cooperation",
@@ -31380,10 +32388,62 @@
       "url": "https://institutdelors.eu/en/publications/spending-eu-subsidies-well-a-challenge-for-member-states/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:38Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected https://institutdelors.eu/en/publications/spending-eu-subsidies-well-a-challenge-for-member-states/; package material matched the claimed work and contained substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_web",
+            "url": "https://institutdelors.eu/en/publications/spending-eu-subsidies-well-a-challenge-for-member-states/",
+            "title": "Institut Jacques Delors - Spending EU subsidies well: A challenge for Member States",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:38Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected https://institutdelors.eu/en/publications/spending-eu-subsidies-well-a-challenge-for-member-states/; package material matched the claimed work and contained substantive text."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_web",
+                "url": "https://institutdelors.eu/en/publications/spending-eu-subsidies-well-a-challenge-for-member-states/",
+                "title": "Institut Jacques Delors - Spending EU subsidies well: A challenge for Member States",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+          }
+        }
+      ]
     },
     "historical:id:4dbd66b4318033b2": {
       "title": "EU-Algeria strategic partnership in the energy sector (in French)",
@@ -31392,10 +32452,72 @@
       "url": "https://energy.ec.europa.eu/publications/eu-algeria-strategic-partnership-energy-sector-french_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:38Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Inspected https://energy.ec.europa.eu/publications/eu-algeria-strategic-partnership-energy-sector-french_en; the supplied route contained no substantive text, so recovery continued."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located https://energy.ec.europa.eu/publications/eu-algeria-strategic-partnership-energy-sector-french_en, matching the claimed work/development."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_document",
+            "url": "https://energy.ec.europa.eu/publications/eu-algeria-strategic-partnership-energy-sector-french_en",
+            "title": "EU-Algeria strategic partnership in the energy sector",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:38Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "limited",
+                "note": "Inspected https://energy.ec.europa.eu/publications/eu-algeria-strategic-partnership-energy-sector-french_en; the supplied route contained no substantive text, so recovery continued."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Exact-title recovery located https://energy.ec.europa.eu/publications/eu-algeria-strategic-partnership-energy-sector-french_en, matching the claimed work/development."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "official_document",
+                "url": "https://energy.ec.europa.eu/publications/eu-algeria-strategic-partnership-energy-sector-french_en",
+                "title": "EU-Algeria strategic partnership in the energy sector",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+          }
+        }
+      ]
     },
     "historical:id:11d9ea14e1baebae": {
       "title": "Attribution: A Major Challenge for EU Cyber Sanctions",
@@ -31404,10 +32526,12 @@
       "url": "https://www.swp-berlin.org/publikation/attribution-a-major-challenge-for-eu-cyber-sanctions",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:d604d723ff342ddb": {
       "title": "Second acts: How Europe can renew the transatlantic partnership – European Council on Foreign Relations",
@@ -31416,10 +32540,12 @@
       "url": "https://ecfr.eu/article/second-acts-how-europe-can-renew-the-transatlantic-partnership/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:5e88103a1a6a0724": {
       "title": "New EU screening framework also targeting Chinese FDI is finally in place",
@@ -31428,10 +32554,12 @@
       "url": "https://merics.org/en/comment/new-eu-screening-framework-also-targeting-chinese-fdi-finally-place",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:39Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:3a7143682f7faf74": {
       "title": "US campaign against Chinese vendors: The Global 5G Contest Escalates",
@@ -33190,10 +34318,12 @@
       "url": "https://www.eeas.europa.eu/delegations/belarus/joint-statement-december-2-sanctions-response-situation-belarus_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:1a2ba11e87e8055f": {
       "title": "EU Trade dialogue with civil society",
@@ -33202,10 +34332,12 @@
       "url": "https://policy.trade.ec.europa.eu/analysis-and-assessment/eu-trade-meetings-civil-society/eu-trade-dialogue-civil-society-questions-and-answers_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T06:31:18Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:38Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:b4a8661a16beaabd": {
       "title": "Work for Others, not Yourself: Globalisation, Protectionism and Europe’s Quest for Strategic Autonomy",
@@ -33214,10 +34346,12 @@
       "url": "https://ecipe.org/publications/globalisation-protectionism-strategic-autonomy/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T11:59:25Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:39Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:89908a9ab24809ca": {
       "title": "Mark Cohen and Philip Rogers, When Sino-American Struggle Disrupts the Supply Chain: Licensing Intellectual Property in a Changing Trade Environment - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -33249,7 +34383,11 @@
       "date": "2020-01-01",
       "url": "https://egmontinstitute.be/transatlantic-trade-is-stuck-time-to-integrate-trade-technology-and-security/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:0063fada1e94cb03": {
       "title": "The future of the Transatlantic Alliance: not without the European Union - Egmont Institute",
@@ -33257,7 +34395,11 @@
       "date": "2020-01-01",
       "url": "https://egmontinstitute.be/app/uploads/2020/09/Biscop-nato-alliance.pdf?type=pdf",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:81015110fa4552ea": {
       "title": "The Economic Costs of the Existing Sanctions in Relation to Russia | ifo Institute",
@@ -33265,7 +34407,11 @@
       "date": "2020-01-01",
       "url": "https://www.ifo.de/en/project/2020-08-14/economic-costs-existing-sanctions-relation-russia",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:e3f6c90b06bb3cae": {
       "title": "Prominent Europeans call for change in approach to EU foreign policy – European Council on Foreign Relations",
@@ -35198,10 +36344,84 @@
       "url": "https://www.celis.institute/celis-content/croatian-regulation-on-the-implementation-of-eu-fdi-screening-regulation-regulation-eu-2019-452-oj-l-79i-21-march-2019-in-croatian-entered-in-force-2-october-2020/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T11:59:25Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:39Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected https://www.celis.institute/celis-content/croatian-regulation-on-the-implementation-of-eu-fdi-screening-regulation-regulation-eu-2019-452-oj-l-79i-21-march-2019-in-croatian-entered-in-force-2-october-2020/; package material matched the claimed work and contained substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/01/framework-for-screening-foreign-direct-investment-into-the-eu_d966075e/f75ec890-en.pdf, matching the claimed work/development."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_web",
+            "url": "https://www.celis.institute/celis-content/croatian-regulation-on-the-implementation-of-eu-fdi-screening-regulation-regulation-eu-2019-452-oj-l-79i-21-march-2019-in-croatian-entered-in-force-2-october-2020/",
+            "title": "Croatian Regulation on the implementation of EU FDI Screening Regulation (Regulation (EU) 2019/452), OJ L 79I, 21 March 2019 (in Croatian), entered in force 2 October 2020 - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          },
+          {
+            "kind": "trusted_report",
+            "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/01/framework-for-screening-foreign-direct-investment-into-the-eu_d966075e/f75ec890-en.pdf",
+            "title": "Framework for Screening Foreign Direct Investment into the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:39Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected https://www.celis.institute/celis-content/croatian-regulation-on-the-implementation-of-eu-fdi-screening-regulation-regulation-eu-2019-452-oj-l-79i-21-march-2019-in-croatian-entered-in-force-2-october-2020/; package material matched the claimed work and contained substantive text."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Exact-title recovery located https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/01/framework-for-screening-foreign-direct-investment-into-the-eu_d966075e/f75ec890-en.pdf, matching the claimed work/development."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_web",
+                "url": "https://www.celis.institute/celis-content/croatian-regulation-on-the-implementation-of-eu-fdi-screening-regulation-regulation-eu-2019-452-oj-l-79i-21-march-2019-in-croatian-entered-in-force-2-october-2020/",
+                "title": "Croatian Regulation on the implementation of EU FDI Screening Regulation (Regulation (EU) 2019/452), OJ L 79I, 21 March 2019 (in Croatian), entered in force 2 October 2020 - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                "evidence_used": true
+              },
+              {
+                "kind": "trusted_report",
+                "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/01/framework-for-screening-foreign-direct-investment-into-the-eu_d966075e/f75ec890-en.pdf",
+                "title": "Framework for Screening Foreign Direct Investment into the EU",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+          }
+        }
+      ]
     },
     "historical:id:1d93e826c6dafc18": {
       "title": "How Europe can defend itself against US economic sanctions – European Council on Foreign Relations",
@@ -35245,7 +36465,11 @@
       "date": "2019-12-13",
       "url": "https://www.celis.institute/celis-content/eva-rytter-sunesen-and-jonas-juul-henriksen-the-economics-of-fdi-screening/",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:7af0d82265b2de82": {
       "title": "A fistful of dollars: Europe and US sanctions – European Council on Foreign Relations",
@@ -37380,10 +38604,12 @@
       "url": "https://rhg.com/research/transatlantic-agenda/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T11:59:25Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:39Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:ca79b6c5a8c3ada4": {
       "title": "The euro area economy - determinants of growth, competitiveness and the need for structural reforms | Bank for International Settlements",
@@ -37391,7 +38617,11 @@
       "date": "2020-01-01",
       "url": "https://www.bis.org/speeches/20051014-euro-area-economy-determinants-growth-competitiveness-and-need-structural-reforms.pdf",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:b89818031fd714ae": {
       "title": "European Union supports additional technical assistance to establish internal gas transmission network in Albania",
@@ -37399,7 +38629,11 @@
       "date": "2020-01-01",
       "url": "https://www.eeas.europa.eu/delegations/albania/european-union-supports-additional-technical-assistance-establish-internal-gas-transmission-network_en",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:fa57dbdb31801b64": {
       "title": "Study on the system architecture of a quantum communication infrastructure",
@@ -39094,7 +40328,11 @@
       "date": "2020-01-01",
       "url": "https://www.eeas.europa.eu/delegations/armenia/eastern-partnership-commission-proposes-new-policy-objectives-beyond-2020_en",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:a4bbc5c1d47203bd": {
       "title": "The Eternal Sunshine of an Engineer’s Mind: Germany Looks to 5G Security as a Purely Technical Question",
@@ -40828,10 +42066,12 @@
       "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-03-31_towards_an_eu_anti-coercion_instrument_-_feedback_on_european_commission_proposal-864-1.pdf",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-02T11:59:25Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "verified_at": "2026-10-02T12:15:39Z",
+      "verified_package_id": "worker-b-83f2b59de0bf"
     },
     "historical:id:39ef8e6b80fe90cf": {
       "title": "German 17th Ordinance amending the Foreign Trade and Payments Ordinance (in German) - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -40840,10 +42080,84 @@
       "url": "https://www.celis.institute/celis-content/german-17th-ordinance-amending-the-foreign-trade-and-payments-ordinance/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T11:59:25Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:39Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected https://www.celis.institute/celis-content/german-17th-ordinance-amending-the-foreign-trade-and-payments-ordinance/; package material matched the claimed work and contained substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located https://www.bmwk.de/Redaktion/EN/FAQ/Aussenwirtschaftsrecht/faq-aussenwirtschaftsrecht.html, matching the claimed work/development."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_web",
+            "url": "https://www.celis.institute/celis-content/german-17th-ordinance-amending-the-foreign-trade-and-payments-ordinance/",
+            "title": "German 17th Ordinance amending the Foreign Trade and Payments Ordinance (in German) - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          },
+          {
+            "kind": "official_guidance",
+            "url": "https://www.bmwk.de/Redaktion/EN/FAQ/Aussenwirtschaftsrecht/faq-aussenwirtschaftsrecht.html",
+            "title": "FAQ on investment screening under the AWG and AWV",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:39Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected https://www.celis.institute/celis-content/german-17th-ordinance-amending-the-foreign-trade-and-payments-ordinance/; package material matched the claimed work and contained substantive text."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Exact-title recovery located https://www.bmwk.de/Redaktion/EN/FAQ/Aussenwirtschaftsrecht/faq-aussenwirtschaftsrecht.html, matching the claimed work/development."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_web",
+                "url": "https://www.celis.institute/celis-content/german-17th-ordinance-amending-the-foreign-trade-and-payments-ordinance/",
+                "title": "German 17th Ordinance amending the Foreign Trade and Payments Ordinance (in German) - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                "evidence_used": true
+              },
+              {
+                "kind": "official_guidance",
+                "url": "https://www.bmwk.de/Redaktion/EN/FAQ/Aussenwirtschaftsrecht/faq-aussenwirtschaftsrecht.html",
+                "title": "FAQ on investment screening under the AWG and AWV",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+          }
+        }
+      ]
     },
     "historical:id:38f3a1e60f3979a0": {
       "title": "German Foreign Trade and Payments Ordinance (German text consolidated 29 October 2020 and English translation consolidated 19 December 2018) - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -40852,10 +42166,84 @@
       "url": "https://www.celis.institute/celis-content/german-foreign-trade-and-payments-ordinance/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-02T11:59:25Z",
-      "last_package_id": "worker-b-83f2b59de0bf"
+      "last_package_id": "worker-b-83f2b59de0bf",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-02T12:15:39Z",
+      "last_recovery_package_id": "worker-b-83f2b59de0bf",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected https://www.celis.institute/celis-content/german-foreign-trade-and-payments-ordinance/; package material matched the claimed work and contained substantive text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title recovery located https://www.bmwk.de/Redaktion/EN/FAQ/Aussenwirtschaftsrecht/faq-aussenwirtschaftsrecht.html, matching the claimed work/development."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_or_official_web",
+            "url": "https://www.celis.institute/celis-content/german-foreign-trade-and-payments-ordinance/",
+            "title": "German Foreign Trade and Payments Ordinance (German text consolidated 29 October 2020 and English translation consolidated 19 December 2018) - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          },
+          {
+            "kind": "official_guidance",
+            "url": "https://www.bmwk.de/Redaktion/EN/FAQ/Aussenwirtschaftsrecht/faq-aussenwirtschaftsrecht.html",
+            "title": "FAQ on investment screening under the AWG and AWV",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-83f2b59de0bf",
+          "at": "2026-10-02T12:15:39Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected https://www.celis.institute/celis-content/german-foreign-trade-and-payments-ordinance/; package material matched the claimed work and contained substantive text."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Exact-title recovery located https://www.bmwk.de/Redaktion/EN/FAQ/Aussenwirtschaftsrecht/faq-aussenwirtschaftsrecht.html, matching the claimed work/development."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_or_official_web",
+                "url": "https://www.celis.institute/celis-content/german-foreign-trade-and-payments-ordinance/",
+                "title": "German Foreign Trade and Payments Ordinance (German text consolidated 29 October 2020 and English translation consolidated 19 December 2018) - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                "evidence_used": true
+              },
+              {
+                "kind": "official_guidance",
+                "url": "https://www.bmwk.de/Redaktion/EN/FAQ/Aussenwirtschaftsrecht/faq-aussenwirtschaftsrecht.html",
+                "title": "FAQ on investment screening under the AWG and AWV",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity verified; substantive evidence recovered and assessed against the strand criteria."
+          }
+        }
+      ]
     },
     "historical:id:bd067793dd93e7df": {
       "title": "German Federal Ministry for Economic Affairs and Energy, FAQ on Investment Screenings pursuant to the Foreign Trade and Payments Act and the Foreign Trade and Payments Ordinance (in German) - CELIS Institute - Investment Screening | National Security | Competitiveness",
@@ -40899,7 +42287,11 @@
       "date": "2020-01-01",
       "url": "https://single-market-economy.ec.europa.eu/sectors/raw-materials/policy-and-strategy-raw-materials_en",
       "corpus_scope": "historical",
-      "queue_priority": "strand_a"
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "B",
+      "assigned_at": "2026-10-02T12:16:40Z",
+      "last_package_id": "worker-b-6cf3818fc76e"
     },
     "historical:id:84cf8d8605677b53": {
       "title": "The Real Impact of Subsidies on the Film Industry (1970s–Present): Lessons from France and Korea",
@@ -45030,7 +46422,7 @@
     },
     "worker-a-598e7d4d8baf": {
       "lane": "A",
-      "created_at": "2026-10-02T12:13:51Z",
+      "created_at": "2026-10-02T12:16:40Z",
       "record_keys": [
         "historical:id:9726206567bb5144",
         "historical:id:70399abe411c8baa",
@@ -45068,6 +46460,48 @@
         "historical:id:a5c19674d16eb9fe",
         "historical:id:429f74df03608983",
         "historical:id:289e44ae570503fe"
+      ]
+    },
+    "worker-b-6cf3818fc76e": {
+      "lane": "B",
+      "created_at": "2026-10-02T12:16:58Z",
+      "record_keys": [
+        "historical:id:b5f69d8b6041f4e0",
+        "historical:id:66f19100fb976326",
+        "historical:id:793989ef48865f7b",
+        "historical:id:a4ff9ac2ff0bc41c",
+        "historical:id:fe143829cd1df8a5",
+        "historical:id:531ce5b68383dea2",
+        "historical:id:bdbb295000ade531",
+        "historical:id:0063fada1e94cb03",
+        "historical:id:ca79b6c5a8c3ada4",
+        "historical:id:81015110fa4552ea",
+        "historical:id:82d1dcba1878ddb4",
+        "historical:id:b0554359ea27ff9c",
+        "historical:id:5e83017dae2d8853",
+        "historical:id:4504781eca8fcb9b",
+        "historical:id:56087313384f16b3",
+        "historical:id:f1a78ad8ec19a12b",
+        "historical:id:3292b6b8c09d274c",
+        "historical:id:d339d0d900da48e0",
+        "historical:id:7fb91b3a7d235106",
+        "historical:id:b89818031fd714ae",
+        "historical:id:45fc333b36b4d97b",
+        "historical:id:fbe851df28b497b6",
+        "historical:id:b9768257cccc2480",
+        "historical:id:4e342d23da20af7e",
+        "historical:id:a7aee623cd41df90",
+        "historical:id:e6673ae0db83d324",
+        "historical:id:baae0e51b0de7e86",
+        "historical:id:3fbdf7ede7f49927",
+        "historical:id:2b087fedfb9c59da",
+        "historical:id:3c71fdf34f279c1f",
+        "historical:id:4df8d18153c397c3",
+        "historical:id:c3cc9780600df86b",
+        "historical:id:e3b09c5be1ad5a44",
+        "historical:id:2276c36f03bb313a",
+        "historical:id:e052f0ec2502eb50",
+        "historical:id:bc85425a6c67e719"
       ]
     }
   }

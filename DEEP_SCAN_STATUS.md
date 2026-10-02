@@ -6,12 +6,12 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1191** (Main **542** + Historical **649**)
-- Automatic queue still needing V2 verification: **573** (Main **165** + Historical **408**)
-- Currently assigned to workers: **86** (Main **7** + Historical **79**)
-- Bounded access-recovery retries still eligible: **235**
+- Authoritative V2 verified: **1216** (Main **542** + Historical **674**)
+- Automatic queue still needing V2 verification: **548** (Main **165** + Historical **383**)
+- Currently assigned to workers: **78** (Main **6** + Historical **72**)
+- Bounded access-recovery retries still eligible: **254**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **487**
+- Automatic queue pending and not yet assigned: **470**
 
 ## Worker lanes
 
@@ -29,17 +29,17 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-83f2b59de0bf`
-- Assigned unresolved records: **44**
-  1. `historical:id:f68f8cbc3fa26d95` — The EU and China: sanctions, signals, and interests - Egmont Institute
-  2. `historical:id:9a4d2017dd999a02` — Strengthened EU export control rules kick in
-  3. `historical:id:c8ae8635441e9f45` — Strategic Autonomy in Post-Covid Trade Policy - Institut Jacques Delors
-  4. `historical:id:2a72a684c174cd12` — Security Relations Between the EU and Australia
-  5. `historical:id:f6eb1edca5fe2bc9` — Security Relations Between the EU and ASEAN
-  6. `historical:id:3708dadbe84f22b7` — Secondary sanctions and multilateralism – the way ahead - Egmont Institute
-  7. `historical:id:7f3dbfa63e0cfbe7` — Nord Stream 2 and the Energy Security Dilemma
-  8. `historical:id:2ec5741eef07ddfb` — Joint Statement on December 2 Sanctions in Response to the Situation in Belarus
-  - … plus 36 more in the package manifest
+- Current package: `worker-b-6cf3818fc76e`
+- Assigned unresolved records: **36**
+  1. `historical:id:b5f69d8b6041f4e0` — Europe, 5G, and Munich: The China challenge and American mission – European Council on Foreign Relations
+  2. `historical:id:66f19100fb976326` — Pre-information notice for a low value contract - Study on: Explaining the low level of investment in Slovenia
+  3. `historical:id:793989ef48865f7b` — On 5G, Brussels is up to the job – European Council on Foreign Relations
+  4. `historical:id:a4ff9ac2ff0bc41c` — A chance for leadership: German foreign policy after the killing of Qassem Soleimani – European Council on Foreign Relations
+  5. `historical:id:fe143829cd1df8a5` — “An example of Europe’s strategic autonomy”: Commissioner Breton announces the successful Sentinel-6 launch
+  6. `historical:id:531ce5b68383dea2` — Why European strategic autonomy matters
+  7. `historical:id:bdbb295000ade531` — Transatlantic trade is stuck: time to integrate trade, technology, and security - Egmont Institute
+  8. `historical:id:0063fada1e94cb03` — The future of the Transatlantic Alliance: not without the European Union - Egmont Institute
+  - … plus 28 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
