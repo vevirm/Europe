@@ -7,17 +7,17 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **1216** (Main **542** + Historical **674**)
-- Automatic queue still needing V2 verification: **548** (Main **165** + Historical **383**)
-- Currently assigned to workers: **78** (Main **6** + Historical **72**)
+- Automatic queue still needing V2 verification: **613** (Main **230** + Historical **383**)
+- Currently assigned to workers: **94** (Main **22** + Historical **72**)
 - Bounded access-recovery retries still eligible: **254**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **470**
+- Automatic queue pending and not yet assigned: **519**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-598e7d4d8baf`
-- Assigned unresolved records: **36**
+- Current package: `worker-a-7fdd5ffaf53e`
+- Assigned unresolved records: **44**
   1. `historical:id:9726206567bb5144` — Andrea Biondi, Michael Bowsher, Christopher Yukins, Luca Rubini and Gabriele Carovano, “The EU Gives Foreign Subsidies Its Best Shot”: One Take on White Paper on Levelling the Playing Field as Regards Foreign Subsidies - CELIS Institute - Investment Screening | National Security | Competitiveness
   2. `historical:id:70399abe411c8baa` — Targeted consultation on draft EU compliance guidance for research involving dual-use items
   3. `historical:id:08f6b68fe4abbdf9` — Calls for Chinese-Style Tech Industrial Policy Won’t Make Europe More Digital Sovereign
@@ -26,11 +26,11 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   6. `historical:id:d6e57fd14e5dfc17` — Under the waves: Turkey’s Black Sea gas discovery and relations with Europe – European Council on Foreign Relations
   7. `historical:id:1d93e826c6dafc18` — How Europe can defend itself against US economic sanctions – European Council on Foreign Relations
   8. `historical:id:601f1659d0e32c89` — Why the EU now needs a deliberate Belarus policy – European Council on Foreign Relations
-  - … plus 28 more in the package manifest
+  - … plus 36 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-6cf3818fc76e`
-- Assigned unresolved records: **36**
+- Current package: `worker-b-b60443e42f6e`
+- Assigned unresolved records: **44**
   1. `historical:id:b5f69d8b6041f4e0` — Europe, 5G, and Munich: The China challenge and American mission – European Council on Foreign Relations
   2. `historical:id:66f19100fb976326` — Pre-information notice for a low value contract - Study on: Explaining the low level of investment in Slovenia
   3. `historical:id:793989ef48865f7b` — On 5G, Brussels is up to the job – European Council on Foreign Relations
@@ -39,7 +39,7 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   6. `historical:id:531ce5b68383dea2` — Why European strategic autonomy matters
   7. `historical:id:bdbb295000ade531` — Transatlantic trade is stuck: time to integrate trade, technology, and security - Egmont Institute
   8. `historical:id:0063fada1e94cb03` — The future of the Transatlantic Alliance: not without the European Union - Egmont Institute
-  - … plus 28 more in the package manifest
+  - … plus 36 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
