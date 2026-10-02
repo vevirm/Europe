@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-record-corrections-v1",
-  "updated_at": "2026-10-01T13:56:53Z",
+  "updated_at": "2026-10-02T06:15:08Z",
   "records": {
     "link:https://doi.org/10.1080/09662839.2026.2709844": {
       "fields": {
@@ -709,6 +709,67 @@
       ],
       "updated_at": "2026-10-01T13:56:53Z",
       "deep_scan_package_id": "worker-b-a0e68cb2055f"
+    },
+    "historical:id:b6a05b52058a1135": {
+      "fields": {
+        "source": "German Council on Foreign Relations (DGAP)",
+        "date": "2022-02-07"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "The underlying policy brief is a DGAP publication dated 7 February 2022; the CELIS page was only a discovery route.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://dgap.org/en/research/publications/japans-economic-security-measures"
+      ],
+      "updated_at": "2026-10-02T06:15:05Z",
+      "deep_scan_package_id": "worker-a-2ccf933cd725"
+    },
+    "historical:id:b86018bf24b01a14": {
+      "fields": {
+        "date": "2022-12"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "The supplied PDF is a BusinessEurope comment paper dated December 2022, not an undifferentiated 2022 placeholder.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-12-23_businesseuropes_comments_on_raw_materials_act-7bd-1.pdf"
+      ],
+      "updated_at": "2026-10-02T06:15:06Z",
+      "deep_scan_package_id": "worker-a-2ccf933cd725"
+    },
+    "historical:id:a72f8d76dab711f1": {
+      "fields": {
+        "date": "2022-11-16"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "The European Commission publication page dates the EU-Egypt renewable-hydrogen MoU to 16 November 2022.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://energy.ec.europa.eu/publications/memorandum-understanding-strategic-partnership-renewable-hydrogen-between-european-union-and-arab_en"
+      ],
+      "updated_at": "2026-10-02T06:15:07Z",
+      "deep_scan_package_id": "worker-a-2ccf933cd725"
+    },
+    "historical:id:deea48b70de547cb": {
+      "fields": {
+        "date": "2024-10"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "The policy paper itself is Policy Paper No. 303, October 2024; the scanner year placeholder was incorrect.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://institutdelors.eu/content/uploads/2025/04/PP303_Critical_Material_Raw_France_Voita_EN.pdf"
+      ],
+      "updated_at": "2026-10-02T06:15:07Z",
+      "deep_scan_package_id": "worker-a-2ccf933cd725"
     }
   }
 }

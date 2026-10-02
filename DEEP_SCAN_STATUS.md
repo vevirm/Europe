@@ -6,27 +6,27 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1073** (Main **527** + Historical **546**)
-- Automatic queue still needing V2 verification: **667** (Main **174** + Historical **493**)
-- Currently assigned to workers: **94** (Main **22** + Historical **72**)
-- Bounded access-recovery retries still eligible: **222**
+- Authoritative V2 verified: **1114** (Main **539** + Historical **575**)
+- Automatic queue still needing V2 verification: **632** (Main **168** + Historical **464**)
+- Currently assigned to workers: **86** (Main **13** + Historical **73**)
+- Bounded access-recovery retries still eligible: **225**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **573**
+- Automatic queue pending and not yet assigned: **546**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-2ccf933cd725`
-- Assigned unresolved records: **44**
-  1. `link:https://doi.org/10.1080/13563467.2026.2737133` — From Pontes to Appia, but not to an Agorá: strategic hedging and infrastructural geoeconomics in the ECB's wCBDC initiative
-  2. `link:https://ecipe.org/publications/6g-wake-up-call-for-europe/#_ftnref1` — The 6G Wake-up Call for Europe: Reforms Urgently Needed to Sustain Europe’s Telecommunications Leadership
-  3. `link:https://doi.org/10.1016/j.lanepe.2026.101778` — Rebalancing innovation, affordability, and access for orphan drugs in the European Union
-  4. `link:https://doi.org/10.1111/agec.70148` — The Impact of the EU Common Agricultural Policy on Regional Agricultural Productivity
-  5. `link:https://doi.org/10.1016/j.crsus.2026.100836` — Interannual weather variability reshapes Europe’s cost-optimal hydrogen supply strategy
-  6. `link:https://doi.org/10.1177/1087724x261471186` — Post-Brexit Import Control Infrastructure: Analysing the National Border Control Post Programme and its Impact on Ports Around Great Britain
-  7. `link:https://doi.org/10.1080/00396338.2026.2730899` — Canada: Off the Menu?
-  8. `historical:id:5ca9ab64874aebce` — Analysis of Developments in EU Capital Flows in the Global Context (2021) – CEPS
-  - … plus 36 more in the package manifest
+- Current package: `worker-a-8867967ab9ec`
+- Assigned unresolved records: **36**
+  1. `link:https://doi.org/10.4324/9781003669654-4` — Europe's Hydrogen Targets and Their Impact on the Market
+  2. `link:https://doi.org/10.36253/wep-19990` — Trade Policy Uncertainty: the Ultimate Wine Label Remover
+  3. `link:https://doi.org/10.30965/23761202-bja10067` — Competing Connectivity Strategies in the South Caucasus: Discourse-Based Insights into Armenia’s Strategic Dilemma
+  4. `link:https://www.gmfus.org/global-power-shifts/indo-pacific-program` — Indo-Pacific Program
+  5. `link:https://news.google.com/rss/articles/CBMikAFBVV95cUxQbkwxQnk0RzlFWmVtTEpTWlFBcFlyQTNQVzlibWZpNUM0WnphbU15VlZuR2Fab2Q3XzRDYzFFeHpQSDJsN1hQR2o5N2pnV2E5cHpOal9WU3dQWnJOQWc1eU16c2hyd2k4TXNlNkpBNUN1VmFQVUZYQmk3UzdqM1B0bkw4WnJYRVdoTVROaDVLYUw?oc=5` — ‘Tough’ talks with China have yet to deliver, EU trade chief says
+  6. `link:https://news.google.com/rss/articles/CBMiogFBVV95cUxQWmlaa2hLZEw1UjBQMG9tTzMxWC1BMzBJRnkwTmhuajBMSHNrSUdYTWh4bXd5N0lVWlhhMTNHLUNRaS1id1JYZU1PUVljMnU5X2ZBc0VtN2g1TUtFeUU4dEhzTGYtdG5OeGFFeTZIb3lhVGREN3BjWElOZ0s0SnBVOFJqVkl5anVYV0tYdzVjS1pYSm9BX3hUUVN4WWdRX05WMXc?oc=5` — EU-China political relations | 05-10-2026 | News
+  7. `historical:id:74b354ba22e49767` — China connecting Europe?
+  8. `historical:id:baeb1d96e7783679` — Politicisation of the European Foreign, security, and defence cooperation: the case of the EU’s Russian sanctions
+  - … plus 28 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-4f3865965194`
