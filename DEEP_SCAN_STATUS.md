@@ -7,17 +7,17 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **1073** (Main **527** + Historical **546**)
-- Automatic queue still needing V2 verification: **658** (Main **165** + Historical **493**)
-- Currently assigned to workers: **78** (Main **13** + Historical **65**)
+- Automatic queue still needing V2 verification: **667** (Main **174** + Historical **493**)
+- Currently assigned to workers: **94** (Main **22** + Historical **72**)
 - Bounded access-recovery retries still eligible: **222**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **580**
+- Automatic queue pending and not yet assigned: **573**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-e8fc5ec3b4b8`
-- Assigned unresolved records: **36**
+- Current package: `worker-a-2ccf933cd725`
+- Assigned unresolved records: **44**
   1. `link:https://doi.org/10.1080/13563467.2026.2737133` — From Pontes to Appia, but not to an Agorá: strategic hedging and infrastructural geoeconomics in the ECB's wCBDC initiative
   2. `link:https://ecipe.org/publications/6g-wake-up-call-for-europe/#_ftnref1` — The 6G Wake-up Call for Europe: Reforms Urgently Needed to Sustain Europe’s Telecommunications Leadership
   3. `link:https://doi.org/10.1016/j.lanepe.2026.101778` — Rebalancing innovation, affordability, and access for orphan drugs in the European Union
@@ -26,11 +26,11 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   6. `link:https://doi.org/10.1177/1087724x261471186` — Post-Brexit Import Control Infrastructure: Analysing the National Border Control Post Programme and its Impact on Ports Around Great Britain
   7. `link:https://doi.org/10.1080/00396338.2026.2730899` — Canada: Off the Menu?
   8. `historical:id:5ca9ab64874aebce` — Analysis of Developments in EU Capital Flows in the Global Context (2021) – CEPS
-  - … plus 28 more in the package manifest
+  - … plus 36 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-97a9ce319daa`
-- Assigned unresolved records: **36**
+- Current package: `worker-b-4f3865965194`
+- Assigned unresolved records: **44**
   1. `historical:id:7b65c4b7515137ac` — Europe’s energy security and EU-US cooperation
   2. `historical:id:c9edfa6b3626faa7` — EU: Three Russian banks and one technology company added to the frozen funds list as part of sanctions package - Global Trade Alert
   3. `historical:id:e2a628c87a06054e` — EU: Additional financial sanctions on Russia, including the exclusion of 7 banks from the SWIFT paying system - Global Trade Alert
@@ -39,7 +39,7 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   6. `historical:id:15db2f653fa8bcb3` — Declaration by the High Representative on behalf of the European Union on leaks in the Nord Stream gas pipelines
   7. `historical:id:23f72ce10b2dc494` — Balancing inflation, output and fiscal sustainability: policy responses to energy shocks
   8. `historical:id:ddb09e818241b367` — Agrifood trade and EU sanctions adopted further to the invasion of Ukraine by the Russian Federation and the support of Belarus to it
-  - … plus 28 more in the package manifest
+  - … plus 36 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
