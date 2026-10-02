@@ -6,27 +6,27 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1158** (Main **540** + Historical **618**)
-- Automatic queue still needing V2 verification: **606** (Main **167** + Historical **439**)
-- Currently assigned to workers: **94** (Main **13** + Historical **81**)
-- Bounded access-recovery retries still eligible: **224**
+- Authoritative V2 verified: **1191** (Main **542** + Historical **649**)
+- Automatic queue still needing V2 verification: **573** (Main **165** + Historical **408**)
+- Currently assigned to workers: **86** (Main **7** + Historical **79**)
+- Bounded access-recovery retries still eligible: **235**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **512**
+- Automatic queue pending and not yet assigned: **487**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-6d79099959fe`
-- Assigned unresolved records: **44**
-  1. `link:https://doi.org/10.4324/9781003669654-4` — Europe's Hydrogen Targets and Their Impact on the Market
-  2. `link:https://doi.org/10.36253/wep-19990` — Trade Policy Uncertainty: the Ultimate Wine Label Remover
-  3. `link:https://doi.org/10.30965/23761202-bja10067` — Competing Connectivity Strategies in the South Caucasus: Discourse-Based Insights into Armenia’s Strategic Dilemma
-  4. `link:https://www.gmfus.org/global-power-shifts/indo-pacific-program` — Indo-Pacific Program
-  5. `link:https://news.google.com/rss/articles/CBMikAFBVV95cUxQbkwxQnk0RzlFWmVtTEpTWlFBcFlyQTNQVzlibWZpNUM0WnphbU15VlZuR2Fab2Q3XzRDYzFFeHpQSDJsN1hQR2o5N2pnV2E5cHpOal9WU3dQWnJOQWc1eU16c2hyd2k4TXNlNkpBNUN1VmFQVUZYQmk3UzdqM1B0bkw4WnJYRVdoTVROaDVLYUw?oc=5` — ‘Tough’ talks with China have yet to deliver, EU trade chief says
-  6. `link:https://news.google.com/rss/articles/CBMiogFBVV95cUxQWmlaa2hLZEw1UjBQMG9tTzMxWC1BMzBJRnkwTmhuajBMSHNrSUdYTWh4bXd5N0lVWlhhMTNHLUNRaS1id1JYZU1PUVljMnU5X2ZBc0VtN2g1TUtFeUU4dEhzTGYtdG5OeGFFeTZIb3lhVGREN3BjWElOZ0s0SnBVOFJqVkl5anVYV0tYdzVjS1pYSm9BX3hUUVN4WWdRX05WMXc?oc=5` — EU-China political relations | 05-10-2026 | News
-  7. `historical:id:74b354ba22e49767` — China connecting Europe?
-  8. `historical:id:baeb1d96e7783679` — Politicisation of the European Foreign, security, and defence cooperation: the case of the EU’s Russian sanctions
-  - … plus 36 more in the package manifest
+- Current package: `worker-a-598e7d4d8baf`
+- Assigned unresolved records: **36**
+  1. `historical:id:9726206567bb5144` — Andrea Biondi, Michael Bowsher, Christopher Yukins, Luca Rubini and Gabriele Carovano, “The EU Gives Foreign Subsidies Its Best Shot”: One Take on White Paper on Levelling the Playing Field as Regards Foreign Subsidies - CELIS Institute - Investment Screening | National Security | Competitiveness
+  2. `historical:id:70399abe411c8baa` — Targeted consultation on draft EU compliance guidance for research involving dual-use items
+  3. `historical:id:08f6b68fe4abbdf9` — Calls for Chinese-Style Tech Industrial Policy Won’t Make Europe More Digital Sovereign
+  4. `historical:id:e1abd351d9984dbd` — Christoph Herrmann and Mareike Hoffmann, Investment in the European Union: Competences, Structures, Responsibility and Policy - CELIS Institute - Investment Screening | National Security | Competitiveness
+  5. `historical:id:99b60a66ecbc333f` — Serbia’s 5G deal with Washington: The art of muddling through – European Council on Foreign Relations
+  6. `historical:id:d6e57fd14e5dfc17` — Under the waves: Turkey’s Black Sea gas discovery and relations with Europe – European Council on Foreign Relations
+  7. `historical:id:1d93e826c6dafc18` — How Europe can defend itself against US economic sanctions – European Council on Foreign Relations
+  8. `historical:id:601f1659d0e32c89` — Why the EU now needs a deliberate Belarus policy – European Council on Foreign Relations
+  - … plus 28 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-83f2b59de0bf`
