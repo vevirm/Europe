@@ -8,16 +8,16 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 
 - Authoritative V2 verified: **1284** (Main **582** + Historical **702**)
 - Automatic queue still needing V2 verification: **549** (Main **194** + Historical **355**)
-- Currently assigned to workers: **78** (Main **11** + Historical **67**)
-- Bounded access-recovery retries still eligible: **351**
+- Currently assigned to workers: **94** (Main **12** + Historical **82**)
+- Bounded access-recovery retries still eligible: **350**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **471**
+- Automatic queue pending and not yet assigned: **455**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-65026296f26e`
-- Assigned unresolved records: **36**
+- Current package: `worker-a-c263470d99f9`
+- Assigned unresolved records: **44**
   1. `link:https://news.google.com/rss/articles/CBMiowFBVV95cUxOemlnd1lGT2NJY3Z1dlZwczJlU1Z4eFg3cklraDRENXNIZzV5M05OSkc1bDVYRm1JazB0VUFnUzNlMGUxQ09vUDdmNE9va3ZaWHZURmRxVk9mSy0ySnBjeVY4WWZaQng3RV92cGxGamc5ZmtPczNOYkNZWnRETGRwRl8zYnlLYjI3WnRsZ1RBUG5YcV83ZTdpNXItQXA2bXNXNjJZ?oc=5` — Firms in France Put Sovereignty at Core of Hybrid Cloud Plans – Company Announcement
   2. `link:https://news.google.com/rss/articles/CBMiswFBVV95cUxPSkhVRnBvY29CRmlBLTJ1TlpiYzRZQzduNnN6b2NUWlA1cjdMT00xMDRrUWFYVXp2T1RZUmE5a1RxSy02c2NueWZHLUM5OUw2SWpsTUhVb0hQalB4LXMxcG5rSXoyN3RPbHNtZE1XVVRCRk5KaHdLaHR0cWNVRTJhSFFoUEVDUk5QWWNVMHV5UlNfOExkYW5HSGVfa1BSSExlUnVoSzduTTlaaEFOeksyYmVpVQ?oc=5` — EU’s Curbs Threaten 27% of Chinese Exports to Bloc, Goldman Says
   3. `historical:id:ae6d5be6b50d40f7` — Chinese FDI in Europe: 2018 Trends and Impact of New Screening Policies
@@ -26,11 +26,11 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   6. `historical:id:960bc24d204d5e00` — Institut Jacques Delors - Beyond industrial policy: Why Europe needs a new growth strategy
   7. `historical:id:04e774496a31629b` — Georgia Country Partnership Framework 2019-2022
   8. `historical:id:3289f88016bd6e25` — Fighting for Europe. European strategic autonomy and the use of force - Egmont Institute
-  - … plus 28 more in the package manifest
+  - … plus 36 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-78e4ec89057c`
-- Assigned unresolved records: **36**
+- Current package: `worker-b-fa3338279e94`
+- Assigned unresolved records: **44**
   1. `link:https://news.google.com/rss/articles/CBMixgFBVV95cUxQTnZzanpPU3RDZjJPc1B3akxmZ19aT2p5Q04wYS16NTFCT1RYM0RCQVd3QmNhWGJ1QmJraWh3M3BBNGE0UE9qOWpTLUhSUzJ0b3lZN1M1eWk1TnYwekthRmJ1am5TSFp0UE9lWVBwamRSb1J6ZF9CcGs2NUowVlR1YWF4QktoTk1rMmk4Y09idUJkbTZGbjFuZ1F6OTRRd3p1QjdTUjJzdFhIX2dJUTI0LUd0OFhFV0dyV3NwS3JEYm4tNWhNNVE?oc=5` — Critical raw materials: Sweden declares security of supply a matter of national security - Table.Briefings
   2. `link:https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZFlMLUdIdHpaejlGQ1cwUm5BWjhBdG1PcHdJYlBjSUhXcVNHeTItVDdObFpiVm1zWjgzdlNWN1hoSGgyQ2VFdWlUMlM3amUzNlp0X05VTFQyVFRzN0J2MFFoVnlJSjFjMHZqUVhhWUFzZlJkU2NmSjJaNGlZbHJZMEozRk5NdzA5OTg1U1l2T0M3M2trU1RCUUZVQUlSbGhPQW5KNHhidE9IZw?oc=5` — EBRD and EU join forces to strengthen Kyiv’s energy security
   3. `link:https://news.google.com/rss/articles/CBMitAFBVV95cUxQNHRoNHc3V2p5TW5tMlVDd2pJQ2pPODhDRnZEVnJlSkpwNUY0MWtUcmg1c095blNCLWhrdHUyMjBfSlh3Y3R5MGtGcnNVUkJuTGxQYURqUUhoMXdFbU1tLVpTWDlPOFdDNjd6Smt3V3N4RGhDSk5oMU5nVloxdXBHcUNTdFAtcTN4SzRudU5xNHpSSDNvcWtsY05oX19xeWdrbHVyUFEwY25PeE45Q3U0R1J1Tk8?oc=5` — Germany's Uniper firms up 20-year LNG purchase deal with Canada
@@ -39,7 +39,7 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   6. `historical:id:eff18536e28d4994` — Beyond Investment Screening
   7. `historical:id:b35128270fcadf47` — Chinese Direct Investment in Europe – Challenges for EU FDI Policy - Kiel Institute
   8. `historical:id:2ae93c9e6fcacd54` — The euro in the field of energy
-  - … plus 28 more in the package manifest
+  - … plus 36 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
