@@ -1,0 +1,3346 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-a-2ccf933cd725",
+  "results": [
+    {
+      "record_key": "link:https://doi.org/10.1080/13563467.2026.2737133",
+      "source_hash": "ff936bb0",
+      "identity_hash": "995ec6e98492a296",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied URL https://doi.org/10.1080/13563467.2026.2737133; package material was thin/blocked or required independent provenance confirmation."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/searched DOI 10.1080/13563467.2026.2737133 and matched the claimed work."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search for “From Pontes to Appia, but not to an Agorá: strategic hedging and infrastructural geoeconomics in the ECB's wCBDC initiative” recovered a matching publisher, official, or repository record."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title/author-or-organisation/year cross-check matched the recovered work and package metadata."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered substantive matching evidence at https://doi.org/10.1080/13563467.2026.2737133."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found no conflicting work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_article",
+            "url": "https://doi.org/10.1080/13563467.2026.2737133",
+            "title": "From Pontes to Appia, but not to an Agorá: strategic hedging and infrastructural geoeconomics in the ECB's wCBDC initiative",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Identity and provenance were verified, but a substantive copy of the claimed work itself remained inaccessible after the recorded recovery ladder."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The work identity is verified, but accessible evidence is too thin to support an authoritative KEEP/REVIEW/DROP decision without substituting another source."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://ecipe.org/publications/6g-wake-up-call-for-europe/#_ftnref1",
+      "source_hash": "1f74cf99",
+      "identity_hash": "1cec3be61b246450",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://ecipe.org/publications/6g-wake-up-call-for-europe/#_ftnref1; package includes substantial_web_text with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://ecipe.org/publications/6g-wake-up-call-for-europe/#_ftnref1",
+            "title": "The 6G Wake-up Call for Europe: Reforms Urgently Needed to Sustain Europe’s Telecommunications Leadership",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: Telecom networks are critical infrastructure and a source of technological leverage."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Europe's 6G industrial position",
+      "reader_what": "ECIPE argues Europe retains telecom capabilities but weak deployment and investment threaten its 6G position.",
+      "reader_why": "Telecom networks are critical infrastructure and a source of technological leverage.",
+      "reader_more": "ECIPE argues Europe retains telecom capabilities but weak deployment and investment threaten its 6G position. Telecom networks are critical infrastructure and a source of technological leverage. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about europe's 6g industrial position?",
+        "main_finding": "ECIPE argues Europe retains telecom capabilities but weak deployment and investment threaten its 6G position.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+        "radar_relevance": "Telecom networks are critical infrastructure and a source of technological leverage.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "digital.infrastructure",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "regulates",
+          "direction": "becomes_contested",
+          "status": "operating",
+          "status_date": "2026-10-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+          "text": "Europe retains telecom strengths, but weak 5G deployment and investment constrain readiness for 6G.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.lanepe.2026.101778",
+      "source_hash": "581f8f07",
+      "identity_hash": "5c6640844a11784f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://dipot.ulb.ac.be/dspace/bitstream/2013/414127/1/doi_397771.pdf; package includes pdf_excerpt with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://dipot.ulb.ac.be/dspace/bitstream/2013/414127/1/doi_397771.pdf",
+            "title": "Rebalancing innovation, affordability, and access for orphan drugs in the European Union",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "Health-policy analysis is substantive but does not centrally concern critical-medicine supply, strategic dependence, or another economic-security mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "EU orphan-drug policy trade-offs",
+      "reader_what": "The article examines innovation, affordability and access for orphan drugs in the EU.",
+      "reader_why": "",
+      "reader_more": "The article examines innovation, affordability and access for orphan drugs in the EU. The source is real and was verified, but admission fails the Radar scope test. Health-policy analysis is substantive but does not centrally concern critical-medicine supply, strategic dependence, or another economic-security mechanism.",
+      "deep_analysis": {
+        "work_kind": "research/policy material",
+        "research_question": "",
+        "main_finding": "The article examines innovation, affordability and access for orphan drugs in the EU.",
+        "method_or_basis": "Substantive recovered source material was used to determine the actual subject and scope.",
+        "qualification": "Dropping the record is a scope judgement, not a claim that the work is low quality.",
+        "radar_relevance": "Health-policy analysis is substantive but does not centrally concern critical-medicine supply, strategic dependence, or another economic-security mechanism.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1111/agec.70148",
+      "source_hash": "25c86f16",
+      "identity_hash": "7aab3bae61c870a5",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://content.openalex.org/works/W7214582588.pdf; package includes pdf_excerpt with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://content.openalex.org/works/W7214582588.pdf",
+            "title": "The Impact of the EU Common Agricultural Policy on Regional Agricultural Productivity",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "The CAP productivity study is ordinary agricultural economics without a strategic cross-border or security-of-supply mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "CAP and farm productivity",
+      "reader_what": "The study estimates how the Common Agricultural Policy affects regional agricultural productivity.",
+      "reader_why": "",
+      "reader_more": "The study estimates how the Common Agricultural Policy affects regional agricultural productivity. The source is real and was verified, but admission fails the Radar scope test. The CAP productivity study is ordinary agricultural economics without a strategic cross-border or security-of-supply mechanism.",
+      "deep_analysis": {
+        "work_kind": "research/policy material",
+        "research_question": "",
+        "main_finding": "The study estimates how the Common Agricultural Policy affects regional agricultural productivity.",
+        "method_or_basis": "Substantive recovered source material was used to determine the actual subject and scope.",
+        "qualification": "Dropping the record is a scope judgement, not a claim that the work is low quality.",
+        "radar_relevance": "The CAP productivity study is ordinary agricultural economics without a strategic cross-border or security-of-supply mechanism.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.crsus.2026.100836",
+      "source_hash": "27ac42e6",
+      "identity_hash": "97815352e744ac23",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://arxiv.org/pdf/2510.04669; package includes pdf_excerpt with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://arxiv.org/pdf/2510.04669",
+            "title": "Interannual weather variability reshapes Europe’s cost-optimal hydrogen supply strategy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: It quantifies security-of-supply and import-dependence trade-offs in a strategic energy carrier."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Hydrogen supply under weather variability",
+      "reader_what": "The study models how weather variability changes Europe's least-cost balance between domestic hydrogen and imports.",
+      "reader_why": "It quantifies security-of-supply and import-dependence trade-offs in a strategic energy carrier.",
+      "reader_more": "The study models how weather variability changes Europe's least-cost balance between domestic hydrogen and imports. It quantifies security-of-supply and import-dependence trade-offs in a strategic energy carrier. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about hydrogen supply under weather variability?",
+        "main_finding": "The study models how weather variability changes Europe's least-cost balance between domestic hydrogen and imports.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The result is model-based and should not be read as an observed future outcome.",
+        "radar_relevance": "It quantifies security-of-supply and import-dependence trade-offs in a strategic energy carrier.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "supply_chain.diversification",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_conditional",
+          "status": "delivered",
+          "status_date": "2026-09-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The result is model-based and should not be read as an observed future outcome.",
+          "text": "Weather variability changes the modelled cost balance between domestic European hydrogen production and imports.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1177/1087724x261471186",
+      "source_hash": "2a05bad6",
+      "identity_hash": "1a3be3e377c430a3",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://pure.solent.ac.uk/en/publications/post-brexit-import-control-infrastructure-analysing-the-national-/; package includes substantial_web_text with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://pure.solent.ac.uk/en/publications/post-brexit-import-control-infrastructure-analysing-the-national-/",
+            "title": "Post-Brexit Import Control Infrastructure: Analysing the National Border Control Post Programme and its Impact on Ports Around Great Britain",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "The work is about delivery of post-Brexit border-control infrastructure, not a central European economic-security exposure or instrument."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Post-Brexit border infrastructure",
+      "reader_what": "The study analyses implementation of UK import-control infrastructure after Brexit.",
+      "reader_why": "",
+      "reader_more": "The study analyses implementation of UK import-control infrastructure after Brexit. The source is real and was verified, but admission fails the Radar scope test. The work is about delivery of post-Brexit border-control infrastructure, not a central European economic-security exposure or instrument.",
+      "deep_analysis": {
+        "work_kind": "research/policy material",
+        "research_question": "",
+        "main_finding": "The study analyses implementation of UK import-control infrastructure after Brexit.",
+        "method_or_basis": "Substantive recovered source material was used to determine the actual subject and scope.",
+        "qualification": "Dropping the record is a scope judgement, not a claim that the work is low quality.",
+        "radar_relevance": "The work is about delivery of post-Brexit border-control infrastructure, not a central European economic-security exposure or instrument.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/00396338.2026.2730899",
+      "source_hash": "36f57d41",
+      "identity_hash": "82451b6a3ae8788a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "partial",
+            "note": "Opened supplied URL https://doi.org/10.1080/00396338.2026.2730899; package material was thin/blocked or required independent provenance confirmation."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/searched DOI 10.1080/00396338.2026.2730899 and matched the claimed work."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search for “Canada: Off the Menu?” recovered a matching publisher, official, or repository record."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title/author-or-organisation/year cross-check matched the recovered work and package metadata."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered substantive matching evidence at https://www.iiss.org/online-analysis/survival-online/2026/09/canada-off-the-menu/."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found no conflicting work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_article",
+            "url": "https://www.iiss.org/online-analysis/survival-online/2026/09/canada-off-the-menu/",
+            "title": "Canada: Off the Menu?",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Identity and provenance were verified, but a substantive copy of the claimed work itself remained inaccessible after the recorded recovery ladder."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The work identity is verified, but accessible evidence is too thin to support an authoritative KEEP/REVIEW/DROP decision without substituting another source."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:5ca9ab64874aebce",
+      "source_hash": "92dcac94",
+      "identity_hash": "5d74b7da0af57e67",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://www.ceps.eu/ceps-publications/analysis-of-developments-in-eu-capital-flows-in-the-global-context-2021/; package includes substantial_web_text with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://www.ceps.eu/ceps-publications/analysis-of-developments-in-eu-capital-flows-in-the-global-context-2021/",
+            "title": "Analysis of Developments in EU Capital Flows in the Global Context (2021) – CEPS",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "The report is a broad capital-flow analysis without a central strategic investment-screening or economic-security object."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "EU capital flows",
+      "reader_what": "The CEPS report reviews EU capital-flow developments in a global macro-financial context.",
+      "reader_why": "",
+      "reader_more": "The CEPS report reviews EU capital-flow developments in a global macro-financial context. The source is real and was verified, but admission fails the Radar scope test. The report is a broad capital-flow analysis without a central strategic investment-screening or economic-security object.",
+      "deep_analysis": {
+        "work_kind": "research/policy material",
+        "research_question": "",
+        "main_finding": "The CEPS report reviews EU capital-flow developments in a global macro-financial context.",
+        "method_or_basis": "Substantive recovered source material was used to determine the actual subject and scope.",
+        "qualification": "Dropping the record is a scope judgement, not a claim that the work is low quality.",
+        "radar_relevance": "The report is a broad capital-flow analysis without a central strategic investment-screening or economic-security object.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:6a21d9d71892eac3",
+      "source_hash": "0fa34fe9",
+      "identity_hash": "066d3ea3d73f12db",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://content.openalex.org/works/W4213195417.pdf; package includes pdf_excerpt with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://content.openalex.org/works/W4213195417.pdf",
+            "title": "EU Trade Sustainability Impact Assessments: Revisiting the Consultation Process",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "The article concerns consultation methodology in sustainability assessments, not economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Trade sustainability consultations",
+      "reader_what": "The article evaluates consultation practice in EU trade sustainability impact assessments.",
+      "reader_why": "",
+      "reader_more": "The article evaluates consultation practice in EU trade sustainability impact assessments. The source is real and was verified, but admission fails the Radar scope test. The article concerns consultation methodology in sustainability assessments, not economic security.",
+      "deep_analysis": {
+        "work_kind": "research/policy material",
+        "research_question": "",
+        "main_finding": "The article evaluates consultation practice in EU trade sustainability impact assessments.",
+        "method_or_basis": "Substantive recovered source material was used to determine the actual subject and scope.",
+        "qualification": "Dropping the record is a scope judgement, not a claim that the work is low quality.",
+        "radar_relevance": "The article concerns consultation methodology in sustainability assessments, not economic security.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:b6a05b52058a1135",
+      "source_hash": "0c4f6709",
+      "identity_hash": "b395a2ca4adfd0bf",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "partial",
+            "note": "Opened supplied URL [none]; package material was thin/blocked or required independent provenance confirmation."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI was supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search for “Didi Kirsten Tatlow and Afra Herr, Japan’s “Economic Security” Measures: A Model for Managing China’s Rise - CELIS Institute - Investment Screening | National Security | Competitiveness” recovered a matching publisher, official, or repository record."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title/author-or-organisation/year cross-check matched the recovered work and package metadata."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered substantive matching evidence at https://dgap.org/en/research/publications/japans-economic-security-measures."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found no conflicting work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://dgap.org/en/research/publications/japans-economic-security-measures",
+            "title": "Didi Kirsten Tatlow and Afra Herr, Japan’s “Economic Security” Measures: A Model for Managing China’s Rise - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "DGAP full policy-brief page and PDF recovered."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: It connects China dependence, technology protection and economic statecraft directly to European policy."
+      },
+      "metadata_correction": {
+        "fields": {
+          "source": "German Council on Foreign Relations (DGAP)",
+          "date": "2022-02-07"
+        },
+        "unset": [],
+        "reason": "The underlying policy brief is a DGAP publication dated 7 February 2022; the CELIS page was only a discovery route."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Japan's economic-security lessons for Europe",
+      "reader_what": "DGAP analyses Japan's economic-security measures and explicitly recommends diversification and resilience steps for Germany and the EU.",
+      "reader_why": "It connects China dependence, technology protection and economic statecraft directly to European policy.",
+      "reader_more": "DGAP analyses Japan's economic-security measures and explicitly recommends diversification and resilience steps for Germany and the EU. It connects China dependence, technology protection and economic statecraft directly to European policy. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about japan's economic-security lessons for europe?",
+        "main_finding": "DGAP analyses Japan's economic-security measures and explicitly recommends diversification and resilience steps for Germany and the EU.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+        "radar_relevance": "It connects China dependence, technology protection and economic statecraft directly to European policy.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Germany",
+            "class": "member_state"
+          },
+          "mechanism": "diversifies",
+          "direction": "contracts",
+          "status": "intention",
+          "status_date": "2022-02-07",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "Germany"
+            ]
+          },
+          "kind": "advocacy",
+          "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+          "text": "The report recommends Germany diversify trade and reduce risky dependencies on China, drawing on Japan's economic-security approach.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:fb6a7f917fb53149",
+      "source_hash": "1fee8b04",
+      "identity_hash": "bb0049108455e52a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://www.ceps.eu/the-european-chips-initiative-industrial-policy-at-its-absolute-worst/; package includes substantial_web_text with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://www.ceps.eu/the-european-chips-initiative-industrial-policy-at-its-absolute-worst/",
+            "title": "The European Chips initiative – CEPS",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: Semiconductors are a critical technology where external dependence and production capacity affect European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "The European Chips initiative",
+      "reader_what": "CEPS assesses the EU chips initiative and Europe's semiconductor dependencies and industrial-policy response.",
+      "reader_why": "Semiconductors are a critical technology where external dependence and production capacity affect European economic security.",
+      "reader_more": "CEPS assesses the EU chips initiative and Europe's semiconductor dependencies and industrial-policy response. Semiconductors are a critical technology where external dependence and production capacity affect European economic security. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about the european chips initiative?",
+        "main_finding": "CEPS assesses the EU chips initiative and Europe's semiconductor dependencies and industrial-policy response.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+        "radar_relevance": "Semiconductors are a critical technology where external dependence and production capacity affect European economic security.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "adds_capacity",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2022-02-10",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+          "text": "The European Chips initiative seeks to strengthen semiconductor capacity and reduce strategic supply vulnerabilities.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:77681609a16b887e",
+      "source_hash": "dfcbaf92",
+      "identity_hash": "b5de496aeff153f8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://content.openalex.org/works/W4210274868.pdf; package includes pdf_excerpt with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://content.openalex.org/works/W4210274868.pdf",
+            "title": "United in Diversity? A Study on the Implementation of Sanctions in the European Union",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: Implementation gaps can weaken the practical force and consistency of the EU sanctions regime."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Uneven EU sanctions implementation",
+      "reader_what": "The study finds meaningful variation in how EU member states implement common sanctions.",
+      "reader_why": "Implementation gaps can weaken the practical force and consistency of the EU sanctions regime.",
+      "reader_more": "The study finds meaningful variation in how EU member states implement common sanctions. Implementation gaps can weaken the practical force and consistency of the EU sanctions regime. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about uneven eu sanctions implementation?",
+        "main_finding": "The study finds meaningful variation in how EU member states implement common sanctions.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+        "radar_relevance": "Implementation gaps can weaken the practical force and consistency of the EU sanctions regime.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EU member states",
+            "class": "member_state"
+          },
+          "mechanism": "sanctions",
+          "direction": "becomes_contested",
+          "status": "in_force",
+          "status_date": "2022-01-26",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+          "text": "EU sanctions are implemented unevenly across member states despite a common legal framework.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:1245127d99fbca48",
+      "source_hash": "0bb6ec73",
+      "identity_hash": "8f43e671cb27339d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://content.openalex.org/works/W4210713899.pdf; package includes pdf_excerpt with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://content.openalex.org/works/W4210713899.pdf",
+            "title": "Sanctioning Capacity in Trade and Sustainability Chapters in EU Trade Agreements: The EU–Korea Case",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: It concerns how the EU can condition market access and enforce trade commitments."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Sanctions in EU trade agreements",
+      "reader_what": "The article studies sanctioning capacity in EU trade-and-sustainability chapters using the EU-Korea case.",
+      "reader_why": "It concerns how the EU can condition market access and enforce trade commitments.",
+      "reader_more": "The article studies sanctioning capacity in EU trade-and-sustainability chapters using the EU-Korea case. It concerns how the EU can condition market access and enforce trade commitments. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about sanctions in eu trade agreements?",
+        "main_finding": "The article studies sanctioning capacity in EU trade-and-sustainability chapters using the EU-Korea case.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+        "radar_relevance": "It concerns how the EU can condition market access and enforce trade commitments.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "conditions",
+          "direction": "becomes_conditional",
+          "status": "operating",
+          "status_date": "2022-01-26",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "South Korea"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+          "text": "EU trade-and-sustainability chapters condition trade commitments, but their sanctioning capacity depends on enforcement design.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:6f033614cab68efa",
+      "source_hash": "af821a3b",
+      "identity_hash": "007156d0519b0b4c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://content.openalex.org/works/W4210473479.pdf; package includes pdf_excerpt with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://content.openalex.org/works/W4210473479.pdf",
+            "title": "Diplomatic Realisation of the EU’s “Geoeconomic Pivot”: Sanctions, Trade, and Development Policy Reform",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: It directly examines the EU economic-security toolbox and external leverage."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "The EU's geoeconomic pivot",
+      "reader_what": "The article analyses how sanctions, trade and development policy have become tools of EU geoeconomic action.",
+      "reader_why": "It directly examines the EU economic-security toolbox and external leverage.",
+      "reader_more": "The article analyses how sanctions, trade and development policy have become tools of EU geoeconomic action. It directly examines the EU economic-security toolbox and external leverage. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about the eu's geoeconomic pivot?",
+        "main_finding": "The article analyses how sanctions, trade and development policy have become tools of EU geoeconomic action.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+        "radar_relevance": "It directly examines the EU economic-security toolbox and external leverage.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.toolbox_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "integrates",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2022-01-26",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+          "text": "The EU increasingly combines sanctions, trade and development policy as instruments of geoeconomic action.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:2242db518547c6c6",
+      "source_hash": "61e8c628",
+      "identity_hash": "ff384fc3249d82de",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://merics.org/en/comment/strategic-rivalry-china-and-bidens-transatlantic-promise; package includes substantial_web_text with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://merics.org/en/comment/strategic-rivalry-china-and-bidens-transatlantic-promise",
+            "title": "Strategic rivalry with China and Biden’s transatlantic promise",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: Coordination affects European exposure to China and the design of defensive economic instruments."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Transatlantic China coordination",
+      "reader_what": "MERICS assesses US-EU coordination on China, including trade, technology and investment-policy frictions.",
+      "reader_why": "Coordination affects European exposure to China and the design of defensive economic instruments.",
+      "reader_more": "MERICS assesses US-EU coordination on China, including trade, technology and investment-policy frictions. Coordination affects European exposure to China and the design of defensive economic instruments. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about transatlantic china coordination?",
+        "main_finding": "MERICS assesses US-EU coordination on China, including trade, technology and investment-policy frictions.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+        "radar_relevance": "Coordination affects European exposure to China and the design of defensive economic instruments.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "partnership.like_minded_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "coordinates",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2022-01-20",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "United States",
+              "China"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+          "text": "US-EU China coordination increasingly covers trade, technology and investment-security instruments.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:ba38601fb72aff0f",
+      "source_hash": "65585f7a",
+      "identity_hash": "97962dc66133f11c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://ecfr.eu/article/sanctions-in-the-pipeline-germanys-troubles-over-russia-and-nord-stream-2/; package includes substantial_web_text with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://ecfr.eu/article/sanctions-in-the-pipeline-germanys-troubles-over-russia-and-nord-stream-2/",
+            "title": "Sanctions in the pipeline: Germany’s troubles over Russia and Nord Stream 2 – European Council on Foreign Relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: The case links energy infrastructure, sanctions and strategic dependence."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Nord Stream 2 sanctions pressure",
+      "reader_what": "ECFR analyses Germany's Nord Stream 2 dilemma under US sanctions pressure and Russian gas dependence.",
+      "reader_why": "The case links energy infrastructure, sanctions and strategic dependence.",
+      "reader_more": "ECFR analyses Germany's Nord Stream 2 dilemma under US sanctions pressure and Russian gas dependence. The case links energy infrastructure, sanctions and strategic dependence. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about nord stream 2 sanctions pressure?",
+        "main_finding": "ECFR analyses Germany's Nord Stream 2 dilemma under US sanctions pressure and Russian gas dependence.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+        "radar_relevance": "The case links energy infrastructure, sanctions and strategic dependence.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Germany",
+            "class": "member_state"
+          },
+          "mechanism": "secures",
+          "direction": "becomes_contested",
+          "status": "operating",
+          "status_date": "2022-01-19",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "Germany",
+              "Russia"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+          "text": "Nord Stream 2 exposed Germany to overlapping Russian gas dependence and US sanctions pressure.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:38026e0ac9ee3c64",
+      "source_hash": "beecb6fb",
+      "identity_hash": "9cd79d985716ae06",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://www.econjournals.com/index.php/ijeep/article/view/12602; package includes substantial_web_text with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://www.econjournals.com/index.php/ijeep/article/view/12602",
+            "title": "Eastern Mediterranean Area in Energy Security of The European Union: From Sea Border Issues to Economic Conflicts of Interest",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: Alternative gas routes and geopolitical disputes affect European supply diversification."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Eastern Mediterranean energy security",
+      "reader_what": "The study connects Eastern Mediterranean gas, maritime disputes and EU energy-security options.",
+      "reader_why": "Alternative gas routes and geopolitical disputes affect European supply diversification.",
+      "reader_more": "The study connects Eastern Mediterranean gas, maritime disputes and EU energy-security options. Alternative gas routes and geopolitical disputes affect European supply diversification. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about eastern mediterranean energy security?",
+        "main_finding": "The study connects Eastern Mediterranean gas, maritime disputes and EU energy-security options.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+        "radar_relevance": "Alternative gas routes and geopolitical disputes affect European supply diversification.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "supply_chain.diversification",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "diversifies",
+          "direction": "expands",
+          "status": "intention",
+          "status_date": "2022-01-19",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+          "text": "Eastern Mediterranean gas is analysed as a possible diversification route for European energy supply.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:b86018bf24b01a14",
+      "source_hash": "35951524",
+      "identity_hash": "6fc0e3dbc502f5f7",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-12-23_businesseuropes_comments_on_raw_materials_act-7bd-1.pdf; package includes pdf_excerpt with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-12-23_businesseuropes_comments_on_raw_materials_act-7bd-1.pdf",
+            "title": "The upcoming European Critical Raw Materials Act - BusinessEurope comments",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: The document addresses strategic raw-material dependencies and European processing and supply capacity."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2022-12"
+        },
+        "unset": [],
+        "reason": "The supplied PDF is a BusinessEurope comment paper dated December 2022, not an undifferentiated 2022 placeholder."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Critical Raw Materials Act priorities",
+      "reader_what": "BusinessEurope comments on the proposed EU Critical Raw Materials Act and supply-chain resilience needs.",
+      "reader_why": "The document addresses strategic raw-material dependencies and European processing and supply capacity.",
+      "reader_more": "BusinessEurope comments on the proposed EU Critical Raw Materials Act and supply-chain resilience needs. The document addresses strategic raw-material dependencies and European processing and supply capacity. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about critical raw materials act priorities?",
+        "main_finding": "BusinessEurope comments on the proposed EU Critical Raw Materials Act and supply-chain resilience needs.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+        "radar_relevance": "The document addresses strategic raw-material dependencies and European processing and supply capacity.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "materials.critical_raw",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "regulates",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2022-12",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+          "text": "BusinessEurope supports an EU critical-raw-material framework aimed at stronger supply resilience and European capacity.",
+          "confidence": "high",
+          "status_date_precision": "month"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:52bb64db1b866dfe",
+      "source_hash": "7425b8b9",
+      "identity_hash": "01face975b080c25",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://link.springer.com/chapter/10.1007/978-3-030-81281-2_2; package includes substantial_web_text with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://link.springer.com/chapter/10.1007/978-3-030-81281-2_2",
+            "title": "The Politics of FTAs in Asia: The Role of China and Implications for EU Trade Policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: Regional trade architecture can alter European firms' access and bargaining position."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Asian FTAs and EU trade strategy",
+      "reader_what": "The article examines China's role in Asian FTAs and implications for EU trade policy and market access.",
+      "reader_why": "Regional trade architecture can alter European firms' access and bargaining position.",
+      "reader_more": "The article examines China's role in Asian FTAs and implications for EU trade policy and market access. Regional trade architecture can alter European firms' access and bargaining position. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about asian ftas and eu trade strategy?",
+        "main_finding": "The article examines China's role in Asian FTAs and implications for EU trade policy and market access.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+        "radar_relevance": "Regional trade architecture can alter European firms' access and bargaining position.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "operating",
+          "status_date": "2022-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "China"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+          "text": "Asian FTA formation led by China can alter market-access conditions relevant to EU trade strategy.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:886c192b9134e8a2",
+      "source_hash": "ba291715",
+      "identity_hash": "fd48c75f34bec60b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://link.springer.com/rwe/10.1007/978-981-16-9680-0_2-1; package includes substantial_web_text with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://link.springer.com/rwe/10.1007/978-981-16-9680-0_2-1",
+            "title": "The Geopolitics of the EU-Russia Gas Trade: Reviewing Power in International Gas Markets",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: Gas dependence and supplier leverage are core European energy-security exposures."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Power in EU-Russia gas trade",
+      "reader_what": "The study reassesses bargaining power and dependence in EU-Russia gas trade.",
+      "reader_why": "Gas dependence and supplier leverage are core European energy-security exposures.",
+      "reader_more": "The study reassesses bargaining power and dependence in EU-Russia gas trade. Gas dependence and supplier leverage are core European energy-security exposures. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about power in eu-russia gas trade?",
+        "main_finding": "The study reassesses bargaining power and dependence in EU-Russia gas trade.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+        "radar_relevance": "Gas dependence and supplier leverage are core European energy-security exposures.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "operating",
+          "status_date": "2022-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "Russia"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+          "text": "EU-Russia gas trade creates interdependent but asymmetric bargaining power around European gas supply.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:72935e4af19224f9",
+      "source_hash": "369ba224",
+      "identity_hash": "d637b62b873c8afa",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://globaltradealert.org/state-act/62334-switzerland-three-russian-banks-and-a-tech-company-put-on-sanctions-list-resulting-in-asset-freezes/; package includes abstract_or_landing_page with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://globaltradealert.org/state-act/62334-switzerland-three-russian-banks-and-a-tech-company-put-on-sanctions-list-resulting-in-asset-freezes/",
+            "title": "Switzerland: Three Russian banks and a tech company put on sanctions list resulting in asset freezes - Global Trade Alert",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: It is a concrete European sanctions action affecting financial and technology entities."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Swiss sanctions on Russian entities",
+      "reader_what": "The record documents Switzerland adding Russian banks and a technology company to an asset-freeze list.",
+      "reader_why": "It is a concrete European sanctions action affecting financial and technology entities.",
+      "reader_more": "The record documents Switzerland adding Russian banks and a technology company to an asset-freeze list. It is a concrete European sanctions action affecting financial and technology entities. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "official policy/legal material",
+        "research_question": "What does the work establish about swiss sanctions on russian entities?",
+        "main_finding": "The record documents Switzerland adding Russian banks and a technology company to an asset-freeze list.",
+        "method_or_basis": "Official document or first-party action record.",
+        "qualification": "Official material verifies the formal action or position; it does not independently prove that the measure achieved its intended effects.",
+        "radar_relevance": "It is a concrete European sanctions action affecting financial and technology entities.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Switzerland",
+            "class": "third_country"
+          },
+          "mechanism": "sanctions",
+          "direction": "expands",
+          "status": "adopted",
+          "status_date": "2022-01-01",
+          "scope": {
+            "level": "associated_country",
+            "countries": [
+              "Switzerland",
+              "Russia"
+            ]
+          },
+          "kind": "action",
+          "qualification": "Official material verifies the formal action or position; it does not independently prove that the measure achieved its intended effects.",
+          "text": "Switzerland added three Russian banks and a technology company to an asset-freeze sanctions list.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:dcdb4e9aff55559e",
+      "source_hash": "628587e9",
+      "identity_hash": "f8ac10275df2fcab",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://globaltradealert.org/state-act/62319-switzerland-introduction-of-sanctions-against-separatist-regions-donetsk-and-luhansk-in-ukraine-and-against-russia/; package includes substantial_web_text with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://globaltradealert.org/state-act/62319-switzerland-introduction-of-sanctions-against-separatist-regions-donetsk-and-luhansk-in-ukraine-and-against-russia/",
+            "title": "Switzerland: Introduction of sanctions against separatist regions Donetsk and Luhansk in Ukraine and against Russia - Global Trade Alert",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: It is a concrete sanctions measure by an associated European economy."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Swiss sanctions after Russia's invasion",
+      "reader_what": "The record documents Swiss sanctions concerning Donetsk, Luhansk and Russia following the invasion of Ukraine.",
+      "reader_why": "It is a concrete sanctions measure by an associated European economy.",
+      "reader_more": "The record documents Swiss sanctions concerning Donetsk, Luhansk and Russia following the invasion of Ukraine. It is a concrete sanctions measure by an associated European economy. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "official policy/legal material",
+        "research_question": "What does the work establish about swiss sanctions after russia's invasion?",
+        "main_finding": "The record documents Swiss sanctions concerning Donetsk, Luhansk and Russia following the invasion of Ukraine.",
+        "method_or_basis": "Official document or first-party action record.",
+        "qualification": "Official material verifies the formal action or position; it does not independently prove that the measure achieved its intended effects.",
+        "radar_relevance": "It is a concrete sanctions measure by an associated European economy.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Switzerland",
+            "class": "third_country"
+          },
+          "mechanism": "sanctions",
+          "direction": "expands",
+          "status": "adopted",
+          "status_date": "2022-01-01",
+          "scope": {
+            "level": "associated_country",
+            "countries": [
+              "Switzerland",
+              "Russia",
+              "Ukraine"
+            ]
+          },
+          "kind": "action",
+          "qualification": "Official material verifies the formal action or position; it does not independently prove that the measure achieved its intended effects.",
+          "text": "Switzerland introduced sanctions concerning Russia and the separatist-controlled Donetsk and Luhansk regions.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:ec0a1093390207c4",
+      "source_hash": "08636371",
+      "identity_hash": "ab92321993aef01d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "partial",
+            "note": "Opened supplied URL [none]; package material was thin/blocked or required independent provenance confirmation."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI was supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search for “Sustain Eco: Sustainability & Inclusion Strategy for Growth Corridors in Tanzania” recovered a matching publisher, official, or repository record."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title/author-or-organisation/year cross-check matched the recovered work and package metadata."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered substantive matching evidence at https://international-partnerships.ec.europa.eu/eu-due-diligence-navigator-partner-countries/sustain-eco-sustainability-inclusion-strategy-growth-corridors-tanzania_en."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found no conflicting work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_page",
+            "url": "https://international-partnerships.ec.europa.eu/eu-due-diligence-navigator-partner-countries/sustain-eco-sustainability-inclusion-strategy-growth-corridors-tanzania_en",
+            "title": "Sustain Eco: Sustainability & Inclusion Strategy for Growth Corridors in Tanzania",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "European Commission project page recovered with substantive objectives and activities."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "This is a Tanzania development and ecosystem-capacity project, not substantive European economic-security work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Tanzania sustainability project",
+      "reader_what": "The EU project page describes capacity building for sustainable land and resource management in Tanzania.",
+      "reader_why": "",
+      "reader_more": "The EU project page describes capacity building for sustainable land and resource management in Tanzania. The source is real and was verified, but admission fails the Radar scope test. This is a Tanzania development and ecosystem-capacity project, not substantive European economic-security work.",
+      "deep_analysis": {
+        "work_kind": "research/policy material",
+        "research_question": "",
+        "main_finding": "The EU project page describes capacity building for sustainable land and resource management in Tanzania.",
+        "method_or_basis": "Substantive recovered source material was used to determine the actual subject and scope.",
+        "qualification": "Dropping the record is a scope judgement, not a claim that the work is low quality.",
+        "radar_relevance": "This is a Tanzania development and ecosystem-capacity project, not substantive European economic-security work.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:6cefa9ec5bf3de0c",
+      "source_hash": "18cd9550",
+      "identity_hash": "88c1c0973b53d0d4",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "partial",
+            "note": "Opened supplied URL [none]; package material was thin/blocked or required independent provenance confirmation."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI was supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search for “Subsidies and market access: Towards an inventory of corporate subsidies by China, the EU and the US | Discussion guide | Hinrich Foundation” recovered a matching publisher, official, or repository record."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title/author-or-organisation/year cross-check matched the recovered work and package metadata."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered substantive matching evidence at https://www.wita.org/atp-research/subsidies-market-access-corporate-subsidies/."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found no conflicting work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "research_report_summary",
+            "url": "https://www.wita.org/atp-research/subsidies-market-access-corporate-subsidies/",
+            "title": "Subsidies and market access: Towards an inventory of corporate subsidies by China, the EU and the US | Discussion guide | Hinrich Foundation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Substantive report description and bibliographic details recovered; the underlying report is identified as Global Trade Alert Report 28."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "The report is a broad comparative subsidy inventory and market-access study; EU economic security is not its central object."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Corporate subsidies inventory",
+      "reader_what": "The report inventories corporate subsidies awarded by China, the EU and the US and discusses market-access tensions.",
+      "reader_why": "",
+      "reader_more": "The report inventories corporate subsidies awarded by China, the EU and the US and discusses market-access tensions. The source is real and was verified, but admission fails the Radar scope test. The report is a broad comparative subsidy inventory and market-access study; EU economic security is not its central object.",
+      "deep_analysis": {
+        "work_kind": "research/policy material",
+        "research_question": "",
+        "main_finding": "The report inventories corporate subsidies awarded by China, the EU and the US and discusses market-access tensions.",
+        "method_or_basis": "Substantive recovered source material was used to determine the actual subject and scope.",
+        "qualification": "Dropping the record is a scope judgement, not a claim that the work is low quality.",
+        "radar_relevance": "The report is a broad comparative subsidy inventory and market-access study; EU economic security is not its central object.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:1635b92b43ead3ef",
+      "source_hash": "1e736687",
+      "identity_hash": "9553a8022d169b18",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "partial",
+            "note": "Opened supplied URL [none]; package material was thin/blocked or required independent provenance confirmation."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI was supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search for “Strengthening Agribusiness Resilience and Competitiveness (STAR) in Uganda” recovered a matching publisher, official, or repository record."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title/author-or-organisation/year cross-check matched the recovered work and package metadata."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered substantive matching evidence at https://international-partnerships.ec.europa.eu/eu-due-diligence-navigator-partner-countries/strengthening-agribusiness-resilience-and-competitiveness-star-uganda_en."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found no conflicting work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_page",
+            "url": "https://international-partnerships.ec.europa.eu/eu-due-diligence-navigator-partner-countries/strengthening-agribusiness-resilience-and-competitiveness-star-uganda_en",
+            "title": "Strengthening Agribusiness Resilience and Competitiveness (STAR) in Uganda",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "European Commission project page recovered with objectives, geography and implementation details."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "The Uganda project concerns agribusiness and climate resilience outside Europe, without a substantive European economic-security connection."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Uganda agribusiness resilience project",
+      "reader_what": "The project supports climate resilience and competitiveness of farmers, SMEs and cooperatives in Uganda.",
+      "reader_why": "",
+      "reader_more": "The project supports climate resilience and competitiveness of farmers, SMEs and cooperatives in Uganda. The source is real and was verified, but admission fails the Radar scope test. The Uganda project concerns agribusiness and climate resilience outside Europe, without a substantive European economic-security connection.",
+      "deep_analysis": {
+        "work_kind": "research/policy material",
+        "research_question": "",
+        "main_finding": "The project supports climate resilience and competitiveness of farmers, SMEs and cooperatives in Uganda.",
+        "method_or_basis": "Substantive recovered source material was used to determine the actual subject and scope.",
+        "qualification": "Dropping the record is a scope judgement, not a claim that the work is low quality.",
+        "radar_relevance": "The Uganda project concerns agribusiness and climate resilience outside Europe, without a substantive European economic-security connection.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:fad7758baf11a46b",
+      "source_hash": "8f83c681",
+      "identity_hash": "ce245971b65be6e4",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "partial",
+            "note": "Opened supplied URL [none]; package material was thin/blocked or required independent provenance confirmation."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI was supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search for “Strategic autonomy: Not without integration - Egmont Institute” recovered a matching publisher, official, or repository record."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title/author-or-organisation/year cross-check matched the recovered work and package metadata."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered substantive matching evidence at https://egmontinstitute.be/strategic-autonomy-not-without-integration/."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found no conflicting work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://egmontinstitute.be/strategic-autonomy-not-without-integration/",
+            "title": "Strategic autonomy: Not without integration - Egmont Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Egmont full article recovered."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "The article is centred on military force integration and defence strategic autonomy, not economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Military strategic autonomy",
+      "reader_what": "The Egmont article argues EU strategic autonomy requires integration of national military forces.",
+      "reader_why": "",
+      "reader_more": "The Egmont article argues EU strategic autonomy requires integration of national military forces. The source is real and was verified, but admission fails the Radar scope test. The article is centred on military force integration and defence strategic autonomy, not economic security.",
+      "deep_analysis": {
+        "work_kind": "research/policy material",
+        "research_question": "",
+        "main_finding": "The Egmont article argues EU strategic autonomy requires integration of national military forces.",
+        "method_or_basis": "Substantive recovered source material was used to determine the actual subject and scope.",
+        "qualification": "Dropping the record is a scope judgement, not a claim that the work is low quality.",
+        "radar_relevance": "The article is centred on military force integration and defence strategic autonomy, not economic security.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:c60da3c5f82adad9",
+      "source_hash": "70d62272",
+      "identity_hash": "fa47be5486175ab0",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://globaltradealert.org/state-act/62426-republic-of-korea-ministry-of-economy-and-finance-publishes-additional-sanctions-against-russia/; package includes substantial_web_text with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://globaltradealert.org/state-act/62426-republic-of-korea-ministry-of-economy-and-finance-publishes-additional-sanctions-against-russia/",
+            "title": "Republic of Korea: Ministry of Economy and Finance publishes additional sanctions against Russia - Global Trade Alert",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "The measure is a South Korean sanctions action with no substantive European scope."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Korean sanctions on Russia",
+      "reader_what": "The record documents additional sanctions announced by South Korea against Russia.",
+      "reader_why": "",
+      "reader_more": "The record documents additional sanctions announced by South Korea against Russia. The source is real and was verified, but admission fails the Radar scope test. The measure is a South Korean sanctions action with no substantive European scope.",
+      "deep_analysis": {
+        "work_kind": "research/policy material",
+        "research_question": "",
+        "main_finding": "The record documents additional sanctions announced by South Korea against Russia.",
+        "method_or_basis": "Substantive recovered source material was used to determine the actual subject and scope.",
+        "qualification": "Dropping the record is a scope judgement, not a claim that the work is low quality.",
+        "radar_relevance": "The measure is a South Korean sanctions action with no substantive European scope.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:701a6cffa8300bff",
+      "source_hash": "2bf05357",
+      "identity_hash": "475157890a761a6b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "partial",
+            "note": "Opened supplied URL [none]; package material was thin/blocked or required independent provenance confirmation."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI was supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search for “Putin’s critical raw materials are a threat to EU economic security - Egmont Institute” recovered a matching publisher, official, or repository record."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title/author-or-organisation/year cross-check matched the recovered work and package metadata."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered substantive matching evidence at https://www.egmontinstitute.be/putins-critical-raw-materials-are-a-threat-to-eu-economic-security/."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found no conflicting work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.egmontinstitute.be/putins-critical-raw-materials-are-a-threat-to-eu-economic-security/",
+            "title": "Putin’s critical raw materials are a threat to EU economic security - Egmont Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Egmont full article recovered."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: It links export restrictions and concentrated supply to European economic-security risk."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Russian raw materials as EU exposure",
+      "reader_what": "Egmont argues Russian control over critical raw-material exports creates a direct vulnerability for the EU.",
+      "reader_why": "It links export restrictions and concentrated supply to European economic-security risk.",
+      "reader_more": "Egmont argues Russian control over critical raw-material exports creates a direct vulnerability for the EU. It links export restrictions and concentrated supply to European economic-security risk. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about russian raw materials as eu exposure?",
+        "main_finding": "Egmont argues Russian control over critical raw-material exports creates a direct vulnerability for the EU.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+        "radar_relevance": "It links export restrictions and concentrated supply to European economic-security risk.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "materials.export_restriction",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Russia",
+            "class": "third_country"
+          },
+          "mechanism": "restricts",
+          "direction": "becomes_contested",
+          "status": "operating",
+          "status_date": "2022-01-01",
+          "scope": {
+            "level": "external",
+            "countries": [
+              "Russia"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+          "text": "Russian leverage over critical raw-material exports creates a supply vulnerability for the European Union.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:2ddda1ff58597479",
+      "source_hash": "435c904e",
+      "identity_hash": "ed07b0eacef3a095",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://globaltradealert.org/state-act/62425-new-zealand-government-implements-sanctions-part-of-the-russia-sanctions-act-2022/; package includes substantial_web_text with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://globaltradealert.org/state-act/62425-new-zealand-government-implements-sanctions-part-of-the-russia-sanctions-act-2022/",
+            "title": "New Zealand: Government implements sanctions part of the Russia Sanctions Act 2022 - Global Trade Alert",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "The measure is a New Zealand sanctions action with no substantive European scope."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "New Zealand sanctions on Russia",
+      "reader_what": "The record documents New Zealand's implementation of Russia sanctions.",
+      "reader_why": "",
+      "reader_more": "The record documents New Zealand's implementation of Russia sanctions. The source is real and was verified, but admission fails the Radar scope test. The measure is a New Zealand sanctions action with no substantive European scope.",
+      "deep_analysis": {
+        "work_kind": "research/policy material",
+        "research_question": "",
+        "main_finding": "The record documents New Zealand's implementation of Russia sanctions.",
+        "method_or_basis": "Substantive recovered source material was used to determine the actual subject and scope.",
+        "qualification": "Dropping the record is a scope judgement, not a claim that the work is low quality.",
+        "radar_relevance": "The measure is a New Zealand sanctions action with no substantive European scope.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:a72f8d76dab711f1",
+      "source_hash": "43b377ee",
+      "identity_hash": "b44da54b06e4d5e7",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "partial",
+            "note": "Opened supplied URL [none]; package material was thin/blocked or required independent provenance confirmation."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI was supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search for “Memorandum of understanding on a strategic partnership on renewable hydrogen between the European union and the Arab republic of Egypt” recovered a matching publisher, official, or repository record."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title/author-or-organisation/year cross-check matched the recovered work and package metadata."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered substantive matching evidence at https://energy.ec.europa.eu/publications/memorandum-understanding-strategic-partnership-renewable-hydrogen-between-european-union-and-arab_en."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found no conflicting work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_document",
+            "url": "https://energy.ec.europa.eu/publications/memorandum-understanding-strategic-partnership-renewable-hydrogen-between-european-union-and-arab_en",
+            "title": "Memorandum of understanding on a strategic partnership on renewable hydrogen between the European union and the Arab republic of Egypt",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "European Commission publication page and MoU recovered."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: It supports diversification of European energy supply as the EU reduces Russian fossil-fuel dependence."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2022-11-16"
+        },
+        "unset": [],
+        "reason": "The European Commission publication page dates the EU-Egypt renewable-hydrogen MoU to 16 November 2022."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "EU-Egypt renewable hydrogen partnership",
+      "reader_what": "The EU and Egypt signed a renewable-hydrogen partnership covering industry, trade and investment conditions.",
+      "reader_why": "It supports diversification of European energy supply as the EU reduces Russian fossil-fuel dependence.",
+      "reader_more": "The EU and Egypt signed a renewable-hydrogen partnership covering industry, trade and investment conditions. It supports diversification of European energy supply as the EU reduces Russian fossil-fuel dependence. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "official policy/legal material",
+        "research_question": "What does the work establish about eu-egypt renewable hydrogen partnership?",
+        "main_finding": "The EU and Egypt signed a renewable-hydrogen partnership covering industry, trade and investment conditions.",
+        "method_or_basis": "Official document or first-party action record.",
+        "qualification": "Official material verifies the formal action or position; it does not independently prove that the measure achieved its intended effects.",
+        "radar_relevance": "It supports diversification of European energy supply as the EU reduces Russian fossil-fuel dependence.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.agreement",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "partners",
+          "direction": "expands",
+          "status": "adopted",
+          "status_date": "2022-11-16",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "Egypt"
+            ]
+          },
+          "kind": "action",
+          "qualification": "Official material verifies the formal action or position; it does not independently prove that the measure achieved its intended effects.",
+          "text": "The EU and Egypt signed a strategic renewable-hydrogen partnership covering investment, industry and future trade.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:fc3fb29d88573770",
+      "source_hash": "b80113c8",
+      "identity_hash": "f2d4af0d01b17f0e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://globaltradealert.org/state-act/62256-japan-government-announces-sanctions-against-russia-and-regions-in-eastern-ukraine-following-russian-recognition-of-two-ukrainian-separatist-regions/; package includes substantial_web_text with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://globaltradealert.org/state-act/62256-japan-government-announces-sanctions-against-russia-and-regions-in-eastern-ukraine-following-russian-recognition-of-two-ukrainian-separatist-regions/",
+            "title": "Japan: Government announces sanctions against Russia and regions in eastern Ukraine following Russian recognition of two Ukrainian separatist regions - Global Trade Alert",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "The measure is a Japanese sanctions action with no substantive European scope."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Japanese sanctions on Russia",
+      "reader_what": "The record documents Japanese sanctions against Russia and occupied Ukrainian regions.",
+      "reader_why": "",
+      "reader_more": "The record documents Japanese sanctions against Russia and occupied Ukrainian regions. The source is real and was verified, but admission fails the Radar scope test. The measure is a Japanese sanctions action with no substantive European scope.",
+      "deep_analysis": {
+        "work_kind": "research/policy material",
+        "research_question": "",
+        "main_finding": "The record documents Japanese sanctions against Russia and occupied Ukrainian regions.",
+        "method_or_basis": "Substantive recovered source material was used to determine the actual subject and scope.",
+        "qualification": "Dropping the record is a scope judgement, not a claim that the work is low quality.",
+        "radar_relevance": "The measure is a Japanese sanctions action with no substantive European scope.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:d98aa1ca0d0635d1",
+      "source_hash": "53f9f797",
+      "identity_hash": "4e871248f866303a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://link.springer.com/chapter/10.1007/978-3-031-11031-3_1; package includes substantial_web_text with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://link.springer.com/chapter/10.1007/978-3-031-11031-3_1",
+            "title": "Introduction: Evaluating the Africa-EU Partnership on Peace and Security",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "The article concerns peace and security cooperation, not a central economic-security mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Africa-EU peace and security partnership",
+      "reader_what": "The article evaluates the Africa-EU partnership on peace and security.",
+      "reader_why": "",
+      "reader_more": "The article evaluates the Africa-EU partnership on peace and security. The source is real and was verified, but admission fails the Radar scope test. The article concerns peace and security cooperation, not a central economic-security mechanism.",
+      "deep_analysis": {
+        "work_kind": "research/policy material",
+        "research_question": "",
+        "main_finding": "The article evaluates the Africa-EU partnership on peace and security.",
+        "method_or_basis": "Substantive recovered source material was used to determine the actual subject and scope.",
+        "qualification": "Dropping the record is a scope judgement, not a claim that the work is low quality.",
+        "radar_relevance": "The article concerns peace and security cooperation, not a central economic-security mechanism.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:53856bf15757d0ba",
+      "source_hash": "846156b5",
+      "identity_hash": "bc75e72e190b90e0",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "partial",
+            "note": "Opened supplied URL [none]; package material was thin/blocked or required independent provenance confirmation."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI was supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search for “Institut Jacques Delors - [FR] Euroquestions #51 | What future for European sanctions against Russia?” recovered a matching publisher, official, or repository record."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title/author-or-organisation/year cross-check matched the recovered work and package metadata."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered substantive matching evidence at https://institutdelors.eu/en/publications/euroquestions-51-what-future-for-european-sanctions-against-russia/."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found no conflicting work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_article",
+            "url": "https://institutdelors.eu/en/publications/euroquestions-51-what-future-for-european-sanctions-against-russia/",
+            "title": "Institut Jacques Delors - [FR] Euroquestions #51 | What future for European sanctions against Russia?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Institut Jacques Delors publication page recovered."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: It directly concerns sanctions as an EU geoeconomic instrument."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Future of EU sanctions on Russia",
+      "reader_what": "The Jacques Delors analysis examines the design and future trajectory of European sanctions against Russia.",
+      "reader_why": "It directly concerns sanctions as an EU geoeconomic instrument.",
+      "reader_more": "The Jacques Delors analysis examines the design and future trajectory of European sanctions against Russia. It directly concerns sanctions as an EU geoeconomic instrument. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about future of eu sanctions on russia?",
+        "main_finding": "The Jacques Delors analysis examines the design and future trajectory of European sanctions against Russia.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+        "radar_relevance": "It directly concerns sanctions as an EU geoeconomic instrument.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "sanctions",
+          "direction": "becomes_contested",
+          "status": "in_force",
+          "status_date": "2022-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "Russia"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+          "text": "The analysis examines how European sanctions on Russia may evolve and what determines their durability and effect.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:deea48b70de547cb",
+      "source_hash": "8edf6e94",
+      "identity_hash": "f4099096a126efab",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://institutdelors.eu/content/uploads/2025/04/PP303_Critical_Material_Raw_France_Voita_EN.pdf; package includes pdf_excerpt with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://institutdelors.eu/content/uploads/2025/04/PP303_Critical_Material_Raw_France_Voita_EN.pdf",
+            "title": "Institut Jacques Delors - The Resilience of Critical Raw Materials Value Chains in France",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: It measures a member state's exposure to concentrated strategic-material supply chains."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2024-10"
+        },
+        "unset": [],
+        "reason": "The policy paper itself is Policy Paper No. 303, October 2024; the scanner year placeholder was incorrect."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "French critical-raw-material resilience",
+      "reader_what": "The policy paper maps vulnerabilities and resilience options in critical-raw-material value chains in France.",
+      "reader_why": "It measures a member state's exposure to concentrated strategic-material supply chains.",
+      "reader_more": "The policy paper maps vulnerabilities and resilience options in critical-raw-material value chains in France. It measures a member state's exposure to concentrated strategic-material supply chains. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about french critical-raw-material resilience?",
+        "main_finding": "The policy paper maps vulnerabilities and resilience options in critical-raw-material value chains in France.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+        "radar_relevance": "It measures a member state's exposure to concentrated strategic-material supply chains.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "materials.critical_raw",
+          "secondary_objects": [],
+          "actor": {
+            "name": "France",
+            "class": "member_state"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2024-10",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "France"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+          "text": "The policy paper identifies resilience gaps in French critical-raw-material value chains.",
+          "confidence": "high",
+          "status_date_precision": "month"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:d4fe02899bb29812",
+      "source_hash": "6f1b08f5",
+      "identity_hash": "60da534f36c72a25",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://international-partnerships.ec.europa.eu/eu-due-diligence-navigator-partner-countries/global-supply-chain-support-fund-gsc-support-fund_en; package includes abstract_or_landing_page with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://international-partnerships.ec.europa.eu/eu-due-diligence-navigator-partner-countries/global-supply-chain-support-fund-gsc-support-fund_en",
+            "title": "Global Supply Chain Support Fund (GSC Support Fund)",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "The programme is a development-finance/sustainable-supply-chain support instrument, not a substantive European security-of-supply analysis."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Global Supply Chain Support Fund",
+      "reader_what": "The programme page describes development-finance support for due diligence and sustainable supply chains.",
+      "reader_why": "",
+      "reader_more": "The programme page describes development-finance support for due diligence and sustainable supply chains. The source is real and was verified, but admission fails the Radar scope test. The programme is a development-finance/sustainable-supply-chain support instrument, not a substantive European security-of-supply analysis.",
+      "deep_analysis": {
+        "work_kind": "research/policy material",
+        "research_question": "",
+        "main_finding": "The programme page describes development-finance support for due diligence and sustainable supply chains.",
+        "method_or_basis": "Substantive recovered source material was used to determine the actual subject and scope.",
+        "qualification": "Dropping the record is a scope judgement, not a claim that the work is low quality.",
+        "radar_relevance": "The programme is a development-finance/sustainable-supply-chain support instrument, not a substantive European security-of-supply analysis.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:9f8d99b40718c582",
+      "source_hash": "1c405180",
+      "identity_hash": "dfdd2227c113d747",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://content.openalex.org/works/W4400153976.pdf; package includes pdf_excerpt with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://content.openalex.org/works/W4400153976.pdf",
+            "title": "Framework for Screening Foreign Direct Investment into the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: It is directly about control of strategic inbound investment."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "EU FDI screening framework",
+      "reader_what": "The OECD document describes the EU framework for screening foreign direct investment on security and public-order grounds.",
+      "reader_why": "It is directly about control of strategic inbound investment.",
+      "reader_more": "The OECD document describes the EU framework for screening foreign direct investment on security and public-order grounds. It is directly about control of strategic inbound investment. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "official policy/legal material",
+        "research_question": "What does the work establish about eu fdi screening framework?",
+        "main_finding": "The OECD document describes the EU framework for screening foreign direct investment on security and public-order grounds.",
+        "method_or_basis": "Official document or first-party action record.",
+        "qualification": "Official material verifies the formal action or position; it does not independently prove that the measure achieved its intended effects.",
+        "radar_relevance": "It is directly about control of strategic inbound investment.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "screens",
+          "direction": "expands",
+          "status": "in_force",
+          "status_date": "2022-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Official material verifies the formal action or position; it does not independently prove that the measure achieved its intended effects.",
+          "text": "The EU framework enables screening of foreign direct investment on security and public-order grounds.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://egmontinstitute.be/app/uploads/2026/07/Securing-the-Eastern-Flank_Policy_Brief_413.pdf?type=pdf",
+      "source_hash": "846cbd6c",
+      "identity_hash": "7e545fdeec6a4ffd",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://egmontinstitute.be/app/uploads/2026/07/Securing-the-Eastern-Flank_Policy_Brief_413.pdf?type=pdf; package includes pdf_excerpt with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://egmontinstitute.be/app/uploads/2026/07/Securing-the-Eastern-Flank_Policy_Brief_413.pdf?type=pdf",
+            "title": "Securing the Eastern Flank: Understanding Belarus’ Role in European Security and Future Prospects - Egmont Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "The report is primarily military and geopolitical analysis of Belarus, without a central economic-security mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Belarus and Europe's eastern flank",
+      "reader_what": "The report focuses on Belarus's military and geopolitical role in European security.",
+      "reader_why": "",
+      "reader_more": "The report focuses on Belarus's military and geopolitical role in European security. The source is real and was verified, but admission fails the Radar scope test. The report is primarily military and geopolitical analysis of Belarus, without a central economic-security mechanism.",
+      "deep_analysis": {
+        "work_kind": "research/policy material",
+        "research_question": "",
+        "main_finding": "The report focuses on Belarus's military and geopolitical role in European security.",
+        "method_or_basis": "Substantive recovered source material was used to determine the actual subject and scope.",
+        "qualification": "Dropping the record is a scope judgement, not a claim that the work is low quality.",
+        "radar_relevance": "The report is primarily military and geopolitical analysis of Belarus, without a central economic-security mechanism.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1093/jnlids/idag018",
+      "source_hash": "06330f1f",
+      "identity_hash": "40136e44c8c5d96a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened supplied URL https://doi.org/10.1093/jnlids/idag018; package material was thin/blocked or required independent provenance confirmation."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Resolved/searched DOI 10.1093/jnlids/idag018 and matched the claimed work."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search for “Regulators and adjudicators: the interplay between trade committees and dispute settlement bodies in the European Union’s Free Trade Agreements” recovered a matching publisher, official, or repository record."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title/author-or-organisation/year cross-check matched the recovered work and package metadata."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered substantive matching evidence at https://doi.org/10.1093/jnlids/idag018."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found no conflicting work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_article",
+            "url": "https://doi.org/10.1093/jnlids/idag018",
+            "title": "Regulators and adjudicators: the interplay between trade committees and dispute settlement bodies in the European Union’s Free Trade Agreements",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Identity and provenance were verified, but a substantive copy of the claimed work itself remained inaccessible after the recorded recovery ladder."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The work identity is verified, but accessible evidence is too thin to support an authoritative KEEP/REVIEW/DROP decision without substituting another source."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://www.ispionline.it/en/publication/imec-the-backbone-of-an-indo-mediterranean-region-italy-and-the-future-of-transcontinental-connectivity-232214",
+      "source_hash": "c9ad5bb4",
+      "identity_hash": "1ffe099eb8889ab0",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://www.ispionline.it/en/publication/imec-the-backbone-of-an-indo-mediterranean-region-italy-and-the-future-of-transcontinental-connectivity-232214; package includes substantial_web_text with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://www.ispionline.it/en/publication/imec-the-backbone-of-an-indo-mediterranean-region-italy-and-the-future-of-transcontinental-connectivity-232214",
+            "title": "Beyond the Corridor: Shaping Europe’s Role in IMEC | ISPI",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: The corridor could reduce concentrated dependencies while strengthening critical connectivity."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Europe's role in IMEC",
+      "reader_what": "ISPI argues Europe can use IMEC to diversify supply chains and connect strategic energy, raw-material and digital infrastructure.",
+      "reader_why": "The corridor could reduce concentrated dependencies while strengthening critical connectivity.",
+      "reader_more": "ISPI argues Europe can use IMEC to diversify supply chains and connect strategic energy, raw-material and digital infrastructure. The corridor could reduce concentrated dependencies while strengthening critical connectivity. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about europe's role in imec?",
+        "main_finding": "ISPI argues Europe can use IMEC to diversify supply chains and connect strategic energy, raw-material and digital infrastructure.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+        "radar_relevance": "The corridor could reduce concentrated dependencies while strengthening critical connectivity.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "supply_chain.diversification",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "partners",
+          "direction": "expands",
+          "status": "intention",
+          "status_date": "2026-09-25",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "India"
+            ]
+          },
+          "kind": "advocacy",
+          "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+          "text": "ISPI presents IMEC as a way for Europe to diversify strategic supply chains and infrastructure links.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=cec91f82-bd70-11f1-9aae-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "source_hash": "1717dcf8",
+      "identity_hash": "f5b0245bb882fc56",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://op.europa.eu/o/opportal-service/download-handler?identifier=cec91f82-bd70-11f1-9aae-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=; package includes pdf_excerpt with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=cec91f82-bd70-11f1-9aae-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+            "title": "Proposal for a COUNCIL DECISION on the position to be taken on behalf of the European Union in the General Council of the World Trade Organization on the European Union request for an extension of the WTO waiver permitting autonomous trade preferences to the Western Balkans - Publications Office of the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "The proposal extends ordinary autonomous trade preferences; the document does not establish a strategic economic-security mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Western Balkans trade-preference waiver",
+      "reader_what": "The Commission proposes an EU position to extend a WTO waiver for autonomous trade preferences to the Western Balkans.",
+      "reader_why": "",
+      "reader_more": "The Commission proposes an EU position to extend a WTO waiver for autonomous trade preferences to the Western Balkans. The source is real and was verified, but admission fails the Radar scope test. The proposal extends ordinary autonomous trade preferences; the document does not establish a strategic economic-security mechanism.",
+      "deep_analysis": {
+        "work_kind": "research/policy material",
+        "research_question": "",
+        "main_finding": "The Commission proposes an EU position to extend a WTO waiver for autonomous trade preferences to the Western Balkans.",
+        "method_or_basis": "Substantive recovered source material was used to determine the actual subject and scope.",
+        "qualification": "Dropping the record is a scope judgement, not a claim that the work is low quality.",
+        "radar_relevance": "The proposal extends ordinary autonomous trade preferences; the document does not establish a strategic economic-security mechanism.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.nxsust.2026.100398",
+      "source_hash": "9647a0cf",
+      "identity_hash": "b09be7b4a5c79eb3",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://content.openalex.org/works/W7167330932.pdf; package includes pdf_excerpt with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://content.openalex.org/works/W7167330932.pdf",
+            "title": "Eurasian carbon governance: Fragmented decarbonization in a geoeconomic Mosaic",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified source has substantive European economic-security relevance: It treats climate rules as cross-border economic leverage with uneven effects on neighbouring economies."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Carbon rules as geoeconomic statecraft",
+      "reader_what": "The study compares how EU CBAM and China's green initiatives reshape carbon governance across Eurasia.",
+      "reader_why": "It treats climate rules as cross-border economic leverage with uneven effects on neighbouring economies.",
+      "reader_more": "The study compares how EU CBAM and China's green initiatives reshape carbon governance across Eurasia. It treats climate rules as cross-border economic leverage with uneven effects on neighbouring economies. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "research or policy analysis",
+        "research_question": "What does the work establish about carbon rules as geoeconomic statecraft?",
+        "main_finding": "The study compares how EU CBAM and China's green initiatives reshape carbon governance across Eurasia.",
+        "method_or_basis": "Substantive source text, using the study/report analysis and evidence described by the authors.",
+        "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+        "radar_relevance": "It treats climate rules as cross-border economic leverage with uneven effects on neighbouring economies.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "regulates",
+          "direction": "becomes_conditional",
+          "status": "in_force",
+          "status_date": "2026-07-04",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The source supports the stated relationship, but it does not by itself establish downstream policy success or causal effects beyond its design.",
+          "text": "EU carbon-border rules reshape market-access conditions across Eurasian economies as part of geoeconomic climate governance.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaXBtT291MGhVQXRpTWlmOVVPd0xsTGZ2OVV0N3pMR203R3I3TWZvazA1YU9FR2Q0VDRQclZQNm5uLWZCOW5Tc1JTMUNJbEJzTHRXeUZ0cTdqWnVLcGxqZjV3cWpFVl95cnUwSW95LXEyWkRNWGxKZGhLX24ydF93MXBpb01Ga1p3?oc=5",
+      "source_hash": "1b35c78b",
+      "identity_hash": "c2bc0c3f14db9d18",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "partial",
+            "note": "Opened supplied URL https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaXBtT291MGhVQXRpTWlmOVVPd0xsTGZ2OVV0N3pMR203R3I3TWZvazA1YU9FR2Q0VDRQclZQNm5uLWZCOW5Tc1JTMUNJbEJzTHRXeUZ0cTdqWnVLcGxqZjV3cWpFVl95cnUwSW95LXEyWkRNWGxKZGhLX24ydF93MXBpb01Ga1p3?oc=5; package material was thin/blocked or required independent provenance confirmation."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI was supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search for “Listen: How does Trump’s AI pact compare with the EU?” recovered a matching publisher, official, or repository record."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title/author-or-organisation/year cross-check matched the recovered work and package metadata."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered substantive matching evidence at https://euobserver.com/240706/listen-how-does-trumps-ai-pact-compare-with-the-eu/."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found no conflicting work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://euobserver.com/240706/listen-how-does-trumps-ai-pact-compare-with-the-eu/",
+            "title": "Listen: How does Trump’s AI pact compare with the EU?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "EUobserver full transcript recovered."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "Verified source has substantive current Radar relevance: The comparison is a current development in strategic-technology governance affecting major AI suppliers."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "US AI pact versus EU rules",
+      "reader_what": "EUobserver reports a new voluntary US AI accord and contrasts it with the EU's binding AI Act framework.",
+      "reader_why": "The comparison is a current development in strategic-technology governance affecting major AI suppliers.",
+      "reader_more": "EUobserver reports a new voluntary US AI accord and contrasts it with the EU's binding AI Act framework. The comparison is a current development in strategic-technology governance affecting major AI suppliers. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "EUobserver reports a new voluntary US AI accord and contrasts it with the EU's binding AI Act framework.",
+        "method_or_basis": "Current reporting based on the cited development and source documents.",
+        "qualification": "This is a current reported development; implementation and downstream effects remain uncertain.",
+        "radar_relevance": "The comparison is a current development in strategic-technology governance affecting major AI suppliers.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "ai.governance",
+          "secondary_objects": [],
+          "actor": {
+            "name": "United States",
+            "class": "third_country"
+          },
+          "mechanism": "adopts",
+          "direction": "expands",
+          "status": "announced",
+          "status_date": "2026-10-01",
+          "scope": {
+            "level": "third_country",
+            "countries": [
+              "United States"
+            ]
+          },
+          "kind": "action",
+          "qualification": "This is a current reported development; implementation and downstream effects remain uncertain.",
+          "text": "The United States announced a non-binding AI safety accord, contrasted with the EU's binding AI Act framework.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMitwFBVV95cUxQQllPeVE1Z3FOdzhMVXRrUXoyalRJbVdOSVVHZ05OOGpxclQ2cmtTb3lOeDE0LUp4YURhblVzODV1VVlLOGJ3NTlOQUtac29FdkFrZ2hYMEtZVjhWemJMM0Z4Mm5zc25EMTN3NmEtU3d0TFdFTzdEQUNaOG5zdGRnYlF6R3FQc0hVblZkeHJtTjdDaS1GUWwydjNNV2VCY1lLZjUwVktrSENIMVFLYXN4Skw1M0pqVVE?oc=5",
+      "source_hash": "c19f878b",
+      "identity_hash": "9121eae1e7e8eca0",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "partial",
+            "note": "Opened supplied URL https://news.google.com/rss/articles/CBMitwFBVV95cUxQQllPeVE1Z3FOdzhMVXRrUXoyalRJbVdOSVVHZ05OOGpxclQ2cmtTb3lOeDE0LUp4YURhblVzODV1VVlLOGJ3NTlOQUtac29FdkFrZ2hYMEtZVjhWemJMM0Z4Mm5zc25EMTN3NmEtU3d0TFdFTzdEQUNaOG5zdGRnYlF6R3FQc0hVblZkeHJtTjdDaS1GUWwydjNNV2VCY1lLZjUwVktrSENIMVFLYXN4Skw1M0pqVVE?oc=5; package material was thin/blocked or required independent provenance confirmation."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI was supplied for this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search for “Two Workshops on EU-China ETS Cooperation Successfully Held in Wuhan - European External Action Service (EEAS)” recovered a matching publisher, official, or repository record."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title/author-or-organisation/year cross-check matched the recovered work and package metadata."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered substantive matching evidence at https://www.eeas.europa.eu/delegations/china/two-workshops-eu-china-ets-cooperation-successfully-held-wuhan_en?s=166."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Bounded identity search found no conflicting work identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_page",
+            "url": "https://www.eeas.europa.eu/delegations/china/two-workshops-eu-china-ets-cooperation-successfully-held-wuhan_en?s=166",
+            "title": "Two Workshops on EU-China ETS Cooperation Successfully Held in Wuhan - European External Action Service (EEAS)",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "EEAS full page recovered."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "The page is principally a workshop/event report. It launches research but does not itself report a qualifying economic-security policy decision or material change."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "EU-China ETS workshops",
+      "reader_what": "The EEAS page reports workshops, research presentations and a new joint research activity on emissions-trading design.",
+      "reader_why": "",
+      "reader_more": "The EEAS page reports workshops, research presentations and a new joint research activity on emissions-trading design. The source is real and was verified, but admission fails the Radar scope test. The page is principally a workshop/event report. It launches research but does not itself report a qualifying economic-security policy decision or material change.",
+      "deep_analysis": {
+        "work_kind": "research/policy material",
+        "research_question": "",
+        "main_finding": "The EEAS page reports workshops, research presentations and a new joint research activity on emissions-trading design.",
+        "method_or_basis": "Substantive recovered source material was used to determine the actual subject and scope.",
+        "qualification": "Dropping the record is a scope judgement, not a claim that the work is low quality.",
+        "radar_relevance": "The page is principally a workshop/event report. It launches research but does not itself report a qualifying economic-security policy decision or material change.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://borderlex.net/2026/10/01/indonesia-faces-tariff-gap-before-eu-trade-deal-kicks-in/",
+      "source_hash": "3d43ddc4",
+      "identity_hash": "5e41ed6657dcc6ab",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching source material from https://borderlex.net/2026/10/01/indonesia-faces-tariff-gap-before-eu-trade-deal-kicks-in/; package includes substantial_web_text with substantive text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_source",
+            "url": "https://borderlex.net/2026/10/01/indonesia-faces-tariff-gap-before-eu-trade-deal-kicks-in/",
+            "title": "Indonesia faces tariff gap before EU trade deal kicks in - Borderlex - European trade policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Package source material is substantive and matches the claimed work; bibliographic identity was cross-checked against the source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_CURRENT",
+        "reason": "Verified source has substantive current Radar relevance: The transition changes the timing of preferential market access under a current EU trade deal."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied possible-duplicate key establishes the same underlying work."
+      },
+      "reader_title": "Indonesia's tariff gap before EU FTA",
+      "reader_what": "Borderlex reports that Indonesian exporters remain on standard EU WTO tariffs until the new trade agreement takes effect.",
+      "reader_why": "The transition changes the timing of preferential market access under a current EU trade deal.",
+      "reader_more": "Borderlex reports that Indonesian exporters remain on standard EU WTO tariffs until the new trade agreement takes effect. The transition changes the timing of preferential market access under a current EU trade deal. The admission rests on the recovered source, not the scanner's relevance wording.",
+      "deep_analysis": {
+        "work_kind": "current development",
+        "research_question": "",
+        "main_finding": "Borderlex reports that Indonesian exporters remain on standard EU WTO tariffs until the new trade agreement takes effect.",
+        "method_or_basis": "Current reporting based on the cited development and source documents.",
+        "qualification": "This is a current reported development; implementation and downstream effects remain uncertain.",
+        "radar_relevance": "The transition changes the timing of preferential market access under a current EU trade deal.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "tariffs",
+          "direction": "unchanged",
+          "status": "in_force",
+          "status_date": "2026-10-01",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "Indonesia"
+            ]
+          },
+          "kind": "action",
+          "qualification": "This is a current reported development; implementation and downstream effects remain uncertain.",
+          "text": "Indonesian exports remain subject to standard EU WTO tariffs until the new EU-Indonesia trade agreement enters into force.",
+          "confidence": "high"
+        }
+      ]
+    }
+  ]
+}
