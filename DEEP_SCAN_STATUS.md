@@ -8,25 +8,25 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 
 - Authoritative V2 verified: **1216** (Main **542** + Historical **674**)
 - Automatic queue still needing V2 verification: **613** (Main **230** + Historical **383**)
-- Currently assigned to workers: **94** (Main **22** + Historical **72**)
-- Bounded access-recovery retries still eligible: **254**
+- Currently assigned to workers: **86** (Main **50** + Historical **36**)
+- Bounded access-recovery retries still eligible: **298**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **519**
+- Automatic queue pending and not yet assigned: **527**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-7fdd5ffaf53e`
-- Assigned unresolved records: **44**
-  1. `historical:id:9726206567bb5144` — Andrea Biondi, Michael Bowsher, Christopher Yukins, Luca Rubini and Gabriele Carovano, “The EU Gives Foreign Subsidies Its Best Shot”: One Take on White Paper on Levelling the Playing Field as Regards Foreign Subsidies - CELIS Institute - Investment Screening | National Security | Competitiveness
-  2. `historical:id:70399abe411c8baa` — Targeted consultation on draft EU compliance guidance for research involving dual-use items
-  3. `historical:id:08f6b68fe4abbdf9` — Calls for Chinese-Style Tech Industrial Policy Won’t Make Europe More Digital Sovereign
-  4. `historical:id:e1abd351d9984dbd` — Christoph Herrmann and Mareike Hoffmann, Investment in the European Union: Competences, Structures, Responsibility and Policy - CELIS Institute - Investment Screening | National Security | Competitiveness
-  5. `historical:id:99b60a66ecbc333f` — Serbia’s 5G deal with Washington: The art of muddling through – European Council on Foreign Relations
-  6. `historical:id:d6e57fd14e5dfc17` — Under the waves: Turkey’s Black Sea gas discovery and relations with Europe – European Council on Foreign Relations
-  7. `historical:id:1d93e826c6dafc18` — How Europe can defend itself against US economic sanctions – European Council on Foreign Relations
-  8. `historical:id:601f1659d0e32c89` — Why the EU now needs a deliberate Belarus policy – European Council on Foreign Relations
-  - … plus 36 more in the package manifest
+- Current package: `worker-a-627c2e8a2c3d`
+- Assigned unresolved records: **36**
+  1. `link:https://news.google.com/rss/articles/CBMizgFBVV95cUxOTk01YnZuTmlUd0J0Y2oyOW9CMXF6Sm5IT1NZR2FmVVUzQ0h2aU54M1pMbGc2bElaWmpEWkNLQ29ZSVRtMEozM21WbGhidXhaQUpZWVpaLS1FclExNUQ2ckZKemwxSjRGcEFVNlk4VmN6aEpwSmF2aTFYUVlKN3JHYk5adF9SMFBSejdPbVI3WkNfRmlKdUplRVRmTlBFbkdaTmtaTWhlQkhtMjBnaURmemV0NTNfcjlKaUl4SGZudEk5SXEzZVVYUW1NeG0tZw?oc=5` — EU-supported BizConnect strengthens education–industry partnerships in Timor-Leste - European External Action Service (EEAS)
+  2. `link:https://news.google.com/rss/articles/CBMioAFBVV95cUxPT19VbVoyelRLLW4wbHRQaVZnRUN2OUxUdlU1SjlzUEVhcTBTNERfQllpMEp4Q3FKMWsyVlBEeVdha3A2ZWV5Ql82Q0ljME9qQVhjUm54V0w1ZVhBd1NqWEFvTEdLSXBvREItSExGdkYtTVdRWHYzbmkwU1cxNEZiYnNxek1yakxXZGZ3WTl6bzdWSXhjVFpiOFA3U3lUOFNP?oc=5` — German industry hoards rare earths as Brussels squares up to China
+  3. `link:https://news.google.com/rss/articles/CBMi3gFBVV95cUxOTXJBX0NXcXdvSFdWY01NLVJFM0gxRnVud08yLWlxdWNFd2hhVmFCam5jbnFQRFByLWcxVmxJUTlfb0dQeXlTWWdaRl9kVUdhRXlFNVR0UTFkbEZmSjFXVW1nTWttZ3JCeTB0UXhyWWE1RDNuRTRJc01vdUdvQ0ZyUllOZG90dmFWMExVUDg0elc0enltVkpuMjNkUVc3bEs5TUJjRm42VjVKUTlpbjl0TEpWNERfT0pseE9zWThOWlVqeklSTEM3TkpzZGNrU00zSG5NaExBMkVkQVM4cUE?oc=5` — Supply chains: German Federal Ministry for Economic Affairs and Energy conducts national vulnerability analysis - Table.Briefings
+  4. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=352dbb2a-bc9e-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on establishing the European Competitiveness Fund ('ECF’), including the specific programme for defence research and innovation activities, repealing Regulations (EU) 2021/522, (EU) 2021/694, (EU) 2021/697, (EU) 2021/783, and amending Regulations (EU) 2021/696, (EU) 2023/588, (EU) [EDIP] - Presidency text on Article 65(5) and recital (38) - Publications Office of the EU
+  5. `link:https://news.google.com/rss/articles/CBMieEFVX3lxTE5MWVQtT2FJZTJLNnhaenhhdHJxOGRRVlNUN2FVbkNIMGFVb2NLRUZ4cVNLbEY2Vjhzb0xTTFhaN2tFSGlGYUstczNZbHBCRzZLczRfZTZKTEZiRHhocUxXcXlZVmIyaXJkUkZRZ0FLUHRpV3dKUXZnYg?oc=5` — Trump wants to be with the ‘winners.’ Europe should remember that.
+  6. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=38cd153a-b33c-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing the conditions for the implementation of the Union support to the Common Fisheries Policy, to the European Ocean Pact and of the Union’s maritime and aquaculture policy as part of the National and Regional Partnership Fund set out in Regulation (EU) [...] [NRP Fund] for the period from 2028 to 2034 - Opinion of the European Commitee of the Regions - Publications Office of the EU
+  7. `link:https://news.google.com/rss/articles/CBMifkFVX3lxTFByRF9oT1RwUFhUVnA2NzFhVVdyTnE3RHdZZDV0RkxhRmdJUFRYWlpKeWdXa3RsX2tJaDg4S28wZG1jVFdnMHdFUVVYV3JPNkJNc2hsX2JtUVRrMDJZNUp0VnI1SlhFSy1IQWJPZ05WRFUzSlRKLVpXOGJhaTNlUQ?oc=5` — International dimension of the proposed Industrial Accelerator Act
+  8. `link:https://news.google.com/rss/articles/CBMihAFBVV95cUxPUzJhTTdEQzA5bWVMaTB3a2pmZFlNRGkzTzJkTVM3eHpfQzJycTN5MmhiUmlkYkpUWTVjei1xMFBKTkRnWnRidlRtT3JyVVUxRGluWDlUVFFQbERyT2RlWVFLWGZBeW80ZVFkbEJQaHFGdEUyNnNNUF9DWklucC1XQTc3QXE?oc=5` — Donald Trump suggests EU-Canada associate member deal would be ‘hostile act’
+  - … plus 28 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-b60443e42f6e`
