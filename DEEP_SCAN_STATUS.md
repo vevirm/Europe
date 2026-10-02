@@ -6,27 +6,27 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1284** (Main **582** + Historical **702**)
-- Automatic queue still needing V2 verification: **549** (Main **194** + Historical **355**)
-- Currently assigned to workers: **94** (Main **12** + Historical **82**)
+- Authoritative V2 verified: **1320** (Main **584** + Historical **736**)
+- Automatic queue still needing V2 verification: **513** (Main **192** + Historical **321**)
+- Currently assigned to workers: **86** (Main **10** + Historical **76**)
 - Bounded access-recovery retries still eligible: **350**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **455**
+- Automatic queue pending and not yet assigned: **427**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-c263470d99f9`
-- Assigned unresolved records: **44**
-  1. `link:https://news.google.com/rss/articles/CBMiowFBVV95cUxOemlnd1lGT2NJY3Z1dlZwczJlU1Z4eFg3cklraDRENXNIZzV5M05OSkc1bDVYRm1JazB0VUFnUzNlMGUxQ09vUDdmNE9va3ZaWHZURmRxVk9mSy0ySnBjeVY4WWZaQng3RV92cGxGamc5ZmtPczNOYkNZWnRETGRwRl8zYnlLYjI3WnRsZ1RBUG5YcV83ZTdpNXItQXA2bXNXNjJZ?oc=5` — Firms in France Put Sovereignty at Core of Hybrid Cloud Plans – Company Announcement
-  2. `link:https://news.google.com/rss/articles/CBMiswFBVV95cUxPSkhVRnBvY29CRmlBLTJ1TlpiYzRZQzduNnN6b2NUWlA1cjdMT00xMDRrUWFYVXp2T1RZUmE5a1RxSy02c2NueWZHLUM5OUw2SWpsTUhVb0hQalB4LXMxcG5rSXoyN3RPbHNtZE1XVVRCRk5KaHdLaHR0cWNVRTJhSFFoUEVDUk5QWWNVMHV5UlNfOExkYW5HSGVfa1BSSExlUnVoSzduTTlaaEFOeksyYmVpVQ?oc=5` — EU’s Curbs Threaten 27% of Chinese Exports to Bloc, Goldman Says
-  3. `historical:id:ae6d5be6b50d40f7` — Chinese FDI in Europe: 2018 Trends and Impact of New Screening Policies
-  4. `historical:id:82eb0ef5612a9546` — Myanmar Strategic Partnership
-  5. `historical:id:498213c27e04e50d` — Institut Jacques Delors - Bolstering EU foreign and security policy in times of contestation
-  6. `historical:id:960bc24d204d5e00` — Institut Jacques Delors - Beyond industrial policy: Why Europe needs a new growth strategy
-  7. `historical:id:04e774496a31629b` — Georgia Country Partnership Framework 2019-2022
-  8. `historical:id:3289f88016bd6e25` — Fighting for Europe. European strategic autonomy and the use of force - Egmont Institute
-  - … plus 36 more in the package manifest
+- Current package: `worker-a-a3b1547d80cf`
+- Assigned unresolved records: **36**
+  1. `historical:id:3289f88016bd6e25` — Fighting for Europe. European strategic autonomy and the use of force - Egmont Institute
+  2. `historical:id:d9b13bb468bc00cd` — Autonomy and Strategy: what should Europe want? - Egmont Institute
+  3. `historical:id:ff73a1042025e9c6` — Strategic autonomy: towards ‘European sovereignty’ in defence?
+  4. `historical:id:81b40266c5315658` — Pim Jansen, Industrial Policy in the Context of Merger and Foreign Investment Control - CELIS Institute - Investment Screening | National Security | Competitiveness
+  5. `historical:id:1acdf9b6d85997ed` — Strategic autonomy and EU-NATO cooperation: threat or opportunity for transatlantic defence relations?
+  6. `historical:id:7115b491680829ec` — 2018 United Kingdom White Paper, National security and investment: proposed legislative reforms - CELIS Institute - Investment Screening | National Security | Competitiveness
+  7. `historical:id:0901c20b9479d119` — Development of the Regional Natural Gas Market in Southeast Europe
+  8. `historical:id:45466d686b78c323` — Wiebke Rabe and Olivia Gippner, Perceptions of China’s Outward Foreign Direct Investment in European Critical Infrastructure and Strategic Industries - CELIS Institute - Investment Screening | National Security | Competitiveness
+  - … plus 28 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-fa3338279e94`
