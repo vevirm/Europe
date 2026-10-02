@@ -8,10 +8,10 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 
 - Authoritative V2 verified: **1216** (Main **542** + Historical **674**)
 - Automatic queue still needing V2 verification: **613** (Main **230** + Historical **383**)
-- Currently assigned to workers: **86** (Main **50** + Historical **36**)
-- Bounded access-recovery retries still eligible: **298**
+- Currently assigned to workers: **78** (Main **55** + Historical **23**)
+- Bounded access-recovery retries still eligible: **342**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **527**
+- Automatic queue pending and not yet assigned: **535**
 
 ## Worker lanes
 
@@ -29,17 +29,17 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-b60443e42f6e`
-- Assigned unresolved records: **44**
-  1. `historical:id:b5f69d8b6041f4e0` — Europe, 5G, and Munich: The China challenge and American mission – European Council on Foreign Relations
-  2. `historical:id:66f19100fb976326` — Pre-information notice for a low value contract - Study on: Explaining the low level of investment in Slovenia
-  3. `historical:id:793989ef48865f7b` — On 5G, Brussels is up to the job – European Council on Foreign Relations
-  4. `historical:id:a4ff9ac2ff0bc41c` — A chance for leadership: German foreign policy after the killing of Qassem Soleimani – European Council on Foreign Relations
-  5. `historical:id:fe143829cd1df8a5` — “An example of Europe’s strategic autonomy”: Commissioner Breton announces the successful Sentinel-6 launch
-  6. `historical:id:531ce5b68383dea2` — Why European strategic autonomy matters
-  7. `historical:id:bdbb295000ade531` — Transatlantic trade is stuck: time to integrate trade, technology, and security - Egmont Institute
-  8. `historical:id:0063fada1e94cb03` — The future of the Transatlantic Alliance: not without the European Union - Egmont Institute
-  - … plus 36 more in the package manifest
+- Current package: `worker-b-67cff5ae5d41`
+- Assigned unresolved records: **36**
+  1. `link:https://news.google.com/rss/articles/CBMitAFBVV95cUxPYkN0bndZUUs5aEFIYU5FYUFWZzRZNjJ1aGVCck1aZDlhTS1uZzVabGhLWU1VeVo0MVprTTF6cmJNR0toRmZsVEdhT2ZvZ3dvSXZkSDVOdXd0NDVta3ZNeUYza3ZHQVVYei1PX00tUjlIdnR0UElCOGw2S0JoWXJFX2h3b1lYNm4zVnEyX0o1dmtFaENrNWNtSnJaQzhWZnBERWlUTTVJaGpUVmxIaDVIZ2x6dWw?oc=5` — China Aid for Key Sectors Can Feed Trade Tensions, ECB Blog Says
+  2. `link:https://news.google.com/rss/articles/CBMijgFBVV95cUxORXhnV25kdThiUU5EQnBVamYwTElhdnpXVmw1LWhtTHljNnZkUGxnMzBaOTBiU1VobmdDc1RJRFhEV3p2OVB1UUVkWFZFQVpIdmdlbkVQSlhIQ1h1MkNmdXI4MExUOE9aTGVjZ2dyZ25xdlFGZ2pIRXE5QktFc3hWTlM3VTVFd3dtbFJCOHdn?oc=5` — Supply Chain Resilience, Diversification and the Future of Trade Governance - European Central Bank
+  3. `link:https://news.google.com/rss/articles/CBMimwFBVV95cUxNaFRfR2pQSXN0VFlacjlkREFVek5mb2FLckVtN0p6OHNFWWhXbmRPVmtRX2hTSUZmcGp1ay1ha3Y0WWhhQVdBRDRCMkJiTG1lQW5QNTlualRUN0ZIVkNZM3JIR0xqb3BtV0NrckxXT2trVlFzeWZCRy1ZT21BOXdDMFM1QnhMX2xpUjNDZXZwM25kaklEZGp2b29pOA?oc=5` — Digital euro: Survey shows little enthusiasm among businesses - Table.Briefings
+  4. `link:https://news.google.com/rss/articles/CBMihAFBVV95cUxOeHctMHRHZHJMZlhlZmhwMThpTTE0YTBZRXBXeUJHX29xRVlfdXVnbkN0VHBidHJWS1ZlNjlFeEpSYXN4QnNQVGIwaVV3SHdfT1h4T3lLWF8yMFN3ZXlrcnh2WmVGcmo3MXlHYk1uRWNyU1ltS1RqSmFwdkl6bHNfV3lzUzA?oc=5` — How the EU can face down Trump's tech aggression
+  5. `link:https://news.google.com/rss/articles/CBMixgFBVV95cUxNSkJFSC1uYWxnMFE2YnN4U3ZmdnFOUTB6TmJaYVE0X1ktN0tTOFZYUUdfMUZMNW13bzFGbEtHYUF0ZE03aHpEbVZnejRZbjI1SGRVM0hqeHJQV2dnWnhyT3RfbE9aTmlxdk1vVzVwQ1ZxUHM5VjNyVEhFQ3hkZzdxSGdkb0VOS0dwSC1HcGdNM25wR3N6a25fS3NTMEpvQUU4UDFld0x5SVFxUWRLc18tZHh2QlFZSndjcFM2UEhfMmVLRnJxUUE?oc=5` — Critical raw materials + Interior ministers on Ceuta + Scaleup Europe Fund - Table.Briefings
+  6. `link:https://news.google.com/rss/articles/CBMioAFBVV95cUxPY0ZQVDVKM1dld1JjOFdOUFNOWjZnTGJhU19qYTZneWNtaFBubWdVa25CUmpVNTd1MmtlTklqb3BWblFNemd6TThMV1VVWnA1dkxKV0ZXRWVza1NoOTY2YUkxYmM3OHJHcXA2Ukp3Z0d1bVJERTRpY1hqQ3IxRUhuSVAzeXpfVkp5LUI5ZVVYakVGbnhWOVRHZTJLVjA5RzVE?oc=5` — Greece's €93mn medicines bet yields €557mn in value, new study reveals
+  7. `link:https://news.google.com/rss/articles/CBMixgFBVV95cUxQTnZzanpPU3RDZjJPc1B3akxmZ19aT2p5Q04wYS16NTFCT1RYM0RCQVd3QmNhWGJ1QmJraWh3M3BBNGE0UE9qOWpTLUhSUzJ0b3lZN1M1eWk1TnYwekthRmJ1am5TSFp0UE9lWVBwamRSb1J6ZF9CcGs2NUowVlR1YWF4QktoTk1rMmk4Y09idUJkbTZGbjFuZ1F6OTRRd3p1QjdTUjJzdFhIX2dJUTI0LUd0OFhFV0dyV3NwS3JEYm4tNWhNNVE?oc=5` — Critical raw materials: Sweden declares security of supply a matter of national security - Table.Briefings
+  8. `link:https://news.google.com/rss/articles/CBMitwNBVV95cUxObmVjOWh1QTJxb3BBN0xiQ3pzZEFiQjhjZjItWDdfX3QxOXp4QVNqNFBMQi1sOWJISjl1dkw5VEZrLTRNUzNYMEhCclVhczlaR1oyM0NrV0FUSVlNVHdDQ1JtckkwRU0xWDFyaVlvVjZsVkZkV3M0SldJcEJvUXB2MTZEVkoyb0RFRU0wTExsdGNuQ05vdkdqZ2dYbTVHZC1PY2tuQUFoWkNvTkkybldmQ0dLSVA3YjJHWjlBcjhkNDVRSzNKcTFWbWpEOUp0ZENYVFkyOVlYb0FUTUNTV2RkWVFBNFNyMHdSZ1JHNXFzcnpXeHpMUjAzRG9XQVZUNDVkc21mVFI2S3BYRGY3RHVFaWxCbzc2WUI0SW1xMVJCRHVDOEwyX09RdEF3dDd3ZFFxeUFuRWlmY2pkVEQwVF9JYVVqNjlHcmNQdU1MS3FBQ2Q1YnZHd1VNanVMMXlwNXdxSHFqbEFOS21TcGhvXzJtVXJScV9oOVJfR0hrRmFtajl1ck5IVk45WGw3V0QwMzRjWEg2b04xb2hzcDJjUUxsRldlRlZTWC1oMFprcENPMXBCaW1JM1pN?oc=5` — Statement by the High Representative on behalf of the EU on the alignment of certain countries concerning restrictive measures in respect of actions undermining or threatening the territorial integrity, sovereignty and independence of Ukraine
+  - … plus 28 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
