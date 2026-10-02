@@ -6,12 +6,12 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1114** (Main **539** + Historical **575**)
-- Automatic queue still needing V2 verification: **632** (Main **168** + Historical **464**)
-- Currently assigned to workers: **86** (Main **13** + Historical **73**)
+- Authoritative V2 verified: **1158** (Main **540** + Historical **618**)
+- Automatic queue still needing V2 verification: **588** (Main **167** + Historical **421**)
+- Currently assigned to workers: **78** (Main **12** + Historical **66**)
 - Bounded access-recovery retries still eligible: **225**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **546**
+- Automatic queue pending and not yet assigned: **510**
 
 ## Worker lanes
 
@@ -29,17 +29,17 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-4f3865965194`
-- Assigned unresolved records: **44**
-  1. `historical:id:7b65c4b7515137ac` — Europe’s energy security and EU-US cooperation
-  2. `historical:id:c9edfa6b3626faa7` — EU: Three Russian banks and one technology company added to the frozen funds list as part of sanctions package - Global Trade Alert
-  3. `historical:id:e2a628c87a06054e` — EU: Additional financial sanctions on Russia, including the exclusion of 7 banks from the SWIFT paying system - Global Trade Alert
-  4. `historical:id:e2eec73b1db2c549` — EU discusses energy security with Japan
-  5. `historical:id:209cab6667c84237` — EU Space Strategy for Security and Defence
-  6. `historical:id:15db2f653fa8bcb3` — Declaration by the High Representative on behalf of the European Union on leaks in the Nord Stream gas pipelines
-  7. `historical:id:23f72ce10b2dc494` — Balancing inflation, output and fiscal sustainability: policy responses to energy shocks
-  8. `historical:id:ddb09e818241b367` — Agrifood trade and EU sanctions adopted further to the invasion of Ukraine by the Russian Federation and the support of Belarus to it
-  - … plus 36 more in the package manifest
+- Current package: `worker-b-c0d843c5704a`
+- Assigned unresolved records: **36**
+  1. `historical:id:f68f8cbc3fa26d95` — The EU and China: sanctions, signals, and interests - Egmont Institute
+  2. `historical:id:9a4d2017dd999a02` — Strengthened EU export control rules kick in
+  3. `historical:id:c8ae8635441e9f45` — Strategic Autonomy in Post-Covid Trade Policy - Institut Jacques Delors
+  4. `historical:id:2a72a684c174cd12` — Security Relations Between the EU and Australia
+  5. `historical:id:f6eb1edca5fe2bc9` — Security Relations Between the EU and ASEAN
+  6. `historical:id:3708dadbe84f22b7` — Secondary sanctions and multilateralism – the way ahead - Egmont Institute
+  7. `historical:id:7f3dbfa63e0cfbe7` — Nord Stream 2 and the Energy Security Dilemma
+  8. `historical:id:2ec5741eef07ddfb` — Joint Statement on December 2 Sanctions in Response to the Situation in Belarus
+  - … plus 28 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
