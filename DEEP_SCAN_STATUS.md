@@ -6,27 +6,27 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1216** (Main **542** + Historical **674**)
-- Automatic queue still needing V2 verification: **617** (Main **234** + Historical **383**)
-- Currently assigned to workers: **94** (Main **59** + Historical **35**)
-- Bounded access-recovery retries still eligible: **342**
+- Authoritative V2 verified: **1250** (Main **573** + Historical **677**)
+- Automatic queue still needing V2 verification: **583** (Main **203** + Historical **380**)
+- Currently assigned to workers: **86** (Main **21** + Historical **65**)
+- Bounded access-recovery retries still eligible: **349**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **523**
+- Automatic queue pending and not yet assigned: **497**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-e879d2d0fb96`
-- Assigned unresolved records: **44**
-  1. `link:https://news.google.com/rss/articles/CBMizgFBVV95cUxOTk01YnZuTmlUd0J0Y2oyOW9CMXF6Sm5IT1NZR2FmVVUzQ0h2aU54M1pMbGc2bElaWmpEWkNLQ29ZSVRtMEozM21WbGhidXhaQUpZWVpaLS1FclExNUQ2ckZKemwxSjRGcEFVNlk4VmN6aEpwSmF2aTFYUVlKN3JHYk5adF9SMFBSejdPbVI3WkNfRmlKdUplRVRmTlBFbkdaTmtaTWhlQkhtMjBnaURmemV0NTNfcjlKaUl4SGZudEk5SXEzZVVYUW1NeG0tZw?oc=5` — EU-supported BizConnect strengthens education–industry partnerships in Timor-Leste - European External Action Service (EEAS)
-  2. `link:https://news.google.com/rss/articles/CBMioAFBVV95cUxPT19VbVoyelRLLW4wbHRQaVZnRUN2OUxUdlU1SjlzUEVhcTBTNERfQllpMEp4Q3FKMWsyVlBEeVdha3A2ZWV5Ql82Q0ljME9qQVhjUm54V0w1ZVhBd1NqWEFvTEdLSXBvREItSExGdkYtTVdRWHYzbmkwU1cxNEZiYnNxek1yakxXZGZ3WTl6bzdWSXhjVFpiOFA3U3lUOFNP?oc=5` — German industry hoards rare earths as Brussels squares up to China
-  3. `link:https://news.google.com/rss/articles/CBMi3gFBVV95cUxOTXJBX0NXcXdvSFdWY01NLVJFM0gxRnVud08yLWlxdWNFd2hhVmFCam5jbnFQRFByLWcxVmxJUTlfb0dQeXlTWWdaRl9kVUdhRXlFNVR0UTFkbEZmSjFXVW1nTWttZ3JCeTB0UXhyWWE1RDNuRTRJc01vdUdvQ0ZyUllOZG90dmFWMExVUDg0elc0enltVkpuMjNkUVc3bEs5TUJjRm42VjVKUTlpbjl0TEpWNERfT0pseE9zWThOWlVqeklSTEM3TkpzZGNrU00zSG5NaExBMkVkQVM4cUE?oc=5` — Supply chains: German Federal Ministry for Economic Affairs and Energy conducts national vulnerability analysis - Table.Briefings
-  4. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=352dbb2a-bc9e-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on establishing the European Competitiveness Fund ('ECF’), including the specific programme for defence research and innovation activities, repealing Regulations (EU) 2021/522, (EU) 2021/694, (EU) 2021/697, (EU) 2021/783, and amending Regulations (EU) 2021/696, (EU) 2023/588, (EU) [EDIP] - Presidency text on Article 65(5) and recital (38) - Publications Office of the EU
-  5. `link:https://news.google.com/rss/articles/CBMieEFVX3lxTE5MWVQtT2FJZTJLNnhaenhhdHJxOGRRVlNUN2FVbkNIMGFVb2NLRUZ4cVNLbEY2Vjhzb0xTTFhaN2tFSGlGYUstczNZbHBCRzZLczRfZTZKTEZiRHhocUxXcXlZVmIyaXJkUkZRZ0FLUHRpV3dKUXZnYg?oc=5` — Trump wants to be with the ‘winners.’ Europe should remember that.
-  6. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=38cd153a-b33c-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing the conditions for the implementation of the Union support to the Common Fisheries Policy, to the European Ocean Pact and of the Union’s maritime and aquaculture policy as part of the National and Regional Partnership Fund set out in Regulation (EU) [...] [NRP Fund] for the period from 2028 to 2034 - Opinion of the European Commitee of the Regions - Publications Office of the EU
-  7. `link:https://news.google.com/rss/articles/CBMifkFVX3lxTFByRF9oT1RwUFhUVnA2NzFhVVdyTnE3RHdZZDV0RkxhRmdJUFRYWlpKeWdXa3RsX2tJaDg4S28wZG1jVFdnMHdFUVVYV3JPNkJNc2hsX2JtUVRrMDJZNUp0VnI1SlhFSy1IQWJPZ05WRFUzSlRKLVpXOGJhaTNlUQ?oc=5` — International dimension of the proposed Industrial Accelerator Act
-  8. `link:https://news.google.com/rss/articles/CBMihAFBVV95cUxPUzJhTTdEQzA5bWVMaTB3a2pmZFlNRGkzTzJkTVM3eHpfQzJycTN5MmhiUmlkYkpUWTVjei1xMFBKTkRnWnRidlRtT3JyVVUxRGluWDlUVFFQbERyT2RlWVFLWGZBeW80ZVFkbEJQaHFGdEUyNnNNUF9DWklucC1XQTc3QXE?oc=5` — Donald Trump suggests EU-Canada associate member deal would be ‘hostile act’
-  - … plus 36 more in the package manifest
+- Current package: `worker-a-65026296f26e`
+- Assigned unresolved records: **36**
+  1. `link:https://news.google.com/rss/articles/CBMiowFBVV95cUxOemlnd1lGT2NJY3Z1dlZwczJlU1Z4eFg3cklraDRENXNIZzV5M05OSkc1bDVYRm1JazB0VUFnUzNlMGUxQ09vUDdmNE9va3ZaWHZURmRxVk9mSy0ySnBjeVY4WWZaQng3RV92cGxGamc5ZmtPczNOYkNZWnRETGRwRl8zYnlLYjI3WnRsZ1RBUG5YcV83ZTdpNXItQXA2bXNXNjJZ?oc=5` — Firms in France Put Sovereignty at Core of Hybrid Cloud Plans – Company Announcement
+  2. `link:https://news.google.com/rss/articles/CBMiswFBVV95cUxPSkhVRnBvY29CRmlBLTJ1TlpiYzRZQzduNnN6b2NUWlA1cjdMT00xMDRrUWFYVXp2T1RZUmE5a1RxSy02c2NueWZHLUM5OUw2SWpsTUhVb0hQalB4LXMxcG5rSXoyN3RPbHNtZE1XVVRCRk5KaHdLaHR0cWNVRTJhSFFoUEVDUk5QWWNVMHV5UlNfOExkYW5HSGVfa1BSSExlUnVoSzduTTlaaEFOeksyYmVpVQ?oc=5` — EU’s Curbs Threaten 27% of Chinese Exports to Bloc, Goldman Says
+  3. `historical:id:ae6d5be6b50d40f7` — Chinese FDI in Europe: 2018 Trends and Impact of New Screening Policies
+  4. `historical:id:82eb0ef5612a9546` — Myanmar Strategic Partnership
+  5. `historical:id:498213c27e04e50d` — Institut Jacques Delors - Bolstering EU foreign and security policy in times of contestation
+  6. `historical:id:960bc24d204d5e00` — Institut Jacques Delors - Beyond industrial policy: Why Europe needs a new growth strategy
+  7. `historical:id:04e774496a31629b` — Georgia Country Partnership Framework 2019-2022
+  8. `historical:id:3289f88016bd6e25` — Fighting for Europe. European strategic autonomy and the use of force - Egmont Institute
+  - … plus 28 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-d1b5ba98d5c8`
