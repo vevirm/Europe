@@ -7,17 +7,17 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **1320** (Main **584** + Historical **736**)
-- Automatic queue still needing V2 verification: **513** (Main **192** + Historical **321**)
-- Currently assigned to workers: **86** (Main **10** + Historical **76**)
+- Automatic queue still needing V2 verification: **557** (Main **202** + Historical **355**)
+- Currently assigned to workers: **90** (Main **14** + Historical **76**)
 - Bounded access-recovery retries still eligible: **350**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **427**
+- Automatic queue pending and not yet assigned: **467**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-a3b1547d80cf`
-- Assigned unresolved records: **36**
+- Current package: `worker-a-663bb3805522`
+- Assigned unresolved records: **40**
   1. `historical:id:3289f88016bd6e25` — Fighting for Europe. European strategic autonomy and the use of force - Egmont Institute
   2. `historical:id:d9b13bb468bc00cd` — Autonomy and Strategy: what should Europe want? - Egmont Institute
   3. `historical:id:ff73a1042025e9c6` — Strategic autonomy: towards ‘European sovereignty’ in defence?
@@ -26,7 +26,7 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   6. `historical:id:7115b491680829ec` — 2018 United Kingdom White Paper, National security and investment: proposed legislative reforms - CELIS Institute - Investment Screening | National Security | Competitiveness
   7. `historical:id:0901c20b9479d119` — Development of the Regional Natural Gas Market in Southeast Europe
   8. `historical:id:45466d686b78c323` — Wiebke Rabe and Olivia Gippner, Perceptions of China’s Outward Foreign Direct Investment in European Critical Infrastructure and Strategic Industries - CELIS Institute - Investment Screening | National Security | Competitiveness
-  - … plus 28 more in the package manifest
+  - … plus 32 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-fa3338279e94`
