@@ -6,12 +6,12 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1378** (Main **591** + Historical **787**)
-- Automatic queue still needing V2 verification: **503** (Main **199** + Historical **304**)
+- Authoritative V2 verified: **1484** (Main **682** + Historical **802**)
+- Automatic queue still needing V2 verification: **397** (Main **108** + Historical **289**)
 - Currently assigned to workers: **78** (Main **12** + Historical **66**)
-- Bounded access-recovery retries still eligible: **344**
+- Bounded access-recovery retries still eligible: **263**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **425**
+- Automatic queue pending and not yet assigned: **319**
 
 ## Worker lanes
 
