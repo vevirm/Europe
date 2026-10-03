@@ -6,27 +6,27 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1320** (Main **584** + Historical **736**)
-- Automatic queue still needing V2 verification: **561** (Main **206** + Historical **355**)
-- Currently assigned to workers: **90** (Main **14** + Historical **76**)
+- Authoritative V2 verified: **1349** (Main **588** + Historical **761**)
+- Automatic queue still needing V2 verification: **532** (Main **202** + Historical **330**)
+- Currently assigned to workers: **86** (Main **20** + Historical **66**)
 - Bounded access-recovery retries still eligible: **350**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **471**
+- Automatic queue pending and not yet assigned: **446**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-663bb3805522`
-- Assigned unresolved records: **40**
-  1. `historical:id:3289f88016bd6e25` — Fighting for Europe. European strategic autonomy and the use of force - Egmont Institute
-  2. `historical:id:d9b13bb468bc00cd` — Autonomy and Strategy: what should Europe want? - Egmont Institute
-  3. `historical:id:ff73a1042025e9c6` — Strategic autonomy: towards ‘European sovereignty’ in defence?
-  4. `historical:id:81b40266c5315658` — Pim Jansen, Industrial Policy in the Context of Merger and Foreign Investment Control - CELIS Institute - Investment Screening | National Security | Competitiveness
-  5. `historical:id:1acdf9b6d85997ed` — Strategic autonomy and EU-NATO cooperation: threat or opportunity for transatlantic defence relations?
-  6. `historical:id:7115b491680829ec` — 2018 United Kingdom White Paper, National security and investment: proposed legislative reforms - CELIS Institute - Investment Screening | National Security | Competitiveness
-  7. `historical:id:0901c20b9479d119` — Development of the Regional Natural Gas Market in Southeast Europe
-  8. `historical:id:45466d686b78c323` — Wiebke Rabe and Olivia Gippner, Perceptions of China’s Outward Foreign Direct Investment in European Critical Infrastructure and Strategic Industries - CELIS Institute - Investment Screening | National Security | Competitiveness
-  - … plus 32 more in the package manifest
+- Current package: `worker-a-602d33ec81dd`
+- Assigned unresolved records: **36**
+  1. `historical:id:0901c20b9479d119` — Development of the Regional Natural Gas Market in Southeast Europe
+  2. `historical:id:910dc68b07fcc3fd` — Risky business? The EU, China and dual-use technology
+  3. `historical:id:f7fff84b18edd262` — On target? EU sanctions as security policy tools
+  4. `historical:id:5b5b6367e6db7bd7` — Keeping the Eastern Partnership on track
+  5. `historical:id:1bd1770370cd280e` — Did Anti-dumping Duties Really Restrict Import?: Empirical Evidence from the US, the EU, China, and India
+  6. `historical:id:7cf8e102589e0fea` — The EU’s gas relationship with Russia: solving current disputes and strengthening energy security
+  7. `historical:id:47faeaff495ea249` — New Protectionism, Sanctions and EU Disintegration: Challenges for Baltic Trade (original publication German only) - Kiel Institute
+  8. `historical:id:40d4f45309e160fc` — European Leadership in 5G – CEPS
+  - … plus 28 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-fa3338279e94`
