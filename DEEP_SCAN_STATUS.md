@@ -6,30 +6,30 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1524** (Main **722** + Historical **802**)
-- Automatic queue still needing V2 verification: **399** (Main **67** + Historical **332**)
-- Currently assigned to workers: **78** (Main **44** + Historical **34**)
-- Bounded access-recovery retries still eligible: **159**
+- Authoritative V2 verified: **1579** (Main **744** + Historical **835**)
+- Automatic queue still needing V2 verification: **344** (Main **45** + Historical **299**)
+- Currently assigned to workers: **72** (Main **29** + Historical **43**)
+- Bounded access-recovery retries still eligible: **121**
 - Terminally dropped after failed scans: **27**
-- Automatic queue pending and not yet assigned: **321**
+- Automatic queue pending and not yet assigned: **272**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-3f6fa4ffd062`
+- Current package: `worker-a-e08a33b1f844`
 - Assigned unresolved records: **36**
   1. `link:https://news.google.com/rss/articles/CBMipwFBVV95cUxQUUswdG5RR3A3czVTQV82SzUwWDh1ZDZrYjNXcld1cUQwOW9nZENwVlhQRVpfMXRQY2RXZ1pLcVlnal9jeGJxelREVVpWeTZyTTI2bnJKUXlIYUNtNklZQnkyWHNPX1NzZ1lIRVB2SVFfWkJTWkg4ZFM5WE5rdTVISldEczdQX1BIdkRyd21lYVhibzVLRkwwOGVIWXdfODNPRzloNWhEWQ?oc=5` — Denmark says Greenland sovereignty safe under Trump's deal — recovery attempt 2/3
   2. `link:https://news.google.com/rss/articles/CBMiowFBVV95cUxNekNBZWwxSDJKTHl3ZUNJZ0Mwd0xDbERTVXFOcXZxa3hVejJfdDZGWTVMcEhhbXlkaW5nTm9JVEF0N1ZBdnF1bWZHeGRDWDBoTnZMVlBiTWZDQ3lUUF9teU9ndmZvdHZCM0EtWTRfaEFTTTE0VlBxWG5NZkkzOHBmSXFTZ2w2Y1BrVmJHUmgxRVR2YkN6SF83M3ZhQkdrSENqbTJF?oc=5` — India gains wider EU steel access, but carbon levy remains — recovery attempt 2/3
-  3. `link:https://news.google.com/rss/articles/CBMi0AFBVV95cUxPcHBBN01iSVZHMEMwclNDbGk4VWNOYlpaYUdfUk1IX0Q2OHpMeF9jcHN0Qk1Gakt3cnQ3ak5hQmJPRE1fTWpMY0x3Qk95bWROX2Ntb3lqanh0NnlWOEpvYk9vdEVLMTZGbzZCZVgtN1RFUTZIZTVwMmdaZ2NJRDFXRnNvNDNxbzJoS0tudWZSaU0wUWdFQTZHQXZhdVJXUTk3aUZHZ1AzQl8xOFU1aTIyd041RmhnYTZuRWxSUWIxZ1AwS0ZWS1B0bk5hbU5CNGVB?oc=5` — IAA: China powers into Europe’s truck market + Xi and Modi narrow their differences - Table.Briefings — recovery attempt 2/3
-  4. `link:https://news.google.com/rss/articles/CBMilgFBVV95cUxPYklDSUc1YlRDQTRiWXR1SV9lMzFqenBWQ2tSV3ozeDJlbGYzT0lTU09pWHVSUDZQSWZMRVpnal9KTHhuLUNuandYaDBuMUlvaU9pa0l5dmg3S3JXRmVxc3c3NWR6MXlGVkpmNnJrUE90bU5GcmU0SDM3NUV0RTEwWXZlZ2hVQ2RBUTFETkl1QlgzSHJKcWc?oc=5` — Trump says he is removing US tariffs on Irish whiskey — recovery attempt 2/3
-  5. `link:https://news.google.com/rss/articles/CBMimwFBVV95cUxOaWtudVNmS3RIb25nVW5rRjdiNTIyYm1xX2t5Z3dMNzliZW9YdDA5eFpmVEdNUXlQS0lRckMwbW1hN1JkcEtQdGRzZllBZHVfRldzV3ZMYzRDU1hXeTc1RTUwRmRKVlR4UFl0SXh5empPQU1uOWYxR2pCU3VSZnJBRmo2Nk5PRXVWZHp5MlFKbFlGb0wzVm55bXFnTQ?oc=5` — EU trade chief to meet CEOs over China strategy — recovery attempt 2/3
-  6. `link:https://news.google.com/rss/articles/CBMitgFBVV95cUxOX2hISF94TEZGRzNlMGV1NjA4NjBVU2hWMm5JZGJHOHBtSUxFME9uZEE3TUQwTDRHS1lrd3lRdGRQS1NrSGJSTWdZek8zbkw2a25rMFFFYWJENnBBTV9MTWZ4TUhtTjJfZHZCTW1LMW9NTi12bHRuMVp0d2dGVHM1TTBrUjJYUXVFcnVvb0RMUEsyX1V3SlZvb2tvd3NuWWtaa0NsQjNkNmM0em1sUVdMWUZ1THBOUQ?oc=5` — German industry presses Merz for tougher China policy — recovery attempt 2/3
-  7. `link:https://news.google.com/rss/articles/CBMiswFBVV95cUxQcGRtUVpOeWFvQWFUbmNJeGxjYlRuaktxd1AtbUw2bFAtOWJCbjBfSmNfMlJYT2xMcThMOUQ4bXNQUzV2N19kNHBkWGtOZXd1aHRfZTV5WXNsZ2RyR1hhcFB5MGN2VTlCSGYzaGJUYUpnWWZQSHVzN3plaDY0V2VtNzlYMFV4WG9NR2JIalFfeFdkWG1pQ1hnSFdCMTdFVHJXNWdIeUQwUktVeUxHM0NRdTJjQQ?oc=5` — Some Chinese workers see an ally in Brussels as EU trade tensions mount — recovery attempt 2/3
-  8. `link:https://news.google.com/rss/articles/CBMitAFBVV95cUxQdHl5VFZkOV9NSnVKamtaaVZjUXhpVjJoLVUweGtSek5KbkhWdDE1ekpOeWlTUHE1REduby15ZGxjY0Rka3FValJzYjR1TFFUZFRJcFNmX3pqT29KcElSOEtUTHRpNmxXV1pNV1lNWXRQcGNtOW9ldEx0WTFqZ1NzblN3UEZtWm1NakJKVTZwRVBsaG1USlF6cUxrUEVXVm81YzdwMk9zWmxNZ2sxVEc5bmFpdng?oc=5` — Europe’s Luxury Giants Discern Green Shoots in Key China Market — recovery attempt 2/3
+  3. `link:https://news.google.com/rss/articles/CBMimwFBVV95cUxOaWtudVNmS3RIb25nVW5rRjdiNTIyYm1xX2t5Z3dMNzliZW9YdDA5eFpmVEdNUXlQS0lRckMwbW1hN1JkcEtQdGRzZllBZHVfRldzV3ZMYzRDU1hXeTc1RTUwRmRKVlR4UFl0SXh5empPQU1uOWYxR2pCU3VSZnJBRmo2Nk5PRXVWZHp5MlFKbFlGb0wzVm55bXFnTQ?oc=5` — EU trade chief to meet CEOs over China strategy — recovery attempt 2/3
+  4. `link:https://news.google.com/rss/articles/CBMitgFBVV95cUxOX2hISF94TEZGRzNlMGV1NjA4NjBVU2hWMm5JZGJHOHBtSUxFME9uZEE3TUQwTDRHS1lrd3lRdGRQS1NrSGJSTWdZek8zbkw2a25rMFFFYWJENnBBTV9MTWZ4TUhtTjJfZHZCTW1LMW9NTi12bHRuMVp0d2dGVHM1TTBrUjJYUXVFcnVvb0RMUEsyX1V3SlZvb2tvd3NuWWtaa0NsQjNkNmM0em1sUVdMWUZ1THBOUQ?oc=5` — German industry presses Merz for tougher China policy — recovery attempt 2/3
+  5. `link:https://news.google.com/rss/articles/CBMiswFBVV95cUxQcGRtUVpOeWFvQWFUbmNJeGxjYlRuaktxd1AtbUw2bFAtOWJCbjBfSmNfMlJYT2xMcThMOUQ4bXNQUzV2N19kNHBkWGtOZXd1aHRfZTV5WXNsZ2RyR1hhcFB5MGN2VTlCSGYzaGJUYUpnWWZQSHVzN3plaDY0V2VtNzlYMFV4WG9NR2JIalFfeFdkWG1pQ1hnSFdCMTdFVHJXNWdIeUQwUktVeUxHM0NRdTJjQQ?oc=5` — Some Chinese workers see an ally in Brussels as EU trade tensions mount — recovery attempt 2/3
+  6. `link:https://news.google.com/rss/articles/CBMitAFBVV95cUxQdHl5VFZkOV9NSnVKamtaaVZjUXhpVjJoLVUweGtSek5KbkhWdDE1ekpOeWlTUHE1REduby15ZGxjY0Rka3FValJzYjR1TFFUZFRJcFNmX3pqT29KcElSOEtUTHRpNmxXV1pNV1lNWXRQcGNtOW9ldEx0WTFqZ1NzblN3UEZtWm1NakJKVTZwRVBsaG1USlF6cUxrUEVXVm81YzdwMk9zWmxNZ2sxVEc5bmFpdng?oc=5` — Europe’s Luxury Giants Discern Green Shoots in Key China Market — recovery attempt 2/3
+  7. `link:https://news.google.com/rss/articles/CBMihAFBVV95cUxPeENyVVNXOU9ZdUl0MFJQWGlVcjlEc041b0t1RU44alpxTHVYQ3ZwcE5fZHVEMFNHUHVqaTdLZFdSYjdWODRJd011MFh0OUlOMWd2MGg3TjI0X1hsUm91TWt4T3JvRlQwZjVPanh4bkhnaGpqcllqTzZCWGRpUU9yQ05kdHY?oc=5` — EU slips further behind US in race for critical minerals — recovery attempt 2/3
+  8. `link:https://news.google.com/rss/articles/CBMizwFBVV95cUxQV1kyWGRJRFg2YURDZDlvOEtjaFlOYWQxRW1Pcml0UjNkVEJ4R0lnVk9hNmtJQkRWbnNZVHpBa2tnV0JpVWRWcURVVHBqOVU0Y0lKM1ZVOWZld21XS1k5SVU0Umk0ckZDckZCbllRbnFCRmRQaEdIZDdHcVJHYzRnN1hpQVRzbWdaMzh0UVljYzNEQ2lHaDU0dy1tejhSVGI2LWVXS0UtTFFiZ1h6MjVWdDhiYTNuQ0lEZHhqWU9NaUxhQ3dmeVZpb0xZZE5KM1E?oc=5` — Chinese e-commerce giant JD.com offers EU remedies in Ceconomy takeover probe — recovery attempt 2/3
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-73df9481a372`
+- Current package: `worker-b-07bbf74e99d5`
 - Assigned unresolved records: **36**
   1. `link:https://doi.org/10.1002/sd.71661` — The Relationship Between Gender Equality and Inclusive and Sustainable Economic Performance: Evidence From European Union Countries — recovery attempt 2/3
   2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f7058d65-bf6e-11f1-988f-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Working Party on Competitiveness and Growth (Public Procurement) - Publications Office of the EU — recovery attempt 2/3
@@ -43,13 +43,7 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
-- Assigned unresolved records: **6**
-  1. `link:https://doi.org/10.1177/2336825x261466891` — Ukraine and the transformation of French strategic imaginaries: The discursive reconfiguration of European strategic autonomy under the presidency of Emmanuel Macron (2017-2026) — recovery attempt 2/3
-  2. `link:https://doi.org/10.1093/hrlr/ngag015` — Finding a bridge between Erga Omnes obligations and WTO agreements: the case of human rights-based export controls on cyber-surveillance items — recovery attempt 2/3
-  3. `link:https://doi.org/10.4324/9781003756637-13` — The EU-Japan Strategic Partnership Agreement (SPA) — recovery attempt 2/3
-  4. `link:https://doi.org/10.1080/09662839.2026.2700180` — Institutionalising defence production: reconceptualising the role of institutions and states in European defence industrial policy — recovery attempt 2/3
-  5. `link:https://doi.org/10.1177/17816858261489016` — European autonomy, competitiveness and security in the new space era — recovery attempt 2/3
-  6. `link:https://doi.org/10.1080/09662839.2026.2700178` — European arms production: A re-conceptualisation of the defence technological and industrial base, industrial policy and hybrid governance — recovery attempt 2/3
+- Assigned unresolved records: **0**
 
 ## Terminally dropped after failed scans
 
