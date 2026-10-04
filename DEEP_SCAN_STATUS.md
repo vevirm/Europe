@@ -6,40 +6,40 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1484** (Main **682** + Historical **802**)
-- Automatic queue still needing V2 verification: **422** (Main **133** + Historical **289**)
-- Currently assigned to workers: **86** (Main **86** + Historical **0**)
-- Bounded access-recovery retries still eligible: **208**
-- Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **336**
+- Authoritative V2 verified: **1507** (Main **705** + Historical **802**)
+- Automatic queue still needing V2 verification: **439** (Main **107** + Historical **332**)
+- Currently assigned to workers: **78** (Main **35** + Historical **43**)
+- Bounded access-recovery retries still eligible: **215**
+- Terminally dropped after failed scans: **4**
+- Automatic queue pending and not yet assigned: **361**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-ecb01ee41905`
-- Assigned unresolved records: **40**
-  1. `link:https://doi.org/10.24425/gsm.2026.6006` — Strategic autonomy in practice: Ukraine’s critical raw materials, growth accounting and shift-share evidence, 2010–2023
-  2. `link:https://doi.org/10.1016/j.erss.2026.104857` — From industrialization to industrial decarbonization: Divergent steel decarbonization pathways in South Korea and Germany
-  3. `link:https://doi.org/10.1080/13563467.2026.2737132` — The geoeconomics of wholesale central bank digital currencies: great power rivalry
-  4. `link:https://doi.org/10.24425/gsm.2026.6007` — Potential of critical raw materials of Slovakia
-  5. `link:https://doi.org/10.1016/j.erss.2026.105005` — How energy dependence becomes domestically acceptable in European countries: Legitimation of Russian energy use during the Russia–Ukraine war
-  6. `link:https://doi.org/10.1111/aepr.70032` — Comment on “Supply Chain Diversification and Industrial Policies to Strengthen Economic Security”
-  7. `link:https://doi.org/10.1002/bse.71515` — Rewiring the Circular Economy Through AI‐Informed Pathways: Structural and Distributional Drivers of Environmental Outcomes in the European Union
-  8. `link:https://doi.org/10.1002/ese3.70639` — Use of Hydrogen Energy Storage to Stabilize Solar Power Output With an Energy Efficiency Analysis for European Union Member Countries
-  - … plus 32 more in the package manifest
+- Current package: `worker-a-81f573736cd8`
+- Assigned unresolved records: **36**
+  1. `historical:id:302703dc36d212e9` — Trade war to cooperation: scrutinizing China’s strategies to the EU carbon border adjustment mechanism
+  2. `historical:id:b4b900e80122ec1f` — R&I needs to reduce dependencies on critical raw materials through advanced materials in electronics
+  3. `historical:id:810531b52b581fe5` — Critical minerals and industrial policy: a network-based approach to supply chain risk
+  4. `historical:id:b439b69876ade4c7` — CELIS Institute - Non-Paper No 01/2026: Firewalls under EU Sanctions Law: Lessons from the EuroChem Case
+  5. `historical:id:2ee98643952017d6` — German hydrogen import pathways: checking reality under uncertainty
+  6. `historical:id:f3773aed6f7bf20b` — Resource Productivity: Europe’s Overlooked Route to Economic Security
+  7. `historical:id:3e7ad09b31f0cd52` — Mongolian “Third Neighbor Policy” and Strategic Partnership with USA
+  8. `historical:id:5fa7ca46e8595914` — EU unemployment and global value chains
+  - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-bd0c29ee0c20`
-- Assigned unresolved records: **40**
-  1. `link:https://doi.org/10.54648/eerr2026019` — Cybersecurity at the Borders: The EU’s Differentiated Approaches to Cyber Capacity Building in Its Neighbours — recovery attempt 2/3
-  2. `link:https://doi.org/10.1177/20322844261446530` — Directive 2024/1226: A new EU response to sanctions breaches and circumvention — recovery attempt 2/3
-  3. `link:https://doi.org/10.1016/j.econlet.2026.113217` — GVC participation and inflation in the European Union — recovery attempt 2/3
-  4. `link:https://doi.org/10.30965/18763332-20262010` — Rethinking External Finance for Economic Growth in the Western Balkans: A Comparison with Central Eastern Europe — recovery attempt 2/3
-  5. `link:https://doi.org/10.1163/15691497-20263012` — Global Gateway. The EU’s Competition in Latin America and the Caribbean — recovery attempt 2/3
-  6. `link:https://doi.org/10.1002/sd.71203` — Advancing SDG 13 and Net‐Zero Emissions in Europe: The Role of Green Technology Innovation, Renewable Energy, Environmental Taxation and Trade Openness — recovery attempt 2/3
-  7. `link:https://fiia.fi/en/publication/the-geopolitical-commission` — The Geopolitical Commission - FIIA - Finnish Institute of International Affairs — recovery attempt 2/3
-  8. `link:https://doi.org/10.1002/sd.71514` — Revolutionizing Climate Action: Achieving SDG 13 Through the Lens of the Rule of Law, Green Technology Innovation, Renewable Energy, and Trade Openness — recovery attempt 2/3
-  - … plus 32 more in the package manifest
+- Current package: `worker-b-55f5230e0f0c`
+- Assigned unresolved records: **36**
+  1. `historical:id:1e10c1f7dfb70d37` — ASEAN and the EU Challenged by “Divide and Rule” Strategies of the US and China Evidence and Possible Reactions
+  2. `historical:id:6faf949eee3c5dee` — EU’s strategic partnership with Asian countries: an introductory article for the special issue
+  3. `historical:id:f2f809d091b57a9a` — The case for a Euro-Arab summit – CEPS
+  4. `historical:id:a9b7cdc893f4b331` — The internal market and national security: Transposition, impact and reform of the EU Directive on Intra-Community Transfers of Defence Products
+  5. `historical:id:49b774b3ed41b24a` — Can Trump save the euro? – CEPS
+  6. `historical:id:f7fc9e8e2254802b` — Energy Imports, Geoeconomics, and Regional Coordination: The Case of Germany and Poland in the Baltic Energy System - Close Neighbours, Close(r) Cooperation?
+  7. `historical:id:d2df15a06da1bc12` — Targeted attacks - protection of critical infrastructure of the country and capacity building | Bank for International Settlements
+  8. `historical:id:b736d887659e9e48` — Mobilising ASEAN - building the future through partnership | Bank for International Settlements
+  - … plus 28 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
@@ -56,3 +56,6 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 These records no longer consume automatic Deep Scan slots and are excluded from active reasoning after three failed attempts. Re-open one only by explicitly resetting its work-state entry after materially new evidence becomes available.
 
 - `link:https://doi.org/10.1093/ser/mwag003` — **Green monetary transitions? Central banking and climate finance in Europe and China** — attempts: 3/3 — Socio-Economic Review — 2026-07-09 — Identity was verified, but substantive evidence remained inaccessible or too thin after the required recovery search. — https://doi.org/10.1093/ser/mwag003
+- `link:https://news.google.com/rss/articles/CBMi0AFBVV95cUxOb21ZTW5pS2NjT2NnS0xra2VZNS04a2hUbUFBSF8ycTBvUUNaT1Y2MDlaYUhrbDJPVUtWeGVocWU1STRsTEhPdVFzNkkwTWh1ek9TVkdGVkY2S0FjMnQ4YWNrSm1VcjctdG1CWWxRV3ZSc3Q4OGJlVi1kNXNYcW1iaUx2dDBNNjF2RlZSN3I5SHdIYWVfRzNSV1Q3MEo4ZzBPYV9VN3psQUFyRW1FYW9GX1RNMjFLOU1jaEx2OTVjTXNQU0dNQ3ZFd2Vka2oyYkUw?oc=5` — **China captures Europe’s hybrid market + Beijing pushes back on overcapacity claims - Table.Briefings** — attempts: 3/3 — Table.Media — 2026-07-28T20:37Z — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://news.google.com/rss/articles/CBMi0AFBVV95cUxOb21ZTW5pS2NjT2NnS0xra2VZNS04a2hUbUFBSF8ycTBvUUNaT1Y2MDlaYUhrbDJPVUtWeGVocWU1STRsTEhPdVFzNkkwTWh1ek9TVkdGVkY2S0FjMnQ4YWNrSm1VcjctdG1CWWxRV3ZSc3Q4OGJlVi1kNXNYcW1iaUx2dDBNNjF2RlZSN3I5SHdIYWVfRzNSV1Q3MEo4ZzBPYV9VN3psQUFyRW1FYW9GX1RNMjFLOU1jaEx2OTVjTXNQU0dNQ3ZFd2Vka2oyYkUw?oc=5
+- `link:https://news.google.com/rss/articles/CBMixwFBVV95cUxPM3Rzd29FcFlHMldOUlY2ck9NWTdqSUotYWJULVJDUGVfSEYwdy1GeG5XcEU5US1BakNRQUtPZEViV3Nsb0t1dE5ZbVBvaERsZlVGZFpTVXJJME54aFp4Rlk1emlKamhySkRLOXpqX1gwMVBkVFB6anZZRlNMM3ptZW8tald0VGpvUDNmalFEQ1AtZHlSaWdMc1I0OFN4RGRIOTU0QW1hME1SMENpX2t3Zy1td2N5dmdyQXItckJSMHlobHBnbTF3?oc=5` — **China’s chip champion takes off + Why Europe’s supply chain rules hit a wall - Table.Briefings** — attempts: 3/3 — Table.Media — 2026-07-27T20:15Z — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://news.google.com/rss/articles/CBMixwFBVV95cUxPM3Rzd29FcFlHMldOUlY2ck9NWTdqSUotYWJULVJDUGVfSEYwdy1GeG5XcEU5US1BakNRQUtPZEViV3Nsb0t1dE5ZbVBvaERsZlVGZFpTVXJJME54aFp4Rlk1emlKamhySkRLOXpqX1gwMVBkVFB6anZZRlNMM3ptZW8tald0VGpvUDNmalFEQ1AtZHlSaWdMc1I0OFN4RGRIOTU0QW1hME1SMENpX2t3Zy1td2N5dmdyQXItckJSMHlobHBnbTF3?oc=5
+- `link:https://news.google.com/rss/articles/CBMi3AFBVV95cUxQd2RyTDdsYm03Mmc0S0N1a180WERBZkptYTZVU19qaEpJQ2pJWUs3aV9HS1hBcjdNV291UGF4S0FZNUZzWUVyUzhkemRfX0ZZeEdzVHdiVGNlemYyVk1uMFpwUkNfQ1BOYlFOYUFsM1oxLUpua0RFUDNHVE5QZy1YNFQyckhxVjBqYjg0dldldmdRU3hqR3NHS05mVUJLd0Q3ck1wU1Q4dl9jNURYMnpERFRKTjQyeVQtSmdFX1JGRmw2aUo5ZjZ2UzAzajJvZ21MVUZIOXpEWTRkZzVK?oc=5` — **Taking stock of Turnberry + EU rescue and restructuring guidelines + China’s export controls - Table.Briefings** — attempts: 3/3 — Table.Media — 2026-07-27T04:00Z — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://news.google.com/rss/articles/CBMi3AFBVV95cUxQd2RyTDdsYm03Mmc0S0N1a180WERBZkptYTZVU19qaEpJQ2pJWUs3aV9HS1hBcjdNV291UGF4S0FZNUZzWUVyUzhkemRfX0ZZeEdzVHdiVGNlemYyVk1uMFpwUkNfQ1BOYlFOYUFsM1oxLUpua0RFUDNHVE5QZy1YNFQyckhxVjBqYjg0dldldmdRU3hqR3NHS05mVUJLd0Q3ck1wU1Q4dl9jNURYMnpERFRKTjQyeVQtSmdFX1JGRmw2aUo5ZjZ2UzAzajJvZ21MVUZIOXpEWTRkZzVK?oc=5
