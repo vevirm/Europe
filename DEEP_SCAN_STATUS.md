@@ -7,39 +7,39 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **1484** (Main **682** + Historical **802**)
-- Automatic queue still needing V2 verification: **397** (Main **108** + Historical **289**)
-- Currently assigned to workers: **78** (Main **12** + Historical **66**)
-- Bounded access-recovery retries still eligible: **263**
+- Automatic queue still needing V2 verification: **422** (Main **133** + Historical **289**)
+- Currently assigned to workers: **86** (Main **86** + Historical **0**)
+- Bounded access-recovery retries still eligible: **208**
 - Terminally dropped after failed scans: **1**
-- Automatic queue pending and not yet assigned: **319**
+- Automatic queue pending and not yet assigned: **336**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-e85cffa12c1e`
-- Assigned unresolved records: **36**
-  1. `historical:id:352c7880ec11c848` — TTIP and legislative‒executive relations in EU trade policy
-  2. `historical:id:ff65784915ce6d7e` — Friendly Fire: The Trade Impact of the Russia Sanctions and Counter-Sanctions - Kiel Institute
-  3. `historical:id:57c00e90c31fd599` — European Industrial Policy — Tapping the Full Growth Potential of the EU
-  4. `historical:id:8e744b94e8f4bbf1` — The transatlantic dialogue on Iran: the European subaltern and hegemonic constraints in the implementation of the 2015 nuclear agreement with Iran
-  5. `historical:id:ef24e3c21d9d6e9f` — <i>European Communities – Definitive Anti-Dumping Measures on Certain Iron or Steel Fasteners from China</i> – <i>Recourse to Article 21.5 of the DSU by China</i> (<i>EC–Fasteners (China) (Article 21.5–China)</i>, DS397)
-  6. `historical:id:fb71ead5f0e1aa55` — Mercosur Is Not Really a Free Trade Agreement, Let Alone a Customs Union
-  7. `historical:id:3ffa2f842d5560ac` — Study on firm-level drivers of export performance and external competitiveness in Italy
-  8. `historical:id:a6ce2ce14214d616` — The geopolitical impact of the shale revolution: Exploring consequences on energy prices and rentier states
-  - … plus 28 more in the package manifest
+- Current package: `worker-a-ecb01ee41905`
+- Assigned unresolved records: **40**
+  1. `link:https://doi.org/10.24425/gsm.2026.6006` — Strategic autonomy in practice: Ukraine’s critical raw materials, growth accounting and shift-share evidence, 2010–2023
+  2. `link:https://doi.org/10.1016/j.erss.2026.104857` — From industrialization to industrial decarbonization: Divergent steel decarbonization pathways in South Korea and Germany
+  3. `link:https://doi.org/10.1080/13563467.2026.2737132` — The geoeconomics of wholesale central bank digital currencies: great power rivalry
+  4. `link:https://doi.org/10.24425/gsm.2026.6007` — Potential of critical raw materials of Slovakia
+  5. `link:https://doi.org/10.1016/j.erss.2026.105005` — How energy dependence becomes domestically acceptable in European countries: Legitimation of Russian energy use during the Russia–Ukraine war
+  6. `link:https://doi.org/10.1111/aepr.70032` — Comment on “Supply Chain Diversification and Industrial Policies to Strengthen Economic Security”
+  7. `link:https://doi.org/10.1002/bse.71515` — Rewiring the Circular Economy Through AI‐Informed Pathways: Structural and Distributional Drivers of Environmental Outcomes in the European Union
+  8. `link:https://doi.org/10.1002/ese3.70639` — Use of Hydrogen Energy Storage to Stabilize Solar Power Output With an Energy Efficiency Analysis for European Union Member Countries
+  - … plus 32 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-8cfbbeac458a`
-- Assigned unresolved records: **36**
-  1. `historical:id:bcdf19da059ff649` — European Union and the United States of America: Facilitation of electronic trade through the EU-U.S. Privacy Shield - Global Trade Alert
-  2. `historical:id:a498b360a80cf7b9` — Enforcement and sanctions
-  3. `historical:id:d08becd62872809e` — EU Energy Security beyond Ukraine: Towards Holistic Diversification
-  4. `historical:id:b078d4edbfbff8d7` — All or nothing? European and British strategic autonomy after the Brexit - Egmont Institute
-  5. `historical:id:c42491bbdca3f8fa` — <scp>EU</scp> Trade Preferences and Export Diversification
-  6. `historical:id:33fdcfd918811fd8` — The European Union and the African Union: A Strategic Partnership?
-  7. `historical:id:c316658669597204` — Like-minded partners in the Asia-Pacific region? The EU’s expanding relationship with Australia
-  8. `historical:id:9f456c30c2da0866` — The structuration of Russia’s geo-economy under economic sanctions
-  - … plus 28 more in the package manifest
+- Current package: `worker-b-bd0c29ee0c20`
+- Assigned unresolved records: **40**
+  1. `link:https://doi.org/10.54648/eerr2026019` — Cybersecurity at the Borders: The EU’s Differentiated Approaches to Cyber Capacity Building in Its Neighbours — recovery attempt 2/3
+  2. `link:https://doi.org/10.1177/20322844261446530` — Directive 2024/1226: A new EU response to sanctions breaches and circumvention — recovery attempt 2/3
+  3. `link:https://doi.org/10.1016/j.econlet.2026.113217` — GVC participation and inflation in the European Union — recovery attempt 2/3
+  4. `link:https://doi.org/10.30965/18763332-20262010` — Rethinking External Finance for Economic Growth in the Western Balkans: A Comparison with Central Eastern Europe — recovery attempt 2/3
+  5. `link:https://doi.org/10.1163/15691497-20263012` — Global Gateway. The EU’s Competition in Latin America and the Caribbean — recovery attempt 2/3
+  6. `link:https://doi.org/10.1002/sd.71203` — Advancing SDG 13 and Net‐Zero Emissions in Europe: The Role of Green Technology Innovation, Renewable Energy, Environmental Taxation and Trade Openness — recovery attempt 2/3
+  7. `link:https://fiia.fi/en/publication/the-geopolitical-commission` — The Geopolitical Commission - FIIA - Finnish Institute of International Affairs — recovery attempt 2/3
+  8. `link:https://doi.org/10.1002/sd.71514` — Revolutionizing Climate Action: Achieving SDG 13 Through the Lens of the Rule of Law, Green Technology Innovation, Renewable Energy, and Trade Openness — recovery attempt 2/3
+  - … plus 32 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
