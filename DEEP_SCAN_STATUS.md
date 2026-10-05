@@ -6,39 +6,39 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1639** (Main **758** + Historical **881**)
-- Automatic queue still needing V2 verification: **298** (Main **47** + Historical **251**)
-- Currently assigned to workers: **72** (Main **2** + Historical **70**)
-- Bounded access-recovery retries still eligible: **14**
-- Terminally dropped after failed scans: **29**
-- Automatic queue pending and not yet assigned: **226**
+- Authoritative V2 verified: **1680** (Main **759** + Historical **921**)
+- Automatic queue still needing V2 verification: **274** (Main **45** + Historical **229**)
+- Currently assigned to workers: **72** (Main **0** + Historical **72**)
+- Bounded access-recovery retries still eligible: **0**
+- Terminally dropped after failed scans: **37**
+- Automatic queue pending and not yet assigned: **202**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-86e5ab148758`
+- Current package: `worker-a-7a761c152a72`
 - Assigned unresolved records: **36**
-  1. `link:https://doi.org/10.1163/18719732-12341521` — FDI s in the Arms Industry — recovery attempt 2/3
-  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=0a258d70-ad2e-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for the evaluation of the Communication from the Commission concerning autonomous tariff suspensions and quotas (2011/C 363/02) and related base Council Regulations (EU) 2021/2283, 1388/2013, 2021/2278 and 1387/2013. - Publications Office of the EU — recovery attempt 2/3
-  3. `historical:id:69cfcd275d3bc640` — EU: Further trade restrictions with Russia on steel and iron products, luxury goods and other financial sanctions - Global Trade Alert
-  4. `historical:id:f49b155ba5cc177c` — EU: Additional financial sanctions on Belarus, including on its Central Bank and the exclusion of 3 banks from SWIFT - Global Trade Alert
-  5. `historical:id:e592c060ecbaffa7` — China's Foreign Policy: It's Time for a Return to Low Profile
-  6. `historical:id:2c55b60cf70b89f8` — COP27: European Union concludes a strategic partnership with Kazakhstan on raw materials, batteries and renewable hydrogen
-  7. `historical:id:57ca10070cdee0f7` — CRIMEAN ANNEXATION EUROPEAN UNION SANCTIONS AND RUSSIAN POLICY
-  8. `historical:id:562fa9d410ed7399` — EU-US Trade and Technology Council will be a litmus test for transatlantic coordination on China
+  1. `historical:id:3e90e021c9e32f0a` — Energy policy and economic security: a comparison of Europe and Asia
+  2. `historical:id:627880d490fc0cbc` — Confronting geopolitics: the EU (and EU studies) at a crossroads?
+  3. `historical:id:0ba109a8f93ce58e` — Throwing sand on the chips
+  4. `historical:id:a306f4fd96fe5aff` — Observing the Future
+  5. `historical:id:31b5f48a3329a4f1` — Estonia: Total cyberdefence, preparedness and competitiveness.
+  6. `historical:id:35ad7eae47a28540` — Advancing AI adoption in EU public administrations: Future directions and opportunities under the Apply AI Strategy
+  7. `historical:id:e5d52849aca09245` — The political economy of breaking European dependence on Russian gas
+  8. `historical:id:91166676029cb987` — The Design of Clean Trade and Investment Partnerships
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-84605d7f74f3`
+- Current package: `worker-b-eb29d7c62d64`
 - Assigned unresolved records: **36**
-  1. `historical:id:2a25788cd6e84c71` — The EU’s Strategic Partnerships with Japan and South Korea: A Comparative Analysis of the Drivers, Outcomes and Limitations
-  2. `historical:id:6332fbbb0bf55661` — The Commission’s Trade Policy Review - Between Idealism And Realism
-  3. `historical:id:eba27ae138d1fda3` — Sustainable supply of raw materials from EU sources
-  4. `historical:id:a85e2b6c36923f45` — Institut Jacques Delors - [FR] Euroquestions #13 | Facing Russia: renewing and toughening sanctions, and then what?
-  5. `historical:id:edc4a26c00062919` — Biden's Foreign Policy is Becoming Clearer, So Is the Second Cold War
-  6. `historical:id:38f3a1e60f3979a0` — German Foreign Trade and Payments Ordinance (German text consolidated 29 October 2020 and English translation consolidated 19 December 2018) - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 2/3
-  7. `historical:id:8f0d9a232522df6e` — Russian Foreign Energy Policy Towards the European Union — recovery attempt 2/3
-  8. `historical:id:9b6645ed62de9077` — Croatian Regulation on the implementation of EU FDI Screening Regulation (Regulation (EU) 2019/452), OJ L 79I, 21 March 2019 (in Croatian), entered in force 2 October 2020 - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 2/3
+  1. `historical:id:2276c36f03bb313a` — Eva Rytter Sunesen and Jonas Juul Henriksen, The Economics of FDI Screening - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 2/3
+  2. `historical:id:e052f0ec2502eb50` — Could Germany make a geopolitical turn on financial policy? – European Council on Foreign Relations — recovery attempt 2/3
+  3. `historical:id:bc85425a6c67e719` — German Federal Ministry for Economic Affairs and Energy report: Industrial Strategy 2030 Guidelines for a German and European industrial policy, November 2019 - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 2/3
+  4. `historical:id:6faf949eee3c5dee` — EU’s strategic partnership with Asian countries: an introductory article for the special issue
+  5. `historical:id:d6897b7a4894a9a8` — Unravelling the Puzzle of Social Standards’ Design in EU and US Trade Agreements — recovery attempt 2/3
+  6. `historical:id:a446037a66b8c0f9` — America, 5G, and Industrial Policy
+  7. `historical:id:ea82c214b2d7f38d` — Transatlantic security relations since the European security strategy: what role for the EU in its pursuit of strategic autonomy?
+  8. `historical:id:6fa819459b98b790` — Balancing Trumpism: Transatlantic Divergence in the Middle East
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
@@ -78,3 +78,11 @@ These records no longer consume automatic Deep Scan slots and are excluded from 
 - `link:https://doi.org/10.1016/j.resconrec.2026.108978` — **Enablers for the successful development of a circular recycling value chain for electric vehicle batteries** — attempts: 3/3 — Resources Conservation and Recycling — 2026-05-09 — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://doi.org/10.1016/j.resconrec.2026.108978
 - `historical:id:2f1cef4af1dbbe1e` — **Enhancing the competitiveness of Ethiopia’s horticultural sector (MAHEBER)** — attempts: 3/3 — European Commission — International Partnerships — 2025-01-01 — Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it — https://international-partnerships.ec.europa.eu/eu-due-diligence-navigator-partner-countries/enhancing-competitiveness-ethiopias-horticultural-sector-maheber_en
 - `historical:id:187e92e588f38ea9` — **European Strategic Autonomy: The Path to a Geopolitical Europe** — attempts: 3/3 — The Washington Quarterly — 2024-01-02 — Bibliographic identity was verified, but substantive full text remained inaccessible after the required recovery ladder. — https://doi.org/10.1080/0163660x.2024.2327820
+- `link:https://doi.org/10.1163/18719732-12341521` — **FDI s in the Arms Industry** — attempts: 3/3 — International Community Law Review — 2026-09-22 — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://doi.org/10.1163/18719732-12341521
+- `historical:id:e688478c39c0a84c` — **Towards Strategic Autonomy: The Role of the EU in the Growing China-USA Rivalry - Egmont Institute** — attempts: 3/3 — Egmont Institute — 2020-07-19 — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://egmontinstitute.be/media/towards-strategic-autonomy-the-role-of-the-eu-in-the-growing-china-usa-rivalry/
+- `historical:id:bd067793dd93e7df` — **German Federal Ministry for Economic Affairs and Energy, FAQ on Investment Screenings pursuant to the Foreign Trade and Payments Act and the Foreign Trade and Payments Ordinance (in German) - CELIS Institute - Investment Screening | National Security | Competitiveness** — attempts: 3/3 — CELIS Institute — 2020-07-17 — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://www.celis.institute/celis-content/german-federal-ministry-for-economic-affairs-and-energy-faq-on-investment-screenings-pursuant-to-the-foreign-trade-and-payments-act-and-foreign-trade-and-payments-ordinance-in-german/
+- `historical:id:1ec98a6adcf807ed` — **China’s sanctions on Europe – Brookings Institution - CELIS Institute** — attempts: 3/3 — CELIS Institute — 2021-04-21 — Deep Scan return rejected: recovered-work decision requires at least one substantive recovered source; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it — https://celis.institute/chinas-sanctions-on-europe-brookings-institution/
+- `historical:id:8f0d9a232522df6e` — **Russian Foreign Energy Policy Towards the European Union** — attempts: 3/3 — International Affairs — 2020-10-12 — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://doi.org/10.18192/potentia.v11i0.4568
+- `historical:id:289e44ae570503fe` — **Economic interdependence and economic sanctions: a case study of European Union sanctions on Russia** — attempts: 3/3 — International Affairs — 2020-03-03 — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://doi.org/10.1080/09557571.2019.1660857
+- `historical:id:a85e2b6c36923f45` — **Institut Jacques Delors - [FR] Euroquestions #13 | Facing Russia: renewing and toughening sanctions, and then what?** — attempts: 3/3 — Institut Jacques Delors — 2021-01-01 — Deep Scan return rejected: recovered-work decision requires at least one substantive recovered source — https://institutdelors.eu/en/evenements/fr-euroquestions-13-facing-russia-renewing-and-toughening-sanctions-and-then-what/
+- `historical:id:f1a78ad8ec19a12b` — **Poland: Introduction of new FDI screening rules due to COVID-19 - Global Trade Alert** — attempts: 3/3 — Global Trade Alert — 2020-01-01 — Deep Scan return rejected: recovered-work decision requires at least one substantive recovered source — https://globaltradealert.org/state-act/47305-poland-introduction-of-new-fdi-screening-rules-due-to-covid-19/
