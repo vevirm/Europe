@@ -17,12 +17,15 @@
 <body>
 <main class="wrap pattern-simple-main">
   <section class="pattern-simple-section">
+    <h2>Developments that keep recurring</h2>
+    <p class="summary">These are issues that appear in both earlier material and the current Radar, or keep returning in new forms. The point is persistence, not prediction.</p>
     <ul id="phenomena" class="pattern-simple-list"><li class="empty">Loading</li></ul>
   </section>
 </main>
 <script src="../historical/reasoning_context.js?v=1"></script>
 <script src="phenomena.js?v=21.23"></script>
 <script src="continuity.js?v=21.23"></script>
+<script src="../reader_clarity.js?v=1"></script>
 <script>
 const clean=v=>String(v||'').replace(/\s+/g,' ').trim();
 const esc=v=>clean(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -137,7 +140,7 @@ function phenomenonEvidenceList(rows){return rows.map(r=>{const title=clean(r?.t
 function phenomenonEvidence(rows,history){rows=Array.isArray(rows)?rows:[];history=Array.isArray(history)?history:[];if(!rows.length&&!history.length)return '';let body='';if(rows.length)body+=`<p><strong>Current sources:</strong></p><ul>${phenomenonEvidenceList(rows)}</ul>`;if(history.length)body+=`<p><strong>Earlier sources:</strong></p><ul>${phenomenonEvidenceList(history)}</ul>`;return `<details><summary>Sources</summary>${body}</details>`}
 function render(items){
   const el=document.getElementById('phenomena');
-  el.innerHTML=items.length?items.map(x=>{const explanation=clean(x.explanation)||clean(phenomenonExplanation(x.text));return `<li data-obviousness="${x.distance||2}"><strong>${esc(x.text)}</strong>${explanation?`<p>${esc(explanation)}</p>`:''}${phenomenonEvidence(x.support,x.history)}</li>`}).join(''):'<li class="empty">No ongoing phenomenon is clear enough to show yet.</li>';
+  el.innerHTML=items.length?items.map(x=>{const rawExplanation=clean(x.explanation)||clean(phenomenonExplanation(x.text));const c=globalThis.RadarReaderClarity?.phenomenon?.(x,x.text,rawExplanation)||{title:x.text,explanation:rawExplanation};return `<li data-obviousness="${x.distance||2}"><strong>${esc(c.title)}</strong>${c.explanation?`<p>${esc(c.explanation)}</p>`:''}${phenomenonEvidence(x.support,x.history)}</li>`}).join(''):'<li class="empty">No ongoing phenomenon is clear enough to show yet.</li>';
 }
 async function loadJson(url){try{const r=await fetch(url,{cache:'no-store'});return r.ok?await r.json():{}}catch(_){return {}}}
 (async()=>{
