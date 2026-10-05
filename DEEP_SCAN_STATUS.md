@@ -6,40 +6,31 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1680** (Main **759** + Historical **921**)
-- Automatic queue still needing V2 verification: **274** (Main **45** + Historical **229**)
-- Currently assigned to workers: **72** (Main **0** + Historical **72**)
+- Authoritative V2 verified: **1752** (Main **759** + Historical **993**)
+- Automatic queue still needing V2 verification: **202** (Main **45** + Historical **157**)
+- Currently assigned to workers: **36** (Main **0** + Historical **36**)
 - Bounded access-recovery retries still eligible: **0**
 - Terminally dropped after failed scans: **37**
-- Automatic queue pending and not yet assigned: **202**
+- Automatic queue pending and not yet assigned: **166**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-76364b7454d0`
+- Current package: `worker-a-4464209de293`
 - Assigned unresolved records: **36**
-  1. `historical:id:3e90e021c9e32f0a` — Energy policy and economic security: a comparison of Europe and Asia
-  2. `historical:id:627880d490fc0cbc` — Confronting geopolitics: the EU (and EU studies) at a crossroads?
-  3. `historical:id:0ba109a8f93ce58e` — Throwing sand on the chips
-  4. `historical:id:a306f4fd96fe5aff` — Observing the Future
-  5. `historical:id:31b5f48a3329a4f1` — Estonia: Total cyberdefence, preparedness and competitiveness.
-  6. `historical:id:35ad7eae47a28540` — Advancing AI adoption in EU public administrations: Future directions and opportunities under the Apply AI Strategy
-  7. `historical:id:e5d52849aca09245` — The political economy of breaking European dependence on Russian gas
-  8. `historical:id:91166676029cb987` — The Design of Clean Trade and Investment Partnerships
+  1. `historical:id:a498b360a80cf7b9` — Enforcement and sanctions
+  2. `historical:id:d08becd62872809e` — EU Energy Security beyond Ukraine: Towards Holistic Diversification
+  3. `historical:id:b078d4edbfbff8d7` — All or nothing? European and British strategic autonomy after the Brexit - Egmont Institute
+  4. `historical:id:c42491bbdca3f8fa` — <scp>EU</scp> Trade Preferences and Export Diversification
+  5. `historical:id:33fdcfd918811fd8` — The European Union and the African Union: A Strategic Partnership?
+  6. `historical:id:c316658669597204` — Like-minded partners in the Asia-Pacific region? The EU’s expanding relationship with Australia
+  7. `historical:id:9f456c30c2da0866` — The structuration of Russia’s geo-economy under economic sanctions
+  8. `historical:id:33685d6265b65bb5` — Conceptualizing regional powers’ geoeconomic strategies: neo-imperialism, neo-mercantilism, hegemony, and liberal institutionalism
   - … plus 28 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-b4f680e33789`
-- Assigned unresolved records: **36**
-  1. `historical:id:6faf949eee3c5dee` — EU’s strategic partnership with Asian countries: an introductory article for the special issue
-  2. `historical:id:d6897b7a4894a9a8` — Unravelling the Puzzle of Social Standards’ Design in EU and US Trade Agreements — recovery attempt 2/3
-  3. `historical:id:a446037a66b8c0f9` — America, 5G, and Industrial Policy
-  4. `historical:id:ea82c214b2d7f38d` — Transatlantic security relations since the European security strategy: what role for the EU in its pursuit of strategic autonomy?
-  5. `historical:id:6fa819459b98b790` — Balancing Trumpism: Transatlantic Divergence in the Middle East
-  6. `historical:id:f2f809d091b57a9a` — The case for a Euro-Arab summit – CEPS
-  7. `historical:id:a9b7cdc893f4b331` — The internal market and national security: Transposition, impact and reform of the EU Directive on Intra-Community Transfers of Defence Products
-  8. `historical:id:f459757328212183` — The Redistributive Impact of Restrictive Measures on EU Members: Winners and Losers from Imposing Sanctions on Russia
-  - … plus 28 more in the package manifest
+- Assigned unresolved records: **0**
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
