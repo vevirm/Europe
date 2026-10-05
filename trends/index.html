@@ -10,13 +10,13 @@
 <!-- Legacy regression tokens only: reform.css?v=23.0 · site-shell.js?v=23.0 -->
 </head>
 <body>
-<header><div class="wrap top"><div><div class="kicker">Competing directions</div><h1>Trends &amp; Counter-Trends</h1><p class="lede">Each pair shows two forces pulling in different directions. The numbers show their relative pull, not probabilities.</p></div><nav class="nav"><a href="../">Start</a><a href="../radar/">Main Radar</a><a href="../read/">Read At Least This</a><a href="../frontier/quick/">Matrix</a><a class="primary" href="./">Trends</a><a href="../priorities/">Risks &amp; Opportunities</a><a href="../shocks/">External Shocks</a></nav></div></header>
+<header><div class="wrap top"><div><div class="kicker">Trends &amp; counter-trends</div><h1>Forces pulling Europe in different directions</h1><p class="lede">Each pair shows two developments acting on the same issue in opposite directions. The numbers compare the strength of the current evidence; they are not probabilities.</p></div><nav class="nav"><a href="../">Start</a><a href="../radar/">Main Radar</a><a href="../read/">Read At Least This</a><a href="../frontier/quick/">Matrix</a><a class="primary" href="./">Trends</a><a href="../priorities/">Risks &amp; Opportunities</a><a href="../shocks/">External Shocks</a></nav></div></header>
 <section class="core-flow"><div class="wrap flow"><a href="../radar/">1 · Radar</a><span>→</span><a href="../frontier/quick/">2 · Matrix</a><span>→</span><a class="current" href="./">3 · Trends</a><span>→</span><a href="../phenomena/">4 · Ongoing phenomena</a><span>→</span><a href="../priorities/">5 · Risks &amp; opportunities</a><span>→</span><a href="../shocks/">6 · External shocks</a></div></section>
 <main class="wrap">
 <section class="method"><div class="method-head"><h2>How to read these pairs</h2><p class="method-note">The two sides can strengthen at the same time. Older material is shown only when it adds useful context.</p></div><div id="corpusLine" class="corpus-line"></div></section>
 <div id="pairs" class="pair-list"><div class="empty">Loading</div></div>
 </main>
-<script src="../reader_rank.js?v=21.7"></script><script src="../reader_style.js?v=28.3"></script><script src="../historical/reasoning_context.js?v=1"></script><script src="trends.js?v=21.8"></script>
+<script src="../reader_rank.js?v=21.7"></script><script src="../reader_style.js?v=28.3"></script><script src="../reader_clarity.js?v=1"></script><script src="../historical/reasoning_context.js?v=1"></script><script src="trends.js?v=21.8"></script>
 <script>
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function surface(v){return globalThis.RadarReaderStyle?.surfaceText?.(v)||String(v||'')}
@@ -27,9 +27,11 @@ const TREND_DISTANCE=new Map();
 const TREND_DISPLAY_LIMIT=30;
 function trendDistance(x){return x?.emergent?(TREND_DISTANCE.get(String(x.id||'').trim())||4):2}
 function pair(x){
-  const l=globalThis.RadarReaderStyle?.pagePair?.(x.left.plain,x.left.why,20,20)||x.left;
-  const r=globalThis.RadarReaderStyle?.pagePair?.(x.right.plain,x.right.why,20,20)||x.right;
-  const lt=surface(x.left.title),rt=surface(x.right.title);
+  const lc=globalThis.RadarReaderClarity?.trendSide?.(x.left)||{title:x.left.title,what:x.left.plain,why:x.left.why};
+  const rc=globalThis.RadarReaderClarity?.trendSide?.(x.right)||{title:x.right.title,what:x.right.plain,why:x.right.why};
+  const l=globalThis.RadarReaderStyle?.pagePair?.(lc.what,lc.why,28,24)||lc;
+  const r=globalThis.RadarReaderStyle?.pagePair?.(rc.what,rc.why,28,24)||rc;
+  const lt=surface(lc.title),rt=surface(rc.title);
   const ranges=x.emergent&&Array.isArray(x.pullRange?.left)&&x.pullRange.left.length===2&&Array.isArray(x.pullRange?.right)&&x.pullRange.right.length===2;
   const st=x.actionStats||{};
   const rangeNote='';
