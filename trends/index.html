@@ -5,18 +5,19 @@
 <title>EU economic security · Trends &amp; Counter-Trends</title>
 <link rel="stylesheet" href="../radar.css?v=28">
 <script src="../radar_data.js?v=28.1"></script>
+<script src="../reader_clarity.js?v=1"></script>
 
 
 <!-- Legacy regression tokens only: reform.css?v=23.0 · site-shell.js?v=23.0 -->
 </head>
 <body>
-<header><div class="wrap top"><div><div class="kicker">Trends &amp; counter-trends</div><h1>Forces pulling Europe in different directions</h1><p class="lede">Each pair shows two developments acting on the same issue in opposite directions. The numbers compare the strength of the current evidence; they are not probabilities.</p></div><nav class="nav"><a href="../">Start</a><a href="../radar/">Main Radar</a><a href="../read/">Read At Least This</a><a href="../frontier/quick/">Matrix</a><a class="primary" href="./">Trends</a><a href="../priorities/">Risks &amp; Opportunities</a><a href="../shocks/">External Shocks</a></nav></div></header>
+<header><div class="wrap top"><div><div class="kicker">Competing directions</div><h1>Forces pulling Europe in different directions</h1><p class="lede">Each pair shows two evidence-backed directions acting on the same issue. The balance shows which direction has stronger current evidence, not a probability.</p></div><nav class="nav"><a href="../">Start</a><a href="../radar/">Main Radar</a><a href="../read/">Read At Least This</a><a href="../frontier/quick/">Matrix</a><a class="primary" href="./">Trends</a><a href="../priorities/">Risks &amp; Opportunities</a><a href="../shocks/">External Shocks</a></nav></div></header>
 <section class="core-flow"><div class="wrap flow"><a href="../radar/">1 · Radar</a><span>→</span><a href="../frontier/quick/">2 · Matrix</a><span>→</span><a class="current" href="./">3 · Trends</a><span>→</span><a href="../phenomena/">4 · Ongoing phenomena</a><span>→</span><a href="../priorities/">5 · Risks &amp; opportunities</a><span>→</span><a href="../shocks/">6 · External shocks</a></div></section>
 <main class="wrap">
 <section class="method"><div class="method-head"><h2>How to read these pairs</h2><p class="method-note">The two sides can strengthen at the same time. Older material is shown only when it adds useful context.</p></div><div id="corpusLine" class="corpus-line"></div></section>
 <div id="pairs" class="pair-list"><div class="empty">Loading</div></div>
 </main>
-<script src="../reader_rank.js?v=21.7"></script><script src="../reader_style.js?v=28.3"></script><script src="../reader_clarity.js?v=1"></script><script src="../historical/reasoning_context.js?v=1"></script><script src="trends.js?v=21.8"></script>
+<script src="../reader_rank.js?v=21.7"></script><script src="../reader_style.js?v=28.3"></script><script src="../historical/reasoning_context.js?v=1"></script><script src="trends.js?v=21.8"></script>
 <script>
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function surface(v){return globalThis.RadarReaderStyle?.surfaceText?.(v)||String(v||'')}
@@ -27,17 +28,17 @@ const TREND_DISTANCE=new Map();
 const TREND_DISPLAY_LIMIT=30;
 function trendDistance(x){return x?.emergent?(TREND_DISTANCE.get(String(x.id||'').trim())||4):2}
 function pair(x){
-  const lc=globalThis.RadarReaderClarity?.trendSide?.(x.left)||{title:x.left.title,what:x.left.plain,why:x.left.why};
-  const rc=globalThis.RadarReaderClarity?.trendSide?.(x.right)||{title:x.right.title,what:x.right.plain,why:x.right.why};
-  const l=globalThis.RadarReaderStyle?.pagePair?.(lc.what,lc.why,28,24)||lc;
-  const r=globalThis.RadarReaderStyle?.pagePair?.(rc.what,rc.why,28,24)||rc;
-  const lt=surface(lc.title),rt=surface(rc.title);
+  // ReaderClarity reads the same selected finding and the evidence already attached
+  // to this card. It changes display copy only; x and radar.json remain untouched.
+  const l=globalThis.RadarReaderClarity?.trendSide?.(x.left,x,'left')||{title:x.left.title,what:x.left.plain,why:x.left.why};
+  const r=globalThis.RadarReaderClarity?.trendSide?.(x.right,x,'right')||{title:x.right.title,what:x.right.plain,why:x.right.why};
+  const lt=surface(l.title||x.left.title),rt=surface(r.title||x.right.title);
   const ranges=x.emergent&&Array.isArray(x.pullRange?.left)&&x.pullRange.left.length===2&&Array.isArray(x.pullRange?.right)&&x.pullRange.right.length===2;
   const st=x.actionStats||{};
   const rangeNote='';
   const composition=x.composition?`<p class="why">${esc(x.composition)}</p>`:'';
   const flip=x.flip?`<p class="why"><strong>What to watch next:</strong> ${esc(x.flip)}</p>`:'';
-  return `<article class="pair" data-obviousness="${trendDistance(x)}"><div class="tug-score" aria-label="Evidence pull ${x.left.pull} to ${x.right.pull}"><strong>${x.left.pull}</strong><div class="tug-track" aria-hidden="true"><span class="tug-left" data-pull="${x.left.pull}"></span><span class="tug-right" data-pull="${x.right.pull}"></span></div><strong>${x.right.pull}</strong></div>${rangeNote}<div class="axis"><section class="side"><h3>${esc(lt)}</h3>${l.what&&l.what!==lt?`<p class="plain">${esc(l.what)}</p>`:''}${l.why&&l.why!==l.what?`<p class="why">${esc(l.why)}</p>`:''}${evidenceBlock(x.left)}</section><section class="side right"><h3>${esc(rt)}</h3>${r.what&&r.what!==rt?`<p class="plain">${esc(r.what)}</p>`:''}${r.why&&r.why!==r.what?`<p class="why">${esc(r.why)}</p>`:''}${evidenceBlock(x.right)}</section></div>${composition}${flip}</article>`;
+  return `<article class="pair" data-obviousness="${trendDistance(x)}"><div class="tug-score" aria-label="Evidence pull ${x.left.pull} to ${x.right.pull}"><strong>${x.left.pull}</strong><div class="tug-track" aria-hidden="true"><span class="tug-left" data-pull="${x.left.pull}"></span><span class="tug-right" data-pull="${x.right.pull}"></span></div><strong>${x.right.pull}</strong></div>${rangeNote}<div class="axis"><section class="side"><h3>${esc(lt)}</h3>${l.what&&l.what!==lt?`<p class="plain">${esc(l.what)}</p>`:''}${l.why&&l.why!==l.what?`<p class="why"><strong>Why it matters:</strong> ${esc(l.why)}</p>`:''}${evidenceBlock(x.left)}</section><section class="side right"><h3>${esc(rt)}</h3>${r.what&&r.what!==rt?`<p class="plain">${esc(r.what)}</p>`:''}${r.why&&r.why!==r.what?`<p class="why"><strong>Why it matters:</strong> ${esc(r.why)}</p>`:''}${evidenceBlock(x.right)}</section></div>${composition}${flip}</article>`;
 }
 async function loadJson(url){try{const r=await fetch(url,{cache:'no-store'});if(!r.ok)return {};return await r.json()}catch(_){return {}}}
 function wowCyclePairs(items){const buckets=new Map([5,4,3,2,1].map(w=>[w,[]]));for(const x of items||[]){const w=Math.max(1,Math.min(5,trendDistance(x)));buckets.get(w).push(x)}const out=[];for(let round=0;round<3;round++)for(const w of [5,4,3,2,1]){const x=buckets.get(w)[round];if(x)out.push(x)}return out}
