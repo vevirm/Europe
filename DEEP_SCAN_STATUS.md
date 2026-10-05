@@ -6,27 +6,18 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1752** (Main **759** + Historical **993**)
-- Automatic queue still needing V2 verification: **202** (Main **45** + Historical **157**)
-- Currently assigned to workers: **36** (Main **0** + Historical **36**)
+- Authoritative V2 verified: **1785** (Main **759** + Historical **1026**)
+- Automatic queue still needing V2 verification: **168** (Main **45** + Historical **123**)
+- Currently assigned to workers: **0** (Main **0** + Historical **0**)
 - Bounded access-recovery retries still eligible: **0**
-- Terminally dropped after failed scans: **37**
-- Automatic queue pending and not yet assigned: **166**
+- Terminally dropped after failed scans: **38**
+- Automatic queue pending and not yet assigned: **168**
 
 ## Worker lanes
 
 ### Worker A
 - Current package: `worker-a-4464209de293`
-- Assigned unresolved records: **36**
-  1. `historical:id:a498b360a80cf7b9` — Enforcement and sanctions
-  2. `historical:id:d08becd62872809e` — EU Energy Security beyond Ukraine: Towards Holistic Diversification
-  3. `historical:id:b078d4edbfbff8d7` — All or nothing? European and British strategic autonomy after the Brexit - Egmont Institute
-  4. `historical:id:c42491bbdca3f8fa` — <scp>EU</scp> Trade Preferences and Export Diversification
-  5. `historical:id:33fdcfd918811fd8` — The European Union and the African Union: A Strategic Partnership?
-  6. `historical:id:c316658669597204` — Like-minded partners in the Asia-Pacific region? The EU’s expanding relationship with Australia
-  7. `historical:id:9f456c30c2da0866` — The structuration of Russia’s geo-economy under economic sanctions
-  8. `historical:id:33685d6265b65bb5` — Conceptualizing regional powers’ geoeconomic strategies: neo-imperialism, neo-mercantilism, hegemony, and liberal institutionalism
-  - … plus 28 more in the package manifest
+- Assigned unresolved records: **0**
 
 ### Worker B
 - Current package: `worker-b-b4f680e33789`
@@ -77,3 +68,4 @@ These records no longer consume automatic Deep Scan slots and are excluded from 
 - `historical:id:289e44ae570503fe` — **Economic interdependence and economic sanctions: a case study of European Union sanctions on Russia** — attempts: 3/3 — International Affairs — 2020-03-03 — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://doi.org/10.1080/09557571.2019.1660857
 - `historical:id:a85e2b6c36923f45` — **Institut Jacques Delors - [FR] Euroquestions #13 | Facing Russia: renewing and toughening sanctions, and then what?** — attempts: 3/3 — Institut Jacques Delors — 2021-01-01 — Deep Scan return rejected: recovered-work decision requires at least one substantive recovered source — https://institutdelors.eu/en/evenements/fr-euroquestions-13-facing-russia-renewing-and-toughening-sanctions-and-then-what/
 - `historical:id:f1a78ad8ec19a12b` — **Poland: Introduction of new FDI screening rules due to COVID-19 - Global Trade Alert** — attempts: 3/3 — Global Trade Alert — 2020-01-01 — Deep Scan return rejected: recovered-work decision requires at least one substantive recovered source — https://globaltradealert.org/state-act/47305-poland-introduction-of-new-fdi-screening-rules-due-to-covid-19/
+- `historical:id:4ce232e482facb66` — **EU sanctions on standby should ceasefire fail - Egmont Institute** — attempts: 3/3 — Egmont Institute — 2015-02-14 — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://egmontinstitute.be/media/eu-sanctions-on-standby-should-ceasefire-fail/
