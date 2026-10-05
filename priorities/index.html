@@ -8,12 +8,13 @@
 <title>EU economic security · Risks &amp; Opportunities</title>
 <link rel="stylesheet" href="../radar.css?v=28.2">
 <script src="../radar_data.js?v=28.1"></script>
+<script src="../reader_clarity.js?v=1"></script>
 
 
 <!-- Legacy regression tokens only: reform.css?v=23.0 · site-shell.js?v=23.0 -->
 </head>
 <body>
-<header><div class="wrap top"><div><div class="kicker">PATHWAYS</div><h1>Risks &amp; Opportunities</h1><p class="lede">Forward-looking risks and opportunities for EU research &amp; innovation.</p></div><nav class="nav" aria-label="Primary site sections"><a href="../">Start</a><a href="../radar/">Main Radar</a><a href="../read/">Read At Least This</a><a href="../frontier/quick/">Matrix</a><a href="../trends/">Trends</a><a href="../phenomena/">Ongoing Phenomena</a><a class="primary" href="./" aria-current="page">Risks &amp; Opportunities</a><a href="../shocks/">External Shocks</a><a href="../historical/">Earlier Findings</a><a href="../literature/">Sources</a><a href="../stuff/">Stuff</a></nav></div></header>
+<header><div class="wrap top"><div><div class="kicker">WHAT COULD FOLLOW</div><h1>What could weaken or strengthen Europe</h1><p class="lede">Possible consequences of developments already visible in the Radar. These are forward-looking paths, not forecasts.</p></div><nav class="nav" aria-label="Primary site sections"><a href="../">Start</a><a href="../radar/">Main Radar</a><a href="../read/">Read At Least This</a><a href="../frontier/quick/">Matrix</a><a href="../trends/">Trends</a><a href="../phenomena/">Ongoing Phenomena</a><a class="primary" href="./" aria-current="page">Risks &amp; Opportunities</a><a href="../shocks/">External Shocks</a><a href="../historical/">Earlier Findings</a><a href="../literature/">Sources</a><a href="../stuff/">Stuff</a></nav></div></header>
 <section class="core-flow" aria-label="Core reader path"><div class="wrap flow"><a href="../radar/">1 · Radar</a><span>→</span><a href="../frontier/quick/">2 · Matrix</a><span>→</span><a href="../trends/">3 · Trends</a><span>→</span><a href="../phenomena/">4 · Ongoing phenomena</a><span>→</span><a class="current" href="./">5 · Risks &amp; opportunities</a><span>→</span><a href="../shocks/">6 · External shocks</a></div></section>
 <main class="wrap"><div class="grid">
 <section class="panel"><div class="panel-head"><div><h2>Risks</h2><p class="hint">Ways current developments could weaken Europe’s economic security.</p></div><span id="riskCount" class="panel-count">—</span></div><ol id="risks" class="list risk"><li class="empty">Loading</li></ol><p id="riskStock" class="hint"></p></section>
@@ -36,13 +37,16 @@ function item(x,kind,i){
   const id=`detail-${kind}-${i}`;
   const rawText=RadarPriorities.plainPriorityTitle(x);
   const text=globalThis.RadarReaderStyle?.displayTitle?.(rawText)||rawText;
-  const explanation=RadarPriorities.plainPriorityExplanation(x);
+  const rawExplanation=RadarPriorities.plainPriorityExplanation(x);
+  const clear=globalThis.RadarReaderClarity?.priority?.(x,kind,text,rawExplanation)||{title:text,explanation:rawExplanation};
+  const clearTitle=clear.title||text;
+  const explanation=clear.explanation||'';
   const evidence=RadarPriorities.supportingEvidenceText(x);
   const source=[x.source,x.date?fmtDate(x.date):''].filter(Boolean).join(' — ');
   const sourceTitle=x.title||'Source';
   const detailLead=evidence?`<p>${esc(evidence)}</p>`:'';
   const sourceLead=x.link?`<p class="priority-meta"><a href="${esc(x.link)}" target="_blank" rel="noopener">${esc(sourceTitle)}</a>${source?` — ${esc(source)}`:''}</p>`:(source?`<p class="priority-meta">${esc(source)}</p>`:'');
-  return `<li class="priority-card" data-obviousness="${displayDistance(x)}"><div class="priority-main"><span class="rank">${i+1}</span><div class="priority-copy"><div class="priority-title">${esc(text)}</div>${explanation?`<p class="priority-what">${esc(explanation)}</p>`:''}<div class="priority-actions"><button class="info-button" type="button" data-detail="${id}" aria-expanded="false">Sources</button></div></div></div><div id="${id}" class="detail" hidden>${detailLead}${sourceLead}${highOrderEvidenceHtml(x)}${relatedEvidenceHtml(x)}${weakContextHtml(x)}</div></li>`
+  return `<li class="priority-card" data-obviousness="${displayDistance(x)}"><div class="priority-main"><span class="rank">${i+1}</span><div class="priority-copy"><div class="priority-title">${esc(clearTitle)}</div>${explanation?`<p class="priority-what">${esc(explanation)}</p>`:''}<div class="priority-actions"><button class="info-button" type="button" data-detail="${id}" aria-expanded="false">Sources</button></div></div></div><div id="${id}" class="detail" hidden>${detailLead}${sourceLead}${highOrderEvidenceHtml(x)}${relatedEvidenceHtml(x)}${weakContextHtml(x)}</div></li>`
 }
 function listHtml(items,kind){const label=kind==='risk'?'risk':'opportunity';return items.length?items.map((x,i)=>item(x,kind,i)).join(''):`<li class="empty">No current ${label} is clear enough to show here yet.</li>`}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-detail]');if(!b)return;const box=document.getElementById(b.dataset.detail);if(!box)return;const opening=box.hidden;box.hidden=!opening;b.setAttribute('aria-expanded',String(opening));b.textContent=opening?'Close':'Sources';});
