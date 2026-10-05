@@ -16,11 +16,13 @@
 </head>
 <body>
 <main class="wrap external-shock-main">
+  <h2>What could suddenly disrupt the current picture</h2>
   <div id="shockSummary" class="summary">Loading</div>
   <ol id="shockList" class="external-shock-list"><li class="empty">Loading</li></ol>
 </main>
 <script src="../reader_rank.js?v=17.20.18"></script>
 <script src="scenarios.js?v=23.3"></script>
+<script src="../reader_clarity.js?v=1"></script>
 <script>
 const clean=v=>String(v||'').replace(/\s+/g,' ').trim();
 const esc=v=>clean(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -149,8 +151,8 @@ function visibleShockExplanation(title,text){return clean(text)||shockExplanatio
     // Stage 7 already publishes the 5-4-3-2-1 x3 shelf (with thin wow levels filled
     // from the nearest level). Keep that order; re-bucketing here dropped findings.
     const items=all.slice(0,15);
-    document.getElementById('shockSummary').textContent=items.length?'Possible shocks worth watching.':'No possible shock is ready to show yet.';
-    el.innerHTML=items.length?items.map((x,i)=>{const raw=x.explanation&&x.detail&&x.detail.type==='higher-order'?x.explanation:shockExplanation(x.text);const explanation=visibleShockExplanation(x.text,raw);return `<li><strong>${esc(x.text)}</strong><p>${esc(explanation)}</p>${shockDetailHtml(x,i)}</li>`}).join(''):'<li class="empty">No possible shock is ready to show yet.</li>';
+    document.getElementById('shockSummary').textContent=items.length?'Outside events that could suddenly disrupt capabilities, inputs or connections Europe currently relies on.':'No possible shock is ready to show yet.';
+    el.innerHTML=items.length?items.map((x,i)=>{const raw=x.explanation&&x.detail&&x.detail.type==='higher-order'?x.explanation:shockExplanation(x.text);const explanation=visibleShockExplanation(x.text,raw);const c=globalThis.RadarReaderClarity?.shock?.(x,x.text,explanation)||{title:x.text,explanation};return `<li><strong>${esc(c.title)}</strong>${c.explanation?`<p>${esc(c.explanation)}</p>`:''}${shockDetailHtml(x,i)}</li>`}).join(''):'<li class="empty">No possible shock is ready to show yet.</li>';
   }catch(e){console.error(e);document.getElementById('shockSummary').textContent='Shock evidence is unavailable.';el.innerHTML='<li class="empty">Unavailable.</li>'}
 })();
 </script>
