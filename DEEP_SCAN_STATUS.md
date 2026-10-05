@@ -16,7 +16,7 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-7a761c152a72`
+- Current package: `worker-a-76364b7454d0`
 - Assigned unresolved records: **36**
   1. `historical:id:3e90e021c9e32f0a` — Energy policy and economic security: a comparison of Europe and Asia
   2. `historical:id:627880d490fc0cbc` — Confronting geopolitics: the EU (and EU studies) at a crossroads?
@@ -29,16 +29,16 @@ A validated `defer` or rejected current-package scan return counts as a failed a
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-eb29d7c62d64`
+- Current package: `worker-b-b4f680e33789`
 - Assigned unresolved records: **36**
-  1. `historical:id:2276c36f03bb313a` — Eva Rytter Sunesen and Jonas Juul Henriksen, The Economics of FDI Screening - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 2/3
-  2. `historical:id:e052f0ec2502eb50` — Could Germany make a geopolitical turn on financial policy? – European Council on Foreign Relations — recovery attempt 2/3
-  3. `historical:id:bc85425a6c67e719` — German Federal Ministry for Economic Affairs and Energy report: Industrial Strategy 2030 Guidelines for a German and European industrial policy, November 2019 - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 2/3
-  4. `historical:id:6faf949eee3c5dee` — EU’s strategic partnership with Asian countries: an introductory article for the special issue
-  5. `historical:id:d6897b7a4894a9a8` — Unravelling the Puzzle of Social Standards’ Design in EU and US Trade Agreements — recovery attempt 2/3
-  6. `historical:id:a446037a66b8c0f9` — America, 5G, and Industrial Policy
-  7. `historical:id:ea82c214b2d7f38d` — Transatlantic security relations since the European security strategy: what role for the EU in its pursuit of strategic autonomy?
-  8. `historical:id:6fa819459b98b790` — Balancing Trumpism: Transatlantic Divergence in the Middle East
+  1. `historical:id:6faf949eee3c5dee` — EU’s strategic partnership with Asian countries: an introductory article for the special issue
+  2. `historical:id:d6897b7a4894a9a8` — Unravelling the Puzzle of Social Standards’ Design in EU and US Trade Agreements — recovery attempt 2/3
+  3. `historical:id:a446037a66b8c0f9` — America, 5G, and Industrial Policy
+  4. `historical:id:ea82c214b2d7f38d` — Transatlantic security relations since the European security strategy: what role for the EU in its pursuit of strategic autonomy?
+  5. `historical:id:6fa819459b98b790` — Balancing Trumpism: Transatlantic Divergence in the Middle East
+  6. `historical:id:f2f809d091b57a9a` — The case for a Euro-Arab summit – CEPS
+  7. `historical:id:a9b7cdc893f4b331` — The internal market and national security: Transposition, impact and reform of the EU Directive on Intra-Community Transfers of Defence Products
+  8. `historical:id:f459757328212183` — The Redistributive Impact of Restrictive Measures on EU Members: Winners and Losers from Imposing Sanctions on Russia
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
