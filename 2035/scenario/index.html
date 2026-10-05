@@ -6,6 +6,7 @@
 <title>2035 scenario · EU Economic Security Radar</title>
 <link rel="stylesheet" href="../../radar.css?v=28.4"><link rel="stylesheet" href="../scenarios.css?v=6">
 <script src="../../radar_data.js?v=28.1"></script>
+<script src="../../reader_clarity.js?v=1"></script>
 </head><body>
 <main class="wrap future-main scenario-detail">
 <a class="scenario-back" href="../">← All 2035 scenarios</a>
@@ -20,7 +21,7 @@ const source=v=>{const e=v.evidence||{};if(!e.title)return '';const label=e.sour
 const variant=v=>`<article class="leaf-card"><p class="kind">${esc(KIND[v.kind]||v.label||'Variant')}</p><h4>${esc(v.name)}</h4>${(v.story||[]).map(p=>`<p>${esc(p)}</p>`).join('')}${source(v)}</article>`;
 const subDetail=(s,i)=>`<section class="sub-detail" id="sub-${i+1}"><div class="sub-detail-head"><p class="sub-number">0${i+1}</p><div><h3>${esc(s.name)}</h3><p>${esc(s.story)}</p></div></div><div class="leaf-grid">${(s.variants||[]).slice(0,4).map(variant).join('')}</div></section>`;
 const subCell=(s,i)=>`<article class="scenario-cell sub-cell"><a href="#sub-${i+1}"><div><p class="cell-axis">${esc(s.tagline)}</p><h2>${esc(s.name)}</h2><p>${esc(s.story)}</p></div><span class="open-cue">See 4 detailed branches ↓</span></a></article>`;
-const subMatrix=(frame)=>{const x=frame.x_axis||{},y=frame.y_axis||{},subs=(frame.scenarios||[]).slice(0,4);return `<section class="scenario-frame sub-frame" aria-label="Sub-scenario matrix"><div class="frame-intro"><p class="taxonomy-kicker">Radar-selected second frame</p><h2>${esc(frame.title)}</h2><p class="future-lede">This pair can change when the Radar changes. Current axes: <strong>${esc(x.title)}</strong> × <strong>${esc(y.title)}</strong>.</p></div><div class="scenario-matrix-wrap"><div class="axis-y-high">${esc(y.high)}</div><div class="axis-y-title">${esc(y.title)}</div><div class="scenario-matrix">${subs.map(subCell).join('')}</div><div class="axis-y-low">${esc(y.low)}</div><div class="axis-x"><b>${esc(x.title)}</b></div><div class="axis-x-labels"><span>${esc(x.low)}</span><span>${esc(x.high)}</span></div></div></section>`;};
+const subMatrix=(frame)=>{const x=frame.x_axis||{},y=frame.y_axis||{},subs=(frame.scenarios||[]).slice(0,4);const intro=globalThis.RadarReaderClarity?.subScenarioIntro?.(frame)||`Current uncertainties: ${x.title} and ${y.title}.`;return `<section class="scenario-frame sub-frame" aria-label="Sub-scenario matrix"><div class="frame-intro"><p class="taxonomy-kicker">What could vary inside this world</p><h2>${esc(frame.title)}</h2><p class="future-lede">${esc(intro)}</p></div><div class="scenario-matrix-wrap"><div class="axis-y-high">${esc(y.high)}</div><div class="axis-y-title">${esc(y.title)}</div><div class="scenario-matrix">${subs.map(subCell).join('')}</div><div class="axis-y-low">${esc(y.low)}</div><div class="axis-x"><b>${esc(x.title)}</b></div><div class="axis-x-labels"><span>${esc(x.low)}</span><span>${esc(x.high)}</span></div></div></section>`;};
 (async()=>{try{
  const data=await RadarData.load('../../radar.json','../../radar_seed.json');
  const sc=data?.high_order_inference?.scenarios_2035||{};
@@ -29,9 +30,9 @@ const subMatrix=(frame)=>{const x=frame.x_axis||{},y=frame.y_axis||{},subs=(fram
  const frame=w.subframe;if(!frame?.scenarios?.length)throw new Error('Sub-frame not found');
  document.title=`${w.name} · 2035`;
  document.getElementById('scenarioContent').innerHTML=`
-  <section class="scenario-hero"><p class="coords">${esc(w.coordinates?.y||'')} · ${esc(w.coordinates?.x||'')}</p><h1>${esc(w.name)}</h1><p class="scenario-tagline">${esc(w.tagline)}</p><p class="scenario-summary">${esc(w.story)}</p><p class="scenario-tradeoff"><strong>Trade-off:</strong> ${esc(w.tradeoff)}</p></section>
+  <section class="scenario-hero"><p class="coords">${esc(w.coordinates?.y||'')} · ${esc(w.coordinates?.x||'')}</p><h1>${esc(w.name)}</h1><p class="scenario-tagline">${esc(w.tagline)}</p><p class="scenario-summary">${esc(w.story)}</p><p class="scenario-tradeoff">${esc(globalThis.RadarReaderClarity?.tradeoffLabel?.(w.tradeoff)||(`Trade-off: ${w.tradeoff}`))}</p></section>
   ${subMatrix(frame)}
-  <section class="sub-details-intro"><p class="taxonomy-kicker">Four × four detailed futures</p><h2>Four branches under each sub-scenario</h2><p>These do not create another page or another structural axis. Each branch keeps the sub-scenario intact and inserts one shock, opportunity, trend or risk drawn from current Radar evidence.</p></section>
+  <section class="sub-details-intro"><p class="taxonomy-kicker">How each sub-scenario could play out</p><h2>Four evidence-based branches</h2><p>${esc(globalThis.RadarReaderClarity?.branchesIntro?.()||"Each branch tests the same sub-scenario against a different current development.")}</p></section>
   <div class="sub-details">${frame.scenarios.slice(0,4).map(subDetail).join('')}</div>`;
 }catch(e){console.error(e);document.getElementById('scenarioContent').innerHTML='<p class="empty">This scenario is unavailable. Rebuild the 2035 scenario data first.</p>';}})();
 </script>
