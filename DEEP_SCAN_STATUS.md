@@ -6,40 +6,40 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1579** (Main **744** + Historical **835**)
-- Automatic queue still needing V2 verification: **360** (Main **61** + Historical **299**)
-- Currently assigned to workers: **80** (Main **16** + Historical **64**)
-- Bounded access-recovery retries still eligible: **97**
-- Terminally dropped after failed scans: **27**
-- Automatic queue pending and not yet assigned: **280**
+- Authoritative V2 verified: **1639** (Main **758** + Historical **881**)
+- Automatic queue still needing V2 verification: **298** (Main **47** + Historical **251**)
+- Currently assigned to workers: **72** (Main **2** + Historical **70**)
+- Bounded access-recovery retries still eligible: **61**
+- Terminally dropped after failed scans: **29**
+- Automatic queue pending and not yet assigned: **226**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-48077da7c488`
-- Assigned unresolved records: **40**
-  1. `link:https://doi.org/10.1016/j.technovation.2026.103731` — Pursuing technology sovereignty under dependency: The case of Mistral AI
-  2. `link:https://doi.org/10.1007/s11367-026-02757-3` — Development of environmental footprint product category rules for Finnish food sector in alignment with Product Environmental Footprint (PEF) method
-  3. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=1fc783b2-ae03-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Preparation of the Competitiveness Council (Internal Market, Industry, Research and Space) on 24 September 2026 Regulation on a European Chips Act 2.0 - Policy debate - Publications Office of the EU
-  4. `link:https://doi.org/10.1016/j.egyr.2026.109781` — Energy trade across Africa and Europe: Long-term national investment and infrastructure pathways for electricity and natural gas
-  5. `link:https://doi.org/10.1007/s43615-026-00927-x` — A Comprehensive Review of Digital Product Passports in Sustainable Manufacturing: Current State, Challenges, and Future Directions
-  6. `link:https://doi.org/10.1016/j.trip.2026.102297` — The myth of sustainable transport of perishables by rail: The case of vegetables from South-Eastern Spain
-  7. `link:https://doi.org/10.1007/s11270-026-09990-4` — Soil and Water Contamination by Perfluoroalkyl Acids (PFAAs) at Fire Outbreak Sites in Ghana: Distribution and Screening-level Risk Assessment
-  8. `link:https://doi.org/10.1163/18719732-12341521` — FDI s in the Arms Industry
-  - … plus 32 more in the package manifest
+- Current package: `worker-a-975710de92de`
+- Assigned unresolved records: **36**
+  1. `link:https://doi.org/10.1163/18719732-12341521` — FDI s in the Arms Industry — recovery attempt 2/3
+  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=0a258d70-ad2e-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for the evaluation of the Communication from the Commission concerning autonomous tariff suspensions and quotas (2011/C 363/02) and related base Council Regulations (EU) 2021/2283, 1388/2013, 2021/2278 and 1387/2013. - Publications Office of the EU — recovery attempt 2/3
+  3. `historical:id:ba8f7f2b6b256e5a` — Apply AI strategy - an overview | Shaping Europe’s digital future — recovery attempt 3/3
+  4. `historical:id:464322b53f5ce011` — critical raw materials - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 3/3
+  5. `historical:id:c8349d7fb2edbcd2` — EU, World Order Transition and Strategic Autonomy — recovery attempt 3/3
+  6. `historical:id:545828b798d1afdc` — supply chain - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 3/3
+  7. `historical:id:3c5ae477f4c2d5cf` — Sink or Swim: The EU as a Strategic Maritime Security Actor — recovery attempt 3/3
+  8. `historical:id:6eee06b67d4b9540` — economic sanctions - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 3/3
+  - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-0ad900f85873`
-- Assigned unresolved records: **40**
-  1. `historical:id:02f5abbe88f501b9` — EU energy statistical pocketbook and country datasheets — recovery attempt 2/3
-  2. `historical:id:dab5d3869d515fac` — EU economic security: Confronting the dual challenge of China and the US — recovery attempt 2/3
-  3. `historical:id:b4d294929f8aa284` — EU and Kazakhstan take the next step in their cooperation on critical raw materials
-  4. `historical:id:32544a694cc1d67e` — EU Unilateral and Bilateral Approaches in Anti-deforestation Efforts: Analysis of Trade Agreements with Chile and the Andean Community — recovery attempt 2/3
-  5. `historical:id:ce0b05ebc64d0aeb` — EU Global Health Policy Forum — recovery attempt 2/3
-  6. `historical:id:4ec8870977e17c86` — Commission launches Call for Evidence to support first-ever EU-wide Fusion Strategy — recovery attempt 2/3
-  7. `historical:id:81a58ca01ffe2409` — EU - In Depth Analysis: European Economic Security: Current practices and further development - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 2/3
-  8. `historical:id:b8a22ce35456c805` — Belgium - Guidance on the application of the Belgian FDI screening regime (4 April 2024) (Dutch) - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 2/3
-  - … plus 32 more in the package manifest
+- Current package: `worker-b-fefc207c321f`
+- Assigned unresolved records: **36**
+  1. `historical:id:b9ceec3a51c7dbb4` — Transatlantic Awakening: Why Europe and China are Creating a Comprehensive Agreement on Investment - The National Interest - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 2/3
+  2. `historical:id:5a78c7b3ce4da42f` — ifo Viewpoint 225: Europe in Competition with China and the US: More Strategic Autonomy, but Not More Autarky! | ifo Institute — recovery attempt 2/3
+  3. `historical:id:2a25788cd6e84c71` — The EU’s Strategic Partnerships with Japan and South Korea: A Comparative Analysis of the Drivers, Outcomes and Limitations
+  4. `historical:id:f68f8cbc3fa26d95` — The EU and China: sanctions, signals, and interests - Egmont Institute — recovery attempt 2/3
+  5. `historical:id:6332fbbb0bf55661` — The Commission’s Trade Policy Review - Between Idealism And Realism
+  6. `historical:id:eba27ae138d1fda3` — Sustainable supply of raw materials from EU sources
+  7. `historical:id:9a4d2017dd999a02` — Strengthened EU export control rules kick in — recovery attempt 2/3
+  8. `historical:id:3708dadbe84f22b7` — Secondary sanctions and multilateralism – the way ahead - Egmont Institute — recovery attempt 2/3
+  - … plus 28 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
@@ -76,3 +76,5 @@ These records no longer consume automatic Deep Scan slots and are excluded from 
 - `link:https://doi.org/10.1016/j.exis.2026.101955` — **“Agroextractivism meets Toxic Coloniality”: EU pesticide exports and soy-driven pollution in the Amazon** — attempts: 3/3 — The Extractive Industries and Society — 2026-09-01 — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://doi.org/10.1016/j.exis.2026.101955
 - `link:https://doi.org/10.1016/j.ssaho.2026.102977` — **Exploring the linkage between e-government and green foreign direct investments in the European region** — attempts: 3/3 — Social Sciences & Humanities Open — 2026-06-01 — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://doi.org/10.1016/j.ssaho.2026.102977
 - `link:https://doi.org/10.1016/j.resconrec.2026.108978` — **Enablers for the successful development of a circular recycling value chain for electric vehicle batteries** — attempts: 3/3 — Resources Conservation and Recycling — 2026-05-09 — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://doi.org/10.1016/j.resconrec.2026.108978
+- `historical:id:2f1cef4af1dbbe1e` — **Enhancing the competitiveness of Ethiopia’s horticultural sector (MAHEBER)** — attempts: 3/3 — European Commission — International Partnerships — 2025-01-01 — Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it — https://international-partnerships.ec.europa.eu/eu-due-diligence-navigator-partner-countries/enhancing-competitiveness-ethiopias-horticultural-sector-maheber_en
+- `historical:id:187e92e588f38ea9` — **European Strategic Autonomy: The Path to a Geopolitical Europe** — attempts: 3/3 — The Washington Quarterly — 2024-01-02 — Bibliographic identity was verified, but substantive full text remained inaccessible after the required recovery ladder. — https://doi.org/10.1080/0163660x.2024.2327820
