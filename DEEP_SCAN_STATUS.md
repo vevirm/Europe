@@ -7,39 +7,39 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **1579** (Main **744** + Historical **835**)
-- Automatic queue still needing V2 verification: **344** (Main **45** + Historical **299**)
-- Currently assigned to workers: **72** (Main **29** + Historical **43**)
-- Bounded access-recovery retries still eligible: **121**
+- Automatic queue still needing V2 verification: **360** (Main **61** + Historical **299**)
+- Currently assigned to workers: **80** (Main **16** + Historical **64**)
+- Bounded access-recovery retries still eligible: **97**
 - Terminally dropped after failed scans: **27**
-- Automatic queue pending and not yet assigned: **272**
+- Automatic queue pending and not yet assigned: **280**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-e08a33b1f844`
-- Assigned unresolved records: **36**
-  1. `link:https://news.google.com/rss/articles/CBMipwFBVV95cUxQUUswdG5RR3A3czVTQV82SzUwWDh1ZDZrYjNXcld1cUQwOW9nZENwVlhQRVpfMXRQY2RXZ1pLcVlnal9jeGJxelREVVpWeTZyTTI2bnJKUXlIYUNtNklZQnkyWHNPX1NzZ1lIRVB2SVFfWkJTWkg4ZFM5WE5rdTVISldEczdQX1BIdkRyd21lYVhibzVLRkwwOGVIWXdfODNPRzloNWhEWQ?oc=5` — Denmark says Greenland sovereignty safe under Trump's deal — recovery attempt 2/3
-  2. `link:https://news.google.com/rss/articles/CBMiowFBVV95cUxNekNBZWwxSDJKTHl3ZUNJZ0Mwd0xDbERTVXFOcXZxa3hVejJfdDZGWTVMcEhhbXlkaW5nTm9JVEF0N1ZBdnF1bWZHeGRDWDBoTnZMVlBiTWZDQ3lUUF9teU9ndmZvdHZCM0EtWTRfaEFTTTE0VlBxWG5NZkkzOHBmSXFTZ2w2Y1BrVmJHUmgxRVR2YkN6SF83M3ZhQkdrSENqbTJF?oc=5` — India gains wider EU steel access, but carbon levy remains — recovery attempt 2/3
-  3. `link:https://news.google.com/rss/articles/CBMimwFBVV95cUxOaWtudVNmS3RIb25nVW5rRjdiNTIyYm1xX2t5Z3dMNzliZW9YdDA5eFpmVEdNUXlQS0lRckMwbW1hN1JkcEtQdGRzZllBZHVfRldzV3ZMYzRDU1hXeTc1RTUwRmRKVlR4UFl0SXh5empPQU1uOWYxR2pCU3VSZnJBRmo2Nk5PRXVWZHp5MlFKbFlGb0wzVm55bXFnTQ?oc=5` — EU trade chief to meet CEOs over China strategy — recovery attempt 2/3
-  4. `link:https://news.google.com/rss/articles/CBMitgFBVV95cUxOX2hISF94TEZGRzNlMGV1NjA4NjBVU2hWMm5JZGJHOHBtSUxFME9uZEE3TUQwTDRHS1lrd3lRdGRQS1NrSGJSTWdZek8zbkw2a25rMFFFYWJENnBBTV9MTWZ4TUhtTjJfZHZCTW1LMW9NTi12bHRuMVp0d2dGVHM1TTBrUjJYUXVFcnVvb0RMUEsyX1V3SlZvb2tvd3NuWWtaa0NsQjNkNmM0em1sUVdMWUZ1THBOUQ?oc=5` — German industry presses Merz for tougher China policy — recovery attempt 2/3
-  5. `link:https://news.google.com/rss/articles/CBMiswFBVV95cUxQcGRtUVpOeWFvQWFUbmNJeGxjYlRuaktxd1AtbUw2bFAtOWJCbjBfSmNfMlJYT2xMcThMOUQ4bXNQUzV2N19kNHBkWGtOZXd1aHRfZTV5WXNsZ2RyR1hhcFB5MGN2VTlCSGYzaGJUYUpnWWZQSHVzN3plaDY0V2VtNzlYMFV4WG9NR2JIalFfeFdkWG1pQ1hnSFdCMTdFVHJXNWdIeUQwUktVeUxHM0NRdTJjQQ?oc=5` — Some Chinese workers see an ally in Brussels as EU trade tensions mount — recovery attempt 2/3
-  6. `link:https://news.google.com/rss/articles/CBMitAFBVV95cUxQdHl5VFZkOV9NSnVKamtaaVZjUXhpVjJoLVUweGtSek5KbkhWdDE1ekpOeWlTUHE1REduby15ZGxjY0Rka3FValJzYjR1TFFUZFRJcFNmX3pqT29KcElSOEtUTHRpNmxXV1pNV1lNWXRQcGNtOW9ldEx0WTFqZ1NzblN3UEZtWm1NakJKVTZwRVBsaG1USlF6cUxrUEVXVm81YzdwMk9zWmxNZ2sxVEc5bmFpdng?oc=5` — Europe’s Luxury Giants Discern Green Shoots in Key China Market — recovery attempt 2/3
-  7. `link:https://news.google.com/rss/articles/CBMihAFBVV95cUxPeENyVVNXOU9ZdUl0MFJQWGlVcjlEc041b0t1RU44alpxTHVYQ3ZwcE5fZHVEMFNHUHVqaTdLZFdSYjdWODRJd011MFh0OUlOMWd2MGg3TjI0X1hsUm91TWt4T3JvRlQwZjVPanh4bkhnaGpqcllqTzZCWGRpUU9yQ05kdHY?oc=5` — EU slips further behind US in race for critical minerals — recovery attempt 2/3
-  8. `link:https://news.google.com/rss/articles/CBMizwFBVV95cUxQV1kyWGRJRFg2YURDZDlvOEtjaFlOYWQxRW1Pcml0UjNkVEJ4R0lnVk9hNmtJQkRWbnNZVHpBa2tnV0JpVWRWcURVVHBqOVU0Y0lKM1ZVOWZld21XS1k5SVU0Umk0ckZDckZCbllRbnFCRmRQaEdIZDdHcVJHYzRnN1hpQVRzbWdaMzh0UVljYzNEQ2lHaDU0dy1tejhSVGI2LWVXS0UtTFFiZ1h6MjVWdDhiYTNuQ0lEZHhqWU9NaUxhQ3dmeVZpb0xZZE5KM1E?oc=5` — Chinese e-commerce giant JD.com offers EU remedies in Ceconomy takeover probe — recovery attempt 2/3
-  - … plus 28 more in the package manifest
+- Current package: `worker-a-48077da7c488`
+- Assigned unresolved records: **40**
+  1. `link:https://doi.org/10.1016/j.technovation.2026.103731` — Pursuing technology sovereignty under dependency: The case of Mistral AI
+  2. `link:https://doi.org/10.1007/s11367-026-02757-3` — Development of environmental footprint product category rules for Finnish food sector in alignment with Product Environmental Footprint (PEF) method
+  3. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=1fc783b2-ae03-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Preparation of the Competitiveness Council (Internal Market, Industry, Research and Space) on 24 September 2026 Regulation on a European Chips Act 2.0 - Policy debate - Publications Office of the EU
+  4. `link:https://doi.org/10.1016/j.egyr.2026.109781` — Energy trade across Africa and Europe: Long-term national investment and infrastructure pathways for electricity and natural gas
+  5. `link:https://doi.org/10.1007/s43615-026-00927-x` — A Comprehensive Review of Digital Product Passports in Sustainable Manufacturing: Current State, Challenges, and Future Directions
+  6. `link:https://doi.org/10.1016/j.trip.2026.102297` — The myth of sustainable transport of perishables by rail: The case of vegetables from South-Eastern Spain
+  7. `link:https://doi.org/10.1007/s11270-026-09990-4` — Soil and Water Contamination by Perfluoroalkyl Acids (PFAAs) at Fire Outbreak Sites in Ghana: Distribution and Screening-level Risk Assessment
+  8. `link:https://doi.org/10.1163/18719732-12341521` — FDI s in the Arms Industry
+  - … plus 32 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-07bbf74e99d5`
-- Assigned unresolved records: **36**
-  1. `link:https://doi.org/10.1002/sd.71661` — The Relationship Between Gender Equality and Inclusive and Sustainable Economic Performance: Evidence From European Union Countries — recovery attempt 2/3
-  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f7058d65-bf6e-11f1-988f-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Working Party on Competitiveness and Growth (Public Procurement) - Publications Office of the EU — recovery attempt 2/3
-  3. `historical:id:55d1298887962cbf` — Continuity in times of geoeconomic change: the European Union’s strategic trade relations with the Global South
-  4. `historical:id:302703dc36d212e9` — Trade war to cooperation: scrutinizing China’s strategies to the EU carbon border adjustment mechanism
-  5. `historical:id:eeed4bd14252e3f8` — The Level Playing Field and Determining Trade Impact under Trade Agreements: Implications from the EU–UK Trade and Cooperation Agreement
-  6. `historical:id:ce6da3b1a1c60217` — Protect Imports, Rebalance Exports: The Future of Extra-EU Trade
-  7. `historical:id:3dc760d957244bab` — Ore and order: Russia’s rare-earth strategy for the Ukraine talks – European Council on Foreign Relations — recovery attempt 2/3
-  8. `historical:id:06a8f7e839fc5603` — [China Trends #26] - Energy Security First: What Hormuz and Chinese Sources Reveal About Beijing’s Strategy
-  - … plus 28 more in the package manifest
+- Current package: `worker-b-0ad900f85873`
+- Assigned unresolved records: **40**
+  1. `historical:id:02f5abbe88f501b9` — EU energy statistical pocketbook and country datasheets — recovery attempt 2/3
+  2. `historical:id:dab5d3869d515fac` — EU economic security: Confronting the dual challenge of China and the US — recovery attempt 2/3
+  3. `historical:id:b4d294929f8aa284` — EU and Kazakhstan take the next step in their cooperation on critical raw materials
+  4. `historical:id:32544a694cc1d67e` — EU Unilateral and Bilateral Approaches in Anti-deforestation Efforts: Analysis of Trade Agreements with Chile and the Andean Community — recovery attempt 2/3
+  5. `historical:id:ce0b05ebc64d0aeb` — EU Global Health Policy Forum — recovery attempt 2/3
+  6. `historical:id:4ec8870977e17c86` — Commission launches Call for Evidence to support first-ever EU-wide Fusion Strategy — recovery attempt 2/3
+  7. `historical:id:81a58ca01ffe2409` — EU - In Depth Analysis: European Economic Security: Current practices and further development - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 2/3
+  8. `historical:id:b8a22ce35456c805` — Belgium - Guidance on the application of the Belgian FDI screening regime (4 April 2024) (Dutch) - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 2/3
+  - … plus 32 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
