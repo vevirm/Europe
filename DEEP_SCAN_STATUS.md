@@ -9,36 +9,36 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 - Authoritative V2 verified: **1639** (Main **758** + Historical **881**)
 - Automatic queue still needing V2 verification: **298** (Main **47** + Historical **251**)
 - Currently assigned to workers: **72** (Main **2** + Historical **70**)
-- Bounded access-recovery retries still eligible: **61**
+- Bounded access-recovery retries still eligible: **14**
 - Terminally dropped after failed scans: **29**
 - Automatic queue pending and not yet assigned: **226**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-975710de92de`
+- Current package: `worker-a-86e5ab148758`
 - Assigned unresolved records: **36**
   1. `link:https://doi.org/10.1163/18719732-12341521` — FDI s in the Arms Industry — recovery attempt 2/3
   2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=0a258d70-ad2e-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for the evaluation of the Communication from the Commission concerning autonomous tariff suspensions and quotas (2011/C 363/02) and related base Council Regulations (EU) 2021/2283, 1388/2013, 2021/2278 and 1387/2013. - Publications Office of the EU — recovery attempt 2/3
-  3. `historical:id:ba8f7f2b6b256e5a` — Apply AI strategy - an overview | Shaping Europe’s digital future — recovery attempt 3/3
-  4. `historical:id:464322b53f5ce011` — critical raw materials - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 3/3
-  5. `historical:id:c8349d7fb2edbcd2` — EU, World Order Transition and Strategic Autonomy — recovery attempt 3/3
-  6. `historical:id:545828b798d1afdc` — supply chain - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 3/3
-  7. `historical:id:3c5ae477f4c2d5cf` — Sink or Swim: The EU as a Strategic Maritime Security Actor — recovery attempt 3/3
-  8. `historical:id:6eee06b67d4b9540` — economic sanctions - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 3/3
+  3. `historical:id:69cfcd275d3bc640` — EU: Further trade restrictions with Russia on steel and iron products, luxury goods and other financial sanctions - Global Trade Alert
+  4. `historical:id:f49b155ba5cc177c` — EU: Additional financial sanctions on Belarus, including on its Central Bank and the exclusion of 3 banks from SWIFT - Global Trade Alert
+  5. `historical:id:e592c060ecbaffa7` — China's Foreign Policy: It's Time for a Return to Low Profile
+  6. `historical:id:2c55b60cf70b89f8` — COP27: European Union concludes a strategic partnership with Kazakhstan on raw materials, batteries and renewable hydrogen
+  7. `historical:id:57ca10070cdee0f7` — CRIMEAN ANNEXATION EUROPEAN UNION SANCTIONS AND RUSSIAN POLICY
+  8. `historical:id:562fa9d410ed7399` — EU-US Trade and Technology Council will be a litmus test for transatlantic coordination on China
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-fefc207c321f`
+- Current package: `worker-b-84605d7f74f3`
 - Assigned unresolved records: **36**
-  1. `historical:id:b9ceec3a51c7dbb4` — Transatlantic Awakening: Why Europe and China are Creating a Comprehensive Agreement on Investment - The National Interest - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 2/3
-  2. `historical:id:5a78c7b3ce4da42f` — ifo Viewpoint 225: Europe in Competition with China and the US: More Strategic Autonomy, but Not More Autarky! | ifo Institute — recovery attempt 2/3
-  3. `historical:id:2a25788cd6e84c71` — The EU’s Strategic Partnerships with Japan and South Korea: A Comparative Analysis of the Drivers, Outcomes and Limitations
-  4. `historical:id:f68f8cbc3fa26d95` — The EU and China: sanctions, signals, and interests - Egmont Institute — recovery attempt 2/3
-  5. `historical:id:6332fbbb0bf55661` — The Commission’s Trade Policy Review - Between Idealism And Realism
-  6. `historical:id:eba27ae138d1fda3` — Sustainable supply of raw materials from EU sources
-  7. `historical:id:9a4d2017dd999a02` — Strengthened EU export control rules kick in — recovery attempt 2/3
-  8. `historical:id:3708dadbe84f22b7` — Secondary sanctions and multilateralism – the way ahead - Egmont Institute — recovery attempt 2/3
+  1. `historical:id:2a25788cd6e84c71` — The EU’s Strategic Partnerships with Japan and South Korea: A Comparative Analysis of the Drivers, Outcomes and Limitations
+  2. `historical:id:6332fbbb0bf55661` — The Commission’s Trade Policy Review - Between Idealism And Realism
+  3. `historical:id:eba27ae138d1fda3` — Sustainable supply of raw materials from EU sources
+  4. `historical:id:a85e2b6c36923f45` — Institut Jacques Delors - [FR] Euroquestions #13 | Facing Russia: renewing and toughening sanctions, and then what?
+  5. `historical:id:edc4a26c00062919` — Biden's Foreign Policy is Becoming Clearer, So Is the Second Cold War
+  6. `historical:id:38f3a1e60f3979a0` — German Foreign Trade and Payments Ordinance (German text consolidated 29 October 2020 and English translation consolidated 19 December 2018) - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 2/3
+  7. `historical:id:8f0d9a232522df6e` — Russian Foreign Energy Policy Towards the European Union — recovery attempt 2/3
+  8. `historical:id:9b6645ed62de9077` — Croatian Regulation on the implementation of EU FDI Screening Regulation (Regulation (EU) 2019/452), OJ L 79I, 21 March 2019 (in Croatian), entered in force 2 October 2020 - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 2/3
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
