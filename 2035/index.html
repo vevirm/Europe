@@ -7,13 +7,12 @@
 <title>2035 · EU Economic Security Radar</title>
 <link rel="stylesheet" href="../radar.css?v=28.4"><link rel="stylesheet" href="scenarios.css?v=6">
 <script src="../radar_data.js?v=28.1"></script>
-<script src="../reader_clarity.js?v=1"></script>
 </head><body>
 <main class="wrap future-main">
 <section class="future-intro" aria-labelledby="futureTitle">
-  <p class="taxonomy-kicker" id="futureKicker">2035 economic-security scenarios</p>
-  <h1 id="futureTitle">Four possible Europes</h1>
-  <p class="future-lede" id="futureLede">Loading scenario frame…</p>
+  <p class="taxonomy-kicker">2035 economic-security scenarios</p>
+  <h1 id="futureTitle">Four possible Europes in 2035</h1>
+  <p class="future-lede">The scenarios vary along two big uncertainties: how connected the world economy remains and how much strategic capacity Europe can build and retain. Choose a world to see how today’s Radar findings could play out inside it.</p>
 </section>
 <div id="majorFrame"><p class="empty">Loading scenarios…</p></div>
 </main>
@@ -32,19 +31,14 @@ const matrix=(sc)=>{
       <div class="axis-x"><b>${esc(x.title)}</b></div>
       <div class="axis-x-labels"><span>${esc(x.low)}</span><span>${esc(x.high)}</span></div>
     </div>
-    <p class="scenario-note" id="scenarioFrameNote"></p>
+    <p class="scenario-note"><strong>How to read this:</strong> move left to right for a more connected world economy, and bottom to top for stronger European strategic capacity. Inside each world, current Radar evidence is used to explore the next important uncertainties.</p>
   </section>`;
 };
 (async()=>{try{
   const data=await RadarData.load('../radar.json','../radar_seed.json');
-  const copy=globalThis.RadarReaderClarity?.scenarioCopy?.()||{};
-  if(copy.kicker)document.getElementById('futureKicker').textContent=copy.kicker;
-  if(copy.title)document.getElementById('futureTitle').textContent=copy.title;
-  if(copy.lede)document.getElementById('futureLede').textContent=copy.lede;
   const sc=data?.high_order_inference?.scenarios_2035;
   if(!sc?.scenarios?.length) throw new Error('Scenario machine not present in radar.json');
   document.getElementById('majorFrame').innerHTML=matrix(sc);
-  const note=document.getElementById('scenarioFrameNote');if(note)note.textContent=copy.note||'';
 }catch(e){console.error(e);document.getElementById('majorFrame').innerHTML='<p class="empty">Scenarios are unavailable. Rebuild the 2035 scenario data first.</p>';}})();
 </script>
 <script src="../site-shell.js?v=28.1"></script>
