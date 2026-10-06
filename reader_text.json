@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-10-06T10:10:07Z",
+  "generated_at": "2026-10-06T11:03:58Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -141831,8 +141831,474 @@
       "deep_scan_package_id": "worker-b-4d414823ab2f",
       "claims": [],
       "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:61ad716a512fda95": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "83dab0eb",
+      "identity_hash": "ce2b1bd5dab3291b",
+      "reader_title": "EU-Russia sanctions and energy dependence",
+      "reader_what": "The study links reciprocal sanctions to disrupted EU-Russia economic ties, investment and energy-development risks.",
+      "reader_why": "It documents an early European sanctions-dependence mechanism relevant to later economic-security policy.",
+      "reader_more": "This 2015 article examines EU-Russia economic and energy relations after reciprocal sanctions. It reviews trade, investment projects and energy dependence, then discusses risks from continued restrictive measures. It is useful as historical context, not as evidence of current conditions.",
+      "deep_analysis": {
+        "work_kind": "empirical/policy study",
+        "research_question": "How did reciprocal sanctions affect EU-Russia economic and energy relations?",
+        "main_finding": "The study links reciprocal EU-Russia sanctions to disrupted economic ties, investment cooperation and mutual energy-development risks.",
+        "method_or_basis": "Review of EU-Russia economic partnership, trade and investment data, with discussion of energy dependence and sanctions risks.",
+        "qualification": "The 2015 study reflects the immediate post-2014 sanctions context and should not be read as evidence about current EU-Russia energy relations.",
+        "radar_relevance": "Historical Strand A evidence on sanctions, economic interdependence and energy dependence between Europe and Russia.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "https://econjournals.com/index.php/ijeep/article/view/1071 — publisher record confirms the article, author, journal, volume and pages and provides a PDF route."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI supplied in the job."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search recovered the publisher article record and a legitimate full-text copy."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title + Ruslan Zaynutdinov + 2015 matched International Journal of Energy Economics and Policy 5(2), 415–421."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Publisher page and a full-text repository copy were recovered."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Distinctive title terms plus sanctions/energy confirmed the same underlying work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_page",
+            "url": "https://www.econjournals.com/index.php/ijeep/article/view/1071",
+            "title": "Russia and Europe Under Sanctions: Problems of Energy Development",
+            "evidence_used": true
+          },
+          {
+            "kind": "repository_full_text",
+            "url": "https://www.researchgate.net/publication/285493618_Russia_and_Europe_Under_Sanctions_Problems_of_Energy_Development",
+            "title": "Russia and Europe Under Sanctions: Problems of Energy Development",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and full text were recovered. The work is historical evidence on sanctions, energy dependence and EU-Russia economic ties."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified full text directly examines sanctions, EU-Russia economic interdependence and energy dependence."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-06T11:03:58Z",
+      "deep_scan_package_id": "worker-a-115ef6e8d6e9",
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union and Russia",
+            "class": "other"
+          },
+          "mechanism": "restricts",
+          "direction": "contracts",
+          "status": "in_force",
+          "status_date": "2015",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "Russia"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "The 2015 study reflects the immediate post-2014 sanctions context and should not be read as evidence about current EU-Russia energy relations.",
+          "text": "The study links reciprocal EU-Russia sanctions to disrupted economic ties, investment cooperation and mutual energy-development risks.",
+          "confidence": "high",
+          "status_date_precision": "year",
+          "record_key": "historical:id:61ad716a512fda95",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:ce2b1bd5dab3291b:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:01f785138ab0c2f6": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "eed1e278",
+      "identity_hash": "f9e0f1b93e818858",
+      "reader_title": "A checklist for more effective EU sanctions",
+      "reader_what": "CEPS proposes pre-assessing leverage, costs, legality, unintended effects and policy contribution before EU sanctions.",
+      "reader_why": "It provides reusable historical evidence on designing economic coercion while managing European costs and leverage.",
+      "reader_more": "The report argues that EU sanctions were often imposed without enough advance assessment or contingency planning. It proposes a checklist covering leverage, costs to the EU, legality, unintended effects, policy contribution and coherence with external relations. That makes it directly relevant historical evidence on the EU sanctions toolbox.",
+      "deep_analysis": {
+        "work_kind": "policy report",
+        "research_question": "How can the EU improve sanctions design and effectiveness?",
+        "main_finding": "CEPS argues EU sanctions need systematic pre-assessment covering leverage, EU costs, legality, unintended effects and expected contribution to policy goals.",
+        "method_or_basis": "Policy analysis of EU sanctions practice distilled into a pre-assessment and contingency-planning checklist.",
+        "qualification": "The paper is a 2014 policy-design proposal; it evaluates how sanctions should be planned, not whether later EU sanctions succeeded.",
+        "radar_relevance": "Historical Strand A evidence on the design, leverage and trade-offs of the EU sanctions toolbox.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "https://www.ceps.eu/ceps-publications/improving-effectiveness-sanctions-checklist-eu/ — CEPS page contains a substantive summary and download route."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI supplied in the job."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search recovered the CEPS publication and matching full-text archive copy."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title + authors + 2014 matched CEPS Special Report No. 95."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "CEPS publisher page and Archive of European Integration full-text record were recovered."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Report title and series number independently matched the same 17-page publication."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.ceps.eu/ceps-publications/improving-effectiveness-sanctions-checklist-eu/",
+            "title": "Improving the Effectiveness of Sanctions: A Checklist for the EU",
+            "evidence_used": true
+          },
+          {
+            "kind": "repository_full_text",
+            "url": "https://aei.pitt.edu/57195/",
+            "title": "Improving the Effectiveness of Sanctions: A Checklist for the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publisher and archive records verify the report and expose its substantive sanctions-design framework."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Verified report is substantively about the EU sanctions toolbox, leverage, costs and unintended effects."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-06T11:03:58Z",
+      "deep_scan_package_id": "worker-a-115ef6e8d6e9",
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_conditional",
+          "status": "proposed",
+          "status_date": "2014",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The paper is a 2014 policy-design proposal; it evaluates how sanctions should be planned, not whether later EU sanctions succeeded.",
+          "text": "CEPS argues EU sanctions need systematic pre-assessment covering leverage, EU costs, legality, unintended effects and expected contribution to policy goals.",
+          "confidence": "high",
+          "status_date_precision": "year",
+          "record_key": "historical:id:01f785138ab0c2f6",
+          "merit": 71,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:f9e0f1b93e818858:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:5b552717b4ae7ee0": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "6d217048",
+      "identity_hash": "c9e3ca9bc0301886",
+      "reader_title": "JRC research on container supply-chain security",
+      "reader_what": "JRC tests sensor-enabled containers and supports EU customs risk management for cross-border supply-chain security.",
+      "reader_why": "It shows an EU capability aimed at reducing vulnerabilities in critical cross-border logistics.",
+      "reader_more": "The JRC identifies shipping containers as a weak point in international supply chains. It describes research on embedded sensors that can detect threats and report container status, alongside support for EU customs risk management and international security agreements. The page documents capability-building rather than measured outcomes.",
+      "deep_analysis": {
+        "work_kind": "official research activity",
+        "research_question": "Can new container technologies improve supply-chain security and customs monitoring?",
+        "main_finding": "The JRC studies sensor-enabled container technologies and supports EU customs risk management and international supply-chain security cooperation.",
+        "method_or_basis": "JRC feasibility research on composite materials, embedded sensors, wireless status reporting and customs-risk management support.",
+        "qualification": "The JRC page describes research and support activity rather than a completed impact evaluation; it does not quantify realised security gains.",
+        "radar_relevance": "Historical Strand A evidence on EU capability for securing critical cross-border logistics and supply chains.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "https://joint-research-centre.ec.europa.eu/scientific-activities/supply-chain-security-shipping-containers_en — official JRC page provides substantive description of the research activity."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI supplied in the job."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search recovered the same European Commission/JRC supply-chain security page."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title + JRC + supply chain security confirmed the official European Commission source."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "The official JRC/European Commission page is the issuing-body source."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Container security, sensors and customs-risk terms matched the same JRC activity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://joint-research-centre.ec.europa.eu/scientific-activities/security-supply-chain_en",
+            "title": "Security of the supply chain",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Official JRC source substantiates the described research and its link to EU customs risk management and international supply-chain security."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Official JRC material substantively addresses security of cross-border supply chains and EU customs capability."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-06T11:03:58Z",
+      "deep_scan_package_id": "worker-a-115ef6e8d6e9",
+      "claims": [
+        {
+          "object": "critical_infrastructure.resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission Joint Research Centre",
+            "class": "eu_body"
+          },
+          "mechanism": "evaluates",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2015",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "The JRC page describes research and support activity rather than a completed impact evaluation; it does not quantify realised security gains.",
+          "text": "The JRC studies sensor-enabled container technologies and supports EU customs risk management and international supply-chain security cooperation.",
+          "confidence": "high",
+          "status_date_precision": "year",
+          "record_key": "historical:id:5b552717b4ae7ee0",
+          "merit": 97,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:c9e3ca9bc0301886:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://news.google.com/rss/articles/CBMifkFVX3lxTE9TRExTdEZISFROa1psdjh4LVdkc1ExcUM4ekwybXlUNEIwbVJySW9IMTNxcmRYdzdGRTk5N3VpeDU4Q01naERzalowX0FBSV96dHQyZFB2cUFjQUN4QVhqM05zVGI3djZkQjlGYTJjSEJWTnFobVpnOWdtVDFaQQ?oc=5": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_c",
+      "corpus_scope": "main",
+      "source_hash": "47e6ea5f",
+      "identity_hash": "e66cde698831f354",
+      "reader_title": "Europe’s cleantech position against the US and China",
+      "reader_what": "The study maps EU cleantech strengths, vulnerabilities and dependencies across innovation, manufacturing and industrial deployment.",
+      "reader_why": "It directly assesses European industrial capacity and dependencies in a strategic technology domain.",
+      "reader_more": "This European Parliament study compares the EU, United States and China across cleantech innovation, manufacturing, deployment and policy. It identifies European strengths, vulnerabilities and dependencies and develops policy recommendations for competitiveness and decarbonisation. The official Publications Office record confirms the completed study and full-document availability.",
+      "deep_analysis": {
+        "work_kind": "policy study",
+        "research_question": "How does the EU compare with the US and China in cleantech innovation, manufacturing and net-zero industrial deployment?",
+        "main_finding": "The European Parliament study compares EU cleantech innovation, manufacturing and deployment with the US and China, identifying European strengths, vulnerabilities and dependencies.",
+        "method_or_basis": "Comparative evidence-led assessment of innovation, manufacturing, industrial deployment and policy frameworks in the EU, US and China.",
+        "qualification": "The study compares structural strengths, vulnerabilities and dependencies; it does not establish that any single policy caused observed outcomes.",
+        "radar_relevance": "Strand A Route 2 evidence on European industrial capacity, vulnerabilities and dependencies in strategic cleantech sectors.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failure",
+            "note": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9TRExTdEZISFROa1psdjh4LVdkc1ExcUM4ekwybXlUNEIwbVJySW9IMTNxcmRYdzdGRTk5N3VpeDU4Q01naERzalowX0FBSV96dHQyZFB2cUFjQUN4QVhqM05zVGI3djZkQjlGYTJjSEJWTnFobVpnOWdtVDFaQQ?oc=5 — the original news/reader route did not supply substantive text."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Official Publications Office record supplies DOI 10.2861/7596996 for the completed study."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search recovered the European Parliament study record."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title plus European Parliament and 2026 matched study ECTI_STU(2026)790559 and its named authors."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "EU Publications Office and European Parliament committee analysis pages provide the completed study and downloadable official PDF."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Hard-final broader search 1 used 'cleantech industrial decarbonisation global competition EU US China' and matched the official study."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Hard-final broader search 2 used the study number and net-zero comparison wording and matched the European Parliament supporting-analysis record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://op.europa.eu/en/publication-detail/-/publication/3f2032f4-a289-11f1-b25c-01aa75ed71a1/language-en",
+            "title": "Cleantech innovation, industrial decarbonisation and global competition",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Third-attempt hard-final pass completed. The previously thin record was recovered as a completed European Parliament study with an official publication record and downloadable full document."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The completed study directly assesses EU cleantech industrial position, vulnerabilities and dependencies against the US and China."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-06T11:03:58Z",
+      "deep_scan_package_id": "worker-b-c590870262e9",
+      "claims": [
+        {
+          "object": "innovation.green_technology",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Parliament",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-08-23",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The study compares structural strengths, vulnerabilities and dependencies; it does not establish that any single policy caused observed outcomes.",
+          "text": "The European Parliament study compares EU cleantech innovation, manufacturing and deployment with the US and China, identifying European strengths, vulnerabilities and dependencies.",
+          "confidence": "high",
+          "record_key": "link:https://news.google.com/rss/articles/CBMifkFVX3lxTE9TRExTdEZISFROa1psdjh4LVdkc1ExcUM4ekwybXlUNEIwbVJySW9IMTNxcmRYdzdGRTk5N3VpeDU4Q01naERzalowX0FBSV96dHQyZFB2cUFjQUN4QVhqM05zVGI3djZkQjlGYTJjSEJWTnFobVpnOWdtVDFaQQ?oc=5",
+          "merit": 61,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:e66cde698831f354:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-10-06T10:10:07Z"
+  "claims_updated_at": "2026-10-06T11:03:58Z"
 }
