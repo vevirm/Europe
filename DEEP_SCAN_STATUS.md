@@ -16,16 +16,16 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-7fbc94903ea6`
+- Current package: `worker-a-115ef6e8d6e9`
 - Assigned unresolved records: **36**
-  1. `historical:id:61ad716a512fda95` — Russia and Europe Under Sanctions: Problems of Energy Development
-  2. `historical:id:01f785138ab0c2f6` — Improving the Effectiveness of Sanctions: A Checklist for the EU – CEPS
-  3. `historical:id:5b552717b4ae7ee0` — Supply chain: security of shipping containers
-  4. `link:https://doi.org/10.1080/00036846.2026.2676738` — Green trade policy and supply chain disruptions — recovery attempt 2/3
-  5. `link:https://institutdelors.eu/en/publications/trade-rounds-trade-supply-chains-and-geopolitics-perspectives-from-policy-and-practice/` — Trade Rounds - Trade, Supply Chains and Geopolitics: Perspectives from Policy and Practice - Institut Jacques Delors — recovery attempt 2/3
-  6. `link:https://doi.org/10.1111/infi.70045` — Reduced‐Form Correlates of Trade Partner Concentration: An Analysis for European Countries — recovery attempt 2/3
-  7. `link:https://news.google.com/rss/articles/CBMipgFBVV95cUxQWDQ0OVBka2szNklkWXItcVUwNElEU1RVai0tcTQ5Rm5sNVhjZzBIWnRYRkFVYVV4aHlibWUybzYtVGhIa203N19GZlI0ZkFzMlVGLVVRNGpQZ3BSTC1JWllRUjlxenc1MHBRdEk0T0Y4QUhVcFZhWEs0c0dlLWlJVFhzUlhORzZ4U3VNWVBEMDBhS0RtQU5IT3YyNkxTWlhzNm80ZDFn?oc=5` — France, Germany push for EU rapid-response trade tool with likely focus on China — recovery attempt 2/3
-  8. `link:https://news.google.com/rss/articles/CBMi7gFBVV95cUxNYUdRLW5UdUw2QmI1NmhabVZWaldMTk5uUThWSjVQUkhhdkEyYTVfZ0RJajhHQk5BTGpBSjNFV2xJZ1BxMi11cWFiQUZ6NU9HajVXNTJQYmpNYTd0cHVLTWhLR3dJMXZ0bVRGVnBtMlhPRWZBQUJoWGZuMVhQYUVRR29JcGRpYkozNVBrODNmVTN4ZGFMRzJxWm9ieWdENU1lR3B6eURGTWNlZzdhRmJpZ1FVVEZzTlZpczZwR1hxRlowYW95RzhMVUtCZ3gwLUNqTUFVbGlKdXBMQzRoai1sTk1wTmFYSkpCU21hS3p3?oc=5` — Tailored solutions for food security, sustainable energy and climate resilience: concrete impact of the AU-EU Research and Innovation Partnership on green transition - European External Action Service (EEAS) — recovery attempt 2/3
+  1. `link:https://doi.org/10.1080/00036846.2026.2676738` — Green trade policy and supply chain disruptions — recovery attempt 2/3
+  2. `link:https://institutdelors.eu/en/publications/trade-rounds-trade-supply-chains-and-geopolitics-perspectives-from-policy-and-practice/` — Trade Rounds - Trade, Supply Chains and Geopolitics: Perspectives from Policy and Practice - Institut Jacques Delors — recovery attempt 2/3
+  3. `link:https://doi.org/10.1111/infi.70045` — Reduced‐Form Correlates of Trade Partner Concentration: An Analysis for European Countries — recovery attempt 2/3
+  4. `link:https://news.google.com/rss/articles/CBMipgFBVV95cUxQWDQ0OVBka2szNklkWXItcVUwNElEU1RVai0tcTQ5Rm5sNVhjZzBIWnRYRkFVYVV4aHlibWUybzYtVGhIa203N19GZlI0ZkFzMlVGLVVRNGpQZ3BSTC1JWllRUjlxenc1MHBRdEk0T0Y4QUhVcFZhWEs0c0dlLWlJVFhzUlhORzZ4U3VNWVBEMDBhS0RtQU5IT3YyNkxTWlhzNm80ZDFn?oc=5` — France, Germany push for EU rapid-response trade tool with likely focus on China — recovery attempt 2/3
+  5. `link:https://news.google.com/rss/articles/CBMi7gFBVV95cUxNYUdRLW5UdUw2QmI1NmhabVZWaldMTk5uUThWSjVQUkhhdkEyYTVfZ0RJajhHQk5BTGpBSjNFV2xJZ1BxMi11cWFiQUZ6NU9HajVXNTJQYmpNYTd0cHVLTWhLR3dJMXZ0bVRGVnBtMlhPRWZBQUJoWGZuMVhQYUVRR29JcGRpYkozNVBrODNmVTN4ZGFMRzJxWm9ieWdENU1lR3B6eURGTWNlZzdhRmJpZ1FVVEZzTlZpczZwR1hxRlowYW95RzhMVUtCZ3gwLUNqTUFVbGlKdXBMQzRoai1sTk1wTmFYSkpCU21hS3p3?oc=5` — Tailored solutions for food security, sustainable energy and climate resilience: concrete impact of the AU-EU Research and Innovation Partnership on green transition - European External Action Service (EEAS) — recovery attempt 2/3
+  6. `link:https://news.google.com/rss/articles/CBMixgFBVV95cUxPOXhCNE91U2IxZmJuMVJCd2ZrdC1hcUdYSnhFNDhXd2xUVk5qLVF2TXpzcU5GSTVuNUYyRW1lVk00NEtSODVLQXdBRkx2RndVT3hTMEdiQ3lmUWtfZ0M2Z1NzUnVqTU1pVm1ndWE3WGJCb3RHRkIzbE1DWkNDNnoyUk90Vmxlb3JTZk1rY3VuUVRCQjdabmFSYm9CY1dET0wyd2VZZG1XdWtUYkZZem42eWhkeVFVQ0xfTEF5a1pXVTZTdnFwWHc?oc=5` — THIS WEEK: EU trade chief heads to China as Brussels unveils long-delayed pre-enlargement reforms — recovery attempt 2/3
+  7. `link:https://borderlex.net/2026/10/05/week-ahead-eu-china-wto-general-council/` — Week Ahead: EU China, WTO General Council - Borderlex - European trade policy — recovery attempt 2/3
+  8. `link:https://borderlex.net/2026/10/05/eu-malaysia-still-stuck-on-cars-geographical-indications/` — EU, Malaysia still stuck on cars, geographical indications - Borderlex - European trade policy — recovery attempt 2/3
   - … plus 28 more in the package manifest
 
 ### Worker B
