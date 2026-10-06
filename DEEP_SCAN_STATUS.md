@@ -7,21 +7,39 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **1785** (Main **759** + Historical **1026**)
-- Automatic queue still needing V2 verification: **168** (Main **45** + Historical **123**)
-- Currently assigned to workers: **0** (Main **0** + Historical **0**)
+- Automatic queue still needing V2 verification: **267** (Main **100** + Historical **167**)
+- Currently assigned to workers: **96** (Main **55** + Historical **41**)
 - Bounded access-recovery retries still eligible: **0**
 - Terminally dropped after failed scans: **38**
-- Automatic queue pending and not yet assigned: **168**
+- Automatic queue pending and not yet assigned: **171**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-4464209de293`
-- Assigned unresolved records: **0**
+- Current package: `worker-a-c544347261f8`
+- Assigned unresolved records: **48**
+  1. `link:https://doi.org/10.1007/s42439-026-00134-0` — Unpacking the Package: EU Sanctions Against Russia as a Governance Structure
+  2. `link:https://doi.org/10.1080/00036846.2026.2676738` — Green trade policy and supply chain disruptions
+  3. `link:https://doi.org/10.1007/s00146-026-03383-1` — Death by a thousand papercuts: professionals’ imaginaries on ethicalization and technological determinism of AI in Sweden
+  4. `link:https://institutdelors.eu/en/publications/trade-rounds-trade-supply-chains-and-geopolitics-perspectives-from-policy-and-practice/` — Trade Rounds - Trade, Supply Chains and Geopolitics: Perspectives from Policy and Practice - Institut Jacques Delors
+  5. `link:https://doi.org/10.1111/infi.70045` — Reduced‐Form Correlates of Trade Partner Concentration: An Analysis for European Countries
+  6. `link:https://doi.org/10.1007/s10341-026-01959-1` — Türkiye’s Apple Exports to European Union Countries: A Gravitational Model Analysis
+  7. `link:https://doi.org/10.1016/j.icte.2026.09.017` — A survey of Large Language Models in cyber threat intelligence: Toward a regulation-aware architecture for secure ICT systems
+  8. `link:https://www.ispionline.it/en/publication/the-future-of-eu-russia-relations-four-scenarios-to-2035-245461` — The Future of EU-Russia Relations. Four Scenarios to 2035 | ISPI
+  - … plus 40 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-b4f680e33789`
-- Assigned unresolved records: **0**
+- Current package: `worker-b-4d414823ab2f`
+- Assigned unresolved records: **48**
+  1. `link:https://news.google.com/rss/articles/CBMitgFBVV95cUxOaXVPN1NQME93bjBHRzV2cmNqdmZVWDl5WXpOOUpFUXBXYkpDZDhRU3JVV3oxYnFseVRDS1lmZXA2RWZMbjJWMXR6dUktYy1MVUtqLWFZWXA3OHhZeXJOUTdfUEQ5UGt6SUlTUkhsMnNmdDcwZjFYLVQ1enBjNm4yV0NLekNlbVhyNm5VQzEtZGtlQTJUR3dhZnBJQVVFSi1XYWRWSkZCUG1ETnpXc2Nnd3ZoYUttQQ?oc=5` — Merz Signals Germany to Adopt Tougher Stance on Trade With China
+  2. `link:https://news.google.com/rss/articles/CBMifkFVX3lxTE9TRExTdEZISFROa1psdjh4LVdkc1ExcUM4ekwybXlUNEIwbVJySW9IMTNxcmRYdzdGRTk5N3VpeDU4Q01naERzalowX0FBSV96dHQyZFB2cUFjQUN4QVhqM05zVGI3djZkQjlGYTJjSEJWTnFobVpnOWdtVDFaQQ?oc=5` — Cleantech Innovation, Industrial Decarbonisation and Global Competition - Where does the EU stand in the race towards net-zero compared to the US and China?
+  3. `link:https://news.google.com/rss/articles/CBMirgFBVV95cUxOM1l0ZjlBMU5CT1lMRkxPWWQxeVFkTkU3N28tYTFyU2I4UW1veFNLQ1ZmMmRtcFhsclFwX3Y1R0FlZFlta01ET3dTNjJUTmNjX3dqNUY3SEZzU2pXa1FUaXViaGI4bkE2eUY4RnFrZWpJZmwzMWl6WkRRZi12bUFGZ2p3T0NCM2tJR1k5OHZYSUp0TzdvRXhFODFlektZTlluemhFcFljd080eVZDZmc?oc=5` — Economic policy: How Hungary and Austria are balancing their China policy - Table.Briefings
+  4. `link:https://news.google.com/rss/articles/CBMiwAJBVV95cUxNQ1FTTnZpemcwLXM3MWhYaXRQZmliWFAyWjFHakJMUGtLSU9EN0dBclc0RlBEZnpManh3UVpJb21lWEdSblNZMTBLcDdjQ2xUV1hXVFp3LVlSTFppekc2VVpLTmtIUDNhLTFCOTU5X09YY3VxbUtrcmpWaWpSWkRQRzduRlV5RGhFbWJHZzNMaE5GTlZTWHh1TFRNNURMa2VjX2tjYzBwYThvbl9JWFFEakJGMEcyYl9tUFhma2JkdkxBSWpCOWxPN3NrbVRaSGtudndtTV9JYUZNcXdMMVhiVWJiNU9PV0g1em5QY1Z1M2pNdC0xTVNGOV9iMlBnSnhfd3luWTdEWkFmNnJBOTR0enpXanB3ZjNCZ0ZqSTktS25GUUZlSl8zTVR2SFhFVHhUQXdMOGIwUjRLc3c0TU9VRA?oc=5` — Factsheet: EU-Australia Free Trade Agreement - Croatia - Trade and Economic Security
+  5. `link:https://news.google.com/rss/articles/CBMixgFBVV95cUxQaGVpb0xqamJETTNEdWtBX2FpeS11Sl9hUHB5cUFrTTJweFJTSTJ2UFBEYUxxWGdMbWhRR3c1T2Y3REpZb1dGeHZQZHdycVJvNnV4Q2lsMU9GQk1kb3NDbkFrQVFnQUZiR0tabU1ZdHRkRTdUNFIxTTY0VXR5dUxGeUpCcjMwUWdMNVo3UkxpdWZJMHJhcWhWVEU0cl9lZFItSUxsRDBMMjc3ai0zanNYQzRXLWZwNHhieUtMTXBScDBCWHM2MVE?oc=5` — India's Raymond Lifestyle eyes Europe for 25% of exports, cuts US dependence
+  6. `link:https://news.google.com/rss/articles/CBMi6wFBVV95cUxPY21QVzgxUndEc0pVOVNsa25Wc3hUNl9GcFROMWVoWHg3V21IYkcyamFtNWhwR2U4NlFMVGNCYzdEN1ladEhrQ0N3YTk2VE5LaVlLS3dnV1FIb1lsZUtNelBPem0zMDU3Um9JS0pLbmVlN2RWX1dDR0pDLTR5Rl9UQ3haQVhweDFxaFBySjVJLWZZUUx6dWpQSm14c1duUGFFZzh0U0cwUU9Ienk1dG1CVkItaFFsb1NoSzA1TGtGczk2RWNGNkRxa1NHVE10Y29QellWTFVDbzE0Wnk5LU9qdFllVFFTMzRramtv?oc=5` — France's EDF to invest €9 billion over 15 years to adapt power plants to climate change - Le Monde.fr
+  7. `link:https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNVBKOXZua1Q4X3pKbEozYnAtWjVTTXh2Q19KNVU4bmt2SE5SalFBQ29YWnRYa0JsMHNEWXhjSW9TQ3ZnQzZUeVdQMDZ5TFRjR284eEg2YzBkQ0FvS1pGenBqSm5zaUViaS1kcXUyWmZlclZUc05pN0NiUTNIQjhxRTkzVlVFZGtPUnZDaDg1b19kczAycnlaTkpKcEowb1NjNXNPTFdtM1RaREZXQXZNTTlZNmExTjJvZEZEakNLQXNDWHcyOV9pcmMyTUlQeDBk?oc=5` — Critical raw materials: Why the EU’s ambitions in Bosnia and Herzegovina are running into obstacles - Table.Briefings
+  8. `historical:id:d3e5346a13f2d6f6` — Closing the loop on the EU’s titanium supply chain
+  - … plus 40 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
