@@ -6,9 +6,9 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1828** (Main **768** + Historical **1060**)
-- Automatic queue still needing V2 verification: **214** (Main **64** + Historical **150**)
-- Currently assigned to workers: **45** (Main **19** + Historical **26**)
+- Authoritative V2 verified: **1859** (Main **782** + Historical **1077**)
+- Automatic queue still needing V2 verification: **183** (Main **50** + Historical **133**)
+- Currently assigned to workers: **14** (Main **5** + Historical **9**)
 - Bounded access-recovery retries still eligible: **0**
 - Terminally dropped after failed scans: **93**
 - Automatic queue pending and not yet assigned: **169**
@@ -16,30 +16,21 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-82fae151f1b0`
-- Assigned unresolved records: **36**
-  1. `link:https://institutdelors.eu/content/uploads/2026/10/PB261001_China_export_surge_Do-Prado-_Lamy_Kohler-Suziki_EN_7.pdf` — A new EU Structural Rebalancing Instrument to respond to China’s export surge - Institut Jacques Delors
-  2. `link:https://doi.org/10.1007/s10644-026-10075-9` — Technology trade under uncertainty: sectoral heterogeneity across the US, China, and Europe
-  3. `link:https://doi.org/10.1002/bse.70839` — Clusters, Global Value Chains, and the Business Environment: A Hierarchy of Institutional Influence on Small and Medium Enterprise Sustainability
-  4. `link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-09-30-BusinessEurope-reaction-to-EU-ETS-review-proposal.pdf` — Reaction to the European Emissions Trading System (EU ETS) review proposal - a BusinessEurope position paper
-  5. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=b9c73395-b33e-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Working Party on Competitiveness and Growth (Public Procurement) (17 September am - attachés format - no interpretation) - Publications Office of the EU
-  6. `link:https://institutdelors.eu/content/uploads/2026/09/PB260906_Souverainete_levier_puissance_Europe_Maduraud_EN_3.pdf` — The EU: an ‘Ode to Joy’ or a pyre for sovereignty? - Institut Jacques Delors
-  7. `link:https://doi.org/10.1080/02827581.2026.2698773` — Resilience challenges and measures related to the forest value chain in Europe: tailoring prioritisation efforts
-  8. `link:https://doi.org/10.1057/s41291-026-00342-y` — Industry re-configurations and multi-level policy implications of the transition towards the green economy in Asia and Europe within a changing geopolitical context
-  - … plus 28 more in the package manifest
+- Current package: `worker-a-64ce870e121c`
+- Assigned unresolved records: **14**
+  1. `link:https://doi.org/10.1002/bse.70839` — Clusters, Global Value Chains, and the Business Environment: A Hierarchy of Institutional Influence on Small and Medium Enterprise Sustainability — recovery attempt 2/3
+  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=b9c73395-b33e-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Working Party on Competitiveness and Growth (Public Procurement) (17 September am - attachés format - no interpretation) - Publications Office of the EU — recovery attempt 2/3
+  3. `link:https://doi.org/10.1016/j.sftr.2026.101880` — Critical raw material supply chain risks and resilience: Discrepancies of perspectives – A SLR approach — recovery attempt 2/3
+  4. `link:https://defence-industry-space.ec.europa.eu/future-forces-forum-prague-cz-2026-10-21_en` — Future Forces Forum, Prague (CZ) — recovery attempt 2/3
+  5. `link:https://defence-industry-space.ec.europa.eu/defence-investment-forum-2026-10-14_en` — Defence Investment Forum — recovery attempt 2/3
+  6. `historical:id:42406648aa71b534` — Commission launches second mid-term round for coordinated gas purchases via AggregateEU to ensure stability and predictability of supplies — recovery attempt 2/3
+  7. `historical:id:abcf2ab448e5098c` — Toward South Korean-German cooperation in economic security
+  8. `historical:id:090cf5c6acce5c8f` — Dealing with China’s economic coercion – The case of Lithuania and insights from East Asia and Australia
+  - … plus 6 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-9a65d45f0596`
-- Assigned unresolved records: **9**
-  1. `historical:id:b2fef418a3dc318a` — Is decoupling a red herring? The role of structural effects and energy policies in Europe
-  2. `historical:id:f4d77fcf7d0bcb8c` — Israel’s Contradictory Gas Export Policy
-  3. `historical:id:70a75391d19023c9` — Withdrawal from the eu and Bilateral Free Trade Agreements
-  4. `historical:id:c08bc9a67d329c3c` — The European Union as Seen by Japan in an Age of Uncertainty
-  5. `historical:id:245af6bbcb3679b8` — Mapping Variation of Civil Society Involvement in EU Trade Agreements: A CSI Index
-  6. `historical:id:c0e3c9244fa32962` — The EU-Japan Economic Partnership Agreement: Relevance, Content and Policy Implications
-  7. `historical:id:2053fa6d2df0ba0a` — The EU–South Africa Strategic Partnership: Waning affection, persisting economic interests
-  8. `historical:id:c50cbcaea0074cb0` — Which Industrial Policy Does Europe Need? – CEPS
-  - … plus 1 more in the package manifest
+- Assigned unresolved records: **0**
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
