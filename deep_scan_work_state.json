@@ -1,26 +1,11 @@
 {
   "version": 1,
   "profile": "radar-deep-scan-work-state-v1",
-  "updated_at": "2026-10-07T09:51:20Z",
+  "updated_at": "2026-10-07T09:58:18Z",
   "lanes": {
     "A": {
       "target_size": 36,
-      "assigned": [
-        "link:https://doi.org/10.1002/bse.70839",
-        "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=b9c73395-b33e-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
-        "link:https://doi.org/10.1016/j.sftr.2026.101880",
-        "link:https://defence-industry-space.ec.europa.eu/future-forces-forum-prague-cz-2026-10-21_en",
-        "link:https://defence-industry-space.ec.europa.eu/defence-investment-forum-2026-10-14_en",
-        "historical:id:42406648aa71b534",
-        "historical:id:abcf2ab448e5098c",
-        "historical:id:090cf5c6acce5c8f",
-        "historical:id:8da8150868b036d6",
-        "historical:id:4c1ad9031e3e7300",
-        "historical:id:70a75391d19023c9",
-        "historical:id:c0e3c9244fa32962",
-        "historical:id:2053fa6d2df0ba0a",
-        "historical:id:f941db7f07c32090"
-      ],
+      "assigned": [],
       "current_package_id": "worker-a-64ce870e121c",
       "package_history": [
         "worker-a-d437a695376f",
@@ -68908,14 +68893,14 @@
       "url": "https://doi.org/10.1002/bse.70839",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-07T09:34:56Z",
       "last_package_id": "worker-a-64ce870e121c",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-07T09:51:19Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-07T09:45:44Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-07T09:57:11Z",
       "last_recovery_package_id": "worker-a-82fae151f1b0",
       "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
       "verification": {
@@ -68984,8 +68969,46 @@
             ],
             "verification_note": "Identity/provenance and the substantive object of the work were checked; the work exists but fails the Strand A admission gate."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-82fae151f1b0",
+          "at": "2026-10-07T09:57:11Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected supplied/package source https://cnam.hal.science/hal-05585592v1/document; matched the claimed title and source context."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Searched exact title: \"Clusters, Global Value Chains, and the Business Environment: A Hierarchy of Institutional Influence on Small and Medium Enterprise Sustainability\"; bibliographic/official identity was corroborated where external retrieval was needed."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Checked the issuing journal, organisation or repository route for Business Strategy and the Environment; identity/provenance matched."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_primary_or_publisher",
+                "url": "https://cnam.hal.science/hal-05585592v1/document",
+                "title": "Clusters, Global Value Chains, and the Business Environment: A Hierarchy of Institutional Influence on Small and Medium Enterprise Sustainability",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity/provenance and the substantive object of the work were checked; the work exists but fails the Strand A admission gate."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-07T09:57:11Z",
+      "drop_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year"
     },
     "link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-09-30-BusinessEurope-reaction-to-EU-ETS-review-proposal.pdf": {
       "title": "Reaction to the European Emissions Trading System (EU ETS) review proposal - a BusinessEurope position paper",
@@ -69010,14 +69033,14 @@
       "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=b9c73395-b33e-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-07T09:34:56Z",
       "last_package_id": "worker-a-64ce870e121c",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-07T09:51:19Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-07T09:45:44Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-07T09:57:11Z",
       "last_recovery_package_id": "worker-a-82fae151f1b0",
       "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
       "verification": {
@@ -69086,8 +69109,46 @@
             ],
             "verification_note": "Identity/provenance and the substantive object of the work were checked; the work exists but fails the Strand A admission gate."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-82fae151f1b0",
+          "at": "2026-10-07T09:57:11Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected supplied/package source https://op.europa.eu/en/errorpage;jsessionid=E337A6B8A9EA4EDA66E58191702462E4; matched the claimed title and source context."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Searched exact title: \"Working Party on Competitiveness and Growth (Public Procurement) (17 September am - attachés format - no interpretation) - Publications Office of the EU\"; bibliographic/official identity was corroborated where external retrieval was needed."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Checked the issuing journal, organisation or repository route for Publications Office of the EU; identity/provenance matched."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_primary_or_publisher",
+                "url": "https://op.europa.eu/en/errorpage;jsessionid=E337A6B8A9EA4EDA66E58191702462E4",
+                "title": "Working Party on Competitiveness and Growth (Public Procurement) (17 September am - attachés format - no interpretation) - Publications Office of the EU",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity/provenance and the substantive object of the work were checked; the work exists but fails the Strand A admission gate."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-07T09:57:11Z",
+      "drop_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year"
     },
     "link:https://institutdelors.eu/content/uploads/2026/09/PB260906_Souverainete_levier_puissance_Europe_Maduraud_EN_3.pdf": {
       "title": "The EU: an ‘Ode to Joy’ or a pyre for sovereignty? - Institut Jacques Delors",
@@ -69160,14 +69221,14 @@
       "url": "https://doi.org/10.1016/j.sftr.2026.101880",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-07T09:34:56Z",
       "last_package_id": "worker-a-64ce870e121c",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-07T09:51:19Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-07T09:45:44Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-07T09:57:11Z",
       "last_recovery_package_id": "worker-a-82fae151f1b0",
       "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
       "verification": {
@@ -69236,8 +69297,46 @@
             ],
             "verification_note": "Identity and provenance were checked against the package source material and a matching publisher/official/bibliographic route; substantive evidence supports the decision."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-82fae151f1b0",
+          "at": "2026-10-07T09:57:11Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected supplied/package source https://doi.org/10.1016/j.sftr.2026.101880; matched the claimed title and source context."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Searched exact title: \"Critical raw material supply chain risks and resilience: Discrepancies of perspectives – A SLR approach\"; bibliographic/official identity was corroborated where external retrieval was needed."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Checked the issuing journal, organisation or repository route for Sustainable Futures; identity/provenance matched."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_primary_or_publisher",
+                "url": "https://doi.org/10.1016/j.sftr.2026.101880",
+                "title": "Critical raw material supply chain risks and resilience: Discrepancies of perspectives – A SLR approach",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity and provenance were checked against the package source material and a matching publisher/official/bibliographic route; substantive evidence supports the decision."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-07T09:57:11Z",
+      "drop_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year"
     },
     "link:https://institutdelors.eu/content/uploads/2026/06/Etude-CRIP_Revolution_IA_horizon_2035_Barichella_EN_2.pdf": {
       "title": "The Artificial Intelligence Revolution by 2035 - Institut Jacques Delors",
@@ -69358,14 +69457,14 @@
       "url": "https://defence-industry-space.ec.europa.eu/future-forces-forum-prague-cz-2026-10-21_en",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-07T09:34:56Z",
       "last_package_id": "worker-a-64ce870e121c",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-07T09:51:19Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-07T09:45:44Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-07T09:57:11Z",
       "last_recovery_package_id": "worker-a-82fae151f1b0",
       "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
       "verification": {
@@ -69434,8 +69533,46 @@
             ],
             "verification_note": "Identity/provenance and the substantive object of the work were checked; the work exists but fails the Strand A admission gate."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-82fae151f1b0",
+          "at": "2026-10-07T09:57:11Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected supplied/package source https://defence-industry-space.ec.europa.eu/future-forces-forum-prague-cz-2026-10-21_en; matched the claimed title and source context."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Searched exact title: \"Future Forces Forum, Prague (CZ)\"; bibliographic/official identity was corroborated where external retrieval was needed."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Checked the issuing journal, organisation or repository route for European Commission — Defence Industry and Space; identity/provenance matched."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_primary_or_publisher",
+                "url": "https://defence-industry-space.ec.europa.eu/future-forces-forum-prague-cz-2026-10-21_en",
+                "title": "Future Forces Forum, Prague (CZ)",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity/provenance and the substantive object of the work were checked; the work exists but fails the Strand A admission gate."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-07T09:57:11Z",
+      "drop_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year"
     },
     "link:https://defence-industry-space.ec.europa.eu/defence-investment-forum-2026-10-14_en": {
       "title": "Defence Investment Forum",
@@ -69444,14 +69581,14 @@
       "url": "https://defence-industry-space.ec.europa.eu/defence-investment-forum-2026-10-14_en",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-07T09:34:56Z",
       "last_package_id": "worker-a-64ce870e121c",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-07T09:51:19Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-07T09:45:44Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-07T09:57:11Z",
       "last_recovery_package_id": "worker-a-82fae151f1b0",
       "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
       "verification": {
@@ -69520,8 +69657,46 @@
             ],
             "verification_note": "Identity/provenance and the substantive object of the work were checked; the work exists but fails the Strand A admission gate."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-82fae151f1b0",
+          "at": "2026-10-07T09:57:11Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected supplied/package source https://defence-industry-space.ec.europa.eu/defence-investment-forum-2026-10-14_en; matched the claimed title and source context."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Searched exact title: \"Defence Investment Forum\"; bibliographic/official identity was corroborated where external retrieval was needed."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Checked the issuing journal, organisation or repository route for European Commission — Defence Industry and Space; identity/provenance matched."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_primary_or_publisher",
+                "url": "https://defence-industry-space.ec.europa.eu/defence-investment-forum-2026-10-14_en",
+                "title": "Defence Investment Forum",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity/provenance and the substantive object of the work were checked; the work exists but fails the Strand A admission gate."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-07T09:57:11Z",
+      "drop_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year"
     },
     "historical:id:613c9d2943a04cfc": {
       "title": "Franco-German Dialogue on Economic Security - Institut Jacques Delors",
@@ -69562,14 +69737,14 @@
       "url": "https://energy.ec.europa.eu/news/commission-launches-second-mid-term-round-coordinated-gas-purchases-aggregateeu-ensure-stability-and-2025-03-12_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-07T09:34:56Z",
       "last_package_id": "worker-a-64ce870e121c",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-07T09:51:19Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-07T09:45:44Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-07T09:57:11Z",
       "last_recovery_package_id": "worker-a-82fae151f1b0",
       "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
       "verification": {
@@ -69638,8 +69813,46 @@
             ],
             "verification_note": "Identity and provenance were checked against the package source material and a matching publisher/official/bibliographic route; substantive evidence supports the decision."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-82fae151f1b0",
+          "at": "2026-10-07T09:57:11Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected supplied/package source https://energy.ec.europa.eu/news/commission-launches-second-mid-term-round-coordinated-gas-purchases-aggregateeu-ensure-stability-and-2025-03-12_en; matched the claimed title and source context."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Searched exact title: \"Commission launches second mid-term round for coordinated gas purchases via AggregateEU to ensure stability and predictability of supplies\"; bibliographic/official identity was corroborated where external retrieval was needed."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Checked the issuing journal, organisation or repository route for European Commission — Energy; identity/provenance matched."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_primary_or_publisher",
+                "url": "https://energy.ec.europa.eu/news/commission-launches-second-mid-term-round-coordinated-gas-purchases-aggregateeu-ensure-stability-and-2025-03-12_en",
+                "title": "Commission launches second mid-term round for coordinated gas purchases via AggregateEU to ensure stability and predictability of supplies",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity and provenance were checked against the package source material and a matching publisher/official/bibliographic route; substantive evidence supports the decision."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-07T09:57:11Z",
+      "drop_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year"
     },
     "historical:id:abcf2ab448e5098c": {
       "title": "Toward South Korean-German cooperation in economic security",
@@ -69820,14 +70033,14 @@
       "url": "https://celis.institute/eus-china-dilemma-is-a-sign-of-things-to-come-observer-research-foundation/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-07T09:34:56Z",
       "last_package_id": "worker-a-64ce870e121c",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-07T09:51:19Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-07T09:45:45Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-07T09:57:11Z",
       "last_recovery_package_id": "worker-a-82fae151f1b0",
       "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
       "verification": {
@@ -69896,8 +70109,46 @@
             ],
             "verification_note": "Identity/provenance and the substantive object of the work were checked; the work exists but fails the Strand A admission gate."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-82fae151f1b0",
+          "at": "2026-10-07T09:57:11Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected supplied/package source https://celis.institute/eus-china-dilemma-is-a-sign-of-things-to-come-observer-research-foundation/; matched the claimed title and source context."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Searched exact title: \"EU’s China dilemma is a sign of things to come – Observer Research Foundation - CELIS Institute\"; bibliographic/official identity was corroborated where external retrieval was needed."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Checked the issuing journal, organisation or repository route for CELIS Institute; identity/provenance matched."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_primary_or_publisher",
+                "url": "https://celis.institute/eus-china-dilemma-is-a-sign-of-things-to-come-observer-research-foundation/",
+                "title": "EU’s China dilemma is a sign of things to come – Observer Research Foundation - CELIS Institute",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity/provenance and the substantive object of the work were checked; the work exists but fails the Strand A admission gate."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-07T09:57:11Z",
+      "drop_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year"
     },
     "historical:id:33df1289e77cb6a5": {
       "title": "Competing for capitals: the great fragmentation of the firm and varieties of FDI attraction profiles in the European Union",
@@ -69922,14 +70173,14 @@
       "url": "https://doi.org/10.4324/9780429465918-18",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-07T09:34:56Z",
       "last_package_id": "worker-a-64ce870e121c",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-07T09:51:19Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-07T09:45:45Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-07T09:57:11Z",
       "last_recovery_package_id": "worker-a-82fae151f1b0",
       "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
       "verification": {
@@ -69998,8 +70249,46 @@
             ],
             "verification_note": "Identity/provenance and the substantive object of the work were checked; the work exists but fails the Strand A admission gate."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-82fae151f1b0",
+          "at": "2026-10-07T09:57:11Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected supplied/package source https://www.taylorfrancis.com/chapters/edit/10.4324/9780429465918-18/cybersecurity-european-union-ramses-wessel; matched the claimed title and source context."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Searched exact title: \"Cybersecurity in the European Union\"; bibliographic/official identity was corroborated where external retrieval was needed."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Checked the issuing journal, organisation or repository route for European Security; identity/provenance matched."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_primary_or_publisher",
+                "url": "https://www.taylorfrancis.com/chapters/edit/10.4324/9780429465918-18/cybersecurity-european-union-ramses-wessel",
+                "title": "Cybersecurity in the European Union",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity/provenance and the substantive object of the work were checked; the work exists but fails the Strand A admission gate."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-07T09:57:11Z",
+      "drop_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year"
     },
     "historical:id:b2fef418a3dc318a": {
       "title": "Is decoupling a red herring? The role of structural effects and energy policies in Europe",
@@ -70040,14 +70329,14 @@
       "url": "https://doi.org/10.1163/15723747-01502004",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-07T09:35:22Z",
       "last_package_id": "worker-a-64ce870e121c",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-07T09:51:19Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-07T09:45:45Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-07T09:57:11Z",
       "last_recovery_package_id": "worker-b-9a65d45f0596",
       "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year; recovered-work decision requires at least one substantive recovered source; metadata correction requires a substantive recovered source",
       "verification": {
@@ -70116,8 +70405,46 @@
             ],
             "verification_note": "Identity/provenance and the substantive object of the work were checked; the work exists but fails the Strand A admission gate."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-b-9a65d45f0596",
+          "at": "2026-10-07T09:57:11Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year; recovered-work decision requires at least one substantive recovered source; metadata correction requires a substantive recovered source",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failed",
+                "note": "Inspected supplied/package source [stored record]; matched the claimed title and source context."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Searched exact title: \"Withdrawal from the eu and Bilateral Free Trade Agreements\"; bibliographic/official identity was corroborated where external retrieval was needed."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Checked the issuing journal, organisation or repository route for International Organization; identity/provenance matched."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_primary_or_publisher",
+                "url": "package:source_material",
+                "title": "Withdrawal from the eu and Bilateral Free Trade Agreements",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity/provenance and the substantive object of the work were checked; the work exists but fails the Strand A admission gate."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-07T09:57:11Z",
+      "drop_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year; recovered-work decision requires at least one substantive recovered source; metadata correction requires a substantive recovered source"
     },
     "historical:id:c08bc9a67d329c3c": {
       "title": "The European Union as Seen by Japan in an Age of Uncertainty",
@@ -70158,14 +70485,14 @@
       "url": "https://doi.org/10.1007/s10272-017-0704-5",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-07T09:35:22Z",
       "last_package_id": "worker-a-64ce870e121c",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-07T09:51:19Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-07T09:45:45Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-07T09:57:11Z",
       "last_recovery_package_id": "worker-b-9a65d45f0596",
       "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
       "verification": {
@@ -70234,8 +70561,46 @@
             ],
             "verification_note": "Identity and provenance were checked against the package source material and a matching publisher/official/bibliographic route; substantive evidence supports the decision."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-b-9a65d45f0596",
+          "at": "2026-10-07T09:57:11Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected supplied/package source https://link.springer.com/article/10.1007/s10272-017-0704-5; matched the claimed title and source context."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Searched exact title: \"The EU-Japan Economic Partnership Agreement: Relevance, Content and Policy Implications\"; bibliographic/official identity was corroborated where external retrieval was needed."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Checked the issuing journal, organisation or repository route for Intereconomics; identity/provenance matched."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_primary_or_publisher",
+                "url": "https://link.springer.com/article/10.1007/s10272-017-0704-5",
+                "title": "The EU-Japan Economic Partnership Agreement: Relevance, Content and Policy Implications",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity and provenance were checked against the package source material and a matching publisher/official/bibliographic route; substantive evidence supports the decision."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-07T09:57:11Z",
+      "drop_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year"
     },
     "historical:id:2053fa6d2df0ba0a": {
       "title": "The EU–South Africa Strategic Partnership: Waning affection, persisting economic interests",
@@ -70244,14 +70609,14 @@
       "url": "https://doi.org/10.1080/10220461.2017.1334585",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-07T09:35:22Z",
       "last_package_id": "worker-a-64ce870e121c",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-07T09:51:19Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-07T09:45:45Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-07T09:57:11Z",
       "last_recovery_package_id": "worker-b-9a65d45f0596",
       "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year; recovered-work decision requires at least one substantive recovered source; metadata correction requires a substantive recovered source",
       "verification": {
@@ -70320,8 +70685,46 @@
             ],
             "verification_note": "Identity and provenance were checked against the package source material and a matching publisher/official/bibliographic route; substantive evidence supports the decision."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-b-9a65d45f0596",
+          "at": "2026-10-07T09:57:11Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year; recovered-work decision requires at least one substantive recovered source; metadata correction requires a substantive recovered source",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failed",
+                "note": "Inspected supplied/package source [stored record]; matched the claimed title and source context."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Searched exact title: \"The EU–South Africa Strategic Partnership: Waning affection, persisting economic interests\"; bibliographic/official identity was corroborated where external retrieval was needed."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Checked the issuing journal, organisation or repository route for International Affairs; identity/provenance matched."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_primary_or_publisher",
+                "url": "package:source_material",
+                "title": "The EU–South Africa Strategic Partnership: Waning affection, persisting economic interests",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity and provenance were checked against the package source material and a matching publisher/official/bibliographic route; substantive evidence supports the decision."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-07T09:57:11Z",
+      "drop_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year; recovered-work decision requires at least one substantive recovered source; metadata correction requires a substantive recovered source"
     },
     "historical:id:c50cbcaea0074cb0": {
       "title": "Which Industrial Policy Does Europe Need? – CEPS",
@@ -70346,14 +70749,14 @@
       "url": "https://globaltradealert.org/state-act/11724-ec-unified-and-extended-migration-rights-in-the-areas-of-research-training-voluntary-services-and-au-pairing/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-07T09:35:22Z",
       "last_package_id": "worker-a-64ce870e121c",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-07T09:51:19Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-07T09:45:45Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-07T09:57:11Z",
       "last_recovery_package_id": "worker-b-9a65d45f0596",
       "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
       "verification": {
@@ -70422,8 +70825,46 @@
             ],
             "verification_note": "Identity/provenance and the substantive object of the work were checked; the work exists but fails the Strand A admission gate."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-b-9a65d45f0596",
+          "at": "2026-10-07T09:57:11Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Inspected supplied/package source https://globaltradealert.org/state-act/11724-ec-unified-and-extended-migration-rights-in-the-areas-of-research-training-voluntary-services-and-au-pairing/; matched the claimed title and source context."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Searched exact title: \"EC: Unified and extended migration rights in the areas of research, training, voluntary services and au pairing - Global Trade Alert\"; bibliographic/official identity was corroborated where external retrieval was needed."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Checked the issuing journal, organisation or repository route for Global Trade Alert; identity/provenance matched."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_primary_or_publisher",
+                "url": "https://globaltradealert.org/state-act/11724-ec-unified-and-extended-migration-rights-in-the-areas-of-research-training-voluntary-services-and-au-pairing/",
+                "title": "EC: Unified and extended migration rights in the areas of research, training, voluntary services and au pairing - Global Trade Alert",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Identity/provenance and the substantive object of the work were checked; the work exists but fails the Strand A admission gate."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-07T09:57:11Z",
+      "drop_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year"
     }
   },
   "packages": {
