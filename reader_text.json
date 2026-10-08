@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-10-07T09:57:11Z",
+  "generated_at": "2026-10-08T05:46:45Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -144643,8 +144643,216 @@
       "deep_scan_package_id": "worker-b-9a65d45f0596",
       "claims": [],
       "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1017/err.2026.10139": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "4e2ccfdb",
+      "identity_hash": "40221d24f3323135",
+      "reader_title": "EU ransomware-payment governance proposal",
+      "reader_what": "Author identifies an EU regulatory gap for ransomware payments and proposes notice, reporting and limited bans.",
+      "reader_more": "This doctrinal study distinguishes cyber incidents from ransom payments. It compares EU rules with UK and US approaches and proposes three graduated regulatory pillars. The architecture is a recommendation, not an adopted EU instrument.",
+      "deep_analysis": {
+        "work_kind": "legal/doctrinal journal article",
+        "research_question": "How should EU law govern ransomware payments?",
+        "main_finding": "Proposes pre-payment notice, post-payment reporting and narrowly targeted bans.",
+        "method_or_basis": "Comparative legal mapping and risk-regulation theory, not new empirical impact estimation.",
+        "qualification": "The three-pillar architecture is an author proposal; it has not been adopted.",
+        "radar_relevance": "Important cybercrime and cybersecurity policy analysis but its central focus is not the Radar’s defined European economic-security mechanisms.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI https://doi.org/10.1017/err.2026.10139 resolved through the matching Cambridge Core publisher article and open-access PDF."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/from-ransomware-payment-bans-to-payment-governance-a-riskbased-regulatory-framework-for-the-eu/C3ABE06E176B50BB03E1E586AFB65668",
+            "title": "Cambridge Core full journal article",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_pdf",
+            "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/C3ABE06E176B50BB03E1E586AFB65668/S1867299X26101391a.pdf/from-ransomware-payment-bans-to-payment-governance-a-risk-based-regulatory-framework-for-the-eu.pdf",
+            "title": "Official publisher PDF",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary publisher HTML and PDF agree on title, DOI, publication date and substance. Full text examined; the sanctions discussion is ancillary to regulation of crime-victim payments, not a geoeconomic sanctions analysis."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_CENTRAL_ECONSEC",
+        "reason": "Full doctrinal paper on ransomware-payment regulation and cybercrime, not a substantive European economic-security assessment of dependencies, supply, industrial capacity, investment, or coercion."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No possible duplicate listed in job"
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-08T05:46:45Z",
+      "deep_scan_package_id": "worker-a-91c306a905e0",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=d1d8c859-c1e6-11f1-988f-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "a19a0249",
+      "identity_hash": "2bd63daf9dd6c403",
+      "reader_title": "Council industry working-party agenda",
+      "reader_what": "The Council scheduled discussion of a proposed EU–New Caledonia sustainable raw-materials partnership memorandum.",
+      "reader_more": "The official document is a notice for the 7 October 2026 working-party meeting. It lists presentation and examination of a memorandum to be signed. The agenda cannot establish that the memorandum was signed or that supply chains changed.",
+      "deep_analysis": {
+        "work_kind": "provisional meeting agenda",
+        "research_question": "What items will the working party discuss on 7 October 2026?",
+        "main_finding": "A prospective raw-materials value-chain memorandum with New Caledonia was on the agenda.",
+        "method_or_basis": "Official two-page Council notice and provisional agenda.",
+        "qualification": "Scheduled examination is not adoption or implementation of a partnership.",
+        "radar_relevance": "The strategic raw-materials topic is relevant, but this is a procedural agenda rather than a completed economic-security evidence product.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failure",
+            "note": "Supplied Publications Office download-handler identifier d1d8c859-c1e6-11f1-988f-01aa75ed71a1 returned the Publications Office 404 page in the scan."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI supplied for this Council agenda."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "partial",
+            "note": "Exact generic heading WORKING PARTY ON COMPETITIVENESS AND GROWTH (Industry) matches many agendas, not a unique document."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched the heading with Council and 6 October 2026; identified 7 October Council meeting notice dated 6 October."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Council meeting https://www.consilium.europa.eu/en/meetings/mpo/2026/10/wp-on-competitiveness-and-growth-compgro-industry-%28370246%29/ links to official register CM 4192/26; revision 2 official PDF retrieved."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Council register number 4192/26 identifies CM 4192 2026 REV 2 dated 06/10/2026; document is NOTICE OF MEETING AND PROVISIONAL AGENDA."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_document",
+            "url": "https://data.consilium.europa.eu/doc/document/CM-4192-2026-REV-2/en/pdf",
+            "title": "Council CM 4192/2/26 REV 2 provisional agenda",
+            "evidence_used": true
+          },
+          {
+            "kind": "official_register",
+            "url": "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?AllLanguagesSearch=false&DocumentLanguage=EN&DocumentNumber=4192%2F26&OnlyPublicDocuments=false",
+            "title": "Council document register",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Recovered the official Council register document and inspected original PDF. The exact Publications Office UUID could not be matched independently, but the supplied title and date match the authoritative 6 October Council revision; no claim of a signed MoU is made."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_AGENDA_NOT_EVIDENCE_PRODUCT",
+        "reason": "Verified official Council provisional meeting agenda, not completed analysis or established economic-security action. A planned examination of a raw-materials memorandum is not its adoption."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No possible duplicate listed in job"
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-08T05:46:45Z",
+      "deep_scan_package_id": "worker-a-91c306a905e0",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://institutdelors.eu/en/publications/under-the-applause-the-messages-what-the-state-of-the-union-address-tells-us/": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "65f14522",
+      "identity_hash": "cd21316fd087d954",
+      "reader_title": "Interpretation of the 2026 EU State of the Union",
+      "reader_what": "The commentary reads EU competitiveness, China, AI and parliamentary politics into the Commission president’s speech.",
+      "reader_more": "Arnaud Magnier assesses the political messages and omissions in the State of the Union address. It touches on economic security and European industrial ambition but is primarily political commentary, not a structured economic-security analysis. Its predictions and interpretations are not realised policy outcomes.",
+      "deep_analysis": {
+        "work_kind": "political commentary/blog post",
+        "research_question": "What political messages does the speech signal?",
+        "main_finding": "The author interprets priorities and political bargaining behind the State of the Union address.",
+        "method_or_basis": "Qualitative interpretation of the speech and political context, without documented analytical study methodology.",
+        "qualification": "Interpretations about future coalitions, priorities and alliances remain the author’s judgments.",
+        "radar_relevance": "Economic-security topics appear among broader political themes, without a substantive central European economic-security evidence product.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Supplied Institut Jacques Delors publication page opened and provided the full blog post, author and 23/09/26 date."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "institutional_full_text",
+            "url": "https://institutdelors.eu/en/publications/under-the-applause-the-messages-what-the-state-of-the-union-address-tells-us/",
+            "title": "Jacques Delors Institute full blog post",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The full first-party post confirms the actual author, date and format. It is not a completed evidence-led analysis under A Route 3."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_GENERAL_COMMENTARY",
+        "reason": "General political interpretation of the State of the Union speech, spanning parliamentary politics, budget and institutional affairs; no focused completed evidence-led study of European economic security."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No possible duplicate listed in job"
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-08T05:46:45Z",
+      "deep_scan_package_id": "worker-a-91c306a905e0",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-10-07T09:45:45Z"
+  "claims_updated_at": "2026-10-08T05:46:45Z"
 }

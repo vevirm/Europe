@@ -6,9 +6,9 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1859** (Main **782** + Historical **1077**)
-- Automatic queue still needing V2 verification: **175** (Main **49** + Historical **126**)
-- Currently assigned to workers: **4** (Main **4** + Historical **0**)
+- Authoritative V2 verified: **1862** (Main **785** + Historical **1077**)
+- Automatic queue still needing V2 verification: **172** (Main **46** + Historical **126**)
+- Currently assigned to workers: **1** (Main **1** + Historical **0**)
 - Bounded access-recovery retries still eligible: **0**
 - Terminally dropped after failed scans: **105**
 - Automatic queue pending and not yet assigned: **171**
@@ -16,12 +16,9 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-91c306a905e0`
-- Assigned unresolved records: **4**
-  1. `link:https://doi.org/10.1017/err.2026.10139` — From Ransomware Payment Bans to Payment Governance: A Risk-Based Regulatory Framework for the EU
-  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=d1d8c859-c1e6-11f1-988f-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — WORKING PARTY ON COMPETITIVENESS AND GROWTH (Industry) - Publications Office of the EU
-  3. `link:https://institutdelors.eu/en/publications/under-the-applause-the-messages-what-the-state-of-the-union-address-tells-us/` — Under the Applause, the Messages: What the State of the Union Address Tells Us - Institut Jacques Delors
-  4. `link:https://doi.org/10.1111/jcms.70175` — Communicating EU External Action: What Role for Strategic Narratives in the Commission's Promotion of the Global Gateway?
+- Current package: `worker-a-b23acb29e0ae`
+- Assigned unresolved records: **1**
+  1. `link:https://doi.org/10.1111/jcms.70175` — Communicating EU External Action: What Role for Strategic Narratives in the Commission's Promotion of the Global Gateway? — recovery attempt 2/3
 
 ### Worker B
 - Current package: `worker-b-9a65d45f0596`

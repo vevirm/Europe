@@ -1,19 +1,15 @@
 {
   "version": 1,
   "profile": "radar-deep-scan-work-state-v1",
-  "updated_at": "2026-10-08T05:37:26Z",
+  "updated_at": "2026-10-08T05:48:17Z",
   "lanes": {
     "A": {
       "target_size": 36,
       "assigned": [
-        "link:https://doi.org/10.1017/err.2026.10139",
-        "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=d1d8c859-c1e6-11f1-988f-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
-        "link:https://institutdelors.eu/en/publications/under-the-applause-the-messages-what-the-state-of-the-union-address-tells-us/",
         "link:https://doi.org/10.1111/jcms.70175"
       ],
-      "current_package_id": "worker-a-91c306a905e0",
+      "current_package_id": "worker-a-b23acb29e0ae",
       "package_history": [
-        "worker-a-d5b4cd36d0a9",
         "worker-a-6a3b91754c56",
         "worker-a-263494cb1fb0",
         "worker-a-d28b6a43fdb6",
@@ -52,7 +48,8 @@
         "worker-a-115ef6e8d6e9",
         "worker-a-82fae151f1b0",
         "worker-a-64ce870e121c",
-        "worker-a-91c306a905e0"
+        "worker-a-91c306a905e0",
+        "worker-a-b23acb29e0ae"
       ]
     },
     "B": {
@@ -70878,12 +70875,14 @@
       "url": "https://doi.org/10.1017/err.2026.10139",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-08T05:37:07Z",
       "last_package_id": "worker-a-91c306a905e0",
       "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-08T05:37:25Z"
+      "last_scan_package_at": "2026-10-08T05:37:25Z",
+      "verified_at": "2026-10-08T05:46:45Z",
+      "verified_package_id": "worker-a-91c306a905e0"
     },
     "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=d1d8c859-c1e6-11f1-988f-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
       "title": "WORKING PARTY ON COMPETITIVENESS AND GROWTH (Industry) - Publications Office of the EU",
@@ -70892,12 +70891,14 @@
       "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=d1d8c859-c1e6-11f1-988f-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-08T05:37:07Z",
       "last_package_id": "worker-a-91c306a905e0",
       "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-08T05:37:25Z"
+      "last_scan_package_at": "2026-10-08T05:37:25Z",
+      "verified_at": "2026-10-08T05:46:45Z",
+      "verified_package_id": "worker-a-91c306a905e0"
     },
     "link:https://institutdelors.eu/en/publications/under-the-applause-the-messages-what-the-state-of-the-union-address-tells-us/": {
       "title": "Under the Applause, the Messages: What the State of the Union Address Tells Us - Institut Jacques Delors",
@@ -70906,12 +70907,14 @@
       "url": "https://institutdelors.eu/en/publications/under-the-applause-the-messages-what-the-state-of-the-union-address-tells-us/",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-08T05:37:07Z",
       "last_package_id": "worker-a-91c306a905e0",
       "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-08T05:37:25Z"
+      "last_scan_package_at": "2026-10-08T05:37:25Z",
+      "verified_at": "2026-10-08T05:46:45Z",
+      "verified_package_id": "worker-a-91c306a905e0"
     },
     "link:https://doi.org/10.1111/jcms.70175": {
       "title": "Communicating EU External Action: What Role for Strategic Narratives in the Commission's Promotion of the Global Gateway?",
@@ -70923,9 +70926,111 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-08T05:37:07Z",
-      "last_package_id": "worker-a-91c306a905e0",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-08T05:37:25Z"
+      "last_package_id": "worker-a-b23acb29e0ae",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-08T05:48:17Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-08T05:46:45Z",
+      "last_recovery_package_id": "worker-a-91c306a905e0",
+      "recovery_reason": "Identity and publisher abstract are confirmed; full study could not be read, so cannot assess A admission rigorously from the abstract alone.",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failure",
+            "note": "DOI https://doi.org/10.1111/jcms.70175 was inaccessible directly using the web reader."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI appears on Wiley publisher record https://onlinelibrary.wiley.com/doi/10.1111/jcms.70175, matching the title, authors and publication date."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search located publisher journal index and article page."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Wiley JCMS journal index confirms Steingass and Szatters, first published 7 October 2026."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "partial",
+            "note": "Publisher full-text link https://onlinelibrary.wiley.com/doi/full/10.1111/jcms.70175 redirected to abstract-only page; Wiley provides abstract, references and supporting information but not inspectable substantive full text."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "partial",
+            "note": "Distinctive Global Gateway strategic-narratives title and DOI were cross-checked in Wiley journal index; no independently accessible full manuscript recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_record",
+            "url": "https://onlinelibrary.wiley.com/doi/10.1111/jcms.70175",
+            "title": "Wiley article identity, publication metadata, abstract and bibliography",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Identity verified from Wiley article and independent journal-index entry; abstract reports analysis of Commission communications from December 2021–July 2023. Full text access link currently loops back to abstract; no claims or admission judgement are invented."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-91c306a905e0",
+          "at": "2026-10-08T05:46:45Z",
+          "reason": "Identity and publisher abstract are confirmed; full study could not be read, so cannot assess A admission rigorously from the abstract alone.",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failure",
+                "note": "DOI https://doi.org/10.1111/jcms.70175 was inaccessible directly using the web reader."
+              },
+              {
+                "step": "doi",
+                "outcome": "success",
+                "note": "DOI appears on Wiley publisher record https://onlinelibrary.wiley.com/doi/10.1111/jcms.70175, matching the title, authors and publication date."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Exact-title search located publisher journal index and article page."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "success",
+                "note": "Wiley JCMS journal index confirms Steingass and Szatters, first published 7 October 2026."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "partial",
+                "note": "Publisher full-text link https://onlinelibrary.wiley.com/doi/full/10.1111/jcms.70175 redirected to abstract-only page; Wiley provides abstract, references and supporting information but not inspectable substantive full text."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "partial",
+                "note": "Distinctive Global Gateway strategic-narratives title and DOI were cross-checked in Wiley journal index; no independently accessible full manuscript recovered."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_record",
+                "url": "https://onlinelibrary.wiley.com/doi/10.1111/jcms.70175",
+                "title": "Wiley article identity, publication metadata, abstract and bibliography",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "Identity verified from Wiley article and independent journal-index entry; abstract reports analysis of Commission communications from December 2021–July 2023. Full text access link currently loops back to abstract; no claims or admission judgement are invented."
+          }
+        }
+      ]
     }
   },
   "packages": {
@@ -77073,6 +77178,13 @@
         "link:https://doi.org/10.1017/err.2026.10139",
         "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=d1d8c859-c1e6-11f1-988f-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
         "link:https://institutdelors.eu/en/publications/under-the-applause-the-messages-what-the-state-of-the-union-address-tells-us/",
+        "link:https://doi.org/10.1111/jcms.70175"
+      ]
+    },
+    "worker-a-b23acb29e0ae": {
+      "lane": "A",
+      "created_at": "2026-10-08T05:48:17Z",
+      "record_keys": [
         "link:https://doi.org/10.1111/jcms.70175"
       ]
     }

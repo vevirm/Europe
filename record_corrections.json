@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-record-corrections-v1",
-  "updated_at": "2026-10-07T09:57:11Z",
+  "updated_at": "2026-10-08T05:46:45Z",
   "records": {
     "link:https://doi.org/10.1080/09662839.2026.2709844": {
       "fields": {
@@ -1540,6 +1540,46 @@
       ],
       "updated_at": "2026-10-07T09:45:45Z",
       "deep_scan_package_id": "worker-b-9a65d45f0596"
+    },
+    "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=d1d8c859-c1e6-11f1-988f-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
+      "fields": {
+        "title": "Working Party on Competitiveness and Growth (Industry): Notice of Meeting and Provisional Agenda",
+        "authors": "Council of the European Union, General Secretariat",
+        "source": "Council of the European Union",
+        "type": "provisional meeting agenda"
+      },
+      "unset": [
+        "source_tier"
+      ],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Official Council CM 4192/2/26 REV 2 establishes authorship, type and title; Publications Office attribution and generic publication title were scanner artefacts.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "evidence": [
+        "https://data.consilium.europa.eu/doc/document/CM-4192-2026-REV-2/en/pdf",
+        "https://www.consilium.europa.eu/en/documents/public-register/public-register-search/?AllLanguagesSearch=false&DocumentLanguage=EN&DocumentNumber=4192%2F26&OnlyPublicDocuments=false"
+      ],
+      "updated_at": "2026-10-08T05:46:45Z",
+      "deep_scan_package_id": "worker-a-91c306a905e0"
+    },
+    "link:https://institutdelors.eu/en/publications/under-the-applause-the-messages-what-the-state-of-the-union-address-tells-us/": {
+      "fields": {
+        "authors": "Arnaud Magnier",
+        "date": "2026-09-23",
+        "type": "blog post"
+      },
+      "unset": [
+        "source_tier"
+      ],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Issuer identifies Arnaud Magnier as author, labels it Blog post, and dates it 23/09/26; scanner had author as organisation and date 2026-06-10.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "evidence": [
+        "https://institutdelors.eu/en/publications/under-the-applause-the-messages-what-the-state-of-the-union-address-tells-us/"
+      ],
+      "updated_at": "2026-10-08T05:46:45Z",
+      "deep_scan_package_id": "worker-a-91c306a905e0"
     }
   }
 }
