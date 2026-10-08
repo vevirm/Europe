@@ -1,14 +1,18 @@
 {
   "version": 1,
   "profile": "radar-deep-scan-work-state-v1",
-  "updated_at": "2026-10-07T10:03:31Z",
+  "updated_at": "2026-10-08T05:37:26Z",
   "lanes": {
     "A": {
       "target_size": 36,
-      "assigned": [],
-      "current_package_id": "worker-a-64ce870e121c",
+      "assigned": [
+        "link:https://doi.org/10.1017/err.2026.10139",
+        "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=d1d8c859-c1e6-11f1-988f-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+        "link:https://institutdelors.eu/en/publications/under-the-applause-the-messages-what-the-state-of-the-union-address-tells-us/",
+        "link:https://doi.org/10.1111/jcms.70175"
+      ],
+      "current_package_id": "worker-a-91c306a905e0",
       "package_history": [
-        "worker-a-d437a695376f",
         "worker-a-d5b4cd36d0a9",
         "worker-a-6a3b91754c56",
         "worker-a-263494cb1fb0",
@@ -47,7 +51,8 @@
         "worker-a-7fbc94903ea6",
         "worker-a-115ef6e8d6e9",
         "worker-a-82fae151f1b0",
-        "worker-a-64ce870e121c"
+        "worker-a-64ce870e121c",
+        "worker-a-91c306a905e0"
       ]
     },
     "B": {
@@ -70865,6 +70870,62 @@
       ],
       "dropped_at": "2026-10-07T09:57:11Z",
       "drop_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year"
+    },
+    "link:https://doi.org/10.1017/err.2026.10139": {
+      "title": "From Ransomware Payment Bans to Payment Governance: A Risk-Based Regulatory Framework for the EU",
+      "source_name": "European Journal of Risk Regulation",
+      "date": "2026-08-05",
+      "url": "https://doi.org/10.1017/err.2026.10139",
+      "corpus_scope": "main",
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-10-08T05:37:07Z",
+      "last_package_id": "worker-a-91c306a905e0",
+      "scan_package_attempts": 1,
+      "last_scan_package_at": "2026-10-08T05:37:25Z"
+    },
+    "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=d1d8c859-c1e6-11f1-988f-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
+      "title": "WORKING PARTY ON COMPETITIVENESS AND GROWTH (Industry) - Publications Office of the EU",
+      "source_name": "Publications Office of the EU",
+      "date": "2026-10-06",
+      "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=d1d8c859-c1e6-11f1-988f-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "corpus_scope": "main",
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-10-08T05:37:07Z",
+      "last_package_id": "worker-a-91c306a905e0",
+      "scan_package_attempts": 1,
+      "last_scan_package_at": "2026-10-08T05:37:25Z"
+    },
+    "link:https://institutdelors.eu/en/publications/under-the-applause-the-messages-what-the-state-of-the-union-address-tells-us/": {
+      "title": "Under the Applause, the Messages: What the State of the Union Address Tells Us - Institut Jacques Delors",
+      "source_name": "Institut Jacques Delors",
+      "date": "2026-06-10",
+      "url": "https://institutdelors.eu/en/publications/under-the-applause-the-messages-what-the-state-of-the-union-address-tells-us/",
+      "corpus_scope": "main",
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-10-08T05:37:07Z",
+      "last_package_id": "worker-a-91c306a905e0",
+      "scan_package_attempts": 1,
+      "last_scan_package_at": "2026-10-08T05:37:25Z"
+    },
+    "link:https://doi.org/10.1111/jcms.70175": {
+      "title": "Communicating EU External Action: What Role for Strategic Narratives in the Commission's Promotion of the Global Gateway?",
+      "source_name": "JCMS: Journal of Common Market Studies",
+      "date": "2026-10-07",
+      "url": "https://doi.org/10.1111/jcms.70175",
+      "corpus_scope": "main",
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-10-08T05:37:07Z",
+      "last_package_id": "worker-a-91c306a905e0",
+      "scan_package_attempts": 1,
+      "last_scan_package_at": "2026-10-08T05:37:25Z"
     }
   },
   "packages": {
@@ -77003,6 +77064,16 @@
         "historical:id:c0e3c9244fa32962",
         "historical:id:2053fa6d2df0ba0a",
         "historical:id:f941db7f07c32090"
+      ]
+    },
+    "worker-a-91c306a905e0": {
+      "lane": "A",
+      "created_at": "2026-10-08T05:37:25Z",
+      "record_keys": [
+        "link:https://doi.org/10.1017/err.2026.10139",
+        "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=d1d8c859-c1e6-11f1-988f-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+        "link:https://institutdelors.eu/en/publications/under-the-applause-the-messages-what-the-state-of-the-union-address-tells-us/",
+        "link:https://doi.org/10.1111/jcms.70175"
       ]
     }
   }
