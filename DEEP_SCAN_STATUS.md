@@ -7,8 +7,8 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **1862** (Main **785** + Historical **1077**)
-- Automatic queue still needing V2 verification: **172** (Main **46** + Historical **126**)
-- Currently assigned to workers: **1** (Main **1** + Historical **0**)
+- Automatic queue still needing V2 verification: **212** (Main **47** + Historical **165**)
+- Currently assigned to workers: **41** (Main **2** + Historical **39**)
 - Bounded access-recovery retries still eligible: **0**
 - Terminally dropped after failed scans: **105**
 - Automatic queue pending and not yet assigned: **171**
@@ -16,13 +16,26 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-b23acb29e0ae`
-- Assigned unresolved records: **1**
-  1. `link:https://doi.org/10.1111/jcms.70175` — Communicating EU External Action: What Role for Strategic Narratives in the Commission's Promotion of the Global Gateway? — recovery attempt 2/3
+- Current package: `worker-a-2a336e408053`
+- Assigned unresolved records: **36**
+  1. `link:https://onlinelibrary.wiley.com/doi/10.1111/twec.70116` — Friend or Foe? Analysing Neutral States' Exports to the Russian Federation Using Synthetic Difference‐In‐Differences
+  2. `historical:id:7bf16335fb419d05` — CELIS Update on Investment Screening and Economic Security – March 2026 - CELIS Institute
+  3. `historical:id:c1d6a4c68b0dbf09` — A Changing Global Context in Agricultural Policy - Institut Jacques Delors
+  4. `historical:id:2cbedf3c1330ad9b` — CELIS Update on Investment Screening and Economic Security – January 2026 - CELIS Institute
+  5. `historical:id:3b517132c13d99b9` — Sanctions on transport
+  6. `historical:id:9f0f4d0735927910` — Sanctions on dual-use goods
+  7. `historical:id:a20654414dd77c7a` — Nepal launches National Pashmina Sector Export Strategy to increase exports to USD 75 million (Euro 68.7 million) by 2026
+  8. `historical:id:7f3ede3c3181c594` — CELIS Update on Investment Screening and Economic Security – May 2026 - CELIS Institute
+  - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-9a65d45f0596`
-- Assigned unresolved records: **0**
+- Current package: `worker-b-7eba02da23ab`
+- Assigned unresolved records: **5**
+  1. `historical:id:85e48fc8b10a986b` — For the Sake of Market Access: Comparing EU and US Approaches to Liberalize Public Procurement in Brazil, India and China
+  2. `historical:id:25932ae99de3ff25` — The Energy Policies for a Sustainable Economic Growth in Turkey
+  3. `historical:id:06a17ab8fbb3d1ef` — An Optimization Model of the European Natural Gas System
+  4. `historical:id:290fff22d7d2a3df` — Measuring the Security of External Energy Supply and Energy Exports Demand in Central Asia
+  5. `historical:id:a6bc51bf235de931` — The impact of changing energy patterns on EU competitiveness - Egmont Institute
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
