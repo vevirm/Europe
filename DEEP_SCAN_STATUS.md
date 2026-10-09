@@ -8,38 +8,29 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 
 - Authoritative V2 verified: **1862** (Main **785** + Historical **1077**)
 - Automatic queue still needing V2 verification: **246** (Main **62** + Historical **184**)
-- Currently assigned to workers: **72** (Main **16** + Historical **56**)
+- Currently assigned to workers: **36** (Main **15** + Historical **21**)
 - Bounded access-recovery retries still eligible: **0**
 - Terminally dropped after failed scans: **105**
-- Automatic queue pending and not yet assigned: **174**
+- Automatic queue pending and not yet assigned: **210**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-ae2758ae6ba7`
+- Current package: `worker-a-157a6b02ed55`
 - Assigned unresolved records: **36**
   1. `link:https://ecfr.eu/wp-content/uploads/2026/09/Middle-powerhouse-A-new-blueprint-for-British-internationalism.pdf` — Middle powerhouse: A new blueprint for British internationalism – European Council on Foreign Relations
-  2. `link:https://onlinelibrary.wiley.com/doi/10.1111/twec.70116` — Friend or Foe? Analysing Neutral States' Exports to the Russian Federation Using Synthetic Difference‐In‐Differences
-  3. `link:https://doi.org/10.17645/pag.11379` — Laggards or Mavericks? Czechia and Hungary’s Divergent Responses to the EU's Changing Industrial Policy Regime
-  4. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=9fa27234-ae0c-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — ANNEX 2 - PART 1/5 ANNEX to the Proposal for a Council Decision on the signing of the Free Trade Agreement between the European Union and the Republic of India - Publications Office of the EU
-  5. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=9d36b775-ae0e-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — ANNEX 3 ANNEX to the Proposal for a Council Decision on the signing of the Free Trade Agreement between the European Union and the Republic of India - Publications Office of the EU
-  6. `link:https://doi.org/10.1007/s44282-026-00619-9` — Institutional pressures link circular economy governance and feminized informality in India’s geographical indication registered textile clusters
-  7. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=3693bf71-adc9-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a COUNCIL DECISION on the conclusion of the Free Trade Agreement between the European Union and the Republic of India - Publications Office of the EU
-  8. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=9191f067-adcc-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a COUNCIL DECISION on the signing of the Free Trade Agreement between the European Union and the Republic of India - Publications Office of the EU
+  2. `link:https://doi.org/10.17645/pag.11379` — Laggards or Mavericks? Czechia and Hungary’s Divergent Responses to the EU's Changing Industrial Policy Regime
+  3. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=9fa27234-ae0c-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — ANNEX 2 - PART 1/5 ANNEX to the Proposal for a Council Decision on the signing of the Free Trade Agreement between the European Union and the Republic of India - Publications Office of the EU
+  4. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=9d36b775-ae0e-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — ANNEX 3 ANNEX to the Proposal for a Council Decision on the signing of the Free Trade Agreement between the European Union and the Republic of India - Publications Office of the EU
+  5. `link:https://doi.org/10.1007/s44282-026-00619-9` — Institutional pressures link circular economy governance and feminized informality in India’s geographical indication registered textile clusters
+  6. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=3693bf71-adc9-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a COUNCIL DECISION on the conclusion of the Free Trade Agreement between the European Union and the Republic of India - Publications Office of the EU
+  7. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=9191f067-adcc-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a COUNCIL DECISION on the signing of the Free Trade Agreement between the European Union and the Republic of India - Publications Office of the EU
+  8. `link:https://www.atlanticcouncil.org/in-depth-research-reports/report/mapping-us-investment-in-latin-america-caribbean/` — Mapping US investment in Latin America and the Caribbean
   - … plus 28 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-4dc3c8347df3`
-- Assigned unresolved records: **36**
-  1. `historical:id:c1d6a4c68b0dbf09` — A Changing Global Context in Agricultural Policy - Institut Jacques Delors
-  2. `historical:id:2cbedf3c1330ad9b` — CELIS Update on Investment Screening and Economic Security – January 2026 - CELIS Institute
-  3. `historical:id:3b517132c13d99b9` — Sanctions on transport
-  4. `historical:id:9f0f4d0735927910` — Sanctions on dual-use goods
-  5. `historical:id:a20654414dd77c7a` — Nepal launches National Pashmina Sector Export Strategy to increase exports to USD 75 million (Euro 68.7 million) by 2026
-  6. `historical:id:7f3ede3c3181c594` — CELIS Update on Investment Screening and Economic Security – May 2026 - CELIS Institute
-  7. `historical:id:25a411e754ef8580` — CELIS Update on Investment Screening and Economic Security – June 2026 - CELIS Institute
-  8. `historical:id:b8da7271d4671f69` — CELIS Update on Investment Screening and Economic Security – August 2025 - CELIS Institute
-  - … plus 28 more in the package manifest
+- Assigned unresolved records: **0**
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
