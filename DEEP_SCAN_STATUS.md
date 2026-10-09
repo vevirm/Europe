@@ -6,27 +6,23 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1862** (Main **785** + Historical **1077**)
-- Automatic queue still needing V2 verification: **246** (Main **62** + Historical **184**)
-- Currently assigned to workers: **36** (Main **15** + Historical **21**)
+- Authoritative V2 verified: **1933** (Main **800** + Historical **1133**)
+- Automatic queue still needing V2 verification: **177** (Main **49** + Historical **128**)
+- Currently assigned to workers: **5** (Main **3** + Historical **2**)
 - Bounded access-recovery retries still eligible: **0**
-- Terminally dropped after failed scans: **105**
-- Automatic queue pending and not yet assigned: **210**
+- Terminally dropped after failed scans: **106**
+- Automatic queue pending and not yet assigned: **172**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-157a6b02ed55`
-- Assigned unresolved records: **36**
-  1. `link:https://ecfr.eu/wp-content/uploads/2026/09/Middle-powerhouse-A-new-blueprint-for-British-internationalism.pdf` — Middle powerhouse: A new blueprint for British internationalism – European Council on Foreign Relations
-  2. `link:https://doi.org/10.17645/pag.11379` — Laggards or Mavericks? Czechia and Hungary’s Divergent Responses to the EU's Changing Industrial Policy Regime
-  3. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=9fa27234-ae0c-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — ANNEX 2 - PART 1/5 ANNEX to the Proposal for a Council Decision on the signing of the Free Trade Agreement between the European Union and the Republic of India - Publications Office of the EU
-  4. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=9d36b775-ae0e-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — ANNEX 3 ANNEX to the Proposal for a Council Decision on the signing of the Free Trade Agreement between the European Union and the Republic of India - Publications Office of the EU
-  5. `link:https://doi.org/10.1007/s44282-026-00619-9` — Institutional pressures link circular economy governance and feminized informality in India’s geographical indication registered textile clusters
-  6. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=3693bf71-adc9-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a COUNCIL DECISION on the conclusion of the Free Trade Agreement between the European Union and the Republic of India - Publications Office of the EU
-  7. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=9191f067-adcc-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a COUNCIL DECISION on the signing of the Free Trade Agreement between the European Union and the Republic of India - Publications Office of the EU
-  8. `link:https://www.atlanticcouncil.org/in-depth-research-reports/report/mapping-us-investment-in-latin-america-caribbean/` — Mapping US investment in Latin America and the Caribbean
-  - … plus 28 more in the package manifest
+- Current package: `worker-a-bc32a2e1f6a1`
+- Assigned unresolved records: **5**
+  1. `link:https://doi.org/10.1080/09692290.2026.2739386` — The winding road toward a wholesale digital euro: geoeconomics and bureaucratic politics
+  2. `link:https://doi.org/10.1177/23210230261483357` — Digital Sovereignty and India: Rhetoric and Reality
+  3. `link:https://doi.org/10.1016/j.sftr.2026.102198` — Value chain position and intermediate-input technical efficiency in a small open economy: a multi-method input–output analysis of Slovenia
+  4. `historical:id:290fff22d7d2a3df` — Measuring the Security of External Energy Supply and Energy Exports Demand in Central Asia
+  5. `historical:id:a6bc51bf235de931` — The impact of changing energy patterns on EU competitiveness - Egmont Institute
 
 ### Worker B
 - Current package: `worker-b-4dc3c8347df3`
@@ -145,3 +141,4 @@ These records no longer consume automatic Deep Scan slots and are excluded from 
 - `historical:id:c0e3c9244fa32962` — **The EU-Japan Economic Partnership Agreement: Relevance, Content and Policy Implications** — attempts: 3/3 — Intereconomics — 2017-11-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year — https://doi.org/10.1007/s10272-017-0704-5
 - `historical:id:2053fa6d2df0ba0a` — **The EU–South Africa Strategic Partnership: Waning affection, persisting economic interests** — attempts: 3/3 — International Affairs — 2017-04-03 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year; recovered-work decision requires at least one substantive recovered source; metadata correction requires a substantive recovered source — https://doi.org/10.1080/10220461.2017.1334585
 - `historical:id:f941db7f07c32090` — **EC: Unified and extended migration rights in the areas of research, training, voluntary services and au pairing - Global Trade Alert** — attempts: 3/3 — Global Trade Alert — 2016-01-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year — https://globaltradealert.org/state-act/11724-ec-unified-and-extended-migration-rights-in-the-areas-of-research-training-voluntary-services-and-au-pairing/
+- `link:https://doi.org/10.1111/twec.70167` — **Recruitment by Exporters: Implications for Labour Demand Concentration and Labour Market Matching** — attempts: 3/3 — The World Economy — 2026-10-08 — Identity verified; substantive evidence remains unrecovered after available source searches. — https://doi.org/10.1111/twec.70167
