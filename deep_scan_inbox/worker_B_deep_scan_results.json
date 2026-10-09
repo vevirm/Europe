@@ -1,0 +1,2744 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-b-4dc3c8347df3",
+  "results": [
+    {
+      "record_key": "historical:id:c1d6a4c68b0dbf09",
+      "source_hash": "fefba5c2",
+      "identity_hash": "28f05b98799d2f68",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Publisher landing page https://institutdelors.eu/en/publications/a-changing-global-context-in-agricultural-policy/ identifies Isabelle Garzon and June 2007 paper, with substantive overview and primary PDF link."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Opened linked 37-page publisher original at https://institutdelors.eu/content/uploads/2025/04/policypaper28-garzon-en_01-1.pdf; introduction, summary and treatment of 1992, 1999 and 2003 CAP reforms match publication."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://institutdelors.eu/content/uploads/2025/04/policypaper28-garzon-en_01-1.pdf",
+            "title": "A Changing Global Context in Agricultural Policy — Isabelle Garzon",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_landing_page",
+            "url": "https://institutdelors.eu/en/publications/a-changing-global-context-in-agricultural-policy/",
+            "title": "A Changing Global Context in Agricultural Policy — Institut Jacques Delors",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "First-party full PDF and publisher metadata establish a June 2007 historical paper (landing page dated 8 June 2007), despite adjacent 2026 unrelated site recommendations in scanner capture."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Substantive historical analysis of European CAP reform and international tariff, market-access, and WTO negotiations governing EU external trade exposure."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2007-06-08",
+          "authors": "Isabelle Garzon",
+          "title": "A Changing Global Context in Agricultural Policy",
+          "source": "Notre Europe (now Institut Jacques Delors)",
+          "type": "policy paper"
+        },
+        "unset": [],
+        "reason": "First-party page lists 8 June 2007, Isabelle Garzon; original PDF credits Notre Europe as publisher. The scanner date 2026-02-10 is wrong."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Global trade negotiations shaped EU agricultural policy reforms",
+      "reader_what": "Garzon traces how international trade disciplines influenced major Common Agricultural Policy reforms from 1992 to 2003.",
+      "reader_why": "WTO commitments and pressure from trading partners constrained European tariff protection and agricultural subsidies.",
+      "reader_more": "This 2007 policy study tracks the interaction of the Uruguay Round, WTO agriculture negotiations and successive EU Common Agricultural Policy reforms. It describes increased pressure to adapt domestic support, export subsidies and market-access rules. The paper is valuable historical context for how external trade negotiations shape internal EU economic choices; it is not an account of current policy.",
+      "deep_analysis": {
+        "work_kind": "historical policy study",
+        "research_question": "How did external trade negotiations constrain and influence the EU Common Agricultural Policy reforms of 1992, 1999 and 2003?",
+        "main_finding": "International trade disciplines became a recurrent external constraint on CAP reform, especially on domestic supports, export subsidies and market access.",
+        "method_or_basis": "Historical institutional and trade-policy analysis of GATT/WTO agricultural negotiations and three CAP reform episodes, drawing on policy and negotiation history.",
+        "qualification": "A 2007 historical policy analysis of CAP reform and trade negotiations, not evidence of present-day effects or current WTO negotiations.",
+        "radar_relevance": "Historical European economic-security context for trade-policy exposure, market-access constraints and the balance between domestic farm support and international obligations.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [
+            "trade.wto_compatibility"
+          ],
+          "actor": {
+            "name": "European Union",
+            "class": "other"
+          },
+          "mechanism": "regulates",
+          "direction": "becomes_conditional",
+          "status": "operating",
+          "status_date": "2007-06",
+          "status_date_precision": "month",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "A 2007 historical policy analysis of CAP reform and trade negotiations, not evidence of present-day effects or current WTO negotiations.",
+          "text": "Garzon finds that international trade disciplines and GATT/WTO agriculture negotiations increasingly constrained EU Common Agricultural Policy reform.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:2cbedf3c1330ad9b",
+      "source_hash": "8be65fe9",
+      "identity_hash": "5ec0b5aa3b23eaf9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://celis.institute/celis-update-on-investment-screening-and-economic-security-january-2026/; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://celis.institute/celis-update-on-investment-screening-and-economic-security-january-2026/",
+            "title": "CELIS Update on Investment Screening and Economic Security – January 2026 - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The CELIS January 2026 bulletin catalogues recent investment-screening and economic-security law developments."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "CELIS Update on Investment Screening and Economic Security – January 2026",
+      "reader_what": "The CELIS January 2026 bulletin catalogues recent investment-screening and economic-security law developments.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The CELIS January 2026 bulletin catalogues recent investment-screening and economic-security law developments. This result describes the specific recovered publication, not an inference from a search snippet. The monthly bulletin reports multiple developments; its claims should not be conflated with original legal instruments.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about celis update on investment screening and economic security – january 2026?",
+        "main_finding": "The CELIS January 2026 bulletin catalogues recent investment-screening and economic-security law developments.",
+        "method_or_basis": "Official institutional record or policy bulletin; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The CELIS January 2026 bulletin catalogues recent investment-screening and economic-security law developments.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CELIS Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2026-01-31",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The CELIS January 2026 bulletin catalogues recent investment-screening and economic-security law developments.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:3b517132c13d99b9",
+      "source_hash": "be73d4fd",
+      "identity_hash": "0d4e3d9513bf306d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://commission.europa.eu/topics/eu-solidarity-ukraine/eu-sanctions-against-russia-following-invasion-ukraine/sanctions-transport_en; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://commission.europa.eu/topics/eu-solidarity-ukraine/eu-sanctions-against-russia-following-invasion-ukraine/sanctions-transport_en",
+            "title": "Sanctions on transport",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The European Commission describes restrictions on Russian transport operators, ports and related services."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Sanctions on transport",
+      "reader_what": "The European Commission describes restrictions on Russian transport operators, ports and related services.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The European Commission describes restrictions on Russian transport operators, ports and related services. This result describes the specific recovered publication, not an inference from a search snippet.",
+      "deep_analysis": {
+        "work_kind": "official policy document",
+        "research_question": "What does this work establish about sanctions on transport?",
+        "main_finding": "The European Commission describes restrictions on Russian transport operators, ports and related services.",
+        "method_or_basis": "Official institutional record or policy bulletin; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The European Commission describes restrictions on Russian transport operators, ports and related services.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2026-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The European Commission describes restrictions on Russian transport operators, ports and related services.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:9f0f4d0735927910",
+      "source_hash": "b496a55e",
+      "identity_hash": "84c0e942ce3b1a05",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://commission.europa.eu/topics/eu-solidarity-ukraine/eu-sanctions-against-russia-following-invasion-ukraine/sanctions-dual-use-goods_en; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://commission.europa.eu/topics/eu-solidarity-ukraine/eu-sanctions-against-russia-following-invasion-ukraine/sanctions-dual-use-goods_en",
+            "title": "Sanctions on dual-use goods",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The Commission explains EU controls and restrictions on exports of dual-use goods to Russia."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Sanctions on dual-use goods",
+      "reader_what": "The Commission explains EU controls and restrictions on exports of dual-use goods to Russia.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The Commission explains EU controls and restrictions on exports of dual-use goods to Russia. This result describes the specific recovered publication, not an inference from a search snippet. The captured source was thin, limiting inference.",
+      "deep_analysis": {
+        "work_kind": "official policy document",
+        "research_question": "What does this work establish about sanctions on dual-use goods?",
+        "main_finding": "The Commission explains EU controls and restrictions on exports of dual-use goods to Russia.",
+        "method_or_basis": "Official institutional record or policy bulletin; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The Commission explains EU controls and restrictions on exports of dual-use goods to Russia.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "export_control.dual_use_list",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2026-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The Commission explains EU controls and restrictions on exports of dual-use goods to Russia.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:a20654414dd77c7a",
+      "source_hash": "40e5421f",
+      "identity_hash": "75714f25ac40af45",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://www.eeas.europa.eu/delegations/nepal/nepal-launches-national-pashmina-sector-export-strategy-increase-exports-usd-75-million-euro-687_en; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://www.eeas.europa.eu/delegations/nepal/nepal-launches-national-pashmina-sector-export-strategy-increase-exports-usd-75-million-euro-687_en",
+            "title": "Nepal launches National Pashmina Sector Export Strategy to increase exports to USD 75 million (Euro 68.7 million) by 2026",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "OUT_OF_SCOPE_A",
+        "reason": "Nepalese pashmina export-promotion policy is not substantively about European exposure or European economic security."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Nepal launches National Pashmina Sector Export Strategy to increase exports to USD 75 million (Euro 68.7 million)",
+      "reader_what": "Nepalese pashmina export-promotion policy is not substantively about European exposure or European economic security.",
+      "reader_why": "",
+      "reader_more": "Nepalese pashmina export-promotion policy is not substantively about European exposure or European economic security. This result describes the specific recovered publication, not an inference from a search snippet.",
+      "deep_analysis": {
+        "work_kind": "official policy document",
+        "research_question": "What does this work establish about nepal launches national pashmina sector export strategy to increase exports to usd 75 million (euro 68.7 million)?",
+        "main_finding": "Nepalese pashmina export-promotion policy is not substantively about European exposure or European economic security.",
+        "method_or_basis": "Official institutional record or policy bulletin; matching first-party document text is captured in package.",
+        "qualification": "The work exists but does not satisfy the Radar’s substantive European economic-security admission test.",
+        "radar_relevance": "Outside the stringent Strand A scope: Nepalese pashmina export-promotion policy is not substantively about European exposure or European economic security.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:7f3ede3c3181c594",
+      "source_hash": "2da14d93",
+      "identity_hash": "fd43e29834779797",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://celis.institute/celis-update-on-investment-screening-and-economic-security-may-2026/; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://celis.institute/celis-update-on-investment-screening-and-economic-security-may-2026/",
+            "title": "CELIS Update on Investment Screening and Economic Security – May 2026 - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The CELIS May 2026 bulletin surveys investment-screening cases and legal policy updates."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "CELIS Update on Investment Screening and Economic Security – May 2026",
+      "reader_what": "The CELIS May 2026 bulletin surveys investment-screening cases and legal policy updates.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The CELIS May 2026 bulletin surveys investment-screening cases and legal policy updates. This result describes the specific recovered publication, not an inference from a search snippet. The monthly bulletin reports multiple developments; its claims should not be conflated with original legal instruments.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about celis update on investment screening and economic security – may 2026?",
+        "main_finding": "The CELIS May 2026 bulletin surveys investment-screening cases and legal policy updates.",
+        "method_or_basis": "Official institutional record or policy bulletin; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The CELIS May 2026 bulletin surveys investment-screening cases and legal policy updates.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CELIS Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2026-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The CELIS May 2026 bulletin surveys investment-screening cases and legal policy updates.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:25a411e754ef8580",
+      "source_hash": "9c385aba",
+      "identity_hash": "ae5ac9b0f73b4840",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://celis.institute/celis-update-on-investment-screening-and-economic-security-june-2026/; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://celis.institute/celis-update-on-investment-screening-and-economic-security-june-2026/",
+            "title": "CELIS Update on Investment Screening and Economic Security – June 2026 - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The CELIS June 2026 bulletin surveys investment-screening cases and regulatory policy updates."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "CELIS Update on Investment Screening and Economic Security – June 2026",
+      "reader_what": "The CELIS June 2026 bulletin surveys investment-screening cases and regulatory policy updates.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The CELIS June 2026 bulletin surveys investment-screening cases and regulatory policy updates. This result describes the specific recovered publication, not an inference from a search snippet. The monthly bulletin reports multiple developments; its claims should not be conflated with original legal instruments.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about celis update on investment screening and economic security – june 2026?",
+        "main_finding": "The CELIS June 2026 bulletin surveys investment-screening cases and regulatory policy updates.",
+        "method_or_basis": "Official institutional record or policy bulletin; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The CELIS June 2026 bulletin surveys investment-screening cases and regulatory policy updates.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CELIS Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2026-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The CELIS June 2026 bulletin surveys investment-screening cases and regulatory policy updates.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:b8da7271d4671f69",
+      "source_hash": "395d8c38",
+      "identity_hash": "3dd975d008602a15",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://celis.institute/celis-update-on-investment-screening-and-economic-security-july-2025/; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://celis.institute/celis-update-on-investment-screening-and-economic-security-july-2025/",
+            "title": "CELIS Update on Investment Screening and Economic Security – August 2025 - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The CELIS August 2025-labelled item tracks investment-screening legal developments; the URL identifies a July edition."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "CELIS Update on Investment Screening and Economic Security – August 2025",
+      "reader_what": "The CELIS August 2025-labelled item tracks investment-screening legal developments; the URL identifies a July edition.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The CELIS August 2025-labelled item tracks investment-screening legal developments; the URL identifies a July edition. This result describes the specific recovered publication, not an inference from a search snippet. The monthly bulletin reports multiple developments; its claims should not be conflated with original legal instruments.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about celis update on investment screening and economic security – august 2025?",
+        "main_finding": "The CELIS August 2025-labelled item tracks investment-screening legal developments; the URL identifies a July edition.",
+        "method_or_basis": "Official institutional record or policy bulletin; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The CELIS August 2025-labelled item tracks investment-screening legal developments; the URL identifies a July edition.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CELIS Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2025-09-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The CELIS August 2025-labelled item tracks investment-screening legal developments; the URL identifies a July edition.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:058f6fb7e0264295",
+      "source_hash": "4eb964a1",
+      "identity_hash": "fba4788dbf64f2d6",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://commission.europa.eu/topics/trade/eu-us-trade-deal_en; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://commission.europa.eu/topics/trade/eu-us-trade-deal_en",
+            "title": "The EU-US trade deal",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The European Commission sets out the EU–US trade agreement framework and associated commitments."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The EU-US trade deal",
+      "reader_what": "The European Commission sets out the EU–US trade agreement framework and associated commitments.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The European Commission sets out the EU–US trade agreement framework and associated commitments. This result describes the specific recovered publication, not an inference from a search snippet.",
+      "deep_analysis": {
+        "work_kind": "official policy document",
+        "research_question": "What does this work establish about the eu-us trade deal?",
+        "main_finding": "The European Commission sets out the EU–US trade agreement framework and associated commitments.",
+        "method_or_basis": "Official institutional record or policy bulletin; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The European Commission sets out the EU–US trade agreement framework and associated commitments.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.agreement",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2025-08-21",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The European Commission sets out the EU–US trade agreement framework and associated commitments.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:87af58ec82a92d4e",
+      "source_hash": "26e550dc",
+      "identity_hash": "51d57ac4ad0d65d3",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://ecipe.org/insights/eu-us-trade-deal/; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://ecipe.org/insights/eu-us-trade-deal/",
+            "title": "EU Anguish About the US Trade Deal Is Misplaced",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: ECIPE argues that criticism of the EU–US trade arrangement overlooks constraints and available negotiating alternatives."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU Anguish About the US Trade Deal Is Misplaced",
+      "reader_what": "ECIPE argues that criticism of the EU–US trade arrangement overlooks constraints and available negotiating alternatives.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "ECIPE argues that criticism of the EU–US trade arrangement overlooks constraints and available negotiating alternatives. This result describes the specific recovered publication, not an inference from a search snippet.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about eu anguish about the us trade deal is misplaced?",
+        "main_finding": "ECIPE argues that criticism of the EU–US trade arrangement overlooks constraints and available negotiating alternatives.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "ECIPE argues that criticism of the EU–US trade arrangement overlooks constraints and available negotiating alternatives.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.agreement",
+          "secondary_objects": [],
+          "actor": {
+            "name": "ECIPE",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "proposes",
+          "direction": "unchanged",
+          "status": "proposed",
+          "status_date": "2025-08-06",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "ECIPE argues that criticism of the EU–US trade arrangement overlooks constraints and available negotiating alternatives.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:a096c6286623ccfd",
+      "source_hash": "9f582edb",
+      "identity_hash": "b703b5746b57222d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://celis.institute/celis-update-on-investment-screening-and-economic-security-june-2025/; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://celis.institute/celis-update-on-investment-screening-and-economic-security-june-2025/",
+            "title": "CELIS Update on Investment Screening and Economic Security – June 2025 - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The CELIS June 2025 bulletin reviews foreign-investment screening decisions and regulatory trends."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "CELIS Update on Investment Screening and Economic Security – June 2025",
+      "reader_what": "The CELIS June 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The CELIS June 2025 bulletin reviews foreign-investment screening decisions and regulatory trends. This result describes the specific recovered publication, not an inference from a search snippet. The monthly bulletin reports multiple developments; its claims should not be conflated with original legal instruments.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about celis update on investment screening and economic security – june 2025?",
+        "main_finding": "The CELIS June 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+        "method_or_basis": "Official institutional record or policy bulletin; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The CELIS June 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CELIS Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2025-07-14",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The CELIS June 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:e6389d610810df12",
+      "source_hash": "e83699ea",
+      "identity_hash": "72c231acea279620",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://celis.institute/celis-update-on-investment-screening-and-economic-security-may-2025/; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://celis.institute/celis-update-on-investment-screening-and-economic-security-may-2025/",
+            "title": "CELIS Update on Investment Screening and Economic Security – May 2025 - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The CELIS May 2025 bulletin reviews foreign-investment screening decisions and regulatory trends."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "CELIS Update on Investment Screening and Economic Security – May 2025",
+      "reader_what": "The CELIS May 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The CELIS May 2025 bulletin reviews foreign-investment screening decisions and regulatory trends. This result describes the specific recovered publication, not an inference from a search snippet. The monthly bulletin reports multiple developments; its claims should not be conflated with original legal instruments.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about celis update on investment screening and economic security – may 2025?",
+        "main_finding": "The CELIS May 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+        "method_or_basis": "Official institutional record or policy bulletin; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The CELIS May 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CELIS Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2025-06-15",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The CELIS May 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:0a2615bb0b630904",
+      "source_hash": "2f8b0043",
+      "identity_hash": "8a85f2485403f65c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://celis.institute/celis-update-on-investment-screening-and-economic-security-march-2025/; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://celis.institute/celis-update-on-investment-screening-and-economic-security-march-2025/",
+            "title": "CELIS Update on Investment Screening and Economic Security – March 2025 - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The CELIS March 2025 bulletin reviews foreign-investment screening decisions and regulatory trends."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "CELIS Update on Investment Screening and Economic Security – March 2025",
+      "reader_what": "The CELIS March 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The CELIS March 2025 bulletin reviews foreign-investment screening decisions and regulatory trends. This result describes the specific recovered publication, not an inference from a search snippet. The monthly bulletin reports multiple developments; its claims should not be conflated with original legal instruments.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about celis update on investment screening and economic security – march 2025?",
+        "main_finding": "The CELIS March 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+        "method_or_basis": "Official institutional record or policy bulletin; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The CELIS March 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CELIS Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2025-05-18",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The CELIS March 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:a3ff0d22608ac7fe",
+      "source_hash": "f743d497",
+      "identity_hash": "7f2aee6c554d8ace",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://celis.institute/celis-update-on-investment-screening-and-economic-security-february-2025/; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://celis.institute/celis-update-on-investment-screening-and-economic-security-february-2025/",
+            "title": "CELIS Update on Investment Screening and Economic Security – February 2025 - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The CELIS February 2025 bulletin reviews foreign-investment screening decisions and regulatory trends."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "CELIS Update on Investment Screening and Economic Security – February 2025",
+      "reader_what": "The CELIS February 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The CELIS February 2025 bulletin reviews foreign-investment screening decisions and regulatory trends. This result describes the specific recovered publication, not an inference from a search snippet. The monthly bulletin reports multiple developments; its claims should not be conflated with original legal instruments.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about celis update on investment screening and economic security – february 2025?",
+        "main_finding": "The CELIS February 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+        "method_or_basis": "Official institutional record or policy bulletin; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The CELIS February 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CELIS Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2025-03-09",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The CELIS February 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:31b624c1ae2d4eac",
+      "source_hash": "1ef64951",
+      "identity_hash": "2321e03d63a6694f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://celis.institute/celis-update-on-investment-screening-and-economic-security-january-2025/; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://celis.institute/celis-update-on-investment-screening-and-economic-security-january-2025/",
+            "title": "CELIS Update on Investment Screening and Economic Security – January 2025 - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The CELIS January 2025 bulletin reviews foreign-investment screening decisions and regulatory trends."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "CELIS Update on Investment Screening and Economic Security – January 2025",
+      "reader_what": "The CELIS January 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The CELIS January 2025 bulletin reviews foreign-investment screening decisions and regulatory trends. This result describes the specific recovered publication, not an inference from a search snippet. The monthly bulletin reports multiple developments; its claims should not be conflated with original legal instruments.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about celis update on investment screening and economic security – january 2025?",
+        "main_finding": "The CELIS January 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+        "method_or_basis": "Official institutional record or policy bulletin; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The CELIS January 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CELIS Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2025-02-08",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The CELIS January 2025 bulletin reviews foreign-investment screening decisions and regulatory trends.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:8542857073a83b72",
+      "source_hash": "244ffb8a",
+      "identity_hash": "e74531b45dfb3f44",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://ecipe.org/insights/could-digital-cooperation-help-de-escalate-eu-us-trade-tensions/; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://ecipe.org/insights/could-digital-cooperation-help-de-escalate-eu-us-trade-tensions/",
+            "title": "Could Digital Cooperation Help De-escalate EU-US Trade Tensions?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: ECIPE examines whether digital regulatory cooperation could reduce US–EU trade disputes."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Could Digital Cooperation Help De-escalate EU-US Trade Tensions?",
+      "reader_what": "ECIPE examines whether digital regulatory cooperation could reduce US–EU trade disputes.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "ECIPE examines whether digital regulatory cooperation could reduce US–EU trade disputes. This result describes the specific recovered publication, not an inference from a search snippet.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about could digital cooperation help de-escalate eu-us trade tensions?",
+        "main_finding": "ECIPE examines whether digital regulatory cooperation could reduce US–EU trade disputes.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "ECIPE examines whether digital regulatory cooperation could reduce US–EU trade disputes.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "ECIPE",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2025-02-07",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "ECIPE examines whether digital regulatory cooperation could reduce US–EU trade disputes.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:68664ba83f6a0054",
+      "source_hash": "e1d01cd9",
+      "identity_hash": "9f21a8ef8199cb88",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://www.institutmontaigne.org/en/expressions/how-leverage-eu-india-partnership-critical-and-emerging-technologies; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://www.institutmontaigne.org/en/expressions/how-leverage-eu-india-partnership-critical-and-emerging-technologies",
+            "title": "How to Leverage the EU–India Partnership on Critical and Emerging Technologies?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: Institut Montaigne examines EU–India cooperation in critical and emerging technologies and obstacles to implementation."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "How to Leverage the EU–India Partnership on Critical and Emerging Technologies?",
+      "reader_what": "Institut Montaigne examines EU–India cooperation in critical and emerging technologies and obstacles to implementation.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "Institut Montaigne examines EU–India cooperation in critical and emerging technologies and obstacles to implementation. This result describes the specific recovered publication, not an inference from a search snippet.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about how to leverage the eu–india partnership on critical and emerging technologies?",
+        "main_finding": "Institut Montaigne examines EU–India cooperation in critical and emerging technologies and obstacles to implementation.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "Institut Montaigne examines EU–India cooperation in critical and emerging technologies and obstacles to implementation.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "partnership.like_minded_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Institut Montaigne",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2025-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "Institut Montaigne examines EU–India cooperation in critical and emerging technologies and obstacles to implementation.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:89b46177a9f25400",
+      "source_hash": "d20eccb4",
+      "identity_hash": "de70363f6049ffc3",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://www.institutmontaigne.org/en/expressions/eu-india-partnership-window-opportunity-our-ambitions; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://www.institutmontaigne.org/en/expressions/eu-india-partnership-window-opportunity-our-ambitions",
+            "title": "EU-India Partnership: A Window of Opportunity for Our Ambitions?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: Institut Montaigne assesses the EU–India partnership’s geopolitical and economic potential and implementation limits."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU-India Partnership: A Window of Opportunity for Our Ambitions?",
+      "reader_what": "Institut Montaigne assesses the EU–India partnership’s geopolitical and economic potential and implementation limits.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "Institut Montaigne assesses the EU–India partnership’s geopolitical and economic potential and implementation limits. This result describes the specific recovered publication, not an inference from a search snippet.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about eu-india partnership: a window of opportunity for our ambitions?",
+        "main_finding": "Institut Montaigne assesses the EU–India partnership’s geopolitical and economic potential and implementation limits.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "Institut Montaigne assesses the EU–India partnership’s geopolitical and economic potential and implementation limits.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "partnership.like_minded_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Institut Montaigne",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2025-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "Institut Montaigne assesses the EU–India partnership’s geopolitical and economic potential and implementation limits.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:d3e3bb4a8f26be96",
+      "source_hash": "3825c5d0",
+      "identity_hash": "0beff09562449def",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://www.bis.org/speeches/20231206-direct-transmission-tighter-monetary-policy-impaired-energy-subsidies-and-banks-reluctance-pass-higher-interest.pdf; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_pdf_excerpt",
+            "url": "https://www.bis.org/speeches/20231206-direct-transmission-tighter-monetary-policy-impaired-energy-subsidies-and-banks-reluctance-pass-higher-interest.pdf",
+            "title": "Direct transmission of tighter monetary policy impaired by energy subsidies and banks' reluctance to pass on higher interest rates | Bank for International Settlements",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "OUT_OF_SCOPE_A",
+        "reason": "ECB monetary-policy transmission through banks and energy subsidies is macroeconomic analysis, not a central economic-security study."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Direct transmission of tighter monetary policy impaired by energy subsidies and banks' reluctance to pass on higher",
+      "reader_what": "ECB monetary-policy transmission through banks and energy subsidies is macroeconomic analysis, not a central economic-security study.",
+      "reader_why": "",
+      "reader_more": "ECB monetary-policy transmission through banks and energy subsidies is macroeconomic analysis, not a central economic-security study. This result describes the specific recovered publication, not an inference from a search snippet. The source is a substantive PDF extract rather than a verified complete copy.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about direct transmission of tighter monetary policy impaired by energy subsidies and banks' reluctance to pass on higher?",
+        "main_finding": "ECB monetary-policy transmission through banks and energy subsidies is macroeconomic analysis, not a central economic-security study.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The work exists but does not satisfy the Radar’s substantive European economic-security admission test.",
+        "radar_relevance": "Outside the stringent Strand A scope: ECB monetary-policy transmission through banks and energy subsidies is macroeconomic analysis, not a central economic-security study.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:f6edfd144ad7bed8",
+      "source_hash": "66e5bfc2",
+      "identity_hash": "960d9736d05cef32",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://thedocs.worldbank.org/en/doc/5d5c5c8b0f451b472e858ceb97624a18-0400072023/original/2023-Global-Gas-Flaring-Tracker-Report.pdf; first-party identity established from matching article/document content."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Matched title and work identity on publisher/official first-party record https://www.worldbank.org/en/news/press-release/2023/03/29/global-gas-flaring-falls-to-lowest-level-since-2010"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_pdf_excerpt",
+            "url": "https://thedocs.worldbank.org/en/doc/5d5c5c8b0f451b472e858ceb97624a18-0400072023/original/2023-Global-Gas-Flaring-Tracker-Report.pdf",
+            "title": "Global Gas Flaring Falls to Lowest Level Since 2010",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "OUT_OF_SCOPE_A",
+        "reason": "The World Bank reports falling global gas flaring, but does not directly analyse European energy-security dependencies."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Global Gas Flaring Falls to Lowest Level Since 2010",
+      "reader_what": "The World Bank reports falling global gas flaring, but does not directly analyse European energy-security dependencies.",
+      "reader_why": "",
+      "reader_more": "The World Bank reports falling global gas flaring, but does not directly analyse European energy-security dependencies. This result describes the specific recovered publication, not an inference from a search snippet. The source is a substantive PDF extract rather than a verified complete copy.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about global gas flaring falls to lowest level since 2010?",
+        "main_finding": "The World Bank reports falling global gas flaring, but does not directly analyse European energy-security dependencies.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The work exists but does not satisfy the Radar’s substantive European economic-security admission test.",
+        "radar_relevance": "Outside the stringent Strand A scope: The World Bank reports falling global gas flaring, but does not directly analyse European energy-security dependencies.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:477bb0165845c699",
+      "source_hash": "cda3f784",
+      "identity_hash": "235d52fc5ef3083c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://www.eeas.europa.eu/delegations/tanzania/presentation-launch-growth-diagnostics-and-competitiveness-study-manufacturing-sector-tanzania_en; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://www.eeas.europa.eu/delegations/tanzania/presentation-launch-growth-diagnostics-and-competitiveness-study-manufacturing-sector-tanzania_en",
+            "title": "PRESENTATION & LAUNCH: -Growth diagnostics and competitiveness study of the Manufacturing Sector in Tanzania",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "OUT_OF_SCOPE_A",
+        "reason": "An event announcement on Tanzania manufacturing competitiveness does not itself offer European economic-security evidence."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "PRESENTATION & LAUNCH: -Growth diagnostics and competitiveness study of the Manufacturing Sector in Tanzania",
+      "reader_what": "An event announcement on Tanzania manufacturing competitiveness does not itself offer European economic-security evidence.",
+      "reader_why": "",
+      "reader_more": "An event announcement on Tanzania manufacturing competitiveness does not itself offer European economic-security evidence. This result describes the specific recovered publication, not an inference from a search snippet.",
+      "deep_analysis": {
+        "work_kind": "official policy document",
+        "research_question": "What does this work establish about presentation & launch: -growth diagnostics and competitiveness study of the manufacturing sector in tanzania?",
+        "main_finding": "An event announcement on Tanzania manufacturing competitiveness does not itself offer European economic-security evidence.",
+        "method_or_basis": "Official institutional record or policy bulletin; matching first-party document text is captured in package.",
+        "qualification": "The work exists but does not satisfy the Radar’s substantive European economic-security admission test.",
+        "radar_relevance": "Outside the stringent Strand A scope: An event announcement on Tanzania manufacturing competitiveness does not itself offer European economic-security evidence.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:ec0b192065ab2a37",
+      "source_hash": "e1fdac71",
+      "identity_hash": "bd05cbe3ca1a5dda",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://www.institutmontaigne.org/en/expressions/china-ukraine-partnership-surviving-deteriorating-strategic-environment; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://www.institutmontaigne.org/en/expressions/china-ukraine-partnership-surviving-deteriorating-strategic-environment",
+            "title": "The China-Ukraine Partnership: Surviving a Deteriorating Strategic Environment",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: Institut Montaigne examines how Chinese–Ukrainian diplomatic and economic cooperation changed amid Russia’s invasion."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The China-Ukraine Partnership: Surviving a Deteriorating Strategic Environment",
+      "reader_what": "Institut Montaigne examines how Chinese–Ukrainian diplomatic and economic cooperation changed amid Russia’s invasion.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "Institut Montaigne examines how Chinese–Ukrainian diplomatic and economic cooperation changed amid Russia’s invasion. This result describes the specific recovered publication, not an inference from a search snippet.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about the china-ukraine partnership: surviving a deteriorating strategic environment?",
+        "main_finding": "Institut Montaigne examines how Chinese–Ukrainian diplomatic and economic cooperation changed amid Russia’s invasion.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "Institut Montaigne examines how Chinese–Ukrainian diplomatic and economic cooperation changed amid Russia’s invasion.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "partnership.like_minded_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Institut Montaigne",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2022-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "Institut Montaigne examines how Chinese–Ukrainian diplomatic and economic cooperation changed amid Russia’s invasion.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:c5281e8f346d8748",
+      "source_hash": "be559d55",
+      "identity_hash": "1c4ef77e01abb97a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://commission.europa.eu/topics/eu-solidarity-ukraine/eu-sanctions-against-russia-following-invasion-ukraine/sanctions-energy_en; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://commission.europa.eu/topics/eu-solidarity-ukraine/eu-sanctions-against-russia-following-invasion-ukraine/sanctions-energy_en",
+            "title": "Sanctions on energy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The Commission describes EU sanctions restricting Russian energy imports and related services."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Sanctions on energy",
+      "reader_what": "The Commission describes EU sanctions restricting Russian energy imports and related services.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The Commission describes EU sanctions restricting Russian energy imports and related services. This result describes the specific recovered publication, not an inference from a search snippet.",
+      "deep_analysis": {
+        "work_kind": "official policy document",
+        "research_question": "What does this work establish about sanctions on energy?",
+        "main_finding": "The Commission describes EU sanctions restricting Russian energy imports and related services.",
+        "method_or_basis": "Official institutional record or policy bulletin; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The Commission describes EU sanctions restricting Russian energy imports and related services.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2021-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The Commission describes EU sanctions restricting Russian energy imports and related services.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:c8a5517aab8f4ce0",
+      "source_hash": "6daa6c85",
+      "identity_hash": "f7acd52d3ee7fe66",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://commission.europa.eu/topics/international-partnerships/eu-us-trade-and-technology-council_en; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://commission.europa.eu/topics/international-partnerships/eu-us-trade-and-technology-council_en",
+            "title": "EU-US Trade and Technology Council",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The EU outlines cooperation with the United States through the Trade and Technology Council."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU-US Trade and Technology Council",
+      "reader_what": "The EU outlines cooperation with the United States through the Trade and Technology Council.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The EU outlines cooperation with the United States through the Trade and Technology Council. This result describes the specific recovered publication, not an inference from a search snippet.",
+      "deep_analysis": {
+        "work_kind": "official policy document",
+        "research_question": "What does this work establish about eu-us trade and technology council?",
+        "main_finding": "The EU outlines cooperation with the United States through the Trade and Technology Council.",
+        "method_or_basis": "Official institutional record or policy bulletin; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The EU outlines cooperation with the United States through the Trade and Technology Council.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "partnership.like_minded_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2021-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The EU outlines cooperation with the United States through the Trade and Technology Council.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:9a3319443452dc62",
+      "source_hash": "fb981e78",
+      "identity_hash": "8b4cfe3d83be0db9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://globaltradealert.org/state-act/47739-spain-introduction-of-the-real-ownership-concept-to-the-fdi-screening-mechanism/; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://globaltradealert.org/state-act/47739-spain-introduction-of-the-real-ownership-concept-to-the-fdi-screening-mechanism/",
+            "title": "Spain: Introduction of the \"real ownership\" concept to the FDI screening mechanism - Global Trade Alert",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: Global Trade Alert documents Spanish rules introducing beneficial-ownership concepts into inward-investment screening."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Spain: Introduction of the \"real ownership\" concept to the FDI screening mechanism",
+      "reader_what": "Global Trade Alert documents Spanish rules introducing beneficial-ownership concepts into inward-investment screening.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "Global Trade Alert documents Spanish rules introducing beneficial-ownership concepts into inward-investment screening. This result describes the specific recovered publication, not an inference from a search snippet. The captured source was thin, limiting inference.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about spain: introduction of the \"real ownership\" concept to the fdi screening mechanism?",
+        "main_finding": "Global Trade Alert documents Spanish rules introducing beneficial-ownership concepts into inward-investment screening.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "Global Trade Alert documents Spanish rules introducing beneficial-ownership concepts into inward-investment screening.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Global Trade Alert",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2020-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "Global Trade Alert documents Spanish rules introducing beneficial-ownership concepts into inward-investment screening.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:ea86e8adfe4f5c77",
+      "source_hash": "11ea0817",
+      "identity_hash": "35b221c69cfe93c4",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://globaltradealert.org/state-act/47477-slovenia-government-introduced-temporary-fdi-screening-in-response-to-covid-19-crisis/; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://globaltradealert.org/state-act/47477-slovenia-government-introduced-temporary-fdi-screening-in-response-to-covid-19-crisis/",
+            "title": "Slovenia: Government introduced temporary FDI screening in response to Covid-19 crisis - Global Trade Alert",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: Global Trade Alert documents Slovenia’s introduction of temporary foreign-investment screening during the pandemic."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Slovenia: Government introduced temporary FDI screening in response to Covid-19 crisis",
+      "reader_what": "Global Trade Alert documents Slovenia’s introduction of temporary foreign-investment screening during the pandemic.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "Global Trade Alert documents Slovenia’s introduction of temporary foreign-investment screening during the pandemic. This result describes the specific recovered publication, not an inference from a search snippet. The captured source was thin, limiting inference.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about slovenia: government introduced temporary fdi screening in response to covid-19 crisis?",
+        "main_finding": "Global Trade Alert documents Slovenia’s introduction of temporary foreign-investment screening during the pandemic.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "Global Trade Alert documents Slovenia’s introduction of temporary foreign-investment screening during the pandemic.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Global Trade Alert",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2020-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "Global Trade Alert documents Slovenia’s introduction of temporary foreign-investment screening during the pandemic.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:3b290d965b39abf8",
+      "source_hash": "3a550b6c",
+      "identity_hash": "8f162a2811eca711",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://globaltradealert.org/state-act/47616-france-government-adds-new-sectors-to-the-fdi-screening-mechanism-and-lowers-the-triggering-threshold/; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://globaltradealert.org/state-act/47616-france-government-adds-new-sectors-to-the-fdi-screening-mechanism-and-lowers-the-triggering-threshold/",
+            "title": "France: Government adds new sectors to the FDI screening mechanism and lowers the triggering threshold - Global Trade Alert",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: Global Trade Alert documents French expansion of screened sectors and a lower investment trigger threshold."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "France: Government adds new sectors to the FDI screening mechanism and lowers the triggering threshold",
+      "reader_what": "Global Trade Alert documents French expansion of screened sectors and a lower investment trigger threshold.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "Global Trade Alert documents French expansion of screened sectors and a lower investment trigger threshold. This result describes the specific recovered publication, not an inference from a search snippet. The captured source was thin, limiting inference.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about france: government adds new sectors to the fdi screening mechanism and lowers the triggering threshold?",
+        "main_finding": "Global Trade Alert documents French expansion of screened sectors and a lower investment trigger threshold.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "Global Trade Alert documents French expansion of screened sectors and a lower investment trigger threshold.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Global Trade Alert",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "announced",
+          "status_date": "2020-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "Global Trade Alert documents French expansion of screened sectors and a lower investment trigger threshold.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:2f1962d9ef0ac7bc",
+      "source_hash": "3ae214b3",
+      "identity_hash": "ff330310be559520",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://www.institutmontaigne.org/en/expressions/europeans-struggle-mitigate-5g-risks; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://www.institutmontaigne.org/en/expressions/europeans-struggle-mitigate-5g-risks",
+            "title": "Europeans Struggle to Mitigate 5G Risks",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: Analysis describes how European states have struggled to limit high-risk vendors in 5G networks."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Europeans Struggle to Mitigate 5G Risks",
+      "reader_what": "Analysis describes how European states have struggled to limit high-risk vendors in 5G networks.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "Analysis describes how European states have struggled to limit high-risk vendors in 5G networks. This result describes the specific recovered publication, not an inference from a search snippet.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about europeans struggle to mitigate 5g risks?",
+        "main_finding": "Analysis describes how European states have struggled to limit high-risk vendors in 5G networks.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "Analysis describes how European states have struggled to limit high-risk vendors in 5G networks.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "infrastructure.high_risk_vendor",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Institut Montaigne",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2020-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "Analysis describes how European states have struggled to limit high-risk vendors in 5G networks.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:4b34785fc6b55170",
+      "source_hash": "0337c9ab",
+      "identity_hash": "537a04f8d6cb107f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://globaltradealert.org/state-act/47699-austria-changes-to-fdi-screening-regime-introduced/; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://globaltradealert.org/state-act/47699-austria-changes-to-fdi-screening-regime-introduced/",
+            "title": "Austria: Changes to FDI screening regime introduced - Global Trade Alert",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: Global Trade Alert documents revisions to the Austrian foreign-investment screening regime."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Austria: Changes to FDI screening regime introduced",
+      "reader_what": "Global Trade Alert documents revisions to the Austrian foreign-investment screening regime.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "Global Trade Alert documents revisions to the Austrian foreign-investment screening regime. This result describes the specific recovered publication, not an inference from a search snippet. The captured source was thin, limiting inference.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about austria: changes to fdi screening regime introduced?",
+        "main_finding": "Global Trade Alert documents revisions to the Austrian foreign-investment screening regime.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "Global Trade Alert documents revisions to the Austrian foreign-investment screening regime.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Global Trade Alert",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2020-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "Global Trade Alert documents revisions to the Austrian foreign-investment screening regime.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:f6ad64e795f9b6b9",
+      "source_hash": "198f91d9",
+      "identity_hash": "33c8afb87097ffe0",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://rhg.com/wp-content/uploads/2014/09/American-Gas-to-the-Rescue.pdf; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_pdf_excerpt",
+            "url": "https://rhg.com/wp-content/uploads/2014/09/American-Gas-to-the-Rescue.pdf",
+            "title": "American Gas to the Rescue?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The article assesses whether US gas could reduce Europe’s supply vulnerabilities and dependence on Russia."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "American Gas to the Rescue?",
+      "reader_what": "The article assesses whether US gas could reduce Europe’s supply vulnerabilities and dependence on Russia.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The article assesses whether US gas could reduce Europe’s supply vulnerabilities and dependence on Russia. This result describes the specific recovered publication, not an inference from a search snippet. The source is a substantive PDF extract rather than a verified complete copy.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about american gas to the rescue?",
+        "main_finding": "The article assesses whether US gas could reduce Europe’s supply vulnerabilities and dependence on Russia.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The article assesses whether US gas could reduce Europe’s supply vulnerabilities and dependence on Russia.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.lng_imports",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Rhodium Group",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2020-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The article assesses whether US gas could reduce Europe’s supply vulnerabilities and dependence on Russia.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:1a1707d5a93d37b9",
+      "source_hash": "02b11e09",
+      "identity_hash": "173515a2e9b30778",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://www.institutmontaigne.org/en/expressions/huaweis-5g-supply-chain-taiwan-winning-twice; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://www.institutmontaigne.org/en/expressions/huaweis-5g-supply-chain-taiwan-winning-twice",
+            "title": "Huawei’s 5G Supply Chain: Taiwan Winning Twice?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The study investigates Huawei’s Taiwanese 5G suppliers and geostrategic exposure in European telecoms supply chains."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Huawei’s 5G Supply Chain: Taiwan Winning Twice?",
+      "reader_what": "The study investigates Huawei’s Taiwanese 5G suppliers and geostrategic exposure in European telecoms supply chains.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The study investigates Huawei’s Taiwanese 5G suppliers and geostrategic exposure in European telecoms supply chains. This result describes the specific recovered publication, not an inference from a search snippet.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about huawei’s 5g supply chain: taiwan winning twice?",
+        "main_finding": "The study investigates Huawei’s Taiwanese 5G suppliers and geostrategic exposure in European telecoms supply chains.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The study investigates Huawei’s Taiwanese 5G suppliers and geostrategic exposure in European telecoms supply chains.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "infrastructure.high_risk_vendor",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Institut Montaigne",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2019-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The study investigates Huawei’s Taiwanese 5G suppliers and geostrategic exposure in European telecoms supply chains.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:b784784579df82a8",
+      "source_hash": "ee72829d",
+      "identity_hash": "aa9a6de2c2fc65b8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://www.institutmontaigne.org/en/expressions/5g-europe-how-move-gear; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://www.institutmontaigne.org/en/expressions/5g-europe-how-move-gear",
+            "title": "5G in Europe: How to Move up a Gear?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The analysis proposes ways for Europe to accelerate 5G deployment while addressing investment and security obstacles."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "5G in Europe: How to Move up a Gear?",
+      "reader_what": "The analysis proposes ways for Europe to accelerate 5G deployment while addressing investment and security obstacles.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The analysis proposes ways for Europe to accelerate 5G deployment while addressing investment and security obstacles. This result describes the specific recovered publication, not an inference from a search snippet.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about 5g in europe: how to move up a gear?",
+        "main_finding": "The analysis proposes ways for Europe to accelerate 5G deployment while addressing investment and security obstacles.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The analysis proposes ways for Europe to accelerate 5G deployment while addressing investment and security obstacles.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "infrastructure.high_risk_vendor",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Institut Montaigne",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "proposes",
+          "direction": "unchanged",
+          "status": "proposed",
+          "status_date": "2019-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The analysis proposes ways for Europe to accelerate 5G deployment while addressing investment and security obstacles.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:a19d1c1bfd94f35f",
+      "source_hash": "ff45031c",
+      "identity_hash": "1db87b4466440e4f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://www.taylorfrancis.com/chapters/edit/10.4324/9781315626475-6/japanese-foreign-direct-investment-western-europe-saelens; first-party identity established from matching article/document content."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Routledge book catalog https://www.routledge.com/Japans-Response-to-Crisis-and-Change-in-the-World-Economy/Smith/p/book/9781138648166 lists chapter Japanese Foreign Direct Investment in Western Europe and confirms publisher."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://www.taylorfrancis.com/chapters/edit/10.4324/9781315626475-6/japanese-foreign-direct-investment-western-europe-saelens",
+            "title": "Japanese Foreign Direct Investment in Western Europe",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_catalog",
+            "url": "https://www.routledge.com/Japans-Response-to-Crisis-and-Change-in-the-World-Economy/Smith/p/book/9781138648166",
+            "title": "Japan’s Response to Crisis and Change in the World Economy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: The study analyses Japanese investment in Western Europe and the factors influencing cross-border capital flows."
+      },
+      "metadata_correction": {
+        "fields": {
+          "source": "Routledge",
+          "type": "book chapter"
+        },
+        "unset": [],
+        "reason": "DOI 10.4324/9781315626475-6 identifies chapter 6 of Routledge book Japan’s Response to Crisis and Change in the World Economy; Routledge catalog lists publication 24 October 2018."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Japanese Foreign Direct Investment in Western Europe",
+      "reader_what": "The study analyses Japanese investment in Western Europe and the factors influencing cross-border capital flows.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "The study analyses Japanese investment in Western Europe and the factors influencing cross-border capital flows. This result describes the specific recovered publication, not an inference from a search snippet. The captured source was thin, limiting inference.",
+      "deep_analysis": {
+        "work_kind": "academic research",
+        "research_question": "What does this work establish about japanese foreign direct investment in western europe?",
+        "main_finding": "The study analyses Japanese investment in Western Europe and the factors influencing cross-border capital flows.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "The study analyses Japanese investment in Western Europe and the factors influencing cross-border capital flows.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "fdi.inbound_flows",
+          "secondary_objects": [],
+          "actor": {
+            "name": "The World Economy",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2018-10-24",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "The study analyses Japanese investment in Western Europe and the factors influencing cross-border capital flows.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:85e48fc8b10a986b",
+      "source_hash": "6bb0e4eb",
+      "identity_hash": "51c2689f72039409",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://kluwerlawonline.com/journalarticle/European+Foreign+Affairs+Review/22.Special%20Issue/EERR2017021; first-party identity established from matching article/document content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://kluwerlawonline.com/journalarticle/European+Foreign+Affairs+Review/22.Special%20Issue/EERR2017021",
+            "title": "For the Sake of Market Access: Comparing EU and US Approaches to Liberalize Public Procurement in Brazil, India and China",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: Comparative research examines EU and US efforts to liberalise procurement markets in emerging economies."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "For the Sake of Market Access: Comparing EU and US Approaches to Liberalize Public Procurement in Brazil",
+      "reader_what": "Comparative research examines EU and US efforts to liberalise procurement markets in emerging economies.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "Comparative research examines EU and US efforts to liberalise procurement markets in emerging economies. This result describes the specific recovered publication, not an inference from a search snippet.",
+      "deep_analysis": {
+        "work_kind": "academic research",
+        "research_question": "What does this work establish about for the sake of market access: comparing eu and us approaches to liberalize public procurement in brazil?",
+        "main_finding": "Comparative research examines EU and US efforts to liberalise procurement markets in emerging economies.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "Comparative research examines EU and US efforts to liberalise procurement markets in emerging economies.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Foreign Affairs Review",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2017-08-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "Comparative research examines EU and US efforts to liberalise procurement markets in emerging economies.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:25932ae99de3ff25",
+      "source_hash": "7fa401d0",
+      "identity_hash": "494c343670ef227f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://econjournals.com/index.php/ijeep/article/view/3440; first-party identity established from matching article/document content."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Matched title and work identity on publisher/official first-party record https://dergipark.org.tr/en/pub/ijeeep/article/351150"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://econjournals.com/index.php/ijeep/article/view/3440",
+            "title": "The Energy Policies for a Sustainable Economic Growth in Turkey",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: Research describes Türkiye’s energy diversification and possible role as a transit link into Europe."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The Energy Policies for a Sustainable Economic Growth in Turkey",
+      "reader_what": "Research describes Türkiye’s energy diversification and possible role as a transit link into Europe.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "Research describes Türkiye’s energy diversification and possible role as a transit link into Europe. This result describes the specific recovered publication, not an inference from a search snippet. The captured source was thin, limiting inference.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about the energy policies for a sustainable economic growth in turkey?",
+        "main_finding": "Research describes Türkiye’s energy diversification and possible role as a transit link into Europe.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "Research describes Türkiye’s energy diversification and possible role as a transit link into Europe.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Energy Economics",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2017-01-17",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "Research describes Türkiye’s energy diversification and possible role as a transit link into Europe.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:06a17ab8fbb3d1ef",
+      "source_hash": "db02b2ca",
+      "identity_hash": "40583dbfdac4ae6a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package captures text retrieved at https://econjournals.com/index.php/ijeep/article/view/5649; first-party identity established from matching article/document content."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Matched title and work identity on publisher/official first-party record https://ideas.repec.org/a/eco/journ2/2017-06-7.html"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_captured_primary_web_text",
+            "url": "https://econjournals.com/index.php/ijeep/article/view/5649",
+            "title": "An Optimization Model of the European Natural Gas System",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified against the packaged source capture at the cited source route; publication-level identity is matched. This is a historical record; no claim of current new action is made."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Substantive European economic-security evidence: An optimisation model estimates European gas supply mixes under transmission, economic and policy constraints."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "An Optimization Model of the European Natural Gas System",
+      "reader_what": "An optimisation model estimates European gas supply mixes under transmission, economic and policy constraints.",
+      "reader_why": "The publication connects European strategic capabilities, exposure, controls or partnerships to policy choices.",
+      "reader_more": "An optimisation model estimates European gas supply mixes under transmission, economic and policy constraints. This result describes the specific recovered publication, not an inference from a search snippet. The captured source was thin, limiting inference.",
+      "deep_analysis": {
+        "work_kind": "policy analysis / report",
+        "research_question": "What does this work establish about an optimization model of the european natural gas system?",
+        "main_finding": "An optimisation model estimates European gas supply mixes under transmission, economic and policy constraints.",
+        "method_or_basis": "Research article, working paper, policy commentary or data analysis as presented by the publishing organisation; matching first-party document text is captured in package.",
+        "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+        "radar_relevance": "An optimisation model estimates European gas supply mixes under transmission, economic and policy constraints.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Energy Economics",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "announced",
+          "status_date": "2017-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The assessment is limited to the cited publication and its evidentiary basis; proposals or commentary are not proof of implemented outcomes.",
+          "text": "An optimisation model estimates European gas supply mixes under transmission, economic and policy constraints.",
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}
