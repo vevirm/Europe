@@ -6,27 +6,18 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1961** (Main **808** + Historical **1153**)
-- Automatic queue still needing V2 verification: **187** (Main **49** + Historical **138**)
-- Currently assigned to workers: **13** (Main **3** + Historical **10**)
+- Authoritative V2 verified: **1973** (Main **811** + Historical **1162**)
+- Automatic queue still needing V2 verification: **174** (Main **46** + Historical **128**)
+- Currently assigned to workers: **0** (Main **0** + Historical **0**)
 - Bounded access-recovery retries still eligible: **0**
-- Terminally dropped after failed scans: **106**
+- Terminally dropped after failed scans: **107**
 - Automatic queue pending and not yet assigned: **174**
 
 ## Worker lanes
 
 ### Worker A
 - Current package: `worker-a-1f84aa22eb9e`
-- Assigned unresolved records: **13**
-  1. `link:https://doi.org/10.2478/bjir-2026-0008` — Comparative review of breaches of public procurement principles in Albania and EU case law — recovery attempt 2/3
-  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=73c98062-c427-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Presidency Flash for the Working Party on Competitiveness and Growth (Internal Market ) on 8 October 2026 - Publications Office of the EU — recovery attempt 2/3
-  3. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=8aa406c4-c427-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — WORKING PARTY ON COMPETITIVENESS AND GROWTH (Internal Market) - Publications Office of the EU — recovery attempt 2/3
-  4. `historical:id:438e40b7e86568db` — Commission launches helpdesk to support EU SMEs comply with sanctions — recovery attempt 2/3
-  5. `historical:id:b32b509386eeca6f` — Quantifying the Partial and General Equilibrium Effects of Sanctions on Russia - Kiel Institute — recovery attempt 2/3
-  6. `historical:id:ef7269af576d592a` — Ukraine: EU agrees to extend the scope of sanctions on Russia and Belarus — recovery attempt 2/3
-  7. `historical:id:54f35faaa30b1d88` — EU condemns massacres and EC proposes sharper sanctions — recovery attempt 2/3
-  8. `historical:id:165138400b81a7eb` — UK’s Free Trade Agreements with Non-EU Countries: the Case of the Black Sea Region — recovery attempt 2/3
-  - … plus 5 more in the package manifest
+- Assigned unresolved records: **0**
 
 ### Worker B
 - Current package: `worker-b-7d21a8273902`
@@ -146,3 +137,4 @@ These records no longer consume automatic Deep Scan slots and are excluded from 
 - `historical:id:2053fa6d2df0ba0a` — **The EU–South Africa Strategic Partnership: Waning affection, persisting economic interests** — attempts: 3/3 — International Affairs — 2017-04-03 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year; recovered-work decision requires at least one substantive recovered source; metadata correction requires a substantive recovered source — https://doi.org/10.1080/10220461.2017.1334585
 - `historical:id:f941db7f07c32090` — **EC: Unified and extended migration rights in the areas of research, training, voluntary services and au pairing - Global Trade Alert** — attempts: 3/3 — Global Trade Alert — 2016-01-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year — https://globaltradealert.org/state-act/11724-ec-unified-and-extended-migration-rights-in-the-areas-of-research-training-voluntary-services-and-au-pairing/
 - `link:https://doi.org/10.1111/twec.70167` — **Recruitment by Exporters: Implications for Labour Demand Concentration and Labour Market Matching** — attempts: 3/3 — The World Economy — 2026-10-08 — Identity verified; substantive evidence remains unrecovered after available source searches. — https://doi.org/10.1111/twec.70167
+- `historical:id:4e6debd8d9d10619` — **EU compensates for tight defense, space budgets by promoting dual-use tech, begins foreign investment screening – Space Intel Report - CELIS Institute** — attempts: 3/3 — CELIS Institute — 2020-12-02 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: title_author_year — https://celis.institute/eu-compensates-for-tight-defense-space-budgets-by-promoting-dual-use-tech-begins-foreign-investment-screening-space-intel-report/
