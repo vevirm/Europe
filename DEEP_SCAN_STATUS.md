@@ -6,9 +6,9 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1933** (Main **800** + Historical **1133**)
-- Automatic queue still needing V2 verification: **215** (Main **57** + Historical **158**)
-- Currently assigned to workers: **41** (Main **11** + Historical **30**)
+- Authoritative V2 verified: **1961** (Main **808** + Historical **1153**)
+- Automatic queue still needing V2 verification: **187** (Main **49** + Historical **138**)
+- Currently assigned to workers: **13** (Main **3** + Historical **10**)
 - Bounded access-recovery retries still eligible: **0**
 - Terminally dropped after failed scans: **106**
 - Automatic queue pending and not yet assigned: **174**
@@ -16,26 +16,21 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-d1bd5f90ba01`
-- Assigned unresolved records: **36**
-  1. `link:https://doi.org/10.2478/bjir-2026-0008` — Comparative review of breaches of public procurement principles in Albania and EU case law
-  2. `link:https://doi.org/10.1080/17565529.2026.2657425` — Why is it necessary to implement the common but differentiated responsibilities principle to achieve global clean energy sustainability?
-  3. `link:https://doi.org/10.1016/j.technovation.2026.103600` — Auditing AI systems: Integrating ESG principles for sustainable and ethical AI deployment in the EU
-  4. `link:https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/the-new-geoeconomics-of-bretton-woods/` — The new geoeconomics of Bretton Woods
-  5. `link:https://doi.org/10.1186/s43093-026-00835-4` — Institutional dissonance and foreign divestment in Central and Eastern Europe: a hybrid econometric–machine learning analysis
-  6. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=73c98062-c427-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Presidency Flash for the Working Party on Competitiveness and Growth (Internal Market ) on 8 October 2026 - Publications Office of the EU
-  7. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=8aa406c4-c427-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — WORKING PARTY ON COMPETITIVENESS AND GROWTH (Internal Market) - Publications Office of the EU
-  8. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=5fe1897d-c450-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Industrial electrification and energy efficiency - Publications Office of the EU
-  - … plus 28 more in the package manifest
+- Current package: `worker-a-1f84aa22eb9e`
+- Assigned unresolved records: **13**
+  1. `link:https://doi.org/10.2478/bjir-2026-0008` — Comparative review of breaches of public procurement principles in Albania and EU case law — recovery attempt 2/3
+  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=73c98062-c427-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Presidency Flash for the Working Party on Competitiveness and Growth (Internal Market ) on 8 October 2026 - Publications Office of the EU — recovery attempt 2/3
+  3. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=8aa406c4-c427-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — WORKING PARTY ON COMPETITIVENESS AND GROWTH (Internal Market) - Publications Office of the EU — recovery attempt 2/3
+  4. `historical:id:438e40b7e86568db` — Commission launches helpdesk to support EU SMEs comply with sanctions — recovery attempt 2/3
+  5. `historical:id:b32b509386eeca6f` — Quantifying the Partial and General Equilibrium Effects of Sanctions on Russia - Kiel Institute — recovery attempt 2/3
+  6. `historical:id:ef7269af576d592a` — Ukraine: EU agrees to extend the scope of sanctions on Russia and Belarus — recovery attempt 2/3
+  7. `historical:id:54f35faaa30b1d88` — EU condemns massacres and EC proposes sharper sanctions — recovery attempt 2/3
+  8. `historical:id:165138400b81a7eb` — UK’s Free Trade Agreements with Non-EU Countries: the Case of the Black Sea Region — recovery attempt 2/3
+  - … plus 5 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-7d21a8273902`
-- Assigned unresolved records: **5**
-  1. `historical:id:f8c5f7b1fa0e402d` — EU-China FDI: Working towards more reciprocity in investment relations
-  2. `historical:id:9c74d644ad9c885a` — What Explains Austria’s Export Market Performance?
-  3. `historical:id:0ee45e31f96ca5bb` — Protection against protectionists: How FDI positions may mitigate transatlantic trade conflicts - Kiel Institute
-  4. `historical:id:927c6d5b596dfe1c` — BusinessEurope's key points for communication on export controls on dual-use items
-  5. `link:https://doi.org/10.1016/j.sftr.2026.102198` — Value chain position and intermediate-input technical efficiency in a small open economy: a multi-method input–output analysis of Slovenia
+- Assigned unresolved records: **0**
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
