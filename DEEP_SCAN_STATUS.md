@@ -7,26 +7,35 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **1933** (Main **800** + Historical **1133**)
-- Automatic queue still needing V2 verification: **177** (Main **49** + Historical **128**)
-- Currently assigned to workers: **5** (Main **3** + Historical **2**)
+- Automatic queue still needing V2 verification: **215** (Main **57** + Historical **158**)
+- Currently assigned to workers: **41** (Main **11** + Historical **30**)
 - Bounded access-recovery retries still eligible: **0**
 - Terminally dropped after failed scans: **106**
-- Automatic queue pending and not yet assigned: **172**
+- Automatic queue pending and not yet assigned: **174**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-bc32a2e1f6a1`
-- Assigned unresolved records: **5**
-  1. `link:https://doi.org/10.1080/09692290.2026.2739386` — The winding road toward a wholesale digital euro: geoeconomics and bureaucratic politics
-  2. `link:https://doi.org/10.1177/23210230261483357` — Digital Sovereignty and India: Rhetoric and Reality
-  3. `link:https://doi.org/10.1016/j.sftr.2026.102198` — Value chain position and intermediate-input technical efficiency in a small open economy: a multi-method input–output analysis of Slovenia
-  4. `historical:id:290fff22d7d2a3df` — Measuring the Security of External Energy Supply and Energy Exports Demand in Central Asia
-  5. `historical:id:a6bc51bf235de931` — The impact of changing energy patterns on EU competitiveness - Egmont Institute
+- Current package: `worker-a-d1bd5f90ba01`
+- Assigned unresolved records: **36**
+  1. `link:https://doi.org/10.2478/bjir-2026-0008` — Comparative review of breaches of public procurement principles in Albania and EU case law
+  2. `link:https://doi.org/10.1080/17565529.2026.2657425` — Why is it necessary to implement the common but differentiated responsibilities principle to achieve global clean energy sustainability?
+  3. `link:https://doi.org/10.1016/j.technovation.2026.103600` — Auditing AI systems: Integrating ESG principles for sustainable and ethical AI deployment in the EU
+  4. `link:https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/the-new-geoeconomics-of-bretton-woods/` — The new geoeconomics of Bretton Woods
+  5. `link:https://doi.org/10.1186/s43093-026-00835-4` — Institutional dissonance and foreign divestment in Central and Eastern Europe: a hybrid econometric–machine learning analysis
+  6. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=73c98062-c427-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Presidency Flash for the Working Party on Competitiveness and Growth (Internal Market ) on 8 October 2026 - Publications Office of the EU
+  7. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=8aa406c4-c427-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — WORKING PARTY ON COMPETITIVENESS AND GROWTH (Internal Market) - Publications Office of the EU
+  8. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=5fe1897d-c450-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Industrial electrification and energy efficiency - Publications Office of the EU
+  - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-4dc3c8347df3`
-- Assigned unresolved records: **0**
+- Current package: `worker-b-7d21a8273902`
+- Assigned unresolved records: **5**
+  1. `historical:id:f8c5f7b1fa0e402d` — EU-China FDI: Working towards more reciprocity in investment relations
+  2. `historical:id:9c74d644ad9c885a` — What Explains Austria’s Export Market Performance?
+  3. `historical:id:0ee45e31f96ca5bb` — Protection against protectionists: How FDI positions may mitigate transatlantic trade conflicts - Kiel Institute
+  4. `historical:id:927c6d5b596dfe1c` — BusinessEurope's key points for communication on export controls on dual-use items
+  5. `link:https://doi.org/10.1016/j.sftr.2026.102198` — Value chain position and intermediate-input technical efficiency in a small open economy: a multi-method input–output analysis of Slovenia
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
