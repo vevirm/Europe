@@ -1,0 +1,363 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-b-7d21a8273902",
+  "results": [
+    {
+      "record_key": "historical:id:f8c5f7b1fa0e402d",
+      "source_hash": "a1ba6bbd",
+      "identity_hash": "ebaba7b9c077e65f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied address https://merics.org/en/report/eu-china-fdi-working-towards-more-reciprocity-investment-relations; matched source text/provenance in package and institutional source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "institutional_full_text",
+            "url": "https://merics.org/en/report/eu-china-fdi-working-towards-more-reciprocity-investment-relations",
+            "title": "EU-China FDI: Working towards more reciprocity in investment relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantial matching first-party content inspected; outcome is limited to what the work demonstrates."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_GEOECONOMIC_INVESTMENT",
+        "reason": "MERICS/Rhodium substantively document asymmetrical EU–China investment access and policy levers to address it."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No established identical work in supplied duplicate candidates."
+      },
+      "reader_title": "EU-China FDI: Working towards more reciprocity in investment relations",
+      "reader_what": "The report finds stark differences between Chinese investment access in Europe and European investor access in China.",
+      "reader_why": "Asymmetric access constrains European firms while leaving EU acquisition markets comparatively open.",
+      "reader_more": "This 2018 MERICS–Rhodium report compares investment volumes, market access and regulatory restrictions. It estimates Chinese FDI flows into Europe and describes limitations facing European investors in China. It recommends pursuing reciprocal market access alongside European investment screening. Its findings describe the investment landscape then, not present-day flows.",
+      "deep_analysis": {
+        "work_kind": "research article or policy analysis",
+        "research_question": "How asymmetric were European and Chinese investment markets in 2017, and which policy responses could address this?",
+        "main_finding": "EU–China investment relations exhibited a large market-access asymmetry.",
+        "method_or_basis": "Comparison of FDI flows, investment barriers and policy regimes using investor and regulatory evidence.",
+        "qualification": "Historical 2017–2018 investment conditions; reform proposals were recommendations, not enacted results.",
+        "radar_relevance": "Direct EU-China investment-access relationship, strategic leverage and screening tools.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "MERICS and Rhodium Group",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "measures",
+          "direction": "unchanged",
+          "status": "delivered",
+          "status_date": "2018-04-17",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "CN"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "Historical 2017–2018 investment conditions; reform proposals were recommendations, not enacted results.",
+          "text": "EU–China investment relations exhibited a large market-access asymmetry.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:9c74d644ad9c885a",
+      "source_hash": "31de5647",
+      "identity_hash": "864098b03c4cddee",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied address https://wiiw.ac.at/what-explains-austria-s-export-market-performance-dlp-4610.pdf; matched source text/provenance in package and institutional source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "institutional_full_pdf",
+            "url": "https://wiiw.ac.at/what-explains-austria-s-export-market-performance-dlp-4610.pdf",
+            "title": "What Explains Austria’s Export Market Performance?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantial matching first-party content inspected; outcome is limited to what the work demonstrates."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_ORDINARY_EXPORT_PERFORMANCE",
+        "reason": "The paper models aggregate Austrian exports and competitiveness, without a central strategic dependency, coercive trade mechanism or economic-security instrument."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2018-09"
+        },
+        "unset": [],
+        "reason": "Primary document or publisher gives 2018-09, rather than scanner date 2018-01-01. "
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No established identical work in supplied duplicate candidates."
+      },
+      "reader_title": "What Explains Austria’s Export Market Performance?",
+      "reader_what": "Austria’s slower post-crisis goods exports largely reflected weaker demand in important trading-partner markets.",
+      "reader_why": "",
+      "reader_more": "The 2018 wiiw paper estimates a quarterly export model using 1997–2016 data. Partner demand and global demand explain Austrian export changes more strongly than relative labour-cost competitiveness. This is valuable trade-economics research but not a study of economic-security exposure or policy.",
+      "deep_analysis": {
+        "work_kind": "research article or policy analysis",
+        "research_question": "How much did costs, partner demand, investment demand and offshoring explain Austrian exports?",
+        "main_finding": "Trading-partner demand and global demand were important for Austria’s long-run goods exports.",
+        "method_or_basis": "Cointegration and error-correction modelling of quarterly Austrian export data for 1997–2016.",
+        "qualification": "Historical model estimates for aggregate export performance; not identification of a strategic economic-security vulnerability.",
+        "radar_relevance": "General competitiveness and macroeconomic demand, rather than central geoeconomic security.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:0ee45e31f96ca5bb",
+      "source_hash": "6146cb72",
+      "identity_hash": "1415aef3d4f574d7",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied address https://www.kielinstitut.de/publications/protection-against-protectionists-how-fdi-positions-may-mitigate-transatlantic-trade-conflicts-8623/; matched source text/provenance in package and institutional source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "institutional_article_page",
+            "url": "https://www.kielinstitut.de/publications/protection-against-protectionists-how-fdi-positions-may-mitigate-transatlantic-trade-conflicts-8623/",
+            "title": "Protection against protectionists: How FDI positions may mitigate transatlantic trade conflicts - Kiel Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantial matching first-party content inspected; outcome is limited to what the work demonstrates."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_GEOECONOMIC_TRADE",
+        "reason": "The Kiel analysis concerns transatlantic protectionism, EU trade surpluses and investment linkages as a trade-conflict mitigating channel."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No established identical work in supplied duplicate candidates."
+      },
+      "reader_title": "Protection against protectionists: How FDI positions may mitigate transatlantic trade conflicts - Kiel Institute",
+      "reader_what": "The analysis argues that two-way direct-investment positions can affect incentives for US–EU trade protectionism.",
+      "reader_why": "Cross-border ownership can create domestic stakeholders who bear costs from trade restrictions.",
+      "reader_more": "The Kiel Institute contribution examines the early 2017 prospect of US protectionist measures against European trade. It considers how bilateral foreign direct investment changes the interests surrounding trade conflict. This is a period-specific argument, not evidence that investment prevented future tariffs.",
+      "deep_analysis": {
+        "work_kind": "research article or policy analysis",
+        "research_question": "Could bilateral foreign direct investment temper a transatlantic tariff conflict?",
+        "main_finding": "Investment ties were proposed as a potentially moderating factor in US–EU trade conflict.",
+        "method_or_basis": "Policy-economic discussion of the transatlantic trade balance and bilateral foreign direct-investment positions.",
+        "qualification": "An analytical argument from 2017, not a demonstrated causal estimate of prevented protectionist measures.",
+        "radar_relevance": "Direct US–EU geoeconomic trade exposure and potential investment-related mitigation.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.tariffs_on_eu",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Kiel Institute for the World Economy",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_conditional",
+          "status": "delivered",
+          "status_date": "2017-03-13",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "US"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "An analytical argument from 2017, not a demonstrated causal estimate of prevented protectionist measures.",
+          "text": "Investment ties were proposed as a potentially moderating factor in US–EU trade conflict.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:927c6d5b596dfe1c",
+      "source_hash": "c6c3b573",
+      "identity_hash": "a40f374629c9ac98",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied address https://www.businesseurope.eu/wp-content/uploads/2025/02/2017-06-27_key_points_of_communication_on_export_controls-a71-1.pdf; matched source text/provenance in package and institutional source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "organisation_full_pdf",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2017-06-27_key_points_of_communication_on_export_controls-a71-1.pdf",
+            "title": "BusinessEurope's key points for communication on export controls on dual-use items",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantial matching first-party content inspected; outcome is limited to what the work demonstrates."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_EXPORT_CONTROL_TOOLBOX",
+        "reason": "The original BusinessEurope paper substantively evaluates proposed EU dual-use export-control regulation and its security-versus-openness trade-offs."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2017-06-27"
+        },
+        "unset": [],
+        "reason": "Primary document or publisher gives 2017-06-27, rather than scanner date 2017-01-01. "
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No established identical work in supplied duplicate candidates."
+      },
+      "reader_title": "BusinessEurope's key points for communication on export controls on dual-use items",
+      "reader_what": "BusinessEurope asks for clearer EU dual-use export controls and safeguards against excessive burdens on legitimate trade.",
+      "reader_why": "Scope, licensing and surveillance controls affect Europe’s ability to balance security with technology exports.",
+      "reader_more": "This 2017 position paper comments in detail on the proposed overhaul of EU dual-use export controls. It supports modernisation, narrowly framed control lists and workable authorisations while contesting aspects of human-rights catch-all controls. It is evidence of an industry stakeholder position, not independent proof that the feared competitiveness effects occurred.",
+      "deep_analysis": {
+        "work_kind": "research article or policy analysis",
+        "research_question": "Which EU dual-use export-control provisions did BusinessEurope advocate changing?",
+        "main_finding": "BusinessEurope sought narrower definitions, clearer licensing and less administratively burdensome export-control measures.",
+        "method_or_basis": "Detailed stakeholder comments on the draft EU dual-use export-control regulation.",
+        "qualification": "Advocacy by an interested business association; predicted costs and effects are not independently demonstrated.",
+        "radar_relevance": "Substantive EU export-controls toolbox and associated security/trade policy trade-offs.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "export_control.regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "BusinessEurope",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "becomes_conditional",
+          "status": "proposed",
+          "status_date": "2017-06-27",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Advocacy by an interested business association; predicted costs and effects are not independently demonstrated.",
+          "text": "BusinessEurope sought narrower definitions, clearer licensing and less administratively burdensome export-control measures.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.sftr.2026.102198",
+      "source_hash": "7cd16056",
+      "identity_hash": "433277a700c69abb",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied address https://doi.org/10.1016/j.sftr.2026.102198; matched source text/provenance in package and institutional source."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI identity checked against publisher metadata: https://doi.org/10.1016/j.sftr.2026.102198."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_primary_full_pdf",
+            "url": "https://doi.org/10.1016/j.sftr.2026.102198",
+            "title": "Value chain position and intermediate-input technical efficiency in a small open economy: a multi-method input–output analysis of Slovenia",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and substantial matching first-party content inspected; outcome is limited to what the work demonstrates."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_ORDINARY_PRODUCTIVITY_STUDY",
+        "reason": "Input–output technical efficiency and domestic value-chain positions in Slovenia are studied as economic performance, without a central European strategic-security channel."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No established identical work in supplied duplicate candidates."
+      },
+      "reader_title": "Value chain position and intermediate-input technical efficiency in a small open economy: a multi-method input–output analysi",
+      "reader_what": "An input–output study analyses Slovenia’s intermediate-input efficiency and sectoral positions in production chains.",
+      "reader_why": "",
+      "reader_more": "The article applies multiple input–output efficiency approaches to a small European economy. Its substantive focus is sectoral productivity and value-chain measurement rather than strategic supply dependence, coercion or cross-border economic-security tools. General relevance to industrial performance alone is insufficient.",
+      "deep_analysis": {
+        "work_kind": "research article or policy analysis",
+        "research_question": "How do value-chain position and intermediate-input technical efficiency vary among Slovenian industries?",
+        "main_finding": "The study reports differences in sectoral intermediate-input efficiency and positions within production chains.",
+        "method_or_basis": "Multi-method input–output analysis of Slovenian sectoral production structures.",
+        "qualification": "Sector-level efficiency evidence; no identified security-of-supply or European strategic dependency outcome.",
+        "radar_relevance": "Thematic adjacency to industrial performance is insufficient for Strand A admission.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    }
+  ]
+}
