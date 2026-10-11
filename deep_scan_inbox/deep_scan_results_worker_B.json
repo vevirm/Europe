@@ -1,0 +1,267 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-b-e060e7151f74",
+  "results": [
+    {
+      "record_key": "historical:id:42a00e681f2748bb",
+      "source_hash": "9b83a3aa",
+      "identity_hash": "43ca5b709069c731",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "recovered",
+            "note": "Examined supplied record URL https://www.ifo.de/en/media/57154/download; matched claimed title to publisher or supplied primary extract."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Matching primary text/publisher documentation examined: https://www.ifo.de/en/veranstaltungstyp/econpol-annual-conference"
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Publisher identity matched exact title: Europe’s Competitiveness and the Rise of China"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_primary",
+            "url": "https://www.ifo.de/en/veranstaltungstyp/econpol-annual-conference",
+            "title": "Europe’s Competitiveness and the Rise of China",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Compared named work and author/publisher context with supplied source material; verified primary text where available. This record is a conference event, not a substantive evidence-led publication."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECON_SECURITY",
+        "reason": "This record is a conference event, not a substantive evidence-led publication."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No authoritative identical-work duplicate established in this package."
+      },
+      "reader_title": "Europe’s Competitiveness and the Rise of China",
+      "reader_what": "ifo advertised an EconPol annual conference on European competitiveness and China in November 2019.",
+      "reader_why": "",
+      "reader_more": "ifo advertised an EconPol annual conference on European competitiveness and China in November 2019. This record is a conference event, not a substantive evidence-led publication.",
+      "deep_analysis": {
+        "work_kind": "research article or policy analysis",
+        "research_question": "What does this work establish concerning europe’s competitiveness and the rise of china?",
+        "main_finding": "ifo advertised an EconPol annual conference on European competitiveness and China in November 2019.",
+        "method_or_basis": "Recovered publisher/issuing-body account",
+        "qualification": "This record is a conference event, not a substantive evidence-led publication.",
+        "radar_relevance": "This record is a conference event, not a substantive evidence-led publication.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:ab5d206050daac12",
+      "source_hash": "65fcec07",
+      "identity_hash": "67b93b6b9859094f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "recovered",
+            "note": "Examined supplied record URL https://econjournals.com/index.php/ijeep/article/view/7093; matched claimed title to publisher or supplied primary extract."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Publisher identity matched exact title: Prospects for the Construction of the Poseidon Gas Pipeline as a Factor in Supplying the Needs of the Southern Europe Countries with Natural Gas"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_primary",
+            "url": "https://econjournals.com/index.php/ijeep/article/view/7093",
+            "title": "Prospects for the Construction of the Poseidon Gas Pipeline as a Factor in Supplying the Needs of the Southern Europe Countries with Natural Gas",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Compared named work and author/publisher context with supplied source material; verified primary text where available. The paper assesses prospects; it does not establish that the proposed pipeline was completed or supplied gas."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "A 2019 article evaluates the proposed Poseidon pipeline’s potential to diversify Southern European gas supplies."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No authoritative identical-work duplicate established in this package."
+      },
+      "reader_title": "Prospects for the Construction of the Poseidon Gas Pipeline as a Factor in Supplying the Needs of the",
+      "reader_what": "A 2019 article evaluates the proposed Poseidon pipeline’s potential to diversify Southern European gas supplies.",
+      "reader_why": "The study documents a material European strategic exposure or policy mechanism.",
+      "reader_more": "A 2019 article evaluates the proposed Poseidon pipeline’s potential to diversify Southern European gas supplies. The paper assesses prospects; it does not establish that the proposed pipeline was completed or supplied gas.",
+      "deep_analysis": {
+        "work_kind": "research article or policy analysis",
+        "research_question": "What does this work establish concerning prospects for the construction of the poseidon gas pipeline as a factor in supplying the needs of the southern europe countries with natural gas?",
+        "main_finding": "A 2019 article evaluates the proposed Poseidon pipeline’s potential to diversify Southern European gas supplies.",
+        "method_or_basis": "Recovered publisher/issuing-body account",
+        "qualification": "The paper assesses prospects; it does not establish that the proposed pipeline was completed or supplied gas.",
+        "radar_relevance": "Substantive European economic-security policy, exposure or critical infrastructure.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Energy Economics",
+            "class": "other"
+          },
+          "mechanism": "evaluates",
+          "direction": "unchanged",
+          "status": "delivered",
+          "status_date": "2018-12-01",
+          "scope": {
+            "level": "external",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The paper assesses prospects; it does not establish that the proposed pipeline was completed or supplied gas.",
+          "text": "A 2019 article evaluates the proposed Poseidon pipeline’s potential to diversify Southern European gas supplies.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:6cc707d7c7409f08",
+      "source_hash": "b52f2ee0",
+      "identity_hash": "d41a0f7585a8fce3",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Examined supplied record URL https://www.piie.com/publications/policy-briefs/capital-market-access-new-frontier-sanctions-debate; matched claimed title to publisher or supplied primary extract."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_primary",
+            "url": "https://www.piie.com/publications/policy-briefs/capital-market-access-new-frontier-sanctions-debate",
+            "title": "Capital-Market Access: New Frontier in the Sanctions Debate",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Compared named work and author/publisher context with supplied source material; verified primary text where available. The central policy instrument and target are American and Sudanese, with no substantive European economic-security scope."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECON_SECURITY",
+        "reason": "The central policy instrument and target are American and Sudanese, with no substantive European economic-security scope."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No authoritative identical-work duplicate established in this package."
+      },
+      "reader_title": "Capital-Market Access: New Frontier in the Sanctions Debate",
+      "reader_what": "A PIIE brief opposes proposed US capital-market sanctions aimed at third-country firms linked to Sudan.",
+      "reader_why": "",
+      "reader_more": "A PIIE brief opposes proposed US capital-market sanctions aimed at third-country firms linked to Sudan. The central policy instrument and target are American and Sudanese, with no substantive European economic-security scope.",
+      "deep_analysis": {
+        "work_kind": "research article or policy analysis",
+        "research_question": "What does this work establish concerning capital-market access: new frontier in the sanctions debate?",
+        "main_finding": "A PIIE brief opposes proposed US capital-market sanctions aimed at third-country firms linked to Sudan.",
+        "method_or_basis": "Substantive issuing-body or journal text",
+        "qualification": "The central policy instrument and target are American and Sudanese, with no substantive European economic-security scope.",
+        "radar_relevance": "The central policy instrument and target are American and Sudanese, with no substantive European economic-security scope.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:0af6f2bd05c4ff71",
+      "source_hash": "fafc334c",
+      "identity_hash": "578c163050d61d8e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Examined supplied record URL https://www.kielinstitut.de/fileadmin/Dateiverwaltung/IfW-Publications/fis-import/de8ea374-ecdf-4f47-a634-df4d35aae6a6-euroframe_report_2015.pdf; matched claimed title to publisher or supplied primary extract."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.kielinstitut.de/fileadmin/Dateiverwaltung/IfW-Publications/fis-import/de8ea374-ecdf-4f47-a634-df4d35aae6a6-euroframe_report_2015.pdf",
+            "title": "Euroframe report 2015: Economic assessment of the euro area - Kiel Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Compared named work and author/publisher context with supplied source material; verified primary text where available. Generic macroeconomic forecasting does not satisfy the economic-security subject requirement."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EU_ECON_SECURITY",
+        "reason": "Generic macroeconomic forecasting does not satisfy the economic-security subject requirement."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No authoritative identical-work duplicate established in this package."
+      },
+      "reader_title": "Euroframe report 2015: Economic assessment of the euro area - Kiel Institute",
+      "reader_what": "The 2015 EUROFRAME report forecasts euro-area growth, inflation and unemployment.",
+      "reader_why": "",
+      "reader_more": "The 2015 EUROFRAME report forecasts euro-area growth, inflation and unemployment. Generic macroeconomic forecasting does not satisfy the economic-security subject requirement.",
+      "deep_analysis": {
+        "work_kind": "policy report",
+        "research_question": "What does this work establish concerning euroframe report 2015: economic assessment of the euro area - kiel institute?",
+        "main_finding": "The 2015 EUROFRAME report forecasts euro-area growth, inflation and unemployment.",
+        "method_or_basis": "Substantive primary PDF excerpt",
+        "qualification": "Generic macroeconomic forecasting does not satisfy the economic-security subject requirement.",
+        "radar_relevance": "Generic macroeconomic forecasting does not satisfy the economic-security subject requirement.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    }
+  ]
+}
