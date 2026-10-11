@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-record-corrections-v1",
-  "updated_at": "2026-10-11T09:58:12Z",
+  "updated_at": "2026-10-11T10:15:42Z",
   "records": {
     "link:https://doi.org/10.1080/09662839.2026.2709844": {
       "fields": {
@@ -1808,6 +1808,36 @@
       ],
       "updated_at": "2026-10-10T10:00:43Z",
       "deep_scan_package_id": "worker-a-1f84aa22eb9e"
+    },
+    "historical:id:5c873cb80e5cabbb": {
+      "fields": {
+        "date": "2020"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "ifo project page identifies the substantive publication as 2020, whereas scanner assigned 2019 project start.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://www.ifo.de/en/project/2019-06-01/german-and-european-industrial-policy-and-rise-china"
+      ],
+      "updated_at": "2026-10-11T10:15:41Z",
+      "deep_scan_package_id": "worker-a-d40bdf1cb4bd"
+    },
+    "historical:id:ab5d206050daac12": {
+      "fields": {
+        "source": "International Journal of Energy Economics and Policy"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Journal landing page and DOI identify IJEEP, not the scanner-listed Energy Economics.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://econjournals.com/index.php/ijeep/article/view/7093"
+      ],
+      "updated_at": "2026-10-11T10:15:42Z",
+      "deep_scan_package_id": "worker-a-d40bdf1cb4bd"
     }
   }
 }

@@ -6,27 +6,18 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **2000** (Main **820** + Historical **1180**)
-- Automatic queue still needing V2 verification: **187** (Main **49** + Historical **138**)
-- Currently assigned to workers: **13** (Main **3** + Historical **10**)
+- Authoritative V2 verified: **2009** (Main **821** + Historical **1188**)
+- Automatic queue still needing V2 verification: **174** (Main **46** + Historical **128**)
+- Currently assigned to workers: **0** (Main **0** + Historical **0**)
 - Bounded access-recovery retries still eligible: **0**
-- Terminally dropped after failed scans: **107**
+- Terminally dropped after failed scans: **111**
 - Automatic queue pending and not yet assigned: **174**
 
 ## Worker lanes
 
 ### Worker A
 - Current package: `worker-a-d40bdf1cb4bd`
-- Assigned unresolved records: **13**
-  1. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=21357e5f-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) – Cyber posture - Presentation by France - Publications Office of the EU — recovery attempt 2/3
-  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=3ea81930-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Cyber posture - Presentation by Belgium - Publications Office of the EU — recovery attempt 2/3
-  3. `link:https://doi.org/10.1080/14631377.2026.2694758` — Effects of institutional quality and institutional distance on the export performance in transition economies: empirical evidence from Kosovo — recovery attempt 2/3
-  4. `historical:id:406d871647242ded` — Bridging Investors, Industry and Government: Germany’s Ministry of Defence in Investment Screening – A Conversation with the Head of FDI Screening at the German Federal MoD - CELIS Institute — recovery attempt 2/3
-  5. `historical:id:391952ee4c117159` — Balancing Investment Openness and National Security: FDI Screening in Israel and Insights for International Practice - CELIS Institute — recovery attempt 2/3
-  6. `historical:id:7fc476dbde06189e` — Alignment or misalignment? US and EU high-tech trade and sanctions policies toward China — recovery attempt 2/3
-  7. `historical:id:8e5aa1a3d6f985e3` — Belgium’s FDI Screening Mechanism: 17 Months of Navigating the Blackbox - CELIS Institute — recovery attempt 2/3
-  8. `historical:id:558dfe9a5d96264f` — How trade policy can best support European competitiveness - Discussion with MEPs — recovery attempt 2/3
-  - … plus 5 more in the package manifest
+- Assigned unresolved records: **0**
 
 ### Worker B
 - Current package: `worker-b-e060e7151f74`
@@ -147,3 +138,7 @@ These records no longer consume automatic Deep Scan slots and are excluded from 
 - `historical:id:f941db7f07c32090` — **EC: Unified and extended migration rights in the areas of research, training, voluntary services and au pairing - Global Trade Alert** — attempts: 3/3 — Global Trade Alert — 2016-01-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year — https://globaltradealert.org/state-act/11724-ec-unified-and-extended-migration-rights-in-the-areas-of-research-training-voluntary-services-and-au-pairing/
 - `link:https://doi.org/10.1111/twec.70167` — **Recruitment by Exporters: Implications for Labour Demand Concentration and Labour Market Matching** — attempts: 3/3 — The World Economy — 2026-10-08 — Identity verified; substantive evidence remains unrecovered after available source searches. — https://doi.org/10.1111/twec.70167
 - `historical:id:4e6debd8d9d10619` — **EU compensates for tight defense, space budgets by promoting dual-use tech, begins foreign investment screening – Space Intel Report - CELIS Institute** — attempts: 3/3 — CELIS Institute — 2020-12-02 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: title_author_year — https://celis.institute/eu-compensates-for-tight-defense-space-budgets-by-promoting-dual-use-tech-begins-foreign-investment-screening-space-intel-report/
+- `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=21357e5f-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — **Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) – Cyber posture - Presentation by France - Publications Office of the EU** — attempts: 3/3 — Publications Office of the EU — 2026-09-11 — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://op.europa.eu/o/opportal-service/download-handler?identifier=21357e5f-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=
+- `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=3ea81930-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — **Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Cyber posture - Presentation by Belgium - Publications Office of the EU** — attempts: 3/3 — Publications Office of the EU — 2026-09-11 — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://op.europa.eu/o/opportal-service/download-handler?identifier=3ea81930-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=
+- `historical:id:558dfe9a5d96264f` — **How trade policy can best support European competitiveness - Discussion with MEPs** — attempts: 3/3 — BusinessEurope — 2023-01-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,exact_title,title_author_year — https://www.businesseurope.eu/photo-gallery/how-trade-policy-can-best-support-european-competitiveness-discussion-with-meps/
+- `historical:id:42a00e681f2748bb` — **Europe’s Competitiveness and the Rise of China | ifo Institute | EconPol** — attempts: 3/3 — ifo Institute — 2019-01-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,exact_title,title_author_year — https://www.ifo.de/en/media/57154/download
