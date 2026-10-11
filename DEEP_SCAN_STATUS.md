@@ -6,9 +6,9 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **1973** (Main **811** + Historical **1162**)
-- Automatic queue still needing V2 verification: **214** (Main **58** + Historical **156**)
-- Currently assigned to workers: **40** (Main **12** + Historical **28**)
+- Authoritative V2 verified: **2000** (Main **820** + Historical **1180**)
+- Automatic queue still needing V2 verification: **187** (Main **49** + Historical **138**)
+- Currently assigned to workers: **13** (Main **3** + Historical **10**)
 - Bounded access-recovery retries still eligible: **0**
 - Terminally dropped after failed scans: **107**
 - Automatic queue pending and not yet assigned: **174**
@@ -16,25 +16,21 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-b25559f66de6`
-- Assigned unresolved records: **36**
-  1. `link:https://doi.org/10.1080/14782804.2026.2740486` — Poor but sovereign: economic insecurity, nostalgia, and geopolitical alignment in Slovakia
-  2. `link:https://doi.org/10.1016/j.marpol.2026.107311` — The EU challenge to make its ports more sustainable and competitive: The case of the Green Ports Project for the Port of Naples
-  3. `link:https://doi.org/10.1088/1748-9326/aeb1e2` — Nearly ninety percent of Indonesian coffee area is classified as deforestation-free under the European Union Deforestation Regulation (EUDR)
-  4. `link:https://doi.org/10.1186/s40163-026-00301-0` — The design-enforcement gap in diamond sanctions: a three-round modified Delphi study of enforceability
-  5. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=ce45196a-c379-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Regulation (EU) 2026/2269 of the European Parliament and of the Council of 7 October 2026 on temporary trade-liberalisation measures applicable to certain products originating in the Republic of Armenia - Publications Office of the EU
-  6. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=fe3ec28b-c328-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL ON TEMPORARY TRADE-LIBERALISATION MEASURES APPLICABLE TO CERTAIN PRODUCTS ORIGINATING IN THE REPUBLIC OF ARMENIA - Publications Office of the EU
-  7. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=21357e5f-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) – Cyber posture - Presentation by France - Publications Office of the EU
-  8. `link:https://doi.org/10.1016/j.igd.2026.100378` — Environmental policy and palm oil exports: Indonesia's competitiveness under the EUDR
-  - … plus 28 more in the package manifest
+- Current package: `worker-a-d40bdf1cb4bd`
+- Assigned unresolved records: **13**
+  1. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=21357e5f-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) – Cyber posture - Presentation by France - Publications Office of the EU — recovery attempt 2/3
+  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=3ea81930-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Cyber posture - Presentation by Belgium - Publications Office of the EU — recovery attempt 2/3
+  3. `link:https://doi.org/10.1080/14631377.2026.2694758` — Effects of institutional quality and institutional distance on the export performance in transition economies: empirical evidence from Kosovo — recovery attempt 2/3
+  4. `historical:id:406d871647242ded` — Bridging Investors, Industry and Government: Germany’s Ministry of Defence in Investment Screening – A Conversation with the Head of FDI Screening at the German Federal MoD - CELIS Institute — recovery attempt 2/3
+  5. `historical:id:391952ee4c117159` — Balancing Investment Openness and National Security: FDI Screening in Israel and Insights for International Practice - CELIS Institute — recovery attempt 2/3
+  6. `historical:id:7fc476dbde06189e` — Alignment or misalignment? US and EU high-tech trade and sanctions policies toward China — recovery attempt 2/3
+  7. `historical:id:8e5aa1a3d6f985e3` — Belgium’s FDI Screening Mechanism: 17 Months of Navigating the Blackbox - CELIS Institute — recovery attempt 2/3
+  8. `historical:id:558dfe9a5d96264f` — How trade policy can best support European competitiveness - Discussion with MEPs — recovery attempt 2/3
+  - … plus 5 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-e060e7151f74`
-- Assigned unresolved records: **4**
-  1. `historical:id:42a00e681f2748bb` — Europe’s Competitiveness and the Rise of China | ifo Institute | EconPol
-  2. `historical:id:ab5d206050daac12` — Prospects for the Construction of the Poseidon Gas Pipeline as a Factor in Supplying the Needs of the Southern Europe Countries with Natural Gas
-  3. `historical:id:6cc707d7c7409f08` — Capital-Market Access: New Frontier in the Sanctions Debate
-  4. `historical:id:0af6f2bd05c4ff71` — Euroframe report 2015: Economic assessment of the euro area - Kiel Institute
+- Assigned unresolved records: **0**
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
