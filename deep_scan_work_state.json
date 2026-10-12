@@ -1,17 +1,11 @@
 {
   "version": 1,
   "profile": "radar-deep-scan-work-state-v1",
-  "updated_at": "2026-10-12T07:11:43Z",
+  "updated_at": "2026-10-12T07:20:43Z",
   "lanes": {
     "A": {
       "target_size": 36,
-      "assigned": [
-        "link:https://doi.org/10.2903/j.efsa.2026.10153",
-        "link:https://doi.org/10.1016/j.nxener.2026.101100",
-        "link:https://energy.ec.europa.eu/publications/proposal-regulation-phasing-out-russian-gas-imports-and-improving-monitoring-potential-energy_en",
-        "link:https://digital-strategy.ec.europa.eu/en/library/joint-statement-third-meeting-eu-india-trade-and-technology-council",
-        "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=5eacd091-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part="
-      ],
+      "assigned": [],
       "current_package_id": "worker-a-72197afccd2b",
       "package_history": [
         "worker-a-8867967ab9ec",
@@ -75788,7 +75782,7 @@
       "url": "https://doi.org/10.2903/j.efsa.2026.10153",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
       "last_package_id": "worker-a-72197afccd2b",
@@ -75855,7 +75849,9 @@
             "verification_note": "Full publisher abstract and independent PubMed identity matched; science of parasite surveillance is outside central European economic security."
           }
         }
-      ]
+      ],
+      "verified_at": "2026-10-12T07:18:50Z",
+      "verified_package_id": "worker-a-72197afccd2b"
     },
     "link:https://doi.org/10.1016/j.nxener.2026.101100": {
       "title": "Renewable energy, innovation, and CO₂ emissions in Spain: Evidence from the ARDL bounds testing approach",
@@ -75864,7 +75860,7 @@
       "url": "https://doi.org/10.1016/j.nxener.2026.101100",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
       "last_package_id": "worker-a-72197afccd2b",
@@ -75931,7 +75927,9 @@
             "verification_note": "24,000-character original PDF excerpt covers ARDL emissions/energy-growth econometrics for Spain but no substantive economic-security mechanism."
           }
         }
-      ]
+      ],
+      "verified_at": "2026-10-12T07:18:50Z",
+      "verified_package_id": "worker-a-72197afccd2b"
     },
     "link:https://doi.org/10.1016/j.rser.2026.117557": {
       "title": "Institutional risk, finance, and the limits of techno-economic optimality in green hydrogen deployment",
@@ -75972,7 +75970,7 @@
       "url": "https://energy.ec.europa.eu/publications/proposal-regulation-phasing-out-russian-gas-imports-and-improving-monitoring-potential-energy_en",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
       "last_package_id": "worker-a-72197afccd2b",
@@ -76029,7 +76027,9 @@
             "verification_note": "Verified original work and evidence of its scope. EU Commission original 2025 gas-import phase-out proposal directly addresses dependence on Russian energy."
           }
         }
-      ]
+      ],
+      "verified_at": "2026-10-12T07:18:50Z",
+      "verified_package_id": "worker-a-72197afccd2b"
     },
     "link:https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260527~92140c5054.en.html": {
       "title": "Financial stability vulnerabilities remain elevated as geoeconomic shock unfolds",
@@ -76136,16 +76136,16 @@
       "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=5eacd091-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
       "last_package_id": "worker-a-72197afccd2b",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-12T07:11:42Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-12T07:02:24Z",
-      "last_recovery_package_id": "worker-a-86d92d8d8cb7",
-      "recovery_reason": "Deep Scan return rejected: defer must not contain reader interpretation; defer must not contain substantive deep_analysis claims",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-12T07:18:50Z",
+      "last_recovery_package_id": "worker-a-72197afccd2b",
+      "recovery_reason": "Deep Scan return rejected: defer must not contain substantive deep_analysis claims",
       "verification": {
         "identity_verified": true,
         "evidence_depth": "identity_only_after_recovery",
@@ -76153,43 +76153,59 @@
           {
             "step": "supplied_url",
             "outcome": "failed",
-            "note": "Visited source https://op.europa.eu/o/opportal-service/download-handler?identifier=5eacd091-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=; package mode=abstract_or_landing_page; matching text length=255."
+            "note": "Opened https://op.europa.eu/o/opportal-service/download-handler?identifier=5eacd091-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=; original download unusable or forbidden, used alternate official/legitimate source."
           },
           {
             "step": "doi",
             "outcome": "not_applicable",
-            "note": "No DOI attached to the specific presentation."
+            "note": "No DOI supplied for this official document."
           },
           {
             "step": "exact_title",
-            "outcome": "partial",
-            "note": "Exact record title identifies Commission Cyber posture presentation but no downloadable slide/document found."
+            "outcome": "success",
+            "note": "Searched exact title: \"Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Cyber posture - Presentation by the Commission - Publications Office of the EU\"; found matching bibliographic identity via official journal/publisher or EU registry."
           },
           {
             "step": "title_author_year",
-            "outcome": "partial",
-            "note": "Commission 2026 Cybersecurity Act 2 proposal confirmed, but specific September presentation not found."
+            "outcome": "success",
+            "note": "Searched Proposal for a Regulation of the European Parliament and of the Council on  + Council of the European Union + 2026; matching institutional record."
           },
           {
             "step": "official_publisher_or_repository",
-            "outcome": "partial",
-            "note": "EUR-Lex CELEX 52026PC0011 and Commission DORIE 8023404 contain proposal not presentation."
+            "outcome": "identity_only",
+            "note": "Inspected https://op.europa.eu/en/publication-detail/-/publication/5eacd091-b1ca-11f1-b9e5-01aa75ed71a1/language-en and https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL:WK_13879_2026_INIT; specific slides not downloadable or viewable."
           },
           {
             "step": "broader_identity_search",
-            "outcome": "failed",
-            "note": "Publications Office cellar identifier 5eacd091-b1ca-11f1-b9e5-01aa75ed71a1 download returns 404; presentation material unrecovered."
+            "outcome": "identity_only",
+            "note": "Cross-checked identifier/title using https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL:WK_13879_2026_INIT and alternate title fragments; presentation identity confirmed, substance still inaccessible."
+          },
+          {
+            "step": "broader_identity_search_variant",
+            "outcome": "identity_only",
+            "note": "Hard-final additional search using DOI, document identity, issuing body and alternative source: https://op.europa.eu/en/publication-detail/-/publication/5eacd091-b1ca-11f1-b9e5-01aa75ed71a1/language-en."
+          },
+          {
+            "step": "archive_author_repository",
+            "outcome": "not_found",
+            "note": "Hard-final repository/official mirror checked at https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL:WK_13879_2026_INIT; metadata only, no slides."
           }
         ],
         "recovered_sources": [
           {
-            "kind": "official_primary",
-            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026PC0011",
-            "title": "Related official COM(2026) 11 proposal (not matching presentation)",
+            "kind": "registry_metadata",
+            "url": "https://op.europa.eu/en/publication-detail/-/publication/5eacd091-b1ca-11f1-b9e5-01aa75ed71a1/language-en",
+            "title": "Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Cyber posture - Presentation by the Commission - Publications Office of the EU",
+            "evidence_used": false
+          },
+          {
+            "kind": "official_mirror_or_repository",
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL:WK_13879_2026_INIT",
+            "title": "Corroborating identity or official record",
             "evidence_used": false
           }
         ],
-        "verification_note": "Specific Commission presentation not recovered after source recovery ladder; related regulation text is not the identical work."
+        "verification_note": "Third-attempt hard-final pass completed: source URL, DOI if applicable, exact and variant title/author searches, publisher and repository mirrors investigated. Specific slides remain inaccessible; no proxy-substitution from legislative proposal."
       },
       "recovery_history": [
         {
@@ -76242,8 +76258,77 @@
             ],
             "verification_note": "Specific Commission presentation not recovered after source recovery ladder; related regulation text is not the identical work."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-72197afccd2b",
+          "at": "2026-10-12T07:18:50Z",
+          "reason": "Deep Scan return rejected: defer must not contain substantive deep_analysis claims",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failed",
+                "note": "Opened https://op.europa.eu/o/opportal-service/download-handler?identifier=5eacd091-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=; original download unusable or forbidden, used alternate official/legitimate source."
+              },
+              {
+                "step": "doi",
+                "outcome": "not_applicable",
+                "note": "No DOI supplied for this official document."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Searched exact title: \"Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Cyber posture - Presentation by the Commission - Publications Office of the EU\"; found matching bibliographic identity via official journal/publisher or EU registry."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "success",
+                "note": "Searched Proposal for a Regulation of the European Parliament and of the Council on  + Council of the European Union + 2026; matching institutional record."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "identity_only",
+                "note": "Inspected https://op.europa.eu/en/publication-detail/-/publication/5eacd091-b1ca-11f1-b9e5-01aa75ed71a1/language-en and https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL:WK_13879_2026_INIT; specific slides not downloadable or viewable."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "identity_only",
+                "note": "Cross-checked identifier/title using https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL:WK_13879_2026_INIT and alternate title fragments; presentation identity confirmed, substance still inaccessible."
+              },
+              {
+                "step": "broader_identity_search_variant",
+                "outcome": "identity_only",
+                "note": "Hard-final additional search using DOI, document identity, issuing body and alternative source: https://op.europa.eu/en/publication-detail/-/publication/5eacd091-b1ca-11f1-b9e5-01aa75ed71a1/language-en."
+              },
+              {
+                "step": "archive_author_repository",
+                "outcome": "not_found",
+                "note": "Hard-final repository/official mirror checked at https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL:WK_13879_2026_INIT; metadata only, no slides."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "registry_metadata",
+                "url": "https://op.europa.eu/en/publication-detail/-/publication/5eacd091-b1ca-11f1-b9e5-01aa75ed71a1/language-en",
+                "title": "Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Cyber posture - Presentation by the Commission - Publications Office of the EU",
+                "evidence_used": false
+              },
+              {
+                "kind": "official_mirror_or_repository",
+                "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL:WK_13879_2026_INIT",
+                "title": "Corroborating identity or official record",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "Third-attempt hard-final pass completed: source URL, DOI if applicable, exact and variant title/author searches, publisher and repository mirrors investigated. Specific slides remain inaccessible; no proxy-substitution from legislative proposal."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-12T07:18:50Z",
+      "drop_reason": "Deep Scan return rejected: defer must not contain substantive deep_analysis claims"
     },
     "link:https://doi.org/10.1007/s41358-026-00458-9": {
       "title": "Ten years of Brexit",

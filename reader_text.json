@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-10-12T07:02:24Z",
+  "generated_at": "2026-10-12T07:18:50Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -157411,8 +157411,331 @@
       "deep_scan_package_id": "worker-a-86d92d8d8cb7",
       "claims": [],
       "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.2903/j.efsa.2026.10153": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "55c58a27",
+      "identity_hash": "8cfa73913e15e152",
+      "reader_title": "EFSA assesses whether four countries meet Echinococcus surveillance rules.",
+      "reader_what": "This technical animal-health assessment checks sampling and diagnostic compliance; no economic-security mechanism is evaluated.",
+      "reader_more": "EFSA surveillance report concerns animal parasite control, not economic security.",
+      "deep_analysis": {
+        "work_kind": "scientific surveillance assessment",
+        "research_question": "Cross-country compliance of parasite surveillance",
+        "main_finding": "All four reporting countries met required surveillance criteria and found no positive samples.",
+        "method_or_basis": "Evaluation of surveillance submissions and detection strategies.",
+        "qualification": "No positive samples does not prove zero underlying prevalence.",
+        "radar_relevance": "Outside economic-security scope.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Opened https://doi.org/10.2903/j.efsa.2026.10153; original download unusable or forbidden, used alternate official/legitimate source."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Checked DOI https://doi.org/10.2903/j.efsa.2026.10153 against journal and scholarly index."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Searched exact title: \"Annual assessment of Echinococcus multilocularis surveillance reports submitted in 2026 in the context of Commission Delegated Regulation (EU) 2018/772\"; found matching bibliographic identity via official journal/publisher or EU registry."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched Annual assessment of Echinococcus multilocularis surveillance reports submi + European Food Safety Authority (EFSA); Alessia Rusinà;  + 2026; matching institutional record."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Inspected https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10153 and https://pmc.ncbi.nlm.nih.gov/articles/PMC13284746/; matching primary material supports decision."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Cross-checked identifier/title using https://pmc.ncbi.nlm.nih.gov/articles/PMC13284746/ and alternate title fragments; source match corroborated."
+          },
+          {
+            "step": "broader_identity_search_variant",
+            "outcome": "success",
+            "note": "Hard-final additional search using DOI, document identity, issuing body and alternative source: https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10153."
+          },
+          {
+            "step": "archive_author_repository",
+            "outcome": "success",
+            "note": "Hard-final repository/official mirror checked at https://pmc.ncbi.nlm.nih.gov/articles/PMC13284746/; matched record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_or_publisher_primary",
+            "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10153",
+            "title": "Annual assessment of Echinococcus multilocularis surveillance reports submitted in 2026 in the context of Commission Delegated Regulation (EU) 2018/772",
+            "evidence_used": true
+          },
+          {
+            "kind": "official_mirror_or_repository",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13284746/",
+            "title": "Corroborating identity or official record",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Third-attempt hard-final pass completed: source URL, DOI if applicable, exact and variant title/author searches, publisher and repository mirrors investigated. Primary substance identified and judged against Strand A routes."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "EFSA surveillance report concerns animal parasite control, not economic security."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Overlap across deliveries permitted; no canonical duplicate key indicated in this job."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-12T07:18:50Z",
+      "deep_scan_package_id": "worker-a-72197afccd2b",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1016/j.nxener.2026.101100": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "40c58777",
+      "identity_hash": "16041175d3cfcef5",
+      "reader_title": "Spain energy and emissions econometric study.",
+      "reader_what": "ARDL analysis of Spanish annual energy, growth, FDI, innovation and emissions data from 1990–2023.",
+      "reader_more": "Study models Spanish emissions, energy use, GDP, FDI and innovation, but does not substantively evaluate strategic dependencies, coercion or security of supply.",
+      "deep_analysis": {
+        "work_kind": "empirical econometric article",
+        "research_question": "Relationship among renewable energy, fossil fuels, innovation, FDI, growth and emissions in Spain",
+        "main_finding": "Models long- and short-run associations among these series; the economic-security mechanism is not the research object.",
+        "method_or_basis": "ARDL bounds testing, error correction and diagnostic checks.",
+        "qualification": "Time series associations must not be read as causal geopolitical effects.",
+        "radar_relevance": "General environmental economics rather than substantive economic security.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://doi.org/10.1016/j.nxener.2026.101100; original download unusable or forbidden, used alternate official/legitimate source."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Checked DOI https://doi.org/10.1016/j.nxener.2026.101100 against journal and scholarly index."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Searched exact title: \"Renewable energy, innovation, and CO₂ emissions in Spain: Evidence from the ARDL bounds testing approach\"; found matching bibliographic identity via official journal/publisher or EU registry."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched Renewable energy, innovation, and CO₂ emissions in Spain: Evidence from the + Ngoc Xuan Vu; Thi Thu Trang Nguyen; Xuan Hoa Pham; Thi  + 2026; matching institutional record."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Inspected https://doi.org/10.1016/j.nxener.2026.101100 and https://content.openalex.org/works/W7221143742.pdf; matching primary material supports decision."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Cross-checked identifier/title using https://content.openalex.org/works/W7221143742.pdf and alternate title fragments; source match corroborated."
+          },
+          {
+            "step": "broader_identity_search_variant",
+            "outcome": "success",
+            "note": "Hard-final additional search using DOI, document identity, issuing body and alternative source: https://doi.org/10.1016/j.nxener.2026.101100."
+          },
+          {
+            "step": "archive_author_repository",
+            "outcome": "success",
+            "note": "Hard-final repository/official mirror checked at https://content.openalex.org/works/W7221143742.pdf; matched record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_or_publisher_primary",
+            "url": "https://doi.org/10.1016/j.nxener.2026.101100",
+            "title": "Renewable energy, innovation, and CO₂ emissions in Spain: Evidence from the ARDL bounds testing approach",
+            "evidence_used": true
+          },
+          {
+            "kind": "official_mirror_or_repository",
+            "url": "https://content.openalex.org/works/W7221143742.pdf",
+            "title": "Corroborating identity or official record",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Third-attempt hard-final pass completed: source URL, DOI if applicable, exact and variant title/author searches, publisher and repository mirrors investigated. Primary substance identified and judged against Strand A routes."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "Study models Spanish emissions, energy use, GDP, FDI and innovation, but does not substantively evaluate strategic dependencies, coercion or security of supply."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Overlap across deliveries permitted; no canonical duplicate key indicated in this job."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-12T07:18:50Z",
+      "deep_scan_package_id": "worker-a-72197afccd2b",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://energy.ec.europa.eu/publications/proposal-regulation-phasing-out-russian-gas-imports-and-improving-monitoring-potential-energy_en": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "89c528c7",
+      "identity_hash": "5100b6b5c2f04244",
+      "reader_title": "Commission proposes EU rules to end Russian gas imports.",
+      "reader_what": "The 17 June 2025 legislative proposal addresses Russian gas imports and monitoring dependencies.",
+      "reader_why": "Direct EU energy security and coercive-supply dependence.",
+      "reader_more": "Commission primary proposal specifically regulates phased exit from Russian gas and monitoring EU energy dependence.",
+      "deep_analysis": {
+        "work_kind": "legislative proposal",
+        "research_question": "How to phase out Russian gas and monitor dependency risk",
+        "main_finding": "A legislative proposal set out import restrictions and monitoring requirements to limit exposure to Russian energy.",
+        "method_or_basis": "Official proposal and explanatory documents.",
+        "qualification": "This is a 2025 proposal; subsequent legislation entered into force in 2026, so do not describe proposal as the enacted law.",
+        "radar_relevance": "Direct EU energy security and coercive-supply dependence.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://energy.ec.europa.eu/publications/proposal-regulation-phasing-out-russian-gas-imports-and-improving-monitoring-potential-energy_en; journal primary or official publication retrieved."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI supplied for this official document."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Searched exact title: \"REPowerEU – phase out of Russian energy imports\"; found matching bibliographic identity via official journal/publisher or EU registry."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched REPowerEU – phase out of Russian energy imports + European Commission, Directorate-General for Energy + 2026; matching institutional record."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Inspected https://energy.ec.europa.eu/publications/proposal-regulation-phasing-out-russian-gas-imports-and-improving-monitoring-potential-energy_en and https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025PC0828; matching primary material supports decision."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Cross-checked identifier/title using https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025PC0828 and alternate title fragments; source match corroborated."
+          },
+          {
+            "step": "broader_identity_search_variant",
+            "outcome": "success",
+            "note": "Hard-final additional search using DOI, document identity, issuing body and alternative source: https://energy.ec.europa.eu/publications/proposal-regulation-phasing-out-russian-gas-imports-and-improving-monitoring-potential-energy_en."
+          },
+          {
+            "step": "archive_author_repository",
+            "outcome": "success",
+            "note": "Hard-final repository/official mirror checked at https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025PC0828; matched record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_or_publisher_primary",
+            "url": "https://energy.ec.europa.eu/publications/proposal-regulation-phasing-out-russian-gas-imports-and-improving-monitoring-potential-energy_en",
+            "title": "REPowerEU – phase out of Russian energy imports",
+            "evidence_used": true
+          },
+          {
+            "kind": "official_mirror_or_repository",
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025PC0828",
+            "title": "Corroborating identity or official record",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Third-attempt hard-final pass completed: source URL, DOI if applicable, exact and variant title/author searches, publisher and repository mirrors investigated. Primary substance identified and judged against Strand A routes."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Commission primary proposal specifically regulates phased exit from Russian gas and monitoring EU energy dependence."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Overlap across deliveries permitted; no canonical duplicate key indicated in this job."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-12T07:18:50Z",
+      "deep_scan_package_id": "worker-a-72197afccd2b",
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "restricts",
+          "direction": "contracts",
+          "status": "proposed",
+          "status_date": "2025-06-17",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "This is a 2025 proposal; subsequent legislation entered into force in 2026, so do not describe proposal as the enacted law.",
+          "text": "The 17 June 2025 legislative proposal addresses Russian gas imports and monitoring dependencies.",
+          "confidence": "high",
+          "record_key": "link:https://energy.ec.europa.eu/publications/proposal-regulation-phasing-out-russian-gas-imports-and-improving-monitoring-potential-energy_en",
+          "merit": 99,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:5100b6b5c2f04244:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-10-12T07:02:24Z"
+  "claims_updated_at": "2026-10-12T07:18:50Z"
 }

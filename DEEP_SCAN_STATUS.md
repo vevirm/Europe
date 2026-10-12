@@ -6,23 +6,18 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **2018** (Main **830** + Historical **1188**)
-- Automatic queue still needing V2 verification: **179** (Main **51** + Historical **128**)
-- Currently assigned to workers: **5** (Main **5** + Historical **0**)
+- Authoritative V2 verified: **2021** (Main **833** + Historical **1188**)
+- Automatic queue still needing V2 verification: **175** (Main **47** + Historical **128**)
+- Currently assigned to workers: **0** (Main **0** + Historical **0**)
 - Bounded access-recovery retries still eligible: **0**
-- Terminally dropped after failed scans: **111**
-- Automatic queue pending and not yet assigned: **174**
+- Terminally dropped after failed scans: **112**
+- Automatic queue pending and not yet assigned: **175**
 
 ## Worker lanes
 
 ### Worker A
 - Current package: `worker-a-72197afccd2b`
-- Assigned unresolved records: **5**
-  1. `link:https://doi.org/10.2903/j.efsa.2026.10153` — Annual assessment of Echinococcus multilocularis surveillance reports submitted in 2026 in the context of Commission Delegated Regulation (EU) 2018/772 — recovery attempt 2/3
-  2. `link:https://doi.org/10.1016/j.nxener.2026.101100` — Renewable energy, innovation, and CO₂ emissions in Spain: Evidence from the ARDL bounds testing approach — recovery attempt 2/3
-  3. `link:https://energy.ec.europa.eu/publications/proposal-regulation-phasing-out-russian-gas-imports-and-improving-monitoring-potential-energy_en` — REPowerEU – phase out of Russian energy imports — recovery attempt 2/3
-  4. `link:https://digital-strategy.ec.europa.eu/en/library/joint-statement-third-meeting-eu-india-trade-and-technology-council` — Joint statement on the third meeting of the EU-India Trade and Technology Council — recovery attempt 2/3
-  5. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=5eacd091-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Cyber posture - Presentation by the Commission - Publications Office of the EU — recovery attempt 2/3
+- Assigned unresolved records: **0**
 
 ### Worker B
 - Current package: `worker-b-e060e7151f74`
@@ -147,3 +142,4 @@ These records no longer consume automatic Deep Scan slots and are excluded from 
 - `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=3ea81930-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — **Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Cyber posture - Presentation by Belgium - Publications Office of the EU** — attempts: 3/3 — Publications Office of the EU — 2026-09-11 — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://op.europa.eu/o/opportal-service/download-handler?identifier=3ea81930-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=
 - `historical:id:558dfe9a5d96264f` — **How trade policy can best support European competitiveness - Discussion with MEPs** — attempts: 3/3 — BusinessEurope — 2023-01-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,exact_title,title_author_year — https://www.businesseurope.eu/photo-gallery/how-trade-policy-can-best-support-european-competitiveness-discussion-with-meps/
 - `historical:id:42a00e681f2748bb` — **Europe’s Competitiveness and the Rise of China | ifo Institute | EconPol** — attempts: 3/3 — ifo Institute — 2019-01-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,exact_title,title_author_year — https://www.ifo.de/en/media/57154/download
+- `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=5eacd091-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — **Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Cyber posture - Presentation by the Commission - Publications Office of the EU** — attempts: 3/3 — Publications Office of the EU — 2026-09-11 — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://op.europa.eu/o/opportal-service/download-handler?identifier=5eacd091-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=
