@@ -1,29 +1,19 @@
 {
   "version": 1,
   "profile": "radar-deep-scan-work-state-v1",
-  "updated_at": "2026-10-12T06:45:02Z",
+  "updated_at": "2026-10-12T07:03:40Z",
   "lanes": {
     "A": {
       "target_size": 36,
       "assigned": [
-        "link:https://doi.org/10.1017/err.2026.10104",
         "link:https://doi.org/10.2903/j.efsa.2026.10153",
         "link:https://doi.org/10.1016/j.nxener.2026.101100",
-        "link:https://doi.org/10.1016/j.rser.2026.117557",
-        "link:https://digital-strategy.ec.europa.eu/en/library/ai-office-publishes-frontier-ai-expert-findings-eu-competitiveness-sovereignty-and-security",
         "link:https://energy.ec.europa.eu/publications/proposal-regulation-phasing-out-russian-gas-imports-and-improving-monitoring-potential-energy_en",
-        "link:https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260527~92140c5054.en.html",
-        "link:https://www.ecb.europa.eu/press/financial-stability-publications/fsr/pdf/ecb.fsr202605~50566915a7.en.pdf",
         "link:https://digital-strategy.ec.europa.eu/en/library/joint-statement-third-meeting-eu-india-trade-and-technology-council",
-        "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=5eacd091-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
-        "link:https://doi.org/10.1007/s41358-026-00458-9",
-        "link:https://doi.org/10.48550/arxiv.2608.14568",
-        "link:https://celis.institute/screening_the_futurebuilding_a_smarter_european_economic_security_framework/#download-pdf",
-        "link:https://wiiw.ac.at/publications-7-all-all-all-10-year-desc-0-.html"
+        "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=5eacd091-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part="
       ],
-      "current_package_id": "worker-a-86d92d8d8cb7",
+      "current_package_id": "worker-a-72197afccd2b",
       "package_history": [
-        "worker-a-2ccf933cd725",
         "worker-a-8867967ab9ec",
         "worker-a-6d79099959fe",
         "worker-a-598e7d4d8baf",
@@ -62,7 +52,8 @@
         "worker-a-1f84aa22eb9e",
         "worker-a-b25559f66de6",
         "worker-a-d40bdf1cb4bd",
-        "worker-a-86d92d8d8cb7"
+        "worker-a-86d92d8d8cb7",
+        "worker-a-72197afccd2b"
       ]
     },
     "B": {
@@ -75781,12 +75772,14 @@
       "url": "https://doi.org/10.1017/err.2026.10104",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
       "last_package_id": "worker-a-86d92d8d8cb7",
       "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-12T06:45:01Z"
+      "last_scan_package_at": "2026-10-12T06:45:01Z",
+      "verified_at": "2026-10-12T07:02:23Z",
+      "verified_package_id": "worker-a-86d92d8d8cb7"
     },
     "link:https://doi.org/10.2903/j.efsa.2026.10153": {
       "title": "Annual assessment of Echinococcus multilocularis surveillance reports submitted in 2026 in the context of Commission Delegated Regulation (EU) 2018/772",
@@ -75798,9 +75791,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
-      "last_package_id": "worker-a-86d92d8d8cb7",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-12T06:45:01Z"
+      "last_package_id": "worker-a-72197afccd2b",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-12T07:03:39Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-12T07:02:23Z",
+      "last_recovery_package_id": "worker-a-86d92d8d8cb7",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,exact_title,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "partial",
+            "note": "Inspected supplied record https://doi.org/10.2903/j.efsa.2026.10153; original text in package stored_only"
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Identifier from record: https://doi.org/10.2903/j.efsa.2026.10153; publisher metadata verified"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_primary",
+            "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10153",
+            "title": "EFSA Journal, original 2026 surveillance scientific report",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Full publisher abstract and independent PubMed identity matched; science of parasite surveillance is outside central European economic security."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-86d92d8d8cb7",
+          "at": "2026-10-12T07:02:23Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,exact_title,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "partial",
+                "note": "Inspected supplied record https://doi.org/10.2903/j.efsa.2026.10153; original text in package stored_only"
+              },
+              {
+                "step": "doi",
+                "outcome": "success",
+                "note": "Identifier from record: https://doi.org/10.2903/j.efsa.2026.10153; publisher metadata verified"
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_primary",
+                "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10153",
+                "title": "EFSA Journal, original 2026 surveillance scientific report",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Full publisher abstract and independent PubMed identity matched; science of parasite surveillance is outside central European economic security."
+          }
+        }
+      ]
     },
     "link:https://doi.org/10.1016/j.nxener.2026.101100": {
       "title": "Renewable energy, innovation, and CO₂ emissions in Spain: Evidence from the ARDL bounds testing approach",
@@ -75812,9 +75867,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
-      "last_package_id": "worker-a-86d92d8d8cb7",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-12T06:45:01Z"
+      "last_package_id": "worker-a-72197afccd2b",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-12T07:03:39Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-12T07:02:23Z",
+      "last_recovery_package_id": "worker-a-86d92d8d8cb7",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "partial",
+            "note": "Inspected supplied record https://doi.org/10.1016/j.nxener.2026.101100; original text in package pdf_excerpt"
+          },
+          {
+            "step": "doi",
+            "outcome": "partial",
+            "note": "PDF excerpt matches provided DOI; external DOI resolution did not succeed"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_primary",
+            "url": "https://doi.org/10.1016/j.nxener.2026.101100",
+            "title": "Original journal PDF excerpt supplied in scan package",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "24,000-character original PDF excerpt covers ARDL emissions/energy-growth econometrics for Spain but no substantive economic-security mechanism."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-86d92d8d8cb7",
+          "at": "2026-10-12T07:02:23Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "partial",
+                "note": "Inspected supplied record https://doi.org/10.1016/j.nxener.2026.101100; original text in package pdf_excerpt"
+              },
+              {
+                "step": "doi",
+                "outcome": "partial",
+                "note": "PDF excerpt matches provided DOI; external DOI resolution did not succeed"
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_primary",
+                "url": "https://doi.org/10.1016/j.nxener.2026.101100",
+                "title": "Original journal PDF excerpt supplied in scan package",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "24,000-character original PDF excerpt covers ARDL emissions/energy-growth econometrics for Spain but no substantive economic-security mechanism."
+          }
+        }
+      ]
     },
     "link:https://doi.org/10.1016/j.rser.2026.117557": {
       "title": "Institutional risk, finance, and the limits of techno-economic optimality in green hydrogen deployment",
@@ -75823,12 +75940,14 @@
       "url": "https://doi.org/10.1016/j.rser.2026.117557",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
       "last_package_id": "worker-a-86d92d8d8cb7",
       "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-12T06:45:01Z"
+      "last_scan_package_at": "2026-10-12T06:45:01Z",
+      "verified_at": "2026-10-12T07:02:24Z",
+      "verified_package_id": "worker-a-86d92d8d8cb7"
     },
     "link:https://digital-strategy.ec.europa.eu/en/library/ai-office-publishes-frontier-ai-expert-findings-eu-competitiveness-sovereignty-and-security": {
       "title": "AI Office publishes frontier AI expert findings on EU competitiveness, sovereignty and security",
@@ -75837,12 +75956,14 @@
       "url": "https://digital-strategy.ec.europa.eu/en/library/ai-office-publishes-frontier-ai-expert-findings-eu-competitiveness-sovereignty-and-security",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
       "last_package_id": "worker-a-86d92d8d8cb7",
       "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-12T06:45:01Z"
+      "last_scan_package_at": "2026-10-12T06:45:01Z",
+      "verified_at": "2026-10-12T07:02:24Z",
+      "verified_package_id": "worker-a-86d92d8d8cb7"
     },
     "link:https://energy.ec.europa.eu/publications/proposal-regulation-phasing-out-russian-gas-imports-and-improving-monitoring-potential-energy_en": {
       "title": "REPowerEU – phase out of Russian energy imports",
@@ -75854,9 +75975,61 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
-      "last_package_id": "worker-a-86d92d8d8cb7",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-12T06:45:01Z"
+      "last_package_id": "worker-a-72197afccd2b",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-12T07:03:39Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-12T07:02:24Z",
+      "last_recovery_package_id": "worker-a-86d92d8d8cb7",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "partial",
+            "note": "Visited source https://energy.ec.europa.eu/publications/proposal-regulation-phasing-out-russian-gas-imports-and-improving-monitoring-potential-energy_en; package mode=stored_only; matching text length=0."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_primary",
+            "url": "https://energy.ec.europa.eu/publications/proposal-regulation-phasing-out-russian-gas-imports-and-improving-monitoring-potential-energy_en",
+            "title": "REPowerEU – phase out of Russian energy imports",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified original work and evidence of its scope. EU Commission original 2025 gas-import phase-out proposal directly addresses dependence on Russian energy."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-86d92d8d8cb7",
+          "at": "2026-10-12T07:02:24Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "partial",
+                "note": "Visited source https://energy.ec.europa.eu/publications/proposal-regulation-phasing-out-russian-gas-imports-and-improving-monitoring-potential-energy_en; package mode=stored_only; matching text length=0."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "official_primary",
+                "url": "https://energy.ec.europa.eu/publications/proposal-regulation-phasing-out-russian-gas-imports-and-improving-monitoring-potential-energy_en",
+                "title": "REPowerEU – phase out of Russian energy imports",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Verified original work and evidence of its scope. EU Commission original 2025 gas-import phase-out proposal directly addresses dependence on Russian energy."
+          }
+        }
+      ]
     },
     "link:https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260527~92140c5054.en.html": {
       "title": "Financial stability vulnerabilities remain elevated as geoeconomic shock unfolds",
@@ -75865,12 +76038,14 @@
       "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260527~92140c5054.en.html",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
       "last_package_id": "worker-a-86d92d8d8cb7",
       "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-12T06:45:01Z"
+      "last_scan_package_at": "2026-10-12T06:45:01Z",
+      "verified_at": "2026-10-12T07:02:24Z",
+      "verified_package_id": "worker-a-86d92d8d8cb7"
     },
     "link:https://www.ecb.europa.eu/press/financial-stability-publications/fsr/pdf/ecb.fsr202605~50566915a7.en.pdf": {
       "title": "Financial Stability Review, May 2026",
@@ -75879,12 +76054,14 @@
       "url": "https://www.ecb.europa.eu/press/financial-stability-publications/fsr/pdf/ecb.fsr202605~50566915a7.en.pdf",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
       "last_package_id": "worker-a-86d92d8d8cb7",
       "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-12T06:45:01Z"
+      "last_scan_package_at": "2026-10-12T06:45:01Z",
+      "verified_at": "2026-10-12T07:02:24Z",
+      "verified_package_id": "worker-a-86d92d8d8cb7"
     },
     "link:https://digital-strategy.ec.europa.eu/en/library/joint-statement-third-meeting-eu-india-trade-and-technology-council": {
       "title": "Joint statement on the third meeting of the EU-India Trade and Technology Council",
@@ -75896,9 +76073,61 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
-      "last_package_id": "worker-a-86d92d8d8cb7",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-12T06:45:01Z"
+      "last_package_id": "worker-a-72197afccd2b",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-12T07:03:39Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-12T07:02:24Z",
+      "last_recovery_package_id": "worker-a-86d92d8d8cb7",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Visited source https://digital-strategy.ec.europa.eu/en/library/joint-statement-third-meeting-eu-india-trade-and-technology-council; package mode=abstract_or_landing_page; matching text length=942."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_primary",
+            "url": "https://digital-strategy.ec.europa.eu/en/library/joint-statement-third-meeting-eu-india-trade-and-technology-council",
+            "title": "Joint statement on the third meeting of the EU-India Trade and Technology Council",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified original work and evidence of its scope. Official EU–India Council joint statement records concrete intergovernmental cooperation on strategic trade and technologies."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-86d92d8d8cb7",
+          "at": "2026-10-12T07:02:24Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "Visited source https://digital-strategy.ec.europa.eu/en/library/joint-statement-third-meeting-eu-india-trade-and-technology-council; package mode=abstract_or_landing_page; matching text length=942."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "official_primary",
+                "url": "https://digital-strategy.ec.europa.eu/en/library/joint-statement-third-meeting-eu-india-trade-and-technology-council",
+                "title": "Joint statement on the third meeting of the EU-India Trade and Technology Council",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Verified original work and evidence of its scope. Official EU–India Council joint statement records concrete intergovernmental cooperation on strategic trade and technologies."
+          }
+        }
+      ]
     },
     "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=5eacd091-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
       "title": "Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Cyber posture - Presentation by the Commission - Publications Office of the EU",
@@ -75910,9 +76139,111 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
-      "last_package_id": "worker-a-86d92d8d8cb7",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-12T06:45:01Z"
+      "last_package_id": "worker-a-72197afccd2b",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-12T07:03:39Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-12T07:02:24Z",
+      "last_recovery_package_id": "worker-a-86d92d8d8cb7",
+      "recovery_reason": "Deep Scan return rejected: defer must not contain reader interpretation; defer must not contain substantive deep_analysis claims",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Visited source https://op.europa.eu/o/opportal-service/download-handler?identifier=5eacd091-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=; package mode=abstract_or_landing_page; matching text length=255."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI attached to the specific presentation."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "partial",
+            "note": "Exact record title identifies Commission Cyber posture presentation but no downloadable slide/document found."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "partial",
+            "note": "Commission 2026 Cybersecurity Act 2 proposal confirmed, but specific September presentation not found."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "partial",
+            "note": "EUR-Lex CELEX 52026PC0011 and Commission DORIE 8023404 contain proposal not presentation."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "failed",
+            "note": "Publications Office cellar identifier 5eacd091-b1ca-11f1-b9e5-01aa75ed71a1 download returns 404; presentation material unrecovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_primary",
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026PC0011",
+            "title": "Related official COM(2026) 11 proposal (not matching presentation)",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Specific Commission presentation not recovered after source recovery ladder; related regulation text is not the identical work."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-86d92d8d8cb7",
+          "at": "2026-10-12T07:02:24Z",
+          "reason": "Deep Scan return rejected: defer must not contain reader interpretation; defer must not contain substantive deep_analysis claims",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failed",
+                "note": "Visited source https://op.europa.eu/o/opportal-service/download-handler?identifier=5eacd091-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=; package mode=abstract_or_landing_page; matching text length=255."
+              },
+              {
+                "step": "doi",
+                "outcome": "not_applicable",
+                "note": "No DOI attached to the specific presentation."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "partial",
+                "note": "Exact record title identifies Commission Cyber posture presentation but no downloadable slide/document found."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "partial",
+                "note": "Commission 2026 Cybersecurity Act 2 proposal confirmed, but specific September presentation not found."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "partial",
+                "note": "EUR-Lex CELEX 52026PC0011 and Commission DORIE 8023404 contain proposal not presentation."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "failed",
+                "note": "Publications Office cellar identifier 5eacd091-b1ca-11f1-b9e5-01aa75ed71a1 download returns 404; presentation material unrecovered."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "official_primary",
+                "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026PC0011",
+                "title": "Related official COM(2026) 11 proposal (not matching presentation)",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "Specific Commission presentation not recovered after source recovery ladder; related regulation text is not the identical work."
+          }
+        }
+      ]
     },
     "link:https://doi.org/10.1007/s41358-026-00458-9": {
       "title": "Ten years of Brexit",
@@ -75921,12 +76252,14 @@
       "url": "https://doi.org/10.1007/s41358-026-00458-9",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
       "last_package_id": "worker-a-86d92d8d8cb7",
       "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-12T06:45:01Z"
+      "last_scan_package_at": "2026-10-12T06:45:01Z",
+      "verified_at": "2026-10-12T07:02:24Z",
+      "verified_package_id": "worker-a-86d92d8d8cb7"
     },
     "link:https://doi.org/10.48550/arxiv.2608.14568": {
       "title": "Position: AI Governance Needs ISO-like Interoperability Protocols, Not Just Laws",
@@ -75935,12 +76268,14 @@
       "url": "https://doi.org/10.48550/arxiv.2608.14568",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
       "last_package_id": "worker-a-86d92d8d8cb7",
       "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-12T06:45:01Z"
+      "last_scan_package_at": "2026-10-12T06:45:01Z",
+      "verified_at": "2026-10-12T07:02:24Z",
+      "verified_package_id": "worker-a-86d92d8d8cb7"
     },
     "link:https://celis.institute/screening_the_futurebuilding_a_smarter_european_economic_security_framework/#download-pdf": {
       "title": "Screening the Future: Building a Smarter European Economic Security Framework - CELIS Institute",
@@ -75949,12 +76284,14 @@
       "url": "https://celis.institute/screening_the_futurebuilding_a_smarter_european_economic_security_framework/#download-pdf",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
       "last_package_id": "worker-a-86d92d8d8cb7",
       "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-12T06:45:01Z"
+      "last_scan_package_at": "2026-10-12T06:45:01Z",
+      "verified_at": "2026-10-12T07:02:24Z",
+      "verified_package_id": "worker-a-86d92d8d8cb7"
     },
     "link:https://wiiw.ac.at/publications-7-all-all-all-10-year-desc-0-.html": {
       "title": "wiiw Research Reports in German Language",
@@ -75963,12 +76300,14 @@
       "url": "https://wiiw.ac.at/publications-7-all-all-all-10-year-desc-0-.html",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-12T06:44:45Z",
       "last_package_id": "worker-a-86d92d8d8cb7",
       "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-12T06:45:01Z"
+      "last_scan_package_at": "2026-10-12T06:45:01Z",
+      "verified_at": "2026-10-12T07:02:24Z",
+      "verified_package_id": "worker-a-86d92d8d8cb7"
     }
   },
   "packages": {
@@ -82519,6 +82858,17 @@
         "link:https://doi.org/10.48550/arxiv.2608.14568",
         "link:https://celis.institute/screening_the_futurebuilding_a_smarter_european_economic_security_framework/#download-pdf",
         "link:https://wiiw.ac.at/publications-7-all-all-all-10-year-desc-0-.html"
+      ]
+    },
+    "worker-a-72197afccd2b": {
+      "lane": "A",
+      "created_at": "2026-10-12T07:03:39Z",
+      "record_keys": [
+        "link:https://doi.org/10.2903/j.efsa.2026.10153",
+        "link:https://doi.org/10.1016/j.nxener.2026.101100",
+        "link:https://energy.ec.europa.eu/publications/proposal-regulation-phasing-out-russian-gas-imports-and-improving-monitoring-potential-energy_en",
+        "link:https://digital-strategy.ec.europa.eu/en/library/joint-statement-third-meeting-eu-india-trade-and-technology-council",
+        "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=5eacd091-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part="
       ]
     }
   }
