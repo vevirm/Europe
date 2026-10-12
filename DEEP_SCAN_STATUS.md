@@ -7,8 +7,8 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **2009** (Main **821** + Historical **1188**)
-- Automatic queue still needing V2 verification: **174** (Main **46** + Historical **128**)
-- Currently assigned to workers: **0** (Main **0** + Historical **0**)
+- Automatic queue still needing V2 verification: **188** (Main **60** + Historical **128**)
+- Currently assigned to workers: **14** (Main **14** + Historical **0**)
 - Bounded access-recovery retries still eligible: **0**
 - Terminally dropped after failed scans: **111**
 - Automatic queue pending and not yet assigned: **174**
@@ -16,8 +16,17 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-d40bdf1cb4bd`
-- Assigned unresolved records: **0**
+- Current package: `worker-a-86d92d8d8cb7`
+- Assigned unresolved records: **14**
+  1. `link:https://doi.org/10.1017/err.2026.10104` — Legal Strategies to Prevent the Lifting of Asset Freezes: Towards the Immobilisation of Russian Private Wealth in the EU?
+  2. `link:https://doi.org/10.2903/j.efsa.2026.10153` — Annual assessment of Echinococcus multilocularis surveillance reports submitted in 2026 in the context of Commission Delegated Regulation (EU) 2018/772
+  3. `link:https://doi.org/10.1016/j.nxener.2026.101100` — Renewable energy, innovation, and CO₂ emissions in Spain: Evidence from the ARDL bounds testing approach
+  4. `link:https://doi.org/10.1016/j.rser.2026.117557` — Institutional risk, finance, and the limits of techno-economic optimality in green hydrogen deployment
+  5. `link:https://digital-strategy.ec.europa.eu/en/library/ai-office-publishes-frontier-ai-expert-findings-eu-competitiveness-sovereignty-and-security` — AI Office publishes frontier AI expert findings on EU competitiveness, sovereignty and security
+  6. `link:https://energy.ec.europa.eu/publications/proposal-regulation-phasing-out-russian-gas-imports-and-improving-monitoring-potential-energy_en` — REPowerEU – phase out of Russian energy imports
+  7. `link:https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260527~92140c5054.en.html` — Financial stability vulnerabilities remain elevated as geoeconomic shock unfolds
+  8. `link:https://www.ecb.europa.eu/press/financial-stability-publications/fsr/pdf/ecb.fsr202605~50566915a7.en.pdf` — Financial Stability Review, May 2026
+  - … plus 6 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-e060e7151f74`
