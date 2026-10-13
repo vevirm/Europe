@@ -6,9 +6,9 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **2021** (Main **833** + Historical **1188**)
-- Automatic queue still needing V2 verification: **197** (Main **53** + Historical **144**)
-- Currently assigned to workers: **22** (Main **6** + Historical **16**)
+- Authoritative V2 verified: **2040** (Main **839** + Historical **1201**)
+- Automatic queue still needing V2 verification: **178** (Main **47** + Historical **131**)
+- Currently assigned to workers: **3** (Main **0** + Historical **3**)
 - Bounded access-recovery retries still eligible: **0**
 - Terminally dropped after failed scans: **112**
 - Automatic queue pending and not yet assigned: **175**
@@ -16,17 +16,11 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-38e97d952959`
-- Assigned unresolved records: **22**
-  1. `link:https://www.cer.eu/sites/default/files/pb_IB_eu_russia_9.10.26.pdf` — Resist, constrain and change: A European strategy for relations with Russia
-  2. `link:https://www.ispionline.it/en/publication/economic-security-eu-under-pressure-248370` — Economic Security: EU Under Pressure | ISPI
-  3. `link:https://doi.org/10.1016/j.esr.2026.102369` — Electrification pathways for passenger cars: A comparative analysis of China and Europe
-  4. `link:https://globaltradealert.org/reports/Chinese-import-penetration-in-EU-markets-in-5-sensitive-sectors/` — Chinese Import Penetration in EU Markets in 5 Sensitive Sectors - Global Trade Alert
-  5. `link:https://doi.org/10.1007/s00168-026-01576-6` — Productivity and employment adjustments in regional economic resilience
-  6. `link:https://doi.org/10.1016/j.iref.2026.105968` — Digitalization, Trade-Embodied Carbon Transfers, and Heterogeneous Environmental Upgrading in Global Value Chains: An Input-Output Analysis in Europe
-  7. `historical:id:42eb422efba589fd` — What’s Net‐Zero? Strategic Green Technology Identification in the European Net‐Zero Industry Act
-  8. `historical:id:78c77e3d0db86698` — Linking geoeconomic and financial de-risking in European energy infrastructure
-  - … plus 14 more in the package manifest
+- Current package: `worker-a-ef20fbf61ec1`
+- Assigned unresolved records: **3**
+  1. `historical:id:b7c43a4111fd7dd6` — Overall Strategic Analysis of Clean Energy Technology in the European Union — recovery attempt 2/3
+  2. `historical:id:23e873dd520e76a2` — China outbound M&A report part five: looking to Europe – International Financial Law Review - CELIS Institute — recovery attempt 2/3
+  3. `historical:id:f2538324ff58deaa` — Biden Knows Europe, and Europe Knows Biden. That’s Not Enough. – Foreign Policy - CELIS Institute — recovery attempt 2/3
 
 ### Worker B
 - Current package: `worker-b-e060e7151f74`
