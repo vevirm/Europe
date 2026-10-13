@@ -1,15 +1,11 @@
 {
   "version": 1,
   "profile": "radar-deep-scan-work-state-v1",
-  "updated_at": "2026-10-13T08:19:36Z",
+  "updated_at": "2026-10-13T08:27:24Z",
   "lanes": {
     "A": {
       "target_size": 36,
-      "assigned": [
-        "historical:id:b7c43a4111fd7dd6",
-        "historical:id:23e873dd520e76a2",
-        "historical:id:f2538324ff58deaa"
-      ],
+      "assigned": [],
       "current_package_id": "worker-a-ef20fbf61ec1",
       "package_history": [
         "worker-a-598e7d4d8baf",
@@ -76533,46 +76529,57 @@
       "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC146873",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-13T07:49:40Z",
       "last_package_id": "worker-a-ef20fbf61ec1",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-13T08:19:36Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-13T08:04:16Z",
-      "last_recovery_package_id": "worker-a-38e97d952959",
-      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-13T08:25:30Z",
+      "last_recovery_package_id": "worker-a-ef20fbf61ec1",
+      "recovery_reason": "Deep Scan return rejected: unsafe metadata correction fields: doi",
       "verification": {
         "identity_verified": true,
-        "evidence_depth": "substantive_primary_after_recovery",
+        "evidence_depth": "full_text_or_substantive_primary",
         "retrieval_attempts": [
           {
             "step": "supplied_url",
             "outcome": "success",
-            "note": "Supplied URL: https://publications.jrc.ec.europa.eu/repository/handle/JRC146873; cached source material abstract_or_landing_page, 2124 characters."
+            "note": "https://publications.jrc.ec.europa.eu/repository/handle/JRC146873: official JRC record gives extensive substantive findings, report authors, 16 July 2026 date, report ID and DOI."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.2760/1513011 corroborated by EU Publications Office https://op.europa.eu/fi/publication-detail/-/publication/08dfa0cc-8186-11f1-bf5e-01aa75ed71a1/language-en."
           },
           {
             "step": "official_publisher_or_repository",
             "outcome": "success",
-            "note": "Matched publisher source: https://publications.jrc.ec.europa.eu/repository/handle/JRC146873"
+            "note": "https://setis.ec.europa.eu/publications-and-documents/clean-energy-technology-observatory/ceto-reports-2025_en lists matching report with a 3.58MB PDF; JRC first-party summary independently substantiates reported figures."
           }
         ],
         "recovered_sources": [
           {
-            "kind": "official_source_text",
+            "kind": "official_report_primary",
             "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC146873",
-            "title": "Overall Strategic Analysis of Clean Energy Technology in the European Union",
+            "title": "JRC146873 official report and substantive findings",
             "evidence_used": true
           },
           {
-            "kind": "publisher_or_original_source",
-            "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC146873",
-            "title": "Overall Strategic Analysis of Clean Energy Technology in the European Union",
+            "kind": "official_repository",
+            "url": "https://op.europa.eu/fi/publication-detail/-/publication/08dfa0cc-8186-11f1-bf5e-01aa75ed71a1/language-en",
+            "title": "EU Publications Office bibliographic record",
             "evidence_used": true
+          },
+          {
+            "kind": "official_repository",
+            "url": "https://setis.ec.europa.eu/publications-and-documents/clean-energy-technology-observatory/ceto-reports-2025_en",
+            "title": "SETIS listing of corresponding full PDF",
+            "evidence_used": false
           }
         ],
-        "verification_note": "Bibliographic work matched to primary text or original publisher. Kept interpretations within accessible evidence."
+        "verification_note": "Verified JRC146873, DOI 10.2760/1513011, bibliographic metadata and detailed first-party published summary. Distinguish July 2026 publication from 2024 underlying measurements; SETIS lists a downloadable PDF, but the summary and catalogue were the materials directly examined."
       },
       "recovery_history": [
         {
@@ -76611,8 +76618,58 @@
             ],
             "verification_note": "Bibliographic work matched to primary text or original publisher. Kept interpretations within accessible evidence."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-ef20fbf61ec1",
+          "at": "2026-10-13T08:25:30Z",
+          "reason": "Deep Scan return rejected: unsafe metadata correction fields: doi",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "success",
+                "note": "https://publications.jrc.ec.europa.eu/repository/handle/JRC146873: official JRC record gives extensive substantive findings, report authors, 16 July 2026 date, report ID and DOI."
+              },
+              {
+                "step": "doi",
+                "outcome": "success",
+                "note": "DOI 10.2760/1513011 corroborated by EU Publications Office https://op.europa.eu/fi/publication-detail/-/publication/08dfa0cc-8186-11f1-bf5e-01aa75ed71a1/language-en."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "https://setis.ec.europa.eu/publications-and-documents/clean-energy-technology-observatory/ceto-reports-2025_en lists matching report with a 3.58MB PDF; JRC first-party summary independently substantiates reported figures."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "official_report_primary",
+                "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC146873",
+                "title": "JRC146873 official report and substantive findings",
+                "evidence_used": true
+              },
+              {
+                "kind": "official_repository",
+                "url": "https://op.europa.eu/fi/publication-detail/-/publication/08dfa0cc-8186-11f1-bf5e-01aa75ed71a1/language-en",
+                "title": "EU Publications Office bibliographic record",
+                "evidence_used": true
+              },
+              {
+                "kind": "official_repository",
+                "url": "https://setis.ec.europa.eu/publications-and-documents/clean-energy-technology-observatory/ceto-reports-2025_en",
+                "title": "SETIS listing of corresponding full PDF",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "Verified JRC146873, DOI 10.2760/1513011, bibliographic metadata and detailed first-party published summary. Distinguish July 2026 publication from 2024 underlying measurements; SETIS lists a downloadable PDF, but the summary and catalogue were the materials directly examined."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-13T08:25:30Z",
+      "drop_reason": "Deep Scan return rejected: unsafe metadata correction fields: doi"
     },
     "historical:id:3633bbdae380317e": {
       "title": "Securing critical minerals supplies in the context of a mineral-poor country: reviewing South Korea’s domestic and international engagement",
@@ -76717,66 +76774,60 @@
       "url": "https://celis.institute/china-outbound-ma-report-part-five-looking-to-europe-international-financial-law-review-2/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-13T07:49:40Z",
       "last_package_id": "worker-a-ef20fbf61ec1",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-13T08:19:36Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-13T08:04:16Z",
-      "last_recovery_package_id": "worker-a-38e97d952959",
-      "recovery_reason": "Deep Scan return rejected: defer must not contain substantive deep_analysis claims",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-13T08:25:30Z",
+      "last_recovery_package_id": "worker-a-ef20fbf61ec1",
+      "recovery_reason": "Original article is verified but paywalled; the short standfirst cannot substantiate its methods, reasoning or results.",
       "verification": {
         "identity_verified": true,
         "evidence_depth": "identity_only_after_recovery",
         "retrieval_attempts": [
           {
             "step": "supplied_url",
-            "outcome": "blocked_or_no_substantive_text",
-            "note": "Supplied URL: https://celis.institute/china-outbound-ma-report-part-five-looking-to-europe-international-financial-law-review-2/; cached source material abstract_or_landing_page, 662 characters."
+            "outcome": "failed",
+            "note": "https://celis.institute/china-outbound-ma-report-part-five-looking-to-europe-international-financial-law-review-2/ returned inaccessible in browser; packaged mirror content contains title/disclaimer/navigation but no article body."
           },
           {
             "step": "doi",
             "outcome": "not_applicable",
-            "note": "The record has no DOI to resolve."
+            "note": "No DOI appears in CELIS mirror, IFLR publisher record, or supplied metadata."
           },
           {
             "step": "exact_title",
             "outcome": "success",
-            "note": "Searched exact title: \"China outbound M&A report part five: looking to Europe – International Financial Law Review - CELIS Institute\"; located IFLR publisher landing page."
+            "note": "Quoted title search identified original IFLR publisher record https://www.iflr.com/article/2a63733ixysbvclsrkr2c/china-outbound-m-a-report-part-five-looking-to-europe, Karry Lai, 29 April 2022, but body paywalled."
           },
           {
             "step": "title_author_year",
             "outcome": "success",
-            "note": "Searched title fragments and named source/year:  2024-08-05; publisher and title match established."
+            "note": "Search China outbound M&A report part five Karry Lai 2022 located original IFLR publisher listing, but only headline/standfirst accessible."
           },
           {
             "step": "official_publisher_or_repository",
-            "outcome": "paywalled",
-            "note": "IFLR original at https://www.iflr.com/article/2a63733ixysbvclsrkr2c/china-outbound-m-a-report-part-five-looking-to-europe displays only a brief teaser behind a subscriber restriction."
+            "outcome": "limited",
+            "note": "https://www.iflr.com/expert-analysis and https://www.iflr1000.com/expert-analysis list Karry Lai article dated 29 April 2022; no legitimate full version located."
           },
           {
             "step": "broader_identity_search",
-            "outcome": "success",
-            "note": "Publisher original corroborates Karry Lai and 29 April 2022 publication; no full text legally available."
+            "outcome": "limited",
+            "note": "Search related IFLR China outbound M&A report 2022 and part-five FDI screening Europe confirmed report series but not this part’s substantive detailed analysis."
           }
         ],
         "recovered_sources": [
           {
-            "kind": "official_source_text",
-            "url": "https://celis.institute/china-outbound-ma-report-part-five-looking-to-europe-international-financial-law-review-2/",
-            "title": "China outbound M&A report part five: looking to Europe – International Financial Law Review - CELIS Institute",
-            "evidence_used": false
-          },
-          {
-            "kind": "publisher_or_original_source",
+            "kind": "publisher_metadata",
             "url": "https://www.iflr.com/article/2a63733ixysbvclsrkr2c/china-outbound-m-a-report-part-five-looking-to-europe",
-            "title": "China outbound M&A report part five: looking to Europe – International Financial Law Review - CELIS Institute",
+            "title": "IFLR original title, byline, date and standfirst",
             "evidence_used": false
           }
         ],
-        "verification_note": "Identity confirmed from IFLR original, but paywalled text prevents substantive verification."
+        "verification_note": "Work identity verified (Karry Lai, IFLR, 29 April 2022) but full content is subscriber-only. Accessible standfirst is not sufficient substantive evidence for an authoritative admission decision."
       },
       "recovery_history": [
         {
@@ -76835,8 +76886,61 @@
             ],
             "verification_note": "Identity confirmed from IFLR original, but paywalled text prevents substantive verification."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-ef20fbf61ec1",
+          "at": "2026-10-13T08:25:30Z",
+          "reason": "Original article is verified but paywalled; the short standfirst cannot substantiate its methods, reasoning or results.",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failed",
+                "note": "https://celis.institute/china-outbound-ma-report-part-five-looking-to-europe-international-financial-law-review-2/ returned inaccessible in browser; packaged mirror content contains title/disclaimer/navigation but no article body."
+              },
+              {
+                "step": "doi",
+                "outcome": "not_applicable",
+                "note": "No DOI appears in CELIS mirror, IFLR publisher record, or supplied metadata."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Quoted title search identified original IFLR publisher record https://www.iflr.com/article/2a63733ixysbvclsrkr2c/china-outbound-m-a-report-part-five-looking-to-europe, Karry Lai, 29 April 2022, but body paywalled."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "success",
+                "note": "Search China outbound M&A report part five Karry Lai 2022 located original IFLR publisher listing, but only headline/standfirst accessible."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "limited",
+                "note": "https://www.iflr.com/expert-analysis and https://www.iflr1000.com/expert-analysis list Karry Lai article dated 29 April 2022; no legitimate full version located."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "limited",
+                "note": "Search related IFLR China outbound M&A report 2022 and part-five FDI screening Europe confirmed report series but not this part’s substantive detailed analysis."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_metadata",
+                "url": "https://www.iflr.com/article/2a63733ixysbvclsrkr2c/china-outbound-m-a-report-part-five-looking-to-europe",
+                "title": "IFLR original title, byline, date and standfirst",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "Work identity verified (Karry Lai, IFLR, 29 April 2022) but full content is subscriber-only. Accessible standfirst is not sufficient substantive evidence for an authoritative admission decision."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-13T08:25:30Z",
+      "drop_reason": "Original article is verified but paywalled; the short standfirst cannot substantiate its methods, reasoning or results."
     },
     "historical:id:9de3edc5ab3b2cf7": {
       "title": "CFIS 24: Paris Insights – Background Paper on Foreign Subsidies Regulation - CELIS Institute",
@@ -76893,46 +76997,45 @@
       "url": "https://celis.institute/biden-knows-europe-and-europe-knows-biden-thats-not-enough-foreign-policy/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-13T07:49:40Z",
       "last_package_id": "worker-a-ef20fbf61ec1",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-13T08:19:36Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-13T08:04:16Z",
-      "last_recovery_package_id": "worker-a-38e97d952959",
-      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-13T08:25:30Z",
+      "last_recovery_package_id": "worker-a-ef20fbf61ec1",
+      "recovery_reason": "Deep Scan return rejected: unsafe metadata correction fields: url",
       "verification": {
         "identity_verified": true,
-        "evidence_depth": "substantive_primary_after_recovery",
+        "evidence_depth": "full_text_primary",
         "retrieval_attempts": [
           {
             "step": "supplied_url",
-            "outcome": "blocked_or_no_substantive_text",
-            "note": "Supplied URL: https://celis.institute/biden-knows-europe-and-europe-knows-biden-thats-not-enough-foreign-policy/; cached source material abstract_or_landing_page, 638 characters."
+            "outcome": "failed",
+            "note": "https://celis.institute/biden-knows-europe-and-europe-knows-biden-thats-not-enough-foreign-policy/ inaccessible to browsing; supplied mirror text is a title and boilerplate only."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Quoted-title search located complete original article at https://foreignpolicy.com/2020/11/19/biden-knows-europe-and-europe-knows-biden-thats-not-enough/, authors Fried and Haddad, published 19 November 2020."
           },
           {
             "step": "official_publisher_or_repository",
             "outcome": "success",
-            "note": "Matched publisher source: https://foreignpolicy.com/2020/11/19/biden-knows-europe-and-europe-knows-biden-thats-not-enough/"
+            "note": "Foreign Policy publisher directly makes the matching full opinion piece accessible, with bylines and original timestamp."
           }
         ],
         "recovered_sources": [
           {
-            "kind": "official_source_text",
-            "url": "https://celis.institute/biden-knows-europe-and-europe-knows-biden-thats-not-enough-foreign-policy/",
-            "title": "Biden Knows Europe, and Europe Knows Biden. That’s Not Enough. – Foreign Policy - CELIS Institute",
-            "evidence_used": true
-          },
-          {
-            "kind": "publisher_or_original_source",
+            "kind": "publisher_full_text",
             "url": "https://foreignpolicy.com/2020/11/19/biden-knows-europe-and-europe-knows-biden-thats-not-enough/",
-            "title": "Biden Knows Europe, and Europe Knows Biden. That’s Not Enough. – Foreign Policy - CELIS Institute",
+            "title": "Biden Knows Europe, and Europe Knows Biden. That’s Not Enough.",
             "evidence_used": true
           }
         ],
-        "verification_note": "Bibliographic work matched to primary text or original publisher. Kept interpretations within accessible evidence."
+        "verification_note": "Full original Foreign Policy commentary recovered. It calls for renewed transatlantic partnership, NATO/EU defence cooperation, digital regulation and financial transparency, but is an advocacy essay rather than an evidence-led analysis of European economic-security mechanisms."
       },
       "recovery_history": [
         {
@@ -76971,8 +77074,46 @@
             ],
             "verification_note": "Bibliographic work matched to primary text or original publisher. Kept interpretations within accessible evidence."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-ef20fbf61ec1",
+          "at": "2026-10-13T08:25:30Z",
+          "reason": "Deep Scan return rejected: unsafe metadata correction fields: url",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failed",
+                "note": "https://celis.institute/biden-knows-europe-and-europe-knows-biden-thats-not-enough-foreign-policy/ inaccessible to browsing; supplied mirror text is a title and boilerplate only."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Quoted-title search located complete original article at https://foreignpolicy.com/2020/11/19/biden-knows-europe-and-europe-knows-biden-thats-not-enough/, authors Fried and Haddad, published 19 November 2020."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "success",
+                "note": "Foreign Policy publisher directly makes the matching full opinion piece accessible, with bylines and original timestamp."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_full_text",
+                "url": "https://foreignpolicy.com/2020/11/19/biden-knows-europe-and-europe-knows-biden-thats-not-enough/",
+                "title": "Biden Knows Europe, and Europe Knows Biden. That’s Not Enough.",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Full original Foreign Policy commentary recovered. It calls for renewed transatlantic partnership, NATO/EU defence cooperation, digital regulation and financial transparency, but is an advocacy essay rather than an evidence-led analysis of European economic-security mechanisms."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-13T08:25:30Z",
+      "drop_reason": "Deep Scan return rejected: unsafe metadata correction fields: url"
     },
     "historical:id:45e55e89a040cd70": {
       "title": "An effective and efficient dual-use export controls regulation",

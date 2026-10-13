@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-admission-v1",
-  "updated_at": "2026-10-13T08:04:16Z",
+  "updated_at": "2026-10-13T08:25:30Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "decision": "keep",
@@ -25014,6 +25014,42 @@
       "deep_scan_package_id": "worker-a-38e97d952959",
       "verification_note": "Bibliographic work matched to primary text or original publisher. Kept interpretations within accessible evidence.",
       "duplicate_of": ""
+    },
+    "historical:id:b7c43a4111fd7dd6": {
+      "decision": "drop_unverifiable",
+      "target_strand": "",
+      "reason_code": "DEEP_SCAN_FAILED_3X",
+      "reason": "Three Deep Scan attempts for this current record identity failed acceptance. The record is terminally dropped from automatic scanning and active reasoning to prevent an infinite retry loop.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "updated_at": "2026-10-13T08:25:30Z",
+      "deep_scan_package_id": "worker-a-ef20fbf61ec1",
+      "verification_note": "Verified JRC146873, DOI 10.2760/1513011, bibliographic metadata and detailed first-party published summary. Distinguish July 2026 publication from 2024 underlying measurements; SETIS lists a downloadable PDF, but the summary and catalogue were the materials directly examined.",
+      "recovery_attempts": 3
+    },
+    "historical:id:23e873dd520e76a2": {
+      "decision": "drop_unverifiable",
+      "target_strand": "",
+      "reason_code": "EVIDENCE_ACCESS_FAILED_3X",
+      "reason": "Substantive evidence remained inaccessible after three validated Deep Scan recovery passes. The record is terminally dropped from automatic scanning and active reasoning to prevent repeated retry loops.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "updated_at": "2026-10-13T08:25:30Z",
+      "deep_scan_package_id": "worker-a-ef20fbf61ec1",
+      "verification_note": "Work identity verified (Karry Lai, IFLR, 29 April 2022) but full content is subscriber-only. Accessible standfirst is not sufficient substantive evidence for an authoritative admission decision.",
+      "recovery_attempts": 3
+    },
+    "historical:id:f2538324ff58deaa": {
+      "decision": "drop_unverifiable",
+      "target_strand": "",
+      "reason_code": "DEEP_SCAN_FAILED_3X",
+      "reason": "Three Deep Scan attempts for this current record identity failed acceptance. The record is terminally dropped from automatic scanning and active reasoning to prevent an infinite retry loop.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "updated_at": "2026-10-13T08:25:30Z",
+      "deep_scan_package_id": "worker-a-ef20fbf61ec1",
+      "verification_note": "Full original Foreign Policy commentary recovered. It calls for renewed transatlantic partnership, NATO/EU defence cooperation, digital regulation and financial transparency, but is an advocacy essay rather than an evidence-led analysis of European economic-security mechanisms.",
+      "recovery_attempts": 3
     }
   }
 }

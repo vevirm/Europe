@@ -7,20 +7,17 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **2040** (Main **839** + Historical **1201**)
-- Automatic queue still needing V2 verification: **178** (Main **47** + Historical **131**)
-- Currently assigned to workers: **3** (Main **0** + Historical **3**)
+- Automatic queue still needing V2 verification: **175** (Main **47** + Historical **128**)
+- Currently assigned to workers: **0** (Main **0** + Historical **0**)
 - Bounded access-recovery retries still eligible: **0**
-- Terminally dropped after failed scans: **112**
+- Terminally dropped after failed scans: **115**
 - Automatic queue pending and not yet assigned: **175**
 
 ## Worker lanes
 
 ### Worker A
 - Current package: `worker-a-ef20fbf61ec1`
-- Assigned unresolved records: **3**
-  1. `historical:id:b7c43a4111fd7dd6` — Overall Strategic Analysis of Clean Energy Technology in the European Union — recovery attempt 2/3
-  2. `historical:id:23e873dd520e76a2` — China outbound M&A report part five: looking to Europe – International Financial Law Review - CELIS Institute — recovery attempt 2/3
-  3. `historical:id:f2538324ff58deaa` — Biden Knows Europe, and Europe Knows Biden. That’s Not Enough. – Foreign Policy - CELIS Institute — recovery attempt 2/3
+- Assigned unresolved records: **0**
 
 ### Worker B
 - Current package: `worker-b-e060e7151f74`
@@ -146,3 +143,6 @@ These records no longer consume automatic Deep Scan slots and are excluded from 
 - `historical:id:558dfe9a5d96264f` — **How trade policy can best support European competitiveness - Discussion with MEPs** — attempts: 3/3 — BusinessEurope — 2023-01-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,exact_title,title_author_year — https://www.businesseurope.eu/photo-gallery/how-trade-policy-can-best-support-european-competitiveness-discussion-with-meps/
 - `historical:id:42a00e681f2748bb` — **Europe’s Competitiveness and the Rise of China | ifo Institute | EconPol** — attempts: 3/3 — ifo Institute — 2019-01-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,exact_title,title_author_year — https://www.ifo.de/en/media/57154/download
 - `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=5eacd091-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — **Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Cyber posture - Presentation by the Commission - Publications Office of the EU** — attempts: 3/3 — Publications Office of the EU — 2026-09-11 — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://op.europa.eu/o/opportal-service/download-handler?identifier=5eacd091-b1ca-11f1-b9e5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=
+- `historical:id:b7c43a4111fd7dd6` — **Overall Strategic Analysis of Clean Energy Technology in the European Union** — attempts: 3/3 — JRC Publications Repository — 2026-01-01 — Deep Scan return rejected: unsafe metadata correction fields: doi — https://publications.jrc.ec.europa.eu/repository/handle/JRC146873
+- `historical:id:23e873dd520e76a2` — **China outbound M&A report part five: looking to Europe – International Financial Law Review - CELIS Institute** — attempts: 3/3 — CELIS Institute — 2024-08-05 — Original article is verified but paywalled; the short standfirst cannot substantiate its methods, reasoning or results. — https://celis.institute/china-outbound-ma-report-part-five-looking-to-europe-international-financial-law-review-2/
+- `historical:id:f2538324ff58deaa` — **Biden Knows Europe, and Europe Knows Biden. That’s Not Enough. – Foreign Policy - CELIS Institute** — attempts: 3/3 — CELIS Institute — 2020-11-19 — Deep Scan return rejected: unsafe metadata correction fields: url — https://celis.institute/biden-knows-europe-and-europe-knows-biden-thats-not-enough-foreign-policy/
