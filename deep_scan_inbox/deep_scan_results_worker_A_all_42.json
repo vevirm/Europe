@@ -1,0 +1,2611 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-a-3d88df3d7f1a",
+  "results": [
+    {
+      "record_key": "link:https://institutdelors.eu/content/uploads/2026/10/TEMPLATE-BLOGPOST-MACIF-EN.pdf",
+      "source_hash": "4bcd89b6",
+      "identity_hash": "de399479ff8c4778",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "partial",
+            "note": "Opened https://institutdelors.eu/content/uploads/2026/10/TEMPLATE-BLOGPOST-MACIF-EN.pdf; public web reader returned an error, but supplied package includes matching first-party PDF text, independently corroborated by publisher publication page."
+          },
+          {
+            "step": "publisher_page",
+            "outcome": "success",
+            "note": "Official Institut Jacques Delors publication page https://institutdelors.eu/en/publications/endure-it-alone-or-decide-together-european-sovereignty-as-a-new-doctrine-at-the-dawn-of-major-transitions/ confirms author, title, blog-post genre and 13 October 2026 publication."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_pdf_text",
+            "url": "https://institutdelors.eu/content/uploads/2026/10/TEMPLATE-BLOGPOST-MACIF-EN.pdf",
+            "title": "Endure it alone or decide together ? European sovereignty as a New Doctrine at the Dawn of Major Transitions - Institut Jacques Delors",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_article",
+            "url": "https://institutdelors.eu/en/publications/endure-it-alone-or-decide-together-european-sovereignty-as-a-new-doctrine-at-the-dawn-of-major-transitions/",
+            "title": "Endure it alone or decide together?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Original blog-post PDF text supplied in scanner package agrees with publisher bibliography and web page; this is a conference recap, not an analytical research report."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "Verified conference recap about European sovereignty; no completed research, systematic evidence or consequential policy measure qualifying for Strand A."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "William Malaterre",
+          "date": "2026-10-13",
+          "type": "blog post",
+          "title": "Endure it alone or decide together? European sovereignty as a New Doctrine at the Dawn of Major Transitions"
+        },
+        "unset": [],
+        "reason": "Publisher entry and PDF identify William Malaterre, 13 October 2026, and Blogpost, rather than an October 1 institutional report."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "European sovereignty debated at a Jacques Delors Institute conference",
+      "reader_what": "Conference participants argued that Europe needs collective sovereignty amid energy, industrial and technological dependencies.",
+      "reader_why": "",
+      "reader_more": "The author recounts a June 2026 discussion hosted with Macif. Speakers advocated a European response to strategic vulnerabilities and trade-offs. This is a conference synthesis, not independent empirical evidence of policy effectiveness.",
+      "deep_analysis": {
+        "work_kind": "conference recap / blog post",
+        "research_question": "",
+        "main_finding": "Participants call for sovereignty to guide European choices across industrial, energy and digital domains.",
+        "method_or_basis": "Narrative account of a June 2026 conference, with attributed participant positions.",
+        "qualification": "Summarises discussion and advocacy, not independently verified policy outcomes or an evidence-led assessment.",
+        "radar_relevance": "Topically connected to European strategic dependencies but fails substantive evidence-product requirement for Strand A.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=7deceec6-c6ac-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "source_hash": "8acd3ff8",
+      "identity_hash": "3c030e4bccfedbf9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened https://op.europa.eu/o/opportal-service/download-handler?identifier=7deceec6-c6ac-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=; matching first-party document/text available through the supplied package and publisher indexes."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_pdf_text",
+            "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=7deceec6-c6ac-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+            "title": "European transport regulation observer - Publications Office of the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The supplied primary PDF identifies an EUI / Robert Schuman Centre October 2026 policy brief by Juan Montero and Elodie Petrozziello; summary of the 2nd Transport Competitiveness Summit."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "Transport-competitiveness summit synopsis and commentaries; primarily proposals and reflections, not a demonstrated European economic-security trajectory or completed evidence-led assessment."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "EU Transport Competitiveness",
+          "authors": "Juan Montero; Elodie Petrozziello",
+          "source": "European University Institute, Robert Schuman Centre",
+          "type": "policy brief",
+          "date": "2026-10"
+        },
+        "unset": [],
+        "reason": "Primary PDF title page identifies the issue 2026/22, actual title, authors and Florence EUI publisher; issue only supports month precision."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Transport competitiveness and proposed European industrial policy",
+      "reader_what": "Summit summary calls for stronger European transport industrial competitiveness and international cooperation.",
+      "reader_why": "",
+      "reader_more": "The Florence School of Regulation publication summarises a transport policy summit. It discusses industrial capacity, Global Gateway and resilience as strategic objectives. Its proposals are not evidence of implemented measures or measured impacts.",
+      "deep_analysis": {
+        "work_kind": "policy brief / summit commentary",
+        "research_question": "",
+        "main_finding": "Participants recommend an active EU transport industrial policy and a stronger competitiveness agenda.",
+        "method_or_basis": "Brief summarising summit discussions and authored commentaries.",
+        "qualification": "Recommendations and summit perspectives; no verified new measure or systematic impact assessment.",
+        "radar_relevance": "Strategic-industry themes are present but the supplied work is not a substantive evidence product under Strand A.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.2478/wd-2026-0161",
+      "source_hash": "877ee5f3",
+      "identity_hash": "2686e6f175344e2d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 24000 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://doi.org/10.2478/wd-2026-0161. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://www.kielinstitut.de/de/publikationen/china-schock-20-trifft-deutschland-was-kann-der-industrial-accelerator-act-leisten-20204/"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://doi.org/10.2478/wd-2026-0161",
+            "title": "China-Schock 2.0 trifft Deutschland: Was kann der Industrial Accelerator Act leisten?",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://www.kielinstitut.de/de/publikationen/china-schock-20-trifft-deutschland-was-kann-der-industrial-accelerator-act-leisten-20204/",
+            "title": "China-Schock 2.0 trifft Deutschland: Was kann der Industrial Accelerator Act leisten?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EVIDENCE",
+        "reason": "Kiel economists assess EU industrial policy responses to competition from China."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Schöl, Benno; Semrau, Finn Ole",
+          "date": "2026-09"
+        },
+        "unset": [],
+        "reason": "Author and publication date documented in the matching journal or institutional publication entry."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "China-Schock 2.0 trifft Deutschland: Was kann der Industrial Accelerator Act leisten?",
+      "reader_what": "Kiel economists assess EU industrial policy responses to competition from China.",
+      "reader_why": "The work directly examines Europe’s strategic trade, industrial or supply dependencies.",
+      "reader_more": "Kiel economists assess EU industrial policy responses to competition from China. This result was assessed from packaged source text and an independently located publication entry.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "",
+        "main_finding": "Kiel economists assess EU industrial policy responses to competition from China.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+        "radar_relevance": "Kiel economists assess EU industrial policy responses to competition from China.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "industrial.competitiveness",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Schöl, Benno",
+            "class": "university_group"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-09",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+          "text": "Kiel economists assess EU industrial policy responses to competition from China.",
+          "confidence": "medium",
+          "status_date_precision": "month"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://ecipe.org/publications/economic-impact-of-cada/#_ftnref1",
+      "source_hash": "917f8d5b",
+      "identity_hash": "2a691387cdd6f39b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 24000 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://ecipe.org/publications/economic-impact-of-cada/#_ftnref1. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://cdn.ecipe.org/browse/?subj_subject=1814"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://ecipe.org/publications/economic-impact-of-cada/#_ftnref1",
+            "title": "The Real-World Economic Impact of the Cloud and AI Development Act (CADA): What CADA Could Mean for Cloud Prices, Migration, Digitalisation and Europe’s Technology Supply Chain",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://cdn.ecipe.org/browse/?subj_subject=1814",
+            "title": "The Real-World Economic Impact of the Cloud and AI Development Act (CADA): What CADA Could Mean for Cloud Prices, Migration, Digitalisation and Europe’s Te",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EVIDENCE",
+        "reason": "ECIPE study examines prospective effects of EU cloud sovereignty requirements on supplier access and prices."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Matthias Bauer",
+          "date": "2026-10"
+        },
+        "unset": [],
+        "reason": "Author and publication date documented in the matching journal or institutional publication entry."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The Real-World Economic Impact of the Cloud and AI Development Act (CADA): What CADA Could Mean for Cloud",
+      "reader_what": "ECIPE study examines prospective effects of EU cloud sovereignty requirements on supplier access and prices.",
+      "reader_why": "The work directly examines Europe’s strategic trade, industrial or supply dependencies.",
+      "reader_more": "ECIPE study examines prospective effects of EU cloud sovereignty requirements on supplier access and prices. This result was assessed from packaged source text and an independently located publication entry.",
+      "deep_analysis": {
+        "work_kind": "institutional report",
+        "research_question": "",
+        "main_finding": "ECIPE study examines prospective effects of EU cloud sovereignty requirements on supplier access and prices.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+        "radar_relevance": "ECIPE study examines prospective effects of EU cloud sovereignty requirements on supplier access and prices.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "digital.sovereignty",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Matthias Bauer",
+            "class": "university_group"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-10",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+          "text": "ECIPE study examines prospective effects of EU cloud sovereignty requirements on supplier access and prices.",
+          "confidence": "medium",
+          "status_date_precision": "month"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-Important-projects-of-common-European-interest-IPCEI-BusinessEurope-Paper.pdf",
+      "source_hash": "ebd3c975",
+      "identity_hash": "cf77b1108f9dff57",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 23039 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-Important-projects-of-common-European-interest-IPCEI-BusinessEurope-Paper.pdf. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-Important-projects-of-common-European-interest-IPCEI-BusinessEurope-Paper.pdf",
+            "title": "Important Projects of Common European Interest (IPCEI) - a BusinessEurope discussion paper",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "Business association consultation and proposals, not independently validated economic-security evidence."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Important Projects of Common European Interest (IPCEI) - a BusinessEurope discussion paper",
+      "reader_what": "Business association consultation and proposals, not independently validated economic-security evidence.",
+      "reader_why": "",
+      "reader_more": "Business association consultation and proposals, not independently validated economic-security evidence. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "formal study / report",
+        "research_question": "",
+        "main_finding": "Business association consultation and proposals, not independently validated economic-security evidence.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "Business association consultation and proposals, not independently validated economic-security evidence.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.nbt.2026.10.005",
+      "source_hash": "d9591a86",
+      "identity_hash": "67f054eec2fdae52",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 20579 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://doi.org/10.1016/j.nbt.2026.10.005. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://doi.org/10.1016/j.nbt.2026.10.005",
+            "title": "Unlocking Innovation in European Plant Breeding: A Perspective on the New Genomic Techniques Framework",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "Commentary on plant-breeding regulation does not establish a central cross-border economic-security mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Unlocking Innovation in European Plant Breeding: A Perspective on the New Genomic Techniques Framework",
+      "reader_what": "Commentary on plant-breeding regulation does not establish a central cross-border economic-security mechanism.",
+      "reader_why": "",
+      "reader_more": "Commentary on plant-breeding regulation does not establish a central cross-border economic-security mechanism. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "",
+        "main_finding": "Commentary on plant-breeding regulation does not establish a central cross-border economic-security mechanism.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "Commentary on plant-breeding regulation does not establish a central cross-border economic-security mechanism.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1177/19427786261484938",
+      "source_hash": "8a0e1877",
+      "identity_hash": "8a838b23f3ba6a04",
+      "verification": {
+        "identity_verified": false,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "not_available",
+            "note": "Inspected 0 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://doi.org/10.1177/19427786261484938. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "General analysis of demand, profitability and development without a central economic-security nexus."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "External demand, profitability and uneven development in the European Union",
+      "reader_what": "General analysis of demand, profitability and development without a central economic-security nexus.",
+      "reader_why": "",
+      "reader_more": "General analysis of demand, profitability and development without a central economic-security nexus. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "",
+        "main_finding": "General analysis of demand, profitability and development without a central economic-security nexus.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "General analysis of demand, profitability and development without a central economic-security nexus.",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f76a3b56-c6e9-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "source_hash": "b2b6b5f9",
+      "identity_hash": "c96ef73a6cc2c003",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 9962 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://op.europa.eu/o/opportal-service/download-handler?identifier=f76a3b56-c6e9-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=f76a3b56-c6e9-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+            "title": "Proposal for a COUNCIL REGULATION on the allocation of the fishing opportunities provided for in the Protocol on the implementation of the Sustainable Fisheries Partnership Agreement between the European Union and the Republic of Mauritius (2026-2030) - Publications Office of the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "Routine fishery-quota allocation proposal; partnership framing alone is insufficient to establish a strategic security mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Proposal for a COUNCIL REGULATION on the allocation of the fishing opportunities provided for in the Protocol on",
+      "reader_what": "Routine fishery-quota allocation proposal; partnership framing alone is insufficient to establish a strategic security mechanism.",
+      "reader_why": "",
+      "reader_more": "Routine fishery-quota allocation proposal; partnership framing alone is insufficient to establish a strategic security mechanism. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "official policy / institutional framework",
+        "research_question": "",
+        "main_finding": "Routine fishery-quota allocation proposal; partnership framing alone is insufficient to establish a strategic security mechanism.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "Routine fishery-quota allocation proposal; partnership framing alone is insufficient to establish a strategic security mechanism.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-BusinessEurope-letter-ahead-of-the-EU-Turkiye-HLTD.pdf",
+      "source_hash": "be474899",
+      "identity_hash": "6010a0ea9bcac6f5",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 2910 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-BusinessEurope-letter-ahead-of-the-EU-Turkiye-HLTD.pdf. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-BusinessEurope-letter-ahead-of-the-EU-Turkiye-HLTD.pdf",
+            "title": "EU-Türkiye High-Level Trade Dialogue - Letter from Markus J. Beyrer to Maroš Šefčovič",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "Business association advocacy letter, without independent analysis or implemented outcome."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU-Türkiye High-Level Trade Dialogue - Letter from Markus J. Beyrer to Maroš Šefčovič",
+      "reader_what": "Business association advocacy letter, without independent analysis or implemented outcome.",
+      "reader_why": "",
+      "reader_more": "Business association advocacy letter, without independent analysis or implemented outcome. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "",
+        "main_finding": "Business association advocacy letter, without independent analysis or implemented outcome.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "Business association advocacy letter, without independent analysis or implemented outcome.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=627815c8-c6ea-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "source_hash": "f3065490",
+      "identity_hash": "ee2f5dbe7c020c15",
+      "verification": {
+        "identity_verified": false,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "not_available",
+            "note": "Inspected 0 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://op.europa.eu/o/opportal-service/download-handler?identifier=627815c8-c6ea-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "Routine bilateral fisheries agreement proposal; source not sufficiently recovered to support a deeper economic-security claim."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Proposal for a COUNCIL DECISION on the conclusion of the Sustainable Fisheries Partnership Agreement and its Implementing Protocol",
+      "reader_what": "Routine bilateral fisheries agreement proposal; source not sufficiently recovered to support a deeper economic-security claim.",
+      "reader_why": "",
+      "reader_more": "Routine bilateral fisheries agreement proposal; source not sufficiently recovered to support a deeper economic-security claim. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "official policy / institutional framework",
+        "research_question": "",
+        "main_finding": "Routine bilateral fisheries agreement proposal; source not sufficiently recovered to support a deeper economic-security claim.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "Routine bilateral fisheries agreement proposal; source not sufficiently recovered to support a deeper economic-security claim.",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://www.businesseurope.eu/wp-content/uploads/2026/05/2026-05-05-BusinessEurope-Position-Paper-shareholders-rights-directive-revision.pdf",
+      "source_hash": "4814986b",
+      "identity_hash": "8afdb7100a260907",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 19104 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2026/05/2026-05-05-BusinessEurope-Position-Paper-shareholders-rights-directive-revision.pdf. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2026/05/2026-05-05-BusinessEurope-Position-Paper-shareholders-rights-directive-revision.pdf",
+            "title": "Shareholders’ Rights Directive (SRD) Review: public consultation - a BusinessEurope position paper",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "Corporate governance consultation response rather than substantive economic-security evidence."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Shareholders’ Rights Directive (SRD) Review: public consultation - a BusinessEurope position paper",
+      "reader_what": "Corporate governance consultation response rather than substantive economic-security evidence.",
+      "reader_why": "",
+      "reader_more": "Corporate governance consultation response rather than substantive economic-security evidence. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "",
+        "main_finding": "Corporate governance consultation response rather than substantive economic-security evidence.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "Corporate governance consultation response rather than substantive economic-security evidence.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1038/s41597-026-07454-2",
+      "source_hash": "e88992da",
+      "identity_hash": "78d6a511c7d0093a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 21826 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://doi.org/10.1038/s41597-026-07454-2. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://www.nature.com/articles/s41597-026-07454-2"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://doi.org/10.1038/s41597-026-07454-2",
+            "title": "Global Marine LNG Terminals, Tankers & Trade: A High-Resolution AIS-Based Dataset of LNG Trade (2020–2024)",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://www.nature.com/articles/s41597-026-07454-2",
+            "title": "Global Marine LNG Terminals, Tankers & Trade: A High-Resolution AIS-Based Dataset of LNG Trade (2020–2024)",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EVIDENCE",
+        "reason": "Peer-reviewed vessel-tracking dataset documents EU LNG imports and geopolitical supply changes."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Chuanlong Zhou; Philippe Ciais; Rohith Teja Mittakola; Biqing Zhu; Yang Su; Yidi Xu",
+          "date": "2026-05-19"
+        },
+        "unset": [],
+        "reason": "Author and publication date documented in the matching journal or institutional publication entry."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Global Marine LNG Terminals, Tankers & Trade: A High-Resolution AIS-Based Dataset of LNG Trade (2020–2024)",
+      "reader_what": "Peer-reviewed vessel-tracking dataset documents EU LNG imports and geopolitical supply changes.",
+      "reader_why": "The work directly examines Europe’s strategic trade, industrial or supply dependencies.",
+      "reader_more": "Peer-reviewed vessel-tracking dataset documents EU LNG imports and geopolitical supply changes. This result was assessed from packaged source text and an independently located publication entry.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "",
+        "main_finding": "Peer-reviewed vessel-tracking dataset documents EU LNG imports and geopolitical supply changes.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+        "radar_relevance": "Peer-reviewed vessel-tracking dataset documents EU LNG imports and geopolitical supply changes.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "energy.lng_imports",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Chuanlong Zhou",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-05-19",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+          "text": "Peer-reviewed vessel-tracking dataset documents EU LNG imports and geopolitical supply changes.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:7bcb4a4f19c18def",
+      "source_hash": "019b67c1",
+      "identity_hash": "bde6108ed6bfaaf1",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 7059 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://research.rug.nl/en/publications/policy-and-discursive-shifts-in-chinas-economic-diplomacy-amid-ri/. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://pmc.ncbi.nlm.nih.gov/articles/PMC13133616/"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://research.rug.nl/en/publications/policy-and-discursive-shifts-in-chinas-economic-diplomacy-amid-ri/",
+            "title": "Policy and discursive shifts in China’s economic diplomacy amid rising geopolitical tensions",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13133616/",
+            "title": "Policy and discursive shifts in China’s economic diplomacy amid rising geopolitical tensions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EVIDENCE",
+        "reason": "Academic analysis examines China’s economic diplomacy and Europe’s strategic dependencies."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Gábor Szüdi; Frank Gaenssmantel; Carmen Amado Mendes; Philipp Brugner",
+          "date": "2026-04-13"
+        },
+        "unset": [],
+        "reason": "Author and publication date documented in the matching journal or institutional publication entry."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Policy and discursive shifts in China’s economic diplomacy amid rising geopolitical tensions",
+      "reader_what": "Academic analysis examines China’s economic diplomacy and Europe’s strategic dependencies.",
+      "reader_why": "The work directly examines Europe’s strategic trade, industrial or supply dependencies.",
+      "reader_more": "Academic analysis examines China’s economic diplomacy and Europe’s strategic dependencies. This result was assessed from packaged source text and an independently located publication entry.",
+      "deep_analysis": {
+        "work_kind": "academic or policy publication",
+        "research_question": "",
+        "main_finding": "Academic analysis examines China’s economic diplomacy and Europe’s strategic dependencies.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+        "radar_relevance": "Academic analysis examines China’s economic diplomacy and Europe’s strategic dependencies.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Gábor Szüdi",
+            "class": "university_group"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-04-13",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+          "text": "Academic analysis examines China’s economic diplomacy and Europe’s strategic dependencies.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:b89e4dd6404bfedc",
+      "source_hash": "67649c05",
+      "identity_hash": "6d42e4b57a55c889",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 10923 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://celis.institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://celis.institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://celis.institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/",
+            "title": "Supply Chain Secondary Sanctions: How China Weaponised Lithuania’s Trade Links - CELIS Institute",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://celis.institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/",
+            "title": "Supply Chain Secondary Sanctions: How China Weaponised Lithuania’s Trade Links - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EVIDENCE",
+        "reason": "Researchers analyse Chinese coercion directed at Lithuania through third-country supply chains."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Verónica Fraile del Álamo; Darren J. Lim",
+          "date": "2026-05-20"
+        },
+        "unset": [],
+        "reason": "Author and publication date documented in the matching journal or institutional publication entry."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Supply Chain Secondary Sanctions: How China Weaponised Lithuania’s Trade Links - CELIS Institute",
+      "reader_what": "Researchers analyse Chinese coercion directed at Lithuania through third-country supply chains.",
+      "reader_why": "The work directly examines Europe’s strategic trade, industrial or supply dependencies.",
+      "reader_more": "Researchers analyse Chinese coercion directed at Lithuania through third-country supply chains. This result was assessed from packaged source text and an independently located publication entry.",
+      "deep_analysis": {
+        "work_kind": "academic or policy publication",
+        "research_question": "",
+        "main_finding": "Researchers analyse Chinese coercion directed at Lithuania through third-country supply chains.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+        "radar_relevance": "Researchers analyse Chinese coercion directed at Lithuania through third-country supply chains.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "coercion.incident",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Verónica Fraile del Álamo",
+            "class": "university_group"
+          },
+          "mechanism": "coerces",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-05-20",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+          "text": "Researchers analyse Chinese coercion directed at Lithuania through third-country supply chains.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:110862a6951ab3f0",
+      "source_hash": "00dceee3",
+      "identity_hash": "c676b1cac1cc6f18",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 1756 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.iss.europa.eu/press/steven-everts-interviewed-deutsche-welle-europes-strategic-autonomy. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.iss.europa.eu/press/steven-everts-interviewed-deutsche-welle-europes-strategic-autonomy",
+            "title": "Steven Everts interviewed by Deutsche Welle on Europe's strategic autonomy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "Interview summary lacks a substantive independent analytical work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Steven Everts interviewed by Deutsche Welle on Europe's strategic autonomy",
+      "reader_what": "Interview summary lacks a substantive independent analytical work.",
+      "reader_why": "",
+      "reader_more": "Interview summary lacks a substantive independent analytical work. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "document / source item",
+        "research_question": "",
+        "main_finding": "Interview summary lacks a substantive independent analytical work.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "Interview summary lacks a substantive independent analytical work.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:91ef9cbdc71a2e69",
+      "source_hash": "27e3d0e6",
+      "identity_hash": "d79e34752cc51f98",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "unverified_insufficient_material",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 1292 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://publications.jrc.ec.europa.eu/repository/handle/JRC146980. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://publications.jrc.ec.europa.eu/repository/handle/JRC146980"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC146980",
+            "title": "Research and innovation towards zero-emission road transport and European automotive sector competitiveness",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC146980",
+            "title": "Research and innovation towards zero-emission road transport and European automotive sector competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "INSUFFICIENT_RECOVERED_EVIDENCE",
+        "reason": "Insufficient primary content to verify admission beyond an abstract/short extract."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Ilias Cheimariotis; Francesca Piazza; Chiara Lodi; Jakub Zawieska; Michal Rataj; Marcin Stepniak; Alessandro Marotta; Monica Grosso",
+          "date": "2026-09-22"
+        },
+        "unset": [],
+        "reason": "Author and publication date documented in the matching journal or institutional publication entry."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Research and innovation towards zero-emission road transport and European automotive sector competitiveness",
+      "reader_what": "Insufficient primary content to verify admission beyond an abstract/short extract.",
+      "reader_why": "",
+      "reader_more": "The supplied material is insufficient for a reliable admission decision. Additional primary-source retrieval is required.",
+      "deep_analysis": {
+        "work_kind": "document / source item",
+        "research_question": "",
+        "main_finding": "Insufficient primary content to verify admission beyond an abstract/short extract.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "Insufficient primary content to verify admission beyond an abstract/short extract.",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:768150817f3cb0c4",
+      "source_hash": "0bd6bcd6",
+      "identity_hash": "ea40a9096a92faf9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 6532 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.kielinstitut.de/publications/china-shock-20-and-europes-economic-security-gap-europe-needs-a-tool-to-link-market-access-to-local-production-20323/. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://www.kielinstitut.de/research/publications/kiel-policy-brief/"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.kielinstitut.de/publications/china-shock-20-and-europes-economic-security-gap-europe-needs-a-tool-to-link-market-access-to-local-production-20323/",
+            "title": "China Shock 2.0 and Europe's Economic-Security Gap: Europe Needs a Tool to Link Market Access to Local Production - Kiel Institute",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://www.kielinstitut.de/research/publications/kiel-policy-brief/",
+            "title": "China Shock 2.0 and Europe's Economic-Security Gap: Europe Needs a Tool to Link Market Access to Local Production - Kiel Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EVIDENCE",
+        "reason": "Kiel analysis examines Chinese competitive pressure and options to tie EU market access to production."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Erhardt; Herrmann; Hinz; Schularick; Tordoir",
+          "date": "2026-10"
+        },
+        "unset": [],
+        "reason": "Author and publication date documented in the matching journal or institutional publication entry."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "China Shock 2.0 and Europe's Economic-Security Gap: Europe Needs a Tool to Link Market Access to Local Production",
+      "reader_what": "Kiel analysis examines Chinese competitive pressure and options to tie EU market access to production.",
+      "reader_why": "The work directly examines Europe’s strategic trade, industrial or supply dependencies.",
+      "reader_more": "Kiel analysis examines Chinese competitive pressure and options to tie EU market access to production. This result was assessed from packaged source text and an independently located publication entry.",
+      "deep_analysis": {
+        "work_kind": "academic or policy publication",
+        "research_question": "",
+        "main_finding": "Kiel analysis examines Chinese competitive pressure and options to tie EU market access to production.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+        "radar_relevance": "Kiel analysis examines Chinese competitive pressure and options to tie EU market access to production.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Erhardt",
+            "class": "university_group"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-10",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+          "text": "Kiel analysis examines Chinese competitive pressure and options to tie EU market access to production.",
+          "confidence": "medium",
+          "status_date_precision": "month"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:fb93ad255037a74d",
+      "source_hash": "2df945b0",
+      "identity_hash": "05e87ee9966585ec",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 2674 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://publications.jrc.ec.europa.eu/repository/handle/JRC147825. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC147825",
+            "title": "Building Resilient and Robust Clean Energy Supply Chains: Challenges and Opportunities for a Sustainable Energy Transition",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EVIDENCE",
+        "reason": "JRC workshop synthesis analyses clean-energy supply vulnerabilities and resilience options."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Building Resilient and Robust Clean Energy Supply Chains: Challenges and Opportunities for a Sustainable Energy Transition",
+      "reader_what": "JRC workshop synthesis analyses clean-energy supply vulnerabilities and resilience options.",
+      "reader_why": "The work directly examines Europe’s strategic trade, industrial or supply dependencies.",
+      "reader_more": "JRC workshop synthesis analyses clean-energy supply vulnerabilities and resilience options. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "academic or policy publication",
+        "research_question": "",
+        "main_finding": "JRC workshop synthesis analyses clean-energy supply vulnerabilities and resilience options.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+        "radar_relevance": "JRC workshop synthesis analyses clean-energy supply vulnerabilities and resilience options.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "supply_chain.diversification",
+          "secondary_objects": [],
+          "actor": {
+            "name": "GEORGAKAKI Aliki; PIELA Krzysztof; Black Catriona",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-01-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+          "text": "JRC workshop synthesis analyses clean-energy supply vulnerabilities and resilience options.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:8dc4bb0cae51158f",
+      "source_hash": "88d3cef6",
+      "identity_hash": "279ba9e7e9a52324",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 19302 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://link.springer.com/article/10.1007/s10308-025-00771-y. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://cris.maastrichtuniversity.nl/en/publications/beyond-confrontation-comparing-the-determinants-of-chinese-and-th/"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://link.springer.com/article/10.1007/s10308-025-00771-y",
+            "title": "Beyond confrontation? Comparing the determinants of Chinese and the European Union’s development finance to Africa",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://cris.maastrichtuniversity.nl/en/publications/beyond-confrontation-comparing-the-determinants-of-chinese-and-th/",
+            "title": "Beyond confrontation? Comparing the determinants of Chinese and the European Union’s development finance to Africa",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EVIDENCE",
+        "reason": "Peer-reviewed comparison analyses drivers of EU and Chinese development finance in Africa."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Manling Yang",
+          "date": "2026-06"
+        },
+        "unset": [],
+        "reason": "Author and publication date documented in the matching journal or institutional publication entry."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Beyond confrontation? Comparing the determinants of Chinese and the European Union’s development finance to Africa",
+      "reader_what": "Peer-reviewed comparison analyses drivers of EU and Chinese development finance in Africa.",
+      "reader_why": "The work directly examines Europe’s strategic trade, industrial or supply dependencies.",
+      "reader_more": "Peer-reviewed comparison analyses drivers of EU and Chinese development finance in Africa. This result was assessed from packaged source text and an independently located publication entry.",
+      "deep_analysis": {
+        "work_kind": "academic or policy publication",
+        "research_question": "",
+        "main_finding": "Peer-reviewed comparison analyses drivers of EU and Chinese development finance in Africa.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+        "radar_relevance": "Peer-reviewed comparison analyses drivers of EU and Chinese development finance in Africa.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "partnership.global_gateway",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Manling Yang",
+            "class": "university_group"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2026-06",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+          "text": "Peer-reviewed comparison analyses drivers of EU and Chinese development finance in Africa.",
+          "confidence": "medium",
+          "status_date_precision": "month"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:471e4ae6426c944e",
+      "source_hash": "e07762b0",
+      "identity_hash": "5910970eeea54e35",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 6029 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://research.vu.nl/en/publications/the-making-of-the-eus-geoeconomic-bazooka-the-anti-coercion-instr/. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://onlinelibrary.wiley.com/doi/10.1111/jcms.70071"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://research.vu.nl/en/publications/the-making-of-the-eus-geoeconomic-bazooka-the-anti-coercion-instr/",
+            "title": "The Making of the EU's Geoeconomic ‘Bazooka’: The Anti‐Coercion Instrument and the Role of Think Tanks in European Union Foreign Policy",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://onlinelibrary.wiley.com/doi/10.1111/jcms.70071",
+            "title": "The Making of the EU's Geoeconomic ‘Bazooka’: The Anti‐Coercion Instrument and the Role of Think Tanks in European Union Foreign Policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EVIDENCE",
+        "reason": "Scholarly analysis traces think-tank influence in the making of the EU Anti-Coercion Instrument."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Jaša Veselinovič",
+          "date": "2025-12-02"
+        },
+        "unset": [],
+        "reason": "Author and publication date documented in the matching journal or institutional publication entry."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The Making of the EU's Geoeconomic ‘Bazooka’: The Anti‐Coercion Instrument and the Role of Think Tanks in European",
+      "reader_what": "Scholarly analysis traces think-tank influence in the making of the EU Anti-Coercion Instrument.",
+      "reader_why": "The work directly examines Europe’s strategic trade, industrial or supply dependencies.",
+      "reader_more": "Scholarly analysis traces think-tank influence in the making of the EU Anti-Coercion Instrument. This result was assessed from packaged source text and an independently located publication entry.",
+      "deep_analysis": {
+        "work_kind": "academic or policy publication",
+        "research_question": "",
+        "main_finding": "Scholarly analysis traces think-tank influence in the making of the EU Anti-Coercion Instrument.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+        "radar_relevance": "Scholarly analysis traces think-tank influence in the making of the EU Anti-Coercion Instrument.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "coercion.anti_coercion_instrument",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Jaša Veselinovič",
+            "class": "university_group"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2025-12-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+          "text": "Scholarly analysis traces think-tank influence in the making of the EU Anti-Coercion Instrument.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:bb06908cb88fa3d9",
+      "source_hash": "ddf8673c",
+      "identity_hash": "a6bee5f7f8d9b14e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 6289 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://link.springer.com/article/10.1007/s10308-025-00747-y. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://link.springer.com/article/10.1007/s10308-025-00747-y",
+            "title": "EU - China relations after the 2024 European elections",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EVIDENCE",
+        "reason": "Research analysis examines EU-China dependencies and economic-security relations after the 2024 elections."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU - China relations after the 2024 European elections",
+      "reader_what": "Research analysis examines EU-China dependencies and economic-security relations after the 2024 elections.",
+      "reader_why": "The work directly examines Europe’s strategic trade, industrial or supply dependencies.",
+      "reader_more": "Research analysis examines EU-China dependencies and economic-security relations after the 2024 elections. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "academic or policy publication",
+        "research_question": "",
+        "main_finding": "Research analysis examines EU-China dependencies and economic-security relations after the 2024 elections.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+        "radar_relevance": "Research analysis examines EU-China dependencies and economic-security relations after the 2024 elections.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Hans Dietmar Schweisgut",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2025-12-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+          "text": "Research analysis examines EU-China dependencies and economic-security relations after the 2024 elections.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:3c00f5e3d93dd8e5",
+      "source_hash": "4d846dc4",
+      "identity_hash": "862481d96e501954",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 24000 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://content.openalex.org/works/W4414340040.pdf. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://onlinelibrary.wiley.com/doi/10.1111/jcms.70036"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://content.openalex.org/works/W4414340040.pdf",
+            "title": "European Green Deal and Geopoliticisation of Trade: A Poststructuralist Discourse Analysis of EU Agricultural Trade Policy",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://onlinelibrary.wiley.com/doi/10.1111/jcms.70036",
+            "title": "European Green Deal and Geopoliticisation of Trade: A Poststructuralist Discourse Analysis of EU Agricultural Trade Policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EVIDENCE",
+        "reason": "Journal article systematically analyses EU agricultural trade policy and open strategic autonomy."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Mari Carlson",
+          "date": "2025-09-17"
+        },
+        "unset": [],
+        "reason": "Author and publication date documented in the matching journal or institutional publication entry."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "European Green Deal and Geopoliticisation of Trade: A Poststructuralist Discourse Analysis of EU Agricultural Trade Policy",
+      "reader_what": "Journal article systematically analyses EU agricultural trade policy and open strategic autonomy.",
+      "reader_why": "The work directly examines Europe’s strategic trade, industrial or supply dependencies.",
+      "reader_more": "Journal article systematically analyses EU agricultural trade policy and open strategic autonomy. This result was assessed from packaged source text and an independently located publication entry.",
+      "deep_analysis": {
+        "work_kind": "academic or policy publication",
+        "research_question": "",
+        "main_finding": "Journal article systematically analyses EU agricultural trade policy and open strategic autonomy.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+        "radar_relevance": "Journal article systematically analyses EU agricultural trade policy and open strategic autonomy.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Mari Carlson",
+            "class": "university_group"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2025-09-17",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+          "text": "Journal article systematically analyses EU agricultural trade policy and open strategic autonomy.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:20f35a2ec7f6c41b",
+      "source_hash": "6732fce7",
+      "identity_hash": "e10e24843b53093d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "unverified_insufficient_material",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 1042 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/393996/Details. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/393996/Details",
+            "title": "The Governance and Funding of European Rearmament",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. Additional source retrieval necessary."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "INSUFFICIENT_RECOVERED_EVIDENCE",
+        "reason": "Bibliographic references recovered but not the claimed article’s substantive content."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The Governance and Funding of European Rearmament",
+      "reader_what": "Bibliographic references recovered but not the claimed article’s substantive content.",
+      "reader_why": "",
+      "reader_more": "The supplied material is insufficient for a reliable admission decision. Additional primary-source retrieval is required.",
+      "deep_analysis": {
+        "work_kind": "document / source item",
+        "research_question": "",
+        "main_finding": "Bibliographic references recovered but not the claimed article’s substantive content.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "Bibliographic references recovered but not the claimed article’s substantive content.",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:07d88402ad9b65d1",
+      "source_hash": "dc2d54e9",
+      "identity_hash": "e49a99b41ed664c2",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 21578 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://link.springer.com/article/10.1007/s10308-025-00732-5. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://link.springer.com/article/10.1007/s10308-025-00732-5",
+            "title": "Towards collaborative EU-Indonesia bargaining on palm oil policy: deconstructing the public discourse",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EVIDENCE",
+        "reason": "Academic discourse study analyses EU–Indonesia bargaining over palm-oil market access."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Towards collaborative EU-Indonesia bargaining on palm oil policy: deconstructing the public discourse",
+      "reader_what": "Academic discourse study analyses EU–Indonesia bargaining over palm-oil market access.",
+      "reader_why": "The work directly examines Europe’s strategic trade, industrial or supply dependencies.",
+      "reader_more": "Academic discourse study analyses EU–Indonesia bargaining over palm-oil market access. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "academic or policy publication",
+        "research_question": "",
+        "main_finding": "Academic discourse study analyses EU–Indonesia bargaining over palm-oil market access.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+        "radar_relevance": "Academic discourse study analyses EU–Indonesia bargaining over palm-oil market access.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Erja Kettunen; Ayu Pratiwi",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2025-06-18",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+          "text": "Academic discourse study analyses EU–Indonesia bargaining over palm-oil market access.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:d2a3f60d595da52f",
+      "source_hash": "a88b26f5",
+      "identity_hash": "3f4207534463ea83",
+      "verification": {
+        "identity_verified": false,
+        "evidence_depth": "unverified_insufficient_material",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "not_available",
+            "note": "Inspected 0 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: not supplied. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. Additional source retrieval necessary."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "INSUFFICIENT_RECOVERED_EVIDENCE",
+        "reason": "Article identity indicated but no substantive matching source text in the package."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "China's Outward <scp>FDI</scp> in the European Union: How Much Geopolitics is in There?",
+      "reader_what": "Article identity indicated but no substantive matching source text in the package.",
+      "reader_why": "",
+      "reader_more": "The supplied material is insufficient for a reliable admission decision. Additional primary-source retrieval is required.",
+      "deep_analysis": {
+        "work_kind": "document / source item",
+        "research_question": "",
+        "main_finding": "Article identity indicated but no substantive matching source text in the package.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "Article identity indicated but no substantive matching source text in the package.",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:e194719edd37dffd",
+      "source_hash": "6d629e05",
+      "identity_hash": "f768c3bcdef3baaf",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 11109 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2025/02/2014-00990-E-811-1.pdf. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2014-00990-E-811-1.pdf",
+            "title": "European Ombudsman public consultation on transparency of the Transatlantic Trade and Investment Partnership (TTIP) negotiations - Reply by BusinessEurope",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "Advocacy response on TTIP transparency, not a substantive economic-security evidence product."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "European Ombudsman public consultation on transparency of the Transatlantic Trade and Investment Partnership (TTIP) negotiations - Reply by",
+      "reader_what": "Advocacy response on TTIP transparency, not a substantive economic-security evidence product.",
+      "reader_why": "",
+      "reader_more": "Advocacy response on TTIP transparency, not a substantive economic-security evidence product. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "document / source item",
+        "research_question": "",
+        "main_finding": "Advocacy response on TTIP transparency, not a substantive economic-security evidence product.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "Advocacy response on TTIP transparency, not a substantive economic-security evidence product.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:c4a03323d4289bc0",
+      "source_hash": "74144500",
+      "identity_hash": "a2d5b7f8b1569132",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 14461 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://celis.institute/the-european-unions-critical-raw-materials-act-how-effective-in-addressing-supply-chains-risks/. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://celis.institute/the-european-unions-critical-raw-materials-act-how-effective-in-addressing-supply-chains-risks/",
+            "title": "The European Union’s Critical Raw Materials Act: How Effective In Addressing Supply Chains Risks? - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EVIDENCE",
+        "reason": "Legal-policy analysis evaluates vulnerabilities and gaps in the EU Critical Raw Materials Act."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "The European Union’s Critical Raw Materials Act: How Effective In Addressing Supply Chains Risks? - CELIS Institute",
+      "reader_what": "Legal-policy analysis evaluates vulnerabilities and gaps in the EU Critical Raw Materials Act.",
+      "reader_why": "The work directly examines Europe’s strategic trade, industrial or supply dependencies.",
+      "reader_more": "Legal-policy analysis evaluates vulnerabilities and gaps in the EU Critical Raw Materials Act. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "academic or policy publication",
+        "research_question": "",
+        "main_finding": "Legal-policy analysis evaluates vulnerabilities and gaps in the EU Critical Raw Materials Act.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+        "radar_relevance": "Legal-policy analysis evaluates vulnerabilities and gaps in the EU Critical Raw Materials Act.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "materials.critical_raw",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CELIS Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "delivered",
+          "status_date": "2024-06-27",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The available record is evidence about the studied subject, not proof of causal effects or implemented policy outcomes.",
+          "text": "Legal-policy analysis evaluates vulnerabilities and gaps in the EU Critical Raw Materials Act.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:54b185951e456d2c",
+      "source_hash": "4508ed19",
+      "identity_hash": "e661c0887ef0e7b4",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 12135 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.eeas.europa.eu/delegations/albania/eu-albania-15th-subcommittee-innovation-information-society-and-social-policy_en. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.eeas.europa.eu/delegations/albania/eu-albania-15th-subcommittee-innovation-information-society-and-social-policy_en",
+            "title": "EU-Albania 15th Subcommittee on Innovation, Information Society and Social Policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "Meeting notice on EU–Albania cooperation, not independent substantive evidence."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU-Albania 15th Subcommittee on Innovation, Information Society and Social Policy",
+      "reader_what": "Meeting notice on EU–Albania cooperation, not independent substantive evidence.",
+      "reader_why": "",
+      "reader_more": "Meeting notice on EU–Albania cooperation, not independent substantive evidence. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "document / source item",
+        "research_question": "",
+        "main_finding": "Meeting notice on EU–Albania cooperation, not independent substantive evidence.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "Meeting notice on EU–Albania cooperation, not independent substantive evidence.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:7e97de03fd75ddea",
+      "source_hash": "28486437",
+      "identity_hash": "b4e0a01a7272f0db",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 2193 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/publications/eu-us-summit-falls-short-of-business-expectations/. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/publications/eu-us-summit-falls-short-of-business-expectations/",
+            "title": "EU-US Summit falls short of business expectations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "BusinessEurope reaction to summit with no original substantial research."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU-US Summit falls short of business expectations",
+      "reader_what": "BusinessEurope reaction to summit with no original substantial research.",
+      "reader_why": "",
+      "reader_more": "BusinessEurope reaction to summit with no original substantial research. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "document / source item",
+        "research_question": "",
+        "main_finding": "BusinessEurope reaction to summit with no original substantial research.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "BusinessEurope reaction to summit with no original substantial research.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:4b04729ca1ab574e",
+      "source_hash": "a7743b51",
+      "identity_hash": "66448a8fe14ef3fa",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 3804 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://policy.trade.ec.europa.eu/eu-trade-meetings-civil-society/civil-society-dialogue-eu-anti-coercion-instrument-2023-06-22_en. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://policy.trade.ec.europa.eu/eu-trade-meetings-civil-society/civil-society-dialogue-eu-anti-coercion-instrument-2023-06-22_en",
+            "title": "Civil Society Dialogue on the EU anti-coercion instrument",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "Civil-society meeting announcement predates legislation, not substantive evidence of an enacted measure."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Civil Society Dialogue on the EU anti-coercion instrument",
+      "reader_what": "Civil-society meeting announcement predates legislation, not substantive evidence of an enacted measure.",
+      "reader_why": "",
+      "reader_more": "Civil-society meeting announcement predates legislation, not substantive evidence of an enacted measure. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "document / source item",
+        "research_question": "",
+        "main_finding": "Civil-society meeting announcement predates legislation, not substantive evidence of an enacted measure.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "Civil-society meeting announcement predates legislation, not substantive evidence of an enacted measure.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:cf4e68ddcc744e0d",
+      "source_hash": "93021846",
+      "identity_hash": "a8ed12ba19a1dd5e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 5435 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-01-14_input_ttc_working_group_7_export_controls-11a-1.pdf. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-01-14_input_ttc_working_group_7_export_controls-11a-1.pdf",
+            "title": "EU-US Trade and Technology Council - Working Group 7 on export controls - BusinessEurope reply to the public consultation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "BusinessEurope stakeholder reply on export controls is advocacy, not independently established evidence."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU-US Trade and Technology Council - Working Group 7 on export controls - BusinessEurope reply to the public",
+      "reader_what": "BusinessEurope stakeholder reply on export controls is advocacy, not independently established evidence.",
+      "reader_why": "",
+      "reader_more": "BusinessEurope stakeholder reply on export controls is advocacy, not independently established evidence. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "document / source item",
+        "research_question": "",
+        "main_finding": "BusinessEurope stakeholder reply on export controls is advocacy, not independently established evidence.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "BusinessEurope stakeholder reply on export controls is advocacy, not independently established evidence.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:dac0536263087b02",
+      "source_hash": "67a81c3c",
+      "identity_hash": "102aeea23f9741f9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 6793 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-01-13_input_ttc_working_group_3_secure_supply_chains-93a-1.pdf. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-01-13_input_ttc_working_group_3_secure_supply_chains-93a-1.pdf",
+            "title": "EU-US Trade and Technology Council - Working Group 3 on secure supply chains - BusinessEurope reply to the public consultation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "BusinessEurope supply-chain consultation reply is advocacy, not original evidence."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU-US Trade and Technology Council - Working Group 3 on secure supply chains - BusinessEurope reply to the",
+      "reader_what": "BusinessEurope supply-chain consultation reply is advocacy, not original evidence.",
+      "reader_why": "",
+      "reader_more": "BusinessEurope supply-chain consultation reply is advocacy, not original evidence. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "document / source item",
+        "research_question": "",
+        "main_finding": "BusinessEurope supply-chain consultation reply is advocacy, not original evidence.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "BusinessEurope supply-chain consultation reply is advocacy, not original evidence.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:a432841dae0ea8cd",
+      "source_hash": "c16c25b2",
+      "identity_hash": "58b2b7db76e55b43",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 7020 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-10-04_letter_ttc_-_evp_dombrovskis-687-1.pdf. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-10-04_letter_ttc_-_evp_dombrovskis-687-1.pdf",
+            "title": "EU-US Trade and Technology Council - Letter from Markus J. Beyrer to Valdis Dombrovskis and Margrethe Vestager",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "BusinessEurope correspondence on TTC is advocacy without independent findings."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU-US Trade and Technology Council - Letter from Markus J. Beyrer to Valdis Dombrovskis and Margrethe Vestager",
+      "reader_what": "BusinessEurope correspondence on TTC is advocacy without independent findings.",
+      "reader_why": "",
+      "reader_more": "BusinessEurope correspondence on TTC is advocacy without independent findings. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "document / source item",
+        "research_question": "",
+        "main_finding": "BusinessEurope correspondence on TTC is advocacy without independent findings.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "BusinessEurope correspondence on TTC is advocacy without independent findings.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:9d12392a0058745f",
+      "source_hash": "6a29ec60",
+      "identity_hash": "a05bf2c7ec66a4b4",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "unverified_insufficient_material",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 692 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://celis.institute/european-and-uk-critical-raw-materials-crm-supply-chains-national-security-considerations-lexology/. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://celis.institute/european-and-uk-critical-raw-materials-crm-supply-chains-national-security-considerations-lexology/",
+            "title": "European and UK critical raw materials (CRM) supply chains – “national security” considerations – Lexology - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. Additional source retrieval necessary."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "INSUFFICIENT_RECOVERED_EVIDENCE",
+        "reason": "Only fragmentary linked listing text, not the actual article’s analysis."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "European and UK critical raw materials (CRM) supply chains – “national security” considerations – Lexology - CELIS Institute",
+      "reader_what": "Only fragmentary linked listing text, not the actual article’s analysis.",
+      "reader_why": "",
+      "reader_more": "The supplied material is insufficient for a reliable admission decision. Additional primary-source retrieval is required.",
+      "deep_analysis": {
+        "work_kind": "document / source item",
+        "research_question": "",
+        "main_finding": "Only fragmentary linked listing text, not the actual article’s analysis.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "Only fragmentary linked listing text, not the actual article’s analysis.",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:608e0a8e7b4d24ad",
+      "source_hash": "f877270f",
+      "identity_hash": "76b96d61f8a9a081",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "unverified_insufficient_material",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 666 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://celis.institute/analysis-will-new-eu-law-cause-a-chilling-effect-on-future-fdi-into-ireland-business-post/. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://celis.institute/analysis-will-new-eu-law-cause-a-chilling-effect-on-future-fdi-into-ireland-business-post/",
+            "title": "Analysis: Will new EU law cause a chilling effect on future FDI into Ireland? – Business Post - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. Additional source retrieval necessary."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "INSUFFICIENT_RECOVERED_EVIDENCE",
+        "reason": "Only fragmentary linked listing text, not the actual article’s analysis."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Analysis: Will new EU law cause a chilling effect on future FDI into Ireland? – Business Post -",
+      "reader_what": "Only fragmentary linked listing text, not the actual article’s analysis.",
+      "reader_why": "",
+      "reader_more": "The supplied material is insufficient for a reliable admission decision. Additional primary-source retrieval is required.",
+      "deep_analysis": {
+        "work_kind": "document / source item",
+        "research_question": "",
+        "main_finding": "Only fragmentary linked listing text, not the actual article’s analysis.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "Only fragmentary linked listing text, not the actual article’s analysis.",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:14eff2914807ee10",
+      "source_hash": "921832a4",
+      "identity_hash": "0a62854e8070c677",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 990 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/publications/european-business-welcomes-eu-us-deal-on-steel-and-aluminium/. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/publications/european-business-welcomes-eu-us-deal-on-steel-and-aluminium/",
+            "title": "European business welcomes EU-US deal on steel and aluminium",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_EVIDENCE",
+        "reason": "Short BusinessEurope reaction to an EU–US deal rather than primary deal text or independent analysis."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "European business welcomes EU-US deal on steel and aluminium",
+      "reader_what": "Short BusinessEurope reaction to an EU–US deal rather than primary deal text or independent analysis.",
+      "reader_why": "",
+      "reader_more": "Short BusinessEurope reaction to an EU–US deal rather than primary deal text or independent analysis. This result was assessed from packaged source text; independent provenance checks remain limited.",
+      "deep_analysis": {
+        "work_kind": "document / source item",
+        "research_question": "",
+        "main_finding": "Short BusinessEurope reaction to an EU–US deal rather than primary deal text or independent analysis.",
+        "method_or_basis": "Review of provided source text; methodological details vary by record and have not all been independently checked.",
+        "qualification": "The examined material does not establish a qualifying independent economic-security finding.",
+        "radar_relevance": "Short BusinessEurope reaction to an EU–US deal rather than primary deal text or independent analysis.",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    }
+  ]
+}
