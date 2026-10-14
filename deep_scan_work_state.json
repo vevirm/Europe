@@ -1,13 +1,12 @@
 {
   "version": 1,
   "profile": "radar-deep-scan-work-state-v1",
-  "updated_at": "2026-10-14T08:43:33Z",
+  "updated_at": "2026-10-14T09:01:52Z",
   "lanes": {
     "A": {
       "target_size": 36,
       "assigned": [
         "link:https://institutdelors.eu/content/uploads/2026/10/TEMPLATE-BLOGPOST-MACIF-EN.pdf",
-        "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=7deceec6-c6ac-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
         "link:https://doi.org/10.2478/wd-2026-0161",
         "link:https://ecipe.org/publications/economic-impact-of-cada/#_ftnref1",
         "link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-Important-projects-of-common-European-interest-IPCEI-BusinessEurope-Paper.pdf",
@@ -41,11 +40,11 @@
         "historical:id:a432841dae0ea8cd",
         "historical:id:9d12392a0058745f",
         "historical:id:608e0a8e7b4d24ad",
-        "historical:id:14eff2914807ee10"
+        "historical:id:14eff2914807ee10",
+        "historical:id:267e8caebfd14e53"
       ],
-      "current_package_id": "worker-a-3d88df3d7f1a",
+      "current_package_id": "worker-a-87a5cbb1e142",
       "package_history": [
-        "worker-a-7fdd5ffaf53e",
         "worker-a-627c2e8a2c3d",
         "worker-a-e879d2d0fb96",
         "worker-a-65026296f26e",
@@ -84,22 +83,19 @@
         "worker-a-72197afccd2b",
         "worker-a-38e97d952959",
         "worker-a-ef20fbf61ec1",
-        "worker-a-3d88df3d7f1a"
+        "worker-a-3d88df3d7f1a",
+        "worker-a-87a5cbb1e142"
       ]
     },
     "B": {
       "target_size": 36,
       "assigned": [
-        "historical:id:304dbbbd23f905a9",
-        "historical:id:ef57a59ffb14983e",
-        "historical:id:267e8caebfd14e53",
         "historical:id:4849088efcf14046",
         "historical:id:98e4ab1cd4cf5b57",
         "historical:id:feaba8865bdc846b"
       ],
-      "current_package_id": "worker-b-a2a1a3766e7e",
+      "current_package_id": "worker-b-7c02bad2f201",
       "package_history": [
-        "worker-b-2d171e1839d6",
         "worker-b-aa9eadcfc41a",
         "worker-b-e4f5ce344574",
         "worker-b-cf8b3f0e0b5f",
@@ -138,7 +134,8 @@
         "worker-b-4dc3c8347df3",
         "worker-b-7d21a8273902",
         "worker-b-e060e7151f74",
-        "worker-b-a2a1a3766e7e"
+        "worker-b-a2a1a3766e7e",
+        "worker-b-7c02bad2f201"
       ]
     },
     "SINGLE": {
@@ -77201,9 +77198,83 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "partial",
+            "note": "Opened https://institutdelors.eu/content/uploads/2026/10/TEMPLATE-BLOGPOST-MACIF-EN.pdf; public web reader returned an error, but supplied package includes matching first-party PDF text, independently corroborated by publisher publication page."
+          },
+          {
+            "step": "publisher_page",
+            "outcome": "success",
+            "note": "Official Institut Jacques Delors publication page https://institutdelors.eu/en/publications/endure-it-alone-or-decide-together-european-sovereignty-as-a-new-doctrine-at-the-dawn-of-major-transitions/ confirms author, title, blog-post genre and 13 October 2026 publication."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_pdf_text",
+            "url": "https://institutdelors.eu/content/uploads/2026/10/TEMPLATE-BLOGPOST-MACIF-EN.pdf",
+            "title": "Endure it alone or decide together ? European sovereignty as a New Doctrine at the Dawn of Major Transitions - Institut Jacques Delors",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_article",
+            "url": "https://institutdelors.eu/en/publications/endure-it-alone-or-decide-together-european-sovereignty-as-a-new-doctrine-at-the-dawn-of-major-transitions/",
+            "title": "Endure it alone or decide together?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Original blog-post PDF text supplied in scanner package agrees with publisher bibliography and web page; this is a conference recap, not an analytical research report."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "partial",
+                "note": "Opened https://institutdelors.eu/content/uploads/2026/10/TEMPLATE-BLOGPOST-MACIF-EN.pdf; public web reader returned an error, but supplied package includes matching first-party PDF text, independently corroborated by publisher publication page."
+              },
+              {
+                "step": "publisher_page",
+                "outcome": "success",
+                "note": "Official Institut Jacques Delors publication page https://institutdelors.eu/en/publications/endure-it-alone-or-decide-together-european-sovereignty-as-a-new-doctrine-at-the-dawn-of-major-transitions/ confirms author, title, blog-post genre and 13 October 2026 publication."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_pdf_text",
+                "url": "https://institutdelors.eu/content/uploads/2026/10/TEMPLATE-BLOGPOST-MACIF-EN.pdf",
+                "title": "Endure it alone or decide together ? European sovereignty as a New Doctrine at the Dawn of Major Transitions - Institut Jacques Delors",
+                "evidence_used": true
+              },
+              {
+                "kind": "publisher_article",
+                "url": "https://institutdelors.eu/en/publications/endure-it-alone-or-decide-together-european-sovereignty-as-a-new-doctrine-at-the-dawn-of-major-transitions/",
+                "title": "Endure it alone or decide together?",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Original blog-post PDF text supplied in scanner package agrees with publisher bibliography and web page; this is a conference recap, not an analytical research report."
+          }
+        }
+      ]
     },
     "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=7deceec6-c6ac-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
       "title": "European transport regulation observer - Publications Office of the EU",
@@ -77212,12 +77283,14 @@
       "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=7deceec6-c6ac-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
       "last_package_id": "worker-a-3d88df3d7f1a",
       "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_scan_package_at": "2026-10-14T08:43:11Z",
+      "verified_at": "2026-10-14T08:59:44Z",
+      "verified_package_id": "worker-a-3d88df3d7f1a"
     },
     "link:https://doi.org/10.2478/wd-2026-0161": {
       "title": "China-Schock 2.0 trifft Deutschland: Was kann der Industrial Accelerator Act leisten?",
@@ -77229,9 +77302,93 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 24000 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://doi.org/10.2478/wd-2026-0161. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://www.kielinstitut.de/de/publikationen/china-schock-20-trifft-deutschland-was-kann-der-industrial-accelerator-act-leisten-20204/"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://doi.org/10.2478/wd-2026-0161",
+            "title": "China-Schock 2.0 trifft Deutschland: Was kann der Industrial Accelerator Act leisten?",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://www.kielinstitut.de/de/publikationen/china-schock-20-trifft-deutschland-was-kann-der-industrial-accelerator-act-leisten-20204/",
+            "title": "China-Schock 2.0 trifft Deutschland: Was kann der Industrial Accelerator Act leisten?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 24000 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://doi.org/10.2478/wd-2026-0161. No claim of direct web retrieval for this item."
+              },
+              {
+                "step": "publisher_or_repository_search",
+                "outcome": "success",
+                "note": "Matching primary publisher or institutional publication record found: https://www.kielinstitut.de/de/publikationen/china-schock-20-trifft-deutschland-was-kann-der-industrial-accelerator-act-leisten-20204/"
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://doi.org/10.2478/wd-2026-0161",
+                "title": "China-Schock 2.0 trifft Deutschland: Was kann der Industrial Accelerator Act leisten?",
+                "evidence_used": true
+              },
+              {
+                "kind": "publisher_or_institutional_record",
+                "url": "https://www.kielinstitut.de/de/publikationen/china-schock-20-trifft-deutschland-was-kann-der-industrial-accelerator-act-leisten-20204/",
+                "title": "China-Schock 2.0 trifft Deutschland: Was kann der Industrial Accelerator Act leisten?",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+          }
+        }
+      ]
     },
     "link:https://ecipe.org/publications/economic-impact-of-cada/#_ftnref1": {
       "title": "The Real-World Economic Impact of the Cloud and AI Development Act (CADA): What CADA Could Mean for Cloud Prices, Migration, Digitalisation and Europe’s Technology Supply Chain",
@@ -77243,9 +77400,93 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 24000 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://ecipe.org/publications/economic-impact-of-cada/#_ftnref1. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://cdn.ecipe.org/browse/?subj_subject=1814"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://ecipe.org/publications/economic-impact-of-cada/#_ftnref1",
+            "title": "The Real-World Economic Impact of the Cloud and AI Development Act (CADA): What CADA Could Mean for Cloud Prices, Migration, Digitalisation and Europe’s Technology Supply Chain",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://cdn.ecipe.org/browse/?subj_subject=1814",
+            "title": "The Real-World Economic Impact of the Cloud and AI Development Act (CADA): What CADA Could Mean for Cloud Prices, Migration, Digitalisation and Europe’s Te",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 24000 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://ecipe.org/publications/economic-impact-of-cada/#_ftnref1. No claim of direct web retrieval for this item."
+              },
+              {
+                "step": "publisher_or_repository_search",
+                "outcome": "success",
+                "note": "Matching primary publisher or institutional publication record found: https://cdn.ecipe.org/browse/?subj_subject=1814"
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://ecipe.org/publications/economic-impact-of-cada/#_ftnref1",
+                "title": "The Real-World Economic Impact of the Cloud and AI Development Act (CADA): What CADA Could Mean for Cloud Prices, Migration, Digitalisation and Europe’s Technology Supply Chain",
+                "evidence_used": true
+              },
+              {
+                "kind": "publisher_or_institutional_record",
+                "url": "https://cdn.ecipe.org/browse/?subj_subject=1814",
+                "title": "The Real-World Economic Impact of the Cloud and AI Development Act (CADA): What CADA Could Mean for Cloud Prices, Migration, Digitalisation and Europe’s Te",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+          }
+        }
+      ]
     },
     "link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-Important-projects-of-common-European-interest-IPCEI-BusinessEurope-Paper.pdf": {
       "title": "Important Projects of Common European Interest (IPCEI) - a BusinessEurope discussion paper",
@@ -77257,9 +77498,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 23039 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-Important-projects-of-common-European-interest-IPCEI-BusinessEurope-Paper.pdf. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-Important-projects-of-common-European-interest-IPCEI-BusinessEurope-Paper.pdf",
+            "title": "Important Projects of Common European Interest (IPCEI) - a BusinessEurope discussion paper",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 23039 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-Important-projects-of-common-European-interest-IPCEI-BusinessEurope-Paper.pdf. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-Important-projects-of-common-European-interest-IPCEI-BusinessEurope-Paper.pdf",
+                "title": "Important Projects of Common European Interest (IPCEI) - a BusinessEurope discussion paper",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "link:https://doi.org/10.1016/j.nbt.2026.10.005": {
       "title": "Unlocking Innovation in European Plant Breeding: A Perspective on the New Genomic Techniques Framework",
@@ -77271,9 +77574,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 20579 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://doi.org/10.1016/j.nbt.2026.10.005. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://doi.org/10.1016/j.nbt.2026.10.005",
+            "title": "Unlocking Innovation in European Plant Breeding: A Perspective on the New Genomic Techniques Framework",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 20579 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://doi.org/10.1016/j.nbt.2026.10.005. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://doi.org/10.1016/j.nbt.2026.10.005",
+                "title": "Unlocking Innovation in European Plant Breeding: A Perspective on the New Genomic Techniques Framework",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "link:https://doi.org/10.1177/19427786261484938": {
       "title": "External demand, profitability and uneven development in the European Union",
@@ -77285,9 +77650,57 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: recovered-work decision requires identity_verified=true; substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; recovered-work decision requires at least one substantive recovered source; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": false,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "not_available",
+            "note": "Inspected 0 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://doi.org/10.1177/19427786261484938. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: recovered-work decision requires identity_verified=true; substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; recovered-work decision requires at least one substantive recovered source; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": false,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "not_available",
+                "note": "Inspected 0 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://doi.org/10.1177/19427786261484938. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f76a3b56-c6e9-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
       "title": "Proposal for a COUNCIL REGULATION on the allocation of the fishing opportunities provided for in the Protocol on the implementation of the Sustainable Fisheries Partnership Agreement between the European Union and the Republic of Mauritius (2026-2030) - Publications Office of the EU",
@@ -77299,9 +77712,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 9962 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://op.europa.eu/o/opportal-service/download-handler?identifier=f76a3b56-c6e9-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=f76a3b56-c6e9-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+            "title": "Proposal for a COUNCIL REGULATION on the allocation of the fishing opportunities provided for in the Protocol on the implementation of the Sustainable Fisheries Partnership Agreement between the European Union and the Republic of Mauritius (2026-2030) - Publications Office of the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 9962 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://op.europa.eu/o/opportal-service/download-handler?identifier=f76a3b56-c6e9-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=f76a3b56-c6e9-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+                "title": "Proposal for a COUNCIL REGULATION on the allocation of the fishing opportunities provided for in the Protocol on the implementation of the Sustainable Fisheries Partnership Agreement between the European Union and the Republic of Mauritius (2026-2030) - Publications Office of the EU",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-BusinessEurope-letter-ahead-of-the-EU-Turkiye-HLTD.pdf": {
       "title": "EU-Türkiye High-Level Trade Dialogue - Letter from Markus J. Beyrer to Maroš Šefčovič",
@@ -77313,9 +77788,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 2910 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-BusinessEurope-letter-ahead-of-the-EU-Turkiye-HLTD.pdf. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-BusinessEurope-letter-ahead-of-the-EU-Turkiye-HLTD.pdf",
+            "title": "EU-Türkiye High-Level Trade Dialogue - Letter from Markus J. Beyrer to Maroš Šefčovič",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 2910 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-BusinessEurope-letter-ahead-of-the-EU-Turkiye-HLTD.pdf. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-BusinessEurope-letter-ahead-of-the-EU-Turkiye-HLTD.pdf",
+                "title": "EU-Türkiye High-Level Trade Dialogue - Letter from Markus J. Beyrer to Maroš Šefčovič",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=627815c8-c6ea-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
       "title": "Proposal for a COUNCIL DECISION on the conclusion of the Sustainable Fisheries Partnership Agreement and its Implementing Protocol (2026-2030) between the European Union and the Republic of Mauritius - Publications Office of the EU",
@@ -77327,9 +77864,57 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: recovered-work decision requires identity_verified=true; substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; recovered-work decision requires at least one substantive recovered source; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": false,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "not_available",
+            "note": "Inspected 0 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://op.europa.eu/o/opportal-service/download-handler?identifier=627815c8-c6ea-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: recovered-work decision requires identity_verified=true; substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; recovered-work decision requires at least one substantive recovered source; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": false,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "not_available",
+                "note": "Inspected 0 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://op.europa.eu/o/opportal-service/download-handler?identifier=627815c8-c6ea-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "link:https://www.businesseurope.eu/wp-content/uploads/2026/05/2026-05-05-BusinessEurope-Position-Paper-shareholders-rights-directive-revision.pdf": {
       "title": "Shareholders’ Rights Directive (SRD) Review: public consultation - a BusinessEurope position paper",
@@ -77341,9 +77926,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 19104 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2026/05/2026-05-05-BusinessEurope-Position-Paper-shareholders-rights-directive-revision.pdf. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2026/05/2026-05-05-BusinessEurope-Position-Paper-shareholders-rights-directive-revision.pdf",
+            "title": "Shareholders’ Rights Directive (SRD) Review: public consultation - a BusinessEurope position paper",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 19104 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2026/05/2026-05-05-BusinessEurope-Position-Paper-shareholders-rights-directive-revision.pdf. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://www.businesseurope.eu/wp-content/uploads/2026/05/2026-05-05-BusinessEurope-Position-Paper-shareholders-rights-directive-revision.pdf",
+                "title": "Shareholders’ Rights Directive (SRD) Review: public consultation - a BusinessEurope position paper",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "link:https://doi.org/10.1038/s41597-026-07454-2": {
       "title": "Global Marine LNG Terminals, Tankers & Trade: A High-Resolution AIS-Based Dataset of LNG Trade (2020–2024)",
@@ -77355,9 +78002,93 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 21826 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://doi.org/10.1038/s41597-026-07454-2. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://www.nature.com/articles/s41597-026-07454-2"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://doi.org/10.1038/s41597-026-07454-2",
+            "title": "Global Marine LNG Terminals, Tankers & Trade: A High-Resolution AIS-Based Dataset of LNG Trade (2020–2024)",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://www.nature.com/articles/s41597-026-07454-2",
+            "title": "Global Marine LNG Terminals, Tankers & Trade: A High-Resolution AIS-Based Dataset of LNG Trade (2020–2024)",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 21826 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://doi.org/10.1038/s41597-026-07454-2. No claim of direct web retrieval for this item."
+              },
+              {
+                "step": "publisher_or_repository_search",
+                "outcome": "success",
+                "note": "Matching primary publisher or institutional publication record found: https://www.nature.com/articles/s41597-026-07454-2"
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://doi.org/10.1038/s41597-026-07454-2",
+                "title": "Global Marine LNG Terminals, Tankers & Trade: A High-Resolution AIS-Based Dataset of LNG Trade (2020–2024)",
+                "evidence_used": true
+              },
+              {
+                "kind": "publisher_or_institutional_record",
+                "url": "https://www.nature.com/articles/s41597-026-07454-2",
+                "title": "Global Marine LNG Terminals, Tankers & Trade: A High-Resolution AIS-Based Dataset of LNG Trade (2020–2024)",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+          }
+        }
+      ]
     },
     "historical:id:7bcb4a4f19c18def": {
       "title": "Policy and discursive shifts in China’s economic diplomacy amid rising geopolitical tensions",
@@ -77369,9 +78100,93 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 7059 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://research.rug.nl/en/publications/policy-and-discursive-shifts-in-chinas-economic-diplomacy-amid-ri/. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://pmc.ncbi.nlm.nih.gov/articles/PMC13133616/"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://research.rug.nl/en/publications/policy-and-discursive-shifts-in-chinas-economic-diplomacy-amid-ri/",
+            "title": "Policy and discursive shifts in China’s economic diplomacy amid rising geopolitical tensions",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13133616/",
+            "title": "Policy and discursive shifts in China’s economic diplomacy amid rising geopolitical tensions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 7059 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://research.rug.nl/en/publications/policy-and-discursive-shifts-in-chinas-economic-diplomacy-amid-ri/. No claim of direct web retrieval for this item."
+              },
+              {
+                "step": "publisher_or_repository_search",
+                "outcome": "success",
+                "note": "Matching primary publisher or institutional publication record found: https://pmc.ncbi.nlm.nih.gov/articles/PMC13133616/"
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://research.rug.nl/en/publications/policy-and-discursive-shifts-in-chinas-economic-diplomacy-amid-ri/",
+                "title": "Policy and discursive shifts in China’s economic diplomacy amid rising geopolitical tensions",
+                "evidence_used": true
+              },
+              {
+                "kind": "publisher_or_institutional_record",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13133616/",
+                "title": "Policy and discursive shifts in China’s economic diplomacy amid rising geopolitical tensions",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+          }
+        }
+      ]
     },
     "historical:id:b89e4dd6404bfedc": {
       "title": "Supply Chain Secondary Sanctions: How China Weaponised Lithuania’s Trade Links - CELIS Institute",
@@ -77383,9 +78198,93 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 10923 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://celis.institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://celis.institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://celis.institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/",
+            "title": "Supply Chain Secondary Sanctions: How China Weaponised Lithuania’s Trade Links - CELIS Institute",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://celis.institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/",
+            "title": "Supply Chain Secondary Sanctions: How China Weaponised Lithuania’s Trade Links - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 10923 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://celis.institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/. No claim of direct web retrieval for this item."
+              },
+              {
+                "step": "publisher_or_repository_search",
+                "outcome": "success",
+                "note": "Matching primary publisher or institutional publication record found: https://celis.institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/"
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://celis.institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/",
+                "title": "Supply Chain Secondary Sanctions: How China Weaponised Lithuania’s Trade Links - CELIS Institute",
+                "evidence_used": true
+              },
+              {
+                "kind": "publisher_or_institutional_record",
+                "url": "https://celis.institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/",
+                "title": "Supply Chain Secondary Sanctions: How China Weaponised Lithuania’s Trade Links - CELIS Institute",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+          }
+        }
+      ]
     },
     "historical:id:110862a6951ab3f0": {
       "title": "Steven Everts interviewed by Deutsche Welle on Europe's strategic autonomy",
@@ -77397,9 +78296,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 1756 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.iss.europa.eu/press/steven-everts-interviewed-deutsche-welle-europes-strategic-autonomy. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.iss.europa.eu/press/steven-everts-interviewed-deutsche-welle-europes-strategic-autonomy",
+            "title": "Steven Everts interviewed by Deutsche Welle on Europe's strategic autonomy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 1756 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://www.iss.europa.eu/press/steven-everts-interviewed-deutsche-welle-europes-strategic-autonomy. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://www.iss.europa.eu/press/steven-everts-interviewed-deutsche-welle-europes-strategic-autonomy",
+                "title": "Steven Everts interviewed by Deutsche Welle on Europe's strategic autonomy",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "historical:id:91ef9cbdc71a2e69": {
       "title": "Research and innovation towards zero-emission road transport and European automotive sector competitiveness",
@@ -77411,9 +78372,93 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: defer requires evidence_depth=identity_only_after_recovery; defer requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; defer retrieval audit is too repetitive; record what was actually tried at each step; defer requires reason_code EVIDENCE_ACCESS_LIMITED; defer must not apply authoritative metadata corrections; defer must not contain reader interpretation; defer must not contain substantive deep_analysis claims",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "unverified_insufficient_material",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 1292 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://publications.jrc.ec.europa.eu/repository/handle/JRC146980. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://publications.jrc.ec.europa.eu/repository/handle/JRC146980"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC146980",
+            "title": "Research and innovation towards zero-emission road transport and European automotive sector competitiveness",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC146980",
+            "title": "Research and innovation towards zero-emission road transport and European automotive sector competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: defer requires evidence_depth=identity_only_after_recovery; defer requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; defer retrieval audit is too repetitive; record what was actually tried at each step; defer requires reason_code EVIDENCE_ACCESS_LIMITED; defer must not apply authoritative metadata corrections; defer must not contain reader interpretation; defer must not contain substantive deep_analysis claims",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "unverified_insufficient_material",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 1292 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://publications.jrc.ec.europa.eu/repository/handle/JRC146980. No claim of direct web retrieval for this item."
+              },
+              {
+                "step": "publisher_or_repository_search",
+                "outcome": "success",
+                "note": "Matching primary publisher or institutional publication record found: https://publications.jrc.ec.europa.eu/repository/handle/JRC146980"
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC146980",
+                "title": "Research and innovation towards zero-emission road transport and European automotive sector competitiveness",
+                "evidence_used": true
+              },
+              {
+                "kind": "publisher_or_institutional_record",
+                "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC146980",
+                "title": "Research and innovation towards zero-emission road transport and European automotive sector competitiveness",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+          }
+        }
+      ]
     },
     "historical:id:768150817f3cb0c4": {
       "title": "China Shock 2.0 and Europe's Economic-Security Gap: Europe Needs a Tool to Link Market Access to Local Production - Kiel Institute",
@@ -77425,9 +78470,93 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 6532 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.kielinstitut.de/publications/china-shock-20-and-europes-economic-security-gap-europe-needs-a-tool-to-link-market-access-to-local-production-20323/. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://www.kielinstitut.de/research/publications/kiel-policy-brief/"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.kielinstitut.de/publications/china-shock-20-and-europes-economic-security-gap-europe-needs-a-tool-to-link-market-access-to-local-production-20323/",
+            "title": "China Shock 2.0 and Europe's Economic-Security Gap: Europe Needs a Tool to Link Market Access to Local Production - Kiel Institute",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://www.kielinstitut.de/research/publications/kiel-policy-brief/",
+            "title": "China Shock 2.0 and Europe's Economic-Security Gap: Europe Needs a Tool to Link Market Access to Local Production - Kiel Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 6532 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://www.kielinstitut.de/publications/china-shock-20-and-europes-economic-security-gap-europe-needs-a-tool-to-link-market-access-to-local-production-20323/. No claim of direct web retrieval for this item."
+              },
+              {
+                "step": "publisher_or_repository_search",
+                "outcome": "success",
+                "note": "Matching primary publisher or institutional publication record found: https://www.kielinstitut.de/research/publications/kiel-policy-brief/"
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://www.kielinstitut.de/publications/china-shock-20-and-europes-economic-security-gap-europe-needs-a-tool-to-link-market-access-to-local-production-20323/",
+                "title": "China Shock 2.0 and Europe's Economic-Security Gap: Europe Needs a Tool to Link Market Access to Local Production - Kiel Institute",
+                "evidence_used": true
+              },
+              {
+                "kind": "publisher_or_institutional_record",
+                "url": "https://www.kielinstitut.de/research/publications/kiel-policy-brief/",
+                "title": "China Shock 2.0 and Europe's Economic-Security Gap: Europe Needs a Tool to Link Market Access to Local Production - Kiel Institute",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+          }
+        }
+      ]
     },
     "historical:id:fb93ad255037a74d": {
       "title": "Building Resilient and Robust Clean Energy Supply Chains: Challenges and Opportunities for a Sustainable Energy Transition",
@@ -77439,9 +78568,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 2674 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://publications.jrc.ec.europa.eu/repository/handle/JRC147825. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC147825",
+            "title": "Building Resilient and Robust Clean Energy Supply Chains: Challenges and Opportunities for a Sustainable Energy Transition",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 2674 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://publications.jrc.ec.europa.eu/repository/handle/JRC147825. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC147825",
+                "title": "Building Resilient and Robust Clean Energy Supply Chains: Challenges and Opportunities for a Sustainable Energy Transition",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "historical:id:8dc4bb0cae51158f": {
       "title": "Beyond confrontation? Comparing the determinants of Chinese and the European Union’s development finance to Africa",
@@ -77453,9 +78644,93 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 19302 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://link.springer.com/article/10.1007/s10308-025-00771-y. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://cris.maastrichtuniversity.nl/en/publications/beyond-confrontation-comparing-the-determinants-of-chinese-and-th/"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://link.springer.com/article/10.1007/s10308-025-00771-y",
+            "title": "Beyond confrontation? Comparing the determinants of Chinese and the European Union’s development finance to Africa",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://cris.maastrichtuniversity.nl/en/publications/beyond-confrontation-comparing-the-determinants-of-chinese-and-th/",
+            "title": "Beyond confrontation? Comparing the determinants of Chinese and the European Union’s development finance to Africa",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 19302 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://link.springer.com/article/10.1007/s10308-025-00771-y. No claim of direct web retrieval for this item."
+              },
+              {
+                "step": "publisher_or_repository_search",
+                "outcome": "success",
+                "note": "Matching primary publisher or institutional publication record found: https://cris.maastrichtuniversity.nl/en/publications/beyond-confrontation-comparing-the-determinants-of-chinese-and-th/"
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://link.springer.com/article/10.1007/s10308-025-00771-y",
+                "title": "Beyond confrontation? Comparing the determinants of Chinese and the European Union’s development finance to Africa",
+                "evidence_used": true
+              },
+              {
+                "kind": "publisher_or_institutional_record",
+                "url": "https://cris.maastrichtuniversity.nl/en/publications/beyond-confrontation-comparing-the-determinants-of-chinese-and-th/",
+                "title": "Beyond confrontation? Comparing the determinants of Chinese and the European Union’s development finance to Africa",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+          }
+        }
+      ]
     },
     "historical:id:471e4ae6426c944e": {
       "title": "The Making of the EU's Geoeconomic ‘Bazooka’: The Anti‐Coercion Instrument and the Role of Think Tanks in European Union Foreign Policy",
@@ -77467,9 +78742,93 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 6029 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://research.vu.nl/en/publications/the-making-of-the-eus-geoeconomic-bazooka-the-anti-coercion-instr/. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://onlinelibrary.wiley.com/doi/10.1111/jcms.70071"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://research.vu.nl/en/publications/the-making-of-the-eus-geoeconomic-bazooka-the-anti-coercion-instr/",
+            "title": "The Making of the EU's Geoeconomic ‘Bazooka’: The Anti‐Coercion Instrument and the Role of Think Tanks in European Union Foreign Policy",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://onlinelibrary.wiley.com/doi/10.1111/jcms.70071",
+            "title": "The Making of the EU's Geoeconomic ‘Bazooka’: The Anti‐Coercion Instrument and the Role of Think Tanks in European Union Foreign Policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 6029 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://research.vu.nl/en/publications/the-making-of-the-eus-geoeconomic-bazooka-the-anti-coercion-instr/. No claim of direct web retrieval for this item."
+              },
+              {
+                "step": "publisher_or_repository_search",
+                "outcome": "success",
+                "note": "Matching primary publisher or institutional publication record found: https://onlinelibrary.wiley.com/doi/10.1111/jcms.70071"
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://research.vu.nl/en/publications/the-making-of-the-eus-geoeconomic-bazooka-the-anti-coercion-instr/",
+                "title": "The Making of the EU's Geoeconomic ‘Bazooka’: The Anti‐Coercion Instrument and the Role of Think Tanks in European Union Foreign Policy",
+                "evidence_used": true
+              },
+              {
+                "kind": "publisher_or_institutional_record",
+                "url": "https://onlinelibrary.wiley.com/doi/10.1111/jcms.70071",
+                "title": "The Making of the EU's Geoeconomic ‘Bazooka’: The Anti‐Coercion Instrument and the Role of Think Tanks in European Union Foreign Policy",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+          }
+        }
+      ]
     },
     "historical:id:bb06908cb88fa3d9": {
       "title": "EU - China relations after the 2024 European elections",
@@ -77481,9 +78840,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 6289 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://link.springer.com/article/10.1007/s10308-025-00747-y. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://link.springer.com/article/10.1007/s10308-025-00747-y",
+            "title": "EU - China relations after the 2024 European elections",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 6289 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://link.springer.com/article/10.1007/s10308-025-00747-y. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://link.springer.com/article/10.1007/s10308-025-00747-y",
+                "title": "EU - China relations after the 2024 European elections",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "historical:id:3c00f5e3d93dd8e5": {
       "title": "European Green Deal and Geopoliticisation of Trade: A Poststructuralist Discourse Analysis of EU Agricultural Trade Policy",
@@ -77495,9 +78916,93 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 24000 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://content.openalex.org/works/W4414340040.pdf. No claim of direct web retrieval for this item."
+          },
+          {
+            "step": "publisher_or_repository_search",
+            "outcome": "success",
+            "note": "Matching primary publisher or institutional publication record found: https://onlinelibrary.wiley.com/doi/10.1111/jcms.70036"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://content.openalex.org/works/W4414340040.pdf",
+            "title": "European Green Deal and Geopoliticisation of Trade: A Poststructuralist Discourse Analysis of EU Agricultural Trade Policy",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_or_institutional_record",
+            "url": "https://onlinelibrary.wiley.com/doi/10.1111/jcms.70036",
+            "title": "European Green Deal and Geopoliticisation of Trade: A Poststructuralist Discourse Analysis of EU Agricultural Trade Policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 24000 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://content.openalex.org/works/W4414340040.pdf. No claim of direct web retrieval for this item."
+              },
+              {
+                "step": "publisher_or_repository_search",
+                "outcome": "success",
+                "note": "Matching primary publisher or institutional publication record found: https://onlinelibrary.wiley.com/doi/10.1111/jcms.70036"
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://content.openalex.org/works/W4414340040.pdf",
+                "title": "European Green Deal and Geopoliticisation of Trade: A Poststructuralist Discourse Analysis of EU Agricultural Trade Policy",
+                "evidence_used": true
+              },
+              {
+                "kind": "publisher_or_institutional_record",
+                "url": "https://onlinelibrary.wiley.com/doi/10.1111/jcms.70036",
+                "title": "European Green Deal and Geopoliticisation of Trade: A Poststructuralist Discourse Analysis of EU Agricultural Trade Policy",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Publication identity checked against official publisher or institutional record; substantive findings assessed using the supplied source text. Independent full-text inspection may still be necessary for archival-grade verification."
+          }
+        }
+      ]
     },
     "historical:id:20f35a2ec7f6c41b": {
       "title": "The Governance and Funding of European Rearmament",
@@ -77509,9 +79014,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: defer requires evidence_depth=identity_only_after_recovery; defer requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; defer retrieval audit is too repetitive; record what was actually tried at each step; defer requires reason_code EVIDENCE_ACCESS_LIMITED; defer must not contain reader interpretation; defer must not contain substantive deep_analysis claims",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "unverified_insufficient_material",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 1042 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/393996/Details. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/393996/Details",
+            "title": "The Governance and Funding of European Rearmament",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. Additional source retrieval necessary."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: defer requires evidence_depth=identity_only_after_recovery; defer requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; defer retrieval audit is too repetitive; record what was actually tried at each step; defer requires reason_code EVIDENCE_ACCESS_LIMITED; defer must not contain reader interpretation; defer must not contain substantive deep_analysis claims",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "unverified_insufficient_material",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 1042 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/393996/Details. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/393996/Details",
+                "title": "The Governance and Funding of European Rearmament",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. Additional source retrieval necessary."
+          }
+        }
+      ]
     },
     "historical:id:07d88402ad9b65d1": {
       "title": "Towards collaborative EU-Indonesia bargaining on palm oil policy: deconstructing the public discourse",
@@ -77523,9 +79090,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 21578 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://link.springer.com/article/10.1007/s10308-025-00732-5. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://link.springer.com/article/10.1007/s10308-025-00732-5",
+            "title": "Towards collaborative EU-Indonesia bargaining on palm oil policy: deconstructing the public discourse",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 21578 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://link.springer.com/article/10.1007/s10308-025-00732-5. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://link.springer.com/article/10.1007/s10308-025-00732-5",
+                "title": "Towards collaborative EU-Indonesia bargaining on palm oil policy: deconstructing the public discourse",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "historical:id:d2a3f60d595da52f": {
       "title": "China's Outward <scp>FDI</scp> in the European Union: How Much Geopolitics is in There?",
@@ -77537,9 +79166,57 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: defer requires identity_verified=true; defer requires evidence_depth=identity_only_after_recovery; defer requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; defer retrieval audit is too repetitive; record what was actually tried at each step; defer requires reason_code EVIDENCE_ACCESS_LIMITED; defer must not contain reader interpretation; defer must not contain substantive deep_analysis claims",
+      "verification": {
+        "identity_verified": false,
+        "evidence_depth": "unverified_insufficient_material",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "not_available",
+            "note": "Inspected 0 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: not supplied. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. Additional source retrieval necessary."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: defer requires identity_verified=true; defer requires evidence_depth=identity_only_after_recovery; defer requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; defer retrieval audit is too repetitive; record what was actually tried at each step; defer requires reason_code EVIDENCE_ACCESS_LIMITED; defer must not contain reader interpretation; defer must not contain substantive deep_analysis claims",
+          "verification": {
+            "identity_verified": false,
+            "evidence_depth": "unverified_insufficient_material",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "not_available",
+                "note": "Inspected 0 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: not supplied. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. Additional source retrieval necessary."
+          }
+        }
+      ]
     },
     "historical:id:e194719edd37dffd": {
       "title": "European Ombudsman public consultation on transparency of the Transatlantic Trade and Investment Partnership (TTIP) negotiations - Reply by BusinessEurope",
@@ -77551,9 +79228,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 11109 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2025/02/2014-00990-E-811-1.pdf. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2014-00990-E-811-1.pdf",
+            "title": "European Ombudsman public consultation on transparency of the Transatlantic Trade and Investment Partnership (TTIP) negotiations - Reply by BusinessEurope",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 11109 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2025/02/2014-00990-E-811-1.pdf. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2014-00990-E-811-1.pdf",
+                "title": "European Ombudsman public consultation on transparency of the Transatlantic Trade and Investment Partnership (TTIP) negotiations - Reply by BusinessEurope",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "historical:id:c4a03323d4289bc0": {
       "title": "The European Union’s Critical Raw Materials Act: How Effective In Addressing Supply Chains Risks? - CELIS Institute",
@@ -77565,9 +79304,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 14461 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://celis.institute/the-european-unions-critical-raw-materials-act-how-effective-in-addressing-supply-chains-risks/. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://celis.institute/the-european-unions-critical-raw-materials-act-how-effective-in-addressing-supply-chains-risks/",
+            "title": "The European Union’s Critical Raw Materials Act: How Effective In Addressing Supply Chains Risks? - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 14461 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://celis.institute/the-european-unions-critical-raw-materials-act-how-effective-in-addressing-supply-chains-risks/. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://celis.institute/the-european-unions-critical-raw-materials-act-how-effective-in-addressing-supply-chains-risks/",
+                "title": "The European Union’s Critical Raw Materials Act: How Effective In Addressing Supply Chains Risks? - CELIS Institute",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "historical:id:54b185951e456d2c": {
       "title": "EU-Albania 15th Subcommittee on Innovation, Information Society and Social Policy",
@@ -77579,9 +79380,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 12135 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.eeas.europa.eu/delegations/albania/eu-albania-15th-subcommittee-innovation-information-society-and-social-policy_en. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.eeas.europa.eu/delegations/albania/eu-albania-15th-subcommittee-innovation-information-society-and-social-policy_en",
+            "title": "EU-Albania 15th Subcommittee on Innovation, Information Society and Social Policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 12135 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://www.eeas.europa.eu/delegations/albania/eu-albania-15th-subcommittee-innovation-information-society-and-social-policy_en. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://www.eeas.europa.eu/delegations/albania/eu-albania-15th-subcommittee-innovation-information-society-and-social-policy_en",
+                "title": "EU-Albania 15th Subcommittee on Innovation, Information Society and Social Policy",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "historical:id:7e97de03fd75ddea": {
       "title": "EU-US Summit falls short of business expectations",
@@ -77593,9 +79456,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 2193 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/publications/eu-us-summit-falls-short-of-business-expectations/. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/publications/eu-us-summit-falls-short-of-business-expectations/",
+            "title": "EU-US Summit falls short of business expectations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 2193 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://www.businesseurope.eu/publications/eu-us-summit-falls-short-of-business-expectations/. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://www.businesseurope.eu/publications/eu-us-summit-falls-short-of-business-expectations/",
+                "title": "EU-US Summit falls short of business expectations",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "historical:id:4b04729ca1ab574e": {
       "title": "Civil Society Dialogue on the EU anti-coercion instrument",
@@ -77607,9 +79532,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 3804 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://policy.trade.ec.europa.eu/eu-trade-meetings-civil-society/civil-society-dialogue-eu-anti-coercion-instrument-2023-06-22_en. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://policy.trade.ec.europa.eu/eu-trade-meetings-civil-society/civil-society-dialogue-eu-anti-coercion-instrument-2023-06-22_en",
+            "title": "Civil Society Dialogue on the EU anti-coercion instrument",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 3804 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://policy.trade.ec.europa.eu/eu-trade-meetings-civil-society/civil-society-dialogue-eu-anti-coercion-instrument-2023-06-22_en. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://policy.trade.ec.europa.eu/eu-trade-meetings-civil-society/civil-society-dialogue-eu-anti-coercion-instrument-2023-06-22_en",
+                "title": "Civil Society Dialogue on the EU anti-coercion instrument",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "historical:id:cf4e68ddcc744e0d": {
       "title": "EU-US Trade and Technology Council - Working Group 7 on export controls - BusinessEurope reply to the public consultation",
@@ -77621,9 +79608,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 5435 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-01-14_input_ttc_working_group_7_export_controls-11a-1.pdf. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-01-14_input_ttc_working_group_7_export_controls-11a-1.pdf",
+            "title": "EU-US Trade and Technology Council - Working Group 7 on export controls - BusinessEurope reply to the public consultation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 5435 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-01-14_input_ttc_working_group_7_export_controls-11a-1.pdf. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-01-14_input_ttc_working_group_7_export_controls-11a-1.pdf",
+                "title": "EU-US Trade and Technology Council - Working Group 7 on export controls - BusinessEurope reply to the public consultation",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "historical:id:dac0536263087b02": {
       "title": "EU-US Trade and Technology Council - Working Group 3 on secure supply chains - BusinessEurope reply to the public consultation",
@@ -77635,9 +79684,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 6793 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-01-13_input_ttc_working_group_3_secure_supply_chains-93a-1.pdf. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-01-13_input_ttc_working_group_3_secure_supply_chains-93a-1.pdf",
+            "title": "EU-US Trade and Technology Council - Working Group 3 on secure supply chains - BusinessEurope reply to the public consultation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 6793 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-01-13_input_ttc_working_group_3_secure_supply_chains-93a-1.pdf. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-01-13_input_ttc_working_group_3_secure_supply_chains-93a-1.pdf",
+                "title": "EU-US Trade and Technology Council - Working Group 3 on secure supply chains - BusinessEurope reply to the public consultation",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "historical:id:a432841dae0ea8cd": {
       "title": "EU-US Trade and Technology Council - Letter from Markus J. Beyrer to Valdis Dombrovskis and Margrethe Vestager",
@@ -77649,9 +79760,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 7020 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-10-04_letter_ttc_-_evp_dombrovskis-687-1.pdf. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-10-04_letter_ttc_-_evp_dombrovskis-687-1.pdf",
+            "title": "EU-US Trade and Technology Council - Letter from Markus J. Beyrer to Valdis Dombrovskis and Margrethe Vestager",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 7020 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-10-04_letter_ttc_-_evp_dombrovskis-687-1.pdf. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2022-10-04_letter_ttc_-_evp_dombrovskis-687-1.pdf",
+                "title": "EU-US Trade and Technology Council - Letter from Markus J. Beyrer to Valdis Dombrovskis and Margrethe Vestager",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "historical:id:9d12392a0058745f": {
       "title": "European and UK critical raw materials (CRM) supply chains – “national security” considerations – Lexology - CELIS Institute",
@@ -77663,9 +79836,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: defer requires evidence_depth=identity_only_after_recovery; defer requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; defer retrieval audit is too repetitive; record what was actually tried at each step; defer requires reason_code EVIDENCE_ACCESS_LIMITED; defer must not contain reader interpretation; defer must not contain substantive deep_analysis claims",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "unverified_insufficient_material",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 692 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://celis.institute/european-and-uk-critical-raw-materials-crm-supply-chains-national-security-considerations-lexology/. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://celis.institute/european-and-uk-critical-raw-materials-crm-supply-chains-national-security-considerations-lexology/",
+            "title": "European and UK critical raw materials (CRM) supply chains – “national security” considerations – Lexology - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. Additional source retrieval necessary."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: defer requires evidence_depth=identity_only_after_recovery; defer requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; defer retrieval audit is too repetitive; record what was actually tried at each step; defer requires reason_code EVIDENCE_ACCESS_LIMITED; defer must not contain reader interpretation; defer must not contain substantive deep_analysis claims",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "unverified_insufficient_material",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 692 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://celis.institute/european-and-uk-critical-raw-materials-crm-supply-chains-national-security-considerations-lexology/. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://celis.institute/european-and-uk-critical-raw-materials-crm-supply-chains-national-security-considerations-lexology/",
+                "title": "European and UK critical raw materials (CRM) supply chains – “national security” considerations – Lexology - CELIS Institute",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. Additional source retrieval necessary."
+          }
+        }
+      ]
     },
     "historical:id:608e0a8e7b4d24ad": {
       "title": "Analysis: Will new EU law cause a chilling effect on future FDI into Ireland? – Business Post - CELIS Institute",
@@ -77677,9 +79912,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: defer requires evidence_depth=identity_only_after_recovery; defer requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; defer retrieval audit is too repetitive; record what was actually tried at each step; defer requires reason_code EVIDENCE_ACCESS_LIMITED; defer must not contain reader interpretation; defer must not contain substantive deep_analysis claims",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "unverified_insufficient_material",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 666 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://celis.institute/analysis-will-new-eu-law-cause-a-chilling-effect-on-future-fdi-into-ireland-business-post/. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://celis.institute/analysis-will-new-eu-law-cause-a-chilling-effect-on-future-fdi-into-ireland-business-post/",
+            "title": "Analysis: Will new EU law cause a chilling effect on future FDI into Ireland? – Business Post - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. Additional source retrieval necessary."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: defer requires evidence_depth=identity_only_after_recovery; defer requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; defer retrieval audit is too repetitive; record what was actually tried at each step; defer requires reason_code EVIDENCE_ACCESS_LIMITED; defer must not contain reader interpretation; defer must not contain substantive deep_analysis claims",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "unverified_insufficient_material",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 666 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://celis.institute/analysis-will-new-eu-law-cause-a-chilling-effect-on-future-fdi-into-ireland-business-post/. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://celis.institute/analysis-will-new-eu-law-cause-a-chilling-effect-on-future-fdi-into-ireland-business-post/",
+                "title": "Analysis: Will new EU law cause a chilling effect on future FDI into Ireland? – Business Post - CELIS Institute",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. Additional source retrieval necessary."
+          }
+        }
+      ]
     },
     "historical:id:14eff2914807ee10": {
       "title": "European business welcomes EU-US deal on steel and aluminium",
@@ -77691,9 +79988,71 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-14T08:42:41Z",
-      "last_package_id": "worker-a-3d88df3d7f1a",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:11Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-a-3d88df3d7f1a",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 990 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/publications/european-business-welcomes-eu-us-deal-on-steel-and-aluminium/. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/publications/european-business-welcomes-eu-us-deal-on-steel-and-aluminium/",
+            "title": "European business welcomes EU-US deal on steel and aluminium",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-3d88df3d7f1a",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 990 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://www.businesseurope.eu/publications/european-business-welcomes-eu-us-deal-on-steel-and-aluminium/. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://www.businesseurope.eu/publications/european-business-welcomes-eu-us-deal-on-steel-and-aluminium/",
+                "title": "European business welcomes EU-US deal on steel and aluminium",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "historical:id:304dbbbd23f905a9": {
       "title": "EU-US: business looks forward to a new era of partnership",
@@ -77702,12 +80061,14 @@
       "url": "https://www.businesseurope.eu/publications/eu-us-business-looks-forward-to-a-new-era-of-partnership/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-14T08:43:12Z",
       "last_package_id": "worker-b-a2a1a3766e7e",
       "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:33Z"
+      "last_scan_package_at": "2026-10-14T08:43:33Z",
+      "verified_at": "2026-10-14T08:59:44Z",
+      "verified_package_id": "worker-b-a2a1a3766e7e"
     },
     "historical:id:ef57a59ffb14983e": {
       "title": "EU-US Trade and Technology Council - Letter from Markus J. Beyrer to Valdis Dombrovskis",
@@ -77716,12 +80077,14 @@
       "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2021-09-13_evp_dombrovskis_-_eu-us_ttc_-63d-1.pdf",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-14T08:43:12Z",
       "last_package_id": "worker-b-a2a1a3766e7e",
       "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:33Z"
+      "last_scan_package_at": "2026-10-14T08:43:33Z",
+      "verified_at": "2026-10-14T08:59:44Z",
+      "verified_package_id": "worker-b-a2a1a3766e7e"
     },
     "historical:id:267e8caebfd14e53": {
       "title": "Janes quotes Daniel Fiott’s analysis on EU strategic autonomy and space",
@@ -77731,11 +80094,73 @@
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
       "status": "assigned",
-      "lane": "B",
+      "lane": "A",
       "assigned_at": "2026-10-14T08:43:12Z",
-      "last_package_id": "worker-b-a2a1a3766e7e",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:33Z"
+      "last_package_id": "worker-a-87a5cbb1e142",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:35Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-b-a2a1a3766e7e",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 251 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.iss.europa.eu/press/janes-quotes-daniel-fiotts-analysis-eu-strategic-autonomy-and-space. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.iss.europa.eu/press/janes-quotes-daniel-fiotts-analysis-eu-strategic-autonomy-and-space",
+            "title": "Janes quotes Daniel Fiott’s analysis on EU strategic autonomy and space",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-a2a1a3766e7e",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 251 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://www.iss.europa.eu/press/janes-quotes-daniel-fiotts-analysis-eu-strategic-autonomy-and-space. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://www.iss.europa.eu/press/janes-quotes-daniel-fiotts-analysis-eu-strategic-autonomy-and-space",
+                "title": "Janes quotes Daniel Fiott’s analysis on EU strategic autonomy and space",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "historical:id:4849088efcf14046": {
       "title": "Change in the status of coking coal on the EU list of critical raw materials (2017)",
@@ -77747,9 +80172,71 @@
       "status": "assigned",
       "lane": "B",
       "assigned_at": "2026-10-14T08:43:12Z",
-      "last_package_id": "worker-b-a2a1a3766e7e",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:33Z"
+      "last_package_id": "worker-b-7c02bad2f201",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:52Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-b-a2a1a3766e7e",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 24000 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://content.openalex.org/works/W3002049350.pdf. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://content.openalex.org/works/W3002049350.pdf",
+            "title": "Change in the status of coking coal on the EU list of critical raw materials (2017)",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-a2a1a3766e7e",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 24000 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://content.openalex.org/works/W3002049350.pdf. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://content.openalex.org/works/W3002049350.pdf",
+                "title": "Change in the status of coking coal on the EU list of critical raw materials (2017)",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "historical:id:98e4ab1cd4cf5b57": {
       "title": "EU and US need to work together on key international issues like trade and sanctions",
@@ -77761,9 +80248,71 @@
       "status": "assigned",
       "lane": "B",
       "assigned_at": "2026-10-14T08:43:12Z",
-      "last_package_id": "worker-b-a2a1a3766e7e",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:33Z"
+      "last_package_id": "worker-b-7c02bad2f201",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:52Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-b-a2a1a3766e7e",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 2159 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2025/02/2018-02-13_eu_and_us_need_to_work_together_in_key_international_issues-a3e-1.pdf. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2018-02-13_eu_and_us_need_to_work_together_in_key_international_issues-a3e-1.pdf",
+            "title": "EU and US need to work together on key international issues like trade and sanctions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-a2a1a3766e7e",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 2159 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2025/02/2018-02-13_eu_and_us_need_to_work_together_in_key_international_issues-a3e-1.pdf. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2018-02-13_eu_and_us_need_to_work_together_in_key_international_issues-a3e-1.pdf",
+                "title": "EU and US need to work together on key international issues like trade and sanctions",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     },
     "historical:id:feaba8865bdc846b": {
       "title": "EU and US business committed to the transatlantic relationship: need to avoid major trade disruptions",
@@ -77775,9 +80324,71 @@
       "status": "assigned",
       "lane": "B",
       "assigned_at": "2026-10-14T08:43:12Z",
-      "last_package_id": "worker-b-a2a1a3766e7e",
-      "scan_package_attempts": 1,
-      "last_scan_package_at": "2026-10-14T08:43:33Z"
+      "last_package_id": "worker-b-7c02bad2f201",
+      "scan_package_attempts": 2,
+      "last_scan_package_at": "2026-10-14T09:01:52Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-14T08:59:44Z",
+      "last_recovery_package_id": "worker-b-a2a1a3766e7e",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "package_source_material",
+            "outcome": "success",
+            "note": "Inspected 2385 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+          },
+          {
+            "step": "supplied_url",
+            "outcome": "not_independently_checked",
+            "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2025/02/2018-04-16_transatlantic_business_works_summit-00d-1.pdf. No claim of direct web retrieval for this item."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_supplied_source_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2018-04-16_transatlantic_business_works_summit-00d-1.pdf",
+            "title": "EU and US business committed to the transatlantic relationship: need to avoid major trade disruptions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-b-a2a1a3766e7e",
+          "at": "2026-10-14T08:59:44Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "package_source_material",
+                "outcome": "success",
+                "note": "Inspected 2385 characters of package-supplied text; this is not independently authenticated unless otherwise indicated."
+              },
+              {
+                "step": "supplied_url",
+                "outcome": "not_independently_checked",
+                "note": "Supplied URL: https://www.businesseurope.eu/wp-content/uploads/2025/02/2018-04-16_transatlantic_business_works_summit-00d-1.pdf. No claim of direct web retrieval for this item."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_supplied_source_excerpt",
+                "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2018-04-16_transatlantic_business_works_summit-00d-1.pdf",
+                "title": "EU and US business committed to the transatlantic relationship: need to avoid major trade disruptions",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Based primarily on the scanner-packaged document text. Publication identity and full-text completeness are not independently established for this record; this is an evidence-limited best-effort decision. "
+          }
+        }
+      ]
     }
   },
   "packages": {
@@ -84427,6 +87038,57 @@
         "historical:id:304dbbbd23f905a9",
         "historical:id:ef57a59ffb14983e",
         "historical:id:267e8caebfd14e53",
+        "historical:id:4849088efcf14046",
+        "historical:id:98e4ab1cd4cf5b57",
+        "historical:id:feaba8865bdc846b"
+      ]
+    },
+    "worker-a-87a5cbb1e142": {
+      "lane": "A",
+      "created_at": "2026-10-14T09:01:35Z",
+      "record_keys": [
+        "link:https://institutdelors.eu/content/uploads/2026/10/TEMPLATE-BLOGPOST-MACIF-EN.pdf",
+        "link:https://doi.org/10.2478/wd-2026-0161",
+        "link:https://ecipe.org/publications/economic-impact-of-cada/#_ftnref1",
+        "link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-Important-projects-of-common-European-interest-IPCEI-BusinessEurope-Paper.pdf",
+        "link:https://doi.org/10.1016/j.nbt.2026.10.005",
+        "link:https://doi.org/10.1177/19427786261484938",
+        "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f76a3b56-c6e9-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+        "link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-BusinessEurope-letter-ahead-of-the-EU-Turkiye-HLTD.pdf",
+        "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=627815c8-c6ea-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+        "link:https://www.businesseurope.eu/wp-content/uploads/2026/05/2026-05-05-BusinessEurope-Position-Paper-shareholders-rights-directive-revision.pdf",
+        "link:https://doi.org/10.1038/s41597-026-07454-2",
+        "historical:id:7bcb4a4f19c18def",
+        "historical:id:b89e4dd6404bfedc",
+        "historical:id:110862a6951ab3f0",
+        "historical:id:91ef9cbdc71a2e69",
+        "historical:id:768150817f3cb0c4",
+        "historical:id:fb93ad255037a74d",
+        "historical:id:8dc4bb0cae51158f",
+        "historical:id:471e4ae6426c944e",
+        "historical:id:bb06908cb88fa3d9",
+        "historical:id:3c00f5e3d93dd8e5",
+        "historical:id:20f35a2ec7f6c41b",
+        "historical:id:07d88402ad9b65d1",
+        "historical:id:d2a3f60d595da52f",
+        "historical:id:e194719edd37dffd",
+        "historical:id:c4a03323d4289bc0",
+        "historical:id:54b185951e456d2c",
+        "historical:id:7e97de03fd75ddea",
+        "historical:id:4b04729ca1ab574e",
+        "historical:id:cf4e68ddcc744e0d",
+        "historical:id:dac0536263087b02",
+        "historical:id:a432841dae0ea8cd",
+        "historical:id:9d12392a0058745f",
+        "historical:id:608e0a8e7b4d24ad",
+        "historical:id:14eff2914807ee10",
+        "historical:id:267e8caebfd14e53"
+      ]
+    },
+    "worker-b-7c02bad2f201": {
+      "lane": "B",
+      "created_at": "2026-10-14T09:01:52Z",
+      "record_keys": [
         "historical:id:4849088efcf14046",
         "historical:id:98e4ab1cd4cf5b57",
         "historical:id:feaba8865bdc846b"

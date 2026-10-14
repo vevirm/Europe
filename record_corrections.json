@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-record-corrections-v1",
-  "updated_at": "2026-10-13T08:25:30Z",
+  "updated_at": "2026-10-14T08:59:44Z",
   "records": {
     "link:https://doi.org/10.1080/09662839.2026.2709844": {
       "fields": {
@@ -2015,6 +2015,58 @@
       ],
       "updated_at": "2026-10-13T08:04:16Z",
       "deep_scan_package_id": "worker-a-38e97d952959"
+    },
+    "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=7deceec6-c6ac-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
+      "fields": {
+        "title": "EU Transport Competitiveness",
+        "authors": "Juan Montero; Elodie Petrozziello",
+        "source": "European University Institute, Robert Schuman Centre",
+        "type": "policy brief",
+        "date": "2026-10"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Primary PDF title page identifies the issue 2026/22, actual title, authors and Florence EUI publisher; issue only supports month precision.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "evidence": [
+        "https://op.europa.eu/o/opportal-service/download-handler?identifier=7deceec6-c6ac-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part="
+      ],
+      "updated_at": "2026-10-14T08:59:44Z",
+      "deep_scan_package_id": "worker-a-3d88df3d7f1a"
+    },
+    "historical:id:304dbbbd23f905a9": {
+      "fields": {
+        "date": "2021-01-20",
+        "type": "press release"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Official BusinessEurope dated release establishes precise date and publication type.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://www.businesseurope.eu/publications/eu-us-business-looks-forward-to-a-new-era-of-partnership/"
+      ],
+      "updated_at": "2026-10-14T08:59:44Z",
+      "deep_scan_package_id": "worker-b-a2a1a3766e7e"
+    },
+    "historical:id:ef57a59ffb14983e": {
+      "fields": {
+        "date": "2021-09-13",
+        "type": "public letter",
+        "authors": "Markus J. Beyrer"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Primary letter date line, salutation and signature/attribution identify 13 September 2021 and sender.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://www.businesseurope.eu/wp-content/uploads/2025/02/2021-09-13_evp_dombrovskis_-_eu-us_ttc_-63d-1.pdf"
+      ],
+      "updated_at": "2026-10-14T08:59:44Z",
+      "deep_scan_package_id": "worker-b-a2a1a3766e7e"
     }
   }
 }
