@@ -7,8 +7,8 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **2040** (Main **839** + Historical **1201**)
-- Automatic queue still needing V2 verification: **175** (Main **47** + Historical **128**)
-- Currently assigned to workers: **0** (Main **0** + Historical **0**)
+- Automatic queue still needing V2 verification: **217** (Main **59** + Historical **158**)
+- Currently assigned to workers: **42** (Main **12** + Historical **30**)
 - Bounded access-recovery retries still eligible: **0**
 - Terminally dropped after failed scans: **115**
 - Automatic queue pending and not yet assigned: **175**
@@ -16,12 +16,27 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-ef20fbf61ec1`
-- Assigned unresolved records: **0**
+- Current package: `worker-a-3d88df3d7f1a`
+- Assigned unresolved records: **36**
+  1. `link:https://institutdelors.eu/content/uploads/2026/10/TEMPLATE-BLOGPOST-MACIF-EN.pdf` — Endure it alone or decide together ? European sovereignty as a New Doctrine at the Dawn of Major Transitions - Institut Jacques Delors
+  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=7deceec6-c6ac-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — European transport regulation observer - Publications Office of the EU
+  3. `link:https://doi.org/10.2478/wd-2026-0161` — China-Schock 2.0 trifft Deutschland: Was kann der Industrial Accelerator Act leisten?
+  4. `link:https://ecipe.org/publications/economic-impact-of-cada/#_ftnref1` — The Real-World Economic Impact of the Cloud and AI Development Act (CADA): What CADA Could Mean for Cloud Prices, Migration, Digitalisation and Europe’s Technology Supply Chain
+  5. `link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-Important-projects-of-common-European-interest-IPCEI-BusinessEurope-Paper.pdf` — Important Projects of Common European Interest (IPCEI) - a BusinessEurope discussion paper
+  6. `link:https://doi.org/10.1016/j.nbt.2026.10.005` — Unlocking Innovation in European Plant Breeding: A Perspective on the New Genomic Techniques Framework
+  7. `link:https://doi.org/10.1177/19427786261484938` — External demand, profitability and uneven development in the European Union
+  8. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f76a3b56-c6e9-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a COUNCIL REGULATION on the allocation of the fishing opportunities provided for in the Protocol on the implementation of the Sustainable Fisheries Partnership Agreement between the European Union and the Republic of Mauritius (2026-2030) - Publications Office of the EU
+  - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-e060e7151f74`
-- Assigned unresolved records: **0**
+- Current package: `worker-b-a2a1a3766e7e`
+- Assigned unresolved records: **6**
+  1. `historical:id:304dbbbd23f905a9` — EU-US: business looks forward to a new era of partnership
+  2. `historical:id:ef57a59ffb14983e` — EU-US Trade and Technology Council - Letter from Markus J. Beyrer to Valdis Dombrovskis
+  3. `historical:id:267e8caebfd14e53` — Janes quotes Daniel Fiott’s analysis on EU strategic autonomy and space
+  4. `historical:id:4849088efcf14046` — Change in the status of coking coal on the EU list of critical raw materials (2017)
+  5. `historical:id:98e4ab1cd4cf5b57` — EU and US need to work together on key international issues like trade and sanctions
+  6. `historical:id:feaba8865bdc846b` — EU and US business committed to the transatlantic relationship: need to avoid major trade disruptions
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
