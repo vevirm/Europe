@@ -129,7 +129,7 @@ function phenomenonExplanation(v){
 function wowCycle(items){
   const buckets=new Map([5,4,3,2,1].map(w=>[w,[]]));
   for(const x of items||[]){const w=Math.max(1,Math.min(5,Number(x?.distance)||3));buckets.get(w).push(x)}
-  const out=[];for(let round=0;round<3;round++)for(const w of [5,4,3,2,1]){const x=buckets.get(w)[round];if(x)out.push(x)}
+  const out=[];for(let round=0,maxRounds=Math.max(0,...[...buckets.values()].map(xs=>xs.length));round<maxRounds;round++)for(const w of [5,4,3,2,1]){const x=buckets.get(w)[round];if(x)out.push(x)}
   return out;
 }
 function publicPhenomenonSummary(summary,text){return phenomenonExplanation(text)}
