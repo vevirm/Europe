@@ -2138,6 +2138,58 @@ def _trend_scope_label(scope_kind: str, scope_key: str) -> str:
     return text or "this object"
 
 
+# Publication gate for countervailing forces. A shared *topic* is not a shared
+# outcome: evidence on industrial production cannot be balanced against evidence
+# on infrastructure security merely because both concern economic security.
+# Each outcome below is deliberately concrete. New outcomes can be discovered by
+# extending the vocabulary; unrecognised outcomes stay in developing stock.
+_COUNTERVAILING_OUTCOMES = {
+    "production_capacity": r"\b(?:manufactur\w*|industrial (?:production|capacity)|production capacity|factories|factory|plant closures?|deindustriali[sz]\w*)\b",
+    "supply_dependence": r"\b(?:suppl\w*|import\w*|dependen\w*|sourcing|critical raw materials?|rare earths?|chokepoints?)\b",
+    "research_access": r"\b(?:research access|research collaboration|research partnership|knowledge sharing|academic openness|cross.border research)\b",
+    "compute_capacity": r"\b(?:comput\w* capacity|data.cent\w*|supercomput\w*|ai infrastructure|ai gigafactor\w*)\b",
+    "energy_reliability": r"\b(?:electricity grid|power grid|energy security|energy supply|power supply|electricity supply)\b",
+    "infrastructure_security": r"\b(?:critical infrastructure|infrastructure resilien\w*|grid resilien\w*|infrastructure vulnerab\w*)\b",
+    "talent_retention": r"\b(?:talent retention|brain drain|research careers?|recruit\w* talent|skills shortages?|research workforce)\b",
+    "market_access": r"\b(?:market access|trade access|export markets?|trade barriers?|tariffs?|import restrictions?)\b",
+    "investment_access": r"\b(?:investment financing|access to financ\w*|venture capital|funding gap|capital availability|investment flows?)\b",
+    "coordination": r"\b(?:joint procurement|fragmented procurement|member.state coordination|common (?:rules|framework)|national fragmentation|harmoni[sz]ation)\b",
+    "technology_control": r"\b(?:export controls?|technology transfers?|dual.use technology|research security|sensitive technology)\b",
+}
+# A counter-trend is an *active adverse effect*, not merely a policy rule,
+# announced intention, or static background exposure.
+_COUNTERVAILING_EFFECT = re.compile(
+    r"\b(?:undermin\w*|offset\w*|erod\w*|reduc\w*|decreas\w*|declin\w*|"
+    r"slow\w*|delay\w*|prevent\w*|block\w*|restrict\w*|limit\w*|"
+    r"constrain\w*|disrupt\w*|shortag\w*|bottleneck\w*|"
+    r"los\w*|lost|closur\w*|shift\w* abroad|relocat\w* abroad|"
+    r"ris\w* cost|higher costs?|increas\w* dependenc\w*|"
+    r"grow\w* dependenc\w*|worsen\w*|fragment\w*)\b", re.I)
+
+
+def _countervailing_outcome(left: list[dict[str, Any]], right: list[dict[str, Any]]) -> str:
+    """Return an outcome supported by independent evidence on BOTH sides.
+
+    Use source statements rather than controlled-object tags or UI headlines.
+    At least two different source records on each side must address the SAME
+    concrete outcome, and the opposing side must describe a limiting effect.
+    """
+    for outcome, pattern in _COUNTERVAILING_OUTCOMES.items():
+        def grounded(rows: list[dict[str, Any]], adverse: bool) -> set[str]:
+            return {
+                clean(n.get("_record_id")) for n in rows
+                if clean(n.get("_record_id"))
+                and any(
+                    re.search(pattern, sentence, re.I)
+                    and (not adverse or _COUNTERVAILING_EFFECT.search(sentence))
+                    for sentence in re.split(r"(?<=[.!?])\s+", clean(n.get("text")))
+                )
+            }
+        if len(grounded(left, False)) >= 2 and len(grounded(right, True)) >= 2:
+            return outcome
+    return ""
+
+
 def _trend_payload(
     raw_candidate: dict[str, Any],
     nodes: list[dict[str, Any]],
@@ -2207,8 +2259,10 @@ def _trend_payload(
     if not left_records or not right_records:
         return None
 
+    shared_outcome = _countervailing_outcome(lk, rk)
     evidence_floor_passes = (
-        len(left_records) >= 3
+        bool(shared_outcome)
+        and len(left_records) >= 3
         and len(right_records) >= 3
         and lsrc >= 2
         and rsrc >= 2
@@ -2431,6 +2485,8 @@ def _trend_payload(
         "trend_scope": scope_kind,
         "trend_key": f"object:{obj}",
         "trend_evidence_floor_passes": evidence_floor_passes,
+        "countervailing_validated": bool(shared_outcome),
+        "countervailing_outcome": shared_outcome,
         "trend_balance": {
             "family": "claim_native_object",
             "scope_kind": "object",
