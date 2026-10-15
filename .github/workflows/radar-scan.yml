@@ -113,6 +113,7 @@ jobs:
           set -euo pipefail
           python scripts/rebuild_active_radar.py --allow-large-change
           python scripts/check_active_corpus.py
+          python scripts/check_reasoning_publication.py
           node scripts/generate_stuff_workbook.js
 
       - name: Safety-check and isolate scanner output
