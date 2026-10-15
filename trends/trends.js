@@ -1,4 +1,4 @@
-/* v21.7 — trend/counter-trend tug-of-war from the retained Radar corpus.
+/* v22.0 — trend/counter-trend tug-of-war from the retained Radar corpus.
    Publication rule is intentionally simple:
    - a side needs at least three current records from at least two independent sources;
    - a pair therefore needs current evidence on both sides before it is published;
@@ -329,6 +329,9 @@
     const ids=Array.isArray(state?.publications?.trend)?state.publications.trend:[];
     const map=new Map((Array.isArray(state?.candidates)?state.candidates:[]).filter(x=>x&&typeof x==='object').map(x=>[clean(x.id),x]));
     return ids.map(id=>map.get(clean(id))).filter(Boolean).map(c=>{
+      // Old publications were based on same-topic polarity, not demonstrable
+      // countervailing mechanisms. Never grandfather them into the new page.
+      if(c.countervailing_validated!==true||!clean(c.countervailing_outcome))return null;
       const b=c.trend_balance||{},lp=Number(b.left_pull),rp=Number(b.right_pull);
       if(!Number.isFinite(lp)||!Number.isFinite(rp)||Math.round(lp+rp)!==100)return null;
       const support=Array.isArray(c.support)?c.support:[];
@@ -340,6 +343,7 @@
       return {id:c.id,emergent:true,family:clean(b.family),objectKey:clean(b.object_key),support:Number(c.score)||0,
         left:{title:trendHeadlineFromPlain(b.left_title||'Pull A',b.left_plain||c.reader_summary||''),plain:clean(b.left_plain||c.reader_summary||''),why:'',pull:Math.round(lp),evidence:leftEvidence,history:[],sourceCount:Number(b.left_sources)||0},
         right:{title:trendHeadlineFromPlain(b.right_title||'Pull B',b.right_plain||c.reader_summary||''),plain:clean(b.right_plain||c.reader_summary||''),why:'',pull:Math.round(rp),evidence:rightEvidence,history:[],sourceCount:Number(b.right_sources)||0},
+        outcome:clean(c.countervailing_outcome),
         pullRange:{left:b.left_range||[],right:b.right_range||[]},
         composition:clean(b.composition||''),flip:clean(b.flip_line||''),label:clean(b.label||''),
         actionStats:{leftActions:Number(b.left_actions)||0,rightActions:Number(b.right_actions)||0,leftSources:Number(b.left_sources)||0,rightSources:Number(b.right_sources)||0,rawLeft:Number(b.raw_left_pull),rawRight:Number(b.raw_right_pull)},
@@ -348,32 +352,10 @@
   }
 
   function build(data,history){
-    const state=data?.high_order_inference&&typeof data.high_order_inference==='object'?data.high_order_inference:{};
-    if(state?.detector_backend==='claim_native'&&Number(state?.selection_stage||0)>=7){
-      // Stage 7 already publishes the deliberate wow-cycle order (5,4,3,2,1 x3).
-      // Do not re-sort the shelf in the browser.
-      return highOrderPairs(data);
-    }
-    const currentRows=currentCorpus(data),historicalRows=historicalCorpus(history),out=[];
-    for(const pair of PAIRS){
-      const left=sideEvidence(currentRows,historicalRows,pair.left),right=sideEvidence(currentRows,historicalRows,pair.right);
-      if(!sideQualifies(left)||!sideQualifies(right))continue;
-      if(left.evidence.length+right.evidence.length<6)continue;
-      const total=left.raw+right.raw;if(total<=0)continue;
-      let leftPull=Math.round(100*left.raw/total);leftPull=Math.max(18,Math.min(82,leftPull));
-      const rightPull=100-leftPull;
-      // The score is deliberately a playful balance meter, not a probability estimate.
-      const support=Math.round((left.averageQuality+right.averageQuality)/2+Math.min(10,left.sourceCount+right.sourceCount)+Math.min(4,left.history.length+right.history.length));
-      out.push({...pair,left:{...pair.left,...left,pull:leftPull},right:{...pair.right,...right,pull:rightPull},support,currentEvidenceCount:left.evidence.length+right.evidence.length,historicalContextCount:left.history.length+right.history.length});
-    }
-    const semanticDuplicate=(x)=>{
-      if(x.family==='open_protect'&&x.objectKey==='openness')return out.some(y=>y.id==='open_vs_secure');
-      if(x.family==='attract_friction'&&x.objectKey==='talent')return out.some(y=>y.id==='talent_pull_vs_talent_friction');
-      if(x.family==='capacity_access'&&x.objectKey==='infrastructure')return out.some(y=>y.id==='infrastructure_vs_bottlenecks');
-      return false;
-    };
-    for(const x of highOrderPairs(data))if(!out.some(y=>y.id===x.id)&&!semanticDuplicate(x))out.push(x);
-    return out.sort((a,b)=>b.support-a.support||Math.abs(50-a.left.pull)-Math.abs(50-b.left.pull)||a.id.localeCompare(b.id));
+    // Fail closed: a topic match, sign classification, or old static pair is
+    // insufficient to establish a countervailing mechanism. Only publish pairs
+    // validated by the current evidence-based claim-native reasoning pipeline.
+    return highOrderPairs(data);
   }
   function stats(data,history){
     const hs=historicalCorpus(history);
