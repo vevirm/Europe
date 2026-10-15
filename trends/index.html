@@ -17,7 +17,7 @@
 <section class="method"><div class="method-head"><h2>How to read these pairs</h2><p class="method-note">The two sides can strengthen at the same time. Older material is shown only when it adds useful context.</p></div><div id="corpusLine" class="corpus-line"></div></section>
 <div id="pairs" class="pair-list"><div class="empty">Loading</div></div>
 </main>
-<script src="../reader_rank.js?v=21.7"></script><script src="../reader_style.js?v=28.3"></script><script src="../historical/reasoning_context.js?v=1"></script><script src="trends.js?v=22.1"></script>
+<script src="../reader_rank.js?v=21.7"></script><script src="../reader_style.js?v=28.3"></script><script src="../historical/reasoning_context.js?v=1"></script><script src="trends.js?v=22.2"></script>
 <script>
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function surface(v){return globalThis.RadarReaderStyle?.surfaceText?.(v)||String(v||'')}
@@ -54,7 +54,7 @@ if(!all.length){
   if(alternate.length){all=alternate;recovered=true}
 }
 const xs=wowCyclePairs(all).slice(0,15);
-document.getElementById('corpusLine').textContent=xs.some(x=>x.developing)?'Developing comparisons drawn from independent current Radar sources; these are not yet claim-native validated counter-trends.':(recovered?'Showing validated pairs from the main Radar data while the active snapshot catches up.':'');
+document.getElementById('corpusLine').textContent=xs.some(x=>x.developing)?'Developing comparisons from the claim-native reasoning pipeline and current Radar evidence; these are not yet validated as genuinely opposing trends.':(recovered?'Showing validated pairs from the main Radar data while the active snapshot catches up.':'');
 document.getElementById('pairs').innerHTML=xs.length?xs.map(pair).join(''):'<div class="empty">No evidence-backed, genuinely opposing trend and counter-trend pair is available in the published data. Check the Radar data publication and selection pipeline.</div>';document.querySelectorAll('.tug-track [data-pull]').forEach(el=>{el.style.flexGrow=String(Math.max(0,Number(el.dataset.pull)||0))})}catch(e){console.error(e);document.getElementById('pairs').innerHTML='<div class="empty">Trend evidence is unavailable.</div>'}})();
 </script><script src="../reader_language.js?v=5"></script>
 <script src="../site-shell.js?v=29"></script>

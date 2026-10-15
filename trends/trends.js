@@ -375,12 +375,55 @@
     }
     return out;
   }
+  // Surface evidence-backed claim-native candidate tensions without declaring
+  // them verified opposites. This is the reasoning pipeline's own evidence,
+  // not broad keyword pairing or a fabricated trend. A minimum of two distinct
+  // current primary records AND two sources is required on EACH side.
+  function reasoningDevelopingPairs(data){
+    const state=data?.high_order_inference||{};
+    const ids=Array.isArray(state?.publications?.trend)?state.publications.trend:[];
+    const byId=new Map((Array.isArray(state?.candidates)?state.candidates:[]).map(c=>[clean(c.id),c]));
+    const output=[];
+    for(const id of ids){
+      const c=byId.get(clean(id));
+      if(!c||c.product!=='trend'||c.grammar_id!=='opposing_movements')continue;
+      if(c.countervailing_validated===true)continue;
+      const support=Array.isArray(c.support)?c.support:[];
+      const evidenceFor=role=>{
+        const seen=new Set(),rows=[];
+        for(const e of support){
+          if(clean(e.role)!==role||e.claim_primary===false||!clean(e.title)||!clean(e.source)||!clean(e.link))continue;
+          const unique=clean(e.identity||e.link);
+          if(seen.has(unique))continue;
+          seen.add(unique);rows.push({row:e});
+        }
+        return rows;
+      };
+      const expanding=evidenceFor('Expands'),constraining=evidenceFor('Constrains');
+      const independent=items=>new Set(items.map(x=>low(x.row.source))).size;
+      if(expanding.length<2||constraining.length<2||independent(expanding)<2||independent(constraining)<2)continue;
+      const object=clean(c.reader_summary||c.topic_label||c.reader_title||'this area');
+      const name=clean(c.reader_title||c.topic_label||'EU economic-security activity');
+      const count=expanding.length+constraining.length;
+      const lp=Math.max(20,Math.min(80,Math.round(100*expanding.length/count)));
+      output.push({id:'reasoning:'+clean(c.id),emergent:false,developing:true,
+        left:{title:`Expansion in ${name}`,plain:`Evidence of expansion relating to ${object}.`,why:'',pull:lp,evidence:expanding,history:[],sourceCount:independent(expanding)},
+        right:{title:`Constraints on ${name}`,plain:`Evidence of constraints relating to ${object}.`,why:'',pull:100-lp,evidence:constraining,history:[],sourceCount:independent(constraining)},
+        composition:'Developing reasoning candidate. The two directions are supported by separate primary records, but the system has NOT established that they are genuinely opposing trends on the same outcome. Evidence shares, not verified effect sizes, determine the bars.',
+        flip:'Needs an explicit shared outcome, causal countervailing mechanism and falsifier check before promotion to a verified trend/counter-trend pair.'});
+    }
+    return output;
+  }
   function build(data,history){
     // Fail closed: a topic match, sign classification, or old static pair is
     // insufficient to establish a countervailing mechanism. Only publish pairs
     // validated by the current evidence-based claim-native reasoning pipeline.
     const verified=highOrderPairs(data);
-    return verified.length?verified:developingPairs(data,history);
+    if(verified.length)return verified;
+    const reasoned=reasoningDevelopingPairs(data);
+    const independent=developingPairs(data,history);
+    const existing=new Set(reasoned.map(x=>low(x.left.title+' '+x.right.title)));
+    return [...reasoned,...independent.filter(x=>!existing.has(low(x.left.title+' '+x.right.title)))];
   }
   function stats(data,history){
     const hs=historicalCorpus(history);
