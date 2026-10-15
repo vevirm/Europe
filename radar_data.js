@@ -110,33 +110,39 @@
     return Number(d.drop||0)+Number(d.drop_unverifiable||0)+Number(d.duplicate||0);
   }
 
+  function publicationTime(doc){
+    const stamps=[doc?.high_order_inference?.evaluated_at,doc?.reader_products_refresh?.completed_at,doc?.run_completed_at,doc?.last_updated];
+    return Math.max(0,...stamps.map(x=>Date.parse(x||'')||0));
+  }
+
   async function load(primary='radar.json',fallback='radar_seed.json'){
-    // Generated active snapshot is the preferred public contract. It already contains
-    // corrections, authoritative V2 semantics and active-only derived reasoning.
-    try{
-      const active=await fetchJson(activePath(primary));
-      if(active&&active.active_corpus_snapshot){globalThis.RadarReaderLanguageStatus={enabled:true,authoritative:true,source:'radar_active.json'};return active}
-    }catch(_e){}
+    // Fetch both independently: the active snapshot can lag the main publication.
+    const [activeResult,rawResult]=await Promise.allSettled([fetchJson(activePath(primary)),fetchJson(primary)]);
+    const active=activeResult.status==='fulfilled'?activeResult.value:null;
+    let doc=rawResult.status==='fulfilled'?rawResult.value:null;
+    let loadedPath=primary;
+    const activeOK=Boolean(active?.active_corpus_snapshot);
+    if(activeOK&&(!doc||publicationTime(active)>=publicationTime(doc))){
+      globalThis.RadarReaderLanguageStatus={enabled:true,authoritative:true,source:'radar_active.json'};
+      return active;
+    }
+    if(!doc){try{doc=await fetchJson(fallback);loadedPath=fallback}catch(_e){}}
+    if(!doc){if(activeOK)return active;throw new Error('Radar data unavailable')}
 
-    let doc=null,loadedPath='';
-    for(const path of [primary,fallback]){try{doc=await fetchJson(path);loadedPath=path;break}catch(_e){}}
-    if(!doc)throw new Error('Radar data unavailable');
-
-    // Compatibility/fail-safe path for deployments where radar_active.json has not yet
-    // been generated. Build the active view in-browser from the same sidecars.
+    // The raw corpus must still be filtered through the admission and correction
+    // sidecars. Do not accidentally display dropped sources just to get newer data.
     try{
       const [admission,corrections,reader]=await Promise.all([
         fetchJson(admissionPath(loadedPath)),fetchJson(correctionsPath(loadedPath)),fetchJson(readerSidecarPath(loadedPath))
       ]);
       const built=buildActiveDocument(doc,admission,corrections,reader);
-      globalThis.RadarReaderLanguageStatus={enabled:true,authoritative:true,source:'sidecars',applied:built.applied};
+      globalThis.RadarReaderLanguageStatus={enabled:true,authoritative:true,source:'fresh-raw-with-sidecars',applied:built.applied};
       return built.doc;
     }catch(e){
-      // Never silently re-activate known dropped evidence because a sidecar fetch failed.
+      if(activeOK){globalThis.RadarReaderLanguageStatus={enabled:true,authoritative:true,source:'radar_active.json',warning:'Raw data is newer but active verification sidecars were unavailable'};return active}
       if(inactiveCountFromEmbeddedState(doc)>0)throw new Error('Active-corpus verification data unavailable; refusing to display raw inactive evidence.');
-      const merged=applyReaderText(doc,{records:{}});
       globalThis.RadarReaderLanguageStatus={enabled:false,authoritative:false,error:clean(e?.message||e)};
-      return merged.doc;
+      return doc;
     }
   }
 
