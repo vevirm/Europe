@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-record-corrections-v1",
-  "updated_at": "2026-10-14T08:59:44Z",
+  "updated_at": "2026-10-15T08:30:18Z",
   "records": {
     "link:https://doi.org/10.1080/09662839.2026.2709844": {
       "fields": {
@@ -2067,6 +2067,52 @@
       ],
       "updated_at": "2026-10-14T08:59:44Z",
       "deep_scan_package_id": "worker-b-a2a1a3766e7e"
+    },
+    "link:https://cdn.ceps.eu/2026/10/2026-13-FMI-Digital-euro.pdf": {
+      "fields": {
+        "title": "Governing the Digital Euro Ecosystem: The Role of Article 33 in Standard-Setting, Access and Innovation",
+        "authors": "Judith Arnal and Apostolos Thomadakis"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "CEPS PDF cover names both authors and the full title.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "evidence": [
+        "https://cdn.ceps.eu/2026/10/2026-13-FMI-Digital-euro.pdf"
+      ],
+      "updated_at": "2026-10-15T08:30:12Z",
+      "deep_scan_package_id": "worker-a-a701885fe707"
+    },
+    "link:https://www.atlanticcouncil.org/wp-content/uploads/2026/10/connecting-capital-to-capability.pdf": {
+      "fields": {},
+      "unset": [
+        "authors"
+      ],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Scanner lists a file account name as author; the PDF is the basis for verification, not that username.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "evidence": [
+        "https://www.atlanticcouncil.org/wp-content/uploads/2026/10/connecting-capital-to-capability.pdf"
+      ],
+      "updated_at": "2026-10-15T08:30:12Z",
+      "deep_scan_package_id": "worker-a-a701885fe707"
+    },
+    "historical:id:20f35a2ec7f6c41b": {
+      "fields": {
+        "source": "Bruegel"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Original cover identifies Bruegel Policy Brief 15/2025 by Wolff, Steinbach and Zettelmeyer.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://www.econstor.eu/bitstream/10419/322596/1/1930099355.pdf"
+      ],
+      "updated_at": "2026-10-15T08:30:18Z",
+      "deep_scan_package_id": "worker-b-991334c152cd"
     }
   }
 }

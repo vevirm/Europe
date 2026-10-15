@@ -6,40 +6,31 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **2043** (Main **840** + Historical **1203**)
-- Automatic queue still needing V2 verification: **258** (Main **73** + Historical **185**)
-- Currently assigned to workers: **72** (Main **26** + Historical **46**)
+- Authoritative V2 verified: **2102** (Main **859** + Historical **1243**)
+- Automatic queue still needing V2 verification: **193** (Main **52** + Historical **141**)
+- Currently assigned to workers: **18** (Main **5** + Historical **13**)
 - Bounded access-recovery retries still eligible: **0**
-- Terminally dropped after failed scans: **115**
-- Automatic queue pending and not yet assigned: **186**
+- Terminally dropped after failed scans: **121**
+- Automatic queue pending and not yet assigned: **175**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-a701885fe707`
-- Assigned unresolved records: **36**
-  1. `link:https://cdn.ceps.eu/2026/10/2026-13-FMI-Digital-euro.pdf` — Governing the digital euro ecosystem – CEPS
-  2. `link:https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/asean-5-in-an-era-of-geoeconomic-realignment-opportunities-and-risks-in-a-fragmenting-global-economy/` — ASEAN-5 in an era of geoeconomic realignment: Opportunities and risks in a fragmenting global economy
-  3. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f547843b-c74d-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — WORKING PARTY ON COMPETITIVENESS AND GROWTH (Industry) (Chips Act 2.0) - Publications Office of the EU
-  4. `link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-14-Proposals-for-a-more-effective-trade-defence-toolbox-BusinessEurope-position-paper_final.pdf` — Proposals for a more effective trade defence toolbox - a BusinessEurope position paper
-  5. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f94ab26a-c74c-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) – Title III (Certification) - Presentation - Publications Office of the EU
-  6. `link:https://doi.org/10.1186/s12302-026-01538-x` — Practitioners’ perspectives on EU environmental risk assessment for plant protection products
-  7. `link:https://doi.org/10.1111/1758-5899.70246` — The EU 's Indo‐Pacific Strategy and Japan: Insights From a ‘Close Strategic Partner’
-  8. `link:https://doi.org/10.54503/2953-8165-2026.5(2)-20` — Beyond Russia-Ukraine Drone Warfare: Are Economic Sanctions A Viable Strategy To Stop The Killing And Destruction?
-  - … plus 28 more in the package manifest
+- Current package: `worker-a-f3d9d56e0abc`
+- Assigned unresolved records: **18**
+  1. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f547843b-c74d-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — WORKING PARTY ON COMPETITIVENESS AND GROWTH (Industry) (Chips Act 2.0) - Publications Office of the EU — recovery attempt 2/3
+  2. `link:https://doi.org/10.1111/1758-5899.70246` — The EU 's Indo‐Pacific Strategy and Japan: Insights From a ‘Close Strategic Partner’ — recovery attempt 2/3
+  3. `link:https://doi.org/10.54503/2953-8165-2026.5(2)-20` — Beyond Russia-Ukraine Drone Warfare: Are Economic Sanctions A Viable Strategy To Stop The Killing And Destruction? — recovery attempt 2/3
+  4. `link:https://doi.org/10.4324/9781003669654-5` — RFNBO and Low-Carbon Certification in the EU — recovery attempt 2/3
+  5. `link:https://doi.org/10.1093/jiel/jgag032` — Interfacing digital trade law and competition policy design in developing economies: the case of Peru — recovery attempt 2/3
+  6. `historical:id:4b04729ca1ab574e` — Civil Society Dialogue on the EU anti-coercion instrument — recovery attempt 2/3
+  7. `historical:id:cf4e68ddcc744e0d` — EU-US Trade and Technology Council - Working Group 7 on export controls - BusinessEurope reply to the public consultation — recovery attempt 2/3
+  8. `historical:id:dac0536263087b02` — EU-US Trade and Technology Council - Working Group 3 on secure supply chains - BusinessEurope reply to the public consultation — recovery attempt 2/3
+  - … plus 10 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-991334c152cd`
-- Assigned unresolved records: **36**
-  1. `historical:id:aa63ef3fce8b25b6` — Divergence and Diversity in the Euro Area
-  2. `historical:id:ec91f2a9acdd9aea` — - Russian gas pipelines and the EU: moving from a love-hate relationship with adults in the room?
-  3. `historical:id:a5bf3da436dc7277` — On the Economics of an EU-Japan Free Trade Agreement | ifo Institute
-  4. `historical:id:72429bd300d1b415` — Are European Union sanctions “targeted”?
-  5. `historical:id:f37053ea293b9711` — Institut Jacques Delors - The European neighbourhood and the EU's security of supply with natural gas
-  6. `historical:id:c705d3e641aaa414` — Evaluation of the Implementation of the Free Trade Agreement Between the EU and its Member States and the Republic of Korea | ifo Institute
-  7. `historical:id:9a7405d4f010f36e` — European Integration and Outward FDI from Central and Eastern Europe – Is There Any Evidence of Knowledge‐seeking?
-  8. `historical:id:866f090385c0ef98` — Institut Jacques Delors - Capacity mechanisms in the EU: nationalizing energy security?
-  - … plus 28 more in the package manifest
+- Assigned unresolved records: **0**
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
@@ -164,3 +155,9 @@ These records no longer consume automatic Deep Scan slots and are excluded from 
 - `historical:id:b7c43a4111fd7dd6` — **Overall Strategic Analysis of Clean Energy Technology in the European Union** — attempts: 3/3 — JRC Publications Repository — 2026-01-01 — Deep Scan return rejected: unsafe metadata correction fields: doi — https://publications.jrc.ec.europa.eu/repository/handle/JRC146873
 - `historical:id:23e873dd520e76a2` — **China outbound M&A report part five: looking to Europe – International Financial Law Review - CELIS Institute** — attempts: 3/3 — CELIS Institute — 2024-08-05 — Original article is verified but paywalled; the short standfirst cannot substantiate its methods, reasoning or results. — https://celis.institute/china-outbound-ma-report-part-five-looking-to-europe-international-financial-law-review-2/
 - `historical:id:f2538324ff58deaa` — **Biden Knows Europe, and Europe Knows Biden. That’s Not Enough. – Foreign Policy - CELIS Institute** — attempts: 3/3 — CELIS Institute — 2020-11-19 — Deep Scan return rejected: unsafe metadata correction fields: url — https://celis.institute/biden-knows-europe-and-europe-knows-biden-thats-not-enough-foreign-policy/
+- `link:https://doi.org/10.1177/19427786261484938` — **External demand, profitability and uneven development in the European Union** — attempts: 3/3 — Human Geography — 2026-09-11 — Sage journal listing and author announcement establish work identity; substantive article is paywalled. — https://doi.org/10.1177/19427786261484938
+- `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=627815c8-c6ea-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — **Proposal for a COUNCIL DECISION on the conclusion of the Sustainable Fisheries Partnership Agreement and its Implementing Protocol (2026-2030) between the European Union and the Republic of Mauritius - Publications Office of the EU** — attempts: 3/3 — Publications Office of the EU — 2026-10-13 — European Commission register lists COM(2026)545 about the EU–Mauritius agreement, but the supplied original PDF is inaccessible. — https://op.europa.eu/o/opportal-service/download-handler?identifier=627815c8-c6ea-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=
+- `historical:id:b89e4dd6404bfedc` — **Supply Chain Secondary Sanctions: How China Weaponised Lithuania’s Trade Links - CELIS Institute** — attempts: 3/3 — CELIS Institute — 2026-01-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://celis.institute/supply_chain_secondary_sanctions_how_china_weaponised_lithuania_trade_links/
+- `historical:id:91ef9cbdc71a2e69` — **Research and innovation towards zero-emission road transport and European automotive sector competitiveness** — attempts: 3/3 — JRC Publications Repository — 2026-01-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://publications.jrc.ec.europa.eu/repository/handle/JRC146980
+- `historical:id:d2a3f60d595da52f` — **China's Outward <scp>FDI</scp> in the European Union: How Much Geopolitics is in There?** — attempts: 3/3 — Global Policy — 2025-05-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1111/1758-5899.13472
+- `historical:id:c4a03323d4289bc0` — **The European Union’s Critical Raw Materials Act: How Effective In Addressing Supply Chains Risks? - CELIS Institute** — attempts: 3/3 — CELIS Institute — 2024-06-27 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://celis.institute/the-european-unions-critical-raw-materials-act-how-effective-in-addressing-supply-chains-risks/
