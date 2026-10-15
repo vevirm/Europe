@@ -351,11 +351,36 @@
     }).filter(Boolean);
   }
 
+  // When the claim-native publication snapshot predates the countervailing fields,
+  // do not present its old sign-classified publications as verified.  Instead
+  // show an independently sourced, explicitly provisional evidence comparison.
+  // These axes have a concrete common outcome (supply concentration or EU
+  // decision unity); pairs about generic costs versus activity are excluded.
+  const DEVELOPING_AXES=new Set(['diversify_vs_concentrate','unity_vs_fragmentation']);
+  function developingPairs(data,history){
+    const current=currentCorpus(data), historical=historicalCorpus(history);
+    const out=[];
+    for(const axis of PAIRS){
+      if(!DEVELOPING_AXES.has(axis.id))continue;
+      const left=sideEvidence(current,historical,axis.left);
+      const right=sideEvidence(current,historical,axis.right);
+      if(!sideQualifies(left)||!sideQualifies(right))continue;
+      const sum=left.raw+right.raw;
+      const lp=Math.max(15,Math.min(85,Math.round(100*left.raw/sum)));
+      out.push({id:'developing:'+axis.id,emergent:false,developing:true,
+        left:{title:axis.left.title,plain:axis.left.plain,why:axis.left.why,pull:lp,evidence:left.evidence,history:left.history,sourceCount:left.sourceCount},
+        right:{title:axis.right.title,plain:axis.right.plain,why:axis.right.why,pull:100-lp,evidence:right.evidence,history:right.history,sourceCount:right.sourceCount},
+        composition:'Developing evidence comparison, not yet validated as a countervailing trend by the claim-native reasoning engine.',
+        flip:axis.flip});
+    }
+    return out;
+  }
   function build(data,history){
     // Fail closed: a topic match, sign classification, or old static pair is
     // insufficient to establish a countervailing mechanism. Only publish pairs
     // validated by the current evidence-based claim-native reasoning pipeline.
-    return highOrderPairs(data);
+    const verified=highOrderPairs(data);
+    return verified.length?verified:developingPairs(data,history);
   }
   function stats(data,history){
     const hs=historicalCorpus(history);
