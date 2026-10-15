@@ -7,33 +7,39 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **2043** (Main **840** + Historical **1203**)
-- Automatic queue still needing V2 verification: **214** (Main **58** + Historical **156**)
-- Currently assigned to workers: **39** (Main **11** + Historical **28**)
+- Automatic queue still needing V2 verification: **258** (Main **73** + Historical **185**)
+- Currently assigned to workers: **72** (Main **26** + Historical **46**)
 - Bounded access-recovery retries still eligible: **0**
 - Terminally dropped after failed scans: **115**
-- Automatic queue pending and not yet assigned: **175**
+- Automatic queue pending and not yet assigned: **186**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-87a5cbb1e142`
+- Current package: `worker-a-a701885fe707`
 - Assigned unresolved records: **36**
-  1. `link:https://institutdelors.eu/content/uploads/2026/10/TEMPLATE-BLOGPOST-MACIF-EN.pdf` — Endure it alone or decide together ? European sovereignty as a New Doctrine at the Dawn of Major Transitions - Institut Jacques Delors — recovery attempt 2/3
-  2. `link:https://doi.org/10.2478/wd-2026-0161` — China-Schock 2.0 trifft Deutschland: Was kann der Industrial Accelerator Act leisten? — recovery attempt 2/3
-  3. `link:https://ecipe.org/publications/economic-impact-of-cada/#_ftnref1` — The Real-World Economic Impact of the Cloud and AI Development Act (CADA): What CADA Could Mean for Cloud Prices, Migration, Digitalisation and Europe’s Technology Supply Chain — recovery attempt 2/3
-  4. `link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-Important-projects-of-common-European-interest-IPCEI-BusinessEurope-Paper.pdf` — Important Projects of Common European Interest (IPCEI) - a BusinessEurope discussion paper — recovery attempt 2/3
-  5. `link:https://doi.org/10.1016/j.nbt.2026.10.005` — Unlocking Innovation in European Plant Breeding: A Perspective on the New Genomic Techniques Framework — recovery attempt 2/3
-  6. `link:https://doi.org/10.1177/19427786261484938` — External demand, profitability and uneven development in the European Union — recovery attempt 2/3
-  7. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f76a3b56-c6e9-11f1-bfcb-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a COUNCIL REGULATION on the allocation of the fishing opportunities provided for in the Protocol on the implementation of the Sustainable Fisheries Partnership Agreement between the European Union and the Republic of Mauritius (2026-2030) - Publications Office of the EU — recovery attempt 2/3
-  8. `link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-12-BusinessEurope-letter-ahead-of-the-EU-Turkiye-HLTD.pdf` — EU-Türkiye High-Level Trade Dialogue - Letter from Markus J. Beyrer to Maroš Šefčovič — recovery attempt 2/3
+  1. `link:https://cdn.ceps.eu/2026/10/2026-13-FMI-Digital-euro.pdf` — Governing the digital euro ecosystem – CEPS
+  2. `link:https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/asean-5-in-an-era-of-geoeconomic-realignment-opportunities-and-risks-in-a-fragmenting-global-economy/` — ASEAN-5 in an era of geoeconomic realignment: Opportunities and risks in a fragmenting global economy
+  3. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f547843b-c74d-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — WORKING PARTY ON COMPETITIVENESS AND GROWTH (Industry) (Chips Act 2.0) - Publications Office of the EU
+  4. `link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-14-Proposals-for-a-more-effective-trade-defence-toolbox-BusinessEurope-position-paper_final.pdf` — Proposals for a more effective trade defence toolbox - a BusinessEurope position paper
+  5. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f94ab26a-c74c-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) – Title III (Certification) - Presentation - Publications Office of the EU
+  6. `link:https://doi.org/10.1186/s12302-026-01538-x` — Practitioners’ perspectives on EU environmental risk assessment for plant protection products
+  7. `link:https://doi.org/10.1111/1758-5899.70246` — The EU 's Indo‐Pacific Strategy and Japan: Insights From a ‘Close Strategic Partner’
+  8. `link:https://doi.org/10.54503/2953-8165-2026.5(2)-20` — Beyond Russia-Ukraine Drone Warfare: Are Economic Sanctions A Viable Strategy To Stop The Killing And Destruction?
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-7c02bad2f201`
-- Assigned unresolved records: **3**
-  1. `historical:id:4849088efcf14046` — Change in the status of coking coal on the EU list of critical raw materials (2017) — recovery attempt 2/3
-  2. `historical:id:98e4ab1cd4cf5b57` — EU and US need to work together on key international issues like trade and sanctions — recovery attempt 2/3
-  3. `historical:id:feaba8865bdc846b` — EU and US business committed to the transatlantic relationship: need to avoid major trade disruptions — recovery attempt 2/3
+- Current package: `worker-b-991334c152cd`
+- Assigned unresolved records: **36**
+  1. `historical:id:aa63ef3fce8b25b6` — Divergence and Diversity in the Euro Area
+  2. `historical:id:ec91f2a9acdd9aea` — - Russian gas pipelines and the EU: moving from a love-hate relationship with adults in the room?
+  3. `historical:id:a5bf3da436dc7277` — On the Economics of an EU-Japan Free Trade Agreement | ifo Institute
+  4. `historical:id:72429bd300d1b415` — Are European Union sanctions “targeted”?
+  5. `historical:id:f37053ea293b9711` — Institut Jacques Delors - The European neighbourhood and the EU's security of supply with natural gas
+  6. `historical:id:c705d3e641aaa414` — Evaluation of the Implementation of the Free Trade Agreement Between the EU and its Member States and the Republic of Korea | ifo Institute
+  7. `historical:id:9a7405d4f010f36e` — European Integration and Outward FDI from Central and Eastern Europe – Is There Any Evidence of Knowledge‐seeking?
+  8. `historical:id:866f090385c0ef98` — Institut Jacques Delors - Capacity mechanisms in the EU: nationalizing energy security?
+  - … plus 28 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
