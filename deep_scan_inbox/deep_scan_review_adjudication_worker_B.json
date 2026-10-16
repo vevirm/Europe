@@ -1,0 +1,2629 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-b-9f6592cf81a8",
+  "results": [
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMioAFBVV95cUxPRzNFMkF5b0ZQUnNpMlJlTE82NkZrRUJiTXNreWtQbi1wOHZ2ZC1aOE5GVkhZcDNmd1pBREFLb1I2MjBlVW9ncFhpd1oyaXhDbVdMUEUtbkE1WmtXQUtpa1NtTEJOb3NQcVBkc1lldUMwaUdUU01WLTg3MS1QVUtGcF9lVDRtNTBTOHVBX2JMZnJUVUNPWnRXb21heklpNEFS?oc=5",
+      "source_hash": "4171915f",
+      "identity_hash": "31c9cb6ff02621a4",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Supplied Google News RSS redirect https://news.google.com/rss/articles/... does not provide substantive source text in package (stored_only)."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact Reuters headline located at https://www.reuters.com/world/china/china-holds-intensive-talks-hybrid-ev-trade-with-eu-2026-10-12/; original article includes substantive reporting and date."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Reuters original published text at https://www.reuters.com/world/china/china-holds-intensive-talks-hybrid-ev-trade-with-eu-2026-10-12/ and primary Chinese ministry response at https://www.mofcom.gov.cn/syxwfb/art/2026/art_d6a5e2c4e62740868c7f1a7cd061f84a.html corroborate identity of reported development."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://theedgemalaysia.com/node/821488. Source content reviewed: matching licensed Reuters report on China commerce ministry claim and EU-China hybrid quota talks."
+          },
+          {
+            "step": "review_adjudication_external_cross_check",
+            "outcome": "success",
+            "note": "Reuters article cross-checked, competing statements are different baselines. Checked https://www.reuters.com/world/china/china-holds-intensive-talks-hybrid-ev-trade-with-eu-2026-10-12/"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_news_full_text",
+            "url": "https://www.reuters.com/world/china/china-holds-intensive-talks-hybrid-ev-trade-with-eu-2026-10-12/",
+            "title": "Reuters, China details outcome of EU trade talks on hybrid, electric vehicles, 12 October 2026",
+            "evidence_used": true
+          },
+          {
+            "kind": "official_actor_statement",
+            "url": "https://www.mofcom.gov.cn/syxwfb/art/2026/art_d6a5e2c4e62740868c7f1a7cd061f84a.html",
+            "title": "Chinese Ministry of Commerce press statement, 12 October 2026",
+            "evidence_used": true
+          },
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://theedgemalaysia.com/node/821488",
+            "title": "China details outcome of EU trade talks on hybrid, electric vehicles",
+            "evidence_used": true
+          },
+          {
+            "kind": "independent_check_on_2026-10-16",
+            "url": "https://www.reuters.com/world/china/china-holds-intensive-talks-hybrid-ev-trade-with-eu-2026-10-12/",
+            "title": "Original publisher or independent reporting",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. matching licensed Reuters report on China commerce ministry claim and EU-China hybrid quota talks. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: China commerce ministry described EU–China hybrid vehicle quota deal on 12 October; Reuters confirms both sides use different baselines."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "China commerce ministry described EU–China hybrid vehicle quota deal on 12 October; Reuters confirms both sides use different baselines."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "China outlines EU hybrid-vehicle quota understanding",
+      "reader_what": "China’s Ministry of Commerce described a negotiated EU hybrid-vehicle trade understanding, including nondiscrimination and a proposed quota no smaller than that offered to other sources.",
+      "reader_why": "The talks address market access for Chinese-made cars and trade-defence tensions affecting European manufacturers.",
+      "reader_more": "Reuters reports China’s claims of upward adjustment from 2025 export levels, while the EU trade commissioner said the deal could more than halve future hybrid exports relative to another baseline. These positions refer to different comparisons.",
+      "deep_analysis": {
+        "work_kind": "current trade-policy report",
+        "research_question": "",
+        "main_finding": "China commerce ministry described EU–China hybrid vehicle quota deal on 12 October; Reuters confirms both sides use different baselines.",
+        "method_or_basis": "Original Reuters October 12 report plus contemporaneous ministry statement.",
+        "qualification": " Reuters confirms both sides use different baselines.",
+        "radar_relevance": "The talks address market access for Chinese-made cars and trade-defence tensions affecting European manufacturers.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "China Ministry of Commerce",
+            "class": "third_country"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "announced",
+          "status_date": "2026-10-12",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "CN"
+            ]
+          },
+          "kind": "action",
+          "qualification": "Reported understanding and actor statements must not be represented as a published binding EU safeguard or implemented quota; the two sides emphasised different baselines.",
+          "text": "On 12 October 2026 China’s commerce ministry publicly described an EU–China understanding on hybrid-vehicle import quotas following negotiations.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMioAFBVV95cUxPekhXdzBSdS01b241LVpfWnhhQWJZY2I4SVQwSlJsS21ZdTFvNV92N3g5bkNaR2dKSE1zTjAtcWtZWS1kY1B6Zl9nUHdfUUZTb3ZtdHRKNS1qTGlIVzhZU25ranRmUWNWWWV3aDhFdkdpVXdxSktFc1pCOV9FMF9BWmJwWngwWjZNenhiM1ZnSHZRdWdFQnpySjRIMnhSNnV4?oc=5",
+      "source_hash": "89d65c57",
+      "identity_hash": "e31fbbe1c4348c1a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "externally_correlated_article_or_primary_source; full V2 read pending",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMioAFBVV95cUxPekhXdzBSdS01b241LVpfWnhhQWJZY2I4SVQwSlJsS21ZdTFvNV92N3g5bkNaR2dKSE1zTjAtcWtZWS1kY1B6Zl9nUHdfUUZTb3ZtdHRKNS1qTGlIVzhZU25ranRmUWNWWWV3aDhFdkdpVXdxSktFc1pCOV9FMF9BWmJwWngwWjZNenhiM1ZnSHZRdWdFQnpySjRIMnhSNnV4?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.sicherheitssignal.ch/article/2026/10/europa-moze-vyuzit-zakony-na-zabezpecenie-suverenity-cloudu-x58tqp. Source content reviewed: identifies the Politico item as Broadcom-paid sponsored opinion; this is lobbying, not independent empirical evidence or policy action."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.sicherheitssignal.ch/article/2026/10/europa-moze-vyuzit-zakony-na-zabezpecenie-suverenity-cloudu-x58tqp",
+            "title": "How can Europe leverage laws to secure cloud sovereignty?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. identifies the Politico item as Broadcom-paid sponsored opinion; this is lobbying, not independent empirical evidence or policy action. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "SPONSORED_ADVOCACY_NOT_INDEPENDENT_DEVELOPMENT",
+        "reason": "identifies the Politico item as Broadcom-paid sponsored opinion; this is lobbying, not independent empirical evidence or policy action"
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "identifies the Politico item as Broadcom-paid sponsored opinion; this is lobbying, not independent empirical evidence or policy action",
+        "method_or_basis": "",
+        "qualification": "Do not confuse actor statements or reported proposals with independently observed outcomes; a full authoritative evidence pass is pending.",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMisAFBVV95cUxQUFFlQ2RWX2k2c19mRUlseHB2TDlOM0xYSVdXc29YSHBVS2o0OE1qRHFXQU1JR093ellFZ2xSNEg3cUZISWx1SllLdmpuQWNBaFoyQmJHU1RaMHZ0YlFXN3l0eVZkNlhvQlRaTElKWExxTFh4cmNOc0xIeVdpdWh0MHdicmVsajVQMEdtMkZRRzFMOXpyRzBXQmdDQ2lpUlFKVlRMdzVlSXR3aE51ZU9ZZA?oc=5",
+      "source_hash": "c99768f5",
+      "identity_hash": "bb4ec97cabc058f8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMisAFBVV95cUxQUFFlQ2RWX2k2c19mRUlseHB2TDlOM0xYSVdXc29YSHBVS2o0OE1qRHFXQU1JR093ellFZ2xSNEg3cUZISWx1SllLdmpuQWNBaFoyQmJHU1RaMHZ0YlFXN3l0eVZkNlhvQlRaTElKWExxTFh4cmNOc0xIeVdpdWh0MHdicmVsajVQMEdtMkZRRzFMOXpyRzBXQmdDQ2lpUlFKVlRMdzVlSXR3aE51ZU9ZZA?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://news.bloombergtax.com/international-trade/china-moves-to-stave-off-wider-eu-trade-war-with-hybrid-deal. Source content reviewed: Matching Bloomberg report confirms a reported 16-point EU-China trade consensus; safeguard measures and quota implications remain distinct from final enacted restrictions."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://news.bloombergtax.com/international-trade/china-moves-to-stave-off-wider-eu-trade-war-with-hybrid-deal",
+            "title": "China Moves to Stave Off Wider EU Trade War With Hybrid Deal",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Matching Bloomberg report confirms a reported 16-point EU-China trade consensus; safeguard measures and quota implications remain distinct from final enacted restrictions. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: Bloomberg reports EU–China trade consensus points including safeguards; discussion of terms is distinct from legally implemented quota."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "Bloomberg reports EU–China trade consensus points including safeguards; discussion of terms is distinct from legally implemented quota."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Bloomberg reports EU–China trade consensus points including safeguards",
+      "reader_what": "Bloomberg reports EU–China trade consensus points including safeguards; discussion of terms is distinct from legally implemented quota.",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "Bloomberg reports EU–China trade consensus points including safeguards; discussion of terms is distinct from legally implemented quota.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "Bloomberg reports EU–China trade consensus points including safeguards; discussion of terms is distinct from legally implemented quota.",
+        "method_or_basis": "",
+        "qualification": " discussion of terms is distinct from legally implemented quota.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EU and China negotiators",
+            "class": "other"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "announced",
+          "status_date": "2026-10-12",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Bloomberg reports EU–China trade consensus points including safeguards; discussion of terms is distinct from legally implemented quota.",
+          "text": "Bloomberg reports EU–China trade consensus points including safeguards; discussion of terms is distinct from legally implemented quota.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://borderlex.net/2026/10/12/eu-turns-china-hybrid-car-pledge-into-350000-vehicle-safeguard-quota/",
+      "source_hash": "a49a1e9b",
+      "identity_hash": "b08b70af590c2cae",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package route: https://borderlex.net/2026/10/12/eu-turns-china-hybrid-car-pledge-into-350000-vehicle-safeguard-quota/; matching supplied source content length 6558 characters, mode substantial_web_text."
+          },
+          {
+            "step": "review_adjudication_external_cross_check",
+            "outcome": "success",
+            "note": "FT confirms 350,000 vehicle 2027 cap under four-year deal; do not assert enforcement begun. Checked https://www.ft.com/content/7e48dd50-957c-4f45-ad24-ce628ca7e06a"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "matching_package_primary_material",
+            "url": "https://borderlex.net/2026/10/12/eu-turns-china-hybrid-car-pledge-into-350000-vehicle-safeguard-quota/",
+            "title": "EU to introduce 350,000 Chinese quota under hybrid vehicle safeguard - Borderlex - European trade policy",
+            "evidence_used": true
+          },
+          {
+            "kind": "independent_check_on_2026-10-16",
+            "url": "https://www.ft.com/content/7e48dd50-957c-4f45-ad24-ce628ca7e06a",
+            "title": "Original publisher or independent reporting",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Substantive matching package material read/available; independently rediscovering publisher and full V2 evaluation not completed. Review adjudication 2026-10-16: Borderlex reports 350,000 hybrid vehicle annual quota, corroborated by FT; trade agreement must not be labelled implemented customs action."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "Borderlex reports 350,000 hybrid vehicle annual quota, corroborated by FT; trade agreement must not be labelled implemented customs action."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU to introduce 350,000 Chinese quota under hybrid vehicle safeguard - Borderlex - European trade policy",
+      "reader_what": "The EU will turn China’s promise to limit hybrid car exports into a safeguard measure under World Trade Organization rules,",
+      "reader_why": "This could change the terms on which European producers compete, at home and in export markets.",
+      "reader_more": "The EU will turn China’s promise to limit hybrid car exports into a safeguard measure under World Trade Organization rules, a senior EU official said. You are reading 3 of your 3 free premium articles this month. The EU will launch a safeguard measure on Chinese hybrid cars under World Trade Organization rules, a senior EU official said. Chinese exporters will get a country-specific quota of 350,000 vehicles in the first year. The measure is due to be in place by early December and follows a meeting between the EU trade commissioner and his Chinese counterpart at the end of last week, where Beijing appears",
+      "deep_analysis": {
+        "work_kind": "reported policy development",
+        "research_question": "",
+        "main_finding": "Borderlex reports 350,000 hybrid vehicle annual quota, corroborated by FT; trade agreement must not be labelled implemented customs action.",
+        "method_or_basis": "Matching substantial_web_text source supplied in package: https://borderlex.net/2026/10/12/eu-turns-china-hybrid-car-pledge-into-350000-vehicle-safeguard-quota/",
+        "qualification": " trade agreement must not be labelled implemented customs action.",
+        "radar_relevance": "This could change the terms on which European producers compete, at home and in export markets.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "announced",
+          "status_date": "2026-10-12",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Borderlex reports 350,000 hybrid vehicle annual quota, corroborated by FT; trade agreement must not be labelled implemented customs action.",
+          "text": "Borderlex reports 350,000 hybrid vehicle annual quota, corroborated by FT; trade agreement must not be labelled implemented customs action.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://borderlex.net/2026/10/12/week-ahead-more-eu-china-eu-us-customs/",
+      "source_hash": "4d0b4c41",
+      "identity_hash": "aeb11067be3d78f4",
+      "verification": {
+        "identity_verified": false,
+        "evidence_depth": "",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://borderlex.net/2026/10/12/week-ahead-more-eu-china-eu-us-customs/; matching supplied source content length 1179 characters, mode abstract_or_landing_page."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Package only provides short content; no independent per-record retrieval conducted. Prior decision remains provisional."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "INSUFFICIENT_SUBSTANTIVE_EVIDENCE",
+        "reason": "Cannot responsibly decide without substantial original source or mandatory recovery ladder; not fabricated as KEEP or DROP."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R2643R%2801%29",
+      "source_hash": "5eca6435",
+      "identity_hash": "01dca1e1d17ab44e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "externally_correlated_article_or_primary_source; full V2 read pending",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: http://publications.europa.eu/resource/cellar/5efa48ee-c5d6-11f1-bfcb-01aa75ed71a1.0006.03/DOC_1; matching supplied source content length 736 characters, mode abstract_or_landing_page."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://eur-lex.europa.eu/search.html?AU_CODED=EP&DTS_SUBDOM=LEGISLATION&FM_CODED=REG&SUBDOM_INIT=ALL_ALL&lang=en&sortOne=DD&sortOneOrder=desc&type=advanced. Source content reviewed: EUR-Lex OJ L 2026/90862 dated 12 Oct 2026 is a corrigendum and explicitly does not concern English version; administrative correction not fresh defence programme."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://eur-lex.europa.eu/search.html?AU_CODED=EP&DTS_SUBDOM=LEGISLATION&FM_CODED=REG&SUBDOM_INIT=ALL_ALL&lang=en&sortOne=DD&sortOneOrder=desc&type=advanced",
+            "title": "Corrigendum to Regulation (EU) 2025/2643 of the European Parliament and of the Council of 16 December 2025 establishing the European Defence Industry Programme and a framework of measures to ensure the timely availability and supply of defence products (‘EDIP Regulation’) (OJ L, 2025/2643, 29.12.2025)",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. EUR-Lex OJ L 2026/90862 dated 12 Oct 2026 is a corrigendum and explicitly does not concern English version; administrative correction not fresh defence programme. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "SPONSORED_ADVOCACY_NOT_INDEPENDENT_DEVELOPMENT",
+        "reason": "EUR-Lex OJ L 2026/90862 dated 12 Oct 2026 is a corrigendum and explicitly does not concern English version; administrative correction not fresh defence programme"
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "EUR-Lex OJ L 2026/90862 dated 12 Oct 2026 is a corrigendum and explicitly does not concern English version; administrative correction not fresh defence programme",
+        "method_or_basis": "",
+        "qualification": "Do not confuse actor statements or reported proposals with independently observed outcomes; a full authoritative evidence pass is pending.",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026XG05298",
+      "source_hash": "1105d97f",
+      "identity_hash": "1720ad2bfa45d85a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package route: http://publications.europa.eu/resource/cellar/137e8dde-c5d6-11f1-bfcb-01aa75ed71a1.0006.03/DOC_1; matching supplied source content length 6190 characters, mode substantial_web_text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "matching_package_primary_material",
+            "url": "http://publications.europa.eu/resource/cellar/137e8dde-c5d6-11f1-bfcb-01aa75ed71a1.0006.03/DOC_1",
+            "title": "Notice for the attention of the data subjects to whom the restrictive measures provided for in Council Decision (CFSP) 2019/1720, as amended by Council Decision (CFSP) 2026/2272, and Council Regulation (EU) 2019/1716, as implemented by Council Implementing Regulation (EU) 2026/2271, concerning restrictive measures in view of the situation in Nicaragua apply",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Substantive matching package material read/available; independently rediscovering publisher and full V2 evaluation not completed."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "NOT_SUBSTANTIVE_ECONOMIC_SECURITY_EVENT",
+        "reason": "Matching document is a routine informational, procedural or topic-mismatched item, rather than substantive European economic-security evidence/development."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Notice for the attention of the data subjects to whom the restrictive measures provided for in Council Decision",
+      "reader_what": "All personal data processed by the Council in the context of EU autonomous restrictive measures will be retained for 5",
+      "reader_why": "",
+      "reader_more": "Official Journal of the European Union Notice for the attention of the data subjects to whom the restrictive measures provided for in Council Decision (CFSP) 2019/1720, as amended by Council Decision (CFSP) 2026/2272, and Council Regulation (EU) 2019/1716, as implemented by Council Implementing Regulation (EU) 2026/2271, concerning restrictive measures in view of the situation in Nicaragua apply The attention of data subjects is drawn to the following information in accordance with Article 16 of Regulation (EU) 2018/1725 of the European Parliament and of the Council ( 1 ) . The legal bases for this processing operation are Council Decision (C",
+      "deep_analysis": {
+        "work_kind": "reported policy development",
+        "research_question": "",
+        "main_finding": "Official Journal of the European Union Notice for the attention of the data subjects to whom the restrictive measures provided for in Council Decision (CFSP) 2019/1720, as amended by Council Decision (CFSP) 2026/2272, and Council Regulation (EU) 2019/1716, as implemented by Council Implementing Regulation (EU) 2026/2271, concerning restrictive measures in view of the situation in Nicaragua apply The attention of data subjects is drawn to the following information in accordance with Article 16 of Regulation (EU) 2018/1725 of the European Parliament and of the Council",
+        "method_or_basis": "Matching substantial_web_text source supplied in package: http://publications.europa.eu/resource/cellar/137e8dde-c5d6-11f1-bfcb-01aa75ed71a1.0006.03/DOC_1",
+        "qualification": "This assessment uses supplied substantive source material; independent cross-check and full-document inspection were not completed.",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026XG05304",
+      "source_hash": "8f8ba50a",
+      "identity_hash": "5c2a61c4043ad036",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package route: http://publications.europa.eu/resource/cellar/c99a3bb4-c5d5-11f1-bfcb-01aa75ed71a1.0006.03/DOC_1; matching supplied source content length 6362 characters, mode substantial_web_text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "matching_package_primary_material",
+            "url": "http://publications.europa.eu/resource/cellar/c99a3bb4-c5d5-11f1-bfcb-01aa75ed71a1.0006.03/DOC_1",
+            "title": "Notice for the attention of the data subjects to whom the restrictive measures provided for in Council Decision (CFSP) 2023/2135, as amended by Council Decision (CFSP) 2026/2261, and Council Regulation (EU) 2023/2147, as implemented by Council Implementing Regulation (EU) 2026/2262 concerning restrictive measures in view of activities undermining the stability and political transition of Sudan apply",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Substantive matching package material read/available; independently rediscovering publisher and full V2 evaluation not completed."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "NOT_SUBSTANTIVE_ECONOMIC_SECURITY_EVENT",
+        "reason": "Matching document is a routine informational, procedural or topic-mismatched item, rather than substantive European economic-security evidence/development."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Notice for the attention of the data subjects to whom the restrictive measures provided for in Council Decision",
+      "reader_what": "All personal data processed by the Council in the context of EU autonomous restrictive measures will be retained for 5",
+      "reader_why": "",
+      "reader_more": "Official Journal of the European Union Notice for the attention of the data subjects to whom the restrictive measures provided for in Council Decision (CFSP) 2023/2135, as amended by Council Decision (CFSP) 2026/2261, and Council Regulation (EU) 2023/2147, as implemented by Council Implementing Regulation (EU) 2026/2262 concerning restrictive measures in view of activities undermining the stability and political transition of Sudan apply The attention of data subjects is drawn to the following information in accordance with Article 16 of Regulation (EU) 2018/1725 of the European Parliament and of the Council ( 1 ) . The legal bases for this p",
+      "deep_analysis": {
+        "work_kind": "reported policy development",
+        "research_question": "",
+        "main_finding": "Official Journal of the European Union Notice for the attention of the data subjects to whom the restrictive measures provided for in Council Decision (CFSP) 2023/2135, as amended by Council Decision (CFSP) 2026/2261, and Council Regulation (EU) 2023/2147, as implemented by Council Implementing Regulation (EU) 2026/2262 concerning restrictive measures in view of activities undermining the stability and political transition of Sudan apply The attention of data subjects is drawn to the following information in accordance with Article 16 of Regulation (EU) 2018/1725 of the European",
+        "method_or_basis": "Matching substantial_web_text source supplied in package: http://publications.europa.eu/resource/cellar/c99a3bb4-c5d5-11f1-bfcb-01aa75ed71a1.0006.03/DOC_1",
+        "qualification": "This assessment uses supplied substantive source material; independent cross-check and full-document inspection were not completed.",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMixAFBVV95cUxOY0wxaHVwdHc5SUJlZFFwdW5scFJvRElUQi1sejN4U18yNFRsWFdXaFlRa1NZbzY0RC1vVTF6N0RLUHFkRnhvd295R0FwNDRkdEdRNTJMZEJrS1NjWE5YbmxEeTJqMjc0Q1c4TmQzUElGalFsVy1LaGkweGhDNURDNkdZRGxWT2wyWlR1WDBrSVJvWno3TXhFR0JsSnBwUzJfVDI2MmQzVjgzY1Izb2dzdExpa2tGWXE5SmZnZmpBMVkwcDRH?oc=5",
+      "source_hash": "b6c043f8",
+      "identity_hash": "8637ac9a182a3e13",
+      "verification": {
+        "identity_verified": false,
+        "evidence_depth": "",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMixAFBVV95cUxOY0wxaHVwdHc5SUJlZFFwdW5scFJvRElUQi1sejN4U18yNFRsWFdXaFlRa1NZbzY0RC1vVTF6N0RLUHFkRnhvd295R0FwNDRkdEdRNTJMZEJrS1NjWE5YbmxEeTJqMjc0Q1c4TmQzUElGalFsVy1LaGkweGhDNURDNkdZRGxWT2wyWlR1WDBrSVJvWno3TXhFR0JsSnBwUzJfVDI2MmQzVjgzY1Izb2dzdExpa2tGWXE5SmZnZmpBMVkwcDRH?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "No source text provided. No independent per-record retrieval conducted in this pass; earlier defer is NOT a verified final result."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "INSUFFICIENT_SUBSTANTIVE_EVIDENCE",
+        "reason": "Cannot responsibly decide without substantial original source or mandatory recovery ladder; not fabricated as KEEP or DROP."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMiqAFBVV95cUxPYUFXZDgzaHN2T1FRdnc3Njh3R0t5cGppS3pJUm8xREprWk54RFdON1pYY1BBbFRKS2pEajVWVzJJcmNiQVVJVGI1czM0U0F1U04zUEFZZVNDZzUtVWZ6UzdPQlItRzNyX3ZseVdmeVlaY1B5M203LWhwWFJTZjh0TlBFVm4zbm9SQjVvRGpXclhWWnJDYmdOWVRmaFhCVDBRNV9uU0UtZmo?oc=5",
+      "source_hash": "5b514546",
+      "identity_hash": "ac33db70e5fa5b74",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMiqAFBVV95cUxPYUFXZDgzaHN2T1FRdnc3Njh3R0t5cGppS3pJUm8xREprWk54RFdON1pYY1BBbFRKS2pEajVWVzJJcmNiQVVJVGI1czM0U0F1U04zUEFZZVNDZzUtVWZ6UzdPQlItRzNyX3ZseVdmeVlaY1B5M203LWhwWFJTZjh0TlBFVm4zbm9SQjVvRGpXclhWWnJDYmdOWVRmaFhCVDBRNV9uU0UtZmo?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.reuters.com/world/germany-sticks-russia-sanctions-after-trump-announcement-diesel-2026-10-10/. Source content reviewed: Reuters matching report: German government affirmed sanctions continue despite a US diesel-sanctions decision."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.reuters.com/world/germany-sticks-russia-sanctions-after-trump-announcement-diesel-2026-10-10/",
+            "title": "Germany sticks to Russia sanctions after Trump announcement on diesel",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Reuters matching report: German government affirmed sanctions continue despite a US diesel-sanctions decision. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: German government stated EU sanctions would continue despite US diesel-sanctions change; political reaffirmation, not additional German listings."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "German government stated EU sanctions would continue despite US diesel-sanctions change; political reaffirmation, not additional German listings."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "German government stated EU sanctions would continue despite US diesel-sanctions change",
+      "reader_what": "German government stated EU sanctions would continue despite US diesel-sanctions change; political reaffirmation, not additional German listings.",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "German government stated EU sanctions would continue despite US diesel-sanctions change; political reaffirmation, not additional German listings.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "German government stated EU sanctions would continue despite US diesel-sanctions change; political reaffirmation, not additional German listings.",
+        "method_or_basis": "",
+        "qualification": " political reaffirmation, not additional German listings.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "German government",
+            "class": "other"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "announced",
+          "status_date": "2026-10-12",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "German government stated EU sanctions would continue despite US diesel-sanctions change; political reaffirmation, not additional German listings.",
+          "text": "German government stated EU sanctions would continue despite US diesel-sanctions change; political reaffirmation, not additional German listings.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMiogJBVV95cUxNYXg3czRQUFl6emY5MDVJZVhqMkxMTjNvamhrVkZYWVpHdVBpVWJyYmlYUGx4SXYzakVpV3BQc19KTURzYU9NdlBHdlFoSU9Ld1dzdnRDZWx3RFBnVUdaSFZWRktGZUlBN3o5SG1mMWlDX05tT2VrYWcwczdQM05wMGVTWjNOb2dhN1c2c1dadkxiekowU2lYdzkycDJpYjhKSmFfZm5FRTJsTUdKTEYxakVFZnBzZ0t4OENMa0RTRFVzUlRyTzFhd1hkOHVubllxYU15b0N2UVhZVWFjUGpyUERzMzQxdV9Yd201Y3ZpODNiV1VjeTRWenNvYVJjWGl5UzU0aTBMLVMxOGY5UEQtNDUwMHYwbVBQZzl4a0M1Z0k3dw?oc=5",
+      "source_hash": "afc74017",
+      "identity_hash": "c7a39d228cdf098f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "externally_correlated_article_or_primary_source; full V2 read pending",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMiogJBVV95cUxNYXg3czRQUFl6emY5MDVJZVhqMkxMTjNvamhrVkZYWVpHdVBpVWJyYmlYUGx4SXYzakVpV3BQc19KTURzYU9NdlBHdlFoSU9Ld1dzdnRDZWx3RFBnVUdaSFZWRktGZUlBN3o5SG1mMWlDX05tT2VrYWcwczdQM05wMGVTWjNOb2dhN1c2c1dadkxiekowU2lYdzkycDJpYjhKSmFfZm5FRTJsTUdKTEYxakVFZnBzZ0t4OENMa0RTRFVzUlRyTzFhd1hkOHVubllxYU15b0N2UVhZVWFjUGpyUERzMzQxdV9Yd201Y3ZpODNiV1VjeTRWenNvYVJjWGl5UzU0aTBMLVMxOGY5UEQtNDUwMHYwbVBQZzl4a0M1Z0k3dw?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.eeas.europa.eu/hrvp-icc-oct2026_en. Source content reviewed: Official EU statement responds to US sanctions against International Criminal Court; statement is diplomatic position, not EU economic measure."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.eeas.europa.eu/hrvp-icc-oct2026_en",
+            "title": "International Criminal Court: Statement by the High Representative on behalf of the EU following the announcement of US sanctions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Official EU statement responds to US sanctions against International Criminal Court; statement is diplomatic position, not EU economic measure. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "SPONSORED_ADVOCACY_NOT_INDEPENDENT_DEVELOPMENT",
+        "reason": "Official EU statement responds to US sanctions against International Criminal Court; statement is diplomatic position, not EU economic measure"
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "Official EU statement responds to US sanctions against International Criminal Court; statement is diplomatic position, not EU economic measure",
+        "method_or_basis": "",
+        "qualification": "Do not confuse actor statements or reported proposals with independently observed outcomes; a full authoritative evidence pass is pending.",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSWVqVnNJdVl6QnI3QmppeUxKWlJXZXF0UHFjUDFrYVdJMTdOQnQ1ZTRreldUSl8tQ3llajdPaDVUT2dSWUFFdnhiZFJBVk5NeGZ6aXR1VGt1YUU1MzA3VEFVODBWOGVHSnoweFQxLWFPcC1lZEphNFZzdklJQUZVd2x6WXJhQmtxbEVZUUZSN3NCTkNyTHFfVkY2bFVoTWhncnFianJ5ZS1HVTZ0enNiNUtidHR6X1BqZlVkZWxxZjd3UQ?oc=5",
+      "source_hash": "a2350e06",
+      "identity_hash": "fdcc9ec5e0134522",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSWVqVnNJdVl6QnI3QmppeUxKWlJXZXF0UHFjUDFrYVdJMTdOQnQ1ZTRreldUSl8tQ3llajdPaDVUT2dSWUFFdnhiZFJBVk5NeGZ6aXR1VGt1YUU1MzA3VEFVODBWOGVHSnoweFQxLWFPcC1lZEphNFZzdklJQUZVd2x6WXJhQmtxbEVZUUZSN3NCTkNyTHFfVkY2bFVoTWhncnFianJ5ZS1HVTZ0enNiNUtidHR6X1BqZlVkZWxxZjd3UQ?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.marketscreener.com/news/us-ukraine-european-negotiators-meet-in-miami-as-trump-announces-diesel-deal-with-russia-ce785ddcda8df322. Source content reviewed: Matching Reuters story 9 Oct 2026: negotiators met for 6 hours; US administration announced diesel sanctions change, no Russia-Ukraine peace agreement reached."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.marketscreener.com/news/us-ukraine-european-negotiators-meet-in-miami-as-trump-announces-diesel-deal-with-russia-ce785ddcda8df322",
+            "title": "US-Ukraine-European negotiators meet in Miami as Trump announces diesel deal with Russia",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Matching Reuters story 9 Oct 2026: negotiators met for 6 hours; US administration announced diesel sanctions change, no Russia-Ukraine peace agreement reached. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: Reuters records six-hour peace talks and US sanctions announcement; no signed Russia–Ukraine peace deal occurred at that point."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "Reuters records six-hour peace talks and US sanctions announcement; no signed Russia–Ukraine peace deal occurred at that point."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Reuters records six-hour peace talks and US sanctions announcement",
+      "reader_what": "Reuters records six-hour peace talks and US sanctions announcement; no signed Russia–Ukraine peace deal occurred at that point.",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "Reuters records six-hour peace talks and US sanctions announcement; no signed Russia–Ukraine peace deal occurred at that point.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "Reuters records six-hour peace talks and US sanctions announcement; no signed Russia–Ukraine peace deal occurred at that point.",
+        "method_or_basis": "",
+        "qualification": " no signed Russia–Ukraine peace deal occurred at that point.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "US administration",
+            "class": "other"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "announced",
+          "status_date": "2026-10-09",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Reuters records six-hour peace talks and US sanctions announcement; no signed Russia–Ukraine peace deal occurred at that point.",
+          "text": "Reuters records six-hour peace talks and US sanctions announcement; no signed Russia–Ukraine peace deal occurred at that point.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMipAFBVV95cUxNUlZ0bzBBQ1FybjVfRTRYQTlWejZRdndVOHZxMFpJWWJ3dEJNYzBHb2N1QmdFLURtOEZGRm1OUUV4dmJoYmxwMHVXM19uSndXTFNrcHU1SkNjWWtrRW5WQ0ZvSl85cmJJaVpGTVVpNHFHc1VYby1CRzRQLWJzUWQ0RkJOMFo0X29jNk5pa1Exa2J0Sy1IRUlpc2JIWlQtR3ZzejBudw?oc=5",
+      "source_hash": "5b1d3593",
+      "identity_hash": "5a1d1e727a90beff",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "externally_correlated_article_or_primary_source; full V2 read pending",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMipAFBVV95cUxNUlZ0bzBBQ1FybjVfRTRYQTlWejZRdndVOHZxMFpJWWJ3dEJNYzBHb2N1QmdFLURtOEZGRm1OUUV4dmJoYmxwMHVXM19uSndXTFNrcHU1SkNjWWtrRW5WQ0ZvSl85cmJJaVpGTVVpNHFHc1VYby1CRzRQLWJzUWQ0RkJOMFo0X29jNk5pa1Exa2J0Sy1IRUlpc2JIWlQtR3ZzejBudw?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.reuters.com/world/eu-tech-chief-says-bloc-well-equipped-fend-off-rogue-ai-risk-2026-10-09/. Source content reviewed: Reuters interview: EU official argued AI Act can handle rogue AI risks; primarily expression of stance, no new policy measure established."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.reuters.com/world/eu-tech-chief-says-bloc-well-equipped-fend-off-rogue-ai-risk-2026-10-09/",
+            "title": "EU tech chief says bloc 'well equipped' to fend off rogue AI risk",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Reuters interview: EU official argued AI Act can handle rogue AI risks; primarily expression of stance, no new policy measure established. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "SPONSORED_ADVOCACY_NOT_INDEPENDENT_DEVELOPMENT",
+        "reason": "Reuters interview: EU official argued AI Act can handle rogue AI risks; primarily expression of stance, no new policy measure established"
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "Reuters interview: EU official argued AI Act can handle rogue AI risks; primarily expression of stance, no new policy measure established",
+        "method_or_basis": "",
+        "qualification": "Do not confuse actor statements or reported proposals with independently observed outcomes; a full authoritative evidence pass is pending.",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVVF5VkpSVEJwdWd0M3dBeHA4Tzg1MjRyeXpwbm5mVG0tNUFZZDdVbWNsMjdhX1hfSDBZVkp0dHY1TlMtZUpDTV9oZHU1d1R3a0F0aklLU0Rwc3dfNFBxem9NaGh3QlU1b1NEZ3VCclc2eFhiN3MyS2JfVndqU2ZBaHFhWDUzQzMwaTQwelVNbm5nSWZudjYxRGF6M1Qzb1NBeG82WjZBTHJyN2UtMmhvU1JicVJXb1ZJdU5rTWctVkVCSmVOMVBMQ2g5dXNtam9CQ3Bj?oc=5",
+      "source_hash": "2d4ecc81",
+      "identity_hash": "be44ca38d9bcbf73",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVVF5VkpSVEJwdWd0M3dBeHA4Tzg1MjRyeXpwbm5mVG0tNUFZZDdVbWNsMjdhX1hfSDBZVkp0dHY1TlMtZUpDTV9oZHU1d1R3a0F0aklLU0Rwc3dfNFBxem9NaGh3QlU1b1NEZ3VCclc2eFhiN3MyS2JfVndqU2ZBaHFhWDUzQzMwaTQwelVNbm5nSWZudjYxRGF6M1Qzb1NBeG82WjZBTHJyN2UtMmhvU1JicVJXb1ZJdU5rTWctVkVCSmVOMVBMQ2g5dXNtam9CQ3Bj?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.lemonde.fr/en/archives-du-monde/09-10-2026/. Source content reviewed: Le Monde published matching AFP dispatch on 9 Oct 2026 reporting EU-China consensus on hybrid vehicles and rare earth supply."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.lemonde.fr/en/archives-du-monde/09-10-2026/",
+            "title": "China and EU reach deal on hybrid cars, rare earths - Le Monde.fr",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Le Monde published matching AFP dispatch on 9 Oct 2026 reporting EU-China consensus on hybrid vehicles and rare earth supply. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: AFP story reports 9 October EU–China hybrid vehicle and rare-earth understandings; the sides announcements need separate verification before claiming implementation."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "AFP story reports 9 October EU–China hybrid vehicle and rare-earth understandings; the sides announcements need separate verification before claiming implementation."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "AFP story reports 9 October EU–China hybrid vehicle and rare-earth understandings",
+      "reader_what": "AFP story reports 9 October EU–China hybrid vehicle and rare-earth understandings; the sides announcements need separate verification before claiming implementa",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "AFP story reports 9 October EU–China hybrid vehicle and rare-earth understandings; the sides announcements need separate verification before claiming implementation.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "AFP story reports 9 October EU–China hybrid vehicle and rare-earth understandings; the sides announcements need separate verification before claiming implementation.",
+        "method_or_basis": "",
+        "qualification": " the sides announcements need separate verification before claiming implementation.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EU and China negotiators",
+            "class": "other"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "announced",
+          "status_date": "2026-10-09",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "AFP story reports 9 October EU–China hybrid vehicle and rare-earth understandings; the sides announcements need separate verification before claiming implementation.",
+          "text": "AFP story reports 9 October EU–China hybrid vehicle and rare-earth understandings; the sides announcements need separate verification before claiming implementation.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMitAFBVV95cUxPdnJWaW83X1dOWXVrWGIyT3pSS1FyWkdkbm01bldwOUNpT0Q2WnR3dVlhVUVCLXFpeW4wQ0MzSURKSWtMQ0xtZ3lBcm5MdkxfMmRITjgwbVYwMWV0a0t1eFcxSi1ITXV0WkhDMndCWTljU293WlJRX01saW9JWEZTeVN1R2RQeXpxdS02alZ2Y2tlQlc3Z1hDOUpxSnU2U3dxZExSTU43OGRONWFBYlp3dFNLSE8?oc=5",
+      "source_hash": "e509207a",
+      "identity_hash": "98dc5caabe09397b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMitAFBVV95cUxPdnJWaW83X1dOWXVrWGIyT3pSS1FyWkdkbm01bldwOUNpT0Q2WnR3dVlhVUVCLXFpeW4wQ0MzSURKSWtMQ0xtZ3lBcm5MdkxfMmRITjgwbVYwMWV0a0t1eFcxSi1ITXV0WkhDMndCWTljU293WlJRX01saW9JWEZTeVN1R2RQeXpxdS02alZ2Y2tlQlc3Z1hDOUpxSnU2U3dxZExSTU43OGRONWFBYlp3dFNLSE8?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.bloomberg.com/news/articles/2026-10-09/two-ships-hauling-us-lng-divert-to-europe-as-asian-demand-eases. Source content reviewed: Bloomberg original story identity recovered; two US LNG cargoes reportedly diverted to Europe due to weaker Asian demand, but no confirmed delivery."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.bloomberg.com/news/articles/2026-10-09/two-ships-hauling-us-lng-divert-to-europe-as-asian-demand-eases",
+            "title": "Two Ships Hauling US LNG Divert to Europe as Asian Demand Eases",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Bloomberg original story identity recovered; two US LNG cargoes reportedly diverted to Europe due to weaker Asian demand, but no confirmed delivery. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: Bloomberg reports two US LNG cargoes diverted toward Europe amid weaker Asian demand; navigation change does not confirm final unloading."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "Bloomberg reports two US LNG cargoes diverted toward Europe amid weaker Asian demand; navigation change does not confirm final unloading."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Bloomberg reports two US LNG cargoes diverted toward Europe amid weaker Asian demand",
+      "reader_what": "Bloomberg reports two US LNG cargoes diverted toward Europe amid weaker Asian demand; navigation change does not confirm final unloading.",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "Bloomberg reports two US LNG cargoes diverted toward Europe amid weaker Asian demand; navigation change does not confirm final unloading.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "Bloomberg reports two US LNG cargoes diverted toward Europe amid weaker Asian demand; navigation change does not confirm final unloading.",
+        "method_or_basis": "",
+        "qualification": " navigation change does not confirm final unloading.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "energy.lng_imports",
+          "secondary_objects": [],
+          "actor": {
+            "name": "LNG cargo operators",
+            "class": "other"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "announced",
+          "status_date": "2026-10-09",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Bloomberg reports two US LNG cargoes diverted toward Europe amid weaker Asian demand; navigation change does not confirm final unloading.",
+          "text": "Bloomberg reports two US LNG cargoes diverted toward Europe amid weaker Asian demand; navigation change does not confirm final unloading.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxNUVBGdWdpbnY5TENRVUtaTlhNcGtDTmRWdFlHRDlOMjhYN0UwcGNoZ0ZOX0wwZTNtOXQxTW9HNjd6TzRWdDhxaVZQMkdWMW16aTctT2ZpTFNWa0R2TEQzd1d2Mk43elRxU0hndzdFWE1OVVM5VVNSSHhCdEI4bFVFZGZvZ18?oc=5",
+      "source_hash": "6342d736",
+      "identity_hash": "7334f6999ce494b5",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "externally_correlated_article_or_primary_source; full V2 read pending",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMihAFBVV95cUxNUVBGdWdpbnY5TENRVUtaTlhNcGtDTmRWdFlHRDlOMjhYN0UwcGNoZ0ZOX0wwZTNtOXQxTW9HNjd6TzRWdDhxaVZQMkdWMW16aTctT2ZpTFNWa0R2TEQzd1d2Mk43elRxU0hndzdFWE1OVVM5VVNSSHhCdEI4bFVFZGZvZ18?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://muckrack.com/alanbeattie. Source content reviewed: FT 9 Oct 2026 by Alan Beattie and Soumaya Keynes identified as reader question solicitation rather than new trade policy development."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://muckrack.com/alanbeattie",
+            "title": "Submit your questions: Who’s winning the trade war with China — the EU or US?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. FT 9 Oct 2026 by Alan Beattie and Soumaya Keynes identified as reader question solicitation rather than new trade policy development. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "SPONSORED_ADVOCACY_NOT_INDEPENDENT_DEVELOPMENT",
+        "reason": "FT 9 Oct 2026 by Alan Beattie and Soumaya Keynes identified as reader question solicitation rather than new trade policy development"
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "FT 9 Oct 2026 by Alan Beattie and Soumaya Keynes identified as reader question solicitation rather than new trade policy development",
+        "method_or_basis": "",
+        "qualification": "Do not confuse actor statements or reported proposals with independently observed outcomes; a full authoritative evidence pass is pending.",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMipgFBVV95cUxONU1ld2RnWXRwMzZFTEtKNFBxb09KQXJIZzI2WXJEVkthbldsaGUyOWxSbWxYNDVwQzJDSTR6UGRmcjFXaWpNcEczcWZWMEpLUUFtSlozWEFKOUwyUHk4QlBRelczWURTYW9sN3RRTWJVTnhRZllROFlXRzc1ZmI3RE1yZkFtUmt6SFpWWkRIVWdJQkJnYnFmVlU4eHhEWWl1ZGN3R1BB?oc=5",
+      "source_hash": "e2c3a1cd",
+      "identity_hash": "fc2534edcda4d9e7",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMipgFBVV95cUxONU1ld2RnWXRwMzZFTEtKNFBxb09KQXJIZzI2WXJEVkthbldsaGUyOWxSbWxYNDVwQzJDSTR6UGRmcjFXaWpNcEczcWZWMEpLUUFtSlozWEFKOUwyUHk4QlBRelczWURTYW9sN3RRTWJVTnhRZllROFlXRzc1ZmI3RE1yZkFtUmt6SFpWWkRIVWdJQkJnYnFmVlU4eHhEWWl1ZGN3R1BB?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.breakingviews.com/columns/breaking-view/unbearable-lightness-an-eu-china-half-deal-2026-10-09/. Source content reviewed: Matching Reuters Breakingviews signed opinion by Jon Sindreu, 9 Oct 2026, analyses risks of limited EU-China hybrid trade deal and EU industrial divisions; analytical commentary not policy decision."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.breakingviews.com/columns/breaking-view/unbearable-lightness-an-eu-china-half-deal-2026-10-09/",
+            "title": "Breakingviews - COMMENTARY: The unbearable lightness of an EU-China half-deal",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Matching Reuters Breakingviews signed opinion by Jon Sindreu, 9 Oct 2026, analyses risks of limited EU-China hybrid trade deal and EU industrial divisions; analytical commentary not policy decision. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: Reuters Breakingviews commentary assesses limitations of partial EU–China hybrid deal; clearly analytical opinion, not an empirical study or government action."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "Reuters Breakingviews commentary assesses limitations of partial EU–China hybrid deal; clearly analytical opinion, not an empirical study or government action."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Reuters Breakingviews commentary assesses limitations of partial EU–China hybrid deal",
+      "reader_what": "Reuters Breakingviews commentary assesses limitations of partial EU–China hybrid deal; clearly analytical opinion, not an empirical study or government action.",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "Reuters Breakingviews commentary assesses limitations of partial EU–China hybrid deal; clearly analytical opinion, not an empirical study or government action.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "Reuters Breakingviews commentary assesses limitations of partial EU–China hybrid deal; clearly analytical opinion, not an empirical study or government action.",
+        "method_or_basis": "",
+        "qualification": " clearly analytical opinion, not an empirical study or government action.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Reuters Breakingviews",
+            "class": "other"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "announced",
+          "status_date": "2026-10-09",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Reuters Breakingviews commentary assesses limitations of partial EU–China hybrid deal; clearly analytical opinion, not an empirical study or government action.",
+          "text": "Reuters Breakingviews commentary assesses limitations of partial EU–China hybrid deal; clearly analytical opinion, not an empirical study or government action.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMixgFBVV95cUxOOUk2RnFEbjJ3U1VMdUdwTXNrT3VNT0FpcjBDMFVLVHVzSHVlLVJjZE8tRC15Y1I0aWN5ZzJJQlJZaldBVmJ0cy1FLUVZNGVVc0k2bzg5dDlQTFlabzFrSHgtQ0dMNXg2N21BSzhsZEhyTTRTUjlBa2JhSWh5RVU1UWs4bnlhZ3M5Z3RCMTBLSXVieTBwckZNTWR0MUhkYUk1NUp6STFSaGhZb3FFTE5hVlRodXVOdE9faFlDZklPdGRlaERDR2c?oc=5",
+      "source_hash": "ee6a96c2",
+      "identity_hash": "2131300ab19ede43",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMixgFBVV95cUxOOUk2RnFEbjJ3U1VMdUdwTXNrT3VNT0FpcjBDMFVLVHVzSHVlLVJjZE8tRC15Y1I0aWN5ZzJJQlJZaldBVmJ0cy1FLUVZNGVVc0k2bzg5dDlQTFlabzFrSHgtQ0dMNXg2N21BSzhsZEhyTTRTUjlBa2JhSWh5RVU1UWs4bnlhZ3M5Z3RCMTBLSXVieTBwckZNTWR0MUhkYUk1NUp6STFSaGhZb3FFTE5hVlRodXVOdE9faFlDZklPdGRlaERDR2c?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.channelnewsasia.com/business/us-european-telecom-stocks-slide-spacex-spectrum-deal-rattles-sector-6445666. Source content reviewed: Matching Reuters report confirms European telecom equity declines after proposed SpaceX spectrum acquisition; market reaction is observed, transaction pending approval."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.channelnewsasia.com/business/us-european-telecom-stocks-slide-spacex-spectrum-deal-rattles-sector-6445666",
+            "title": "US, European telecom stocks slide as SpaceX spectrum deal rattles sector",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Matching Reuters report confirms European telecom equity declines after proposed SpaceX spectrum acquisition; market reaction is observed, transaction pending approval. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: Reuters reports European telecom shares declining after proposed SpaceX spectrum acquisition; market reaction observed, transaction not approved."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "Reuters reports European telecom shares declining after proposed SpaceX spectrum acquisition; market reaction observed, transaction not approved."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Reuters reports European telecom shares declining after proposed SpaceX spectrum acquisition",
+      "reader_what": "Reuters reports European telecom shares declining after proposed SpaceX spectrum acquisition; market reaction observed, transaction not approved.",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "Reuters reports European telecom shares declining after proposed SpaceX spectrum acquisition; market reaction observed, transaction not approved.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "Reuters reports European telecom shares declining after proposed SpaceX spectrum acquisition; market reaction observed, transaction not approved.",
+        "method_or_basis": "",
+        "qualification": " market reaction observed, transaction not approved.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "digital.infrastructure",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Market participants",
+            "class": "other"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "announced",
+          "status_date": "2026-10-09",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Reuters reports European telecom shares declining after proposed SpaceX spectrum acquisition; market reaction observed, transaction not approved.",
+          "text": "Reuters reports European telecom shares declining after proposed SpaceX spectrum acquisition; market reaction observed, transaction not approved.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMivwFBVV95cUxOcmViaTc0MHRJTmw2Vm9fX0EzaW1aZm5fdnhGWjJPOG92TF9mV1Jyb1FTeDc3czNwb2ljQ1BMemg5M2tVSlJUVHBsRnpmTmdsSXZlRkpmZjV5Y3hsQXp6MEgwd3ZtUXZ6TmFid0paWk1lTjVEUGlzQVM3UU8xVTZVZWd2eEUtbTFOM0hyNUJNamxlZnd5TjU2UE9vdlYyQ01jcUJ5WHotejNQV1l1d0R0MnE0UTRac0IzVkZXcGd1cw?oc=5",
+      "source_hash": "e3ad00dc",
+      "identity_hash": "d5b67a528c865570",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "externally_correlated_article_or_primary_source; full V2 read pending",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMivwFBVV95cUxOcmViaTc0MHRJTmw2Vm9fX0EzaW1aZm5fdnhGWjJPOG92TF9mV1Jyb1FTeDc3czNwb2ljQ1BMemg5M2tVSlJUVHBsRnpmTmdsSXZlRkpmZjV5Y3hsQXp6MEgwd3ZtUXZ6TmFid0paWk1lTjVEUGlzQVM3UU8xVTZVZWd2eEUtbTFOM0hyNUJNamxlZnd5TjU2UE9vdlYyQ01jcUJ5WHotejNQV1l1d0R0MnE0UTRac0IzVkZXcGd1cw?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.eeas.europa.eu/delegations/thailand/team-europe-partners-thailand-space-cooperation-under-eu-global-gateway_en. Source content reviewed: Official EEAS item promotes forthcoming Thailand Space Expo participation, workshops and pavilion, not a signed new economic-security partnership."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.eeas.europa.eu/delegations/thailand/team-europe-partners-thailand-space-cooperation-under-eu-global-gateway_en",
+            "title": "Team Europe partners with Thailand on space cooperation under EU Global Gateway",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Official EEAS item promotes forthcoming Thailand Space Expo participation, workshops and pavilion, not a signed new economic-security partnership. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "SPONSORED_ADVOCACY_NOT_INDEPENDENT_DEVELOPMENT",
+        "reason": "Official EEAS item promotes forthcoming Thailand Space Expo participation, workshops and pavilion, not a signed new economic-security partnership"
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "Official EEAS item promotes forthcoming Thailand Space Expo participation, workshops and pavilion, not a signed new economic-security partnership",
+        "method_or_basis": "",
+        "qualification": "Do not confuse actor statements or reported proposals with independently observed outcomes; a full authoritative evidence pass is pending.",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMixgFBVV95cUxQenp5X0NPZUxfT1ByY2pId3d1Q3JlT0FHcHBtODVndV9JMWFhNFJqM3FqSk1TTWN3RExMNGw1ckhKY1kxOTBIaVZSbW1qMVZXZGJadVd1QVlkS3J2dDNIekpsbk5MOFd1cFhYdmh6Zl9xT280YmhYRTh6VHBHUHpVX2diOWdZQ2gyUE5LU2xRQnkxcVBzVFlZUnNaVmxOd2RkRU5KalFaYS1PN0taRkc1Q0RucEFaUkZENS0tY0ZBMVZEb1ppNVE?oc=5",
+      "source_hash": "836fa4c7",
+      "identity_hash": "19110837163f778d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "externally_correlated_article_or_primary_source; full V2 read pending",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMixgFBVV95cUxQenp5X0NPZUxfT1ByY2pId3d1Q3JlT0FHcHBtODVndV9JMWFhNFJqM3FqSk1TTWN3RExMNGw1ckhKY1kxOTBIaVZSbW1qMVZXZGJadVd1QVlkS3J2dDNIekpsbk5MOFd1cFhYdmh6Zl9xT280YmhYRTh6VHBHUHpVX2diOWdZQ2gyUE5LU2xRQnkxcVBzVFlZUnNaVmxOd2RkRU5KalFaYS1PN0taRkc1Q0RucEFaUkZENS0tY0ZBMVZEb1ppNVE?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.marketscreener.com/news/former-german-spy-chief-had-contacts-with-chinese-official-spiegel-reports-ce785ddfd18bf122. Source content reviewed: Matching Reuters report attributes allegations about ex-German spy chief to Spiegel; suspected espionage not adjudicated and primarily security/criminal rather than economic security."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.marketscreener.com/news/former-german-spy-chief-had-contacts-with-chinese-official-spiegel-reports-ce785ddfd18bf122",
+            "title": "Former German spy chief had contacts with Chinese official, Spiegel reports",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Matching Reuters report attributes allegations about ex-German spy chief to Spiegel; suspected espionage not adjudicated and primarily security/criminal rather than economic security. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "SPONSORED_ADVOCACY_NOT_INDEPENDENT_DEVELOPMENT",
+        "reason": "Matching Reuters report attributes allegations about ex-German spy chief to Spiegel; suspected espionage not adjudicated and primarily security/criminal rather than economic security"
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "Matching Reuters report attributes allegations about ex-German spy chief to Spiegel; suspected espionage not adjudicated and primarily security/criminal rather than economic security",
+        "method_or_basis": "",
+        "qualification": "Do not confuse actor statements or reported proposals with independently observed outcomes; a full authoritative evidence pass is pending.",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMitgFBVV95cUxPM3Z6WGhtUkx6VTZyTFJTTFJLeW93eHROdE00YzByRHA1aGg0b0xxLTN4UHFzcjZUQWZBRHlnSDVkZDJVMTRrWEpUbWExZWw1bFpFQk9ydmFwN0VpalRTT1ZYWHZNWEI1UWdnSUJrbmZNd0dUVUtVa2Y0aEZPTlVYSXl2Uk5oN0JrZ2JMeVFtNUdSWFhkWWtmVHMyTlVqUjVhMU1NNmFNdHVxckhNc0RiLWlJTUNKdw?oc=5",
+      "source_hash": "0c74db67",
+      "identity_hash": "0ded004646cdc2d7",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "externally_correlated_article_or_primary_source; full V2 read pending",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMitgFBVV95cUxPM3Z6WGhtUkx6VTZyTFJTTFJLeW93eHROdE00YzByRHA1aGg0b0xxLTN4UHFzcjZUQWZBRHlnSDVkZDJVMTRrWEpUbWExZWw1bFpFQk9ydmFwN0VpalRTT1ZYWHZNWEI1UWdnSUJrbmZNd0dUVUtVa2Y0aEZPTlVYSXl2Uk5oN0JrZ2JMeVFtNUdSWFhkWWtmVHMyTlVqUjVhMU1NNmFNdHVxckhNc0RiLWlJTUNKdw?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://hk.finance.yahoo.com/news/%E4%B8%AD%E5%9C%8B%E5%A4%AE%E8%A1%8C%E5%8F%8D%E9%A7%81%E4%BA%BA%E6%B0%91%E5%B9%A3%E4%BD%8E%E4%BC%B0%E8%AB%96-%E7%A8%B1%E7%84%A1%E5%BF%85%E8%A6%81%E4%B9%9F%E7%84%A1%E6%84%8F%E9%80%9A%E9%81%8E%E5%8C%AF%E7%8E%87%E8%B2%B6%E5%80%BC%E7%8D%B2%E5%8F%96%E7%AB%B6%E7%88%AD%E5%84%AA%E5%8B%A2-113736915.html. Source content reviewed: Bloomberg Chinese-language syndication: People Bank of China issued official yuan exchange-rate policy defence on 8 Oct ahead of EU talks; government self-report not independent proof currency fairly valued."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://hk.finance.yahoo.com/news/%E4%B8%AD%E5%9C%8B%E5%A4%AE%E8%A1%8C%E5%8F%8D%E9%A7%81%E4%BA%BA%E6%B0%91%E5%B9%A3%E4%BD%8E%E4%BC%B0%E8%AB%96-%E7%A8%B1%E7%84%A1%E5%BF%85%E8%A6%81%E4%B9%9F%E7%84%A1%E6%84%8F%E9%80%9A%E9%81%8E%E5%8C%AF%E7%8E%87%E8%B2%B6%E5%80%BC%E7%8D%B2%E5%8F%96%E7%AB%B6%E7%88%AD%E5%84%AA%E5%8B%A2-113736915.html",
+            "title": "China Central Bank Defends Currency Policy Before EU Trade Talks",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Bloomberg Chinese-language syndication: People Bank of China issued official yuan exchange-rate policy defence on 8 Oct ahead of EU talks; government self-report not independent proof currency fairly valued. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: PBOC official yuan-policy defence is a self-report; independent euro-area channel and effects not sufficiently substantiated."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_INSUFFICIENT",
+        "reason": "PBOC official yuan-policy defence is a self-report; independent euro-area channel and effects not sufficiently substantiated."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "PBOC official yuan-policy defence is a self-report",
+      "reader_what": "PBOC official yuan-policy defence is a self-report",
+      "reader_why": "European economic security relevance is source-dependent; proposed action is not an implemented result.",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "PBOC official yuan-policy defence is a self-report; independent euro-area channel and effects not sufficiently substantiated.",
+        "method_or_basis": "",
+        "qualification": " independent euro-area channel and effects not sufficiently substantiated.",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVFc4c09MQnd2SzBWeHlyS09aYVhtQjc1U1VsakNNekFhekRKRlVDVEhmUi1zTnRFRFY4UlBQN0xfZnZTTlNzM2k3Y1Y0aTFtdzh3dGh0MmgtM1dFMkIyV1lpUVVjVDc0eUJFN0lldkRHMFlmUVRTUk8yY2dMcjJmUTNnbVU1S3RCZ01ST3JEZ1FFMHFyWGs2UFZIV3pxMEd5OFY5OXJfRFlLV1U?oc=5",
+      "source_hash": "5779b2ec",
+      "identity_hash": "901dd3faa32860fe",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "externally_correlated_article_or_primary_source; full V2 read pending",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVFc4c09MQnd2SzBWeHlyS09aYVhtQjc1U1VsakNNekFhekRKRlVDVEhmUi1zTnRFRFY4UlBQN0xfZnZTTlNzM2k3Y1Y0aTFtdzh3dGh0MmgtM1dFMkIyV1lpUVVjVDc0eUJFN0lldkRHMFlmUVRTUk8yY2dMcjJmUTNnbVU1S3RCZ01ST3JEZ1FFMHFyWGs2UFZIV3pxMEd5OFY5OXJfRFlLV1U?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://zolotube.com/watch?v=QNqhFn4pL9A. Source content reviewed: Identified Bloomberg Asia Trade video 8 Oct 2026 with Hinrich Foundation Deborah Elms at 01:14:07; talk-show interview, no distinct concrete EU policy adoption shown."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://zolotube.com/watch?v=QNqhFn4pL9A",
+            "title": "Watch Hinrich Foundation's Elms on EU-China Trade Tensions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Identified Bloomberg Asia Trade video 8 Oct 2026 with Hinrich Foundation Deborah Elms at 01:14:07; talk-show interview, no distinct concrete EU policy adoption shown. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "SPONSORED_ADVOCACY_NOT_INDEPENDENT_DEVELOPMENT",
+        "reason": "Identified Bloomberg Asia Trade video 8 Oct 2026 with Hinrich Foundation Deborah Elms at 01:14:07; talk-show interview, no distinct concrete EU policy adoption shown"
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "Identified Bloomberg Asia Trade video 8 Oct 2026 with Hinrich Foundation Deborah Elms at 01:14:07; talk-show interview, no distinct concrete EU policy adoption shown",
+        "method_or_basis": "",
+        "qualification": "Do not confuse actor statements or reported proposals with independently observed outcomes; a full authoritative evidence pass is pending.",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://borderlex.net/2026/10/09/eu-china-beijing-agrees-to-curb-hybrid-auto-exports/",
+      "source_hash": "f79b35d1",
+      "identity_hash": "a2057b293bdfcf85",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://borderlex.net/2026/10/09/eu-china-beijing-agrees-to-curb-hybrid-auto-exports/; matching supplied source content length 262 characters, mode abstract_or_landing_page."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.breakingviews.com/topic/politics/. Source content reviewed: Borderlex 9 Oct headline has only preview but independent Reuters/Breakingviews corroborates EU-China hybrid export arrangement concluded on 9 Oct; report identity consistent, volume detail must be separately verified."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.breakingviews.com/topic/politics/",
+            "title": "EU-China: Beijing agrees to curb hybrid auto exports - Borderlex - European trade policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Borderlex 9 Oct headline has only preview but independent Reuters/Breakingviews corroborates EU-China hybrid export arrangement concluded on 9 Oct; report identity consistent, volume detail must be separately verified. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: Borderlex preview and corroborating reporting confirm 9 October EU–China hybrid export understanding; preview does not independently establish every quoted term."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "Borderlex preview and corroborating reporting confirm 9 October EU–China hybrid export understanding; preview does not independently establish every quoted term."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Borderlex preview and corroborating reporting confirm 9 October EU–China hybrid export understanding",
+      "reader_what": "Borderlex preview and corroborating reporting confirm 9 October EU–China hybrid export understanding; preview does not independently establish every quoted term",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "Borderlex preview and corroborating reporting confirm 9 October EU–China hybrid export understanding; preview does not independently establish every quoted term.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "Borderlex preview and corroborating reporting confirm 9 October EU–China hybrid export understanding; preview does not independently establish every quoted term.",
+        "method_or_basis": "",
+        "qualification": " preview does not independently establish every quoted term.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EU and China negotiators",
+            "class": "other"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "announced",
+          "status_date": "2026-10-09",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Borderlex preview and corroborating reporting confirm 9 October EU–China hybrid export understanding; preview does not independently establish every quoted term.",
+          "text": "Borderlex preview and corroborating reporting confirm 9 October EU–China hybrid export understanding; preview does not independently establish every quoted term.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMiqgFBVV95cUxQU2lOVm5tWG83Uzl6OHA2UGlPN1M2OHM1aHJXTGlkTjU1YUY4S1BodWhERHZXcl9nRGdOVV9tallCdF9EbTM0TGdUbU1rVzgyN3Z4QVQ0cDhJWkJ6ZG51amk1aTBDN3ZsRzZLUnFqRjVSVlNaWF90RF9ON0dzNHpnekh0ZXRmMVNyNzBVeWdqbHp0WFJydHRuYmdpTHlfRWc5bElaTXVBeU1MZw?oc=5",
+      "source_hash": "ae190c6f",
+      "identity_hash": "30307a5d7a77c1ee",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMiqgFBVV95cUxQU2lOVm5tWG83Uzl6OHA2UGlPN1M2OHM1aHJXTGlkTjU1YUY4S1BodWhERHZXcl9nRGdOVV9tallCdF9EbTM0TGdUbU1rVzgyN3Z4QVQ0cDhJWkJ6ZG51amk1aTBDN3ZsRzZLUnFqRjVSVlNaWF90RF9ON0dzNHpnekh0ZXRmMVNyNzBVeWdqbHp0WFJydHRuYmdpTHlfRWc5bElaTXVBeU1MZw?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.investing.com/news/economic-indicators/european-industry-groups-call-for-urgent-eu-action-on-china-trade-4939861. Source content reviewed: Reuters report: 44 associations urged wider EU trade defences on 8 Oct 2026; advocacy event, not policy adoption."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.investing.com/news/economic-indicators/european-industry-groups-call-for-urgent-eu-action-on-china-trade-4939861",
+            "title": "European industry groups call for urgent EU action on China trade",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Reuters report: 44 associations urged wider EU trade defences on 8 Oct 2026; advocacy event, not policy adoption. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: 44 industry associations publicly requested wider EU trade defences; lobbying action is not Commission adoption."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "44 industry associations publicly requested wider EU trade defences; lobbying action is not Commission adoption."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "44 industry associations publicly requested wider EU trade defences",
+      "reader_what": "44 industry associations publicly requested wider EU trade defences; lobbying action is not Commission adoption.",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "44 industry associations publicly requested wider EU trade defences; lobbying action is not Commission adoption.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "44 industry associations publicly requested wider EU trade defences; lobbying action is not Commission adoption.",
+        "method_or_basis": "",
+        "qualification": " lobbying action is not Commission adoption.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "trade_defence.safeguard",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Industry associations",
+            "class": "other"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "proposed",
+          "status_date": "2026-10-08",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "44 industry associations publicly requested wider EU trade defences; lobbying action is not Commission adoption.",
+          "text": "44 industry associations publicly requested wider EU trade defences; lobbying action is not Commission adoption.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMiogFBVV95cUxPcGtCRy04MjZnclVNd1N5ZWZpc2JYNUtJelZyTWxTMXRWMTNaR09wM3hjSTBKX2NUZ3R5MXJDMmVQbFhCZlZDVUJwQk93c01mQmFKa0dNMjJuWnZTT2ZlcHV3QmZuVVJIZlZPSTNHMUl5Q2ZocVlPOG1Ia2JOYTRLZ1RJT0NETUVidDYycFBwR05NemJZMGFadnRKZEcyQThaM2c?oc=5",
+      "source_hash": "18b85a25",
+      "identity_hash": "28826443cf7526b1",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "externally_correlated_article_or_primary_source; full V2 read pending",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMiogFBVV95cUxPcGtCRy04MjZnclVNd1N5ZWZpc2JYNUtJelZyTWxTMXRWMTNaR09wM3hjSTBKX2NUZ3R5MXJDMmVQbFhCZlZDVUJwQk93c01mQmFKa0dNMjJuWnZTT2ZlcHV3QmZuVVJIZlZPSTNHMUl5Q2ZocVlPOG1Ia2JOYTRLZ1RJT0NETUVidDYycFBwR05NemJZMGFadnRKZEcyQThaM2c?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://euobserver.com/241842/eu-trade-chief-sefcovic-faces-the-reality-of-brussels-weak-trade-hand/. Source content reviewed: EUobserver matching pre-negotiation analysis reports EU-China dispute and states breakthrough not then achieved; analysis not final 12 Oct outcome."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://euobserver.com/241842/eu-trade-chief-sefcovic-faces-the-reality-of-brussels-weak-trade-hand/",
+            "title": "EU trade chief Šefčovič has no cards to play on China ‘ultimatum’ trip",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. EUobserver matching pre-negotiation analysis reports EU-China dispute and states breakthrough not then achieved; analysis not final 12 Oct outcome. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: EUobserver pre-negotiation analysis predates agreement; distinct original argument and sufficient substantive material not verified beyond matching article identification."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_INSUFFICIENT",
+        "reason": "EUobserver pre-negotiation analysis predates agreement; distinct original argument and sufficient substantive material not verified beyond matching article identification."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EUobserver pre-negotiation analysis predates agreement",
+      "reader_what": "EUobserver pre-negotiation analysis predates agreement",
+      "reader_why": "European economic security relevance is source-dependent; proposed action is not an implemented result.",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "EUobserver pre-negotiation analysis predates agreement; distinct original argument and sufficient substantive material not verified beyond matching article identification.",
+        "method_or_basis": "",
+        "qualification": " distinct original argument and sufficient substantive material not verified beyond matching article identification.",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMihgFBVV95cUxNMXdVWEhlbUxRWjQtYUs2VVlzNFFZZThkRy0xRnRoMXFUd3dTUkdiQXY0RzRjTzRqdnk2blhaODA2RDJBU1RYdFJxekRuSkVlMEZXazViNzg0eU14NERhOXFoQVBFd0h0aE53S0huc0Z0eS1SUHVjR1pPaTY5b0ZpOGJfU0l2QQ?oc=5",
+      "source_hash": "d3034ad4",
+      "identity_hash": "56b4812f5a3f8908",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMihgFBVV95cUxNMXdVWEhlbUxRWjQtYUs2VVlzNFFZZThkRy0xRnRoMXFUd3dTUkdiQXY0RzRjTzRqdnk2blhaODA2RDJBU1RYdFJxekRuSkVlMEZXazViNzg0eU14NERhOXFoQVBFd0h0aE53S0huc0Z0eS1SUHVjR1pPaTY5b0ZpOGJfU0l2QQ?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.soz6.com/news/germany-wants-uk-to-raise-tariffs-on-chinese-evs. Source content reviewed: Matching Politico report dated 8 October: German officials reportedly pressed for higher UK Chinese-EV tariffs as an EU Made-in-Europe carve-out condition; no UK tariff adoption shown."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.soz6.com/news/germany-wants-uk-to-raise-tariffs-on-chinese-evs",
+            "title": "Germany wants UK to raise tariffs on Chinese EVs",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Matching Politico report dated 8 October: German officials reportedly pressed for higher UK Chinese-EV tariffs as an EU Made-in-Europe carve-out condition; no UK tariff adoption shown. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: Politico reports German officials sought tighter UK Chinese-EV tariffs as condition for industrial cooperation; not an agreed UK tariff rise."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "Politico reports German officials sought tighter UK Chinese-EV tariffs as condition for industrial cooperation; not an agreed UK tariff rise."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Politico reports German officials sought tighter UK Chinese-EV tariffs as condition for industrial coope",
+      "reader_what": "Politico reports German officials sought tighter UK Chinese-EV tariffs as condition for industrial cooperation; not an agreed UK tariff rise.",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "Politico reports German officials sought tighter UK Chinese-EV tariffs as condition for industrial cooperation; not an agreed UK tariff rise.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "Politico reports German officials sought tighter UK Chinese-EV tariffs as condition for industrial cooperation; not an agreed UK tariff rise.",
+        "method_or_basis": "",
+        "qualification": " not an agreed UK tariff rise.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "German officials",
+            "class": "other"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "proposed",
+          "status_date": "2026-10-08",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Politico reports German officials sought tighter UK Chinese-EV tariffs as condition for industrial cooperation; not an agreed UK tariff rise.",
+          "text": "Politico reports German officials sought tighter UK Chinese-EV tariffs as condition for industrial cooperation; not an agreed UK tariff rise.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMiqAFBVV95cUxPa1FCNTBJNVFGY1ZjaS13R28ycjFrU2lLZy1DUXhiRG54TkE1c3dwbzY3c2g0R2xYdVVHT1p3dklqUXFGSExhemEzaGNmT1htWGZDSlFEY200QVI1TXNLd3FTYmx6MHFMUWRfWVlfekpXajcwS1ZSUFFjTHdiMkk3OEh6Z19lZFhBaWdzWlh4WjhwOG1rYWZNVkxnaG95NXl2cUhoaGRLMko?oc=5",
+      "source_hash": "eb4548fe",
+      "identity_hash": "6f6799196049b28b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMiqAFBVV95cUxPa1FCNTBJNVFGY1ZjaS13R28ycjFrU2lLZy1DUXhiRG54TkE1c3dwbzY3c2g0R2xYdVVHT1p3dklqUXFGSExhemEzaGNmT1htWGZDSlFEY200QVI1TXNLd3FTYmx6MHFMUWRfWVlfekpXajcwS1ZSUFFjTHdiMkk3OEh6Z19lZFhBaWdzWlh4WjhwOG1rYWZNVkxnaG95NXl2cUhoaGRLMko?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://bloomberg.com/news/articles/2026-10-08/finland-s-data-center-tally-tops-67-billion-on-ai-boom. Source content reviewed: Bloomberg matching publication: planned/executed Finnish datacentre projects total more than €67bn; not €67bn delivered investment."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://bloomberg.com/news/articles/2026-10-08/finland-s-data-center-tally-tops-67-billion-on-ai-boom",
+            "title": "Finland’s Data Center Tally Tops €67 Billion on AI Boom",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Bloomberg matching publication: planned/executed Finnish datacentre projects total more than €67bn; not €67bn delivered investment. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: Bloomberg cites more than €67bn planned or in-progress Finnish data-centre investment; not completed investment."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "Bloomberg cites more than €67bn planned or in-progress Finnish data-centre investment; not completed investment."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Bloomberg cites more than €67bn planned or in-progress Finnish data-centre investment",
+      "reader_what": "Bloomberg cites more than €67bn planned or in-progress Finnish data-centre investment; not completed investment.",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "Bloomberg cites more than €67bn planned or in-progress Finnish data-centre investment; not completed investment.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "Bloomberg cites more than €67bn planned or in-progress Finnish data-centre investment; not completed investment.",
+        "method_or_basis": "",
+        "qualification": " not completed investment.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "digital.infrastructure",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Data-centre investors",
+            "class": "other"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "announced",
+          "status_date": "2026-10-08",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Bloomberg cites more than €67bn planned or in-progress Finnish data-centre investment; not completed investment.",
+          "text": "Bloomberg cites more than €67bn planned or in-progress Finnish data-centre investment; not completed investment.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxPVEJRVjRiaWI2eTNQNW1jZWVQblpuQ08zUExYVUJIT1hYc3hMUGJxdGVIdzl2Mkg4OXZhTmRNT2Zibmd5ajI2clhVZjQwX1l3UlJUR1poczhmTU9xVVQ2a01HdnM5NGdYVFhQRXR4b3ZSQjZZRTYtQ3FGUTNHNVJQTThjUU0?oc=5",
+      "source_hash": "38c95968",
+      "identity_hash": "46aca9154f13f7ba",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMihAFBVV95cUxPVEJRVjRiaWI2eTNQNW1jZWVQblpuQ08zUExYVUJIT1hYc3hMUGJxdGVIdzl2Mkg4OXZhTmRNT2Zibmd5ajI2clhVZjQwX1l3UlJUR1poczhmTU9xVVQ2a01HdnM5NGdYVFhQRXR4b3ZSQjZZRTYtQ3FGUTNHNVJQTThjUU0?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.ft.com/content/166d0909-235d-4402-8ed7-d42d59401f6c. Source content reviewed: FT matching news report of Šefčovič visit to Beijing before agreement; 15 percent hybrid share sought was negotiating demand not agreed outcome."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.ft.com/content/166d0909-235d-4402-8ed7-d42d59401f6c",
+            "title": "Šefčovič goes to Beijing with a final plea to avoid an EU-China trade war",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. FT matching news report of Šefčovič visit to Beijing before agreement; 15 percent hybrid share sought was negotiating demand not agreed outcome. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: FT reports EU trade commissioner pre-deal Beijing visit and proposed 15% hybrid share; negotiating demand not final settlement."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "FT reports EU trade commissioner pre-deal Beijing visit and proposed 15% hybrid share; negotiating demand not final settlement."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "FT reports EU trade commissioner pre-deal Beijing visit and proposed 15% hybrid share",
+      "reader_what": "FT reports EU trade commissioner pre-deal Beijing visit and proposed 15% hybrid share; negotiating demand not final settlement.",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "FT reports EU trade commissioner pre-deal Beijing visit and proposed 15% hybrid share; negotiating demand not final settlement.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "FT reports EU trade commissioner pre-deal Beijing visit and proposed 15% hybrid share; negotiating demand not final settlement.",
+        "method_or_basis": "",
+        "qualification": " negotiating demand not final settlement.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "proposed",
+          "status_date": "2026-10-08",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "FT reports EU trade commissioner pre-deal Beijing visit and proposed 15% hybrid share; negotiating demand not final settlement.",
+          "text": "FT reports EU trade commissioner pre-deal Beijing visit and proposed 15% hybrid share; negotiating demand not final settlement.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWmxzbkh0NkVNb3JibmJFOVJROXBKcC1rYjRmZ3NFVUlianUzYi1GUUNQVFloQm94cVMwMUdOSllPMmc1QUlyMXJRSFV4MmF1LXpYYXJGc2twSHhwaHZZVEVNVjEzaWp0RHNwVUxDRmxVcDZ2WFpFaEZlcHYtRUVzQWljY3J4S0hGWjFWaHZSODNlWTZVMXNvWTVGaXNld2N6R2hZQXV6OUNBSjRYR3Z5Y0NuR3FRS0hKM1BRcTdleHBsUQ?oc=5",
+      "source_hash": "de8cab46",
+      "identity_hash": "b9e167a392e05472",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWmxzbkh0NkVNb3JibmJFOVJROXBKcC1rYjRmZ3NFVUlianUzYi1GUUNQVFloQm94cVMwMUdOSllPMmc1QUlyMXJRSFV4MmF1LXpYYXJGc2twSHhwaHZZVEVNVjEzaWp0RHNwVUxDRmxVcDZ2WFpFaEZlcHYtRUVzQWljY3J4S0hGWjFWaHZSODNlWTZVMXNvWTVGaXNld2N6R2hZQXV6OUNBSjRYR3Z5Y0NuR3FRS0hKM1BRcTdleHBsUQ?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://euobserver.com/241603/germanys-most-promising-industries-depend-on-china-despite-berlins-derisking-push-study-finds/. Source content reviewed: EUobserver matching article cites ZOE study of 62 German industries, their China dependence and supplier diversification proposals."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://euobserver.com/241603/germanys-most-promising-industries-depend-on-china-despite-berlins-derisking-push-study-finds/",
+            "title": "Germany’s most promising industries depend on China, clashing with Berlin’s derisking push, study finds",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. EUobserver matching article cites ZOE study of 62 German industries, their China dependence and supplier diversification proposals. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: EUobserver reports German ZOE analysis of Chinese supplier dependence in 62 industries; policy proposals are recommendations, not enacted diversification."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "EUobserver reports German ZOE analysis of Chinese supplier dependence in 62 industries; policy proposals are recommendations, not enacted diversification."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EUobserver reports German ZOE analysis of Chinese supplier dependence in 62 industries",
+      "reader_what": "EUobserver reports German ZOE analysis of Chinese supplier dependence in 62 industries; policy proposals are recommendations, not enacted diversification.",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "EUobserver reports German ZOE analysis of Chinese supplier dependence in 62 industries; policy proposals are recommendations, not enacted diversification.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "EUobserver reports German ZOE analysis of Chinese supplier dependence in 62 industries; policy proposals are recommendations, not enacted diversification.",
+        "method_or_basis": "",
+        "qualification": " policy proposals are recommendations, not enacted diversification.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "ZOE research institute",
+            "class": "other"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "announced",
+          "status_date": "2026-10-08",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "EUobserver reports German ZOE analysis of Chinese supplier dependence in 62 industries; policy proposals are recommendations, not enacted diversification.",
+          "text": "EUobserver reports German ZOE analysis of Chinese supplier dependence in 62 industries; policy proposals are recommendations, not enacted diversification.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://borderlex.net/2026/10/08/ai-trade-boom-leads-wto-to-double-2026-goods-forecast/",
+      "source_hash": "f9229214",
+      "identity_hash": "720aa1c2bf55290b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://borderlex.net/2026/10/08/ai-trade-boom-leads-wto-to-double-2026-goods-forecast/; matching supplied source content length 328 characters, mode abstract_or_landing_page."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www-server1.wto.org/english/news_e/news26_e/stat_08oct26_510_e.htm. Source content reviewed: Independent WTO primary 8 Oct forecast: 2026 merchandise growth raised from 1.9% to 3.9% with AI infrastructure contributing; global forecast not Europe-specific event."
+          },
+          {
+            "step": "review_adjudication_external_cross_check",
+            "outcome": "success",
+            "note": "WTO original 8 Oct forecast confirms 3.9% 2026 and previous 1.9% estimate; this is projection, not observed outcome. Checked https://www-server1.wto.org/english/news_e/news26_e/stat_08oct26_510_e.htm"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www-server1.wto.org/english/news_e/news26_e/stat_08oct26_510_e.htm",
+            "title": "AI trade boom leads WTO to double 2026 goods forecast - Borderlex - European trade policy",
+            "evidence_used": true
+          },
+          {
+            "kind": "independent_check_on_2026-10-16",
+            "url": "https://www-server1.wto.org/english/news_e/news26_e/stat_08oct26_510_e.htm",
+            "title": "Original publisher or independent reporting",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Independent WTO primary 8 Oct forecast: 2026 merchandise growth raised from 1.9% to 3.9% with AI infrastructure contributing; global forecast not Europe-specific event. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: WTO raised 2026 world merchandise trade growth projection to 3.9% from 1.9%, citing AI investment; this global indicator has EU economic-security relevance but not a standalone European policy change."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "WTO raised 2026 world merchandise trade growth projection to 3.9% from 1.9%, citing AI investment; this global indicator has EU economic-security relevance but not a standalone European policy change."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "WTO raised 2026 world merchandise trade growth projection to 3",
+      "reader_what": "WTO raised 2026 world merchandise trade growth projection to 3.9% from 1.9%, citing AI investment; this global indicator has EU economic-security relevance but ",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "WTO raised 2026 world merchandise trade growth projection to 3.9% from 1.9%, citing AI investment; this global indicator has EU economic-security relevance but not a standalone European policy change.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "WTO raised 2026 world merchandise trade growth projection to 3.9% from 1.9%, citing AI investment; this global indicator has EU economic-security relevance but not a standalone European policy change.",
+        "method_or_basis": "",
+        "qualification": " this global indicator has EU economic-security relevance but not a standalone European policy change.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "trade.overcapacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "World Trade Organization",
+            "class": "other"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "announced",
+          "status_date": "2026-10-08",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "WTO raised 2026 world merchandise trade growth projection to 3.9% from 1.9%, citing AI investment; this global indicator has EU economic-security relevance but not a standalone European policy change.",
+          "text": "WTO raised 2026 world merchandise trade growth projection to 3.9% from 1.9%, citing AI investment; this global indicator has EU economic-security relevance but not a standalone European policy change.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://borderlex.net/2026/10/08/overcapacity-pledge-could-shield-eu-from-us-tariffs/",
+      "source_hash": "9b01087b",
+      "identity_hash": "40b0dd9df8c30c2b",
+      "verification": {
+        "identity_verified": false,
+        "evidence_depth": "",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://borderlex.net/2026/10/08/overcapacity-pledge-could-shield-eu-from-us-tariffs/; matching supplied source content length 290 characters, mode abstract_or_landing_page."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Package only provides short content; no independent per-record retrieval conducted. Prior decision remains provisional."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "INSUFFICIENT_SUBSTANTIVE_EVIDENCE",
+        "reason": "Cannot responsibly decide without substantial original source or mandatory recovery ladder; not fabricated as KEEP or DROP."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMirAFBVV95cUxQXy1wQ3hFckFCVXFmcjVWRW1uY0hmWGU1ZUdDa3lJYlNuN2ZIanNNMER0WHpFVHlaWDRsZmVuX1pjSzdVRlpYR3prVGg4cXRhT25jMm9lTWJSVk12N0EyamlXOHJrRUtyc3Q2Z3lHX1lkUUxaOUsyS0RCUEM0M21FNkVjMTZTWlRCdmJmeUF0b20zRXh5SVhOMTdiUXZVSE84RlByWVNTRC1JMUZU?oc=5",
+      "source_hash": "408624d0",
+      "identity_hash": "44f68748d4549c3f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMirAFBVV95cUxQXy1wQ3hFckFCVXFmcjVWRW1uY0hmWGU1ZUdDa3lJYlNuN2ZIanNNMER0WHpFVHlaWDRsZmVuX1pjSzdVRlpYR3prVGg4cXRhT25jMm9lTWJSVk12N0EyamlXOHJrRUtyc3Q2Z3lHX1lkUUxaOUsyS0RCUEM0M21FNkVjMTZTWlRCdmJmeUF0b20zRXh5SVhOMTdiUXZVSE84RlByWVNTRC1JMUZU?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.reuters.com/world/uk/uk-germany-launch-new-partnership-counter-sabotage-cyberattacks-2026-10-07/. Source content reviewed: matching Reuters piece on proposed UK-German anti-sabotage/cyber partnership."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.reuters.com/world/uk/uk-germany-launch-new-partnership-counter-sabotage-cyberattacks-2026-10-07/",
+            "title": "UK, Germany to launch new partnership to counter sabotage, cyberattacks",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. matching Reuters piece on proposed UK-German anti-sabotage/cyber partnership. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: Reuters reports proposed UK–German cooperation on cyber and sabotage threats; proposal is not concluded treaty."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "Reuters reports proposed UK–German cooperation on cyber and sabotage threats; proposal is not concluded treaty."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Reuters reports proposed UK–German cooperation on cyber and sabotage threats",
+      "reader_what": "Reuters reports proposed UK–German cooperation on cyber and sabotage threats; proposal is not concluded treaty.",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "Reuters reports proposed UK–German cooperation on cyber and sabotage threats; proposal is not concluded treaty.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "Reuters reports proposed UK–German cooperation on cyber and sabotage threats; proposal is not concluded treaty.",
+        "method_or_basis": "",
+        "qualification": " proposal is not concluded treaty.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "digital.infrastructure",
+          "secondary_objects": [],
+          "actor": {
+            "name": "UK and German governments",
+            "class": "other"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "proposed",
+          "status_date": "2026-10-07",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Reuters reports proposed UK–German cooperation on cyber and sabotage threats; proposal is not concluded treaty.",
+          "text": "Reuters reports proposed UK–German cooperation on cyber and sabotage threats; proposal is not concluded treaty.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMi0AFBVV95cUxQTm9xSWVaV0Nfa3ZVenA4bThuS096cVlHNko1LUEyU0xnQXdrWDB4dWVNZjluNFU2OFQyTWlueXZVb3hZUFpaR0M0VXZJZS01cEVaNEFQV0lXZ1Mtd3lhdHVaa0Z2SWplcXRiLUhQTmV4SUFRUkJFRFVad0JmdFU3cVhBOW5UMm9seVZUTGdDNVkyREMwdG9vZldMX21CVVc4dGljX3FSYzNhcmoxanNqdm54VDJTSmtIenpYb3lIUkRjdW42RkVuUEVHeFpxdk1U?oc=5",
+      "source_hash": "ad48490c",
+      "identity_hash": "8ec82571c00f7ebf",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "externally_correlated_article_or_primary_source; full V2 read pending",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMi0AFBVV95cUxQTm9xSWVaV0Nfa3ZVenA4bThuS096cVlHNko1LUEyU0xnQXdrWDB4dWVNZjluNFU2OFQyTWlueXZVb3hZUFpaR0M0VXZJZS01cEVaNEFQV0lXZ1Mtd3lhdHVaa0Z2SWplcXRiLUhQTmV4SUFRUkJFRFVad0JmdFU3cVhBOW5UMm9seVZUTGdDNVkyREMwdG9vZldMX21CVVc4dGljX3FSYzNhcmoxanNqdm54VDJTSmtIenpYb3lIUkRjdW42RkVuUEVHeFpxdk1U?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://euobserver.com/202386/russian-chess-boss-central-asia-crypto-targeted-in-new-eu-sanctions/. Source content reviewed: Exact headline exists but published 10 Feb 2026; scanner October date is stale/misleading; draft proposals at that time, not October sanctions."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://euobserver.com/202386/russian-chess-boss-central-asia-crypto-targeted-in-new-eu-sanctions/",
+            "title": "Russian chess boss, Central Asia, crypto targeted in new EU sanctions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Exact headline exists but published 10 Feb 2026; scanner October date is stale/misleading; draft proposals at that time, not October sanctions. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "SPONSORED_ADVOCACY_NOT_INDEPENDENT_DEVELOPMENT",
+        "reason": "Exact headline exists but published 10 Feb 2026; scanner October date is stale/misleading; draft proposals at that time, not October sanctions"
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "Exact headline exists but published 10 Feb 2026; scanner October date is stale/misleading; draft proposals at that time, not October sanctions",
+        "method_or_basis": "",
+        "qualification": "Do not confuse actor statements or reported proposals with independently observed outcomes; a full authoritative evidence pass is pending.",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbFhKOW01WG1MSmNLajktYUVDcktCRUpUblFhU01HTzFSY2x1blBsaVdoS3RfZW90Q1QxY05qZEN2LTNSbEhHNXp6ZW94LXBRQzJva1MwejdpMUdvLVlxZXBRYWdvN1YxM2NwM0hxelJKQlMxZDJmTE5JRWY2V3NicHJ6V2xHR1dRdV93TEdObU5RT2tkS1JVTjZvb0VjWDdtcHlFYVRyQUhVX0l4SzFIMWROT2Q2eWdWSTlGZzhQcTIzdw?oc=5",
+      "source_hash": "324c9d2e",
+      "identity_hash": "85884ef45c04f337",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbFhKOW01WG1MSmNLajktYUVDcktCRUpUblFhU01HTzFSY2x1blBsaVdoS3RfZW90Q1QxY05qZEN2LTNSbEhHNXp6ZW94LXBRQzJva1MwejdpMUdvLVlxZXBRYWdvN1YxM2NwM0hxelJKQlMxZDJmTE5JRWY2V3NicHJ6V2xHR1dRdV93TEdObU5RT2tkS1JVTjZvb0VjWDdtcHlFYVRyQUhVX0l4SzFIMWROT2Q2eWdWSTlGZzhQcTIzdw?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.reuters.com/business/aerospace-defense/eu-envoys-approve-new-russia-sanctions-listings-diplomats-say-2026-10-07/. Source content reviewed: Reuters matching 7 Oct report about EU envoy provisional sanctions agreement; not yet formally adopted at that date, later Council adopted on 12 Oct."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.reuters.com/business/aerospace-defense/eu-envoys-approve-new-russia-sanctions-listings-diplomats-say-2026-10-07/",
+            "title": "EU envoys approve new Russia sanctions listings, diplomats say",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Reuters matching 7 Oct report about EU envoy provisional sanctions agreement; not yet formally adopted at that date, later Council adopted on 12 Oct. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: Reuters covered provisional EU Russia-sanctions agreement on October 7; 12 October Council adoption is later separate event, do not backdate."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "Reuters covered provisional EU Russia-sanctions agreement on October 7; 12 October Council adoption is later separate event, do not backdate."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Reuters covered provisional EU Russia-sanctions agreement on October 7",
+      "reader_what": "Reuters covered provisional EU Russia-sanctions agreement on October 7; 12 October Council adoption is later separate event, do not backdate.",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "Reuters covered provisional EU Russia-sanctions agreement on October 7; 12 October Council adoption is later separate event, do not backdate.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "Reuters covered provisional EU Russia-sanctions agreement on October 7; 12 October Council adoption is later separate event, do not backdate.",
+        "method_or_basis": "",
+        "qualification": " 12 October Council adoption is later separate event, do not backdate.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EU member state envoys",
+            "class": "other"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "proposed",
+          "status_date": "2026-10-07",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Reuters covered provisional EU Russia-sanctions agreement on October 7; 12 October Council adoption is later separate event, do not backdate.",
+          "text": "Reuters covered provisional EU Russia-sanctions agreement on October 7; 12 October Council adoption is later separate event, do not backdate.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMirwFBVV95cUxPbE0xOEpsajFJS09iaEJuNC11NEtBR3E1ME81TkZfMFhYQjVTOWtRQ2hqSGQ0a1duMFlRZWpJX2szSVJCNFNUYU5fbVRGM2ozM2R0U0pLREhnazR3NWhmbDBNdGxhNXJJVUtrVHFIUTRTMklJTlhsSE9fc0pCMWQxUUs0VUt0Z0N2QjM5WVd6dFJraVlGVWFadHMxQVVDYlFHcVlkTjNycmJwU1VZRnow?oc=5",
+      "source_hash": "36f965ff",
+      "identity_hash": "3e9eb06d191ad287",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMirwFBVV95cUxPbE0xOEpsajFJS09iaEJuNC11NEtBR3E1ME81TkZfMFhYQjVTOWtRQ2hqSGQ0a1duMFlRZWpJX2szSVJCNFNUYU5fbVRGM2ozM2R0U0pLREhnazR3NWhmbDBNdGxhNXJJVUtrVHFIUTRTMklJTlhsSE9fc0pCMWQxUUs0VUt0Z0N2QjM5WVd6dFJraVlGVWFadHMxQVVDYlFHcVlkTjNycmJwU1VZRnow?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.evnc.europavarietas.org/en/aggregator/sources/21. Source content reviewed: European Parliament press release identity and 7 Oct 2026 date corroborated; committee statement not necessarily adopted legislation."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.evnc.europavarietas.org/en/aggregator/sources/21",
+            "title": "EU-China relations: MEPs defend dialogue, fair trade, and human rights | News",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. European Parliament press release identity and 7 Oct 2026 date corroborated; committee statement not necessarily adopted legislation. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: European Parliament committee issued public position on 7 October; committee action is not passage of EU law."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "European Parliament committee issued public position on 7 October; committee action is not passage of EU law."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "European Parliament committee issued public position on 7 October",
+      "reader_what": "European Parliament committee issued public position on 7 October; committee action is not passage of EU law.",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "European Parliament committee issued public position on 7 October; committee action is not passage of EU law.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "European Parliament committee issued public position on 7 October; committee action is not passage of EU law.",
+        "method_or_basis": "",
+        "qualification": " committee action is not passage of EU law.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "industry.european_preference",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Parliament committee",
+            "class": "eu_body"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "announced",
+          "status_date": "2026-10-07",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "European Parliament committee issued public position on 7 October; committee action is not passage of EU law.",
+          "text": "European Parliament committee issued public position on 7 October; committee action is not passage of EU law.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxPc0hMY0o1X3RqSGNsaG5UZFZvMVlCTTNham5oUW91NXBBUkRjLW5PWElueEhQaEdoOGRkMzlia0UwSkEtWnNKemxvX0V0R1VvZkpzeFRwSUNyb1AzcnlMYlM4V2ZzdzFuVmRBUzNrWW9lLWhxR0pYSXdvQ2tjWDYzenFJbDA?oc=5",
+      "source_hash": "5d3d637c",
+      "identity_hash": "03196a411ead33ec",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "matched_first_party_or_correlated_original_with_remaining_uncertainty",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "insufficient",
+            "note": "Package route: https://news.google.com/rss/articles/CBMihAFBVV95cUxPc0hMY0o1X3RqSGNsaG5UZFZvMVlCTTNham5oUW91NXBBUkRjLW5PWElueEhQaEdoOGRkMzlia0UwSkEtWnNKemxvX0V0R1VvZkpzeFRwSUNyb1AzcnlMYlM4V2ZzdzFuVmRBUzNrWW9lLWhxR0pYSXdvQ2tjWDYzenFJbDA?oc=5; matching supplied source content length 0 characters, mode stored_only."
+          },
+          {
+            "step": "exact_title_or_publisher_recovery",
+            "outcome": "matching_source_found",
+            "note": "Live web research found https://www.ft.com/content/923f001a-8f2e-4138-80f6-48452a5be199. Source content reviewed: Financial Times original identified; reports European telecom investments in datacentres associated with European cloud-sovereignty demand, distinguish capex plans from delivered capacity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "external_identity_and_substantive_evidence",
+            "url": "https://www.ft.com/content/923f001a-8f2e-4138-80f6-48452a5be199",
+            "title": "Sleepy European telcos turn to data centre craze",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "External work-specific identity/source checked. Financial Times original identified; reports European telecom investments in datacentres associated with European cloud-sovereignty demand, distinguish capex plans from delivered capacity. Admission remains conservative where complete V2 evidentiary/claim requirements have not been finished. Review adjudication 2026-10-16: Financial Times reports planned European telecom investment in data centres amid cloud sovereignty demand; forecast capex is not executed spending."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "REVIEW_ADJUDICATED_EVIDENCE",
+        "reason": "Financial Times reports planned European telecom investment in data centres amid cloud sovereignty demand; forecast capex is not executed spending."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Financial Times reports planned European telecom investment in data centres amid cloud sovereignty deman",
+      "reader_what": "Financial Times reports planned European telecom investment in data centres amid cloud sovereignty demand; forecast capex is not executed spending.",
+      "reader_why": "Relevance is described in the recovered source; policy proposals and actor claims are not proven outcomes.",
+      "reader_more": "Financial Times reports planned European telecom investment in data centres amid cloud sovereignty demand; forecast capex is not executed spending.",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "Financial Times reports planned European telecom investment in data centres amid cloud sovereignty demand; forecast capex is not executed spending.",
+        "method_or_basis": "",
+        "qualification": " forecast capex is not executed spending.",
+        "radar_relevance": "",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "digital.infrastructure",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European telecom operators",
+            "class": "eu_body"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "announced",
+          "status_date": "2026-10-07",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Financial Times reports planned European telecom investment in data centres amid cloud sovereignty demand; forecast capex is not executed spending.",
+          "text": "Financial Times reports planned European telecom investment in data centres amid cloud sovereignty demand; forecast capex is not executed spending.",
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}
