@@ -7,30 +7,39 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **2102** (Main **859** + Historical **1243**)
-- Automatic queue still needing V2 verification: **193** (Main **52** + Historical **141**)
-- Currently assigned to workers: **18** (Main **5** + Historical **13**)
+- Automatic queue still needing V2 verification: **331** (Main **190** + Historical **141**)
+- Currently assigned to workers: **72** (Main **72** + Historical **0**)
 - Bounded access-recovery retries still eligible: **0**
 - Terminally dropped after failed scans: **121**
-- Automatic queue pending and not yet assigned: **175**
+- Automatic queue pending and not yet assigned: **259**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-f3d9d56e0abc`
-- Assigned unresolved records: **18**
-  1. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f547843b-c74d-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — WORKING PARTY ON COMPETITIVENESS AND GROWTH (Industry) (Chips Act 2.0) - Publications Office of the EU — recovery attempt 2/3
-  2. `link:https://doi.org/10.1111/1758-5899.70246` — The EU 's Indo‐Pacific Strategy and Japan: Insights From a ‘Close Strategic Partner’ — recovery attempt 2/3
-  3. `link:https://doi.org/10.54503/2953-8165-2026.5(2)-20` — Beyond Russia-Ukraine Drone Warfare: Are Economic Sanctions A Viable Strategy To Stop The Killing And Destruction? — recovery attempt 2/3
-  4. `link:https://doi.org/10.4324/9781003669654-5` — RFNBO and Low-Carbon Certification in the EU — recovery attempt 2/3
-  5. `link:https://doi.org/10.1093/jiel/jgag032` — Interfacing digital trade law and competition policy design in developing economies: the case of Peru — recovery attempt 2/3
-  6. `historical:id:4b04729ca1ab574e` — Civil Society Dialogue on the EU anti-coercion instrument — recovery attempt 2/3
-  7. `historical:id:cf4e68ddcc744e0d` — EU-US Trade and Technology Council - Working Group 7 on export controls - BusinessEurope reply to the public consultation — recovery attempt 2/3
-  8. `historical:id:dac0536263087b02` — EU-US Trade and Technology Council - Working Group 3 on secure supply chains - BusinessEurope reply to the public consultation — recovery attempt 2/3
-  - … plus 10 more in the package manifest
+- Current package: `worker-a-b414e5500fae`
+- Assigned unresolved records: **36**
+  1. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=bdf94591-c868-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a COUNCIL DECISION on the conclusion of the Sustainable Fisheries Partnership Agreement and its Implementing Protocol (2026-2030) between the European Union and the Republic of Mauritius - Publications Office of the EU
+  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=bdd89e30-c868-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a COUNCIL REGULATION on the allocation of the fishing opportunities provided for in the Protocol on the implementation of the Sustainable Fisheries Partnership Agreement between the European Union and the Republic of Mauritius (2026-2030) - Publications Office of the EU
+  3. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=3d187198-c74c-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Member States' consolidated comments on Presidency second compromise text on Title III (Certification), Articles 71-97 - Publications Office of the EU
+  4. `link:https://merics.org/sites/default/files/2026-04/MER-RZ-Report-Embodied-AI-260422-Web.pdf` — Embodied AI: China’s ambitious path to transform its robotics industry
+  5. `link:https://merics.org/sites/default/files/2026-10/MER-Report-Cleantech-English-261015%20%281%29.pdf` — Germany and China in the cleantech sector: Between opportunities, competition and location policy
+  6. `link:https://doi.org/10.1016/j.enpol.2026.115663` — The geopoliticization of Europe's energy transition: Geopolitical risk and selective transition adjustment across EU member states
+  7. `link:https://doi.org/10.1177/17816858261496142` — Made in China, Powered by Europe: Mapping the EU’s Strategic Leverage Over the People’s Republic of China
+  8. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=8ada360e-c83e-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Competitive by nature - Publications Office of the EU
+  - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-991334c152cd`
-- Assigned unresolved records: **0**
+- Current package: `worker-b-9f6592cf81a8`
+- Assigned unresolved records: **36**
+  1. `link:https://news.google.com/rss/articles/CBMioAFBVV95cUxPRzNFMkF5b0ZQUnNpMlJlTE82NkZrRUJiTXNreWtQbi1wOHZ2ZC1aOE5GVkhZcDNmd1pBREFLb1I2MjBlVW9ncFhpd1oyaXhDbVdMUEUtbkE1WmtXQUtpa1NtTEJOb3NQcVBkc1lldUMwaUdUU01WLTg3MS1QVUtGcF9lVDRtNTBTOHVBX2JMZnJUVUNPWnRXb21heklpNEFS?oc=5` — China details outcome of EU trade talks on hybrid, electric vehicles
+  2. `link:https://news.google.com/rss/articles/CBMioAFBVV95cUxPekhXdzBSdS01b241LVpfWnhhQWJZY2I4SVQwSlJsS21ZdTFvNV92N3g5bkNaR2dKSE1zTjAtcWtZWS1kY1B6Zl9nUHdfUUZTb3ZtdHRKNS1qTGlIVzhZU25ranRmUWNWWWV3aDhFdkdpVXdxSktFc1pCOV9FMF9BWmJwWngwWjZNenhiM1ZnSHZRdWdFQnpySjRIMnhSNnV4?oc=5` — How can Europe leverage laws to secure cloud sovereignty?
+  3. `link:https://news.google.com/rss/articles/CBMisAFBVV95cUxQUFFlQ2RWX2k2c19mRUlseHB2TDlOM0xYSVdXc29YSHBVS2o0OE1qRHFXQU1JR093ellFZ2xSNEg3cUZISWx1SllLdmpuQWNBaFoyQmJHU1RaMHZ0YlFXN3l0eVZkNlhvQlRaTElKWExxTFh4cmNOc0xIeVdpdWh0MHdicmVsajVQMEdtMkZRRzFMOXpyRzBXQmdDQ2lpUlFKVlRMdzVlSXR3aE51ZU9ZZA?oc=5` — China Moves to Stave Off Wider EU Trade War With Hybrid Deal
+  4. `link:https://borderlex.net/2026/10/12/eu-turns-china-hybrid-car-pledge-into-350000-vehicle-safeguard-quota/` — EU to introduce 350,000 Chinese quota under hybrid vehicle safeguard - Borderlex - European trade policy
+  5. `link:https://borderlex.net/2026/10/12/week-ahead-more-eu-china-eu-us-customs/` — Week Ahead: More EU China, EU US, customs - Borderlex - European trade policy
+  6. `link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R2643R%2801%29` — Corrigendum to Regulation (EU) 2025/2643 of the European Parliament and of the Council of 16 December 2025 establishing the European Defence Industry Programme and a framework of measures to ensure the timely availability and supply of defence products (‘EDIP Regulation’) (OJ L, 2025/2643, 29.12.2025)
+  7. `link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026XG05298` — Notice for the attention of the data subjects to whom the restrictive measures provided for in Council Decision (CFSP) 2019/1720, as amended by Council Decision (CFSP) 2026/2272, and Council Regulation (EU) 2019/1716, as implemented by Council Implementing Regulation (EU) 2026/2271, concerning restrictive measures in view of the situation in Nicaragua apply
+  8. `link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026XG05304` — Notice for the attention of the data subjects to whom the restrictive measures provided for in Council Decision (CFSP) 2023/2135, as amended by Council Decision (CFSP) 2026/2261, and Council Regulation (EU) 2023/2147, as implemented by Council Implementing Regulation (EU) 2026/2262 concerning restrictive measures in view of activities undermining the stability and political transition of Sudan apply
+  - … plus 28 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
