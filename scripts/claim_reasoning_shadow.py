@@ -572,6 +572,116 @@ def constraint_conversion_candidates(nodes: Iterable[dict[str, Any]]) -> list[di
     return sorted(out,key=lambda c:(c["score"],c["object"],c["issue"]),reverse=True)[:150]
 
 
+
+# Research-to-decision bridge: this intentionally does NOT require a previously
+# announced link.  The need and possible instrument are separate observations;
+# their juxtaposition is an explicitly labelled, testable Radar hypothesis.
+# Narrow ontology adjacency is necessary so topic similarity alone does not
+# create implausible joins between different legal systems or sectors.
+_ADJACENT_OBJECT_CUES = {
+    "energy.gas_supply": re.compile(r"\b(?:gas|lng|pipeline|fossil fuel)\b", re.I),
+    "energy.lng_imports": re.compile(r"\b(?:lng|liquefied natural gas|cargoes?|gas imports?)\b", re.I),
+    "energy.price_level": re.compile(r"\b(?:pric(?:e|es|ing)|energy cost|affordab|market dependenc)\w*", re.I),
+    "defence.production_capacity": re.compile(r"\b(?:defen[cs]e|military|sustainment)\b", re.I),
+    "defence.drone_capability": re.compile(r"\b(?:drones?|unmanned|counter[- ]drone|uav)\b", re.I),
+    "supply_chain.stockpile": re.compile(r"\b(?:stockpil\w*|strategic reserves?|inventory buffers?)\b", re.I),
+    "supply_chain.diversification": re.compile(r"\b(?:diversif\w*|alternative suppliers?|multiple suppliers?)\b", re.I),
+    "materials.critical_raw": re.compile(r"\b(?:critical raw materials?|rare earths?|strategic minerals?)\b", re.I),
+}
+
+
+def _adjacent_object_visible(node: dict[str, Any]) -> bool:
+    """An object's metadata is not enough: its source must actually discuss it.
+
+    For ontology objects without a curated term, demand the last component's
+    meaningful words in the statement.  This is deliberately conservative.
+    """
+    obj = clean(node.get("object"))
+    statement = clean(node.get("text"))
+    if not obj or len(statement) < 45:
+        return False
+    cue = _ADJACENT_OBJECT_CUES.get(obj)
+    if cue is not None:
+        return bool(cue.search(statement))
+    words = [w for w in re.split(r"[_ .-]+", obj.rsplit(".", 1)[-1]) if len(w) >= 4 and w not in {"system", "level", "general"}]
+    return bool(words) and any(re.search(r"\b" + re.escape(w) + r"\w*\b", statement, re.I) for w in words)
+
+
+def adjacent_conversion_candidates(nodes: Iterable[dict[str, Any]], vocab: dict[str, Any]) -> list[dict[str, Any]]:
+    """Find neighbouring *hypotheses*, not already established live connections.
+
+    The same controlled issue (financing, capacity, rules, supply or access)
+    must appear in the statements of two independent primary records; one must
+    document a constraint and the other a concrete current action.  For now
+    cross-object proposals must share BOTH an ontology namespace and a cluster.
+    We do not infer a link across political jurisdictions from date ordering.
+    """
+    current = [n for n in nodes if n.get("_primary") and clean(n.get("era")) == "current"
+               and not n.get("_quick_scan_context") and _adjacent_object_visible(n)]
+    needs = [n for n in current if clean(n.get("kind")) in {"diagnosis", "effect"}
+             and _CONVERSION_GAP.search(clean(n.get("text")))]
+    live = {"announced", "call_open", "adopted", "in_force", "operating", "delivered"}
+    instruments = [n for n in current if clean(n.get("kind")) == "action"
+                   and clean(n.get("status")) in live and _CONVERSION_ACTION.search(clean(n.get("text")))]
+    best: dict[tuple[str, str, str], dict[str, Any]] = {}
+    for need in needs:
+        obj_a = clean(need.get("object"))
+        prefix = obj_a.split(".", 1)[0]
+        cluster = primary_cluster(obj_a, vocab)
+        if not prefix or not cluster:
+            continue
+        for action in instruments:
+            obj_b = clean(action.get("object"))
+            if not obj_b or obj_a == obj_b or obj_b.split(".", 1)[0] != prefix:
+                continue
+            if primary_cluster(obj_b, vocab) != cluster:
+                continue
+            if clean(need.get("_record_id")) == clean(action.get("_record_id")):
+                continue
+            if clean(need.get("_source")).lower() == clean(action.get("_source")).lower():
+                continue
+            merit = min(float(need.get("merit", 0) or 0), float(action.get("merit", 0) or 0))
+            if merit < 55:
+                continue
+            for issue, pattern in _CONVERSION_ISSUES.items():
+                if not (pattern.search(clean(need.get("text"))) and pattern.search(clean(action.get("text")))):
+                    continue
+                score = min(92, int(round(.5 * merit + .25 * float(need.get("merit", 0) or 0)
+                                          + .25 * float(action.get("merit", 0) or 0))))
+                key = (obj_a, obj_b, issue)
+                candidate = {
+                    "level": 3, "grammar_id": "adjacent_conversion", "product": "opportunity",
+                    "endpoint_objects": [obj_a, obj_b], "issue": issue,
+                    "claim_ids": [clean(need.get("claim_id")), clean(action.get("claim_id"))],
+                    "need_statement": clean(need.get("text")),
+                    "instrument_statement": clean(action.get("text")),
+                    "instrument_status": clean(action.get("status")),
+                    "score": score, "score_gate_passes": True, "wow_preliminary": 3,
+                    "product_basis": "independently_grounded_adjacent_issue_hypothesis",
+                    "hypothesis_bridge": True, "connection_evidenced": False,
+                    "remaining_test": "Does the documented action actually relieve the specific constraint?",
+                    "missing_roles": [], "role_strength_floor_passes": True,
+                }
+                if key not in best or (score, clean(action.get("status_date"))) > (best[key]["score"], best[key].get("_action_date", "")):
+                    candidate["_action_date"] = clean(action.get("status_date"))
+                    best[key] = candidate
+    out = list(best.values())
+    for c in out:
+        c.pop("_action_date", None)
+    # Bounded by *problems* as well as by pages: the same broad need cannot
+    # fill the reader shelf with minor variations on one idea.
+    out.sort(key=lambda c: (c["score"], c["endpoint_objects"], c["issue"]), reverse=True)
+    used: dict[str, int] = defaultdict(int)
+    selected = []
+    for c in out:
+        need_obj = c["endpoint_objects"][0]
+        if used[need_obj] >= 2:
+            continue
+        used[need_obj] += 1
+        selected.append(c)
+    return selected[:100]
+
+
 def named_continuities(nodes: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
     """Level-2 ongoing phenomena: an object with real depth in both eras.
 

@@ -43,6 +43,7 @@ try:
     from scripts.rebuild_active_radar import _add_historical_context
     from scripts.claim_reasoning_shadow import (
         anchor_demand_candidates,
+        adjacent_conversion_candidates,
         build_distance_table,
         claim_expressiveness,
         conflicting_criteria,
@@ -70,6 +71,7 @@ except ModuleNotFoundError:  # direct execution from scripts/
     from rebuild_active_radar import _add_historical_context  # type: ignore
     from claim_reasoning_shadow import (  # type: ignore
         anchor_demand_candidates,
+        adjacent_conversion_candidates,
         build_distance_table,
         claim_expressiveness,
         conflicting_criteria,
@@ -160,7 +162,7 @@ def _empty_detection(raw: dict[str, Any], evaluated_at: str | None, *, reason: s
         "groups": {
             "level2_corroborated": [], "level2_named_continuity": [], "level3_sequence_gap": [], "level3_era_conjunction": [],
             "level4_opposing_movements": [], "level5_dependency_pathway": [], "future_shock_hypothesis": [], "level4_5_conflicting_criteria": [],
-            "level5_latent_channel": [], "level5_anchor_demand": [], "level5_split_recurrence": [], "level3_constraint_conversion": [],
+            "level5_latent_channel": [], "level5_anchor_demand": [], "level5_split_recurrence": [], "level3_constraint_conversion": [], "level3_adjacent_conversion": [],
         },
     }
 
@@ -1332,7 +1334,7 @@ def detect_claim_reasoning(raw: dict[str, Any], root: Path = ROOT, evaluated_at:
                 "level2_corroborated": [], "level2_named_continuity": [], "level3_sequence_gap": [], "level3_era_conjunction": [],
                 "level4_opposing_movements": [], "level5_dependency_pathway": [], "future_shock_hypothesis": [],
                 "level4_5_conflicting_criteria": [], "level5_latent_channel": [],
-                "level5_anchor_demand": [], "level5_split_recurrence": [], "level3_constraint_conversion": [],
+                "level5_anchor_demand": [], "level5_split_recurrence": [], "level3_constraint_conversion": [], "level3_adjacent_conversion": [],
             },
         }
         _LIVE_DETECTION_CACHE.clear(); _LIVE_DETECTION_CACHE[cache_key] = result
@@ -1356,6 +1358,7 @@ def detect_claim_reasoning(raw: dict[str, Any], root: Path = ROOT, evaluated_at:
         "level5_latent_channel": latent_channels(nodes, vocab),
         "level5_anchor_demand": anchor_demand_candidates(nodes, vocab),
         "level3_constraint_conversion": constraint_conversion_candidates(nodes),
+        "level3_adjacent_conversion": adjacent_conversion_candidates(nodes, vocab),
         "level5_split_recurrence": split_recurrence_candidates(nodes, vocab),
     }
     result = {
@@ -2712,6 +2715,15 @@ def _presentation_ready(c: dict[str, Any]) -> tuple[bool, str]:
         ok = bool(c.get("shock_driver")) and bool(c.get("role_strength_floor_passes", True)) and (normal_grounding or concentrated_grounding)
         return ok, "grounded_future_shock" if ok else "shock_needs_stronger_driver_or_pathway_support"
 
+    if product == "opportunity" and grammar == "adjacent_conversion":
+        # A proposed bridge is NOT evidence of a live connection.  The public
+        # statement must remain a clearly labelled conditional hypothesis.
+        support = [r for r in (c.get("support") or []) if isinstance(r, dict) and clean(r.get("source_statement"))]
+        if not c.get("hypothesis_bridge") or len(support) < 2:
+            return False, "adjacent_bridge_needs_two_visible_source_statements"
+        ok = sources >= 2 and records >= 2 and maturity >= 35 and bool(c.get("role_strength_floor_passes", True))
+        return ok, "labelled_testable_cross_object_hypothesis" if ok else "adjacent_bridge_needs_independent_grounding"
+
     if product == "opportunity" and grammar == "constraint_conversion":
         # An independent source identifies the obstacle and another documents an
         # action on that same issue.  The causal benefit remains a testable inference.
@@ -3079,7 +3091,11 @@ def _select_stage7(candidates: list[dict[str, Any]], previous_state: dict[str, A
 
         def same_evidence(a: dict[str, Any], b: dict[str, Any]) -> bool:
             ea, eb = evidence_ids(a), evidence_ids(b)
-            return bool(ea and eb) and len(ea & eb) / max(1, min(len(ea), len(eb))) >= 0.8
+            # Shared anchor evidence is not the same as the same *argument*.
+            # A two-source causal hypothesis should not be deleted because its
+            # one-source baseline shares ONE of those sources.  Only near-total
+            # overlap in both candidates warrants source-only folding.
+            return bool(ea and eb) and len(ea & eb) / max(1, max(len(ea), len(eb))) >= 0.8
 
         for cand in ready:
             # Same story, or the same evidence under another name (e.g. a topic and
@@ -3633,6 +3649,23 @@ def _reader_copy(grammar: str, product: str, raw: dict[str, Any], candidate: dic
             else "Sources establish the European capability and its dependency. The claim that a bottleneck could propagate into the capability is the Radar's inference rather than a statement made by an individual source."
         )
         return f"A bottleneck in {b} could propagate into {a}.", summary
+    if grammar == "adjacent_conversion":
+        issue = clean(raw.get("issue"))
+        need = clean(raw.get("need_statement")).rstrip(".")
+        action = clean(raw.get("instrument_statement")).rstrip(".")
+        labels = {"finance": "financing", "capacity": "industrial capacity", "rules": "regulation",
+                  "supply": "supply resilience", "access": "market access"}
+        if issue == "capacity" and "capacity" in a.lower():
+            title = f"Could {b} ease a bottleneck in {a}?"
+        else:
+            title = f"Could {b} address {labels.get(issue, issue)} constraints affecting {a}?"
+        summary = (
+            f"Potential obstacle or research question: {need}. Separately reported action: {action}. "
+            "These sources do not establish a direct connection or prove that the "
+            "action resolves the problem. The opportunity is a hypothesis to test: "
+            "do its scope, beneficiaries and delivery actually match the constraint?"
+        )
+        return title, summary
     if grammar == "constraint_conversion":
         issue = clean(raw.get("issue"))
         need = clean(raw.get("need_statement")).rstrip(".")
@@ -3746,6 +3779,7 @@ def _reader_why(grammar: str, product: str, raw: dict[str, Any]) -> str:
     if grammar == "dependency_pathway" and product == "risk": return f"The source-evidenced dependency creates a plausible route by which a failure in {b} could reach {a}; the future propagation is the Radar's inference."
     if grammar == "dependency_pathway" and product == "shock": return f"The source-evidenced dependency creates a plausible route by which a sudden break in {b} could remove capability; the discontinuity itself remains a Radar scenario."
     if grammar == "constraint_conversion": return "This is a testable opening, not an established effect: implementation has to relieve the specific documented obstacle."
+    if grammar == "adjacent_conversion": return "This is a proposed link between two independently evidenced developments, not an established programme or proven effect."
     if grammar == "latent_channel": return "The opportunity is leverage: connect pieces Europe already has instead of creating a new programme from zero."
     if grammar == "anchor_demand": return "Reliable European demand can help turn research and scale-up support into durable production, suppliers and technical capability."
     if grammar == "named_continuity": return "Persistence matters because a recurring issue is more likely to shape future choices than a one-scan spike."
@@ -4016,6 +4050,11 @@ def adapt_candidate(c: dict[str, Any], nodes: Iterable[dict[str, Any]], *, vocab
         "mechanism": clean(c.get("mechanism")),
         "direction": clean(c.get("direction")),
         "claim_status": clean(c.get("status")),
+        # Future hypothesis status is explicit in the machine-readable record,
+        # allowing downstream readers to distinguish possibility from actuality.
+        "hypothesis_bridge": bool(c.get("hypothesis_bridge")),
+        "connection_evidenced": bool(c.get("connection_evidenced", True)),
+        "remaining_test": clean(c.get("remaining_test")),
         "product_basis": (
             "shock_driver_statement_mismatch" if grammar == "future_shock_hypothesis" and not shock_driver_alignment
             else "source_statement_direction_mismatch" if grammar == "corroborated_claim" and not semantic_alignment
@@ -4153,7 +4192,7 @@ def refresh_claim_high_order(
         "level2_corroborated", "level2_named_continuity",
         "level3_sequence_gap", "level3_era_conjunction", "level4_opposing_movements",
         "level5_dependency_pathway", "future_shock_hypothesis", "level4_5_conflicting_criteria", "level5_latent_channel",
-        "level5_anchor_demand", "level5_split_recurrence", "level3_constraint_conversion",
+        "level5_anchor_demand", "level5_split_recurrence", "level3_constraint_conversion", "level3_adjacent_conversion",
     ):
         for x in groups.get(group, []):
             if not isinstance(x, dict):
