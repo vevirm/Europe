@@ -169,14 +169,14 @@ async function loadJson(url){try{const r=await fetch(url,{cache:'no-store'});ret
       const sel=hi?.selection?.continuity||{};
       const reserve=Number(sel.reserve)||0,watch=Number(sel.watch)||0;
       // Keep the published Stage 7 order; re-bucketing would drop filled slots.
-      render(shown.slice(0,15));
+      render(shown.slice(0,25));
     }else{
       const established=RadarPhenomena.build(data,history,historyConfig);
       const patterns=RadarContinuity.build(data,history,historyConfig,RadarPhenomena.phenomena);
       const changing=unique((patterns.findings||[]).map(x=>({text:changingStatement(x),records:Number(x.currentCount)||0,sources:Number(x.currentSources)||0,distance:patternDistance(x),rankScore:Number(x.score)||0,group:'changing'})));
       const returning=unique(established.filter(x=>!x.autoDetected).map(x=>({text:returningStatement(x),records:Number(x.currentCount)||0,sources:Number(x.currentSources)||0,distance:1,rankScore:Math.min(99,(Number(x.score)||0)*4),group:'returning'})));
       const all=rankItems(unique([...changing,...returning]));
-      const shown=wowCycle(all).slice(0,15);
+      const shown=wowCycle(all).slice(0,25);
       render(shown);
     }
   }catch(e){

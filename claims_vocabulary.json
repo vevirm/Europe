@@ -1,13 +1,14 @@
 {
  "version": 3,
  "profile": "radar-claims-vocabulary-v1",
- "description": "Controlled vocabulary for Radar reasoning. Version 3 adds economic-security clusters and objects (dependencies, trade, investment, coercion, energy, partnerships, finance). Legacy R&I objects remain valid but unused. Runtime invention remains forbidden.",
+ "description": "Controlled vocabulary for Radar reasoning. Version 3 adds economic-security clusters and objects (dependencies, trade, investment, coercion, energy, partnerships, finance). Legacy R&I objects remain valid but unused. Runtime invention remains forbidden. Compatibility additions preserve legacy quick-scan observation semantics; they are context, not evidence of a live policy action.",
  "directions": [
   "expands",
   "contracts",
   "becomes_conditional",
   "becomes_contested",
-  "unchanged"
+  "unchanged",
+  "mixed"
  ],
  "statuses": [
   "intention",
@@ -20,13 +21,15 @@
   "call_open",
   "announced",
   "abandoned",
-  "lapsed"
+  "lapsed",
+  "observation"
  ],
  "kinds": [
   "action",
   "effect",
   "diagnosis",
-  "advocacy"
+  "advocacy",
+  "evidence"
  ],
  "scopes": [
   "eu",
@@ -34,7 +37,8 @@
   "associated_country",
   "third_country",
   "company_in_eu",
-  "external"
+  "external",
+  "europe"
  ],
  "actor_classes": [
   "eu_body",
@@ -46,7 +50,8 @@
   "ngo_thinktank",
   "court",
   "opposition_party",
-  "other"
+  "other",
+  "european_system"
  ],
  "confidence": [
   "high",
@@ -663,6 +668,27 @@
   "medicines.critical_supply": {
    "cluster": "medicines_supply",
    "stake_class": "capability"
+  },
+  "econsec.trade_security": {
+   "cluster": "trade_policy"
+  },
+  "econsec.defence_capacity": {
+   "cluster": "defence_dual_use"
+  },
+  "econsec.supply_resilience": {
+   "cluster": "supply_dependencies"
+  },
+  "econsec.technology_security": {
+   "cluster": "economic_security_strategy"
+  },
+  "econsec.energy_transition": {
+   "cluster": "green_transition"
+  },
+  "econsec.financial_resilience": {
+   "cluster": "finance_payments"
+  },
+  "econsec.investment_security": {
+   "cluster": "investment_screening"
   }
  },
  "object_aliases": {
@@ -726,7 +752,9 @@
   "acquires",
   "relocates",
   "stockpiles",
-  "partners"
+  "partners",
+  "shapes",
+  "builds_capacity"
  ],
  "absorbers": [
   "harmonises",

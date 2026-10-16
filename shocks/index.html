@@ -149,7 +149,7 @@ function visibleShockExplanation(title,text){return clean(text)||shockExplanatio
     const wowCycle=items=>{const buckets=new Map([5,4,3,2,1].map(w=>[w,[]]));for(const x of items||[]){const w=Math.max(1,Math.min(5,Number(x?.distance)||3));buckets.get(w).push(x)}const out=[];for(let round=0,maxRounds=Math.max(0,...[...buckets.values()].map(xs=>xs.length));round<maxRounds;round++)for(const w of [5,4,3,2,1]){const x=buckets.get(w)[round];if(x)out.push(x)}return out};
     // Stage 7 already publishes the 5-4-3-2-1 x3 shelf (with thin wow levels filled
     // from the nearest level). Keep that order; re-bucketing here dropped findings.
-    const items=all.slice(0,15);
+    const items=all.slice(0,25);
     document.getElementById('shockSummary').textContent=items.length?'Plausible external events that could quickly change Europe’s economic-security position. These are scenarios to watch, not forecasts.':'No possible shock is ready to show yet.';
     el.innerHTML=items.length?items.map((x,i)=>{const raw=x.explanation&&x.detail&&x.detail.type==='higher-order'?x.explanation:shockExplanation(x.text);const explanation=visibleShockExplanation(x.text,raw);const ev=[...(x.detail?.support||[]),...(x.detail?.against||[])];const c=globalThis.RadarReaderClarity?.card?.(x.text,explanation,ev,'shock')||{title:x.text,what:explanation,why:''};return `<li><strong>${esc(c.title)}</strong>${c.what?`<p>${esc(c.what)}</p>`:''}${c.why?`<p><strong>Why it matters:</strong> ${esc(c.why)}</p>`:''}${shockDetailHtml(x,i)}</li>`}).join(''):'<li class="empty">No possible shock is ready to show yet.</li>';
   }catch(e){console.error(e);document.getElementById('shockSummary').textContent='Shock evidence is unavailable.';el.innerHTML='<li class="empty">Unavailable.</li>'}

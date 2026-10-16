@@ -1,0 +1,32 @@
+RADAR — REASONING + DEEP SCAN + MORE ON EACH PAGE
+
+1. Extract this ZIP on your computer.
+2. Open your GitHub repository at its TOP LEVEL (root).
+3. Upload/replace the extracted files IN THE MATCHING FOLDERS.
+   Keep each path exactly as shown below; merge folders, do not create an extra ZIP-name folder.
+4. Commit the changes.
+5. Let the usual site publishing / reasoning update workflow run.
+
+FILES INSIDE (relative to the repository root):
+claims_vocabulary.json
+scripts/claim_reasoning_live.py
+scripts/claim_reasoning_shadow.py
+priorities/index.html
+priorities/priorities.js
+phenomena/index.html
+shocks/index.html
+trends/index.html
+tests/test_reasoning_repair.py
+
+CHANGES
+- Includes the earlier two safety fixes.
+- Recovers legacy structured quick-review claims as lower-confidence context rather than throwing them away.
+- Reads verified Deep Scan main findings when older records lack structured claims.
+- Adds a source-paired, conditional opportunity reasoning pathway.
+- Makes risk and opportunity wording less repetitive and more evidence-specific.
+- Raises per-page publication capacity from 15 to 25.
+- Shows up to 15 additional separately labeled developing opportunities on Priorities.
+- Adds regression tests.
+
+IMPORTANT: The new capacity does not assert that 25 verified findings exist.
+Developing opportunities are explicitly hypothetical and are NOT presented as confirmed.

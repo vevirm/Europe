@@ -53,8 +53,8 @@ if(!all.length){
   const alternate=RadarTrends.build(raw,history);
   if(alternate.length){all=alternate;recovered=true}
 }
-const xs=wowCyclePairs(all).slice(0,15);
-document.getElementById('corpusLine').textContent=xs.some(x=>x.developing)?'Developing comparisons from the claim-native reasoning pipeline and current Radar evidence; these are not yet validated as genuinely opposing trends.':(recovered?'Showing validated pairs from the main Radar data while the active snapshot catches up.':'');
+const xs=wowCyclePairs(all).slice(0,25);
+document.getElementById('corpusLine').textContent=xs.some(x=>x.developing)?'Developing comparisons from the claim-native reasoning pipeline and current Radar evidence; these are not yet validated as genuinely opposing trends.':(recovered?'Showing validated pairs from the main Radar data while the reasoning snapshot is being refreshed.':'');
 document.getElementById('pairs').innerHTML=xs.length?xs.map(pair).join(''):'<div class="empty">No evidence-backed, genuinely opposing trend and counter-trend pair is available in the published data. Check the Radar data publication and selection pipeline.</div>';document.querySelectorAll('.tug-track [data-pull]').forEach(el=>{el.style.flexGrow=String(Math.max(0,Number(el.dataset.pull)||0))})}catch(e){console.error(e);document.getElementById('pairs').innerHTML='<div class="empty">Trend evidence is unavailable.</div>'}})();
 </script><script src="../reader_language.js?v=5"></script>
 <script src="../site-shell.js?v=29"></script>

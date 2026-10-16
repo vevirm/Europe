@@ -176,8 +176,19 @@ def flatten_claims(active: dict[str, Any], vocab: dict[str, Any] | None = None) 
                 else:
                     primary = False
                     context_weight = 0.3
+                # Legacy scanner-abstract quick checks are not full-document
+                # Deep Scans even when older records say origin=deep_scan.
+                # Preserve their structured observations as *context*, with their
+                # actual semantics, rather than dropping 97 claims or pretending
+                # that an abstract established an implemented instrument.
+                quick_context = clean(row.get("deep_read_mode")) == "manual_quickscan_from_scanner_evidence_v1"
+                if quick_context:
+                    primary = False
+                    context_weight = min(context_weight, 0.35)
+                    diag["quick_scan_context_claims"] += 1
                 node = dict(claim)
                 node.update({
+                    "_quick_scan_context": quick_context,
                     "_collection": collection,
                     "_record_id": record_id,
                     "_source": _source(row),
@@ -477,6 +488,90 @@ def corroborated_claims(nodes: Iterable[dict[str, Any]]) -> list[dict[str, Any]]
 
 
 
+
+# Candidate discovery from two independently verified facts, without pretending the
+# solution has already resolved the constraint.  Both facts must concern the SAME
+# controlled object and the SAME *specific* obstacle (finance, permitting, etc).
+# This supplements rather than replaces the deeper Level-5 grammars.
+_CONVERSION_ISSUES = {
+    "finance": re.compile(r"\b(?:financ\w*|fund\w*|guarantee\w*|investment\w*|capital|bank\w*|risk[- ]bear\w*)\b", re.I),
+    "capacity": re.compile(r"\b(?:capacit\w*|manufactur\w*|production|scale[- ]up|industrial|factories)\b", re.I),
+    "rules": re.compile(r"\b(?:permitt\w*|approv\w*|regulat\w*|licen[cs]\w*|certif\w*|screen\w*)\b", re.I),
+    "supply": re.compile(r"\b(?:supply|supplies|sourcing|dependen\w*|diversif\w*|imports?|security of supply)\b", re.I),
+    "access": re.compile(r"\b(?:access|participat\w*|export\w*|tariffs?|agreements?|partnership\w*)\b", re.I),
+}
+_CONVERSION_GAP = re.compile(
+    r"\b(?:lack|gap|weak\w*|constraint\w*|bottleneck\w*|risks?|shortage\w*|"
+    r"dependen\w*|fragmen\w*|limited|delays?|barriers?|vulnerab\w*|"
+    r"insufficien\w*|obstacl\w*|slow\w*|challeng\w*|uncertain\w*|hinder\w*|undermin\w*)\b", re.I)
+_CONVERSION_ACTION = re.compile(
+    r"\b(?:created|launched|adopted|approved|signed|committed|opened|"
+    r"invest(?:s|ed|ment)?|fund(?:s|ed|ing)?|built|building|expanded|"
+    r"increased|supports?|strengthen\w*|guarantee\w*|provides?|"
+    r"helps?|enables?|cooperat\w*|supply|supplies)\b", re.I)
+
+
+def constraint_conversion_candidates(nodes: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Discover *testable* capability opportunities by pairing a problem with an instrument.
+
+    An object and issue-word match is a discovery lead, NOT proof that one action
+    fixes the other.  The reader must get both source statements and the explicit
+    remaining implementation question.  Never count proposals as live instruments.
+    """
+    by_object: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for n in nodes:
+        if n.get("_primary") and clean(n.get("era")) == "current" and not n.get("_quick_scan_context"):
+            by_object[clean(n.get("object"))].append(n)
+    out: list[dict[str, Any]] = []
+    active = {"announced", "call_open", "adopted", "in_force", "operating", "delivered"}
+    for obj, rows in by_object.items():
+        needs = [n for n in rows if clean(n.get("kind")) in {"diagnosis", "effect"}
+                 and _CONVERSION_GAP.search(clean(n.get("text")))]
+        instruments = [n for n in rows if clean(n.get("kind")) == "action"
+                       and clean(n.get("status")) in active
+                       and _CONVERSION_ACTION.search(clean(n.get("text")))]
+        for issue, pattern in _CONVERSION_ISSUES.items():
+            options = []
+            for need in needs:
+                if not pattern.search(clean(need.get("text"))):
+                    continue
+                for instrument in instruments:
+                    if not pattern.search(clean(instrument.get("text"))):
+                        continue
+                    if clean(need.get("_record_id")) == clean(instrument.get("_record_id")):
+                        continue
+                    if clean(need.get("_source")).lower() == clean(instrument.get("_source")).lower():
+                        continue
+                    # Restrict to concrete statements: avoid publishing research-title
+                    # metadata masquerading as a causal finding.
+                    if len(clean(need.get("text"))) < 35 or len(clean(instrument.get("text"))) < 35:
+                        continue
+                    if any(marker in clean(need.get("text")).lower() for marker in (
+                        "the item was admitted", "the verified source provides", "consult the linked",
+                    )):
+                        continue
+                    merit = min(float(need.get("merit", 0) or 0), float(instrument.get("merit", 0) or 0))
+                    if merit < 45:
+                        continue
+                    options.append((merit, clean(instrument.get("status_date")), need, instrument))
+            if not options:
+                continue
+            _quality, _date, need, instrument = max(options, key=lambda x:(x[0],x[1]))
+            out.append({
+                "level":3, "grammar_id":"constraint_conversion", "product":"opportunity",
+                "object":obj, "issue":issue,
+                "claim_ids":[clean(need.get("claim_id")), clean(instrument.get("claim_id"))],
+                "need_statement":clean(need.get("text")), "instrument_statement":clean(instrument.get("text")),
+                "instrument_status":clean(instrument.get("status")),
+                "score":min(92, round(0.60 * _quality + 0.20 * float(need.get("merit",0) or 0)
+                                     + 0.20 * float(instrument.get("merit",0) or 0))),
+                "score_gate_passes":True, "wow_preliminary":3,
+                "product_basis":"two_independent_sources_same_object_and_obstacle",
+                "missing_roles":[], "role_strength_floor_passes": True,
+            })
+    return sorted(out,key=lambda c:(c["score"],c["object"],c["issue"]),reverse=True)[:150]
+
+
 def named_continuities(nodes: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
     """Level-2 ongoing phenomena: an object with real depth in both eras.
 
@@ -642,6 +737,25 @@ def level3_findings(nodes: Iterable[dict[str, Any]], evaluated_on: dt.date) -> l
         if len(inv) >= 12 * max(1, len(meas)) and len(inv) >= 12 and (obj.startswith("goal.") or obj == "goal.strategic_autonomy"):
             out.append({"level": 3, "grammar_id": "goal_without_measure", "object": obj, "invocations": len(inv), "measurements": len(meas), "ratio": None if not meas else round(len(inv) / len(meas), 2)})
 
+    # R-24a: practice before doctrine.  Require an explicit shared jurisdiction
+    # as well as an object match. An action by China and a later EU consultation
+    # about export controls are not an EU practice-before-doctrine sequence.
+    def same_governance_jurisdiction(a: dict[str, Any], b: dict[str, Any]) -> bool:
+        sa = a.get("scope") if isinstance(a.get("scope"), dict) else {}
+        sb = b.get("scope") if isinstance(b.get("scope"), dict) else {}
+        ca = {clean(x).lower() for x in sa.get("countries", []) if clean(x)}
+        cb = {clean(x).lower() for x in sb.get("countries", []) if clean(x)}
+        la, lb = clean(sa.get("level")).lower(), clean(sb.get("level")).lower()
+        if ca and cb:
+            return bool(ca & cb)
+        # Country-specific and EU-wide developments require an explicit link;
+        # an unspecified or global scope is not affirmative evidence of one.
+        if la == lb == "eu":
+            return True
+        if la == lb == "national" and ca and cb:
+            return bool(ca & cb)
+        return False
+
     # R-24a: practice before doctrine.  The doctrine must name the practice
     # object structurally through object/secondary_object overlap.
     dated = [n for n in current if _date(n.get("status_date"))]
@@ -655,6 +769,7 @@ def level3_findings(nodes: Iterable[dict[str, Any]], evaluated_on: dt.date) -> l
             if p is not doctrine and _date(p.get("status_date")) < dd
             and clean(p.get("kind")) == "action"
             and bool(doctrine_objs & _claim_objects(p))
+            and same_governance_jurisdiction(p, doctrine)
             and not _doctrine_like(p)
         ]
         if not practices:
@@ -2087,6 +2202,7 @@ def run_shadow(root: Path = ROOT, evaluated_at: str | None = None) -> dict[str, 
     criteria = conflicting_criteria(nodes, vocab, distance)
     latent = latent_channels(nodes, vocab)
     anchor = anchor_demand_candidates(nodes, vocab)
+    conversion = constraint_conversion_candidates(nodes)
     split = split_recurrence_candidates(nodes, vocab)
     era = era_conjunctions(nodes)
     raw = json.loads((root / "radar.json").read_text(encoding="utf-8"))
@@ -2101,6 +2217,7 @@ def run_shadow(root: Path = ROOT, evaluated_at: str | None = None) -> dict[str, 
         "level4_5_conflicting_criteria": criteria,
         "level5_latent_channel": latent,
         "level5_anchor_demand": anchor,
+        "level3_constraint_conversion": conversion,
         "level5_split_recurrence": split,
     }
     diff = shadow_diff_report(legacy, groups)

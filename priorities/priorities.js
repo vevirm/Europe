@@ -511,6 +511,52 @@
     });
   }
 
+  function developingOpportunityRows(data,excludeIds,maxItems=12){
+    const state=data?.high_order_inference&&typeof data.high_order_inference==='object'?data.high_order_inference:{};
+    if(state?.detector_backend!=='claim_native')return [];
+    const blocked=new Set(excludeIds||[]);
+    const rows=(Array.isArray(state?.candidates)?state.candidates:[])
+      .filter(c=>c&&c.claim_native&&c.product==='opportunity'&&!blocked.has(clean(c.id))
+        &&!['killed','dormant'].includes(clean(c.status))
+        &&Number(c.primary_records||0)>=1
+        &&c.role_semantic_alignment!==false&&c.evidence_semantic_alignment!==false
+        &&Array.isArray(c.support)&&c.support.some(x=>x&&clean(x.source_statement)));
+    rows.sort((a,b)=>Number(b.primary_sources||0)-Number(a.primary_sources||0)
+      ||Number(b.maturity_score||0)-Number(a.maturity_score||0)
+      ||Number(b.wow||0)-Number(a.wow||0));
+    const seen=new Set(),usedSources=new Set(),out=[];
+    for(const c of rows){
+      const k=clean(c.topic_key||c.id),title=clean(c.reader_title);
+      const key=k.split('|').slice(0,3).join('|');
+      if(!title||seen.has(key))continue;
+      const support=c.support.filter(x=>x&&clean(x.source_statement));
+      const statements=support.map(x=>clean(x.source_statement)).filter(Boolean);
+      // Avoid republishing one published fact as a second, speculative card.
+      if(statements.length===0||(!c.missing_roles?.length&&Number(c.primary_sources||0)<2
+         &&clean(c.grammar_id)==='corroborated_claim'&&usedSources.has(clean(support[0]?.identity))))continue;
+      seen.add(key);
+      for(const x of support)if(x?.identity)usedSources.add(clean(x.identity));
+      const missing=Array.isArray(c.missing_roles)?c.missing_roles.map(x=>clean(x).replace(/_/g,' ')):[];
+      const gap=missing.length
+        ?`The ${missing.join(', ')} has not been demonstrated.`
+        :(Number(c.primary_sources||0)<2
+           ?'A second independent source or a clearer outcome link is still needed.'
+           :'The proposed connection or outcome still needs verification.');
+      const explanation=`Exploratory hypothesis, not an established opportunity. ${gap} ${clean(c.reader_summary)||''}`;
+      out.push({highOrder:true,kind:'opportunity',title,coreMessage:explanation,readerAuthored:true,
+        readerWhy:'What to check: whether the documented need and the available instrument actually connect in practice.',
+        source:'Developing hypothesis',date:clean(c.last_updated_at||state.evaluated_at),link:'',
+        candidateId:clean(c.id),topicLabel:clean(c.topic_label),objectKey:clean(c.object||c.topic_key),
+        wow:Number(c.wow||3),primarySources:Number(c.primary_sources||0),
+        primaryRecords:Number(c.primary_records||0),evidenceSemantics:'provisional_unverified_connection',
+        supportEvidence:support.map(x=>({title:clean(x.title),source:clean(x.source),date:clean(x.date),
+          link:clean(x.link),sourceStatement:clean(x.source_statement),quality:Number(x.quality||0)})),
+        counterEvidence:[],weakSignalContext:[]});
+      if(out.length>=maxItems)break;
+    }
+    return out;
+  }
+
   function buildPriorityView(data,opts={}){
     const limit=Number.isFinite(opts.limit)?Math.max(1,Math.floor(opts.limit)):Number.POSITIVE_INFINITY;
     const state=data?.high_order_inference&&typeof data.high_order_inference==='object'?data.high_order_inference:{};
@@ -526,9 +572,11 @@
       const riskSel=state?.selection?.risk&&typeof state.selection.risk==='object'?state.selection.risk:{};
       const oppSel=state?.selection?.opportunity&&typeof state.selection.opportunity==='object'?state.selection.opportunity:{};
       const shownRisks=riskRows.slice(0,limit),shownOpportunities=opportunityRows.slice(0,limit);
+      const developingOpportunities=developingOpportunityRows(data,Array.isArray(state?.publications?.opportunity)?state.publications.opportunity:[],Math.min(15,limit));
       return {
         risks:shownRisks,
         opportunities:shownOpportunities,
+        developingOpportunities,
         externalShocks:[],
         stats:{
           claimNativeCutover:true,
