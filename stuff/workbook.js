@@ -215,7 +215,7 @@
     return 22;
   }
 
-  function buildXlsx(data,Merit,extras={}){
+  function buildXlsx(data,Merit,extras={},mainRadarOnly=false){
     if(!Merit?.scoreFor||!Merit?.forItem||!Merit?.componentsFor)throw new Error('RadarSourceMerit unavailable');
     const raw=buildRawPublicationTable(data);
     const historical=buildHistoricalTable(extras?.historical||{},extras?.reader||{},extras?.admission||{},extras?.corrections||{});
@@ -256,7 +256,28 @@
       'xl/worksheets/sheet4.xml':sheetXml(['Field','Explanation'],method,[28,110]),
       'xl/worksheets/sheet5.xml':sheetXml(shockHeaders,shockRows,shockWidths)
     };
+    if(mainRadarOnly){
+      // Keep the full legacy workbook untouched; produce an additional active-only variant.
+      // Remove historical worksheet and associated package references.
+      const sheets=['sheet1.xml','sheet3.xml','sheet4.xml','sheet5.xml'];
+      for(let i=0;i<sheets.length;i++){
+        const name='xl/worksheets/sheet'+(i+1)+'.xml';
+        files[name]=files['xl/worksheets/'+sheets[i]];
+      }
+      delete files['xl/worksheets/sheet5.xml'];
+      files['xl/workbook.xml']=files['xl/workbook.xml']
+        .replace(/<sheet name="Historical findings"[^>]*\/>/,'')
+        .replace(/sheetId="([345])" r:id="rId([345])"/g,(_,id)=>`sheetId="${Number(id)-1}" r:id="rId${Number(id)-1}"`);
+      files['xl/_rels/workbook.xml.rels']=files['xl/_rels/workbook.xml.rels']
+        .replace(/<Relationship Id="rId2"[^>]*\/>/,'')
+        .replace(/Id="rId([345])"[^>]*Target="worksheets\/sheet([345])\.xml"/g,(_,id,sheet)=>`Id="rId${Number(id)-1}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet${Number(sheet)-1}.xml"`);
+      files['[Content_Types].xml']=files['[Content_Types].xml'].replace(/<Override PartName="\/xl\/worksheets\/sheet5.xml"[^>]*\/>/,'');
+      files['xl/worksheets/sheet3.xml']=files['xl/worksheets/sheet3.xml'].replace(/Historical findings|Historical scanner/gi,'Previous-period evidence');
+      // Remap the Method sheet to active-only, without historical guidance or counts.
+      files['xl/worksheets/sheet3.xml']=sheetXml(['Field','Explanation'],method.filter(x=>!/^Historical/.test(x[0])),[28,110]);
+    }
     return zip(files);
   }
-  return {buildRows,buildRawPublicationTable,buildHistoricalTable,buildShockRows,buildXlsx};
+  function buildMainRadarXlsx(data,Merit){return buildXlsx(data,Merit,{},true);}
+  return {buildRows,buildRawPublicationTable,buildHistoricalTable,buildShockRows,buildXlsx,buildMainRadarXlsx};
 });
