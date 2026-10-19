@@ -13,7 +13,7 @@
    ===================================================================== */
 (function(){
   var KEY='radarUnlocked';
-  var HASH='8e1be4b8ade75bbd815f588e2fab5e8ce0bc9660530f856278d66909a8301eff';
+  var HASH='6e78e726f25780680cb05e8fa8d03143e86c3b189ea25370e1c1a0c834c6d956';
 
   // Already unlocked this session, or the page has its own gate: do nothing.
   try{ if(sessionStorage.getItem(KEY)==='1') return; }catch(e){}
