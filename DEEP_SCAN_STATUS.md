@@ -6,39 +6,39 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **2112** (Main **869** + Historical **1243**)
-- Automatic queue still needing V2 verification: **403** (Main **205** + Historical **198**)
-- Currently assigned to workers: **72** (Main **28** + Historical **44**)
-- Bounded access-recovery retries still eligible: **58**
-- Terminally dropped after failed scans: **121**
-- Automatic queue pending and not yet assigned: **331**
+- Authoritative V2 verified: **2121** (Main **874** + Historical **1247**)
+- Automatic queue still needing V2 verification: **393** (Main **199** + Historical **194**)
+- Currently assigned to workers: **72** (Main **65** + Historical **7**)
+- Bounded access-recovery retries still eligible: **66**
+- Terminally dropped after failed scans: **122**
+- Automatic queue pending and not yet assigned: **321**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-d1a8d3e0a826`
+- Current package: `worker-a-eb9f3f8953c6`
 - Assigned unresolved records: **36**
-  1. `link:https://doi.org/10.1007/s11135-026-02824-9` — Green manufacturing under geopolitical uncertainty: the role of artificial intelligence, environmental policy, and information in European car makers
-  2. `link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-15-BusinessEurope-Public-Consultation-European-Partnerships-HE-28-34.pdf` — Public consultation on Joint Undertakings, Art. 185 initiatives, and thematic priorities for European Partnerships under Horizon Europe 28-34 - BusinessEurope input
-  3. `link:https://www.hertie-school.org/en/international-security/research/grand-strategy` — Research Area I: Grand strategy
-  4. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=1f2d15aa-c979-11f1-8b4c-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — - AMENDMENT - 1005 - Draft report - Markéta Gregorová - (PE792.222v01-00) - European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Proposal for a regulation - (COM2026/0011 - C10-0015/2026 - 2026/0011(COD)) - Publications Office of the EU
-  5. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f616e567-c978-11f1-8b4c-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Publications Office of the EU
-  6. `link:https://doi.org/10.1111/eulj.70030` — European Ends, National Means: State Aid and the Unfinished Constitution of EU Industrial Policy
-  7. `link:https://doi.org/10.1177/01436244261492474` — Automating carbon risk assessment of residential buildings using scalable energy and emissions data in city information models
-  8. `link:https://doi.org/10.1080/08865655.2026.2749879` — Legal Borderlands and Security Unbalance: Supply Chain Diversion and End-User Obfuscation in Taiwan's Drone Exports
+  1. `historical:id:7d49712fe325faeb` — Saving and investment causality: implications for financial integration in transition countries of Eastern Europe
+  2. `historical:id:030f2b91ab7896a9` — The European Union's framework for FDI screening: Towards an ever more growing competence over energy policy?
+  3. `historical:id:197d792c08cf0a33` — Digital Transformation
+  4. `historical:id:901e4fb42f9cb2b9` — EU: Extension of definitive antidumping duty concerning coated fine paper originating from China - Global Trade Alert
+  5. `historical:id:d6a322bad17f8098` — EC: Simplified rules for investment aid in ports and airports, culture and the outermost regions - Global Trade Alert
+  6. `historical:id:477edbfad9bfe39d` — 5G research & standards
+  7. `historical:id:f7261b33d1ca7599` — Emerging industries and value chains
+  8. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=bdf94591-c868-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a COUNCIL DECISION on the conclusion of the Sustainable Fisheries Partnership Agreement and its Implementing Protocol (2026-2030) between the European Union and the Republic of Mauritius - Publications Office of the EU — recovery attempt 3/3
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-237b475bab45`
+- Current package: `worker-b-540e7bd00bbc`
 - Assigned unresolved records: **36**
-  1. `historical:id:16aeef414807d356` — Tackling Circumvention of EU Sanctions - Institut Jacques Delors
-  2. `historical:id:7f7d1e4174be42c4` — Global Gateway: New EU-IDB Initiative to Boost Sustainable Critical Raw Materials Practices in Latin America and the Caribbean
-  3. `historical:id:c79bc224f8b0a4e0` — Commission challenges China's anti-dumping tariffs on EU brandy at the WTO *
-  4. `historical:id:802e8c5bb8560037` — Not just hot air: Realising the potential of the EU-Namibia green hydrogen partnership – European Council on Foreign Relations
-  5. `historical:id:93e1a10386196107` — From 5G hardware to apps and data: How Huawei has adapted to survive – European Council on Foreign Relations
-  6. `historical:id:cad19010c848a9d6` — What can the EU do to address the high natural gas prices?
-  7. `historical:id:4c2d9edad50c21f6` — Partnership through crisis: The real meaning of Scholz’s Africa trip – European Council on Foreign Relations
-  8. `historical:id:66a6132fdffb4051` — Putin’s war on Ukraine: Aftershocks in the Europe-Africa partnership – European Council on Foreign Relations
+  1. `link:https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVVF5VkpSVEJwdWd0M3dBeHA4Tzg1MjRyeXpwbm5mVG0tNUFZZDdVbWNsMjdhX1hfSDBZVkp0dHY1TlMtZUpDTV9oZHU1d1R3a0F0aklLU0Rwc3dfNFBxem9NaGh3QlU1b1NEZ3VCclc2eFhiN3MyS2JfVndqU2ZBaHFhWDUzQzMwaTQwelVNbm5nSWZudjYxRGF6M1Qzb1NBeG82WjZBTHJyN2UtMmhvU1JicVJXb1ZJdU5rTWctVkVCSmVOMVBMQ2g5dXNtam9CQ3Bj?oc=5` — China and EU reach deal on hybrid cars, rare earths - Le Monde.fr — recovery attempt 2/3
+  2. `link:https://news.google.com/rss/articles/CBMitAFBVV95cUxPdnJWaW83X1dOWXVrWGIyT3pSS1FyWkdkbm01bldwOUNpT0Q2WnR3dVlhVUVCLXFpeW4wQ0MzSURKSWtMQ0xtZ3lBcm5MdkxfMmRITjgwbVYwMWV0a0t1eFcxSi1ITXV0WkhDMndCWTljU293WlJRX01saW9JWEZTeVN1R2RQeXpxdS02alZ2Y2tlQlc3Z1hDOUpxSnU2U3dxZExSTU43OGRONWFBYlp3dFNLSE8?oc=5` — Two Ships Hauling US LNG Divert to Europe as Asian Demand Eases — recovery attempt 2/3
+  3. `link:https://news.google.com/rss/articles/CBMihAFBVV95cUxNUVBGdWdpbnY5TENRVUtaTlhNcGtDTmRWdFlHRDlOMjhYN0UwcGNoZ0ZOX0wwZTNtOXQxTW9HNjd6TzRWdDhxaVZQMkdWMW16aTctT2ZpTFNWa0R2TEQzd1d2Mk43elRxU0hndzdFWE1OVVM5VVNSSHhCdEI4bFVFZGZvZ18?oc=5` — Submit your questions: Who’s winning the trade war with China — the EU or US? — recovery attempt 2/3
+  4. `link:https://news.google.com/rss/articles/CBMipgFBVV95cUxONU1ld2RnWXRwMzZFTEtKNFBxb09KQXJIZzI2WXJEVkthbldsaGUyOWxSbWxYNDVwQzJDSTR6UGRmcjFXaWpNcEczcWZWMEpLUUFtSlozWEFKOUwyUHk4QlBRelczWURTYW9sN3RRTWJVTnhRZllROFlXRzc1ZmI3RE1yZkFtUmt6SFpWWkRIVWdJQkJnYnFmVlU4eHhEWWl1ZGN3R1BB?oc=5` — Breakingviews - COMMENTARY: The unbearable lightness of an EU-China half-deal — recovery attempt 2/3
+  5. `link:https://news.google.com/rss/articles/CBMixgFBVV95cUxOOUk2RnFEbjJ3U1VMdUdwTXNrT3VNT0FpcjBDMFVLVHVzSHVlLVJjZE8tRC15Y1I0aWN5ZzJJQlJZaldBVmJ0cy1FLUVZNGVVc0k2bzg5dDlQTFlabzFrSHgtQ0dMNXg2N21BSzhsZEhyTTRTUjlBa2JhSWh5RVU1UWs4bnlhZ3M5Z3RCMTBLSXVieTBwckZNTWR0MUhkYUk1NUp6STFSaGhZb3FFTE5hVlRodXVOdE9faFlDZklPdGRlaERDR2c?oc=5` — US, European telecom stocks slide as SpaceX spectrum deal rattles sector — recovery attempt 2/3
+  6. `link:https://news.google.com/rss/articles/CBMivwFBVV95cUxOcmViaTc0MHRJTmw2Vm9fX0EzaW1aZm5fdnhGWjJPOG92TF9mV1Jyb1FTeDc3czNwb2ljQ1BMemg5M2tVSlJUVHBsRnpmTmdsSXZlRkpmZjV5Y3hsQXp6MEgwd3ZtUXZ6TmFid0paWk1lTjVEUGlzQVM3UU8xVTZVZWd2eEUtbTFOM0hyNUJNamxlZnd5TjU2UE9vdlYyQ01jcUJ5WHotejNQV1l1d0R0MnE0UTRac0IzVkZXcGd1cw?oc=5` — Team Europe partners with Thailand on space cooperation under EU Global Gateway — recovery attempt 2/3
+  7. `link:https://news.google.com/rss/articles/CBMixgFBVV95cUxQenp5X0NPZUxfT1ByY2pId3d1Q3JlT0FHcHBtODVndV9JMWFhNFJqM3FqSk1TTWN3RExMNGw1ckhKY1kxOTBIaVZSbW1qMVZXZGJadVd1QVlkS3J2dDNIekpsbk5MOFd1cFhYdmh6Zl9xT280YmhYRTh6VHBHUHpVX2diOWdZQ2gyUE5LU2xRQnkxcVBzVFlZUnNaVmxOd2RkRU5KalFaYS1PN0taRkc1Q0RucEFaUkZENS0tY0ZBMVZEb1ppNVE?oc=5` — Former German spy chief had contacts with Chinese official, Spiegel reports — recovery attempt 2/3
+  8. `link:https://news.google.com/rss/articles/CBMitgFBVV95cUxPM3Z6WGhtUkx6VTZyTFJTTFJLeW93eHROdE00YzByRHA1aGg0b0xxLTN4UHFzcjZUQWZBRHlnSDVkZDJVMTRrWEpUbWExZWw1bFpFQk9ydmFwN0VpalRTT1ZYWHZNWEI1UWdnSUJrbmZNd0dUVUtVa2Y0aEZPTlVYSXl2Uk5oN0JrZ2JMeVFtNUdSWFhkWWtmVHMyTlVqUjVhMU1NNmFNdHVxckhNc0RiLWlJTUNKdw?oc=5` — China Central Bank Defends Currency Policy Before EU Trade Talks — recovery attempt 2/3
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
@@ -170,3 +170,4 @@ These records no longer consume automatic Deep Scan slots and are excluded from 
 - `historical:id:91ef9cbdc71a2e69` — **Research and innovation towards zero-emission road transport and European automotive sector competitiveness** — attempts: 3/3 — JRC Publications Repository — 2026-01-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://publications.jrc.ec.europa.eu/repository/handle/JRC146980
 - `historical:id:d2a3f60d595da52f` — **China's Outward <scp>FDI</scp> in the European Union: How Much Geopolitics is in There?** — attempts: 3/3 — Global Policy — 2025-05-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1111/1758-5899.13472
 - `historical:id:c4a03323d4289bc0` — **The European Union’s Critical Raw Materials Act: How Effective In Addressing Supply Chains Risks? - CELIS Institute** — attempts: 3/3 — CELIS Institute — 2024-06-27 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://celis.institute/the-european-unions-critical-raw-materials-act-how-effective-in-addressing-supply-chains-risks/
+- `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f547843b-c74d-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — **WORKING PARTY ON COMPETITIVENESS AND GROWTH (Industry) (Chips Act 2.0) - Publications Office of the EU** — attempts: 3/3 — Publications Office of the EU — 2026-10-07 — Deep Scan return rejected: evidence depth must be one of the authoritative recovered-source levels — https://op.europa.eu/o/opportal-service/download-handler?identifier=f547843b-c74d-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=

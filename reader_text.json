@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-10-16T08:30:52Z",
+  "generated_at": "2026-10-19T06:05:25Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -164577,8 +164577,788 @@
       "deep_scan_package_id": "worker-b-9f6592cf81a8",
       "claims": [],
       "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1007/s11135-026-02824-9": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "94731e7f",
+      "identity_hash": "09619f37f7353a38",
+      "reader_title": "Geopolitical risk and greener European car manufacturing",
+      "reader_what": "A 2010–2019 European manufacturer panel associates geopolitical risk with weaker green productivity.",
+      "reader_why": "The paper finds AI capabilities and environmental regulation are associated with greater green-productivity resilience.",
+      "reader_more": "Analysis covers 57 automobile manufacturers in 12 European countries. It reports lower productivity growth when emissions are included in its index. Results are model-based associations, not demonstrated causal policy effects.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed empirical study",
+        "research_question": "How does geopolitical risk relate to green productivity and the role of AI, regulation and information in European automobile manufacturing?",
+        "main_finding": "Higher geopolitical risk correlates with lower green total factor productivity, while AI and environmental regulation moderate the relationship.",
+        "method_or_basis": "Firm and sector panel for 57 manufacturers in 12 European countries, 2010–2019; Malmquist–Luenberger productivity index and econometric analysis.",
+        "qualification": "Observational model-based findings for 2010–2019; identified associations are not proven causal effects.",
+        "radar_relevance": "Empirical European industrial-resilience evidence linking geopolitical risk with manufacturing performance.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "https://doi.org/10.1007/s11135-026-02824-9 returned inaccessible through web reader; publisher destination recovered."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1007/s11135-026-02824-9 matches Springer and RePEc metadata."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "https://link.springer.com/article/10.1007/s11135-026-02824-9 served matching substantive article text; publisher PDF requires subscription."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1007/s11135-026-02824-9",
+            "title": "Green manufacturing under geopolitical uncertainty",
+            "evidence_used": true
+          },
+          {
+            "kind": "bibliographic_registry",
+            "url": "https://ideas.repec.org/a/spr/qualqt/v60y2026i5d10.1007_s11135-026-02824-9.html",
+            "title": "RePEc bibliographic record",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Matched journal and DOI against independent RePEc index; Springer webpage includes substantive primary-source content. Full article PDF is subscription-only."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Published multi-country European car-manufacturing study directly tests geopolitical risk and industrial resilience."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching identical work established from supplied candidates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-19T06:05:24Z",
+      "deep_scan_package_id": "worker-a-d1a8d3e0a826",
+      "claims": [
+        {
+          "object": "industrial.competitiveness",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Muhammad Salman",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-05-11",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Observational model-based findings for 2010–2019; identified associations are not proven causal effects.",
+          "text": "Study of 57 car manufacturers across 12 European countries reports a negative geopolitical-risk relationship with green productivity and moderating associations for AI and environmental rules.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1007/s11135-026-02824-9",
+          "merit": 68,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:09619f37f7353a38:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-15-BusinessEurope-Public-Consultation-European-Partnerships-HE-28-34.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "717f0a0f",
+      "identity_hash": "65d5cbd18b6980b5",
+      "reader_title": "BusinessEurope proposes changes to European research partnerships",
+      "reader_what": "Industry association urges higher Horizon partnership funding, industry participation, and less onerous contribution requirements.",
+      "reader_more": "The document is a consultation position rather than an independent empirical study. It argues against mandatory corporate cash contributions and backs complementary Horizon–Competitiveness Fund governance. Its focus is ordinary research-programme design, without a developed geopolitical dependency, coercion, or economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "industry association consultation response",
+        "research_question": "How should 2028–2034 European Partnerships be funded and governed?",
+        "main_finding": "BusinessEurope advocates more Pillar II funding, industry-led governance and a more flexible funding/contribution design.",
+        "method_or_basis": "Three-page official advocacy submission examined from supplied first-party PDF extract and author publication page.",
+        "qualification": "Recommendations are interested-party proposals, not implemented measures or demonstrated outcomes.",
+        "radar_relevance": "EU research funding architecture is relevant to competitiveness, but the submission does not meet the Radar’s central economic-security threshold.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-15-BusinessEurope-Public-Consultation-European-Partnerships-HE-28-34.pdf included as matching multi-page PDF excerpt inside supplied package; current web reader errors."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "https://www.businesseurope.eu/publications/public-consultation-on-joint-undertakings-businesseurope-input/ confirms title, organisation and 15 October 2026 date."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_document_pdf_excerpt",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-15-BusinessEurope-Public-Consultation-European-Partnerships-HE-28-34.pdf",
+            "title": "BusinessEurope input to consultation, 15 October 2026",
+            "evidence_used": true
+          },
+          {
+            "kind": "issuing_body_landing_page",
+            "url": "https://www.businesseurope.eu/publications/public-consultation-on-joint-undertakings-businesseurope-input/",
+            "title": "BusinessEurope official publication page",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matching first-party PDF excerpt retained in package, verified with issuer’s dated publication page. Rejected on topic gate, not lack of identity."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_ECONOMIC_SECURITY",
+        "reason": "BusinessEurope consultation comment advances general Horizon research-partnership funding and governance positions, without a substantive economic-security mechanism or completed evidence-led toolbox assessment."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching identical work established from supplied candidates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-19T06:05:24Z",
+      "deep_scan_package_id": "worker-a-d1a8d3e0a826",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.hertie-school.org/en/international-security/research/grand-strategy": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "c3489f58",
+      "identity_hash": "0efcd8131a2cd4be",
+      "reader_title": "Hertie School grand-strategy research area",
+      "reader_what": "Research programme describes questions about Europe’s geopolitical strategy but presents no original work-specific findings.",
+      "reader_more": "The Hertie School page outlines a research agenda and links separately published articles. It defines grand strategy and lists questions concerning alliances, Russia, and European autonomy. Those linked works are distinct publications and cannot be attributed to this listing.",
+      "deep_analysis": {
+        "work_kind": "institutional research-programme page",
+        "research_question": "",
+        "main_finding": "Research programme describes questions about Europe’s geopolitical strategy but presents no original work-specific findings.",
+        "method_or_basis": "First-party programme description and linked-publications list",
+        "qualification": "Institutional overview; its references are not results of this page.",
+        "radar_relevance": "Not a substantial standalone evidence product for Strand A.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package scanner retrieved substantial first-party text at https://www.hertie-school.org/en/international-security/research/grand-strategy; live web reader returned HTTP 403."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Hertie School first-party source_material supplies full programme page with list of separately linked research outputs."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.hertie-school.org/en/international-security/research/grand-strategy",
+            "title": "Research Area I: Grand strategy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Work identity and content checked against package first-party source and independent web retrieval where available; assertions distinguished from established effects."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NOT_SUBSTANTIVE_WORK",
+        "reason": "A thematic institutional research-area listing, not a completed evidence-led study or substantive European economic-security policy analysis."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-19T06:05:24Z",
+      "deep_scan_package_id": "worker-a-d1a8d3e0a826",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://merics.org/index%2Ephp/https%3A//merics.org/sites/default/files/2026-08/vives-discussion-paper-107-schindowski-zenglein-groenewegen-lau-dp-industrial-policy-and-technology-linkages-conceptualizing-chinas-approach-004.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "d25dd832",
+      "identity_hash": "a243110223b359d9",
+      "reader_title": "Industrial policy and technology linkages: Conceptualizing China’s approach",
+      "reader_more": "Verified institutional publisher and cross-checked against MERICS author page; EU appears as research grant support, not analytical subject.",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "Industrial policy and technology linkages: Conceptualizing China’s approach",
+        "main_finding": "Chinese industrial policy integrates emerging and traditional industries through technology linkages and state-supported supplier–buyer coordination.",
+        "method_or_basis": "Systematic review of Chinese-language policy texts, with three Chinese industry case studies.",
+        "qualification": "Based on the identified original source; no claim of effects beyond evidence.",
+        "radar_relevance": "Original VIVES Discussion Paper 107 analyzes China’s industrial-policy technology linkages using China EV, textiles and semiconductors case studies; EU research funding does not establish substantive European economic-security analysis.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "not_verified",
+            "note": "Supplied https://merics.org/index%2Ephp/https%3A//merics.org/sites/default/files/2026-08/vives-discussion-paper-107-schindowski-zenglein-groenewegen-lau-dp-industrial-policy-and-technology-linkages-conceptualizing-chinas-approach-004.pdf; package source_material mode=stored_only, characters=0. External URL not independently checked in this pass."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI given in supplied URL."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Title searched online and matched original institutional record: https://feb.kuleuven.be/VIVES/publications/discussion_papers/dp-2026/industrial-policy-and-technology-linkages-conceptualizing-chinas-approach"
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Identity and substantive description checked on institution/publisher: https://feb.kuleuven.be/VIVES/publications/discussion_papers/dp-2026/industrial-policy-and-technology-linkages-conceptualizing-chinas-approach"
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Retrieved primary/institutional account: https://feb.kuleuven.be/VIVES/publications/discussion_papers/dp-2026/industrial-policy-and-technology-linkages-conceptualizing-chinas-approach"
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Cross-reference reviewed: https://merics.org/index.php/de/externe-publikation/industrial-policy-and-technology-linkages-conceptualizing-chinas-approach"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_publisher_or_institution",
+            "url": "https://feb.kuleuven.be/VIVES/publications/discussion_papers/dp-2026/industrial-policy-and-technology-linkages-conceptualizing-chinas-approach",
+            "title": "Industrial Policy and Technology Linkages: Conceptualizing China’s Approach — VIVES Discussion Paper 107",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Independent web check on 2026-10-19. Identity verified on named institutional/primary page. Primary institutional page or official registry examined."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": null,
+        "reason_code": "A_NO_SUBSTANTIVE_EU_SCOPE",
+        "reason": "Original VIVES Discussion Paper 107 analyzes China’s industrial-policy technology linkages using China EV, textiles and semiconductors case studies; EU research funding does not establish substantive European economic-security analysis."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Package does not establish a duplicate; not independently cross-checked."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-19T06:05:24Z",
+      "deep_scan_package_id": "worker-a-d1a8d3e0a826",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1177/20319525261492888": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "2088cb4e",
+      "identity_hash": "0c852774d78f30c2",
+      "reader_title": "The great state aid crusade: Ryanair's continued battle ( Condor II )",
+      "reader_more": "Institutional author announcement confirms identity and main argument; this is not evidence about EU economic-security risks or strategic industrial capacity.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "The great state aid crusade: Ryanair's continued battle ( Condor II )",
+        "main_finding": "Discusses how litigation over airline state aid may align worker and consumer interests.",
+        "method_or_basis": "Doctrinal analysis of EU state-aid case law.",
+        "qualification": "Based on the identified original source; no claim of effects beyond evidence.",
+        "radar_relevance": "Maynooth University confirms the article is a case note on EU state-aid litigation concerning Condor and worker/consumer interests, not a substantive analysis of European economic-security strategy or cross-border dependencies.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "not_verified",
+            "note": "Supplied https://doi.org/10.1177/20319525261492888; package source_material mode=stored_only, characters=0. External URL not independently checked in this pass."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_checked",
+            "note": "DOI in original job: https://doi.org/10.1177/20319525261492888; no separate DOI registry resolution conducted."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Title searched online and matched original institutional record: https://www.maynoothuniversity.ie/law/news/phd-student-eoin-coates-publishes-article-european-labour-law-journal"
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Identity and substantive description checked on institution/publisher: https://www.maynoothuniversity.ie/law/news/phd-student-eoin-coates-publishes-article-european-labour-law-journal"
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Retrieved primary/institutional account: https://www.maynoothuniversity.ie/law/news/phd-student-eoin-coates-publishes-article-european-labour-law-journal"
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Cross-reference reviewed: https://doi.org/10.1177/20319525261492888"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_publisher_or_institution",
+            "url": "https://www.maynoothuniversity.ie/law/news/phd-student-eoin-coates-publishes-article-european-labour-law-journal",
+            "title": "Maynooth University: Eoin Coates article on Condor II",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Independent web check on 2026-10-19. Identity verified on named institutional/primary page. Original article full text was not accessed; institutional account supports a narrow exclusion decision."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": null,
+        "reason_code": "A_NO_CENTRAL_ECONOMIC_SECURITY",
+        "reason": "Maynooth University confirms the article is a case note on EU state-aid litigation concerning Condor and worker/consumer interests, not a substantive analysis of European economic-security strategy or cross-border dependencies."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Package does not establish a duplicate; not independently cross-checked."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-19T06:05:24Z",
+      "deep_scan_package_id": "worker-a-d1a8d3e0a826",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:16aeef414807d356": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "bc96b5bd",
+      "identity_hash": "f221b3877c331497",
+      "reader_title": "Why uneven EU sanctions enforcement invites circumvention",
+      "reader_what": "A 2024 policy brief argues fragmented member-state enforcement creates loopholes for sanctions circumvention.",
+      "reader_why": "It advocates greater EU-level coordination to reduce jurisdiction shopping and improve sanctions effectiveness.",
+      "reader_more": "The brief discusses EU anti-circumvention listings, diplomatic outreach, national implementation and enforcement asymmetries. It calls for an EU-level sanctions enforcement framework. Its institutional reform proposal is advocacy, not an adopted policy or a proven outcome.",
+      "deep_analysis": {
+        "work_kind": "analytical policy brief",
+        "research_question": "How could the EU improve implementation and enforcement of Russia-related sanctions against circumvention?",
+        "main_finding": "Divergent national enforcement systems can create opportunities for circumvention and undermine the single market.",
+        "method_or_basis": "Legal and institutional analysis of EU sanctions framework with references to regulations, guidance and specialist research.",
+        "qualification": "The proposed centralised enforcement framework was advocacy in October 2024; the brief does not estimate a causal enforcement improvement.",
+        "radar_relevance": "Direct analysis of the EU economic-security sanctions toolbox and enforcement fragmentation.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "https://institutdelors.eu/content/uploads/2025/04/PB_241001_Sanctions_Sibona_EN_3.pdf opened and reviewed as seven-page primary policy brief."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "https://institutdelors.eu/en/publications/tackling-circumvention-of-eu-sanctions/ confirms Marco Sibona, 9 October 2024 and document identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://institutdelors.eu/content/uploads/2025/04/PB_241001_Sanctions_Sibona_EN_3.pdf",
+            "title": "Tackling Circumvention of EU Sanctions (Sibona, 2024)",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_landing_page",
+            "url": "https://institutdelors.eu/en/publications/tackling-circumvention-of-eu-sanctions/",
+            "title": "Publisher page, 9 October 2024",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Reviewed full seven-page official PDF and publisher listing. Do not confuse advocacy with actual reform."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Substantive first-party think-tank analysis addresses EU sanctions enforcement, circumvention and harmonisation."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching identical work established from supplied candidates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-19T06:05:24Z",
+      "deep_scan_package_id": "worker-b-237b475bab45",
+      "claims": [
+        {
+          "object": "sanctions.circumvention",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Jacques Delors Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2024-10-09",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The proposed centralised enforcement framework was advocacy in October 2024; the brief does not estimate a causal enforcement improvement.",
+          "text": "Marco Sibona argued that inconsistent national EU sanctions enforcement permits circumvention and called for greater centralisation of enforcement.",
+          "confidence": "high",
+          "record_key": "historical:id:16aeef414807d356",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:f221b3877c331497:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:7f7d1e4174be42c4": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "e2fad52f",
+      "identity_hash": "9c8d047b406c51ca",
+      "reader_title": "EU and IDB support responsible Latin American critical-minerals investment",
+      "reader_what": "EU and IDB announced a €6.3 million EU grant intended to leverage €120 million in IDB investments.",
+      "reader_why": "The initiative seeks better critical-mineral supply chains through governance, geological data and responsible mining.",
+      "reader_more": "The five focus countries are Argentina, Bolivia, Brazil, Chile and Ecuador. Copper, lithium and rare earths are highlighted. The funding and investment figures describe an announced initiative, not audited completed disbursements or verified supply gains.",
+      "deep_analysis": {
+        "work_kind": "official partnership announcement",
+        "research_question": "",
+        "main_finding": "EU and IDB announced a critical raw materials partnership backed by a €6.3 million EU grant intended to leverage €120 million in IDB investments.",
+        "method_or_basis": "Matching announcements issued by EEAS and the Inter-American Development Bank.",
+        "qualification": "Investment mobilisation and supply-chain gains are intended future effects; no completed outcome is demonstrated.",
+        "radar_relevance": "Direct EU–Latin America strategic critical-raw-materials partnership and proposed mining value-chain investments.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "https://www.eeas.europa.eu/delegations/chile/global-gateway-new-eu-idb-initiative-boost-sustainable-critical-raw-materials-practices-latin_en served dated matching primary announcement."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "https://www.iadb.org/en/news/global-gateway-new-eu-idb-initiative-boost-sustainable-critical-raw-materials-practices-latin independently confirms grant and planned IDB investment."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_eu_announcement",
+            "url": "https://www.eeas.europa.eu/delegations/chile/global-gateway-new-eu-idb-initiative-boost-sustainable-critical-raw-materials-practices-latin_en",
+            "title": "EEAS Chile announcement, 9 November 2024",
+            "evidence_used": true
+          },
+          {
+            "kind": "partner_official_announcement",
+            "url": "https://www.iadb.org/en/news/global-gateway-new-eu-idb-initiative-boost-sustainable-critical-raw-materials-practices-latin",
+            "title": "Inter-American Development Bank announcement",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Both parties published matching substantive announcements. Figures are objectives rather than demonstrated expenditure or supply outcomes."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Joint EU–IDB mineral supply-chain initiative has a direct EU third-country critical-raw-material partnership and investment mechanism."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching identical work established from supplied candidates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-19T06:05:25Z",
+      "deep_scan_package_id": "worker-b-237b475bab45",
+      "claims": [
+        {
+          "object": "partnership.critical_minerals",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union and Inter-American Development Bank",
+            "class": "eu_body"
+          },
+          "mechanism": "partners",
+          "direction": "expands",
+          "status": "announced",
+          "status_date": "2024-11-09",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "Argentina",
+              "Bolivia",
+              "Brazil",
+              "Chile",
+              "Ecuador"
+            ]
+          },
+          "kind": "action",
+          "qualification": "Investment mobilisation and supply-chain gains are intended future effects; no completed outcome is demonstrated.",
+          "text": "The EU and IDB announced a €6.3 million EU-backed critical-minerals initiative intended to leverage €120 million in IDB investments in five Latin American countries.",
+          "confidence": "high",
+          "record_key": "historical:id:7f7d1e4174be42c4",
+          "merit": 97,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:9c8d047b406c51ca:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:802e8c5bb8560037": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "cb97ddcc",
+      "identity_hash": "d83d77c614433ce6",
+      "reader_title": "What the EU–Namibia hydrogen partnership still needs",
+      "reader_what": "EU–Namibia hydrogen partnership faces unresolved financing, export infrastructure, trading rules and affordability challenges.",
+      "reader_why": "The partnership could diversify European low-carbon energy imports, but promised supply is not yet secured.",
+      "reader_more": "ECFR analyses the October 2023 operational roadmap and competing European and Namibian priorities. It urges clearer import-export terms, risk capital, infrastructure investment and workable regulation. The author describes anticipated supply and financing needs rather than measuring realised exports.",
+      "deep_analysis": {
+        "work_kind": "think-tank policy commentary",
+        "research_question": "",
+        "main_finding": "EU–Namibia hydrogen partnership faces unresolved financing, export infrastructure, trading rules and affordability challenges.",
+        "method_or_basis": "Full ECFR article by Chigozie Nweke-Eze, 24 November 2023",
+        "qualification": "Policy commentary makes conditional recommendations; financing commitments do not prove the projects were delivered.",
+        "radar_relevance": "Direct EU third-country energy-security partnership, production capacity and investment risk.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Visited https://ecfr.eu/article/not-just-hot-air-realising-the-potential-of-the-eu-namibia-green-hydrogen-partnership/; compared source with package material."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Confirmed first-party publication and substantive content at https://ecfr.eu/article/not-just-hot-air-realising-the-potential-of-the-eu-namibia-green-hydrogen-partnership/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecfr.eu/article/not-just-hot-air-realising-the-potential-of-the-eu-namibia-green-hydrogen-partnership/",
+            "title": "Not just hot air: Realising the potential of the EU-Namibia green hydrogen partnership",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Work identity and content checked against package first-party source and independent web retrieval where available; assertions distinguished from established effects."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "First-party analysis examines EU energy import diversification through Namibia and the constraints on joint hydrogen production and trade."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-19T06:05:25Z",
+      "deep_scan_package_id": "worker-b-237b475bab45",
+      "claims": [
+        {
+          "object": "econsec.energy_transition",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Chigozie Nweke-Eze",
+            "class": "other"
+          },
+          "mechanism": "advocates",
+          "direction": "becomes_conditional",
+          "status": "observation",
+          "status_date": "2023-11-24",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "NA"
+            ]
+          },
+          "kind": "advocacy",
+          "text": "ECFR commentary argues EU–Namibia hydrogen trade depends on clearer investment, transport and regulatory conditions.",
+          "confidence": "medium",
+          "qualification": "Policy commentary makes conditional recommendations; financing commitments do not prove the projects were delivered.",
+          "record_key": "historical:id:802e8c5bb8560037",
+          "merit": 74,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:d83d77c614433ce6:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:93e1a10386196107": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "306c8099",
+      "identity_hash": "d9e6be86cc9cadc6",
+      "reader_title": "Huawei moves from 5G equipment toward data services",
+      "reader_what": "Huawei diversified beyond restricted 5G network hardware toward cloud, applications and data services, creating new European exposure questions.",
+      "reader_why": "Vendor restrictions on 5G equipment may leave digital-infrastructure dependence through other services.",
+      "reader_more": "Vladimir Shopov’s 2022 ECFR commentary traces Huawei’s strategy after Western restrictions on network equipment. The piece highlights the expansion of commercial activity in digital platforms and services. The implications for Europe are analytical warnings, not proof of a specific security breach.",
+      "deep_analysis": {
+        "work_kind": "think-tank policy commentary",
+        "research_question": "",
+        "main_finding": "Huawei diversified beyond restricted 5G network hardware toward cloud, applications and data services, creating new European exposure questions.",
+        "method_or_basis": "Complete ECFR commentary, dated 22 December 2022",
+        "qualification": "The extent of subsequent EU exposure and security consequences are not quantified or independently demonstrated.",
+        "radar_relevance": "China-related technology and critical digital infrastructure dependency in European markets.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Visited https://ecfr.eu/article/from-5g-hardware-to-apps-and-data-how-huawei-has-adapted-to-survive/; compared source with package material."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Confirmed first-party publication and substantive content at https://ecfr.eu/article/from-5g-hardware-to-apps-and-data-how-huawei-has-adapted-to-survive/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecfr.eu/article/from-5g-hardware-to-apps-and-data-how-huawei-has-adapted-to-survive/",
+            "title": "From 5G hardware to apps and data: How Huawei has adapted to survive",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Work identity and content checked against package first-party source and independent web retrieval where available; assertions distinguished from established effects."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "ECFR examines Europe’s infrastructure and data-platform exposure arising from Huawei’s commercial repositioning."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-19T06:05:25Z",
+      "deep_scan_package_id": "worker-b-237b475bab45",
+      "claims": [
+        {
+          "object": "econsec.trade_security",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Vladimir Shopov",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2022-12-22",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "CN"
+            ]
+          },
+          "kind": "diagnosis",
+          "text": "ECFR warns that Huawei’s shift from 5G equipment towards data services complicates European supplier-risk policy.",
+          "confidence": "medium",
+          "qualification": "The extent of subsequent EU exposure and security consequences are not quantified or independently demonstrated.",
+          "record_key": "historical:id:93e1a10386196107",
+          "merit": 74,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:d9e6be86cc9cadc6:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-10-16T08:30:52Z"
+  "claims_updated_at": "2026-10-19T06:05:25Z"
 }

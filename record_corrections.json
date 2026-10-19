@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-record-corrections-v1",
-  "updated_at": "2026-10-16T08:30:52Z",
+  "updated_at": "2026-10-19T06:05:25Z",
   "records": {
     "link:https://doi.org/10.1080/09662839.2026.2709844": {
       "fields": {
@@ -2113,6 +2113,90 @@
       ],
       "updated_at": "2026-10-15T08:30:18Z",
       "deep_scan_package_id": "worker-b-991334c152cd"
+    },
+    "link:https://www.hertie-school.org/en/international-security/research/grand-strategy": {
+      "fields": {
+        "source": "Hertie School – Centre for International Security",
+        "type": "research programme page"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "First-party Hertie School page is an institutional research-area listing, not a Jacques Delors Centre policy paper.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "evidence": [
+        "https://www.hertie-school.org/en/international-security/research/grand-strategy"
+      ],
+      "updated_at": "2026-10-19T06:05:24Z",
+      "deep_scan_package_id": "worker-a-d1a8d3e0a826"
+    },
+    "historical:id:16aeef414807d356": {
+      "fields": {
+        "date": "2024-10-09",
+        "title": "Tackling Circumvention of EU Sanctions",
+        "authors": "Marco Sibona",
+        "type": "policy brief"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Issuer’s dated 9 October 2024 policy brief identifies author and publication type; scanner had default 1 January 2024.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://institutdelors.eu/content/uploads/2025/04/PB_241001_Sanctions_Sibona_EN_3.pdf",
+        "https://institutdelors.eu/en/publications/tackling-circumvention-of-eu-sanctions/"
+      ],
+      "updated_at": "2026-10-19T06:05:24Z",
+      "deep_scan_package_id": "worker-b-237b475bab45"
+    },
+    "historical:id:7f7d1e4174be42c4": {
+      "fields": {
+        "date": "2024-11-09"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "EEAS page records 09.11.2024, not scanner’s default 2024-01-01.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://www.eeas.europa.eu/delegations/chile/global-gateway-new-eu-idb-initiative-boost-sustainable-critical-raw-materials-practices-latin_en",
+        "https://www.iadb.org/en/news/global-gateway-new-eu-idb-initiative-boost-sustainable-critical-raw-materials-practices-latin"
+      ],
+      "updated_at": "2026-10-19T06:05:25Z",
+      "deep_scan_package_id": "worker-b-237b475bab45"
+    },
+    "historical:id:802e8c5bb8560037": {
+      "fields": {
+        "authors": "Chigozie Nweke-Eze",
+        "type": "policy commentary"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "ECFR byline and content identify an authored commentary, not an official bilateral roadmap.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://ecfr.eu/article/not-just-hot-air-realising-the-potential-of-the-eu-namibia-green-hydrogen-partnership/"
+      ],
+      "updated_at": "2026-10-19T06:05:25Z",
+      "deep_scan_package_id": "worker-b-237b475bab45"
+    },
+    "historical:id:93e1a10386196107": {
+      "fields": {
+        "authors": "Vladimir Shopov",
+        "date": "2022-12-22",
+        "type": "policy commentary"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "ECFR publication page supplies named author and publication date.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://ecfr.eu/article/from-5g-hardware-to-apps-and-data-how-huawei-has-adapted-to-survive/"
+      ],
+      "updated_at": "2026-10-19T06:05:25Z",
+      "deep_scan_package_id": "worker-b-237b475bab45"
     }
   }
 }
