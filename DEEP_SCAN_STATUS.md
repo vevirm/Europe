@@ -7,38 +7,38 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **2112** (Main **869** + Historical **1243**)
-- Automatic queue still needing V2 verification: **346** (Main **180** + Historical **166**)
-- Currently assigned to workers: **72** (Main **66** + Historical **6**)
+- Automatic queue still needing V2 verification: **403** (Main **205** + Historical **198**)
+- Currently assigned to workers: **72** (Main **28** + Historical **44**)
 - Bounded access-recovery retries still eligible: **58**
 - Terminally dropped after failed scans: **121**
-- Automatic queue pending and not yet assigned: **274**
+- Automatic queue pending and not yet assigned: **331**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-d35e4460a455`
+- Current package: `worker-a-d1a8d3e0a826`
 - Assigned unresolved records: **36**
-  1. `link:https://news.google.com/rss/articles/CBMihAFBVV95cUxNdTAtc18yN2tQOW8zQUN2UG8xaXlPOVFPS3N1NzhfanBCa1l0SF9IZklyeUE4bWtTZHlyR3R5TXR3Ukl3VWJ3X0xzWXV2RlNnZHZNTXRSamF2U0tVdk5rSWtldnpuSFFwMGNOcEJkMzFkUjRTc1lFYjQ2UmlrZWpJSlNVU1Q?oc=5` — UK urged to impose tariffs on Chinese chemical at centre of EU trade dispute
-  2. `link:https://news.google.com/rss/articles/CBMixgFBVV95cUxPVnZ2QmdiMGxmVVctZ0pTa1p5S0gzbDBBM25WV3g3YkNGMzZqdU9rTnVUamZrUF9CNVRuMDF3SktiYUcwTWxTbUJQYXhCLUo1UHE3LWYwbmk3ZUlJZzdhaUQ0VmV4c0k3RUU5MEQ2czN5Qzh6eTJUOTgxS19wSkZHcXQteWxLSmhrTU4yTXpUZHdMR19tVTZkVnlwWjJMNHJKMUM2bHBmZ0gyV2U4dlo5Z1NVc19iWW50RjFHQ1JkUmRGZmVZT0E?oc=5` — Sanctions in February, handshakes in September: EU’s flip-flop Iran policy is putting lives at risk
-  3. `link:https://news.google.com/rss/articles/CBMi3AFBVV95cUxOZXUyTjZhZzM1d3k5NEJ4Vzc1WWdJdjVXbXBmS3VIYzVEeXVNTjlFNHlQd3JtYks5T25sNEZkUTRFLUttNTRzaENIbnVkaGJKVXFaSzgtdWhoYlBlSFhaSTJUY3hPeVlFbXdqLXQtLXVSRHVzTXlBWGNKN2VYd1VCaE0weTUyLXFXREhKY2FLWm9NWTltUlFvMnlDcFNxVlZFeGJwUHJpcmxEUFhnQXdjdWxGQ1lndUhuWVVHdVRlSERvaVdFOGc0cUxxeTZvTGczbUxlb3JNWUI1SFZJ?oc=5` — Traineeship in Quantitative Analysis - Directorate General Market Infrastructure and Payments - Job Search | European Central Bank
-  4. `link:https://news.google.com/rss/articles/CBMingFBVV95cUxNQWdpeGlycndJdk1pU19KcDRRLXdVdFFsSzdCV2xmSmdyb2VkM05UVWRnUTF6TlhMVUFJY0hoOEkwZEhYQWRXWUF6Tlhob2JpQzJscWVYQnNrc00xbDY4YURWZWE0NWU5WFZPTzV5NlhmblM3QnQtQzc1UldUQThLTlB6dGpoRmdPSTVKVkI3NzVvUGFhQ3NIRzFSSWxEdw?oc=5` — EU Committee: more recycling of critical raw materials - Table.Briefings
-  5. `link:https://borderlex.net/2026/10/07/meps-and-industry-at-odds-as-sefcovic-heads-to-beijing/` — MEPs and industry at odds as Šefčovič heads to Beijing - Borderlex - European trade policy
-  6. `link:https://borderlex.net/2026/10/07/norway-to-cut-clothing-tariffs-to-counter-e-retail-threat/` — Norway to cut clothing tariffs to counter e-retail threat - Borderlex - European trade policy
-  7. `link:https://op.europa.eu/en/publication-detail/-/publication/8824accd-c246-11f1-988f-01aa75ed71a1/language-en` — Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on a framework of measures for strengthening the Union's semiconductor ecosystem, repealing Regulation (EU) 2023/1781 (Chips Act 2.0) [10094/26 + ADD1-6 - COM(2026) 504 final] -Opinion on the application of the Principles of Subsidiarity and Proportionality - Publications Office of the EU
-  8. `link:https://news.google.com/rss/articles/CBMilgFBVV95cUxORC1KZ2Z5dXg4QUxPT0cyazFiTFVveTgxWFBDYUpGM2Q2NVJfeDBvcXVYdWN2aGk2VGhLVE5QUFdLanN6RVJCWlM5R0Z3WXpBbGNSREd1clY4cU1DRDZaaU5UaVppRUxFX2o3b0dlOVo3dS1MQXhEUXowNl9yaVBrTF9Fem5KMDUzRGxLVWRJT0NybTAzWkE?oc=5` — EU plans strategic partnership with Kazakhstan - Table.Briefings
+  1. `link:https://doi.org/10.1007/s11135-026-02824-9` — Green manufacturing under geopolitical uncertainty: the role of artificial intelligence, environmental policy, and information in European car makers
+  2. `link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-15-BusinessEurope-Public-Consultation-European-Partnerships-HE-28-34.pdf` — Public consultation on Joint Undertakings, Art. 185 initiatives, and thematic priorities for European Partnerships under Horizon Europe 28-34 - BusinessEurope input
+  3. `link:https://www.hertie-school.org/en/international-security/research/grand-strategy` — Research Area I: Grand strategy
+  4. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=1f2d15aa-c979-11f1-8b4c-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — - AMENDMENT - 1005 - Draft report - Markéta Gregorová - (PE792.222v01-00) - European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Proposal for a regulation - (COM2026/0011 - C10-0015/2026 - 2026/0011(COD)) - Publications Office of the EU
+  5. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f616e567-c978-11f1-8b4c-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Publications Office of the EU
+  6. `link:https://doi.org/10.1111/eulj.70030` — European Ends, National Means: State Aid and the Unfinished Constitution of EU Industrial Policy
+  7. `link:https://doi.org/10.1177/01436244261492474` — Automating carbon risk assessment of residential buildings using scalable energy and emissions data in city information models
+  8. `link:https://doi.org/10.1080/08865655.2026.2749879` — Legal Borderlands and Security Unbalance: Supply Chain Diversion and End-User Obfuscation in Taiwan's Drone Exports
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-e6509620f56c`
+- Current package: `worker-b-237b475bab45`
 - Assigned unresolved records: **36**
-  1. `link:https://news.google.com/rss/articles/CBMioAFBVV95cUxQMWE0UWNBUWJqc0pGNUo4cUVPYkVzZHRvbVFMSGJDU0V3aHFnUTM5R2RaMFBFNkh2bGM5TUVKcVAzY1dka0tGRC1rbW84ckxKRlBLS2NOVVBWVk9sdi04M2VCLWxDM1phS3VCb3ZpenN0ODVFVjhzVmJNLS1vakFRYmxrdUt4d0JtdEdFenlhNzZvOWZYYmpRd1VXcjB1a2xn?oc=5` — EU rejects €26 million state aid to MAN truck manufacturer
-  2. `link:https://news.google.com/rss/articles/CBMirwFBVV95cUxPdDhGbmhkQi1JRWZXcUNzZjNsVVdIcGQ3ckZFYkRCVHFWVDFsaDRKeUtPWXZuSkIyUG0xUjRYLUt1VWxqWWpPT19PN291VTRVZjJxbURUcFB1NTM4Z3JDek1HVnlyWW91N3VfaUtRRUhwVGZscXMyenRYb1hwaElJMmk4T0k4V1VRZGVQaV9FSEpRbzFjOXZROHRmbXEzR2pWbnFPczlIaTc3V0wxTmtF?oc=5` — Women MEPs targeted by AI ‘nudifier’ apps push EU leaders to enforce December ban
-  3. `link:https://news.google.com/rss/articles/CBMizgFBVV95cUxPUHlzVEdSM0loZk1UZGEtWll0OEFHbjNRU2h3Q1hGYzF2aE9QcWYyNjdHNXNsRHJCYTZxX2FHaGdqcUdZWHlkX08wdWZvZWh6RGxtbDBpN1JtVlF6TjlHZEpWaWdwWG85ZzdBbmFmbS1odTU4akRKb1JjbC0zUEpHdkZqNTVSSUZoeS1RQjd0ZFJlb0MzcWplaXBidzAzYVA5MHdmVHJrNmcwdXo4dXhnaDFNOG1tUnhVUEFtSFdQQklRWjdzZjVGbGJ3dmhfdw?oc=5` — Data protection: the European Union and Latin America and the Caribbean strengthen cooperation in Madrid for safer data, trusted AI and better digital services - European External Action Service (EEAS)
-  4. `link:https://news.google.com/rss/articles/CBMisAFBVV95cUxOaVJTMVNQWkE1TTNwWDlQdU9HcWtfaXVVNFQ5TGREVEpWZ0FfNlZYU0tYTHoyYklqNDlrMkoxcFBLVGxNa0hTdTdmdVFWRkhQSVRwbVpmc0owZWZTUzBhYkZTbG5aMkQ5WGpmQW8wWl9sNWVpUDZrc2JrWXZ6aFJXZEVOUm41a0J2OFNjaGtPeXRtZnNpYU4yU19EbmE4MUhFaDhuTHpVeXNBaTc0X01MRg?oc=5` — Slovenian glacier could disappear in days, researchers say
-  5. `link:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMmhUOTcwcWRwMnFMa0RrZEtEQl9BQ2dXS283eFhCY2d0cjFqdmlHcHpYSWtHeWtwMC1lRmlQckNiNldKUkRpNlhvYnBpazF4dFpZX3V3VE5JTzlRT3k2VXA5OEtOQVNWdGJCVEhoZGZ2QUxqOE5HNU55aWhSaGM2LTFxRDRXQU85Q0tKUTJ2em9JRm1pTlZhRFc4dE5UNUVBYjhEZ3JnQ1k?oc=5` — Germany and France want EU storm gates for China’s trade surge
-  6. `link:https://news.google.com/rss/articles/CBMihAFBVV95cUxOUTZ0S2d5VW84WkFYeGNJNDFmc0NROXE0RkMzb0s2cEstWHZGa19lSFI5V2RrQVZxVU1Mb243OWlFcWlQMHh3ZHpncWRUdTVfWnpYdWNSSnplbUs1QUpyX3lKbFpnckNSbnVMVmZWTWdBMF9uTG1CaHIxekEyWlAxdFJ1TGE?oc=5` — EU to limit Ukraine’s access to farming subsidies if it joins bloc
-  7. `link:https://news.google.com/rss/articles/CBMihAFBVV95cUxNWlRtVGlCUl92Vk1TUHZJVmRseW9BQ0NERW9rcGNuUHFwS2tPNzg4WThPUGcyUHZYVk43S3lDcVVwckRHRllHbUV6Y3JFWmoxaG5FSWtPc0xYTHoxV1RZemJXZmhjb2c3cC01NlVzOW1JWmlCRXlsd01lNHFIX0VVeEdwQ0I?oc=5` — EU countries shoot themselves in the foot when they veto sanctions
-  8. `link:https://news.google.com/rss/articles/CBMickFVX3lxTE9TSkhHTWExVWNYeHFvbHM5UnZMU1Fqdi1sU1g5WVRXX3V3ZzhPVWtXS21hRzRKVGZISjhSSVZnNG1aYUR3WVdIb2llbWNFRVVHb094QmUya19lLUFTZEdFbEowYWZ4SjJWV29fc0JpeFhWZw?oc=5` — Science, research and innovation performance of the EU 2026 - Table.Briefings
+  1. `historical:id:16aeef414807d356` — Tackling Circumvention of EU Sanctions - Institut Jacques Delors
+  2. `historical:id:7f7d1e4174be42c4` — Global Gateway: New EU-IDB Initiative to Boost Sustainable Critical Raw Materials Practices in Latin America and the Caribbean
+  3. `historical:id:c79bc224f8b0a4e0` — Commission challenges China's anti-dumping tariffs on EU brandy at the WTO *
+  4. `historical:id:802e8c5bb8560037` — Not just hot air: Realising the potential of the EU-Namibia green hydrogen partnership – European Council on Foreign Relations
+  5. `historical:id:93e1a10386196107` — From 5G hardware to apps and data: How Huawei has adapted to survive – European Council on Foreign Relations
+  6. `historical:id:cad19010c848a9d6` — What can the EU do to address the high natural gas prices?
+  7. `historical:id:4c2d9edad50c21f6` — Partnership through crisis: The real meaning of Scholz’s Africa trip – European Council on Foreign Relations
+  8. `historical:id:66a6132fdffb4051` — Putin’s war on Ukraine: Aftershocks in the Europe-Africa partnership – European Council on Foreign Relations
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
