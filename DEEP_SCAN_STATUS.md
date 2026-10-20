@@ -8,24 +8,24 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 
 - Authoritative V2 verified: **2123** (Main **876** + Historical **1247**)
 - Automatic queue still needing V2 verification: **422** (Main **211** + Historical **211**)
-- Currently assigned to workers: **72** (Main **45** + Historical **27**)
-- Bounded access-recovery retries still eligible: **26**
+- Currently assigned to workers: **72** (Main **27** + Historical **45**)
+- Bounded access-recovery retries still eligible: **10**
 - Terminally dropped after failed scans: **122**
 - Automatic queue pending and not yet assigned: **350**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-62e2881cc764`
+- Current package: `worker-a-3f07290a4049`
 - Assigned unresolved records: **36**
-  1. `link:https://merics.org/sites/default/files/2026-04/MER-RZ-Report-Embodied-AI-260422-Web.pdf` — Embodied AI: China’s ambitious path to transform its robotics industry — recovery attempt 2/3
-  2. `link:https://merics.org/sites/default/files/2026-10/MER-Report-Cleantech-English-261015%20%281%29.pdf` — Germany and China in the cleantech sector: Between opportunities, competition and location policy — recovery attempt 2/3
-  3. `link:https://doi.org/10.1016/j.enpol.2026.115663` — The geopoliticization of Europe's energy transition: Geopolitical risk and selective transition adjustment across EU member states — recovery attempt 2/3
-  4. `link:https://doi.org/10.1177/17816858261496142` — Made in China, Powered by Europe: Mapping the EU’s Strategic Leverage Over the People’s Republic of China — recovery attempt 2/3
-  5. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=8ada360e-c83e-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Competitive by nature - Publications Office of the EU — recovery attempt 2/3
-  6. `link:https://doi.org/10.1177/09504222261458905` — High vs. Low entrepreneurial intentions: Predicting variables based on gender among European sports science students — recovery attempt 2/3
-  7. `link:https://doi.org/10.1177/17816858261495305` — Europe’s battery moment: The long game in energy security starts with accelerating deployment now — recovery attempt 2/3
-  8. `link:https://doi.org/10.1007/s43681-026-01297-8` — Perceived regulatory clarity and the depth of enterprise AI adoption: anticipatory evidence from the EU Artificial Intelligence Act — recovery attempt 2/3
+  1. `link:https://doi.org/10.1007/s11846-026-01053-6` — Configuring Artificial Intelligence capabilities for business model innovation in earth observation SMEs: insights from the European Space Industry — recovery attempt 2/3
+  2. `link:https://doi.org/10.1016/j.energy.2026.142738` — Energy crisis and the renewable-to-fossil energy balance in the European Union: Linear and nonlinear evidence, 2009–2024 — recovery attempt 2/3
+  3. `link:https://doi.org/10.48550/arxiv.2606.13215` — Mitigating business risks from renewable PPA power sourcing uncertainties for European green hydrogen production: Robust system design, regulatory adjustments and offtake flexibility — recovery attempt 2/3
+  4. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f1acebae-ca97-11f1-8b4c-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — EU funding for innovation and competitiveness - Publications Office of the EU
+  5. `link:https://doi.org/10.1007/s10342-026-01907-4` — Determinants of chemical wood pulp production in Europe: evidence from panel econometrics and machine learning
+  6. `link:https://doi.org/10.1080/14702436.2026.2664455` — Butter through guns? Mobilizing innovation for defence in the Euro-Atlantic area
+  7. `link:https://doi.org/10.48550/arxiv.2606.09190` — Planning resilient hydrogen supply chains under disruption risk — recovery attempt 2/3
+  8. `link:https://doi.org/10.1007/s40812-026-00430-2` — Harnessing space-derived technologies for agri-food system resilience — recovery attempt 2/3
   - … plus 28 more in the package manifest
 
 ### Worker B
