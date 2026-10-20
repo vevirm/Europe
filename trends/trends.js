@@ -354,9 +354,10 @@
   // When the claim-native publication snapshot predates the countervailing fields,
   // do not present its old sign-classified publications as verified.  Instead
   // show an independently sourced, explicitly provisional evidence comparison.
-  // These axes have a concrete common outcome (supply concentration or EU
-  // decision unity); pairs about generic costs versus activity are excluded.
-  const DEVELOPING_AXES=new Set(['diversify_vs_concentrate','unity_vs_fragmentation']);
+  // Evaluate every explicitly authored thematic axis against the same
+  // independent-source and quality gates. An axis with inadequate evidence
+  // is skipped; scanner-created sign pairings remain disabled.
+  const DEVELOPING_AXES=new Set(PAIRS.map(axis=>axis.id));
   function developingPairs(data,history){
     const current=currentCorpus(data), historical=historicalCorpus(history);
     const out=[];
@@ -444,7 +445,7 @@
     const verified=highOrderPairs(data);
     if(verified.length)return verified;
     // Do not promote scanner polarity labels into apparent counter-trends.
-    // Only the named, outcome-coherent developing axes may be shown provisionally.
+    // Evaluate all authored thematic axes, keeping evidence qualification gates.
     return developingPairs(data,history);
   }
   function stats(data,history){
