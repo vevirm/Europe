@@ -545,21 +545,56 @@ def _mechanism(axis: dict[str, Any], side: str) -> str:
 
 
 def _variant_story(mode: str, seed: dict[str, Any] | None, sub: dict[str, Any], x_axis: dict[str, Any], y_axis: dict[str, Any]) -> list[str]:
+    """Deterministic variety in reader copy; does not alter variant selection."""
     title = _clean(seed.get("title")) if seed else "a new development picked up by the Radar"
     mechanism = f"{_mechanism(x_axis, sub['x_side'])}, while {_mechanism(y_axis, sub['y_side'])}"
-    if mode == "shock":
-        first = f"Stress test: if the pressure visible in “{title}” becomes a larger external shock, this branch is forced to react quickly."
-        second = f"Because {mechanism}, the shock tests which dependency or buffer fails first."
-    elif mode == "opportunity":
-        first = f"Upside branch: if the opening visible in “{title}” scales, Europe gets a chance to improve its position inside this scenario."
-        second = f"Because {mechanism}, the opportunity changes who can invest, supply or cooperate without changing the parent world itself."
-    elif mode == "trend":
-        first = f"Acceleration branch: if the direction visible in “{title}” persists toward 2035, it becomes part of the operating environment."
-        second = f"Because {mechanism}, the trend reinforces one side of this sub-scenario and makes reversal harder."
-    else:
-        first = f"Failure branch: if the weakness visible in “{title}” hardens, a manageable exposure becomes a structural constraint."
-        second = f"Because {mechanism}, the cost appears as lost choice, slower adjustment or greater dependence."
-    return [first, second]
+    style = _stable(_clean(sub.get("id")) + mode) % 3
+    openings = {
+        "shock": (
+            f"Suppose the pressure behind “{title}” escalates into a larger external shock. This world would have to respond quickly.",
+            f"A sudden escalation of “{title}” would put this branch to the test.",
+            f"What if “{title}” becomes a major external disruption? This scenario would face an immediate test.",
+        ),
+        "opportunity": (
+            f"If the opening suggested by “{title}” grows, Europe could gain room to act in this world.",
+            f"An upside emerges if “{title}” develops into a larger opportunity for Europe.",
+            f"Imagine “{title}” creating a lasting opening. Europe could use it to improve its position.",
+        ),
+        "trend": (
+            f"If the development signalled by “{title}” continues to 2035, it could reshape everyday conditions in this world.",
+            f"“{title}” could become a defining feature of this branch if its present direction persists.",
+            f"A lasting shift along the lines of “{title}” would change the setting in which this scenario unfolds.",
+        ),
+        "risk": (
+            f"If the vulnerability associated with “{title}” deepens, today's exposure could become a structural constraint.",
+            f"This world becomes more fragile if the risk reflected in “{title}” materialises over time.",
+            f"A persistent weakness behind “{title}” could narrow Europe's options in this branch.",
+        ),
+    }
+    effects = {
+        "shock": (
+            f"With {mechanism}, the shock would reveal which buffers hold and which dependencies break down.",
+            f"Here, {mechanism}. That shapes how far the disruption could spread.",
+            f"The impact would depend on which protections remain effective as {mechanism}.",
+        ),
+        "opportunity": (
+            f"With {mechanism}, the opening could change who is able to invest, supply or cooperate.",
+            f"Here, {mechanism}. The gains would depend on who can turn this opening into action.",
+            f"Whether the opportunity lasts would depend partly on how investment and partnerships respond as {mechanism}.",
+        ),
+        "trend": (
+            f"With {mechanism}, that shift could reinforce this branch and make it harder to reverse.",
+            f"Here, {mechanism}. A persistent trend could gradually lock in the prevailing direction.",
+            f"The long-term effects would accumulate as {mechanism}.",
+        ),
+        "risk": (
+            f"With {mechanism}, the cost could appear in reduced choice, slower adjustment or greater dependence.",
+            f"Here, {mechanism}. A lasting weakness could leave Europe with fewer alternatives.",
+            f"The consequences could grow as {mechanism}, narrowing the scope for adjustment.",
+        ),
+    }
+    key = mode if mode in openings else "risk"
+    return [openings[key][style], effects[key][style]]
 
 
 def _variant(mode: str, seed: dict[str, Any] | None, sub: dict[str, Any], x_axis: dict[str, Any], y_axis: dict[str, Any], number: int) -> dict[str, Any]:
