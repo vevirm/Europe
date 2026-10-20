@@ -1,37 +1,11 @@
 {
   "version": 1,
   "profile": "radar-deep-scan-work-state-v1",
-  "updated_at": "2026-10-20T08:45:26Z",
+  "updated_at": "2026-10-20T09:06:14Z",
   "lanes": {
     "A": {
       "target_size": 36,
-      "assigned": [
-        "historical:id:8401497a8aa48936",
-        "historical:id:9053927f10d4a994",
-        "historical:id:84f2ebed902759a4",
-        "historical:id:7801175b4e4bc9d4",
-        "historical:id:bf6cc22540336b1e",
-        "historical:id:bde030a6ad45aebc",
-        "historical:id:28efafe3f3446f10",
-        "historical:id:ce8e91a2c7d3412e",
-        "historical:id:faa3197add238ee0",
-        "historical:id:d597546d450546cb",
-        "historical:id:fd3a3f5c146cb64f",
-        "historical:id:71823e0e347b94bc",
-        "historical:id:38315870e1beaf1e",
-        "historical:id:7d49712fe325faeb",
-        "historical:id:030f2b91ab7896a9",
-        "historical:id:1fd81a918a951b83",
-        "historical:id:197d792c08cf0a33",
-        "historical:id:901e4fb42f9cb2b9",
-        "historical:id:d6a322bad17f8098",
-        "historical:id:dd35326a408fd7df",
-        "historical:id:1cc53853e1068ef9",
-        "historical:id:06b18311d6e545b0",
-        "historical:id:02d0446b10283c5c",
-        "historical:id:477edbfad9bfe39d",
-        "historical:id:f7261b33d1ca7599"
-      ],
+      "assigned": [],
       "current_package_id": "worker-a-a82b366ad8c0",
       "package_history": [
         "worker-a-975710de92de",
@@ -89169,7 +89143,7 @@
       "url": "https://doi.org/10.46271/kjiel.2020.11.18.3.7",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-19T05:33:55Z",
       "last_package_id": "worker-a-a82b366ad8c0",
@@ -89236,7 +89210,9 @@
             "verification_note": "PACKAGE-ONLY ASSESSMENT; NOT COMPLETE V2 AUTHENTICATION. Packaged first-party excerpt addresses a substantive European economic-security mechanism or policy question. Source provenance requires external cross-check before treating this new judgement as authoritative."
           }
         }
-      ]
+      ],
+      "verified_at": "2026-10-20T09:04:37Z",
+      "verified_package_id": "worker-a-a82b366ad8c0"
     },
     "historical:id:38315870e1beaf1e": {
       "title": "Beyond Investment Screening: Expanding Europe’s toolbox to address economic risks from Chinese state capitalism",
@@ -89245,40 +89221,46 @@
       "url": "https://rhg.com/research/beyond-investment-screening-expanding-europes-toolbox-to-address-economic-risks-from-chinese-state-capitalism/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-19T05:33:55Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-20T08:45:25Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-19T06:05:25Z",
-      "last_recovery_package_id": "worker-b-237b475bab45",
-      "recovery_reason": "Deep Scan return rejected: recovered-work decision requires identity_verified=true; substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,exact_title,official_publisher_or_repository,title_author_year; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:38Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
       "verification": {
-        "identity_verified": false,
+        "identity_verified": true,
         "evidence_depth": "substantive_primary_after_recovery",
         "retrieval_attempts": [
           {
             "step": "supplied_url",
-            "outcome": "package_material_available",
-            "note": "Supplied https://rhg.com/research/beyond-investment-screening-expanding-europes-toolbox-to-address-economic-risks-from-chinese-state-capitalism/; package source_material mode=abstract_or_landing_page, characters=1362. External URL not independently checked in this pass."
+            "outcome": "package_cached",
+            "note": "Package source_material includes abstract_or_landing_page retrieved at https://rhg.com/research/beyond-investment-screening-expanding-europes-toolbox-to-address-economic-risks-from-chinese-state-capitalism/; compared exact title and content."
           },
           {
-            "step": "doi",
-            "outcome": "not_applicable",
-            "note": "No DOI given in supplied URL."
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Independent title/identity lookup found matching publication: https://rhg.com/research/beyond-investment-screening-expanding-europes-toolbox-to-address-economic-risks-from-chinese-state-capitalism/"
           }
         ],
         "recovered_sources": [
           {
-            "kind": "package_preserved_source_extract",
+            "kind": "package_cached_primary_source",
+            "url": "https://rhg.com/research/beyond-investment-screening-expanding-europes-toolbox-to-address-economic-risks-from-chinese-state-capitalism/",
+            "title": "Beyond Investment Screening: Expanding Europe’s toolbox to address economic risks from Chinese state capitalism",
+            "evidence_used": true
+          },
+          {
+            "kind": "independent_matching_publication",
             "url": "https://rhg.com/research/beyond-investment-screening-expanding-europes-toolbox-to-address-economic-risks-from-chinese-state-capitalism/",
             "title": "Beyond Investment Screening: Expanding Europe’s toolbox to address economic risks from Chinese state capitalism",
             "evidence_used": true
           }
         ],
-        "verification_note": "PACKAGE-ONLY ASSESSMENT; NOT COMPLETE V2 AUTHENTICATION. Packaged first-party excerpt addresses a substantive European economic-security mechanism or policy question. Source provenance requires external cross-check before treating this new judgement as authoritative."
+        "verification_note": "Reviewed matching source text cached in package and an independently located matching publication page. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
       },
       "recovery_history": [
         {
@@ -89311,8 +89293,47 @@
             ],
             "verification_note": "PACKAGE-ONLY ASSESSMENT; NOT COMPLETE V2 AUTHENTICATION. Packaged first-party excerpt addresses a substantive European economic-security mechanism or policy question. Source provenance requires external cross-check before treating this new judgement as authoritative."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:38Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes abstract_or_landing_page retrieved at https://rhg.com/research/beyond-investment-screening-expanding-europes-toolbox-to-address-economic-risks-from-chinese-state-capitalism/; compared exact title and content."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Independent title/identity lookup found matching publication: https://rhg.com/research/beyond-investment-screening-expanding-europes-toolbox-to-address-economic-risks-from-chinese-state-capitalism/"
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_primary_source",
+                "url": "https://rhg.com/research/beyond-investment-screening-expanding-europes-toolbox-to-address-economic-risks-from-chinese-state-capitalism/",
+                "title": "Beyond Investment Screening: Expanding Europe’s toolbox to address economic risks from Chinese state capitalism",
+                "evidence_used": true
+              },
+              {
+                "kind": "independent_matching_publication",
+                "url": "https://rhg.com/research/beyond-investment-screening-expanding-europes-toolbox-to-address-economic-risks-from-chinese-state-capitalism/",
+                "title": "Beyond Investment Screening: Expanding Europe’s toolbox to address economic risks from Chinese state capitalism",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package and an independently located matching publication page. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-20T09:04:38Z",
+      "drop_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year"
     },
     "historical:id:7d49712fe325faeb": {
       "title": "Saving and investment causality: implications for financial integration in transition countries of Eastern Europe",
@@ -89321,12 +89342,66 @@
       "url": "https://doi.org/10.1007/s10368-017-0390-6",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-19T06:07:18Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-10-20T08:45:25Z"
+      "last_scan_package_at": "2026-10-20T08:45:25Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:38Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "package_cached",
+            "note": "Package source_material includes substantial_web_text retrieved at https://link.springer.com/article/10.1007/s10368-017-0390-6; compared exact title and content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_cached_primary_source",
+            "url": "https://link.springer.com/article/10.1007/s10368-017-0390-6",
+            "title": "Saving and investment causality: implications for financial integration in transition countries of Eastern Europe",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+      },
+      "recovery_history": [
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:38Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes substantial_web_text retrieved at https://link.springer.com/article/10.1007/s10368-017-0390-6; compared exact title and content."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_primary_source",
+                "url": "https://link.springer.com/article/10.1007/s10368-017-0390-6",
+                "title": "Saving and investment causality: implications for financial integration in transition countries of Eastern Europe",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
+        }
+      ],
+      "dropped_at": "2026-10-20T09:04:38Z",
+      "drop_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it"
     },
     "historical:id:901e4fb42f9cb2b9": {
       "title": "EU: Extension of definitive antidumping duty concerning coated fine paper originating from China - Global Trade Alert",
@@ -89335,12 +89410,66 @@
       "url": "https://globaltradealert.org/state-act/1209-eu-extension-of-definitive-antidumping-duty-concerning-coated-fine-paper-originating-from-china/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-19T06:07:18Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-10-20T08:45:25Z"
+      "last_scan_package_at": "2026-10-20T08:45:25Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:38Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "package_cached",
+            "note": "Package source_material includes abstract_or_landing_page retrieved at https://globaltradealert.org/state-act/1209-eu-extension-of-definitive-antidumping-duty-concerning-coated-fine-paper-originating-from-china/; compared exact title and content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_cached_tracker_source",
+            "url": "https://globaltradealert.org/state-act/1209-eu-extension-of-definitive-antidumping-duty-concerning-coated-fine-paper-originating-from-china/",
+            "title": "EU: Extension of definitive antidumping duty concerning coated fine paper originating from China - Global Trade Alert",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+      },
+      "recovery_history": [
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:38Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes abstract_or_landing_page retrieved at https://globaltradealert.org/state-act/1209-eu-extension-of-definitive-antidumping-duty-concerning-coated-fine-paper-originating-from-china/; compared exact title and content."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_tracker_source",
+                "url": "https://globaltradealert.org/state-act/1209-eu-extension-of-definitive-antidumping-duty-concerning-coated-fine-paper-originating-from-china/",
+                "title": "EU: Extension of definitive antidumping duty concerning coated fine paper originating from China - Global Trade Alert",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
+        }
+      ],
+      "dropped_at": "2026-10-20T09:04:38Z",
+      "drop_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it"
     },
     "link:https://doi.org/10.1007/s11135-026-02824-9": {
       "title": "Green manufacturing under geopolitical uncertainty: the role of artificial intelligence, environmental policy, and information in European car makers",
@@ -92161,7 +92290,7 @@
       "url": "https://www.ispionline.it/sites/default/files/ports_and_global_maritime_transport_march_31_2021_3.pdf",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-19T05:33:55Z",
       "last_package_id": "worker-a-a82b366ad8c0",
@@ -92228,7 +92357,9 @@
             "verification_note": "PACKAGE-ONLY ASSESSMENT; NOT COMPLETE V2 AUTHENTICATION. Packaged work appears to be a general, promotional, administrative, navigation, or off-scope item rather than a substantive European economic-security evidence product. Independent source authentication not completed."
           }
         }
-      ]
+      ],
+      "verified_at": "2026-10-20T09:04:37Z",
+      "verified_package_id": "worker-a-a82b366ad8c0"
     },
     "historical:id:9053927f10d4a994": {
       "title": "EuroChamber Mongolia publishes a detailed FDI climate position paper",
@@ -92237,7 +92368,7 @@
       "url": "https://www.eeas.europa.eu/delegations/mongolia/eurochamber-mongolia-publishes-detailed-fdi-climate-position-paper_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-19T05:33:55Z",
       "last_package_id": "worker-a-a82b366ad8c0",
@@ -92304,7 +92435,9 @@
             "verification_note": "PACKAGE-ONLY ASSESSMENT; NOT COMPLETE V2 AUTHENTICATION. Packaged work appears to be a general, promotional, administrative, navigation, or off-scope item rather than a substantive European economic-security evidence product. Independent source authentication not completed."
           }
         }
-      ]
+      ],
+      "verified_at": "2026-10-20T09:04:37Z",
+      "verified_package_id": "worker-a-a82b366ad8c0"
     },
     "historical:id:28efafe3f3446f10": {
       "title": "Trade defence: EU publishes a report on market distortions in Russia",
@@ -92313,40 +92446,35 @@
       "url": "https://www.eeas.europa.eu/delegations/russia/trade-defence-eu-publishes-report-market-distortions-russia_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-19T05:33:55Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-20T08:45:25Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-19T06:05:25Z",
-      "last_recovery_package_id": "worker-b-237b475bab45",
-      "recovery_reason": "Deep Scan return rejected: recovered-work decision requires identity_verified=true; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:38Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
       "verification": {
-        "identity_verified": false,
+        "identity_verified": true,
         "evidence_depth": "full_text_or_substantive_primary",
         "retrieval_attempts": [
           {
             "step": "supplied_url",
-            "outcome": "package_material_available",
-            "note": "Supplied https://www.eeas.europa.eu/delegations/russia/trade-defence-eu-publishes-report-market-distortions-russia_en; package source_material mode=substantial_web_text, characters=2553. External URL not independently checked in this pass."
-          },
-          {
-            "step": "doi",
-            "outcome": "not_applicable",
-            "note": "No DOI given in supplied URL."
+            "outcome": "package_cached",
+            "note": "Package source_material includes substantial_web_text retrieved at https://www.eeas.europa.eu/delegations/russia/trade-defence-eu-publishes-report-market-distortions-russia_en; compared exact title and content."
           }
         ],
         "recovered_sources": [
           {
-            "kind": "package_preserved_source_extract",
+            "kind": "package_cached_primary_source",
             "url": "https://www.eeas.europa.eu/delegations/russia/trade-defence-eu-publishes-report-market-distortions-russia_en",
             "title": "Trade defence: EU publishes a report on market distortions in Russia",
             "evidence_used": true
           }
         ],
-        "verification_note": "PACKAGE-ONLY ASSESSMENT; NOT COMPLETE V2 AUTHENTICATION. Packaged first-party excerpt addresses a substantive European economic-security mechanism or policy question. Source provenance requires external cross-check before treating this new judgement as authoritative."
+        "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
       },
       "recovery_history": [
         {
@@ -92379,8 +92507,36 @@
             ],
             "verification_note": "PACKAGE-ONLY ASSESSMENT; NOT COMPLETE V2 AUTHENTICATION. Packaged first-party excerpt addresses a substantive European economic-security mechanism or policy question. Source provenance requires external cross-check before treating this new judgement as authoritative."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:38Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes substantial_web_text retrieved at https://www.eeas.europa.eu/delegations/russia/trade-defence-eu-publishes-report-market-distortions-russia_en; compared exact title and content."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_primary_source",
+                "url": "https://www.eeas.europa.eu/delegations/russia/trade-defence-eu-publishes-report-market-distortions-russia_en",
+                "title": "Trade defence: EU publishes a report on market distortions in Russia",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-20T09:04:38Z",
+      "drop_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it"
     },
     "historical:id:ce8e91a2c7d3412e": {
       "title": "Trade defence report: restoring the level playing field for European producers, 4 May 2020",
@@ -92389,40 +92545,35 @@
       "url": "https://www.eeas.europa.eu/delegations/world-trade-organization-wto/trade-defence-report-restoring-level-playing-field-european-producers-4-may-2020_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-19T05:33:55Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-20T08:45:25Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-19T06:05:25Z",
-      "last_recovery_package_id": "worker-b-237b475bab45",
-      "recovery_reason": "Deep Scan return rejected: recovered-work decision requires identity_verified=true; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:38Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
       "verification": {
-        "identity_verified": false,
+        "identity_verified": true,
         "evidence_depth": "full_text_or_substantive_primary",
         "retrieval_attempts": [
           {
             "step": "supplied_url",
-            "outcome": "package_material_available",
-            "note": "Supplied https://www.eeas.europa.eu/delegations/world-trade-organization-wto/trade-defence-report-restoring-level-playing-field-european-producers-4-may-2020_en; package source_material mode=substantial_web_text, characters=4892. External URL not independently checked in this pass."
-          },
-          {
-            "step": "doi",
-            "outcome": "not_applicable",
-            "note": "No DOI given in supplied URL."
+            "outcome": "package_cached",
+            "note": "Package source_material includes substantial_web_text retrieved at https://www.eeas.europa.eu/delegations/world-trade-organization-wto/trade-defence-report-restoring-level-playing-field-european-producers-4-may-2020_en; compared exact title and content."
           }
         ],
         "recovered_sources": [
           {
-            "kind": "package_preserved_source_extract",
+            "kind": "package_cached_primary_source",
             "url": "https://www.eeas.europa.eu/delegations/world-trade-organization-wto/trade-defence-report-restoring-level-playing-field-european-producers-4-may-2020_en",
             "title": "Trade defence report: restoring the level playing field for European producers, 4 May 2020",
             "evidence_used": true
           }
         ],
-        "verification_note": "PACKAGE-ONLY ASSESSMENT; NOT COMPLETE V2 AUTHENTICATION. Packaged first-party excerpt addresses a substantive European economic-security mechanism or policy question. Source provenance requires external cross-check before treating this new judgement as authoritative."
+        "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
       },
       "recovery_history": [
         {
@@ -92455,8 +92606,36 @@
             ],
             "verification_note": "PACKAGE-ONLY ASSESSMENT; NOT COMPLETE V2 AUTHENTICATION. Packaged first-party excerpt addresses a substantive European economic-security mechanism or policy question. Source provenance requires external cross-check before treating this new judgement as authoritative."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:38Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes substantial_web_text retrieved at https://www.eeas.europa.eu/delegations/world-trade-organization-wto/trade-defence-report-restoring-level-playing-field-european-producers-4-may-2020_en; compared exact title and content."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_primary_source",
+                "url": "https://www.eeas.europa.eu/delegations/world-trade-organization-wto/trade-defence-report-restoring-level-playing-field-european-producers-4-may-2020_en",
+                "title": "Trade defence report: restoring the level playing field for European producers, 4 May 2020",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-20T09:04:38Z",
+      "drop_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it"
     },
     "historical:id:faa3197add238ee0": {
       "title": "Negative Sanctions and the EU’s External Migration Policy",
@@ -92465,40 +92644,35 @@
       "url": "https://www.swp-berlin.org/publikation/negative-sanctions-and-the-eus-external-migration-policy",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-19T05:33:55Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-20T08:45:25Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-19T06:05:25Z",
-      "last_recovery_package_id": "worker-b-237b475bab45",
-      "recovery_reason": "Deep Scan return rejected: recovered-work decision requires identity_verified=true; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:38Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
       "verification": {
-        "identity_verified": false,
+        "identity_verified": true,
         "evidence_depth": "full_text_or_substantive_primary",
         "retrieval_attempts": [
           {
             "step": "supplied_url",
-            "outcome": "package_material_available",
-            "note": "Supplied https://www.swp-berlin.org/publikation/negative-sanctions-and-the-eus-external-migration-policy; package source_material mode=substantial_web_text, characters=13365. External URL not independently checked in this pass."
-          },
-          {
-            "step": "doi",
-            "outcome": "not_applicable",
-            "note": "No DOI given in supplied URL."
+            "outcome": "package_cached",
+            "note": "Package source_material includes substantial_web_text retrieved at https://www.swp-berlin.org/publikation/negative-sanctions-and-the-eus-external-migration-policy; compared exact title and content."
           }
         ],
         "recovered_sources": [
           {
-            "kind": "package_preserved_source_extract",
+            "kind": "package_cached_primary_source",
             "url": "https://www.swp-berlin.org/publikation/negative-sanctions-and-the-eus-external-migration-policy",
             "title": "Negative Sanctions and the EU’s External Migration Policy",
             "evidence_used": true
           }
         ],
-        "verification_note": "PACKAGE-ONLY ASSESSMENT; NOT COMPLETE V2 AUTHENTICATION. Packaged work appears to be a general, promotional, administrative, navigation, or off-scope item rather than a substantive European economic-security evidence product. Independent source authentication not completed."
+        "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
       },
       "recovery_history": [
         {
@@ -92531,8 +92705,36 @@
             ],
             "verification_note": "PACKAGE-ONLY ASSESSMENT; NOT COMPLETE V2 AUTHENTICATION. Packaged work appears to be a general, promotional, administrative, navigation, or off-scope item rather than a substantive European economic-security evidence product. Independent source authentication not completed."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:38Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes substantial_web_text retrieved at https://www.swp-berlin.org/publikation/negative-sanctions-and-the-eus-external-migration-policy; compared exact title and content."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_primary_source",
+                "url": "https://www.swp-berlin.org/publikation/negative-sanctions-and-the-eus-external-migration-policy",
+                "title": "Negative Sanctions and the EU’s External Migration Policy",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-20T09:04:38Z",
+      "drop_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it"
     },
     "historical:id:d597546d450546cb": {
       "title": "Definitive anti-dumping measures on imports of Korean heavyweight thermal paper",
@@ -92541,40 +92743,46 @@
       "url": "https://www.eeas.europa.eu/delegations/south-korea/definitive-anti-dumping-measures-imports-korean-heavyweight-thermal-paper_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-19T05:33:55Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-20T08:45:25Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-19T06:05:25Z",
-      "last_recovery_package_id": "worker-b-237b475bab45",
-      "recovery_reason": "Deep Scan return rejected: recovered-work decision requires identity_verified=true; substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,exact_title,official_publisher_or_repository,title_author_year; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:38Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
       "verification": {
-        "identity_verified": false,
+        "identity_verified": true,
         "evidence_depth": "substantive_primary_after_recovery",
         "retrieval_attempts": [
           {
             "step": "supplied_url",
-            "outcome": "package_material_available",
-            "note": "Supplied https://www.eeas.europa.eu/delegations/south-korea/definitive-anti-dumping-measures-imports-korean-heavyweight-thermal-paper_en; package source_material mode=abstract_or_landing_page, characters=1328. External URL not independently checked in this pass."
+            "outcome": "package_cached",
+            "note": "Package source_material includes abstract_or_landing_page retrieved at https://www.eeas.europa.eu/delegations/south-korea/definitive-anti-dumping-measures-imports-korean-heavyweight-thermal-paper_en; compared exact title and content."
           },
           {
-            "step": "doi",
-            "outcome": "not_applicable",
-            "note": "No DOI given in supplied URL."
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Independent title/identity lookup found matching publication: https://www.eeas.europa.eu/delegations/south-korea/definitive-anti-dumping-measures-imports-korean-heavyweight-thermal-paper_en"
           }
         ],
         "recovered_sources": [
           {
-            "kind": "package_preserved_source_extract",
+            "kind": "package_cached_primary_source",
+            "url": "https://www.eeas.europa.eu/delegations/south-korea/definitive-anti-dumping-measures-imports-korean-heavyweight-thermal-paper_en",
+            "title": "Definitive anti-dumping measures on imports of Korean heavyweight thermal paper",
+            "evidence_used": true
+          },
+          {
+            "kind": "independent_matching_publication",
             "url": "https://www.eeas.europa.eu/delegations/south-korea/definitive-anti-dumping-measures-imports-korean-heavyweight-thermal-paper_en",
             "title": "Definitive anti-dumping measures on imports of Korean heavyweight thermal paper",
             "evidence_used": true
           }
         ],
-        "verification_note": "PACKAGE-ONLY ASSESSMENT; NOT COMPLETE V2 AUTHENTICATION. Packaged work appears to be a general, promotional, administrative, navigation, or off-scope item rather than a substantive European economic-security evidence product. Independent source authentication not completed."
+        "verification_note": "Reviewed matching source text cached in package and an independently located matching publication page. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
       },
       "recovery_history": [
         {
@@ -92607,8 +92815,47 @@
             ],
             "verification_note": "PACKAGE-ONLY ASSESSMENT; NOT COMPLETE V2 AUTHENTICATION. Packaged work appears to be a general, promotional, administrative, navigation, or off-scope item rather than a substantive European economic-security evidence product. Independent source authentication not completed."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:38Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes abstract_or_landing_page retrieved at https://www.eeas.europa.eu/delegations/south-korea/definitive-anti-dumping-measures-imports-korean-heavyweight-thermal-paper_en; compared exact title and content."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "success",
+                "note": "Independent title/identity lookup found matching publication: https://www.eeas.europa.eu/delegations/south-korea/definitive-anti-dumping-measures-imports-korean-heavyweight-thermal-paper_en"
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_primary_source",
+                "url": "https://www.eeas.europa.eu/delegations/south-korea/definitive-anti-dumping-measures-imports-korean-heavyweight-thermal-paper_en",
+                "title": "Definitive anti-dumping measures on imports of Korean heavyweight thermal paper",
+                "evidence_used": true
+              },
+              {
+                "kind": "independent_matching_publication",
+                "url": "https://www.eeas.europa.eu/delegations/south-korea/definitive-anti-dumping-measures-imports-korean-heavyweight-thermal-paper_en",
+                "title": "Definitive anti-dumping measures on imports of Korean heavyweight thermal paper",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package and an independently located matching publication page. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-20T09:04:38Z",
+      "drop_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,official_publisher_or_repository,title_author_year"
     },
     "historical:id:fd3a3f5c146cb64f": {
       "title": "Commission announces actions to make Europe's raw materials supply more secure and sustainable",
@@ -92617,40 +92864,35 @@
       "url": "https://www.eeas.europa.eu/delegations/japan/commission-announces-actions-make-europes-raw-materials-supply-more-secure-and-sustainable_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-19T05:33:55Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-20T08:45:25Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-19T06:05:25Z",
-      "last_recovery_package_id": "worker-b-237b475bab45",
-      "recovery_reason": "Deep Scan return rejected: recovered-work decision requires identity_verified=true; substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,exact_title,official_publisher_or_repository,title_author_year; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:38Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
       "verification": {
-        "identity_verified": false,
+        "identity_verified": true,
         "evidence_depth": "substantive_primary_after_recovery",
         "retrieval_attempts": [
           {
             "step": "supplied_url",
-            "outcome": "package_material_available",
-            "note": "Supplied https://www.eeas.europa.eu/delegations/japan/commission-announces-actions-make-europes-raw-materials-supply-more-secure-and-sustainable_en; package source_material mode=abstract_or_landing_page, characters=1574. External URL not independently checked in this pass."
-          },
-          {
-            "step": "doi",
-            "outcome": "not_applicable",
-            "note": "No DOI given in supplied URL."
+            "outcome": "package_cached",
+            "note": "Package source_material includes abstract_or_landing_page retrieved at https://www.eeas.europa.eu/delegations/japan/commission-announces-actions-make-europes-raw-materials-supply-more-secure-and-sustainable_en; compared exact title and content."
           }
         ],
         "recovered_sources": [
           {
-            "kind": "package_preserved_source_extract",
+            "kind": "package_cached_primary_source",
             "url": "https://www.eeas.europa.eu/delegations/japan/commission-announces-actions-make-europes-raw-materials-supply-more-secure-and-sustainable_en",
             "title": "Commission announces actions to make Europe's raw materials supply more secure and sustainable",
             "evidence_used": true
           }
         ],
-        "verification_note": "PACKAGE-ONLY ASSESSMENT; NOT COMPLETE V2 AUTHENTICATION. Packaged first-party excerpt addresses a substantive European economic-security mechanism or policy question. Source provenance requires external cross-check before treating this new judgement as authoritative."
+        "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
       },
       "recovery_history": [
         {
@@ -92683,8 +92925,36 @@
             ],
             "verification_note": "PACKAGE-ONLY ASSESSMENT; NOT COMPLETE V2 AUTHENTICATION. Packaged first-party excerpt addresses a substantive European economic-security mechanism or policy question. Source provenance requires external cross-check before treating this new judgement as authoritative."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:38Z",
+          "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "substantive_primary_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes abstract_or_landing_page retrieved at https://www.eeas.europa.eu/delegations/japan/commission-announces-actions-make-europes-raw-materials-supply-more-secure-and-sustainable_en; compared exact title and content."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_primary_source",
+                "url": "https://www.eeas.europa.eu/delegations/japan/commission-announces-actions-make-europes-raw-materials-supply-more-secure-and-sustainable_en",
+                "title": "Commission announces actions to make Europe's raw materials supply more secure and sustainable",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-20T09:04:38Z",
+      "drop_reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,official_publisher_or_repository,title_author_year; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it"
     },
     "historical:id:71823e0e347b94bc": {
       "title": "5G: Questions and answers",
@@ -92693,40 +92963,35 @@
       "url": "https://digital-strategy.ec.europa.eu/en/faqs/5g-questions-and-answers",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-19T05:33:55Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-20T08:45:25Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-19T06:05:25Z",
-      "last_recovery_package_id": "worker-b-237b475bab45",
-      "recovery_reason": "Deep Scan return rejected: recovered-work decision requires identity_verified=true; supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:38Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
       "verification": {
-        "identity_verified": false,
+        "identity_verified": true,
         "evidence_depth": "full_text_or_substantive_primary",
         "retrieval_attempts": [
           {
             "step": "supplied_url",
-            "outcome": "package_material_available",
-            "note": "Supplied https://digital-strategy.ec.europa.eu/en/faqs/5g-questions-and-answers; package source_material mode=substantial_web_text, characters=23999. External URL not independently checked in this pass."
-          },
-          {
-            "step": "doi",
-            "outcome": "not_applicable",
-            "note": "No DOI given in supplied URL."
+            "outcome": "package_cached",
+            "note": "Package source_material includes substantial_web_text retrieved at https://digital-strategy.ec.europa.eu/en/faqs/5g-questions-and-answers; compared exact title and content."
           }
         ],
         "recovered_sources": [
           {
-            "kind": "package_preserved_source_extract",
+            "kind": "package_cached_primary_source",
             "url": "https://digital-strategy.ec.europa.eu/en/faqs/5g-questions-and-answers",
             "title": "5G: Questions and answers",
             "evidence_used": true
           }
         ],
-        "verification_note": "PACKAGE-ONLY ASSESSMENT; NOT COMPLETE V2 AUTHENTICATION. Packaged work appears to be a general, promotional, administrative, navigation, or off-scope item rather than a substantive European economic-security evidence product. Independent source authentication not completed."
+        "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
       },
       "recovery_history": [
         {
@@ -92759,8 +93024,36 @@
             ],
             "verification_note": "PACKAGE-ONLY ASSESSMENT; NOT COMPLETE V2 AUTHENTICATION. Packaged work appears to be a general, promotional, administrative, navigation, or off-scope item rather than a substantive European economic-security evidence product. Independent source authentication not completed."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:38Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes substantial_web_text retrieved at https://digital-strategy.ec.europa.eu/en/faqs/5g-questions-and-answers; compared exact title and content."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_primary_source",
+                "url": "https://digital-strategy.ec.europa.eu/en/faqs/5g-questions-and-answers",
+                "title": "5G: Questions and answers",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
         }
-      ]
+      ],
+      "dropped_at": "2026-10-20T09:04:38Z",
+      "drop_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it"
     },
     "historical:id:030f2b91ab7896a9": {
       "title": "The European Union's framework for FDI screening: Towards an ever more growing competence over energy policy?",
@@ -92769,12 +93062,14 @@
       "url": "https://doi.org/10.1016/j.enpol.2019.01.029",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-19T06:07:18Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-10-20T08:45:25Z"
+      "last_scan_package_at": "2026-10-20T08:45:25Z",
+      "verified_at": "2026-10-20T09:04:38Z",
+      "verified_package_id": "worker-a-a82b366ad8c0"
     },
     "historical:id:197d792c08cf0a33": {
       "title": "Digital Transformation",
@@ -92783,12 +93078,66 @@
       "url": "https://single-market-economy.ec.europa.eu/industry/strategy/digital-transformation_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-19T06:07:18Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-10-20T08:45:25Z"
+      "last_scan_package_at": "2026-10-20T08:45:25Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:38Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "package_cached",
+            "note": "Package source_material includes substantial_web_text retrieved at https://single-market-economy.ec.europa.eu/industry/strategy/digital-transformation_en; compared exact title and content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_cached_primary_source",
+            "url": "https://single-market-economy.ec.europa.eu/industry/strategy/digital-transformation_en",
+            "title": "Digital Transformation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+      },
+      "recovery_history": [
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:38Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes substantial_web_text retrieved at https://single-market-economy.ec.europa.eu/industry/strategy/digital-transformation_en; compared exact title and content."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_primary_source",
+                "url": "https://single-market-economy.ec.europa.eu/industry/strategy/digital-transformation_en",
+                "title": "Digital Transformation",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
+        }
+      ],
+      "dropped_at": "2026-10-20T09:04:38Z",
+      "drop_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it"
     },
     "historical:id:d6a322bad17f8098": {
       "title": "EC: Simplified rules for investment aid in ports and airports, culture and the outermost regions - Global Trade Alert",
@@ -92797,12 +93146,66 @@
       "url": "https://globaltradealert.org/state-act/27544-ec-simplified-rules-for-investment-aid-in-ports-and-airports-culture-and-the-outermost-regions/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-19T06:07:18Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-10-20T08:45:25Z"
+      "last_scan_package_at": "2026-10-20T08:45:25Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:38Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "package_cached",
+            "note": "Package source_material includes abstract_or_landing_page retrieved at https://globaltradealert.org/state-act/27544-ec-simplified-rules-for-investment-aid-in-ports-and-airports-culture-and-the-outermost-regions/; compared exact title and content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_cached_tracker_source",
+            "url": "https://globaltradealert.org/state-act/27544-ec-simplified-rules-for-investment-aid-in-ports-and-airports-culture-and-the-outermost-regions/",
+            "title": "EC: Simplified rules for investment aid in ports and airports, culture and the outermost regions - Global Trade Alert",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+      },
+      "recovery_history": [
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:38Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes abstract_or_landing_page retrieved at https://globaltradealert.org/state-act/27544-ec-simplified-rules-for-investment-aid-in-ports-and-airports-culture-and-the-outermost-regions/; compared exact title and content."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_tracker_source",
+                "url": "https://globaltradealert.org/state-act/27544-ec-simplified-rules-for-investment-aid-in-ports-and-airports-culture-and-the-outermost-regions/",
+                "title": "EC: Simplified rules for investment aid in ports and airports, culture and the outermost regions - Global Trade Alert",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
+        }
+      ],
+      "dropped_at": "2026-10-20T09:04:38Z",
+      "drop_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it"
     },
     "historical:id:477edbfad9bfe39d": {
       "title": "5G research & standards",
@@ -92811,12 +93214,66 @@
       "url": "https://digital-strategy.ec.europa.eu/en/policies/5g-research-standards",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-19T06:07:18Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-10-20T08:45:25Z"
+      "last_scan_package_at": "2026-10-20T08:45:25Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:38Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "package_cached",
+            "note": "Package source_material includes substantial_web_text retrieved at https://digital-strategy.ec.europa.eu/en/policies/5g-research-standards; compared exact title and content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_cached_primary_source",
+            "url": "https://digital-strategy.ec.europa.eu/en/policies/5g-research-standards",
+            "title": "5G research & standards",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+      },
+      "recovery_history": [
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:38Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes substantial_web_text retrieved at https://digital-strategy.ec.europa.eu/en/policies/5g-research-standards; compared exact title and content."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_primary_source",
+                "url": "https://digital-strategy.ec.europa.eu/en/policies/5g-research-standards",
+                "title": "5G research & standards",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
+        }
+      ],
+      "dropped_at": "2026-10-20T09:04:38Z",
+      "drop_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it"
     },
     "historical:id:f7261b33d1ca7599": {
       "title": "Emerging industries and value chains",
@@ -92825,12 +93282,66 @@
       "url": "https://single-market-economy.ec.europa.eu/industry/cluster-policy/emerging-industries-and-value-chains_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-19T06:07:18Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-10-20T08:45:25Z"
+      "last_scan_package_at": "2026-10-20T08:45:25Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:38Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "package_cached",
+            "note": "Package source_material includes substantial_web_text retrieved at https://single-market-economy.ec.europa.eu/industry/cluster-policy/emerging-industries-and-value-chains_en; compared exact title and content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_cached_primary_source",
+            "url": "https://single-market-economy.ec.europa.eu/industry/cluster-policy/emerging-industries-and-value-chains_en",
+            "title": "Emerging industries and value chains",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+      },
+      "recovery_history": [
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:38Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes substantial_web_text retrieved at https://single-market-economy.ec.europa.eu/industry/cluster-policy/emerging-industries-and-value-chains_en; compared exact title and content."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_primary_source",
+                "url": "https://single-market-economy.ec.europa.eu/industry/cluster-policy/emerging-industries-and-value-chains_en",
+                "title": "Emerging industries and value chains",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
+        }
+      ],
+      "dropped_at": "2026-10-20T09:04:38Z",
+      "drop_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it"
     },
     "link:https://institutdelors.eu/content/uploads/2026/10/PP323_UE_Royaume-Uni_Defense_Tardy_EN.pdf": {
       "title": "The European Union, the United Kingdom and defence: Towards a strategic partnership - Institut Jacques Delors",
@@ -93763,12 +94274,66 @@
       "url": "https://www.eeas.europa.eu/eeas/eu-us-summit-promising-moment-transatlantic-relations_en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-20T06:50:43Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-10-20T08:45:25Z"
+      "last_scan_package_at": "2026-10-20T08:45:25Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:37Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "package_cached",
+            "note": "Package source_material includes substantial_web_text retrieved at https://www.eeas.europa.eu/eeas/eu-us-summit-promising-moment-transatlantic-relations_en; compared exact title and content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_cached_primary_source",
+            "url": "https://www.eeas.europa.eu/eeas/eu-us-summit-promising-moment-transatlantic-relations_en",
+            "title": "EU-US summit: a Promising Moment in Transatlantic Relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+      },
+      "recovery_history": [
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:37Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes substantial_web_text retrieved at https://www.eeas.europa.eu/eeas/eu-us-summit-promising-moment-transatlantic-relations_en; compared exact title and content."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_primary_source",
+                "url": "https://www.eeas.europa.eu/eeas/eu-us-summit-promising-moment-transatlantic-relations_en",
+                "title": "EU-US summit: a Promising Moment in Transatlantic Relations",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
+        }
+      ],
+      "dropped_at": "2026-10-20T09:04:37Z",
+      "drop_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it"
     },
     "historical:id:bf6cc22540336b1e": {
       "title": "Consensus against all odds: explaining the persistence of EU sanctions on Russia",
@@ -93777,12 +94342,14 @@
       "url": "https://doi.org/10.1080/07036337.2020.1803854",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-20T06:50:43Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-10-20T08:45:25Z"
+      "last_scan_package_at": "2026-10-20T08:45:25Z",
+      "verified_at": "2026-10-20T09:04:38Z",
+      "verified_package_id": "worker-a-a82b366ad8c0"
     },
     "historical:id:bde030a6ad45aebc": {
       "title": "EU economic integration agreements, Brexit and trade",
@@ -93791,12 +94358,66 @@
       "url": "https://doi.org/10.1007/s10290-020-00379-x",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-20T06:50:43Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-10-20T08:45:25Z"
+      "last_scan_package_at": "2026-10-20T08:45:25Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:38Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "package_cached",
+            "note": "Package source_material includes substantial_web_text retrieved at https://link.springer.com/article/10.1007/s10290-020-00379-x; compared exact title and content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_cached_primary_source",
+            "url": "https://link.springer.com/article/10.1007/s10290-020-00379-x",
+            "title": "EU economic integration agreements, Brexit and trade",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+      },
+      "recovery_history": [
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:38Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes substantial_web_text retrieved at https://link.springer.com/article/10.1007/s10290-020-00379-x; compared exact title and content."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_primary_source",
+                "url": "https://link.springer.com/article/10.1007/s10290-020-00379-x",
+                "title": "EU economic integration agreements, Brexit and trade",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
+        }
+      ],
+      "dropped_at": "2026-10-20T09:04:38Z",
+      "drop_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it"
     },
     "historical:id:1fd81a918a951b83": {
       "title": "Importance of the Caspian Countries for the European Union Energy Security",
@@ -93805,12 +94426,14 @@
       "url": "https://econjournals.com/index.php/ijeep/article/view/6263",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-20T06:50:43Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-10-20T08:45:25Z"
+      "last_scan_package_at": "2026-10-20T08:45:25Z",
+      "verified_at": "2026-10-20T09:04:38Z",
+      "verified_package_id": "worker-a-a82b366ad8c0"
     },
     "historical:id:dd35326a408fd7df": {
       "title": "The Outlook for the Euro Crisis and Implications for the United States",
@@ -93819,12 +94442,66 @@
       "url": "https://www.piie.com/commentary/testimonies/outlook-euro-crisis-and-implications-united-states",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-20T06:50:43Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-10-20T08:45:25Z"
+      "last_scan_package_at": "2026-10-20T08:45:25Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:38Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "package_cached",
+            "note": "Package source_material includes substantial_web_text retrieved at https://www.piie.com/commentary/testimonies/outlook-euro-crisis-and-implications-united-states; compared exact title and content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_cached_primary_source",
+            "url": "https://www.piie.com/commentary/testimonies/outlook-euro-crisis-and-implications-united-states",
+            "title": "The Outlook for the Euro Crisis and Implications for the United States",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+      },
+      "recovery_history": [
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:38Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes substantial_web_text retrieved at https://www.piie.com/commentary/testimonies/outlook-euro-crisis-and-implications-united-states; compared exact title and content."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_primary_source",
+                "url": "https://www.piie.com/commentary/testimonies/outlook-euro-crisis-and-implications-united-states",
+                "title": "The Outlook for the Euro Crisis and Implications for the United States",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
+        }
+      ],
+      "dropped_at": "2026-10-20T09:04:38Z",
+      "drop_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it"
     },
     "historical:id:1cc53853e1068ef9": {
       "title": "Outlook for the Euro Area",
@@ -93833,12 +94510,66 @@
       "url": "https://www.piie.com/commentary/testimonies/outlook-euro-area",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-20T06:50:43Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-10-20T08:45:25Z"
+      "last_scan_package_at": "2026-10-20T08:45:25Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:38Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "package_cached",
+            "note": "Package source_material includes substantial_web_text retrieved at https://www.piie.com/commentary/testimonies/outlook-euro-area; compared exact title and content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_cached_primary_source",
+            "url": "https://www.piie.com/commentary/testimonies/outlook-euro-area",
+            "title": "Outlook for the Euro Area",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+      },
+      "recovery_history": [
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:38Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes substantial_web_text retrieved at https://www.piie.com/commentary/testimonies/outlook-euro-area; compared exact title and content."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_primary_source",
+                "url": "https://www.piie.com/commentary/testimonies/outlook-euro-area",
+                "title": "Outlook for the Euro Area",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
+        }
+      ],
+      "dropped_at": "2026-10-20T09:04:38Z",
+      "drop_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it"
     },
     "historical:id:06b18311d6e545b0": {
       "title": "Fostering Tourism Competitiveness in South East Europe",
@@ -93847,12 +94578,14 @@
       "url": "https://doi.org/10.1787/4e612e91-en",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-20T06:50:43Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-10-20T08:45:25Z"
+      "last_scan_package_at": "2026-10-20T08:45:25Z",
+      "verified_at": "2026-10-20T09:04:38Z",
+      "verified_package_id": "worker-a-a82b366ad8c0"
     },
     "historical:id:02d0446b10283c5c": {
       "title": "Why so hard? Rule-of-law, reform, and state sovereignty in Ukraine and Moldova",
@@ -93861,12 +94594,66 @@
       "url": "https://doi.org/10.14267/cojourn.2016v1n2a5",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-20T06:50:43Z",
       "last_package_id": "worker-a-a82b366ad8c0",
       "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-10-20T08:45:25Z"
+      "last_scan_package_at": "2026-10-20T08:45:25Z",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-20T09:04:38Z",
+      "last_recovery_package_id": "worker-a-a82b366ad8c0",
+      "recovery_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "package_cached",
+            "note": "Package source_material includes substantial_web_text retrieved at https://journals.lib.uni-corvinus.hu/index.php/cojourn/article/view/34; compared exact title and content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "package_cached_primary_source",
+            "url": "https://journals.lib.uni-corvinus.hu/index.php/cojourn/article/view/34",
+            "title": "Why so hard? Rule-of-law, reform, and state sovereignty in Ukraine and Moldova",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+      },
+      "recovery_history": [
+        {
+          "attempt": 3,
+          "package_id": "worker-a-a82b366ad8c0",
+          "at": "2026-10-20T09:04:38Z",
+          "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "full_text_or_substantive_primary",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "package_cached",
+                "note": "Package source_material includes substantial_web_text retrieved at https://journals.lib.uni-corvinus.hu/index.php/cojourn/article/view/34; compared exact title and content."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "package_cached_primary_source",
+                "url": "https://journals.lib.uni-corvinus.hu/index.php/cojourn/article/view/34",
+                "title": "Why so hard? Rule-of-law, reform, and state sovereignty in Ukraine and Moldova",
+                "evidence_used": true
+              }
+            ],
+            "verification_note": "Reviewed matching source text cached in package; independent publication retrieval not performed for this record. This is an evidence-based preliminary decision; not a completed independent full-retrieval audit."
+          }
+        }
+      ],
+      "dropped_at": "2026-10-20T09:04:38Z",
+      "drop_reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it"
     }
   },
   "packages": {
