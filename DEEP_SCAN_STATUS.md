@@ -8,37 +8,37 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 
 - Authoritative V2 verified: **2123** (Main **876** + Historical **1247**)
 - Automatic queue still needing V2 verification: **422** (Main **211** + Historical **211**)
-- Currently assigned to workers: **72** (Main **72** + Historical **0**)
-- Bounded access-recovery retries still eligible: **49**
+- Currently assigned to workers: **72** (Main **45** + Historical **27**)
+- Bounded access-recovery retries still eligible: **26**
 - Terminally dropped after failed scans: **122**
 - Automatic queue pending and not yet assigned: **350**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-146ab34f757f`
+- Current package: `worker-a-62e2881cc764`
 - Assigned unresolved records: **36**
-  1. `link:https://news.google.com/rss/articles/CBMi7wFBVV95cUxQMXdnRGpmQVNfRFdYWGJPc2VibGczaUhNMTEtaXVuaWpnb2s5LWtnNWtmWkJOdXZrT05lX09YdTNFb1lZTkRUcW5UbDNBM19YdHdsTHVnTmJUUS1ReS1VMlIxMUJIbUlBSGNOOWxyUnBlOVJXTHhlQ20zbndrLVpGdjFaOUxQSW5kV2J4RW5lYkQ5VExhNUdYZV9JQ1JSU1FJR2p1dGZHUm5lQklkTFV4UTMzTy1oSW4zWHdDcGRsMXdXb1VXWGV0M0NxbjVLQVg3VWNwRXlCNksxSnJ3eW50VXg3emJfc1lvYnZzQWVwUQ?oc=5` — Expanding satellite data to foresee risks and to support climate resilience: 17th EUMETSAT User Forum in Africa - European External Action Service (EEAS)
-  2. `link:https://news.google.com/rss/articles/CBMiigFBVV95cUxNajNxUGR2Tm9DckdCUk90MGpXbWpNbHY5dW5tUzlRV1pMTXZYVFN3bkN3RjRXUmliMkFIeVZoZ2JYbEZ6Q3RxdXFlZ0xWcEFlc0pUWTRLUGZHbzhCeDI4bF84TDJMRjVMdjhvVFFEbm5WU2twWk1xYlhMS0d5ZFBQRTVJWFhyRzBUeXc?oc=5` — EU and Israel plan energy partnership - Table.Briefings
-  3. `link:https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYndpUzlZN19na01vdTZuQXRsdWh2VVFMWTE2QktCSUJlOXhCa1g2bVluLUgtd0d2bFFOYWQ2b2EzT2JXVDZYaGoya3loTlpOWmVsYTUtajRKdDNZTjNXMHhqQlk2MS1Gd0VreFNJUUVqdEdpc09iYVRNX0Z5dmpZSEpUOGJYUXBoTFdoaTNWQzA1cy13T29RN19KUGQ1MkE4TGVPb3VPOHFGbGs?oc=5` — Planned Moldova-Romania power line to be named after Trump
-  4. `link:https://news.google.com/rss/articles/CBMirwFBVV95cUxNVklqUktCUW5XTlNrbkNVak5yN0NOT2JZMTdtUDMzLWlxRmFYMDRZMFJJVnE0VklDMGNYQ3ZOd2FYZHYtUk5pbUlIOGt2YmZPMzRNNkhlV1VYT1ZQTWtKVDFDSVhIdV9sWjZBVDZsNFVFcVJ1ZXJsSUNxLWhGYUpITHJ6MG1vQmotaElnODZkYkFjcWNIODdTalY3dkF6cmg0LVVyQnFZVUpRdEpNb3JR?oc=5` — US trade deal: How the EU is saying goodbye to the WTO - Table.Briefings
-  5. `link:https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcTZENldSSy1VQkEzM3BmUWlWMFQ1aVd6dE1ETWF6bmF5VEJ1b00tejFSRGlwajJyXzdfZGhVWGJnUGgxcjdCaVpLVGExMjlZQXdnV3BYTW1Oek5BekdsV0VUTVVEdlViRFE3aHBDN2VqZHVLd0VOSThvZURwWHFkOEctVXp1QXlONU1V?oc=5` — Money in the digital age: digital euro, tokenisation and the role of central banks - European Central Bank
-  6. `link:https://news.google.com/rss/articles/CBMipAFBVV95cUxOcHRFWGpyX3MyRUdsY2hpcWMwb2QxUi1LcDFlc21iYTY4ZEsxVFc3N0p0Q3FVSlRyVXRnNGVEQWNmcnBxYTMyOGtMMjdoNjJtUnIzSnhBUS02amtPRVhzRWwwSG1EcnA2TzFWdFBYb2RfemxjdlRyTEVfRTlUd2lQOEJScDQ5b3lvaXI5eTluRTZfTDdGNTVnRFVsQkRkTnZJVFlWMQ?oc=5` — Merz: Unfair trade practices put ‘massive pressure’ on the EU - Table.Briefings
-  7. `link:https://news.google.com/rss/articles/CBMiygFBVV95cUxNQjlIM1ZuaFZILU80UHF3M18xTkFTVUNSQ1JYbVlhaTlhZF9ZaE5EaTktbkZsaVJ4aXBwNWFrZE93WWJDdUUzZlAzVzVNN0VtekFxeFFFYlQwSkdGX180SzlIWGJ4V1hpdDNlcTlLN0Z6MzVLT0NiZVFqR3MySDQ3RGVPZzMxSG1iYmdxcEIycXFuN0tJSDFZM21XSlV6YkZXQzNVVzhQNkZQOFdVZmZBMm45UzlwRHQwaVBWVmw2WjFLYjE1MENoYXpB?oc=5` — Global Gateway: German government wants to give EU initiative a stronger economic focus - Table.Briefings
-  8. `link:https://news.google.com/rss/articles/CBMijgFBVV95cUxNOGhpX2pSeTZ3R3NGU2thd3V2SENmRDloTVV6dG1ORDBzZFlJOEM1VFJrcmU4bkR0RTNoSmNGNWtjLVFoTE1XZ0lrb1NTcHZHcFJGZ1dJOEcwb3hscFUtTkxubFN4RHNMM21ObVlhTjZESVZPNU84M1dkclNEajdxZXRlaXhFWHM3R1hkV2pn?oc=5` — EU and Ukraine want hydrogen partnership - Table.Briefings
+  1. `link:https://merics.org/sites/default/files/2026-04/MER-RZ-Report-Embodied-AI-260422-Web.pdf` — Embodied AI: China’s ambitious path to transform its robotics industry — recovery attempt 2/3
+  2. `link:https://merics.org/sites/default/files/2026-10/MER-Report-Cleantech-English-261015%20%281%29.pdf` — Germany and China in the cleantech sector: Between opportunities, competition and location policy — recovery attempt 2/3
+  3. `link:https://doi.org/10.1016/j.enpol.2026.115663` — The geopoliticization of Europe's energy transition: Geopolitical risk and selective transition adjustment across EU member states — recovery attempt 2/3
+  4. `link:https://doi.org/10.1177/17816858261496142` — Made in China, Powered by Europe: Mapping the EU’s Strategic Leverage Over the People’s Republic of China — recovery attempt 2/3
+  5. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=8ada360e-c83e-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Competitive by nature - Publications Office of the EU — recovery attempt 2/3
+  6. `link:https://doi.org/10.1177/09504222261458905` — High vs. Low entrepreneurial intentions: Predicting variables based on gender among European sports science students — recovery attempt 2/3
+  7. `link:https://doi.org/10.1177/17816858261495305` — Europe’s battery moment: The long game in energy security starts with accelerating deployment now — recovery attempt 2/3
+  8. `link:https://doi.org/10.1007/s43681-026-01297-8` — Perceived regulatory clarity and the depth of enterprise AI adoption: anticipatory evidence from the EU Artificial Intelligence Act — recovery attempt 2/3
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-563c62e71016`
+- Current package: `worker-b-03b7f93735d9`
 - Assigned unresolved records: **36**
-  1. `link:https://news.google.com/rss/articles/CBMi5gJBVV95cUxNNzQ2X0Z4QzctVnNLUTFVcVREZDc1ZUVqN1ZKV1dSUDZ1dmlabDAycVNVaVloNldoc0tYdFZ1S1Y0SEYtcU9RWUg1bWl6Z1ZmaXNKdVhpWVdKYURUdUVUTWlweDZxbnAzN0JWQ3BEUm9CLV9xSUxOT0d3U2RwbjVCbTIwNDVOU2cyMTlkdGdOZWJWWTNsaElXN0RldFRlZExKTlZZS3VXOE85azlkSU85Rnd4OThiRFNYRHJrc3dCbnBvYmxYX3dhaUszRFFMRlVZRjFqUVR6UVNrVkFSR3RXeWRNX2lva1FiMXEtR0o2b2YxYW5VRnRzRUpFU0gtNFRxa0dIT0hpNlczSlM1dHhnU3J6MHY3SFNINlc4Nmg2WU1EUW0zbk5jS1hJQ0ZkUk91Z2hybTFYaU43WkxaT1A0QTdTZHBUNlZuT09YNXpMNW1tWU9PdGxlVUdOVU1SNmkyUmc4b0dB?oc=5` — The European Union and Moldova reiterate their strong partnership and announce the disbursement of €157 million under Growth Plan funding at the 10th EU-Moldova Association Council
-  2. `link:https://news.google.com/rss/articles/CBMitAFBVV95cUxPX2xRcUZHLUJybUdWU0hwNHo4emp6NmhObVNRMlFoVE1oaXJCdXFIZEFYY1MxQ0U2dVNOVkV2b0o3dUpzQVYzSEwySFpHOGRmVnZlaVZxdHY3a256Q2gxcW93UHVNT2lSUUVfVmxZdEtHVk91UFh5MXlXWG54Qm5SaFZVcHF5OWJfSVRYSGs5dzh3TE5ybkVxdUJpM0ZVeU51UlRQYmdLTVVDakl6bXBZM3Jrc18?oc=5` — Italy PM Meloni seeks EU trademark for her voice amid AI deepfake risks
-  3. `link:https://news.google.com/rss/articles/CBMivgFBVV95cUxQSkp0U2o4SG0zcl9XTE5Bb091LXlrMTgtWE1WazJsdHYzT1dzcmt0UFRTaW5CWUh3N0VLeEhRVmc1QlhjNTAxTHhXZUlwX0FReFBreGhoQWYtUGZfd2F2WEhjUzVobHpqQ0NGaDlxaXBmSEpwb3lZM3JOalhObW9RejlxNWZWTkpqX1NOcmh5RW9KS1BsLVlpVXVBYVJ0b3VUWDdZcXd5enhiVFctdnFSeXZzNWwtNkc4dUVLVnZR?oc=5` — Supervisors in the Technology and Innovation Division (ESCB/IO) - DG/SGO - Job Search | European Central Bank
-  4. `link:https://news.google.com/rss/articles/CBMijwFBVV95cUxNUkk4VlR1d3czS1NSY3g2dVBRa25IWlBKWTd0cG1NcU4xakNxVDJWaXdXc0hqcWlERW13R0Fzcm5RQjFuY3ZvN1l3U0VSNDYyYkdnYWdfNEJxR1IwRFQ3U3VkcVBROFVSSWNwc044b2FTaUFrT09qVFFYUEdoMGlwRHRBYnQ4NUJCSWE3dTBjRQ?oc=5` — From the rent crisis to Trump: 5 things that will shape Spain’s snap election
-  5. `link:https://news.google.com/rss/articles/CBMimAFBVV95cUxNRmdhb3VwRE1ZWGhyRGI2RW5ZNURTRjFrYmJ2T0Z2ejdyVURwVGhoS2dESEdDYnVZZDJkb2NVN1Nuc2dJd0F4Z21KdjNTYzd5OWUxSkZQMGdJeThVd3NWM25xQi10ZDZYNm1KTUZSNzFYMFZTSFlfcHlFWW5ERlREMEVYZHJTQlNOQVpIMjBwQlpNNjNyb1BUeA?oc=5` — Europe’s AI policing plan stokes privacy concerns
-  6. `link:https://news.google.com/rss/articles/CBMioAFBVV95cUxQMWE0UWNBUWJqc0pGNUo4cUVPYkVzZHRvbVFMSGJDU0V3aHFnUTM5R2RaMFBFNkh2bGM5TUVKcVAzY1dka0tGRC1rbW84ckxKRlBLS2NOVVBWVk9sdi04M2VCLWxDM1phS3VCb3ZpenN0ODVFVjhzVmJNLS1vakFRYmxrdUt4d0JtdEdFenlhNzZvOWZYYmpRd1VXcjB1a2xn?oc=5` — EU rejects €26 million state aid to MAN truck manufacturer
-  7. `link:https://news.google.com/rss/articles/CBMirwFBVV95cUxPdDhGbmhkQi1JRWZXcUNzZjNsVVdIcGQ3ckZFYkRCVHFWVDFsaDRKeUtPWXZuSkIyUG0xUjRYLUt1VWxqWWpPT19PN291VTRVZjJxbURUcFB1NTM4Z3JDek1HVnlyWW91N3VfaUtRRUhwVGZscXMyenRYb1hwaElJMmk4T0k4V1VRZGVQaV9FSEpRbzFjOXZROHRmbXEzR2pWbnFPczlIaTc3V0wxTmtF?oc=5` — Women MEPs targeted by AI ‘nudifier’ apps push EU leaders to enforce December ban
-  8. `link:https://news.google.com/rss/articles/CBMizgFBVV95cUxPUHlzVEdSM0loZk1UZGEtWll0OEFHbjNRU2h3Q1hGYzF2aE9QcWYyNjdHNXNsRHJCYTZxX2FHaGdqcUdZWHlkX08wdWZvZWh6RGxtbDBpN1JtVlF6TjlHZEpWaWdwWG85ZzdBbmFmbS1odTU4akRKb1JjbC0zUEpHdkZqNTVSSUZoeS1RQjd0ZFJlb0MzcWplaXBidzAzYVA5MHdmVHJrNmcwdXo4dXhnaDFNOG1tUnhVUEFtSFdQQklRWjdzZjVGbGJ3dmhfdw?oc=5` — Data protection: the European Union and Latin America and the Caribbean strengthen cooperation in Madrid for safer data, trusted AI and better digital services - European External Action Service (EEAS)
+  1. `link:https://doi.org/10.1016/j.enpol.2026.115547` — The pulse of energy poverty in Greece: The role of financial stress, uncertainty, and institutional resilience
+  2. `link:https://doi.org/10.1007/s40822-026-00392-9` — Green technological innovation and global energy security: evidence from 61 economies
+  3. `link:https://doi.org/10.1021/acs.est.5c18652` — Can Transcontinental Corridors Bridge Climate Sustainability and Energy Security?
+  4. `link:https://www.businesseurope.eu/publications/eu-china-relations-europe-must-be-firm-where-necessary-and-open-where-possible/` — EU-China relations: Europe must be firm where necessary and open where possible
+  5. `link:https://doi.org/10.1016/j.strueco.2026.10.006` — From Global Value Chains to Local Jobs: Exploring FDI-induced Job Creation in EU-27
+  6. `link:https://doi.org/10.1177/1023263x261498611` — The Limits of Mandatory Integration Enforcement for Third-Country Nationals: Reflections After Case C-158/23 ( Keren ) and the Entry into Force of the Qualification Regulation
+  7. `link:https://www.ispionline.it/en/tag/europe` — Europe | ISPI
+  8. `link:https://doi.org/10.1016/j.esmoop.2026.107381` — 693P Disparities in access and time to reimbursement for breast cancer medicines with substantial benefit across Europe
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
