@@ -11,13 +11,13 @@
 <!-- Legacy regression tokens only: reform.css?v=23.0 · site-shell.js?v=23.0 -->
 </head>
 <body>
-<header><div class="wrap top"><div><div class="kicker">Reasoning signals</div><h1>EU economic-security trend hypotheses</h1><p class="lede">Selected signals from the claim-native reasoning engine. An expansion/constraint classification does not by itself establish opposing real-world forces.</p></div><nav class="nav"><a href="../">Start</a><a href="../radar/">Main Radar</a><a href="../read/">Read At Least This</a><a href="../frontier/quick/">Matrix</a><a class="primary" href="./">Trends</a><a href="../priorities/">Risks &amp; Opportunities</a><a href="../shocks/">External Shocks</a></nav></div></header>
+<header><div class="wrap top"><div><div class="kicker">Trends &amp; counter-trends</div><h1>Where Europe is moving — and what pushes back</h1><p class="lede">Two forces, one rough score. Exploratory comparisons from the Radar reasoning engine, not a scientific forecast.</p></div><nav class="nav"><a href="../">Start</a><a href="../radar/">Main Radar</a><a href="../read/">Read At Least This</a><a href="../frontier/quick/">Matrix</a><a class="primary" href="./">Trends</a><a href="../priorities/">Risks &amp; Opportunities</a><a href="../shocks/">External Shocks</a></nav></div></header>
 <section class="core-flow"><div class="wrap flow"><a href="../radar/">1 · Radar</a><span>→</span><a href="../frontier/quick/">2 · Matrix</a><span>→</span><a class="current" href="./">3 · Trends</a><span>→</span><a href="../phenomena/">4 · Ongoing phenomena</a><span>→</span><a href="../priorities/">5 · Risks &amp; opportunities</a><span>→</span><a href="../shocks/">6 · External shocks</a></div></section>
 <main class="wrap">
-<section class="method"><div class="method-head"><h2>How to read these signals</h2><p class="method-note">These are published reasoning candidates, with sources grouped by the engine’s classifications. Unvalidated candidates are not established counter-trends.</p></div><div id="corpusLine" class="corpus-line"></div></section>
+<section class="method"><div class="method-head"><h2>How to read the tug-of-war</h2><p class="method-note">The numbers are deliberately approximate: evidence-weighted indications, not probabilities. Click Sources to inspect the publications behind each side.</p></div><div id="corpusLine" class="corpus-line"></div></section>
 <div id="pairs" class="pair-list"><div class="empty">Loading</div></div>
 </main>
-<script src="../reader_rank.js?v=21.7"></script><script src="../reader_style.js?v=28.3"></script><script src="../historical/reasoning_context.js?v=1"></script><script src="trends.js?v=reasoning-20261020-1"></script>
+<script src="../reader_rank.js?v=21.7"></script><script src="../reader_style.js?v=28.3"></script><script src="../historical/reasoning_context.js?v=1"></script><script src="trends.js?v=tug-20261020-2"></script>
 <script>
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function surface(v){return globalThis.RadarReaderStyle?.surfaceText?.(v)||String(v||'')}
@@ -30,13 +30,13 @@ function trendDistance(x){return x?.emergent?(TREND_DISTANCE.get(String(x.id||''
 function pair(x){
   // ReaderClarity reads the same selected finding and the evidence already attached
   // to this card. It changes display copy only; x and radar.json remain untouched.
-  const l=x.reasoningPublished?{title:x.left.title,what:'',why:''}:(globalThis.RadarReaderClarity?.trendSide?.(x.left,x,'left')||{title:x.left.title,what:x.left.plain,why:x.left.why});
-  const r=x.reasoningPublished?{title:x.right.title,what:'',why:''}:(globalThis.RadarReaderClarity?.trendSide?.(x.right,x,'right')||{title:x.right.title,what:x.right.plain,why:x.right.why});
+  const l=x.reasoningPublished?{title:x.left.title,what:x.left.plain,why:''}:(globalThis.RadarReaderClarity?.trendSide?.(x.left,x,'left')||{title:x.left.title,what:x.left.plain,why:x.left.why});
+  const r=x.reasoningPublished?{title:x.right.title,what:x.right.plain,why:''}:(globalThis.RadarReaderClarity?.trendSide?.(x.right,x,'right')||{title:x.right.title,what:x.right.plain,why:x.right.why});
   const lt=surface(l.title||x.left.title),rt=surface(r.title||x.right.title);
   const ranges=x.emergent&&Array.isArray(x.pullRange?.left)&&x.pullRange.left.length===2&&Array.isArray(x.pullRange?.right)&&x.pullRange.right.length===2;
   const st=x.actionStats||{};
   const rangeNote='';
-  const score=(x.developing||x.reasoningPublished)?'':`<div class="tug-score" aria-label="Relative evidence pull ${x.left.pull} to ${x.right.pull}"><strong>${x.left.pull}</strong><div class="tug-track" aria-hidden="true"><span class="tug-left" data-pull="${x.left.pull}"></span><span class="tug-right" data-pull="${x.right.pull}"></span></div><strong>${x.right.pull}</strong></div>`;
+  const score=`<div class="tug-score" aria-label="Relative evidence pull ${x.left.pull} to ${x.right.pull}"><strong>${x.left.pull}</strong><div class="tug-track" aria-hidden="true"><span class="tug-left" data-pull="${x.left.pull}"></span><span class="tug-right" data-pull="${x.right.pull}"></span></div><strong>${x.right.pull}</strong></div>`;
   const composition=x.composition?`<p class="why">${esc(x.composition)}</p>`:'';
   const flip=x.flip?`<p class="why"><strong>Watch next:</strong> ${esc(x.flip)}</p>`:'';
   return `<article class="pair" data-obviousness="${trendDistance(x)}">${x.reasoningPublished?`<div class="kicker">${esc(x.maturity)}</div><h2>${esc(x.topic)}</h2>`:''}${score}${rangeNote}<div class="axis"><section class="side"><h3>${esc(lt)}</h3>${l.what&&l.what!==lt?`<p class="plain">${esc(l.what)}</p>`:''}${l.why&&l.why!==l.what?`<p class="why"><strong>Why it matters:</strong> ${esc(l.why)}</p>`:''}${evidenceBlock(x.left)}</section><section class="side right"><h3>${esc(rt)}</h3>${r.what&&r.what!==rt?`<p class="plain">${esc(r.what)}</p>`:''}${r.why&&r.why!==r.what?`<p class="why"><strong>Why it matters:</strong> ${esc(r.why)}</p>`:''}${evidenceBlock(x.right)}</section></div>${composition}${flip}</article>`;
@@ -55,8 +55,8 @@ if(!all.length){
   if(alternate.length){all=alternate;recovered=true}
 }
 const xs=wowCyclePairs(all).slice(0,25);
-document.getElementById('corpusLine').textContent=xs.length+' reasoning-selected signals · '+xs.filter(x=>!x.developing).length+' validated countervailing relationships. Document classifications are hypotheses, not proof of opposing outcomes.';
-document.getElementById('pairs').innerHTML=xs.length?xs.map(pair).join(''):'<div class="empty">No evidence-backed, genuinely opposing trend and counter-trend pair is available in the published data. Check the Radar data publication and selection pipeline.</div>';document.querySelectorAll('.tug-track [data-pull]').forEach(el=>{el.style.flexGrow=String(Math.max(0,Number(el.dataset.pull)||0))})}catch(e){console.error(e);document.getElementById('pairs').innerHTML='<div class="empty">Trend evidence is unavailable.</div>'}})();
+document.getElementById('corpusLine').textContent=xs.length+' trend / counter-trend comparisons · rough evidence balances, not forecasts.';
+document.getElementById('pairs').innerHTML=xs.length?xs.map(pair).join(''):'<div class="empty">No trend comparisons are available in the published reasoning data.</div>';document.querySelectorAll('.tug-track [data-pull]').forEach(el=>{el.style.flexGrow=String(Math.max(0,Number(el.dataset.pull)||0))})}catch(e){console.error(e);document.getElementById('pairs').innerHTML='<div class="empty">Trend evidence is unavailable.</div>'}})();
 </script><script src="../reader_language.js?v=5"></script>
 <script src="../site-shell.js?v=29"></script>
 </body></html>

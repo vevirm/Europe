@@ -463,13 +463,15 @@
       if(!leftEvidence.length||!rightEvidence.length)return null;
       const validated=c.countervailing_validated===true&&Boolean(clean(c.countervailing_outcome));
       const topic=clean(c.reader_title||c.topic_label||b.title_label||'EU economic security');
-      const detail=clean(c.reader_summary||c.topic_label||'');
-      const status=validated?'Validated countervailing relationship':'Reasoning hypothesis · not validated opposition';
+      const leftPull=Number(b.left_pull),rightPull=Number(b.right_pull);
+      const lp=Number.isFinite(leftPull)&&Number.isFinite(rightPull)&&leftPull+rightPull>0
+        ?Math.max(5,Math.min(95,Math.round(100*leftPull/(leftPull+rightPull))))
+        :Math.round(100*leftEvidence.length/(leftEvidence.length+rightEvidence.length));
       return {id:clean(c.id),emergent:validated,developing:!validated,reasoningPublished:true,
-        topic,maturity:status,scope:clean(c.trend_scope||''),
-        left:{title:'Evidence classified as expansion',plain:'',why:'',pull:0,evidence:leftEvidence,history:[],sourceCount:new Set(leftEvidence.map(e=>low(e.row.source))).size},
-        right:{title:'Evidence classified as constraint',plain:'',why:'',pull:0,evidence:rightEvidence,history:[],sourceCount:new Set(rightEvidence.map(e=>low(e.row.source))).size},
-        composition:validated?clean(c.countervailing_outcome):'The reasoning engine groups these documents under '+topic+'. Its expansion/constraint labels are provisional; these publications have not been verified as opposing mechanisms.',
+        topic,maturity:validated?'Evidence-backed opposition':'Exploratory comparison',scope:clean(c.trend_scope||''),
+        left:{title:clean(b.left_title)||'Expansion gaining ground',plain:clean(b.left_plain),why:'',pull:lp,evidence:leftEvidence,history:[],sourceCount:new Set(leftEvidence.map(e=>low(e.row.source))).size},
+        right:{title:clean(b.right_title)||'Constraints gathering force',plain:clean(b.right_plain),why:'',pull:100-lp,evidence:rightEvidence,history:[],sourceCount:new Set(rightEvidence.map(e=>low(e.row.source))).size},
+        composition:'A rough balance of the evidence in this publication set, not a measured real-world probability.',
         flip:'',currentEvidenceCount:Number(c.primary_records)||0};
     }).filter(Boolean);
   }
