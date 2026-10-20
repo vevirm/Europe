@@ -6,40 +6,31 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
-- Authoritative V2 verified: **2123** (Main **876** + Historical **1247**)
-- Automatic queue still needing V2 verification: **422** (Main **211** + Historical **211**)
-- Currently assigned to workers: **72** (Main **27** + Historical **45**)
-- Bounded access-recovery retries still eligible: **10**
-- Terminally dropped after failed scans: **122**
-- Automatic queue pending and not yet assigned: **350**
+- Authoritative V2 verified: **2177** (Main **893** + Historical **1284**)
+- Automatic queue still needing V2 verification: **353** (Main **184** + Historical **169**)
+- Currently assigned to workers: **30** (Main **0** + Historical **30**)
+- Bounded access-recovery retries still eligible: **0**
+- Terminally dropped after failed scans: **137**
+- Automatic queue pending and not yet assigned: **323**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-3f07290a4049`
-- Assigned unresolved records: **36**
-  1. `link:https://doi.org/10.1007/s11846-026-01053-6` — Configuring Artificial Intelligence capabilities for business model innovation in earth observation SMEs: insights from the European Space Industry — recovery attempt 2/3
-  2. `link:https://doi.org/10.1016/j.energy.2026.142738` — Energy crisis and the renewable-to-fossil energy balance in the European Union: Linear and nonlinear evidence, 2009–2024 — recovery attempt 2/3
-  3. `link:https://doi.org/10.48550/arxiv.2606.13215` — Mitigating business risks from renewable PPA power sourcing uncertainties for European green hydrogen production: Robust system design, regulatory adjustments and offtake flexibility — recovery attempt 2/3
-  4. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f1acebae-ca97-11f1-8b4c-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — EU funding for innovation and competitiveness - Publications Office of the EU
-  5. `link:https://doi.org/10.1007/s10342-026-01907-4` — Determinants of chemical wood pulp production in Europe: evidence from panel econometrics and machine learning
-  6. `link:https://doi.org/10.1080/14702436.2026.2664455` — Butter through guns? Mobilizing innovation for defence in the Euro-Atlantic area
-  7. `link:https://doi.org/10.48550/arxiv.2606.09190` — Planning resilient hydrogen supply chains under disruption risk — recovery attempt 2/3
-  8. `link:https://doi.org/10.1007/s40812-026-00430-2` — Harnessing space-derived technologies for agri-food system resilience — recovery attempt 2/3
-  - … plus 28 more in the package manifest
+- Current package: `worker-a-1fcfddbd7f39`
+- Assigned unresolved records: **30**
+  1. `historical:id:3e7c79468b8483a2` — Crossing Red Lines: China’s Lithuania Sanctions Prod Europe | Report | Hinrich Foundation — recovery attempt 3/3
+  2. `historical:id:25f8b86dc2b07661` — Action from US and EU, anti-coercion measures, and jobs | What we are reading | Hinrich Foundation — recovery attempt 3/3
+  3. `historical:id:3b03e85ac018a46a` — Transatlantic Tech Policy Cooperation: Add Coordination on Government Aid to the List — recovery attempt 3/3
+  4. `historical:id:8401497a8aa48936` — Ports and Global Maritime Transport: which Trends to Foster Growth and what Role for Europe? | ISPI — recovery attempt 2/3
+  5. `historical:id:9053927f10d4a994` — EuroChamber Mongolia publishes a detailed FDI climate position paper — recovery attempt 2/3
+  6. `historical:id:84f2ebed902759a4` — EU-US summit: a Promising Moment in Transatlantic Relations
+  7. `historical:id:7801175b4e4bc9d4` — WTO Consistency of Export Restrictions for Public Health and Safety Purposes : An analysis of the EU’s export authorization scheme for personal protective equipment outside the EU — recovery attempt 2/3
+  8. `historical:id:bf6cc22540336b1e` — Consensus against all odds: explaining the persistence of EU sanctions on Russia
+  - … plus 22 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-03b7f93735d9`
-- Assigned unresolved records: **36**
-  1. `link:https://doi.org/10.1016/j.enpol.2026.115547` — The pulse of energy poverty in Greece: The role of financial stress, uncertainty, and institutional resilience
-  2. `link:https://doi.org/10.1007/s40822-026-00392-9` — Green technological innovation and global energy security: evidence from 61 economies
-  3. `link:https://doi.org/10.1021/acs.est.5c18652` — Can Transcontinental Corridors Bridge Climate Sustainability and Energy Security?
-  4. `link:https://www.businesseurope.eu/publications/eu-china-relations-europe-must-be-firm-where-necessary-and-open-where-possible/` — EU-China relations: Europe must be firm where necessary and open where possible
-  5. `link:https://doi.org/10.1016/j.strueco.2026.10.006` — From Global Value Chains to Local Jobs: Exploring FDI-induced Job Creation in EU-27
-  6. `link:https://doi.org/10.1177/1023263x261498611` — The Limits of Mandatory Integration Enforcement for Third-Country Nationals: Reflections After Case C-158/23 ( Keren ) and the Entry into Force of the Qualification Regulation
-  7. `link:https://www.ispionline.it/en/tag/europe` — Europe | ISPI
-  8. `link:https://doi.org/10.1016/j.esmoop.2026.107381` — 693P Disparities in access and time to reimbursement for breast cancer medicines with substantial benefit across Europe
-  - … plus 28 more in the package manifest
+- Assigned unresolved records: **0**
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
@@ -171,3 +162,18 @@ These records no longer consume automatic Deep Scan slots and are excluded from 
 - `historical:id:d2a3f60d595da52f` — **China's Outward <scp>FDI</scp> in the European Union: How Much Geopolitics is in There?** — attempts: 3/3 — Global Policy — 2025-05-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1111/1758-5899.13472
 - `historical:id:c4a03323d4289bc0` — **The European Union’s Critical Raw Materials Act: How Effective In Addressing Supply Chains Risks? - CELIS Institute** — attempts: 3/3 — CELIS Institute — 2024-06-27 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://celis.institute/the-european-unions-critical-raw-materials-act-how-effective-in-addressing-supply-chains-risks/
 - `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f547843b-c74d-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — **WORKING PARTY ON COMPETITIVENESS AND GROWTH (Industry) (Chips Act 2.0) - Publications Office of the EU** — attempts: 3/3 — Publications Office of the EU — 2026-10-07 — Deep Scan return rejected: evidence depth must be one of the authoritative recovered-source levels — https://op.europa.eu/o/opportal-service/download-handler?identifier=f547843b-c74d-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=
+- `link:https://doi.org/10.1016/j.energy.2026.142738` — **Energy crisis and the renewable-to-fossil energy balance in the European Union: Linear and nonlinear evidence, 2009–2024** — attempts: 3/3 — Energy — 2026-10-13 — Identity appears traceable but a substantive matching source was not obtained after the documented recovery attempts. — https://doi.org/10.1016/j.energy.2026.142738
+- `link:https://doi.org/10.1177/09697764261493384` — **Uncertainty, vulnerable infrastructure and sustainable urban planning as an arena of hidden international politics** — attempts: 3/3 — European Urban and Regional Studies — 2026-10-16 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1177/09697764261493384
+- `link:https://ecipe.org/publications/cloud-sovereignty-and-the-single-market/#_ftnref1` — **Cloud Sovereignty and the Single Market: A Better Understanding of Government Procurement and National Cloud Technology Preferences** — attempts: 3/3 — ECIPE — 2026-10-19 — Identity appears traceable but a substantive matching source was not obtained after the documented recovery attempts. — https://ecipe.org/publications/cloud-sovereignty-and-the-single-market/#_ftnref1
+- `link:https://doi.org/10.1016/j.enpol.2026.115570` — **The rise of renewable energy: How it shapes dependency, diversity, and geopolitical risk in the European Union** — attempts: 3/3 — Energy Policy — 2026-08-28 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1016/j.enpol.2026.115570
+- `link:https://doi.org/10.1080/23745118.2026.2720570` — **Climate ambition under competitive resilience: Green Deal contestation in the post-2024 European Parliament** — attempts: 3/3 — European Politics and Society — 2026-08-26 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1080/23745118.2026.2720570
+- `link:https://doi.org/10.1016/j.enpol.2026.115547` — **The pulse of energy poverty in Greece: The role of financial stress, uncertainty, and institutional resilience** — attempts: 3/3 — Energy Policy — 2026-08-17 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1016/j.enpol.2026.115547
+- `link:https://doi.org/10.1021/acs.est.5c18652` — **Can Transcontinental Corridors Bridge Climate Sustainability and Energy Security?** — attempts: 3/3 — Environmental Science & Technology — 2026-05-13 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1021/acs.est.5c18652
+- `link:https://doi.org/10.1016/j.strueco.2026.10.006` — **From Global Value Chains to Local Jobs: Exploring FDI-induced Job Creation in EU-27** — attempts: 3/3 — Structural Change and Economic Dynamics — 2026-10-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1016/j.strueco.2026.10.006
+- `link:https://doi.org/10.1177/1023263x261498611` — **The Limits of Mandatory Integration Enforcement for Third-Country Nationals: Reflections After Case C-158/23 ( Keren ) and the Entry into Force of the Qualification Regulation** — attempts: 3/3 — Maastricht Journal of European and Comparative Law — 2026-10-19 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1177/1023263x261498611
+- `link:https://doi.org/10.1016/j.esmoop.2026.107381` — **693P Disparities in access and time to reimbursement for breast cancer medicines with substantial benefit across Europe** — attempts: 3/3 — ESMO Open — 2026-05-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1016/j.esmoop.2026.107381
+- `historical:id:70e3046bc4618d72` — **US tariff offensive widens, Russia sanctions loom, Europe confronts Chinese exports | What we are reading | Hinrich Foundation** — attempts: 3/3 — Hinrich Foundation — 2026-01-01 — Identity appears traceable but a substantive matching source was not obtained after the documented recovery attempts. — https://www.hinrichfoundation.com/research/what-we-are-reading/trade-geopolitics/us-tariffs-russia-sanctions-and-chinese-exports
+- `historical:id:f9dc5588ece85177` — **Is Japan’s economic security strategy economical? | Article | Hinrich Foundation** — attempts: 3/3 — Hinrich Foundation — 2026-01-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://www.hinrichfoundation.com/research/article/supply-chain-security/japan-economic-security-strategy
+- `historical:id:fc4cd5493ddefe13` — **Trade Specialised Committee on Public Procurement** — attempts: 3/3 — European Commission — 2025-12-09 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://commission.europa.eu/strategy-and-policy/relations-united-kingdom/eu-uk-trade-and-cooperation-agreement/meetings-eu-uk-partnership-council-and-specialised-committees-under-trade-and-cooperation-agreement/trade-specialised-committee-public-procurement_en
+- `historical:id:f4cd901b5bb53a50` — **China EVs drive a gulf in US and EU trade policy | White paper | Hinrich Foundation** — attempts: 3/3 — Hinrich Foundation — 2024-01-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://www.hinrichfoundation.com/research/wp/trade-geopolitics/china-ev-drive-a-widening-gulf-in-transatlantic-trade-policy
+- `historical:id:c79bc224f8b0a4e0` — **Commission challenges China's anti-dumping tariffs on EU brandy at the WTO *** — attempts: 3/3 — European External Action Service — 2024-01-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://www.eeas.europa.eu/delegations/china/commission-challenges-chinas-anti-dumping-tariffs-eu-brandy-wto_en
