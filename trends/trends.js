@@ -443,10 +443,9 @@
     // validated by the current evidence-based claim-native reasoning pipeline.
     const verified=highOrderPairs(data);
     if(verified.length)return verified;
-    const reasoned=reasoningDevelopingPairs(data);
-    const independent=developingPairs(data,history);
-    const existing=new Set(reasoned.map(x=>low(x.left.title+' '+x.right.title)));
-    return [...reasoned,...independent.filter(x=>!existing.has(low(x.left.title+' '+x.right.title)))];
+    // Do not promote scanner polarity labels into apparent counter-trends.
+    // Only the named, outcome-coherent developing axes may be shown provisionally.
+    return developingPairs(data,history);
   }
   function stats(data,history){
     const hs=historicalCorpus(history);
