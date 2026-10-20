@@ -7,38 +7,38 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
 
 - Authoritative V2 verified: **2121** (Main **874** + Historical **1247**)
-- Automatic queue still needing V2 verification: **393** (Main **199** + Historical **194**)
-- Currently assigned to workers: **72** (Main **65** + Historical **7**)
+- Automatic queue still needing V2 verification: **424** (Main **213** + Historical **211**)
+- Currently assigned to workers: **72** (Main **55** + Historical **17**)
 - Bounded access-recovery retries still eligible: **66**
 - Terminally dropped after failed scans: **122**
-- Automatic queue pending and not yet assigned: **321**
+- Automatic queue pending and not yet assigned: **352**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-eb9f3f8953c6`
+- Current package: `worker-a-ba83f4921373`
 - Assigned unresolved records: **36**
-  1. `historical:id:7d49712fe325faeb` — Saving and investment causality: implications for financial integration in transition countries of Eastern Europe
-  2. `historical:id:030f2b91ab7896a9` — The European Union's framework for FDI screening: Towards an ever more growing competence over energy policy?
-  3. `historical:id:197d792c08cf0a33` — Digital Transformation
-  4. `historical:id:901e4fb42f9cb2b9` — EU: Extension of definitive antidumping duty concerning coated fine paper originating from China - Global Trade Alert
-  5. `historical:id:d6a322bad17f8098` — EC: Simplified rules for investment aid in ports and airports, culture and the outermost regions - Global Trade Alert
-  6. `historical:id:477edbfad9bfe39d` — 5G research & standards
-  7. `historical:id:f7261b33d1ca7599` — Emerging industries and value chains
-  8. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=bdf94591-c868-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a COUNCIL DECISION on the conclusion of the Sustainable Fisheries Partnership Agreement and its Implementing Protocol (2026-2030) between the European Union and the Republic of Mauritius - Publications Office of the EU — recovery attempt 3/3
+  1. `link:https://institutdelors.eu/content/uploads/2026/10/PP323_UE_Royaume-Uni_Defense_Tardy_EN.pdf` — The European Union, the United Kingdom and defence: Towards a strategic partnership - Institut Jacques Delors
+  2. `link:https://doi.org/10.1016/j.enpol.2026.115570` — The rise of renewable energy: How it shapes dependency, diversity, and geopolitical risk in the European Union
+  3. `link:https://doi.org/10.1080/23745118.2026.2720570` — Climate ambition under competitive resilience: Green Deal contestation in the post-2024 European Parliament
+  4. `link:https://doi.org/10.1016/j.erss.2026.104933` — European energy resilience in the face of the Russo-Ukrainian war: Discursive constructions of resilience and implications for sustainability transitions
+  5. `link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-19-What-way-forward-for-EU-China-relations_Views-from-european-business.pdf` — What is the way forward for EU-China relations - Views from European business
+  6. `link:https://doi.org/10.1016/j.enpol.2026.115547` — The pulse of energy poverty in Greece: The role of financial stress, uncertainty, and institutional resilience
+  7. `link:https://doi.org/10.1007/s40822-026-00392-9` — Green technological innovation and global energy security: evidence from 61 economies
+  8. `link:https://doi.org/10.1021/acs.est.5c18652` — Can Transcontinental Corridors Bridge Climate Sustainability and Energy Security?
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-540e7bd00bbc`
+- Current package: `worker-b-109e675082ea`
 - Assigned unresolved records: **36**
-  1. `link:https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVVF5VkpSVEJwdWd0M3dBeHA4Tzg1MjRyeXpwbm5mVG0tNUFZZDdVbWNsMjdhX1hfSDBZVkp0dHY1TlMtZUpDTV9oZHU1d1R3a0F0aklLU0Rwc3dfNFBxem9NaGh3QlU1b1NEZ3VCclc2eFhiN3MyS2JfVndqU2ZBaHFhWDUzQzMwaTQwelVNbm5nSWZudjYxRGF6M1Qzb1NBeG82WjZBTHJyN2UtMmhvU1JicVJXb1ZJdU5rTWctVkVCSmVOMVBMQ2g5dXNtam9CQ3Bj?oc=5` — China and EU reach deal on hybrid cars, rare earths - Le Monde.fr — recovery attempt 2/3
-  2. `link:https://news.google.com/rss/articles/CBMitAFBVV95cUxPdnJWaW83X1dOWXVrWGIyT3pSS1FyWkdkbm01bldwOUNpT0Q2WnR3dVlhVUVCLXFpeW4wQ0MzSURKSWtMQ0xtZ3lBcm5MdkxfMmRITjgwbVYwMWV0a0t1eFcxSi1ITXV0WkhDMndCWTljU293WlJRX01saW9JWEZTeVN1R2RQeXpxdS02alZ2Y2tlQlc3Z1hDOUpxSnU2U3dxZExSTU43OGRONWFBYlp3dFNLSE8?oc=5` — Two Ships Hauling US LNG Divert to Europe as Asian Demand Eases — recovery attempt 2/3
-  3. `link:https://news.google.com/rss/articles/CBMihAFBVV95cUxNUVBGdWdpbnY5TENRVUtaTlhNcGtDTmRWdFlHRDlOMjhYN0UwcGNoZ0ZOX0wwZTNtOXQxTW9HNjd6TzRWdDhxaVZQMkdWMW16aTctT2ZpTFNWa0R2TEQzd1d2Mk43elRxU0hndzdFWE1OVVM5VVNSSHhCdEI4bFVFZGZvZ18?oc=5` — Submit your questions: Who’s winning the trade war with China — the EU or US? — recovery attempt 2/3
-  4. `link:https://news.google.com/rss/articles/CBMipgFBVV95cUxONU1ld2RnWXRwMzZFTEtKNFBxb09KQXJIZzI2WXJEVkthbldsaGUyOWxSbWxYNDVwQzJDSTR6UGRmcjFXaWpNcEczcWZWMEpLUUFtSlozWEFKOUwyUHk4QlBRelczWURTYW9sN3RRTWJVTnhRZllROFlXRzc1ZmI3RE1yZkFtUmt6SFpWWkRIVWdJQkJnYnFmVlU4eHhEWWl1ZGN3R1BB?oc=5` — Breakingviews - COMMENTARY: The unbearable lightness of an EU-China half-deal — recovery attempt 2/3
-  5. `link:https://news.google.com/rss/articles/CBMixgFBVV95cUxOOUk2RnFEbjJ3U1VMdUdwTXNrT3VNT0FpcjBDMFVLVHVzSHVlLVJjZE8tRC15Y1I0aWN5ZzJJQlJZaldBVmJ0cy1FLUVZNGVVc0k2bzg5dDlQTFlabzFrSHgtQ0dMNXg2N21BSzhsZEhyTTRTUjlBa2JhSWh5RVU1UWs4bnlhZ3M5Z3RCMTBLSXVieTBwckZNTWR0MUhkYUk1NUp6STFSaGhZb3FFTE5hVlRodXVOdE9faFlDZklPdGRlaERDR2c?oc=5` — US, European telecom stocks slide as SpaceX spectrum deal rattles sector — recovery attempt 2/3
-  6. `link:https://news.google.com/rss/articles/CBMivwFBVV95cUxOcmViaTc0MHRJTmw2Vm9fX0EzaW1aZm5fdnhGWjJPOG92TF9mV1Jyb1FTeDc3czNwb2ljQ1BMemg5M2tVSlJUVHBsRnpmTmdsSXZlRkpmZjV5Y3hsQXp6MEgwd3ZtUXZ6TmFid0paWk1lTjVEUGlzQVM3UU8xVTZVZWd2eEUtbTFOM0hyNUJNamxlZnd5TjU2UE9vdlYyQ01jcUJ5WHotejNQV1l1d0R0MnE0UTRac0IzVkZXcGd1cw?oc=5` — Team Europe partners with Thailand on space cooperation under EU Global Gateway — recovery attempt 2/3
-  7. `link:https://news.google.com/rss/articles/CBMixgFBVV95cUxQenp5X0NPZUxfT1ByY2pId3d1Q3JlT0FHcHBtODVndV9JMWFhNFJqM3FqSk1TTWN3RExMNGw1ckhKY1kxOTBIaVZSbW1qMVZXZGJadVd1QVlkS3J2dDNIekpsbk5MOFd1cFhYdmh6Zl9xT280YmhYRTh6VHBHUHpVX2diOWdZQ2gyUE5LU2xRQnkxcVBzVFlZUnNaVmxOd2RkRU5KalFaYS1PN0taRkc1Q0RucEFaUkZENS0tY0ZBMVZEb1ppNVE?oc=5` — Former German spy chief had contacts with Chinese official, Spiegel reports — recovery attempt 2/3
-  8. `link:https://news.google.com/rss/articles/CBMitgFBVV95cUxPM3Z6WGhtUkx6VTZyTFJTTFJLeW93eHROdE00YzByRHA1aGg0b0xxLTN4UHFzcjZUQWZBRHlnSDVkZDJVMTRrWEpUbWExZWw1bFpFQk9ydmFwN0VpalRTT1ZYWHZNWEI1UWdnSUJrbmZNd0dUVUtVa2Y0aEZPTlVYSXl2Uk5oN0JrZ2JMeVFtNUdSWFhkWWtmVHMyTlVqUjVhMU1NNmFNdHVxckhNc0RiLWlJTUNKdw?oc=5` — China Central Bank Defends Currency Policy Before EU Trade Talks — recovery attempt 2/3
+  1. `link:https://news.google.com/rss/articles/CBMixAFBVV95cUxQZGM2YUhXUUZ4ZHYzZXBsaW51b2xTaWMzWXVPbkJ3UHpnSnBQakg2dWk4QVpoZ194el9UeDh2Y2dwdERPelg5VFV5MzNrell1UVFzSmxzUmhLejdlNGdScTg0UkhDX3Z4cFNNYVFvUGlSclNKSlBVMXFjY3hOY0VlYTVMWkFrUF9QOU83azIwVUV2NGJEUWJoYzFaMkFKUnIwMlpBQVFKX2JxbFZpTVNldks0c3F5RmI3MF9VbURQMk9KdVg0?oc=5` — Foreign Affairs Council: Why the new EU sanctions against Russia are also a message to Trump - Table.Briefings — recovery attempt 2/3
+  2. `link:https://news.google.com/rss/articles/CBMiqgFBVV95cUxOblVOM2hRYTJfWHJPakFuenZYX0RsWHFmZzc3NUlhUlpiWFdYTnd6TlZHOFhKVlBCbmhEbmxvRndJOC10MmUza0pHMGkzNEN1ZVBVWEFwUzhkQ01KWVhjZXRtLWZpRVZ2ZzdOVWxPVF9VczBSZGVsLThiUWg4VmRsTW42NnBSb2tNX2xCYzhrVkdtU1pmd1VZZlZQZzVZaEhFWEJSdzJ6Tlkxdw?oc=5` — UK Grid Seeks Emergency French Power to Secure Supplies — recovery attempt 2/3
+  3. `link:https://news.google.com/rss/articles/CBMixAFBVV95cUxOMXljYmxkSnlrN21wcERuZ3I5RVc4TS1uYmNyQU9pN1A3dVBBZUdVLVFidmhSU29RbDdCeHRZWEtMb3JiV0RuYVFZQ2d6aHp2NVhQZV96TXZHSVB2c1VSMUg5S1I3U0xvM0xDa29DbWVhclBRVjVLNFV3XzZhTXlraFRKQzBrMnRVTGk5cm45MVdMeE45dEliR2lySzlvMFdRaVMtYmdlQW9SWUNFZEQ5QTUyYWNmdk1ud29oNWY3dnFpekMx?oc=5` — EU adopts its largest-ever package of sanctions listings, targeting the industry behind Russia’s war — recovery attempt 2/3
+  4. `link:https://news.google.com/rss/articles/CBMitAFBVV95cUxNbDVkeGpzbTNhNzZnamd6dFVmOVRkSHBOeUpEN05jUnpNeE8yRXJST2hzQklMeEFqMWlHTUI2bGFzZkhvdS1VYzhSWGxtcVVKN2dnNlowQXp4V0lNWlM5cnBOd2VtUUFyT0hhUlFnbDZWcTlILW1GcWhRUGNHRS1NT3Fya1RGaWVCWXFHMlFJZXJOdUJzbzQzSFN0V05tODJtSnBJdkhqOHR5YXZVSU1wU1E0X0E?oc=5` — EU’s Kallas Urges Trump to Sanction Russia and Shun Diesel Deal — recovery attempt 2/3
+  5. `link:https://news.google.com/rss/articles/CBMie0FVX3lxTE80TVBtZXVoQVpBUEVmb0gxRnNWVzRJMHdaQTV0aUtRc1liODdYTjRDMnVtUzA0a2htSzlrQ0FhT1ZIbXM2cVZXR2stUTY3WjZTWTExSXpDbE5lcDNJbjNpYXJILVc3Tm9taWRxalVObWJKREhUQ1VYWFVtOA?oc=5` — What are EU sanctions against Russia? — recovery attempt 2/3
+  6. `link:https://news.google.com/rss/articles/CBMirwFBVV95cUxQNHU4aWdseGJQNDlHSkY2bVlVakhtNG9qSWo2eHl0MV9WSTRoc1lqdUdTcHlXeWdCVU1nZ3V6c2Z2dV9FMmRXdGlmMjhOOVpENE9ZRkY1UkRxM1ZzUTBaLTE0OUhEUE9nVzFVd1pUQUlJcjljeWhjNEJvSk55VlhobmU5Q0F2S2lKb0M0Z2lLcjg1Y1J2bG8zUU8xUXdLUV93WUpOMG5DSE11dzJmdklv?oc=5` — EU adopts nearly 1,600 new sanctions listings targeting Russia — recovery attempt 2/3
+  7. `link:https://news.google.com/rss/articles/CBMi7wFBVV95cUxPdy0zU0NpeHFSQ3RXekUyZ2VBRkhFU1F6N0FlcUhURG1VMEhFZDU1VkNIN3BSU1NGdzBGNkt5QS1Kekt0OHNYMjBPbWVtYXY5Rko5elYxY0xXcGVtTVdLT2p2aXNUU1BteXAwMmRzeXhucnVIOVFoTkhUaXNhNVJpNzA4OVlXbUlTM053ODMxZGhDaWNGUVlrdjZRS2QybFh4NnVWR2hKUUtjT1JaVnhTcHBNdVlFS0J0ZHBGVXlTNjFNN3dnRlhvczlJYklqVGhneW9aODB0ZHRhS1F2ZFAzUi1zWmdZX0VRdGJVeURjTQ?oc=5` — Ukraine and Europe seek to keep pressure on Putin after Trump deal on Russian diesel - Le Monde.fr — recovery attempt 2/3
+  8. `link:https://news.google.com/rss/articles/CBMioAFBVV95cUxPRzNFMkF5b0ZQUnNpMlJlTE82NkZrRUJiTXNreWtQbi1wOHZ2ZC1aOE5GVkhZcDNmd1pBREFLb1I2MjBlVW9ncFhpd1oyaXhDbVdMUEUtbkE1WmtXQUtpa1NtTEJOb3NQcVBkc1lldUMwaUdUU01WLTg3MS1QVUtGcF9lVDRtNTBTOHVBX2JMZnJUVUNPWnRXb21heklpNEFS?oc=5` — China details outcome of EU trade talks on hybrid, electric vehicles — recovery attempt 2/3
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
