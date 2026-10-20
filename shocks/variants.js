@@ -68,9 +68,9 @@
   function genericProfile(scenario){
     return {
       variants:[
-        {id:'contained',label:'Contained',title:`Contained: ${scenario.title}`,text:'The mechanism appears, but redundancy, substitution, workarounds or policy response keep it local and temporary.'},
-        {id:'core',label:'Core shock',title:scenario.title,text:scenario.plainly||'The disruption reaches the capability described in the scenario.'},
-        {id:'compound',label:'Compound',title:`Compound: ${scenario.title}`,text:`The same mechanism lands together with an adjacent dependency or policy failure. ${scenario.secondOrder||''}`.trim()}
+        {id:'contained',label:'Contained',title:`Limited impact: ${scenario.title}`,text:'The disruption occurs, but alternative supplies, backup systems or a timely response keep its effects contained.'},
+        {id:'core',label:'Core shock',title:scenario.title,text:scenario.plainly||'The disruption reaches the capability at risk.'},
+        {id:'compound',label:'Compound',title:`Wider disruption: ${scenario.title}`,text:`The disruption coincides with another weakness, making it harder to contain. ${scenario.secondOrder||''}`.trim()}
       ],
       counterRoles:GENERIC_COUNTER_ROLES
     };
