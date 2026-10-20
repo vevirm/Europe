@@ -191,10 +191,10 @@ function card(title,body,evidence,kind){
 }
 function pageIntro(route){
   const m={
-    trends:{kicker:'Competing directions',title:'Forces pulling Europe in different directions',lede:'Each pair shows two evidence-backed directions acting on the same issue. The balance shows which direction has stronger current evidence, not a probability.'},
-    phenomena:{kicker:'Developments already under way',title:'Changes that keep shaping Europe',lede:'These are recurring developments seen across more than one piece of evidence or period. Each item says what keeps happening and why it matters.'},
-    priorities:{kicker:'What current developments could lead to',title:'Risks & opportunities',lede:'Possible consequences of developments already visible in the Radar: what could weaken Europe’s economic security, and what could strengthen it.'},
-    shocks:{kicker:'Sudden disruptions',title:'What could abruptly change the picture',lede:'Plausible external events that could quickly alter Europe’s economic-security position. These are scenarios to watch, not forecasts.'},
+    trends:{kicker:'Competing directions',title:'Forces pulling Europe in different directions',lede:'Two developments can unfold at once. Each card compares the evidence for different directions; the numbers indicate their relative support, not the odds of either happening.'},
+    phenomena:{kicker:'Developments already under way',title:'Changes that keep shaping Europe',lede:'Some changes are less like breaking news and more like a steady current. These patterns recur across sources or periods.'},
+    priorities:{kicker:'What might follow',title:'Risks & opportunities',lede:'Where might today’s developments leave Europe more exposed—and where might they open up new possibilities? These are possibilities, not predictions.'},
+    shocks:{kicker:'Sudden disruptions',title:'What could change overnight',lede:'A supply cutoff, political turn or infrastructure failure can change the picture quickly. These are plausible situations to think through, not forecasts.'},
     future:{kicker:'2035 economic-security scenarios',title:'Four possible Europes in 2035',lede:'The scenarios vary along two big uncertainties: how connected the world economy remains and how much strategic capacity Europe can build and retain.'}
   };return m[route]||{};
 }
