@@ -143,8 +143,9 @@ function trendSide(side,pair,which){
   // evidence bundle redefine the whole card.
   const ev=(side?.evidence||[]).slice(0,2);
   const text=[side?.title,side?.plain,side?.why,evidenceText(ev),object].join(' ');
-  const key=classify(text),tpl=TREND[key];
-  if(tpl)return pack(tpl.title,tpl.what,tpl.why);
+  // Never apply a topic-wide template to both sides: it can replace distinct
+  // trend/countertrend claims with the *same* headline and explanation.
+  // For unknown objects, preserve the side-specific evidence-grounded copy.
   const fallbackTitle=deTitle(side?.title||'');
   return pack(fallbackTitle,side?.plain||'',side?.why||'');
 }
