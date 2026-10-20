@@ -324,6 +324,82 @@
     return t;
   }
 
+  // A different polarity label is not enough: the reader must be able to tell
+  // the two claims apart without relying on "expansion" versus "constraints".
+  const CONTRAST_FILLER=new Set('the a an and or of in on for to with from by at as is are was were eu europe european more less new growing increasing expanding expansion constraints constrained constraining trend countertrend evidence signals development developments activity relating related'.split(' '));
+  function claimTokens(value){
+    return new Set(low(value).replace(/[^\p{L}\p{N}]+/gu,' ').split(' ').filter(w=>w.length>2&&!CONTRAST_FILLER.has(w)));
+  }
+  function claimSimilarity(a,b){
+    const x=claimTokens(a),y=claimTokens(b);
+    if(!x.size||!y.size)return 1; // no meaningful claim to compare
+    const same=[...x].filter(w=>y.has(w)).length;
+    return same/Math.min(x.size,y.size);
+  }
+  function evidenceKey(e){
+    const r=e?.row||e||{};
+    return low(r.identity||r.link||r.url||r.title||'');
+  }
+  function distinctPair(pair){
+    const a=pair.left,b=pair.right;
+    if(!clean(a.title)||!clean(b.title)||!clean(a.plain)||!clean(b.plain))return false;
+    if(claimSimilarity(a.title,b.title)>=0.8||claimSimilarity(a.plain,b.plain)>=0.8)return false;
+    const left=new Set((a.evidence||[]).map(evidenceKey).filter(Boolean));
+    const right=new Set((b.evidence||[]).map(evidenceKey).filter(Boolean));
+    if(left.size&&right.size&&[...left].filter(k=>right.has(k)).length/Math.min(left.size,right.size)>0.25)return false;
+    return true;
+  }
+  function distinctiveEvidence(items,other){
+    const otherKeys=new Set(other.map(evidenceKey));
+    return items.map(e=>e.row).filter(r=>clean(r.title)&&!otherKeys.has(evidenceKey(r)))
+      .sort((a,b)=>clean(a.title).length-clean(b.title).length);
+  }
+  function evidenceSpecificSide(items,opposite,direction,pull,sourceCount){
+    const rows=distinctiveEvidence(items,opposite);
+    const first=rows[0],second=rows.find(r=>claimSimilarity(r.title,first?.title||'')<0.65);
+    if(!first||!second)return null;
+    return {title:`${direction}: ${clean(first.title)}`,
+      plain:`Current evidence includes “${clean(first.title)}” and “${clean(second.title)}”.`,
+      why:'',pull,evidence:items,history:[],sourceCount};
+  }
+
+  // Publication-only identity gate. Polarity labels are not separate claims:
+  // "Expansion in X" and "Constraints on X" both reduce to the same X.
+  // Scanner candidates remain untouched and available for future scans.
+  const IDENTITY_NOISE=new Set('a an the in on at to for of by with and or is are was were eu europe european expansion expanding expands constraints constraining constrained constraint growth growing increases increasing decrease decreasing reduction reducing pressure pressures more less new evidence relating related activity developments'.split(' '));
+  function identityTerms(value){
+    return new Set(low(value).replace(/[^\p{L}\p{N}]+/gu,' ').split(' ').filter(w=>w.length>2&&!IDENTITY_NOISE.has(w)));
+  }
+  function nearIdentity(a,b){
+    const aa=identityTerms(a),bb=identityTerms(b);
+    if(!aa.size||!bb.size)return true;
+    const shared=[...aa].filter(w=>bb.has(w)).length;
+    return shared/Math.min(aa.size,bb.size)>=0.85;
+  }
+  function evidenceIdentity(e){
+    const r=e?.row||e||{};
+    return low(r.identity||r.link||r.url||r.title||'');
+  }
+  function publishablePair(p){
+    if(!clean(p?.left?.title)||!clean(p?.right?.title)||!clean(p?.left?.plain)||!clean(p?.right?.plain))return false;
+    // A pair must differ in BOTH its headline and its actual claim.
+    if(nearIdentity(p.left.title,p.right.title)||nearIdentity(p.left.plain,p.right.plain))return false;
+    const a=new Set((p.left.evidence||[]).map(evidenceIdentity).filter(Boolean));
+    const b=new Set((p.right.evidence||[]).map(evidenceIdentity).filter(Boolean));
+    if(a.size&&b.size&&[...a].filter(id=>b.has(id)).length/Math.min(a.size,b.size)>0.25)return false;
+    return true;
+  }
+  function uniquePublishedPairs(pairs){
+    const seen=new Set(),result=[];
+    for(const p of pairs){
+      if(!publishablePair(p))continue;
+      const key=[...identityTerms(p.left.title+' '+p.right.title)].sort().join(' ');
+      if(seen.has(key))continue;
+      seen.add(key);result.push(p);
+    }
+    return result;
+  }
+
   function highOrderPairs(data){
     const state=data?.high_order_inference&&typeof data.high_order_inference==='object'?data.high_order_inference:{};
     const ids=Array.isArray(state?.publications?.trend)?state.publications.trend:[];
@@ -348,7 +424,7 @@
         composition:clean(b.composition||''),flip:clean(b.flip_line||''),label:clean(b.label||''),
         actionStats:{leftActions:Number(b.left_actions)||0,rightActions:Number(b.right_actions)||0,leftSources:Number(b.left_sources)||0,rightSources:Number(b.right_sources)||0,rawLeft:Number(b.raw_left_pull),rawRight:Number(b.raw_right_pull)},
         currentEvidenceCount:Number(c.primary_records)||0,historicalContextCount:0};
-    }).filter(Boolean);
+    }).filter(Boolean).filter(distinctPair);
   }
 
   // When the claim-native publication snapshot predates the countervailing fields,
@@ -402,28 +478,26 @@
       const expanding=evidenceFor('Expands'),constraining=evidenceFor('Constrains');
       const independent=items=>new Set(items.map(x=>low(x.row.source))).size;
       if(expanding.length<2||constraining.length<2||independent(expanding)<2||independent(constraining)<2)continue;
-      const object=clean(c.reader_summary||c.topic_label||c.reader_title||'this area');
-      const name=clean(c.reader_title||c.topic_label||'EU economic-security activity');
       const count=expanding.length+constraining.length;
       const lp=Math.max(20,Math.min(80,Math.round(100*expanding.length/count)));
+      const left=evidenceSpecificSide(expanding,constraining,'Expansion-side evidence',lp,independent(expanding));
+      const right=evidenceSpecificSide(constraining,expanding,'Constraint-side evidence',100-lp,independent(constraining));
+      if(!left||!right)continue;
       output.push({id:'reasoning:'+clean(c.id),emergent:false,developing:true,
-        left:{title:`Expansion in ${name}`,plain:`Evidence of expansion relating to ${object}.`,why:'',pull:lp,evidence:expanding,history:[],sourceCount:independent(expanding)},
-        right:{title:`Constraints on ${name}`,plain:`Evidence of constraints relating to ${object}.`,why:'',pull:100-lp,evidence:constraining,history:[],sourceCount:independent(constraining)},
+        left,right,
         composition:'Developing reasoning candidate. The two directions are supported by separate primary records, but the system has NOT established that they are genuinely opposing trends on the same outcome. Evidence shares, not verified effect sizes, determine the bars.',
         flip:'Needs an explicit shared outcome, causal countervailing mechanism and falsifier check before promotion to a verified trend/counter-trend pair.'});
     }
-    return output;
+    return output.filter(distinctPair);
   }
   function build(data,history){
-    // Fail closed: a topic match, sign classification, or old static pair is
-    // insufficient to establish a countervailing mechanism. Only publish pairs
-    // validated by the current evidence-based claim-native reasoning pipeline.
-    const verified=highOrderPairs(data);
+    // Published views are optional entertainment, not the scanner's candidate store.
+    // Do not manufacture two opposing identities from the same topic label.
+    // Unvalidated "Expands/Constrains" reasoning candidates stay in radar.json
+    // but are not displayed until they have distinct, evidence-backed claims.
+    const verified=uniquePublishedPairs(highOrderPairs(data));
     if(verified.length)return verified;
-    const reasoned=reasoningDevelopingPairs(data);
-    const independent=developingPairs(data,history);
-    const existing=new Set(reasoned.map(x=>low(x.left.title+' '+x.right.title)));
-    return [...reasoned,...independent.filter(x=>!existing.has(low(x.left.title+' '+x.right.title)))];
+    return uniquePublishedPairs(developingPairs(data,history));
   }
   function stats(data,history){
     const hs=historicalCorpus(history);
