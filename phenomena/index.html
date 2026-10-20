@@ -51,15 +51,15 @@ function renamingStatement(x){
 }
 function conjunctionStatement(x){
   const a=plainTerm(x.topicLabels?.[0]||''),b=plainTerm(x.topicLabels?.[1]||'');
-  if(/AI and computing/i.test(a))return `AI and computing now appear more often alongside ${b}.`;
-  if(/long-term strategy/i.test(a))return `Long-term strategy is increasingly tied to ${b}.`;
-  if(/research funding/i.test(a))return `Research funding and ${b} are appearing together more often.`;
-  return `${cap(a)} is increasingly linked to ${b}.`;
+  if(/AI and computing/i.test(a))return `AI and computing are increasingly discussed alongside ${b}.`;
+  if(/long-term strategy/i.test(a))return `Long-term strategy is appearing more often alongside ${b}.`;
+  if(/research funding/i.test(a))return `Research funding is increasingly discussed alongside ${b}.`;
+  return `${cap(a)} and ${b} are appearing together more often.`;
 }
 function changingStatement(x){
   if(x.kind==='renaming')return renamingStatement(x);
   if(x.kind==='conjunction')return conjunctionStatement(x);
-  if(x.kind==='convergence')return 'Long-term strategy, global rivalry, industrial scale-up and technology controls are increasingly being treated as one connected issue.';
+  if(x.kind==='convergence')return 'Long-term strategy is increasingly discussed alongside geopolitical rivalry, industry and technology controls.';
   return cap(plainTerm(x.title||x.claim||'Pattern'));
 }
 function returningStatement(x){
