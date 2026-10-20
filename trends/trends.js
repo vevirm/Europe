@@ -439,6 +439,161 @@
   }
   // Stage 7 already selects the published claim-native trend hypotheses.
   // Present their evidence without promoting polarity tags to verified opposition.
+  // Plain-English display copy for the published reasoning snapshot; sources and scores are unchanged.
+  // New candidates not in this snapshot retain their own wording.
+  const READER_COPY = {
+  "claim:opposing_movements:2c7cb4c27bf102": {
+    "leftTitle": "Europe is building its own AI capabilities",
+    "leftPlain": "EU initiatives aim to strengthen European AI research, computing and industrial capacity.",
+    "rightTitle": "Europe still relies on outside technology and funding",
+    "rightPlain": "Limited computing capacity, scale-up investment and concentrated suppliers hold back that ambition."
+  },
+  "claim:opposing_movements:086ce186c212df": {
+    "leftTitle": "EU buying rules may favour European-made goods",
+    "leftPlain": "The Commission is considering procurement rules that support European production in strategic industries.",
+    "rightTitle": "Those preferences could add conditions and complexity",
+    "rightPlain": "Origin and resilience requirements may make public support harder for some businesses to access."
+  },
+  "claim:opposing_movements:5799545d82e7b6": {
+    "leftTitle": "The EU is planning more strategic investment",
+    "leftPlain": "A proposed European Competitiveness Fund would bring support for strategic technologies and defence together.",
+    "rightTitle": "Geopolitical uncertainty makes investment riskier",
+    "rightPlain": "Financial vulnerabilities and uncertainty could make new investment harder to finance."
+  },
+  "claim:opposing_movements:fba6293a17f4bf": {
+    "leftTitle": "Businesses are spreading their supply-chain risks",
+    "leftPlain": "European companies report diversifying suppliers to cope with geopolitical disruption.",
+    "rightTitle": "Local production is not always the cheaper option",
+    "rightPlain": "Energy and weather conditions can make European production less competitive than imports."
+  },
+  "claim:opposing_movements:bb71b9cb093b8a": {
+    "leftTitle": "The EU is pushing ahead with new trade partnerships",
+    "leftPlain": "The Mercosur trade agreement remains on its legal track despite challenges.",
+    "rightTitle": "Security controls complicate trade cooperation",
+    "rightPlain": "Export controls and investment screening introduce restrictions even among trade partners."
+  },
+  "claim:opposing_movements:6b2c4f61101ea8": {
+    "leftTitle": "Global Gateway gives Europe a bigger international role",
+    "leftPlain": "The EU is using Global Gateway to expand its influence through development and infrastructure partnerships.",
+    "rightTitle": "Global Gateway has struggled with a clear direction",
+    "rightPlain": "Disagreements over its purpose and early implementation have slowed progress."
+  },
+  "claim:opposing_movements:08a456c94a9d9a": {
+    "leftTitle": "More money is reaching European electricity grids",
+    "leftPlain": "A new guarantee scheme aims to help grid-equipment makers finance expansion.",
+    "rightTitle": "Grid bottlenecks can still delay new projects",
+    "rightPlain": "Congestion, fragmented rules and financing risks remain obstacles to grid investment."
+  },
+  "claim:opposing_movements:9b036724d9b113": {
+    "leftTitle": "The EU is updating its export-control tools",
+    "leftPlain": "The EU has revised the list of dual-use goods and technologies subject to controls.",
+    "rightTitle": "Other countries are tightening restrictions too",
+    "rightPlain": "Chinese controls on exports to EU entities show how quickly access can become politicised."
+  },
+  "claim:opposing_movements:fb0c6185c9340b": {
+    "leftTitle": "Europe is joining forces on defence technology",
+    "leftPlain": "The EU–Ukraine Drone Alliance aims to develop drones and counter-drone systems together.",
+    "rightTitle": "Defence supply rules remain fragmented",
+    "rightPlain": "European countries still disagree on what security of defence supply should mean."
+  },
+  "claim:opposing_movements:b3d6a6f5a2e8b7": {
+    "leftTitle": "Europe wants to make more strategic technology",
+    "leftPlain": "The Chips Act debate focuses on building European semiconductor capacity and reducing reliance on imports.",
+    "rightTitle": "Global competition keeps European industry under pressure",
+    "rightPlain": "Clean-tech producers face tough rivals abroad and fragile international supply chains."
+  },
+  "claim:opposing_movements:0e2d51782d348b": {
+    "leftTitle": "Trade deals can open markets for EU businesses",
+    "leftPlain": "EU trade arrangements shape how companies trade and where they source inputs.",
+    "rightTitle": "New EU rules can make market access harder",
+    "rightPlain": "Deforestation due-diligence rules impose extra conditions on certain imported products."
+  },
+  "claim:opposing_movements:9a7255b141d1e5": {
+    "leftTitle": "Europe is planning new clean-energy supply chains",
+    "leftPlain": "Research and infrastructure planning are supporting emerging green-fuel systems.",
+    "rightTitle": "Clean-tech supply chains still depend on others",
+    "rightPlain": "EU studies identify production gaps and reliance on foreign manufacturers and inputs."
+  },
+  "claim:opposing_movements:89024a3f504348": {
+    "leftTitle": "The EU is defending its position in trade agreements",
+    "leftPlain": "EU participation in international trade rules gives it a place at the negotiating table.",
+    "rightTitle": "Carbon-border checks can create trade friction",
+    "rightPlain": "CBAM verification and recognition rules need to work smoothly to avoid unnecessary barriers."
+  },
+  "claim:opposing_movements:eed3c77244eb83": {
+    "leftTitle": "The digital euro is moving into practical trials",
+    "leftPlain": "New wholesale-market activity is testing how a digital euro could be used in finance.",
+    "rightTitle": "Europe also needs independent payment networks",
+    "rightPlain": "European payment providers are joining forces to reduce dependence on US-dominated systems."
+  },
+  "claim:opposing_movements:4db316341f4127": {
+    "leftTitle": "EU sanctions are changing financial behaviour",
+    "leftPlain": "Investigations show that sanctions can reshape markets and create unexpected incentives.",
+    "rightTitle": "Sanctions lists can also be revised or narrowed",
+    "rightPlain": "The EU has removed some prominent individuals from its Russia sanctions list."
+  },
+  "claim:opposing_movements:e9d3e7ed8d708a": {
+    "leftTitle": "Critical raw materials are becoming a security priority",
+    "leftPlain": "Sweden is treating reliable access to critical raw materials as a national-security issue.",
+    "rightTitle": "Europe is looking for ways to use fewer scarce inputs",
+    "rightPlain": "Researchers are exploring substitutes and new materials to reduce reliance on critical minerals."
+  },
+  "claim:opposing_movements:13ce3a81e342e7": {
+    "leftTitle": "Foreign investors remain important to European infrastructure",
+    "leftPlain": "Portugal says changes involving its grid operator do not necessarily change China’s investment position.",
+    "rightTitle": "Geopolitics is reshaping infrastructure relationships",
+    "rightPlain": "Research describes national priorities moving apart as strategic concerns grow."
+  },
+  "claim:opposing_movements:7e83837ef41f9b": {
+    "leftTitle": "The EU remains connected to global trade",
+    "leftPlain": "Trade agreements continue to define the EU’s access to international markets.",
+    "rightTitle": "New EU conditions can restrict some imports",
+    "rightPlain": "Deforestation rules require extra checks for covered products entering the EU."
+  },
+  "claim:opposing_movements:7aee0a078208e8": {
+    "leftTitle": "Europe wants greater independence in space",
+    "leftPlain": "European space policy is increasingly concerned with secure, sovereign access to orbit.",
+    "rightTitle": "Space independence is costly and difficult",
+    "rightPlain": "Large differences in launch costs and existing dependencies limit Europe’s options."
+  },
+  "claim:opposing_movements:46a2870738ce15": {
+    "leftTitle": "Europe is broadening its energy partnerships",
+    "leftPlain": "Cooperation with Kazakhstan may help diversify energy supplies and transit routes.",
+    "rightTitle": "New energy systems also bring technical trade-offs",
+    "rightPlain": "Studies of hydrogen storage show how efficiency losses and system design complicate energy security."
+  },
+  "claim:opposing_movements:a87c036c26ed30": {
+    "leftTitle": "The EU is preparing to defend its space systems",
+    "leftPlain": "The Council has agreed on a framework for responding to threats against European space services.",
+    "rightTitle": "Critical infrastructure has wider cyber weaknesses",
+    "rightPlain": "Research into mixed energy grids shows that technical security measures alone may not be enough."
+  },
+  "claim:opposing_movements:6e7e76a85d11fa": {
+    "leftTitle": "The EU is using trade-defence tools more assertively",
+    "leftPlain": "Commission investigations increasingly address dumping and subsidies, including concerns involving China.",
+    "rightTitle": "Trading partners can hit back",
+    "rightPlain": "Models of the EU–China electric-vehicle dispute show how retaliation could divide EU countries."
+  },
+  "claim:opposing_movements:23da10e51bf097": {
+    "leftTitle": "European companies are reducing supplier concentration",
+    "leftPlain": "Companies report diversifying supply chains to manage geopolitical risks.",
+    "rightTitle": "Europe remains exposed to outside pressure",
+    "rightPlain": "Energy costs, industrial dependencies and economic coercion still threaten competitiveness."
+  },
+  "claim:opposing_movements:614d15955c7381": {
+    "leftTitle": "Trade-defence action aims to protect European producers",
+    "leftPlain": "Anti-dumping and subsidy investigations give the EU tools to respond to unfair competition.",
+    "rightTitle": "Retaliation can make trade disputes worse",
+    "rightPlain": "The EU–China electric-vehicle dispute illustrates possible countermeasures and political divisions."
+  },
+  "claim:opposing_movements:4f4beb829dfc97": {
+    "leftTitle": "Europe is updating its economic-security rules",
+    "leftPlain": "EU institutions are responding to technology competition with new economic and digital policy measures.",
+    "rightTitle": "Compliance obligations are expanding too",
+    "rightPlain": "Cyber-resilience rules introduce new security requirements for products sold in Europe."
+  }
+};
+
   function publishedReasoning(data){
     const state=data?.high_order_inference||{};
     const ids=Array.isArray(state?.publications?.trend)?state.publications.trend:[];
@@ -447,6 +602,7 @@
       .map(c=>[clean(c.id),c]));
     return ids.map(id=>byId.get(clean(id))).filter(Boolean).map(c=>{
       const b=c.trend_balance||{};
+      const readerCopy=READER_COPY[clean(c.id)]||{};
       const support=Array.isArray(c.support)?c.support:[];
       const side=role=>{
         const seen=new Set(),evidence=[];
@@ -469,9 +625,9 @@
         :Math.round(100*leftEvidence.length/(leftEvidence.length+rightEvidence.length));
       return {id:clean(c.id),emergent:validated,developing:!validated,reasoningPublished:true,
         topic,maturity:validated?'Evidence-backed opposition':'Exploratory comparison',scope:clean(c.trend_scope||''),
-        left:{title:clean(b.left_title)||'Expansion gaining ground',plain:clean(b.left_plain),why:'',pull:lp,evidence:leftEvidence,history:[],sourceCount:new Set(leftEvidence.map(e=>low(e.row.source))).size},
-        right:{title:clean(b.right_title)||'Constraints gathering force',plain:clean(b.right_plain),why:'',pull:100-lp,evidence:rightEvidence,history:[],sourceCount:new Set(rightEvidence.map(e=>low(e.row.source))).size},
-        composition:'A rough balance of the evidence in this publication set, not a measured real-world probability.',
+        left:{title:readerCopy.leftTitle||plainTrendTitle(b.left_title)||'More activity',plain:readerCopy.leftPlain||clean(b.left_plain),why:'',pull:lp,evidence:leftEvidence,history:[],sourceCount:new Set(leftEvidence.map(e=>low(e.row.source))).size},
+        right:{title:readerCopy.rightTitle||plainTrendTitle(b.right_title)||'More constraints',plain:readerCopy.rightPlain||clean(b.right_plain),why:'',pull:100-lp,evidence:rightEvidence,history:[],sourceCount:new Set(rightEvidence.map(e=>low(e.row.source))).size},
+        composition:'Rough evidence balance, not a prediction.',
         flip:'',currentEvidenceCount:Number(c.primary_records)||0};
     }).filter(Boolean);
   }
