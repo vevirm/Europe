@@ -8,25 +8,25 @@ A validated `defer` or rejected current-package scan return counts as a failed a
 
 - Authoritative V2 verified: **2177** (Main **893** + Historical **1284**)
 - Automatic queue still needing V2 verification: **353** (Main **184** + Historical **169**)
-- Currently assigned to workers: **30** (Main **0** + Historical **30**)
+- Currently assigned to workers: **25** (Main **0** + Historical **25**)
 - Bounded access-recovery retries still eligible: **0**
 - Terminally dropped after failed scans: **137**
-- Automatic queue pending and not yet assigned: **323**
+- Automatic queue pending and not yet assigned: **328**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-1fcfddbd7f39`
-- Assigned unresolved records: **30**
-  1. `historical:id:3e7c79468b8483a2` — Crossing Red Lines: China’s Lithuania Sanctions Prod Europe | Report | Hinrich Foundation — recovery attempt 3/3
-  2. `historical:id:25f8b86dc2b07661` — Action from US and EU, anti-coercion measures, and jobs | What we are reading | Hinrich Foundation — recovery attempt 3/3
-  3. `historical:id:3b03e85ac018a46a` — Transatlantic Tech Policy Cooperation: Add Coordination on Government Aid to the List — recovery attempt 3/3
-  4. `historical:id:8401497a8aa48936` — Ports and Global Maritime Transport: which Trends to Foster Growth and what Role for Europe? | ISPI — recovery attempt 2/3
-  5. `historical:id:9053927f10d4a994` — EuroChamber Mongolia publishes a detailed FDI climate position paper — recovery attempt 2/3
-  6. `historical:id:84f2ebed902759a4` — EU-US summit: a Promising Moment in Transatlantic Relations
-  7. `historical:id:7801175b4e4bc9d4` — WTO Consistency of Export Restrictions for Public Health and Safety Purposes : An analysis of the EU’s export authorization scheme for personal protective equipment outside the EU — recovery attempt 2/3
-  8. `historical:id:bf6cc22540336b1e` — Consensus against all odds: explaining the persistence of EU sanctions on Russia
-  - … plus 22 more in the package manifest
+- Current package: `worker-a-a82b366ad8c0`
+- Assigned unresolved records: **25**
+  1. `historical:id:8401497a8aa48936` — Ports and Global Maritime Transport: which Trends to Foster Growth and what Role for Europe? | ISPI — recovery attempt 2/3
+  2. `historical:id:9053927f10d4a994` — EuroChamber Mongolia publishes a detailed FDI climate position paper — recovery attempt 2/3
+  3. `historical:id:84f2ebed902759a4` — EU-US summit: a Promising Moment in Transatlantic Relations
+  4. `historical:id:7801175b4e4bc9d4` — WTO Consistency of Export Restrictions for Public Health and Safety Purposes : An analysis of the EU’s export authorization scheme for personal protective equipment outside the EU — recovery attempt 2/3
+  5. `historical:id:bf6cc22540336b1e` — Consensus against all odds: explaining the persistence of EU sanctions on Russia
+  6. `historical:id:bde030a6ad45aebc` — EU economic integration agreements, Brexit and trade
+  7. `historical:id:28efafe3f3446f10` — Trade defence: EU publishes a report on market distortions in Russia — recovery attempt 2/3
+  8. `historical:id:ce8e91a2c7d3412e` — Trade defence report: restoring the level playing field for European producers, 4 May 2020 — recovery attempt 2/3
+  - … plus 17 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-03b7f93735d9`
