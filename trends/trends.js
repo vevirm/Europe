@@ -354,10 +354,9 @@
   // When the claim-native publication snapshot predates the countervailing fields,
   // do not present its old sign-classified publications as verified.  Instead
   // show an independently sourced, explicitly provisional evidence comparison.
-  // Evaluate every explicitly authored thematic axis against the same
-  // independent-source and quality gates. An axis with inadequate evidence
-  // is skipped; scanner-created sign pairings remain disabled.
-  const DEVELOPING_AXES=new Set(PAIRS.map(axis=>axis.id));
+  // These axes have a concrete common outcome (supply concentration or EU
+  // decision unity); pairs about generic costs versus activity are excluded.
+  const DEVELOPING_AXES=new Set(['diversify_vs_concentrate','unity_vs_fragmentation']);
   function developingPairs(data,history){
     const current=currentCorpus(data), historical=historicalCorpus(history);
     const out=[];
@@ -438,15 +437,46 @@
     }
     return output;
   }
+  // Stage 7 already selects the published claim-native trend hypotheses.
+  // Present their evidence without promoting polarity tags to verified opposition.
+  function publishedReasoning(data){
+    const state=data?.high_order_inference||{};
+    const ids=Array.isArray(state?.publications?.trend)?state.publications.trend:[];
+    const byId=new Map((Array.isArray(state.candidates)?state.candidates:[])
+      .filter(c=>c&&c.product==='trend'&&c.grammar_id==='opposing_movements')
+      .map(c=>[clean(c.id),c]));
+    return ids.map(id=>byId.get(clean(id))).filter(Boolean).map(c=>{
+      const b=c.trend_balance||{};
+      const support=Array.isArray(c.support)?c.support:[];
+      const side=role=>{
+        const seen=new Set(),evidence=[];
+        for(const r of support){
+          if(clean(r?.role)!==role||r.claim_primary===false||!clean(r.title)||!clean(r.link))continue;
+          const key=clean(r.identity||r.link);
+          if(seen.has(key))continue;
+          seen.add(key);evidence.push({row:r});
+        }
+        return evidence;
+      };
+      const leftEvidence=side(clean(b.left_role||'Expands'));
+      const rightEvidence=side(clean(b.right_role||'Constrains'));
+      if(!leftEvidence.length||!rightEvidence.length)return null;
+      const validated=c.countervailing_validated===true&&Boolean(clean(c.countervailing_outcome));
+      const topic=clean(c.reader_title||c.topic_label||b.title_label||'EU economic security');
+      const detail=clean(c.reader_summary||c.topic_label||'');
+      const status=validated?'Validated countervailing relationship':'Reasoning hypothesis · not validated opposition';
+      return {id:clean(c.id),emergent:validated,developing:!validated,reasoningPublished:true,
+        topic,maturity:status,scope:clean(c.trend_scope||''),
+        left:{title:'Evidence classified as expansion',plain:'',why:'',pull:0,evidence:leftEvidence,history:[],sourceCount:new Set(leftEvidence.map(e=>low(e.row.source))).size},
+        right:{title:'Evidence classified as constraint',plain:'',why:'',pull:0,evidence:rightEvidence,history:[],sourceCount:new Set(rightEvidence.map(e=>low(e.row.source))).size},
+        composition:validated?clean(c.countervailing_outcome):'The reasoning engine groups these documents under '+topic+'. Its expansion/constraint labels are provisional; these publications have not been verified as opposing mechanisms.',
+        flip:'',currentEvidenceCount:Number(c.primary_records)||0};
+    }).filter(Boolean);
+  }
   function build(data,history){
-    // Fail closed: a topic match, sign classification, or old static pair is
-    // insufficient to establish a countervailing mechanism. Only publish pairs
-    // validated by the current evidence-based claim-native reasoning pipeline.
-    const verified=highOrderPairs(data);
-    if(verified.length)return verified;
-    // Do not promote scanner polarity labels into apparent counter-trends.
-    // Evaluate all authored thematic axes, keeping evidence qualification gates.
-    return developingPairs(data,history);
+    // Follow the reasoning engine publication order and maturity distinctions.
+    // Never replace it with keyword axes or raw document-title matchups.
+    return publishedReasoning(data);
   }
   function stats(data,history){
     const hs=historicalCorpus(history);
