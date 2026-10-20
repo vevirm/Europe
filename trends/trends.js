@@ -417,9 +417,21 @@
         return '';
       };
       const expandLead=sourceLead(expanding),constrainLead=sourceLead(constraining);
+      // Display-only: use concrete source titles rather than repeating a topic template.
+      // Do not infer a causal opposite from the scanner's Expands/Constrains tags.
+      const displayHeadline=(items,avoid='')=>{
+        const titles=items.map(e=>clean(e.row?.title)).filter(Boolean);
+        const title=titles.find(t=>low(t)!==low(avoid))||titles[0]||'';
+        if(!title)return '';
+        const compact=title.replace(/\s*[|—–]\s*[^|—–]{3,70}$/,'').replace(/[.!?]+$/,'');
+        return compact.length>115?compact.slice(0,112).trimEnd()+'…':compact;
+      };
+      const expandTitle=displayHeadline(expanding);
+      const constrainTitle=displayHeadline(constraining,expandTitle);
+
       output.push({id:'reasoning:'+clean(c.id),emergent:false,developing:true,
-        left:{title:`Where ${name} is gaining ground`,plain:expandLead||`Current sources point to activity or capacity growing around ${object}.`,why:'',pull:lp,evidence:expanding,history:[],sourceCount:independent(expanding)},
-        right:{title:`What is holding back ${name}`,plain:constrainLead||`Other current sources describe obstacles or limits affecting ${object}.`,why:'',pull:100-lp,evidence:constraining,history:[],sourceCount:independent(constraining)},
+        left:{title:expandTitle||name,plain:expandLead||`Current sources point to activity or capacity growing around ${object}.`,why:'',pull:lp,evidence:expanding,history:[],sourceCount:independent(expanding)},
+        right:{title:constrainTitle||name,plain:constrainLead||`Other current sources describe obstacles or limits affecting ${object}.`,why:'',pull:100-lp,evidence:constraining,history:[],sourceCount:independent(constraining)},
         composition:'Two sets of source evidence, shown side by side. They do not necessarily cancel each other out; the balance reflects how many records support each direction, not the size of its real-world effect.',
         flip:'Watch whether the reported activity and obstacles affect the same real-world outcome.'});
     }
