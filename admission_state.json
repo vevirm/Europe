@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-admission-v1",
-  "updated_at": "2026-10-22T07:23:28Z",
+  "updated_at": "2026-10-22T08:16:43Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "decision": "keep",
@@ -1396,16 +1396,16 @@
       "duplicate_of": ""
     },
     "link:https://www.ispionline.it/wp-content/uploads/2026/09/ACI_EP_Catalogue_FINAL6.xlsx": {
-      "decision": "drop_unverifiable",
-      "target_strand": "",
-      "reason_code": "EVIDENCE_ACCESS_FAILED_3X",
-      "reason": "Substantive evidence remained inaccessible after three validated Deep Scan recovery passes. The record is terminally dropped from automatic scanning and active reasoning to prevent repeated retry loops.",
+      "decision": "keep",
+      "target_strand": "A",
+      "reason_code": "A_SUBSTANTIVE_EU_RI",
+      "reason": "Original European Parliament commissioned economic-coercion evidence cataloguing EU/Member-State cases and Anti-Coercion Instrument relevance, with direct relevance to European resilience.",
       "source": "deep_scan_v2",
       "corpus_scope": "main",
-      "updated_at": "2026-10-22T07:23:20Z",
-      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
-      "verification_note": "Original XLSX linked by ISPI appears in a contemporaneous article index on September 21; European Parliament study published September 25 records a 41-case catalogue and methodology, confirming dataset family. Actual spreadsheet binary at supplied wp-content URL returned an inaccessible file and cannot be read; no claim about individual worksheet rows made. Third-attempt hard-final recovery: checked two identity signals, attempted two broader search variants, publisher and author/repository routes. Evidence not sufficient for admission. Third-attempt hard-final searched filename and translated/title variants, ISPI publisher route, and independent Parliament/Policy Commons records; the only verifiable substantive content is a related study annex, not the original attached Excel file.",
-      "recovery_attempts": 3
+      "updated_at": "2026-10-22T08:16:42Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "ISPI official publisher metadata verifies original dataset title, date and methodology, and links claimed spreadsheet. The underlying downloadable Excel could not be opened with web reader; 41-case total and scoring dimensions are documented by the dataset publisher but individual episodes were not audited. No claims about row-level scores or specific cases.",
+      "duplicate_of": ""
     },
     "link:https://ecfr.eu/publication/middle-powerhouse-a-new-blueprint-for-british-internationalism/": {
       "decision": "keep",
@@ -4264,12 +4264,16 @@
       "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQjBxbU5CT0xvN092TmxsVzZjd25OUTIxMFhmMnZVV1A5Z0h6RFZNXzlrbmt0RkVSZk9qNTh5am5FYjBwelFfdDlqdmM2OUp2andGbHkwanYtLXVzUXhGNlFydnF3MGlXXzNReUI0cjNlV3lST2FlUkQ5Wm9uMDVQX0xCM01LclV6TDZ2c3V3VVp3ODV1bkNxbHRKNjNMRnlFSjBtendtV0NVYkczdm1oa3hBRmVra0JhamVN?oc=5": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Substantive current European economic-security policy/trade development directly described in the source.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T08:16:42Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-09-22, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMiwAFBVV95cUxOb0tSRmRfMlM5THNLUU1GTTIxTUZxYzFlb29Tb013ZUViT0E0Qm5KU1MxeEx2RTgwRS1FNFhaN0VTMWlXd2NKSTJ0bjJONzItUmxfNU5QT0xHTURTamZWT0dhY0R3M09qUzdlYzdiS1dvUW54M0pnbDFTUlZwNkVYRy1HUjMyZFN0WmpTdE5fNU5GRWJrTDJabkVrTWRreGVuSHpmdzdkY0VBUmQ0ZFFnZVZCQ1NjVWsxNGRlQzFGVlg?oc=5": {
       "decision": "keep",
@@ -5072,12 +5076,16 @@
       "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1RhLXdTMHhVRW1NWHBBV3hocl9ZWlFMZ2FVRWhnLUI4ZC1GNC16aWkyUW1sRWlLa25ySTBwMWxBbjlqTkE5UDNESjZ3bFFmeWFZWkxuYkRMS2tZVFk0bzFXM3VycnRMYkUwUl9tckJ3SVo2QTNvWWZXUlItTjdCeEZPVDZQSlRTdHdfbEhBbFl3amxmT041NmF2OWVOYnZ2ZnFTV2x0REtjZV9kR2NBdDg0NE9Edw?oc=5": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Substantive current European economic-security policy/trade development directly described in the source.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T08:16:42Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-08-03, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMipwFBVV95cUxNQVo4aDNrTmNzMllrUVotRWpBOHFjYkRrRmNHUVNtczZKQkl2SVlGYUhoTGcxVEdNRFh1QlFJem5EQTFYYlVMNWhfYUVIUVppYVlTNUhwdzBHT3BHV0hudlF4SFQxazhxcnVQczhCM1ZwZlRnMVBtUjdkanEwcE5nMjhWYzNEZFFZT1Q4VS13TEhJdTFUU1p3Y0lfM2toQTZVYmh5X1A2Zw?oc=5": {
       "decision": "drop_unverifiable",
@@ -28421,6 +28429,42 @@
       "updated_at": "2026-10-22T07:23:27Z",
       "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
       "verification_note": "Matched this exact publication to substantive article text or detailed attributable report; distinction between planned and adopted policies checked.",
+      "duplicate_of": ""
+    },
+    "link:https://digital-strategy.ec.europa.eu/en/library/joint-statement-third-meeting-eu-india-trade-and-technology-council": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Substantive new EU–India trade/technology action and formal association-negotiation announcement, rather than just a meeting notice.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T08:16:42Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Third TTC meeting actually held 15 July 2026 and official joint statement and EU Commission details report concrete launches and commitments. India Horizon Europe association was to enter formal negotiations, not yet an association; technology projects are prospective.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.1111/1758-5899.70246": {
+      "decision": "keep",
+      "target_strand": "A",
+      "reason_code": "A_SUBSTANTIVE_EU_RI",
+      "reason": "External partners’ expectations affect how credible EU diversification and strategic partnerships are in the Indo-Pacific.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T08:16:43Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Checked original publication identity and source text, including proposal vs effective legal status. Elite perceptions are not national public opinion or proof of completed policy effectiveness; mixed qualitative sample.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.4324/9781003669654-5": {
+      "decision": "keep",
+      "target_strand": "A",
+      "reason_code": "A_SUBSTANTIVE_EU_RI",
+      "reason": "Analytic comparison of EU renewable/low-carbon hydrogen certification law and supply-chain compliance instruments.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T08:16:43Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Confirmed Routledge 2026 OA legal chapter in edited Hydrogen Law book, pp. 68–104. Substantive PDF segment read via indexed primary publisher text; access to complete chapter temporarily impeded by expired token, so treat synthesis as qualified.",
       "duplicate_of": ""
     }
   }

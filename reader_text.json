@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-10-22T07:23:28Z",
+  "generated_at": "2026-10-22T08:16:43Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -178688,8 +178688,597 @@
         }
       ],
       "claims_profile": "radar-claims-v1"
+    },
+    "link:https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1RhLXdTMHhVRW1NWHBBV3hocl9ZWlFMZ2FVRWhnLUI4ZC1GNC16aWkyUW1sRWlLa25ySTBwMWxBbjlqTkE5UDNESjZ3bFFmeWFZWkxuYkRMS2tZVFk0bzFXM3VycnRMYkUwUl9tckJ3SVo2QTNvWWZXUlItTjdCeEZPVDZQSlRTdHdfbEhBbFl3amxmT041NmF2OWVOYnZ2ZnFTV2x0REtjZV9kR2NBdDg0NE9Edw?oc=5": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_c",
+      "corpus_scope": "main",
+      "source_hash": "32cd5454",
+      "identity_hash": "01aa827ab2b4bcea",
+      "reader_title": "Belgian LNG imports shifted entirely to Russia in July",
+      "reader_what": "Bloomberg reported Belgium sourced all its July LNG imports from Russia as other shipments declined during Middle East disruption.",
+      "reader_why": "Short-term LNG supply concentration highlights vulnerability during efforts to phase out Russian energy imports.",
+      "reader_more": "Bloomberg energy reporting describes Belgian LNG import flows for July 2026 and the Middle East supply-shipping shock; this concerns LNG at Belgian ports, not Belgium’s entire gas supply.",
+      "deep_analysis": {
+        "work_kind": "Original newsroom report on a current economic-security development",
+        "research_question": "What new policy stance, formal action or economic security development was reported?",
+        "main_finding": "Bloomberg reported Belgium sourced all its July LNG imports from Russia as other shipments declined during Middle East disruption.",
+        "method_or_basis": "Bloomberg energy reporting describes Belgian LNG import flows for July 2026 and the Middle East supply-shipping shock; this concerns LNG at Belgian ports, not Belgium’s entire gas supply.",
+        "qualification": "Do not generalise Belgian LNG import sources into total national gas dependence or assume persistence after July.",
+        "radar_relevance": "Substantive European external economic relations and market or supply security.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Google News RSS discovery link https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1RhLXdTMHhVRW1NWHBBV3hocl9ZWlFMZ2FVRWhnLUI4ZC1GNC16aWkyUW1sRWlLa25 is a redirect; matched the original publisher story by distinctive full headline."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Full matching publication identified and substantive reported text read at https://news.bloomberglaw.com/international-trade/iran-war-made-belgium-wholly-dependent-on-russia-for-lng-in-july; reporting and date match claimed headline."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Read substantive primary reporting for exact headline at https://news.bloomberglaw.com/international-trade/iran-war-made-belgium-wholly-dependent-on-russia-for-lng-in-july, avoiding reliance on scanner summaries alone."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_news_report_or_republished_full_text",
+            "url": "https://news.bloomberglaw.com/international-trade/iran-war-made-belgium-wholly-dependent-on-russia-for-lng-in-july",
+            "title": "Belgian LNG imports shifted entirely to Russia in July",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Confirmed journalist-produced story, reporting date 2026-08-03, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+        "reason": "Substantive current European economic-security policy/trade development directly described in the source."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T08:16:42Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "claims": [
+        {
+          "object": "energy.lng_imports",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Belgium",
+            "class": "member_state"
+          },
+          "mechanism": "shapes",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2026-08-03",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Do not generalise Belgian LNG import sources into total national gas dependence or assume persistence after July.",
+          "text": "Bloomberg reported Belgium sourced all its July LNG imports from Russia as other shipments declined during Middle East disruption.",
+          "confidence": "medium",
+          "record_key": "link:https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1RhLXdTMHhVRW1NWHBBV3hocl9ZWlFMZ2FVRWhnLUI4ZC1GNC16aWkyUW1sRWlLa25ySTBwMWxBbjlqTkE5UDNESjZ3bFFmeWFZWkxuYkRMS2tZVFk0bzFXM3VycnRMYkUwUl9tckJ3SVo2QTNvWWZXUlItTjdCeEZPVDZQSlRTdHdfbEhBbFl3amxmT041NmF2OWVOYnZ2ZnFTV2x0REtjZV9kR2NBdDg0NE9Edw?oc=5",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:01aa827ab2b4bcea:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQjBxbU5CT0xvN092TmxsVzZjd25OUTIxMFhmMnZVV1A5Z0h6RFZNXzlrbmt0RkVSZk9qNTh5am5FYjBwelFfdDlqdmM2OUp2andGbHkwanYtLXVzUXhGNlFydnF3MGlXXzNReUI0cjNlV3lST2FlUkQ5Wm9uMDVQX0xCM01LclV6TDZ2c3V3VVp3ODV1bkNxbHRKNjNMRnlFSjBtendtV0NVYkczdm1oa3hBRmVra0JhamVN?oc=5": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_c",
+      "corpus_scope": "main",
+      "source_hash": "4e796554",
+      "identity_hash": "d802c971d602fc6a",
+      "reader_title": "Commission draft would protect priority electricity consumers and hardened grid assets",
+      "reader_what": "A leaked draft EU energy-security package would require defining protected electricity customers and assessing critical facilities for hostile-drone resilience.",
+      "reader_why": "Proposed EU grid rules address strategic infrastructure hardening and continuity of energy supply.",
+      "reader_more": "Original Table.Briefings signed Manuel Berkel 22 September article excerpt identifies leaked policy package, priority electricity customers and design requirements for attacks.",
+      "deep_analysis": {
+        "work_kind": "Original newsroom report on a current economic-security development",
+        "research_question": "What new policy stance, formal action or economic security development was reported?",
+        "main_finding": "A leaked draft EU energy-security package would require defining protected electricity customers and assessing critical facilities for hostile-drone resilience.",
+        "method_or_basis": "Original Table.Briefings signed Manuel Berkel 22 September article excerpt identifies leaked policy package, priority electricity customers and design requirements for attacks.",
+        "qualification": "Draft is leaked and the Commission package has been postponed; neither enacted regulation nor compliance requirements yet exist.",
+        "radar_relevance": "Substantive European external economic relations and market or supply security.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Google News RSS discovery link https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQjBxbU5CT0xvN092TmxsVzZjd25OUTIxMFhmMnZVV1A5Z0h6RFZNXzlrbmt0RkVSZk9 is a redirect; matched the original publisher story by distinctive full headline."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Full matching publication identified and substantive reported text read at https://table.media/en/europe/feature/energy-security-european-commission-seeks-list-of-protected-electricity-customers; reporting and date match claimed headline."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Read substantive primary reporting for exact headline at https://table.media/en/europe/feature/energy-security-european-commission-seeks-list-of-protected-electricity-customers, avoiding reliance on scanner summaries alone."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_news_report_or_republished_full_text",
+            "url": "https://table.media/en/europe/feature/energy-security-european-commission-seeks-list-of-protected-electricity-customers",
+            "title": "Commission draft would protect priority electricity consumers and hardened grid assets",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Confirmed journalist-produced story, reporting date 2026-09-22, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+        "reason": "Substantive current European economic-security policy/trade development directly described in the source."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T08:16:42Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "claims": [
+        {
+          "object": "critical_infrastructure.resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "proposes",
+          "direction": "becomes_conditional",
+          "status": "proposed",
+          "status_date": "2026-09-22",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Draft is leaked and the Commission package has been postponed; neither enacted regulation nor compliance requirements yet exist.",
+          "text": "A leaked draft EU energy-security package would require defining protected electricity customers and assessing critical facilities for hostile-drone resilience.",
+          "confidence": "medium",
+          "record_key": "link:https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQjBxbU5CT0xvN092TmxsVzZjd25OUTIxMFhmMnZVV1A5Z0h6RFZNXzlrbmt0RkVSZk9qNTh5am5FYjBwelFfdDlqdmM2OUp2andGbHkwanYtLXVzUXhGNlFydnF3MGlXXzNReUI0cjNlV3lST2FlUkQ5Wm9uMDVQX0xCM01LclV6TDZ2c3V3VVp3ODV1bkNxbHRKNjNMRnlFSjBtendtV0NVYkczdm1oa3hBRmVra0JhamVN?oc=5",
+          "merit": 61,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:d802c971d602fc6a:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.ispionline.it/wp-content/uploads/2026/09/ACI_EP_Catalogue_FINAL6.xlsx": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "86f8cbeb",
+      "identity_hash": "d8a9104740998a18",
+      "reader_title": "Study catalogue tracks 41 economic-pressure cases affecting the EU",
+      "reader_what": "An ISPI dataset documents 41 episodes of external economic pressure on EU states and firms from 2018 through May 2026.",
+      "reader_why": "The structured cases can inform analysis of patterns and the EU Anti-Coercion Instrument without presuming legal findings.",
+      "reader_more": "The accompanying methodology describes case actors, threats or measures, sectors, economic effects, EU responses and five ACI-relevant dimensions. The scoring is comparative research, not an official legal ruling. The linked XLSX rows could not be separately opened in this environment, so no individual score has been verified.",
+      "deep_analysis": {
+        "work_kind": "Research dataset with first-party methodology description",
+        "research_question": "What comparable episodes of economic pressure affected the EU and its firms during January 2018–15 May 2026?",
+        "main_finding": "ISPI assembled a 41-case catalogue of economic pressure and threats, recording mechanisms, targets, responses, and five analytical ACI-relevance dimensions.",
+        "method_or_basis": "Case identification from public information, categorical coding of actors, targets, instruments, duration, economic effects and ACI assessment dimensions; individual rows uninspected.",
+        "qualification": "The ACI-relevance score is analytic rather than a determination of legal coercion. Dataset files are linked but the raw XLSX could not be opened for row audit.",
+        "radar_relevance": "Direct EU institutional research on economic coercion and resilience, including EU Anticoercion Instrument research data.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Original xlsx https://www.ispionline.it/wp-content/uploads/2026/09/ACI_EP_Catalogue_FINAL6.xlsx linked directly from first-party ISPI website; spreadsheet binary download not supported by web reader."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Read matching ISPI original dataset description https://www.ispionline.it/en/publication/dataset-for-european-parliament-study-strengthening-the-eus-resilience-against-economic-pressure-and-documenting-coercive-practices-245468 , which describes period, 41 cases, five indicator scoring scheme and legal caveats."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "dataset_author_official_methodology_page",
+            "url": "https://www.ispionline.it/en/publication/dataset-for-european-parliament-study-strengthening-the-eus-resilience-against-economic-pressure-and-documenting-coercive-practices-245468",
+            "title": "Dataset for European Parliament study — ISPI, 21 September 2026",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "ISPI official publisher metadata verifies original dataset title, date and methodology, and links claimed spreadsheet. The underlying downloadable Excel could not be opened with web reader; 41-case total and scoring dimensions are documented by the dataset publisher but individual episodes were not audited. No claims about row-level scores or specific cases."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Original European Parliament commissioned economic-coercion evidence cataloguing EU/Member-State cases and Anti-Coercion Instrument relevance, with direct relevance to European resilience."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T08:16:42Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "claims": [
+        {
+          "object": "coercion.incident",
+          "secondary_objects": [],
+          "actor": {
+            "name": "ISPI",
+            "class": "other"
+          },
+          "mechanism": "shapes",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-09",
+          "status_date_precision": "month",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "The ACI-relevance score is analytic rather than a determination of legal coercion. Dataset files are linked but the raw XLSX could not be opened for row audit.",
+          "text": "The ISPI research data catalogue documents 41 cases of economic pressure affecting EU entities in 2018–2026 and classifies cases on five ACI-relevance dimensions.",
+          "confidence": "medium",
+          "record_key": "link:https://www.ispionline.it/wp-content/uploads/2026/09/ACI_EP_Catalogue_FINAL6.xlsx",
+          "merit": 69,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:d8a9104740998a18:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://digital-strategy.ec.europa.eu/en/library/joint-statement-third-meeting-eu-india-trade-and-technology-council": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "5b979fb8",
+      "identity_hash": "d215e0b18a770f9a",
+      "reader_title": "EU and India expand joint technology and supply-chain initiatives",
+      "reader_what": "EU and India announced Horizon Europe association talks, an EV-charging innovation hub, and strategic value-chain cooperation.",
+      "reader_why": "The initiatives deepen EU links with India in technology and supply chains where diversification matters.",
+      "reader_more": "Following the 15 July Trade and Technology Council meeting, the Commission said both sides agreed to start formal Horizon Europe association negotiations and create an EV-charging technology hub and deep-tech startup partnership. They also identified semiconductors, computing, pharmaceuticals and clean-energy supply chains for cooperation. These are announced initiatives, not completed programmes or proof of outcomes.",
+      "deep_analysis": {
+        "work_kind": "Official bilateral council joint policy statement",
+        "research_question": "What joint EU–India technology and supply-chain actions were agreed at the third TTC meeting?",
+        "main_finding": "Two parties agreed new joint technology initiatives and to begin Horizon Europe association negotiations, with strategic value chains flagged for cooperation.",
+        "method_or_basis": "Official published European Commission joint statement and institutional press release dated 15 July 2026.",
+        "qualification": "Association talks and initiatives are commitments; programme association, industrial investment, and economic results are not yet realised.",
+        "radar_relevance": "Substantive EU strategic technology partnerships, innovation and external resilience.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "European Commission original official joint statement page dated 15 July 2026 at https://digital-strategy.ec.europa.eu/en/library/joint-statement-third-meeting-eu-india-trade-and-technology-council; linked adopted text and detailed joint EU-India commitments."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "EC parallel official announcement https://digital-strategy.ec.europa.eu/en/news/eu-and-india-strengthen-strategic-partnership-third-trade-and-technology-council specifies Horizon Europe negotiations, EV hub, deep-tech startups and strategic technology value chains."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_joint_statement",
+            "url": "https://digital-strategy.ec.europa.eu/en/library/joint-statement-third-meeting-eu-india-trade-and-technology-council",
+            "title": "Joint statement on the third meeting of the EU-India Trade and Technology Council",
+            "evidence_used": true
+          },
+          {
+            "kind": "commission_official_announcement",
+            "url": "https://digital-strategy.ec.europa.eu/en/news/eu-and-india-strengthen-strategic-partnership-third-trade-and-technology-council",
+            "title": "EU and India strengthen strategic partnership with third Trade and Technology Council",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Third TTC meeting actually held 15 July 2026 and official joint statement and EU Commission details report concrete launches and commitments. India Horizon Europe association was to enter formal negotiations, not yet an association; technology projects are prospective."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+        "reason": "Substantive new EU–India trade/technology action and formal association-negotiation announcement, rather than just a meeting notice."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T08:16:42Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "associates",
+          "direction": "expands",
+          "status": "announced",
+          "status_date": "2026-07-15",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Association talks and initiatives are commitments; programme association, industrial investment, and economic results are not yet realised.",
+          "text": "EU and India agreed to initiate Horizon Europe association negotiations and launch joint technology cooperation instruments after their third TTC meeting.",
+          "confidence": "high",
+          "record_key": "link:https://digital-strategy.ec.europa.eu/en/library/joint-statement-third-meeting-eu-india-trade-and-technology-council",
+          "merit": 99,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:d215e0b18a770f9a:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1111/1758-5899.70246": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "52b99963",
+      "identity_hash": "75ef74e8cf38ae28",
+      "reader_title": "Japan views EU Indo-Pacific strategy as useful, but security capacity uncertain",
+      "reader_what": "Interview study finds Japanese foreign-policy elites mostly welcome the EU Indo-Pacific strategy but question its practical security profile and messaging.",
+      "reader_why": "External partners’ expectations affect how credible EU diversification and strategic partnerships are in the Indo-Pacific.",
+      "reader_more": "Bacon, Pomorska and van Willigen interview Japanese officials and policy influencers and analyse open-ended and structured interview responses; three-quarters positively assessed significance of EU strategy.",
+      "deep_analysis": {
+        "work_kind": "Peer-reviewed qualitative policy research",
+        "research_question": "What does the original publication establish for EU external economic or policy security?",
+        "main_finding": "Interview study finds Japanese government and foreign-policy elites mostly welcome the EU Indo-Pacific strategy but question its practical security profile and messaging.",
+        "method_or_basis": "Bacon, Pomorska and van Willigen interview Japanese officials and policy influencers and analyse open-ended and structured interview responses; three-quarters positively assessed significance of EU strategy.",
+        "qualification": "Elite perceptions are not national public opinion or proof of completed policy effectiveness; mixed qualitative sample.",
+        "radar_relevance": "External partners’ expectations affect how credible EU diversification and strategic partnerships are in the Indo-Pacific.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected matching original https://doi.org/10.1111/1758-5899.70246; source_material in archive provides multi-page substantive source from scanner reader route."
+          },
+          {
+            "step": "scanner_validation_route",
+            "outcome": "success",
+            "note": "Read all available supplied substantive matching official PDF excerpt or full research text as packaged from primary source."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "verified_source_full_text_or_substantive_archive",
+            "url": "https://doi.org/10.1111/1758-5899.70246",
+            "title": "Japan views EU Indo-Pacific strategy as useful, but security capacity uncertain",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked original publication identity and source text, including proposal vs effective legal status. Elite perceptions are not national public opinion or proof of completed policy effectiveness; mixed qualitative sample."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "External partners’ expectations affect how credible EU diversification and strategic partnerships are in the Indo-Pacific."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T08:16:43Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "other"
+          },
+          "mechanism": "shapes",
+          "direction": "becomes_conditional",
+          "status": "observation",
+          "status_date": "2026-09-15",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Elite perceptions are not national public opinion or proof of completed policy effectiveness; mixed qualitative sample.",
+          "text": "Interview study finds Japanese government and foreign-policy elites mostly welcome the EU Indo-Pacific strategy but question its practical security profile and messaging.",
+          "confidence": "high",
+          "record_key": "link:https://doi.org/10.1111/1758-5899.70246",
+          "merit": 83,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:75ef74e8cf38ae28:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.4324/9781003669654-5": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "cb404f96",
+      "identity_hash": "f2e7bcfabf40527a",
+      "reader_title": "EU hydrogen certification rules impose different verification burdens",
+      "reader_what": "Legal chapter compares renewable RFNBO and low-carbon hydrogen labels under EU directives and implementing delegated acts.",
+      "reader_why": "Certification rules determine who can supply compliant hydrogen into the EU energy market and which production and imported-fuel pathways qualify.",
+      "reader_more": "The chapter studies carbon-intensity rather than colour labels, power-purchase agreements and guarantees of origin, GHG lifecycle calculations and a 70% savings threshold for RFNBOs. Access to full body was limited to a substantive PDF extract and the official chapter abstract; do not infer quantified costs or implementation effects.",
+      "deep_analysis": {
+        "work_kind": "Scholarly legal-analysis book chapter",
+        "research_question": "How do EU RFNBO and low-carbon fuel certifications allocate evidence obligations and affect market participation?",
+        "main_finding": "Both certification regimes use lifecycle GHG accounting; renewable fuel qualification can depend on electricity sourcing and time correlation, and requirements differ for low-carbon categories.",
+        "method_or_basis": "Comparative legal analysis of EU Renewable Energy and Gas Directives, delegated methodologies, PPAs, GOs and indexed original PDF detail section 3.2.2.",
+        "qualification": "No independent measurement of market effects; legal compliance rules are not a demonstrated supply outcome.",
+        "radar_relevance": "EU strategic hydrogen value chains and external green-fuel market access.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Routledge Taylor Francis original https://doi.org/10.4324/9781003669654-5 is titled original chapter by Francisca Gallegos Aguirre; normal HTML page abstract only."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Web indexing of matching Routledge OA chapter PDF presents substantive page 77 §3.2.2, actual statutory EU greenhouse-gas accounting and renewable power time matching, beyond abstract: https://www.taylorfrancis.com/chapters/oa-edit/10.4324/9781003669654-5/rfnbo-low-carbon-certification-eu-francisca-gallegos-aguirre . University of Eastern Finland confirms title and chapter pages 68–104; source PDF link had an expired signed URL."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI https://doi.org/10.4324/9781003669654-5 matches original Routledge book chapter by Francisca Gallegos Aguirre."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Searched \"RFNBO and Low-Carbon Certification in the EU\"; original Taylor Francis OA landing and indexed PDF page 77 matched."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched author Francisca Gallegos Aguirre and chapter 2026; University of Eastern Finland author page confirms Hydrogen Law book and pp.68–104."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Searched distinctive publisher DOI 9781003669654-5 chapter PDF; indexed original PDF describes lifecycle RFNBO savings in section 3.2.2."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_fulltext_excerpt_indexed_pdf",
+            "url": "https://www.taylorfrancis.com/chapters/oa-edit/10.4324/9781003669654-5/rfnbo-low-carbon-certification-eu-francisca-gallegos-aguirre",
+            "title": "RFNBO and Low-Carbon Certification in the EU",
+            "evidence_used": true
+          },
+          {
+            "kind": "university_author_record",
+            "url": "https://uefconnect.uef.fi/en/francisca.gallegos-aguirre/",
+            "title": "Francisca Gallegos Aguirre academic record",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Confirmed Routledge 2026 OA legal chapter in edited Hydrogen Law book, pp. 68–104. Substantive PDF segment read via indexed primary publisher text; access to complete chapter temporarily impeded by expired token, so treat synthesis as qualified."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Analytic comparison of EU renewable/low-carbon hydrogen certification law and supply-chain compliance instruments."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T08:16:43Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "claims": [
+        {
+          "object": "econsec.energy_transition",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "conditions",
+          "direction": "becomes_conditional",
+          "status": "observation",
+          "status_date": "2026-07-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "No independent measurement of market effects; legal compliance rules are not a demonstrated supply outcome.",
+          "text": "EU renewable and low-carbon hydrogen certification regimes condition fuel eligibility on distinct lifecycle-emission and electricity-sourcing evidence.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.4324/9781003669654-5",
+          "merit": 82,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:f2e7bcfabf40527a:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-10-22T07:23:28Z"
+  "claims_updated_at": "2026-10-22T08:16:43Z"
 }

@@ -6,40 +6,31 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` counts as one genuine recovery pass. After **3** unsuccessful passes, the work leaves the automatic queue and enters **Hands-on verification needed**.
 
-- Authoritative V2 verified: **2297** (Main **1006** + Historical **1291**)
-- Automatic queue still needing V2 verification: **284** (Main **85** + Historical **199**)
-- Currently assigned to workers: **72** (Main **72** + Historical **0**)
-- Bounded access-recovery retries still eligible: **2**
-- Hands-on verification needed: **163**
-- Automatic queue pending and not yet assigned: **212**
+- Authoritative V2 verified: **2303** (Main **1012** + Historical **1291**)
+- Automatic queue still needing V2 verification: **298** (Main **80** + Historical **218**)
+- Currently assigned to workers: **21** (Main **2** + Historical **19**)
+- Bounded access-recovery retries still eligible: **0**
+- Hands-on verification needed: **162**
+- Automatic queue pending and not yet assigned: **277**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261022T072538Z-53862e10b25a`
-- Assigned unresolved records: **36**
-  1. `link:https://news.google.com/rss/articles/CBMitgFBVV95cUxPN1RhLXdTMHhVRW1NWHBBV3hocl9ZWlFMZ2FVRWhnLUI4ZC1GNC16aWkyUW1sRWlLa25ySTBwMWxBbjlqTkE5UDNESjZ3bFFmeWFZWkxuYkRMS2tZVFk0bzFXM3VycnRMYkUwUl9tckJ3SVo2QTNvWWZXUlItTjdCeEZPVDZQSlRTdHdfbEhBbFl3amxmT041NmF2OWVOYnZ2ZnFTV2x0REtjZV9kR2NBdDg0NE9Edw?oc=5` — Iran War Made Belgium Wholly Dependent on Russia for LNG in July — recovery attempt 2/3
-  2. `link:https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQjBxbU5CT0xvN092TmxsVzZjd25OUTIxMFhmMnZVV1A5Z0h6RFZNXzlrbmt0RkVSZk9qNTh5am5FYjBwelFfdDlqdmM2OUp2andGbHkwanYtLXVzUXhGNlFydnF3MGlXXzNReUI0cjNlV3lST2FlUkQ5Wm9uMDVQX0xCM01LclV6TDZ2c3V3VVp3ODV1bkNxbHRKNjNMRnlFSjBtendtV0NVYkczdm1oa3hBRmVra0JhamVN?oc=5` — Energy security: European Commission seeks list of protected electricity customers - Table.Briefings — recovery attempt 3/3
-  3. `link:https://doi.org/10.4324/9781003669654-5` — RFNBO and Low-Carbon Certification in the EU — recovery attempt 3/3
-  4. `link:https://news.google.com/rss/articles/CBMilgFBVV95cUxORC1KZ2Z5dXg4QUxPT0cyazFiTFVveTgxWFBDYUpGM2Q2NVJfeDBvcXVYdWN2aGk2VGhLVE5QUFdLanN6RVJCWlM5R0Z3WXpBbGNSREd1clY4cU1DRDZaaU5UaVppRUxFX2o3b0dlOVo3dS1MQXhEUXowNl9yaVBrTF9Fem5KMDUzRGxLVWRJT0NybTAzWkE?oc=5` — EU plans strategic partnership with Kazakhstan - Table.Briefings — recovery attempt 2/3
-  5. `link:https://news.google.com/rss/articles/CBMipwFBVV95cUxOZnYycVJubTRYcEVFQzFYaURpQURTV2t6eHdKX21KLUJMdVYwRDA5OTd5RnJxT2JzY1ZJRUVzSmVpSklYTVVkeDYwMXNLb1o5cWxCalc5WFpDRzdfNzhJc3RETG5BSEtZY3NXaXBxS01SZXU0Ti1YSzVkYmVnNlJ4TWVFeFl4dGR4M3dQUXZRLUwxTWpJNUJ1bkRMaGtOdzh4NFRob0haUQ?oc=5` — Africa: China’s space strategy is becoming a security concern for Europe - Table.Briefings — recovery attempt 2/3
-  6. `link:https://news.google.com/rss/articles/CBMiigFBVV95cUxNajNxUGR2Tm9DckdCUk90MGpXbWpNbHY5dW5tUzlRV1pMTXZYVFN3bkN3RjRXUmliMkFIeVZoZ2JYbEZ6Q3RxdXFlZ0xWcEFlc0pUWTRLUGZHbzhCeDI4bF84TDJMRjVMdjhvVFFEbm5WU2twWk1xYlhMS0d5ZFBQRTVJWFhyRzBUeXc?oc=5` — EU and Israel plan energy partnership - Table.Briefings — recovery attempt 2/3
-  7. `link:https://news.google.com/rss/articles/CBMirwFBVV95cUxNVklqUktCUW5XTlNrbkNVak5yN0NOT2JZMTdtUDMzLWlxRmFYMDRZMFJJVnE0VklDMGNYQ3ZOd2FYZHYtUk5pbUlIOGt2YmZPMzRNNkhlV1VYT1ZQTWtKVDFDSVhIdV9sWjZBVDZsNFVFcVJ1ZXJsSUNxLWhGYUpITHJ6MG1vQmotaElnODZkYkFjcWNIODdTalY3dkF6cmg0LVVyQnFZVUpRdEpNb3JR?oc=5` — US trade deal: How the EU is saying goodbye to the WTO - Table.Briefings
-  8. `link:https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcTZENldSSy1VQkEzM3BmUWlWMFQ1aVd6dE1ETWF6bmF5VEJ1b00tejFSRGlwajJyXzdfZGhVWGJnUGgxcjdCaVpLVGExMjlZQXdnV3BYTW1Oek5BekdsV0VUTVVEdlViRFE3aHBDN2VqZHVLd0VOSThvZURwWHFkOEctVXp1QXlONU1V?oc=5` — Money in the digital age: digital euro, tokenisation and the role of central banks - European Central Bank
-  - … plus 28 more in the package manifest
+- Current package: `worker-a-20261022T081727Z-1dfb3b222aca`
+- Assigned unresolved records: **21**
+  1. `historical:id:c58e9132a77f52ca` — The Return of Industrial Policy in the EU: A Chance for Central and Eastern Europe?
+  2. `historical:id:d9ae3fea719c0f0e` — The EU-US Trade and Technology Council : mapping the challenges and opportunities for transatlantic cooperation on trade, climate and digital - Egmont Institute
+  3. `historical:id:998c410e3730dde5` — The EU ETS at a Crossroads: Competitiveness Concerns and Policy Scenarios
+  4. `historical:id:ed982dfad24e9b48` — Driving prosperity via competitiveness, research and innovation
+  5. `historical:id:a35d7c6799d456f2` — Europe’s Race to the Frontier: Building a Growth Model of De-Risked Innovation
+  6. `historical:id:a44459a30e0348e1` — Impact of World Oil Prices on the Formation of Macroeconomic Policies in Kazakhstan and the European Union: A Comparative Analysis
+  7. `historical:id:03985bc4a42e177f` — EU economic security: confronting the dual challenge of China and the US – CEPS
+  8. `historical:id:4a50ced606a91b1c` — What ways and means for a real strategic autonomy of the EU in the economic field? – CEPS
+  - … plus 13 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-20261022T072541Z-6bfae7a41ae4`
-- Assigned unresolved records: **36**
-  1. `link:https://digital-strategy.ec.europa.eu/en/library/joint-statement-third-meeting-eu-india-trade-and-technology-council` — Joint statement on the third meeting of the EU-India Trade and Technology Council — recovery attempt 2/3
-  2. `link:https://doi.org/10.1111/1758-5899.70246` — The EU 's Indo‐Pacific Strategy and Japan: Insights From a ‘Close Strategic Partner’ — recovery attempt 2/3
-  3. `link:https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZlo5ZUUwRkxrQkVYcjd3bV9wcmY3VHpmNUpvN2VVbjAydkpFSVJfNFk4dHZqV2c5VTRkMU1FNDAtcUtOXzRYUFl6dzhyaC1QQTdyWFhENzNLODFSZlltX3NRenNOWFZSbE1qTEp6ZDUwQ081dU9Send4UHAybkR6UC1LVXBJdTc2TWl1VURLRWVkbWVfTDVxNWZOZ0FEWUNGclZ3bE9nUDNoUHktWGc0cFRUMzhGU21vRTZBWXNZekZ3M0ZXdk1yblVzX3djbzdRYnN0OXF3?oc=5` — AGILE: Parliament set to approve new EU defence innovation programme
-  4. `link:https://news.google.com/rss/articles/CBMiigFBVV95cUxPcFlSWTFNSXJsdm1ETFp6eS1IZkIwblpHZk55NS02TG9kQUVXNE1vUV9FajhDTVJTNkRFcnZpa3Z6V3JiWXd4WjVqU3BXMjZacFR3bVdudnJWdnR4RGJxU0FJTmFQMHBUbVkwdDdCQ09hZVVULVFENW1IVmxKSWd5WXJLeTJ6NWZNLVE?oc=5` — Where AI risks meet - European Central Bank
-  5. `link:https://news.google.com/rss/articles/CBMivAFBVV95cUxQUjZJdDhubWFUM1FTbWo4OEJJd3BkZDhLQmpONFAyUThFZmJmNjBFb05UYS01VHNUdDJCaTZBcmpnWG43eU1GRjI1N1NXNFpCUWduS1RPLWpKMlRZUllRSl9QclUwMkttM1NmbUJkcUVBYl9hOWNIWUthRW9qMEl1bnEtRlVrX09iN01ZUFZiaVNYYmtjNXFfR3ZwLVU4cHhCQjFmSV9OcTB5aHNENEFTbGdDRDJUWG5HZ1p1Uw?oc=5` — EU-Canada cooperation on technology: what value does it bring to your business? - European External Action Service (EEAS)
-  6. `link:https://news.google.com/rss/articles/CBMioAFBVV95cUxNbFRxbzNpN3dxTUtfT1llT3ZMaTBSOVF6b3lBemtWb0hJT2xvZVB1b083Z1RqTndIdEhmOE11bG5CaUJmNnhIT3hpbWwtV3k1UEY1azlPZF8xWjB0ZEtGbW5QNjFvTWhOeHlIS1pzT3VuaURsUVF0dllKT0s1VjVuRUtobVlKYzV4ZGpNX2h6MlZleVkyMTE3T25mTFVNdzli?oc=5` — ‘China shock 2.0’ and Europe’s industrial future - espas.secure.europarl.europa.eu
-  7. `link:https://news.google.com/rss/articles/CBMikwFBVV95cUxQbkxNT3pEak8zNkkyRkRYY3dIOXFQclFMUUZHNW94UFFTSDJXcGp5cGVQNjc3U3NLMlZ1SllOVEFwT0VIeXNld3J0OHF1VjduNXpRdmZoVEFQV0tKV2IxN0NUSG0zTTU2S1JwaVl1VzZURGRORUQxWGZtNUlXclZxOERpR0Y5T2puVWtpRFgxNjh0dk0?oc=5` — EU accused of hiding environmental impact of data centers
-  8. `link:https://news.google.com/rss/articles/CBMi4AFBVV95cUxPaEJnRHgyVVNDMGFlYkZIdGw2QmhzOTNwY2RDV3BRY0hyTHlCb2ZXSHJqUGdVcWZibzdRRWlLY3R5YmhBN3dwVnZjQ2lkcWNSWWNpYm9UT3hGZUJuWVlYVW5mUmdVbzdwUkozLUoxNUxITGoza1FCSnVpUHlLS1R0emVXaTBuNU9ZbHFwV201Y0RQdUNnUTkyWndJSzJhVGZhVFNwV3pONzNVR2lfNWlyT3hQSkxOMHJ1SmxfRkZDMlhiX3dmTllXcEJocUVOT1drY25Ob2RZa2UzMHNQQmE4Wg?oc=5` — Trondheim Tech Festival 2026: Speech by Ambassador-Designate Peter Van Kemseke on the EU-Norway shared agenda for innovation and competitiveness - European External Action Service (EEAS)
-  - … plus 28 more in the package manifest
+- Assigned unresolved records: **0**
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
@@ -211,4 +202,3 @@ These works no longer consume automatic Deep Scan slots. Their identity is belie
 - `link:https://doi.org/10.1080/09662839.2026.2718107` — **The Commission’s 2025 intelligence cell proposal: from intelligence sharing to supranational intelligence?** — attempts: 3/3 — European Security — 2026-08-27 — Bibliographic identity confirmed, but substantive original work is not accessible despite documented recovery attempts; no scientific/admission assessment made. — https://doi.org/10.1080/09662839.2026.2718107
 - `link:https://doi.org/10.1016/j.erss.2026.105005` — **How energy dependence becomes domestically acceptable in European countries: Legitimation of Russian energy use during the Russia–Ukraine war** — attempts: 3/3 — Energy Research & Social Science — 2026-10-02 — Bibliographic identity confirmed, but substantive original work is not accessible despite documented recovery attempts; no scientific/admission assessment made. — https://doi.org/10.1016/j.erss.2026.105005
 - `link:https://doi.org/10.1093/oep/gpag037` — **US capital retrenchment and external financing constraints: evidence from Germany’s 1923 economic crisis** — attempts: 3/3 — Oxford Economic Papers — 2026-10-03 — Bibliographic identity confirmed, but substantive original work is not accessible despite documented recovery attempts; no scientific/admission assessment made. — https://doi.org/10.1093/oep/gpag037
-- `link:https://www.ispionline.it/wp-content/uploads/2026/09/ACI_EP_Catalogue_FINAL6.xlsx` — **Dataset for European Parliament study 'Strengthening the EU’s resilience against economic pressure and documenting coercive practices' | ISPI** — attempts: 3/3 — ISPI — 2026-09-21 — Bibliographic identity confirmed, but substantive original work is not accessible despite documented recovery attempts; no scientific/admission assessment made. — https://www.ispionline.it/wp-content/uploads/2026/09/ACI_EP_Catalogue_FINAL6.xlsx
