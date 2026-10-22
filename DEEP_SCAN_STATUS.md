@@ -6,39 +6,39 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` counts as one genuine recovery pass. After **3** unsuccessful passes, the work leaves the automatic queue and enters **Hands-on verification needed**.
 
-- Authoritative V2 verified: **2303** (Main **1012** + Historical **1291**)
-- Automatic queue still needing V2 verification: **298** (Main **80** + Historical **218**)
-- Currently assigned to workers: **72** (Main **58** + Historical **14**)
+- Authoritative V2 verified: **2344** (Main **1050** + Historical **1294**)
+- Automatic queue still needing V2 verification: **257** (Main **42** + Historical **215**)
+- Currently assigned to workers: **72** (Main **0** + Historical **72**)
 - Bounded access-recovery retries still eligible: **0**
 - Hands-on verification needed: **162**
-- Automatic queue pending and not yet assigned: **226**
+- Automatic queue pending and not yet assigned: **185**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261022T084026Z-eaa2f880cc4d`
+- Current package: `worker-a-20261022T092446Z-c17ee78548cd`
 - Assigned unresolved records: **36**
-  1. `link:https://doi.org/10.1080/13563467.2026.2751101` — The peripheralisation of Europe’s battery industry: derisking regimes, productive models, and the geography of green industrial policy
-  2. `link:https://doi.org/10.1111/1758-5899.70258` — Africa and the ‘New Washington Consensus’: Green Industrialisation Through a Rethink of International Economic Law Rules
-  3. `link:https://institutdelors.eu/en/publications/why-marine-le-pens-draft-budget-threatens-the-future-of-europe-and-therefore-of-france/` — Why Marine Le Pen’s draft budget threatens the future of Europe (and therefore of France) - Institut Jacques Delors
-  4. `link:https://doi.org/10.1007/s43253-026-00187-3` — The Euro at a quarter of a century: economic policy and governance. Introduction to the special issue
-  5. `link:https://doi.org/10.1007/s11365-026-01259-w` — Technology transfer and innovation dynamics through clustering analysis of European Union countries
-  6. `link:https://op.europa.eu/en/web/about-us/faq#print_your_own_copies` — Deep dive on critical raw materials for hydrogen technologies in the EU - Publications Office of the EU
-  7. `link:https://doi.org/10.48550/arxiv.2604.13668` — Where Trust Fails: Mapping Location-Data Provenance Risks in Europe
-  8. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=da244548-c907-11f1-97f3-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Voluntary partnership agreements - Publications Office of the EU
+  1. `historical:id:3e7ad09b31f0cd52` — Mongolian “Third Neighbor Policy” and Strategic Partnership with USA
+  2. `historical:id:2cd87fbbb578df9f` — Politics of de-risking: how the EU confronts vulnerabilities in critical digital infrastructures
+  3. `historical:id:5fa7ca46e8595914` — EU unemployment and global value chains
+  4. `historical:id:69cfcd275d3bc640` — EU: Further trade restrictions with Russia on steel and iron products, luxury goods and other financial sanctions - Global Trade Alert
+  5. `historical:id:2c55b60cf70b89f8` — COP27: European Union concludes a strategic partnership with Kazakhstan on raw materials, batteries and renewable hydrogen
+  6. `historical:id:562fa9d410ed7399` — EU-US Trade and Technology Council will be a litmus test for transatlantic coordination on China
+  7. `historical:id:c830cf40a12feabc` — EU-US Trade and Technology Council + Sanctions + EUCCC survey
+  8. `historical:id:717919342569ced8` — EU Trade Policy in Light of the New Industrial Strategy for Europe
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20261022T084029Z-4a06d1d97c34`
+- Current package: `worker-b-20261022T092501Z-4eea5a78f493`
 - Assigned unresolved records: **36**
-  1. `link:https://news.google.com/rss/articles/CBMigAJBVV95cUxOSk9aWWdIQnFoWWJkWlo3UlZSSmluMTBHVy1QeVBhU21hYXp0bHE5czZiWW0yWWIwd0M3MWs0Q1hnT0pZV3plQzVZYUdkZFlzVTF0QzFzWlZPVkZwTjFMWGFDcnlXbGt2SUtGZW1UZlhtcjFFN2ljTVJjY2RmVnVmZWJBTWNWdzZUVGZQR1ZoaVA4X2tCeVI0M2hSaWVCMEZ2SFppdEVnbEFWT1NNRjB4aE16bXRLOVdCTVlOWU1NbzRZVFBpYXI5SWZzRmpyTEh0OERFNmJpeVNSbUk5alVadlAwb2YyNng3ZU1PNmZTMmpJa2d3UHc3SC1MdVFIb19a?oc=5` — New crew members dock at International Space Station, French astronaut Sophie Adenot to return to Earth - Le Monde.fr
-  2. `link:https://news.google.com/rss/articles/CBMivwFBVV95cUxOWWdhTm1wTi1qcGhMOXAxRWZhVHduWDM0ZDNBZjZNUlQ2bUZfbm12Z0ZReVNBX3BIS2o1VjRSZVNDeE04SUpVemxhN1hxWXhCOFlNMmVCU2VhbHc5T1RGS3Fkd21KcnZ6SVYyeWNRSDVyRmx2Nm42WElRUEFEWWdrUklmeGJWNW5FMWFTMW45X0ZxTmQyMFQ0c1FaQjdMSE9yVXBDNDVnbG8xR0MwSHpqTUE1c29zOGFTZTVTNTd4RQ?oc=5` — EXCLUSIVE: French supercomputer maker Bull doubles output to boost Europe's AI ambitions
-  3. `link:https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZlo5ZUUwRkxrQkVYcjd3bV9wcmY3VHpmNUpvN2VVbjAydkpFSVJfNFk4dHZqV2c5VTRkMU1FNDAtcUtOXzRYUFl6dzhyaC1QQTdyWFhENzNLODFSZlltX3NRenNOWFZSbE1qTEp6ZDUwQ081dU9Send4UHAybkR6UC1LVXBJdTc2TWl1VURLRWVkbWVfTDVxNWZOZ0FEWUNGclZ3bE9nUDNoUHktWGc0cFRUMzhGU21vRTZBWXNZekZ3M0ZXdk1yblVzX3djbzdRYnN0OXF3?oc=5` — AGILE: Parliament set to approve new EU defence innovation programme
-  4. `link:https://news.google.com/rss/articles/CBMiigFBVV95cUxPcFlSWTFNSXJsdm1ETFp6eS1IZkIwblpHZk55NS02TG9kQUVXNE1vUV9FajhDTVJTNkRFcnZpa3Z6V3JiWXd4WjVqU3BXMjZacFR3bVdudnJWdnR4RGJxU0FJTmFQMHBUbVkwdDdCQ09hZVVULVFENW1IVmxKSWd5WXJLeTJ6NWZNLVE?oc=5` — Where AI risks meet - European Central Bank
-  5. `link:https://news.google.com/rss/articles/CBMivAFBVV95cUxQUjZJdDhubWFUM1FTbWo4OEJJd3BkZDhLQmpONFAyUThFZmJmNjBFb05UYS01VHNUdDJCaTZBcmpnWG43eU1GRjI1N1NXNFpCUWduS1RPLWpKMlRZUllRSl9QclUwMkttM1NmbUJkcUVBYl9hOWNIWUthRW9qMEl1bnEtRlVrX09iN01ZUFZiaVNYYmtjNXFfR3ZwLVU4cHhCQjFmSV9OcTB5aHNENEFTbGdDRDJUWG5HZ1p1Uw?oc=5` — EU-Canada cooperation on technology: what value does it bring to your business? - European External Action Service (EEAS)
-  6. `link:https://news.google.com/rss/articles/CBMioAFBVV95cUxNbFRxbzNpN3dxTUtfT1llT3ZMaTBSOVF6b3lBemtWb0hJT2xvZVB1b083Z1RqTndIdEhmOE11bG5CaUJmNnhIT3hpbWwtV3k1UEY1azlPZF8xWjB0ZEtGbW5QNjFvTWhOeHlIS1pzT3VuaURsUVF0dllKT0s1VjVuRUtobVlKYzV4ZGpNX2h6MlZleVkyMTE3T25mTFVNdzli?oc=5` — ‘China shock 2.0’ and Europe’s industrial future - espas.secure.europarl.europa.eu
-  7. `link:https://news.google.com/rss/articles/CBMikwFBVV95cUxQbkxNT3pEak8zNkkyRkRYY3dIOXFQclFMUUZHNW94UFFTSDJXcGp5cGVQNjc3U3NLMlZ1SllOVEFwT0VIeXNld3J0OHF1VjduNXpRdmZoVEFQV0tKV2IxN0NUSG0zTTU2S1JwaVl1VzZURGRORUQxWGZtNUlXclZxOERpR0Y5T2puVWtpRFgxNjh0dk0?oc=5` — EU accused of hiding environmental impact of data centers
-  8. `link:https://news.google.com/rss/articles/CBMi4AFBVV95cUxPaEJnRHgyVVNDMGFlYkZIdGw2QmhzOTNwY2RDV3BRY0hyTHlCb2ZXSHJqUGdVcWZibzdRRWlLY3R5YmhBN3dwVnZjQ2lkcWNSWWNpYm9UT3hGZUJuWVlYVW5mUmdVbzdwUkozLUoxNUxITGoza1FCSnVpUHlLS1R0emVXaTBuNU9ZbHFwV201Y0RQdUNnUTkyWndJSzJhVGZhVFNwV3pONzNVR2lfNWlyT3hQSkxOMHJ1SmxfRkZDMlhiX3dmTllXcEJocUVOT1drY25Ob2RZa2UzMHNQQmE4Wg?oc=5` — Trondheim Tech Festival 2026: Speech by Ambassador-Designate Peter Van Kemseke on the EU-Norway shared agenda for innovation and competitiveness - European External Action Service (EEAS)
+  1. `historical:id:296c02d7af358420` — Joris Teer interviewed by Nieuwsuur on Beijing's restriction of raw materials
+  2. `historical:id:b51e680c6ea74cdc` — NATO billions should go to domestic companies, but the raw materials come from China
+  3. `historical:id:4bbf62aee12f6612` — Alone we stand: How Europe can counter hybrid threats in a post-transatlantic era – European Council on Foreign Relations
+  4. `historical:id:97d6adbc1688a7b6` — Book Launch: The Age of Open Strategic Autonomy - CELIS Institute
+  5. `historical:id:502eb435ffc919e3` — German Industry’s Competitiveness Continues to Decline | ifo Institute
+  6. `historical:id:2c6d18407ef93b3d` — German Industry Continues to Lose Competitiveness | ifo Institute
+  7. `historical:id:4acf9a911fe87d16` — BusinessEurope preliminary comments on the Commission proposal for a directive on the protection of undisclosed know-how and business information (trade secrets) against their unlawful acquisition, use and disclosure
+  8. `historical:id:bf624cbc78249abf` — Automotive Industry in Germany Concerned about Competitiveness | ifo Institute
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
