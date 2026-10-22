@@ -1,0 +1,563 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-a-20261022T053439Z-21d1273a306c",
+  "results": [
+    {
+      "record_key": "link:https://doi.org/10.1093/jcsl/krag027",
+      "source_hash": "b0d96533",
+      "identity_hash": "e8e898005824db2d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Resolved DOI https://doi.org/10.1093/jcsl/krag027 to Oxford Academic matching Voetelink article and substantial legal-policy abstract."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Oxford Academic lists 10.1093/jcsl/krag027, Voetelink, 20 October 2026, Journal of Conflict and Security Law."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://academic.oup.com/jcsl/advance-article-abstract/doi/10.1093/jcsl/krag027/8944038",
+            "title": "The Netherlands’ arms export control framework: law and policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Full journal article gated to subscribers; evidence from substantive original publisher abstract, not a full-text read."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Dutch control of military goods, transit and export licensing is a direct European economic-security instrument."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "reader_title": "Dutch arms-export controls and exemptions",
+      "reader_what": "Dutch law requires permission for military exports and transit, with general authorisations for certain NATO/EU shipments.",
+      "reader_why": "These licensing rules shape controlled European defence goods transfers and supply routes.",
+      "reader_more": "The article identifies the Strategic Goods Decree as the core Dutch instrument and describes ministerial reporting to parliament. It also discusses civil society litigation over transfers of F-35 parts to Israel. These are legal procedures, not evidence of how the broader regime performs.",
+      "deep_analysis": {
+        "work_kind": "legal/doctrinal analysis",
+        "research_question": "How are Dutch military-export and transit decisions governed?",
+        "main_finding": "The Dutch Strategic Goods Decree generally requires export/transit authorisation, subject to general authorisations and parliamentary scrutiny.",
+        "method_or_basis": "Publisher abstract describes legal framework, NATO/EU/F-35 authorisations and F-35 spare parts litigation.",
+        "qualification": "Doctrinal account from a publisher abstract; not an assessment of the efficacy of Dutch export licensing or the outcome of the F-35 litigation.",
+        "radar_relevance": "Direct EU-member-state export-control legislation and defence supply movement.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "export_control.regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Government of the Netherlands",
+            "class": "member_state"
+          },
+          "mechanism": "licenses",
+          "direction": "becomes_conditional",
+          "status": "in_force",
+          "status_date": "2026-10-20",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "NL"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "Doctrinal account from a publisher abstract; not an assessment of the efficacy of Dutch export licensing or the outcome of the F-35 litigation.",
+          "text": "Dutch Strategic Goods Decree controls transit and export of military goods through authorisations, including some general authorisations.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1111/1758-5899.70191",
+      "source_hash": "9be1b2b1",
+      "identity_hash": "ace045d14709d7ad",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI https://doi.org/10.1111/1758-5899.70191 resolves to Wiley Global Policy 17(3), pp.475–486 and full study abstract."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Wiley identifies Zhe Ma, Global Policy, first published 23 June 2026, DOI 10.1111/1758-5899.70191."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://onlinelibrary.wiley.com/doi/10.1111/1758-5899.70191",
+            "title": "Evolving Beyond the Brussels Effect: EU Digital Diplomacy and the Broadening of External Digital Strategy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The substantive publisher abstract supports an analytical finding, not verified full-text empirical results."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Research analyses the EU economic-security shift from regulation-only digital influence to security-relevant digital partnerships and infrastructure."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "reader_title": "EU digital diplomacy goes beyond regulation",
+      "reader_what": "The article argues the EU increasingly combines digital rule-setting with partnerships, capacity-building and security cooperation.",
+      "reader_why": "Partnerships can expand the Union’s leverage and resilience in contested digital networks.",
+      "reader_more": "The research traces a strategic reorientation since 2022 from market-driven Brussels Effect to cooperative digital diplomacy. It identifies structured partnerships, infrastructure initiatives, and security concerns as complementary tools. Its claims are interpretive rather than measured outcomes.",
+      "deep_analysis": {
+        "work_kind": "conceptual/analytical journal article",
+        "research_question": "How does the EU external digital strategy evolve beyond the Brussels Effect?",
+        "main_finding": "EU digital diplomacy increasingly supplements regulatory projection with partnerships, capacity and security-oriented cooperation.",
+        "method_or_basis": "Published research article and publisher abstract comparing changing policy instruments since 2022.",
+        "qualification": "Interpretive research article, not an impact evaluation of individual digital partnerships or a finding that resilience has already increased.",
+        "radar_relevance": "Substantive analysis of the EU economic-security policy toolbox and international digital partnerships.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "digital.international_partnerships",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "partners",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2026-06-23",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Interpretive research article, not an impact evaluation of individual digital partnerships or a finding that resilience has already increased.",
+          "text": "The study identifies a strategic EU digital-diplomacy shift toward structured partnerships, infrastructure and security cooperation alongside regulation.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://cdn.ceps.eu/2026/10/AI-conformity-assessment-in-Ukraine.pdf",
+      "source_hash": "25204d51",
+      "identity_hash": "2418188b6b0b0a4e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "The supplied CDN PDF https://cdn.ceps.eu/2026/10/AI-conformity-assessment-in-Ukraine.pdf could not be loaded in the source browser."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "CEPS page dated 20 October 2026 identifies César Dro and Eduardo Brito as authors and details conformity-assessment recommendations."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_report_summary",
+            "url": "https://www.ceps.eu/ceps-publications/artificial-intelligence-conformity-assessment-in-ukraine/",
+            "title": "Artificial intelligence conformity assessment in Ukraine — Convergence with EU legislation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified source existence and substantive content; rejected on Europe-specific admission scope rather than retrieval difficulty."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Primary subject is technical alignment with the EU AI Act, supervisory capacity and conformity assessment in Ukraine, not an evidenced cross-border economic-security mechanism or EU economic-security policy toolbox."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "Artificial intelligence conformity assessment in Ukraine: Convergence with EU legislation",
+          "authors": "César Dro, Eduardo Brito"
+        },
+        "unset": [],
+        "reason": "The original CEPS report landing page names César Dro and Eduardo Brito and provides the full title/subtitle; scanner incorrectly entered CEPS as author."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "reader_title": "Ukraine AI Act conformity gaps",
+      "reader_what": "CEPS studies standards, audit capacity and regulators for Ukrainian alignment with EU AI conformity requirements.",
+      "reader_why": "",
+      "reader_more": "It identifies gaps in supervisory independence and AI-audit expertise under wartime conditions. Original CEPS report webpage summarises regulatory and institutional readiness, not supply dependency, coercion, strategic investment, trade security or comparable economic-security exposure.",
+      "deep_analysis": {
+        "work_kind": "verified publication",
+        "research_question": "",
+        "main_finding": "CEPS studies standards, audit capacity and regulators for Ukrainian alignment with EU AI conformity requirements.",
+        "method_or_basis": "Original CEPS report webpage summarises regulatory and institutional readiness, not supply dependency, coercion, strategic investment, trade security or comparable economic-security exposure.",
+        "qualification": "Scope exclusion, not disproof of the source.",
+        "radar_relevance": "Primary subject is technical alignment with the EU AI Act, supervisory capacity and conformity assessment in Ukraine, not an evidenced cross-border economic-security mechanism or EU economic-security policy toolbox.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://defence-industry-space.ec.europa.eu/eu-space/product-environmental-footprint-category-rules-pefcr-space-sector_en",
+      "source_hash": "992a5fdd",
+      "identity_hash": "1bf98eba0c17c95a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened European Commission DG DEFIS project page at the supplied URL and examined project objectives, ongoing 2026 work and 2027 target."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "European Commission official page details environmental footprint methods and milestones, not a completed economic-security assessment."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_policy_page",
+            "url": "https://defence-industry-space.ec.europa.eu/eu-space/product-environmental-footprint-category-rules-pefcr-space-sector_en",
+            "title": "Product Environmental Footprint Category Rules (PEFCR) for the space sector",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified source existence and substantive content; rejected on Europe-specific admission scope rather than retrieval difficulty."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Official programme describes environmental footprint comparability and sustainability of space products; it has no central strategic exposure, supply-control or European economic-security object."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "reader_title": "Environmental methods for EU space products",
+      "reader_what": "Commission initiative develops lifecycle environmental footprint rules and datasets for space products.",
+      "reader_why": "",
+      "reader_more": "The rules and supporting studies are being developed; the final framework is targeted for 2027. The official Commission page concerns environmental measurement, data contribution and standardisation for green claims, not control of strategic supply dependencies or security of space systems.",
+      "deep_analysis": {
+        "work_kind": "verified publication",
+        "research_question": "",
+        "main_finding": "Commission initiative develops lifecycle environmental footprint rules and datasets for space products.",
+        "method_or_basis": "The official Commission page concerns environmental measurement, data contribution and standardisation for green claims, not control of strategic supply dependencies or security of space systems.",
+        "qualification": "Scope exclusion, not disproof of the source.",
+        "radar_relevance": "Official programme describes environmental footprint comparability and sustainability of space products; it has no central strategic exposure, supply-control or European economic-security object.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1093/jel/eqag037",
+      "source_hash": "c9710494",
+      "identity_hash": "aa53b60fcc92f941",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Direct DOI https://doi.org/10.1093/jel/eqag037 redirects to Oxford Academic, whose direct article URL failed in the browser."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Oxford Academic original journal record identifies Fernando Barrio, Journal of Environmental Law, 15 October 2026, DOI eqag037."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_article_text",
+            "url": "https://academic.oup.com/jel/advance-article/doi/10.1093/jel/eqag037/8918453",
+            "title": "Algorithmic governance of carbon markets: the limits of EU climate law and AI as regulatory infrastructure",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified source existence and substantive content; rejected on Europe-specific admission scope rather than retrieval difficulty."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "The substantive subject is coherence of climate MRV, carbon accounting and digital administrative law, not security of supply, international leverage, strategic technologies control or economic-security policy."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "reader_title": "Algorithmic oversight of EU carbon markets",
+      "reader_what": "Doctrinal legal analysis identifies opacity and accountability gaps when AI supports emissions measurement and verification.",
+      "reader_why": "",
+      "reader_more": "It argues EU environmental and digital regulation need interoperable oversight. Publisher-hosted original article text describes the AI Act, GDPR, ETS and measurement accountability; it does not establish a strategic dependence, coercion or trade-security mechanism.",
+      "deep_analysis": {
+        "work_kind": "verified publication",
+        "research_question": "",
+        "main_finding": "Doctrinal legal analysis identifies opacity and accountability gaps when AI supports emissions measurement and verification.",
+        "method_or_basis": "Publisher-hosted original article text describes the AI Act, GDPR, ETS and measurement accountability; it does not establish a strategic dependence, coercion or trade-security mechanism.",
+        "qualification": "Scope exclusion, not disproof of the source.",
+        "radar_relevance": "The substantive subject is coherence of climate MRV, carbon accounting and digital administrative law, not security of supply, international leverage, strategic technologies control or economic-security policy.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1002/epa2.70048",
+      "source_hash": "21f6a462",
+      "identity_hash": "08881d7dc64937c0",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI https://doi.org/10.1002/epa2.70048 leads to open-access Wiley article; substantive sections, sample N=253 and findings were read."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Wiley article identifies Nora Habelitz, Fabienne Lind and Sonja Blum, first published 7 June 2026."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_article_text",
+            "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/epa2.70048",
+            "title": "Energized? How German and Italian Party Actors Used Emotions in Energy Policy Narratives During the 2024 EU Elections",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified source existence and substantive content; rejected on Europe-specific admission scope rather than retrieval difficulty."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Study measures emotional political communication rather than energy security, supply vulnerabilities, industrial production, coercion or EU economic-security policy."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "reader_title": "Energy narratives and emotions during elections",
+      "reader_what": "Analysis of 253 German and Italian Instagram narratives finds affinity and compassion common and emotions often mixed.",
+      "reader_why": "",
+      "reader_more": "Study concerns political framing of energy policy, not the functioning or vulnerability of energy systems. Wiley full-text presents the mixed dictionary and qualitative analysis of April–June 2024 social posts. It does not evaluate a strategic supply relation or policy-toolbox action.",
+      "deep_analysis": {
+        "work_kind": "verified publication",
+        "research_question": "",
+        "main_finding": "Analysis of 253 German and Italian Instagram narratives finds affinity and compassion common and emotions often mixed.",
+        "method_or_basis": "Wiley full-text presents the mixed dictionary and qualitative analysis of April–June 2024 social posts. It does not evaluate a strategic supply relation or policy-toolbox action.",
+        "qualification": "Scope exclusion, not disproof of the source.",
+        "radar_relevance": "Study measures emotional political communication rather than energy security, supply vulnerabilities, industrial production, coercion or EU economic-security policy.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.heliyon.2026.e45271",
+      "source_hash": "d9255481",
+      "identity_hash": "50ef1bc3c7bb7fc3",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI https://doi.org/10.1016/j.heliyon.2026.e45271 matches publisher Heliyon 12(13) review article and detailed abstract."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "NOVA University repository https://run.unl.pt/entities/publication/c9458b4b-b269-4108-8662-8b3fe304fd24 confirms Tasev and Damásio and repeats full review abstract."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_abstract",
+            "url": "https://www.sciencedirect.com/science/article/pii/S2405844026007851",
+            "title": "Reframing SME financing constraints: An integrative framework for measuring capital access heterogeneity in Europe",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified source existence and substantive content; rejected on Europe-specific admission scope rather than retrieval difficulty."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Review of ordinary SME capital-access measurement across heterogeneous sectors and regions lacks an economic-security channel; mentions resilience without substantiating strategic exposure."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "reader_title": "Measuring European SME financial constraints",
+      "reader_what": "Integrative literature review proposes a six-dimension Capital Constraint Index for heterogeneous SMEs.",
+      "reader_why": "",
+      "reader_more": "The framework addresses general credit access and policy assessment, not strategic capital flows or security risks. Publisher abstract and NOVA university repository record identify a conceptual framework, rather than empirical evidence of cross-border finance coercion or critical-sector supply dependence.",
+      "deep_analysis": {
+        "work_kind": "verified publication",
+        "research_question": "",
+        "main_finding": "Integrative literature review proposes a six-dimension Capital Constraint Index for heterogeneous SMEs.",
+        "method_or_basis": "Publisher abstract and NOVA university repository record identify a conceptual framework, rather than empirical evidence of cross-border finance coercion or critical-sector supply dependence.",
+        "qualification": "Scope exclusion, not disproof of the source.",
+        "radar_relevance": "Review of ordinary SME capital-access measurement across heterogeneous sectors and regions lacks an economic-security channel; mentions resilience without substantiating strategic exposure.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1093/jcsl/krag028",
+      "source_hash": "95702815",
+      "identity_hash": "e1b3c5857d692979",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened Oxford Academic DOI https://doi.org/10.1093/jcsl/krag028 publisher record and substantive legal abstract."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Oxford Academic confirms Attila Novák, Journal of Conflict and Security Law, 20 October 2026, DOI 10.1093/jcsl/krag028."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://academic.oup.com/jcsl/advance-article-abstract/doi/10.1093/jcsl/krag028/8944039",
+            "title": "Confiscatory measures against the property of an aggressor state: self-defence instead of sanctions?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publisher article body paywalled; only original comprehensive abstract supports the qualified legal interpretation."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Legal research directly addresses the EU sanctions/asset-freeze toolbox and potential confiscation of Russian central-bank assets."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "reader_title": "Could self-defence justify Russian asset confiscation?",
+      "reader_what": "Novák argues lawful self-defence could, under strict conditions, justify confiscating an aggressor state’s property.",
+      "reader_why": "The argument speaks directly to the EU’s frozen Russian central-bank assets dilemma.",
+      "reader_more": "The article tests self-defence under Article 21 of the state-responsibility framework, while acknowledging sovereign immunities and foreign-investment protections. It advances a possible legal justification, not a decision to confiscate or an established legal consensus.",
+      "deep_analysis": {
+        "work_kind": "doctrinal legal argument",
+        "research_question": "Can collective or individual self-defence justify state-asset confiscation despite otherwise applicable international law rules?",
+        "main_finding": "Self-defence might preclude wrongfulness if an asset-confiscation measure satisfies primary self-defence law.",
+        "method_or_basis": "Oxford original publisher substantive abstract reviews Article 21 and non-forcible/indirect-force theories.",
+        "qualification": "This is an author’s contested legal argument, not enacted EU confiscation, an operative court holding or proven legality.",
+        "radar_relevance": "EU economic sanctions and immobilised central-bank assets are central objects.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2026-10-20",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "This is an author’s contested legal argument, not enacted EU confiscation, an operative court holding or proven legality.",
+          "text": "A legal study argues self-defence might justify confiscating Russian state assets under strict international-law conditions.",
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}
