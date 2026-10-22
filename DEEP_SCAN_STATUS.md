@@ -8,7 +8,7 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
 
 - Authoritative V2 verified: **2344** (Main **1050** + Historical **1294**)
 - Automatic queue still needing V2 verification: **257** (Main **42** + Historical **215**)
-- Currently assigned to workers: **72** (Main **0** + Historical **72**)
+- Currently assigned to workers: **72** (Main **15** + Historical **57**)
 - Bounded access-recovery retries still eligible: **0**
 - Hands-on verification needed: **162**
 - Automatic queue pending and not yet assigned: **185**
@@ -16,29 +16,29 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261022T092446Z-c17ee78548cd`
+- Current package: `worker-a-20261022T093309Z-bc1d289034ec`
 - Assigned unresolved records: **36**
-  1. `historical:id:3e7ad09b31f0cd52` — Mongolian “Third Neighbor Policy” and Strategic Partnership with USA
-  2. `historical:id:2cd87fbbb578df9f` — Politics of de-risking: how the EU confronts vulnerabilities in critical digital infrastructures
-  3. `historical:id:5fa7ca46e8595914` — EU unemployment and global value chains
-  4. `historical:id:69cfcd275d3bc640` — EU: Further trade restrictions with Russia on steel and iron products, luxury goods and other financial sanctions - Global Trade Alert
-  5. `historical:id:2c55b60cf70b89f8` — COP27: European Union concludes a strategic partnership with Kazakhstan on raw materials, batteries and renewable hydrogen
-  6. `historical:id:562fa9d410ed7399` — EU-US Trade and Technology Council will be a litmus test for transatlantic coordination on China
-  7. `historical:id:c830cf40a12feabc` — EU-US Trade and Technology Council + Sanctions + EUCCC survey
-  8. `historical:id:717919342569ced8` — EU Trade Policy in Light of the New Industrial Strategy for Europe
+  1. `historical:id:a9ac9a94b023160a` — Japan-EU relations after World War II and strategic partnership
+  2. `historical:id:3ca2d6e62eea485c` — India-EU strategic partnership: a new roadmap
+  3. `historical:id:3fd4563a21df2cd7` — Euroframe report 2019: Economic assessment of the euro area - Kiel Institute
+  4. `historical:id:03844fe375bab751` — Eu Strategic Partnerships
+  5. `historical:id:657998fe592f1c46` — Screening of foreign direct investment (FDI) into the EU – BusinessEurope’s views
+  6. `historical:id:bb0a919a51b1bbd1` — A Rules-Based Order to Keep the Internet Open and Secure
+  7. `historical:id:0fcc2f334227f1b4` — Reading the Footprints: How Foreign Investors Shape Countries’ Participation in Global Value Chains
+  8. `historical:id:f5f19af86a5ecd69` — Euroframe report 2017: Economic assessment of the euro area - Kiel Institute
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20261022T092501Z-4eea5a78f493`
+- Current package: `worker-b-20261022T093327Z-18bb474cd089`
 - Assigned unresolved records: **36**
-  1. `historical:id:296c02d7af358420` — Joris Teer interviewed by Nieuwsuur on Beijing's restriction of raw materials
-  2. `historical:id:b51e680c6ea74cdc` — NATO billions should go to domestic companies, but the raw materials come from China
-  3. `historical:id:4bbf62aee12f6612` — Alone we stand: How Europe can counter hybrid threats in a post-transatlantic era – European Council on Foreign Relations
-  4. `historical:id:97d6adbc1688a7b6` — Book Launch: The Age of Open Strategic Autonomy - CELIS Institute
-  5. `historical:id:502eb435ffc919e3` — German Industry’s Competitiveness Continues to Decline | ifo Institute
-  6. `historical:id:2c6d18407ef93b3d` — German Industry Continues to Lose Competitiveness | ifo Institute
-  7. `historical:id:4acf9a911fe87d16` — BusinessEurope preliminary comments on the Commission proposal for a directive on the protection of undisclosed know-how and business information (trade secrets) against their unlawful acquisition, use and disclosure
-  8. `historical:id:bf624cbc78249abf` — Automotive Industry in Germany Concerned about Competitiveness | ifo Institute
+  1. `link:https://doi.org/10.1080/13563467.2026.2751101` — The peripheralisation of Europe’s battery industry: derisking regimes, productive models, and the geography of green industrial policy
+  2. `link:https://doi.org/10.1111/1758-5899.70258` — Africa and the ‘New Washington Consensus’: Green Industrialisation Through a Rethink of International Economic Law Rules
+  3. `link:https://institutdelors.eu/en/publications/why-marine-le-pens-draft-budget-threatens-the-future-of-europe-and-therefore-of-france/` — Why Marine Le Pen’s draft budget threatens the future of Europe (and therefore of France) - Institut Jacques Delors
+  4. `link:https://op.europa.eu/en/web/about-us/faq#print_your_own_copies` — Deep dive on critical raw materials for hydrogen technologies in the EU - Publications Office of the EU
+  5. `link:https://news.google.com/rss/articles/CBMirwFBVV95cUxNVklqUktCUW5XTlNrbkNVak5yN0NOT2JZMTdtUDMzLWlxRmFYMDRZMFJJVnE0VklDMGNYQ3ZOd2FYZHYtUk5pbUlIOGt2YmZPMzRNNkhlV1VYT1ZQTWtKVDFDSVhIdV9sWjZBVDZsNFVFcVJ1ZXJsSUNxLWhGYUpITHJ6MG1vQmotaElnODZkYkFjcWNIODdTalY3dkF6cmg0LVVyQnFZVUpRdEpNb3JR?oc=5` — US trade deal: How the EU is saying goodbye to the WTO - Table.Briefings
+  6. `link:https://news.google.com/rss/articles/CBMipAFBVV95cUxOcHRFWGpyX3MyRUdsY2hpcWMwb2QxUi1LcDFlc21iYTY4ZEsxVFc3N0p0Q3FVSlRyVXRnNGVEQWNmcnBxYTMyOGtMMjdoNjJtUnIzSnhBUS02amtPRVhzRWwwSG1EcnA2TzFWdFBYb2RfemxjdlRyTEVfRTlUd2lQOEJScDQ5b3lvaXI5eTluRTZfTDdGNTVnRFVsQkRkTnZJVFlWMQ?oc=5` — Merz: Unfair trade practices put ‘massive pressure’ on the EU - Table.Briefings
+  7. `link:https://news.google.com/rss/articles/CBMiygFBVV95cUxNQjlIM1ZuaFZILU80UHF3M18xTkFTVUNSQ1JYbVlhaTlhZF9ZaE5EaTktbkZsaVJ4aXBwNWFrZE93WWJDdUUzZlAzVzVNN0VtekFxeFFFYlQwSkdGX180SzlIWGJ4V1hpdDNlcTlLN0Z6MzVLT0NiZVFqR3MySDQ3RGVPZzMxSG1iYmdxcEIycXFuN0tJSDFZM21XSlV6YkZXQzNVVzhQNkZQOFdVZmZBMm45UzlwRHQwaVBWVmw2WjFLYjE1MENoYXpB?oc=5` — Global Gateway: German government wants to give EU initiative a stronger economic focus - Table.Briefings
+  8. `link:https://news.google.com/rss/articles/CBMijgFBVV95cUxNOGhpX2pSeTZ3R3NGU2thd3V2SENmRDloTVV6dG1ORDBzZFlJOEM1VFJrcmU4bkR0RTNoSmNGNWtjLVFoTE1XZ0lrb1NTcHZHcFJGZ1dJOEcwb3hscFUtTkxubFN4RHNMM21ObVlhTjZESVZPNU84M1dkclNEajdxZXRlaXhFWHM3R1hkV2pn?oc=5` — EU and Ukraine want hydrogen partnership - Table.Briefings
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
