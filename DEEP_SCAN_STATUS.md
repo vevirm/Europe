@@ -8,38 +8,38 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
 
 - Authoritative V2 verified: **2414** (Main **1063** + Historical **1351**)
 - Automatic queue still needing V2 verification: **187** (Main **29** + Historical **158**)
-- Currently assigned to workers: **72** (Main **5** + Historical **67**)
+- Currently assigned to workers: **24** (Main **0** + Historical **24**)
 - Bounded access-recovery retries still eligible: **2**
 - Hands-on verification needed: **162**
-- Automatic queue pending and not yet assigned: **115**
+- Automatic queue pending and not yet assigned: **163**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261022T101819Z-47e274ea5608`
-- Assigned unresolved records: **36**
-  1. `link:https://news.google.com/rss/articles/CBMikwFBVV95cUxObW1IWjhVODBnLWVSTUdKZkZYb2tGOUVlOFRtVXJWMjA2Rld4ZUoxN0M5NGdMbHFLS1RzRXI1OU5NNmtlU1NMVHE4SVNfeHgxMVJ6SWljS1hUcnBweVkySkh3UmZ6bXROcVVob1hlWl9UNWdTUnBVZVJsM2lWM1JIZURqaFBldVlZZzFpU093QTNSb0k?oc=5` — 5 battles that will decide EU’s ‘Made in Europe’ push
-  2. `link:https://news.google.com/rss/articles/CBMiigFBVV95cUxNWFJ6SHYyYWhObl9jUFVoQ09meFh2QWhvVURLZGo0Um5NRDVJcFloX2RaTDFyVmtpVlNtZ00zdVhsNklFYXR0TWlNX3g1Tm93a2J2cHNES3hsSUF1NWdaMmJZTmhENGhwNlFEanVxd2dFVkJtVXgtUVNRcXVYTjBsVEcwYkJHaEozc2c?oc=5` — Opinion: After ‘Made in Europe’ comes the hard part
-  3. `link:https://news.google.com/rss/articles/CBMiqgFBVV95cUxORFJ5UnNHNVROcS0zVW96UHRRSDRuVGhkWTJJNTZqOWJMaFh6am05S3Q2c3NUODlWLXNEbGtUZW1SX0pvYTZiUFZmQXVlM2t0SDAtenpTLXZDWWQxM2NGUzhoYmswcXMtWU52bHRIVUg4S0thVU5ISkdsVFA5dnpyUjFjVUVIN2JmOUVQTHRZajFVZ1VWWWNUWXVLaHk4dkhnRWZ6eXljTno2QQ?oc=5` — Rare earths: How new-old export controls would burden German companies - Table.Briefings
-  4. `link:https://news.google.com/rss/articles/CBMifkFVX3lxTFBHNVpGYllqUDAtbkZERkYxVWFjZWM0a1pJNV9wMmdKd0dXSzBPLTZiRWlXbzR0cWhVc1NoWWl4Y3piLS1GbHlETDBZRVBHMVd4bWk3QkpXXzh0cFVsbkU1dTVFbjExcy1rVktPQjllcl9qNGlvakZzSVJXbEdGZw?oc=5` — European Campaign and Partnership Manager - Euractiv Jobs
-  5. `link:https://news.google.com/rss/articles/CBMi8AFBVV95cUxOY29yNVBQdkJmVDN6M1lXQTFPV1ZSRGp3VWd2cU1XU1c1dzZ1TzVQM2l4UUZjbWpzQzNQaDBSOERaNDVyeU52aFNmVTRoamNIUm50RFBNZFBUNmNtLWpsN1hxLWtsaDNrRkFYR2tvcWpzOGpDODlfeF92ZHlhRGFsRUVocWEyVXFzcGtxQ015ZUdqdTdKblZ6blYtNXVnZVJXNHR5LVJWRWV1SWh3TDBTWEMwUmZPc0RVTE1KMmhOQkdmbTl3bXlid3pFVERqLTJqc0RaU0ZjQ1NlaEdIUTRUNzliR1FKZUtUeXROOE41MFk?oc=5` — ‘Manual for autocrats’: how Fico’s rule-of-law breaches put Slovakia in EU sanctions crosshairs
-  6. `historical:id:55d1298887962cbf` — Continuity in times of geoeconomic change: the European Union’s strategic trade relations with the Global South
-  7. `historical:id:302703dc36d212e9` — Trade war to cooperation: scrutinizing China’s strategies to the EU carbon border adjustment mechanism
-  8. `historical:id:eeed4bd14252e3f8` — The Level Playing Field and Determining Trade Impact under Trade Agreements: Implications from the EU–UK Trade and Cooperation Agreement
-  - … plus 28 more in the package manifest
+- Current package: `worker-a-20261022T102157Z-fd2747038d27`
+- Assigned unresolved records: **12**
+  1. `historical:id:296c02d7af358420` — Joris Teer interviewed by Nieuwsuur on Beijing's restriction of raw materials
+  2. `historical:id:b51e680c6ea74cdc` — NATO billions should go to domestic companies, but the raw materials come from China
+  3. `historical:id:4bbf62aee12f6612` — Alone we stand: How Europe can counter hybrid threats in a post-transatlantic era – European Council on Foreign Relations
+  4. `historical:id:97d6adbc1688a7b6` — Book Launch: The Age of Open Strategic Autonomy - CELIS Institute
+  5. `historical:id:502eb435ffc919e3` — German Industry’s Competitiveness Continues to Decline | ifo Institute
+  6. `historical:id:2c6d18407ef93b3d` — German Industry Continues to Lose Competitiveness | ifo Institute
+  7. `historical:id:4acf9a911fe87d16` — BusinessEurope preliminary comments on the Commission proposal for a directive on the protection of undisclosed know-how and business information (trade secrets) against their unlawful acquisition, use and disclosure
+  8. `historical:id:bf624cbc78249abf` — Automotive Industry in Germany Concerned about Competitiveness | ifo Institute
+  - … plus 4 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20261022T101831Z-34e82bccfb0e`
-- Assigned unresolved records: **36**
-  1. `historical:id:89a9fdab76b412b7` — After Covid-19: Economic security in EU-Asia connectivity - Egmont Institute
-  2. `historical:id:c6e71d93b99e63bb` — Beyond Corona: Getting EU Economic Security Right - Egmont Institute
-  3. `historical:id:3eb892cf18d9162a` — Balancing Economic Security and Investment Protection – The Case of Nexperia and the China–Netherlands BIT - CELIS Institute
-  4. `historical:id:77fa088419baee78` — One in Four Industrial Companies Sees a Decline in Its Own Competitiveness | ifo Institute
-  5. `historical:id:18dfd71f0592338e` — Industrial policy for defence: Lessons from history - Kiel Institute
-  6. `historical:id:adc3332c5e49270e` — German Industry’s Competitiveness Continues Downward Trend | ifo Institute
-  7. `historical:id:cdb7a28ed38bf08a` — Financial and business service measures
-  8. `historical:id:4c0366f0b5518cef` — Anti-corruption sanctions: Preparing for the time after Trump – European Council on Foreign Relations
-  - … plus 28 more in the package manifest
+- Current package: `worker-b-20261022T102201Z-892f2a890c0a`
+- Assigned unresolved records: **12**
+  1. `historical:id:76c8d5f71cad4692` — CFIS 24 Background Paper on Panel: The Current Global Regulatory & Investment Environment: The OECD Countries’ Perspective on Economic Security - CELIS Institute
+  2. `historical:id:154887ae92d2f483` — CFIS 24 Background Paper on Panel: Investment Screening and Economic Security in the Majority World - CELIS Institute
+  3. `historical:id:2716461d91f375a8` — Building Resilience in Investment Screening and Economic Security: Lessons from India - CELIS Institute
+  4. `historical:id:1b927cef6fb95689` — Economic peacefare: Lessons for the future of European sanctions strategy – European Council on Foreign Relations
+  5. `historical:id:3d095949c2ac497f` — Evaluation and review of the EU's FDI Screening Regulation - BusinessEurope contribution to the public consultation
+  6. `historical:id:5404064ed9ca5c3c` — Advanced manufacturing is key for EU competitiveness
+  7. `historical:id:70f857e6dfe48ea9` — Administrative Burden of the Foreign Subsidies Regulation - Letter from Markus J. Beyrer
+  8. `historical:id:bd6390ebd49d38da` — Beyond sanctions: How west Africa can recommit to democracy – European Council on Foreign Relations
+  - … plus 4 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
