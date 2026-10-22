@@ -8,20 +8,38 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
 
 - Authoritative V2 verified: **2303** (Main **1012** + Historical **1291**)
 - Automatic queue still needing V2 verification: **298** (Main **80** + Historical **218**)
-- Currently assigned to workers: **0** (Main **0** + Historical **0**)
+- Currently assigned to workers: **72** (Main **58** + Historical **14**)
 - Bounded access-recovery retries still eligible: **0**
 - Hands-on verification needed: **162**
-- Automatic queue pending and not yet assigned: **298**
+- Automatic queue pending and not yet assigned: **226**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261022T081727Z-1dfb3b222aca`
-- Assigned unresolved records: **0**
+- Current package: `worker-a-20261022T084026Z-eaa2f880cc4d`
+- Assigned unresolved records: **36**
+  1. `link:https://doi.org/10.1080/13563467.2026.2751101` — The peripheralisation of Europe’s battery industry: derisking regimes, productive models, and the geography of green industrial policy
+  2. `link:https://doi.org/10.1111/1758-5899.70258` — Africa and the ‘New Washington Consensus’: Green Industrialisation Through a Rethink of International Economic Law Rules
+  3. `link:https://institutdelors.eu/en/publications/why-marine-le-pens-draft-budget-threatens-the-future-of-europe-and-therefore-of-france/` — Why Marine Le Pen’s draft budget threatens the future of Europe (and therefore of France) - Institut Jacques Delors
+  4. `link:https://doi.org/10.1007/s43253-026-00187-3` — The Euro at a quarter of a century: economic policy and governance. Introduction to the special issue
+  5. `link:https://doi.org/10.1007/s11365-026-01259-w` — Technology transfer and innovation dynamics through clustering analysis of European Union countries
+  6. `link:https://op.europa.eu/en/web/about-us/faq#print_your_own_copies` — Deep dive on critical raw materials for hydrogen technologies in the EU - Publications Office of the EU
+  7. `link:https://doi.org/10.48550/arxiv.2604.13668` — Where Trust Fails: Mapping Location-Data Provenance Risks in Europe
+  8. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=da244548-c907-11f1-97f3-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Voluntary partnership agreements - Publications Office of the EU
+  - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20261022T072541Z-6bfae7a41ae4`
-- Assigned unresolved records: **0**
+- Current package: `worker-b-20261022T084029Z-4a06d1d97c34`
+- Assigned unresolved records: **36**
+  1. `link:https://news.google.com/rss/articles/CBMigAJBVV95cUxOSk9aWWdIQnFoWWJkWlo3UlZSSmluMTBHVy1QeVBhU21hYXp0bHE5czZiWW0yWWIwd0M3MWs0Q1hnT0pZV3plQzVZYUdkZFlzVTF0QzFzWlZPVkZwTjFMWGFDcnlXbGt2SUtGZW1UZlhtcjFFN2ljTVJjY2RmVnVmZWJBTWNWdzZUVGZQR1ZoaVA4X2tCeVI0M2hSaWVCMEZ2SFppdEVnbEFWT1NNRjB4aE16bXRLOVdCTVlOWU1NbzRZVFBpYXI5SWZzRmpyTEh0OERFNmJpeVNSbUk5alVadlAwb2YyNng3ZU1PNmZTMmpJa2d3UHc3SC1MdVFIb19a?oc=5` — New crew members dock at International Space Station, French astronaut Sophie Adenot to return to Earth - Le Monde.fr
+  2. `link:https://news.google.com/rss/articles/CBMivwFBVV95cUxOWWdhTm1wTi1qcGhMOXAxRWZhVHduWDM0ZDNBZjZNUlQ2bUZfbm12Z0ZReVNBX3BIS2o1VjRSZVNDeE04SUpVemxhN1hxWXhCOFlNMmVCU2VhbHc5T1RGS3Fkd21KcnZ6SVYyeWNRSDVyRmx2Nm42WElRUEFEWWdrUklmeGJWNW5FMWFTMW45X0ZxTmQyMFQ0c1FaQjdMSE9yVXBDNDVnbG8xR0MwSHpqTUE1c29zOGFTZTVTNTd4RQ?oc=5` — EXCLUSIVE: French supercomputer maker Bull doubles output to boost Europe's AI ambitions
+  3. `link:https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZlo5ZUUwRkxrQkVYcjd3bV9wcmY3VHpmNUpvN2VVbjAydkpFSVJfNFk4dHZqV2c5VTRkMU1FNDAtcUtOXzRYUFl6dzhyaC1QQTdyWFhENzNLODFSZlltX3NRenNOWFZSbE1qTEp6ZDUwQ081dU9Send4UHAybkR6UC1LVXBJdTc2TWl1VURLRWVkbWVfTDVxNWZOZ0FEWUNGclZ3bE9nUDNoUHktWGc0cFRUMzhGU21vRTZBWXNZekZ3M0ZXdk1yblVzX3djbzdRYnN0OXF3?oc=5` — AGILE: Parliament set to approve new EU defence innovation programme
+  4. `link:https://news.google.com/rss/articles/CBMiigFBVV95cUxPcFlSWTFNSXJsdm1ETFp6eS1IZkIwblpHZk55NS02TG9kQUVXNE1vUV9FajhDTVJTNkRFcnZpa3Z6V3JiWXd4WjVqU3BXMjZacFR3bVdudnJWdnR4RGJxU0FJTmFQMHBUbVkwdDdCQ09hZVVULVFENW1IVmxKSWd5WXJLeTJ6NWZNLVE?oc=5` — Where AI risks meet - European Central Bank
+  5. `link:https://news.google.com/rss/articles/CBMivAFBVV95cUxQUjZJdDhubWFUM1FTbWo4OEJJd3BkZDhLQmpONFAyUThFZmJmNjBFb05UYS01VHNUdDJCaTZBcmpnWG43eU1GRjI1N1NXNFpCUWduS1RPLWpKMlRZUllRSl9QclUwMkttM1NmbUJkcUVBYl9hOWNIWUthRW9qMEl1bnEtRlVrX09iN01ZUFZiaVNYYmtjNXFfR3ZwLVU4cHhCQjFmSV9OcTB5aHNENEFTbGdDRDJUWG5HZ1p1Uw?oc=5` — EU-Canada cooperation on technology: what value does it bring to your business? - European External Action Service (EEAS)
+  6. `link:https://news.google.com/rss/articles/CBMioAFBVV95cUxNbFRxbzNpN3dxTUtfT1llT3ZMaTBSOVF6b3lBemtWb0hJT2xvZVB1b083Z1RqTndIdEhmOE11bG5CaUJmNnhIT3hpbWwtV3k1UEY1azlPZF8xWjB0ZEtGbW5QNjFvTWhOeHlIS1pzT3VuaURsUVF0dllKT0s1VjVuRUtobVlKYzV4ZGpNX2h6MlZleVkyMTE3T25mTFVNdzli?oc=5` — ‘China shock 2.0’ and Europe’s industrial future - espas.secure.europarl.europa.eu
+  7. `link:https://news.google.com/rss/articles/CBMikwFBVV95cUxQbkxNT3pEak8zNkkyRkRYY3dIOXFQclFMUUZHNW94UFFTSDJXcGp5cGVQNjc3U3NLMlZ1SllOVEFwT0VIeXNld3J0OHF1VjduNXpRdmZoVEFQV0tKV2IxN0NUSG0zTTU2S1JwaVl1VzZURGRORUQxWGZtNUlXclZxOERpR0Y5T2puVWtpRFgxNjh0dk0?oc=5` — EU accused of hiding environmental impact of data centers
+  8. `link:https://news.google.com/rss/articles/CBMi4AFBVV95cUxPaEJnRHgyVVNDMGFlYkZIdGw2QmhzOTNwY2RDV3BRY0hyTHlCb2ZXSHJqUGdVcWZibzdRRWlLY3R5YmhBN3dwVnZjQ2lkcWNSWWNpYm9UT3hGZUJuWVlYVW5mUmdVbzdwUkozLUoxNUxITGoza1FCSnVpUHlLS1R0emVXaTBuNU9ZbHFwV201Y0RQdUNnUTkyWndJSzJhVGZhVFNwV3pONzNVR2lfNWlyT3hQSkxOMHJ1SmxfRkZDMlhiX3dmTllXcEJocUVOT1drY25Ob2RZa2UzMHNQQmE4Wg?oc=5` — Trondheim Tech Festival 2026: Speech by Ambassador-Designate Peter Van Kemseke on the EU-Norway shared agenda for innovation and competitiveness - European External Action Service (EEAS)
+  - … plus 28 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
