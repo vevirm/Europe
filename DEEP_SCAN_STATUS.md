@@ -8,7 +8,7 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
 
 - Authoritative V2 verified: **2414** (Main **1063** + Historical **1351**)
 - Automatic queue still needing V2 verification: **187** (Main **29** + Historical **158**)
-- Currently assigned to workers: **72** (Main **7** + Historical **65**)
+- Currently assigned to workers: **72** (Main **20** + Historical **52**)
 - Bounded access-recovery retries still eligible: **2**
 - Hands-on verification needed: **162**
 - Automatic queue pending and not yet assigned: **115**
@@ -16,29 +16,29 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261022T104017Z-c24a552ae229`
+- Current package: `worker-a-20261022T112124Z-c095a4a940c2`
 - Assigned unresolved records: **36**
-  1. `historical:id:c1385a5e422d94e7` — Digital Partnership with the Republic of Korea
-  2. `historical:id:d34ffdca5a532461` — An Alternative Supply Chain in India? Taiwan’s Experience
-  3. `historical:id:064ffe75a9a7c694` — What EU sanctions policy can learn from European mutual defence – European Council on Foreign Relations
-  4. `historical:id:53150557b6dff2d6` — Supply Chain Security, From Taipei to Brussels
-  5. `historical:id:6095080c89a975f9` — BusinessEurope reaction to the European Commission legislative proposal on distortive foreign subsidies
-  6. `historical:id:3881cd7ef5ce9d49` — A 6-point action plan for a transatlantic bargain – European Council on Foreign Relations
-  7. `historical:id:7f7c9f7148a6fd5a` — Building back a better transatlantic alliance – European Council on Foreign Relations
-  8. `historical:id:0d1be72b3a346fae` — White Paper on foreign subsidies - BusinessEurope's reply to the public consultation
+  1. `historical:id:89a9fdab76b412b7` — After Covid-19: Economic security in EU-Asia connectivity - Egmont Institute
+  2. `historical:id:c6e71d93b99e63bb` — Beyond Corona: Getting EU Economic Security Right - Egmont Institute
+  3. `historical:id:3eb892cf18d9162a` — Balancing Economic Security and Investment Protection – The Case of Nexperia and the China–Netherlands BIT - CELIS Institute
+  4. `historical:id:77fa088419baee78` — One in Four Industrial Companies Sees a Decline in Its Own Competitiveness | ifo Institute
+  5. `historical:id:18dfd71f0592338e` — Industrial policy for defence: Lessons from history - Kiel Institute
+  6. `historical:id:adc3332c5e49270e` — German Industry’s Competitiveness Continues Downward Trend | ifo Institute
+  7. `historical:id:cdb7a28ed38bf08a` — Financial and business service measures
+  8. `historical:id:4c0366f0b5518cef` — Anti-corruption sanctions: Preparing for the time after Trump – European Council on Foreign Relations
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20261022T104024Z-ab07c2437f00`
+- Current package: `worker-b-20261022T112139Z-5460d2c465fc`
 - Assigned unresolved records: **36**
-  1. `link:https://news.google.com/rss/articles/CBMikwFBVV95cUxObW1IWjhVODBnLWVSTUdKZkZYb2tGOUVlOFRtVXJWMjA2Rld4ZUoxN0M5NGdMbHFLS1RzRXI1OU5NNmtlU1NMVHE4SVNfeHgxMVJ6SWljS1hUcnBweVkySkh3UmZ6bXROcVVob1hlWl9UNWdTUnBVZVJsM2lWM1JIZURqaFBldVlZZzFpU093QTNSb0k?oc=5` — 5 battles that will decide EU’s ‘Made in Europe’ push
-  2. `link:https://news.google.com/rss/articles/CBMiigFBVV95cUxNWFJ6SHYyYWhObl9jUFVoQ09meFh2QWhvVURLZGo0Um5NRDVJcFloX2RaTDFyVmtpVlNtZ00zdVhsNklFYXR0TWlNX3g1Tm93a2J2cHNES3hsSUF1NWdaMmJZTmhENGhwNlFEanVxd2dFVkJtVXgtUVNRcXVYTjBsVEcwYkJHaEozc2c?oc=5` — Opinion: After ‘Made in Europe’ comes the hard part
-  3. `link:https://news.google.com/rss/articles/CBMiqgFBVV95cUxORFJ5UnNHNVROcS0zVW96UHRRSDRuVGhkWTJJNTZqOWJMaFh6am05S3Q2c3NUODlWLXNEbGtUZW1SX0pvYTZiUFZmQXVlM2t0SDAtenpTLXZDWWQxM2NGUzhoYmswcXMtWU52bHRIVUg4S0thVU5ISkdsVFA5dnpyUjFjVUVIN2JmOUVQTHRZajFVZ1VWWWNUWXVLaHk4dkhnRWZ6eXljTno2QQ?oc=5` — Rare earths: How new-old export controls would burden German companies - Table.Briefings
-  4. `link:https://news.google.com/rss/articles/CBMifkFVX3lxTFBHNVpGYllqUDAtbkZERkYxVWFjZWM0a1pJNV9wMmdKd0dXSzBPLTZiRWlXbzR0cWhVc1NoWWl4Y3piLS1GbHlETDBZRVBHMVd4bWk3QkpXXzh0cFVsbkU1dTVFbjExcy1rVktPQjllcl9qNGlvakZzSVJXbEdGZw?oc=5` — European Campaign and Partnership Manager - Euractiv Jobs
-  5. `link:https://news.google.com/rss/articles/CBMi8AFBVV95cUxOY29yNVBQdkJmVDN6M1lXQTFPV1ZSRGp3VWd2cU1XU1c1dzZ1TzVQM2l4UUZjbWpzQzNQaDBSOERaNDVyeU52aFNmVTRoamNIUm50RFBNZFBUNmNtLWpsN1hxLWtsaDNrRkFYR2tvcWpzOGpDODlfeF92ZHlhRGFsRUVocWEyVXFzcGtxQ015ZUdqdTdKblZ6blYtNXVnZVJXNHR5LVJWRWV1SWh3TDBTWEMwUmZPc0RVTE1KMmhOQkdmbTl3bXlid3pFVERqLTJqc0RaU0ZjQ1NlaEdIUTRUNzliR1FKZUtUeXROOE41MFk?oc=5` — ‘Manual for autocrats’: how Fico’s rule-of-law breaches put Slovakia in EU sanctions crosshairs
-  6. `historical:id:55d1298887962cbf` — Continuity in times of geoeconomic change: the European Union’s strategic trade relations with the Global South
-  7. `historical:id:302703dc36d212e9` — Trade war to cooperation: scrutinizing China’s strategies to the EU carbon border adjustment mechanism
-  8. `historical:id:eeed4bd14252e3f8` — The Level Playing Field and Determining Trade Impact under Trade Agreements: Implications from the EU–UK Trade and Cooperation Agreement
+  1. `historical:id:296c02d7af358420` — Joris Teer interviewed by Nieuwsuur on Beijing's restriction of raw materials
+  2. `historical:id:b51e680c6ea74cdc` — NATO billions should go to domestic companies, but the raw materials come from China
+  3. `historical:id:4bbf62aee12f6612` — Alone we stand: How Europe can counter hybrid threats in a post-transatlantic era – European Council on Foreign Relations
+  4. `historical:id:97d6adbc1688a7b6` — Book Launch: The Age of Open Strategic Autonomy - CELIS Institute
+  5. `historical:id:502eb435ffc919e3` — German Industry’s Competitiveness Continues to Decline | ifo Institute
+  6. `historical:id:2c6d18407ef93b3d` — German Industry Continues to Lose Competitiveness | ifo Institute
+  7. `historical:id:4acf9a911fe87d16` — BusinessEurope preliminary comments on the Commission proposal for a directive on the protection of undisclosed know-how and business information (trade secrets) against their unlawful acquisition, use and disclosure
+  8. `historical:id:bf624cbc78249abf` — Automotive Industry in Germany Concerned about Competitiveness | ifo Institute
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
