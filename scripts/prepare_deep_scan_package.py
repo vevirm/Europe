@@ -827,9 +827,18 @@ def main() -> None:
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     if not todo:
-        summary = args.output_dir / "NO_DEEP_SCAN_NEEDED.txt"
-        if lane and pending_total:
-            summary.write_text(f"Worker {lane} currently has no assignable Deep Scan work.\n", encoding="utf-8")
+        # Never advertise NO_DEEP_SCAN_NEEDED while the authoritative queue
+        # still contains unverified records. A lane may simply be reserved.
+        summary = args.output_dir / (
+            "NO_NEW_ASSIGNMENTS.txt" if pending_total else "NO_DEEP_SCAN_NEEDED.txt"
+        )
+        if pending_total:
+            summary.write_text(
+                f"Worker {lane or 'SINGLE'}: no new assignments available in this run. "
+                f"{pending_total} works still need automatic Deep Scan; "
+                "inspect active reservations in DEEP_SCAN_STATUS.md.\n",
+                encoding="utf-8",
+            )
         else:
             summary.write_text("All current Main Radar and Historical Radar records already have authoritative Deep Scan V2 verification.\n", encoding="utf-8")
         if lane and state is not None and args.write_work_state:

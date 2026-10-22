@@ -254,9 +254,11 @@ def prioritize_pending_keys(state: dict[str, Any], pending_keys: list[str]) -> l
     for key in ordered:
         rec = records.get(key) if isinstance(records.get(key), dict) else {}
         attempts = _attempt_count(rec)
-        package_attempts = _scan_package_attempt_count(rec)
         status = str(rec.get("status") or "")
-        is_retry = status == "recovery_retry" or attempts > 0 or package_attempts > 0
+        # Issuing a ZIP is not an evidence-recovery attempt.  Putting every
+        # previously packaged Main record in the retry tail can strand the
+        # entire Main queue behind Historical work without any actual scan.
+        is_retry = status == "recovery_retry" or attempts > 0
         priority = str(rec.get("queue_priority") or "")
         if is_retry:
             (must_retries if priority == "must_scan" else retries).append(key)
@@ -276,10 +278,24 @@ def prioritize_pending_keys(state: dict[str, Any], pending_keys: list[str]) -> l
         else:
             fresh_main_other.append(key)
 
+    # Prefer never-issued works within each priority group, then the oldest
+    # outstanding issuance.  This prevents asking an operator to rescan the
+    # same package while other equally important work has never been issued.
+    def oldest_unfinished_first(keys: list[str]) -> list[str]:
+        return sorted(keys, key=lambda key: (
+            _scan_package_attempt_count(records.get(key)) > 0,
+            str((records.get(key) or {}).get("last_scan_package_at") or ""),
+        ))
+
     # Explicit must-scan records are deterministic operator requirements and therefore lead
     # the automatic queue. Main still remains ahead of ordinary Historical work.
-    out = fresh_main_must + must_retries + fresh_main_a + fresh_private_a + fresh_main_other
-    fresh_hist = fresh_hist_must + fresh_hist_a + fresh_hist_other
+    out = sum((oldest_unfinished_first(group) for group in (
+        fresh_main_must, must_retries, fresh_main_a, fresh_private_a, fresh_main_other
+    )), [])
+    fresh_hist = sum((oldest_unfinished_first(group) for group in (
+        fresh_hist_must, fresh_hist_a, fresh_hist_other
+    )), [])
+    retries = oldest_unfinished_first(retries)
     if fresh_hist:
         retry_idx = 0
         for start in range(0, len(fresh_hist), RETRY_INTERVAL - 1):
@@ -300,11 +316,11 @@ def fill_lane(
     *,
     target_size: int = DEFAULT_LANE_SIZE,
 ) -> list[str]:
-    """Fill each lane with fresh tasks, not work already sent to a worker.
+    """Reserve a new lane, respecting live reservations and unverified backlog.
 
-    An `assigned` record in an issued package is in flight until its returned
-    result is processed. It must not be re-exported just because a user presses
-    Prepare Packages again. Validated recovery retries remain eligible.
+    Only records in a currently occupied lane are in flight. Old individual
+    `status=assigned` flags with no lane reservation do not make records
+    permanently ineligible. Issuing a ZIP never exhausts a recovery attempt.
     """
     lane = lane.upper()
     if lane not in state.setdefault("lanes", {}):
@@ -319,38 +335,39 @@ def fill_lane(
     terminal = manual_verification_keys(state)
     prioritized = prioritize_pending_keys(state, pending_keys)
     pending_set = set(prioritized)
-    current = _unique([
-        k for k in lane_row.get("assigned", [])
-        if k in pending_set
-        and k not in terminal
-        and _scan_package_attempt_count(state.get("records", {}).get(k)) == 0
-    ])
-    occupied_elsewhere: set[str] = set()
-    for other, row in state.get("lanes", {}).items():
-        if other == lane or not isinstance(row, dict):
+    # A live reservation is the key's presence in a worker lane, not an old
+    # per-record 'assigned' flag. Before this fix, an earlier prepare run
+    # emptied the lane but left that flag behind, making the entire backlog
+    # appear unassignable forever.
+    in_flight = assigned_keys(state)
+    # Reserve the previous contents of the other lane for the *entire* A/B
+    # preparation run. Without this, Worker B can immediately select the 36
+    # jobs Worker A just replaced, creating overlapping new scan packages.
+    just_replaced = {
+        key
+        for row in state.get("lanes", {}).values()
+        if isinstance(row, dict)
+        for key in row.get("previous_assigned", [])
+        if isinstance(key, str)
+    }
+    occupied = in_flight | terminal | just_replaced
+    current: list[str] = []
+    for key in prioritized:
+        if key not in pending_set or key in occupied:
             continue
-        occupied_elsewhere.update(k for k in row.get("assigned", []) if isinstance(k, str))
-    occupied_elsewhere.update(terminal)
-    # Do not re-issue previously exported records without a returned outcome.
-    occupied_elsewhere.update(
-        key for key, rec in state.get("records", {}).items()
-        if isinstance(rec, dict) and rec.get("status") == "assigned"
-        and _scan_package_attempt_count(rec) > 0
-    )
-    need = max(0, int(target_size) - len(current))
-    if need:
-        for key in prioritized:
-            if key in current or key in occupied_elsewhere:
-                continue
-            current.append(key)
-            rec = state.setdefault("records", {}).setdefault(key, {})
-            rec["status"] = "assigned"
-            rec["lane"] = lane
-            rec.setdefault("assigned_at", utc_now())
-            need -= 1
-            if need <= 0:
-                break
-    lane_row["assigned"] = current
+        current.append(key)
+        if len(current) >= max(1, int(target_size)):
+            break
+    # When the previous lane still owns work and no new tasks are available,
+    # do not lose that reservation. The caller will report no NEW assignments.
+    if current:
+        lane_row["previous_assigned"] = list(lane_row.get("assigned", []))
+        lane_row["assigned"] = current
+    else:
+        lane_row["assigned"] = [
+            key for key in lane_row.get("assigned", [])
+            if key in pending_set and key not in terminal
+        ]
     for key in current:
         rec = state.setdefault("records", {}).setdefault(key, {})
         rec["status"] = "assigned"
