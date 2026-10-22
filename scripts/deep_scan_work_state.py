@@ -22,7 +22,7 @@ DEFAULT_LANE_SIZE = 36
 MAX_RECOVERY_ATTEMPTS = 3
 MAX_SCAN_PACKAGE_ATTEMPTS = 3
 RETRY_INTERVAL = 12  # at most one retry per 12 historical/background slots while fresh history exists
-TERMINAL_MANUAL_STATUSES = {"needs_manual_verification", "dropped_after_3_failures", "deferred"}  # legacy/manual + hard terminal drop
+TERMINAL_MANUAL_STATUSES = {"needs_manual_verification", "dropped_after_3_failures", "deferred"}  # deferred = legacy terminal status
 
 
 def utc_now() -> str:
@@ -109,18 +109,13 @@ def _scan_package_attempt_count(row: dict[str, Any] | None) -> int:
 
 
 def _backfill_scan_package_attempts(state: dict[str, Any]) -> None:
-    """Backfill bounded scan-attempt counts from package history for older ledgers.
-
-    Older states recorded package membership but did not count it per record. Distinct
-    package memberships are therefore the safest available lower bound on how many times
-    a record has already been handed to Deep Scan. Recovery failures are also a lower
-    bound. Never decrease an explicit counter if one already exists.
-    """
+    """Infer per-record issuance counts from historical package membership."""
     memberships: dict[str, int] = {}
     for pkg in state.get("packages", {}).values():
         if not isinstance(pkg, dict):
             continue
-        for key in set(k for k in (pkg.get("record_keys") or []) if isinstance(k, str) and k):
+        keys = {k for k in (pkg.get("record_keys") or []) if isinstance(k, str) and k}
+        for key in keys:
             memberships[key] = memberships.get(key, 0) + 1
     for key, rec in state.get("records", {}).items():
         if not isinstance(rec, dict):
@@ -178,17 +173,19 @@ def deferred_keys(state: dict[str, Any]) -> set[str]:
 
 
 def assignment_blocked_keys(state: dict[str, Any]) -> set[str]:
-    """Records that have already been issued in the maximum number of scan packages.
+    """Block only records whose *validated recovery* budget is exhausted.
 
-    They remain importable from their last reserved package, but package preparation must
-    not issue them a fourth time. A failed result from the final allowed package is turned
-    into the normal terminal ``dropped_after_3_failures`` state by mark_recovery_failure().
+    Appearing in a package does not mean that a worker returned a valid result.
+    Earlier versions counted ZIP issuance as a real attempt, permanently freezing
+    outstanding records after three package downloads despite no verified result.
+    Preserve scan_package_attempts for audit and hard-pass annotation, but never
+    use that counter alone to remove unfinished research from the worker queue.
     """
     return {
         key for key, row in state.get("records", {}).items()
         if isinstance(row, dict)
         and str(row.get("status") or "") != "verified"
-        and _scan_package_attempt_count(row) >= MAX_SCAN_PACKAGE_ATTEMPTS
+        and _attempt_count(row) >= MAX_RECOVERY_ATTEMPTS
     }
 
 
@@ -303,11 +300,10 @@ def fill_lane(
     *,
     target_size: int = DEFAULT_LANE_SIZE,
 ) -> list[str]:
-    """Build a fresh lane from eligible work; never pin a previously issued set forever.
+    """Keep unissued reservations, but rotate records after they have been packaged.
 
-    Previously packaged records are treated as retries by prioritize_pending_keys(), so
-    genuinely fresh work advances first. Records may still be retried, but never more than
-    MAX_SCAN_PACKAGE_ATTEMPTS package issuances in total.
+    Issued records become retry work and compete with the live queue, so fresh work can
+    advance instead of the same package being regenerated indefinitely.
     """
     lane = lane.upper()
     if lane not in state.setdefault("lanes", {}):
@@ -322,9 +318,12 @@ def fill_lane(
     terminal = manual_verification_keys(state)
     prioritized = prioritize_pending_keys(state, pending_keys)
     pending_set = set(prioritized)
-    # A lane is regenerated from the live queue instead of preserving the last issued
-    # package verbatim. This is the key anti-loop behavior: fresh unseen work can advance.
-    current: list[str] = []
+    current = _unique([
+        k for k in lane_row.get("assigned", [])
+        if k in pending_set
+        and k not in terminal
+        and _scan_package_attempt_count(state.get("records", {}).get(k)) == 0
+    ])
     occupied_elsewhere: set[str] = set()
     for other, row in state.get("lanes", {}).items():
         if other == lane or not isinstance(row, dict):
@@ -427,13 +426,15 @@ def mark_recovery_failure(
     """Record one *validated full recovery ladder* failure.
 
     Returns the new status.  Attempts 1-2 become ``recovery_retry``; attempt 3
-    becomes ``dropped_after_3_failures`` and is never automatically assigned again.
+    becomes ``needs_manual_verification`` and is never automatically assigned again.
     """
     when = when or utc_now()
     max_attempts = max(1, int(max_attempts))
     rec = state.setdefault("records", {}).setdefault(key, {})
     lane = rec.get("lane")
-    attempts = min(max_attempts, max(_attempt_count(rec) + 1, _scan_package_attempt_count(rec)))
+    # Only a successfully validated defer consumes one of the three recovery
+    # passes.  Merely shipping a record inside a ZIP must not consume a pass.
+    attempts = min(max_attempts, _attempt_count(rec) + 1)
     history = rec.get("recovery_history") if isinstance(rec.get("recovery_history"), list) else []
     history = list(history)[-(max_attempts - 1):] if max_attempts > 1 else []
     history.append({
@@ -445,7 +446,7 @@ def mark_recovery_failure(
     })
     terminal = attempts >= max_attempts
     rec.update({
-        "status": "dropped_after_3_failures" if terminal else "recovery_retry",
+        "status": "needs_manual_verification" if terminal else "recovery_retry",
         "recovery_attempts": attempts,
         "last_recovery_at": when,
         "last_recovery_package_id": package_id,
@@ -454,8 +455,8 @@ def mark_recovery_failure(
         "recovery_history": history,
     })
     if terminal:
-        rec["dropped_at"] = when
-        rec["drop_reason"] = reason
+        rec["manual_verification_since"] = when
+        rec["manual_verification_reason"] = reason
     if lane in state.get("lanes", {}):
         state["lanes"][lane]["assigned"] = [k for k in state["lanes"][lane].get("assigned", []) if k != key]
     return str(rec["status"])
@@ -535,16 +536,16 @@ def write_status_markdown(
         "# Deep Scan V2 work status",
         "",
         "This file is generated from the authoritative Deep Scan sidecar plus the persistent worker-assignment ledger.",
-        "It exists so a new chat or operator can see what has already been verified, what each worker owns, and what has been terminally dropped after repeated failed scans.",
+        "It exists so a new chat or operator can see what has already been verified, what each worker owns, and what now needs hands-on verification.",
         "",
         "Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.",
-        f"A validated `defer` or rejected current-package scan return counts as a failed attempt. After **{MAX_RECOVERY_ATTEMPTS}** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.",
+        f"A validated `defer` counts as one genuine recovery pass. After **{MAX_RECOVERY_ATTEMPTS}** unsuccessful passes, the work leaves the automatic queue and enters **Hands-on verification needed**.",
         "",
         f"- Authoritative V2 verified: **{counts['verified']}** (Main **{counts['verified_main']}** + Historical **{counts['verified_historical']}**)",
         f"- Automatic queue still needing V2 verification: **{counts['pending_total']}** (Main **{counts['pending_main']}** + Historical **{counts['pending_historical']}**)",
         f"- Currently assigned to workers: **{counts['assigned']}** (Main **{counts['assigned_main']}** + Historical **{counts['assigned_historical']}**)",
         f"- Bounded access-recovery retries still eligible: **{counts['recovery_retries']}**",
-        f"- Terminally dropped after failed scans: **{counts['manual_verification']}**",
+        f"- Hands-on verification needed: **{counts['manual_verification']}**",
         f"- Automatic queue pending and not yet assigned: **{counts['unassigned_pending']}**",
         "",
         "## Worker lanes",
@@ -577,9 +578,9 @@ def write_status_markdown(
     manual_rows.sort(key=lambda x: str(x[1].get("manual_verification_since") or x[1].get("deferred_at") or x[1].get("last_recovery_at") or ""))
     if manual_rows:
         lines.extend([
-            "## Terminally dropped after failed scans",
+            "## Hands-on verification needed",
             "",
-            "These records no longer consume automatic Deep Scan slots and are excluded from active reasoning after three failed attempts. Re-open one only by explicitly resetting its work-state entry after materially new evidence becomes available.",
+            "These works no longer consume automatic Deep Scan slots. Their identity is believed to be real, but substantive evidence could not be recovered automatically. Re-open one only when you have a new source, PDF, repository copy, or other materially new access route.",
             "",
         ])
         for key, row in manual_rows:

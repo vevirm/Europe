@@ -508,6 +508,8 @@ def main() -> None:
     file_failures: list[str] = []
 
     for path in files:
+        rejected_before = rejected_count
+        stale_before = stale_count
         file_had_valid_doc = False
         try:
             docs = list(docs_from_file(path))
@@ -543,7 +545,7 @@ def main() -> None:
                 if pair in seen_pairs:
                     duplicate_count += 1
                     continue
-                seen_pairs.add(pair)
+                # Count only accepted outcomes as processed; a rejected file may be corrected.
 
                 existing = table.get(key)
                 if isinstance(existing, dict) and existing.get("profile") == V2_PROFILE:
@@ -591,6 +593,7 @@ def main() -> None:
                     if table[key].get("reader_why"):
                         avoid_whys.append(table[key]["reader_why"])
                     accepted_v1 += 1
+                    seen_pairs.add(pair)
                     continue
 
                 # V2 uses a stable identity hash. Automatic scanner wording may change while
@@ -614,38 +617,8 @@ def main() -> None:
                     problem_text = "; ".join(v2_problems)
                     print(f"REJECT {label} result {idx}: {problem_text}")
                     rejected_count += 1
-                    # A result for the correct current identity was actually attempted but
-                    # failed acceptance. Count it toward the same hard retry cap as a
-                    # validated access-limited defer so malformed/thin scans cannot loop forever.
-                    new_status = mark_recovery_failure(
-                        work_state, key, package_id,
-                        reason="Deep Scan return rejected: " + problem_text[:500],
-                        verification=copy.deepcopy(raw.get("verification") or {}),
-                        when=utc_now(),
-                    )
-                    work_state_changed = True
-                    if new_status == "dropped_after_3_failures":
-                        now = utc_now()
-                        rec = work_state.get("records", {}).get(key, {})
-                        admit_table[key] = {
-                            "decision": "drop_unverifiable",
-                            "target_strand": "",
-                            "reason_code": "DEEP_SCAN_FAILED_3X",
-                            "reason": (
-                                "Three Deep Scan attempts for this current record identity failed acceptance. "
-                                "The record is terminally dropped from automatic scanning and active reasoning "
-                                "to prevent an infinite retry loop."
-                            ),
-                            "source": "deep_scan_v2",
-                            "corpus_scope": "historical" if is_historical else "main",
-                            "updated_at": now,
-                            "deep_scan_package_id": package_id,
-                            "verification_note": clean((raw.get("verification") or {}).get("verification_note")),
-                            "recovery_attempts": int(rec.get("recovery_attempts") or 3),
-                        }
-                        admission_changed = True
-                        dropped_count += 1
-                        print(f"DROP {label} result {idx}: third failed scan; terminally removed from future packages")
+                    # Invalid/unsupported result is not a completed recovery pass.
+                    # Preserve it in the inbox for correction without charging attempt budget.
                     continue
 
                 decision = clean((raw.get("admission") or {}).get("decision")).lower()
@@ -659,8 +632,9 @@ def main() -> None:
                         when=now,
                     )
                     deferred_count += 1
+                    seen_pairs.add(pair)
                     work_state_changed = True
-                    if new_status == "dropped_after_3_failures":
+                    if new_status in {"dropped_after_3_failures", "needs_manual_verification"}:
                         # After the third genuine recovery pass, stop treating this as
                         # active evidence.  Raw corpus data remains preserved, while the
                         # coordination/status ledger keeps it visible for human follow-up.
@@ -804,6 +778,7 @@ def main() -> None:
                         "updated_at": now, "deep_scan_package_id": package_id,
                     }
                 accepted_v2 += 1
+                seen_pairs.add(pair)
                 mark_verified(work_state, key, package_id, when=now)
                 work_state_changed = True
                 if package_expected_set is not None:
@@ -812,7 +787,10 @@ def main() -> None:
                 if prose_problems:
                     print(f"ACCEPT {label} result {idx} with prose safeguards: {'; '.join(prose_problems)}")
         if file_had_valid_doc:
-            imported_files.append(path)
+            if rejected_count > rejected_before or stale_count > stale_before:
+                print(f"PRESERVE {path.name}: contains rejected/stale work; retain for correction")
+            else:
+                imported_files.append(path)
 
     if file_failures:
         print("Invalid result files:")

@@ -20,7 +20,7 @@ try:
         pending, historical_pending, record_key, identity_hash, scanner_fields,
     )
     from scripts.deep_scan_work_state import (
-        DEFAULT_WORK_STATE, DEFAULT_LANE_SIZE, fill_lane, load_state, manual_verification_keys,
+        DEFAULT_WORK_STATE, DEFAULT_LANE_SIZE, assigned_keys, fill_lane, load_state, manual_verification_keys,
         prioritize_pending_keys, register_package, save_state, sync_verified, update_record_metadata,
         write_status_markdown,
     )
@@ -30,7 +30,7 @@ except ModuleNotFoundError:
         pending, historical_pending, record_key, identity_hash, scanner_fields,
     )
     from deep_scan_work_state import (  # type: ignore
-        DEFAULT_WORK_STATE, DEFAULT_LANE_SIZE, fill_lane, load_state, manual_verification_keys,
+        DEFAULT_WORK_STATE, DEFAULT_LANE_SIZE, assigned_keys, fill_lane, load_state, manual_verification_keys,
         prioritize_pending_keys, register_package, save_state, sync_verified, update_record_metadata,
         write_status_markdown,
     )
@@ -43,6 +43,8 @@ DEFAULT_WORKERS = 10
 ROOT = Path(__file__).resolve().parents[1]
 CLAIMS_VOCAB = ROOT / "claims_vocabulary.json"
 CLAIMS_FORMAT = "radar-claims-v1"
+# Europe-specific admission remit is preserved from the Europe repository.
+EUROPE_SCOPE_POLICY = "europe-economic-security-2026-10"
 
 INSTRUCTIONS = r"""# Radar Deep Scan V2 — authoritative verification instructions
 
@@ -262,8 +264,7 @@ precision is actually supported. For month/year precision add `status_date_preci
 `"year"`. Never invent a missing day or month. `deadline`, when present, must be a full `YYYY-MM-DD`.
 The first claim's `qualification` must reproduce `deep_analysis.qualification` exactly.
 
-Strand B is the methods library: its claims are stored for provenance but must include
-`attributes.world_reasoning=false`. For Strand C, factual event claims may be used as primary evidence;
+Europe does not use Strand B. For Strand C, factual event claims may be used as primary evidence;
 interpretive/forecast content should be a separate claim with `attributes.reasoning_role="context"` and
 `attributes.context_weight=0.3`. Historical claims keep their historical era automatically.
 
@@ -375,20 +376,214 @@ Partial completion is safe. If your session cannot finish the package, return on
 Do not add placeholders. GitHub will import them and the remaining records will appear in the next package.
 
 Before returning the file, verify every result matches the correct work, the evidence trace is real, the admission
-follows A/B/C criteria, corrections are supported, and the JSON is valid.
+follows Europe A/C criteria, corrections are supported, and the JSON is valid.
 """
 
-START_HERE = r"""RADAR DEEP SCAN V2 PACKAGE
 
-This is an authoritative re-verification package. Give the entire ZIP to a browsing-capable LLM and say:
+OFFLINE_CHECKER = '#!/usr/bin/env python3\n"""Offline preflight for a Radar Deep Scan V2 worker result; no network dependency.\nRun from the package root: python CHECK_RESULTS.py deep_scan_results.json\nAllows a nonempty consecutive prefix of assigned jobs; full lane is not mandatory. Substantive evidence\nand claims remain subject to the authoritative GitHub importer.\n"""\nimport json,sys,pathlib\nroot=pathlib.Path(__file__).resolve().parent\nproblems=[]\ntry:\n    path=pathlib.Path(sys.argv[1])\n    d=json.loads(path.read_text(encoding="utf-8"))\n    m=json.loads((root/\'manifest.json\').read_text(encoding="utf-8"))\n    jobs=[]\n    for b in m[\'batches\']:\n        jobs+=json.loads((root/b[\'file\']).read_text(encoding="utf-8"))[\'jobs\']\n    rows=d.get(\'results\',[])\n    if d.get(\'format\')!=\'radar-deep-scan-results-v2\' or d.get(\'package_id\')!=m[\'package_id\']:\n        problems.append(\'format or package_id mismatch\')\n    if d.get(\'claims_format\')!=\'radar-claims-v1\':\n        problems.append(\'claims_format must be radar-claims-v1\')\n    if not isinstance(rows,list): problems.append(\'results must be an array\'); rows=[]\n    if not (1 <= len(rows) <= len(jobs)): problems.append(f\'expected 1..{len(jobs)} results, received {len(rows)}\')\n    for i,r in enumerate(rows):\n        job=jobs[i] if i<len(jobs) else {}\n        expected=job.get(\'required_output\',{})\n        prefix=f\'results[{i}]\'\n        for k in (\'record_key\',\'source_hash\',\'identity_hash\'):\n            if r.get(k)!=expected.get(k): problems.append(f\'{prefix}: incorrect {k} or nonconsecutive order\')\n        v=r.get(\'verification\') or {}; a=r.get(\'admission\') or {}; du=r.get(\'duplicate\') or {}\n        decision=a.get(\'decision\'); depth=v.get(\'evidence_depth\')\n        attempts={x.get(\'step\'):x for x in v.get(\'retrieval_attempts\',[]) if isinstance(x,dict)}\n        if \'supplied_url\' not in attempts: problems.append(f\'{prefix}: missing supplied_url audit\')\n        if decision not in (\'keep\',\'review\',\'drop\',\'defer\',\'drop_unverifiable\'): problems.append(f\'{prefix}: bad decision\')\n        sources=[x for x in v.get(\'recovered_sources\',[]) if isinstance(x,dict) and x.get(\'evidence_used\') is True and x.get(\'url\') and x.get(\'title\')]\n        if decision in (\'keep\',\'review\',\'drop\'):\n            if depth not in (\'full_text_primary\',\'full_text_repository_copy\',\'official_full_document\',\'full_text_or_substantive_primary\',\'substantive_primary_after_recovery\'):problems.append(f\'{prefix}: invalid recovered depth\')\n            if not v.get(\'identity_verified\') or not sources: problems.append(f\'{prefix}: missing identity or substantive recovered source\')\n        if decision in (\'defer\',\'drop_unverifiable\') or depth==\'substantive_primary_after_recovery\':\n            needed={\'supplied_url\',\'doi\',\'exact_title\',\'title_author_year\',\'official_publisher_or_repository\',\'broader_identity_search\'}\n            auto=job.get(\'automatic_scanner\') or {}\n            if auto.get(\'source_validation_url\') or auto.get(\'source_access\') or job.get(\'source_material\',{}).get(\'final_url\'):\n                # A final_url alone is not proof of an explicit scanner-specific route.\n                if auto.get(\'source_validation_url\') or auto.get(\'source_access\'): needed.add(\'scanner_validation_route\')\n            miss=needed-set(attempts)\n            if miss:problems.append(f\'{prefix}: incomplete recovery ladder {sorted(miss)}\')\n            for k in needed&set(attempts):\n                if len(str(attempts[k].get(\'note\',\'\')).strip())<12:problems.append(f\'{prefix}: thin audit note {k}\')\n        if decision==\'defer\':\n            if depth!=\'identity_only_after_recovery\' or not v.get(\'identity_verified\') or a.get(\'reason_code\')!=\'EVIDENCE_ACCESS_LIMITED\':problems.append(f\'{prefix}: invalid defer fields\')\n            if any(r.get(k) for k in (\'reader_title\',\'reader_what\',\'reader_why\',\'reader_more\')):problems.append(f\'{prefix}: defer must not contain reader content\')\n            if (r.get(\'metadata_correction\') or {}).get(\'fields\'):problems.append(f\'{prefix}: defer metadata change\')\n            if any((r.get(\'deep_analysis\') or {}).get(k) for k in (\'work_kind\',\'research_question\',\'main_finding\',\'method_or_basis\',\'qualification\',\'radar_relevance\')):problems.append(f\'{prefix}: defer contains analysis\')\n        if decision==\'drop_unverifiable\' and (v.get(\'identity_verified\') or sources):problems.append(f\'{prefix}: invalid unverifiable evidence\')\n        if du.get(\'status\') not in (\'unique\',\'duplicate\',\'review\'):problems.append(f\'{prefix}: invalid duplicate status\')\n        if du.get(\'status\')==\'duplicate\':\n            keys={x.get(\'record_key\') for x in job.get(\'possible_duplicates\',[]) if isinstance(x,dict)}\n            if decision!=\'drop\' or not du.get(\'duplicate_of\') or du.get(\'duplicate_of\') not in keys:problems.append(f\'{prefix}: invalid canonical duplicate relation\')\n        elif du.get(\'duplicate_of\'):problems.append(f\'{prefix}: duplicate_of must be empty\')\n        claims=r.get(\'claims\')\n        if decision in (\'keep\',\'review\') and (not isinstance(claims,list) or not 1<=len(claims)<=3): problems.append(f\'{prefix}: expected 1–3 claims\')\n        if decision in (\'drop\',\'defer\',\'drop_unverifiable\') and claims!=[]:problems.append(f\'{prefix}: claims must be []\')\n        supplied=attempts.get(\'supplied_url\',{})\n        if decision in (\'keep\',\'review\',\'drop\') and supplied.get(\'outcome\') not in (\'success\',\'found\',\'matched\',\'recovered\',\'resolved\'):\n            recover={\'doi\',\'exact_title\',\'title_author_year\',\'official_publisher_or_repository\',\'broader_identity_search\',\'scanner_validation_route\',\'online_publisher_or_secondary_recovery\',\'package_source_material\',\'web_discovery\',\'publisher_or_alternate_source\',\'publisher_or_official_report\',\'publisher\',\'secondary_syndication_recovery\',\'title_search\',\'repository\',\'source_material\',\'live_source_page\',\'live_primary_source\'}\n            good={\'success\',\'found\',\'matched\',\'recovered\',\'resolved\',\'package_text_examined\',\'source_page_read\',\'source_content_read\'}\n            if not any(x.get(\'step\') in recover and x.get(\'outcome\') in good for x in v.get(\'retrieval_attempts\',[]) if isinstance(x,dict)):\n                problems.append(f\'{prefix}: no successful alternate recovery reported\')\nexcept Exception as e:\n    problems.append(f\'could not validate: {type(e).__name__}: {e}\')\nif problems:\n    print(f\'FAIL: {len(problems)} issue(s)\')\n    for x in problems:print(\' -\',x)\n    sys.exit(1)\nprint(f\'PASS: {len(rows)}/{len(jobs)} consecutive verified results; PARTIAL allowed; GitHub validates evidence and retains unfinished work.\')\n'
 
-    Process this Deep Scan V2 package strictly according to INSTRUCTIONS.md. Go deeply and systematically,
-    process records in supplied order, exhaust the mandatory recovery ladder for difficult records, and return
-    deep_scan_results.json (or a ZIP containing it). Do not cherry-pick and do not keep unverifiable records.
+CHECKPOINT_TOOL = r'''#!/usr/bin/env python3
+"""Durable, offline assignment checkpoint manager. Does NOT perform research."""
+import argparse, json, pathlib, sys
+root = pathlib.Path(__file__).resolve().parent
+manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
+jobs = []
+for b in manifest["batches"]:
+    jobs.extend(json.loads((root / b["file"]).read_text(encoding="utf-8"))["jobs"])
+expected = [j["required_output"]["record_key"] for j in jobs]
+state_path = root / "WORK_PROGRESS.json"
 
-The automatic scanner and any older Deep Scan text are provisional evidence only. V2 can correct metadata,
-change admission, and remove bad/unverifiable evidence from the active Radar after GitHub validation.
-Partial completion is safe; never fabricate unfinished records.
+def load():
+    if not state_path.exists():
+        return {"package_id": manifest["package_id"], "completed": {}}
+    d = json.loads(state_path.read_text(encoding="utf-8"))
+    if d.get("package_id") != manifest["package_id"]:
+        raise ValueError("checkpoint belongs to different package")
+    return d
+
+def save(d):
+    tmp = state_path.with_suffix(".tmp")
+    tmp.write_text(json.dumps(d, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
+    tmp.replace(state_path)
+
+parser = argparse.ArgumentParser(description=__doc__)
+sub = parser.add_subparsers(dest="cmd", required=True)
+sub.add_parser("status")
+next_cmd = sub.add_parser("next", help="export only the next unfinished stage, up to six assigned items")
+next_cmd.add_argument("--size", type=int, default=6)
+next_cmd.add_argument("--output", default="NEXT_STAGE.json")
+a = sub.add_parser("add", help="save one completed structured result as JSON")
+a.add_argument("result_file")
+a = sub.add_parser("assemble", help="create importer-ready JSON from consecutive completed assignments")
+a.add_argument("output", nargs="?", default="deep_scan_results.json")
+args = parser.parse_args()
+try:
+    d = load()
+    if args.cmd == "add":
+        raw = json.loads(pathlib.Path(args.result_file).read_text(encoding="utf-8"))
+        if isinstance(raw, dict) and "results" in raw:
+            if raw.get("package_id") != manifest["package_id"]:
+                raise ValueError("input package_id does not match")
+            rows = raw["results"]
+        elif isinstance(raw, list):
+            rows = raw
+        else:
+            rows = [raw]
+        if not isinstance(rows, list):
+            raise ValueError("results must be an array")
+        for row in rows:
+            key = row.get("record_key")
+            if key not in expected:
+                raise ValueError(f"unassigned record_key: {key}")
+            job = jobs[expected.index(key)]
+            for field in ("record_key", "source_hash", "identity_hash"):
+                if row.get(field) != job["required_output"].get(field):
+                    raise ValueError(f"identity mismatch on {key}: {field}")
+            old = d["completed"].get(key)
+            if old is not None and old != row:
+                raise ValueError(f"already saved with different content: {key}")
+            d["completed"][key] = row
+        save(d)
+    missing = [key for key in expected if key not in d["completed"]]
+    print(f"Completed: {len(expected)-len(missing)}/{len(expected)}; remaining: {len(missing)}")
+    for i, key in enumerate(expected):
+        if key in missing:
+            print(f"  remaining position {i+1}: {key}")
+    if args.cmd == "next":
+        if not 1 <= args.size <= 12:
+            raise ValueError("stage size must be between 1 and 12")
+        pending = [job for job in jobs if job["required_output"]["record_key"] in missing]
+        chosen = pending[:args.size]
+        stage = {"package_id":manifest["package_id"], "worker_lane":manifest.get("worker_lane"),
+                 "remaining_total":len(missing), "stage_size":len(chosen), "jobs":chosen,
+                 "instruction":"Research EVERY job in this stage using the original ZIP recovery rules. Return only real verified results, preserve identities, and add them to CHECKPOINT.py. This stage is NOT inbox-ready."}
+        (root / args.output).write_text(json.dumps(stage, ensure_ascii=False, indent=2)+"\n",encoding="utf-8")
+        print(f"Wrote {args.output}: {len(chosen)} assigned works; {len(missing)} remaining in lane")
+    if args.cmd == "assemble":
+        prefix = []
+        for key in expected:
+            if key not in d["completed"]: break
+            prefix.append(d["completed"][key])
+        if not prefix:
+            raise ValueError("No verified consecutive results yet; nothing to assemble")
+        out = {"format":"radar-deep-scan-results-v2", "claims_format":"radar-claims-v1", "package_id":manifest["package_id"], "results":prefix}
+        pathlib.Path(args.output).write_text(json.dumps(out, ensure_ascii=False, indent=2)+"\n",encoding="utf-8")
+        print(f"Assembled {args.output}. NEXT: python CHECK_RESULTS.py {args.output}")
+except (ValueError, KeyError, OSError, json.JSONDecodeError) as e:
+    print("FAIL:",e,file=sys.stderr)
+    sys.exit(1)
+'''
+
+INSTRUCTIONS += "\n\n## CONTINUATION IS MANDATORY, NOT A RESEARCH INVENTORY\n\nWork through EVERY assigned record, including older unresolved items. Never stop after counting or indexing the jobs and present an inventory as a completed scan. Save each real verified result with `python CHECKPOINT.py add one_result.json` and check remaining assignments with `python CHECKPOINT.py status`. If the execution budget ends, hand off `WORK_PROGRESS.json` and the original ZIP; a subsequent session resumes missing assignments only, with neither untouched jobs nor package creation counted as research attempts. Run `python CHECKPOINT.py assemble` after at least one verified consecutive assignment is represented. Then run `python CHECK_RESULTS.py deep_scan_results.json`. Both workers operate independently at the same time; the other lane is not an excuse to stop. Research may require several sessions: checkpoints cannot create autonomous background research.\n\n## IMPORTER-COMPATIBILITY CONTRACT (MANDATORY, checked mechanically)\n\nThese constraints take precedence over informal examples in this ZIP. The GitHub importer\nrejects whole records that violate them, even when the source analysis is useful.\n\n1. Copy `record_key`, `source_hash`, `identity_hash` directly from each job's\n   `required_output`. Never recompute or replace them. Return a verified consecutive prefix in original order. A nonempty prefix is valid; skipped identities or fabricated outputs FAIL.\n2. `verification.evidence_depth` for a recovered keep/drop/review must be EXACTLY one of:\n   `full_text_primary`, `full_text_repository_copy`, `official_full_document`,\n   `full_text_or_substantive_primary`, `substantive_primary_after_recovery`.\n   For `defer` use ONLY `identity_only_after_recovery`. For `drop_unverifiable`,\n   no invented successful recovery step or substantive recovered source is allowed.\n3. `retrieval_attempts` MUST contain `supplied_url` for every result. Every step has a\n   real `outcome` and a specific `note`. If supplied_url fails, record the ACTUAL\n   later successful step (use `success`, not ambiguous outcomes like `limited`,\n   `source_page_read`, `package_text_examined` or `available_in_prior_research_ledger`)\n   and its URL/query. An already retrieved first-party PDF is recorded under\n   `scanner_validation_route` with a truthful `success` only when actually inspected.\n   Also include at least one `recovered_sources` entry with `evidence_used: true`,\n   a non-empty true source URL and title. A bibliography-only page is not full text.\n4. For `defer` and `drop_unverifiable`, report all six steps: `supplied_url`, `doi`,\n   `exact_title`, `title_author_year`, `official_publisher_or_repository`,\n   `broader_identity_search`. If the job contains a scanner-specific validation route,\n   also report `scanner_validation_route`. Use `not_applicable` explicitly when\n   a route cannot apply (e.g. no DOI). Each attempt note must say specifically\n   what was tried and what happened; never invent steps merely to satisfy validation.\n   For `defer`: identity_verified=true, evidence_depth=identity_only_after_recovery,\n   reason_code=EVIDENCE_ACCESS_LIMITED, no corrections, no reader/deep_analysis\n   findings, and claims=[]. If a job cannot be verified, continue the evidence-recovery ladder honestly. Do not invent evidence or submit an incomplete file as complete. Unfinished assignments remain queued; submit verified work promptly and continue when possible.\n5. `duplicate.status` must be EXACTLY `unique`, `duplicate`, or `review`.\n   Use `duplicate` only with decision=`drop`, a nonempty `duplicate_of` equal to\n   an existing canonical key supplied in `possible_duplicates`, and the same DOI\n   or normalized exact title. Otherwise use `unique` with empty `duplicate_of`.\n   Do not label a record duplicate merely because its source_hash recurs or\n   two worker batches have overlapping themes.\n6. Every `keep`/`review` needs 1–3 substantive structured claims using\n   `claims_vocabulary.json`. Every `drop`/`defer`/`drop_unverifiable` must have\n   `claims: []`. Copy the first claim qualification from deep_analysis.qualification.\n7. Run the bundled offline `CHECK_RESULTS.py` against your final JSON before\n   returning it. If it fails, fix the reported errors; a validated consecutive prefix is allowed and must be honestly labeled PARTIAL. Passing this structural preflight is necessary, not\n   sufficient: do not fabricate a citation or recovery attempt to get a pass.\n8. Previously processed records (including old packages 04/06) are not requests to\n   reprocess them. Only complete the current ZIP's current assigned jobs; GitHub\n   handles already-verified and duplicate identities during import.\n"
+
+INSTRUCTIONS += """
+
+## TWO-LANE PARALLEL OPERATING CONTRACT — ALWAYS APPLIES
+
+The GitHub workflow prepares TWO independent worker ZIPs, Worker A and Worker B, for SIMULTANEOUS execution in separate research sessions/agents. A worker must NEVER wait for the other, never perform the other lane's assignments, and never claim the other lane is complete. The full run is only accounted for when BOTH lane submissions independently pass their checks. For the standard 36+36 run this means TWO validated JSON files, each containing exactly 36 results: 72 source-researched decisions in total. Each lane ZIP is self-contained; the other lane must receive its OWN ZIP.
+
+Start at job 1 and proceed through EVERY job across all manifest batch files in order. A session stopping early is an interruption, not completion: save source notes and verified partial JSON, resume where it stopped, and submit a verified consecutive prefix to the GitHub inbox. An inaccessible source is not grounds to invent a DROP/DEFER: exhaust all applicable legitimate retrieval routes and record actual outcomes. Never manufacture successful attempts. A research item is attempted only when genuine documented verification work occurs on THAT item; ZIP issuance, queue placement, an interrupted task, or an untouched item does not count toward the three-attempt ceiling.
+
+For EACH research item, pursue, where applicable: the supplied link/redirect; DOI and identifier lookup; exact title search; title+author+year search; official publisher or institutional repository; scanner-supplied/cached primary text or PDF cross-checked to bibliographic identity; alternate full text/preprint/open repository; trusted syndication/secondary corroboration; and broader discovery if earlier steps fail. Check the actual substantive source, not merely a landing page, before asserting results. Document which routes were tried, their truthful outcome, and why available evidence does or does not support the chosen decision. A blocked route does not authorize a fabricated final conclusion. Never bypass permissions, paywalls, or access controls.
+
+Before returning, execute CHECK_RESULTS.py on the FINAL results file and independently verify the prefix length and identities. A validated nonempty consecutive prefix may be submitted; retain unattempted jobs in the queue. Submit verified consecutive-prefix results passing structural checks and substantive evidence rules. The GitHub importer remains authoritative for final admission.
+"""
+
+INSTRUCTIONS += """
+
+## TWO-LANE PARALLEL OPERATING CONTRACT — ALWAYS APPLIES
+
+The GitHub workflow prepares TWO independent worker ZIPs, Worker A and Worker B, for SIMULTANEOUS execution in separate research sessions/agents. A worker must NEVER wait for the other, never perform the other lane's assignments, and never claim the other lane is complete. The full run is only accounted for when BOTH lane submissions independently pass their checks. For the standard 36+36 run this means TWO validated JSON files, each containing exactly 36 results: 72 source-researched decisions in total. Each lane ZIP is self-contained; the other lane must receive its OWN ZIP.
+
+Start at job 1 and proceed through EVERY job across all manifest batch files in order. A session stopping early is an interruption, not completion: save source notes and verified partial JSON, resume where it stopped, and submit a verified consecutive prefix to the GitHub inbox. An inaccessible source is not grounds to invent a DROP/DEFER: exhaust all applicable legitimate retrieval routes and record actual outcomes. Never manufacture successful attempts. A research item is attempted only when genuine documented verification work occurs on THAT item; ZIP issuance, queue placement, an interrupted task, or an untouched item does not count toward the three-attempt ceiling.
+
+For EACH research item, pursue, where applicable: the supplied link/redirect; DOI and identifier lookup; exact title search; title+author+year search; official publisher or institutional repository; scanner-supplied/cached primary text or PDF cross-checked to bibliographic identity; alternate full text/preprint/open repository; trusted syndication/secondary corroboration; and broader discovery if earlier steps fail. Check the actual substantive source, not merely a landing page, before asserting results. Document which routes were tried, their truthful outcome, and why available evidence does or does not support the chosen decision. A blocked route does not authorize a fabricated final conclusion. Never bypass permissions, paywalls, or access controls.
+
+Before returning, execute CHECK_RESULTS.py on the FINAL results file and independently verify the prefix length and identities. A validated nonempty consecutive prefix may be submitted; retain unattempted jobs in the queue. Submit verified consecutive-prefix results passing structural checks and substantive evidence rules. The GitHub importer remains authoritative for final admission.
+"""
+
+INSTRUCTIONS += r"""
+
+## PRIMARY MISSION — PRACTICAL RADAR QUALITY CHECK (READ FIRST)
+
+THIS ZIP IS A RESEARCH EXECUTION TASK, NOT AN INVENTORY OR ANOTHER HANDOFF.
+For EVERY assigned record, do your BEST reasonable verification of (1) bibliographic identity
+(title, author/issuer, year, publisher, DOI/URL when available), (2) whether the actual
+source content broadly supports its described topic, summary and important claims, and
+(3) whether it qualifies for Radar's relevant strand. This is APPROXIMATE, source-grounded
+quality control, NOT an exhaustive independent academic review of every work.
+
+Start from the scanner-supplied primary excerpts, official source pages, publisher
+abstracts, executive summaries and accessible full text. Use the strongest readily
+available matching evidence; cross-check identity against an independent official or
+publisher listing when practical. Read full text when easily available, but do not
+spend a whole assignment budget chasing every paywalled PDF. Use the 14 discovery
+routes as a TOOLBOX for difficult cases, not as mandatory searches for every item.
+Escalate only when identity, content or relevance cannot reasonably be judged.
+
+Make a truthful KEEP/DROP/REVIEW decision as soon as adequate substantive matching
+evidence supports it. Preserve limitations and label proposals as proposals.
+Do not invent citations, claims, full-text access, or completed searches. If evidence
+remains inadequate, use the strict DEFER/DROP_UNVERIFIABLE importer fields and required
+recovery audit, or save the assignment as unfinished for continuation. Do not pad counts.
+
+IMPORTANT IMPORTER REALITY: The importer still demands a matching substantive primary
+source and controlled claims for KEEP/REVIEW. A bare headline or unsupported abstract
+is not automatically sufficient for a KEEP; prefer meaningful abstract + substantive
+methods/findings or official summary, and record the actual evidence read accurately.
+The canonical evidence_depth enum and verification audit below remain binding.
+
+PROCESS ALL WORK, NOT JUST THE FIRST ARTICLE: finish each of the 6-record internal
+stages, save verified records, then immediately continue to the next stage. Each worker
+returns EXACTLY the assigned manifest count in one radar-deep-scan-results-v2 JSON
+with claims_format radar-claims-v1, correct job identities and order. Run CHECK_RESULTS.py
+before return. Worker A and Worker B process their distinct ZIPs simultaneously when
+external execution supports parallel work. A ZIP alone cannot run background agents.
+
+Older queued research is legitimate. The per-item three-attempt rule counts only real,
+documented substantive recovery attempts; ZIP issuance, skipped items and interrupted
+sessions do not count.
+
+## NORMAL DEEP SCAN: EXPANDED SOURCE RECOVERY (inspired by PUSH HARDER)
+
+These are FALLBACK recovery options for ordinary Worker A and Worker B research, not a per-item mandatory 14-search checklist. A meaningful matching primary excerpt, published abstract with substantive methods/findings, or official summary can support a proportionate decision when the importer evidence requirements are met. Use the first reliable, substantively sufficient matching primary source when available; do not waste effort on irrelevant routes after a source is verified. When primary evidence remains unavailable or too thin, pursue and document **every applicable** category below before a terminal access-limited decision. Record queries/URLs and real outcomes, including why a category cannot apply:
+
+1. `prior_attempt_audit`: inspect scanner-supplied text and previous research notes; distinguish real completed research from ZIP issuance or untouched queue entries.
+2. `supplied_url_redirects`: follow supplied URL, legitimate redirects, canonical URL, attachment, HTML/PDF links.
+3. `doi_registry_publisher`: DOI resolver and bibliographic registry, original publisher, article or report landing page.
+4. `exact_title_variants`: exact title and distinctive fragments, punctuation or translated variants.
+5. `title_author_year_identifiers`: author, organisation, year, report/article numbers, grant/project ID, ISBN/ISSN if applicable.
+6. `open_access_resolvers`: legitimate OA metadata and available official or deposited copies.
+7. `institutional_repositories`: university, EU, funder, national and discipline repositories.
+8. `author_research_group_pages`: author or laboratory publication lists and research group websites.
+9. `preprint_accepted_manuscript`: lawfully public preprints, accepted manuscripts, working papers or deposited versions of the SAME work.
+10. `journal_issue_toc_supplements`: journal issue contents, HTML/XML, supplementary files, attachments.
+11. `citation_graph_related_versions`: bibliographies/citation index routes identifying another genuine version of the SAME work, not a superficially related study.
+12. `official_document_repositories`: EU institutional/document registers, publication offices and issuing-body registers when relevant.
+13. `alternate_formats_and_archives`: public official archives, existing cached primary text, legitimate PDF/HTML/DOCX mirrors.
+14. `multilingual_acronym_report_number`: translated titles, alternate acronyms, report numbers and regional-language variants.
+
+If all applicable categories still leave source identity or substance unresolved, do TWO further nonduplicative search challenges: (A) identify and actually pursue at least three genuinely new targeted retrieval strategies, then (B) identify and pursue at least two more different strategies. These challenge passes apply to a difficult item, not automatically to all easily verified works. Preserve a concrete audit of routes actually tried; never claim imaginary success or use fabricated `not_applicable` notes to satisfy schema. Do not bypass authentication, paywalls, robots exclusions or access controls.
+
+**Importer audit translation:** the canonical six-step `verification.retrieval_attempts` ladder in this ZIP remains MANDATORY for `defer` and `drop_unverifiable`. The fourteen search categories above are deeper research guidance, NOT new required JSON enum keys; record concrete actions in the existing audit step notes, add factual retrieval attempts where supported and explain any extra routes in `verification.verification_note`. Do not invent new evidence-depth, decision, actor, mechanism or duplicate enum values. If an official primary source is already recovered and substantively read, proceed to the justified KEEP/DROP decision without pretending to exhaust irrelevant routes.
+
+**Checkpoint discipline:** process ALL assigned jobs, saving completed verified JSON records and open research notes across internal batches. Resume from the first unfinished job as capacity allows. Verified nonempty consecutive-prefix output IS `deep_scan_results.json` ready for inbox after validation. No padding with unsupported DROP/DEFER; continue to research as many records as possible. When both concurrent lanes are assigned, A and B may submit verified partial outputs independently; the queue retains unfinished assignments.
+"""
+
+INSTRUCTIONS += "\n\n## BEST-EFFORT CONSECUTIVE PREFIX — IMPORT-READY\n\nResearch as many assignments as possible in order (up to the whole 36-item lane). A nonempty, well-supported consecutive prefix is a VALID inbox submission. Aim to cover the full lane but never invent evidence or pad results. Do not waste your session on another handoff/inventory: do the bibliographic and content plausibility checks. Run CHECK_RESULTS.py; a PASS for e.g. 7/36 is a valid PARTIAL submission, not 36/36 completion. GitHub preserves unsubmitted assignments for later scanning.\n"
+
+
+START_HERE = r"""RADAR DEEP SCAN V2 — EXECUTE THE RESEARCH (NOT A HANDOFF)
+
+Research all assigned records you can reasonably check in this session. Aim for the full lane,
+but if time is limited, SUBMIT THE GENUINELY COMPLETED CONSECUTIVE PREFIX of records.
+Do not stop after one record just to produce a checkpoint; keep researching while able.
+Check bibliographic identity, substance and Radar relevance using credible available sources.
+Apply additional recovery methods when necessary, not exhaustively to every easy record.
+Return `deep_scan_results.json` in the exact V2 schema and original assignment order.
+Run `python CHECK_RESULTS.py deep_scan_results.json` before returning.
+A PASS showing N/36 permits an importer-ready PARTIAL result; it is not falsely called 36/36.
+GitHub tracks and reassigns unfinished records. Never invent evidence or research attempts.
 """
 
 
@@ -397,16 +592,10 @@ def utc_now() -> str:
 
 
 def package_id_for(rows: list[tuple[str, str, str, dict[str, Any], str]], lane: str = "") -> str:
-    """Return a deterministic ID for the exact assigned work.
-
-    Re-running the generator with an unchanged lane must not manufacture a new
-    package merely because the clock changed. A changed record set/hash produces
-    a new digest and therefore a new package ID.
-    """
     seed = "\n".join(f"{key}|{h}" for _strand, key, h, _r, _reason in rows)
     digest = hashlib.sha256(seed.encode("utf-8")).hexdigest()[:12]
     prefix = f"worker-{lane.lower()}-" if lane else ""
-    return f"{prefix}{digest}"
+    return f"{prefix}{time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())}-{digest}"
 
 
 def source_for(item: tuple[str, str, str, dict[str, Any], str]):
@@ -429,29 +618,44 @@ def _doi(row: dict[str, Any]) -> str:
 
 
 def duplicate_index(doc: dict[str, Any]) -> dict[str, list[dict[str, str]]]:
+    """Find exact DOI/title duplicates without a quadratic full-corpus scan.
+
+    Preserve the old ordering, same-key exclusion, DOI-before-title reason and
+    eight-match cap; indexing only removes unrelated candidate comparisons.
+    """
     rows = [(strand, r) for strand, r in iter_records(doc)]
-    out: dict[str, list[dict[str, str]]] = {}
-    for i, (strand, row) in enumerate(rows):
-        key = record_key(row)
+    details = [(record_key(row), _doi(row), _norm_title(row.get("title") or row.get("headline")))
+               for _strand, row in rows]
+    by_doi: dict[str, list[int]] = {}
+    by_title: dict[str, list[int]] = {}
+    for i, (key, doi, title) in enumerate(details):
         if not key:
             continue
-        doi = _doi(row)
-        title = _norm_title(row.get("title") or row.get("headline"))
+        if doi:
+            by_doi.setdefault(doi, []).append(i)
+        if len(title) >= 24:
+            by_title.setdefault(title, []).append(i)
+
+    out: dict[str, list[dict[str, str]]] = {}
+    for i, (_strand, row) in enumerate(rows):
+        key, doi, title = details[i]
+        if not key:
+            continue
+        matching_positions = set(by_doi.get(doi, [])) if doi else set()
+        if title and len(title) >= 24:
+            matching_positions.update(by_title.get(title, []))
         matches: list[dict[str, str]] = []
-        for j, (other_strand, other) in enumerate(rows):
+        for j in sorted(matching_positions):
             if i == j:
                 continue
-            other_key = record_key(other)
+            other_key, other_doi, other_title = details[j]
             if not other_key or other_key == key:
                 continue
-            other_doi = _doi(other)
-            other_title = _norm_title(other.get("title") or other.get("headline"))
-            reason = ""
-            if doi and other_doi and doi == other_doi:
-                reason = "same_doi"
-            elif title and other_title and len(title) >= 24 and title == other_title:
-                reason = "exact_normalized_title"
+            reason = "same_doi" if doi and other_doi and doi == other_doi else (
+                "exact_normalized_title" if title and other_title and len(title) >= 24 and title == other_title else ""
+            )
             if reason:
+                other_strand, other = rows[j]
                 matches.append({
                     "record_key": other_key,
                     "strand": other_strand.replace("strand_", "").upper(),
@@ -459,11 +663,11 @@ def duplicate_index(doc: dict[str, Any]) -> dict[str, list[dict[str, str]]]:
                     "source": clean(other.get("source")),
                     "reason": reason,
                 })
+            if len(matches) >= 8:
+                break
         if matches:
-            out[key] = matches[:8]
+            out[key] = matches
     return out
-
-
 
 def same_key_variants(doc: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
     out: dict[str, list[dict[str, Any]]] = {}
@@ -478,12 +682,12 @@ def same_key_variants(doc: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
     return {k: v for k, v in out.items() if len(v) > 1}
 
 def annotate_scan_attempts(jobs: list[dict[str, Any]], state: dict[str, Any] | None) -> None:
-    """Annotate the upcoming issuance; Main attempt 3 is the hard final pass."""
+    """Annotate from validated actual failed research passes, never ZIP issuance."""
     state_records = state.get("records", {}) if isinstance(state, dict) else {}
     for job in jobs:
         row_state = state_records.get(job["record_key"], {}) if isinstance(state_records, dict) else {}
         try:
-            previous_package_attempts = max(0, int((row_state or {}).get("scan_package_attempts") or 0))
+            previous_package_attempts = max(0, int((row_state or {}).get("recovery_attempts") or 0))
         except (TypeError, ValueError):
             previous_package_attempts = 0
         scan_attempt = min(3, previous_package_attempts + 1)
@@ -604,8 +808,14 @@ def main() -> None:
             f"({assigned_main} main + {assigned_historical} historical)"
         )
     else:
+        # A legacy/manual SINGLE package must never steal work already reserved to a
+        # persistent worker lane (or another unresolved SINGLE package).  Older
+        # versions sliced the live priority queue directly, which allowed the same
+        # records to be reserved by SINGLE and A/B at the same time.
+        occupied = assigned_keys(state)
+        single_candidates = [item for item in prioritized_items if item[1] not in occupied]
         limit = max(0, int(args.max_records or 0))
-        todo = prioritized_items[:limit] if limit else prioritized_items
+        todo = single_candidates[:limit] if limit else single_candidates
         packaged_main = len([x for x in todo if not x[1].startswith("historical:")])
         packaged_historical = len(todo) - packaged_main
         print(
@@ -640,20 +850,63 @@ def main() -> None:
         if lane:
             instructions = (
                 f"# Worker lane {lane}\n\n"
+                "This is ONE of TWO ZIPs produced for concurrent Worker A + Worker B research. Start BOTH lanes at the same time in separate systems. "
                 "This ZIP is a reserved, non-overlapping worker lane from the Radar's persistent Deep Scan queue. "
                 "Process only the records in this ZIP, in their supplied order. Other worker lanes contain different records.\n\n"
                 + instructions
             )
         (root / "INSTRUCTIONS.md").write_text(instructions, encoding="utf-8")
+        (root / "CHECKPOINT.py").write_text(CHECKPOINT_TOOL, encoding="utf-8")
+        (root / "STAGED_EXECUTION.md").write_text(
+            "# EXECUTE RESEARCH — NOT A HANDOFF INVENTORY\n\n"
+            "This lane has 36 assignments (or the exact manifest count), but work is executed in "
+            "stages of up to SIX source-verified records. Worker A and B can operate concurrently.\n\n"
+            "1. Run `python CHECKPOINT.py next` to write NEXT_STAGE.json.\n"
+            "2. CHECK each record for approximately correct bibliography, content and Radar relevance using "
+            "substantive available source evidence. Escalate via applicable discovery routes only if needed; a failed link alone is not a DEFER.\n"
+            "3. Write actual verified result JSON (one object, list, or package-style file). "
+            "Run `python CHECKPOINT.py add STAGE_RESULTS.json`.\n"
+            "4. Save WORK_PROGRESS.json; repeat `next` until no assignments remain. "
+            "If the session stops, carry the original ZIP and WORK_PROGRESS.json "
+            "into a new session and continue unfinished items.\n"
+            "5. After at least one consecutive verified record run `python CHECKPOINT.py assemble` and "
+            "`python CHECK_RESULTS.py deep_scan_results.json`.\n\n"
+            "Do not stop at a source inventory or claim autonomous background execution. "
+            "Do not fabricate outcomes to fill a stage. Package issuance and unstarted "
+            "items are not research attempts; preserve the per-item three-real-attempt rule. "
+            "Stage files are not inbox-ready, but assembled verified prefixes are.\n", encoding="utf-8")
         start_here = START_HERE
         if lane:
             start_here = (
                 f"RADAR DEEP SCAN V2 — WORKER {lane}\n\n"
-                "This package is already reserved to this worker lane in GitHub. It does not overlap the other active lane.\n"
-                "A new chat needs no prior conversation history: read INSTRUCTIONS.md and process this ZIP in order.\n\n"
+                "START BOTH Worker A and Worker B ZIPs SIMULTANEOUSLY if the external system supports independent agents; do not wait for the other lane. This package is already reserved to this worker lane in GitHub. It does not overlap the other active lane. Finish EVERY assignment (36 when 36 assigned); do not deliver one record as the whole batch.\n"
+                "A new chat needs no prior conversation history: read INSTRUCTIONS.md and process this ZIP in order. If capacity/time runs short, save your partial work and CONTINUE; a validated, verified consecutive prefix is also ready for inbox.\n\n"
                 + START_HERE
             )
+        start_here += "\nSTAGED EXECUTION (READ FIRST): Read STAGED_EXECUTION.md. Run python CHECKPOINT.py next for the next 6 unfinished assignments, research them fully, save via python CHECKPOINT.py add STAGE_RESULTS.json, then repeat. The original 36-assignment lane remains intact. An inventory is not a result; a checked consecutive prefix assembled as a V2 JSON is inbox-ready.\n"
+        start_here += (
+            "\nCHECKPOINT / RESUME: When a record is genuinely verified, save its exact result as one_result.json and run python CHECKPOINT.py add one_result.json. "
+            "Run python CHECKPOINT.py status to list missing assignments; continue those in future sessions using this SAME ZIP plus WORK_PROGRESS.json. "
+            "Once a verified consecutive prefix is done run python CHECKPOINT.py assemble, THEN run CHECK_RESULTS.py. "
+            "An inventory is not a scan. A verified consecutive prefix is a valid partial submission. No fabricated decisions or scan-attempt counters.\n"
+        )
+        start_here += "\nIMPORTANT: Run python CHECK_RESULTS.py deep_scan_results.json before upload. It MUST report PASS for the verified consecutive prefix (for example 5/36). Fix errors; never invent evidence.\n"
         (root / "START_HERE.txt").write_text(start_here, encoding="utf-8")
+        (root / "FINAL_CHECK.txt").write_text(
+            "BEFORE RETURNING deep_scan_results.json:\n"
+            "1. Research as many as reasonably possible in order; a verified nonempty consecutive prefix is valid.\n"
+            "2. KEEP/REVIEW: 1-3 complete controlled-vocabulary claims.\n"
+            "3. DROP/DEFER/DROP_UNVERIFIABLE: claims: [].\n"
+            "4. EXACT evidence_depth values in INSTRUCTIONS.md; never invent synonyms.\n"
+            "5. Report the actual recovery ladder step if supplied_url failed.\n"
+            "6. Keep reader_title <=18 words and reader_what <=20 words.\n"
+            "7. No invented verification or metadata correction.\n"
+            "8. Valid verified prefix files CAN enter inbox; never mislabel N/36 as full completion.\n"
+            "9. RUN CHECK_RESULTS.py before returning: nonempty consecutive partial output MUST PASS.\n"
+            "10. A and B work independently; each may return verified partial results for GitHub to track.\n"
+            "11. RESUME: save verified records, assemble the consecutive prefix for inbox, and continue unfinished work later.\n",
+            encoding="utf-8",
+        )
 
         if args.no_fetch:
             fetched = [(*item, SourceRead("stored_only", "", note="source pre-retrieval disabled; LLM must use the retrieval ladder")) for item in todo]
@@ -707,12 +960,13 @@ def main() -> None:
             "source_modes": source_modes, "possible_duplicate_records": len(dupes), "same_record_key_variant_groups": len(variants), "batch_size": batch_size,
             "hard_final_main_jobs": sum(1 for job in jobs if job.get("scan_mode") == "hard_final"),
             "batches": batch_files, "instructions": "INSTRUCTIONS.md", "claims_vocabulary": "claims_vocabulary.json",
-            "claims_format": CLAIMS_FORMAT, "expected_result_filename": "deep_scan_results.json",
+            "claims_format": CLAIMS_FORMAT, "admission_scope_policy": EUROPE_SCOPE_POLICY, "expected_result_filename": "deep_scan_results.json",
         }
         (root / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         if not CLAIMS_VOCAB.exists():
             raise FileNotFoundError(f"Claims vocabulary missing: {CLAIMS_VOCAB}")
         shutil.copy2(CLAIMS_VOCAB, root / "claims_vocabulary.json")
+        (root / "CHECK_RESULTS.py").write_text(OFFLINE_CHECKER, encoding="utf-8")
         (root / "RESULT_TEMPLATE.json").write_text(json.dumps({"format": RESULT_FORMAT, "claims_format": CLAIMS_FORMAT, "package_id": pkg_id, "results": []}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
         zip_path = args.output_dir / f"deep_scan_package_{pkg_id}.zip"
@@ -743,3 +997,7 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+# Item-level retry budgets are enforced by deep_scan_work_state.py using validated
+# recovery_attempts. Never derive them from scan_package_attempts (ZIP issuance).
+
