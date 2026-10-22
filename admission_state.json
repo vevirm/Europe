@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-admission-v1",
-  "updated_at": "2026-10-22T06:36:28Z",
+  "updated_at": "2026-10-22T07:23:28Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "decision": "keep",
@@ -436,12 +436,16 @@
       "source": "deep_scan_v2"
     },
     "link:https://doi.org/10.1163/29505720-bja00014": {
-      "decision": "drop",
-      "target_strand": "A",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "decision": "drop_unverifiable",
+      "target_strand": "",
+      "reason_code": "EVIDENCE_ACCESS_FAILED_3X",
+      "reason": "Substantive evidence remained inaccessible after three validated Deep Scan recovery passes. The record is terminally dropped from automatic scanning and active reasoning to prevent repeated retry loops.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:14Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Journal Law & Geoeconomics vol. 2(1), 50–82, DOI 10.1163/29505720-bja00014 and author listing confirm identity; researcher and journal listings expose only abstract, not paper. Third-attempt hard-final recovery: checked two identity signals, attempted two broader search variants, publisher and author/repository routes. Evidence not sufficient for admission.",
+      "recovery_attempts": 3
     },
     "link:https://doi.org/10.1057/s42214-026-00246-w": {
       "decision": "drop",
@@ -974,10 +978,14 @@
     "link:https://doi.org/10.1002/sd.71311": {
       "decision": "drop",
       "target_strand": "A",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "The study’s central outcome is embodied greenhouse emissions, with trade tariffs as an explanatory variable, not European economic-security policy.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:15Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Hugo Campos-Romero, Sustainable Development, June 8 2026, DOI confirmed directly. Read methods, result tables and discussion at Wiley, including 19-sector EU extra-EU trade-emissions associations.",
+      "duplicate_of": ""
     },
     "link:https://doi.org/10.1093/jiplp/jpag079": {
       "decision": "keep",
@@ -1248,12 +1256,16 @@
       "duplicate_of": ""
     },
     "link:https://doi.org/10.1177/17816858261480452": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "A",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "A_SUBSTANTIVE_EU_RI",
+      "reason": "Substantive policy analysis of the EU dependence on foreign essential medicine ingredients, feasible reshoring, and supplier bargaining power in geopolitical crises.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:20Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Third-attempt hard-final pass completed: searched DOI, title and authors; recovered matching SAGE open-access full article directly. Its discussion of six listed active pharmaceutical ingredients distinguishes domestic production resilience from universal reshoring.",
+      "duplicate_of": ""
     },
     "link:https://doi.org/10.1073/pnas.2609606123": {
       "decision": "keep",
@@ -1286,10 +1298,14 @@
     "link:https://doi.org/10.1002/ldr.70640": {
       "decision": "drop",
       "target_strand": "A",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "EU is a major geographical case but central work is econometric climate effects on agricultural productivity and food-import measures, not consequential European economic-security supply dependence, geoeconomic exposure or security strategy.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:20Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Third-attempt hard-final pass: inspected DOI/publisher metadata, full matching publisher preview excerpt, and ResearchGate academic record; cross-checked title, DOI, authors, date, journal against J-GLOBAL bibliographic index. Substantive introduction, abstract and methodology support scope ruling. The study treats agricultural climate sensitivity rather than strategic economic-security dependencies.",
+      "duplicate_of": ""
     },
     "link:https://doi.org/10.1017/cel.2026.10028": {
       "decision": "keep",
@@ -1380,12 +1396,16 @@
       "duplicate_of": ""
     },
     "link:https://www.ispionline.it/wp-content/uploads/2026/09/ACI_EP_Catalogue_FINAL6.xlsx": {
-      "decision": "drop",
-      "target_strand": "A",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "decision": "drop_unverifiable",
+      "target_strand": "",
+      "reason_code": "EVIDENCE_ACCESS_FAILED_3X",
+      "reason": "Substantive evidence remained inaccessible after three validated Deep Scan recovery passes. The record is terminally dropped from automatic scanning and active reasoning to prevent repeated retry loops.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:20Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Original XLSX linked by ISPI appears in a contemporaneous article index on September 21; European Parliament study published September 25 records a 41-case catalogue and methodology, confirming dataset family. Actual spreadsheet binary at supplied wp-content URL returned an inaccessible file and cannot be read; no claim about individual worksheet rows made. Third-attempt hard-final recovery: checked two identity signals, attempted two broader search variants, publisher and author/repository routes. Evidence not sufficient for admission. Third-attempt hard-final searched filename and translated/title variants, ISPI publisher route, and independent Parliament/Policy Commons records; the only verifiable substantive content is a related study annex, not the original attached Excel file.",
+      "recovery_attempts": 3
     },
     "link:https://ecfr.eu/publication/middle-powerhouse-a-new-blueprint-for-british-internationalism/": {
       "decision": "keep",
@@ -1992,12 +2012,16 @@
       "duplicate_of": ""
     },
     "link:https://doi.org/10.1177/1023263x261458281": {
-      "decision": "drop",
-      "target_strand": "A",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "decision": "drop_unverifiable",
+      "target_strand": "",
+      "reason_code": "EVIDENCE_ACCESS_FAILED_3X",
+      "reason": "Substantive evidence remained inaccessible after three validated Deep Scan recovery passes. The record is terminally dropped from automatic scanning and active reasoning to prevent repeated retry loops.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:15Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Verified author, DOI, journal and complete publisher abstract plus author explanation; legally paywalled full article was unavailable, so no inference about its full method or results. Third-attempt hard-final recovery: checked two identity signals, attempted two broader search variants, publisher and author/repository routes. Evidence not sufficient for admission.",
+      "recovery_attempts": 3
     },
     "link:https://doi.org/10.1080/07036337.2026.2715687": {
       "decision": "drop_unverifiable",
@@ -2672,12 +2696,16 @@
       "source": "deep_scan_v2"
     },
     "link:https://doi.org/10.1080/09662839.2026.2718107": {
-      "decision": "drop",
-      "target_strand": "A",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "decision": "drop_unverifiable",
+      "target_strand": "",
+      "reason_code": "EVIDENCE_ACCESS_FAILED_3X",
+      "reason": "Substantive evidence remained inaccessible after three validated Deep Scan recovery passes. The record is terminally dropped from automatic scanning and active reasoning to prevent repeated retry loops.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:15Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Verified Taylor & Francis DOI, author identity and eprint pointer; publicly visible abstracts do not provide full paper needed for a hard-final scientific judgment. Third-attempt hard-final recovery: checked two identity signals, attempted two broader search variants, publisher and author/repository routes. Evidence not sufficient for admission.",
+      "recovery_attempts": 3
     },
     "link:https://doi.org/10.1017/err.2026.10146": {
       "decision": "drop",
@@ -4200,12 +4228,16 @@
       "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxQRnk5eVlWbG9mNWoxbG1nNE5iY3lSMFpBSkhINWRHWUR4bDdQSXAycm02TGY5ekNHNkhtN1ljT2RmRDlCT2QtRkRfV1hCYnlpUkFFY0pyU3Fob2RpNUxGNUVWZE8yd0xvTTJMdHBjMUdkYVQzdkdna0lUejlBRE9zTnctdzA?oc=5": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Direct planned strategic German industrial capacity addressing existing concentrated Asian supply.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:15Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "FT article dated 22 September reports Proxima Fusion plans; directly cross-checked against September 9 signed MoU and detailed official company announcement. Planned €140m is future commitment, with €21m Lower Saxony budget. Official company claims are evidence for its own announced action only.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMivgFBVV95cUxQbDNsQ2VSNjNiSS1SbldyMVoxc0hOckhsa0dnX21XRTE4WWs0RlkxUmtlWkgwRnFkYjh6UWwxdGMzRTR4YTZvcFhSa1NJSHlPWmlkN1JnR29mT084RE9xc3N5dERrZVEySV81YnpobV8wZnVrUDZ3UFRKaVowTmgwZUFvV3A5eEt4RWNYQ3dMY3dSaHdIbFhzbUZHY2tpM1lkZGZScEtJeXpBLWdqZklpcUVjRHNXNWVCTkFNQV9R?oc=5": {
       "decision": "keep",
@@ -4408,12 +4440,16 @@
       "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMipwFBVV95cUxQUUswdG5RR3A3czVTQV82SzUwWDh1ZDZrYjNXcld1cUQwOW9nZENwVlhQRVpfMXRQY2RXZ1pLcVlnal9jeGJxelREVVpWeTZyTTI2bnJKUXlIYUNtNklZQnkyWHNPX1NzZ1lIRVB2SVFfWkJTWkg4ZFM5WE5rdTVISldEczdQX1BIdkRyd21lYVhibzVLRkwwOGVIWXdfODNPRzloNWhEWQ?oc=5": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "The planned Arctic deal involves strategic-investment and infrastructure security, potentially affecting European decision-making autonomy.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:20Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Reuters by Stine Jacobsen et al, Copenhagen dateline September 19; September 20 distributed update; read full licensed copy on Investing.com and MarketScreener. Source distinguished pending signature and disputed interpretation of foreign-investment provisions.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMizgFBVV95cUxPNjNPQWxyaU81b0JsYVI5WTJyN0lBY3BabFFKOTl3NFh5UXJ2NllMQWtLcWh2N0VEay1iUE93eDhfSm45bjNIZ3Z4ZmFUVTlwdWljTjVOUm5ISGpFYUVSUGxsbGNXVHdJbVpmaGRWSkIySG8yRDY1RlprWGV5Z09FQ2JCdThZTjU2ZktoS0xMWmpoLS1SNWJYSkdGM1AtdmowQ1JIMkt6aEl1UzY4LXZzTU5aY01nNGFDQ1NmVlQ2T1pnV0hzU0pyQkNjVVNXQQ?oc=5": {
       "decision": "keep",
@@ -4828,12 +4864,16 @@
       "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMikAFBVV95cUxNblBWMEZkSnVHOF81VEFEbXZDN1Z6akh0OE52T1BfYlVMelZvUHREelRNZTJlSFN5VkRRUnlUU216RzhLeC1MaDI0ZzMzRGhndktpdGJJc2pjWDcwcFg4bW9ZcU5vRkJIOGpRR05ZT25wSXN3UGRSTnFXU2hsczcxMmtZcklDc01MUXV0T21qTTE?oc=5": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Direct EU-China trade-defence and dependence negotiation evidence.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:15Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Exact original POLITICO Europe interview by Camille Gijs dated August 31, 2026; read substantial verbatim text on reputable named thinktank AVIM and cross-checked author listing. Distinguish stated proposal from subsequently concluded 2026 talks.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMitgFBVV95cUxOX2hISF94TEZGRzNlMGV1NjA4NjBVU2hWMm5JZGJHOHBtSUxFME9uZEE3TUQwTDRHS1lrd3lRdGRQS1NrSGJSTWdZek8zbkw2a25rMFFFYWJENnBBTV9MTWZ4TUhtTjJfZHZCTW1LMW9NTi12bHRuMVp0d2dGVHM1TTBrUjJYUXVFcnVvb0RMUEsyX1V3SlZvb2tvd3NuWWtaa0NsQjNkNmM0em1sUVdMWUZ1THBOUQ?oc=5": {
       "decision": "keep",
@@ -4892,12 +4932,16 @@
       "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxPeENyVVNXOU9ZdUl0MFJQWGlVcjlEc041b0t1RU44alpxTHVYQ3ZwcE5fZHVEMFNHUHVqaTdLZFdSYjdWODRJd011MFh0OUlOMWd2MGg3TjI0X1hsUm91TWt4T3JvRlQwZjVPanh4bkhnaGpqcllqTzZCWGRpUU9yQ05kdHY?oc=5": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Source-grounded current assessment of EU strategic minerals financing and project-delivery gaps, with concrete government commitments, industry observations and strategic asset stakes.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:14Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "FT report by Ian Johnston and Camilla Hodgson, also syndicated with substantive story text by Luxembourg Times. Reporting discusses approximately $40bn US provisional financing since 2022 against EU/member-state commitments of roughly €6bn in 2026; these are different periods and definitions, not directly comparable totals. RSS timestamp August 21 versus later article dating August 22.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMivgFBVV95cUxQUURnbnNMX3ZZUFNzdFEzSlQ2SV9aelhVaHhBYUdhTHRHMjhVdHVkS1RCUm1FSE1NdDVkYTdFS1NEbTlMeHRxdGxHTlhTZ2hDMFhXYlh0M0RQNWhyTFZ2bWFpZ0x5dWpqRHZvWEo2eXlJNXZRTUs2TDdjcHFLNTFnOVdoNVF0SzIwT19BZXdOUHFld0F0eG5xdHUtUm9ybmpkWE9DQnpLM09mTUxDcWFXMEZTTWRwMkJ2S0lZUXlR?oc=5": {
       "decision": "keep",
@@ -4912,12 +4956,16 @@
       "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMizwFBVV95cUxQV1kyWGRJRFg2YURDZDlvOEtjaFlOYWQxRW1Pcml0UjNkVEJ4R0lnVk9hNmtJQkRWbnNZVHpBa2tnV0JpVWRWcURVVHBqOVU0Y0lKM1ZVOWZld21XS1k5SVU0Umk0ckZDckZCbllRbnFCRmRQaEdIZDdHcVJHYzRnN1hpQVRzbWdaMzh0UVljYzNEQ2lHaDU0dy1tejhSVGI2LWVXS0UtTFFiZ1h6MjVWdDhiYTNuQ0lEZHhqWU9NaUxhQ3dmeVZpb0xZZE5KM1E?oc=5": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Concrete formal remedy offer in EU foreign-subsidies enforcement involving Chinese acquisition of German retailer; consequential cross-border EU market-protection mechanism.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:14Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Reuters August 20 report by Foo Yun Chee and Bart Meijer checked via Euronext original Reuters wire reproduction; remedy proposal is confirmed but contents were not specified in the regulatory filing. Foreign Subsidies Regulation rather than EU FDI screening was the review mechanism.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMimAFBVV95cUxPRWV4dHR3NHZrdHpqc0Jkd19faUI4Mkx3elg5VjBvZ2lBR2QxOEQtUjc5QVFPZkJ1Vy1IMlpkR3VwUkd1dkhpcUU0YmU2bHdibHRQMDY3UTNQenZIUzM4OTdfdnY4SjdKUDk0RENjOXZHdHRJbkhpNzI1cUN4dlhZV2ZLRHR5bXBTa05hbXhiRDdNYVdiQkY3NA?oc=5": {
       "decision": "drop_unverifiable",
@@ -5184,20 +5232,28 @@
       "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMivwFBVV95cUxOUmtoaXJpTG1DbVNCNEExcUNWTklka2FKd1V1M1d2c2c4VVMzLXVOWTNacFgwcUtxeW1Rb1RqU2s1Q2gycmx5bkcyangyUWt3VlB4RXpWUnJMR0pWQkRKczNXN0RQX25ySjRSUXgzcHljeU1OUlNfZVJPTU8tSmZPbThEQkRSc0VyUXdZNk5qcUY4ZVgxUG0tZDdRa0JJUzZqeWFtcXBYVlAtZjRDWlN6SUVUeVQ4QUxsMGE1MzZ0dw?oc=5": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Substantive European supply-chain exposure / industrial investment development with material economic-security implications.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:14Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Original Reuters report dated 2026-07-27; Rachel More, Ju-min Park and Victoria Waldersee. Verified report identity and read accessible substantive published text; original source qualifications retained.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMivAFBVV95cUxNOHQ3NF85YV9QZnRjTEZIZUtBUFE0NUFLVmtFY1JEaGdiZXhPRXVGaHVSN1liV1RXc0huVUZPcV9WQmZZTFdrVlZnaFZQWk5GdFhIN0VzclpieGp4V0c4eXJQQmlvV1pWM0c3M2NmQThBVW9QeUgtc1dheTNWTDFFWWVFQ05aV1FwUjllRi14TjlmdFZMck5tY1hRcmZfVmJmcFRYNmhOR1VTS24waXdPZDZPQmxyODJGT2VCTw?oc=5": {
       "decision": "drop",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_NOT_SUBSTANTIVE_NEW_DEVELOPMENT",
+      "reason": "Identifiable commentary on a previously reported sanctions carve-out, rather than a distinct primary/reported current measure. Do not duplicate earlier development as a new alert.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:14Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "The original is expressly labelled Opinion, by Nezir Sinani dated July 27, 2026. It interprets a Russian-LNG maritime-service exemption previously reported on July 23 rather than documenting a distinct newly implemented measure; language about an exemption being renewed is advocacy, not an observed subsequent renewal.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMipAFBVV95cUxOS1pLTVNwTzRJdzhXMGl2YktPY2xBOUJ3bVdxQmhUWnlrWS1TYjlYamZsdVBLV1NPaXdyQ1ZwU1locnBGd2ppc2xTVzNqQ1Bld0RpR1RhY2dqb0VRR0xURTNWZlZiTnBsUHktLW9PMTFxUXRQdU9DalZoQUtwNjc4a2t3dVIzODFrYkpKbmplSXk0VUE4aEo1SkRjanV6T2lycXdJOQ?oc=5": {
       "decision": "keep",
@@ -27765,6 +27821,606 @@
       "updated_at": "2026-10-22T06:36:28Z",
       "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
       "verification_note": "Confirmed journalist-produced story, reporting date 2026-10-12, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.1016/j.erss.2026.105005": {
+      "decision": "drop_unverifiable",
+      "target_strand": "",
+      "reason_code": "EVIDENCE_ACCESS_FAILED_3X",
+      "reason": "Substantive evidence remained inaccessible after three validated Deep Scan recovery passes. The record is terminally dropped from automatic scanning and active reasoning to prevent repeated retry loops.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:15Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "2026 Energy Research & Social Science Chen and Liu article DOI identity confirmed; complete article inaccessible and abstract insufficient for hard-final substantive judgment. Third-attempt hard-final recovery: checked two identity signals, attempted two broader search variants, publisher and author/repository routes. Evidence not sufficient for admission.",
+      "recovery_attempts": 3
+    },
+    "link:https://doi.org/10.1093/oep/gpag037": {
+      "decision": "drop_unverifiable",
+      "target_strand": "",
+      "reason_code": "EVIDENCE_ACCESS_FAILED_3X",
+      "reason": "Substantive evidence remained inaccessible after three validated Deep Scan recovery passes. The record is terminally dropped from automatic scanning and active reasoning to prevent repeated retry loops.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:15Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Oxford Academic October 3 2026 article Tai-kuang Ho, DOI and detailed abstract verified. Full paper requires institutional subscription; no claim about full study conclusions is admitted. Third-attempt hard-final recovery: checked two identity signals, attempted two broader search variants, publisher and author/repository routes. Evidence not sufficient for admission.",
+      "recovery_attempts": 3
+    },
+    "link:https://news.google.com/rss/articles/CBMiqAFBVV95cUxPYUFXZDgzaHN2T1FRdnc3Njh3R0t5cGppS3pJUm8xREprWk54RFdON1pYY1BBbFRKS2pEajVWVzJJcmNiQVVJVGI1czM0U0F1U04zUEFZZVNDZzUtVWZ6UzdPQlItRzNyX3ZseVdmeVlaY1B5M203LWhwWFJTZjh0TlBFVm4zbm9SQjVvRGpXclhWWnJDYmdOWVRmaFhCVDBRNV9uU0UtZmo?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Europe diverges from Washington on pressure restricting Russian fossil-fuel revenue.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:15Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-10. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMiogJBVV95cUxNYXg3czRQUFl6emY5MDVJZVhqMkxMTjNvamhrVkZYWVpHdVBpVWJyYmlYUGx4SXYzakVpV3BQc19KTURzYU9NdlBHdlFoSU9Ld1dzdnRDZWx3RFBnVUdaSFZWRktGZUlBN3o5SG1mMWlDX05tT2VrYWcwczdQM05wMGVTWjNOb2dhN1c2c1dadkxiekowU2lYdzkycDJpYjhKSmFfZm5FRTJsTUdKTEYxakVFZnBzZ0t4OENMa0RTRFVzUlRyTzFhd1hkOHVubllxYU15b0N2UVhZVWFjUGpyUERzMzQxdV9Yd201Y3ZpODNiV1VjeTRWenNvYVJjWGl5UzU0aTBMLVMxOGY5UEQtNDUwMHYwbVBQZzl4a0M1Z0k3dw?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Potential extraterritorial sanctions could affect European service providers supporting the court.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:16Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-12. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSWVqVnNJdVl6QnI3QmppeUxKWlJXZXF0UHFjUDFrYVdJMTdOQnQ1ZTRreldUSl8tQ3llajdPaDVUT2dSWUFFdnhiZFJBVk5NeGZ6aXR1VGt1YUU1MzA3VEFVODBWOGVHSnoweFQxLWFPcC1lZEphNFZzdklJQUZVd2x6WXJhQmtxbEVZUUZSN3NCTkNyTHFfVkY2bFVoTWhncnFianJ5ZS1HVTZ0enNiNUtidHR6X1BqZlVkZWxxZjd3UQ?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Negotiations concern energy pressure on Russia, European defence and transatlantic policy divergence.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:16Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-09. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMipAFBVV95cUxNUlZ0bzBBQ1FybjVfRTRYQTlWejZRdndVOHZxMFpJWWJ3dEJNYzBHb2N1QmdFLURtOEZGRm1OUUV4dmJoYmxwMHVXM19uSndXTFNrcHU1SkNjWWtrRW5WQ0ZvSl85cmJJaVpGTVVpNHFHc1VYby1CRzRQLWJzUWQ0RkJOMFo0X29jNk5pa1Exa2J0Sy1IRUlpc2JIWlQtR3ZzejBudw?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "Generic AI safety-risk assurance without concrete economic-security decision.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:16Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-09. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVVF5VkpSVEJwdWd0M3dBeHA4Tzg1MjRyeXpwbm5mVG0tNUFZZDdVbWNsMjdhX1hfSDBZVkp0dHY1TlMtZUpDTV9oZHU1d1R3a0F0aklLU0Rwc3dfNFBxem9NaGh3QlU1b1NEZ3VCclc2eFhiN3MyS2JfVndqU2ZBaHFhWDUzQzMwaTQwelVNbm5nSWZudjYxRGF6M1Qzb1NBeG82WjZBTHJyN2UtMmhvU1JicVJXb1ZJdU5rTWctVkVCSmVOMVBMQ2g5dXNtam9CQ3Bj?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Both automobile trade defence and rare-earth continuity are material EU–China strategic dependencies.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:16Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-09. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMitAFBVV95cUxPdnJWaW83X1dOWXVrWGIyT3pSS1FyWkdkbm01bldwOUNpT0Q2WnR3dVlhVUVCLXFpeW4wQ0MzSURKSWtMQ0xtZ3lBcm5MdkxfMmRITjgwbVYwMWV0a0t1eFcxSi1ITXV0WkhDMndCWTljU293WlJRX01saW9JWEZTeVN1R2RQeXpxdS02alZ2Y2tlQlc3Z1hDOUpxSnU2U3dxZExSTU43OGRONWFBYlp3dFNLSE8?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Cargo diversions show shifting regional LNG supply and price sensitivity for Europe.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:16Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-09. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxNUVBGdWdpbnY5TENRVUtaTlhNcGtDTmRWdFlHRDlOMjhYN0UwcGNoZ0ZOX0wwZTNtOXQxTW9HNjd6TzRWdDhxaVZQMkdWMW16aTctT2ZpTFNWa0R2TEQzd1d2Mk43elRxU0hndzdFWE1OVVM5VVNSSHhCdEI4bFVFZGZvZ18?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "Reader-question solicitation is promotional/editorial rather than substantive.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:17Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Publisher identity and nature of reader-question invitation established from feed headline. No substantive EU-China policy claim made.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMipgFBVV95cUxONU1ld2RnWXRwMzZFTEtKNFBxb09KQXJIZzI2WXJEVkthbldsaGUyOWxSbWxYNDVwQzJDSTR6UGRmcjFXaWpNcEczcWZWMEpLUUFtSlozWEFKOUwyUHk4QlBRelczWURTYW9sN3RRTWJVTnhRZllROFlXRzc1ZmI3RE1yZkFtUmt6SFpWWkRIVWdJQkJnYnFmVlU4eHhEWWl1ZGN3R1BB?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "Commentary repeating independently reported underlying diplomatic actions is not distinct new development.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:17Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-09. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMixgFBVV95cUxOOUk2RnFEbjJ3U1VMdUdwTXNrT3VNT0FpcjBDMFVLVHVzSHVlLVJjZE8tRC15Y1I0aWN5ZzJJQlJZaldBVmJ0cy1FLUVZNGVVc0k2bzg5dDlQTFlabzFrSHgtQ0dMNXg2N21BSzhsZEhyTTRTUjlBa2JhSWh5RVU1UWs4bnlhZ3M5Z3RCMTBLSXVieTBwckZNTWR0MUhkYUk1NUp6STFSaGhZb3FFTE5hVlRodXVOdE9faFlDZklPdGRlaERDR2c?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "Ordinary securities-market response to a foreign commercial deal lacks European economic-security action.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:17Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-09. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMivwFBVV95cUxOcmViaTc0MHRJTmw2Vm9fX0EzaW1aZm5fdnhGWjJPOG92TF9mV1Jyb1FTeDc3czNwb2ljQ1BMemg5M2tVSlJUVHBsRnpmTmdsSXZlRkpmZjV5Y3hsQXp6MEgwd3ZtUXZ6TmFid0paWk1lTjVEUGlzQVM3UU8xVTZVZWd2eEUtbTFOM0hyNUJNamxlZnd5TjU2UE9vdlYyQ01jcUJ5WHotejNQV1l1d0R0MnE0UTRac0IzVkZXcGd1cw?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "Event announcement with no distinct substantive new funding or supply-chain action.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:17Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-09. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMixgFBVV95cUxQenp5X0NPZUxfT1ByY2pId3d1Q3JlT0FHcHBtODVndV9JMWFhNFJqM3FqSk1TTWN3RExMNGw1ckhKY1kxOTBIaVZSbW1qMVZXZGJadVd1QVlkS3J2dDNIekpsbk5MOFd1cFhYdmh6Zl9xT280YmhYRTh6VHBHUHpVX2diOWdZQ2gyUE5LU2xRQnkxcVBzVFlZUnNaVmxOd2RkRU5KalFaYS1PN0taRkc1Q0RucEFaUkZENS0tY0ZBMVZEb1ppNVE?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "Intelligence investigation without identified nexus to European economic-security policy or infrastructure.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:17Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-09. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMitgFBVV95cUxPM3Z6WGhtUkx6VTZyTFJTTFJLeW93eHROdE00YzByRHA1aGg0b0xxLTN4UHFzcjZUQWZBRHlnSDVkZDJVMTRrWEpUbWExZWw1bFpFQk9ydmFwN0VpalRTT1ZYWHZNWEI1UWdnSUJrbmZNd0dUVUtVa2Y0aEZPTlVYSXl2Uk5oN0JrZ2JMeVFtNUdSWFhkWWtmVHMyTlVqUjVhMU1NNmFNdHVxckhNc0RiLWlJTUNKdw?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Exchange-rate competitiveness is part of EU–China strategic trade imbalance negotiations.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:17Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-08. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVFc4c09MQnd2SzBWeHlyS09aYVhtQjc1U1VsakNNekFhekRKRlVDVEhmUi1zTnRFRFY4UlBQN0xfZnZTTlNzM2k3Y1Y0aTFtdzh3dGh0MmgtM1dFMkIyV1lpUVVjVDc0eUJFN0lldkRHMFlmUVRTUk8yY2dMcjJmUTNnbVU1S3RCZ01ST3JEZ1FFMHFyWGs2UFZIV3pxMEd5OFY5OXJfRFlLV1U?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "Video listing about expert commentary does not establish distinct eligible development.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:18Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-08. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://borderlex.net/2026/10/09/eu-china-beijing-agrees-to-curb-hybrid-auto-exports/": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "The understanding seeks to mitigate EU automobile exposure to Chinese overcapacity.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:18Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Matched this exact publication to substantive article text or detailed attributable report; distinction between planned and adopted policies checked.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMiqgFBVV95cUxQU2lOVm5tWG83Uzl6OHA2UGlPN1M2OHM1aHJXTGlkTjU1YUY4S1BodWhERHZXcl9nRGdOVV9tallCdF9EbTM0TGdUbU1rVzgyN3Z4QVQ0cDhJWkJ6ZG51amk1aTBDN3ZsRzZLUnFqRjVSVlNaWF90RF9ON0dzNHpnekh0ZXRmMVNyNzBVeWdqbHp0WFJydHRuYmdpTHlfRWc5bElaTXVBeU1MZw?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Industry groups seek strategic industrial protections across metals, chemicals and vehicle components.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:18Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Matched this exact publication to substantive article text or detailed attributable report; distinction between planned and adopted policies checked.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMiogFBVV95cUxPcGtCRy04MjZnclVNd1N5ZWZpc2JYNUtJelZyTWxTMXRWMTNaR09wM3hjSTBKX2NUZ3R5MXJDMmVQbFhCZlZDVUJwQk93c01mQmFKa0dNMjJuWnZTT2ZlcHV3QmZuVVJIZlZPSTNHMUl5Q2ZocVlPOG1Ia2JOYTRLZ1RJT0NETUVidDYycFBwR05NemJZMGFadnRKZEcyQThaM2c?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "Interpretive commentary on already identified EU-China negotiation without separate substantive event.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:18Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Matched this exact publication to substantive article text or detailed attributable report; distinction between planned and adopted policies checked.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMihgFBVV95cUxNMXdVWEhlbUxRWjQtYUs2VVlzNFFZZThkRy0xRnRoMXFUd3dTUkdiQXY0RzRjTzRqdnk2blhaODA2RDJBU1RYdFJxekRuSkVlMEZXazViNzg0eU14NERhOXFoQVBFd0h0aE53S0huc0Z0eS1SUHVjR1pPaTY5b0ZpOGJfU0l2QQ?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Germany seeks to align British trade defence with EU measures to prevent possible import diversion.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:19Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Matched this exact publication to substantive article text or detailed attributable report; distinction between planned and adopted policies checked.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMiqAFBVV95cUxPa1FCNTBJNVFGY1ZjaS13R28ycjFrU2lLZy1DUXhiRG54TkE1c3dwbzY3c2g0R2xYdVVHT1p3dklqUXFGSExhemEzaGNmT1htWGZDSlFEY200QVI1TXNLd3FTYmx6MHFMUWRfWVlfekpXajcwS1ZSUFFjTHdiMkk3OEh6Z19lZFhBaWdzWlh4WjhwOG1rYWZNVkxnaG95NXl2cUhoaGRLMko?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "The AI infrastructure boom could add European computing capacity but much remains dependent on foreign investors.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:19Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Matched this exact publication to substantive article text or detailed attributable report; distinction between planned and adopted policies checked.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxPVEJRVjRiaWI2eTNQNW1jZWVQblpuQ08zUExYVUJIT1hYc3hMUGJxdGVIdzl2Mkg4OXZhTmRNT2Zibmd5ajI2clhVZjQwX1l3UlJUR1poczhmTU9xVVQ2a01HdnM5NGdYVFhQRXR4b3ZSQjZZRTYtQ3FGUTNHNVJQTThjUU0?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "EU negotiations target Chinese auto overcapacity and concentrated rare-earth supplies.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:19Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Matched this exact publication to substantive article text or detailed attributable report; distinction between planned and adopted policies checked.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWmxzbkh0NkVNb3JibmJFOVJROXBKcC1rYjRmZ3NFVUlianUzYi1GUUNQVFloQm94cVMwMUdOSllPMmc1QUlyMXJRSFV4MmF1LXpYYXJGc2twSHhwaHZZVEVNVjEzaWp0RHNwVUxDRmxVcDZ2WFpFaEZlcHYtRUVzQWljY3J4S0hGWjFWaHZSODNlWTZVMXNvWTVGaXNld2N6R2hZQXV6OUNBSjRYR3Z5Y0NuR3FRS0hKM1BRcTdleHBsUQ?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "The dependence complicates German and EU industrial derisking plans.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:19Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Matched this exact publication to substantive article text or detailed attributable report; distinction between planned and adopted policies checked.",
+      "duplicate_of": ""
+    },
+    "link:https://borderlex.net/2026/10/08/ai-trade-boom-leads-wto-to-double-2026-goods-forecast/": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "Global trade forecast without central EU economic-security link.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:19Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Matched this exact publication to substantive article text or detailed attributable report; distinction between planned and adopted policies checked.",
+      "duplicate_of": ""
+    },
+    "link:https://borderlex.net/2026/10/08/overcapacity-pledge-could-shield-eu-from-us-tariffs/": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "US tariff exposure shapes European trade-defence alignment and industrial competitiveness.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:20Z",
+      "deep_scan_package_id": "worker-a-20261022T064727Z-c285b3681b30",
+      "verification_note": "Matched this exact publication to substantive article text or detailed attributable report; distinction between planned and adopted policies checked.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.1111/jcms.70175": {
+      "decision": "drop",
+      "target_strand": "A",
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "Europe is central, but economic-security subject is incidental to qualitative EU external communication research.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:21Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Steingass and Szatters, JCMS, first published 7 October 2026, DOI 10.1111/jcms.70175. Inspected package-supplied matching OpenAlex cached full text at https://content.openalex.org/works/W7220845124.pdf (24k extracted characters), and official Wiley original publication metadata. Full study is focused on strategic communication not economic-security effects.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMigAFBVV95cUxNUUM2WVlPNWJGV3A1WFl4QXp0Q1U3RkJBdnN2T0lkbjJ6LVo1NGN2cXdjdE1VS0VzZlc1emxMeF9hTTFsRnpMYndrNFl2b1dVc1hRcjZhRmd4eDBjbWY0eEJ6dHVEc2VWYnNTS3RrYTh6YUFyc3hZQ3NDU0F5Qm1QaQ?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "EU power to protect institutions and providers from extraterritorial sanctions is a direct economic-coercion policy concern.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:21Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Original POLITICO 13 October article by Giovanna Faggionato read in named reproduction; independent EPRS substantive brief https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/10/EPRS_ATA%282026%29796992.html confirms 9 Oct institution-wide US sanctions and 180-day grace, and distinction between MEP request and legal activation.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMiqgFBVV95cUxOblVOM2hRYTJfWHJPakFuenZYX0RsWHFmZzc3NUlhUlpiWFdYTnd6TlZHOFhKVlBCbmhEbmxvRndJOC10MmUza0pHMGkzNEN1ZVBVWEFwUzhkQ01KWVhjZXRtLWZpRVZ2ZzdOVWxPVF9VczBSZGVsLThiUWg4VmRsTW42NnBSb2tNX2xCYzhrVkdtU1pmd1VZZlZQZzVZaEhFWEJSdzJ6Tlkxdw?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "European and British electricity infrastructure interdependence and emergency import access.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:22Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Bloomberg October 13 story by William Mathis and Eva Brendel carried in full at EnergyConnects; cited NESO public operational statement. 1,200 MW maximum request, brief assistance, no consumer cuts.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMixAFBVV95cUxOMXljYmxkSnlrN21wcERuZ3I5RVc4TS1uYmNyQU9pN1A3dVBBZUdVLVFidmhSU29RbDdCeHRZWEtMb3JiV0RuYVFZQ2d6aHp2NVhQZV96TXZHSVB2c1VSMUg5S1I3U0xvM0xDa29DbWVhclBRVjVLNFV3XzZhTXlraFRKQzBrMnRVTGk5cm45MVdMeE45dEliR2lySzlvMFdRaVMtYmdlQW9SWUNFZEQ5QTUyYWNmdk1ud29oNWY3dnFpekMx?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "EU sanctions and critical military technology export/supply chains are direct European economic-security topics.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:22Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Matched article originally EEAS 12 October 2026; original Council adoption confirmed at https://www.consilium.europa.eu/en/press/press-releases/2026/10/12/russia-s-war-of-aggression-against-ukraine-eu-agrees-largest-ever-package-of-listings-targeting-almost-1600-individuals-and-entities-in-russia-s-military-industrial-complex/. Sanctioned companies 826 and individuals 743 equals 1,569.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMi7wFBVV95cUxPdy0zU0NpeHFSQ3RXekUyZ2VBRkhFU1F6N0FlcUhURG1VMEhFZDU1VkNIN3BSU1NGdzBGNkt5QS1Kekt0OHNYMjBPbWVtYXY5Rko5elYxY0xXcGVtTVdLT2p2aXNUU1BteXAwMmRzeXhucnVIOVFoTkhUaXNhNVJpNzA4OVlXbUlTM053ODMxZGhDaWNGUVlrdjZRS2QybFh4NnVWR2hKUUtjT1JaVnhTcHBNdVlFS0J0ZHBGVXlTNjFNN3dnRlhvczlJYklqVGhneW9aODB0ZHRhS1F2ZFAzUi1zWmdZX0VRdGJVeURjTQ?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Ongoing Russia energy-sanctions policy response is directly relevant to European economic security.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:22Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Identity verified for original work: Ukraine and Europe seek to keep pressure on Putin after Trump deal on Russian diesel - Le Monde.fr. Evidence source https://www.lemonde.fr/en/international/article/2026/10/12/ukraine-and-europe-seek-to-keep-pressure-on-putin-after-trump-deal-on-russian-diesel_6758498_4.html. Dates and status retained distinctly from achieved outcomes.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMioAFBVV95cUxPRzNFMkF5b0ZQUnNpMlJlTE82NkZrRUJiTXNreWtQbi1wOHZ2ZC1aOE5GVkhZcDNmd1pBREFLb1I2MjBlVW9ncFhpd1oyaXhDbVdMUEUtbkE1WmtXQUtpa1NtTEJOb3NQcVBkc1lldUMwaUdUU01WLTg3MS1QVUtGcF9lVDRtNTBTOHVBX2JMZnJUVUNPWnRXb21heklpNEFS?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Concrete negotiated restriction of Chinese autos concerning EU strategic industrial resilience.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:22Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Identity verified for original work: China details outcome of EU trade talks on hybrid, electric vehicles. Evidence source https://www.reuters.com/world/china/china-holds-intensive-talks-hybrid-ev-trade-with-eu-2026-10-12/. Dates and status retained distinctly from achieved outcomes.",
+      "duplicate_of": ""
+    },
+    "link:https://borderlex.net/2026/10/12/eu-turns-china-hybrid-car-pledge-into-350000-vehicle-safeguard-quota/": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Material proposed EU safeguard directly restricting automobile imports from China.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:23Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Identity verified for original work: EU to introduce 350,000 Chinese quota under hybrid vehicle safeguard - Borderlex - European trade policy. Evidence source https://borderlex.net/2026/10/12/eu-turns-china-hybrid-car-pledge-into-350000-vehicle-safeguard-quota/. Dates and status retained distinctly from achieved outcomes.",
+      "duplicate_of": ""
+    },
+    "link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R2643R%2801%29": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "Technical editorial amendment lacks a substantive new European security-industry development.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:23Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Identity verified for original work: Corrigendum to Regulation (EU) 2025/2643 of the European Parliament and of the Council of 16 December 2025 establishing the European Defence Industry Programme and a framework of measures to ensure the timely availability and supply of defence products (‘EDIP Regulation’) (OJ L, 2025/2643, 29.12.2025). Evidence source http://data.europa.eu/eli/reg/2025/2643/corrigendum/2026-10-12/oj. Dates and status retained distinctly from achieved outcomes.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMirAFBVV95cUxQXy1wQ3hFckFCVXFmcjVWRW1uY0hmWGU1ZUdDa3lJYlNuN2ZIanNNMER0WHpFVHlaWDRsZmVuX1pjSzdVRlpYR3prVGg4cXRhT25jMm9lTWJSVk12N0EyamlXOHJrRUtyc3Q2Z3lHX1lkUUxaOUsyS0RCUEM0M21FNkVjMTZTWlRCdmJmeUF0b20zRXh5SVhOMTdiUXZVSE84RlByWVNTRC1JMUZU?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Cross-border critical-infrastructure resilience protects European energy, logistics and communications systems.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:23Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-08. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMi0AFBVV95cUxQTm9xSWVaV0Nfa3ZVenA4bThuS096cVlHNko1LUEyU0xnQXdrWDB4dWVNZjluNFU2OFQyTWlueXZVb3hZUFpaR0M0VXZJZS01cEVaNEFQV0lXZ1Mtd3lhdHVaa0Z2SWplcXRiLUhQTmV4SUFRUkJFRFVad0JmdFU3cVhBOW5UMm9seVZUTGdDNVkyREMwdG9vZldMX21CVVc4dGljX3FSYzNhcmoxanNqdm54VDJTSmtIenpYb3lIUkRjdW42RkVuUEVHeFpxdk1U?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "The draft targets sanctions evasion and financial channels helping Russia sustain its war economy.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:23Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-02-10. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbFhKOW01WG1MSmNLajktYUVDcktCRUpUblFhU01HTzFSY2x1blBsaVdoS3RfZW90Q1QxY05qZEN2LTNSbEhHNXp6ZW94LXBRQzJva1MwejdpMUdvLVlxZXBRYWdvN1YxM2NwM0hxelJKQlMxZDJmTE5JRWY2V3NicHJ6V2xHR1dRdV93TEdObU5RT2tkS1JVTjZvb0VjWDdtcHlFYVRyQUhVX0l4SzFIMWROT2Q2eWdWSTlGZzhQcTIzdw?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Listings target industrial suppliers underpinning Russian missiles, drones and military production.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:23Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-07. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMirwFBVV95cUxPbE0xOEpsajFJS09iaEJuNC11NEtBR3E1ME81TkZfMFhYQjVTOWtRQ2hqSGQ0a1duMFlRZWpJX2szSVJCNFNUYU5fbVRGM2ozM2R0U0pLREhnazR3NWhmbDBNdGxhNXJJVUtrVHFIUTRTMklJTlhsSE9fc0pCMWQxUUs0VUt0Z0N2QjM5WVd6dFJraVlGVWFadHMxQVVDYlFHcVlkTjNycmJwU1VZRnow?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "MEPs called for fair market access and resistance to coercion, cyber risks and economic imbalance.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:24Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-07. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxPc0hMY0o1X3RqSGNsaG5UZFZvMVlCTTNham5oUW91NXBBUkRjLW5PWElueEhQaEdoOGRkMzlia0UwSkEtWnNKemxvX0V0R1VvZkpzeFRwSUNyb1AzcnlMYlM4V2ZzdzFuVmRBUzNrWW9lLWhxR0pYSXdvQ2tjWDYzenFJbDA?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "The investments respond to dependence on foreign cloud infrastructure and domestic hosting demand.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:24Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-08. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxNdTAtc18yN2tQOW8zQUN2UG8xaXlPOVFPS3N1NzhfanBCa1l0SF9IZklyeUE4bWtTZHlyR3R5TXR3Ukl3VWJ3X0xzWXV2RlNnZHZNTXRSamF2U0tVdk5rSWtldnpuSFFwMGNOcEJkMzFkUjRTc1lFYjQ2UmlrZWpJSlNVU1Q?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "The proposed protection parallels EU action and could affect trans-Channel industrial trade distortions.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:24Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-07. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMixgFBVV95cUxPVnZ2QmdiMGxmVVctZ0pTa1p5S0gzbDBBM25WV3g3YkNGMzZqdU9rTnVUamZrUF9CNVRuMDF3SktiYUcwTWxTbUJQYXhCLUo1UHE3LWYwbmk3ZUlJZzdhaUQ0VmV4c0k3RUU5MEQ2czN5Qzh6eTJUOTgxS19wSkZHcXQteWxLSmhrTU4yTXpUZHdMR19tVTZkVnlwWjJMNHJKMUM2bHBmZ0gyV2U4dlo5Z1NVc19iWW50RjFHQ1JkUmRGZmVZT0E?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "Normative human-rights foreign-policy opinion outside central European economic security.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:24Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-07. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMi3AFBVV95cUxOZXUyTjZhZzM1d3k5NEJ4Vzc1WWdJdjVXbXBmS3VIYzVEeXVNTjlFNHlQd3JtYks5T25sNEZkUTRFLUttNTRzaENIbnVkaGJKVXFaSzgtdWhoYlBlSFhaSTJUY3hPeVlFbXdqLXQtLXVSRHVzTXlBWGNKN2VYd1VCaE0weTUyLXFXREhKY2FLWm9NWTltUlFvMnlDcFNxVlZFeGJwUHJpcmxEUFhnQXdjdWxGQ1lndUhuWVVHdVRlSERvaVdFOGc0cUxxeTZvTGczbUxlb3JNWUI1SFZJ?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "Recruitment vacancy without distinct policy or sectoral capacity development.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:24Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-07. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMingFBVV95cUxNQWdpeGlycndJdk1pU19KcDRRLXdVdFFsSzdCV2xmSmdyb2VkM05UVWRnUTF6TlhMVUFJY0hoOEkwZEhYQWRXWUF6Tlhob2JpQzJscWVYQnNrc00xbDY4YURWZWE0NWU5WFZPTzV5NlhmblM3QnQtQzc1UldUQThLTlB6dGpoRmdPSTVKVkI3NzVvUGFhQ3NIRzFSSWxEdw?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Recycled material availability can reduce European import dependence on concentrated foreign suppliers.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:25Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-07. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://borderlex.net/2026/10/07/meps-and-industry-at-odds-as-sefcovic-heads-to-beijing/": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "The adopted nonbinding resolution supports possible countermeasures against Chinese industrial overcapacity.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:25Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-07. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://borderlex.net/2026/10/07/norway-to-cut-clothing-tariffs-to-counter-e-retail-threat/": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "The tariff proposal is a concrete European trade response to competition from Chinese ecommerce platforms.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:25Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-07. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://op.europa.eu/en/publication-detail/-/publication/8824accd-c246-11f1-988f-01aa75ed71a1/language-en": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "Metadata for a procedural opinion without substantive new policy action.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:25Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Full directly identified published story or official release inspected; published date 2026-10-07. Proposals, statements and final decisions distinguished.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMieEFVX3lxTFBETjBKV2kyaWE0VFJ2LVJWX1ZHZXN1anNidU8zd214V3A5UFZmd3o1aXdhN29Xd2Jjc2dRNUoxcWo1Rk5IaHJJZXZWTUxFZWozNkRDTmtVcmJxbGFjVkV4eGhUZ0c1NUhfem1LeVJzanRHVUtBTEtIOA?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "China’s automotive export surge created EU concern about overcapacity and market access.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:26Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Matched this exact publication to substantive article text or detailed attributable report; distinction between planned and adopted policies checked.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMi3gFBVV95cUxNRHZyRVZJSm1QQUljWHZEVkU0bkFnSVhtU1dKZERoRm16UThBZVBkOVpDSVNhcEFTRjVSdzdnanNHWlNxdlVpY2JjdVF1alcxdV9HelhuVWxHeERsMXByUUhNZktHQ2cyVWhqQWxkOFJsODBreGFMalRLdVlRLVVNTlVjTXB1dndZc2ZjbkV2WnY4MFd0bUdPQzRmSTBZNUNMMlZmcXBsRUV5LXNQbVRmSWNfeExqQkxaR3BZZUFEczNJQ1FCOVhYTXg2Y29yc3lDUk9QcHF4U3g1WTM0ZFE?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "Domestic political commentary lacks central economic-security relevance.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:26Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Le Monde feed subject identified as immigration/protest political reporting. Economic-security admission not inferred from the headline.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcjVFRUV6ZzZmeXFiN3NIWmZwUTBGWTR3ZUx1UUhjLWRLMC0wZThtLW00a1FYNjloa3BiSTFveFdZZFkxWnd5d283Qi04MnU1UC1IUl9KdlBkX2o2X3JpQ0pUZVRZQzJ3Uk1fRzR5VnJIdGhwVGI3Q0JWc2RWOGtBZTZzek4tcWQxRTAxZnB3eWJyV2gzY2FlNjdYVk95b2lQX2UtLVNWandvMDA?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "A European frontier-model developer can lessen reliance on foreign model suppliers for sensitive applications.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:26Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Matched this exact publication to substantive article text or detailed attributable report; distinction between planned and adopted policies checked.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMixgFBVV95cUxOYWxWNTRLdzc2eUgzMExZQzBtWkR5c25zT2s1Y0J0dFBONWlSeXRlbU9LRnNZM2JxSGhxdUJCSm1FTUtrLV9ZelF3aUFkWDN2YWJHbW01VVZKeGpSTUtuZURTUHZUX3JpZWw5Qm9EMVdpeFNnWVFJZ2hnbGEzUVFwMTF6bHpQUWtZV1BTUlFRRW1ib1MzbTlJVUlYREc3UXhuTXVFR25qLVNobnVJcW1McjlSblFjQlpaaWtSb3lQU1FXMWhoZkE?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "The exposure creates critical-infrastructure sabotage risks across European power systems.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:26Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Matched this exact publication to substantive article text or detailed attributable report; distinction between planned and adopted policies checked.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMi7wFBVV95cUxQMXdnRGpmQVNfRFdYWGJPc2VibGczaUhNMTEtaXVuaWpnb2s5LWtnNWtmWkJOdXZrT05lX09YdTNFb1lZTkRUcW5UbDNBM19YdHdsTHVnTmJUUS1ReS1VMlIxMUJIbUlBSGNOOWxyUnBlOVJXTHhlQ20zbndrLVpGdjFaOUxQSW5kV2J4RW5lYkQ5VExhNUdYZV9JQ1JSU1FJR2p1dGZHUm5lQklkTFV4UTMzTy1oSW4zWHdDcGRsMXdXb1VXWGV0M0NxbjVLQVg3VWNwRXlCNksxSnJ3eW50VXg3emJfc1lvYnZzQWVwUQ?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "A_NOT_CENTRAL_ECONOMIC_SECURITY",
+      "reason": "General climate-service event without direct European economic-security development.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:27Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Matched this exact publication to substantive article text or detailed attributable report; distinction between planned and adopted policies checked.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYndpUzlZN19na01vdTZuQXRsdWh2VVFMWTE2QktCSUJlOXhCa1g2bVluLUgtd0d2bFFOYWQ2b2EzT2JXVDZYaGoya3loTlpOWmVsYTUtajRKdDNZTjNXMHhqQlk2MS1Gd0VreFNJUUVqdEdpc09iYVRNX0Z5dmpZSEpUOGJYUXBoTFdoaTNWQzA1cy13T29RN19KUGQ1MkE4TGVPb3VPOHFGbGs?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Cross-border electricity infrastructure can diversify Moldova’s supply away from vulnerable Ukraine routes and Russian leverage.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T07:23:27Z",
+      "deep_scan_package_id": "worker-b-20261022T064730Z-cf5dcf8e1d1f",
+      "verification_note": "Matched this exact publication to substantive article text or detailed attributable report; distinction between planned and adopted policies checked.",
       "duplicate_of": ""
     }
   }
