@@ -41,6 +41,12 @@ jobs:
       - name: Install Deep Scan dependencies
         run: pip install --quiet -r requirements.txt
 
+      - name: Release any abandoned single-package reservation
+        run: |
+          python scripts/reserve_single_deep_scan_package.py \
+            --release-existing \
+            --work-state deep_scan_work_state.json
+
       - name: Prepare one FIFO Deep Scan package
         shell: bash
         env:
@@ -119,7 +125,7 @@ jobs:
 
           Download **deep-scan-single-package**. Inside it, use the single `deep_scan_package.zip` with one browsing-capable LLM.
 
-          The package uses the same authoritative Deep Scan V2 instructions. Scheduling now puts the repository’s configured Deep Scan priority order, including public priority records, private candidates, other Main Radar work, then Historical Radar work; terminal hands-on cases stay excluded. Private candidates remain invisible unless Deep Scan returns KEEP.
+          The package uses the same authoritative Deep Scan V2 instructions. Scheduling now puts public unverified Strand-A records first, then private Strand-A candidates, then other Main Radar work, then Historical Radar work; terminal hands-on cases stay excluded. Private candidates remain invisible unless Deep Scan returns KEEP.
 
           This workflow does not replace or delete the existing parallel-package workflow. Returned `deep_scan_results.json` files still go through the normal **Deep Scan V2 — Import Returned Results** workflow.
           EOF2
