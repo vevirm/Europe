@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-10-20T09:04:38Z",
+  "generated_at": "2026-10-22T05:49:50Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -170008,8 +170008,1098 @@
       "deep_scan_package_id": "worker-a-a82b366ad8c0",
       "claims": [],
       "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1093/jcsl/krag027": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "b0d96533",
+      "identity_hash": "e8e898005824db2d",
+      "reader_title": "Dutch arms-export controls and exemptions",
+      "reader_what": "Dutch law requires permission for military exports and transit, with general authorisations for certain NATO/EU shipments.",
+      "reader_why": "These licensing rules shape controlled European defence goods transfers and supply routes.",
+      "reader_more": "The article identifies the Strategic Goods Decree as the core Dutch instrument and describes ministerial reporting to parliament. It also discusses civil society litigation over transfers of F-35 parts to Israel. These are legal procedures, not evidence of how the broader regime performs.",
+      "deep_analysis": {
+        "work_kind": "legal/doctrinal analysis",
+        "research_question": "How are Dutch military-export and transit decisions governed?",
+        "main_finding": "The Dutch Strategic Goods Decree generally requires export/transit authorisation, subject to general authorisations and parliamentary scrutiny.",
+        "method_or_basis": "Publisher abstract describes legal framework, NATO/EU/F-35 authorisations and F-35 spare parts litigation.",
+        "qualification": "Doctrinal account from a publisher abstract; not an assessment of the efficacy of Dutch export licensing or the outcome of the F-35 litigation.",
+        "radar_relevance": "Direct EU-member-state export-control legislation and defence supply movement.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Resolved DOI https://doi.org/10.1093/jcsl/krag027 to Oxford Academic matching Voetelink article and substantial legal-policy abstract."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Oxford Academic lists 10.1093/jcsl/krag027, Voetelink, 20 October 2026, Journal of Conflict and Security Law."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://academic.oup.com/jcsl/advance-article-abstract/doi/10.1093/jcsl/krag027/8944038",
+            "title": "The Netherlands’ arms export control framework: law and policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Full journal article gated to subscribers; evidence from substantive original publisher abstract, not a full-text read."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Dutch control of military goods, transit and export licensing is a direct European economic-security instrument."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T05:49:48Z",
+      "deep_scan_package_id": "worker-a-20261022T053439Z-21d1273a306c",
+      "claims": [
+        {
+          "object": "export_control.regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Government of the Netherlands",
+            "class": "member_state"
+          },
+          "mechanism": "licenses",
+          "direction": "becomes_conditional",
+          "status": "in_force",
+          "status_date": "2026-10-20",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "NL"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "Doctrinal account from a publisher abstract; not an assessment of the efficacy of Dutch export licensing or the outcome of the F-35 litigation.",
+          "text": "Dutch Strategic Goods Decree controls transit and export of military goods through authorisations, including some general authorisations.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1093/jcsl/krag027",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:e8e898005824db2d:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1111/1758-5899.70191": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "9be1b2b1",
+      "identity_hash": "ace045d14709d7ad",
+      "reader_title": "EU digital diplomacy goes beyond regulation",
+      "reader_what": "The article argues the EU increasingly combines digital rule-setting with partnerships, capacity-building and security cooperation.",
+      "reader_why": "Partnerships can expand the Union’s leverage and resilience in contested digital networks.",
+      "reader_more": "The research traces a strategic reorientation since 2022 from market-driven Brussels Effect to cooperative digital diplomacy. It identifies structured partnerships, infrastructure initiatives, and security concerns as complementary tools. Its claims are interpretive rather than measured outcomes.",
+      "deep_analysis": {
+        "work_kind": "conceptual/analytical journal article",
+        "research_question": "How does the EU external digital strategy evolve beyond the Brussels Effect?",
+        "main_finding": "EU digital diplomacy increasingly supplements regulatory projection with partnerships, capacity and security-oriented cooperation.",
+        "method_or_basis": "Published research article and publisher abstract comparing changing policy instruments since 2022.",
+        "qualification": "Interpretive research article, not an impact evaluation of individual digital partnerships or a finding that resilience has already increased.",
+        "radar_relevance": "Substantive analysis of the EU economic-security policy toolbox and international digital partnerships.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI https://doi.org/10.1111/1758-5899.70191 resolves to Wiley Global Policy 17(3), pp.475–486 and full study abstract."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Wiley identifies Zhe Ma, Global Policy, first published 23 June 2026, DOI 10.1111/1758-5899.70191."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://onlinelibrary.wiley.com/doi/10.1111/1758-5899.70191",
+            "title": "Evolving Beyond the Brussels Effect: EU Digital Diplomacy and the Broadening of External Digital Strategy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The substantive publisher abstract supports an analytical finding, not verified full-text empirical results."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Research analyses the EU economic-security shift from regulation-only digital influence to security-relevant digital partnerships and infrastructure."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T05:49:49Z",
+      "deep_scan_package_id": "worker-a-20261022T053439Z-21d1273a306c",
+      "claims": [
+        {
+          "object": "digital.international_partnerships",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "partners",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2026-06-23",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Interpretive research article, not an impact evaluation of individual digital partnerships or a finding that resilience has already increased.",
+          "text": "The study identifies a strategic EU digital-diplomacy shift toward structured partnerships, infrastructure and security cooperation alongside regulation.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1111/1758-5899.70191",
+          "merit": 83,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:ace045d14709d7ad:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://cdn.ceps.eu/2026/10/AI-conformity-assessment-in-Ukraine.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "25204d51",
+      "identity_hash": "2418188b6b0b0a4e",
+      "reader_title": "Ukraine AI Act conformity gaps",
+      "reader_what": "CEPS studies standards, audit capacity and regulators for Ukrainian alignment with EU AI conformity requirements.",
+      "reader_more": "It identifies gaps in supervisory independence and AI-audit expertise under wartime conditions. Original CEPS report webpage summarises regulatory and institutional readiness, not supply dependency, coercion, strategic investment, trade security or comparable economic-security exposure.",
+      "deep_analysis": {
+        "work_kind": "verified publication",
+        "research_question": "",
+        "main_finding": "CEPS studies standards, audit capacity and regulators for Ukrainian alignment with EU AI conformity requirements.",
+        "method_or_basis": "Original CEPS report webpage summarises regulatory and institutional readiness, not supply dependency, coercion, strategic investment, trade security or comparable economic-security exposure.",
+        "qualification": "Scope exclusion, not disproof of the source.",
+        "radar_relevance": "Primary subject is technical alignment with the EU AI Act, supervisory capacity and conformity assessment in Ukraine, not an evidenced cross-border economic-security mechanism or EU economic-security policy toolbox.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "The supplied CDN PDF https://cdn.ceps.eu/2026/10/AI-conformity-assessment-in-Ukraine.pdf could not be loaded in the source browser."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "CEPS page dated 20 October 2026 identifies César Dro and Eduardo Brito as authors and details conformity-assessment recommendations."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_report_summary",
+            "url": "https://www.ceps.eu/ceps-publications/artificial-intelligence-conformity-assessment-in-ukraine/",
+            "title": "Artificial intelligence conformity assessment in Ukraine — Convergence with EU legislation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified source existence and substantive content; rejected on Europe-specific admission scope rather than retrieval difficulty."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Primary subject is technical alignment with the EU AI Act, supervisory capacity and conformity assessment in Ukraine, not an evidenced cross-border economic-security mechanism or EU economic-security policy toolbox."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T05:49:49Z",
+      "deep_scan_package_id": "worker-a-20261022T053439Z-21d1273a306c",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://defence-industry-space.ec.europa.eu/eu-space/product-environmental-footprint-category-rules-pefcr-space-sector_en": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_c",
+      "corpus_scope": "main",
+      "source_hash": "992a5fdd",
+      "identity_hash": "1bf98eba0c17c95a",
+      "reader_title": "Environmental methods for EU space products",
+      "reader_what": "Commission initiative develops lifecycle environmental footprint rules and datasets for space products.",
+      "reader_more": "The rules and supporting studies are being developed; the final framework is targeted for 2027. The official Commission page concerns environmental measurement, data contribution and standardisation for green claims, not control of strategic supply dependencies or security of space systems.",
+      "deep_analysis": {
+        "work_kind": "verified publication",
+        "research_question": "",
+        "main_finding": "Commission initiative develops lifecycle environmental footprint rules and datasets for space products.",
+        "method_or_basis": "The official Commission page concerns environmental measurement, data contribution and standardisation for green claims, not control of strategic supply dependencies or security of space systems.",
+        "qualification": "Scope exclusion, not disproof of the source.",
+        "radar_relevance": "Official programme describes environmental footprint comparability and sustainability of space products; it has no central strategic exposure, supply-control or European economic-security object.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened European Commission DG DEFIS project page at the supplied URL and examined project objectives, ongoing 2026 work and 2027 target."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "European Commission official page details environmental footprint methods and milestones, not a completed economic-security assessment."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_policy_page",
+            "url": "https://defence-industry-space.ec.europa.eu/eu-space/product-environmental-footprint-category-rules-pefcr-space-sector_en",
+            "title": "Product Environmental Footprint Category Rules (PEFCR) for the space sector",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified source existence and substantive content; rejected on Europe-specific admission scope rather than retrieval difficulty."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Official programme describes environmental footprint comparability and sustainability of space products; it has no central strategic exposure, supply-control or European economic-security object."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T05:49:49Z",
+      "deep_scan_package_id": "worker-a-20261022T053439Z-21d1273a306c",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1093/jel/eqag037": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "c9710494",
+      "identity_hash": "aa53b60fcc92f941",
+      "reader_title": "Algorithmic oversight of EU carbon markets",
+      "reader_what": "Doctrinal legal analysis identifies opacity and accountability gaps when AI supports emissions measurement and verification.",
+      "reader_more": "It argues EU environmental and digital regulation need interoperable oversight. Publisher-hosted original article text describes the AI Act, GDPR, ETS and measurement accountability; it does not establish a strategic dependence, coercion or trade-security mechanism.",
+      "deep_analysis": {
+        "work_kind": "verified publication",
+        "research_question": "",
+        "main_finding": "Doctrinal legal analysis identifies opacity and accountability gaps when AI supports emissions measurement and verification.",
+        "method_or_basis": "Publisher-hosted original article text describes the AI Act, GDPR, ETS and measurement accountability; it does not establish a strategic dependence, coercion or trade-security mechanism.",
+        "qualification": "Scope exclusion, not disproof of the source.",
+        "radar_relevance": "The substantive subject is coherence of climate MRV, carbon accounting and digital administrative law, not security of supply, international leverage, strategic technologies control or economic-security policy.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Direct DOI https://doi.org/10.1093/jel/eqag037 redirects to Oxford Academic, whose direct article URL failed in the browser."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Oxford Academic original journal record identifies Fernando Barrio, Journal of Environmental Law, 15 October 2026, DOI eqag037."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_article_text",
+            "url": "https://academic.oup.com/jel/advance-article/doi/10.1093/jel/eqag037/8918453",
+            "title": "Algorithmic governance of carbon markets: the limits of EU climate law and AI as regulatory infrastructure",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified source existence and substantive content; rejected on Europe-specific admission scope rather than retrieval difficulty."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "The substantive subject is coherence of climate MRV, carbon accounting and digital administrative law, not security of supply, international leverage, strategic technologies control or economic-security policy."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T05:49:49Z",
+      "deep_scan_package_id": "worker-a-20261022T053439Z-21d1273a306c",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1002/epa2.70048": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "21f6a462",
+      "identity_hash": "08881d7dc64937c0",
+      "reader_title": "Energy narratives and emotions during elections",
+      "reader_what": "Analysis of 253 German and Italian Instagram narratives finds affinity and compassion common and emotions often mixed.",
+      "reader_more": "Study concerns political framing of energy policy, not the functioning or vulnerability of energy systems. Wiley full-text presents the mixed dictionary and qualitative analysis of April–June 2024 social posts. It does not evaluate a strategic supply relation or policy-toolbox action.",
+      "deep_analysis": {
+        "work_kind": "verified publication",
+        "research_question": "",
+        "main_finding": "Analysis of 253 German and Italian Instagram narratives finds affinity and compassion common and emotions often mixed.",
+        "method_or_basis": "Wiley full-text presents the mixed dictionary and qualitative analysis of April–June 2024 social posts. It does not evaluate a strategic supply relation or policy-toolbox action.",
+        "qualification": "Scope exclusion, not disproof of the source.",
+        "radar_relevance": "Study measures emotional political communication rather than energy security, supply vulnerabilities, industrial production, coercion or EU economic-security policy.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI https://doi.org/10.1002/epa2.70048 leads to open-access Wiley article; substantive sections, sample N=253 and findings were read."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Wiley article identifies Nora Habelitz, Fabienne Lind and Sonja Blum, first published 7 June 2026."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_article_text",
+            "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/epa2.70048",
+            "title": "Energized? How German and Italian Party Actors Used Emotions in Energy Policy Narratives During the 2024 EU Elections",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified source existence and substantive content; rejected on Europe-specific admission scope rather than retrieval difficulty."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Study measures emotional political communication rather than energy security, supply vulnerabilities, industrial production, coercion or EU economic-security policy."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T05:49:49Z",
+      "deep_scan_package_id": "worker-a-20261022T053439Z-21d1273a306c",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1016/j.heliyon.2026.e45271": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "d9255481",
+      "identity_hash": "50ef1bc3c7bb7fc3",
+      "reader_title": "Measuring European SME financial constraints",
+      "reader_what": "Integrative literature review proposes a six-dimension Capital Constraint Index for heterogeneous SMEs.",
+      "reader_more": "The framework addresses general credit access and policy assessment, not strategic capital flows or security risks. Publisher abstract and NOVA university repository record identify a conceptual framework, rather than empirical evidence of cross-border finance coercion or critical-sector supply dependence.",
+      "deep_analysis": {
+        "work_kind": "verified publication",
+        "research_question": "",
+        "main_finding": "Integrative literature review proposes a six-dimension Capital Constraint Index for heterogeneous SMEs.",
+        "method_or_basis": "Publisher abstract and NOVA university repository record identify a conceptual framework, rather than empirical evidence of cross-border finance coercion or critical-sector supply dependence.",
+        "qualification": "Scope exclusion, not disproof of the source.",
+        "radar_relevance": "Review of ordinary SME capital-access measurement across heterogeneous sectors and regions lacks an economic-security channel; mentions resilience without substantiating strategic exposure.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI https://doi.org/10.1016/j.heliyon.2026.e45271 matches publisher Heliyon 12(13) review article and detailed abstract."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "NOVA University repository https://run.unl.pt/entities/publication/c9458b4b-b269-4108-8662-8b3fe304fd24 confirms Tasev and Damásio and repeats full review abstract."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_abstract",
+            "url": "https://www.sciencedirect.com/science/article/pii/S2405844026007851",
+            "title": "Reframing SME financing constraints: An integrative framework for measuring capital access heterogeneity in Europe",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified source existence and substantive content; rejected on Europe-specific admission scope rather than retrieval difficulty."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Review of ordinary SME capital-access measurement across heterogeneous sectors and regions lacks an economic-security channel; mentions resilience without substantiating strategic exposure."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T05:49:49Z",
+      "deep_scan_package_id": "worker-a-20261022T053439Z-21d1273a306c",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1093/jcsl/krag028": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "95702815",
+      "identity_hash": "e1b3c5857d692979",
+      "reader_title": "Could self-defence justify Russian asset confiscation?",
+      "reader_what": "Novák argues lawful self-defence could, under strict conditions, justify confiscating an aggressor state’s property.",
+      "reader_why": "The argument speaks directly to the EU’s frozen Russian central-bank assets dilemma.",
+      "reader_more": "The article tests self-defence under Article 21 of the state-responsibility framework, while acknowledging sovereign immunities and foreign-investment protections. It advances a possible legal justification, not a decision to confiscate or an established legal consensus.",
+      "deep_analysis": {
+        "work_kind": "doctrinal legal argument",
+        "research_question": "Can collective or individual self-defence justify state-asset confiscation despite otherwise applicable international law rules?",
+        "main_finding": "Self-defence might preclude wrongfulness if an asset-confiscation measure satisfies primary self-defence law.",
+        "method_or_basis": "Oxford original publisher substantive abstract reviews Article 21 and non-forcible/indirect-force theories.",
+        "qualification": "This is an author’s contested legal argument, not enacted EU confiscation, an operative court holding or proven legality.",
+        "radar_relevance": "EU economic sanctions and immobilised central-bank assets are central objects.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened Oxford Academic DOI https://doi.org/10.1093/jcsl/krag028 publisher record and substantive legal abstract."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Oxford Academic confirms Attila Novák, Journal of Conflict and Security Law, 20 October 2026, DOI 10.1093/jcsl/krag028."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://academic.oup.com/jcsl/advance-article-abstract/doi/10.1093/jcsl/krag028/8944039",
+            "title": "Confiscatory measures against the property of an aggressor state: self-defence instead of sanctions?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publisher article body paywalled; only original comprehensive abstract supports the qualified legal interpretation."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Legal research directly addresses the EU sanctions/asset-freeze toolbox and potential confiscation of Russian central-bank assets."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T05:49:49Z",
+      "deep_scan_package_id": "worker-a-20261022T053439Z-21d1273a306c",
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2026-10-20",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "This is an author’s contested legal argument, not enacted EU confiscation, an operative court holding or proven legality.",
+          "text": "A legal study argues self-defence might justify confiscating Russian state assets under strict international-law conditions.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1093/jcsl/krag028",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:e1b3c5857d692979:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=5914f1eb-cbb5-11f1-8b4c-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "fc5e407c",
+      "identity_hash": "f62985e07be0da22",
+      "reader_title": "Council briefing about an ICT supply-chain proposal",
+      "reader_what": "A 29 September 2026 Presidency presentation discussed Title IV of the draft Cybersecurity Act 2.",
+      "reader_more": "A meeting presentation must not be conflated with an adopted law or the distinct January Commission proposal. The Austrian Parliament official Council-document record identifies working paper WK 15065/26 and the 28 September working-party meeting; related substantive legislative texts are different works.",
+      "deep_analysis": {
+        "work_kind": "verified publication",
+        "research_question": "",
+        "main_finding": "A 29 September 2026 Presidency presentation discussed Title IV of the draft Cybersecurity Act 2.",
+        "method_or_basis": "The Austrian Parliament official Council-document record identifies working paper WK 15065/26 and the 28 September working-party meeting; related substantive legislative texts are different works.",
+        "qualification": "Scope exclusion, not disproof of the source.",
+        "radar_relevance": "The assigned object is a Council working-party presentation of an already proposed instrument, not a completed analytic report or an identifiable new economic-security decision.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "The supplied Publications Office direct PDF URL with identifier 5914f1eb-cbb5-11f1-8b4c-01aa75ed71a1 returned an error/404 catalogue route in package source_material."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Official Austrian parliamentary document register https://www.parlament.gv.at/gegenstand/XXVIII/EU/94509 identifies the same 29 September 2026 Presidency Title IV presentation (WK 15065/26)."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Official EU proposal https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52026PC0011 confirms underlying regulation was already proposed 20 January 2026; presentation is a separate meeting document."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_document_register",
+            "url": "https://www.parlament.gv.at/gegenstand/XXVIII/EU/94509",
+            "title": "Cybersecurity Act 2 Title IV — Presidency presentation WK 15065/26",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified source existence and substantive content; rejected on Europe-specific admission scope rather than retrieval difficulty."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "The assigned object is a Council working-party presentation of an already proposed instrument, not a completed analytic report or an identifiable new economic-security decision."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T05:49:49Z",
+      "deep_scan_package_id": "worker-b-20261022T053443Z-d7ce48c84595",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.65864/ufb8cp6fw3": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "51ef370d",
+      "identity_hash": "604f8286a63a90e6",
+      "reader_title": "Competition mandate changes procurement costs",
+      "reader_what": "Czech procurement reform requiring two valid bids lowered winning-bid ratios relative to engineering estimates by about seven percentage points.",
+      "reader_more": "Effects concern routine procurement efficiency, not strategic external dependence or supply security. The attached OpenAlex-cached copy of CESifo Working Paper 11697 includes abstract, design and institutional context. It uses difference-in-differences around a Czech reform; the estimated lower bid ratio should not be equated automatically with overall welfare gains.",
+      "deep_analysis": {
+        "work_kind": "verified publication",
+        "research_question": "",
+        "main_finding": "Czech procurement reform requiring two valid bids lowered winning-bid ratios relative to engineering estimates by about seven percentage points.",
+        "method_or_basis": "The attached OpenAlex-cached copy of CESifo Working Paper 11697 includes abstract, design and institutional context. It uses difference-in-differences around a Czech reform; the estimated lower bid ratio should not be equated automatically with overall welfare gains.",
+        "qualification": "Scope exclusion, not disproof of the source.",
+        "radar_relevance": "Czech minimum-two-bid mandate is an ordinary public-procurement competition/price reform with no verified link to strategic sectors, trade dependence or economic-security instruments.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package source_material contains matching 19,028-character extracted PDF text from https://content.openalex.org/works/W7222939342.pdf and the doi https://doi.org/10.65864/ufb8cp6fw3 ; read study abstract and methods."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Original PDF cover identifies Vitezslav Titl and CESifo Working Paper 11697, 2026 edition matching the DOI-linked title."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_pdf_excerpt",
+            "url": "https://content.openalex.org/works/W7222939342.pdf",
+            "title": "Enforcing Competition in Public Procurement",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified source existence and substantive content; rejected on Europe-specific admission scope rather than retrieval difficulty."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Czech minimum-two-bid mandate is an ordinary public-procurement competition/price reform with no verified link to strategic sectors, trade dependence or economic-security instruments."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T05:49:49Z",
+      "deep_scan_package_id": "worker-b-20261022T053443Z-d7ce48c84595",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.atlanticcouncil.org/wp-content/uploads/2026/10/the-european-union-as-a-compound-power-in-cold-war-2.0-2.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "fe68bc3d",
+      "identity_hash": "8d85b48efebd81e6",
+      "reader_title": "Europe’s compound economic power and conversion gap",
+      "reader_what": "The report argues Europe possesses strategic assets but underuses trade, capital, industrial and energy tools jointly.",
+      "reader_why": "Coordinating those tools could strengthen Europe’s ability to withstand geopolitical and supply pressures.",
+      "reader_more": "Arak and Tchakarova compile trade, capital-market, energy, enlargement and defence-industrial indicators. They advocate concurrent rather than siloed deployment of instruments, while acknowledging political and institutional constraints. Quantified scenarios are proposals, not achieved outcomes.",
+      "deep_analysis": {
+        "work_kind": "policy/think-tank evidence synthesis",
+        "research_question": "How can the EU translate existing economic and industrial assets into coordinated strategic power?",
+        "main_finding": "EU structural leverage is substantial, but fragmented decision-making limits concurrent economic-security deployment.",
+        "method_or_basis": "Long substantive original Atlantic Council report synthesising trade, finance, energy and industrial indicators, plus strategic proposals.",
+        "qualification": "Think-tank analytical and prescriptive report; figures and policy forecasts are the authors’ interpretation and projections, not independently measured programme success.",
+        "radar_relevance": "Direct EU economic-security toolbox, critical dependencies, trade leverage and defence-industrial capacity.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Official Atlantic Council PDF excerpt (24,000 characters) is packaged from supplied URL https://www.atlanticcouncil.org/wp-content/uploads/2026/10/the-european-union-as-a-compound-power-in-cold-war-2.0-2.pdf."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Atlantic Council full original HTML report https://www.atlanticcouncil.org/in-depth-research-reports/report/the-european-union-as-a-compound-power-in-cold-war-2-0/ names Piotr Arak and Velina Tchakarova, dated 20 October 2026."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_report_full_text",
+            "url": "https://www.atlanticcouncil.org/in-depth-research-reports/report/the-european-union-as-a-compound-power-in-cold-war-2-0/",
+            "title": "The European Union as a compound power in Cold War 2.0",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Full primary HTML report read, with matching 24,000-character first-party PDF excerpt in worker package; recommendations explicitly framed as report argument."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Detailed policy report examines Europe’s trade leverage, manufacturing, energy-security dependencies and coordinated economic-security toolbox."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T05:49:49Z",
+      "deep_scan_package_id": "worker-b-20261022T053443Z-d7ce48c84595",
+      "claims": [
+        {
+          "object": "econsec.toolbox_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "european_system"
+          },
+          "mechanism": "coordinates",
+          "direction": "becomes_conditional",
+          "status": "observation",
+          "status_date": "2026-10-20",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Think-tank analytical and prescriptive report; figures and policy forecasts are the authors’ interpretation and projections, not independently measured programme success.",
+          "text": "The report calls for simultaneous EU use of trade, industrial, capital, enlargement, energy and defence instruments to exploit existing strategic leverage.",
+          "confidence": "medium",
+          "record_key": "link:https://www.atlanticcouncil.org/wp-content/uploads/2026/10/the-european-union-as-a-compound-power-in-cold-war-2.0-2.pdf",
+          "merit": 66,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:8d85b48efebd81e6:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1016/j.rspp.2026.100320": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "10831f2a",
+      "identity_hash": "413451a11b23660f",
+      "reader_title": "Hungarian manufacturing caught in FDI dependence",
+      "reader_what": "The study finds some FDI-intensive Hungarian regions stopped catching up after 2015 amid weak innovation upgrading.",
+      "reader_why": "Reliance on foreign-controlled assembly capacity can constrain European industrial resilience and autonomy.",
+      "reader_more": "Researchers classify five NUTS-3 regional industrial trajectories. Industrial catching-up preceded 2015, while subsequent dependence and limited innovation capacity characterise several regional development traps. This is structural evidence about manufacturing capability, not an assessment of screening interventions.",
+      "deep_analysis": {
+        "work_kind": "regional empirical study",
+        "research_question": "Does foreign-investment-driven reindustrialisation help Hungary catch up with former EU12 regions?",
+        "main_finding": "Manufacturing upgrading and convergence stalled in several FDI-intensive Hungarian regions after 2015.",
+        "method_or_basis": "Comparative regional industrial classifications and development trajectories using Hungary NUTS-3 units.",
+        "qualification": "Regional observational analysis of Hungary; associational patterns do not isolate FDI as a sole cause of productivity stagnation.",
+        "radar_relevance": "Substantive EU-member-state foreign-investment dependence and manufacturing capacity trajectory (A Route 2).",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI https://doi.org/10.1016/j.rspp.2026.100320 resolved via ScienceDirect indexed primary article record with full substantive abstract."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Publisher Regional Science Policy & Practice volume 18, issue 8, article 100320; research question, NUTS-3 data and findings visible in original publisher abstract."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_abstract",
+            "url": "https://www.sciencedirect.com/science/article/pii/S1757780226000417",
+            "title": "FDI-led reindustrialisation and regional catching-up: Evidence from Hungary",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publisher detailed abstract read; article body itself inaccessible in browser, so conclusions kept qualified to reported abstract results."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Empirical study shows strategic European manufacturing capacity and external-capital exposure, with industrial dependence limiting regional upgrading."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T05:49:49Z",
+      "deep_scan_package_id": "worker-b-20261022T053443Z-d7ce48c84595",
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Hungary",
+            "class": "member_state"
+          },
+          "mechanism": "measures",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-05-28",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "HU"
+            ]
+          },
+          "kind": "evidence",
+          "qualification": "Regional observational analysis of Hungary; associational patterns do not isolate FDI as a sole cause of productivity stagnation.",
+          "text": "Regional analysis links Hungary’s earlier FDI-led catch-up with post-2015 industrial upgrading traps in several manufacturing regions.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1016/j.rspp.2026.100320",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:413451a11b23660f:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1057/s41599-026-09491-z": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "5765c726",
+      "identity_hash": "f3d541603e8d087c",
+      "reader_title": "Circular economies linked to energy diversification",
+      "reader_what": "European panel modelling associates circular-economy practices and stronger governance with more diversified energy systems.",
+      "reader_why": "Import dependence is negatively associated with diversification, highlighting a direct European energy-security constraint.",
+      "reader_more": "The study models short- and long-run relations from 2000–2023 using CS-ARDL methods. Circular-economy measures are positively related to diversification, moderated by governance; energy-import dependence is negatively related. This is correlation-based multi-country evidence, not a tested implementation impact.",
+      "deep_analysis": {
+        "work_kind": "empirical cross-country panel model",
+        "research_question": "Do circular-economy practices and governance correlate with energy diversification across Europe?",
+        "main_finding": "Circular-economy practices correlate positively with European energy diversification, whereas import reliance correlates negatively.",
+        "method_or_basis": "CS-ARDL econometric panel, European countries, 2000–2023; early publisher version.",
+        "qualification": "Econometric association across European countries in 2000–2023; findings do not by themselves establish causality or quantify a forecast supply-security gain.",
+        "radar_relevance": "Direct Europe-wide evidence on supply vulnerability and energy diversification.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Springer Nature original article https://link.springer.com/article/10.1057/s41599-026-09491-z redirected to accessible Nature publisher abstract with methods and empirical findings."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Publisher identifies Qamar Abbas and Muhammad Ramzan, date 19 October 2026, DOI 10.1057/s41599-026-09491-z and early accepted-article status."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_abstract",
+            "url": "https://www.nature.com/articles/s41599-026-09491-z",
+            "title": "Government governance as a strategic enabler of resilient energy systems: insights from the circular economy transition in European countries",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Source exposes abstract/method/results but browser did not return full body; do not claim to have reviewed regression tables."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Measured European energy diversification and dependence on imported fuels constitute an economic-security trajectory."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T05:49:49Z",
+      "deep_scan_package_id": "worker-b-20261022T053443Z-d7ce48c84595",
+      "claims": [
+        {
+          "object": "econsec.supply_resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European energy systems",
+            "class": "european_system"
+          },
+          "mechanism": "diversifies",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2026-10-19",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Econometric association across European countries in 2000–2023; findings do not by themselves establish causality or quantify a forecast supply-security gain.",
+          "text": "A European panel study reports positive association of circular-economy practices with energy diversification and negative association of import reliance.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1057/s41599-026-09491-z",
+          "merit": 68,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:f3d541603e8d087c:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://op.europa.eu/en/publication-detail/-/publication/92b50f77-cc2d-11f1-8b4c-01aa75ed71a1/language-en": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "0a3d8bb7",
+      "identity_hash": "e2623ed38052dadc",
+      "reader_title": "JRC maps potentially dual-use scientific output",
+      "reader_what": "The TIM dashboard screens publications, patents and EU research projects for technologies relevant to EU dual-use controls.",
+      "reader_why": "Mapping potential controlled technologies may support export-control awareness and strategic research-security compliance.",
+      "reader_more": "JRC describes over 102 million documents, more than 380 keyword algorithms and links to the EU dual-use control list. It supports potential-risk mapping and awareness, not automatic legal classification of exports. Data were updated June 2026.",
+      "deep_analysis": {
+        "work_kind": "official EU technical report",
+        "research_question": "How can research and patent records be mapped to identify possible dual-use technologies?",
+        "main_finding": "TIM Dual-Use maps scientific, patent and project documents against EU-listed and emerging dual-use technology categories.",
+        "method_or_basis": "Official JRC147738 report and issuing-body detailed abstract describing algorithms, data sources, users and 2026 updates.",
+        "qualification": "Dashboard identifies potential dual-use documents via keyword algorithms; screening outputs need human assessment and do not amount to an export-license determination.",
+        "radar_relevance": "EU export controls, restricted technologies and research-security system directly assessed.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read package-supplied first-party Publications Office excerpt (1,756 characters) from https://op.europa.eu/en/publication-detail/-/publication/92b50f77-cc2d-11f1-8b4c-01aa75ed71a1/language-en ; fresh browser request failed."
+          },
+          {
+            "step": "scanner_validation_route",
+            "outcome": "failed",
+            "note": "Tried exact scanner-specific https://publications.europa.eu/resource/cellar/92b50f77-cc2d-11f1-8b4c-01aa75ed71a1 but the source browser could not fetch it; the matched Publications Office excerpt remains in package source_material."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Independently recovered full matching JRC report abstract and author/DOI metadata at https://publications.jrc.ec.europa.eu/repository/handle/JRC147738 , confirming same work."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "JRC official repository lists https://doi.org/10.2760/9049833, 2026, title and full author list."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_institutional_report_summary",
+            "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC147738",
+            "title": "The TIM Dual-Use Dashboard",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matching JRC official substantive abstract + catalogue, and explicit scanner-specific validation URL cross-check. Report PDF itself not claimed to have been read."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Official JRC research describes an EU dual-use technology mapping tool directly connected to export-control compliance and technology security."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching canonical record listed in assigned potential duplicates."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-22T05:49:50Z",
+      "deep_scan_package_id": "worker-b-20261022T053443Z-d7ce48c84595",
+      "claims": [
+        {
+          "object": "export_control.dual_use_list",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission Joint Research Centre",
+            "class": "eu_body"
+          },
+          "mechanism": "detects",
+          "direction": "expands",
+          "status": "operating",
+          "status_date": "2026-10-19",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Dashboard identifies potential dual-use documents via keyword algorithms; screening outputs need human assessment and do not amount to an export-license determination.",
+          "text": "The JRC TIM Dual-Use dashboard maps documents for potential dual-use content using over 380 keyword algorithms across 102 million records.",
+          "confidence": "medium",
+          "record_key": "link:https://op.europa.eu/en/publication-detail/-/publication/92b50f77-cc2d-11f1-8b4c-01aa75ed71a1/language-en",
+          "merit": 100,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:e2623ed38052dadc:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-10-20T09:04:38Z"
+  "claims_updated_at": "2026-10-22T05:49:50Z"
 }

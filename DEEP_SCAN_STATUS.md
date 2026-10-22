@@ -6,38 +6,40 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` counts as one genuine recovery pass. After **3** unsuccessful passes, the work leaves the automatic queue and enters **Hands-on verification needed**.
 
-- Authoritative V2 verified: **2184** (Main **893** + Historical **1291**)
-- Automatic queue still needing V2 verification: **405** (Main **206** + Historical **199**)
-- Currently assigned to workers: **16** (Main **16** + Historical **0**)
-- Bounded access-recovery retries still eligible: **0**
+- Authoritative V2 verified: **2198** (Main **907** + Historical **1291**)
+- Automatic queue still needing V2 verification: **391** (Main **192** + Historical **199**)
+- Currently assigned to workers: **72** (Main **17** + Historical **55**)
+- Bounded access-recovery retries still eligible: **2**
 - Hands-on verification needed: **155**
-- Automatic queue pending and not yet assigned: **389**
+- Automatic queue pending and not yet assigned: **319**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261022T053439Z-21d1273a306c`
-- Assigned unresolved records: **8**
-  1. `link:https://doi.org/10.1093/jcsl/krag027` — The Netherlands’ arms export control framework: law and policy
-  2. `link:https://doi.org/10.1111/1758-5899.70191` — Evolving Beyond the Brussels Effect: EU Digital Diplomacy and the Broadening of External Digital Strategy
-  3. `link:https://cdn.ceps.eu/2026/10/AI-conformity-assessment-in-Ukraine.pdf` — Artificial intelligence conformity assessment in Ukraine – CEPS
-  4. `link:https://defence-industry-space.ec.europa.eu/eu-space/product-environmental-footprint-category-rules-pefcr-space-sector_en` — Product Environmental Footprint Category Rules (PEFCR) for the space sector
-  5. `link:https://doi.org/10.1093/jel/eqag037` — Algorithmic governance of carbon markets: the limits of EU climate law and AI as regulatory infrastructure
-  6. `link:https://doi.org/10.1002/epa2.70048` — Energized? How German and Italian Party Actors Used Emotions in Energy Policy Narratives During the 2024 EU Elections
-  7. `link:https://doi.org/10.1016/j.heliyon.2026.e45271` — Reframing SME financing constraints: An integrative framework for measuring capital access heterogeneity in Europe
-  8. `link:https://doi.org/10.1093/jcsl/krag028` — Confiscatory measures against the property of an aggressor state: self-defence instead of sanctions?
+- Current package: `worker-a-20261022T055145Z-a5bde849d39e`
+- Assigned unresolved records: **36**
+  1. `link:https://doi.org/10.1080/13563467.2026.2751101` — The peripheralisation of Europe’s battery industry: derisking regimes, productive models, and the geography of green industrial policy
+  2. `link:https://doi.org/10.1111/1758-5899.70258` — Africa and the ‘New Washington Consensus’: Green Industrialisation Through a Rethink of International Economic Law Rules
+  3. `link:https://institutdelors.eu/en/publications/why-marine-le-pens-draft-budget-threatens-the-future-of-europe-and-therefore-of-france/` — Why Marine Le Pen’s draft budget threatens the future of Europe (and therefore of France) - Institut Jacques Delors
+  4. `link:https://doi.org/10.1007/s43253-026-00187-3` — The Euro at a quarter of a century: economic policy and governance. Introduction to the special issue
+  5. `link:https://doi.org/10.1007/s11365-026-01259-w` — Technology transfer and innovation dynamics through clustering analysis of European Union countries
+  6. `link:https://op.europa.eu/en/web/about-us/faq#print_your_own_copies` — Deep dive on critical raw materials for hydrogen technologies in the EU - Publications Office of the EU
+  7. `historical:id:89a9fdab76b412b7` — After Covid-19: Economic security in EU-Asia connectivity - Egmont Institute
+  8. `historical:id:c6e71d93b99e63bb` — Beyond Corona: Getting EU Economic Security Right - Egmont Institute
+  - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20261022T053443Z-d7ce48c84595`
-- Assigned unresolved records: **8**
-  1. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=5914f1eb-cbb5-11f1-8b4c-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) – Title IV (ICT Supply Chain) - Presentation - Publications Office of the EU
-  2. `link:https://doi.org/10.65864/ufb8cp6fw3` — Enforcing Competition in Public Procurement
-  3. `link:https://doi.org/10.1080/09692290.2026.2745879` — Europe’s new geoeconomic cleavages: from capitalist diversity to international vulnerability in European political economy
-  4. `link:https://www.atlanticcouncil.org/wp-content/uploads/2026/10/the-european-union-as-a-compound-power-in-cold-war-2.0-2.pdf` — The European Union as a compound power in Cold War 2.0
-  5. `link:https://doi.org/10.1080/09692290.2026.2748311` — Situational state capacity for transformative industrial policy in dependent market economies
-  6. `link:https://doi.org/10.1016/j.rspp.2026.100320` — FDI-led reindustrialisation and regional catching-up: Evidence from Hungary
-  7. `link:https://doi.org/10.1057/s41599-026-09491-z` — Government governance as a strategic enabler of resilient energy systems: insights from the circular economy transition in European countries
-  8. `link:https://op.europa.eu/en/publication-detail/-/publication/92b50f77-cc2d-11f1-8b4c-01aa75ed71a1/language-en` — The TIM Dual-Use dashboard
+- Current package: `worker-b-20261022T055150Z-5a39abc25bc0`
+- Assigned unresolved records: **36**
+  1. `historical:id:bd6390ebd49d38da` — Beyond sanctions: How west Africa can recommit to democracy – European Council on Foreign Relations
+  2. `historical:id:a8acba649f2da634` — Sanctions: Commission guidance note on the provision of humanitarian aid in compliance with EU restrictive measures
+  3. `historical:id:62818d82a67acadc` — Key messages on the foreign subsidies instrument - a BusinessEurope position paper
+  4. `historical:id:40ea3ba6d8d9a84c` — Import and export bans
+  5. `historical:id:c1385a5e422d94e7` — Digital Partnership with the Republic of Korea
+  6. `historical:id:d34ffdca5a532461` — An Alternative Supply Chain in India? Taiwan’s Experience
+  7. `historical:id:064ffe75a9a7c694` — What EU sanctions policy can learn from European mutual defence – European Council on Foreign Relations
+  8. `historical:id:53150557b6dff2d6` — Supply Chain Security, From Taipei to Brussels
+  - … plus 28 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`

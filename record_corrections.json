@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-record-corrections-v1",
-  "updated_at": "2026-10-20T09:04:38Z",
+  "updated_at": "2026-10-22T05:49:50Z",
   "records": {
     "link:https://doi.org/10.1080/09662839.2026.2709844": {
       "fields": {
@@ -2264,6 +2264,72 @@
       ],
       "updated_at": "2026-10-20T09:04:38Z",
       "deep_scan_package_id": "worker-a-a82b366ad8c0"
+    },
+    "link:https://cdn.ceps.eu/2026/10/AI-conformity-assessment-in-Ukraine.pdf": {
+      "fields": {
+        "title": "Artificial intelligence conformity assessment in Ukraine: Convergence with EU legislation",
+        "authors": "César Dro, Eduardo Brito"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "The original CEPS report landing page names César Dro and Eduardo Brito and provides the full title/subtitle; scanner incorrectly entered CEPS as author.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "evidence": [
+        "https://www.ceps.eu/ceps-publications/artificial-intelligence-conformity-assessment-in-ukraine/"
+      ],
+      "updated_at": "2026-10-22T05:49:49Z",
+      "deep_scan_package_id": "worker-a-20261022T053439Z-21d1273a306c"
+    },
+    "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=5914f1eb-cbb5-11f1-8b4c-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
+      "fields": {
+        "authors": "Council of the European Union",
+        "source": "Council of the European Union",
+        "type": "official working-party presentation"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Austrian Parliament Council-document register identifies a Presidency presentation, working paper WK 15065/26; Publications Office is catalogue distributor, not author.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "evidence": [
+        "https://www.parlament.gv.at/gegenstand/XXVIII/EU/94509"
+      ],
+      "updated_at": "2026-10-22T05:49:49Z",
+      "deep_scan_package_id": "worker-b-20261022T053443Z-d7ce48c84595"
+    },
+    "link:https://doi.org/10.65864/ufb8cp6fw3": {
+      "fields": {
+        "source": "CESifo Working Papers",
+        "type": "working paper"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Actual manuscript front matter describes CESifo Working Paper 11697 (2026), circulated by CESifo GmbH, rather than a published journal peer-reviewed article.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "evidence": [
+        "https://content.openalex.org/works/W7222939342.pdf"
+      ],
+      "updated_at": "2026-10-22T05:49:49Z",
+      "deep_scan_package_id": "worker-b-20261022T053443Z-d7ce48c84595"
+    },
+    "link:https://www.atlanticcouncil.org/wp-content/uploads/2026/10/the-european-union-as-a-compound-power-in-cold-war-2.0-2.pdf": {
+      "fields": {
+        "authors": "Piotr Arak, Velina Tchakarova",
+        "type": "research/policy report",
+        "source": "Atlantic Council"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Atlantic Council original report lists Piotr Arak and Velina Tchakarova as authors; scanner stored file/uploader handle jbatchik.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "evidence": [
+        "https://www.atlanticcouncil.org/in-depth-research-reports/report/the-european-union-as-a-compound-power-in-cold-war-2-0/"
+      ],
+      "updated_at": "2026-10-22T05:49:49Z",
+      "deep_scan_package_id": "worker-b-20261022T053443Z-d7ce48c84595"
     }
   }
 }
