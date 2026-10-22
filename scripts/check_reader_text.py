@@ -79,13 +79,20 @@ def validate_reader_text_doc(doc):
     for text, n in collections.Counter(whys).items():
         if n > MAX_REPEATS:
             fails.append(f"WHY repeats {n} times: {text[:70]}")
-    seen = []
+    # Advisory similarity warnings used to compare every entry with every
+    # previous entry (quadratic, frequently timing out the import workflow).
+    # Bucket candidate pairs by the first two normalized words; mandatory
+    # exact-repeat detection above remains exhaustive and unchanged.
+    candidates = collections.defaultdict(list)
     for w in whys:
-        for prev in seen:
-            if difflib.SequenceMatcher(None, w.lower(), prev.lower()).ratio() > NEAR:
+        words = re.findall(r"[a-z0-9]+", w.lower())
+        group = tuple(words[:2])
+        lw = w.lower()
+        for prev in candidates[group]:
+            if difflib.SequenceMatcher(None, lw, prev).ratio() > NEAR:
                 warns.append(f"WHY near duplicate: {w[:60]}")
                 break
-        seen.append(w)
+        candidates[group].append(lw)
     for v in entries:
         if not clean(v.get("source_hash")):
             fails.append("entry missing source_hash")

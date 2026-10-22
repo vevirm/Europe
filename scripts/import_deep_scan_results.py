@@ -29,7 +29,7 @@ try:
         historical_pending, load_sidecar, pending, record_key, source_hash, validate,
     )
     from scripts.deep_scan_work_state import (
-        DEFAULT_WORK_STATE, expected_remaining_for_package, load_state, manual_verification_keys,
+        DEFAULT_WORK_STATE, package_info, load_state, manual_verification_keys,
         mark_recovery_failure, mark_verified, prioritize_pending_keys, save_state, sync_verified,
         update_record_metadata,
     )
@@ -45,7 +45,7 @@ except ModuleNotFoundError:
         historical_pending, load_sidecar, pending, record_key, source_hash, validate,
     )
     from deep_scan_work_state import (  # type: ignore
-        DEFAULT_WORK_STATE, expected_remaining_for_package, load_state, manual_verification_keys,
+        DEFAULT_WORK_STATE, package_info, load_state, manual_verification_keys,
         mark_recovery_failure, mark_verified, prioritize_pending_keys, save_state, sync_verified,
         update_record_metadata,
     )
@@ -477,9 +477,25 @@ def main() -> None:
     for key, (_strand, row, _source_hash, _identity_hash) in current.items():
         update_record_metadata(work_state, key, row)
 
-    files = [p for p in args.files if p.exists()] if args.files else sorted(
+    files = [p for p in args.files if p.exists()] if args.files else [
         p for p in args.inbox.glob("*") if p.is_file() and p.name != ".gitkeep" and p.suffix.lower() in {".json", ".zip"}
-    )
+    ]
+    # Returned scans can overlap. Import the oldest completed research first,
+    # regardless of the arbitrary upload filename, so a later DEFER cannot
+    # consume a recovery attempt before an earlier KEEP for that same work.
+    def package_order(path: Path) -> tuple[str, str]:
+        try:
+            result = next(iter(docs_from_file(path)))[1]
+            pkg_id = clean(result.get("package_id"))
+            pkg = package_info(work_state, pkg_id)
+            timestamp = clean(pkg.get("created_at")) if pkg else ""
+            if not timestamp:
+                match = re.search(r"(20\d{6}T\d{6}Z)", pkg_id)
+                timestamp = match.group(1) if match else "9999"
+            return timestamp, path.name
+        except Exception:
+            return "9999", path.name
+    files.sort(key=package_order)
     if not files:
         print("No Deep Scan result files found in inbox.")
         return
@@ -521,8 +537,11 @@ def main() -> None:
             fmt = result_doc.get("format")
             claims_required = fmt == V2_FORMAT and clean(result_doc.get("claims_format")) == CLAIMS_FORMAT
             package_id = clean(result_doc.get("package_id")) or "unknown-package"
-            package_expected = expected_remaining_for_package(work_state, package_id, sidecar) if fmt == V2_FORMAT else None
-            package_expected_set = set(package_expected) if package_expected is not None else None
+            # Membership in a *genuinely issued* package is permanent.
+            # A valid late KEEP must still be accepted even if a newer scan
+            # previously exhausted the automatic recovery budget.
+            pkg = package_info(work_state, package_id) if fmt == V2_FORMAT else None
+            package_expected_set = set(pkg.get("record_keys", [])) if pkg is not None else None
             for idx, raw in enumerate(result_doc.get("results", []), 1):
                 if not isinstance(raw, dict):
                     print(f"REJECT {label} result {idx}: result is not an object")
@@ -623,6 +642,18 @@ def main() -> None:
 
                 decision = clean((raw.get("admission") or {}).get("decision")).lower()
                 if decision == "defer":
+                    # Once manual review is reached, more copies of the same
+                    # failed research do not consume a fourth recovery pass.
+                    # A separate, substantively verified KEEP may still enter.
+                    rec = work_state.get("records", {}).get(key, {})
+                    previous_packages = {
+                        item.get("package_id") for item in (rec.get("recovery_history") or [])
+                        if isinstance(item, dict)
+                    }
+                    if key in manual_verification_keys(work_state) or package_id in previous_packages:
+                        duplicate_count += 1
+                        seen_pairs.add(pair)
+                        continue
                     now = utc_now()
                     reason = clean((raw.get("admission") or {}).get("reason"))
                     new_status = mark_recovery_failure(

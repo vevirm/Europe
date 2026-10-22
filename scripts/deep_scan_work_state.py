@@ -300,10 +300,11 @@ def fill_lane(
     *,
     target_size: int = DEFAULT_LANE_SIZE,
 ) -> list[str]:
-    """Keep unissued reservations, but rotate records after they have been packaged.
+    """Fill each lane with fresh tasks, not work already sent to a worker.
 
-    Issued records become retry work and compete with the live queue, so fresh work can
-    advance instead of the same package being regenerated indefinitely.
+    An `assigned` record in an issued package is in flight until its returned
+    result is processed. It must not be re-exported just because a user presses
+    Prepare Packages again. Validated recovery retries remain eligible.
     """
     lane = lane.upper()
     if lane not in state.setdefault("lanes", {}):
@@ -330,6 +331,12 @@ def fill_lane(
             continue
         occupied_elsewhere.update(k for k in row.get("assigned", []) if isinstance(k, str))
     occupied_elsewhere.update(terminal)
+    # Do not re-issue previously exported records without a returned outcome.
+    occupied_elsewhere.update(
+        key for key, rec in state.get("records", {}).items()
+        if isinstance(rec, dict) and rec.get("status") == "assigned"
+        and _scan_package_attempt_count(rec) > 0
+    )
     need = max(0, int(target_size) - len(current))
     if need:
         for key in prioritized:
@@ -432,6 +439,14 @@ def mark_recovery_failure(
     max_attempts = max(1, int(max_attempts))
     rec = state.setdefault("records", {}).setdefault(key, {})
     lane = rec.get("lane")
+    # Re-importing a retained JSON is NOT a fresh research pass. One issued
+    # package can charge a record at most once, even across separate imports.
+    already_counted = any(
+        isinstance(old, dict) and old.get("package_id") == package_id
+        for old in (rec.get("recovery_history") or [])
+    )
+    if already_counted or _attempt_count(rec) >= max_attempts:
+        return str(rec.get("status") or "recovery_retry")
     # Only a successfully validated defer consumes one of the three recovery
     # passes.  Merely shipping a record inside a ZIP must not consume a pass.
     attempts = min(max_attempts, _attempt_count(rec) + 1)
