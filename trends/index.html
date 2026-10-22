@@ -8,17 +8,60 @@
 <script src="../reader_clarity.js?v=1"></script>
 
 
+
 <!-- Legacy regression tokens only: reform.css?v=23.0 · site-shell.js?v=23.0 -->
 </head>
 <body>
-<header><div class="wrap top"><div><div class="kicker">Trends &amp; counter-trends</div><h1>Where Europe is moving — and what pushes back</h1><p class="lede">Two forces, one rough score. Trend vs. counter-trends from the Radar reasoning engine, not a scientific forecast.</p></div><nav class="nav"><a href="../">Start</a><a href="../radar/">Main Radar</a><a href="../read/">Read At Least This</a><a href="../frontier/quick/">Matrix</a><a class="primary" href="./">Trends</a><a href="../priorities/">Risks &amp; Opportunities</a><a href="../shocks/">External Shocks</a></nav></div></header>
+<header><div class="wrap top"><div><div class="kicker">Trends &amp; counter-trends</div><h1>Where Europe is moving — and what pushes back</h1><p class="lede">The future rarely travels in a straight line. Explore the forces moving Europe forward — and the ones pulling the other way. These are evidence-based signals, not predictions.</p></div><nav class="nav"><a href="../">Start</a><a href="../radar/">Main Radar</a><a href="../read/">Read At Least This</a><a href="../frontier/quick/">Matrix</a><a class="primary" href="./">Trends</a><a href="../priorities/">Risks &amp; Opportunities</a><a href="../shocks/">External Shocks</a></nav></div></header>
 <section class="core-flow"><div class="wrap flow"><a href="../radar/">1 · Radar</a><span>→</span><a href="../frontier/quick/">2 · Matrix</a><span>→</span><a class="current" href="./">3 · Trends</a><span>→</span><a href="../phenomena/">4 · Ongoing phenomena</a><span>→</span><a href="../priorities/">5 · Risks &amp; opportunities</a><span>→</span><a href="../shocks/">6 · External shocks</a></div></section>
 <main class="wrap">
-<section class="method"><div class="method-head"><h2>How to read the tug-of-war</h2><p class="method-note">The numbers are deliberately approximate: evidence-weighted indications, not probabilities. Click Sources to inspect the publications behind each side.</p></div><div id="corpusLine" class="corpus-line"></div></section>
+<section class="method"><div class="method-head"><h2>Two sides to every story</h2><p class="method-note">Each card shows a push and a pull. The scores are rough evidence balances, not odds. Curious why? Open Sources to see what each side rests on.</p></div><div id="corpusLine" class="corpus-line"></div></section>
+<section class="trend-explore" aria-label="Explore trend cards">
+  <div><div class="trend-explore-eyebrow">A fresh way in</div><h2>This week's reading trail</h2><p id="trailNote">The strongest finding leads. The other cards get a gentle reshuffle each week.</p><div id="trailLinks" class="trend-trail-links"></div></div>
+  <button id="surpriseTrend" class="trend-surprise" type="button" disabled>Surprise me ↗</button>
+</section>
 <div id="pairs" class="pair-list"><div class="empty">Loading</div></div>
 </main>
+<style>
+.trend-explore{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.25rem;margin:1.5rem 0 2rem;padding:1.25rem 1.5rem;background:#f2f5f5;border:1px solid #cdd9d8;border-radius:12px}
+.trend-explore h2{margin:.2rem 0 .4rem;font-size:clamp(1.2rem,2.1vw,1.55rem)}
+.trend-explore p{margin:0 0 .75rem;max-width:54ch;line-height:1.5}
+.trend-explore-eyebrow{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.72}
+.trend-trail-links{display:flex;flex-wrap:wrap;gap:.5rem}
+.trend-trail-links a{display:inline-block;padding:.4rem .7rem;border:1px solid #879e9d;border-radius:999px;color:inherit;text-decoration:none;font-size:.88rem;background:#fff}
+.trend-trail-links a:hover,.trend-trail-links a:focus-visible{background:#dbe9e6;text-decoration:underline}
+.trend-surprise{border:1px solid #142d38;border-radius:999px;padding:.8rem 1rem;background:#142d38;color:white;font:inherit;font-weight:700;cursor:pointer}
+.trend-surprise:hover,.trend-surprise:focus-visible{background:#30586a}
+.trend-surprise:disabled{opacity:.5;cursor:default}
+.pair{scroll-margin-top:1.5rem}
+@media(prefers-reduced-motion:no-preference){.pair:target{outline:2px solid #477c80;outline-offset:5px}}
+</style>
 <script src="../reader_rank.js?v=21.7"></script><script src="../reader_style.js?v=28.3"></script><script src="../historical/reasoning_context.js?v=1"></script><script src="trends.js?v=clear-20261020-3"></script>
 <script>
+/* Reader-only weekly variety. Keeps the selected evidence and reasoning unchanged.
+   Rotate within small, adjacent five-card shelves; never alter scenario axes. */
+(function(root,factory){
+  const api=factory();
+  if(typeof module==='object'&&module.exports)module.exports=api;
+  root.RadarReaderRotation=api;
+})(typeof globalThis!=='undefined'?globalThis:this,function(){
+  'use strict';
+  function rotate(items,week){
+    const result=Array.isArray(items)?items.slice():[];
+    const cycle=Number.isFinite(week)?Math.floor(week):Math.floor(Date.now()/604800000);
+    // Leave the lead finding first; vary the rest inside their original local rank bands.
+    for(let start=1;start<result.length;start+=5){
+      const end=Math.min(start+5,result.length);
+      const group=result.slice(start,end);
+      if(group.length<2)continue;
+      const shift=((cycle%group.length)+group.length)%group.length;
+      for(let i=0;i<group.length;i++)result[start+i]=group[(i+shift)%group.length];
+    }
+    return result;
+  }
+  return {rotate};
+});
+
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function surface(v){return globalThis.RadarReaderStyle?.surfaceText?.(v)||String(v||'')}
 function fmtDate(v){if(!v)return '';const d=new Date(v);if(Number.isNaN(d.getTime()))return String(v);return new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric'}).format(d)}
@@ -54,9 +97,17 @@ if(!all.length){
   const alternate=RadarTrends.build(raw,history);
   if(alternate.length){all=alternate;recovered=true}
 }
-const xs=wowCyclePairs(all).slice(0,25);
+const xs=RadarReaderRotation.rotate(wowCyclePairs(all).slice(0,25));
 document.getElementById('corpusLine').textContent=xs.length+' trend / counter-trend comparisons · rough evidence balances, not forecasts.';
-document.getElementById('pairs').innerHTML=xs.length?xs.map(pair).join(''):'<div class="empty">No trend comparisons are available in the published reasoning data.</div>';document.querySelectorAll('.tug-track [data-pull]').forEach(el=>{el.style.flexGrow=String(Math.max(0,Number(el.dataset.pull)||0))})}catch(e){console.error(e);document.getElementById('pairs').innerHTML='<div class="empty">Trend evidence is unavailable.</div>'}})();
+document.getElementById('pairs').innerHTML=xs.length?xs.map(pair).join(''):'<div class="empty">No trend comparisons are available in the published reasoning data.</div>';
+const cards=[...document.querySelectorAll('#pairs > .pair')];
+cards.forEach((card,i)=>{card.id='trend-card-'+(i+1)});
+const trail=document.getElementById('trailLinks');
+trail.innerHTML=cards.slice(0,3).map((card,i)=>`<a href="#${card.id}">${i===0?'Start with the lead':`Explore card ${i+1}`} ↘</a>`).join('');
+const surprise=document.getElementById('surpriseTrend');
+surprise.disabled=cards.length<2;
+surprise.addEventListener('click',()=>{if(cards.length<2)return;const index=1+Math.floor(Math.random()*(cards.length-1));cards[index].scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});cards[index].setAttribute('tabindex','-1');cards[index].focus({preventScroll:true})});
+document.querySelectorAll('.tug-track [data-pull]').forEach(el=>{el.style.flexGrow=String(Math.max(0,Number(el.dataset.pull)||0))})}catch(e){console.error(e);document.getElementById('pairs').innerHTML='<div class="empty">Trend evidence is unavailable.</div>'}})();
 </script><script src="../reader_language.js?v=5"></script>
 <script src="../site-shell.js?v=29"></script>
 </body></html>
