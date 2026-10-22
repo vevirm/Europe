@@ -8,25 +8,16 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
 
 - Authoritative V2 verified: **2303** (Main **1012** + Historical **1291**)
 - Automatic queue still needing V2 verification: **298** (Main **80** + Historical **218**)
-- Currently assigned to workers: **21** (Main **2** + Historical **19**)
+- Currently assigned to workers: **0** (Main **0** + Historical **0**)
 - Bounded access-recovery retries still eligible: **0**
 - Hands-on verification needed: **162**
-- Automatic queue pending and not yet assigned: **277**
+- Automatic queue pending and not yet assigned: **298**
 
 ## Worker lanes
 
 ### Worker A
 - Current package: `worker-a-20261022T081727Z-1dfb3b222aca`
-- Assigned unresolved records: **21**
-  1. `historical:id:c58e9132a77f52ca` — The Return of Industrial Policy in the EU: A Chance for Central and Eastern Europe?
-  2. `historical:id:d9ae3fea719c0f0e` — The EU-US Trade and Technology Council : mapping the challenges and opportunities for transatlantic cooperation on trade, climate and digital - Egmont Institute
-  3. `historical:id:998c410e3730dde5` — The EU ETS at a Crossroads: Competitiveness Concerns and Policy Scenarios
-  4. `historical:id:ed982dfad24e9b48` — Driving prosperity via competitiveness, research and innovation
-  5. `historical:id:a35d7c6799d456f2` — Europe’s Race to the Frontier: Building a Growth Model of De-Risked Innovation
-  6. `historical:id:a44459a30e0348e1` — Impact of World Oil Prices on the Formation of Macroeconomic Policies in Kazakhstan and the European Union: A Comparative Analysis
-  7. `historical:id:03985bc4a42e177f` — EU economic security: confronting the dual challenge of China and the US – CEPS
-  8. `historical:id:4a50ced606a91b1c` — What ways and means for a real strategic autonomy of the EU in the economic field? – CEPS
-  - … plus 13 more in the package manifest
+- Assigned unresolved records: **0**
 
 ### Worker B
 - Current package: `worker-b-20261022T072541Z-6bfae7a41ae4`
