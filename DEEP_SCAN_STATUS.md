@@ -8,7 +8,7 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
 
 - Authoritative V2 verified: **2198** (Main **907** + Historical **1291**)
 - Automatic queue still needing V2 verification: **391** (Main **192** + Historical **199**)
-- Currently assigned to workers: **72** (Main **17** + Historical **55**)
+- Currently assigned to workers: **72** (Main **72** + Historical **0**)
 - Bounded access-recovery retries still eligible: **2**
 - Hands-on verification needed: **155**
 - Automatic queue pending and not yet assigned: **319**
@@ -16,29 +16,29 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261022T055145Z-a5bde849d39e`
+- Current package: `worker-a-20261022T060219Z-a6cc29fca2a0`
 - Assigned unresolved records: **36**
-  1. `link:https://doi.org/10.1080/13563467.2026.2751101` — The peripheralisation of Europe’s battery industry: derisking regimes, productive models, and the geography of green industrial policy
-  2. `link:https://doi.org/10.1111/1758-5899.70258` — Africa and the ‘New Washington Consensus’: Green Industrialisation Through a Rethink of International Economic Law Rules
-  3. `link:https://institutdelors.eu/en/publications/why-marine-le-pens-draft-budget-threatens-the-future-of-europe-and-therefore-of-france/` — Why Marine Le Pen’s draft budget threatens the future of Europe (and therefore of France) - Institut Jacques Delors
-  4. `link:https://doi.org/10.1007/s43253-026-00187-3` — The Euro at a quarter of a century: economic policy and governance. Introduction to the special issue
-  5. `link:https://doi.org/10.1007/s11365-026-01259-w` — Technology transfer and innovation dynamics through clustering analysis of European Union countries
-  6. `link:https://op.europa.eu/en/web/about-us/faq#print_your_own_copies` — Deep dive on critical raw materials for hydrogen technologies in the EU - Publications Office of the EU
-  7. `historical:id:89a9fdab76b412b7` — After Covid-19: Economic security in EU-Asia connectivity - Egmont Institute
-  8. `historical:id:c6e71d93b99e63bb` — Beyond Corona: Getting EU Economic Security Right - Egmont Institute
+  1. `link:https://doi.org/10.1002/agr.70131` — Do Retaliatory Tariffs Re‐Route Trade? Evidence From the 2019 U.S. Tariffs on EU Wine — recovery attempt 3/3
+  2. `link:https://doi.org/10.1093/jeclap/lpag053` — Foreign subsidies control in the EU—2 years of practice — recovery attempt 3/3
+  3. `link:https://news.google.com/rss/articles/CBMimwFBVV95cUxOaWtudVNmS3RIb25nVW5rRjdiNTIyYm1xX2t5Z3dMNzliZW9YdDA5eFpmVEdNUXlQS0lRckMwbW1hN1JkcEtQdGRzZllBZHVfRldzV3ZMYzRDU1hXeTc1RTUwRmRKVlR4UFl0SXh5empPQU1uOWYxR2pCU3VSZnJBRmo2Nk5PRXVWZHp5MlFKbFlGb0wzVm55bXFnTQ?oc=5` — EU trade chief to meet CEOs over China strategy — recovery attempt 2/3
+  4. `link:https://news.google.com/rss/articles/CBMitgFBVV95cUxOX2hISF94TEZGRzNlMGV1NjA4NjBVU2hWMm5JZGJHOHBtSUxFME9uZEE3TUQwTDRHS1lrd3lRdGRQS1NrSGJSTWdZek8zbkw2a25rMFFFYWJENnBBTV9MTWZ4TUhtTjJfZHZCTW1LMW9NTi12bHRuMVp0d2dGVHM1TTBrUjJYUXVFcnVvb0RMUEsyX1V3SlZvb2tvd3NuWWtaa0NsQjNkNmM0em1sUVdMWUZ1THBOUQ?oc=5` — German industry presses Merz for tougher China policy — recovery attempt 2/3
+  5. `link:https://news.google.com/rss/articles/CBMiswFBVV95cUxQcGRtUVpOeWFvQWFUbmNJeGxjYlRuaktxd1AtbUw2bFAtOWJCbjBfSmNfMlJYT2xMcThMOUQ4bXNQUzV2N19kNHBkWGtOZXd1aHRfZTV5WXNsZ2RyR1hhcFB5MGN2VTlCSGYzaGJUYUpnWWZQSHVzN3plaDY0V2VtNzlYMFV4WG9NR2JIalFfeFdkWG1pQ1hnSFdCMTdFVHJXNWdIeUQwUktVeUxHM0NRdTJjQQ?oc=5` — Some Chinese workers see an ally in Brussels as EU trade tensions mount — recovery attempt 2/3
+  6. `link:https://news.google.com/rss/articles/CBMitAFBVV95cUxQdHl5VFZkOV9NSnVKamtaaVZjUXhpVjJoLVUweGtSek5KbkhWdDE1ekpOeWlTUHE1REduby15ZGxjY0Rka3FValJzYjR1TFFUZFRJcFNmX3pqT29KcElSOEtUTHRpNmxXV1pNV1lNWXRQcGNtOW9ldEx0WTFqZ1NzblN3UEZtWm1NakJKVTZwRVBsaG1USlF6cUxrUEVXVm81YzdwMk9zWmxNZ2sxVEc5bmFpdng?oc=5` — Europe’s Luxury Giants Discern Green Shoots in Key China Market — recovery attempt 2/3
+  7. `link:https://news.google.com/rss/articles/CBMihAFBVV95cUxPeENyVVNXOU9ZdUl0MFJQWGlVcjlEc041b0t1RU44alpxTHVYQ3ZwcE5fZHVEMFNHUHVqaTdLZFdSYjdWODRJd011MFh0OUlOMWd2MGg3TjI0X1hsUm91TWt4T3JvRlQwZjVPanh4bkhnaGpqcllqTzZCWGRpUU9yQ05kdHY?oc=5` — EU slips further behind US in race for critical minerals — recovery attempt 2/3
+  8. `link:https://news.google.com/rss/articles/CBMizwFBVV95cUxQV1kyWGRJRFg2YURDZDlvOEtjaFlOYWQxRW1Pcml0UjNkVEJ4R0lnVk9hNmtJQkRWbnNZVHpBa2tnV0JpVWRWcURVVHBqOVU0Y0lKM1ZVOWZld21XS1k5SVU0Umk0ckZDckZCbllRbnFCRmRQaEdIZDdHcVJHYzRnN1hpQVRzbWdaMzh0UVljYzNEQ2lHaDU0dy1tejhSVGI2LWVXS0UtTFFiZ1h6MjVWdDhiYTNuQ0lEZHhqWU9NaUxhQ3dmeVZpb0xZZE5KM1E?oc=5` — Chinese e-commerce giant JD.com offers EU remedies in Ceconomy takeover probe — recovery attempt 2/3
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20261022T055150Z-5a39abc25bc0`
+- Current package: `worker-b-20261022T060223Z-1e78e8895975`
 - Assigned unresolved records: **36**
-  1. `historical:id:bd6390ebd49d38da` — Beyond sanctions: How west Africa can recommit to democracy – European Council on Foreign Relations
-  2. `historical:id:a8acba649f2da634` — Sanctions: Commission guidance note on the provision of humanitarian aid in compliance with EU restrictive measures
-  3. `historical:id:62818d82a67acadc` — Key messages on the foreign subsidies instrument - a BusinessEurope position paper
-  4. `historical:id:40ea3ba6d8d9a84c` — Import and export bans
-  5. `historical:id:c1385a5e422d94e7` — Digital Partnership with the Republic of Korea
-  6. `historical:id:d34ffdca5a532461` — An Alternative Supply Chain in India? Taiwan’s Experience
-  7. `historical:id:064ffe75a9a7c694` — What EU sanctions policy can learn from European mutual defence – European Council on Foreign Relations
-  8. `historical:id:53150557b6dff2d6` — Supply Chain Security, From Taipei to Brussels
+  1. `link:https://doi.org/10.1016/j.econlet.2026.113230` — The 2025 U.S. tariffs on China and trade diversion to the EU — recovery attempt 3/3
+  2. `link:https://doi.org/10.1111/twec.70110` — Trade Effects of EU Sanctions Against Russia: Evidence From the Visegrad Group — recovery attempt 3/3
+  3. `link:https://doi.org/10.1002/ldr.70640` — Agroforestry as a Climate Resilience Adaptation Strategy for Sustainable Agricultural Output: Evidence From China and Europe — recovery attempt 3/3
+  4. `link:https://doi.org/10.1177/17816858261480452` — The challenge of manufacturing critical medicines in the EU — recovery attempt 3/3
+  5. `link:https://www.ispionline.it/wp-content/uploads/2026/09/ACI_EP_Catalogue_FINAL6.xlsx` — Dataset for European Parliament study 'Strengthening the EU’s resilience against economic pressure and documenting coercive practices' | ISPI — recovery attempt 3/3
+  6. `link:https://news.google.com/rss/articles/CBMipwFBVV95cUxQUUswdG5RR3A3czVTQV82SzUwWDh1ZDZrYjNXcld1cUQwOW9nZENwVlhQRVpfMXRQY2RXZ1pLcVlnal9jeGJxelREVVpWeTZyTTI2bnJKUXlIYUNtNklZQnkyWHNPX1NzZ1lIRVB2SVFfWkJTWkg4ZFM5WE5rdTVISldEczdQX1BIdkRyd21lYVhibzVLRkwwOGVIWXdfODNPRzloNWhEWQ?oc=5` — Denmark says Greenland sovereignty safe under Trump's deal — recovery attempt 2/3
+  7. `link:https://news.google.com/rss/articles/CBMiowFBVV95cUxNekNBZWwxSDJKTHl3ZUNJZ0Mwd0xDbERTVXFOcXZxa3hVejJfdDZGWTVMcEhhbXlkaW5nTm9JVEF0N1ZBdnF1bWZHeGRDWDBoTnZMVlBiTWZDQ3lUUF9teU9ndmZvdHZCM0EtWTRfaEFTTTE0VlBxWG5NZkkzOHBmSXFTZ2w2Y1BrVmJHUmgxRVR2YkN6SF83M3ZhQkdrSENqbTJF?oc=5` — India gains wider EU steel access, but carbon levy remains — recovery attempt 2/3
+  8. `link:https://news.google.com/rss/articles/CBMi0AFBVV95cUxPcHBBN01iSVZHMEMwclNDbGk4VWNOYlpaYUdfUk1IX0Q2OHpMeF9jcHN0Qk1Gakt3cnQ3ak5hQmJPRE1fTWpMY0x3Qk95bWROX2Ntb3lqanh0NnlWOEpvYk9vdEVLMTZGbzZCZVgtN1RFUTZIZTVwMmdaZ2NJRDFXRnNvNDNxbzJoS0tudWZSaU0wUWdFQTZHQXZhdVJXUTk3aUZHZ1AzQl8xOFU1aTIyd041RmhnYTZuRWxSUWIxZ1AwS0ZWS1B0bk5hbU5CNGVB?oc=5` — IAA: China powers into Europe’s truck market + Xi and Modi narrow their differences - Table.Briefings — recovery attempt 2/3
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
