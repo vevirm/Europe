@@ -1,35 +1,51 @@
 # Deep Scan V2 work status
 
 This file is generated from the authoritative Deep Scan sidecar plus the persistent worker-assignment ledger.
-It exists so a new chat or operator can see what has already been verified, what each worker owns, and what has been terminally dropped after repeated failed scans.
+It exists so a new chat or operator can see what has already been verified, what each worker owns, and what now needs hands-on verification.
 
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
-A validated `defer` or rejected current-package scan return counts as a failed attempt. After **3** failed attempts, the record is terminally dropped from automatic scanning and active reasoning.
+A validated `defer` counts as one genuine recovery pass. After **3** unsuccessful passes, the work leaves the automatic queue and enters **Hands-on verification needed**.
 
 - Authoritative V2 verified: **2184** (Main **893** + Historical **1291**)
-- Automatic queue still needing V2 verification: **328** (Main **184** + Historical **144**)
-- Currently assigned to workers: **0** (Main **0** + Historical **0**)
+- Automatic queue still needing V2 verification: **405** (Main **206** + Historical **199**)
+- Currently assigned to workers: **16** (Main **16** + Historical **0**)
 - Bounded access-recovery retries still eligible: **0**
-- Terminally dropped after failed scans: **155**
-- Automatic queue pending and not yet assigned: **328**
+- Hands-on verification needed: **155**
+- Automatic queue pending and not yet assigned: **389**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-a82b366ad8c0`
-- Assigned unresolved records: **0**
+- Current package: `worker-a-20261022T053439Z-21d1273a306c`
+- Assigned unresolved records: **8**
+  1. `link:https://doi.org/10.1093/jcsl/krag027` — The Netherlands’ arms export control framework: law and policy
+  2. `link:https://doi.org/10.1111/1758-5899.70191` — Evolving Beyond the Brussels Effect: EU Digital Diplomacy and the Broadening of External Digital Strategy
+  3. `link:https://cdn.ceps.eu/2026/10/AI-conformity-assessment-in-Ukraine.pdf` — Artificial intelligence conformity assessment in Ukraine – CEPS
+  4. `link:https://defence-industry-space.ec.europa.eu/eu-space/product-environmental-footprint-category-rules-pefcr-space-sector_en` — Product Environmental Footprint Category Rules (PEFCR) for the space sector
+  5. `link:https://doi.org/10.1093/jel/eqag037` — Algorithmic governance of carbon markets: the limits of EU climate law and AI as regulatory infrastructure
+  6. `link:https://doi.org/10.1002/epa2.70048` — Energized? How German and Italian Party Actors Used Emotions in Energy Policy Narratives During the 2024 EU Elections
+  7. `link:https://doi.org/10.1016/j.heliyon.2026.e45271` — Reframing SME financing constraints: An integrative framework for measuring capital access heterogeneity in Europe
+  8. `link:https://doi.org/10.1093/jcsl/krag028` — Confiscatory measures against the property of an aggressor state: self-defence instead of sanctions?
 
 ### Worker B
-- Current package: `worker-b-03b7f93735d9`
-- Assigned unresolved records: **0**
+- Current package: `worker-b-20261022T053443Z-d7ce48c84595`
+- Assigned unresolved records: **8**
+  1. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=5914f1eb-cbb5-11f1-8b4c-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) – Title IV (ICT Supply Chain) - Presentation - Publications Office of the EU
+  2. `link:https://doi.org/10.65864/ufb8cp6fw3` — Enforcing Competition in Public Procurement
+  3. `link:https://doi.org/10.1080/09692290.2026.2745879` — Europe’s new geoeconomic cleavages: from capitalist diversity to international vulnerability in European political economy
+  4. `link:https://www.atlanticcouncil.org/wp-content/uploads/2026/10/the-european-union-as-a-compound-power-in-cold-war-2.0-2.pdf` — The European Union as a compound power in Cold War 2.0
+  5. `link:https://doi.org/10.1080/09692290.2026.2748311` — Situational state capacity for transformative industrial policy in dependent market economies
+  6. `link:https://doi.org/10.1016/j.rspp.2026.100320` — FDI-led reindustrialisation and regional catching-up: Evidence from Hungary
+  7. `link:https://doi.org/10.1057/s41599-026-09491-z` — Government governance as a strategic enabler of resilient energy systems: insights from the circular economy transition in European countries
+  8. `link:https://op.europa.eu/en/publication-detail/-/publication/92b50f77-cc2d-11f1-8b4c-01aa75ed71a1/language-en` — The TIM Dual-Use dashboard
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
 - Assigned unresolved records: **0**
 
-## Terminally dropped after failed scans
+## Hands-on verification needed
 
-These records no longer consume automatic Deep Scan slots and are excluded from active reasoning after three failed attempts. Re-open one only by explicitly resetting its work-state entry after materially new evidence becomes available.
+These works no longer consume automatic Deep Scan slots. Their identity is believed to be real, but substantive evidence could not be recovered automatically. Re-open one only when you have a new source, PDF, repository copy, or other materially new access route.
 
 - `link:https://doi.org/10.1093/ser/mwag003` — **Green monetary transitions? Central banking and climate finance in Europe and China** — attempts: 3/3 — Socio-Economic Review — 2026-07-09 — Identity was verified, but substantive evidence remained inaccessible or too thin after the required recovery search. — https://doi.org/10.1093/ser/mwag003
 - `link:https://news.google.com/rss/articles/CBMi0AFBVV95cUxOb21ZTW5pS2NjT2NnS0xra2VZNS04a2hUbUFBSF8ycTBvUUNaT1Y2MDlaYUhrbDJPVUtWeGVocWU1STRsTEhPdVFzNkkwTWh1ek9TVkdGVkY2S0FjMnQ4YWNrSm1VcjctdG1CWWxRV3ZSc3Q4OGJlVi1kNXNYcW1iaUx2dDBNNjF2RlZSN3I5SHdIYWVfRzNSV1Q3MEo4ZzBPYV9VN3psQUFyRW1FYW9GX1RNMjFLOU1jaEx2OTVjTXNQU0dNQ3ZFd2Vka2oyYkUw?oc=5` — **China captures Europe’s hybrid market + Beijing pushes back on overcapacity claims - Table.Briefings** — attempts: 3/3 — Table.Media — 2026-07-28T20:37Z — Deep Scan return rejected: defer must not contain substantive deep_analysis claims — https://news.google.com/rss/articles/CBMi0AFBVV95cUxOb21ZTW5pS2NjT2NnS0xra2VZNS04a2hUbUFBSF8ycTBvUUNaT1Y2MDlaYUhrbDJPVUtWeGVocWU1STRsTEhPdVFzNkkwTWh1ek9TVkdGVkY2S0FjMnQ4YWNrSm1VcjctdG1CWWxRV3ZSc3Q4OGJlVi1kNXNYcW1iaUx2dDBNNjF2RlZSN3I5SHdIYWVfRzNSV1Q3MEo4ZzBPYV9VN3psQUFyRW1FYW9GX1RNMjFLOU1jaEx2OTVjTXNQU0dNQ3ZFd2Vka2oyYkUw?oc=5
