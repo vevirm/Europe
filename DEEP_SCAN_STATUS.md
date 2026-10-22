@@ -6,39 +6,39 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` counts as one genuine recovery pass. After **3** unsuccessful passes, the work leaves the automatic queue and enters **Hands-on verification needed**.
 
-- Authoritative V2 verified: **2344** (Main **1050** + Historical **1294**)
-- Automatic queue still needing V2 verification: **257** (Main **42** + Historical **215**)
-- Currently assigned to workers: **72** (Main **15** + Historical **57**)
-- Bounded access-recovery retries still eligible: **0**
+- Authoritative V2 verified: **2414** (Main **1063** + Historical **1351**)
+- Automatic queue still needing V2 verification: **187** (Main **29** + Historical **158**)
+- Currently assigned to workers: **72** (Main **5** + Historical **67**)
+- Bounded access-recovery retries still eligible: **2**
 - Hands-on verification needed: **162**
-- Automatic queue pending and not yet assigned: **185**
+- Automatic queue pending and not yet assigned: **115**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261022T093309Z-bc1d289034ec`
+- Current package: `worker-a-20261022T101819Z-47e274ea5608`
 - Assigned unresolved records: **36**
-  1. `historical:id:a9ac9a94b023160a` — Japan-EU relations after World War II and strategic partnership
-  2. `historical:id:3ca2d6e62eea485c` — India-EU strategic partnership: a new roadmap
-  3. `historical:id:3fd4563a21df2cd7` — Euroframe report 2019: Economic assessment of the euro area - Kiel Institute
-  4. `historical:id:03844fe375bab751` — Eu Strategic Partnerships
-  5. `historical:id:657998fe592f1c46` — Screening of foreign direct investment (FDI) into the EU – BusinessEurope’s views
-  6. `historical:id:bb0a919a51b1bbd1` — A Rules-Based Order to Keep the Internet Open and Secure
-  7. `historical:id:0fcc2f334227f1b4` — Reading the Footprints: How Foreign Investors Shape Countries’ Participation in Global Value Chains
-  8. `historical:id:f5f19af86a5ecd69` — Euroframe report 2017: Economic assessment of the euro area - Kiel Institute
+  1. `link:https://news.google.com/rss/articles/CBMikwFBVV95cUxObW1IWjhVODBnLWVSTUdKZkZYb2tGOUVlOFRtVXJWMjA2Rld4ZUoxN0M5NGdMbHFLS1RzRXI1OU5NNmtlU1NMVHE4SVNfeHgxMVJ6SWljS1hUcnBweVkySkh3UmZ6bXROcVVob1hlWl9UNWdTUnBVZVJsM2lWM1JIZURqaFBldVlZZzFpU093QTNSb0k?oc=5` — 5 battles that will decide EU’s ‘Made in Europe’ push
+  2. `link:https://news.google.com/rss/articles/CBMiigFBVV95cUxNWFJ6SHYyYWhObl9jUFVoQ09meFh2QWhvVURLZGo0Um5NRDVJcFloX2RaTDFyVmtpVlNtZ00zdVhsNklFYXR0TWlNX3g1Tm93a2J2cHNES3hsSUF1NWdaMmJZTmhENGhwNlFEanVxd2dFVkJtVXgtUVNRcXVYTjBsVEcwYkJHaEozc2c?oc=5` — Opinion: After ‘Made in Europe’ comes the hard part
+  3. `link:https://news.google.com/rss/articles/CBMiqgFBVV95cUxORFJ5UnNHNVROcS0zVW96UHRRSDRuVGhkWTJJNTZqOWJMaFh6am05S3Q2c3NUODlWLXNEbGtUZW1SX0pvYTZiUFZmQXVlM2t0SDAtenpTLXZDWWQxM2NGUzhoYmswcXMtWU52bHRIVUg4S0thVU5ISkdsVFA5dnpyUjFjVUVIN2JmOUVQTHRZajFVZ1VWWWNUWXVLaHk4dkhnRWZ6eXljTno2QQ?oc=5` — Rare earths: How new-old export controls would burden German companies - Table.Briefings
+  4. `link:https://news.google.com/rss/articles/CBMifkFVX3lxTFBHNVpGYllqUDAtbkZERkYxVWFjZWM0a1pJNV9wMmdKd0dXSzBPLTZiRWlXbzR0cWhVc1NoWWl4Y3piLS1GbHlETDBZRVBHMVd4bWk3QkpXXzh0cFVsbkU1dTVFbjExcy1rVktPQjllcl9qNGlvakZzSVJXbEdGZw?oc=5` — European Campaign and Partnership Manager - Euractiv Jobs
+  5. `link:https://news.google.com/rss/articles/CBMi8AFBVV95cUxOY29yNVBQdkJmVDN6M1lXQTFPV1ZSRGp3VWd2cU1XU1c1dzZ1TzVQM2l4UUZjbWpzQzNQaDBSOERaNDVyeU52aFNmVTRoamNIUm50RFBNZFBUNmNtLWpsN1hxLWtsaDNrRkFYR2tvcWpzOGpDODlfeF92ZHlhRGFsRUVocWEyVXFzcGtxQ015ZUdqdTdKblZ6blYtNXVnZVJXNHR5LVJWRWV1SWh3TDBTWEMwUmZPc0RVTE1KMmhOQkdmbTl3bXlid3pFVERqLTJqc0RaU0ZjQ1NlaEdIUTRUNzliR1FKZUtUeXROOE41MFk?oc=5` — ‘Manual for autocrats’: how Fico’s rule-of-law breaches put Slovakia in EU sanctions crosshairs
+  6. `historical:id:55d1298887962cbf` — Continuity in times of geoeconomic change: the European Union’s strategic trade relations with the Global South
+  7. `historical:id:302703dc36d212e9` — Trade war to cooperation: scrutinizing China’s strategies to the EU carbon border adjustment mechanism
+  8. `historical:id:eeed4bd14252e3f8` — The Level Playing Field and Determining Trade Impact under Trade Agreements: Implications from the EU–UK Trade and Cooperation Agreement
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20261022T093327Z-18bb474cd089`
+- Current package: `worker-b-20261022T101831Z-34e82bccfb0e`
 - Assigned unresolved records: **36**
-  1. `link:https://doi.org/10.1080/13563467.2026.2751101` — The peripheralisation of Europe’s battery industry: derisking regimes, productive models, and the geography of green industrial policy
-  2. `link:https://doi.org/10.1111/1758-5899.70258` — Africa and the ‘New Washington Consensus’: Green Industrialisation Through a Rethink of International Economic Law Rules
-  3. `link:https://institutdelors.eu/en/publications/why-marine-le-pens-draft-budget-threatens-the-future-of-europe-and-therefore-of-france/` — Why Marine Le Pen’s draft budget threatens the future of Europe (and therefore of France) - Institut Jacques Delors
-  4. `link:https://op.europa.eu/en/web/about-us/faq#print_your_own_copies` — Deep dive on critical raw materials for hydrogen technologies in the EU - Publications Office of the EU
-  5. `link:https://news.google.com/rss/articles/CBMirwFBVV95cUxNVklqUktCUW5XTlNrbkNVak5yN0NOT2JZMTdtUDMzLWlxRmFYMDRZMFJJVnE0VklDMGNYQ3ZOd2FYZHYtUk5pbUlIOGt2YmZPMzRNNkhlV1VYT1ZQTWtKVDFDSVhIdV9sWjZBVDZsNFVFcVJ1ZXJsSUNxLWhGYUpITHJ6MG1vQmotaElnODZkYkFjcWNIODdTalY3dkF6cmg0LVVyQnFZVUpRdEpNb3JR?oc=5` — US trade deal: How the EU is saying goodbye to the WTO - Table.Briefings
-  6. `link:https://news.google.com/rss/articles/CBMipAFBVV95cUxOcHRFWGpyX3MyRUdsY2hpcWMwb2QxUi1LcDFlc21iYTY4ZEsxVFc3N0p0Q3FVSlRyVXRnNGVEQWNmcnBxYTMyOGtMMjdoNjJtUnIzSnhBUS02amtPRVhzRWwwSG1EcnA2TzFWdFBYb2RfemxjdlRyTEVfRTlUd2lQOEJScDQ5b3lvaXI5eTluRTZfTDdGNTVnRFVsQkRkTnZJVFlWMQ?oc=5` — Merz: Unfair trade practices put ‘massive pressure’ on the EU - Table.Briefings
-  7. `link:https://news.google.com/rss/articles/CBMiygFBVV95cUxNQjlIM1ZuaFZILU80UHF3M18xTkFTVUNSQ1JYbVlhaTlhZF9ZaE5EaTktbkZsaVJ4aXBwNWFrZE93WWJDdUUzZlAzVzVNN0VtekFxeFFFYlQwSkdGX180SzlIWGJ4V1hpdDNlcTlLN0Z6MzVLT0NiZVFqR3MySDQ3RGVPZzMxSG1iYmdxcEIycXFuN0tJSDFZM21XSlV6YkZXQzNVVzhQNkZQOFdVZmZBMm45UzlwRHQwaVBWVmw2WjFLYjE1MENoYXpB?oc=5` — Global Gateway: German government wants to give EU initiative a stronger economic focus - Table.Briefings
-  8. `link:https://news.google.com/rss/articles/CBMijgFBVV95cUxNOGhpX2pSeTZ3R3NGU2thd3V2SENmRDloTVV6dG1ORDBzZFlJOEM1VFJrcmU4bkR0RTNoSmNGNWtjLVFoTE1XZ0lrb1NTcHZHcFJGZ1dJOEcwb3hscFUtTkxubFN4RHNMM21ObVlhTjZESVZPNU84M1dkclNEajdxZXRlaXhFWHM3R1hkV2pn?oc=5` — EU and Ukraine want hydrogen partnership - Table.Briefings
+  1. `historical:id:89a9fdab76b412b7` — After Covid-19: Economic security in EU-Asia connectivity - Egmont Institute
+  2. `historical:id:c6e71d93b99e63bb` — Beyond Corona: Getting EU Economic Security Right - Egmont Institute
+  3. `historical:id:3eb892cf18d9162a` — Balancing Economic Security and Investment Protection – The Case of Nexperia and the China–Netherlands BIT - CELIS Institute
+  4. `historical:id:77fa088419baee78` — One in Four Industrial Companies Sees a Decline in Its Own Competitiveness | ifo Institute
+  5. `historical:id:18dfd71f0592338e` — Industrial policy for defence: Lessons from history - Kiel Institute
+  6. `historical:id:adc3332c5e49270e` — German Industry’s Competitiveness Continues Downward Trend | ifo Institute
+  7. `historical:id:cdb7a28ed38bf08a` — Financial and business service measures
+  8. `historical:id:4c0366f0b5518cef` — Anti-corruption sanctions: Preparing for the time after Trump – European Council on Foreign Relations
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
