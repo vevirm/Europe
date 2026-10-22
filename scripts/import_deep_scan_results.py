@@ -317,6 +317,12 @@ def validate_v2_result(
     if decision == "drop_unverifiable":
         if identity_verified:
             problems.append("drop_unverifiable requires identity_verified=false")
+        # A claim that verification was not attempted is not a completed failed
+        # recovery ladder. Never count it against the three-pass limit.
+        unfinished = [step for step in required_retrieval_steps
+                      if _outcome(audit_by_step.get(step, {}).get("outcome")) in {"not_verified", "unattempted", "pending", "skipped"}]
+        if unfinished:
+            problems.append("drop_unverifiable has unfinished recovery steps: " + ",".join(sorted(unfinished)))
         missing = required_retrieval_steps - attempt_steps
         if missing:
             problems.append("drop_unverifiable missing retrieval steps: " + ",".join(sorted(missing)))
@@ -336,6 +342,13 @@ def validate_v2_result(
             problems.append("defer requires identity_verified=true")
         if depth != DEFER_EVIDENCE_DEPTH:
             problems.append(f"defer requires evidence_depth={DEFER_EVIDENCE_DEPTH}")
+        # A research step explicitly marked not_verified is unfinished work, not
+        # a failed substantive recovery pass.  Never charge it as one of three.
+        unfinished = [step for step in required_retrieval_steps
+                      if _outcome(audit_by_step.get(step, {}).get("outcome")) in {"not_verified", "unattempted", "pending", "skipped"}]
+        if unfinished:
+            problems.append("defer has unfinished recovery steps (not a genuine attempt): "
+                            + ",".join(sorted(unfinished)))
         missing = required_retrieval_steps - attempt_steps
         if missing:
             problems.append("defer requires the full retrieval ladder: " + ",".join(sorted(missing)))
@@ -641,7 +654,10 @@ def main() -> None:
                     continue
 
                 decision = clean((raw.get("admission") or {}).get("decision")).lower()
-                if decision == "defer":
+                if decision in {"defer", "drop_unverifiable"}:
+                    # Both an identified but unreadable source and an entirely
+                    # unverified identity require three genuine failed research
+                    # passes; no one-pass terminal drop.
                     # Once manual review is reached, more copies of the same
                     # failed research do not consume a fourth recovery pass.
                     # A separate, substantively verified KEEP may still enter.
