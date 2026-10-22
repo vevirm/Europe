@@ -16,7 +16,7 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261022T063836Z-c285b3681b30`
+- Current package: `worker-a-20261022T064727Z-c285b3681b30`
 - Assigned unresolved records: **36**
   1. `link:https://news.google.com/rss/articles/CBMihAFBVV95cUxPeENyVVNXOU9ZdUl0MFJQWGlVcjlEc041b0t1RU44alpxTHVYQ3ZwcE5fZHVEMFNHUHVqaTdLZFdSYjdWODRJd011MFh0OUlOMWd2MGg3TjI0X1hsUm91TWt4T3JvRlQwZjVPanh4bkhnaGpqcllqTzZCWGRpUU9yQ05kdHY?oc=5` — EU slips further behind US in race for critical minerals — recovery attempt 2/3
   2. `link:https://news.google.com/rss/articles/CBMizwFBVV95cUxQV1kyWGRJRFg2YURDZDlvOEtjaFlOYWQxRW1Pcml0UjNkVEJ4R0lnVk9hNmtJQkRWbnNZVHpBa2tnV0JpVWRWcURVVHBqOVU0Y0lKM1ZVOWZld21XS1k5SVU0Umk0ckZDckZCbllRbnFCRmRQaEdIZDdHcVJHYzRnN1hpQVRzbWdaMzh0UVljYzNEQ2lHaDU0dy1tejhSVGI2LWVXS0UtTFFiZ1h6MjVWdDhiYTNuQ0lEZHhqWU9NaUxhQ3dmeVZpb0xZZE5KM1E?oc=5` — Chinese e-commerce giant JD.com offers EU remedies in Ceconomy takeover probe — recovery attempt 2/3
@@ -29,7 +29,7 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20261022T063841Z-cf5dcf8e1d1f`
+- Current package: `worker-b-20261022T064730Z-cf5dcf8e1d1f`
 - Assigned unresolved records: **36**
   1. `link:https://doi.org/10.1002/ldr.70640` — Agroforestry as a Climate Resilience Adaptation Strategy for Sustainable Agricultural Output: Evidence From China and Europe — recovery attempt 3/3
   2. `link:https://doi.org/10.1177/17816858261480452` — The challenge of manufacturing critical medicines in the EU — recovery attempt 3/3
