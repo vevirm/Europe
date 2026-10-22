@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-admission-v1",
-  "updated_at": "2026-10-22T05:49:50Z",
+  "updated_at": "2026-10-22T06:36:28Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "decision": "keep",
@@ -292,12 +292,16 @@
       "source": "deep_scan_v2"
     },
     "link:https://doi.org/10.1002/agr.70131": {
-      "decision": "drop",
-      "target_strand": "A",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "decision": "drop_unverifiable",
+      "target_strand": "",
+      "reason_code": "EVIDENCE_ACCESS_FAILED_3X",
+      "reason": "Substantive evidence remained inaccessible after three validated Deep Scan recovery passes. The record is terminally dropped from automatic scanning and active reasoning to prevent repeated retry loops.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:19Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Identity confirmed against publisher DOI, dates, author, and independent ResearchGate listing; Wiley full text/PDF redirected to abstract, and title/repository searches did not retrieve substantive full text. Third-attempt hard-final pass completed, including official publisher, repository and alternate query routes. Insufficient beyond-abstract evidence for an authoritative admission decision.",
+      "recovery_attempts": 3
     },
     "link:https://doi.org/10.1007/s13347-026-01186-2": {
       "decision": "drop",
@@ -464,12 +468,16 @@
       "duplicate_of": ""
     },
     "link:https://doi.org/10.1111/twec.70118": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "A",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "A_SUBSTANTIVE_EU_RI",
+      "reason": "Results qualify assumptions about EU sanctions as economic leverage over resource-producing states and neighbouring jurisdictions.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:23Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Source identity confirmed by title/publisher and original text. Historical associations, model dependent; legal tax changes are not collected revenue gains and EU-specific effects were smaller.",
+      "duplicate_of": ""
     },
     "link:https://eur-lex.europa.eu/eli/reg/2021/821/oj/eng": {
       "decision": "keep",
@@ -532,12 +540,16 @@
       "duplicate_of": ""
     },
     "link:https://doi.org/10.1093/jeclap/lpag053": {
-      "decision": "drop",
-      "target_strand": "A",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "decision": "drop_unverifiable",
+      "target_strand": "",
+      "reason_code": "EVIDENCE_ACCESS_FAILED_3X",
+      "reason": "Substantive evidence remained inaccessible after three validated Deep Scan recovery passes. The record is terminally dropped from automatic scanning and active reasoning to prevent repeated retry loops.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:19Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Publisher verifies work identity, authors and publication 14 August 2026, but only introduction to study available; access gated beyond it. Other related FSR articles cannot substitute for this claimed two-years-of-practice study.",
+      "recovery_attempts": 3
     },
     "link:https://www.eib.org/files/publications/20260139-170926-redesigning-supply-chains-eu-firms-in-a-time-of-geopolitical-risk-en.pdf": {
       "decision": "keep",
@@ -596,12 +608,16 @@
       "duplicate_of": ""
     },
     "link:https://doi.org/10.1016/j.econlet.2026.113230": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "A",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "A_SUBSTANTIVE_EU_RI",
+      "reason": "Empirical EU-wide product-level analysis of US–China tariff shock and diversion to European market, directly supporting geoeconomic trade-exposure assessment.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:23Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Publisher full-text search extract provided introduction, data, specification, results and conclusions; matches Economics Letters article 113230, DOI and authors. SSRN Bundesbank-authored working-paper listing and RePEc independently corroborate identity. 19% baseline increase is confined to highest diversion-potential decile; no significant unit-value response.",
+      "duplicate_of": ""
     },
     "link:https://ecipe.org/publications/audiovisual-services-neglected-area-eu-competitiveness/#_ftnref4": {
       "decision": "keep",
@@ -876,12 +892,16 @@
       "duplicate_of": ""
     },
     "link:https://doi.org/10.1111/twec.70110": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "A",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "A_SUBSTANTIVE_EU_RI",
+      "reason": "Quantitative evaluation of EU sanctions and European member-state bilateral Russian trade is central to the geoeconomic coercion and energy-dependence radar.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:23Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Wiley journal confirms authors, June 1 first publication, August 2026 issue, DOI. Full text unavailable through publisher/ResearchGate listing, but coauthor Csaba Weiner reports extensive first-hand account of research questions, data, identification and findings at his ELTE research institution (Oct 1 2026). Evidence based on this substantive primary report, not on abstract alone. Third-attempt recovery included publisher, author institution and bibliographic index.",
+      "duplicate_of": ""
     },
     "link:https://doi.org/10.1177/00157325261430979": {
       "decision": "keep",
@@ -2298,10 +2318,14 @@
     "link:https://doi.org/10.1093/grurint/ikag069": {
       "decision": "drop",
       "target_strand": "A",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "A_NON_RESEARCH_OR_IRRELEVANT",
+      "reason": "Source is not a substantive European economic-security research contribution.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:22Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Source identity confirmed by title/publisher and original text. It discusses real trade-policy developments but has no standalone substantive analytical research design; current policy event should be sourced from official documents, not this Strand A editorial.",
+      "duplicate_of": ""
     },
     "link:https://doi.org/10.1080/2329194x.2026.2688199": {
       "decision": "drop",
@@ -3806,10 +3830,14 @@
     "link:https://news.google.com/rss/articles/CBMiswFBVV95cUxPVDdZb3REQjZMNzdvaXR1d0x1Tk94SklfbGR0U3FwUXhKNXFQLWpjTkxmanRUaGRDbDZoeEtQTThsYWp6OFlyWWY4UjBheDRfMHliT2lVUWwyZmZ2cjc1WUZzTzZqX0wxd1hsMS14WVItcThnVnVuVnNDUWNLcEprazlMQVB0WDJBa2JmNWNFZDlLZ2FOM0lCNHRHMkdwVVl6NW9jTDh0eWFNV1dkb0pKUnN6dw?oc=5": {
       "decision": "drop",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Story exists but does not document a fresh, substantive policy, trade or investment measure; proposed meeting/social reaction alone insufficient for Strand C.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:21Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-09-24, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMitwFBVV95cUxNZmUyLU9TY0VxUUNJNndIX1RDZmZQN2F0QktSNlV5ZlltUVNZUkFRb2RwdlVnX21UMGd4Sm44WmlXQkE0UW9NQ3FwTi1EQUZfYkw5UWtwY251cENOV1k0UC1fS1dKQklUOG9MVUk1MVpfNW9yNTN4aGcyQ0pCQ0Q4cHphWEdwMThGNTFMSkpFVDJmODBjX2VnVGdmN1pKTmx0Qms4STJnVGdkU0hxRnJZd2RFRkNITXc?oc=5": {
       "decision": "drop_unverifiable",
@@ -3860,12 +3888,16 @@
       "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMiuwFBVV95cUxObUprS1hOUGhNSlFncjNLQ3ZDanpZcm50TEpqblNDSDhVNmlUVk5GeElmMndvbWt0TldCRGxucnZ3Nkg4SjU3OEstY1M0TkplN1I4b2dhVFVXVVk4czgtcWJCSDhvLTZUWG5ka0oyMVRIZmJvMjNTT3gzYUs4QjY5Z3NFNWN3aUhZYTFGbU9TVDEwemZXX3MxNEtSZFFvU1QxbUtUa0ZpeDJPaldENllFRWh1NkZQNHlLWU1j?oc=5": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Substantive current European economic-security policy/trade development directly described in the source.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:22Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-09-24, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMi5wFBVV95cUxNcHFTeURQY2VVaXJHekdiZjZhZGhTVG5UMGQ2Zkc2OWliNkt0enBOZGIyMGRPVnc1bkJGWm9YSkRDTWtxc0pqdDUtN0FrT1V5MzduNklGazRPYWZpV01tXzJMOHhoaG00ZFpWbHRzb0E5VzhkSmdFQWlXN3QwMlluenQxTlBCSnB5a3A5ZHIzZEFfZlNPWXNfTUZSbzdBYnhYX1dqaVA0ZFYxSGg5RWNOSXN0MzJ2Y3UwMUxoU1gyTGVIZVU2cXBxaktFb0lGS3NwdUw3dU90NWFPbWpwZGpWbkl2TEpfbzQ?oc=5": {
       "decision": "drop",
@@ -4052,28 +4084,40 @@
       "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMivwFBVV95cUxOak9rOXBJRzhwYzJ3emNxMTNrOFhGOVpWN0F2UFNvbm0wbnNZbWxHY0VHbEJldFRtX3VvTHBHV2xXTUZmSmNVLTFGT245ekpKUUtDaFN1bXRXVXNyRmZPclR0MEJjZWFma2pVTnZhdzdHZU54cVFEbDZ2dno5cmFZeXJCVXdGNmNabWZjc01lSUxZbXZ4Z3FiblFkOUxkMFVkREE0ZC0yd2t4cTloRy1QNU10VDlqajc3NHFHblp5MA?oc=5": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Substantive current European economic-security policy/trade development directly described in the source.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:21Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-09-22, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMikgFBVV95cUxNQ2p5ZTFLMUotTmF0YVctdTI0QTR1Z3E3ZVZFWFhJdmV6clZ1WjFRQTNQaDZaSkV4eGRjWHEyeDBqT3FiMjExUVhhMkJYcEhKV0tkSS0xOUlfSW42dkxVNktsRGFNT1RObVdwS2VCWVFldFA2OFJOd2dTanRPeGxlejJPUmFHS0EyTXpzYjBzUXNxZw?oc=5": {
       "decision": "drop",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Story exists but does not document a fresh, substantive policy, trade or investment measure; proposed meeting/social reaction alone insufficient for Strand C.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:22Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-09-22, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMitgFBVV95cUxNa2hkNDhERVk5MC02LW84MnA5QllIYWNuRzc3TjhYTEMwSHFlaHd5R3UxNzhpOVRxRTV3dTdCQnRyT1JwYzliMmxXVG5LUXFRd2F3TjI1SFQ3X0VPVk5WM0NiZTE1SzdaeG9DZDh1ZUZVQUFwVklkejgxR3ltY0FPOUd1M1lpZG5NMjVZQ3lvbENQVmFNbUIzbnJtOTF2cVNsWHFPRmh0X1k0LVc5SzMzNU9VdS11UQ?oc=5": {
       "decision": "drop",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Story exists but does not document a fresh, substantive policy, trade or investment measure; proposed meeting/social reaction alone insufficient for Strand C.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:21Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-09-22, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMi6AFBVV95cUxPWjEwRl8wNDV1T0ZzbFNzODZILXFBVVJES05oVUI4S3lxaG42d1VhN0dzQWtLaExJREplWEh6eTlQT1VndlRnclg4ZnVRT280MFJfWV9tNHNxZW1SZ1JiR0dBRkp5SW1qVXBfSzdHanZ1dDhiamVfNVplMWdzbklmdFoxZGlvYV8xS3FOdnpIU3hJRF9fNXdtNTFmVTZqQjZiZi1xU1Bybm93VVprSlNlaGJud3kzRFpuajdwZ2NEVUJxVjl2V2FHc2FIQTZXamprY09SVjBJMk50TDNRenVyeXBSakhZMXdh?oc=5": {
       "decision": "keep",
@@ -4164,12 +4208,16 @@
       "source": "manual_compact_curator_v1"
     },
     "link:https://news.google.com/rss/articles/CBMivgFBVV95cUxQbDNsQ2VSNjNiSS1SbldyMVoxc0hOckhsa0dnX21XRTE4WWs0RlkxUmtlWkgwRnFkYjh6UWwxdGMzRTR4YTZvcFhSa1NJSHlPWmlkN1JnR29mT084RE9xc3N5dERrZVEySV81YnpobV8wZnVrUDZ3UFRKaVowTmgwZUFvV3A5eEt4RWNYQ3dMY3dSaHdIbFhzbUZHY2tpM1lkZGZScEtJeXpBLWdqZklpcUVjRHNXNWVCTkFNQV9R?oc=5": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Substantive current European economic-security policy/trade development directly described in the source.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:21Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-09-22, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxPbnJrcG9BSTBNeGxHaHJtcV82WVJ4RFNwNzZwcC1iN0tFWFpFbENpZ0JQZGxpN2xtQ1Q0T2FNaUhfZlBTTDF6OGw1al93Rm8yZHJqc0twejBlZTFGRnNpbVhlSXk4WU9oc2E0V2cyc3RQcnUwc3BnOFBlTXFnLTUta0pBR1g?oc=5": {
       "decision": "keep",
@@ -4350,10 +4398,14 @@
     "link:https://news.google.com/rss/articles/CBMikwFBVV95cUxNTmZDNkg5QmxRaXNCWjlsMFpGRGxVQWZQLVBjcUYwcFZ1WFdfVHhKWERBaGFVNVdPWW5jUjV6NXc0T3dNRW5LN1paSXIxMjQwTHZrNDFVUkFLSXBvdkRyNVNyUXFFNkpxLVM0dU5fZ2I3cEYxZEtFZ0hKTWp6Tlk1QS10UHJKdmVIMnlwLXJvbmVuZnM?oc=5": {
       "decision": "drop",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Story exists but does not document a fresh, substantive policy, trade or investment measure; proposed meeting/social reaction alone insufficient for Strand C.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:21Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-09-20, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMipwFBVV95cUxQUUswdG5RR3A3czVTQV82SzUwWDh1ZDZrYjNXcld1cUQwOW9nZENwVlhQRVpfMXRQY2RXZ1pLcVlnal9jeGJxelREVVpWeTZyTTI2bnJKUXlIYUNtNklZQnkyWHNPX1NzZ1lIRVB2SVFfWkJTWkg4ZFM5WE5rdTVISldEczdQX1BIdkRyd21lYVhibzVLRkwwOGVIWXdfODNPRzloNWhEWQ?oc=5": {
       "decision": "drop",
@@ -4364,20 +4416,28 @@
       "source": "manual_compact_curator_v1"
     },
     "link:https://news.google.com/rss/articles/CBMizgFBVV95cUxPNjNPQWxyaU81b0JsYVI5WTJyN0lBY3BabFFKOTl3NFh5UXJ2NllMQWtLcWh2N0VEay1iUE93eDhfSm45bjNIZ3Z4ZmFUVTlwdWljTjVOUm5ISGpFYUVSUGxsbGNXVHdJbVpmaGRWSkIySG8yRDY1RlprWGV5Z09FQ2JCdThZTjU2ZktoS0xMWmpoLS1SNWJYSkdGM1AtdmowQ1JIMkt6aEl1UzY4LXZzTU5aY01nNGFDQ1NmVlQ2T1pnV0hzU0pyQkNjVVNXQQ?oc=5": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Substantive current European economic-security policy/trade development directly described in the source.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:22Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-09-18, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
     },
     "link:https://borderlex.net/2026/09/18/wto-reform-push-takes-aim-at-most-favoured-nation-rule/": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "WTO MFN reform could reshape the legal basis for EU tariff commitments and external trade leverage.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:22Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Source identity confirmed by title/publisher and original text. WTO negotiations and proposed reforms, not an adopted change to the WTO rules.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZnBsTk1ER0drbVhQU1Vyc0RiQnVKU0pvYWhQSk5BRVJWelZmbElmRmRmYzl3Q0QxU2FUV0hUVVpiSWM2UUtSWFhmdzNoc1dRMllBbzBlaWtQeUpoWVdmeHJaV2JsZ2dvalk5OG1KQWI4bVVnX3kySHlNRUNNYVZLVFJ4V0NWLUp3QzBRYnZPbmlqX2U0MlhiNnFRUmYtNWEtMG56ZW1yZFNTVm5oaUZOUWswZGlwTHBUekFyYjU4T3huZw?oc=5": {
       "decision": "keep",
@@ -4516,12 +4576,16 @@
       "source": "manual_compact_curator_v1"
     },
     "link:https://news.google.com/rss/articles/CBMiowFBVV95cUxNekNBZWwxSDJKTHl3ZUNJZ0Mwd0xDbERTVXFOcXZxa3hVejJfdDZGWTVMcEhhbXlkaW5nTm9JVEF0N1ZBdnF1bWZHeGRDWDBoTnZMVlBiTWZDQ3lUUF9teU9ndmZvdHZCM0EtWTRfaEFTTTE0VlBxWG5NZkkzOHBmSXFTZ2w2Y1BrVmJHUmgxRVR2YkN6SF83M3ZhQkdrSENqbTJF?oc=5": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Substantive current European economic-security policy/trade development directly described in the source.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:24Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-09-14, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxPazBKNVd0WnNOOUx4ZzY4Nm83ZDJfcjh5VXdneVJvOUJTdnNrOGhldy1oY2FRUXdhX0RFUHNoSXpaS2ZMc2ZlT1dWZFJlNlA4NVJZdWRyT0xDbXl1d3F4MjVaTTk3Z1hGbjVFNENuSlhWMWpoZnQwNlNyODI2VUtQN0ZWMk0?oc=5": {
       "decision": "keep",
@@ -4574,18 +4638,26 @@
     "link:https://news.google.com/rss/articles/CBMi0AFBVV95cUxPcHBBN01iSVZHMEMwclNDbGk4VWNOYlpaYUdfUk1IX0Q2OHpMeF9jcHN0Qk1Gakt3cnQ3ak5hQmJPRE1fTWpMY0x3Qk95bWROX2Ntb3lqanh0NnlWOEpvYk9vdEVLMTZGbzZCZVgtN1RFUTZIZTVwMmdaZ2NJRDFXRnNvNDNxbzJoS0tudWZSaU0wUWdFQTZHQXZhdVJXUTk3aUZHZ1AzQl8xOFU1aTIyd041RmhnYTZuRWxSUWIxZ1AwS0ZWS1B0bk5hbU5CNGVB?oc=5": {
       "decision": "drop",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Story exists but does not document a fresh, substantive policy, trade or investment measure; proposed meeting/social reaction alone insufficient for Strand C.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:24Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-09-14, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMilgFBVV95cUxPYklDSUc1YlRDQTRiWXR1SV9lMzFqenBWQ2tSV3ozeDJlbGYzT0lTU09pWHVSUDZQSWZMRVpnal9KTHhuLUNuandYaDBuMUlvaU9pa0l5dmg3S3JXRmVxc3c3NWR6MXlGVkpmNnJrUE90bU5GcmU0SDM3NUV0RTEwWXZlZ2hVQ2RBUTFETkl1QlgzSHJKcWc?oc=5": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Substantive current European economic-security policy/trade development directly described in the source.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:25Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-09-13, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
     },
     "link:https://borderlex.net/2026/09/10/opinion-eu-china-and-the-illusion-of-choice/": {
       "decision": "drop",
@@ -4650,10 +4722,14 @@
     "link:https://news.google.com/rss/articles/CBMimwFBVV95cUxOaWtudVNmS3RIb25nVW5rRjdiNTIyYm1xX2t5Z3dMNzliZW9YdDA5eFpmVEdNUXlQS0lRckMwbW1hN1JkcEtQdGRzZllBZHVfRldzV3ZMYzRDU1hXeTc1RTUwRmRKVlR4UFl0SXh5empPQU1uOWYxR2pCU3VSZnJBRmo2Nk5PRXVWZHp5MlFKbFlGb0wzVm55bXFnTQ?oc=5": {
       "decision": "drop",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Story exists but does not document a fresh, substantive policy, trade or investment measure; proposed meeting/social reaction alone insufficient for Strand C.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:19Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-09-07, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxNaXQ3QlRIUVVWMFNsQ0M1b2ZyRDJrdG9rUWx6bU1LWmpkNzgtZE5BdUsxbXRqS2Z6dG5oVFlXcEhKS1hBd1pmTmlkT0pnaFcwNDRWYzVoUkJIWGVfeXBwWWliM1d4TWpWa2ZHZ1VneXhueHpWaFZ4NV91SURuYjlJck9qaHY?oc=5": {
       "decision": "keep",
@@ -4760,12 +4836,16 @@
       "source": "manual_compact_curator_v1"
     },
     "link:https://news.google.com/rss/articles/CBMitgFBVV95cUxOX2hISF94TEZGRzNlMGV1NjA4NjBVU2hWMm5JZGJHOHBtSUxFME9uZEE3TUQwTDRHS1lrd3lRdGRQS1NrSGJSTWdZek8zbkw2a25rMFFFYWJENnBBTV9MTWZ4TUhtTjJfZHZCTW1LMW9NTi12bHRuMVp0d2dGVHM1TTBrUjJYUXVFcnVvb0RMUEsyX1V3SlZvb2tvd3NuWWtaa0NsQjNkNmM0em1sUVdMWUZ1THBOUQ?oc=5": {
-      "decision": "drop",
+      "decision": "keep",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Substantive current European economic-security policy/trade development directly described in the source.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:19Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-08-28, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
     },
     "link:https://borderlex.net/2026/08/27/trade-truce-new-frictions-whats-ahead-for-brussels-this-autumn/": {
       "decision": "keep",
@@ -4778,10 +4858,14 @@
     "link:https://news.google.com/rss/articles/CBMiswFBVV95cUxQcGRtUVpOeWFvQWFUbmNJeGxjYlRuaktxd1AtbUw2bFAtOWJCbjBfSmNfMlJYT2xMcThMOUQ4bXNQUzV2N19kNHBkWGtOZXd1aHRfZTV5WXNsZ2RyR1hhcFB5MGN2VTlCSGYzaGJUYUpnWWZQSHVzN3plaDY0V2VtNzlYMFV4WG9NR2JIalFfeFdkWG1pQ1hnSFdCMTdFVHJXNWdIeUQwUktVeUxHM0NRdTJjQQ?oc=5": {
       "decision": "drop",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Story exists but does not document a fresh, substantive policy, trade or investment measure; proposed meeting/social reaction alone insufficient for Strand C.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:19Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-08-26, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxNSmZ4bUVGX2tHdUM1VWFFaGpuSXZiY0VuUXNxUkRrMDRyYW1pck9yLVZqd2thUmM5dW9CTVdGZFkzdTJGUUhtcWhoZ0lxQkxrc2RPcDhnQzdGTFNGai13a1RoSDlTakFEWGJ4R0w4dHpqR3hwd1FKNk5sTmdYcGw3a2ZNZWc?oc=5": {
       "decision": "keep",
@@ -4798,10 +4882,14 @@
     "link:https://news.google.com/rss/articles/CBMitAFBVV95cUxQdHl5VFZkOV9NSnVKamtaaVZjUXhpVjJoLVUweGtSek5KbkhWdDE1ekpOeWlTUHE1REduby15ZGxjY0Rka3FValJzYjR1TFFUZFRJcFNmX3pqT29KcElSOEtUTHRpNmxXV1pNV1lNWXRQcGNtOW9ldEx0WTFqZ1NzblN3UEZtWm1NakJKVTZwRVBsaG1USlF6cUxrUEVXVm81YzdwMk9zWmxNZ2sxVEc5bmFpdng?oc=5": {
       "decision": "drop",
       "target_strand": "C",
-      "reason_code": "COMPACT_SCOPE_LIMIT",
-      "reason": "Excluded from the compact reader corpus to keep the authoritative active set focused and below the deployment limit; retained in raw radar.json for scanner/audit continuity.",
-      "updated_at": "2026-09-25T20:15:00Z",
-      "source": "manual_compact_curator_v1"
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Story exists but does not document a fresh, substantive policy, trade or investment measure; proposed meeting/social reaction alone insufficient for Strand C.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:19Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-08-23, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
     },
     "link:https://news.google.com/rss/articles/CBMihAFBVV95cUxPeENyVVNXOU9ZdUl0MFJQWGlVcjlEc041b0t1RU44alpxTHVYQ3ZwcE5fZHVEMFNHUHVqaTdLZFdSYjdWODRJd011MFh0OUlOMWd2MGg3TjI0X1hsUm91TWt4T3JvRlQwZjVPanh4bkhnaGpqcllqTzZCWGRpUU9yQ05kdHY?oc=5": {
       "decision": "drop",
@@ -27425,6 +27513,258 @@
       "updated_at": "2026-10-22T05:49:50Z",
       "deep_scan_package_id": "worker-b-20261022T053443Z-d7ce48c84595",
       "verification_note": "Matching JRC official substantive abstract + catalogue, and explicit scanner-specific validation URL cross-check. Report PDF itself not claimed to have been read.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.1111/aepr.70032": {
+      "decision": "drop",
+      "target_strand": "A",
+      "reason_code": "A_NON_RESEARCH_OR_IRRELEVANT",
+      "reason": "Source is not a substantive European economic-security research contribution.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:23Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Source identity confirmed by title/publisher and original text. Comment is brief scholarly discussion, not a distinct substantive European economic-security study.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.1002/bse.71515": {
+      "decision": "drop",
+      "target_strand": "A",
+      "reason_code": "A_NON_RESEARCH_OR_IRRELEVANT",
+      "reason": "Source is not a substantive European economic-security research contribution.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:23Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Source identity confirmed by title/publisher and original text. Research outcomes are domestic ecological-footprint and energy-productivity determinants, not European external coercion, dependence, industrial security, or strategic supply-chain vulnerabilities.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.1002/bse.71043": {
+      "decision": "drop",
+      "target_strand": "A",
+      "reason_code": "A_NON_RESEARCH_OR_IRRELEVANT",
+      "reason": "Source is not a substantive European economic-security research contribution.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:23Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Source identity confirmed by title/publisher and original text. Corporate environmental-reporting governance does not document trade-route disruption, coercion, strategic maritime choke points or economic-security responses.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.1002/sd.71661": {
+      "decision": "drop",
+      "target_strand": "A",
+      "reason_code": "A_NON_RESEARCH_OR_IRRELEVANT",
+      "reason": "Source is not a substantive European economic-security research contribution.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:23Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Source identity confirmed by title/publisher and original text. Despite FDI and trade-openness outcomes, the study addresses inclusive development and gender equality rather than any European external economic-security mechanism.",
+      "duplicate_of": ""
+    },
+    "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f7058d65-bf6e-11f1-988f-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Source is not a substantive European economic-security research contribution.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:23Z",
+      "deep_scan_package_id": "worker-a-20261022T060219Z-a6cc29fca2a0",
+      "verification_note": "Source identity confirmed by title/publisher and original text. Meeting notice alone establishes no new EU procurement eligibility restriction, industrial-security action, or binding policy decision.",
+      "duplicate_of": ""
+    },
+    "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=bdf94591-c868-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Routine administrative/fishing-access allocation rather than a sufficiently substantive strategic economic-security action or new leverage mechanism.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:25Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Checked original publication identity and source text, including proposal vs effective legal status. Scanner labelled in force incorrectly: COM(2026)545 is a proposal for ratification and separate from adopted law.",
+      "duplicate_of": ""
+    },
+    "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=bdd89e30-c868-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Routine administrative/fishing-access allocation rather than a sufficiently substantive strategic economic-security action or new leverage mechanism.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:25Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Checked original publication identity and source text, including proposal vs effective legal status. Proposal is not a published or effective Council Regulation; no distinct security instrument from the partnership protocol.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.54503/2953-8165-2026.5(2)-20": {
+      "decision": "drop",
+      "target_strand": "A",
+      "reason_code": "A_NON_RESEARCH_OR_IRRELEVANT",
+      "reason": "Source is not a substantive European economic-security research contribution.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:25Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Source identity confirmed by title/publisher and original text. The broad commentary does not provide a new, replicable EU-centred economic-security research finding or mechanism.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.1093/jiel/jgag032": {
+      "decision": "drop",
+      "target_strand": "A",
+      "reason_code": "A_NON_RESEARCH_OR_IRRELEVANT",
+      "reason": "Source is not a substantive European economic-security research contribution.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:26Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Source identity confirmed by title/publisher and original text. Primary policy case and jurisdiction are Peru, with no specific EU economic-security evidence or comparison in the matched research description.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMiugFBVV95cUxQTXJORFFoc1JmaTVpdnBJTHFvd0ltWF9xYldES3ZWejlwX2tkczZ2NENGQUJGQlhxM2tkb1JmTHo5WlR3NUQ0T1haa3o5Z1NObWJLLWdjTlNvZEg2dEE4Nm5PS1pSWVBEc1pkQ1FJYlVrZkxyczdLZWZOdHl2NEV5ZXZmTzNXci1oQ1hscjdrSUFoQzBLd0FHSnZZQXhZWGVKOUFsSzM3S3M4RTU1TnJMd2E0VzBkd0JXZmc?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Story exists but does not document a fresh, substantive policy, trade or investment measure; proposed meeting/social reaction alone insufficient for Strand C.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:26Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-10-13, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
+    },
+    "link:https://borderlex.net/2026/10/14/uk-rules-out-copying-eu-quotas-on-chinese-hybrid-cars/": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Divergent UK and EU market-access regimes could change the geography of Chinese car exports and competitive pressures.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:26Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Source identity confirmed by title/publisher and original text. The UK policy is an announced stance, not a finalized treaty or finding that import diversion has occurred.",
+      "duplicate_of": ""
+    },
+    "link:https://borderlex.net/2026/10/14/customs-union-should-spare-it-eu-hybrid-car-quota-turkiye-says/": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "EU safeguards could affect customs-union partners and trade flows well beyond China.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:26Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Source identity confirmed by title/publisher and original text. Exemption has been requested, not formally conceded or applied.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMigwFBVV95cUxQV1MwNjRBTTNEeG5sSjB1Rmd5UmwzQXMtWTNKel81Z3BLQ3hfbDktcnBoQVZqZC03VkpSdk1EX0VmR0hPQ3pmY3RDRmg5S2tFZGdIZ1dOWmt6YXIzWGhiVTRMWDNuaE1fTnFONGE2VFFLck5vTDNPZkFJNm5pRXpwZlRMMA?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Substantive current European economic-security policy/trade development directly described in the source.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:26Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-10-13, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMixAFBVV95cUxQZGM2YUhXUUZ4ZHYzZXBsaW51b2xTaWMzWXVPbkJ3UHpnSnBQakg2dWk4QVpoZ194el9UeDh2Y2dwdERPelg5VFV5MzNrell1UVFzSmxzUmhLejdlNGdScTg0UkhDX3Z4cFNNYVFvUGlSclNKSlBVMXFjY3hOY0VlYTVMWkFrUF9QOU83azIwVUV2NGJEUWJoYzFaMkFKUnIwMlpBQVFKX2JxbFZpTVNldks0c3F5RmI3MF9VbURQMk9KdVg0?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Story exists but does not document a fresh, substantive policy, trade or investment measure; proposed meeting/social reaction alone insufficient for Strand C.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:27Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-10-13, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMitAFBVV95cUxNbDVkeGpzbTNhNzZnamd6dFVmOVRkSHBOeUpEN05jUnpNeE8yRXJST2hzQklMeEFqMWlHTUI2bGFzZkhvdS1VYzhSWGxtcVVKN2dnNlowQXp4V0lNWlM5cnBOd2VtUUFyT0hhUlFnbDZWcTlILW1GcWhRUGNHRS1NT3Fya1RGaWVCWXFHMlFJZXJOdUJzbzQzSFN0V05tODJtSnBJdkhqOHR5YXZVSU1wU1E0X0E?oc=5": {
+      "decision": "keep",
+      "target_strand": "C",
+      "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+      "reason": "Substantive current European economic-security policy/trade development directly described in the source.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:27Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-10-12, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMie0FVX3lxTE80TVBtZXVoQVpBUEVmb0gxRnNWVzRJMHdaQTV0aUtRc1liODdYTjRDMnVtUzA0a2htSzlrQ0FhT1ZIbXM2cVZXR2stUTY3WjZTWTExSXpDbE5lcDNJbjNpYXJILVc3Tm9taWRxalVObWJKREhUQ1VYWFVtOA?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Story exists but does not document a fresh, substantive policy, trade or investment measure; proposed meeting/social reaction alone insufficient for Strand C.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:27Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-10-12, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMirwFBVV95cUxQNHU4aWdseGJQNDlHSkY2bVlVakhtNG9qSWo2eHl0MV9WSTRoc1lqdUdTcHlXeWdCVU1nZ3V6c2Z2dV9FMmRXdGlmMjhOOVpENE9ZRkY1UkRxM1ZzUTBaLTE0OUhEUE9nVzFVd1pUQUlJcjljeWhjNEJvSk55VlhobmU5Q0F2S2lKb0M0Z2lLcjg1Y1J2bG8zUU8xUXdLUV93WUpOMG5DSE11dzJmdklv?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Story exists but does not document a fresh, substantive policy, trade or investment measure; proposed meeting/social reaction alone insufficient for Strand C.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:27Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-10-12, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMioAFBVV95cUxPekhXdzBSdS01b241LVpfWnhhQWJZY2I4SVQwSlJsS21ZdTFvNV92N3g5bkNaR2dKSE1zTjAtcWtZWS1kY1B6Zl9nUHdfUUZTb3ZtdHRKNS1qTGlIVzhZU25ranRmUWNWWWV3aDhFdkdpVXdxSktFc1pCOV9FMF9BWmJwWngwWjZNenhiM1ZnSHZRdWdFQnpySjRIMnhSNnV4?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Story exists but does not document a fresh, substantive policy, trade or investment measure; proposed meeting/social reaction alone insufficient for Strand C.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:28Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-10-12, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMisAFBVV95cUxQUFFlQ2RWX2k2c19mRUlseHB2TDlOM0xYSVdXc29YSHBVS2o0OE1qRHFXQU1JR093ellFZ2xSNEg3cUZISWx1SllLdmpuQWNBaFoyQmJHU1RaMHZ0YlFXN3l0eVZkNlhvQlRaTElKWExxTFh4cmNOc0xIeVdpdWh0MHdicmVsajVQMEdtMkZRRzFMOXpyRzBXQmdDQ2lpUlFKVlRMdzVlSXR3aE51ZU9ZZA?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Story exists but does not document a fresh, substantive policy, trade or investment measure; proposed meeting/social reaction alone insufficient for Strand C.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:28Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-10-12, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
+    },
+    "link:https://borderlex.net/2026/10/12/week-ahead-more-eu-china-eu-us-customs/": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Story exists but does not document a fresh, substantive policy, trade or investment measure; proposed meeting/social reaction alone insufficient for Strand C.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:28Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-10-12, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
+      "duplicate_of": ""
+    },
+    "link:https://news.google.com/rss/articles/CBMixAFBVV95cUxOY0wxaHVwdHc5SUJlZFFwdW5scFJvRElUQi1sejN4U18yNFRsWFdXaFlRa1NZbzY0RC1vVTF6N0RLUHFkRnhvd295R0FwNDRkdEdRNTJMZEJrS1NjWE5YbmxEeTJqMjc0Q1c4TmQzUElGalFsVy1LaGkweGhDNURDNkdZRGxWT2wyWlR1WDBrSVJvWno3TXhFR0JsSnBwUzJfVDI2MmQzVjgzY1Izb2dzdExpa2tGWXE5SmZnZmpBMVkwcDRH?oc=5": {
+      "decision": "drop",
+      "target_strand": "C",
+      "reason_code": "C_NO_SUBSTANTIVE_NEW_EVENT",
+      "reason": "Story exists but does not document a fresh, substantive policy, trade or investment measure; proposed meeting/social reaction alone insufficient for Strand C.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-22T06:36:28Z",
+      "deep_scan_package_id": "worker-b-20261022T060223Z-1e78e8895975",
+      "verification_note": "Confirmed journalist-produced story, reporting date 2026-10-12, and supplied news identity; assessed specifically whether a new policy/action/economic-security development exists. This is reporting, not proof of policy effects.",
       "duplicate_of": ""
     }
   }
