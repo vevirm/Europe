@@ -14,7 +14,7 @@
 <!-- Legacy regression tokens only: reform.css?v=23.0 · site-shell.js?v=23.0 -->
 </head>
 <body>
-<header><div class="wrap top"><div><div class="kicker">What current developments could lead to</div><h1>Risks &amp; Opportunities</h1><p class="lede">Where might current developments leave Europe more exposed, and where could they create an opening? These are possibilities, not predictions.</p></div><nav class="nav" aria-label="Primary site sections"><a href="../">Start</a><a href="../radar/">Main Radar</a><a href="../read/">Read At Least This</a><a href="../frontier/quick/">Matrix</a><a href="../trends/">Trends</a><a href="../phenomena/">Ongoing Phenomena</a><a class="primary" href="./" aria-current="page">Risks &amp; Opportunities</a><a href="../shocks/">External Shocks</a><a href="../historical/">Earlier Findings</a><a href="../literature/">Sources</a><a href="../stuff/">Stuff</a></nav></div></header>
+<header><div class="wrap top"><div><div class="kicker">What current developments could lead to</div><h1>Risks &amp; Opportunities</h1><p class="lede">Where might current developments leave Europe more exposed, and where could they create an opening? These are possibilities, not predictions. Each side retains its own evidence-based selection; the lead stays first, while the remaining cards change reading order each week. Card numbers retain their original selection positions.</p></div><nav class="nav" aria-label="Primary site sections"><a href="../">Start</a><a href="../radar/">Main Radar</a><a href="../read/">Read At Least This</a><a href="../frontier/quick/">Matrix</a><a href="../trends/">Trends</a><a href="../phenomena/">Ongoing Phenomena</a><a class="primary" href="./" aria-current="page">Risks &amp; Opportunities</a><a href="../shocks/">External Shocks</a><a href="../historical/">Earlier Findings</a><a href="../literature/">Sources</a><a href="../stuff/">Stuff</a></nav></div></header>
 <section class="core-flow" aria-label="Core reader path"><div class="wrap flow"><a href="../radar/">1 · Radar</a><span>→</span><a href="../frontier/quick/">2 · Matrix</a><span>→</span><a href="../trends/">3 · Trends</a><span>→</span><a href="../phenomena/">4 · Ongoing phenomena</a><span>→</span><a class="current" href="./">5 · Risks &amp; opportunities</a><span>→</span><a href="../shocks/">6 · External shocks</a></div></section>
 <main class="wrap"><div class="grid">
 <section class="panel"><div class="panel-head"><div><h2>Risks</h2><p class="hint">Developments that could leave Europe more exposed.</p></div><span id="riskCount" class="panel-count">—</span></div><ol id="risks" class="list risk"><li class="empty">Loading</li></ol><p id="riskStock" class="hint"></p></section>
@@ -44,7 +44,7 @@ function item(x,kind,i){
   const sourceTitle=x.title||'Source';
   const detailLead=evidence?`<p>${esc(evidence)}</p>`:'';
   const sourceLead=x.link?`<p class="priority-meta"><a href="${esc(x.link)}" target="_blank" rel="noopener">${esc(sourceTitle)}</a>${source?` — ${esc(source)}`:''}</p>`:(source?`<p class="priority-meta">${esc(source)}</p>`:'');
-  return `<li class="priority-card" data-obviousness="${displayDistance(x)}"><div class="priority-main"><span class="rank">${i+1}</span><div class="priority-copy"><div class="priority-title">${esc(clarity.title)}</div>${clarity.what?`<p class="priority-what">${esc(clarity.what)}</p>`:''}${clarity.why?`<p class="priority-what"><strong>Why it matters:</strong> ${esc(clarity.why)}</p>`:''}<div class="priority-actions"><button class="info-button" type="button" data-detail="${id}" aria-expanded="false">Sources</button></div></div></div><div id="${id}" class="detail" hidden>${detailLead}${sourceLead}${highOrderEvidenceHtml(x)}${relatedEvidenceHtml(x)}${weakContextHtml(x)}</div></li>`
+  return `<li class="priority-card" data-obviousness="${displayDistance(x)}"><div class="priority-main"><span class="rank">${x.readerOriginalPosition||i+1}</span><div class="priority-copy"><div class="priority-title">${esc(clarity.title)}</div>${clarity.what?`<p class="priority-what">${esc(clarity.what)}</p>`:''}${clarity.why?`<p class="priority-what"><strong>Why it matters:</strong> ${esc(clarity.why)}</p>`:''}<div class="priority-actions"><button class="info-button" type="button" data-detail="${id}" aria-expanded="false">Sources</button></div></div></div><div id="${id}" class="detail" hidden>${detailLead}${sourceLead}${highOrderEvidenceHtml(x)}${relatedEvidenceHtml(x)}${weakContextHtml(x)}</div></li>`
 }
 function listHtml(items,kind){const label=kind==='risk'?'risk':'opportunity';return items.length?items.map((x,i)=>item(x,kind,i)).join(''):`<li class="empty">No current ${label} is clear enough to show here yet.</li>`}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-detail]');if(!b)return;const box=document.getElementById(b.dataset.detail);if(!box)return;const opening=box.hidden;box.hidden=!opening;b.setAttribute('aria-expanded',String(opening));b.textContent=opening?'Close':'Sources';});
@@ -56,7 +56,21 @@ function wowCycle(items){
   return out;
 }
 function shelf(items){return (items||[]).some(x=>x&&x.highOrder)?(items||[]).slice(0,25):wowCycle(items).slice(0,25)}
-function render(view){const risks=shelf(view.risks),opps=shelf(view.opportunities);document.getElementById('risks').innerHTML=listHtml(risks,'risk');document.getElementById('opportunities').innerHTML=listHtml(opps,'opportunity');document.getElementById('riskCount').textContent='On the radar';document.getElementById('opportunityCount').textContent='On the radar';document.getElementById('riskStock').textContent=stockLine(view.stats.riskReserve,view.stats.riskWatch);document.getElementById('opportunityStock').textContent=stockLine(view.stats.opportunityReserve,view.stats.opportunityWatch);const developing=Array.isArray(view.developingOpportunities)?view.developingOpportunities.slice(0,15):[];document.getElementById('developingOpportunityPanel').hidden=developing.length===0;document.getElementById('developingOpportunities').innerHTML=developing.length?listHtml(developing,'developing-opportunity'):'';}
+
+/* Reader-only presentation rotation: analytical selection and scores are untouched.
+   Preserve the leading finding, rotate only within adjacent groups of five. */
+function readerWeeklyOrder(items){
+  const result=(items||[]).slice();
+  const week=Math.floor(Date.now()/604800000);
+  for(let start=1;start<result.length;start+=5){
+    const end=Math.min(start+5,result.length),group=result.slice(start,end);
+    if(group.length<2)continue;
+    const shift=((week%group.length)+group.length)%group.length;
+    result.splice(start,group.length,...group.slice(shift),...group.slice(0,shift));
+  }
+  return result;
+}
+function render(view){const risks=readerWeeklyOrder(shelf(view.risks).map((x,i)=>({...x,readerOriginalPosition:i+1}))),opps=readerWeeklyOrder(shelf(view.opportunities).map((x,i)=>({...x,readerOriginalPosition:i+1})));document.getElementById('risks').innerHTML=listHtml(risks,'risk');document.getElementById('opportunities').innerHTML=listHtml(opps,'opportunity');document.getElementById('riskCount').textContent='On the radar';document.getElementById('opportunityCount').textContent='On the radar';document.getElementById('riskStock').textContent=stockLine(view.stats.riskReserve,view.stats.riskWatch);document.getElementById('opportunityStock').textContent=stockLine(view.stats.opportunityReserve,view.stats.opportunityWatch);const developing=Array.isArray(view.developingOpportunities)?view.developingOpportunities.slice(0,15):[];document.getElementById('developingOpportunityPanel').hidden=developing.length===0;document.getElementById('developingOpportunities').innerHTML=developing.length?listHtml(developing,'developing-opportunity'):'';}
 (async()=>{try{const data=await RadarData.load('../radar.json','../radar_seed.json');render(RadarPriorities.buildPriorityView(data))}catch(e){document.getElementById('risks').innerHTML='<li class="empty">Unavailable.</li>';document.getElementById('opportunities').innerHTML='<li class="empty">Unavailable.</li>'}})();
 </script>
 <script src="../site-shell.js?v=28"></script>
