@@ -27,6 +27,20 @@ const clean=v=>String(v||'').replace(/\s+/g,' ').trim();
 const esc=v=>clean(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const norm=v=>clean(v).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const SHOCK_DISPLAY_LIMIT=30;
+/* Reader-only presentation rotation: analytical selection and scores are untouched.
+   Preserve the leading finding, rotate only within adjacent groups of five. */
+function readerWeeklyOrder(items){
+  const result=(items||[]).slice();
+  const week=Math.floor(Date.now()/604800000);
+  for(let start=1;start<result.length;start+=5){
+    const end=Math.min(start+5,result.length),group=result.slice(start,end);
+    if(group.length<2)continue;
+    const shift=((week%group.length)+group.length)%group.length;
+    result.splice(start,group.length,...group.slice(shift),...group.slice(0,shift));
+  }
+  return result;
+}
+
 const SIMPLE={
   direct_materials_cutoff:'A supplier country cuts exports of critical raw materials Europe cannot yet replace.',
   direct_tariff_escalation:'A major trading partner imposes sweeping new tariffs on European goods.',
@@ -149,8 +163,8 @@ function visibleShockExplanation(title,text){return clean(text)||shockExplanatio
     const wowCycle=items=>{const buckets=new Map([5,4,3,2,1].map(w=>[w,[]]));for(const x of items||[]){const w=Math.max(1,Math.min(5,Number(x?.distance)||3));buckets.get(w).push(x)}const out=[];for(let round=0,maxRounds=Math.max(0,...[...buckets.values()].map(xs=>xs.length));round<maxRounds;round++)for(const w of [5,4,3,2,1]){const x=buckets.get(w)[round];if(x)out.push(x)}return out};
     // Stage 7 already publishes the 5-4-3-2-1 x3 shelf (with thin wow levels filled
     // from the nearest level). Keep that order; re-bucketing here dropped findings.
-    const items=all.slice(0,25);
-    document.getElementById('shockSummary').textContent=items.length?'What happens if an important supplier, route, rule or partnership changes suddenly? These are possibilities to explore, not forecasts.':'No shock scenario is ready to show yet.';
+    const items=readerWeeklyOrder(all.slice(0,25));
+    document.getElementById('shockSummary').textContent=items.length?'Explore how a sudden disruption could affect Europe, why it matters, and the evidence behind each possibility. These are scenarios, not forecasts. The leading finding stays first; the other cards change order weekly.':'No shock scenario is ready to show yet.';
     el.innerHTML=items.length?items.map((x,i)=>{const raw=x.explanation&&x.detail&&x.detail.type==='higher-order'?x.explanation:shockExplanation(x.text);const explanation=visibleShockExplanation(x.text,raw);const ev=[...(x.detail?.support||[]),...(x.detail?.against||[])];const c=globalThis.RadarReaderClarity?.card?.(x.text,explanation,ev,'shock')||{title:x.text,what:explanation,why:''};return `<li><strong>${esc(c.title)}</strong>${c.what?`<p>${esc(c.what)}</p>`:''}${c.why?`<p><strong>Why it matters:</strong> ${esc(c.why)}</p>`:''}${shockDetailHtml(x,i)}</li>`}).join(''):'<li class="empty">No shock scenario is ready to show yet.</li>';
   }catch(e){console.error(e);document.getElementById('shockSummary').textContent='Shock evidence is unavailable.';el.innerHTML='<li class="empty">Unavailable.</li>'}
 })();
