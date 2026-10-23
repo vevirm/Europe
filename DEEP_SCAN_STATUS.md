@@ -7,38 +7,38 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` counts as one genuine recovery pass. After **3** unsuccessful passes, the work leaves the automatic queue and enters **Hands-on verification needed**.
 
 - Authoritative V2 verified: **2482** (Main **1079** + Historical **1403**)
-- Automatic queue still needing V2 verification: **119** (Main **13** + Historical **106**)
-- Currently assigned to workers: **72** (Main **2** + Historical **70**)
+- Automatic queue still needing V2 verification: **149** (Main **26** + Historical **123**)
+- Currently assigned to workers: **72** (Main **20** + Historical **52**)
 - Bounded access-recovery retries still eligible: **4**
 - Hands-on verification needed: **162**
-- Automatic queue pending and not yet assigned: **47**
+- Automatic queue pending and not yet assigned: **77**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261022T130916Z-9605848bfaf4`
+- Current package: `worker-a-20261023T135336Z-018e59ddb902`
 - Assigned unresolved records: **36**
-  1. `historical:id:76c8d5f71cad4692` — CFIS 24 Background Paper on Panel: The Current Global Regulatory & Investment Environment: The OECD Countries’ Perspective on Economic Security - CELIS Institute
-  2. `historical:id:154887ae92d2f483` — CFIS 24 Background Paper on Panel: Investment Screening and Economic Security in the Majority World - CELIS Institute
-  3. `historical:id:2716461d91f375a8` — Building Resilience in Investment Screening and Economic Security: Lessons from India - CELIS Institute
-  4. `historical:id:1b927cef6fb95689` — Economic peacefare: Lessons for the future of European sanctions strategy – European Council on Foreign Relations
-  5. `historical:id:3d095949c2ac497f` — Evaluation and review of the EU's FDI Screening Regulation - BusinessEurope contribution to the public consultation
-  6. `historical:id:5404064ed9ca5c3c` — Advanced manufacturing is key for EU competitiveness
-  7. `historical:id:70f857e6dfe48ea9` — Administrative Burden of the Foreign Subsidies Regulation - Letter from Markus J. Beyrer
-  8. `historical:id:bd6390ebd49d38da` — Beyond sanctions: How west Africa can recommit to democracy – European Council on Foreign Relations
+  1. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=167651c8-ce34-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL AMENDING REGULATIONS (EC) NO 1907/2006, (EC) NO 1272/2008, (EU) NO 528/2012, (EU) 2019/1021 AND (EU) 2021/697 AS REGARDS DEFENCE READINESS AND FACILITATING DEFENCE INVESTMENTS AND CONDITIONS FOR DEFENCE INDUSTRY - Publications Office of the EU
+  2. `link:https://defence-industry-space.ec.europa.eu/ukraines-association-european-defence-fund-and-european-defence-industry-porgramme-funding-entered-2026-10-16_en` — Ukraine’s association with the European Defence Fund and European Defence Industry Porgramme funding entered into force
+  3. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=0f50df8f-ce36-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Interim Agreement on Trade between the EU and Mercosur - Publications Office of the EU
+  4. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=36f4bb20-ce36-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Partnership Agreement between the EU and Mercosur - Publications Office of the EU
+  5. `link:https://doi.org/10.1016/j.pirs.2026.100175` — At the cliff’s edge: An estimation of asset-based poverty rates for European regions
+  6. `link:https://celis.institute/meta-manus_veto_and_national_security_unbound/#download-pdf` — The Meta–Manus Veto and the Rise of ‘National Security Unbound’: Tech-Sector Investment Screening and the Reshaping of International Investment Law - CELIS Institute
+  7. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=d8b2b315-ce88-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — EDIP industrial reinforcement actions 2026 call results - Publications Office of the EU
+  8. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=8b892ba3-ce89-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Europe’s industrial transformation - Publications Office of the EU
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20261022T130926Z-7366619fe241`
+- Current package: `worker-b-20261023T135409Z-c070967f6380`
 - Assigned unresolved records: **36**
-  1. `historical:id:c1385a5e422d94e7` — Digital Partnership with the Republic of Korea
-  2. `historical:id:d34ffdca5a532461` — An Alternative Supply Chain in India? Taiwan’s Experience
-  3. `historical:id:064ffe75a9a7c694` — What EU sanctions policy can learn from European mutual defence – European Council on Foreign Relations
-  4. `historical:id:53150557b6dff2d6` — Supply Chain Security, From Taipei to Brussels
-  5. `historical:id:6095080c89a975f9` — BusinessEurope reaction to the European Commission legislative proposal on distortive foreign subsidies
-  6. `historical:id:3881cd7ef5ce9d49` — A 6-point action plan for a transatlantic bargain – European Council on Foreign Relations
-  7. `historical:id:7f7c9f7148a6fd5a` — Building back a better transatlantic alliance – European Council on Foreign Relations
-  8. `historical:id:0d1be72b3a346fae` — White Paper on foreign subsidies - BusinessEurope's reply to the public consultation
+  1. `historical:id:55d1298887962cbf` — Continuity in times of geoeconomic change: the European Union’s strategic trade relations with the Global South
+  2. `historical:id:302703dc36d212e9` — Trade war to cooperation: scrutinizing China’s strategies to the EU carbon border adjustment mechanism
+  3. `historical:id:eeed4bd14252e3f8` — The Level Playing Field and Determining Trade Impact under Trade Agreements: Implications from the EU–UK Trade and Cooperation Agreement
+  4. `historical:id:06a8f7e839fc5603` — [China Trends #26] - Energy Security First: What Hormuz and Chinese Sources Reveal About Beijing’s Strategy
+  5. `historical:id:e27227589e075166` — The Architecture of Trusted Partner Alignment: Building an EU Economic Foreign Policy Through Chips Act 2.0 and CADA
+  6. `historical:id:b4b900e80122ec1f` — R&I needs to reduce dependencies on critical raw materials through advanced materials in electronics
+  7. `historical:id:810531b52b581fe5` — Critical minerals and industrial policy: a network-based approach to supply chain risk
+  8. `historical:id:b439b69876ade4c7` — CELIS Institute - Non-Paper No 01/2026: Firewalls under EU Sanctions Law: Lessons from the EuroChem Case
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
@@ -178,7 +178,7 @@ These works no longer consume automatic Deep Scan slots. Their identity is belie
 - `link:https://doi.org/10.1080/23745118.2026.2720570` — **Climate ambition under competitive resilience: Green Deal contestation in the post-2024 European Parliament** — attempts: 3/3 — European Politics and Society — 2026-08-26 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1080/23745118.2026.2720570
 - `link:https://doi.org/10.1016/j.enpol.2026.115547` — **The pulse of energy poverty in Greece: The role of financial stress, uncertainty, and institutional resilience** — attempts: 3/3 — Energy Policy — 2026-08-17 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1016/j.enpol.2026.115547
 - `link:https://doi.org/10.1021/acs.est.5c18652` — **Can Transcontinental Corridors Bridge Climate Sustainability and Energy Security?** — attempts: 3/3 — Environmental Science & Technology — 2026-05-13 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1021/acs.est.5c18652
-- `link:https://doi.org/10.1016/j.strueco.2026.10.006` — **From Global Value Chains to Local Jobs: Exploring FDI-induced Job Creation in EU-27** — attempts: 3/3 — Structural Change and Economic Dynamics — 2026-10-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1016/j.strueco.2026.10.006
+- `link:https://doi.org/10.1016/j.strueco.2026.10.006` — **From global value chains to local jobs: Exploring FDI-induced job creation in EU-27** — attempts: 3/3 — Structural Change and Economic Dynamics — 2026-10-19 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1016/j.strueco.2026.10.006
 - `link:https://doi.org/10.1177/1023263x261498611` — **The Limits of Mandatory Integration Enforcement for Third-Country Nationals: Reflections After Case C-158/23 ( Keren ) and the Entry into Force of the Qualification Regulation** — attempts: 3/3 — Maastricht Journal of European and Comparative Law — 2026-10-19 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1177/1023263x261498611
 - `link:https://doi.org/10.1016/j.esmoop.2026.107381` — **693P Disparities in access and time to reimbursement for breast cancer medicines with substantial benefit across Europe** — attempts: 3/3 — ESMO Open — 2026-05-01 — Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year — https://doi.org/10.1016/j.esmoop.2026.107381
 - `historical:id:70e3046bc4618d72` — **US tariff offensive widens, Russia sanctions loom, Europe confronts Chinese exports | What we are reading | Hinrich Foundation** — attempts: 3/3 — Hinrich Foundation — 2026-01-01 — Identity appears traceable but a substantive matching source was not obtained after the documented recovery attempts. — https://www.hinrichfoundation.com/research/what-we-are-reading/trade-geopolitics/us-tariffs-russia-sanctions-and-chinese-exports
