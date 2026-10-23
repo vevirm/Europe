@@ -17,6 +17,7 @@
 </head>
 <body>
 <main class="wrap pattern-simple-main">
+  <p class="reader-guide">These patterns trace changes that persist or return across the evidence. The leading finding remains first; other cards rotate in small groups each week. Reordering does not change their significance.</p>
   <section class="pattern-simple-section">
     <ul id="phenomena" class="pattern-simple-list"><li class="empty">Loading</li></ul>
   </section>
@@ -93,6 +94,20 @@ function unique(items){
 }
 function patternDistance(x){if(x?.kind==='convergence')return 4;if(x?.kind==='conjunction'||x?.kind==='renaming')return 3;return 2}
 const PHENOMENA_DISPLAY_LIMIT=30;
+/* Reader-only presentation rotation: analytical selection and scores are untouched.
+   Preserve the leading finding, rotate only within adjacent groups of five. */
+function readerWeeklyOrder(items){
+  const result=(items||[]).slice();
+  const week=Math.floor(Date.now()/604800000);
+  for(let start=1;start<result.length;start+=5){
+    const end=Math.min(start+5,result.length),group=result.slice(start,end);
+    if(group.length<2)continue;
+    const shift=((week%group.length)+group.length)%group.length;
+    result.splice(start,group.length,...group.slice(shift),...group.slice(0,shift));
+  }
+  return result;
+}
+
 function rankItems(items){return [...items].sort((a,b)=>(b.rankScore||0)-(a.rankScore||0)||(b.sources||0)-(a.sources||0)||(b.records||0)-(a.records||0)||(a.distance||2)-(b.distance||2)||a.text.localeCompare(b.text))}
 
 function phenomenonExplanation(v){
@@ -169,7 +184,7 @@ async function loadJson(url){try{const r=await fetch(url,{cache:'no-store'});ret
       const sel=hi?.selection?.continuity||{};
       const reserve=Number(sel.reserve)||0,watch=Number(sel.watch)||0;
       // Keep the published Stage 7 order; re-bucketing would drop filled slots.
-      render(shown.slice(0,25));
+      render(readerWeeklyOrder(shown.slice(0,25)));
     }else{
       const established=RadarPhenomena.build(data,history,historyConfig);
       const patterns=RadarContinuity.build(data,history,historyConfig,RadarPhenomena.phenomena);
@@ -177,7 +192,7 @@ async function loadJson(url){try{const r=await fetch(url,{cache:'no-store'});ret
       const returning=unique(established.filter(x=>!x.autoDetected).map(x=>({text:returningStatement(x),records:Number(x.currentCount)||0,sources:Number(x.currentSources)||0,distance:1,rankScore:Math.min(99,(Number(x.score)||0)*4),group:'returning'})));
       const all=rankItems(unique([...changing,...returning]));
       const shown=wowCycle(all).slice(0,25);
-      render(shown);
+      render(readerWeeklyOrder(shown));
     }
   }catch(e){
     console.error(e);
