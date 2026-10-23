@@ -6,39 +6,39 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` counts as one genuine recovery pass. After **3** unsuccessful passes, the work leaves the automatic queue and enters **Hands-on verification needed**.
 
-- Authoritative V2 verified: **2482** (Main **1079** + Historical **1403**)
-- Automatic queue still needing V2 verification: **149** (Main **26** + Historical **123**)
-- Currently assigned to workers: **72** (Main **20** + Historical **52**)
-- Bounded access-recovery retries still eligible: **4**
+- Authoritative V2 verified: **2548** (Main **1095** + Historical **1453**)
+- Automatic queue still needing V2 verification: **83** (Main **10** + Historical **73**)
+- Currently assigned to workers: **47** (Main **10** + Historical **37**)
+- Bounded access-recovery retries still eligible: **0**
 - Hands-on verification needed: **162**
-- Automatic queue pending and not yet assigned: **77**
+- Automatic queue pending and not yet assigned: **36**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261023T135336Z-018e59ddb902`
-- Assigned unresolved records: **36**
-  1. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=167651c8-ce34-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL AMENDING REGULATIONS (EC) NO 1907/2006, (EC) NO 1272/2008, (EU) NO 528/2012, (EU) 2019/1021 AND (EU) 2021/697 AS REGARDS DEFENCE READINESS AND FACILITATING DEFENCE INVESTMENTS AND CONDITIONS FOR DEFENCE INDUSTRY - Publications Office of the EU
-  2. `link:https://defence-industry-space.ec.europa.eu/ukraines-association-european-defence-fund-and-european-defence-industry-porgramme-funding-entered-2026-10-16_en` — Ukraine’s association with the European Defence Fund and European Defence Industry Porgramme funding entered into force
-  3. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=0f50df8f-ce36-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Interim Agreement on Trade between the EU and Mercosur - Publications Office of the EU
-  4. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=36f4bb20-ce36-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Partnership Agreement between the EU and Mercosur - Publications Office of the EU
-  5. `link:https://doi.org/10.1016/j.pirs.2026.100175` — At the cliff’s edge: An estimation of asset-based poverty rates for European regions
-  6. `link:https://celis.institute/meta-manus_veto_and_national_security_unbound/#download-pdf` — The Meta–Manus Veto and the Rise of ‘National Security Unbound’: Tech-Sector Investment Screening and the Reshaping of International Investment Law - CELIS Institute
-  7. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=d8b2b315-ce88-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — EDIP industrial reinforcement actions 2026 call results - Publications Office of the EU
-  8. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=8b892ba3-ce89-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Europe’s industrial transformation - Publications Office of the EU
-  - … plus 28 more in the package manifest
+- Current package: `worker-a-20261023T143335Z-4e52b002cc4b`
+- Assigned unresolved records: **11**
+  1. `historical:id:feaba8865bdc846b` — EU and US business committed to the transatlantic relationship: need to avoid major trade disruptions — recovery attempt 2/3
+  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=3d187198-c74c-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Member States' consolidated comments on Presidency second compromise text on Title III (Certification), Articles 71-97 - Publications Office of the EU — recovery attempt 3/3
+  3. `link:https://doi.org/10.1016/j.enpol.2026.115663` — The geopoliticization of Europe's energy transition: Geopolitical risk and selective transition adjustment across EU member states — recovery attempt 3/3
+  4. `link:https://doi.org/10.1016/j.jclepro.2026.149493` — Assessing energy security and sustainable development goal 7 performance in EU - A meta four-parallel two-stage undesirable dynamic DDF model — recovery attempt 3/3
+  5. `link:https://doi.org/10.1080/09692290.2026.2745879` — Europe’s new geoeconomic cleavages: from capitalist diversity to international vulnerability in European political economy — recovery attempt 3/3
+  6. `link:https://news.google.com/rss/articles/CBMikwFBVV95cUxObW1IWjhVODBnLWVSTUdKZkZYb2tGOUVlOFRtVXJWMjA2Rld4ZUoxN0M5NGdMbHFLS1RzRXI1OU5NNmtlU1NMVHE4SVNfeHgxMVJ6SWljS1hUcnBweVkySkh3UmZ6bXROcVVob1hlWl9UNWdTUnBVZVJsM2lWM1JIZURqaFBldVlZZzFpU093QTNSb0k?oc=5` — 5 battles that will decide EU’s ‘Made in Europe’ push — recovery attempt 2/3
+  7. `link:https://news.google.com/rss/articles/CBMiigFBVV95cUxNWFJ6SHYyYWhObl9jUFVoQ09meFh2QWhvVURLZGo0Um5NRDVJcFloX2RaTDFyVmtpVlNtZ00zdVhsNklFYXR0TWlNX3g1Tm93a2J2cHNES3hsSUF1NWdaMmJZTmhENGhwNlFEanVxd2dFVkJtVXgtUVNRcXVYTjBsVEcwYkJHaEozc2c?oc=5` — Opinion: After ‘Made in Europe’ comes the hard part — recovery attempt 2/3
+  8. `link:https://news.google.com/rss/articles/CBMiqgFBVV95cUxORFJ5UnNHNVROcS0zVW96UHRRSDRuVGhkWTJJNTZqOWJMaFh6am05S3Q2c3NUODlWLXNEbGtUZW1SX0pvYTZiUFZmQXVlM2t0SDAtenpTLXZDWWQxM2NGUzhoYmswcXMtWU52bHRIVUg4S0thVU5ISkdsVFA5dnpyUjFjVUVIN2JmOUVQTHRZajFVZ1VWWWNUWXVLaHk4dkhnRWZ6eXljTno2QQ?oc=5` — Rare earths: How new-old export controls would burden German companies - Table.Briefings — recovery attempt 2/3
+  - … plus 3 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20261023T135409Z-c070967f6380`
+- Current package: `worker-b-20261023T143338Z-f125f69603cb`
 - Assigned unresolved records: **36**
-  1. `historical:id:55d1298887962cbf` — Continuity in times of geoeconomic change: the European Union’s strategic trade relations with the Global South
-  2. `historical:id:302703dc36d212e9` — Trade war to cooperation: scrutinizing China’s strategies to the EU carbon border adjustment mechanism
-  3. `historical:id:eeed4bd14252e3f8` — The Level Playing Field and Determining Trade Impact under Trade Agreements: Implications from the EU–UK Trade and Cooperation Agreement
-  4. `historical:id:06a8f7e839fc5603` — [China Trends #26] - Energy Security First: What Hormuz and Chinese Sources Reveal About Beijing’s Strategy
-  5. `historical:id:e27227589e075166` — The Architecture of Trusted Partner Alignment: Building an EU Economic Foreign Policy Through Chips Act 2.0 and CADA
-  6. `historical:id:b4b900e80122ec1f` — R&I needs to reduce dependencies on critical raw materials through advanced materials in electronics
-  7. `historical:id:810531b52b581fe5` — Critical minerals and industrial policy: a network-based approach to supply chain risk
-  8. `historical:id:b439b69876ade4c7` — CELIS Institute - Non-Paper No 01/2026: Firewalls under EU Sanctions Law: Lessons from the EuroChem Case
+  1. `historical:id:76c8d5f71cad4692` — CFIS 24 Background Paper on Panel: The Current Global Regulatory & Investment Environment: The OECD Countries’ Perspective on Economic Security - CELIS Institute
+  2. `historical:id:154887ae92d2f483` — CFIS 24 Background Paper on Panel: Investment Screening and Economic Security in the Majority World - CELIS Institute
+  3. `historical:id:2716461d91f375a8` — Building Resilience in Investment Screening and Economic Security: Lessons from India - CELIS Institute
+  4. `historical:id:1b927cef6fb95689` — Economic peacefare: Lessons for the future of European sanctions strategy – European Council on Foreign Relations
+  5. `historical:id:3d095949c2ac497f` — Evaluation and review of the EU's FDI Screening Regulation - BusinessEurope contribution to the public consultation
+  6. `historical:id:5404064ed9ca5c3c` — Advanced manufacturing is key for EU competitiveness
+  7. `historical:id:70f857e6dfe48ea9` — Administrative Burden of the Foreign Subsidies Regulation - Letter from Markus J. Beyrer
+  8. `historical:id:bd6390ebd49d38da` — Beyond sanctions: How west Africa can recommit to democracy – European Council on Foreign Relations
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
