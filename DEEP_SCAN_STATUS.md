@@ -7,38 +7,38 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` counts as one genuine recovery pass. After **3** unsuccessful passes, the work leaves the automatic queue and enters **Hands-on verification needed**.
 
 - Authoritative V2 verified: **2548** (Main **1095** + Historical **1453**)
-- Automatic queue still needing V2 verification: **83** (Main **10** + Historical **73**)
-- Currently assigned to workers: **47** (Main **10** + Historical **37**)
+- Automatic queue still needing V2 verification: **127** (Main **16** + Historical **111**)
+- Currently assigned to workers: **72** (Main **6** + Historical **66**)
 - Bounded access-recovery retries still eligible: **0**
 - Hands-on verification needed: **162**
-- Automatic queue pending and not yet assigned: **36**
+- Automatic queue pending and not yet assigned: **55**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261023T143335Z-4e52b002cc4b`
-- Assigned unresolved records: **11**
-  1. `historical:id:feaba8865bdc846b` — EU and US business committed to the transatlantic relationship: need to avoid major trade disruptions — recovery attempt 2/3
-  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=3d187198-c74c-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Member States' consolidated comments on Presidency second compromise text on Title III (Certification), Articles 71-97 - Publications Office of the EU — recovery attempt 3/3
-  3. `link:https://doi.org/10.1016/j.enpol.2026.115663` — The geopoliticization of Europe's energy transition: Geopolitical risk and selective transition adjustment across EU member states — recovery attempt 3/3
-  4. `link:https://doi.org/10.1016/j.jclepro.2026.149493` — Assessing energy security and sustainable development goal 7 performance in EU - A meta four-parallel two-stage undesirable dynamic DDF model — recovery attempt 3/3
-  5. `link:https://doi.org/10.1080/09692290.2026.2745879` — Europe’s new geoeconomic cleavages: from capitalist diversity to international vulnerability in European political economy — recovery attempt 3/3
-  6. `link:https://news.google.com/rss/articles/CBMikwFBVV95cUxObW1IWjhVODBnLWVSTUdKZkZYb2tGOUVlOFRtVXJWMjA2Rld4ZUoxN0M5NGdMbHFLS1RzRXI1OU5NNmtlU1NMVHE4SVNfeHgxMVJ6SWljS1hUcnBweVkySkh3UmZ6bXROcVVob1hlWl9UNWdTUnBVZVJsM2lWM1JIZURqaFBldVlZZzFpU093QTNSb0k?oc=5` — 5 battles that will decide EU’s ‘Made in Europe’ push — recovery attempt 2/3
-  7. `link:https://news.google.com/rss/articles/CBMiigFBVV95cUxNWFJ6SHYyYWhObl9jUFVoQ09meFh2QWhvVURLZGo0Um5NRDVJcFloX2RaTDFyVmtpVlNtZ00zdVhsNklFYXR0TWlNX3g1Tm93a2J2cHNES3hsSUF1NWdaMmJZTmhENGhwNlFEanVxd2dFVkJtVXgtUVNRcXVYTjBsVEcwYkJHaEozc2c?oc=5` — Opinion: After ‘Made in Europe’ comes the hard part — recovery attempt 2/3
-  8. `link:https://news.google.com/rss/articles/CBMiqgFBVV95cUxORFJ5UnNHNVROcS0zVW96UHRRSDRuVGhkWTJJNTZqOWJMaFh6am05S3Q2c3NUODlWLXNEbGtUZW1SX0pvYTZiUFZmQXVlM2t0SDAtenpTLXZDWWQxM2NGUzhoYmswcXMtWU52bHRIVUg4S0thVU5ISkdsVFA5dnpyUjFjVUVIN2JmOUVQTHRZajFVZ1VWWWNUWXVLaHk4dkhnRWZ6eXljTno2QQ?oc=5` — Rare earths: How new-old export controls would burden German companies - Table.Briefings — recovery attempt 2/3
-  - … plus 3 more in the package manifest
+- Current package: `worker-a-20261024T130919Z-062f84fbfd49`
+- Assigned unresolved records: **36**
+  1. `link:https://doi.org/10.1080/13563467.2026.2751107` — Globalised but divided: European corporations and the EU’s geoeconomic turn against China
+  2. `link:https://doi.org/10.1080/13563467.2026.2751104` — Chinese and Russian nuclear energy companies in Europe’s geoeconomic turn: giving way to the Americans?
+  3. `link:https://www.ispionline.it/en/tag/european-council` — European Council | ISPI
+  4. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=0e822795-cf50-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Landscape analysis study of the biotechnology sector in the Union with a view to foster its competitiveness and innovation - Publications Office of the EU
+  5. `link:https://doi.org/10.1002/sd.71344` — Green Energy Transition and Sustainable Development Outcomes in Europe: Evidence of Threshold and Moderating Effects
+  6. `link:https://doi.org/10.1177/2336825x261466887` — EU policy towards the sahel in the “post-West” era
+  7. `historical:id:a5db24ea85edc12f` — A “Common” European Interest? Explaining Variation in IPCEI State Aid Between EU Member States
+  8. `historical:id:9c5bc42896cec418` — The Road to a New European Automotive Strategy: Trade and Industrial Policy Options - Institut Jacques Delors
+  - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20261023T143338Z-f125f69603cb`
+- Current package: `worker-b-20261024T130926Z-76400371b917`
 - Assigned unresolved records: **36**
-  1. `historical:id:76c8d5f71cad4692` — CFIS 24 Background Paper on Panel: The Current Global Regulatory & Investment Environment: The OECD Countries’ Perspective on Economic Security - CELIS Institute
-  2. `historical:id:154887ae92d2f483` — CFIS 24 Background Paper on Panel: Investment Screening and Economic Security in the Majority World - CELIS Institute
-  3. `historical:id:2716461d91f375a8` — Building Resilience in Investment Screening and Economic Security: Lessons from India - CELIS Institute
-  4. `historical:id:1b927cef6fb95689` — Economic peacefare: Lessons for the future of European sanctions strategy – European Council on Foreign Relations
-  5. `historical:id:3d095949c2ac497f` — Evaluation and review of the EU's FDI Screening Regulation - BusinessEurope contribution to the public consultation
-  6. `historical:id:5404064ed9ca5c3c` — Advanced manufacturing is key for EU competitiveness
-  7. `historical:id:70f857e6dfe48ea9` — Administrative Burden of the Foreign Subsidies Regulation - Letter from Markus J. Beyrer
-  8. `historical:id:bd6390ebd49d38da` — Beyond sanctions: How west Africa can recommit to democracy – European Council on Foreign Relations
+  1. `historical:id:af368faf726749a5` — Introduction:New perspectives on China – Central and Eastern Europe relations
+  2. `historical:id:37aa347e227cf4f7` — Polish WWII anniversary highlights transatlantic rifts – European Council on Foreign Relations
+  3. `historical:id:781270db986e0663` — Transatlantic Policy Impacts of the US-EU Trade Conflict
+  4. `historical:id:a64ea9c31c23c4db` — Cherry picking in the design of trade policy: why regional organizations shift between inter-regional and bilateral negotiations
+  5. `historical:id:013e6f5c037225e9` — The legitimacy of free trade agreements as tools of EU democracy promotion
+  6. `historical:id:5f7cfd158fe24bb0` — ifo Viewpoint 202: Germany’s new industrial policy | ifo Institute
+  7. `historical:id:a1bcb697d857847e` — Theresa May’s Deep and Comprehensive Free Trade Agreement – CEPS
+  8. `historical:id:f00553dd14263a26` — Institut Jacques Delors - EU industrial policy in the making
   - … plus 28 more in the package manifest
 
 ### Worker SINGLE
