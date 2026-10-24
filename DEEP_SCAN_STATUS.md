@@ -6,39 +6,40 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` counts as one genuine recovery pass. After **3** unsuccessful passes, the work leaves the automatic queue and enters **Hands-on verification needed**.
 
-- Authoritative V2 verified: **2548** (Main **1095** + Historical **1453**)
-- Automatic queue still needing V2 verification: **127** (Main **16** + Historical **111**)
-- Currently assigned to workers: **19** (Main **8** + Historical **11**)
-- Bounded access-recovery retries still eligible: **0**
-- Hands-on verification needed: **162**
-- Automatic queue pending and not yet assigned: **108**
+- Authoritative V2 verified: **2557** (Main **1095** + Historical **1462**)
+- Automatic queue still needing V2 verification: **111** (Main **11** + Historical **100**)
+- Currently assigned to workers: **72** (Main **8** + Historical **64**)
+- Bounded access-recovery retries still eligible: **3**
+- Hands-on verification needed: **169**
+- Automatic queue pending and not yet assigned: **39**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261024T140309Z-78e3f0d8db3d`
-- Assigned unresolved records: **8**
-  1. `historical:id:e20e32c90ec3c706` — Foreign policy after covid: A checklist for a new world – European Council on Foreign Relations — recovery attempt 2/3
-  2. `historical:id:626882e01cbfaac6` — Chinese FDI in Europe: 2019 Update — recovery attempt 2/3
-  3. `historical:id:793989ef48865f7b` — On 5G, Brussels is up to the job – European Council on Foreign Relations — recovery attempt 2/3
-  4. `historical:id:531ce5b68383dea2` — Why European strategic autonomy matters — recovery attempt 2/3
-  5. `historical:id:bdbb295000ade531` — Transatlantic trade is stuck: time to integrate trade, technology, and security - Egmont Institute — recovery attempt 2/3
-  6. `historical:id:82d1dcba1878ddb4` — Spain: Government announces new economic and FDI screening measures (COVID-19) - Global Trade Alert — recovery attempt 2/3
-  7. `historical:id:b0554359ea27ff9c` — Reset transatlantic trade through cooperation on technology - Egmont Institute — recovery attempt 2/3
-  8. `historical:id:5e83017dae2d8853` — Rare earth elements, permanent magnets, and motors — recovery attempt 2/3
+- Current package: `worker-a-20261024T142047Z-f125f69603cb`
+- Assigned unresolved records: **36**
+  1. `historical:id:76c8d5f71cad4692` — CFIS 24 Background Paper on Panel: The Current Global Regulatory & Investment Environment: The OECD Countries’ Perspective on Economic Security - CELIS Institute
+  2. `historical:id:154887ae92d2f483` — CFIS 24 Background Paper on Panel: Investment Screening and Economic Security in the Majority World - CELIS Institute
+  3. `historical:id:2716461d91f375a8` — Building Resilience in Investment Screening and Economic Security: Lessons from India - CELIS Institute
+  4. `historical:id:1b927cef6fb95689` — Economic peacefare: Lessons for the future of European sanctions strategy – European Council on Foreign Relations
+  5. `historical:id:3d095949c2ac497f` — Evaluation and review of the EU's FDI Screening Regulation - BusinessEurope contribution to the public consultation
+  6. `historical:id:5404064ed9ca5c3c` — Advanced manufacturing is key for EU competitiveness
+  7. `historical:id:70f857e6dfe48ea9` — Administrative Burden of the Foreign Subsidies Regulation - Letter from Markus J. Beyrer
+  8. `historical:id:bd6390ebd49d38da` — Beyond sanctions: How west Africa can recommit to democracy – European Council on Foreign Relations
+  - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20261024T140311Z-d34b1cc799ca`
-- Assigned unresolved records: **11**
-  1. `link:https://news.google.com/rss/articles/CBMikwFBVV95cUxObW1IWjhVODBnLWVSTUdKZkZYb2tGOUVlOFRtVXJWMjA2Rld4ZUoxN0M5NGdMbHFLS1RzRXI1OU5NNmtlU1NMVHE4SVNfeHgxMVJ6SWljS1hUcnBweVkySkh3UmZ6bXROcVVob1hlWl9UNWdTUnBVZVJsM2lWM1JIZURqaFBldVlZZzFpU093QTNSb0k?oc=5` — 5 battles that will decide EU’s ‘Made in Europe’ push — recovery attempt 2/3
-  2. `link:https://news.google.com/rss/articles/CBMiigFBVV95cUxNWFJ6SHYyYWhObl9jUFVoQ09meFh2QWhvVURLZGo0Um5NRDVJcFloX2RaTDFyVmtpVlNtZ00zdVhsNklFYXR0TWlNX3g1Tm93a2J2cHNES3hsSUF1NWdaMmJZTmhENGhwNlFEanVxd2dFVkJtVXgtUVNRcXVYTjBsVEcwYkJHaEozc2c?oc=5` — Opinion: After ‘Made in Europe’ comes the hard part — recovery attempt 2/3
-  3. `link:https://news.google.com/rss/articles/CBMiqgFBVV95cUxORFJ5UnNHNVROcS0zVW96UHRRSDRuVGhkWTJJNTZqOWJMaFh6am05S3Q2c3NUODlWLXNEbGtUZW1SX0pvYTZiUFZmQXVlM2t0SDAtenpTLXZDWWQxM2NGUzhoYmswcXMtWU52bHRIVUg4S0thVU5ISkdsVFA5dnpyUjFjVUVIN2JmOUVQTHRZajFVZ1VWWWNUWXVLaHk4dkhnRWZ6eXljTno2QQ?oc=5` — Rare earths: How new-old export controls would burden German companies - Table.Briefings — recovery attempt 2/3
-  4. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=3d187198-c74c-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Member States' consolidated comments on Presidency second compromise text on Title III (Certification), Articles 71-97 - Publications Office of the EU — recovery attempt 3/3
-  5. `link:https://doi.org/10.1016/j.enpol.2026.115663` — The geopoliticization of Europe's energy transition: Geopolitical risk and selective transition adjustment across EU member states — recovery attempt 3/3
-  6. `link:https://doi.org/10.1016/j.jclepro.2026.149493` — Assessing energy security and sustainable development goal 7 performance in EU - A meta four-parallel two-stage undesirable dynamic DDF model — recovery attempt 3/3
-  7. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=1f2d15aa-c979-11f1-8b4c-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — - AMENDMENT - 1005 - Draft report - Markéta Gregorová - (PE792.222v01-00) - European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Proposal for a regulation - (COM2026/0011 - C10-0015/2026 - 2026/0011(COD)) - Publications Office of the EU — recovery attempt 3/3
-  8. `link:https://doi.org/10.1080/09692290.2026.2745879` — Europe’s new geoeconomic cleavages: from capitalist diversity to international vulnerability in European political economy — recovery attempt 3/3
-  - … plus 3 more in the package manifest
+- Current package: `worker-b-20261024T142054Z-062f84fbfd49`
+- Assigned unresolved records: **36**
+  1. `link:https://doi.org/10.1080/13563467.2026.2751107` — Globalised but divided: European corporations and the EU’s geoeconomic turn against China
+  2. `link:https://doi.org/10.1080/13563467.2026.2751104` — Chinese and Russian nuclear energy companies in Europe’s geoeconomic turn: giving way to the Americans?
+  3. `link:https://www.ispionline.it/en/tag/european-council` — European Council | ISPI
+  4. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=0e822795-cf50-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Landscape analysis study of the biotechnology sector in the Union with a view to foster its competitiveness and innovation - Publications Office of the EU
+  5. `link:https://doi.org/10.1002/sd.71344` — Green Energy Transition and Sustainable Development Outcomes in Europe: Evidence of Threshold and Moderating Effects
+  6. `link:https://doi.org/10.1177/2336825x261466887` — EU policy towards the sahel in the “post-West” era
+  7. `historical:id:a5db24ea85edc12f` — A “Common” European Interest? Explaining Variation in IPCEI State Aid Between EU Member States
+  8. `historical:id:9c5bc42896cec418` — The Road to a New European Automotive Strategy: Trade and Industrial Policy Options - Institut Jacques Delors
+  - … plus 28 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
@@ -210,3 +211,10 @@ These works no longer consume automatic Deep Scan slots. Their identity is belie
 - `link:https://doi.org/10.1080/09662839.2026.2718107` — **The Commission’s 2025 intelligence cell proposal: from intelligence sharing to supranational intelligence?** — attempts: 3/3 — European Security — 2026-08-27 — Bibliographic identity confirmed, but substantive original work is not accessible despite documented recovery attempts; no scientific/admission assessment made. — https://doi.org/10.1080/09662839.2026.2718107
 - `link:https://doi.org/10.1016/j.erss.2026.105005` — **How energy dependence becomes domestically acceptable in European countries: Legitimation of Russian energy use during the Russia–Ukraine war** — attempts: 3/3 — Energy Research & Social Science — 2026-10-02 — Bibliographic identity confirmed, but substantive original work is not accessible despite documented recovery attempts; no scientific/admission assessment made. — https://doi.org/10.1016/j.erss.2026.105005
 - `link:https://doi.org/10.1093/oep/gpag037` — **US capital retrenchment and external financing constraints: evidence from Germany’s 1923 economic crisis** — attempts: 3/3 — Oxford Economic Papers — 2026-10-03 — Bibliographic identity confirmed, but substantive original work is not accessible despite documented recovery attempts; no scientific/admission assessment made. — https://doi.org/10.1093/oep/gpag037
+- `historical:id:9d12392a0058745f` — **European and UK critical raw materials (CRM) supply chains – “national security” considerations – Lexology - CELIS Institute** — attempts: 3/3 — CELIS Institute — 2021-05-04 — Publication identity is corroborated, but the complete underlying work remains inaccessible or available evidence is insufficient for an authoritative admission decision. — https://celis.institute/european-and-uk-critical-raw-materials-crm-supply-chains-national-security-considerations-lexology/
+- `historical:id:608e0a8e7b4d24ad` — **Analysis: Will new EU law cause a chilling effect on future FDI into Ireland? – Business Post - CELIS Institute** — attempts: 3/3 — CELIS Institute — 2021-04-13 — Publication identity is corroborated, but the complete underlying work remains inaccessible or available evidence is insufficient for an authoritative admission decision. — https://celis.institute/analysis-will-new-eu-law-cause-a-chilling-effect-on-future-fdi-into-ireland-business-post/
+- `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=3d187198-c74c-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — **Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Member States' consolidated comments on Presidency second compromise text on Title III (Certification), Articles 71-97 - Publications Office of the EU** — attempts: 3/3 — Publications Office of the EU — 2026-09-25 — Publication identity is corroborated, but the complete underlying work remains inaccessible or available evidence is insufficient for an authoritative admission decision. — https://op.europa.eu/o/opportal-service/download-handler?identifier=3d187198-c74c-11f1-a77b-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=
+- `link:https://doi.org/10.1016/j.enpol.2026.115663` — **The geopoliticization of Europe's energy transition: Geopolitical risk and selective transition adjustment across EU member states** — attempts: 3/3 — Energy Policy — 2026-10-13 — Publication identity is corroborated, but the complete underlying work remains inaccessible or available evidence is insufficient for an authoritative admission decision. — https://doi.org/10.1016/j.enpol.2026.115663
+- `link:https://doi.org/10.1016/j.jclepro.2026.149493` — **Assessing energy security and sustainable development goal 7 performance in EU - A meta four-parallel two-stage undesirable dynamic DDF model** — attempts: 3/3 — Journal of Cleaner Production — 2026-09-22 — Publication identity is corroborated, but the complete underlying work remains inaccessible or available evidence is insufficient for an authoritative admission decision. — https://doi.org/10.1016/j.jclepro.2026.149493
+- `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=1f2d15aa-c979-11f1-8b4c-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — **- AMENDMENT - 1005 - Draft report - Markéta Gregorová - (PE792.222v01-00) - European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Proposal for a regulation - (COM2026/0011 - C10-0015/2026 - 2026/0011(COD)) - Publications Office of the EU** — attempts: 3/3 — Publications Office of the EU — 2026-10-13 — Publication identity is corroborated, but the complete underlying work remains inaccessible or available evidence is insufficient for an authoritative admission decision. — https://op.europa.eu/o/opportal-service/download-handler?identifier=1f2d15aa-c979-11f1-8b4c-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=
+- `link:https://doi.org/10.1080/09692290.2026.2745879` — **Europe’s new geoeconomic cleavages: from capitalist diversity to international vulnerability in European political economy** — attempts: 3/3 — Review of International Political Economy — 2026-10-20 — Publication identity is corroborated, but the complete underlying work remains inaccessible or available evidence is insufficient for an authoritative admission decision. — https://doi.org/10.1080/09692290.2026.2745879

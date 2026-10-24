@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-record-corrections-v1",
-  "updated_at": "2026-10-23T14:32:25Z",
+  "updated_at": "2026-10-24T14:20:03Z",
   "records": {
     "link:https://doi.org/10.1080/09662839.2026.2709844": {
       "fields": {
@@ -4332,6 +4332,99 @@
       ],
       "updated_at": "2026-10-23T14:32:24Z",
       "deep_scan_package_id": "worker-b-20261023T135409Z-c070967f6380"
+    },
+    "historical:id:626882e01cbfaac6": {
+      "fields": {
+        "date": "2020-04"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "The report cover identifies April 2020 but not April 8 as its publication day; corrected to month precision.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://rhg.com/wp-content/uploads/2024/02/MERICS-Rhodium-Group_COFDI-Update-2020-2-1.pdf"
+      ],
+      "updated_at": "2026-10-24T14:20:02Z",
+      "deep_scan_package_id": "worker-a-20261024T140309Z-78e3f0d8db3d"
+    },
+    "historical:id:531ce5b68383dea2": {
+      "fields": {
+        "date": "2020-12-03",
+        "authors": "Josep Borrell"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Archived EEAS first-party article is dated 03.12.2020 and explicitly credits Josep Borrell, not the scanner’s default 2020-01-01.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://www.eeas.europa.eu/eeas/why-european-strategic-autonomy-matters_en"
+      ],
+      "updated_at": "2026-10-24T14:20:03Z",
+      "deep_scan_package_id": "worker-a-20261024T140309Z-78e3f0d8db3d"
+    },
+    "historical:id:bdbb295000ade531": {
+      "fields": {
+        "date": "2020-02-10",
+        "authors": "Tobias Gehrke"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "The author and 10 February 2020 date are explicitly identified at Egmont’s article header.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://egmontinstitute.be/transatlantic-trade-is-stuck-time-to-integrate-trade-technology-and-security/"
+      ],
+      "updated_at": "2026-10-24T14:20:03Z",
+      "deep_scan_package_id": "worker-a-20261024T140309Z-78e3f0d8db3d"
+    },
+    "historical:id:82d1dcba1878ddb4": {
+      "fields": {
+        "date": "2020-11-17"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "The state-act entry explicitly dates the government announcement 17 November 2020, not 1 January 2020.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://globaltradealert.org/state-act/46664-spain-government-announces-new-economic-and-fdi-screening-measures-covid-19/"
+      ],
+      "updated_at": "2026-10-24T14:20:03Z",
+      "deep_scan_package_id": "worker-a-20261024T140309Z-78e3f0d8db3d"
+    },
+    "historical:id:b0554359ea27ff9c": {
+      "fields": {
+        "date": "2020-02-19",
+        "authors": "Tobias Gehrke"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Egmont page identifies Tobias Gehrke and publication date 19 February 2020.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://egmontinstitute.be/reset-transatlantic-trade-through-cooperation-on-technology/"
+      ],
+      "updated_at": "2026-10-24T14:20:03Z",
+      "deep_scan_package_id": "worker-a-20261024T140309Z-78e3f0d8db3d"
+    },
+    "historical:id:feaba8865bdc846b": {
+      "fields": {
+        "date": "2018-04-16"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Original issuer PDF explicitly says Brussels, 16 April 2018, rather than the placeholder 2018-01-01.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "evidence": [
+        "https://www.businesseurope.eu/publications/eu-and-us-business-committed-to-the-transatlantic-relationship-need-to-avoid-major-trade-disruptions/"
+      ],
+      "updated_at": "2026-10-24T14:20:03Z",
+      "deep_scan_package_id": "worker-b-20261024T140311Z-d34b1cc799ca"
     }
   }
 }
