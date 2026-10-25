@@ -7,39 +7,39 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` counts as one genuine recovery pass. After **3** unsuccessful passes, the work leaves the automatic queue and enters **Hands-on verification needed**.
 
 - Authoritative V2 verified: **2557** (Main **1095** + Historical **1462**)
-- Automatic queue still needing V2 verification: **111** (Main **11** + Historical **100**)
-- Currently assigned to workers: **72** (Main **8** + Historical **64**)
-- Bounded access-recovery retries still eligible: **3**
+- Automatic queue still needing V2 verification: **121** (Main **13** + Historical **108**)
+- Currently assigned to workers: **49** (Main **5** + Historical **44**)
+- Bounded access-recovery retries still eligible: **0**
 - Hands-on verification needed: **169**
-- Automatic queue pending and not yet assigned: **39**
+- Automatic queue pending and not yet assigned: **72**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261024T142047Z-f125f69603cb`
+- Current package: `worker-a-20261025T090456Z-32f9ec5a3ce7`
 - Assigned unresolved records: **36**
-  1. `historical:id:76c8d5f71cad4692` — CFIS 24 Background Paper on Panel: The Current Global Regulatory & Investment Environment: The OECD Countries’ Perspective on Economic Security - CELIS Institute
-  2. `historical:id:154887ae92d2f483` — CFIS 24 Background Paper on Panel: Investment Screening and Economic Security in the Majority World - CELIS Institute
-  3. `historical:id:2716461d91f375a8` — Building Resilience in Investment Screening and Economic Security: Lessons from India - CELIS Institute
-  4. `historical:id:1b927cef6fb95689` — Economic peacefare: Lessons for the future of European sanctions strategy – European Council on Foreign Relations
-  5. `historical:id:3d095949c2ac497f` — Evaluation and review of the EU's FDI Screening Regulation - BusinessEurope contribution to the public consultation
-  6. `historical:id:5404064ed9ca5c3c` — Advanced manufacturing is key for EU competitiveness
-  7. `historical:id:70f857e6dfe48ea9` — Administrative Burden of the Foreign Subsidies Regulation - Letter from Markus J. Beyrer
-  8. `historical:id:bd6390ebd49d38da` — Beyond sanctions: How west Africa can recommit to democracy – European Council on Foreign Relations
+  1. `link:https://doi.org/10.1787/846bbe2d-en` — SME Policy Index for Western Balkans and Türkiye 2026 – Economy Profile for Bosnia and Herzegovina
+  2. `link:https://doi.org/10.1016/j.ecolecon.2026.109266` — Europe at the crossroads: trading strategic autonomy for resilience under degrowth
+  3. `historical:id:8d523381db1084a3` — The role of existing specialisation in European clean-tech competitiveness
+  4. `historical:id:a3c3c63d74b00b46` — The European Union’s automotive sector needs a plan, not undue protection
+  5. `historical:id:0bcb6b67c6eed35a` — Better coordination for a more efficient European energy system
+  6. `historical:id:def064300284797e` — Economic Sanctions and the Geopolitical Commission: Evaluating the Effects of Decentralized Sanctions Enforcement on the EU’s Global Actorness
+  7. `historical:id:fbe9ff4ded6f8e7e` — Europe has a solid basis for battery and electric vehicle manufacturing growth
+  8. `historical:id:40ff080d76db0897` — Supply Chain Innovation Challenge
   - … plus 28 more in the package manifest
 
 ### Worker B
-- Current package: `worker-b-20261024T142054Z-062f84fbfd49`
-- Assigned unresolved records: **36**
-  1. `link:https://doi.org/10.1080/13563467.2026.2751107` — Globalised but divided: European corporations and the EU’s geoeconomic turn against China
-  2. `link:https://doi.org/10.1080/13563467.2026.2751104` — Chinese and Russian nuclear energy companies in Europe’s geoeconomic turn: giving way to the Americans?
-  3. `link:https://www.ispionline.it/en/tag/european-council` — European Council | ISPI
-  4. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=0e822795-cf50-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Landscape analysis study of the biotechnology sector in the Union with a view to foster its competitiveness and innovation - Publications Office of the EU
-  5. `link:https://doi.org/10.1002/sd.71344` — Green Energy Transition and Sustainable Development Outcomes in Europe: Evidence of Threshold and Moderating Effects
-  6. `link:https://doi.org/10.1177/2336825x261466887` — EU policy towards the sahel in the “post-West” era
-  7. `historical:id:a5db24ea85edc12f` — A “Common” European Interest? Explaining Variation in IPCEI State Aid Between EU Member States
-  8. `historical:id:9c5bc42896cec418` — The Road to a New European Automotive Strategy: Trade and Industrial Policy Options - Institut Jacques Delors
-  - … plus 28 more in the package manifest
+- Current package: `worker-b-20261025T090515Z-c134448d4c2a`
+- Assigned unresolved records: **13**
+  1. `historical:id:e1abd351d9984dbd` — Christoph Herrmann and Mareike Hoffmann, Investment in the European Union: Competences, Structures, Responsibility and Policy - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 2/3
+  2. `historical:id:99b60a66ecbc333f` — Serbia’s 5G deal with Washington: The art of muddling through – European Council on Foreign Relations — recovery attempt 2/3
+  3. `historical:id:d6e57fd14e5dfc17` — Under the waves: Turkey’s Black Sea gas discovery and relations with Europe – European Council on Foreign Relations — recovery attempt 2/3
+  4. `historical:id:1d93e826c6dafc18` — How Europe can defend itself against US economic sanctions – European Council on Foreign Relations — recovery attempt 2/3
+  5. `historical:id:601f1659d0e32c89` — Why the EU now needs a deliberate Belarus policy – European Council on Foreign Relations — recovery attempt 2/3
+  6. `historical:id:e5fb3f11056cbe60` — The myth of subsidies in the film industry: a comparative analysis of European and US approaches — recovery attempt 2/3
+  7. `historical:id:3a7143682f7faf74` — US campaign against Chinese vendors: The Global 5G Contest Escalates — recovery attempt 2/3
+  8. `historical:id:0aab656e64722f04` — The when, what, where and why of European Union sanctions — recovery attempt 2/3
+  - … plus 5 more in the package manifest
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
