@@ -6,34 +6,31 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` counts as one genuine recovery pass. After **3** unsuccessful passes, the work leaves the automatic queue and enters **Hands-on verification needed**.
 
-- Authoritative V2 verified: **2601** (Main **1097** + Historical **1504**)
-- Automatic queue still needing V2 verification: **78** (Main **12** + Historical **66**)
-- Currently assigned to workers: **39** (Main **9** + Historical **30**)
+- Authoritative V2 verified: **2634** (Main **1101** + Historical **1533**)
+- Automatic queue still needing V2 verification: **45** (Main **8** + Historical **37**)
+- Currently assigned to workers: **9** (Main **6** + Historical **3**)
 - Bounded access-recovery retries still eligible: **0**
 - Hands-on verification needed: **171**
-- Automatic queue pending and not yet assigned: **39**
+- Automatic queue pending and not yet assigned: **36**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261025T185325Z-f91ff05e827a`
-- Assigned unresolved records: **36**
-  1. `link:https://doi.org/10.65864/8b68q1p7c8` — Heterogeneous Effects of Trade in Services Barriers: Firm-Level Evidence from the EU-UK Trade and Cooperation Agreement
-  2. `link:https://doi.org/10.1007/s40831-026-01716-4` — Perspectives on LFP Recycling: Will Europe Follow China?
-  3. `link:https://doi.org/10.1080/23322969.2026.2751120` — Emerging research security approaches: organisational arrangements at three European universities
-  4. `link:https://doi.org/10.1080/13563467.2026.2751107` — Globalised but divided: European corporations and the EU’s geoeconomic turn against China
-  5. `link:https://doi.org/10.1080/13563467.2026.2751104` — Chinese and Russian nuclear energy companies in Europe’s geoeconomic turn: giving way to the Americans?
-  6. `link:https://www.ispionline.it/en/tag/european-council` — European Council | ISPI
-  7. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=0e822795-cf50-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Landscape analysis study of the biotechnology sector in the Union with a view to foster its competitiveness and innovation - Publications Office of the EU
-  8. `link:https://doi.org/10.1002/sd.71344` — Green Energy Transition and Sustainable Development Outcomes in Europe: Evidence of Threshold and Moderating Effects
-  - … plus 28 more in the package manifest
+- Current package: `worker-a-20261025T191942Z-adc5978a6022`
+- Assigned unresolved records: **6**
+  1. `link:https://doi.org/10.1080/13563467.2026.2751107` — Globalised but divided: European corporations and the EU’s geoeconomic turn against China — recovery attempt 2/3
+  2. `link:https://doi.org/10.1080/13563467.2026.2751104` — Chinese and Russian nuclear energy companies in Europe’s geoeconomic turn: giving way to the Americans? — recovery attempt 2/3
+  3. `link:https://doi.org/10.1002/sd.71344` — Green Energy Transition and Sustainable Development Outcomes in Europe: Evidence of Threshold and Moderating Effects — recovery attempt 2/3
+  4. `link:https://doi.org/10.1177/2336825x261466887` — EU policy towards the sahel in the “post-West” era — recovery attempt 2/3
+  5. `link:https://doi.org/10.1080/23322969.2026.2751120` — Emerging research security approaches: organisational arrangements at three European universities — recovery attempt 2/3
+  6. `historical:id:dfdf69eee6d7a0f4` — Supranational security states for national security problems: governing by rules & capacities in tech-driven security spaces — recovery attempt 2/3
 
 ### Worker B
-- Current package: `worker-b-20261025T185342Z-31cbbde64267`
+- Current package: `worker-b-20261025T191944Z-0949f2f84bf9`
 - Assigned unresolved records: **3**
-  1. `historical:id:4ca2d5b89014312b` — Iraq, Iran, and the spectre of US sanctions – European Council on Foreign Relations
-  2. `historical:id:391e10f5023d482d` — Trust and Support for Comprehensive Trade Agreements in the European Parliament
-  3. `historical:id:cdc29b0a522f75ab` — The sanctions straitjacket on Russia’s defence sector – European Council on Foreign Relations
+  1. `link:https://doi.org/10.1016/j.ecolecon.2026.109266` — Europe at the crossroads: trading strategic autonomy for resilience under degrowth — recovery attempt 2/3
+  2. `historical:id:e1abd351d9984dbd` — Christoph Herrmann and Mareike Hoffmann, Investment in the European Union: Competences, Structures, Responsibility and Policy - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 3/3
+  3. `historical:id:7693f1bd18e96290` — Marco R. Di Tommaso, Francesca Spigarelli, Elisa Barbieri and Lauretta Rubini, Challenges for the Future and the Role of Industrial Policy - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 3/3
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`

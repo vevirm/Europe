@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-10-25T09:36:00Z",
+  "generated_at": "2026-10-25T19:18:30Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -202654,8 +202654,2627 @@
       "deep_scan_package_id": "worker-b-20261025T090515Z-c134448d4c2a",
       "claims": [],
       "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.65864/8b68q1p7c8": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "2a89403b",
+      "identity_hash": "1df5e6d77adf279f",
+      "reader_title": "Regulatory barriers reduced UK services exports to the EU",
+      "reader_what": "Firm export data associate Brexit and the EU–UK agreement with declining services exports, especially among smaller and larger firms.",
+      "reader_why": "Regulatory market access directly shapes EU–UK cross-border services and foreign-owned companies’ export operations.",
+      "reader_more": "The CESifo working paper matches firm-level export transactions to measures of regulatory restrictiveness. Exports to the EU declined following the referendum and again with new barriers after the Trade and Cooperation Agreement. Barriers to foreign entry explain much of the documented effect; impact differs by firm size and foreign ownership. These are research estimates, not a policy announcement.",
+      "deep_analysis": {
+        "work_kind": "Research working paper",
+        "research_question": "How did post-Brexit regulatory barriers affect UK firms exporting services to the EU?",
+        "main_finding": "The authors estimate declines in UK services exports to EU destinations after Brexit milestones, with heterogeneous impacts across firms.",
+        "method_or_basis": "CESifo research description reports micro-level transactions matched to sectoral services restrictions; author-linked publisher text describes effects and variation.",
+        "qualification": "Empirical estimates depend on the paper’s identification assumptions, and services outcomes differ materially across firm types.",
+        "radar_relevance": "Direct evidence on Europe–UK trade exposure and regulatory market-access barriers.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "DOI resolver https://doi.org/10.65864/8b68q1p7c8 was inaccessible through web reader."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Publisher CESifo page found using exact title and author search: https://www.ifo.de/en/cesifo/publications/2026/working-paper/heterogeneous-effects-trade-services-barriers-firm-level-evidence."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://www.ifo.de/en/cesifo/publications/2026/working-paper/heterogeneous-effects-trade-services-barriers-firm-level-evidence",
+            "title": "Heterogeneous Effects of Trade in Services Barriers: Firm-Level Evidence from the EU-UK Trade and Cooperation Agreement",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "CESifo publisher identifies working paper 13084, authors Cindy Justo, Antonio Navas and Enrico Vanino, DOI and detailed methodology/findings. The claimed peer-reviewed article type was incorrect."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_EU_UK_TRADE_BARRIERS",
+        "reason": "CESifo working paper empirically examines EU–UK services market-access barriers and resulting firm-level export responses."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:22Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "UK services exporting firms",
+            "class": "company"
+          },
+          "mechanism": "restricts",
+          "direction": "contracts",
+          "status": "observation",
+          "status_date": "2026",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Empirical estimates depend on the paper’s identification assumptions, and services outcomes differ materially across firm types.",
+          "text": "CESifo researchers find post-Brexit regulatory barriers coincided with falling UK services exports to the EU.",
+          "confidence": "high",
+          "status_date_precision": "year",
+          "record_key": "link:https://doi.org/10.65864/8b68q1p7c8",
+          "merit": 66,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:1df5e6d77adf279f:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1007/s40831-026-01716-4": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "04a67db2",
+      "identity_hash": "3ea82534631194f0",
+      "reader_title": "Europe’s battery recycling gap is an industrial challenge",
+      "reader_what": "Europe lacks an integrated industrial LFP battery recycling chain despite growing demand and available recycling techniques.",
+      "reader_why": "Limited refining and downstream markets constrain Europe’s strategic battery autonomy amid dominant Chinese supply.",
+      "reader_more": "This opinion article compares China’s mature lithium iron phosphate battery value chain with Europe’s early-stage capacity. Using literature, a China field visit and expert interviews, the authors highlight missing industrial links and markets for recycled products. They argue that coordinated raw-material supply, processing capacity and industrial policy matter more than recycling technology alone.",
+      "deep_analysis": {
+        "work_kind": "Open access journal opinion analysis",
+        "research_question": "What must Europe develop to make lithium iron phosphate battery recycling commercially viable?",
+        "main_finding": "Europe has limited industrial-scale lithium iron phosphate recycling and depends on developing an integrated battery processing and manufacturing ecosystem.",
+        "method_or_basis": "Literature review plus six-day China industry visits, industrial observations and two expert interviews reported in full journal article.",
+        "qualification": "Authors do not claim to have completed a comprehensive quantitative techno-economic assessment; recommendations are prospective.",
+        "radar_relevance": "Direct European industrial capacity, critical-material processing and technology-dependence evidence.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Full open Springer Nature article https://link.springer.com/article/10.1007/s40831-026-01716-4 matched title, DOI, authors and primary content."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1007/s40831-026-01716-4",
+            "title": "Perspectives on LFP Recycling: Will Europe Follow China?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Open access Journal of Sustainable Metallurgy article by Eva Gerold and Tobias Elwert dated 23 October 2026, explicitly classified by journal as Opinion Article; full HTML includes methodology, production comparisons and caveats."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_EU_BATTERY_VALUE_CHAIN",
+        "reason": "Full published opinion study analyses Europe’s strategic lithium iron phosphate battery recycling and manufacturing constraints."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:22Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "materials.processing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European LFP battery value chain",
+            "class": "european_system"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-10-23",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Authors do not claim to have completed a comprehensive quantitative techno-economic assessment; recommendations are prospective.",
+          "text": "Gerold and Elwert find Europe lacks industrial-scale LFP recycling and an integrated downstream market for recovered materials.",
+          "confidence": "high",
+          "record_key": "link:https://doi.org/10.1007/s40831-026-01716-4",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:3ea82534631194f0:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.ispionline.it/en/tag/european-council": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "9eb1747e",
+      "identity_hash": "2ce26a2c61103154",
+      "reader_title": "European Council | ISPI",
+      "reader_what": "Tag aggregation rather than a research work",
+      "reader_more": "The page links to several unrelated stories and teaser snippets. No single study or regulatory development matches the scanner record.",
+      "deep_analysis": {
+        "work_kind": "Source admissibility and scope check",
+        "research_question": "Does this source constitute substantive Europe-centred economic-security evidence?",
+        "main_finding": "ISPI European Council tag URL is a rolling topic index, not a dated, authored analysis or policy decision.",
+        "method_or_basis": "Primary issuer article/page and content or preserved matching source.",
+        "qualification": "No independent European economic-security claim from this item may be admitted.",
+        "radar_relevance": "Exclusion supported by actual primary genre/scope.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected original or package-preserved primary content at https://www.ispionline.it/en/tag/european-council; confirmed provenance and the actual type of page/work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.ispionline.it/en/tag/european-council",
+            "title": "European Council | ISPI",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Authenticated title, publishing body and genre; source demonstrates exclusion reason: ISPI European Council tag URL is a rolling topic index, not a dated, authored analysis or policy decision."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NON_SUBSTANTIVE_LISTING",
+        "reason": "ISPI European Council tag URL is a rolling topic index, not a dated, authored analysis or policy decision."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:22Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=0e822795-cf50-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "f1da0b43",
+      "identity_hash": "a4c388da01e09a3c",
+      "reader_title": "Biotech scale-up gaps across the European Union",
+      "reader_what": "Commission-commissioned study maps European biotechnology finance, skills, manufacturing and biosecurity bottlenecks.",
+      "reader_why": "An incomplete scale-up ecosystem weakens Europe’s capacity to commercialise biotechnology and build industrial resilience.",
+      "reader_more": "The European Commission-commissioned July 2026 executive summary surveys access to capital, clusters, skilled labour, artificial intelligence and biosecurity. It combines quantitative market data, roughly 400 mapped measures and consultations. Its proposals are analytical recommendations, not adopted legislation.",
+      "deep_analysis": {
+        "work_kind": "Research or policy analysis",
+        "research_question": "Which bottlenecks restrict Europe’s biotechnology competitiveness and resilience?",
+        "main_finding": "A broad Commission-commissioned assessment identifies scale-up, financing, skills and industrial infrastructure as central challenges.",
+        "method_or_basis": "Executive summary of mixed-methods policy study: desk research, Eurostat/OECD data, policy mapping, stakeholder survey and interviews.",
+        "qualification": "Source is contractor-authored for Commission and explicitly disclaims binding Commission endorsement; this is summary evidence, not enacted Biotech Act.",
+        "radar_relevance": "Direct EU biotechnology industrial capacity, strategic scaling and biosecurity.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Authenticated matching source at https://op.europa.eu/o/opportal-service/download-handler?identifier=0e822795-cf50-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=; read substantive first-party text in scanner package and checked original publisher identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=0e822795-cf50-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+            "title": "Landscape analysis study of the biotechnology sector in the Union with a view to foster its competitiveness and innovation - Publications Office of the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2026-07."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: An incomplete scale-up ecosystem weakens Europe’s capacity to commercialise biotechnology and build industrial resilience."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:23Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European biotechnology industry",
+            "class": "european_system"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-07",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Source is contractor-authored for Commission and explicitly disclaims binding Commission endorsement; this is summary evidence, not enacted Biotech Act.",
+          "text": "EU-commissioned biotechnology landscape study identifies barriers to European biomanufacturing capacity and scale-up.",
+          "confidence": "high",
+          "status_date_precision": "month",
+          "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=0e822795-cf50-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+          "merit": 97,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:a4c388da01e09a3c:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:a5db24ea85edc12f": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "0acd55c1",
+      "identity_hash": "bcc16f030089e90f",
+      "reader_title": "National politics shape EU strategic industrial subsidies",
+      "reader_what": "Study finds IPCEI state aid varies with political economy, not just member states’ fiscal resources.",
+      "reader_why": "Uneven state support for EU strategic technology projects risks fragmenting the single market.",
+      "reader_more": "An open-access study compares aid commitments across the EU-27 for Important Projects of Common European Interest. Fuzzy-set qualitative comparative analysis tests political and economic conditions. Economy size, fiscal stress, Chinese foreign investment, previous state aid and government ideology help explain variation. This is configurational association, not a single causal explanation.",
+      "deep_analysis": {
+        "work_kind": "Research or policy analysis",
+        "research_question": "Which combinations explain EU member states’ differences in IPCEI support?",
+        "main_finding": "Aid patterns reflect multiple fiscal and political conditions, including exposure to Chinese investment and prior state aid.",
+        "method_or_basis": "22-page original journal article; hypotheses tested via fuzzy-set qualitative comparative analysis of 27 member states.",
+        "qualification": "Configurational evidence, not causal isolation; national aid allocation differs by project and period.",
+        "radar_relevance": "Direct evidence about Europe’s industrial subsidy toolkit and intra-EU strategic capacity gaps.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Authenticated matching source at https://doi.org/10.17645/pag.11453; read substantive first-party text in scanner package and checked original publisher identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://doi.org/10.17645/pag.11453",
+            "title": "A “Common” European Interest? Explaining Variation in IPCEI State Aid Between EU Member States",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2026-04-22."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: Uneven state support for EU strategic technology projects risks fragmenting the single market."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:23Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EU member states",
+            "class": "member_state"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-04-22",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Configurational evidence, not causal isolation; national aid allocation differs by project and period.",
+          "text": "Comparative research attributes variation in member-state IPCEI industrial aid to interacting fiscal and political conditions.",
+          "confidence": "high",
+          "record_key": "historical:id:a5db24ea85edc12f",
+          "merit": 69,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:bcc16f030089e90f:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:9c5bc42896cec418": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "9f8248f2",
+      "identity_hash": "4e7c87191b1d9bdb",
+      "reader_title": "Automotive strategy faces strategic EU supply dependencies",
+      "reader_what": "Delors Institute report proposes trade and industrial responses to European EV and battery-supply weaknesses.",
+      "reader_why": "Chinese battery supply concentration, US subsidy competition and EU manufacturing costs constrain Europe’s automotive autonomy.",
+      "reader_more": "The report assesses an automotive trilemma: decarbonisation, competitiveness and economic security. It flags Chinese battery and materials concentration, fragmented EU charging and subsidy policies, and US incentives. Its toolbox includes strategic trade agreements, battery supply-chain partnerships, manufacturing incentives and infrastructure investments. These are proposals, not adopted EU measures.",
+      "deep_analysis": {
+        "work_kind": "Research or policy analysis",
+        "research_question": "Which industrial, trade and regulatory tools can address Europe’s EV transition vulnerabilities?",
+        "main_finding": "Authors urge coordinated EU automotive policy, supply-chain diversification and improved battery and manufacturing capacity.",
+        "method_or_basis": "Jacques Delors Institute Report 129; substantive publisher-supplied synthesis and claimed 70+ interviews and stakeholder events.",
+        "qualification": "Policy options and industry exposure assessments, not demonstrated post-policy effects.",
+        "radar_relevance": "Strong EU critical manufacturing, battery value chains and external trade exposure.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Authenticated matching source at https://institutdelors.eu/en/publications/the-road-to-a-new-european-automotive-strategy-trade-and-industrial-policy-options/; read substantive first-party text in scanner package and checked original publisher identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://institutdelors.eu/en/publications/the-road-to-a-new-european-automotive-strategy-trade-and-industrial-policy-options/",
+            "title": "The Road to a New European Automotive Strategy: Trade and Industrial Policy Options - Institut Jacques Delors",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2025-01."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: Chinese battery supply concentration, US subsidy competition and EU manufacturing costs constrain Europe’s automotive autonomy."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:23Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Jacques Delors Institute authors",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2025-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Policy options and industry exposure assessments, not demonstrated post-policy effects.",
+          "text": "The report recommends diversifying European automotive battery and raw-material dependencies.",
+          "confidence": "high",
+          "status_date_precision": "month",
+          "record_key": "historical:id:9c5bc42896cec418",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:4e7c87191b1d9bdb:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:cc230f536321a3f5": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "3db653bc",
+      "identity_hash": "4cc71fc22941cd64",
+      "reader_title": "Industrial policy and technology linkages: Conceptualizing China’s approach",
+      "reader_what": "China’s industrial policy mechanisms, not EU economic security",
+      "reader_more": "Original paper systematically reviews Chinese-language programmes and technology linkages, future/emerging/traditional industries and implementation. The EU appears in an acknowledgement of Horizon Europe funding but has no measured exposure, European policy instrument or specific EU industrial-security findings.",
+      "deep_analysis": {
+        "work_kind": "Source admissibility and scope check",
+        "research_question": "Does this source constitute substantive Europe-centred economic-security evidence?",
+        "main_finding": "Original VIVES Discussion Paper No. 107 analyses the structure of Chinese industrial policy, with Europe only as funder or possible observer, not as an analytical object.",
+        "method_or_basis": "Primary issuer article/page and content or preserved matching source.",
+        "qualification": "No independent European economic-security claim from this item may be admitted.",
+        "radar_relevance": "Exclusion supported by actual primary genre/scope.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected original or package-preserved primary content at https://merics.org/sites/default/files/2026-08/vives-discussion-paper-107-schindowski-zenglein-groenewegen-lau-dp-industrial-policy-and-technology-linkages-conceptualizing-chinas-approach-004.pdf; confirmed provenance and the actual type of page/work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://merics.org/sites/default/files/2026-08/vives-discussion-paper-107-schindowski-zenglein-groenewegen-lau-dp-industrial-policy-and-technology-linkages-conceptualizing-chinas-approach-004.pdf",
+            "title": "Industrial policy and technology linkages: Conceptualizing China’s approach",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Authenticated title, publishing body and genre; source demonstrates exclusion reason: Original VIVES Discussion Paper No. 107 analyses the structure of Chinese industrial policy, with Europe only as funder or possible observer, not as an analytical object."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NON_EU_CORE",
+        "reason": "Original VIVES Discussion Paper No. 107 analyses the structure of Chinese industrial policy, with Europe only as funder or possible observer, not as an analytical object."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:23Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:e398cfa17bd436b2": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "b5b30e40",
+      "identity_hash": "c1e0a76747143a9a",
+      "reader_title": "US oil sanctions create risks and choices for EU refineries",
+      "reader_what": "ECFR documents European assets tied to Russian oil majors and urges coordinated divestment.",
+      "reader_why": "Sanctions on Russian-owned refineries risk supply disruption but can enable diversified European energy ownership.",
+      "reader_more": "The author analyses US October 2025 sanctions against Rosneft and Lukoil and their European refineries, petrol networks and assets. Bulgaria and central/southeastern European supply links create short-term disruptions if exemptions or ownership changes are mishandled. Recommendations urge coordinated sale and anti-circumvention measures; these are not evidence divestment happened.",
+      "deep_analysis": {
+        "work_kind": "Research or policy analysis",
+        "research_question": "How can the EU use US sanctions on Russian oil majors without disrupting fuel supply?",
+        "main_finding": "A coordinated European divestment strategy could reduce Russian ownership while mitigating refinery supply risks.",
+        "method_or_basis": "Original full ECFR policy analysis discussing OFAC designations, European refinery operations and European regulatory options.",
+        "qualification": "US sanctions are established; predicted European divestment and oil effects remain contingent.",
+        "radar_relevance": "Direct EU energy imports, hostile ownership and secondary-sanctions exposure.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Authenticated matching source at https://ecfr.eu/article/energy-reckoning-how-europe-can-use-us-sanctions-to-cut-moscows-oil-ties/; read substantive first-party text in scanner package and checked original publisher identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecfr.eu/article/energy-reckoning-how-europe-can-use-us-sanctions-to-cut-moscows-oil-ties/",
+            "title": "Energy reckoning: How Europe can use US sanctions to cut Moscow’s oil ties – European Council on Foreign Relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2025-11-05."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: Sanctions on Russian-owned refineries risk supply disruption but can enable diversified European energy ownership."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:24Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "infrastructure.foreign_ownership",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European governments",
+            "class": "member_state"
+          },
+          "mechanism": "advocates",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2025-11-05",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "US sanctions are established; predicted European divestment and oil effects remain contingent.",
+          "text": "ECFR recommends EU coordination on the sale of Russian-owned European oil assets following US sanctions.",
+          "confidence": "high",
+          "record_key": "historical:id:e398cfa17bd436b2",
+          "merit": 71,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:c1e0a76747143a9a:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:60364c609d96b7bb": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "177f5f4d",
+      "identity_hash": "b30a7368782603cd",
+      "reader_title": "Made in China 2025 – successful enough to make an industrial-policy sequel credible",
+      "reader_what": "China industrial policy retrospective",
+      "reader_more": "Substantial original MERICS essay details Chinese rail, EV, renewable and biopharma output. The one EU biomedical trade deficit example does not make Europe’s dependencies, policy design or a European economic-security trajectory the work’s research object.",
+      "deep_analysis": {
+        "work_kind": "Source admissibility and scope check",
+        "research_question": "Does this source constitute substantive Europe-centred economic-security evidence?",
+        "main_finding": "MERICS commentary primarily evaluates China’s domestic industrial upgrading and strategic self-reliance; Europe appears as trading comparator rather than central economic-security subject.",
+        "method_or_basis": "Primary issuer article/page and content or preserved matching source.",
+        "qualification": "No independent European economic-security claim from this item may be admitted.",
+        "radar_relevance": "Exclusion supported by actual primary genre/scope.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected original or package-preserved primary content at https://merics.org/en/comment/made-china-2025-successful-enough-make-industrial-policy-sequel-credible; confirmed provenance and the actual type of page/work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://merics.org/en/comment/made-china-2025-successful-enough-make-industrial-policy-sequel-credible",
+            "title": "Made in China 2025 – successful enough to make an industrial-policy sequel credible",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Authenticated title, publishing body and genre; source demonstrates exclusion reason: MERICS commentary primarily evaluates China’s domestic industrial upgrading and strategic self-reliance; Europe appears as trading comparator rather than central economic-security subject."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NON_EU_CORE",
+        "reason": "MERICS commentary primarily evaluates China’s domestic industrial upgrading and strategic self-reliance; Europe appears as trading comparator rather than central economic-security subject."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:24Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:d133ed28d912423f": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "4aa84e83",
+      "identity_hash": "40027eb859cc1f28",
+      "reader_title": "\"Beijing's stranglehold on raw materials is one of the strongest weapons in the trade and suppl",
+      "reader_what": "EUISS press mention of external interview",
+      "reader_more": "The short agency item paraphrases Teer’s concerns about Chinese raw-material export restrictions. It is not itself the underlying interview or a primary empirical report.",
+      "deep_analysis": {
+        "work_kind": "Source admissibility and scope check",
+        "research_question": "Does this source constitute substantive Europe-centred economic-security evidence?",
+        "main_finding": "EUISS item is a short press notice linking to an NRC interview; no original methodology or substantive research is presented on this page.",
+        "method_or_basis": "Primary issuer article/page and content or preserved matching source.",
+        "qualification": "No independent European economic-security claim from this item may be admitted.",
+        "radar_relevance": "Exclusion supported by actual primary genre/scope.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected original or package-preserved primary content at https://www.iss.europa.eu/press/beijings-stranglehold-raw-materials-one-strongest-weapons-trade-and-supply-chain-war; confirmed provenance and the actual type of page/work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://www.iss.europa.eu/press/beijings-stranglehold-raw-materials-one-strongest-weapons-trade-and-supply-chain-war",
+            "title": "\"Beijing's stranglehold on raw materials is one of the strongest weapons in the trade and supply chain war.\"",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Authenticated title, publishing body and genre; source demonstrates exclusion reason: EUISS item is a short press notice linking to an NRC interview; no original methodology or substantive research is presented on this page."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_PRESS_SUMMARY_ONLY",
+        "reason": "EUISS item is a short press notice linking to an NRC interview; no original methodology or substantive research is presented on this page."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:24Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:a0a38ed3524d906f": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "24f8518c",
+      "identity_hash": "55112ef2e36e5436",
+      "reader_title": "Transatlantic sanctions choices affect Europe’s trade policy",
+      "reader_what": "PIIE panel contrasts sanctions against China and Russia and discusses EU export controls and investment screening.",
+      "reader_why": "EU economic-security choices are shaped by allied sanctions, technology restrictions and retaliatory costs.",
+      "reader_more": "The March 2025 unedited PIIE transcript captures a substantive expert discussion moderated by former EU trade commissioner Cecilia Malmström. Speakers consider US controls, Europe’s trade and investment stance, Russia sanctions and opportunities for evasion. Treat remarks as attributed analysis rather than verified causal findings; transcript warns of automated transcription mistakes.",
+      "deep_analysis": {
+        "work_kind": "Expert panel transcript",
+        "research_question": "When can export controls and sanctions influence Russian or Chinese decisions and EU interests?",
+        "main_finding": "Expert panel discusses sanctions effectiveness as conditional, emphasising coordination, implementation and target-country differences.",
+        "method_or_basis": "Original PIIE recorded event transcript, substantive speaker-attributed discussion rather than a peer-reviewed causal study.",
+        "qualification": "Transcript is AI-generated, unedited and explicitly may contain errors; claims represent panel views.",
+        "radar_relevance": "Direct EU economic coercion, allied controls and strategic trade coordination.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Authenticated matching source at https://www.piie.com/sites/default/files/2026-10/2025-03-21-unedited-transcript-can_sanctions_change_a_countrys_policy_the_case_of_china_and_russia.pdf; read substantive first-party text in scanner package and checked original publisher identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://www.piie.com/sites/default/files/2026-10/2025-03-21-unedited-transcript-can_sanctions_change_a_countrys_policy_the_case_of_china_and_russia.pdf",
+            "title": "Can sanctions change a country's policy? The case of China and Russia",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2025-03-21."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: EU economic-security choices are shaped by allied sanctions, technology restrictions and retaliatory costs."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:24Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "sanctions.secondary_exposure",
+          "secondary_objects": [],
+          "actor": {
+            "name": "PIIE expert panel",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2025-03-21",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Transcript is AI-generated, unedited and explicitly may contain errors; claims represent panel views.",
+          "text": "PIIE discussion analyses how EU and US controls interact across Russia and China cases.",
+          "confidence": "medium",
+          "record_key": "historical:id:a0a38ed3524d906f",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:55112ef2e36e5436:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:73bf3091a137a883": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "de5a9c2f",
+      "identity_hash": "568fc339271a2e2f",
+      "reader_title": "Europe’s services trade has different economic-security risks",
+      "reader_what": "ECIPE finds no EU service-import dependencies at aggregate sector level but stresses competitiveness and technology exposure.",
+      "reader_why": "Services require innovation and productive capacity more than goods-style import substitution or supplier restrictions.",
+      "reader_more": "Authors compare EU trade dependency indicators for goods and services and argue that aggregated service-trade data show no concentrated import vulnerabilities. EU ICT and other technology services nevertheless matter for resilience. They recommend horizontal innovation policy rather than extending goods-focused defensive measures wholesale. Aggregated classifications can conceal narrower dependencies.",
+      "deep_analysis": {
+        "work_kind": "Research or policy analysis",
+        "research_question": "How should EU services trade and critical technology inform economic security policy?",
+        "main_finding": "At broad sector level the authors detect no EU services import dependency, unlike goods, and recommend innovation-oriented policy.",
+        "method_or_basis": "ECIPE original substantive policy insight with trade-dependency estimates and descriptive EU technology-services evidence.",
+        "qualification": "Aggregate sectors do not resolve critical subsector or provider-level dependence; policy recommendation is advocacy.",
+        "radar_relevance": "Direct EU services import-exposure analysis and digital industrial capacity.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Authenticated matching source at https://ecipe.org/insights/europes-economic-security-in-services/; read substantive issuing-body HTML/source via web reader."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecipe.org/insights/europes-economic-security-in-services/",
+            "title": "Europe’s Economic Security in Services",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2025-02."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: Services require innovation and productive capacity more than goods-style import substitution or supplier restrictions."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:24Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "ECIPE authors Oscar Guinea and Vanika Sharma",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "measures",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2025-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Aggregate sectors do not resolve critical subsector or provider-level dependence; policy recommendation is advocacy.",
+          "text": "The ECIPE comparison finds no concentrated EU service-import dependencies at broad sector level, while goods exhibit many.",
+          "confidence": "high",
+          "status_date_precision": "month",
+          "record_key": "historical:id:73bf3091a137a883",
+          "merit": 71,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:568fc339271a2e2f:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:a122b00b90624fe5": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "a91607c2",
+      "identity_hash": "06397c8d02944fd1",
+      "reader_title": "EU carbon border policy raises export-competitiveness trade-offs",
+      "reader_what": "ifo analysis argues CBAM protects some domestic sales while leaving export-oriented EU manufacturing exposed.",
+      "reader_why": "Uneven international carbon pricing can affect European industrial locations, external competitiveness and trade measures.",
+      "reader_more": "In the October 2025 opinion, Clemens Fuest analyses the EU emissions trading system, temporary free allowances and the incoming Carbon Border Adjustment Mechanism. He argues that domestic protection does not solve EU producers’ disadvantage when exporting outside Europe. This is a reasoned policy warning about planned design, not evidence CBAM already caused deindustrialisation.",
+      "deep_analysis": {
+        "work_kind": "Research or policy analysis",
+        "research_question": "Does the planned EU carbon border adjustment safeguard manufacturing competitiveness against foreign competitors?",
+        "main_finding": "Author warns the planned CBAM design can expose export-facing EU firms to unequal carbon costs.",
+        "method_or_basis": "Full original ifo EconPol opinion with description of ETS allowances, CBAM coverage and export competitiveness.",
+        "qualification": "A 2025 projection; contested economic interpretation, not observed 2026 impact.",
+        "radar_relevance": "European industrial-competitiveness and border-trade defence policy trade-off.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Authenticated matching source at https://www.ifo.de/en/econpol/opinion/2025-10-01/climate-policy-carbon-border-adjustment-and-competitiveness-european-industry; read substantive issuing-body HTML/source via web reader."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.ifo.de/en/econpol/opinion/2025-10-01/climate-policy-carbon-border-adjustment-and-competitiveness-european-industry",
+            "title": "Climate Policy, Carbon Border Adjustment, and the Competitiveness of European Industry | ifo Institute | EconPol",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2025-10-01."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: Uneven international carbon pricing can affect European industrial locations, external competitiveness and trade measures."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:25Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "econsec.trade_security",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Clemens Fuest",
+            "class": "other"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2025-10-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "A 2025 projection; contested economic interpretation, not observed 2026 impact.",
+          "text": "ifo policy commentary argues the then-planned EU CBAM design inadequately protects industrial exports.",
+          "confidence": "high",
+          "record_key": "historical:id:a122b00b90624fe5",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:06397c8d02944fd1:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:0fda7630cae3ff63": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "fa381f12",
+      "identity_hash": "78d61e6758c8a877",
+      "reader_title": "China diversified exports while EU export exposure increased",
+      "reader_what": "Peer-reviewed trade-flow analysis finds China less reliant on Western destinations, while EU exports to China became more important.",
+      "reader_why": "Asymmetric diversification may reduce European leverage and increase exposure to market disruptions in particular sectors.",
+      "reader_more": "Volker Brühl analyses bilateral export patterns from 2000 to 2023 using UN Comtrade data. China diversifies outward markets; EU exports to China become a larger share of EU exports, though the macroeconomic share remains below 10% in 2023. Automotive and critical-mineral dependencies may look more concentrated at sector level than aggregate figures suggest.",
+      "deep_analysis": {
+        "work_kind": "Research or policy analysis",
+        "research_question": "Have export interdependencies between China, the EU and the United States diminished?",
+        "main_finding": "Chinese export destinations diversified while China became a more important destination for EU exports, despite modest aggregate shares.",
+        "method_or_basis": "Open Intereconomics journal paper, descriptive UN Comtrade bilateral flows and concentration indexes, checked matching package PDF excerpt.",
+        "qualification": "National and aggregate trends cannot establish company-level coercive vulnerability or causal trade policy effects.",
+        "radar_relevance": "Direct EU-China trade exposure and diversification as a potential economic-security lever.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Authenticated matching source at https://doi.org/10.2478/ie-2024-0066; read substantive first-party text in scanner package and checked original publisher identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://doi.org/10.2478/ie-2024-0066",
+            "title": "The Development of China’s Exports – Is There a Decoupling from the EU and the US?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2024-12."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: Asymmetric diversification may reduce European leverage and increase exposure to market disruptions in particular sectors."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:25Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Volker Brühl",
+            "class": "other"
+          },
+          "mechanism": "measures",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2024-12",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "National and aggregate trends cannot establish company-level coercive vulnerability or causal trade policy effects.",
+          "text": "Trade-flow study reports increased EU export exposure to China and greater Chinese diversification through 2023.",
+          "confidence": "high",
+          "status_date_precision": "month",
+          "record_key": "historical:id:0fda7630cae3ff63",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:78d61e6758c8a877:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:d4bedc4429af37db": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "8c064b34",
+      "identity_hash": "a9e79b394aff4b0a",
+      "reader_title": "EU Policy Priorities – How to Secure Europe's Competitiveness and Prosperity | ifo Institute |",
+      "reader_what": "Conference announcement and programme",
+      "reader_more": "The document lists location, speakers and questions for discussion, including trade and economic-security buzzwords; it supplies no findings or verified decision.",
+      "deep_analysis": {
+        "work_kind": "Source admissibility and scope check",
+        "research_question": "Does this source constitute substantive Europe-centred economic-security evidence?",
+        "main_finding": "ifo PDF is the four-page agenda for the November 2024 EconPol Europe Annual Conference, not a completed research paper or actual policy decision.",
+        "method_or_basis": "Primary issuer article/page and content or preserved matching source.",
+        "qualification": "No independent European economic-security claim from this item may be admitted.",
+        "radar_relevance": "Exclusion supported by actual primary genre/scope.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected original or package-preserved primary content at https://www.ifo.de/en/media/56463/download; confirmed provenance and the actual type of page/work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://www.ifo.de/en/media/56463/download",
+            "title": "EU Policy Priorities – How to Secure Europe's Competitiveness and Prosperity | ifo Institute | EconPol",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Authenticated title, publishing body and genre; source demonstrates exclusion reason: ifo PDF is the four-page agenda for the November 2024 EconPol Europe Annual Conference, not a completed research paper or actual policy decision."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NON_SUBSTANTIVE_EVENT",
+        "reason": "ifo PDF is the four-page agenda for the November 2024 EconPol Europe Annual Conference, not a completed research paper or actual policy decision."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:25Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:3a8d50adcc94e8df": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "9e0b0b0f",
+      "identity_hash": "f5bfa7ae25ee3257",
+      "reader_title": "Italy’s China investment ties complicated EU–US relations",
+      "reader_what": "An expert interview describes competing Italian approaches to Chinese trade, debt and strategic investment screening.",
+      "reader_why": "Italy’s Chinese economic engagement intersects with EU unity, foreign-investment screening and US security partnerships.",
+      "reader_more": "In a December 2020 interview, Nicola Casarini explains Italy’s Belt and Road memorandum, concerns about Chinese investment in infrastructure and 5G, and political disagreement between Italian coalition partners. He discusses Italy’s Golden Power screening legislation. These are expert assessments of government positions, not causal evidence of Chinese investment outcomes.",
+      "deep_analysis": {
+        "work_kind": "Expert interview",
+        "research_question": "How did Italy balance trade with China, EU solidarity and US relations in 2020?",
+        "main_finding": "Interview identifies tensions between bilateral Chinese economic opportunities and EU-level screening and transatlantic policy.",
+        "method_or_basis": "Original Mercy A. Kuo interview with IAI scholar Nicola Casarini in The Diplomat, recovered from CELIS republication link.",
+        "qualification": "The speaker offers expert interpretation; references to Chinese financial support were unofficial expectations, not confirmed commitments.",
+        "radar_relevance": "Direct EU inward-investment screening, 5G technology control and China trade-partner exposure.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Original route https://www.celis.institute/celis-news/italys-china-card-in-eu-us-relations-the-diplomat/ did not expose the full matching article/document in the reader."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive publisher material at https://thediplomat.com/2020/12/italys-china-card-in-eu-us-relations/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://thediplomat.com/2020/12/italys-china-card-in-eu-us-relations/",
+            "title": "Italy's China Card in EU-US Relations - The Diplomat - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2020-12-14."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: Italy’s Chinese economic engagement intersects with EU unity, foreign-investment screening and US security partnerships."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:25Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Italian government",
+            "class": "member_state"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2020-12-14",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "IT"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "The speaker offers expert interpretation; references to Chinese financial support were unofficial expectations, not confirmed commitments.",
+          "text": "Expert interview says Italy expanded Golden Power investment screening amid competing Chinese economic ties.",
+          "confidence": "high",
+          "record_key": "historical:id:3a8d50adcc94e8df",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:f5bfa7ae25ee3257:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:e6ee8035bc9befb5": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "dd700f03",
+      "identity_hash": "323db23b08947379",
+      "reader_title": "European economic security requires coordinated trade and technology tools",
+      "reader_what": "Intereconomics essay maps EU economic-security risks and cautions against fragmented national export and investment controls.",
+      "reader_why": "Trade openness and defensive instruments require coordination to avoid intra-European fragmentation.",
+      "reader_more": "Tagliapietra and Trasi review the EU Economic Security Strategy’s supply-chain, infrastructure, technology leakage and coercion risks. They describe the early-2024 five-initiative package and the tension between common strategy and national competences. Their article is analytical framing, not independent proof that new instruments work.",
+      "deep_analysis": {
+        "work_kind": "Research or policy analysis",
+        "research_question": "How should the EU define and organise economic security while retaining openness?",
+        "main_finding": "Authors urge clear risk prioritisation and EU coordination of investment and export-control policies rather than disconnected national tools.",
+        "method_or_basis": "Original full Intereconomics forum article, primary ZBW journal HTML recovered from DOI and blocked EconStor source.",
+        "qualification": "Recommendations are conceptual and normative; the 2024 Commission package included exploratory, nonbinding items.",
+        "radar_relevance": "Direct EU economic-security strategy, export control and outbound-investment governance.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Original route https://doi.org/10.2478/ie-2024-0019 did not expose the full matching article/document in the reader."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive publisher material at https://www.intereconomics.eu/contents/year/2024/number/2/article/how-should-europe-think-about-economic-security.html."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://www.intereconomics.eu/contents/year/2024/number/2/article/how-should-europe-think-about-economic-security.html",
+            "title": "How Should Europe Think About Economic Security?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2024-03."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: Trade openness and defensive instruments require coordination to avoid intra-European fragmentation."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:26Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Simone Tagliapietra and Cecilia Trasi",
+            "class": "other"
+          },
+          "mechanism": "advocates",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2024-03",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Recommendations are conceptual and normative; the 2024 Commission package included exploratory, nonbinding items.",
+          "text": "Authors advocate a coordinated European economic-security policy without fragmented national restrictions.",
+          "confidence": "high",
+          "status_date_precision": "month",
+          "record_key": "historical:id:e6ee8035bc9befb5",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:323db23b08947379:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:61189b0cbd4a6978": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "4bf6431f",
+      "identity_hash": "996f96ffeb63b453",
+      "reader_title": "Reluctant Interdependence: Multilateralism in a Time of Fragmentation",
+      "reader_what": "WTO-wide resilience and multilateralism essay",
+      "reader_more": "The original full ECIPE essay focuses on the WTO digital trade moratorium, global consensus rules, trade disputes and maintaining international openness. Europe is an audience/possible participant rather than the analysed policy actor.",
+      "deep_analysis": {
+        "work_kind": "Source admissibility and scope check",
+        "research_question": "Does this source constitute substantive Europe-centred economic-security evidence?",
+        "main_finding": "Alan Wolff’s substantive paper concerns the WTO and global multilateralism generally, not EU economic dependencies, instruments or partnerships as a material object.",
+        "method_or_basis": "Primary issuer article/page and content or preserved matching source.",
+        "qualification": "No independent European economic-security claim from this item may be admitted.",
+        "radar_relevance": "Exclusion supported by actual primary genre/scope.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected original or package-preserved primary content at https://ecipe.org/insights/reluctant-interdependence-multilateralism-in-fragmentation/; confirmed provenance and the actual type of page/work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecipe.org/insights/reluctant-interdependence-multilateralism-in-fragmentation/",
+            "title": "Reluctant Interdependence: Multilateralism in a Time of Fragmentation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Authenticated title, publishing body and genre; source demonstrates exclusion reason: Alan Wolff’s substantive paper concerns the WTO and global multilateralism generally, not EU economic dependencies, instruments or partnerships as a material object."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NON_EU_CORE",
+        "reason": "Alan Wolff’s substantive paper concerns the WTO and global multilateralism generally, not EU economic dependencies, instruments or partnerships as a material object."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:26Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:b29d3a5cfc6bcdad": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "dc533469",
+      "identity_hash": "0eb50de010f1cfdb",
+      "reader_title": "European Russia sanctions need multiple tests of effectiveness",
+      "reader_what": "ECFR argues that sanction success depends on financial, industrial and political goals measured separately.",
+      "reader_why": "Treating every Russian economic adjustment as sanctions failure obscures constraints on defence production and funding.",
+      "reader_more": "The original commentary distinguishes sanctions designed to reduce Russian war financing, access to advanced components, and elite wealth from the longer-term political goal of ending aggression. It discusses Russian currency and trade adaptations and warns against treating one macroeconomic figure as decisive. Effects and measures vary over time.",
+      "deep_analysis": {
+        "work_kind": "Research or policy analysis",
+        "research_question": "How should Europe measure the effectiveness of its sanctions against Russia?",
+        "main_finding": "EU sanctions should be evaluated against intermediate economic and technological goals, not only political regime change.",
+        "method_or_basis": "ECFR full commentary tracing sanctions goals, observed adjustment and competing interpretations.",
+        "qualification": "Sanctions effects difficult to isolate from wartime economic shocks, global prices and circumvention.",
+        "radar_relevance": "Direct EU economic coercion, sanction effectiveness and technology-control evaluation.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Authenticated matching source at https://ecfr.eu/article/damage-done-ways-to-measure-european-sanctions-success-against-russia/; read substantive first-party text in scanner package and checked original publisher identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://ecfr.eu/article/damage-done-ways-to-measure-european-sanctions-success-against-russia/",
+            "title": "Damage done: Ways to measure European sanctions’ success against Russia – European Council on Foreign Relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2023-04-18."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: Treating every Russian economic adjustment as sanctions failure obscures constraints on defence production and funding."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:26Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EU sanctions authorities",
+            "class": "eu_body"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2023-04-18",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Sanctions effects difficult to isolate from wartime economic shocks, global prices and circumvention.",
+          "text": "ECFR proposes separate assessments for Russian revenue constraints, critical-technology denial and broader political goals.",
+          "confidence": "high",
+          "record_key": "historical:id:b29d3a5cfc6bcdad",
+          "merit": 71,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:0eb50de010f1cfdb:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:92fec884c2ca2b1c": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "aba938b0",
+      "identity_hash": "02e2aceb33cecac6",
+      "reader_title": "EU industrial response to US subsidies should strengthen the single market",
+      "reader_what": "ifo warns that imitating US IRA subsidies could worsen European fragmentation and fiscal competition.",
+      "reader_why": "Internal market integration and energy diversification can matter more than fragmented subsidy races for EU capacity.",
+      "reader_more": "Clemens Fuest discusses Europe’s response to the US Inflation Reduction Act, risks from ending Russian gas supplies, carbon costs and uneven member-state state aid. He argues that repairing barriers to cross-border business is a more durable European competitive strength than simply copying subsidies. This is analytical advocacy, not a measured IRA effect.",
+      "deep_analysis": {
+        "work_kind": "Research or policy analysis",
+        "research_question": "How should European industry respond to US subsidies and geopolitical supply pressures?",
+        "main_finding": "Author favours single-market integration and carefully targeted support over a broad subsidy arms race.",
+        "method_or_basis": "Complete original ifo Viewpoint 244 policy essay with European industrial and transatlantic context.",
+        "qualification": "Normative commentary with historical examples; some expected subsidy and relocation effects not measured.",
+        "radar_relevance": "EU industrial policy, US investment competition and single-market capability.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Authenticated matching source at https://www.ifo.de/en/opinion/2023-03-21/ifo-viewpoint-244-europes-industrial-policy-and-response-ira; read substantive issuing-body HTML/source via web reader."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.ifo.de/en/opinion/2023-03-21/ifo-viewpoint-244-europes-industrial-policy-and-response-ira",
+            "title": "ifo Viewpoint 244: Europe’s Industrial Policy and the Response to IRA | ifo Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2023-03-21."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: Internal market integration and energy diversification can matter more than fragmented subsidy races for EU capacity."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:26Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Clemens Fuest",
+            "class": "other"
+          },
+          "mechanism": "advocates",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2023-03-21",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Normative commentary with historical examples; some expected subsidy and relocation effects not measured.",
+          "text": "Fuest urges EU single-market reforms rather than broad competitive subsidy escalation against US IRA.",
+          "confidence": "high",
+          "record_key": "historical:id:92fec884c2ca2b1c",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:02e2aceb33cecac6:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:d8913a68b26048a6": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "fb536b0b",
+      "identity_hash": "6bec676c37c40e10",
+      "reader_title": "Strategic autonomy could constrain EU trade partnerships",
+      "reader_what": "ECIPE analysis warns autonomous trade restrictions may limit concessions available in bilateral deals.",
+      "reader_why": "Using European market access to enforce unilateral conditions changes bargaining with trading partners.",
+      "reader_more": "The article reviews EU unilateral trade rules, the balance between retaliation and cooperation, and the future of agreements with Canada, Japan and Mercosur. It suggests environmental and human-rights conditions can cut across traditional market-access objectives. These are possible negotiation trade-offs rather than measured changes in agreement completion.",
+      "deep_analysis": {
+        "work_kind": "Research or policy analysis",
+        "research_question": "Can EU open strategic autonomy coexist with an expansive free trade agreement agenda?",
+        "main_finding": "A larger unilateral EU regulatory toolbox may narrow bargaining room in future trade negotiations.",
+        "method_or_basis": "Original full ECIPE policy commentary on EU market-access instruments and bilateral deals.",
+        "qualification": "Prospective interpretation; agreement outcomes cannot be attributed to policy tools from this essay alone.",
+        "radar_relevance": "EU foreign trade agreements, coercion instruments and regulatory market access.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Authenticated matching source at https://ecipe.org/insights/eu-trade-openness-strategic-autonomy/; read substantive issuing-body HTML/source via web reader."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecipe.org/insights/eu-trade-openness-strategic-autonomy/",
+            "title": "The EU Stuck Between Trade Openness and Strategic Autonomy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2022-11."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: Using European market access to enforce unilateral conditions changes bargaining with trading partners."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:27Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "trade.agreement",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union trade policymakers",
+            "class": "eu_body"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_conditional",
+          "status": "observation",
+          "status_date": "2022-11",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Prospective interpretation; agreement outcomes cannot be attributed to policy tools from this essay alone.",
+          "text": "ECIPE argues unilateral EU trade rules may reduce reciprocity available during bilateral negotiations.",
+          "confidence": "high",
+          "status_date_precision": "month",
+          "record_key": "historical:id:d8913a68b26048a6",
+          "merit": 71,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:6bec676c37c40e10:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:7ee1b637a6dd6119": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "b3bee803",
+      "identity_hash": "12a6b0a3979324dd",
+      "reader_title": "EU strategic autonomy instruments carry openness trade-offs",
+      "reader_what": "ECIPE policy taxonomy analyses EU economic-security tools, trade restrictions and costs of economic disintegration.",
+      "reader_why": "Industrial preference and unilateral rules can reduce openness while helping address foreign economic coercion.",
+      "reader_more": "The essay groups EU strategic-autonomy initiatives into industrial support, domestic market regulation, extraterritorial supply-chain standards and responses to foreign trade practices. It questions the costs and WTO compatibility of EU-first regulation and advocates greater policy discipline. Source perspectives are analytical, not proof every measure is protectionist.",
+      "deep_analysis": {
+        "work_kind": "Research or policy analysis",
+        "research_question": "What are the costs and governance trade-offs of EU strategic autonomy tools?",
+        "main_finding": "Author argues defensive EU rules should be balanced against trade, economic integration and multilateral obligations.",
+        "method_or_basis": "Original substantial ECIPE policy essay presenting a four-part taxonomy and illustrative EU measures.",
+        "qualification": "Normative viewpoint; forecast costs not systematically causal or numerical across all instruments.",
+        "radar_relevance": "Direct EU economic-security toolkit trade-offs and external openness.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Authenticated matching source at https://ecipe.org/insights/european-strategic-autonomy-aim-or-bane/; read substantive issuing-body HTML/source via web reader."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecipe.org/insights/european-strategic-autonomy-aim-or-bane/",
+            "title": "European Strategic Autonomy – Aim or Bane for Our Generation?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2022-11."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: Industrial preference and unilateral rules can reduce openness while helping address foreign economic coercion."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:27Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Matthias Bauer",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2022-11",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Normative viewpoint; forecast costs not systematically causal or numerical across all instruments.",
+          "text": "ECIPE policy taxonomy warns that EU strategic-autonomy instruments create external openness and compliance trade-offs.",
+          "confidence": "high",
+          "status_date_precision": "month",
+          "record_key": "historical:id:7ee1b637a6dd6119",
+          "merit": 71,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:12a6b0a3979324dd:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:2b8b565c03bdbea1": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "246cccff",
+      "identity_hash": "cca1ac0eb3eadc18",
+      "reader_title": "Fragmented single market undermines European strategic autonomy",
+      "reader_what": "ECIPE analysis connects EU service-regulation fragmentation with weaker scaling and technological independence.",
+      "reader_why": "Unintegrated internal markets limit European firms’ ability to grow into alternatives to dominant US or Chinese providers.",
+      "reader_more": "The article uses OECD Services Trade Restrictiveness Index evidence and EU–US business demography comparisons. It argues that inconsistent national rules constrain scale-up and productivity despite industrial-sovereignty ambitions. It proposes deeper European market integration as a prerequisite for credible autonomy. These comparisons do not alone establish causality.",
+      "deep_analysis": {
+        "work_kind": "Research or policy analysis",
+        "research_question": "How does incomplete single-market integration affect Europe’s technological sovereignty?",
+        "main_finding": "European service-market fragmentation and relatively low scale-up activity hinder technology and industrial autonomy.",
+        "method_or_basis": "Original ECIPE analysis with OECD regulatory measures and comparative Eurostat–US Census enterprise data.",
+        "qualification": "Regulatory barriers are one plausible contributor; differences in size-class definitions limit US–EU comparisons.",
+        "radar_relevance": "Direct EU internal-market capacity and external technology reliance.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Authenticated matching source at https://ecipe.org/insights/european-strategic-autonomy-single-market/; read substantive issuing-body HTML/source via web reader."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecipe.org/insights/european-strategic-autonomy-single-market/",
+            "title": "European Strategic Autonomy – What Role for Europe’s Fragmented Single Market?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2022-10."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: Unintegrated internal markets limit European firms’ ability to grow into alternatives to dominant US or Chinese providers."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:27Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EU single-market institutions",
+            "class": "european_system"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2022-10",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Regulatory barriers are one plausible contributor; differences in size-class definitions limit US–EU comparisons.",
+          "text": "ECIPE links European services regulatory fragmentation with weak firm scaling and strategic autonomy.",
+          "confidence": "high",
+          "status_date_precision": "month",
+          "record_key": "historical:id:2b8b565c03bdbea1",
+          "merit": 71,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:cca1ac0eb3eadc18:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:c5342ba8ae17d882": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "07670564",
+      "identity_hash": "86a4c64e340d3b42",
+      "reader_title": "Joint technology export controls constrain Russia’s strategic imports",
+      "reader_what": "ECFR explains how EU–US technology export restrictions block access to inputs for Russian industry and military systems.",
+      "reader_why": "Western dominance of specialised chips and manufacturing technology creates leverage over Russian capability.",
+      "reader_more": "Following the February 2022 Russian invasion, the article examines coordinated US and EU controls on semiconductor technology, manufacturing equipment and critical advanced components. It argues that Chinese suppliers cannot immediately replace every restricted Western technology. It is a contemporary expert projection, not a proven subsequent embargo impact estimate.",
+      "deep_analysis": {
+        "work_kind": "Research or policy analysis",
+        "research_question": "How can European and US technology controls restrict Russia’s ability to wage war?",
+        "main_finding": "The author argues allied export controls create long-run industrial constraints through dependence on high-end Western inputs.",
+        "method_or_basis": "Original full ECFR geoeconomic and technology-sanctions analysis of export-control design and supply concentration.",
+        "qualification": "Future effects depend on enforcement, stocks, substitution and circumvention; expert assessment from March 2022.",
+        "radar_relevance": "Direct EU export controls, sanctions, defence dual-use technologies and coercive leverage.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Authenticated matching source at https://ecfr.eu/article/give-and-tech-how-technology-sanctions-can-help-counter-the-threat-from-russia/; read substantive first-party text in scanner package and checked original publisher identity."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecfr.eu/article/give-and-tech-how-technology-sanctions-can-help-counter-the-threat-from-russia/",
+            "title": "Give and tech: How technology sanctions can help counter the threat from Russia – European Council on Foreign Relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2022-03-04."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: Western dominance of specialised chips and manufacturing technology creates leverage over Russian capability."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:28Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "export_control.regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EU and US export-control authorities",
+            "class": "eu_body"
+          },
+          "mechanism": "restricts",
+          "direction": "contracts",
+          "status": "observation",
+          "status_date": "2022-03-04",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Future effects depend on enforcement, stocks, substitution and circumvention; expert assessment from March 2022.",
+          "text": "ECFR describes EU–US controls denying selected advanced technology inputs to Russian industry.",
+          "confidence": "high",
+          "record_key": "historical:id:c5342ba8ae17d882",
+          "merit": 71,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:86a4c64e340d3b42:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:08744014657e747e": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "ce69bddf",
+      "identity_hash": "35a5f82caaa758b9",
+      "reader_title": "The Economic Policy of the German Greens",
+      "reader_what": "German party manifesto and domestic economic policy",
+      "reader_more": "Full original analysis traces the German Greens’ electoral history, coalition positioning, fiscal and environmental platforms. It does not substantively assess EU economic-security dependencies, trade coercion, critical technology control or relevant international partnerships.",
+      "deep_analysis": {
+        "work_kind": "Source admissibility and scope check",
+        "research_question": "Does this source constitute substantive Europe-centred economic-security evidence?",
+        "main_finding": "Original Institut Montaigne article analyses the German Greens’ domestic economic platform and election politics; Europe-wide industrial strategy is only a suggested extension.",
+        "method_or_basis": "Primary issuer article/page and content or preserved matching source.",
+        "qualification": "No independent European economic-security claim from this item may be admitted.",
+        "radar_relevance": "Exclusion supported by actual primary genre/scope.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected original or package-preserved primary content at https://www.institutmontaigne.org/en/expressions/economic-policy-german-greens; confirmed provenance and the actual type of page/work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.institutmontaigne.org/en/expressions/economic-policy-german-greens",
+            "title": "The Economic Policy of the German Greens",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Authenticated title, publishing body and genre; source demonstrates exclusion reason: Original Institut Montaigne article analyses the German Greens’ domestic economic platform and election politics; Europe-wide industrial strategy is only a suggested extension."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NON_EU_CORE",
+        "reason": "Original Institut Montaigne article analyses the German Greens’ domestic economic platform and election politics; Europe-wide industrial strategy is only a suggested extension."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:28Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:2be4a4a69fafefb9": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "e38e5add",
+      "identity_hash": "393183d68d947482",
+      "reader_title": "EU economic leverage may exceed perceived China–US dependencies",
+      "reader_what": "ECIPE compares intra-European sourcing with outside imports and urges evidence-based strategic autonomy.",
+      "reader_why": "Internal market trade and EU regulatory leverage can mitigate exaggerated claims of exclusive foreign dependence.",
+      "reader_more": "Oscar Guinea argues Europe has substantial bargaining power and internal market trade despite concerns about US platforms and Chinese manufacturing. He cites Eurostat COVID-related product categories and EU regulatory influence abroad. The interpretation warns against pursuing blanket independence that ignores actual exposure. This is a think-tank argument, not a full input-output vulnerability model.",
+      "deep_analysis": {
+        "work_kind": "Research or policy analysis",
+        "research_question": "Is Europe as dependent on foreign technology and products as economic-sovereignty narratives suggest?",
+        "main_finding": "Author contests undifferentiated European dependency rhetoric using internal-trade and regulatory evidence.",
+        "method_or_basis": "Original ECIPE research insight quoting EU import statistics and regulatory policy examples.",
+        "qualification": "Aggregate internal-market figures can conceal concentration in individual technology inputs or foreign vendors.",
+        "radar_relevance": "EU import concentration, critical technology and strategic-autonomy policy calibration.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Authenticated matching source at https://ecipe.org/insights/europes-naivety-and-strategic-autonomy/; read substantive issuing-body HTML/source via web reader."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecipe.org/insights/europes-naivety-and-strategic-autonomy/",
+            "title": "Europe’s Naivety and Strategic Autonomy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2020-11."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: Internal market trade and EU regulatory leverage can mitigate exaggerated claims of exclusive foreign dependence."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:28Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Oscar Guinea",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2020-11",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Aggregate internal-market figures can conceal concentration in individual technology inputs or foreign vendors.",
+          "text": "ECIPE argues extensive intra-EU sourcing makes Europe less externally dependent in aggregate than some narratives suggest.",
+          "confidence": "high",
+          "status_date_precision": "month",
+          "record_key": "historical:id:2be4a4a69fafefb9",
+          "merit": 71,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:393183d68d947482:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:201b4b0199551f0b": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "21683a18",
+      "identity_hash": "02bdff56713a008f",
+      "reader_title": "Europe sought a stronger economic role in renewed US partnership",
+      "reader_what": "ECFR proposes EU–US trade, technology screening and export-control coordination after 2020 US election.",
+      "reader_why": "European economic sovereignty depends on transatlantic standards, defensive instruments and managing allied competition.",
+      "reader_more": "The authors recommend rebuilding transatlantic commerce while preparing for possible US unilateral measures and spillovers to EU firms. Proposals include screening investments in strategic technology, cooperation on semiconductor equipment export controls, and building Europe’s own defensive instruments. They describe a future agenda, not enacted policies after the election.",
+      "deep_analysis": {
+        "work_kind": "Research or policy analysis",
+        "research_question": "How could Europe shape a balanced EU–US partnership covering economic sovereignty and technology?",
+        "main_finding": "ECFR advocates collaborative standards and export controls while retaining EU economic security instruments.",
+        "method_or_basis": "Full original ECFR article by Dennison, Franke, Hackenbroich, Loss and Varma recovered from source republisher.",
+        "qualification": "2020 forward-looking commentary; proposals do not establish later implementation or US policy outcomes.",
+        "radar_relevance": "EU technology controls, investment screening, bilateral trade and allied economic competition.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Original route https://www.celis.institute/celis-news/second-acts-how-europe-can-renew-the-transatlantic-partnership-european-council-on-foreign-relations/ did not expose the full matching article/document in the reader."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive publisher material at https://ecfr.eu/article/second-acts-how-europe-can-renew-the-transatlantic-partnership/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://ecfr.eu/article/second-acts-how-europe-can-renew-the-transatlantic-partnership/",
+            "title": "Second acts: How Europe can renew the transatlantic partnership - European Council on Foreign Relations - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2020-11-17."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: European economic sovereignty depends on transatlantic standards, defensive instruments and managing allied competition."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:28Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "partnership.like_minded_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "ECFR authors",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2020-11-17",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "2020 forward-looking commentary; proposals do not establish later implementation or US policy outcomes.",
+          "text": "ECFR writers recommend EU–US cooperation on strategic technology export controls and investment screening.",
+          "confidence": "high",
+          "record_key": "historical:id:201b4b0199551f0b",
+          "merit": 74,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:02bdff56713a008f:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:d8e7266f6bb5e8e4": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "dd213263",
+      "identity_hash": "e7e8757f5b341414",
+      "reader_title": "The competition over competitiveness: US-China relations and the US presidential elections",
+      "reader_what": "US–China electoral policy analysis",
+      "reader_more": "The piece weighs American trade and security policies toward China during the 2020 campaign. A final paragraph says Europe should plan its own competition agenda, but lacks specific European exposure measurement or EU toolbox analysis.",
+      "deep_analysis": {
+        "work_kind": "Source admissibility and scope check",
+        "research_question": "Does this source constitute substantive Europe-centred economic-security evidence?",
+        "main_finding": "Original MERICS commentary is primarily a comparison of US presidential candidates’ approaches to US–China competition; European policy receives a brief closing application.",
+        "method_or_basis": "Primary issuer article/page and content or preserved matching source.",
+        "qualification": "No independent European economic-security claim from this item may be admitted.",
+        "radar_relevance": "Exclusion supported by actual primary genre/scope.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected original or package-preserved primary content at https://merics.org/en/comment/competition-over-competitiveness-us-china-relations-and-us-presidential-elections; confirmed provenance and the actual type of page/work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://merics.org/en/comment/competition-over-competitiveness-us-china-relations-and-us-presidential-elections",
+            "title": "The competition over competitiveness: US-China relations and the US presidential elections",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Authenticated title, publishing body and genre; source demonstrates exclusion reason: Original MERICS commentary is primarily a comparison of US presidential candidates’ approaches to US–China competition; European policy receives a brief closing application."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NON_EU_CORE",
+        "reason": "Original MERICS commentary is primarily a comparison of US presidential candidates’ approaches to US–China competition; European policy receives a brief closing application."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:28Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:b4e989ee45e1c78e": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "7ea3a4de",
+      "identity_hash": "97a8104b7ddd448c",
+      "reader_title": "Touching the elephant: European views of the transatlantic relationship – European Council on F",
+      "reader_what": "European positions on the US security relationship",
+      "reader_more": "The underlying ECFR expert survey covers national differences in security alliance preferences, NATO relations and reactions to Trump. It does not focus on trade exposure, strategic supply, industrial controls or a specific economic-security instrument.",
+      "deep_analysis": {
+        "work_kind": "Source admissibility and scope check",
+        "research_question": "Does this source constitute substantive Europe-centred economic-security evidence?",
+        "main_finding": "ECFR article primarily reports European security and transatlantic alliance perceptions; incidental mention of trade pressure is not central economic-security analysis.",
+        "method_or_basis": "Primary issuer article/page and content or preserved matching source.",
+        "qualification": "No independent European economic-security claim from this item may be admitted.",
+        "radar_relevance": "Exclusion supported by actual primary genre/scope.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected original or package-preserved primary content at https://ecfr.eu/article/commentary_touching_the_elephant_european_views_of_the_transatlantic_relati/; confirmed provenance and the actual type of page/work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecfr.eu/article/commentary_touching_the_elephant_european_views_of_the_transatlantic_relati/",
+            "title": "Touching the elephant: European views of the transatlantic relationship – European Council on Foreign Relations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Authenticated title, publishing body and genre; source demonstrates exclusion reason: ECFR article primarily reports European security and transatlantic alliance perceptions; incidental mention of trade pressure is not central economic-security analysis."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_NON_ECONOMIC_SECURITY_CORE",
+        "reason": "ECFR article primarily reports European security and transatlantic alliance perceptions; incidental mention of trade pressure is not central economic-security analysis."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:28Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:2b4d01dc034fed5d": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "f4a60e30",
+      "identity_hash": "f3877b946db91bb6",
+      "reader_title": "Trade tensions and Brexit challenged Europe’s economic partnerships",
+      "reader_what": "Open-access economics paper analyses US tariff policy, Brexit, the COVID recession and risks to EU multilateral trade.",
+      "reader_why": "US–China confrontation and British withdrawal alter EU access to partners and coordinated economic crisis responses.",
+      "reader_more": "Welfens examines Trump-era tariffs and proposed corrections to optimal-tariff calculations that account for outward foreign investment. He connects US protectionism, Brexit and coronavirus fiscal pressures to reduced international cooperation and suggests EU–ASEAN and broader multilateral engagement. Many outcomes are model-based or projections written in 2020, not observed later history.",
+      "deep_analysis": {
+        "work_kind": "Research or policy analysis",
+        "research_question": "How did US protectionism, Brexit and pandemic pressures affect European trade and cooperation?",
+        "main_finding": "Author finds widening trade-policy conflict and integration stresses for Europe and proposes multilateral economic cooperation.",
+        "method_or_basis": "Original open-access Springer International Economics and Economic Policy article with theoretical calculations and macroeconomic policy discussion.",
+        "qualification": "Broad conceptual and model-based essay; pandemic and fiscal forecasts should not be treated as verified realized effects.",
+        "radar_relevance": "EU international partnerships, trade conflict exposure and economic-policy sovereignty.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Original route https://doi.org/10.1007/s10368-020-00479-x did not expose the full matching article/document in the reader."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive publisher material at https://link.springer.com/article/10.1007/s10368-020-00479-x."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1007/s10368-020-00479-x",
+            "title": "Trump’s Trade Policy, BREXIT, Corona Dynamics, EU Crisis and Declining Multilateralism",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary work identity cross-checked with original title, issuer/author and date; analytical conclusion limited to documented original text and 2020-08-01."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_VERIFIED_ECONOMIC_SECURITY",
+        "reason": "Verified original work treats a substantive European economic-security mechanism: US–China confrontation and British withdrawal alter EU access to partners and coordinated economic crisis responses."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:29Z",
+      "deep_scan_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
+      "claims": [
+        {
+          "object": "econsec.trade_security",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Paul J. J. Welfens",
+            "class": "other"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2020-08-01",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Broad conceptual and model-based essay; pandemic and fiscal forecasts should not be treated as verified realized effects.",
+          "text": "Economic analysis argues US protectionism and Brexit weakened EU trade integration and cooperation.",
+          "confidence": "high",
+          "record_key": "historical:id:2b4d01dc034fed5d",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:f3877b946db91bb6:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:4ca2d5b89014312b": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "84d70a08",
+      "identity_hash": "7db5fd7040f4bd20",
+      "reader_title": "US sanctions threat to Iraq and Europe’s response",
+      "reader_what": "Authors warn threatened US economic pressure on Iraq could disrupt Iranian energy imports and destabilise Iraq.",
+      "reader_why": "European governments face a diplomatic choice over US secondary sanctions and economic pressure.",
+      "reader_more": "The authors describe Iraqi dependence on Iranian gas and electricity, US sanctions waivers, and potential financial leverage through dollar reserves. They urge European capitals to dissuade the United States from applying further pressure. This is a 2020 policy argument about risks, not evidence that threatened sanctions were subsequently imposed.",
+      "deep_analysis": {
+        "work_kind": "Policy commentary",
+        "research_question": "How would expanded US sanctions against Iraq affect Iranian economic ties and European regional interests?",
+        "main_finding": "The authors contend that threatened American financial and secondary sanctions risk destabilising Iraq and recommend European diplomatic opposition.",
+        "method_or_basis": "Substantive original ECFR policy commentary with analysis of Iraqi energy imports, US waiver policy, reserve exposure and European recommendations.",
+        "qualification": "Several consequences are prospective and the proposed European response is advocacy, not a documented EU decision.",
+        "radar_relevance": "Direct European policy connection to secondary-sanctions coercion and partner-country energy dependencies.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read ECFR original commentary and European policy recommendations at https://ecfr.eu/article/commentary_iraq_iran_and_the_spectre_of_us_sanctions/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecfr.eu/article/commentary_iraq_iran_and_the_spectre_of_us_sanctions/",
+            "title": "Iraq, Iran, and the spectre of US sanctions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "ECFR publisher page confirms Ellie Geranmayeh and Sajad Jiyad, commentary, 18 March 2020. Its substantive account differentiates threatened US pressure from enacted sanctions."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_SANCTIONS",
+        "reason": "ECFR analyses US secondary-sanctions leverage over Iraqi energy imports and a concrete European policy response."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:29Z",
+      "deep_scan_package_id": "worker-b-20261025T185342Z-31cbbde64267",
+      "claims": [
+        {
+          "object": "sanctions.secondary_exposure",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Ellie Geranmayeh and Sajad Jiyad",
+            "class": "other"
+          },
+          "mechanism": "advocates",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2020-03-18",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Several consequences are prospective and the proposed European response is advocacy, not a documented EU decision.",
+          "text": "ECFR authors urged European governments to oppose extending US economic pressure to Iraq.",
+          "confidence": "high",
+          "record_key": "historical:id:4ca2d5b89014312b",
+          "merit": 71,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:7db5fd7040f4bd20:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:391e10f5023d482d": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "101fce79",
+      "identity_hash": "bbf6f763eb567897",
+      "reader_title": "Public trust and EU trade agreement votes",
+      "reader_what": "Higher public trust in government is associated with European lawmakers supporting comprehensive trade agreements.",
+      "reader_why": "Political support in the European Parliament shapes prospects for EU trade partnerships.",
+      "reader_more": "The article studies votes associated with TTIP, CETA and the EU–Korea trade agreement. Using an original voting dataset and multilevel analysis, it relates political support to citizens’ trust in government. This is a historical association, not proof that increasing trust would cause individual lawmakers to change their votes.",
+      "deep_analysis": {
+        "work_kind": "Empirical journal article",
+        "research_question": "How does citizen trust relate to EU legislators’ support for comprehensive trade agreements?",
+        "main_finding": "Higher citizens’ trust in government is linked to a greater likelihood that members of the European Parliament back comprehensive trade agreements.",
+        "method_or_basis": "Original dataset of European Parliament trade voting and multilevel modelling, supported by the published article text and OUP abstract.",
+        "qualification": "Reported relationship is observational and about legislative voting, not trade-agreement economic effects.",
+        "radar_relevance": "EU trade-partnership decision-making is directly covered, though this is political rather than supply-chain evidence.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Oxford Academic publisher article and substantive abstract https://academic.oup.com/isq/article-abstract/64/2/356/5741714 establish authorship, DOI and methods."
+          },
+          {
+            "step": "scanner_validation_route",
+            "outcome": "success",
+            "note": "Inspected package-supplied 24,000-character first-party article PDF excerpt, authenticated by OpenAlex to DOI 10.1093/isq/sqaa004 at https://content.openalex.org/works/W3007333439.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://academic.oup.com/isq/article-abstract/64/2/356/5741714",
+            "title": "Trust and Support for Comprehensive Trade Agreements in the European Parliament",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Oxford University Press confirms Sara Norrevik, International Studies Quarterly 64(2), pages 356-368, first published 20 February 2020, DOI 10.1093/isq/sqaa004; independently cross-checked PDF excerpt title and methodology."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_EU_TRADE_PARTNERSHIPS",
+        "reason": "Original empirical work explains European Parliament voting on specific EU international trade partnerships."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:29Z",
+      "deep_scan_package_id": "worker-b-20261025T185342Z-31cbbde64267",
+      "claims": [
+        {
+          "object": "trade.agreement",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Sara Norrevik",
+            "class": "other"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2020-02-20",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Reported relationship is observational and about legislative voting, not trade-agreement economic effects.",
+          "text": "A study of EU trade-agreement votes finds higher public trust associated with greater European parliamentary support.",
+          "confidence": "high",
+          "record_key": "historical:id:391e10f5023d482d",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:bbf6f763eb567897:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:cdc29b0a522f75ab": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "b3c9b282",
+      "identity_hash": "96ded9ddb2aafb22",
+      "reader_title": "European export controls and Russian defence production",
+      "reader_what": "Analysis argues post-2014 European and Ukrainian sanctions restricted Russian access to precision manufacturing equipment.",
+      "reader_why": "European dual-use export controls can limit foreign defence industrial production when effectively enforced.",
+      "reader_more": "The commentary argues that the Russian defence sector depended on imported European precision machinery and dual-use goods. It says sanctions disrupted this access, though enforcement loopholes and circumvention remained. The assessment reflects the author’s position in February 2020, not a measured post-2022 outcome.",
+      "deep_analysis": {
+        "work_kind": "Analytical policy commentary",
+        "research_question": "How did sanctions and structural problems constrain Russian defence manufacturing before 2020?",
+        "main_finding": "The author argues sanctions constrained Russian precision-machinery imports and limited production of advanced defence systems.",
+        "method_or_basis": "Original ECFR full text combining industrial examples and discussion of 2014 European and Ukrainian sanctions.",
+        "qualification": "Interpretive expert commentary, not a systematic causal estimate; dated February 2020.",
+        "radar_relevance": "Strong direct link to EU export-control enforcement, sanctions circumvention and industrial capacity.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read full original Gustav Gressel commentary from ECFR https://ecfr.eu/article/commentary_the_sanctions_straitjacket_on_russias_defence_sector/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecfr.eu/article/commentary_the_sanctions_straitjacket_on_russias_defence_sector/",
+            "title": "The sanctions straitjacket on Russia’s defence sector",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Original ECFR commentary identifies Gustav Gressel, 13 February 2020; source analysis distinguishes sanctions effects from broader Russian production weaknesses."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_EU_SANCTIONS_DUAL_USE",
+        "reason": "Author analyses how European dual-use export restrictions constrained Russian defence industrial supply chains."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-25T19:18:30Z",
+      "deep_scan_package_id": "worker-b-20261025T185342Z-31cbbde64267",
+      "claims": [
+        {
+          "object": "export_control.regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European governments and Ukraine",
+            "class": "other"
+          },
+          "mechanism": "restricts",
+          "direction": "contracts",
+          "status": "observation",
+          "status_date": "2020-02-13",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Interpretive expert commentary, not a systematic causal estimate; dated February 2020.",
+          "text": "Gressel argues European and Ukrainian sanctions impeded Russian imports of precision machinery and dual-use goods.",
+          "confidence": "high",
+          "record_key": "historical:id:cdc29b0a522f75ab",
+          "merit": 71,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:96ded9ddb2aafb22:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-10-25T09:36:00Z"
+  "claims_updated_at": "2026-10-25T19:18:30Z"
 }
