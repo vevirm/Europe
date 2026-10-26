@@ -6,40 +6,31 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` counts as one genuine recovery pass. After **3** unsuccessful passes, the work leaves the automatic queue and enters **Hands-on verification needed**.
 
-- Authoritative V2 verified: **2634** (Main **1101** + Historical **1533**)
-- Automatic queue still needing V2 verification: **71** (Main **10** + Historical **61**)
-- Currently assigned to workers: **62** (Main **4** + Historical **58**)
+- Authoritative V2 verified: **2693** (Main **1105** + Historical **1588**)
+- Automatic queue still needing V2 verification: **12** (Main **6** + Historical **6**)
+- Currently assigned to workers: **9** (Main **5** + Historical **4**)
 - Bounded access-recovery retries still eligible: **0**
 - Hands-on verification needed: **171**
-- Automatic queue pending and not yet assigned: **9**
+- Automatic queue pending and not yet assigned: **3**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261026T112329Z-ff2a62372e8e`
-- Assigned unresolved records: **36**
-  1. `link:https://doi.org/10.1787/257230ec-en` — Policies for Developing Advanced STEM Skills in Higher Education
-  2. `link:https://doi.org/10.2478/bjes-2026-0028` — Protecting dual-use technological innovation through trade secret law: institutional limits and cybersecurity challenges
-  3. `historical:id:8e18f96182ed6a89` — What is the price and cost competitiveness report?
-  4. `historical:id:f34030d012ed351f` — The 2nd EU–AU Space Dialogue, taking place over two days, has brought together high-level representatives from Europe and Africa to advance cooperation in the space secto
-  5. `historical:id:e91899c44972da66` — The 2026 Annual Single Market and Competitiveness Report
-  6. `historical:id:9d9221c5e17007cc` — Asymmetric Free Trade Agreements and Misalignment of Incentives: Lessons From the European Union–Turkey Customs Union
-  7. `historical:id:08a4698452525953` — Commission adopts Decision outlining procedure for new members to join EU SST Partnership
-  8. `historical:id:f0e00506d38845ed` — Belgium, Bulgaria, Lithuania and Luxembourg are set to join EU SST Partnership
-  - … plus 28 more in the package manifest
+- Current package: `worker-a-20261026T115429Z-99731c6dc6c5`
+- Assigned unresolved records: **3**
+  1. `historical:id:9388940a33c925e3` — From dependency to resilience — recovery attempt 3/3
+  2. `historical:id:e7e1432518022837` — Environmental Biotechnology for a Sustainable and Competitive EU — recovery attempt 3/3
+  3. `historical:id:aaaf636aae2f0d5c` — European and UK critical raw materials (CRM) supply chains - “national security” considerations - Lexology - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 3/3
 
 ### Worker B
-- Current package: `worker-b-20261026T112359Z-146a486a3a03`
-- Assigned unresolved records: **26**
-  1. `historical:id:a8acba649f2da634` — Sanctions: Commission guidance note on the provision of humanitarian aid in compliance with EU restrictive measures
-  2. `historical:id:62818d82a67acadc` — Key messages on the foreign subsidies instrument - a BusinessEurope position paper
-  3. `historical:id:40ea3ba6d8d9a84c` — Import and export bans
-  4. `historical:id:3dc760d957244bab` — Ore and order: Russia’s rare-earth strategy for the Ukraine talks – European Council on Foreign Relations — recovery attempt 2/3
-  5. `historical:id:9388940a33c925e3` — From dependency to resilience — recovery attempt 2/3
-  6. `historical:id:e7e1432518022837` — Environmental Biotechnology for a Sustainable and Competitive EU — recovery attempt 2/3
-  7. `historical:id:c4034661434452fa` — Challenges to the integration of the Western Balkans into European Union supply chains — recovery attempt 2/3
-  8. `historical:id:89336914854aa603` — Institut Jacques Delors - Euroquestions #33 | [FR] War in Ukraine: the EU's response, beyond sanctions — recovery attempt 3/3
-  - … plus 18 more in the package manifest
+- Current package: `worker-b-20261026T115433Z-adc5978a6022`
+- Assigned unresolved records: **6**
+  1. `link:https://doi.org/10.1080/13563467.2026.2751107` — Globalised but divided: European corporations and the EU’s geoeconomic turn against China — recovery attempt 2/3
+  2. `link:https://doi.org/10.1080/13563467.2026.2751104` — Chinese and Russian nuclear energy companies in Europe’s geoeconomic turn: giving way to the Americans? — recovery attempt 2/3
+  3. `link:https://doi.org/10.1002/sd.71344` — Green Energy Transition and Sustainable Development Outcomes in Europe: Evidence of Threshold and Moderating Effects — recovery attempt 2/3
+  4. `link:https://doi.org/10.1177/2336825x261466887` — EU policy towards the sahel in the “post-West” era — recovery attempt 2/3
+  5. `link:https://doi.org/10.1080/23322969.2026.2751120` — Emerging research security approaches: organisational arrangements at three European universities — recovery attempt 2/3
+  6. `historical:id:dfdf69eee6d7a0f4` — Supranational security states for national security problems: governing by rules & capacities in tech-driven security spaces — recovery attempt 2/3
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
