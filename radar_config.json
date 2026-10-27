@@ -214,7 +214,11 @@
     {
       "name": "Council of the European Union",
       "domain": "consilium.europa.eu",
-      "tier": 1
+      "tier": 1,
+      "feeds": [
+        "https://www.consilium.europa.eu/en/register/rss/THMCOM.xml",
+        "https://www.consilium.europa.eu/en/rss/pressreleases.ashx"
+      ]
     },
     {
       "name": "European Parliament",
@@ -483,6 +487,19 @@
       "name": "EU Chamber of Commerce in China",
       "domain": "europeanchamber.com.cn",
       "tier": 2
+    },
+    {
+      "name": "CORDIS — EU Research Results",
+      "domain": "cordis.europa.eu",
+      "tier": 2
+    },
+    {
+      "name": "European Patent Office",
+      "domain": "epo.org",
+      "tier": 1,
+      "feeds": [
+        "https://www.epo.org/en/news-events/news/feed"
+      ]
     }
   ],
   "crossref_institution_publishers": [
@@ -1567,6 +1584,83 @@
         "supply",
         "resilien",
         "industrial"
+      ]
+    },
+    "cordis.europa.eu": {
+      "seed_urls": [
+        "https://cordis.europa.eu/news/en",
+        "https://cordis.europa.eu/thematic-packs/en"
+      ],
+      "path_hints": [
+        "research",
+        "result",
+        "publication",
+        "study",
+        "report",
+        "project",
+        "innovation",
+        "security",
+        "energy",
+        "industry",
+        "digital",
+        "resilien",
+        "strategic"
+      ]
+    },
+    "epo.org": {
+      "hub_paths": [
+        "/en/about-us/observatory-patents-and-technology",
+        "/en/news-events/news"
+      ],
+      "path_hints": [
+        "study",
+        "report",
+        "research",
+        "publication",
+        "observatory",
+        "innovation",
+        "patent",
+        "industrial",
+        "technology",
+        "strategic"
+      ]
+    },
+    "oecd.org": {
+      "hub_paths": [
+        "/en/publications.html",
+        "/en/publications/reports.html"
+      ],
+      "path_hints": [
+        "report",
+        "research",
+        "policy-paper",
+        "working-paper",
+        "publication",
+        "science",
+        "technology",
+        "industry",
+        "innovation",
+        "trade",
+        "supply",
+        "security",
+        "competitiveness"
+      ]
+    },
+    "chathamhouse.org": {
+      "hub_paths": [
+        "/publications/research-publications"
+      ],
+      "path_hints": [
+        "research",
+        "report",
+        "policy-paper",
+        "publication",
+        "industrial",
+        "economic",
+        "technology",
+        "trade",
+        "europe",
+        "security"
       ]
     }
   },
