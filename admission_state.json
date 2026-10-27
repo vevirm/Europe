@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-admission-v1",
-  "updated_at": "2026-10-27T18:24:26Z",
+  "updated_at": "2026-10-27T18:45:10Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "decision": "keep",
@@ -33394,9 +33394,9 @@
       "reason": "Substantive evidence remained inaccessible after three validated Deep Scan recovery passes. The record is terminally dropped from automatic scanning and active reasoning to prevent repeated retry loops.",
       "source": "deep_scan_v2",
       "corpus_scope": "historical",
-      "updated_at": "2026-10-27T09:53:50Z",
+      "updated_at": "2026-10-27T18:45:10Z",
       "deep_scan_package_id": "worker-a-20261027T092456Z-40aa9535af8e",
-      "verification_note": "Third-attempt hard-final pass completed: Springer 2021 book TOC and Passau author publication bibliography independently corroborate title/authors/page span; checked university author site, CELIS, DOI, variant searches and legitimate repository routes. No standalone chapter text recovered; no admission claim asserted.",
+      "verification_note": "Springer confirms Herrmann/Hoffmann chapter pp. 2213–2261 (2021); the original chapter is subscription-protected and the CELIS page is a link index.",
       "recovery_attempts": 3
     },
     "historical:id:7693f1bd18e96290": {
@@ -33649,6 +33649,78 @@
       "updated_at": "2026-10-27T18:24:26Z",
       "deep_scan_package_id": "worker-a-20261027T170445Z-e30dc563a099",
       "verification_note": "Identity cross-checked against the original publisher listing and French 10-page full infographic (2024). Inspected substantive pages on economic, financial and trade sanctions; EU Council decision process, Russian bank restrictions and the sanctions circumvention problem. Translated findings accurately and treated visual historical counts as illustrative, not current figures.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.1002/sd.71344": {
+      "decision": "review",
+      "target_strand": "A",
+      "reason_code": "A_REVIEW_NEAR_SCOPE",
+      "reason": "Detailed publisher methodology and quantitative reported findings make the study relevant at the energy-transition interface, but supply-security inferences are indirect.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-27T18:45:09Z",
+      "deep_scan_package_id": "worker-b-20261026T115433Z-adc5978a6022",
+      "verification_note": "Wiley abstract and methods/data details report PSTAR modeling of 380 observations from 20 EU member states, 2005–2023, with adoption thresholds 20.4% and 28.9%; the paper primarily measures CO2 emissions, not security-of-supply.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.1177/2336825x261466887": {
+      "decision": "drop",
+      "target_strand": "",
+      "reason_code": "OUT_OF_SCOPE_EVIDENCE",
+      "reason": "The published article concerns international order and EU security relations in the Sahel, outside this Radar’s economic-security evidence criterion.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-27T18:45:09Z",
+      "deep_scan_package_id": "worker-b-20261026T115433Z-adc5978a6022",
+      "verification_note": "SAGE first-party abstract discusses multipolar competition, European normative power and security in the Sahel; no specific economic-security, industrial or strategic dependency is investigated.",
+      "duplicate_of": ""
+    },
+    "historical:id:dfdf69eee6d7a0f4": {
+      "decision": "review",
+      "target_strand": "A",
+      "reason_code": "A_REVIEW_NEAR_SCOPE",
+      "reason": "Scholarly analysis of supranational EU controls and pooled capacities is substantively relevant, particularly dual-use exports, but the abstract alone leaves case nuances open.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "historical",
+      "updated_at": "2026-10-27T18:45:10Z",
+      "deep_scan_package_id": "worker-b-20261026T115433Z-adc5978a6022",
+      "verification_note": "Publisher abstract describes process tracing across EU dual-use export control, information security and border security over 30 years and distinct rules/capacity configurations.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.1093/eurpub/ckag169.087": {
+      "decision": "drop",
+      "target_strand": "",
+      "reason_code": "OUT_OF_SCOPE_EVIDENCE",
+      "reason": "Actual source is a public health conference session abstract, outside the economic-security research admission gate.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-27T18:45:10Z",
+      "deep_scan_package_id": "worker-a-20261027T092456Z-40aa9535af8e",
+      "verification_note": "Oxford Academic journal supplement identifies this as a WHO/Europe conference round-table on climate-health solutions rather than an independent economic-security research article.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.1093/eurpub/ckag169.430": {
+      "decision": "drop",
+      "target_strand": "",
+      "reason_code": "OUT_OF_SCOPE_EVIDENCE",
+      "reason": "Source is public health data-governance conference programming, not an economic-security work.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-27T18:45:10Z",
+      "deep_scan_package_id": "worker-a-20261027T092456Z-40aa9535af8e",
+      "verification_note": "Oxford Academic supplement lists this round-table on cardiovascular disease/diabetes data governance; program entry offers no strategic-industry or economic-dependency analysis.",
+      "duplicate_of": ""
+    },
+    "link:https://doi.org/10.1093/eurpub/ckag169.883": {
+      "decision": "drop",
+      "target_strand": "",
+      "reason_code": "OUT_OF_SCOPE_EVIDENCE",
+      "reason": "A single public-health conference abstract cannot support an economic-security Radar mechanism.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "updated_at": "2026-10-27T18:45:10Z",
+      "deep_scan_package_id": "worker-a-20261027T092456Z-40aa9535af8e",
+      "verification_note": "Journal supplement identifies a conference abstract on AI readiness in public-health governance, not an EU strategic technology-dependency study.",
       "duplicate_of": ""
     }
   }

@@ -2,7 +2,7 @@
   "profile": "radar-deep-scan-dropped-index-v1",
   "rule": "After 3 recorded failed research passes, close as dropped; no hands-on queue. Package issuance alone is not a research pass.",
   "note": "The full retrieval notes and available recovery history remain in deep_scan_work_state.json. Some legacy records have fewer retained history entries than the recorded attempt counter; no missing attempts are invented.",
-  "count": 174,
+  "count": 175,
   "records": [
     {
       "record_key": "historical:id:02d0446b10283c5c",
@@ -721,6 +721,21 @@
       ],
       "closed_at": "2026-10-20T09:04:38Z",
       "reason": "Deep Scan return rejected: supplied URL did not recover the work; recovered-work decision must report which recovery-ladder step actually found it"
+    },
+    {
+      "record_key": "historical:id:e1abd351d9984dbd",
+      "title": "Christoph Herrmann and Mareike Hoffmann, Investment in the European Union: Competences, Structures, Responsibility and Policy - CELIS Institute - Investment Screening | National Security | Competitiveness",
+      "source": "CELIS Institute",
+      "url": "https://www.celis.institute/celis-content/christoph-herrmann-and-mareike-hoffmann-investment-in-the-european-union-competences-structures-responsibility-and-policy/",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-7fdd5ffaf53e",
+        "worker-b-20261025T090515Z-c134448d4c2a",
+        "worker-a-20261027T092456Z-40aa9535af8e"
+      ],
+      "closed_at": "2026-10-27T18:45:10Z",
+      "reason": "Investment-law chapter is identifiable but not readable, so no detailed claim about EU screening or industrial autonomy is supported."
     },
     {
       "record_key": "historical:id:e688478c39c0a84c",

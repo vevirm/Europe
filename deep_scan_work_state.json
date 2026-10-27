@@ -1,14 +1,17 @@
 {
   "version": 1,
   "profile": "radar-deep-scan-work-state-v1",
-  "updated_at": "2026-10-27T18:27:53Z",
+  "updated_at": "2026-10-27T18:46:25Z",
   "lanes": {
     "A": {
       "target_size": 36,
-      "assigned": [],
-      "current_package_id": "worker-a-20261027T175213Z-5a9685515802",
+      "assigned": [
+        "link:https://doi.org/10.1016/j.ecolecon.2026.109266",
+        "link:https://doi.org/10.1515/ordo-2026-2012",
+        "link:https://doi.org/10.1177/16118944261490056"
+      ],
+      "current_package_id": "worker-a-20261027T184622Z-21b336d93718",
       "package_history": [
-        "worker-a-b414e5500fae",
         "worker-a-d35e4460a455",
         "worker-a-d1a8d3e0a826",
         "worker-a-eb9f3f8953c6",
@@ -47,21 +50,14 @@
         "worker-a-20261026T115429Z-99731c6dc6c5",
         "worker-a-20261027T092456Z-40aa9535af8e",
         "worker-a-20261027T170445Z-e30dc563a099",
-        "worker-a-20261027T175213Z-5a9685515802"
+        "worker-a-20261027T175213Z-5a9685515802",
+        "worker-a-20261027T184622Z-21b336d93718"
       ],
       "previous_assigned": []
     },
     "B": {
       "target_size": 36,
-      "assigned": [
-        "link:https://doi.org/10.1515/ordo-2026-2012",
-        "link:https://doi.org/10.1093/eurpub/ckag169.087",
-        "link:https://doi.org/10.1093/eurpub/ckag169.430",
-        "link:https://doi.org/10.1177/16118944261490056",
-        "link:https://doi.org/10.1093/eurpub/ckag169.883",
-        "link:https://doi.org/10.1016/j.ecolecon.2026.109266",
-        "historical:id:e1abd351d9984dbd"
-      ],
+      "assigned": [],
       "current_package_id": "worker-b-20261027T175216Z-d9afc5af0e51",
       "package_history": [
         "worker-b-7eba02da23ab",
@@ -27046,14 +27042,14 @@
       "url": "https://www.celis.institute/celis-content/christoph-herrmann-and-mareike-hoffmann-investment-in-the-european-union-competences-structures-responsibility-and-policy/",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "B",
       "assigned_at": "2026-10-02T12:13:29Z",
       "last_package_id": "worker-b-20261027T175216Z-d9afc5af0e51",
-      "recovery_attempts": 2,
-      "last_recovery_at": "2026-10-25T09:35:58Z",
-      "last_recovery_package_id": "worker-b-20261025T090515Z-c134448d4c2a",
-      "recovery_reason": "Springer confirms the chapter, authors and legal topics, but its full analysis is subscription-only and no legitimate open manuscript was found.",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-27T18:45:10Z",
+      "last_recovery_package_id": "worker-a-20261027T092456Z-40aa9535af8e",
+      "recovery_reason": "Investment-law chapter is identifiable but not readable, so no detailed claim about EU screening or industrial autonomy is supported.",
       "verification": {
         "identity_verified": true,
         "evidence_depth": "identity_only_after_recovery",
@@ -27089,8 +27085,15 @@
             "note": "Searched ISBN 978-981-13-3615-7, chapter DOI suffix _33, ScienceOpen and academic bibliographies; none gave the full original chapter legally accessible."
           }
         ],
-        "recovered_sources": [],
-        "verification_note": "CELIS entry dated September 2020 is only a link listing, whereas Springer official publication is a 2021 book chapter. Scholarly identity corroborated by Springer and University of Passau. Chapter body is inaccessible; the publisher abstract alone is not substantive evidence for an admission judgment."
+        "recovered_sources": [
+          {
+            "kind": "publisher_bibliography",
+            "url": "https://link.springer.com/referencework/10.1007/978-981-13-3615-7?page=5",
+            "title": "Christoph Herrmann and Mareike Hoffmann, Investment in the European Union: Competences, Structures, Responsibility and Policy - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Springer confirms Herrmann/Hoffmann chapter pp. 2213–2261 (2021); the original chapter is subscription-protected and the CELIS page is a link index."
       },
       "recovery_history": [
         {
@@ -27192,10 +27195,63 @@
             "recovered_sources": [],
             "verification_note": "CELIS entry dated September 2020 is only a link listing, whereas Springer official publication is a 2021 book chapter. Scholarly identity corroborated by Springer and University of Passau. Chapter body is inaccessible; the publisher abstract alone is not substantive evidence for an admission judgment."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "worker-a-20261027T092456Z-40aa9535af8e",
+          "at": "2026-10-27T18:45:10Z",
+          "reason": "Investment-law chapter is identifiable but not readable, so no detailed claim about EU screening or industrial autonomy is supported.",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failed",
+                "note": "CELIS resources page https://celis.institute/resources/ only returned current navigation, not Herrmann and Hoffmann chapter."
+              },
+              {
+                "step": "doi",
+                "outcome": "metadata_only",
+                "note": "Discovered and opened matching Springer DOI 10.1007/978-981-13-3615-7_33; publisher displays bibliographic identity and abstract but requires subscription to read chapter."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "metadata_only",
+                "note": "Exact quoted title searches returned Springer chapter and ScienceOpen metadata, not the 49-page chapter full text."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "metadata_only",
+                "note": "Searched Christoph Herrmann Mareike Hoffmann 2020/2021 investment EU chapter; Passau author bibliography confirms 2021 volume pages 2213–2261."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "blocked",
+                "note": "Official Springer https://link.springer.com/rwe/10.1007/978-981-13-3615-7_33 shows preview of subscription-only content; University of Passau 2024 author list confirms identity but not body."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "no_result",
+                "note": "Searched ISBN 978-981-13-3615-7, chapter DOI suffix _33, ScienceOpen and academic bibliographies; none gave the full original chapter legally accessible."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_bibliography",
+                "url": "https://link.springer.com/referencework/10.1007/978-981-13-3615-7?page=5",
+                "title": "Christoph Herrmann and Mareike Hoffmann, Investment in the European Union: Competences, Structures, Responsibility and Policy - CELIS Institute - Investment Screening | National Security | Competitiveness",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "Springer confirms Herrmann/Hoffmann chapter pp. 2213–2261 (2021); the original chapter is subscription-protected and the CELIS page is a link index."
+          }
         }
       ],
       "scan_package_attempts": 11,
-      "last_scan_package_at": "2026-10-27T17:52:19Z"
+      "last_scan_package_at": "2026-10-27T17:52:19Z",
+      "closed_at": "2026-10-27T18:45:10Z",
+      "drop_reason": "Investment-law chapter is identifiable but not readable, so no detailed claim about EU screening or industrial autonomy is supported."
     },
     "historical:id:e5fb3f11056cbe60": {
       "title": "The myth of subsidies in the film industry: a comparative analysis of European and US approaches",
@@ -100819,16 +100875,16 @@
       "url": "https://doi.org/10.1080/13563467.2026.2751107",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-24T13:09:19Z",
       "last_package_id": "worker-b-20261026T115433Z-adc5978a6022",
       "scan_package_attempts": 5,
       "last_scan_package_at": "2026-10-26T11:54:35Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-25T19:18:22Z",
-      "last_recovery_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
-      "recovery_reason": "Publisher or university records substantiate bibliographic identity, but no accessible substantive original work could be responsibly read after documented recovery.",
+      "recovery_attempts": 2,
+      "last_recovery_at": "2026-10-27T18:45:09Z",
+      "last_recovery_package_id": "worker-b-20261026T115433Z-adc5978a6022",
+      "recovery_reason": "Germann and colleagues’ article is identifiable, but its company-level results are not accessible through the sources inspected.",
       "verification": {
         "identity_verified": true,
         "evidence_depth": "identity_only_after_recovery",
@@ -100864,8 +100920,15 @@
             "note": "Searched title fragments with ERT network-integration phrase and targeted PDF/preprint/repository paths; no matching primary document recovered."
           }
         ],
-        "recovered_sources": [],
-        "verification_note": "Crossref journal listing and dated conference program confirm identity; publisher page not retrievable and conference listing cannot substitute for paper methodology or findings. Six recovery steps documented."
+        "recovered_sources": [
+          {
+            "kind": "publisher_bibliography",
+            "url": "https://kclpure.kcl.ac.uk/portal/en/publications/globalised-but-divided-european-corporations-and-the-eus-geoecono/",
+            "title": "Globalised but divided: European corporations and the EU’s geoeconomic turn against China",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "King’s College London bibliographic listing and CC BY status identify the paper, but the actual article argument and data were not available to inspect."
       },
       "recovery_history": [
         {
@@ -100911,6 +100974,57 @@
             "recovered_sources": [],
             "verification_note": "Crossref journal listing and dated conference program confirm identity; publisher page not retrievable and conference listing cannot substitute for paper methodology or findings. Six recovery steps documented."
           }
+        },
+        {
+          "attempt": 2,
+          "package_id": "worker-b-20261026T115433Z-adc5978a6022",
+          "at": "2026-10-27T18:45:09Z",
+          "reason": "Germann and colleagues’ article is identifiable, but its company-level results are not accessible through the sources inspected.",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failed",
+                "note": "Tried https://www.tandfonline.com/doi/full/10.1080/13563467.2026.2751107; no accessible article text through reader."
+              },
+              {
+                "step": "doi",
+                "outcome": "failed",
+                "note": "DOI 10.1080/13563467.2026.2751107 publisher route and https://api.crossref.org/works/10.1080%2F13563467.2026.2751107 inaccessible."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "metadata_only",
+                "note": "Exact full-title search returned bibliographic New Political Economy citation but no substantive original manuscript."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "metadata_only",
+                "note": "Julian Germann, Steve Rolf, Joseph Baines and Sean Starrs search found June 2026 DVPW conference program naming earlier work title, not study substance."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "metadata_only",
+                "note": "New Political Economy indexed issue and Crossref listings establish publication DOI/title, not accessible original analysis."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "failed",
+                "note": "Searched title fragments with ERT network-integration phrase and targeted PDF/preprint/repository paths; no matching primary document recovered."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_bibliography",
+                "url": "https://kclpure.kcl.ac.uk/portal/en/publications/globalised-but-divided-european-corporations-and-the-eus-geoecono/",
+                "title": "Globalised but divided: European corporations and the EU’s geoeconomic turn against China",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "King’s College London bibliographic listing and CC BY status identify the paper, but the actual article argument and data were not available to inspect."
+          }
         }
       ]
     },
@@ -100921,16 +101035,16 @@
       "url": "https://doi.org/10.1080/13563467.2026.2751104",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-24T13:09:19Z",
       "last_package_id": "worker-b-20261026T115433Z-adc5978a6022",
       "scan_package_attempts": 5,
       "last_scan_package_at": "2026-10-26T11:54:35Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-25T19:18:22Z",
-      "last_recovery_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
-      "recovery_reason": "Publisher or university records substantiate bibliographic identity, but no accessible substantive original work could be responsibly read after documented recovery.",
+      "recovery_attempts": 2,
+      "last_recovery_at": "2026-10-27T18:45:09Z",
+      "last_recovery_package_id": "worker-b-20261026T115433Z-adc5978a6022",
+      "recovery_reason": "The 2026 nuclear-firm study is bibliographically confirmed but its corporate case evidence could not be inspected.",
       "verification": {
         "identity_verified": true,
         "evidence_depth": "identity_only_after_recovery",
@@ -100966,8 +101080,15 @@
             "note": "Targeted filetype:pdf, nuclear SOE derisking and title-fragment searches; no legitimate matching original text found."
           }
         ],
-        "recovered_sources": [],
-        "verification_note": "Biao Zhang publication identified by DOI and journal issue aggregator, but T&F source was blocked and search alternatives gave only bibliographies or different nuclear studies."
+        "recovered_sources": [
+          {
+            "kind": "publisher_bibliography",
+            "url": "https://www.researchgate.net/publication/416643897_Chinese_and_Russian_nuclear_energy_companies_in_Europe%27s_geoeconomic_turn_giving_way_to_the_Americans",
+            "title": "Chinese and Russian nuclear energy companies in Europe’s geoeconomic turn: giving way to the Americans?",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "DOI, publisher index and author Biao Zhang are identifiable; research portal shows no readable article body."
       },
       "recovery_history": [
         {
@@ -101013,6 +101134,57 @@
             "recovered_sources": [],
             "verification_note": "Biao Zhang publication identified by DOI and journal issue aggregator, but T&F source was blocked and search alternatives gave only bibliographies or different nuclear studies."
           }
+        },
+        {
+          "attempt": 2,
+          "package_id": "worker-b-20261026T115433Z-adc5978a6022",
+          "at": "2026-10-27T18:45:09Z",
+          "reason": "The 2026 nuclear-firm study is bibliographically confirmed but its corporate case evidence could not be inspected.",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failed",
+                "note": "Tried T&F full article https://www.tandfonline.com/doi/full/10.1080/13563467.2026.2751104; article text inaccessible."
+              },
+              {
+                "step": "doi",
+                "outcome": "failed",
+                "note": "DOI 10.1080/13563467.2026.2751104 and https://api.crossref.org/works/10.1080%2F13563467.2026.2751104 not accessible as substantive original article."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "metadata_only",
+                "note": "Exact full-title search indexed Biao Zhang article and DOI but yielded no substantive publisher abstract."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "metadata_only",
+                "note": "Title plus author Biao Zhang, New Political Economy 2026 located bibliography in published Crossref-based journal catalogue."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "metadata_only",
+                "note": "Checked New Political Economy publisher route and recent-articles listing; public bibliography only."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "failed",
+                "note": "Targeted filetype:pdf, nuclear SOE derisking and title-fragment searches; no legitimate matching original text found."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_bibliography",
+                "url": "https://www.researchgate.net/publication/416643897_Chinese_and_Russian_nuclear_energy_companies_in_Europe%27s_geoeconomic_turn_giving_way_to_the_Americans",
+                "title": "Chinese and Russian nuclear energy companies in Europe’s geoeconomic turn: giving way to the Americans?",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "DOI, publisher index and author Biao Zhang are identifiable; research portal shows no readable article body."
+          }
         }
       ]
     },
@@ -101055,7 +101227,7 @@
       "url": "https://doi.org/10.1002/sd.71344",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-24T13:09:19Z",
       "last_package_id": "worker-b-20261026T115433Z-adc5978a6022",
@@ -101148,7 +101320,9 @@
             "verification_note": "Wiley identifies 1 July 2026 paper and authors with detailed abstract; no access to full model, variable discussion or European economic-security mechanisms. The available abstract models CO2 emissions and sustainability; reference to energy security is not sufficient to reclassify a generic environment study without full paper."
           }
         }
-      ]
+      ],
+      "verified_at": "2026-10-27T18:45:09Z",
+      "verified_package_id": "worker-b-20261026T115433Z-adc5978a6022"
     },
     "link:https://doi.org/10.1177/2336825x261466887": {
       "title": "EU policy towards the sahel in the “post-West” era",
@@ -101157,7 +101331,7 @@
       "url": "https://doi.org/10.1177/2336825x261466887",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-24T13:09:19Z",
       "last_package_id": "worker-b-20261026T115433Z-adc5978a6022",
@@ -101250,7 +101424,9 @@
             "verification_note": "SAGE New Perspectives confirms Robert Mason paper July 5, 2026; author website corroborates title. Publisher abstract focuses diplomatic/normative influence, but full primary paper inaccessible for a definitive economic-security relevance decision."
           }
         }
-      ]
+      ],
+      "verified_at": "2026-10-27T18:45:09Z",
+      "verified_package_id": "worker-b-20261026T115433Z-adc5978a6022"
     },
     "historical:id:a5db24ea85edc12f": {
       "title": "A “Common” European Interest? Explaining Variation in IPCEI State Aid Between EU Member States",
@@ -101483,7 +101659,7 @@
       "url": "https://doi.org/10.1080/13501763.2023.2172063",
       "corpus_scope": "historical",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-24T13:09:19Z",
       "last_package_id": "worker-b-20261026T115433Z-adc5978a6022",
@@ -101576,7 +101752,9 @@
             "verification_note": "Original 2 February 2023 peer-reviewed article exists and author institutional catalogue supports identity. Publisher and author pages provide substantive abstract but no complete verified manuscript for analysing the claimed historical process tracing."
           }
         }
-      ]
+      ],
+      "verified_at": "2026-10-27T18:45:10Z",
+      "verified_package_id": "worker-b-20261026T115433Z-adc5978a6022"
     },
     "historical:id:92fec884c2ca2b1c": {
       "title": "ifo Viewpoint 244: Europe’s Industrial Policy and the Response to IRA | ifo Institute",
@@ -101970,15 +102148,15 @@
       "corpus_scope": "main",
       "queue_priority": "strand_a",
       "status": "assigned",
-      "lane": "B",
+      "lane": "A",
       "assigned_at": "2026-10-25T09:04:56Z",
-      "last_package_id": "worker-b-20261027T175216Z-d9afc5af0e51",
-      "scan_package_attempts": 5,
-      "last_scan_package_at": "2026-10-27T17:52:19Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-25T09:35:48Z",
-      "last_recovery_package_id": "worker-a-20261025T090456Z-32f9ec5a3ce7",
-      "recovery_reason": "A DOI-to-work identity match was supplied by authenticated OpenAlex metadata, but primary article content remains inaccessible after targeted recovery; admission cannot be judged.",
+      "last_package_id": "worker-a-20261027T184622Z-21b336d93718",
+      "scan_package_attempts": 6,
+      "last_scan_package_at": "2026-10-27T18:46:24Z",
+      "recovery_attempts": 2,
+      "last_recovery_at": "2026-10-27T18:45:10Z",
+      "last_recovery_package_id": "worker-a-20261027T092456Z-40aa9535af8e",
+      "recovery_reason": "Cannot infer what the paper concludes about strategic autonomy or degrowth from its title alone.",
       "verification": {
         "identity_verified": true,
         "evidence_depth": "identity_only_after_recovery",
@@ -102014,8 +102192,15 @@
             "note": "Searched DOI suffix ecolecon.2026.109266, OpenAlex W7223217197, Kovács + 109266, and title fragments; no accessible manuscript of the claimed work."
           }
         ],
-        "recovered_sources": [],
-        "verification_note": "Identity comes solely from the bundle’s authenticated OpenAlex DOI-to-work match and author metadata; independently accessible first-party substantive text was not located. This is a genuine evidence-access defer, not a substantive keep or drop."
+        "recovered_sources": [
+          {
+            "kind": "publisher_bibliography",
+            "url": "https://doi.org/10.1016/j.ecolecon.2026.109266",
+            "title": "Europe at the crossroads: trading strategic autonomy for resilience under degrowth",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "DOI work identity is cross-listed in bibliographic databases; original Ecological Economics abstract or full analysis was unavailable."
       },
       "recovery_history": [
         {
@@ -102060,6 +102245,57 @@
             ],
             "recovered_sources": [],
             "verification_note": "Identity comes solely from the bundle’s authenticated OpenAlex DOI-to-work match and author metadata; independently accessible first-party substantive text was not located. This is a genuine evidence-access defer, not a substantive keep or drop."
+          }
+        },
+        {
+          "attempt": 2,
+          "package_id": "worker-a-20261027T092456Z-40aa9535af8e",
+          "at": "2026-10-27T18:45:10Z",
+          "reason": "Cannot infer what the paper concludes about strategic autonomy or degrowth from its title alone.",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failed",
+                "note": "Attempted https://doi.org/10.1016/j.ecolecon.2026.109266; DOI URL not accessible in the web retriever."
+              },
+              {
+                "step": "doi",
+                "outcome": "metadata_only",
+                "note": "Checked DOI 10.1016/j.ecolecon.2026.109266; the bundle records an authenticated OpenAlex DOI-work match W7223217197, but publisher text was unavailable."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "no_result",
+                "note": "Exact quoted search for “Europe at the crossroads: trading strategic autonomy for resilience under degrowth” yielded no matching publisher article."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "no_result",
+                "note": "Searched Olivér Kovács + “Europe at the crossroads” + degrowth + Ecological Economics + 2026; matched separate Hungarian paper, not this DOI work."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "blocked",
+                "note": "Elsevier ScienceDirect article route was inaccessible (403); author oliverkovacs.com publications and Hungarian repositories returned other works only."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "no_result",
+                "note": "Searched DOI suffix ecolecon.2026.109266, OpenAlex W7223217197, Kovács + 109266, and title fragments; no accessible manuscript of the claimed work."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_bibliography",
+                "url": "https://doi.org/10.1016/j.ecolecon.2026.109266",
+                "title": "Europe at the crossroads: trading strategic autonomy for resilience under degrowth",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "DOI work identity is cross-listed in bibliographic databases; original Ecological Economics abstract or full analysis was unavailable."
           }
         }
       ]
@@ -102231,16 +102467,16 @@
       "url": "https://doi.org/10.1080/23322969.2026.2751120",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "recovery_retry",
       "lane": "B",
       "assigned_at": "2026-10-25T18:53:25Z",
       "last_package_id": "worker-b-20261026T115433Z-adc5978a6022",
       "scan_package_attempts": 3,
       "last_scan_package_at": "2026-10-26T11:54:35Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-25T19:18:22Z",
-      "last_recovery_package_id": "worker-a-20261025T185325Z-f91ff05e827a",
-      "recovery_reason": "Publisher or university records substantiate bibliographic identity, but no accessible substantive original work could be responsibly read after documented recovery.",
+      "recovery_attempts": 2,
+      "last_recovery_at": "2026-10-27T18:45:09Z",
+      "last_recovery_package_id": "worker-b-20261026T115433Z-adc5978a6022",
+      "recovery_reason": "Study identity is verified but university case observations and safeguards cannot responsibly be inferred from its title.",
       "verification": {
         "identity_verified": true,
         "evidence_depth": "identity_only_after_recovery",
@@ -102276,8 +102512,15 @@
             "note": "Searched distinctive title fragments with PDF and export-control keywords; no matching authorised full text or substantive original abstract recovered."
           }
         ],
-        "recovered_sources": [],
-        "verification_note": "A published online 23 October 2026 Taylor & Francis open-access item and author institutional catalogue corroborate identity, but T&F blocked and Lund metadata includes no findings; six substantive recovery routes attempted."
+        "recovered_sources": [
+          {
+            "kind": "publisher_bibliography",
+            "url": "https://www.tandfonline.com/action/showOpenAccess?journalCode=rprh20",
+            "title": "Emerging research security approaches: organisational arrangements at three European universities",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Taylor & Francis lists the article as open access and Lund confirms authorship, but the case evidence on three universities was not retrieved."
       },
       "recovery_history": [
         {
@@ -102322,6 +102565,57 @@
             ],
             "recovered_sources": [],
             "verification_note": "A published online 23 October 2026 Taylor & Francis open-access item and author institutional catalogue corroborate identity, but T&F blocked and Lund metadata includes no findings; six substantive recovery routes attempted."
+          }
+        },
+        {
+          "attempt": 2,
+          "package_id": "worker-b-20261026T115433Z-adc5978a6022",
+          "at": "2026-10-27T18:45:09Z",
+          "reason": "Study identity is verified but university case observations and safeguards cannot responsibly be inferred from its title.",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failed",
+                "note": "Tried publisher full article https://www.tandfonline.com/doi/full/10.1080/23322969.2026.2751120; web reader returned inaccessible/403."
+              },
+              {
+                "step": "doi",
+                "outcome": "failed",
+                "note": "DOI article via 10.1080/23322969.2026.2751120 and Crossref API works endpoint did not supply article or substantive abstract."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "metadata_only",
+                "note": "Exact full title searches found the open-access journal index but no abstract or manuscript text."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "metadata_only",
+                "note": "Shih, Sanchez Cobaleda, Vella 2026 search found Lund institutional publication record without study findings."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "metadata_only",
+                "note": "Checked publisher OA journal listings and Lund University Publications record f4f6fdbe-d7c9-4b2c-b79b-04711a45934b; bibliographic data only."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "failed",
+                "note": "Searched distinctive title fragments with PDF and export-control keywords; no matching authorised full text or substantive original abstract recovered."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_bibliography",
+                "url": "https://www.tandfonline.com/action/showOpenAccess?journalCode=rprh20",
+                "title": "Emerging research security approaches: organisational arrangements at three European universities",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "Taylor & Francis lists the article as open access and Lund confirms authorship, but the case evidence on three universities was not retrieved."
           }
         }
       ]
@@ -102766,11 +103060,113 @@
       "corpus_scope": "main",
       "queue_priority": "strand_a",
       "status": "assigned",
-      "lane": "B",
+      "lane": "A",
       "assigned_at": "2026-10-27T09:24:56Z",
-      "last_package_id": "worker-b-20261027T175216Z-d9afc5af0e51",
-      "scan_package_attempts": 2,
-      "last_scan_package_at": "2026-10-27T17:52:19Z"
+      "last_package_id": "worker-a-20261027T184622Z-21b336d93718",
+      "scan_package_attempts": 3,
+      "last_scan_package_at": "2026-10-27T18:46:24Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-27T18:45:10Z",
+      "last_recovery_package_id": "worker-a-20261027T092456Z-40aa9535af8e",
+      "recovery_reason": "Work identity verified, but no original scholarly argument or methodology sufficient for Radar claims was inspected.",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "blocked",
+            "note": "Checked the record’s supplied link https://ideas.repec.org/s/bpj/ordojb.html; article text was not available in the accessible source or index."
+          },
+          {
+            "step": "doi",
+            "outcome": "blocked",
+            "note": "Checked DOI 10.1515/ordo-2026-2012 and its publisher route; only bibliographic identity or an inaccessible paper page appeared."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "metadata_only",
+            "note": "Exact-title search for “Towards a rule-bound EU transformation policy: Can Ordnungspolitik and industrial strategy be reconc” found publication identity but no readable full argument or evidentiary body."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "metadata_only",
+            "note": "Cross-checked title, credited authors, and publication-year/issue in issuer or institutional records, without a complete manuscript."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "blocked",
+            "note": "Checked first-party publisher or research-institution reference https://ideas.repec.org/s/bpj/ordojb.html; only identity, article teaser or access-restricted content was inspectable."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Compared related listings, alternate publication routes and institutional catalogs; no matching substantive edition of this specific work was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_bibliography",
+            "url": "https://ideas.repec.org/s/bpj/ordojb.html",
+            "title": "Towards a rule-bound EU transformation policy: Can Ordnungspolitik and industrial strategy be reconciled?",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "De Gruyter/RePEc bibliographic listing confirms 2026 ORDO journal pages 1–30 and authors; the scholarly article text is subscription-restricted."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-20261027T092456Z-40aa9535af8e",
+          "at": "2026-10-27T18:45:10Z",
+          "reason": "Work identity verified, but no original scholarly argument or methodology sufficient for Radar claims was inspected.",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "blocked",
+                "note": "Checked the record’s supplied link https://ideas.repec.org/s/bpj/ordojb.html; article text was not available in the accessible source or index."
+              },
+              {
+                "step": "doi",
+                "outcome": "blocked",
+                "note": "Checked DOI 10.1515/ordo-2026-2012 and its publisher route; only bibliographic identity or an inaccessible paper page appeared."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "metadata_only",
+                "note": "Exact-title search for “Towards a rule-bound EU transformation policy: Can Ordnungspolitik and industrial strategy be reconc” found publication identity but no readable full argument or evidentiary body."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "metadata_only",
+                "note": "Cross-checked title, credited authors, and publication-year/issue in issuer or institutional records, without a complete manuscript."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "blocked",
+                "note": "Checked first-party publisher or research-institution reference https://ideas.repec.org/s/bpj/ordojb.html; only identity, article teaser or access-restricted content was inspectable."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "no_match",
+                "note": "Compared related listings, alternate publication routes and institutional catalogs; no matching substantive edition of this specific work was recovered."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_bibliography",
+                "url": "https://ideas.repec.org/s/bpj/ordojb.html",
+                "title": "Towards a rule-bound EU transformation policy: Can Ordnungspolitik and industrial strategy be reconciled?",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "De Gruyter/RePEc bibliographic listing confirms 2026 ORDO journal pages 1–30 and authors; the scholarly article text is subscription-restricted."
+          }
+        }
+      ]
     },
     "link:https://doi.org/10.1093/eurpub/ckag169.1923": {
       "title": "Reducing Salt Intake through EU Sustainable Public Procurement in Daycare Meals in Copenhagen",
@@ -102795,12 +103191,14 @@
       "url": "https://doi.org/10.1093/eurpub/ckag169.087",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-27T09:24:56Z",
       "last_package_id": "worker-b-20261027T175216Z-d9afc5af0e51",
       "scan_package_attempts": 2,
-      "last_scan_package_at": "2026-10-27T17:52:19Z"
+      "last_scan_package_at": "2026-10-27T17:52:19Z",
+      "verified_at": "2026-10-27T18:45:10Z",
+      "verified_package_id": "worker-a-20261027T092456Z-40aa9535af8e"
     },
     "link:https://doi.org/10.1093/eurpub/ckag169.430": {
       "title": "P.7. Round Table: Building the foundation: Data governance and harmonisation for CVD and diabetes in Europe",
@@ -102809,12 +103207,14 @@
       "url": "https://doi.org/10.1093/eurpub/ckag169.430",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-27T09:24:56Z",
       "last_package_id": "worker-b-20261027T175216Z-d9afc5af0e51",
       "scan_package_attempts": 2,
-      "last_scan_package_at": "2026-10-27T17:52:19Z"
+      "last_scan_package_at": "2026-10-27T17:52:19Z",
+      "verified_at": "2026-10-27T18:45:10Z",
+      "verified_package_id": "worker-a-20261027T092456Z-40aa9535af8e"
     },
     "link:https://doi.org/10.1177/16118944261490056": {
       "title": "An Offshore Financial Centre Inside Europe: Luxembourg, Taxation and European Economic Community (1960s–1970s)",
@@ -102824,11 +103224,113 @@
       "corpus_scope": "main",
       "queue_priority": "strand_a",
       "status": "assigned",
-      "lane": "B",
+      "lane": "A",
       "assigned_at": "2026-10-27T09:24:56Z",
-      "last_package_id": "worker-b-20261027T175216Z-d9afc5af0e51",
-      "scan_package_attempts": 2,
-      "last_scan_package_at": "2026-10-27T17:52:19Z"
+      "last_package_id": "worker-a-20261027T184622Z-21b336d93718",
+      "scan_package_attempts": 3,
+      "last_scan_package_at": "2026-10-27T18:46:24Z",
+      "recovery_attempts": 1,
+      "last_recovery_at": "2026-10-27T18:45:10Z",
+      "last_recovery_package_id": "worker-a-20261027T092456Z-40aa9535af8e",
+      "recovery_reason": "Original historical scholarship is not available for inspection, preventing a claim about 1960s–1970s fiscal mechanisms.",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "blocked",
+            "note": "Checked the record’s supplied link https://doi.org/10.1177/16118944261490056; article text was not available in the accessible source or index."
+          },
+          {
+            "step": "doi",
+            "outcome": "blocked",
+            "note": "Checked DOI 10.1177/16118944261490056 and its publisher route; only bibliographic identity or an inaccessible paper page appeared."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "metadata_only",
+            "note": "Exact-title search for “An Offshore Financial Centre Inside Europe: Luxembourg, Taxation and European Economic Community (19” found publication identity but no readable full argument or evidentiary body."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "metadata_only",
+            "note": "Cross-checked title, credited authors, and publication-year/issue in issuer or institutional records, without a complete manuscript."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "blocked",
+            "note": "Checked first-party publisher or research-institution reference https://doi.org/10.1177/16118944261490056; only identity, article teaser or access-restricted content was inspectable."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Compared related listings, alternate publication routes and institutional catalogs; no matching substantive edition of this specific work was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_bibliography",
+            "url": "https://doi.org/10.1177/16118944261490056",
+            "title": "An Offshore Financial Centre Inside Europe: Luxembourg, Taxation and European Economic Community (1960s–1970s)",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "SAGE DOI and scanner bibliography identify a historical research article on Luxembourg taxation and the EEC, but the article body and documentary evidence were inaccessible."
+      },
+      "recovery_history": [
+        {
+          "attempt": 1,
+          "package_id": "worker-a-20261027T092456Z-40aa9535af8e",
+          "at": "2026-10-27T18:45:10Z",
+          "reason": "Original historical scholarship is not available for inspection, preventing a claim about 1960s–1970s fiscal mechanisms.",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "blocked",
+                "note": "Checked the record’s supplied link https://doi.org/10.1177/16118944261490056; article text was not available in the accessible source or index."
+              },
+              {
+                "step": "doi",
+                "outcome": "blocked",
+                "note": "Checked DOI 10.1177/16118944261490056 and its publisher route; only bibliographic identity or an inaccessible paper page appeared."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "metadata_only",
+                "note": "Exact-title search for “An Offshore Financial Centre Inside Europe: Luxembourg, Taxation and European Economic Community (19” found publication identity but no readable full argument or evidentiary body."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "metadata_only",
+                "note": "Cross-checked title, credited authors, and publication-year/issue in issuer or institutional records, without a complete manuscript."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "blocked",
+                "note": "Checked first-party publisher or research-institution reference https://doi.org/10.1177/16118944261490056; only identity, article teaser or access-restricted content was inspectable."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "no_match",
+                "note": "Compared related listings, alternate publication routes and institutional catalogs; no matching substantive edition of this specific work was recovered."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_bibliography",
+                "url": "https://doi.org/10.1177/16118944261490056",
+                "title": "An Offshore Financial Centre Inside Europe: Luxembourg, Taxation and European Economic Community (1960s–1970s)",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "SAGE DOI and scanner bibliography identify a historical research article on Luxembourg taxation and the EEC, but the article body and documentary evidence were inaccessible."
+          }
+        }
+      ]
     },
     "link:https://doi.org/10.1093/eurpub/ckag169.883": {
       "title": "Governance, not technology: low-hanging fruits for AI readiness in Europe, a latent class analysis",
@@ -102837,12 +103339,14 @@
       "url": "https://doi.org/10.1093/eurpub/ckag169.883",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-27T09:24:56Z",
       "last_package_id": "worker-b-20261027T175216Z-d9afc5af0e51",
       "scan_package_attempts": 2,
-      "last_scan_package_at": "2026-10-27T17:52:19Z"
+      "last_scan_package_at": "2026-10-27T17:52:19Z",
+      "verified_at": "2026-10-27T18:45:10Z",
+      "verified_package_id": "worker-a-20261027T092456Z-40aa9535af8e"
     },
     "historical:id:a14995febfdbba0c": {
       "title": "Stable decoupling: Three tests for Europe in the face of Chinese economic coercion – European Council on Foreign Relations",
@@ -112714,6 +113218,15 @@
         "link:https://doi.org/10.1093/eurpub/ckag169.883",
         "link:https://doi.org/10.1016/j.ecolecon.2026.109266",
         "historical:id:e1abd351d9984dbd"
+      ]
+    },
+    "worker-a-20261027T184622Z-21b336d93718": {
+      "lane": "A",
+      "created_at": "2026-10-27T18:46:24Z",
+      "record_keys": [
+        "link:https://doi.org/10.1016/j.ecolecon.2026.109266",
+        "link:https://doi.org/10.1515/ordo-2026-2012",
+        "link:https://doi.org/10.1177/16118944261490056"
       ]
     }
   }

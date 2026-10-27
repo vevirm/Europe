@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-10-27T18:24:26Z",
+  "generated_at": "2026-10-27T18:45:10Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -212202,8 +212202,396 @@
         }
       ],
       "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1002/sd.71344": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "0fb42d73",
+      "identity_hash": "dad87bd4b9af40da",
+      "reader_title": "Renewable power and environmental outcomes in Europe",
+      "reader_what": "A European panel study reports nonlinear emissions reductions as renewable energy adoption rises.",
+      "reader_why": "Grid and storage constraints can delay environmental benefits, but security-of-supply benefits were not measured.",
+      "reader_more": "The authors study 20 EU countries over 2005–2023 using a panel smooth transition autoregression and report changes around renewable-energy shares of 20.4% and 28.9%. These thresholds describe a fitted relationship with CO2 emissions and should not be interpreted as independently verified causal thresholds or energy security gains.",
+      "deep_analysis": {
+        "work_kind": "quantitative journal study",
+        "research_question": "Are renewable-energy adoption shares linked to nonlinear changes in European CO2 outcomes?",
+        "main_finding": "The authors report regime thresholds near 20.4% and 28.9% renewable-energy share and stronger emission reductions in the higher-adoption regime.",
+        "method_or_basis": "Publisher detailed research abstract and data statement: PSTAR on 20 EU countries, 2005–2023, 380 country-year observations with system GMM sensitivity analysis.",
+        "qualification": "Reported observational panel-model thresholds are not a causal estimate of EU supply security; results address CO2 emissions, not import dependence.",
+        "radar_relevance": "Suggests bottlenecks in European energy transformation but does not directly estimate critical energy import vulnerability or dependence.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the original bibliographic route and issuer publication text for Green Energy Transition and Sustainable Development Outcomes in Europe; confirmed the available substantive abstract, program summary, or methodological detail."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "first_party_issuer_text",
+            "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/sd.71344",
+            "title": "Green Energy Transition and Sustainable Development Outcomes in Europe: Evidence of Threshold and Moderating Effects",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Wiley abstract and methods/data details report PSTAR modeling of 380 observations from 20 EU member states, 2005–2023, with adoption thresholds 20.4% and 28.9%; the paper primarily measures CO2 emissions, not security-of-supply."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_REVIEW_NEAR_SCOPE",
+        "reason": "Detailed publisher methodology and quantitative reported findings make the study relevant at the energy-transition interface, but supply-security inferences are indirect."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Distinct publication identity; no high-confidence same-work duplicate demonstrated."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-27T18:45:09Z",
+      "deep_scan_package_id": "worker-b-20261026T115433Z-adc5978a6022",
+      "claims": [
+        {
+          "object": "energy.grid",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Abaab et al.",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2026-07-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Reported observational panel-model thresholds are not a causal estimate of EU supply security; results address CO2 emissions, not import dependence.",
+          "text": "The modeled panel reports that higher renewable energy penetration coincides with more pronounced reductions in European CO2 emissions after an upper estimated threshold.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1002/sd.71344",
+          "merit": 82,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:dad87bd4b9af40da:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1177/2336825x261466887": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "135e89eb",
+      "identity_hash": "d84ac99b53bbdced",
+      "deep_analysis": {
+        "work_kind": "journal article",
+        "research_question": "",
+        "main_finding": "SAGE first-party abstract discusses multipolar competition, European normative power and security in the Sahel; no specific economic-security, industrial or strategic dependency is investigated.",
+        "method_or_basis": "First-party journal abstract, issue contents and session description; no independent economic-security dataset or industrial policy finding is offered.",
+        "qualification": "Evidence describes public health or geopolitical governance, not the Radar-defined economic security mechanism.",
+        "radar_relevance": "The source does not meet this economic-security Radar’s work-level scope and evidence gate.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the original bibliographic route and issuer publication text for EU policy towards the sahel in the “post-West” era; confirmed the available substantive abstract, program summary, or methodological detail."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "first_party_issuer_text",
+            "url": "https://journals.sagepub.com/doi/10.1177/2336825X261466887",
+            "title": "EU policy towards the sahel in the “post-West” era",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "SAGE first-party abstract discusses multipolar competition, European normative power and security in the Sahel; no specific economic-security, industrial or strategic dependency is investigated."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "OUT_OF_SCOPE_EVIDENCE",
+        "reason": "The published article concerns international order and EU security relations in the Sahel, outside this Radar’s economic-security evidence criterion."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Distinct publication identity; no high-confidence same-work duplicate demonstrated."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-27T18:45:09Z",
+      "deep_scan_package_id": "worker-b-20261026T115433Z-adc5978a6022",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:dfdf69eee6d7a0f4": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "1f492fc9",
+      "identity_hash": "ea51613dee061b83",
+      "reader_title": "How EU institutions manage technology security",
+      "reader_what": "An academic article compares three decades of EU approaches to dual-use exports, network security and borders.",
+      "reader_why": "EU-level rules and practical capabilities vary across security areas, shaping control of strategic technologies.",
+      "reader_more": "Ido Sivan-Sevilla develops a typology of supranational security states using process-tracing of EU policy documents and secondary sources. The article distinguishes institutional roles in rules, pooled resources and direct capabilities. Dual-use export controls are the clearest economic-security connection; cyber and borders are adjacent domains.",
+      "deep_analysis": {
+        "work_kind": "academic comparative policy analysis",
+        "research_question": "Why do supranational rules and direct capabilities differ across European technological security policy domains?",
+        "main_finding": "The article identifies distinct supranational-security arrangements across dual-use export controls, network security, and border security, shaped by path dependence and crises.",
+        "method_or_basis": "Publisher abstract: case-centric process tracing of EU reforms across three domains over three decades using policy documents and secondary sources.",
+        "qualification": "Abstract-level process-tracing account of three EU security domains; original case chapters were not accessible for independent verification.",
+        "radar_relevance": "Dual-use technology export control and EU authority in technology-linked security relate to economic security; other cases are adjacent.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the original bibliographic route and issuer publication text for Supranational security states for national security problems: governin; confirmed the available substantive abstract, program summary, or methodological detail."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "first_party_issuer_text",
+            "url": "https://www.tandfonline.com/doi/full/10.1080/13501763.2023.2172063",
+            "title": "Supranational security states for national security problems: governing by rules & capacities in tech-driven security spaces",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publisher abstract describes process tracing across EU dual-use export control, information security and border security over 30 years and distinct rules/capacity configurations."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_REVIEW_NEAR_SCOPE",
+        "reason": "Scholarly analysis of supranational EU controls and pooled capacities is substantively relevant, particularly dual-use exports, but the abstract alone leaves case nuances open."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Distinct publication identity; no high-confidence same-work duplicate demonstrated."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-27T18:45:10Z",
+      "deep_scan_package_id": "worker-b-20261026T115433Z-adc5978a6022",
+      "claims": [
+        {
+          "object": "export_control.competence",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Ido Sivan-Sevilla",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "observation",
+          "status_date": "2023-02-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Abstract-level process-tracing account of three EU security domains; original case chapters were not accessible for independent verification.",
+          "text": "A comparative study traces EU authority and institutional capacity in dual-use export controls alongside network and border security.",
+          "confidence": "medium",
+          "record_key": "historical:id:dfdf69eee6d7a0f4",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:ea51613dee061b83:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1093/eurpub/ckag169.087": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "68c18337",
+      "identity_hash": "bca54beb4d1d7275",
+      "deep_analysis": {
+        "work_kind": "conference session abstract",
+        "research_question": "",
+        "main_finding": "Oxford Academic journal supplement identifies this as a WHO/Europe conference round-table on climate-health solutions rather than an independent economic-security research article.",
+        "method_or_basis": "First-party journal abstract, issue contents and session description; no independent economic-security dataset or industrial policy finding is offered.",
+        "qualification": "Evidence describes public health or geopolitical governance, not the Radar-defined economic security mechanism.",
+        "radar_relevance": "The source does not meet this economic-security Radar’s work-level scope and evidence gate.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the original bibliographic route and issuer publication text for G.2. Round Table: From call to action to delivery: scaling climate–hea; confirmed the available substantive abstract, program summary, or methodological detail."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "first_party_issuer_text",
+            "url": "https://academic.oup.com/eurpub/issue/36/Supplement_5",
+            "title": "G.2. Round Table: From call to action to delivery: scaling climate–health solutions across Europe",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Oxford Academic journal supplement identifies this as a WHO/Europe conference round-table on climate-health solutions rather than an independent economic-security research article."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "OUT_OF_SCOPE_EVIDENCE",
+        "reason": "Actual source is a public health conference session abstract, outside the economic-security research admission gate."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Distinct publication identity; no high-confidence same-work duplicate demonstrated."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-27T18:45:10Z",
+      "deep_scan_package_id": "worker-a-20261027T092456Z-40aa9535af8e",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1093/eurpub/ckag169.430": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "979b6ba8",
+      "identity_hash": "3c51b12f4a82a807",
+      "deep_analysis": {
+        "work_kind": "conference session abstract",
+        "research_question": "",
+        "main_finding": "Oxford Academic supplement lists this round-table on cardiovascular disease/diabetes data governance; program entry offers no strategic-industry or economic-dependency analysis.",
+        "method_or_basis": "First-party journal abstract, issue contents and session description; no independent economic-security dataset or industrial policy finding is offered.",
+        "qualification": "Evidence describes public health or geopolitical governance, not the Radar-defined economic security mechanism.",
+        "radar_relevance": "The source does not meet this economic-security Radar’s work-level scope and evidence gate.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the original bibliographic route and issuer publication text for P.7. Round Table: Building the foundation: Data governance and harmoni; confirmed the available substantive abstract, program summary, or methodological detail."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "first_party_issuer_text",
+            "url": "https://academic.oup.com/eurpub/issue/36/Supplement_5",
+            "title": "P.7. Round Table: Building the foundation: Data governance and harmonisation for CVD and diabetes in Europe",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Oxford Academic supplement lists this round-table on cardiovascular disease/diabetes data governance; program entry offers no strategic-industry or economic-dependency analysis."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "OUT_OF_SCOPE_EVIDENCE",
+        "reason": "Source is public health data-governance conference programming, not an economic-security work."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Distinct publication identity; no high-confidence same-work duplicate demonstrated."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-27T18:45:10Z",
+      "deep_scan_package_id": "worker-a-20261027T092456Z-40aa9535af8e",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1093/eurpub/ckag169.883": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "9c97a0f8",
+      "identity_hash": "1b7f0d44f06ef522",
+      "deep_analysis": {
+        "work_kind": "conference session abstract",
+        "research_question": "",
+        "main_finding": "Journal supplement identifies a conference abstract on AI readiness in public-health governance, not an EU strategic technology-dependency study.",
+        "method_or_basis": "First-party journal abstract, issue contents and session description; no independent economic-security dataset or industrial policy finding is offered.",
+        "qualification": "Evidence describes public health or geopolitical governance, not the Radar-defined economic security mechanism.",
+        "radar_relevance": "The source does not meet this economic-security Radar’s work-level scope and evidence gate.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the original bibliographic route and issuer publication text for Governance, not technology: low-hanging fruits for AI readiness in Eur; confirmed the available substantive abstract, program summary, or methodological detail."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "first_party_issuer_text",
+            "url": "https://academic.oup.com/eurpub/issue/36/Supplement_5",
+            "title": "Governance, not technology: low-hanging fruits for AI readiness in Europe, a latent class analysis",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Journal supplement identifies a conference abstract on AI readiness in public-health governance, not an EU strategic technology-dependency study."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "OUT_OF_SCOPE_EVIDENCE",
+        "reason": "A single public-health conference abstract cannot support an economic-security Radar mechanism."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Distinct publication identity; no high-confidence same-work duplicate demonstrated."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-27T18:45:10Z",
+      "deep_scan_package_id": "worker-a-20261027T092456Z-40aa9535af8e",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-10-27T18:24:26Z"
+  "claims_updated_at": "2026-10-27T18:45:10Z"
 }
