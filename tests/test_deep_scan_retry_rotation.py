@@ -43,7 +43,7 @@ class DeepScanRetryRotation(unittest.TestCase):
             status = mark_recovery_failure(
                 state, key, f"pkg-{n}", reason="still inaccessible", verification={}
             )
-            self.assertEqual(status, "needs_manual_verification" if n == 3 else "recovery_retry")
+            self.assertEqual(status, "dropped_after_3_failures" if n == 3 else "recovery_retry")
         self.assertEqual(state["records"][key]["recovery_attempts"], 3)
         self.assertIn(key, assignment_blocked_keys(state))
         self.assertEqual(fill_lane(state, "A", [key], target_size=1), [])
