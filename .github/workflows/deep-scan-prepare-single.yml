@@ -98,7 +98,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git add deep_scan_work_state.json
+          git add deep_scan_work_state.json DEEP_SCAN_DROPPED.json DEEP_SCAN_STATUS.md
           if git diff --cached --quiet; then
             echo 'Single-package reservation already current.'
           else

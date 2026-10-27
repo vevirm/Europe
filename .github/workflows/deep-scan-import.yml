@@ -160,7 +160,7 @@ jobs:
             radar.json radar_active.json stuff/source_merit_ranking.xlsx \
             migration-reports/latest-deep-scan-active-rebuild.json \
             migration-reports/latest-deep-a-promotion.json deep_scan_inbox \
-            deep_scan_work_state.json DEEP_SCAN_STATUS.md DEEP_SCAN_LAST_IMPORT.json \
+            deep_scan_work_state.json DEEP_SCAN_STATUS.md DEEP_SCAN_DROPPED.json DEEP_SCAN_LAST_IMPORT.json \
             deep_a_candidates.json deep_a_candidate_archive.json
           if git diff --cached --quiet; then
             echo 'No valid Deep Scan results or worker-state changes to commit.'

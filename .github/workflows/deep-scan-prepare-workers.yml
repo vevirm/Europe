@@ -84,7 +84,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git add deep_scan_work_state.json DEEP_SCAN_STATUS.md
+          git add deep_scan_work_state.json DEEP_SCAN_STATUS.md DEEP_SCAN_DROPPED.json
           if git diff --cached --quiet; then
             echo 'Worker assignments already current.'
           else
