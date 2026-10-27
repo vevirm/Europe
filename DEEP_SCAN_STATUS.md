@@ -7,8 +7,8 @@ Scheduling policy: preserve existing worker reservations; fill new slots with fr
 A validated `defer` counts as one genuine recovery pass. After **3** unsuccessful passes, the work leaves the automatic queue and enters **Hands-on verification needed**.
 
 - Authoritative V2 verified: **2693** (Main **1105** + Historical **1588**)
-- Automatic queue still needing V2 verification: **12** (Main **6** + Historical **6**)
-- Currently assigned to workers: **9** (Main **5** + Historical **4**)
+- Automatic queue still needing V2 verification: **28** (Main **13** + Historical **15**)
+- Currently assigned to workers: **25** (Main **13** + Historical **12**)
 - Bounded access-recovery retries still eligible: **0**
 - Hands-on verification needed: **171**
 - Automatic queue pending and not yet assigned: **3**
@@ -16,11 +16,17 @@ A validated `defer` counts as one genuine recovery pass. After **3** unsuccessfu
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261026T115429Z-99731c6dc6c5`
-- Assigned unresolved records: **3**
-  1. `historical:id:9388940a33c925e3` — From dependency to resilience — recovery attempt 3/3
-  2. `historical:id:e7e1432518022837` — Environmental Biotechnology for a Sustainable and Competitive EU — recovery attempt 3/3
-  3. `historical:id:aaaf636aae2f0d5c` — European and UK critical raw materials (CRM) supply chains - “national security” considerations - Lexology - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 3/3
+- Current package: `worker-a-20261027T092456Z-40aa9535af8e`
+- Assigned unresolved records: **19**
+  1. `link:https://ecipe.org/publications/forward-looking-agenda-for-eu-quantum-policy/#_ftnref5` — From Sovereignty to Managed Interdependence: A Forward-Looking Agenda for EU Quantum Policy
+  2. `link:https://doi.org/10.1515/ordo-2026-2012` — Towards a rule-bound EU transformation policy: Can Ordnungspolitik and industrial strategy be reconciled?
+  3. `link:https://doi.org/10.1093/eurpub/ckag169.1923` — Reducing Salt Intake through EU Sustainable Public Procurement in Daycare Meals in Copenhagen
+  4. `link:https://doi.org/10.1093/eurpub/ckag169.087` — G.2. Round Table: From call to action to delivery: scaling climate–health solutions across Europe
+  5. `link:https://doi.org/10.1093/eurpub/ckag169.430` — P.7. Round Table: Building the foundation: Data governance and harmonisation for CVD and diabetes in Europe
+  6. `link:https://doi.org/10.1177/16118944261490056` — An Offshore Financial Centre Inside Europe: Luxembourg, Taxation and European Economic Community (1960s–1970s)
+  7. `link:https://doi.org/10.1093/eurpub/ckag169.883` — Governance, not technology: low-hanging fruits for AI readiness in Europe, a latent class analysis
+  8. `historical:id:a14995febfdbba0c` — Stable decoupling: Three tests for Europe in the face of Chinese economic coercion – European Council on Foreign Relations
+  - … plus 11 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-20261026T115433Z-adc5978a6022`
