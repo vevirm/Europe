@@ -6,37 +6,31 @@ It exists so a new chat or operator can see what has already been verified, what
 Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.
 A validated `defer` counts as one genuine recovery pass. After **3** unsuccessful passes, the work leaves the automatic queue and enters **Hands-on verification needed**.
 
-- Authoritative V2 verified: **2693** (Main **1105** + Historical **1588**)
-- Automatic queue still needing V2 verification: **28** (Main **13** + Historical **15**)
-- Currently assigned to workers: **25** (Main **13** + Historical **12**)
+- Authoritative V2 verified: **2705** (Main **1107** + Historical **1598**)
+- Automatic queue still needing V2 verification: **15** (Main **11** + Historical **4**)
+- Currently assigned to workers: **9** (Main **6** + Historical **3**)
 - Bounded access-recovery retries still eligible: **0**
-- Hands-on verification needed: **171**
-- Automatic queue pending and not yet assigned: **3**
+- Hands-on verification needed: **172**
+- Automatic queue pending and not yet assigned: **6**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261027T092456Z-40aa9535af8e`
-- Assigned unresolved records: **19**
-  1. `link:https://ecipe.org/publications/forward-looking-agenda-for-eu-quantum-policy/#_ftnref5` — From Sovereignty to Managed Interdependence: A Forward-Looking Agenda for EU Quantum Policy
-  2. `link:https://doi.org/10.1515/ordo-2026-2012` — Towards a rule-bound EU transformation policy: Can Ordnungspolitik and industrial strategy be reconciled?
-  3. `link:https://doi.org/10.1093/eurpub/ckag169.1923` — Reducing Salt Intake through EU Sustainable Public Procurement in Daycare Meals in Copenhagen
-  4. `link:https://doi.org/10.1093/eurpub/ckag169.087` — G.2. Round Table: From call to action to delivery: scaling climate–health solutions across Europe
-  5. `link:https://doi.org/10.1093/eurpub/ckag169.430` — P.7. Round Table: Building the foundation: Data governance and harmonisation for CVD and diabetes in Europe
-  6. `link:https://doi.org/10.1177/16118944261490056` — An Offshore Financial Centre Inside Europe: Luxembourg, Taxation and European Economic Community (1960s–1970s)
-  7. `link:https://doi.org/10.1093/eurpub/ckag169.883` — Governance, not technology: low-hanging fruits for AI readiness in Europe, a latent class analysis
-  8. `historical:id:a14995febfdbba0c` — Stable decoupling: Three tests for Europe in the face of Chinese economic coercion – European Council on Foreign Relations
-  - … plus 11 more in the package manifest
+- Current package: `worker-a-20261027T095501Z-0da7fb241a70`
+- Assigned unresolved records: **6**
+  1. `link:https://doi.org/10.1016/j.ecolecon.2026.109266` — Europe at the crossroads: trading strategic autonomy for resilience under degrowth — recovery attempt 3/3
+  2. `link:https://doi.org/10.1515/ordo-2026-2012` — Towards a rule-bound EU transformation policy: Can Ordnungspolitik and industrial strategy be reconciled? — recovery attempt 2/3
+  3. `link:https://doi.org/10.1093/eurpub/ckag169.087` — G.2. Round Table: From call to action to delivery: scaling climate–health solutions across Europe — recovery attempt 2/3
+  4. `link:https://doi.org/10.1093/eurpub/ckag169.430` — P.7. Round Table: Building the foundation: Data governance and harmonisation for CVD and diabetes in Europe — recovery attempt 2/3
+  5. `link:https://doi.org/10.1177/16118944261490056` — An Offshore Financial Centre Inside Europe: Luxembourg, Taxation and European Economic Community (1960s–1970s) — recovery attempt 2/3
+  6. `link:https://doi.org/10.1093/eurpub/ckag169.883` — Governance, not technology: low-hanging fruits for AI readiness in Europe, a latent class analysis — recovery attempt 2/3
 
 ### Worker B
-- Current package: `worker-b-20261026T115433Z-adc5978a6022`
-- Assigned unresolved records: **6**
-  1. `link:https://doi.org/10.1080/13563467.2026.2751107` — Globalised but divided: European corporations and the EU’s geoeconomic turn against China — recovery attempt 2/3
-  2. `link:https://doi.org/10.1080/13563467.2026.2751104` — Chinese and Russian nuclear energy companies in Europe’s geoeconomic turn: giving way to the Americans? — recovery attempt 2/3
-  3. `link:https://doi.org/10.1002/sd.71344` — Green Energy Transition and Sustainable Development Outcomes in Europe: Evidence of Threshold and Moderating Effects — recovery attempt 2/3
-  4. `link:https://doi.org/10.1177/2336825x261466887` — EU policy towards the sahel in the “post-West” era — recovery attempt 2/3
-  5. `link:https://doi.org/10.1080/23322969.2026.2751120` — Emerging research security approaches: organisational arrangements at three European universities — recovery attempt 2/3
-  6. `historical:id:dfdf69eee6d7a0f4` — Supranational security states for national security problems: governing by rules & capacities in tech-driven security spaces — recovery attempt 2/3
+- Current package: `worker-b-20261027T095503Z-99731c6dc6c5`
+- Assigned unresolved records: **3**
+  1. `historical:id:9388940a33c925e3` — From dependency to resilience — recovery attempt 3/3
+  2. `historical:id:e7e1432518022837` — Environmental Biotechnology for a Sustainable and Competitive EU — recovery attempt 3/3
+  3. `historical:id:aaaf636aae2f0d5c` — European and UK critical raw materials (CRM) supply chains - “national security” considerations - Lexology - CELIS Institute - Investment Screening | National Security | Competitiveness — recovery attempt 3/3
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
@@ -217,3 +211,4 @@ These works no longer consume automatic Deep Scan slots. Their identity is belie
 - `link:https://doi.org/10.1080/09692290.2026.2745879` — **Europe’s new geoeconomic cleavages: from capitalist diversity to international vulnerability in European political economy** — attempts: 3/3 — Review of International Political Economy — 2026-10-20 — Publication identity is corroborated, but the complete underlying work remains inaccessible or available evidence is insufficient for an authoritative admission decision. — https://doi.org/10.1080/09692290.2026.2745879
 - `link:https://news.google.com/rss/articles/CBMikwFBVV95cUxObW1IWjhVODBnLWVSTUdKZkZYb2tGOUVlOFRtVXJWMjA2Rld4ZUoxN0M5NGdMbHFLS1RzRXI1OU5NNmtlU1NMVHE4SVNfeHgxMVJ6SWljS1hUcnBweVkySkh3UmZ6bXROcVVob1hlWl9UNWdTUnBVZVJsM2lWM1JIZURqaFBldVlZZzFpU093QTNSb0k?oc=5` — **5 battles that will decide EU’s ‘Made in Europe’ push** — attempts: 3/3 — Politico Europe — 2026-09-29T15:19Z — September 2026 Politico article identity is corroborated, but only a teaser and secondary paraphrases could be read; no verified specific current policy change supports a C judgment. — https://news.google.com/rss/articles/CBMikwFBVV95cUxObW1IWjhVODBnLWVSTUdKZkZYb2tGOUVlOFRtVXJWMjA2Rld4ZUoxN0M5NGdMbHFLS1RzRXI1OU5NNmtlU1NMVHE4SVNfeHgxMVJ6SWljS1hUcnBweVkySkh3UmZ6bXROcVVob1hlWl9UNWdTUnBVZVJsM2lWM1JIZURqaFBldVlZZzFpU093QTNSb0k?oc=5
 - `link:https://news.google.com/rss/articles/CBMiqgFBVV95cUxORFJ5UnNHNVROcS0zVW96UHRRSDRuVGhkWTJJNTZqOWJMaFh6am05S3Q2c3NUODlWLXNEbGtUZW1SX0pvYTZiUFZmQXVlM2t0SDAtenpTLXZDWWQxM2NGUzhoYmswcXMtWU52bHRIVUg4S0thVU5ISkdsVFA5dnpyUjFjVUVIN2JmOUVQTHRZajFVZ1VWWWNUWXVLaHk4dkhnRWZ6eXljTno2QQ?oc=5` — **Rare earths: How new-old export controls would burden German companies - Table.Briefings** — attempts: 3/3 — Table.Media — 2026-09-08T07:00Z — Original Table.Media report identity is verified, but only its subscription teaser is available; it discusses a feared return of controls without enough detail to certify a C event. — https://news.google.com/rss/articles/CBMiqgFBVV95cUxORFJ5UnNHNVROcS0zVW96UHRRSDRuVGhkWTJJNTZqOWJMaFh6am05S3Q2c3NUODlWLXNEbGtUZW1SX0pvYTZiUFZmQXVlM2t0SDAtenpTLXZDWWQxM2NGUzhoYmswcXMtWU52bHRIVUg4S0thVU5ISkdsVFA5dnpyUjFjVUVIN2JmOUVQTHRZajFVZ1VWWWNUWXVLaHk4dkhnRWZ6eXljTno2QQ?oc=5
+- `historical:id:e1abd351d9984dbd` — **Christoph Herrmann and Mareike Hoffmann, Investment in the European Union: Competences, Structures, Responsibility and Policy - CELIS Institute - Investment Screening | National Security | Competitiveness** — attempts: 3/3 — CELIS Institute — 2020-09-25 — The genuine 2021 Springer chapter by Herrmann and Hoffmann is verified, but full substantive text is unavailable after the third-attempt hard-final retrieval pass; the old CELIS URL redirects to unrelated generic resources. — https://www.celis.institute/celis-content/christoph-herrmann-and-mareike-hoffmann-investment-in-the-european-union-competences-structures-responsibility-and-policy/
