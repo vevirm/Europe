@@ -1,0 +1,101 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-a-20261027T170445Z-e30dc563a099",
+  "results": [
+    {
+      "record_key": "historical:id:75f06d790703e337",
+      "source_hash": "01e4d812",
+      "identity_hash": "0b301115bf01f074",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Original English publisher listing established infographic identity, Sylvie Matelly, and publication month September 2024. The publisher French equivalent and its original ten-page PDF were opened and checked as the full primary document."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Opened publisher French infographic PDF and visually examined page 1 (sanctions categories), page 4 (EU sanctions adoption) and page 9 (Russia sanctions chronology); original PDF text and page layout were verified."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://institutdelors.eu/content/uploads/2025/04/Infographie_Santions_Russie_Matelly_FR_A4.pdf",
+            "title": "Comprendre les sanctions internationales — Sylvie Matelly, Institut Jacques Delors",
+            "evidence_used": true
+          },
+          {
+            "kind": "official_publisher_bibliography",
+            "url": "https://institutdelors.eu/publications/comprendre-les-sanctions-internationales/",
+            "title": "Comprendre les sanctions internationales — publication page",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity cross-checked against the original publisher listing and French 10-page full infographic (2024). Inspected substantive pages on economic, financial and trade sanctions; EU Council decision process, Russian bank restrictions and the sanctions circumvention problem. Translated findings accurately and treated visual historical counts as illustrative, not current figures."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_HISTORICAL_SANCTIONS_TOOLBOX",
+        "reason": "This original institutional infographic explains EU sanctions decision-making and Europe-specific trade, finance, energy and technology restrictions using the Russian invasion as a substantive economic-security case."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Sylvie Matelly",
+          "date": "2024-09-25",
+          "type": "infographic"
+        },
+        "unset": [],
+        "reason": "The issuing institute explicitly dates this infographic 25 September 2024 and credits Sylvie Matelly, correcting the scanner placeholder date 1 January 2024."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching earlier work with the same publication identity appears among this assignment’s duplicate candidates."
+      },
+      "reader_title": "How EU sanctions apply economic pressure",
+      "reader_what": "The infographic explains EU sanctions procedures and trade, finance and technology restrictions, with Russia as the case.",
+      "reader_why": "Sanctions restrict access to assets, transactions and strategic imports, but economic costs need not produce political compliance.",
+      "reader_more": "Sylvie Matelly distinguishes targeted sanctions from broad restrictions and explains how EU restrictive measures are decided. The Russia case illustrates asset freezes, banking restrictions, dual-use technology controls and energy trade limits. The infographic also notes opportunities for evasion and adaptation. It is historical policy education, not a causal estimate of sanctions effectiveness or a record of 2026 sanctions totals.",
+      "deep_analysis": {
+        "work_kind": "institutional policy infographic",
+        "research_question": "What kinds of international sanctions exist, how are they adopted by the EU, and how have restrictions on Russia developed?",
+        "main_finding": "The work outlines trade embargoes, asset freezes, financial transaction restrictions and EU decision procedures, illustrating their deployment against Russia and limits due to evasion.",
+        "method_or_basis": "Descriptive, ten-page issuer infographic, combining legal and institutional outlines with an illustrated Russia sanctions chronology and referenced statistics.",
+        "qualification": "Educational and descriptive infographic issued in September 2024; not a causal evaluation, and historical totals must not be treated as current.",
+        "radar_relevance": "Historical context for the EU sanctions toolbox, control over cross-border flows and the limits of European economic coercion.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [
+            "sanctions.circumvention"
+          ],
+          "actor": {
+            "name": "Sylvie Matelly / Jacques Delors Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "unchanged",
+          "status": "observation",
+          "status_date": "2024-09-25",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Educational and descriptive infographic issued in September 2024; not a causal evaluation, and historical totals must not be treated as current.",
+          "text": "A 2024 issuer infographic describes EU sanctions via trade and financial restrictions and Russia-related measures, while noting routes of circumvention.",
+          "confidence": "high"
+        }
+      ]
+    }
+  ]
+}
