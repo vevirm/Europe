@@ -2,7 +2,7 @@
   "profile": "radar-deep-scan-dropped-index-v1",
   "rule": "After 3 recorded failed research passes, close as dropped; no hands-on queue. Package issuance alone is not a research pass.",
   "note": "The full retrieval notes and available recovery history remain in deep_scan_work_state.json. Some legacy records have fewer retained history entries than the recorded attempt counter; no missing attempts are invented.",
-  "count": 171,
+  "count": 174,
   "records": [
     {
       "record_key": "historical:id:02d0446b10283c5c",
@@ -430,6 +430,21 @@
       "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year"
     },
     {
+      "record_key": "historical:id:9388940a33c925e3",
+      "title": "From dependency to resilience",
+      "source": "JRC Publications Repository",
+      "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC147104",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-b-aa9eadcfc41a",
+        "worker-b-20261026T112359Z-146a486a3a03",
+        "worker-a-20261027T170445Z-e30dc563a099"
+      ],
+      "closed_at": "2026-10-27T17:50:55Z",
+      "reason": "Highly relevant semiconductors/cloud/technological sovereignty theme, but original JRC scientific brief is not available beyond repository abstract. Identity verified; no substantiated work-level finding can be coded."
+    },
+    {
       "record_key": "historical:id:9d12392a0058745f",
       "title": "European and UK critical raw materials (CRM) supply chains – “national security” considerations – Lexology - CELIS Institute",
       "source": "CELIS Institute",
@@ -456,6 +471,21 @@
       ],
       "closed_at": "2026-10-05T09:34:17Z",
       "reason": "Deep Scan return rejected: recovered-work decision requires at least one substantive recovered source"
+    },
+    {
+      "record_key": "historical:id:aaaf636aae2f0d5c",
+      "title": "European and UK critical raw materials (CRM) supply chains - “national security” considerations - Lexology - CELIS Institute - Investment Screening | National Security | Competitiveness",
+      "source": "CELIS Institute",
+      "url": "https://www.celis.institute/celis-news/european-and-uk-critical-raw-materials-crm-supply-chains-national-security-considerations-lexology/",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-6d79099959fe",
+        "worker-b-20261026T112359Z-146a486a3a03",
+        "worker-a-20261027T170445Z-e30dc563a099"
+      ],
+      "closed_at": "2026-10-27T17:50:55Z",
+      "reason": "The article is a distinct verified 1 May 2021 Vivien & Associés work reposted by CELIS, but the original substantive text is inaccessible. Related supply-chain articles are not evidence for this specific national-security article."
     },
     {
       "record_key": "historical:id:b7c43a4111fd7dd6",
@@ -705,6 +735,21 @@
       ],
       "closed_at": "2026-10-05T09:34:15Z",
       "reason": "Deep Scan return rejected: defer must not contain substantive deep_analysis claims"
+    },
+    {
+      "record_key": "historical:id:e7e1432518022837",
+      "title": "Environmental Biotechnology for a Sustainable and Competitive EU",
+      "source": "JRC Publications Repository",
+      "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC147778",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-b-aa9eadcfc41a",
+        "worker-b-20261026T112359Z-146a486a3a03",
+        "worker-a-20261027T170445Z-e30dc563a099"
+      ],
+      "closed_at": "2026-10-27T17:50:55Z",
+      "reason": "Primary publisher and EU-submitted AGRIS metadata verify this 2026 biotechnology report, but Commission-level access prevents reading its findings. No claims are made from an abstract."
     },
     {
       "record_key": "historical:id:f1a78ad8ec19a12b",
