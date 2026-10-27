@@ -1,0 +1,499 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-a-20261027T092456Z-40aa9535af8e",
+  "results": [
+    {
+      "record_key": "historical:id:e1abd351d9984dbd",
+      "source_hash": "d57baca7",
+      "identity_hash": "d1f99c3ce96ebb74",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "CELIS resources page https://celis.institute/resources/ only returned current navigation, not Herrmann and Hoffmann chapter."
+          },
+          {
+            "step": "doi",
+            "outcome": "metadata_only",
+            "note": "Discovered and opened matching Springer DOI 10.1007/978-981-13-3615-7_33; publisher displays bibliographic identity and abstract but requires subscription to read chapter."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "metadata_only",
+            "note": "Exact quoted title searches returned Springer chapter and ScienceOpen metadata, not the 49-page chapter full text."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "metadata_only",
+            "note": "Searched Christoph Herrmann Mareike Hoffmann 2020/2021 investment EU chapter; Passau author bibliography confirms 2021 volume pages 2213–2261."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "blocked",
+            "note": "Official Springer https://link.springer.com/rwe/10.1007/978-981-13-3615-7_33 shows preview of subscription-only content; University of Passau 2024 author list confirms identity but not body."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_result",
+            "note": "Searched ISBN 978-981-13-3615-7, chapter DOI suffix _33, ScienceOpen and academic bibliographies; none gave the full original chapter legally accessible."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_bibliography",
+            "url": "https://link.springer.com/referencework/10.1007/978-981-13-3615-7?page=5",
+            "title": "Christoph Herrmann and Mareike Hoffmann, Investment in the European Union: Competences, Structures, Responsibility and Policy - CELIS Institute - Investment Screening | National Security | Competitiveness",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Springer confirms Herrmann/Hoffmann chapter pp. 2213–2261 (2021); the original chapter is subscription-protected and the CELIS page is a link index."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Investment-law chapter is identifiable but not readable, so no detailed claim about EU screening or industrial autonomy is supported."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Distinct publication identity; no high-confidence same-work duplicate demonstrated."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.ecolecon.2026.109266",
+      "source_hash": "ee10965e",
+      "identity_hash": "4dfa01da6b6034cc",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Attempted https://doi.org/10.1016/j.ecolecon.2026.109266; DOI URL not accessible in the web retriever."
+          },
+          {
+            "step": "doi",
+            "outcome": "metadata_only",
+            "note": "Checked DOI 10.1016/j.ecolecon.2026.109266; the bundle records an authenticated OpenAlex DOI-work match W7223217197, but publisher text was unavailable."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "no_result",
+            "note": "Exact quoted search for “Europe at the crossroads: trading strategic autonomy for resilience under degrowth” yielded no matching publisher article."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "no_result",
+            "note": "Searched Olivér Kovács + “Europe at the crossroads” + degrowth + Ecological Economics + 2026; matched separate Hungarian paper, not this DOI work."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "blocked",
+            "note": "Elsevier ScienceDirect article route was inaccessible (403); author oliverkovacs.com publications and Hungarian repositories returned other works only."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_result",
+            "note": "Searched DOI suffix ecolecon.2026.109266, OpenAlex W7223217197, Kovács + 109266, and title fragments; no accessible manuscript of the claimed work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_bibliography",
+            "url": "https://doi.org/10.1016/j.ecolecon.2026.109266",
+            "title": "Europe at the crossroads: trading strategic autonomy for resilience under degrowth",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "DOI work identity is cross-listed in bibliographic databases; original Ecological Economics abstract or full analysis was unavailable."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Cannot infer what the paper concludes about strategic autonomy or degrowth from its title alone."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Distinct publication identity; no high-confidence same-work duplicate demonstrated."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1515/ordo-2026-2012",
+      "source_hash": "05211181",
+      "identity_hash": "9f2a526ee54e6f02",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "blocked",
+            "note": "Checked the record’s supplied link https://ideas.repec.org/s/bpj/ordojb.html; article text was not available in the accessible source or index."
+          },
+          {
+            "step": "doi",
+            "outcome": "blocked",
+            "note": "Checked DOI 10.1515/ordo-2026-2012 and its publisher route; only bibliographic identity or an inaccessible paper page appeared."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "metadata_only",
+            "note": "Exact-title search for “Towards a rule-bound EU transformation policy: Can Ordnungspolitik and industrial strategy be reconc” found publication identity but no readable full argument or evidentiary body."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "metadata_only",
+            "note": "Cross-checked title, credited authors, and publication-year/issue in issuer or institutional records, without a complete manuscript."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "blocked",
+            "note": "Checked first-party publisher or research-institution reference https://ideas.repec.org/s/bpj/ordojb.html; only identity, article teaser or access-restricted content was inspectable."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Compared related listings, alternate publication routes and institutional catalogs; no matching substantive edition of this specific work was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_bibliography",
+            "url": "https://ideas.repec.org/s/bpj/ordojb.html",
+            "title": "Towards a rule-bound EU transformation policy: Can Ordnungspolitik and industrial strategy be reconciled?",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "De Gruyter/RePEc bibliographic listing confirms 2026 ORDO journal pages 1–30 and authors; the scholarly article text is subscription-restricted."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Work identity verified, but no original scholarly argument or methodology sufficient for Radar claims was inspected."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Distinct publication identity; no high-confidence same-work duplicate demonstrated."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1093/eurpub/ckag169.087",
+      "source_hash": "68c18337",
+      "identity_hash": "bca54beb4d1d7275",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the original bibliographic route and issuer publication text for G.2. Round Table: From call to action to delivery: scaling climate–hea; confirmed the available substantive abstract, program summary, or methodological detail."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "first_party_issuer_text",
+            "url": "https://academic.oup.com/eurpub/issue/36/Supplement_5",
+            "title": "G.2. Round Table: From call to action to delivery: scaling climate–health solutions across Europe",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Oxford Academic journal supplement identifies this as a WHO/Europe conference round-table on climate-health solutions rather than an independent economic-security research article."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "OUT_OF_SCOPE_EVIDENCE",
+        "reason": "Actual source is a public health conference session abstract, outside the economic-security research admission gate."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Distinct publication identity; no high-confidence same-work duplicate demonstrated."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "conference session abstract",
+        "research_question": "",
+        "main_finding": "Oxford Academic journal supplement identifies this as a WHO/Europe conference round-table on climate-health solutions rather than an independent economic-security research article.",
+        "method_or_basis": "First-party journal abstract, issue contents and session description; no independent economic-security dataset or industrial policy finding is offered.",
+        "qualification": "Evidence describes public health or geopolitical governance, not the Radar-defined economic security mechanism.",
+        "radar_relevance": "The source does not meet this economic-security Radar’s work-level scope and evidence gate.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1093/eurpub/ckag169.430",
+      "source_hash": "979b6ba8",
+      "identity_hash": "3c51b12f4a82a807",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the original bibliographic route and issuer publication text for P.7. Round Table: Building the foundation: Data governance and harmoni; confirmed the available substantive abstract, program summary, or methodological detail."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "first_party_issuer_text",
+            "url": "https://academic.oup.com/eurpub/issue/36/Supplement_5",
+            "title": "P.7. Round Table: Building the foundation: Data governance and harmonisation for CVD and diabetes in Europe",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Oxford Academic supplement lists this round-table on cardiovascular disease/diabetes data governance; program entry offers no strategic-industry or economic-dependency analysis."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "OUT_OF_SCOPE_EVIDENCE",
+        "reason": "Source is public health data-governance conference programming, not an economic-security work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Distinct publication identity; no high-confidence same-work duplicate demonstrated."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "conference session abstract",
+        "research_question": "",
+        "main_finding": "Oxford Academic supplement lists this round-table on cardiovascular disease/diabetes data governance; program entry offers no strategic-industry or economic-dependency analysis.",
+        "method_or_basis": "First-party journal abstract, issue contents and session description; no independent economic-security dataset or industrial policy finding is offered.",
+        "qualification": "Evidence describes public health or geopolitical governance, not the Radar-defined economic security mechanism.",
+        "radar_relevance": "The source does not meet this economic-security Radar’s work-level scope and evidence gate.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1177/16118944261490056",
+      "source_hash": "325776e4",
+      "identity_hash": "1f0f30cc0c05988e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "blocked",
+            "note": "Checked the record’s supplied link https://doi.org/10.1177/16118944261490056; article text was not available in the accessible source or index."
+          },
+          {
+            "step": "doi",
+            "outcome": "blocked",
+            "note": "Checked DOI 10.1177/16118944261490056 and its publisher route; only bibliographic identity or an inaccessible paper page appeared."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "metadata_only",
+            "note": "Exact-title search for “An Offshore Financial Centre Inside Europe: Luxembourg, Taxation and European Economic Community (19” found publication identity but no readable full argument or evidentiary body."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "metadata_only",
+            "note": "Cross-checked title, credited authors, and publication-year/issue in issuer or institutional records, without a complete manuscript."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "blocked",
+            "note": "Checked first-party publisher or research-institution reference https://doi.org/10.1177/16118944261490056; only identity, article teaser or access-restricted content was inspectable."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Compared related listings, alternate publication routes and institutional catalogs; no matching substantive edition of this specific work was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_bibliography",
+            "url": "https://doi.org/10.1177/16118944261490056",
+            "title": "An Offshore Financial Centre Inside Europe: Luxembourg, Taxation and European Economic Community (1960s–1970s)",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "SAGE DOI and scanner bibliography identify a historical research article on Luxembourg taxation and the EEC, but the article body and documentary evidence were inaccessible."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Original historical scholarship is not available for inspection, preventing a claim about 1960s–1970s fiscal mechanisms."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Distinct publication identity; no high-confidence same-work duplicate demonstrated."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1093/eurpub/ckag169.883",
+      "source_hash": "9c97a0f8",
+      "identity_hash": "1b7f0d44f06ef522",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the original bibliographic route and issuer publication text for Governance, not technology: low-hanging fruits for AI readiness in Eur; confirmed the available substantive abstract, program summary, or methodological detail."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "first_party_issuer_text",
+            "url": "https://academic.oup.com/eurpub/issue/36/Supplement_5",
+            "title": "Governance, not technology: low-hanging fruits for AI readiness in Europe, a latent class analysis",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Journal supplement identifies a conference abstract on AI readiness in public-health governance, not an EU strategic technology-dependency study."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "OUT_OF_SCOPE_EVIDENCE",
+        "reason": "A single public-health conference abstract cannot support an economic-security Radar mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Distinct publication identity; no high-confidence same-work duplicate demonstrated."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "conference session abstract",
+        "research_question": "",
+        "main_finding": "Journal supplement identifies a conference abstract on AI readiness in public-health governance, not an EU strategic technology-dependency study.",
+        "method_or_basis": "First-party journal abstract, issue contents and session description; no independent economic-security dataset or industrial policy finding is offered.",
+        "qualification": "Evidence describes public health or geopolitical governance, not the Radar-defined economic security mechanism.",
+        "radar_relevance": "The source does not meet this economic-security Radar’s work-level scope and evidence gate.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    }
+  ]
+}
