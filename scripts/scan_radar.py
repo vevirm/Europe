@@ -71,7 +71,9 @@ except ModuleNotFoundError:  # lightweight offline/test fallback; normal install
             try:
                 root = ET.fromstring(content)
             except Exception:
-                return types.SimpleNamespace(entries=[])
+                return types.SimpleNamespace(entries=[], version="")
+            root_type = localname(root.tag).lower()
+            version = "rss20" if root_type in {"rss", "rdf"} else "atom10" if root_type == "feed" else ""
             entries = []
             for node in root.iter():
                 if localname(node.tag) not in {"item", "entry"}:
@@ -91,7 +93,7 @@ except ModuleNotFoundError:  # lightweight offline/test fallback; normal install
                 if src is not None:
                     vals["source"] = src
                 entries.append(_FeedEntry(**vals))
-            return types.SimpleNamespace(entries=entries)
+            return types.SimpleNamespace(entries=entries, version=version)
     feedparser = _FeedParserCompat()
 import requests
 
@@ -8133,6 +8135,19 @@ def doi_landing_abstract(doi_raw: str, timeout: int = 8) -> str:
                 desc = clean_text(obj.get("abstract") or obj.get("description")) if isinstance(obj, dict) else ""
                 if len(desc.split()) >= 20:
                     return desc[:12000]
+        # Some publishers expose article abstracts only in visible article markup.
+        # Reuse the same DOI request: no extra requests, no admission bypass.
+        # Restrict this to dedicated abstract containers, not generic body text.
+        for node in soup.select(
+            "section#abstract, section.abstract, div#abstract, div.abstract, "
+            "section[aria-label='Abstract'], section[aria-label='abstract'], "
+            "section[id^='Abs'], div[id^='Abs']"
+        )[:5]:
+            text = clean_text(node.get_text(' ', strip=True))
+            if normalized(text).startswith('abstract '):
+                text = clean_text(text[9:])
+            if 40 <= len(text.split()) <= 1500:
+                return text[:12000]
     except Exception:
         return ""
     return ""
@@ -11875,8 +11890,15 @@ def _institution_feed_jobs(
         if not fr:
             continue
         try:
-            entries = list(getattr(feedparser.parse(fr.content), "entries", []) or [])[:max_entries]
+            parsed = feedparser.parse(fr.content)
+            # An HTTP 200 carrying a block/HTML page is not a working feed.
+            # Empty but valid RSS/Atom feeds are healthy (quiet is not failure).
+            if not clean_text(getattr(parsed, "version", "")):
+                _diag_inc("institution_feed_invalid_responses")
+                continue
+            entries = list(getattr(parsed, "entries", []) or [])[:max_entries]
         except Exception:
+            _diag_inc("institution_feed_invalid_responses")
             continue
         if transport is not None:
             transport["feed_successful"] = int(transport.get("feed_successful", 0) or 0) + 1
@@ -11921,18 +11943,24 @@ def _discover_domain(src: dict[str, Any], from_date: dt.date, bootstrap: bool = 
         if len(entries) >= max_entries:
             break
     if not entries:
-        if adapter_jobs:
-            return adapter_jobs, f"No usable sitemap: {domain}; using source-specific publication adapter ({len(adapter_jobs)} page(s))"
-        # A configured feed that was successfully fetched is a healthy transport even when
-        # it happens to contain no in-window candidate. Do not turn "quiet" into "failed".
+        # A working RSS/Atom feed is an independent successful route, even when
+        # the host's sitemap is broken. Retain adapter jobs but do not misreport
+        # the domain as failed (or trigger spurious source health warnings).
         if int(feed_transport.get("feed_successful", 0) or 0) > 0:
-            return [], None
+            return adapter_jobs, None
+        if adapter_jobs:
+            # A bounded publication adapter produced eligible fetch jobs: discovery
+            # transport succeeded even if sitemap transport did not. Keep the
+            # missing-sitemap diagnostic without inflating source failure counts.
+            _diag_inc("institution_sitemap_unavailable_adapter_recovered")
+            return adapter_jobs, None
         # Trusted institutional sources without usable sitemaps still deserve bounded
         # source-local discovery. This follows only same-domain links from a few hubs;
         # it is not a global crawler or search-engine dependency.
         fallback = _rule_fix_fallback_domain_jobs(src, from_date, stage_deadline, reconsider_seen)
         if fallback:
-            return fallback, f"No usable sitemap: {domain}; using bounded institutional HTML fallback ({len(fallback)} page(s))"
+            _diag_inc("institution_sitemap_unavailable_fallback_recovered")
+            return fallback, None
         return [], f"No usable sitemap: {domain}"
     seen = {normalized_link(u) for u, *_ in adapter_jobs}; jobs = list(adapter_jobs)
     limit_key = "institution_pages_per_domain_bootstrap" if bootstrap else "institution_pages_per_domain"
