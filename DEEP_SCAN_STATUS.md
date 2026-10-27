@@ -6,10 +6,10 @@ It shows what is verified, what each worker owns, and what is still eligible. Ex
 Scheduling policy: preserve active worker reservations; fill new slots with Main Radar first, then Historical Radar. Do not fill packages artificially at saturation.
 A validated unsuccessful recovery is one pass; packaging alone is not a pass. After **3** failed passes, close the work as **dropped**, keeping an audit. No work-by-hand loop.
 
-- Authoritative V2 verified: **2721** (Main **1121** + Historical **1600**)
-- Automatic queue still needing V2 verification: **14** (Main **11** + Historical **3**)
-- Currently assigned to workers: **8** (Main **6** + Historical **2**)
-- Bounded access-recovery retries still eligible: **9**
+- Authoritative V2 verified: **2722** (Main **1121** + Historical **1601**)
+- Automatic queue still needing V2 verification: **13** (Main **11** + Historical **2**)
+- Currently assigned to workers: **7** (Main **6** + Historical **1**)
+- Bounded access-recovery retries still eligible: **8**
 - Dropped after three failed recovery passes (archived): **174**
 - Legacy work-by-hand requiring reconciliation: **0**
 - Automatic queue pending and not yet assigned: **6**
@@ -18,8 +18,7 @@ A validated unsuccessful recovery is one pass; packaging alone is not a pass. Af
 
 ### Worker A
 - Current package: `worker-a-20261027T175213Z-5a9685515802`
-- Assigned unresolved records: **1**
-  1. `historical:id:75f06d790703e337` — Understanding international sanctions - Institut Jacques Delors — recovery attempt 2/3
+- Assigned unresolved records: **0**
 
 ### Worker B
 - Current package: `worker-b-20261027T175216Z-d9afc5af0e51`
