@@ -1,0 +1,1536 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-a-20261027T170445Z-e30dc563a099",
+  "results": [
+    {
+      "record_key": "link:https://www.cer.eu/sites/default/files/IB_Evidence_HofC_foreign_affair_committee_Russia_Oct26.pdf",
+      "source_hash": "20a474ad",
+      "identity_hash": "5d89a20893b2646c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the matching primary publisher page at https://www.cer.eu/publications/archive/review-article/2026/evidence-house-commons-foreign-affairs-committees-inquiry; confirmed title and substantive content against issuer."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://www.cer.eu/publications/archive/review-article/2026/evidence-house-commons-foreign-affairs-committees-inquiry",
+            "title": "Evidence to the House of Commons Foreign Affairs Committee's Inquiry on Russia",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matched issuer source against included source_material (pdf_excerpt, 24000 captured characters); examined publication identity and actual content. Also checked the CER author/full-text landing page, confirming Ian Bond and 19 October 2026."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_GEOECON_SANCTIONS",
+        "reason": "Ian Bond analyses European economic sanctions, Russia’s trade dependence and sanctions leverage as part of a long-term Western strategy."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Ian Bond",
+          "type": "parliamentary evidence / expert commentary"
+        },
+        "unset": [],
+        "reason": "Primary issuer document or publication record establishes the corrected bibliography and document date, replacing scanner-extracted snippet metadata."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work identity match in supplied duplicate candidates."
+      },
+      "reader_title": "Europe needs a long-term approach to Russia",
+      "reader_what": "The author advocates sustained sanctions and support for Ukraine alongside a wider strategic response.",
+      "reader_why": "Sanctions and energy purchases influence Russia’s resources, though economic pressure alone has not changed Kremlin objectives.",
+      "reader_more": "Ian Bond argues that the UK lacks clear long-term goals for Russia policy and should coordinate with European allies. The evidence submission traces how Russian trade shifted toward China under Western sanctions and discusses continuing European purchases of Russian energy. The recommendations are the author’s assessment, not an adopted UK strategy.",
+      "deep_analysis": {
+        "work_kind": "policy document",
+        "research_question": "",
+        "main_finding": "The author recommends continued coordinated economic and military pressure and describes Russia’s pivot in trade relationships under sanctions.",
+        "method_or_basis": "Detailed authored parliamentary evidence submission with sections on economic pressure, Russia–China trade, energy purchases, and strategic options.",
+        "qualification": "Expert evidence and policy recommendations; descriptive relationships are not causal estimates of sanctions effectiveness.",
+        "radar_relevance": "European and UK sanctions, Russian energy exposure, and strategic coordination are substantive geoeconomic mechanisms.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Ian Bond / Centre for European Reform",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "unchanged",
+          "status": "observation",
+          "status_date": "2026-10-19",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Expert evidence and policy recommendations; descriptive relationships are not causal estimates of sanctions effectiveness.",
+          "text": "Ian Bond advocates maintaining broad Western economic pressure on Russia absent meaningful change in its actions.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-27-Priorities-for-European-startups-and-scaleups.pdf",
+      "source_hash": "e7f0e600",
+      "identity_hash": "60ea0d8a34e3e1bb",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the matching primary document/excerpt at https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-27-Priorities-for-European-startups-and-scaleups.pdf; confirmed title and substantive content against issuer."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-27-Priorities-for-European-startups-and-scaleups.pdf",
+            "title": "Priorities for European startups and scaleups",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matched issuer source against included source_material (pdf_excerpt, 24000 captured characters); examined publication identity and actual content."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_STRATEGIC_FINANCE",
+        "reason": "The BusinessEurope paper directly considers funding, retention and scaling of strategic European technology businesses and proposals to remedy capital gaps."
+      },
+      "metadata_correction": {
+        "fields": {
+          "type": "industry association position paper"
+        },
+        "unset": [],
+        "reason": "Primary issuer document or publication record establishes the corrected bibliography and document date, replacing scanner-extracted snippet metadata."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work identity match in supplied duplicate candidates."
+      },
+      "reader_title": "Finance for European technology scaleups",
+      "reader_what": "BusinessEurope calls for stronger venture capital, stock-market exits and simpler rules for technology companies.",
+      "reader_why": "Capital availability can affect whether innovative firms remain and grow within Europe rather than move elsewhere.",
+      "reader_more": "BusinessEurope sets out policy recommendations for European startups, from later-stage venture capital to public procurement and common company rules. It specifically links the ability to retain deep-tech firms and their intellectual property with European technological leadership. This is a business association’s position paper, not measured evidence that its proposals will work.",
+      "deep_analysis": {
+        "work_kind": "business association position paper",
+        "research_question": "",
+        "main_finding": "BusinessEurope argues that insufficient late-stage capital and regulatory fragmentation constrain European technology company scaleup.",
+        "method_or_basis": "Dated original BusinessEurope policy paper, with thematic key messages and recommendations on finance, procurement, company law, IP and talent.",
+        "qualification": "The claims are an industry association’s advocacy, not independently demonstrated causal effects or enacted measures.",
+        "radar_relevance": "Venture financing, European innovation ownership and key-technology scaling have direct industrial-capacity implications.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "finance.venture_capital",
+          "secondary_objects": [],
+          "actor": {
+            "name": "BusinessEurope",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2026-10-27",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The claims are an industry association’s advocacy, not independently demonstrated causal effects or enacted measures.",
+          "text": "BusinessEurope advocates expanding European venture-capital and listing options to help deep-tech startups grow within Europe.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://institutdelors.eu/en/publications/made-in-europe-yet-another-missed-opportunity-in-the-mediterranean/",
+      "source_hash": "f97a62d3",
+      "identity_hash": "857d4e9c2d21b0fa",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the matching primary publisher page at https://institutdelors.eu/en/publications/made-in-europe-yet-another-missed-opportunity-in-the-mediterranean/; confirmed title and substantive content against issuer."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://institutdelors.eu/en/publications/made-in-europe-yet-another-missed-opportunity-in-the-mediterranean/",
+            "title": "‘Made in Europe’: yet another missed opportunity in the Mediterranean",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matched issuer source against included source_material (substantial_web_text, 6993 captured characters); examined publication identity and actual content."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_PARTNER_ORIGIN",
+        "reason": "The institute article directly examines proposed European procurement-content criteria and implications for production partnerships with Morocco and Turkey."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Guillaume Duval",
+          "date": "2026-10-27",
+          "type": "think-tank commentary / blog post"
+        },
+        "unset": [],
+        "reason": "Primary issuer document or publication record establishes the corrected bibliography and document date, replacing scanner-extracted snippet metadata."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work identity match in supplied duplicate candidates."
+      },
+      "reader_title": "Who counts as Made in Europe?",
+      "reader_what": "Guillaume Duval argues that excluding Morocco and Turkey from proposed local-content preferences would harm European partnerships.",
+      "reader_why": "Restrictive origin rules could weaken nearby industrial supply chains and strategic relations with Mediterranean partners.",
+      "reader_more": "The commentary examines competing designs for the Industrial Accelerator Act, especially which partner countries should qualify for procurement and subsidy preferences. It argues that Morocco and Turkey offer nearby manufacturing links and that their exclusion risks encouraging closer ties with China. This is a normative argument about ongoing negotiations, not an adopted exclusion or proven outcome.",
+      "deep_analysis": {
+        "work_kind": "policy commentary",
+        "research_question": "",
+        "main_finding": "Duval advocates including Morocco and Turkey in Europe-oriented industrial sourcing preferences rather than drawing an EU/UK/Norway-only perimeter.",
+        "method_or_basis": "Full authored Institut Jacques Delors commentary on proposed IAA origin criteria, French-German bargaining and automotive value chains.",
+        "qualification": "The asserted consequences for Mediterranean alignment are forecasts by the author; legislative eligibility remains in negotiation.",
+        "radar_relevance": "The paper centres European preference rules, automotive value chains, trade access and near-shoring.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "industry.european_preference",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Guillaume Duval",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "in_negotiation",
+          "status_date": "2026-10-27",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The asserted consequences for Mediterranean alignment are forecasts by the author; legislative eligibility remains in negotiation.",
+          "text": "Duval argues that proposed Made-in-Europe procurement preferences should extend to nearby manufacturing partners Morocco and Turkey.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://merics.org/en/video/merics-media-briefing-xi-jinping-visits-usa",
+      "source_hash": "3cb73c7c",
+      "identity_hash": "af1f619c8c3acba8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the matching primary publisher page at https://merics.org/en/video/merics-media-briefing-xi-jinping-visits-usa; confirmed title and substantive content against issuer."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://merics.org/en/video/merics-media-briefing-xi-jinping-visits-usa",
+            "title": "MERICS Media Briefing: Xi Jinping visits the USA",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matched issuer source against included source_material (abstract_or_landing_page, 2214 captured characters); examined publication identity and actual content. MERICS media index independently confirms a video briefing dated 22 September 2026."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_EVENT",
+        "reason": "The verified MERICS page is an announcement of a media briefing, not a completed substantive economic-security analysis or policy development."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work identity match in supplied duplicate candidates."
+      },
+      "reader_title": "MERICS media briefing on China–US talks",
+      "reader_what": "A briefing announcement previews discussion of a Trump–Xi meeting and EU–China trade talks.",
+      "reader_why": "",
+      "reader_more": "The page lists speakers and topics expected to be covered in a media briefing. Its text does not provide the panel’s evidence, findings or a substantive independent assessment, so it cannot support a Radar research claim.",
+      "deep_analysis": {
+        "work_kind": "briefing listing",
+        "research_question": "",
+        "main_finding": "The issuer advertised an upcoming discussion rather than publishing identifiable analytical findings.",
+        "method_or_basis": "MERICS original media-briefing page; programme description names Huotari and Hmaidi and topics, with no report or transcript in the supplied content.",
+        "qualification": "No independently accessible analysis in this page is substantiated from the supplied material.",
+        "radar_relevance": "An event teaser with relevant vocabulary fails the substantive evidence-product gate.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://data.consilium.europa.eu/doc/document/ST-13708-2026-INIT/en/pdf",
+      "source_hash": "eedd9ba5",
+      "identity_hash": "4907d0a602b85856",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the matching primary document/excerpt at https://data.consilium.europa.eu/doc/document/ST-13708-2026-INIT/en/pdf; confirmed title and substantive content against issuer."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_document",
+            "url": "https://data.consilium.europa.eu/doc/document/ST-13708-2026-INIT/en/pdf",
+            "title": "Council note ST 13708/26: Industrial Accelerator Act — Guidance for further work",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matched issuer source against included source_material (pdf_excerpt, 8032 captured characters); examined publication identity and actual content."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_INDUSTRIAL_POLICY",
+        "reason": "Council paper assesses Union and partner origin conditions for public purchasing and subsidies, a central European industrial-dependency policy."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "Industrial Accelerator Act — Guidance for further work",
+          "date": "2026-09-30",
+          "type": "Council Presidency guidance note"
+        },
+        "unset": [],
+        "reason": "Primary issuer document or publication record establishes the corrected bibliography and document date, replacing scanner-extracted snippet metadata."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work identity match in supplied duplicate candidates."
+      },
+      "reader_title": "Europe debates who qualifies for industrial support",
+      "reader_what": "Council delegations weighed EU-only and partner-origin rules for strategic manufacturing procurement and subsidies.",
+      "reader_why": "Country-of-origin tests direct public spending toward selected suppliers and can reshape European industrial and trade dependencies.",
+      "reader_more": "The September Council note seeks political guidance on geographic eligibility for the Industrial Accelerator Act. It compares options for recognising third-country partners and whether public procurement should discriminate by bidder ownership. No compromise is established as binding law in the document.",
+      "deep_analysis": {
+        "work_kind": "Council legislative negotiation note",
+        "research_question": "",
+        "main_finding": "Member states had not reached agreement on the geographic boundary of partner origin under the proposed Industrial Accelerator Act.",
+        "method_or_basis": "Five-page Council Secretariat guidance note 13708/26 covering industrial sectors, partner-origin options, procurement, investment support and questions for ministers.",
+        "qualification": "A Council discussion note and unresolved policy options; no rules are enacted by it.",
+        "radar_relevance": "EU strategic manufacturing capacity, foreign suppliers, preferential procurement and trade-partner access are central.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "industry.european_preference",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Council of the European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "in_negotiation",
+          "status_date": "2026-09-30",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "A Council discussion note and unresolved policy options; no rules are enacted by it.",
+          "text": "The Council circulated options for defining EU and partner origin in proposed industrial procurement and subsidy rules.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://data.consilium.europa.eu/doc/document/ST-12886-2026-INIT/en/pdf",
+      "source_hash": "9dc98fb3",
+      "identity_hash": "d303e8620abced68",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the matching primary document/excerpt at https://data.consilium.europa.eu/doc/document/ST-12886-2026-INIT/en/pdf; confirmed title and substantive content against issuer."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_document",
+            "url": "https://data.consilium.europa.eu/doc/document/ST-12886-2026-INIT/en/pdf",
+            "title": "Council ST 12886/26: Review of merger control guidelines",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matched issuer source against included source_material (pdf_excerpt, 4941 captured characters); examined publication identity and actual content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "GENERIC_COMPETITION",
+        "reason": "Merger-control guideline discussion chiefly concerns general competition assessment and consumer welfare, not an identifiable economic-security instrument."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "Review of merger control guidelines — Exchange of views",
+          "date": "2026-09-11",
+          "type": "Council Presidency discussion paper"
+        },
+        "unset": [],
+        "reason": "Primary issuer document or publication record establishes the corrected bibliography and document date, replacing scanner-extracted snippet metadata."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work identity match in supplied duplicate candidates."
+      },
+      "reader_title": "Council discussion on EU merger guidelines",
+      "reader_what": "Council ministers discussed draft merger guidelines balancing company size, innovation and competitive harm.",
+      "reader_why": "",
+      "reader_more": "The Presidency note frames an exchange of views on the Commission’s draft merger guidelines. It discusses dynamic competition, efficiency and consumer interests, rather than strategic dependencies, supply security or external coercion. The document records no adopted change to merger law.",
+      "deep_analysis": {
+        "work_kind": "Council discussion paper",
+        "research_question": "",
+        "main_finding": "Ministers were invited to discuss competition and scale versus market power, rather than a defined economic-security risk.",
+        "method_or_basis": "Council note ST 12886/26 sets out draft guidelines and asks two competition-policy discussion questions.",
+        "qualification": "A general debate paper; any later merger rules are not implemented by this note.",
+        "radar_relevance": "Generic internal-market competition, despite references to Europe’s global competitiveness, fails this narrower Radar subject gate.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://link.epo.org/web/publications/studies/en-europes-technology-transfer-landscape.pdf",
+      "source_hash": "0664593c",
+      "identity_hash": "ac8e1e6385bf44e5",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the matching primary document/excerpt at https://link.epo.org/web/publications/studies/en-europes-technology-transfer-landscape.pdf; confirmed title and substantive content against issuer."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_text",
+            "url": "https://link.epo.org/web/publications/studies/en-europes-technology-transfer-landscape.pdf",
+            "title": "Europe’s technology transfer landscape",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matched issuer source against included source_material (pdf_excerpt, 24000 captured characters); examined publication identity and actual content. Confirmed primary EPO release dated 22 October 2026 and multiple methods, not just the news headline."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_EU_TECH_TRANSFER",
+        "reason": "Large EPO study uses patent evidence, technology-transfer office surveys and practitioner interviews to assess strategic commercialisation capacity."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "Europe’s technology transfer landscape: The current state, challenges and avenues for development of technology transfer offices",
+          "authors": "European Patent Office Observatory, ASTP and Fraunhofer ISI",
+          "type": "empirical institutional study"
+        },
+        "unset": [],
+        "reason": "Primary issuer document or publication record establishes the corrected bibliography and document date, replacing scanner-extracted snippet metadata."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work identity match in supplied duplicate candidates."
+      },
+      "reader_title": "Europe’s research-to-market bottlenecks",
+      "reader_what": "An EPO study finds most surveyed European technology-transfer offices are small or mid-sized, with capacity and funding challenges.",
+      "reader_why": "Weak technology transfer can slow European commercialisation of strategic research and development of domestic technological capabilities.",
+      "reader_more": "The EPO, ASTP and Fraunhofer ISI study combines patent information, a survey of 809 European technology-transfer offices and interviews with 22 practitioners. It maps office capacity and differences in invention disclosures and market pathways. These findings describe institutional constraints rather than proving that a specific reform will increase European industrial autonomy.",
+      "deep_analysis": {
+        "work_kind": "empirical institutional report",
+        "research_question": "",
+        "main_finding": "The study maps Europe’s knowledge-transfer infrastructure and identifies unequal staffing, incentives and expertise as constraints on technology commercialisation.",
+        "method_or_basis": "Original EPO Observatory report text, cross-checked with EPO release documenting 809 offices, patent statistics and 22 interviews.",
+        "qualification": "Observational evidence and survey participants do not establish causal effects of individual policy changes.",
+        "radar_relevance": "Strategically important EU biotechnology, quantum and semiconductor research depends on converting research into domestic firms and licences.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "research.knowledge_transfer",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Patent Office Observatory",
+            "class": "european_system"
+          },
+          "mechanism": "measures",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-10-22",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Observational evidence and survey participants do not establish causal effects of individual policy changes.",
+          "text": "An EPO study analysed 809 European technology-transfer offices and found most were small or mid-sized.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://data.consilium.europa.eu/doc/document/ST-12236-2026-REV-1/en/pdf",
+      "source_hash": "6e7de2b3",
+      "identity_hash": "9f9af2e1034f405a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the matching primary document/excerpt at https://data.consilium.europa.eu/doc/document/ST-12236-2026-REV-1/en/pdf; confirmed title and substantive content against issuer."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_document",
+            "url": "https://data.consilium.europa.eu/doc/document/ST-12236-2026-REV-1/en/pdf",
+            "title": "Council ST 12236/1/26 REV 1: Industrial Accelerator Act — second Presidency compromise",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matched issuer source against included source_material (pdf_excerpt, 15569 captured characters); examined publication identity and actual content."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_INDUSTRIAL_POLICY",
+        "reason": "Council Presidency legislative compromise directly specifies strategic EU manufacturing, origin restrictions, decarbonisation and permit coordination."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "Industrial Accelerator Act — second Presidency compromise text (revision 1)",
+          "date": "2026-09-02",
+          "type": "draft EU regulation / Council compromise"
+        },
+        "unset": [],
+        "reason": "Primary issuer document or publication record establishes the corrected bibliography and document date, replacing scanner-extracted snippet metadata."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work identity match in supplied duplicate candidates."
+      },
+      "reader_title": "Revised Industrial Accelerator Act compromise",
+      "reader_what": "Council negotiators circulated revised draft rules for strategic manufacturing, low-carbon industrial capacity and public support.",
+      "reader_why": "Preferences and quicker authorisations could affect investment decisions, industrial location and external supplier dependence.",
+      "reader_more": "Document 12236/1/26 REV 1 is a revised second Presidency compromise under legislative file 2026/0068(COD). It addresses proposed Union-origin and decarbonisation measures, while showing changes from earlier drafts. It is negotiation text, not an adopted regulation.",
+      "deep_analysis": {
+        "work_kind": "draft legislative instrument",
+        "research_question": "",
+        "main_finding": "The Council Presidency placed revised industrial origin, public intervention and strategic manufacturing rules in a live legislative compromise.",
+        "method_or_basis": "Substantive official Council legislative text including cover note, draft recitals and operative regulatory language in supplied extract.",
+        "qualification": "Proposed Presidency compromise is not yet law; detailed wording may change.",
+        "radar_relevance": "The instrument directly governs strategic industrial production, market access and dependencies.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "industry.european_preference",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Council Presidency",
+            "class": "eu_body"
+          },
+          "mechanism": "proposes",
+          "direction": "becomes_conditional",
+          "status": "in_negotiation",
+          "status_date": "2026-09-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Proposed Presidency compromise is not yet law; detailed wording may change.",
+          "text": "A revised Council Presidency compromise proposed industrial origin and low-carbon criteria for strategic manufacturing support.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://data.consilium.europa.eu/doc/document/ST-13097-2026-INIT/en/pdf",
+      "source_hash": "29fb01c4",
+      "identity_hash": "17c94c3a5c3d7d96",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the matching primary document/excerpt at https://data.consilium.europa.eu/doc/document/ST-13097-2026-INIT/en/pdf; confirmed title and substantive content against issuer."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_document",
+            "url": "https://data.consilium.europa.eu/doc/document/ST-13097-2026-INIT/en/pdf",
+            "title": "Council ST 13097/26: speeding-up environmental assessments",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matched issuer source against included source_material (pdf_excerpt, 17385 captured characters); examined publication identity and actual content."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_STRATEGIC_PERMITTING",
+        "reason": "Council draft reform explicitly covers expedited approvals for electricity grids, chips, supercomputing and other strategic European capacity."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "Regulation on speeding-up environmental assessments — revised Presidency compromise text",
+          "date": "2026-09-15",
+          "type": "draft EU regulation / Council compromise"
+        },
+        "unset": [],
+        "reason": "Primary issuer document or publication record establishes the corrected bibliography and document date, replacing scanner-extracted snippet metadata."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work identity match in supplied duplicate candidates."
+      },
+      "reader_title": "Accelerating permits for strategic projects",
+      "reader_what": "A Council compromise proposes faster environmental assessment procedures, including for grids, chips and advanced computing.",
+      "reader_why": "Uncertain permitting can delay construction of key infrastructure and industrial capability within Europe.",
+      "reader_more": "Council document 13097/26 revises a proposal for speeding environmental assessments. Its recitals name power grids, semiconductors, AI computing facilities and clean technology among projects facing delays. The proposal would streamline administrative stages; the extracted document is a draft, not evidence of shorter realised project lead times.",
+      "deep_analysis": {
+        "work_kind": "draft legislative instrument",
+        "research_question": "",
+        "main_finding": "The Council Presidency circulated a revised draft of an EU regulation accelerating environmental assessment processes, citing strategic energy and digital investments.",
+        "method_or_basis": "Original Council compromise note 13097/26 with legislative text and recitals identifying strategically important permits.",
+        "qualification": "Procedure changes are still proposed; project acceleration and economic benefits are not observed effects.",
+        "radar_relevance": "Energy grids, semiconductors and computing infrastructure are economic-security capacity bottlenecks in Europe.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Council Presidency",
+            "class": "eu_body"
+          },
+          "mechanism": "fast_tracks",
+          "direction": "expands",
+          "status": "in_negotiation",
+          "status_date": "2026-09-15",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Procedure changes are still proposed; project acceleration and economic benefits are not observed effects.",
+          "text": "Council negotiators circulated proposed faster environmental assessment rules covering strategic industrial and digital infrastructure projects.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://data.consilium.europa.eu/doc/document/ST-10817-2026-INIT/en/pdf",
+      "source_hash": "04add0e5",
+      "identity_hash": "511e410c2d60e26a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the matching primary document/excerpt at https://data.consilium.europa.eu/doc/document/ST-10817-2026-INIT/en/pdf; confirmed title and substantive content against issuer."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_document",
+            "url": "https://data.consilium.europa.eu/doc/document/ST-10817-2026-INIT/en/pdf",
+            "title": "Council ST 10817/26: Industrial Accelerator Act — partial Presidency compromise",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matched issuer source against included source_material (pdf_excerpt, 12793 captured characters); examined publication identity and actual content."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_INDUSTRIAL_POLICY",
+        "reason": "First Council compromise on the Industrial Accelerator Act targets the EU’s strategic production capacity and industrial origin policy."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "Industrial Accelerator Act — partial Presidency compromise text",
+          "date": "2026-06-23",
+          "type": "draft EU regulation / Council compromise"
+        },
+        "unset": [],
+        "reason": "Primary issuer document or publication record establishes the corrected bibliography and document date, replacing scanner-extracted snippet metadata."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work identity match in supplied duplicate candidates."
+      },
+      "reader_title": "First Industrial Accelerator Act compromise",
+      "reader_what": "The June Council draft began negotiations over industrial decarbonisation, permitting and rules supporting EU-made production.",
+      "reader_why": "EU manufacturing preferences can redirect investment and purchases in sectors exposed to foreign supply chains.",
+      "reader_more": "The Presidency issued a partial compromise text in June 2026 under file 2026/0068(COD). Its drafting scope was limited, with whole chapters and annexes left for later negotiation. It establishes a stage in the legislative negotiation, not the final position of the Council or Parliament.",
+      "deep_analysis": {
+        "work_kind": "draft legislative instrument",
+        "research_question": "",
+        "main_finding": "The first Presidency draft proposed measures to strengthen strategic European manufacturing and decarbonisation; several chapters were intentionally omitted.",
+        "method_or_basis": "Council note 10817/26 with issue date, draft regulatory text and explicit caveat that Chapters III–IV and annexes were excluded.",
+        "qualification": "Partial negotiating draft, not an adopted or complete legal package.",
+        "radar_relevance": "Industrial capacity, external investment dependence and strategic sourcing are at the centre of this legislative proposal.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Council Presidency",
+            "class": "eu_body"
+          },
+          "mechanism": "proposes",
+          "direction": "expands",
+          "status": "in_negotiation",
+          "status_date": "2026-06-23",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Partial negotiating draft, not an adopted or complete legal package.",
+          "text": "The Presidency tabled a partial Industrial Accelerator Act compromise focused on strategic EU industrial capacity and decarbonisation.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://data.consilium.europa.eu/doc/document/ST-12302-2026-INIT/en/pdf",
+      "source_hash": "43f9118c",
+      "identity_hash": "1cf9c478f05da5ee",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the matching primary document/excerpt at https://data.consilium.europa.eu/doc/document/ST-12302-2026-INIT/en/pdf; confirmed title and substantive content against issuer."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_document",
+            "url": "https://data.consilium.europa.eu/doc/document/ST-12302-2026-INIT/en/pdf",
+            "title": "Council ST 12302/26: speeding-up environmental assessments",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matched issuer source against included source_material (pdf_excerpt, 16091 captured characters); examined publication identity and actual content."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_STRATEGIC_PERMITTING",
+        "reason": "Council compromise directly addresses authorisation barriers for grids, clean-technology and chip capacity with consequences for Europe’s industrial security."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "Regulation on speeding-up environmental assessments — revised Presidency compromise text (ST 12302/26)",
+          "date": "2026-07-31",
+          "type": "draft EU regulation / Council compromise"
+        },
+        "unset": [],
+        "reason": "Primary issuer document or publication record establishes the corrected bibliography and document date, replacing scanner-extracted snippet metadata."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work identity match in supplied duplicate candidates."
+      },
+      "reader_title": "Earlier draft of faster EU environmental reviews",
+      "reader_what": "The July Council compromise proposed revising environmental assessment procedures to shorten delays for major infrastructure.",
+      "reader_why": "Faster reviews could help energy grids and strategic manufacturing projects reach construction, subject to environmental safeguards.",
+      "reader_more": "Council document 12302/26 revises an earlier proposal on speeding up environmental assessments. Its recitals explicitly discuss grids, storage, supercomputers, chip projects and clean manufacturing. It is an earlier negotiation version than ST 13097/26 and must not be mistaken for the adopted law.",
+      "deep_analysis": {
+        "work_kind": "draft legislative instrument",
+        "research_question": "",
+        "main_finding": "A Council Presidency draft put strategic industrial and energy project permitting inside a proposed EU-wide procedural reform.",
+        "method_or_basis": "Official legislative compromise 12302/26, including draft recitals on semiconductor and energy investments and operative procedural text.",
+        "qualification": "This July proposal was later revised; effects on approvals have not been measured.",
+        "radar_relevance": "The proposed approval regime concerns supply-relevant electricity infrastructure and strategic European manufacturing.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Council Presidency",
+            "class": "eu_body"
+          },
+          "mechanism": "fast_tracks",
+          "direction": "expands",
+          "status": "in_negotiation",
+          "status_date": "2026-07-31",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "This July proposal was later revised; effects on approvals have not been measured.",
+          "text": "The Council Presidency proposed revised environmental assessment procedures relevant to grids, semiconductors and clean-tech projects.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://data.consilium.europa.eu/doc/document/WK-13361-2026-INIT/en/pdf",
+      "source_hash": "07b5cce2",
+      "identity_hash": "3a4bbc1fd58ad573",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the matching primary document/excerpt at https://data.consilium.europa.eu/doc/document/WK-13361-2026-INIT/en/pdf; confirmed title and substantive content against issuer."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_document",
+            "url": "https://data.consilium.europa.eu/doc/document/WK-13361-2026-INIT/en/pdf",
+            "title": "Council WK 13361/2026 INIT: Industrial Accelerator Act comparison",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matched issuer source against included source_material (pdf_excerpt, 18943 captured characters); examined publication identity and actual content."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_INDUSTRIAL_POLICY",
+        "reason": "Official comparative working document details changes to the Industrial Accelerator Act origin and industrial capacity text."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "Industrial Accelerator Act — comparison of second Presidency compromise to Commission proposal",
+          "date": "2026-09-03",
+          "type": "Council comparative working paper"
+        },
+        "unset": [],
+        "reason": "Primary issuer document or publication record establishes the corrected bibliography and document date, replacing scanner-extracted snippet metadata."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work identity match in supplied duplicate candidates."
+      },
+      "reader_title": "Comparing Industrial Accelerator Act drafts",
+      "reader_what": "Council working paper compares the revised Presidency draft with the Commission’s proposal on strategic manufacturing measures.",
+      "reader_why": "Comparing draft rules shows where EU preferences, industrial support and permit conditions are being negotiated.",
+      "reader_more": "Document WK 13361/2026 is a marked-up comparison of Council text ST 12236/26 REV1 against the Commission’s Industrial Accelerator Act proposal ST 7009/26. Its purpose is tracing legislative changes, not announcing a policy decision. It is related to but not identical to the underlying compromise document.",
+      "deep_analysis": {
+        "work_kind": "Council working document",
+        "research_question": "",
+        "main_finding": "The Presidency documented alterations to strategic industrial capacity, origin and decarbonisation rules between Commission and Council negotiating versions.",
+        "method_or_basis": "Original Council WK 13361/2026 comparison document, with stated comparative purpose and text of the proposed industrial regulation.",
+        "qualification": "Working comparison conveys negotiating changes only; it cannot prove law or industrial impacts.",
+        "radar_relevance": "The comparison maps contested EU industrial preferences and conditions affecting supply dependencies.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "industry.european_preference",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Council Presidency",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "in_negotiation",
+          "status_date": "2026-09-03",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Working comparison conveys negotiating changes only; it cannot prove law or industrial impacts.",
+          "text": "The Presidency circulated a comparison of proposed Industrial Accelerator Act text showing changes to EU industrial support conditions.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://cordis.europa.eu/article/id/466833-horizon-is-powering-the-eu-s-biotechnology-industry-from-innovation-to-investment",
+      "source_hash": "5b8fcfdf",
+      "identity_hash": "e36ef3265ade0778",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the matching primary publisher page at https://cordis.europa.eu/article/id/466833-horizon-is-powering-the-eu-s-biotechnology-industry-from-innovation-to-investment; confirmed title and substantive content against issuer."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://cordis.europa.eu/article/id/466833-horizon-is-powering-the-eu-s-biotechnology-industry-from-innovation-to-investment",
+            "title": "Horizon is powering the EU’s biotechnology industry, from innovation to investment",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matched issuer source against included source_material (substantial_web_text, 7141 captured characters); examined publication identity and actual content."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_SELECTED_PROJECT_EVIDENCE",
+        "reason": "Official CORDIS collection reports concrete European biotechnology prototypes with strategic relevance, but is curated rather than independent evaluation."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work identity match in supplied duplicate candidates."
+      },
+      "reader_title": "EU biotechnology projects moving toward applications",
+      "reader_what": "A CORDIS collection documents 14 EU-funded biotechnology projects spanning healthcare, food, materials and industrial processes.",
+      "reader_why": "Demonstrated early-stage technologies may broaden European capabilities, although commercial scale and security-of-supply gains remain unproven.",
+      "reader_more": "The EU’s CORDIS Results Pack profiles funded biotechnology projects and describes specific prototypes, including diagnostic tools, agricultural breeding and environmentally friendlier production. It connects biotechnology to EU strategic autonomy and industrial priorities. The editorial selection is not a representative measurement of realised industrial capacity or market take-up.",
+      "deep_analysis": {
+        "work_kind": "curated research-results collection",
+        "research_question": "",
+        "main_finding": "CORDIS provides project-specific examples of scientific outputs across 14 funded biotechnology programmes, but no systematic adoption or market-outcome comparison.",
+        "method_or_basis": "Substantial official CORDIS Results Pack detailing 14 named projects and their outputs, with ISBN/catalogue metadata and publication date.",
+        "qualification": "The projects are selected success examples; reported results are not a representative independent assessment or proof of commercial scale.",
+        "radar_relevance": "Sectoral biotech platforms, prospective European industrial production and vulnerable technology chains are directly linked to EU strategic autonomy.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "innovation.deep_tech_startups",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CORDIS / European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "measures",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2026-09-22",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "The projects are selected success examples; reported results are not a representative independent assessment or proof of commercial scale.",
+          "text": "CORDIS profiled 14 EU-funded biotechnology projects with reported research outputs across healthcare, agriculture and industrial applications.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://cordis.europa.eu/article/id/467856-building-a-digital-environment-that-is-transparent-accountable-and-resilient",
+      "source_hash": "4ffff4bd",
+      "identity_hash": "6216a4ee76b210e1",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the matching primary publisher page at https://cordis.europa.eu/article/id/467856-building-a-digital-environment-that-is-transparent-accountable-and-resilient; confirmed title and substantive content against issuer."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://cordis.europa.eu/article/id/467856-building-a-digital-environment-that-is-transparent-accountable-and-resilient",
+            "title": "Building a digital environment that is transparent, accountable and resilient",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matched issuer source against included source_material (substantial_web_text, 4492 captured characters); examined publication identity and actual content."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_PROJECT_NEWS",
+        "reason": "A promotional Project-of-the-Month update on four open-source testing tools is too narrow to establish a European economic-security mechanism."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work identity match in supplied duplicate candidates."
+      },
+      "reader_title": "EU project adapts cybersecurity testing tools",
+      "reader_what": "CORDIS reports progress adapting four open-source cybersecurity assessment tools for EU regulatory compliance.",
+      "reader_why": "",
+      "reader_more": "The article covers a project’s first development cycle and future testing plans. It contains concrete software-development details but no verified cross-border dependence, critical-infrastructure exposure or economically consequential strategic policy instrument. It should not be promoted into the economic-security research Radar from cybersecurity keywords alone.",
+      "deep_analysis": {
+        "work_kind": "project news release",
+        "research_question": "",
+        "main_finding": "CCAT is adapting four security assessment utilities and expanding user testing, but the article reports a project-level update.",
+        "method_or_basis": "Official CORDIS Project-of-the-Month text with named tools, cycle timelines and project coordinator attribution.",
+        "qualification": "Reported project outputs are promotional and the claimed resilience benefits are not measured here.",
+        "radar_relevance": "Cybersecurity compliance alone is insufficient for this economic-security strand without material strategic mechanism.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:75f06d790703e337",
+      "source_hash": "01e4d812",
+      "identity_hash": "0b301115bf01f074",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Supplied Jacques Delors Institute publication page exists and verifies author Sylvie Matelly, 25 September 2024, infographic; its landing text is bibliographic only."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "The identity supplied no DOI and the institute does not list one for the sanctions infographic."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search retrieved an indexed first-party infographic PDF, but indexed snippets did not furnish inspectable complete figures or explanatory body."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Author-title-year query confirmed Matelly as the author and September 2024 as publication month from the institute publication archive."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "blocked",
+            "note": "Official PDF download at institutdelors.eu/content/uploads/2025/04/Infographie_Santions_Russie_Matelly_EN_A4.pdf could not be opened owing to fetch/size restrictions; landing is abstract-free."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "not_found",
+            "note": "Further English/French title and PDF URL variants produced bibliography, old 404 PDF location and snippets only, not an inspectable substantive original."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_bibliography",
+            "url": "https://institutdelors.eu/en/publications/understanding-international-sanctions/",
+            "title": "Understanding international sanctions",
+            "evidence_used": false
+          },
+          {
+            "kind": "official_bibliography",
+            "url": "https://institutdelors.eu/content/uploads/2025/04/Infographie_Santions_Russie_Matelly_EN_A4.pdf",
+            "title": "Understanding international sanctions",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Publication and author confirmed by publisher, but the substantive infographic could not be inspected end-to-end. Do not infer EU sanctions effects from the index snippets or upgrade this item from bibliographic identity."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "B",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Publication and author confirmed by publisher, but the substantive infographic could not be inspected end-to-end. Do not infer EU sanctions effects from the index snippets or upgrade this item from bibliographic identity."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Bibliographic identity is distinct from other provided candidates; content judgement deferred."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:1e0bbdf28b06560c",
+      "source_hash": "7abed0bd",
+      "identity_hash": "0e476a0cc9526ba8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Original record lacked a source URL; recovered the UNCTAD first-party full event programme describing Session 3, 14 September 2021, speakers, and agenda."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_event_programme",
+            "url": "https://unctad.org/meeting/global-commodities-forum-session-3-future-oil-and-gas-dependent-countries-era-energy",
+            "title": "UNCTAD Global Commodities Forum Session 3 — 14 September 2021",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matched issuer source against included source_material (stored_only, 0 captured characters); examined publication identity and actual content. Primary source is the published UNCTAD event page; the assignment package contained no source body. The event is not a published research paper."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_GLOBAL_EVENT",
+        "reason": "UNCTAD records a worldwide forum session for oil/gas-export-dependent countries, not a Europe-specific study, concrete security-of-supply policy or research finding."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2021-09-14",
+          "title": "Global Commodities Forum — Session 3: The future of oil and gas dependent countries in an era of energy transition",
+          "type": "event / conference session"
+        },
+        "unset": [],
+        "reason": "Primary issuer document or publication record establishes the corrected bibliography and document date, replacing scanner-extracted snippet metadata."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work identity match in supplied duplicate candidates."
+      },
+      "reader_title": "UNCTAD commodities forum: transition for fossil-fuel exporters",
+      "reader_what": "A 2021 UNCTAD session programme set discussion questions about how oil- and gas-export-dependent economies could adapt to the energy transition.",
+      "reader_why": "",
+      "reader_more": "UNCTAD held the session on 14 September 2021 as part of its 13–15 September commodities forum. Its public event page supplies a programme, expected discussion topics, speakers and links to slides, but no consolidated European economic-security finding. It should remain an event listing rather than be cited as proof of transition outcomes.",
+      "deep_analysis": {
+        "work_kind": "international organisation event programme",
+        "research_question": "",
+        "main_finding": "The event framed questions concerning the investment, diversification and macroeconomic exposure of petroleum exporters; it does not present a research result in the entry itself.",
+        "method_or_basis": "Full official UNCTAD event description and multi-day programme retrieved from UNCTAD, with session time, questions, speakers and dates.",
+        "qualification": "Meeting topics and speaker agenda are intentions and not adopted programmes, measured effects or research conclusions.",
+        "radar_relevance": "Global development and commodity-exporter vulnerability; lacks specific European strategic-supply mechanisms.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:1c9095fe93916836",
+      "source_hash": "1709eae2",
+      "identity_hash": "1e8a6ec17db4eb5e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Recovered full official UNCTAD publication-description text and official indexed PDF chapter contents from title search; original item carried no URL."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_publication_description",
+            "url": "https://unctad.org/publication/commodities-glance-special-issue-shale-gas",
+            "title": "Commodities at a Glance: Special Issue on Shale Gas (UNCTAD/SUC/2017/10)",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matched issuer source against included source_material (stored_only, 0 captured characters); examined publication identity and actual content. Primary publisher gives substantial research-purpose narrative and date 24 May 2018; original report PDF is linked and publicly indexed but inaccessible for full extraction here."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE_GLOBAL_ENERGY",
+        "reason": "UNCTAD’s cross-regional 2018 shale-gas report compares global markets, environmental effects and extraction experiences; it is not a Europe-focused economic-security finding."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "Commodities at a Glance: Special Issue on Shale Gas",
+          "type": "international-organisation report"
+        },
+        "unset": [],
+        "reason": "Primary issuer document or publication record establishes the corrected bibliography and document date, replacing scanner-extracted snippet metadata."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work identity match in supplied duplicate candidates."
+      },
+      "reader_title": "UNCTAD reviews shale gas across global energy markets",
+      "reader_what": "This UNCTAD report surveys unconventional gas production, environmental concerns and international developments, with some European policy comparisons.",
+      "reader_why": "",
+      "reader_more": "UNCTAD positions the report as a global perspective on shale gas, largely motivated by the United States production boom, energy pricing and environmental trade-offs. The table of contents also includes European gas market pricing and European shale production experiences. These comparative chapters do not turn the complete work into a European geoeconomic security assessment.",
+      "deep_analysis": {
+        "work_kind": "intergovernmental research report",
+        "research_question": "",
+        "main_finding": "UNCTAD compares shale gas markets, production viability and policy choices across North America, Europe, Asia and other regions.",
+        "method_or_basis": "Official UNCTAD publication landing page with substantive research-scope explanation; official PDF table of contents cross-checks chapter distribution. The full PDF was blocked for extraction.",
+        "qualification": "The global and environmental framing does not support strong Europe-specific dependency or national security implications without the full evidence.",
+        "radar_relevance": "Its comparative European energy-market content may be background, but is too diffuse for a central Europe economic-security Radar item.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:9388940a33c925e3",
+      "source_hash": "c6895ab2",
+      "identity_hash": "368220491cafb4be",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "JRC repository supplied canonical handle JRC147104 with title, subtitle, authors Di Girolamo and Kotsev and publication date 3 June 2026, but only a short abstract."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "JRC147104 is a Commission report number, not a DOI; no DOI appears in the JRC bibliographic entry."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact title plus JRC147104 surfaced a RePEc bibliographic listing; it mirrored the repository identity but not the substantive report."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Di Girolamo Kotsev 2026 query located an EU Council document citing JRC147104; its discussion is a distinct source, not the JRC report."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "blocked",
+            "note": "Official JRC handle explicitly lacks accessible report full text, showing public metadata together with contradictory Commission-only access notice."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "not_found",
+            "note": "Broader JRC147104 PDF, technical brief and mirror searches found citations and copies of its abstract, not an independently inspectable original."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_bibliography",
+            "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC147104",
+            "title": "From dependency to resilience: JRC science for EU technological sovereignty",
+            "evidence_used": false
+          },
+          {
+            "kind": "official_bibliography",
+            "url": "https://ideas.repec.org/s/ipt/iptwpa.html",
+            "title": "From dependency to resilience: JRC science for EU technological sovereignty",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Highly relevant semiconductors/cloud/technological sovereignty theme, but original JRC scientific brief is not available beyond repository abstract. Identity verified; no substantiated work-level finding can be coded."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "B",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Highly relevant semiconductors/cloud/technological sovereignty theme, but original JRC scientific brief is not available beyond repository abstract. Identity verified; no substantiated work-level finding can be coded."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Bibliographic identity is distinct from other provided candidates; content judgement deferred."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:e7e1432518022837",
+      "source_hash": "3232940c",
+      "identity_hash": "0bdfda024c6d0dec",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "JRC repository canonical JRC147778 validates the title, subtitle, Carlotti/Sala/Lettieri authors and date 29 July 2026; only its opening abstract is displayed."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "The repository gives JRC147778 as document identifier and displays no work DOI."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search recovered the European Union-supplied FAO AGRIS catalogue record, but its visible text replicates the JRC abstract."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title-author-year search cross-checked Carlotti, Sala and Lettieri as the cited authors at the Commission and AGRIS pages."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "blocked",
+            "note": "The official JRC repository states document visible only at Commission level; no publicly inspectable full text or PDF could be retrieved."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "not_found",
+            "note": "Searches for JRC147778 PDF, public mirrors and alternate EU repository URLs found metadata records, not the original analytical report."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_bibliography",
+            "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC147778",
+            "title": "Environmental Biotechnology for a Sustainable and Competitive EU: Strengthening strategic autonomy resilience and resource security",
+            "evidence_used": false
+          },
+          {
+            "kind": "official_bibliography",
+            "url": "https://agris.fao.org/search/en/providers/122514/records/6a96e2c88a202ccda1b67c6b",
+            "title": "Environmental Biotechnology for a Sustainable and Competitive EU: Strengthening strategic autonomy resilience and resource security",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Primary publisher and EU-submitted AGRIS metadata verify this 2026 biotechnology report, but Commission-level access prevents reading its findings. No claims are made from an abstract."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "B",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Primary publisher and EU-submitted AGRIS metadata verify this 2026 biotechnology report, but Commission-level access prevents reading its findings. No claims are made from an abstract."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Bibliographic identity is distinct from other provided candidates; content judgement deferred."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:aaaf636aae2f0d5c",
+      "source_hash": "ee82a0b6",
+      "identity_hash": "1ff28967f6055d35",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "blocked",
+            "note": "Supplied CELIS repost is only a pointer to a Lexology article; it contains no substantive article body and must not be mistaken for the primary work."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "A 2021 law-firm commentary article has no DOI listed in its CELIS, Vivien & Associés or Lexology references."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-article-title search located the original Vivien & Associés publication entry dated 1 May 2021 and its Lexology forwarding link."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Title, year and law-firm search matched the series and its authors, Simon Salter and Flora Pitti-Ferrandi; the visible related series papers have other titles."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "blocked",
+            "note": "Original va-fr.com article page shows metadata/cookie shell but no accessible complete body; corresponding Lexology target returned 403."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "not_found",
+            "note": "Broader search for a dedicated PDF and publisher mirrors retrieved only DIFFERENT 2021 CRM series pieces, which were expressly excluded as substitute evidence."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_bibliography",
+            "url": "https://va-fr.com/article/european-and-uk-critical-raw-materials-crm-supply-chains-national-security-considerations/",
+            "title": "European and UK Critical Raw Materials (CRM) Supply Chains – “National Security” Considerations",
+            "evidence_used": false
+          },
+          {
+            "kind": "official_bibliography",
+            "url": "https://www.celis.institute/celis-news/european-and-uk-critical-raw-materials-crm-supply-chains-national-security-considerations-lexology/",
+            "title": "European and UK Critical Raw Materials (CRM) Supply Chains – “National Security” Considerations",
+            "evidence_used": false
+          },
+          {
+            "kind": "official_bibliography",
+            "url": "https://va-fr.com/en/insights/",
+            "title": "European and UK Critical Raw Materials (CRM) Supply Chains – “National Security” Considerations",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "The article is a distinct verified 1 May 2021 Vivien & Associés work reposted by CELIS, but the original substantive text is inaccessible. Related supply-chain articles are not evidence for this specific national-security article."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "B",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The article is a distinct verified 1 May 2021 Vivien & Associés work reposted by CELIS, but the original substantive text is inaccessible. Related supply-chain articles are not evidence for this specific national-security article."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Bibliographic identity is distinct from other provided candidates; content judgement deferred."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    }
+  ]
+}
