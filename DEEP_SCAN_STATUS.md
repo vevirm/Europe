@@ -6,22 +6,24 @@ It shows what is verified, what each worker owns, and what is still eligible. Ex
 Scheduling policy: preserve active worker reservations; fill new slots with Main Radar first, then Historical Radar. Do not fill packages artificially at saturation.
 A validated unsuccessful recovery is one pass; packaging alone is not a pass. After **3** failed passes, close the work as **dropped**, keeping an audit. No work-by-hand loop.
 
-- Authoritative V2 verified: **2728** (Main **1126** + Historical **1602**)
-- Automatic queue still needing V2 verification: **6** (Main **6** + Historical **0**)
-- Currently assigned to workers: **3** (Main **3** + Historical **0**)
-- Bounded access-recovery retries still eligible: **6**
-- Dropped after three failed recovery passes (archived): **175**
+- Authoritative V2 verified: **2731** (Main **1129** + Historical **1602**)
+- Automatic queue still needing V2 verification: **5** (Main **5** + Historical **0**)
+- Currently assigned to workers: **5** (Main **5** + Historical **0**)
+- Bounded access-recovery retries still eligible: **1**
+- Dropped after three failed recovery passes (archived): **177**
 - Legacy work-by-hand requiring reconciliation: **0**
-- Automatic queue pending and not yet assigned: **3**
+- Automatic queue pending and not yet assigned: **0**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261027T184622Z-21b336d93718`
-- Assigned unresolved records: **3**
-  1. `link:https://doi.org/10.1016/j.ecolecon.2026.109266` — Europe at the crossroads: trading strategic autonomy for resilience under degrowth — recovery attempt 3/3
-  2. `link:https://doi.org/10.1515/ordo-2026-2012` — Towards a rule-bound EU transformation policy: Can Ordnungspolitik and industrial strategy be reconciled? — recovery attempt 2/3
-  3. `link:https://doi.org/10.1177/16118944261490056` — An Offshore Financial Centre Inside Europe: Luxembourg, Taxation and European Economic Community (1960s–1970s) — recovery attempt 2/3
+- Current package: `worker-a-20261027T211005Z-249432341421`
+- Assigned unresolved records: **5**
+  1. `link:https://doi.org/10.1016/j.foodpol.2026.103185` — Advancing sustainable food systems cooperation in trade agreements: Lessons from Chile
+  2. `link:https://doi.org/10.2478/bjes-2026-0029` — Regulating LLM training under EU copyright law and its linguistic implications for smaller languages such as Estonian
+  3. `link:https://doi.org/10.1787/9189105b-en` — OECD Economic Surveys: Slovenia 2026
+  4. `link:https://doi.org/10.1080/09662839.2026.2700184` — From national arsenals to European defence: changes in media framings of European defence industries, 2004–2024
+  5. `link:https://doi.org/10.1177/16118944261490056` — An Offshore Financial Centre Inside Europe: Luxembourg, Taxation and European Economic Community (1960s–1970s) — recovery attempt 3/3
 
 ### Worker B
 - Current package: `worker-b-20261027T175216Z-d9afc5af0e51`

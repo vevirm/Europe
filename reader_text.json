@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-10-27T18:45:10Z",
+  "generated_at": "2026-10-27T21:09:09Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -212590,8 +212590,353 @@
       "deep_scan_package_id": "worker-a-20261027T092456Z-40aa9535af8e",
       "claims": [],
       "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1080/13563467.2026.2751107": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "b8a88ae0",
+      "identity_hash": "f3b8b9dbe62ba9c0",
+      "reader_title": "European firms differ over economic ties to China",
+      "reader_what": "An author account maps different degrees of European corporate integration with China and divergent policy preferences.",
+      "reader_why": "Different corporate exposures may make a unified European derisking position difficult to sustain.",
+      "reader_more": "An author-issued summary of the 2026 study differentiates direct operations, employees and sales in China from supplier/customer network connections. It describes deep integrators (including several automakers and chemical companies), minimally integrated firms, and an intermediate supply-chain group. This is the authors’ account rather than independently reconstructed company data.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed political-economy article described by its author",
+        "research_question": "How do divergent firm-level economic connections to China affect European corporate preferences over geoeconomic policy?",
+        "main_finding": "The author describes three corporate integration groups with different preferences, undermining the European Round Table for Industry’s ability to articulate one China stance.",
+        "method_or_basis": "Author-authored public study description distinguishes territorial integration (sales, facilities, staffing) from network integration (suppliers and customers); matched to university DOI record.",
+        "qualification": "Author summary is accessible in a third-party social-feed mirror; journal full text, sample design and quantitative mapping were not independently inspected.",
+        "radar_relevance": "Firm-level exposure to China is relevant to EU geoeconomic autonomy, derisking and business coalitions.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "blocked",
+            "note": "Taylor & Francis DOI full-article view was inaccessible in the web reader during renewed investigation."
+          },
+          {
+            "step": "doi",
+            "outcome": "metadata_only",
+            "note": "DOI 10.1080/13563467.2026.2751107 resolves bibliographically in King’s College London and the journal latest article index."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "metadata_only",
+            "note": "Exact title located the open-access New Political Economy publication but publisher PDF and full article were not retrievable."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Julian Germann’s contemporaneous first-person article announcement was located as reproduced in a public LinkedIn activity feed."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "metadata_only",
+            "note": "King’s College London first-party record identifies authors, DOI, publication status and core ERT/global-production-network keywords."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Author’s post quoted in Sebastian Hoppe’s public LinkedIn feed explains measurement of territorial versus network integration and three corporate camps."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "author_article_summary_republished",
+            "url": "https://de.linkedin.com/in/sebastian-hoppe-b4a052281",
+            "title": "Julian Germann’s first-person study summary reproduced in public LinkedIn activity",
+            "evidence_used": true
+          },
+          {
+            "kind": "university_publication_record",
+            "url": "https://kclpure.kcl.ac.uk/portal/en/publications/globalised-but-divided-european-corporations-and-the-eus-geoecono/",
+            "title": "King’s College London: publication metadata and author list",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "The author’s public explanation, reproduced in an indexed activity feed, describes the study method and three integration groups. Article text itself was not independently inspected; do not claim fully verified tables or firm-level estimates."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_REVIEW_NEAR_SCOPE",
+        "reason": "Author-authored research summary supplies substantive firm-network findings, but the journal article itself remains inaccessible; restrict inference to the author’s description."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Distinct publication identity; no high-confidence same-work duplicate demonstrated."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-27T21:09:09Z",
+      "deep_scan_package_id": "deep-scan-recovery-20261027-six-unresolved-v1",
+      "claims": [
+        {
+          "object": "econsec.trade_security",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Julian Germann et al.",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2026-10-26",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Author summary is accessible in a third-party social-feed mirror; journal full text, sample design and quantitative mapping were not independently inspected.",
+          "text": "The author describes three corporate integration groups with different preferences, undermining the European Round Table for Industry’s ability to articulate one China stance.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1080/13563467.2026.2751107",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:f3b8b9dbe62ba9c0:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1080/23322969.2026.2751120": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "8c82612e",
+      "identity_hash": "46ad6c03ec424775",
+      "reader_title": "How three European universities govern research security",
+      "reader_what": "A comparative study finds that universities operationalise research security differently even when responding to shared European concerns.",
+      "reader_why": "Export-control compliance can serve as an entry point to broader research-security governance.",
+      "reader_more": "The published abstract identifies KTH in Sweden, the University of Barcelona and the University of Liège as cases. It reports convergence around awareness, due diligence, risk management and compliance, but divergence in mandates and structures; export controls often motivate the initial arrangements.",
+      "deep_analysis": {
+        "work_kind": "comparative higher-education policy study",
+        "research_question": "How do universities translate newer European research-security agendas into local governance and administrative practice?",
+        "main_finding": "The study reports differing university-specific governance models and a recurring role for export-control compliance in initiating research-security measures.",
+        "method_or_basis": "Author-listed comparative case study of KTH Royal Institute of Technology, University of Barcelona and University of Liège, as described in the original abstract reproduced by an index.",
+        "qualification": "Reproduced academic abstract only; detailed interviews, institution documents and implementation differences were not checked against the full article.",
+        "radar_relevance": "Directly concerns research safeguards, export-control procedures and the organisational implementation of European research security.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "blocked",
+            "note": "Publisher DOI article 10.1080/23322969.2026.2751120 was inaccessible through the text retriever."
+          },
+          {
+            "step": "doi",
+            "outcome": "metadata_only",
+            "note": "Taylor & Francis open-access listing corroborates title and 23 October 2026 online publication."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Reproduced original academic abstract available at Synapse paper record; it explicitly reports three named case universities and the findings."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Lund University’s first-party research portal confirms Shih, Sánchez Cobaleda and Vella as credited authors."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "metadata_only",
+            "note": "Lund publication record confirms journal and authors; publisher OA issue index verifies title, but its body was not retrievable."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "The journal abstract was reproduced in an indexed abstract aggregator, describing institutional variation and export-control compliance as a starting point."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_journal_abstract_reproduced",
+            "url": "https://synapsesocial.com/papers/6adeecceada5930603afdedf",
+            "title": "Journal abstract reproduced by Synapse: Emerging research security approaches",
+            "evidence_used": true
+          },
+          {
+            "kind": "university_publication_record",
+            "url": "https://lup.lub.lu.se/search/publication/f4f6fdbe-d7c9-4b2c-b79b-04711a45934b",
+            "title": "Lund publication record confirms authors and work",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Substantive journal abstract is reproduced by an index and specifies method, cases and findings. The complete article cannot be inspected. University portal corroborates identity; the indexed abstract is not independently authenticated against publisher body."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_REVIEW_NEAR_SCOPE",
+        "reason": "The reproduced article abstract provides a comparative three-university investigation, but case detail and full text remain unavailable."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Distinct publication identity; no high-confidence same-work duplicate demonstrated."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-27T21:09:09Z",
+      "deep_scan_package_id": "deep-scan-recovery-20261027-six-unresolved-v1",
+      "claims": [
+        {
+          "object": "research_security.screening",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Shih, Sánchez Cobaleda and Vella",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-10-23",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Reproduced academic abstract only; detailed interviews, institution documents and implementation differences were not checked against the full article.",
+          "text": "The study reports differing university-specific governance models and a recurring role for export-control compliance in initiating research-security measures.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1080/23322969.2026.2751120",
+          "merit": 68,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:46ad6c03ec424775:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1515/ordo-2026-2012": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "05211181",
+      "identity_hash": "9f2a526ee54e6f02",
+      "reader_title": "Five safeguards for rules-based EU industrial policy",
+      "reader_what": "The authors propose combining market discipline with targeted industrial policy rather than relying on repeated ad-hoc crisis interventions.",
+      "reader_why": "Their five safeguards address consistency, market orientation, openness, proportionality, and public accountability.",
+      "reader_more": "The German-language publisher abstract advances an ordoliberal-compatible industrial strategy to manage decarbonisation and digitalisation without undermining competition. Safeguards are rule consistency, a long-term market-based approach, open markets, proportionality, and transparency/accountability. This is a normative policy framework, not a demonstrated causal impact estimate.",
+      "deep_analysis": {
+        "work_kind": "normative academic industrial-policy analysis",
+        "research_question": "Can the EU reconcile ordoliberal competition rules and industrial strategies for digital and green transformation?",
+        "main_finding": "Küsters, Stockebrandt and Wolf advocate five conditions to limit capture and information failures in targeted EU industrial support.",
+        "method_or_basis": "Authors’ original ORDO abstract indexed by RePEc using publisher-supplied bibliographic content; based on theoretical/empirical literature and US, China and EU policy experience.",
+        "qualification": "Only the original abstract was accessible. The five points are authors’ proposed principles, not enacted EU rules or independently tested efficiency gains.",
+        "radar_relevance": "Addresses EU industrial competitiveness, strategic capacity, and the institutional design of industrial support.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "metadata_only",
+            "note": "The scanner-linked RePEc journal series shows ORDO 2026 volume 76 and the paper but not its individual abstract."
+          },
+          {
+            "step": "doi",
+            "outcome": "metadata_only",
+            "note": "DOI 10.1515/ordo-2026-2012 and De Gruyter issue details are identified, while the full text is subscription restricted."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "The individual author/publisher-supplied RePEc listing includes a substantive German-language abstract with policy tests."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Exact title with Küsters, Stockebrandt and Wolf matches ORDO volume 76 number 1, pages 1–30 (2026)."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "RePEc’s publisher-supplied article record contains the study abstract and its five stated safeguards for industrial policy."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "metadata_only",
+            "note": "Search of alternative free manuscripts confirmed bibliographic matches but no unpaywalled original 30-page article."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_supplied_original_abstract",
+            "url": "https://ideas.repec.org/a/bpj/ordojb/v76y2026i1p30n1001.html",
+            "title": "RePEc publisher-supplied ORDO record with original paper abstract",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publisher-supplied abstract argues for rule-bound EU transformation policy and sets out five safeguards. The full paywalled argument, literature review and empirical illustrations were not inspected."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_KEEP_POLICY_FRAMEWORK",
+        "reason": "The original, publisher-supplied abstract proposes a concrete EU transformation-policy design, specifying five safeguards for rules-compatible industrial support."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "Distinct publication identity; no high-confidence same-work duplicate demonstrated."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-10-27T21:09:09Z",
+      "deep_scan_package_id": "deep-scan-recovery-20261027-six-unresolved-v1",
+      "claims": [
+        {
+          "object": "industrial.competitiveness",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Küsters, Stockebrandt and Wolf",
+            "class": "university_group"
+          },
+          "mechanism": "advocates",
+          "direction": "becomes_conditional",
+          "status": "observation",
+          "status_date": "2026-10-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Only the original abstract was accessible. The five points are authors’ proposed principles, not enacted EU rules or independently tested efficiency gains.",
+          "text": "Küsters, Stockebrandt and Wolf advocate five conditions to limit capture and information failures in targeted EU industrial support.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1515/ordo-2026-2012",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:9f2a526ee54e6f02:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-10-27T18:45:10Z"
+  "claims_updated_at": "2026-10-27T21:09:09Z"
 }

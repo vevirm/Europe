@@ -2,7 +2,7 @@
   "profile": "radar-deep-scan-dropped-index-v1",
   "rule": "After 3 recorded failed research passes, close as dropped; no hands-on queue. Package issuance alone is not a research pass.",
   "note": "The full retrieval notes and available recovery history remain in deep_scan_work_state.json. Some legacy records have fewer retained history entries than the recorded attempt counter; no missing attempts are invented.",
-  "count": 175,
+  "count": 177,
   "records": [
     {
       "record_key": "historical:id:02d0446b10283c5c",
@@ -1030,6 +1030,21 @@
       "reason": "Deep Scan return rejected: defer must not contain substantive deep_analysis claims"
     },
     {
+      "record_key": "link:https://doi.org/10.1016/j.ecolecon.2026.109266",
+      "title": "Europe at the crossroads: trading strategic autonomy for resilience under degrowth",
+      "source": "Ecological Economics",
+      "url": "https://doi.org/10.1016/j.ecolecon.2026.109266",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261025T090456Z-32f9ec5a3ce7",
+        "worker-a-20261027T092456Z-40aa9535af8e",
+        "deep-scan-recovery-20261027-six-unresolved-v1"
+      ],
+      "closed_at": "2026-10-27T21:09:09Z",
+      "reason": "No verifiable original abstract or full text for the specific 2026 Ecological Economics DOI; avoid copying conclusions from Kovacs’s separate earlier study."
+    },
+    {
       "record_key": "link:https://doi.org/10.1016/j.econlet.2026.113217",
       "title": "GVC participation and inflation in the European Union",
       "source": "Economics Letters",
@@ -1294,6 +1309,21 @@
       ],
       "closed_at": "2026-10-24T14:20:03Z",
       "reason": "Publication identity is corroborated, but the complete underlying work remains inaccessible or available evidence is insufficient for an authoritative admission decision."
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/13563467.2026.2751104",
+      "title": "Chinese and Russian nuclear energy companies in Europe’s geoeconomic turn: giving way to the Americans?",
+      "source": "New Political Economy",
+      "url": "https://doi.org/10.1080/13563467.2026.2751104",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261025T185325Z-f91ff05e827a",
+        "worker-b-20261026T115433Z-adc5978a6022",
+        "deep-scan-recovery-20261027-six-unresolved-v1"
+      ],
+      "closed_at": "2026-10-27T21:09:09Z",
+      "reason": "Nuclear-sector topic is highly relevant, but study-specific evidence about Chinese, Russian and US firms was not recovered despite a new full search."
     },
     {
       "record_key": "link:https://doi.org/10.1080/23745118.2026.2720570",

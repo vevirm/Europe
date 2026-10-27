@@ -1,18 +1,19 @@
 {
   "version": 1,
   "profile": "radar-deep-scan-work-state-v1",
-  "updated_at": "2026-10-27T18:46:25Z",
+  "updated_at": "2026-10-27T21:10:11Z",
   "lanes": {
     "A": {
       "target_size": 36,
       "assigned": [
-        "link:https://doi.org/10.1016/j.ecolecon.2026.109266",
-        "link:https://doi.org/10.1515/ordo-2026-2012",
+        "link:https://doi.org/10.1016/j.foodpol.2026.103185",
+        "link:https://doi.org/10.2478/bjes-2026-0029",
+        "link:https://doi.org/10.1787/9189105b-en",
+        "link:https://doi.org/10.1080/09662839.2026.2700184",
         "link:https://doi.org/10.1177/16118944261490056"
       ],
-      "current_package_id": "worker-a-20261027T184622Z-21b336d93718",
+      "current_package_id": "worker-a-20261027T211005Z-249432341421",
       "package_history": [
-        "worker-a-d35e4460a455",
         "worker-a-d1a8d3e0a826",
         "worker-a-eb9f3f8953c6",
         "worker-a-ba83f4921373",
@@ -51,7 +52,8 @@
         "worker-a-20261027T092456Z-40aa9535af8e",
         "worker-a-20261027T170445Z-e30dc563a099",
         "worker-a-20261027T175213Z-5a9685515802",
-        "worker-a-20261027T184622Z-21b336d93718"
+        "worker-a-20261027T184622Z-21b336d93718",
+        "worker-a-20261027T211005Z-249432341421"
       ],
       "previous_assigned": []
     },
@@ -100875,7 +100877,7 @@
       "url": "https://doi.org/10.1080/13563467.2026.2751107",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "recovery_retry",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-24T13:09:19Z",
       "last_package_id": "worker-b-20261026T115433Z-adc5978a6022",
@@ -101026,7 +101028,9 @@
             "verification_note": "King’s College London bibliographic listing and CC BY status identify the paper, but the actual article argument and data were not available to inspect."
           }
         }
-      ]
+      ],
+      "verified_at": "2026-10-27T21:09:09Z",
+      "verified_package_id": "deep-scan-recovery-20261027-six-unresolved-v1"
     },
     "link:https://doi.org/10.1080/13563467.2026.2751104": {
       "title": "Chinese and Russian nuclear energy companies in Europe’s geoeconomic turn: giving way to the Americans?",
@@ -101035,60 +101039,60 @@
       "url": "https://doi.org/10.1080/13563467.2026.2751104",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "recovery_retry",
+      "status": "dropped_after_3_failures",
       "lane": "B",
       "assigned_at": "2026-10-24T13:09:19Z",
       "last_package_id": "worker-b-20261026T115433Z-adc5978a6022",
       "scan_package_attempts": 5,
       "last_scan_package_at": "2026-10-26T11:54:35Z",
-      "recovery_attempts": 2,
-      "last_recovery_at": "2026-10-27T18:45:09Z",
-      "last_recovery_package_id": "worker-b-20261026T115433Z-adc5978a6022",
-      "recovery_reason": "The 2026 nuclear-firm study is bibliographically confirmed but its corporate case evidence could not be inspected.",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-27T21:09:09Z",
+      "last_recovery_package_id": "deep-scan-recovery-20261027-six-unresolved-v1",
+      "recovery_reason": "Nuclear-sector topic is highly relevant, but study-specific evidence about Chinese, Russian and US firms was not recovered despite a new full search.",
       "verification": {
         "identity_verified": true,
         "evidence_depth": "identity_only_after_recovery",
         "retrieval_attempts": [
           {
             "step": "supplied_url",
-            "outcome": "failed",
-            "note": "Tried T&F full article https://www.tandfonline.com/doi/full/10.1080/13563467.2026.2751104; article text inaccessible."
+            "outcome": "blocked",
+            "note": "Taylor & Francis full article for DOI 10.1080/13563467.2026.2751104 returned no accessible body to inspect."
           },
           {
             "step": "doi",
-            "outcome": "failed",
-            "note": "DOI 10.1080/13563467.2026.2751104 and https://api.crossref.org/works/10.1080%2F13563467.2026.2751104 not accessible as substantive original article."
+            "outcome": "metadata_only",
+            "note": "DOI and journal latest-articles feed identify Biao Zhang and 22 October 2026 publication, but do not show argument or methods."
           },
           {
             "step": "exact_title",
             "outcome": "metadata_only",
-            "note": "Exact full-title search indexed Biao Zhang article and DOI but yielded no substantive publisher abstract."
+            "note": "Exact quoted title across general and scholarly indexes locates bibliographic records but not a verifiable research abstract."
           },
           {
             "step": "title_author_year",
             "outcome": "metadata_only",
-            "note": "Title plus author Biao Zhang, New Political Economy 2026 located bibliography in published Crossref-based journal catalogue."
+            "note": "Search with Biao Zhang, nuclear companies and New Political Economy locates journal listings only."
           },
           {
             "step": "official_publisher_or_repository",
-            "outcome": "metadata_only",
-            "note": "Checked New Political Economy publisher route and recent-articles listing; public bibliography only."
+            "outcome": "blocked",
+            "note": "Taylor & Francis journal page lists the 2026 nuclear firms paper but article pages and source data are inaccessible."
           },
           {
             "step": "broader_identity_search",
-            "outcome": "failed",
-            "note": "Targeted filetype:pdf, nuclear SOE derisking and title-fragment searches; no legitimate matching original text found."
+            "outcome": "no_match",
+            "note": "Compared nuclear-industry reports and separate nuclear-energy diplomacy research; these are different works and cannot establish Zhang’s case findings."
           }
         ],
         "recovered_sources": [
           {
             "kind": "publisher_bibliography",
-            "url": "https://www.researchgate.net/publication/416643897_Chinese_and_Russian_nuclear_energy_companies_in_Europe%27s_geoeconomic_turn_giving_way_to_the_Americans",
-            "title": "Chinese and Russian nuclear energy companies in Europe’s geoeconomic turn: giving way to the Americans?",
+            "url": "https://www.tandfonline.com/journals/cnpe20",
+            "title": "New Political Economy journal page, article identity only",
             "evidence_used": false
           }
         ],
-        "verification_note": "DOI, publisher index and author Biao Zhang are identifiable; research portal shows no readable article body."
+        "verification_note": "Work is identified but neither the original abstract nor full study is accessible; external nuclear statistics cannot stand in for Biao Zhang’s findings."
       },
       "recovery_history": [
         {
@@ -101185,8 +101189,61 @@
             ],
             "verification_note": "DOI, publisher index and author Biao Zhang are identifiable; research portal shows no readable article body."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "deep-scan-recovery-20261027-six-unresolved-v1",
+          "at": "2026-10-27T21:09:09Z",
+          "reason": "Nuclear-sector topic is highly relevant, but study-specific evidence about Chinese, Russian and US firms was not recovered despite a new full search.",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "blocked",
+                "note": "Taylor & Francis full article for DOI 10.1080/13563467.2026.2751104 returned no accessible body to inspect."
+              },
+              {
+                "step": "doi",
+                "outcome": "metadata_only",
+                "note": "DOI and journal latest-articles feed identify Biao Zhang and 22 October 2026 publication, but do not show argument or methods."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "metadata_only",
+                "note": "Exact quoted title across general and scholarly indexes locates bibliographic records but not a verifiable research abstract."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "metadata_only",
+                "note": "Search with Biao Zhang, nuclear companies and New Political Economy locates journal listings only."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "blocked",
+                "note": "Taylor & Francis journal page lists the 2026 nuclear firms paper but article pages and source data are inaccessible."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "no_match",
+                "note": "Compared nuclear-industry reports and separate nuclear-energy diplomacy research; these are different works and cannot establish Zhang’s case findings."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_bibliography",
+                "url": "https://www.tandfonline.com/journals/cnpe20",
+                "title": "New Political Economy journal page, article identity only",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "Work is identified but neither the original abstract nor full study is accessible; external nuclear statistics cannot stand in for Biao Zhang’s findings."
+          }
         }
-      ]
+      ],
+      "closed_at": "2026-10-27T21:09:09Z",
+      "drop_reason": "Nuclear-sector topic is highly relevant, but study-specific evidence about Chinese, Russian and US firms was not recovered despite a new full search."
     },
     "link:https://www.ispionline.it/en/tag/european-council": {
       "title": "European Council | ISPI",
@@ -102147,60 +102204,66 @@
       "url": "https://doi.org/10.1016/j.ecolecon.2026.109266",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "dropped_after_3_failures",
       "lane": "A",
       "assigned_at": "2026-10-25T09:04:56Z",
       "last_package_id": "worker-a-20261027T184622Z-21b336d93718",
       "scan_package_attempts": 6,
       "last_scan_package_at": "2026-10-27T18:46:24Z",
-      "recovery_attempts": 2,
-      "last_recovery_at": "2026-10-27T18:45:10Z",
-      "last_recovery_package_id": "worker-a-20261027T092456Z-40aa9535af8e",
-      "recovery_reason": "Cannot infer what the paper concludes about strategic autonomy or degrowth from its title alone.",
+      "recovery_attempts": 3,
+      "last_recovery_at": "2026-10-27T21:09:09Z",
+      "last_recovery_package_id": "deep-scan-recovery-20261027-six-unresolved-v1",
+      "recovery_reason": "No verifiable original abstract or full text for the specific 2026 Ecological Economics DOI; avoid copying conclusions from Kovacs’s separate earlier study.",
       "verification": {
         "identity_verified": true,
         "evidence_depth": "identity_only_after_recovery",
         "retrieval_attempts": [
           {
             "step": "supplied_url",
-            "outcome": "failed",
-            "note": "Attempted https://doi.org/10.1016/j.ecolecon.2026.109266; DOI URL not accessible in the web retriever."
+            "outcome": "blocked",
+            "note": "Elsevier DOI 10.1016/j.ecolecon.2026.109266 and ScienceDirect article routes blocked substantive text access."
           },
           {
             "step": "doi",
             "outcome": "metadata_only",
-            "note": "Checked DOI 10.1016/j.ecolecon.2026.109266; the bundle records an authenticated OpenAlex DOI-work match W7223217197, but publisher text was unavailable."
+            "note": "The Ecological Economics DOI and author appear in a bibliographic index for publication around October 2026; the abstract field is empty."
           },
           {
             "step": "exact_title",
-            "outcome": "no_result",
-            "note": "Exact quoted search for “Europe at the crossroads: trading strategic autonomy for resilience under degrowth” yielded no matching publisher article."
+            "outcome": "metadata_only",
+            "note": "Exact search returns a bibliographic mirror for Europe at the crossroads but no article-specific manuscript or abstract."
           },
           {
             "step": "title_author_year",
-            "outcome": "no_result",
-            "note": "Searched Olivér Kovács + “Europe at the crossroads” + degrowth + Ecological Economics + 2026; matched separate Hungarian paper, not this DOI work."
+            "outcome": "metadata_only",
+            "note": "Oliver Kovacs has an earlier Hungarian article on strategic autonomy and degrowth; it has DOI 10.18414/KSZ.2026.3.241 and is not this 2026 Elsevier article."
           },
           {
             "step": "official_publisher_or_repository",
             "outcome": "blocked",
-            "note": "Elsevier ScienceDirect article route was inaccessible (403); author oliverkovacs.com publications and Hungarian repositories returned other works only."
+            "note": "Original ScienceDirect/Elsevier article could not be read; library/index records identify the work without methods or findings."
           },
           {
             "step": "broader_identity_search",
-            "outcome": "no_result",
-            "note": "Searched DOI suffix ecolecon.2026.109266, OpenAlex W7223217197, Kovács + 109266, and title fragments; no accessible manuscript of the claimed work."
+            "outcome": "no_match",
+            "note": "Located the author’s earlier strategic-autonomy work and 2025 degrowth analysis but no evidence they are text-identical to the Ecological Economics DOI."
           }
         ],
         "recovered_sources": [
           {
-            "kind": "publisher_bibliography",
-            "url": "https://doi.org/10.1016/j.ecolecon.2026.109266",
-            "title": "Europe at the crossroads: trading strategic autonomy for resilience under degrowth",
+            "kind": "bibliography",
+            "url": "https://m.booksci.cn/literature/149241506.htm",
+            "title": "Bibliographic index for Kovacs 2026 Ecological Economics DOI",
+            "evidence_used": false
+          },
+          {
+            "kind": "different_author_work",
+            "url": "https://www.researchgate.net/publication/403997204_A_strategiai_autonomia_ujfajta_kozgazdasagtana_az_europai_valaszut",
+            "title": "Related 2026 Hungarian paper is a different DOI; not used as evidence",
             "evidence_used": false
           }
         ],
-        "verification_note": "DOI work identity is cross-listed in bibliographic databases; original Ecological Economics abstract or full analysis was unavailable."
+        "verification_note": "The source DOI is identifiable, but the content of this Ecological Economics article is inaccessible. A similarly themed earlier work is a different publication and cannot be substituted."
       },
       "recovery_history": [
         {
@@ -102297,8 +102360,67 @@
             ],
             "verification_note": "DOI work identity is cross-listed in bibliographic databases; original Ecological Economics abstract or full analysis was unavailable."
           }
+        },
+        {
+          "attempt": 3,
+          "package_id": "deep-scan-recovery-20261027-six-unresolved-v1",
+          "at": "2026-10-27T21:09:09Z",
+          "reason": "No verifiable original abstract or full text for the specific 2026 Ecological Economics DOI; avoid copying conclusions from Kovacs’s separate earlier study.",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "blocked",
+                "note": "Elsevier DOI 10.1016/j.ecolecon.2026.109266 and ScienceDirect article routes blocked substantive text access."
+              },
+              {
+                "step": "doi",
+                "outcome": "metadata_only",
+                "note": "The Ecological Economics DOI and author appear in a bibliographic index for publication around October 2026; the abstract field is empty."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "metadata_only",
+                "note": "Exact search returns a bibliographic mirror for Europe at the crossroads but no article-specific manuscript or abstract."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "metadata_only",
+                "note": "Oliver Kovacs has an earlier Hungarian article on strategic autonomy and degrowth; it has DOI 10.18414/KSZ.2026.3.241 and is not this 2026 Elsevier article."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "blocked",
+                "note": "Original ScienceDirect/Elsevier article could not be read; library/index records identify the work without methods or findings."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "no_match",
+                "note": "Located the author’s earlier strategic-autonomy work and 2025 degrowth analysis but no evidence they are text-identical to the Ecological Economics DOI."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "bibliography",
+                "url": "https://m.booksci.cn/literature/149241506.htm",
+                "title": "Bibliographic index for Kovacs 2026 Ecological Economics DOI",
+                "evidence_used": false
+              },
+              {
+                "kind": "different_author_work",
+                "url": "https://www.researchgate.net/publication/403997204_A_strategiai_autonomia_ujfajta_kozgazdasagtana_az_europai_valaszut",
+                "title": "Related 2026 Hungarian paper is a different DOI; not used as evidence",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "The source DOI is identifiable, but the content of this Ecological Economics article is inaccessible. A similarly themed earlier work is a different publication and cannot be substituted."
+          }
         }
-      ]
+      ],
+      "closed_at": "2026-10-27T21:09:09Z",
+      "drop_reason": "No verifiable original abstract or full text for the specific 2026 Ecological Economics DOI; avoid copying conclusions from Kovacs’s separate earlier study."
     },
     "historical:id:8d523381db1084a3": {
       "title": "The role of existing specialisation in European clean-tech competitiveness",
@@ -102467,7 +102589,7 @@
       "url": "https://doi.org/10.1080/23322969.2026.2751120",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "recovery_retry",
+      "status": "verified",
       "lane": "B",
       "assigned_at": "2026-10-25T18:53:25Z",
       "last_package_id": "worker-b-20261026T115433Z-adc5978a6022",
@@ -102618,7 +102740,9 @@
             "verification_note": "Taylor & Francis lists the article as open access and Lund confirms authorship, but the case evidence on three universities was not retrieved."
           }
         }
-      ]
+      ],
+      "verified_at": "2026-10-27T21:09:09Z",
+      "verified_package_id": "deep-scan-recovery-20261027-six-unresolved-v1"
     },
     "link:https://doi.org/10.1787/257230ec-en": {
       "title": "Policies for Developing Advanced STEM Skills in Higher Education",
@@ -103059,7 +103183,7 @@
       "url": "https://doi.org/10.1515/ordo-2026-2012",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-10-27T09:24:56Z",
       "last_package_id": "worker-a-20261027T184622Z-21b336d93718",
@@ -103166,7 +103290,9 @@
             "verification_note": "De Gruyter/RePEc bibliographic listing confirms 2026 ORDO journal pages 1–30 and authors; the scholarly article text is subscription-restricted."
           }
         }
-      ]
+      ],
+      "verified_at": "2026-10-27T21:09:09Z",
+      "verified_package_id": "deep-scan-recovery-20261027-six-unresolved-v1"
     },
     "link:https://doi.org/10.1093/eurpub/ckag169.1923": {
       "title": "Reducing Salt Intake through EU Sustainable Public Procurement in Daycare Meals in Copenhagen",
@@ -103226,13 +103352,13 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-10-27T09:24:56Z",
-      "last_package_id": "worker-a-20261027T184622Z-21b336d93718",
-      "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-10-27T18:46:24Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-10-27T18:45:10Z",
-      "last_recovery_package_id": "worker-a-20261027T092456Z-40aa9535af8e",
-      "recovery_reason": "Original historical scholarship is not available for inspection, preventing a claim about 1960s–1970s fiscal mechanisms.",
+      "last_package_id": "worker-a-20261027T211005Z-249432341421",
+      "scan_package_attempts": 4,
+      "last_scan_package_at": "2026-10-27T21:10:10Z",
+      "recovery_attempts": 2,
+      "last_recovery_at": "2026-10-27T21:09:09Z",
+      "last_recovery_package_id": "deep-scan-recovery-20261027-six-unresolved-v1",
+      "recovery_reason": "A fresh source recovery search did not establish the paper’s archival method or finding about 1960s–1970s European economic institutions.",
       "verification": {
         "identity_verified": true,
         "evidence_depth": "identity_only_after_recovery",
@@ -103240,43 +103366,43 @@
           {
             "step": "supplied_url",
             "outcome": "blocked",
-            "note": "Checked the record’s supplied link https://doi.org/10.1177/16118944261490056; article text was not available in the accessible source or index."
+            "note": "The SAGE DOI landing page 10.1177/16118944261490056 did not provide full article text to the reader."
           },
           {
             "step": "doi",
-            "outcome": "blocked",
-            "note": "Checked DOI 10.1177/16118944261490056 and its publisher route; only bibliographic identity or an inaccessible paper page appeared."
+            "outcome": "metadata_only",
+            "note": "Exact DOI and indexed title describe Luxembourg, taxation and EEC history; original archival claims remain unavailable."
           },
           {
             "step": "exact_title",
-            "outcome": "metadata_only",
-            "note": "Exact-title search for “An Offshore Financial Centre Inside Europe: Luxembourg, Taxation and European Economic Community (19” found publication identity but no readable full argument or evidentiary body."
+            "outcome": "no_result",
+            "note": "Quoted searches for the full offshore-finance Luxembourg 1960s–1970s study did not recover a complete original journal abstract."
           },
           {
             "step": "title_author_year",
-            "outcome": "metadata_only",
-            "note": "Cross-checked title, credited authors, and publication-year/issue in issuer or institutional records, without a complete manuscript."
+            "outcome": "no_result",
+            "note": "Title fragments and 2026 SAGE financial history indexing did not yield a matching author-hosted preprint."
           },
           {
             "step": "official_publisher_or_repository",
             "outcome": "blocked",
-            "note": "Checked first-party publisher or research-institution reference https://doi.org/10.1177/16118944261490056; only identity, article teaser or access-restricted content was inspectable."
+            "note": "The SAGE route was not readable and no university repository copy of this exact DOI was found."
           },
           {
             "step": "broader_identity_search",
             "outcome": "no_match",
-            "note": "Compared related listings, alternate publication routes and institutional catalogs; no matching substantive edition of this specific work was recovered."
+            "note": "Historical Luxembourg Eurobond and offshore-tax commentary is thematically related but does not document this specific article’s interpretation."
           }
         ],
         "recovered_sources": [
           {
             "kind": "publisher_bibliography",
             "url": "https://doi.org/10.1177/16118944261490056",
-            "title": "An Offshore Financial Centre Inside Europe: Luxembourg, Taxation and European Economic Community (1960s–1970s)",
+            "title": "SAGE DOI, research identity only",
             "evidence_used": false
           }
         ],
-        "verification_note": "SAGE DOI and scanner bibliography identify a historical research article on Luxembourg taxation and the EEC, but the article body and documentary evidence were inaccessible."
+        "verification_note": "The indexed historical work has no retrievable original article or study abstract. Related accounts of Luxembourg’s offshore finance development do not substitute for the paper."
       },
       "recovery_history": [
         {
@@ -103328,6 +103454,57 @@
               }
             ],
             "verification_note": "SAGE DOI and scanner bibliography identify a historical research article on Luxembourg taxation and the EEC, but the article body and documentary evidence were inaccessible."
+          }
+        },
+        {
+          "attempt": 2,
+          "package_id": "deep-scan-recovery-20261027-six-unresolved-v1",
+          "at": "2026-10-27T21:09:09Z",
+          "reason": "A fresh source recovery search did not establish the paper’s archival method or finding about 1960s–1970s European economic institutions.",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "blocked",
+                "note": "The SAGE DOI landing page 10.1177/16118944261490056 did not provide full article text to the reader."
+              },
+              {
+                "step": "doi",
+                "outcome": "metadata_only",
+                "note": "Exact DOI and indexed title describe Luxembourg, taxation and EEC history; original archival claims remain unavailable."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "no_result",
+                "note": "Quoted searches for the full offshore-finance Luxembourg 1960s–1970s study did not recover a complete original journal abstract."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "no_result",
+                "note": "Title fragments and 2026 SAGE financial history indexing did not yield a matching author-hosted preprint."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "blocked",
+                "note": "The SAGE route was not readable and no university repository copy of this exact DOI was found."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "no_match",
+                "note": "Historical Luxembourg Eurobond and offshore-tax commentary is thematically related but does not document this specific article’s interpretation."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "publisher_bibliography",
+                "url": "https://doi.org/10.1177/16118944261490056",
+                "title": "SAGE DOI, research identity only",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "The indexed historical work has no retrievable original article or study abstract. Related accounts of Luxembourg’s offshore finance development do not substitute for the paper."
           }
         }
       ]
@@ -103877,6 +104054,62 @@
       "last_scan_package_at": "2026-10-27T17:04:50Z",
       "verified_at": "2026-10-27T17:50:55Z",
       "verified_package_id": "worker-a-20261027T170445Z-e30dc563a099"
+    },
+    "link:https://doi.org/10.1016/j.foodpol.2026.103185": {
+      "title": "Advancing sustainable food systems cooperation in trade agreements: Lessons from Chile",
+      "source_name": "Food Policy",
+      "date": "2026-10-26",
+      "url": "https://doi.org/10.1016/j.foodpol.2026.103185",
+      "corpus_scope": "main",
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-10-27T21:10:05Z",
+      "last_package_id": "worker-a-20261027T211005Z-249432341421",
+      "scan_package_attempts": 1,
+      "last_scan_package_at": "2026-10-27T21:10:10Z"
+    },
+    "link:https://doi.org/10.2478/bjes-2026-0029": {
+      "title": "Regulating LLM training under EU copyright law and its linguistic implications for smaller languages such as Estonian",
+      "source_name": "TalTech Journal of European Studies",
+      "date": "2026-10-25",
+      "url": "https://doi.org/10.2478/bjes-2026-0029",
+      "corpus_scope": "main",
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-10-27T21:10:05Z",
+      "last_package_id": "worker-a-20261027T211005Z-249432341421",
+      "scan_package_attempts": 1,
+      "last_scan_package_at": "2026-10-27T21:10:10Z"
+    },
+    "link:https://doi.org/10.1787/9189105b-en": {
+      "title": "OECD Economic Surveys: Slovenia 2026",
+      "source_name": "OECD",
+      "date": "2026-06-12",
+      "url": "https://doi.org/10.1787/9189105b-en",
+      "corpus_scope": "main",
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-10-27T21:10:05Z",
+      "last_package_id": "worker-a-20261027T211005Z-249432341421",
+      "scan_package_attempts": 1,
+      "last_scan_package_at": "2026-10-27T21:10:10Z"
+    },
+    "link:https://doi.org/10.1080/09662839.2026.2700184": {
+      "title": "From national arsenals to European defence: changes in media framings of European defence industries, 2004–2024",
+      "source_name": "European Security",
+      "date": "2026-07-03",
+      "url": "https://doi.org/10.1080/09662839.2026.2700184",
+      "corpus_scope": "main",
+      "queue_priority": "strand_a",
+      "status": "assigned",
+      "lane": "A",
+      "assigned_at": "2026-10-27T21:10:05Z",
+      "last_package_id": "worker-a-20261027T211005Z-249432341421",
+      "scan_package_attempts": 1,
+      "last_scan_package_at": "2026-10-27T21:10:10Z"
     }
   },
   "packages": {
@@ -113226,6 +113459,17 @@
       "record_keys": [
         "link:https://doi.org/10.1016/j.ecolecon.2026.109266",
         "link:https://doi.org/10.1515/ordo-2026-2012",
+        "link:https://doi.org/10.1177/16118944261490056"
+      ]
+    },
+    "worker-a-20261027T211005Z-249432341421": {
+      "lane": "A",
+      "created_at": "2026-10-27T21:10:10Z",
+      "record_keys": [
+        "link:https://doi.org/10.1016/j.foodpol.2026.103185",
+        "link:https://doi.org/10.2478/bjes-2026-0029",
+        "link:https://doi.org/10.1787/9189105b-en",
+        "link:https://doi.org/10.1080/09662839.2026.2700184",
         "link:https://doi.org/10.1177/16118944261490056"
       ]
     }
