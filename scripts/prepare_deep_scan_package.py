@@ -127,7 +127,7 @@ repository/author copies and use the strongest matching evidence available.
 
 ## Main Radar third-attempt hard-final mode
 
-Some jobs carry `scan_attempt = 3` and `scan_mode = "hard_final"`. This flag is used only for a **Main Radar** work on its third and final automatic Deep Scan issuance. For those jobs, do not repeat an ordinary pass. Before returning `drop_unverifiable`, `defer`, `drop`, or `review` for lack of evidence, perform a stronger final recovery pass:
+Some jobs carry `scan_attempt = 3` and `scan_mode = "hard_final"`. This flag is used only for a **Main Radar** work on its third and final unsuccessful recovery attempt. For those jobs, do not repeat an ordinary pass. Before returning `drop_unverifiable`, `defer`, `drop`, or `review` for lack of evidence, perform a stronger final recovery pass:
 
 - exhaust every applicable standard retrieval step and record concrete URLs/queries/results;
 - run at least **two materially different broader identity searches** using distinctive title fragments, authors/organisation, DOI/report/document identifiers, or translated/variant title clues when relevant;
@@ -148,7 +148,7 @@ Return exactly one decision:
 - `review` — the work exists and has real evidence, but admission genuinely requires human judgement.
   REVIEW is not a refuge for laziness or failed retrieval.
 - `drop_unverifiable` — after the complete retrieval ladder, the claimed work itself cannot be substantiated.
-- `defer` — coordination-only, not an admission judgement. Use only when the work's identity is verified but, after all required recovery steps, substantive evidence remains inaccessible or too thin to support KEEP/REVIEW/DROP. Each validated defer counts as one genuine recovery pass. GitHub permits at most three such passes, throttles retries so they cannot dominate worker capacity, and after the third failed pass moves the work to the persistent **Hands-on verification needed** list.
+- `defer` — coordination-only, not an admission judgement. Use only when the work's identity is verified but, after all required recovery steps, substantive evidence remains inaccessible or too thin to support KEEP/REVIEW/DROP. Each validated defer counts as one genuine recovery pass. GitHub permits at most three such passes, throttles retries so they cannot dominate worker capacity, and after the third failed pass closes it as **dropped** with its research audit preserved.
 
 ### Strand A — substantive European economic-security work
 
@@ -815,7 +815,7 @@ def main() -> None:
     historical_total = len([x for x in historical_doc.get("items", []) if isinstance(x, dict)]) if isinstance(historical_doc, dict) else 0
     lane = args.lane.upper()
 
-    # Work-state is consulted even for a legacy one-off package so terminal hands-on
+    # Work-state is consulted even for a legacy one-off package so terminally dropped
     # items can never be silently resurrected. Metadata is mirrored into the ledger
     # so DEEP_SCAN_STATUS.md becomes a usable manual-verification work list.
     state = load_state(args.work_state)
@@ -839,7 +839,7 @@ def main() -> None:
         print(
             f"Main Radar: {total} records / {main_pending_total} automatic pending; "
             f"Historical: {historical_total} records / {historical_pending_total} automatic pending; "
-            f"hands-on terminal: {len(terminal)}; worker {lane} assigned now: {len(todo)} "
+            f"closed terminal: {len(terminal)}; worker {lane} assigned now: {len(todo)} "
             f"({assigned_main} main + {assigned_historical} historical)"
         )
     else:
@@ -856,7 +856,7 @@ def main() -> None:
         print(
             f"Main Radar: {total} records / {main_pending_total} automatic pending; "
             f"Historical: {historical_total} records / {historical_pending_total} automatic pending; "
-            f"hands-on terminal: {len(terminal)}; packaged now: {len(todo)} "
+            f"closed terminal: {len(terminal)}; packaged now: {len(todo)} "
             f"({packaged_main} main + {packaged_historical} historical)"
         )
 
@@ -875,7 +875,7 @@ def main() -> None:
                 encoding="utf-8",
             )
         else:
-            summary.write_text("All current Main Radar and Historical Radar records already have authoritative Deep Scan V2 verification.\n", encoding="utf-8")
+            summary.write_text("All current works are either verified or terminally dropped after three unsuccessful recovery passes.\n", encoding="utf-8")
         if lane and state is not None and args.write_work_state:
             save_state(state, args.work_state)
             write_status_markdown(state, sidecar, [item[1] for item in todo_all], args.status_file)

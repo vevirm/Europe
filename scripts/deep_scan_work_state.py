@@ -5,7 +5,7 @@ The authoritative verification itself still lives in reader_text.json / admissio
 This file coordinates work assignment so multiple browsing-capable LLMs do not receive the
 same queue head.  It also bounds access-recovery retries: a work whose identity is known but
 whose substantive source remains inaccessible may receive at most three genuine Deep Scan
-recovery passes before it leaves the automatic queue for hands-on verification.
+recovery passes before it is closed as dropped (with full audit history).
 """
 from __future__ import annotations
 
@@ -22,7 +22,7 @@ DEFAULT_LANE_SIZE = 36
 MAX_RECOVERY_ATTEMPTS = 3
 MAX_SCAN_PACKAGE_ATTEMPTS = 3
 RETRY_INTERVAL = 12  # at most one retry per 12 historical/background slots while fresh history exists
-TERMINAL_MANUAL_STATUSES = {"needs_manual_verification", "dropped_after_3_failures", "deferred"}  # deferred = legacy terminal status
+TERMINAL_MANUAL_STATUSES = {"needs_manual_verification", "dropped_after_3_failures", "deferred"}  # legacy name; all are excluded from automatic queue
 
 
 def utc_now() -> str:
@@ -155,11 +155,10 @@ def assigned_keys(state: dict[str, Any]) -> set[str]:
 
 
 def manual_verification_keys(state: dict[str, Any]) -> set[str]:
-    """Records removed from automatic assignment and waiting for a human/source hand-off.
+    """Closed records blocked from assignment (legacy function name retained).
 
-    ``deferred`` is retained here for backward compatibility with the earlier one-pass
-    terminal policy.  Existing deferred records therefore stay safely out of the worker
-    lanes and are shown in the new hands-on list rather than being silently resurrected.
+    Completed three-pass failures are DROPPED, never a perpetual manual-work backlog.
+    Older terminal statuses are blocked until the migration normalizes them.
     """
     return {
         key for key, row in state.get("records", {}).items()
@@ -450,7 +449,7 @@ def mark_recovery_failure(
     """Record one *validated full recovery ladder* failure.
 
     Returns the new status.  Attempts 1-2 become ``recovery_retry``; attempt 3
-    becomes ``needs_manual_verification`` and is never automatically assigned again.
+    becomes ``dropped_after_3_failures`` and is never automatically assigned again.
     """
     when = when or utc_now()
     max_attempts = max(1, int(max_attempts))
@@ -478,7 +477,7 @@ def mark_recovery_failure(
     })
     terminal = attempts >= max_attempts
     rec.update({
-        "status": "needs_manual_verification" if terminal else "recovery_retry",
+        "status": "dropped_after_3_failures" if terminal else "recovery_retry",
         "recovery_attempts": attempts,
         "last_recovery_at": when,
         "last_recovery_package_id": package_id,
@@ -487,8 +486,8 @@ def mark_recovery_failure(
         "recovery_history": history,
     })
     if terminal:
-        rec["manual_verification_since"] = when
-        rec["manual_verification_reason"] = reason
+        rec["closed_at"] = when
+        rec["drop_reason"] = reason
     if lane in state.get("lanes", {}):
         state["lanes"][lane]["assigned"] = [k for k in state["lanes"][lane].get("assigned", []) if k != key]
     return str(rec["status"])
@@ -519,9 +518,10 @@ def status_counts(state: dict[str, Any], reader: dict[str, Any], pending_keys: l
     queue = [k for k in _unique(pending_keys) if k not in manual]
     pending_main = [k for k in queue if not _is_historical(k)]
     pending_hist = [k for k in queue if _is_historical(k)]
+    assigned = assigned & set(queue)
     assigned_main = {k for k in assigned if not _is_historical(k)}
     assigned_hist = {k for k in assigned if _is_historical(k)}
-    retries = recovery_retry_keys(state) & set(queue)
+    retries = {k for k in queue if 0 < _attempt_count(state.get("records", {}).get(k)) < MAX_RECOVERY_ATTEMPTS}
     return {
         "verified": len(verified),
         "verified_main": len([k for k in verified if not _is_historical(k)]),
@@ -533,7 +533,8 @@ def status_counts(state: dict[str, Any], reader: dict[str, Any], pending_keys: l
         "assigned_main": len(assigned_main),
         "assigned_historical": len(assigned_hist),
         "recovery_retries": len(retries),
-        "manual_verification": len(manual),
+        "manual_verification": len([k for k in manual if _attempt_count(state.get("records", {}).get(k)) < MAX_RECOVERY_ATTEMPTS]),
+        "dropped_after_3_failures": len([k for k, r in state.get("records", {}).items() if isinstance(r, dict) and r.get("status") == "dropped_after_3_failures" and _attempt_count(r) >= MAX_RECOVERY_ATTEMPTS]),
         "unassigned_pending": len([k for k in queue if k not in assigned]),
     }
 
@@ -557,6 +558,34 @@ def _display_manual_row(key: str, row: dict[str, Any]) -> str:
     return " — ".join(bits)
 
 
+def write_dropped_audit(state: dict[str, Any], path: Path) -> None:
+    """Compact, independently inspectable index; full per-route evidence remains in ledger."""
+    dropped = []
+    for key, rec in sorted(state.get("records", {}).items()):
+        if not isinstance(rec, dict) or rec.get("status") != "dropped_after_3_failures":
+            continue
+        history = rec.get("recovery_history") if isinstance(rec.get("recovery_history"), list) else []
+        dropped.append({
+            "record_key": key,
+            "title": rec.get("title", ""),
+            "source": rec.get("source_name", ""),
+            "url": rec.get("url", ""),
+            "recovery_attempts_recorded": _attempt_count(rec),
+            "recovery_history_entries_retained": len(history),
+            "history_package_ids": [h.get("package_id", "") for h in history if isinstance(h, dict)],
+            "closed_at": rec.get("closed_at") or rec.get("manual_verification_since") or rec.get("last_recovery_at") or "",
+            "reason": rec.get("drop_reason") or rec.get("recovery_reason") or "",
+        })
+    audit = {
+        "profile": "radar-deep-scan-dropped-index-v1",
+        "rule": "After 3 recorded failed research passes, close as dropped; no hands-on queue. Package issuance alone is not a research pass.",
+        "note": "The full retrieval notes and available recovery history remain in deep_scan_work_state.json. Some legacy records have fewer retained history entries than the recorded attempt counter; no missing attempts are invented.",
+        "count": len(dropped),
+        "records": dropped,
+    }
+    path.write_text(json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
 def write_status_markdown(
     state: dict[str, Any],
     reader: dict[str, Any],
@@ -568,16 +597,17 @@ def write_status_markdown(
         "# Deep Scan V2 work status",
         "",
         "This file is generated from the authoritative Deep Scan sidecar plus the persistent worker-assignment ledger.",
-        "It exists so a new chat or operator can see what has already been verified, what each worker owns, and what now needs hands-on verification.",
+        "It shows what is verified, what each worker owns, and what is still eligible. Exhausted failures are closed, not work-by-hand.",
         "",
-        "Scheduling policy: preserve existing worker reservations; fill new slots with fresh **Main Radar first**; then use spare capacity for **Historical Radar**. Access-recovery retries are bounded and throttled so difficult works cannot consume every run.",
-        f"A validated `defer` counts as one genuine recovery pass. After **{MAX_RECOVERY_ATTEMPTS}** unsuccessful passes, the work leaves the automatic queue and enters **Hands-on verification needed**.",
+        "Scheduling policy: preserve active worker reservations; fill new slots with Main Radar first, then Historical Radar. Do not fill packages artificially at saturation.",
+        f"A validated unsuccessful recovery is one pass; packaging alone is not a pass. After **{MAX_RECOVERY_ATTEMPTS}** failed passes, close the work as **dropped**, keeping an audit. No work-by-hand loop.",
         "",
         f"- Authoritative V2 verified: **{counts['verified']}** (Main **{counts['verified_main']}** + Historical **{counts['verified_historical']}**)",
         f"- Automatic queue still needing V2 verification: **{counts['pending_total']}** (Main **{counts['pending_main']}** + Historical **{counts['pending_historical']}**)",
         f"- Currently assigned to workers: **{counts['assigned']}** (Main **{counts['assigned_main']}** + Historical **{counts['assigned_historical']}**)",
         f"- Bounded access-recovery retries still eligible: **{counts['recovery_retries']}**",
-        f"- Hands-on verification needed: **{counts['manual_verification']}**",
+        f"- Dropped after three failed recovery passes (archived): **{counts['dropped_after_3_failures']}**",
+        f"- Legacy work-by-hand requiring reconciliation: **{counts['manual_verification']}**",
         f"- Automatic queue pending and not yet assigned: **{counts['unassigned_pending']}**",
         "",
         "## Worker lanes",
@@ -603,19 +633,17 @@ def write_status_markdown(
                 lines.append(f"  - … plus {len(assigned) - 8} more in the package manifest")
         lines.append("")
 
-    manual_rows = [
-        (key, row) for key, row in state.get("records", {}).items()
-        if isinstance(row, dict) and str(row.get("status") or "") in TERMINAL_MANUAL_STATUSES
-    ]
-    manual_rows.sort(key=lambda x: str(x[1].get("manual_verification_since") or x[1].get("deferred_at") or x[1].get("last_recovery_at") or ""))
-    if manual_rows:
-        lines.extend([
-            "## Hands-on verification needed",
-            "",
-            "These works no longer consume automatic Deep Scan slots. Their identity is believed to be real, but substantive evidence could not be recovered automatically. Re-open one only when you have a new source, PDF, repository copy, or other materially new access route.",
-            "",
-        ])
-        for key, row in manual_rows:
-            lines.append(f"- `{key}` — {_display_manual_row(key, row)}")
-        lines.append("")
+    # Terminally dropped works must never be expanded into a perpetual hands-on list.
+    # An audit index is generated next to the status file; all detailed evidence
+    # remains unchanged in the authoritative state ledger.
+    write_dropped_audit(state, path.parent / "DEEP_SCAN_DROPPED.json")
+    lines.extend([
+        "## Closure policy",
+        "",
+        "Three unsuccessful recorded recovery attempts -> `dropped_after_3_failures` and",
+        "`admission_state.json: drop_unverifiable`; no further Deep Scan or manual-work queue.",
+        "The full attempt notes remain in `deep_scan_work_state.json`; see `DEEP_SCAN_DROPPED.json` for the compact index.",
+        "Records with fewer than three documented completed attempts are not auto-dropped.",
+        "",
+    ])
     path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
