@@ -6,28 +6,28 @@ It shows what is verified, what each worker owns, and what is still eligible. Ex
 Scheduling policy: preserve active worker reservations; fill new slots with Main Radar first, then Historical Radar. Do not fill packages artificially at saturation.
 A validated unsuccessful recovery is one pass; packaging alone is not a pass. After **3** failed passes, close the work as **dropped**, keeping an audit. No work-by-hand loop.
 
-- Authoritative V2 verified: **2693** (Main **1105** + Historical **1588**)
-- Automatic queue still needing V2 verification: **28** (Main **13** + Historical **15**)
-- Currently assigned to workers: **25** (Main **13** + Historical **12**)
-- Bounded access-recovery retries still eligible: **12**
+- Authoritative V2 verified: **2705** (Main **1107** + Historical **1598**)
+- Automatic queue still needing V2 verification: **33** (Main **25** + Historical **8**)
+- Currently assigned to workers: **26** (Main **19** + Historical **7**)
+- Bounded access-recovery retries still eligible: **11**
 - Dropped after three failed recovery passes (archived): **171**
 - Legacy work-by-hand requiring reconciliation: **0**
-- Automatic queue pending and not yet assigned: **3**
+- Automatic queue pending and not yet assigned: **7**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261027T092456Z-40aa9535af8e`
-- Assigned unresolved records: **19**
-  1. `link:https://ecipe.org/publications/forward-looking-agenda-for-eu-quantum-policy/#_ftnref5` — From Sovereignty to Managed Interdependence: A Forward-Looking Agenda for EU Quantum Policy
-  2. `link:https://doi.org/10.1515/ordo-2026-2012` — Towards a rule-bound EU transformation policy: Can Ordnungspolitik and industrial strategy be reconciled?
-  3. `link:https://doi.org/10.1093/eurpub/ckag169.1923` — Reducing Salt Intake through EU Sustainable Public Procurement in Daycare Meals in Copenhagen
-  4. `link:https://doi.org/10.1093/eurpub/ckag169.087` — G.2. Round Table: From call to action to delivery: scaling climate–health solutions across Europe
-  5. `link:https://doi.org/10.1093/eurpub/ckag169.430` — P.7. Round Table: Building the foundation: Data governance and harmonisation for CVD and diabetes in Europe
-  6. `link:https://doi.org/10.1177/16118944261490056` — An Offshore Financial Centre Inside Europe: Luxembourg, Taxation and European Economic Community (1960s–1970s)
-  7. `link:https://doi.org/10.1093/eurpub/ckag169.883` — Governance, not technology: low-hanging fruits for AI readiness in Europe, a latent class analysis
-  8. `historical:id:a14995febfdbba0c` — Stable decoupling: Three tests for Europe in the face of Chinese economic coercion – European Council on Foreign Relations
-  - … plus 11 more in the package manifest
+- Current package: `worker-a-20261027T170445Z-e30dc563a099`
+- Assigned unresolved records: **20**
+  1. `link:https://www.cer.eu/sites/default/files/IB_Evidence_HofC_foreign_affair_committee_Russia_Oct26.pdf` — Evidence to the House of Commons Foreign Affairs Committee's Inquiry on Russia
+  2. `link:https://www.businesseurope.eu/wp-content/uploads/2026/10/2026-10-27-Priorities-for-European-startups-and-scaleups.pdf` — Priorities for European startups and scaleups - a BusinessEurope position paper
+  3. `link:https://institutdelors.eu/en/publications/made-in-europe-yet-another-missed-opportunity-in-the-mediterranean/` — ‘Made in Europe’: yet another missed opportunity in the Mediterranean - Institut Jacques Delors
+  4. `link:https://merics.org/en/video/merics-media-briefing-xi-jinping-visits-usa` — MERICS Media Briefing: Xi Jinping visits the USA
+  5. `link:https://data.consilium.europa.eu/doc/document/ST-13708-2026-INIT/en/pdf` — The aim is to establish harmonised conditions for disbursing public money with the purpose of strengthening the Union’s industrial capacity and thus reducing economic dependencies.
+  6. `link:https://data.consilium.europa.eu/doc/document/ST-12886-2026-INIT/en/pdf` — EU competition rules have been part of the bedrock of the internal market from the outset.
+  7. `link:https://link.epo.org/web/publications/studies/en-europes-technology-transfer-landscape.pdf` — From public research to market success: Europe’s tech transfer challenge
+  8. `link:https://data.consilium.europa.eu/doc/document/ST-12236-2026-REV-1/en/pdf` — Changes in comparison to the first Presidency compromise texts included in documents ST 10817/26, 11237/26 and 11423/26 are marked in bold for additions and in strikethrough for deletions.
+  - … plus 12 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-20261026T115433Z-adc5978a6022`
