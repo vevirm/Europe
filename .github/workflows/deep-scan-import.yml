@@ -132,7 +132,7 @@ jobs:
             ':!migration-reports/latest-deep-scan-active-rebuild.json' \
             ':!migration-reports/latest-deep-a-promotion.json' ':!deep_scan_inbox/**' \
             ':!deep_scan_work_state.json' ':!DEEP_SCAN_STATUS.md' \
-            ':!DEEP_SCAN_LAST_IMPORT.json' \
+            ':!DEEP_SCAN_DROPPED.json' ':!DEEP_SCAN_LAST_IMPORT.json' \
             ':!deep_a_candidates.json' ':!deep_a_candidate_archive.json' || true)"
           if [[ -n "$unexpected" ]]; then
             echo '::error::Deep Scan import changed an unexpected tracked file. Refusing to save.'
