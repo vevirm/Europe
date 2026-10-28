@@ -96,6 +96,7 @@
     {match:/\/briefing\/?$/,key:'briefing',title:'Topics',purpose:'What the Radar is seeing, grouped by subject.'},
     {match:/\/glossary\/?$/,key:'glossary',title:'Glossary',purpose:'Plain meanings for the terms used across the Radar.'},
     {match:/\/stuff\/?$/,key:'stuff',title:'Stuff',purpose:'Technical details, downloadable data and supporting material.'},
+    {match:/\/2026-stuff\/?$/,key:'2026-stuff',title:'2026 Stuff',purpose:'Publications found by the Radar from 1 January 2026 onward.'},
     {match:/\/explore\/?$/,key:'explore',title:'More',purpose:'Other ways to look at the Radar.'}
   ];
   const page=pages.find(x=>x.match.test(path));
@@ -116,7 +117,8 @@
     ['shocks/','External Shocks',''],
     ['2035/','2035',''],
     ['glossary/','Glossary','menu-group-final'],
-    ['stuff/','Stuff','']
+    ['stuff/','Stuff',''],
+    ['2026-stuff/','2026 Stuff','']
   ];
   const activeFor=target=>{
     if(target==='frontier/quick/')return page.key==='frontier-quick'||page.key==='frontier';
