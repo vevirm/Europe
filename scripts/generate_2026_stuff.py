@@ -107,57 +107,119 @@ def collect():
     return sorted(records.values(), key=lambda r: (r['date'], r['title']), reverse=True)
 
 def excel(records, target):
-    from artifact_tool import Workbook, SpreadsheetFile
-    workbook = Workbook.create()
-    intro = workbook.worksheets.add('START HERE')
-    intro.get_range('A1:B7').values = [
-        ['2026 — ALL ITEMS FOUND BY THE RADAR', ''],
-        ['Period', '1 January–31 December 2026 (records available at generation)'],
-        ['Total unique source URLs', len(records)],
-        ['Research / reports', sum(r['strand'] != 'C' for r in records)],
-        ['Signals / news', sum(r['strand'] == 'C' for r in records)],
-        ['Date rule', 'Publication date; available Deep Scan corrections applied'],
-        ['Scope', 'Discovered sources, not a census of all publications or independently verified conclusions'],
-    ]
-    intro.get_range('A1:B1').format.fill = '#102344'
-    intro.get_range('A1:B1').format.font.color = '#FFFFFF'
-    intro.get_range('A1:B1').format.font.bold = True
-    intro.get_range('A:A').format.column_width = 37
-    intro.get_range('B:B').format.column_width = 85
-    headers = ['Publication date','Title / headline','Source','Authors','Strand','Record class','Original collection','Active Radar','Date corrected','Topics','Summary / finding excerpt','Source URL']
-    def xmlsafe(value):
-        return re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', str(value))
+    """Write a readable XLSX using Python's standard-library OOXML ZIP support.
+
+    No PyPI-only spreadsheet package is needed on GitHub Actions runners.
+    """
+    from zipfile import ZipFile, ZIP_DEFLATED
+    from xml.sax.saxutils import escape
+
+    headers = ['Publication date', 'Title / headline', 'Source', 'Authors', 'Strand',
+               'Record class', 'Original collection', 'Active Radar', 'Date corrected',
+               'Topics', 'Summary / finding excerpt', 'Source URL']
     def row(r):
-        return [r['date'],r['title'],r['source'],r['authors'],r['strand'],r['record_type'],r['original_collection'],
-                'Yes' if r['in_active_radar'] else 'No','Yes' if r['date_corrected'] else 'No',
-                ', '.join(map(str,r['topics'])),r['summary'],r['url']]
-    for name, subset in [('All 2026 items', records), ('Research and reports', [r for r in records if r['strand']!='C']),
-                         ('Signals and news', [r for r in records if r['strand']=='C'])]:
-        sheet = workbook.worksheets.add(name)
-        sheet.get_range_by_indexes(0,0,len(subset)+1,len(headers)).values = [headers]+[[xmlsafe(v) for v in row(r)] for r in subset]
-        head = sheet.get_range('A1:L1')
-        head.format.fill = '#102344'
-        head.format.font.color = '#FFFFFF'
-        head.format.font.bold = True
-        sheet.freeze_panes.freeze_rows(1)
-        for col, width in [('A',18),('B',60),('C',30),('D',26),('E',12),('F',21),('G',26),('H',16),('I',18),('J',44),('K',90),('L',65)]:
-            sheet.get_range(f'{col}:{col}').format.column_width = width
-        sheet.tables.add(f'A1:L{len(subset)+1}', True, 'T'+name.replace(' ','').replace('2026','Y2026'))
-    months=collections.defaultdict(lambda:[0,0])
+        return [r['date'], r['title'], r['source'], r['authors'], r['strand'],
+                r['record_type'], r['original_collection'],
+                'Yes' if r['in_active_radar'] else 'No',
+                'Yes' if r['date_corrected'] else 'No',
+                ', '.join(map(str, r['topics'])), r['summary'], r['url']]
+    months = collections.defaultdict(lambda: [0, 0])
     for rec in records:
-        bucket=months[rec['date'][:7]]
-        bucket[1 if rec['strand']=='C' else 0]+=1
-    monthly=workbook.worksheets.add('Months')
-    matrix=[['Month','Research / reports','Signals / news','Total']]
-    for month in sorted(months):
-        a,b=months[month]
-        matrix.append([month,a,b,a+b])
-    monthly.get_range_by_indexes(0,0,len(matrix),4).values=matrix
-    monthly.get_range('A1:D1').format.fill='#102344'
-    monthly.get_range('A1:D1').format.font.color='#FFFFFF'
-    monthly.get_range('A1:D1').format.font.bold=True
-    monthly.get_range('A:D').format.column_width=24
-    SpreadsheetFile.export_xlsx(workbook).save(str(target))
+        months[rec['date'][:7]][1 if rec['strand'] == 'C' else 0] += 1
+    sheets = [
+        ('START HERE', [
+            ['2026 — ALL ITEMS FOUND BY THE RADAR', ''],
+            ['Period', '1 January–31 December 2026 (records available at generation)'],
+            ['Total unique source URLs', len(records)],
+            ['Research / reports', sum(r['strand'] != 'C' for r in records)],
+            ['Signals / news', sum(r['strand'] == 'C' for r in records)],
+            ['Date rule', 'Publication date; available Deep Scan corrections applied'],
+            ['Scope', 'Discovered sources, not a census of all publications or independently verified conclusions'],
+        ]),
+        ('All 2026 items', [headers] + [row(r) for r in records]),
+        ('Research and reports', [headers] + [row(r) for r in records if r['strand'] != 'C']),
+        ('Signals and news', [headers] + [row(r) for r in records if r['strand'] == 'C']),
+        ('Months', [['Month', 'Research / reports', 'Signals / news', 'Total']] + [
+            [month, a, b, a+b] for month, (a, b) in sorted(months.items())]),
+    ]
+
+    def colname(index):
+        result = ''
+        while index:
+            index, mod = divmod(index - 1, 26)
+            result = chr(65 + mod) + result
+        return result
+
+    def xmltext(value):
+        clean = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', str(value))
+        return escape(clean, {'"': '&quot;', "'": '&apos;'})
+
+    def sheet_xml(rows, widths):
+        import numbers
+        out = ['<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
+               '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">',
+               '<sheetViews><sheetView workbookViewId="0"><pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews>',
+               '<cols>']
+        for index, width in enumerate(widths, 1):
+            out.append(f'<col min="{index}" max="{index}" width="{width}" customWidth="1"/>')
+        out += ['</cols>', '<sheetData>']
+        for ri, values in enumerate(rows, 1):
+            out.append(f'<row r="{ri}">')
+            for ci, value in enumerate(values, 1):
+                address = f'{colname(ci)}{ri}'
+                style = ' s="1"' if ri == 1 else ''
+                if isinstance(value, numbers.Number) and not isinstance(value, bool):
+                    out.append(f'<c r="{address}"{style}><v>{value}</v></c>')
+                else:
+                    out.append(f'<c r="{address}"{style} t="inlineStr"><is><t xml:space="preserve">{xmltext(value)}</t></is></c>')
+            out.append('</row>')
+        out.append('</sheetData>')
+        if len(rows) > 1:
+            out.append(f'<autoFilter ref="A1:{colname(len(rows[0]))}{len(rows)}"/>')
+        out.append('</worksheet>')
+        return ''.join(out).encode('utf-8')
+
+    ns = 'http://schemas.openxmlformats.org/spreadsheetml/2006/main'
+    relns = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships'
+    with ZipFile(target, 'w', ZIP_DEFLATED, compresslevel=6) as z:
+        types = ['<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
+                 '<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">',
+                 '<Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>',
+                 '<Default Extension="xml" ContentType="application/xml"/>',
+                 '<Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>',
+                 '<Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/>']
+        for i in range(1, len(sheets)+1):
+            types.append(f'<Override PartName="/xl/worksheets/sheet{i}.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>')
+        z.writestr('[Content_Types].xml', ''.join(types) + '</Types>')
+        z.writestr('_rels/.rels', '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+                   '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'
+                   '<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/>'
+                   '</Relationships>')
+        wb = [f'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook xmlns="{ns}" xmlns:r="{relns}"><sheets>']
+        rels = ['<?xml version="1.0" encoding="UTF-8" standalone="yes"?>',
+                '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">']
+        for i, (name, rows) in enumerate(sheets, 1):
+            wb.append(f'<sheet name="{xmltext(name)}" sheetId="{i}" r:id="rId{i}"/>')
+            rels.append(f'<Relationship Id="rId{i}" Type="{relns}/worksheet" Target="worksheets/sheet{i}.xml"/>')
+            widths = ([36, 85] if i == 1 else
+                      [18, 60, 30, 26, 12, 21, 26, 16, 18, 44, 90, 65] if i in (2, 3, 4)
+                      else [24, 24, 24, 24])
+            z.writestr(f'xl/worksheets/sheet{i}.xml', sheet_xml(rows, widths))
+        wb.append('</sheets></workbook>')
+        rels.append(f'<Relationship Id="rId{len(sheets)+1}" Type="{relns}/styles" Target="styles.xml"/>')
+        z.writestr('xl/workbook.xml', ''.join(wb))
+        z.writestr('xl/_rels/workbook.xml.rels', ''.join(rels) + '</Relationships>')
+        z.writestr('xl/styles.xml', f'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+                  f'<styleSheet xmlns="{ns}"><fonts count="2"><font><sz val="11"/><name val="Aptos"/></font>'
+                  '<font><b/><color rgb="FFFFFFFF"/><sz val="11"/><name val="Aptos"/></font></fonts>'
+                  '<fills count="3"><fill><patternFill patternType="none"/></fill>'
+                  '<fill><patternFill patternType="gray125"/></fill>'
+                  '<fill><patternFill patternType="solid"><fgColor rgb="FF102344"/><bgColor indexed="64"/></patternFill></fill></fills>'
+                  '<borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders>'
+                  '<cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>'
+                  '<cellXfs count="2"><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/>'
+                  '<xf numFmtId="0" fontId="1" fillId="2" borderId="0" xfId="0" applyFont="1" applyFill="1"/></cellXfs>'
+                  '</styleSheet>')
 
 def main():
     parser=argparse.ArgumentParser()
