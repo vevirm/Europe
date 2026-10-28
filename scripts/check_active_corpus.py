@@ -2,6 +2,7 @@
 """Validate Radar V2 sidecars and generated active snapshot."""
 from __future__ import annotations
 
+import datetime as dt
 import json
 import sys
 from pathlib import Path
@@ -10,6 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from scripts.rebuild_active_radar import _apply_publication_routing
+from scripts.reconcile_publication_dates import month_cutoff
 from scripts.active_corpus import (
     RAW_COLLECTIONS, build_active_document, is_active_decision, load_admission, load_corrections,
     load_reader, record_key, validate_sidecars,
@@ -33,6 +36,19 @@ def main() -> int:
         active = json.loads(active_path.read_text(encoding="utf-8"))
         if not active.get("active_corpus_snapshot"):
             problems.append("radar_active.json is not marked as an active-corpus snapshot")
+
+    # The rebuild applies corrected-date publication routing AFTER central admission.
+    # Validate against the same routed view, not the old unrouted snapshot.
+    # Use the snapshot rebuild date so validation does not change at midnight.
+    rebuilt_at = (active.get("active_corpus") or {}).get("rebuilt_at") if isinstance(active.get("active_corpus"), dict) else None
+    if rebuilt_at:
+        try:
+            cutoff = month_cutoff(dt.date.fromisoformat(str(rebuilt_at)[:10])).isoformat()
+            _apply_publication_routing(expected, cutoff=cutoff)
+        except (ValueError, TypeError) as exc:
+            problems.append(f"invalid active snapshot rebuild timestamp: {exc}")
+    else:
+        problems.append("active snapshot missing rebuilt_at; cannot validate corrected-date routing")
 
     for collection in RAW_COLLECTIONS:
         exp_keys = [record_key(x) for x in expected.get(collection, []) if isinstance(x, dict)]
