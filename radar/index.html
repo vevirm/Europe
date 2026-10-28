@@ -252,7 +252,11 @@ async function loadRadar(){
   }
   // Main Radar is a verified surface: provisional scanner candidates stay in Stuff until Deep Scan checks them.
   const safeFilter=xs=>Array.isArray(xs)?xs.filter(x=>radarReady(x)&&publicDisplayOk(x)):[];
-  const d={...raw,strand_a:safeFilter(raw.strand_a),strand_b:safeFilter(raw.strand_b),strand_c:safeFilter(raw.strand_c)};
+  let routing=null;try{const response=await fetch('../publication_reconciliation.json?ts='+Date.now(),{cache:'no-store'});if(response.ok)routing=await response.json()}catch(_){/* Legacy deployment without routing file. */}
+  const exclude=new Set(routing?.earlier_from_recent_keys||[]);
+  const kept=xs=>safeFilter(xs).filter(x=>!exclude.has('link:'+(x.link||x.url||''))&&!exclude.has('id:'+(x.id||x.record_id||x.fingerprint||'')));
+  const moved=(routing?.recent_from_earlier||[]).filter(x=>radarReady(x)&&publicDisplayOk(x));
+  const d={...raw,strand_a:[...kept(raw.strand_a),...moved.filter(x=>x.strand==='A')],strand_b:[...kept(raw.strand_b),...moved.filter(x=>x.strand==='B')],strand_c:kept(raw.strand_c)};
   state.data=d;
   const A=d.strand_a||[],B=d.strand_b||[],C=d.strand_c||[];
   state.latestDate=Math.max(Date.parse(d.last_updated||'')||0,...[...A,...B,...C].map(dateMs));
