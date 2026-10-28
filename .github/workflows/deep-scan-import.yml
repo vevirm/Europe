@@ -57,6 +57,7 @@ jobs:
             --corpus .deep_scan_combined.json \
             --work-state deep_scan_work_state.json
           python scripts/promote_deep_a_candidates.py
+          python scripts/reconcile_publication_dates.py
           python scripts/check_reader_text.py
           python scripts/rebuild_active_radar.py --allow-large-change --report migration-reports/latest-deep-scan-active-rebuild.json
           python scripts/check_active_corpus.py
@@ -128,7 +129,7 @@ jobs:
 
           unexpected="$(git diff --name-only -- . \
             ':!reader_text.json' ':!admission_state.json' ':!record_corrections.json' \
-            ':!radar.json' ':!radar_active.json' ':!stuff/source_merit_ranking.xlsx' \
+            ':!radar.json' ':!radar_active.json' ':!publication_reconciliation.json' ':!stuff/source_merit_ranking.xlsx' \
             ':!migration-reports/latest-deep-scan-active-rebuild.json' \
             ':!migration-reports/latest-deep-a-promotion.json' ':!deep_scan_inbox/**' \
             ':!deep_scan_work_state.json' ':!DEEP_SCAN_STATUS.md' \
@@ -156,7 +157,7 @@ jobs:
         run: |
           set -euo pipefail
           git add \
-            reader_text.json admission_state.json record_corrections.json \
+            reader_text.json admission_state.json record_corrections.json publication_reconciliation.json \
             radar.json radar_active.json stuff/source_merit_ranking.xlsx \
             migration-reports/latest-deep-scan-active-rebuild.json \
             migration-reports/latest-deep-a-promotion.json deep_scan_inbox \
