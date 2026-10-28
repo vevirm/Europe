@@ -1,0 +1,45 @@
+name: Test Publication Date Fix
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out selected branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run publication reconciliation tests
+        run: python -m unittest -v tests.test_publication_date_reconciliation
+
+      - name: Recalculate routing without modifying repository
+        run: |
+          python scripts/reconcile_publication_dates.py --output "$RUNNER_TEMP/publication_reconciliation.json"
+          python - "$RUNNER_TEMP/publication_reconciliation.json" <<'PY'
+          import json, sys
+          d = json.load(open(sys.argv[1], encoding='utf-8'))
+          print('Cutoff:', d['cutoff'])
+          print('Earlier -> Recent:', d['counts']['recent_from_earlier'])
+          print('Recent -> Earlier:', d['counts']['earlier_from_recent'])
+          print('Needs review:', d['counts']['review'])
+          PY
+
+      - name: Check active rebuild without writing files
+        run: python scripts/rebuild_active_radar.py --check-only
+
+      - name: Upload routing report for inspection
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: publication-reconciliation-test-report
+          path: ${{ runner.temp }}/publication_reconciliation.json
+          if-no-files-found: ignore
