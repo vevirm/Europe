@@ -1,0 +1,86 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-b-20261029T092204Z-3f888158976a",
+  "results": [
+    {
+      "record_key": "historical:id:1c5ae0e8eb7014a6",
+      "source_hash": "acd4fc24",
+      "identity_hash": "ca5a9fbd409193c7",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Original publisher article contains the full 2022 text at https://www.institutmontaigne.org/en/expressions/russia-ukraine-short-term-energy-security-doctrines-long-term-climate-damage"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.institutmontaigne.org/en/expressions/russia-ukraine-short-term-energy-security-doctrines-long-term-climate-damage",
+            "title": "Russia-Ukraine: Short-Term Energy Security Doctrines, Long-Term Climate Damage?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Full primary-source article read on original publisher website."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_ECONOMIC_SECURITY",
+        "reason": "Direct historical evidence of EU strategic dependence on imported Russian gas and the trade-off between diversification and climate security."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2022-04-04"
+        },
+        "unset": [],
+        "reason": "Publisher publication date confirms this correction at https://www.institutmontaigne.org/en/expressions/russia-ukraine-short-term-energy-security-doctrines-long-term-climate-damage"
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "The record corresponds to the cited source publication."
+      },
+      "reader_title": "Russia-Ukraine: Short-Term Energy Security Doctrines, Long-Term Climate Damage?",
+      "reader_what": "An analysis of the 2022 Ukraine crisis warns that replacing Russian gas with LNG terminals could deepen European fossil-fuel lock-in.",
+      "reader_why": "",
+      "reader_more": "An analysis of the 2022 Ukraine crisis warns that replacing Russian gas with LNG terminals could deepen European fossil-fuel lock-in. The assessment is historical and prospective as of April 2022; it does not measure subsequent LNG outcomes or current Russian-gas dependency.",
+      "deep_analysis": {
+        "work_kind": "policy analysis",
+        "research_question": "How does this source address European economic security?",
+        "main_finding": "An analysis of the 2022 Ukraine crisis warns that replacing Russian gas with LNG terminals could deepen European fossil-fuel lock-in.",
+        "method_or_basis": "Original 4 April 2022 Institut Montaigne article compares energy-security choices in China, India, Japan and Europe, detailing the EU Russian-gas exposure and LNG terminal constraints.",
+        "qualification": "The assessment is historical and prospective as of April 2022; it does not measure subsequent LNG outcomes or current Russian-gas dependency.",
+        "radar_relevance": "Direct historical evidence of EU strategic dependence on imported Russian gas and the trade-off between diversification and climate security.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Joseph Dellatte",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_conditional",
+          "status": "observation",
+          "status_date": "2022-04-04",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "The assessment is historical and prospective as of April 2022; it does not measure subsequent LNG outcomes or current Russian-gas dependency.",
+          "text": "An analysis of the 2022 Ukraine crisis warns that replacing Russian gas with LNG terminals could deepen European fossil-fuel lock-in.",
+          "confidence": "high"
+        }
+      ]
+    }
+  ]
+}
