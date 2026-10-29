@@ -58,10 +58,20 @@ jobs:
           node scripts/generate_main_radar_workbook.js
           node scripts/generate_stuff_workbook.js
 
-      - name: Validate both workbooks and all historical records
+      - name: Commit only changed Excel files (retry on concurrent updates)
         shell: bash
         run: |
-          python3 - <<'PY'
+          set -euo pipefail
+          git config user.name 'radar-excel-exporter'
+          git config user.email 'actions@github.com'
+          for attempt in 1 2 3 4 5; do
+            # Never force-push and never overwrite another workflow's commits.
+            # On each attempt, build and validate against the actual latest main.
+            git fetch origin main
+            git reset --hard origin/main
+            node scripts/generate_main_radar_workbook.js
+            node scripts/generate_stuff_workbook.js
+            python3 - <<'PY'
           import json
           import xml.etree.ElementTree as ET
           from pathlib import Path
@@ -95,17 +105,17 @@ jobs:
               raise SystemExit('Ranked source counts differ between the two exports')
           print(f'Excel verified: Main={main_rows["All publication data"]} records; Historical={expected_hist} findings')
           PY
-
-      - name: Commit only changed Excel files
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name 'radar-excel-exporter'
-          git config user.email 'actions@github.com'
-          git add -- stuff/main_radar_stuff.xlsx stuff/source_merit_ranking.xlsx
-          if git diff --cached --quiet; then
-            echo 'Both Excel exports are already current.'
-            exit 0
-          fi
-          git commit -m 'Refresh Main and combined Historical Excel exports'
-          git push origin HEAD:main
+            git add -- stuff/main_radar_stuff.xlsx stuff/source_merit_ranking.xlsx
+            if git diff --cached --quiet; then
+              echo 'Both Excel exports are already current.'
+              exit 0
+            fi
+            git commit -m 'Refresh Main and combined Historical Excel exports'
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Remote main advanced during Excel export (attempt ${attempt}/5); retrying."
+            sleep "$(( attempt * 2 ))"
+          done
+          echo '::error::Excel push failed after five safe retries.'
+          exit 1
