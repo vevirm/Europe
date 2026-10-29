@@ -17,19 +17,19 @@ A validated unsuccessful recovery is one pass; packaging alone is not a pass. Af
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261029T141549Z-050c3dac22cd`
-- Assigned unresolved records: **5**
-  1. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=41efa9e7-d253-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Member States' consolidated comments on Presidency third compromise text on the recitals and Title III (Certification) - Publications Office of the EU — recovery attempt 2/3
-  2. `link:https://doi.org/10.1080/07036337.2026.2753502` — Constrained autonomy in EU external action: allied institutional hedging and the private compliance veto under US extraterritorial sanctions — recovery attempt 2/3
-  3. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f163e49d-d253-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Regulation on accelerating industrial capacity and decarbonisation (Industrial Accelerator Act) - Second Presidency Options Paper on Union Origin requirements - Publications Office of the EU — recovery attempt 2/3
-  4. `link:https://doi.org/10.1111/exsy.70465` — A Network‐Enhanced Supervised Learning Framework for Early Prediction of Corruption Risk Indicators in Public Procurement Data — recovery attempt 2/3
-  5. `link:https://doi.org/10.1080/13563467.2026.2751108` — Reconfiguring labour regimes in the Eastern industrial peripheries of the EU: a labour perspective on European industrial reorganisation within geoeconomic rivalry — recovery attempt 2/3
+- Current package: `worker-a-20261029T142048Z-ba895bb237cc`
+- Assigned unresolved records: **7**
+  1. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=41efa9e7-d253-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Member States' consolidated comments on Presidency third compromise text on the recitals and Title III (Certification) - Publications Office of the EU — recovery attempt 3/3
+  2. `link:https://doi.org/10.1080/07036337.2026.2753502` — Constrained autonomy in EU external action: allied institutional hedging and the private compliance veto under US extraterritorial sanctions — recovery attempt 3/3
+  3. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f163e49d-d253-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Regulation on accelerating industrial capacity and decarbonisation (Industrial Accelerator Act) - Second Presidency Options Paper on Union Origin requirements - Publications Office of the EU — recovery attempt 3/3
+  4. `link:https://doi.org/10.1111/exsy.70465` — A Network‐Enhanced Supervised Learning Framework for Early Prediction of Corruption Risk Indicators in Public Procurement Data — recovery attempt 3/3
+  5. `link:https://doi.org/10.1080/13563467.2026.2751108` — Reconfiguring labour regimes in the Eastern industrial peripheries of the EU: a labour perspective on European industrial reorganisation within geoeconomic rivalry — recovery attempt 3/3
+  6. `link:https://doi.org/10.1016/j.foodpol.2026.103185` — Advancing sustainable food systems cooperation in trade agreements: Lessons from Chile — recovery attempt 3/3
+  7. `link:https://doi.org/10.2478/bjes-2026-0029` — Regulating LLM training under EU copyright law and its linguistic implications for smaller languages such as Estonian — recovery attempt 3/3
 
 ### Worker B
 - Current package: `worker-b-20261029T141553Z-a6f415f8e42e`
-- Assigned unresolved records: **2**
-  1. `link:https://doi.org/10.1016/j.foodpol.2026.103185` — Advancing sustainable food systems cooperation in trade agreements: Lessons from Chile — recovery attempt 2/3
-  2. `link:https://doi.org/10.2478/bjes-2026-0029` — Regulating LLM training under EU copyright law and its linguistic implications for smaller languages such as Estonian — recovery attempt 2/3
+- Assigned unresolved records: **0**
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
