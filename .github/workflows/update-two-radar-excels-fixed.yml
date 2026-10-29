@@ -1,0 +1,121 @@
+name: Update Main and Main + Historical Excel files
+
+# These are repository snapshots: Main alone and Main + complete Historical.
+# Refresh after all workflows which can change scanner/Deep Scan evidence, as
+# well as manually, on direct edits, and periodically as a safety net.
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - 'R&I Radar Scan'
+      - 'Historical Top-Tier Scan'
+      - 'Deep Scan V2 — Import Returned Results'
+      - 'Strand A — Import LLM Research Discoveries'
+    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - 'radar.json'
+      - 'radar_active.json'
+      - 'historical/historical.json'
+      - 'reader_text.json'
+      - 'admission_state.json'
+      - 'record_corrections.json'
+  schedule:
+    - cron: '41 */4 * * *'
+
+permissions:
+  contents: write
+
+# Use the same lock as the scanning/import pipelines, so a refresh cannot
+# publish a stale snapshot while another scan is writing authoritative data.
+concurrency:
+  group: ri-radar-research-scanners
+  queue: max
+  cancel-in-progress: false
+
+jobs:
+  update-excel-exports:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out latest Main Radar and Historical data
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Rebuild both Excel snapshots using authoritative data
+        shell: bash
+        run: |
+          set -euo pipefail
+          node scripts/generate_main_radar_workbook.js
+          node scripts/generate_stuff_workbook.js
+
+      - name: Commit only changed Excel files (retry on concurrent updates)
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'radar-excel-exporter'
+          git config user.email 'actions@github.com'
+          for attempt in 1 2 3 4 5; do
+            # Never force-push and never overwrite another workflow's commits.
+            # On each attempt, build and validate against the actual latest main.
+            git fetch origin main
+            git reset --hard origin/main
+            node scripts/generate_main_radar_workbook.js
+            node scripts/generate_stuff_workbook.js
+            python3 - <<'PY'
+          import json
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          from zipfile import ZipFile
+
+          def inspect(path):
+              with ZipFile(path) as archive:
+                  bad = archive.testzip()
+                  if bad:
+                      raise SystemExit(f'Corrupt ZIP member: {bad} in {path}')
+                  root = ET.fromstring(archive.read('xl/workbook.xml'))
+                  sheets = [node.get('name') for node in root.findall('{*}sheets/{*}sheet')]
+                  sizes = {}
+                  for number, sheet in enumerate(sheets, 1):
+                      data = archive.read(f'xl/worksheets/sheet{number}.xml')
+                      sizes[sheet] = data.count(b'<row r="') - 1
+                  return sheets, sizes
+
+          main, main_rows = inspect('stuff/main_radar_stuff.xlsx')
+          both, both_rows = inspect('stuff/source_merit_ranking.xlsx')
+          expected_main = ['All publication data', 'Ranked sources', 'Method', 'Shock audit']
+          expected_both = ['All publication data', 'Historical findings', 'Ranked sources', 'Method', 'Shock audit']
+          if main != expected_main or both != expected_both:
+              raise SystemExit(f'Wrong sheet structure: main={main}; both={both}')
+          expected_hist = len(json.loads(Path('historical/historical.json').read_text(encoding='utf-8')).get('items', []))
+          if both_rows['Historical findings'] != expected_hist:
+              raise SystemExit(f'Historical findings missing: {both_rows["Historical findings"]}/{expected_hist}')
+          if main_rows['All publication data'] != both_rows['All publication data'] or main_rows['All publication data'] <= 0:
+              raise SystemExit('Main Radar rows differ between the two exports or are empty')
+          if main_rows['Ranked sources'] != both_rows['Ranked sources']:
+              raise SystemExit('Ranked source counts differ between the two exports')
+          print(f'Excel verified: Main={main_rows["All publication data"]} records; Historical={expected_hist} findings')
+          PY
+            git add -- stuff/main_radar_stuff.xlsx stuff/source_merit_ranking.xlsx
+            if git diff --cached --quiet; then
+              echo 'Both Excel exports are already current.'
+              exit 0
+            fi
+            git commit -m 'Refresh Main and combined Historical Excel exports'
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Remote main advanced during Excel export (attempt ${attempt}/5); retrying."
+            sleep "$(( attempt * 2 ))"
+          done
+          echo '::error::Excel push failed after five safe retries.'
+          exit 1
