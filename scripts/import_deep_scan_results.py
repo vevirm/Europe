@@ -534,6 +534,7 @@ def main() -> None:
     admission_changed = False
     seen_pairs: set[tuple[str, str, str]] = set()
     imported_files: list[Path] = []
+    review_files: list[Path] = []
     file_failures: list[str] = []
 
     for path in files:
@@ -835,7 +836,8 @@ def main() -> None:
                     print(f"ACCEPT {label} result {idx} with prose safeguards: {'; '.join(prose_problems)}")
         if file_had_valid_doc:
             if rejected_count > rejected_before or stale_count > stale_before:
-                print(f"PRESERVE {path.name}: contains rejected/stale work; retain for correction")
+                print(f"ARCHIVE {path.name}: contains rejected/stale work; retain for review")
+                review_files.append(path)
             else:
                 imported_files.append(path)
 
@@ -877,6 +879,7 @@ def main() -> None:
         "generated_at": utc_now(),
         "input_files": [p.name for p in files],
         "consumed_valid_files": [p.name for p in imported_files],
+        "archived_for_review": [p.name for p in review_files],
         "v2_accepted": accepted_v2,
         "legacy_v1_accepted": accepted_v1,
         "access_limited_passes": deferred_count,
@@ -887,6 +890,24 @@ def main() -> None:
         "duplicates": duplicate_count,
         "invalid_files": file_failures,
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    # Move rejected/stale files out of the live inbox without losing any original bytes.
+    # Archive names are content-addressed to avoid overwriting earlier submissions.
+    if review_files:
+        import hashlib
+        import shutil
+        archive_dir = args.inbox.parent / "deep_scan_review_archive"
+        archive_dir.mkdir(parents=True, exist_ok=True)
+        for path in review_files:
+            digest = hashlib.sha256(path.read_bytes()).hexdigest()[:12]
+            destination = archive_dir / f"{path.stem}--{digest}{path.suffix}"
+            if destination.exists():
+                if destination.read_bytes() != path.read_bytes():
+                    raise SystemExit(f"Review archive collision: {destination}")
+                path.unlink()
+            else:
+                shutil.move(str(path), str(destination))
+            print(f"ARCHIVED {path.name} -> {destination}")
 
     for path in imported_files:
         try:
