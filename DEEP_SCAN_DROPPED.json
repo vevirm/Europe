@@ -2,7 +2,7 @@
   "profile": "radar-deep-scan-dropped-index-v1",
   "rule": "After 3 recorded failed research passes, close as dropped; no hands-on queue. Package issuance alone is not a research pass.",
   "note": "The full retrieval notes and available recovery history remain in deep_scan_work_state.json. Some legacy records have fewer retained history entries than the recorded attempt counter; no missing attempts are invented.",
-  "count": 177,
+  "count": 178,
   "records": [
     {
       "record_key": "historical:id:02d0446b10283c5c",
@@ -1550,6 +1550,21 @@
       ],
       "closed_at": "2026-10-20T08:40:40Z",
       "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year"
+    },
+    {
+      "record_key": "link:https://doi.org/10.1177/16118944261490056",
+      "title": "An Offshore Financial Centre Inside Europe: Luxembourg, Taxation and European Economic Community (1960s–1970s)",
+      "source": "Journal of Modern European History",
+      "url": "https://doi.org/10.1177/16118944261490056",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261027T092456Z-40aa9535af8e",
+        "deep-scan-recovery-20261027-six-unresolved-v1",
+        "independent-review-20261029-pending-unreserved-v2"
+      ],
+      "closed_at": "2026-10-29T14:14:32Z",
+      "reason": "Substantive document not independently recoverable after completed source-verification ladder; retain original bibliographic and scanner evidence in the historical audit."
     },
     {
       "record_key": "link:https://doi.org/10.1177/19427786261484938",
