@@ -7,25 +7,27 @@ Scheduling policy: preserve active worker reservations; fill new slots with Main
 A validated unsuccessful recovery is one pass; packaging alone is not a pass. After **3** failed passes, close the work as **dropped**, keeping an audit. No work-by-hand loop.
 
 - Authoritative V2 verified: **2816** (Main **1177** + Historical **1639**)
-- Automatic queue still needing V2 verification: **8** (Main **7** + Historical **1**)
-- Currently assigned to workers: **8** (Main **7** + Historical **1**)
+- Automatic queue still needing V2 verification: **26** (Main **9** + Historical **17**)
+- Currently assigned to workers: **19** (Main **2** + Historical **17**)
 - Bounded access-recovery retries still eligible: **7**
 - Dropped after three failed recovery passes (archived): **185**
 - Legacy work-by-hand requiring reconciliation: **0**
-- Automatic queue pending and not yet assigned: **0**
+- Automatic queue pending and not yet assigned: **7**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261101T094856Z-d0bc2e070126`
-- Assigned unresolved records: **7**
-  1. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=ab289355-d3aa-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU)2019/881 (The Cybersecurity Act 2) – Title II (ENISA) - Presentation by the Presidency - Publications Office of the EU — recovery attempt 2/3
-  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=edc102a9-d3b0-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) – Title II (Fees), Articles 47 - Presentation by the Commission - Publications Office of the EU — recovery attempt 2/3
-  3. `link:https://doi.org/10.1080/03068374.2026.2740496` — THE MAGHREB AND THE MIDDLE KINGDOM: CHINA’S EV SUPPLY-CHAIN DIPLOMACY IN AN ERA OF GEOPOLITICAL RIVALRY — recovery attempt 2/3
-  4. `link:https://doi.org/10.1016/j.respol.2026.105657` — The effects of national security assessments in public procurement on competition, sustainability, innovation, and critical technology procurement — recovery attempt 2/3
-  5. `link:https://doi.org/10.1080/13563467.2026.2751110` — The semi-periphery's ‘defence dividend’: redistribution of labour in Europe's defence industry — recovery attempt 2/3
-  6. `link:https://doi.org/10.1080/13563467.2026.2751102` — Globalization unravelling? ASML and the geopolitics of Europe-China tech decoupling — recovery attempt 2/3
-  7. `link:https://doi.org/10.1016/j.erss.2026.105047` — Monopolising the green transition: China's structural dominance and selective weaponisation of critical raw materials in Europe — recovery attempt 2/3
+- Current package: `worker-a-20261102T152113Z-2b1cc2661e2a`
+- Assigned unresolved records: **18**
+  1. `link:https://doi.org/10.1016/j.ijhydene.2026.158363` — Process analysis of low-temperature steam reforming of DME with integrated carbon capture
+  2. `link:https://doi.org/10.1016/j.scs.2026.108044` — Monitoring and forecasting of urban air pollution and exceedance events: implications for environmental risk assessment and early warning communication using machine learning in sustainable cities
+  3. `historical:id:c7be77885788319e` — Macroeconomic and institutional impacts of energy security risk in the European Union
+  4. `historical:id:52a10b4b2e05351c` — Joris Teer on China's rare earth export controls
+  5. `historical:id:01668b1a0bb8a4a8` — "European countries are also likely to be boycotted if China really wants to stop [rare earth] exports to the US"
+  6. `historical:id:d19cfd4c9521443f` — Does Europe want to become the supercontinent of raw materials?
+  7. `historical:id:6199d285ad497b8a` — European Union Enlargement and Geopolitical Power in the Face of War
+  8. `historical:id:1961cb046d0a1dfb` — Behind the façade of the Hague Summit, the disintegration of the transatlantic link - Institut Jacques Delors
+  - … plus 10 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-20261101T092736Z-c510784a458c`
