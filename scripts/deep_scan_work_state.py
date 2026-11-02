@@ -331,6 +331,16 @@ def fill_lane(
         }
     lane_row = state["lanes"][lane]
     lane_row["target_size"] = int(target_size)
+    # Both parallel workflows refresh lane A first and lane B second. The
+    # previous_assigned guard is useful only between those two preparations:
+    # it prevents B from reissuing A's just-replaced jobs. It must NOT survive
+    # into the next preparation run, or old A assignments remain blocked
+    # indefinitely even when no worker holds them. Start a fresh guard here;
+    # B will still see the previous_assigned list A creates below.
+    if lane == "A":
+        for other_lane in state["lanes"].values():
+            if isinstance(other_lane, dict):
+                other_lane.pop("previous_assigned", None)
     terminal = manual_verification_keys(state)
     prioritized = prioritize_pending_keys(state, pending_keys)
     pending_set = set(prioritized)
