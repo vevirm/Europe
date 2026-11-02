@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-11-02T15:49:09Z",
+  "generated_at": "2026-11-02T16:42:50Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -220994,8 +220994,106 @@
       "deep_scan_package_id": "worker-a-20261102T152113Z-2b1cc2661e2a",
       "claims": [],
       "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1016/j.respol.2026.105657": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "8593fe6e",
+      "identity_hash": "9fc843aa4c62bf75",
+      "reader_title": "Security checks in EU public procurement",
+      "reader_what": "Security assessments were associated with more innovation and critical-technology purchases only where domestic suppliers won contracts.",
+      "reader_why": "National security screening may support domestic technology capacity while complicating cross-border EU market coordination.",
+      "reader_more": "The researchers link a survey of 1,613 procurement projects with European tender data and compare outcomes when buyers used security assessments. Innovation and critical-technology procurement were more favourable in contracts awarded domestically. They did not find clear changes in competition or environmental sustainability. The authors warn that inconsistent national security screening could distort the EU procurement market.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed empirical journal research",
+        "research_question": "How are national-security assessments in public procurement related to competition, innovation, sustainability and critical technologies in EU member states?",
+        "main_finding": "Security assessments were positively associated with innovation and purchases of critical technologies only when contracts were awarded to domestic suppliers; competition and sustainability effects were not established.",
+        "method_or_basis": "EU-wide survey of 1,613 procurement projects awarded in 2022 matched to EU Tender Electronic Daily data; regression comparisons by award characteristics.",
+        "qualification": "Observational comparisons across procurements do not establish that security assessments caused the improvements; innovation benefits were limited to domestic-award cases.",
+        "radar_relevance": "Economic-security trade-off between screening foreign suppliers, fostering domestic strategic technology capacity and sustaining the EU internal procurement market.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "DOI resolver https://doi.org/10.1016/j.respol.2026.105657 could not be opened directly in this web session."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "The bundled full journal preproof obtained from authenticated DOI-linked OpenAlex W7224333197 identifies DOI 10.1016/j.respol.2026.105657, authors, Research Policy and methods."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Inspected substantial matching primary journal PDF cached at https://content.openalex.org/works/W7224333197.pdf; the preproof includes original introduction, method, and core outcomes."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_full_text_excerpt",
+            "url": "https://content.openalex.org/works/W7224333197.pdf",
+            "title": "The effects of national security assessments in public procurement on competition, sustainability, innovation, and critical technology procurement",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary Research Policy journal preproof and 1,613-procurement study text inspected from the package; DOI and title match. Data combine an EU-wide procurement survey with Tender Electronic Daily. The printed issue is 2027; online discovery occurred in October 2026."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_ECONOMIC_SECURITY_EVIDENCE",
+        "reason": "Verified empirical EU procurement study examines how security screening relates to critical-technology purchasing and innovation under domestic-versus-cross-border award conditions."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching same-work duplicates were supplied with this job."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-02T16:42:50Z",
+      "deep_scan_package_id": "worker-a-20261102T160139Z-d0bc2e070126",
+      "claims": [
+        {
+          "object": "digital.public_procurement",
+          "secondary_objects": [
+            "econsec.technology_security"
+          ],
+          "actor": {
+            "name": "Berkhout, Rainville, Janssen and Frenken",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-10-29",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Observational comparisons across procurements do not establish that security assessments caused the improvements; innovation benefits were limited to domestic-award cases.",
+          "text": "A pan-European study of 1,613 procurements associates security risk assessment with more innovation and critical technology procurement only for domestically awarded contracts.",
+          "confidence": "high",
+          "record_key": "link:https://doi.org/10.1016/j.respol.2026.105657",
+          "merit": 83,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:9fc843aa4c62bf75:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-11-02T15:49:09Z"
+  "claims_updated_at": "2026-11-02T16:42:50Z"
 }

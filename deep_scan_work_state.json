@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-deep-scan-work-state-v1",
-  "updated_at": "2026-11-02T16:01:42Z",
+  "updated_at": "2026-11-02T16:43:54Z",
   "lanes": {
     "A": {
       "target_size": 36,
@@ -9,14 +9,12 @@
         "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=ab289355-d3aa-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
         "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=edc102a9-d3b0-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
         "link:https://doi.org/10.1080/03068374.2026.2740496",
-        "link:https://doi.org/10.1016/j.respol.2026.105657",
         "link:https://doi.org/10.1080/13563467.2026.2751110",
         "link:https://doi.org/10.1080/13563467.2026.2751102",
         "link:https://doi.org/10.1016/j.erss.2026.105047"
       ],
-      "current_package_id": "worker-a-20261102T160139Z-d0bc2e070126",
+      "current_package_id": "worker-a-20261102T164352Z-3d63f772ea9d",
       "package_history": [
-        "worker-a-1fcfddbd7f39",
         "worker-a-a82b366ad8c0",
         "worker-a-20261022T053439Z-21d1273a306c",
         "worker-a-20261022T055145Z-a5bde849d39e",
@@ -55,7 +53,8 @@
         "worker-a-20261101T092722Z-b5e10cee9735",
         "worker-a-20261101T094856Z-d0bc2e070126",
         "worker-a-20261102T152113Z-2b1cc2661e2a",
-        "worker-a-20261102T160139Z-d0bc2e070126"
+        "worker-a-20261102T160139Z-d0bc2e070126",
+        "worker-a-20261102T164352Z-3d63f772ea9d"
       ],
       "previous_assigned": []
     },
@@ -106148,50 +106147,50 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-11-01T09:27:22Z",
-      "last_package_id": "worker-a-20261102T160139Z-d0bc2e070126",
-      "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-11-02T16:01:41Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-11-01T09:47:27Z",
-      "last_recovery_package_id": "worker-a-20261101T092722Z-b5e10cee9735",
-      "recovery_reason": "The exact document exists and identity is independently verifiable, but its substantive content remains inaccessible after recorded recovery attempts.",
+      "last_package_id": "worker-a-20261102T164352Z-3d63f772ea9d",
+      "scan_package_attempts": 4,
+      "last_scan_package_at": "2026-11-02T16:43:53Z",
+      "recovery_attempts": 2,
+      "last_recovery_at": "2026-11-02T16:42:49Z",
+      "last_recovery_package_id": "worker-a-20261102T160139Z-d0bc2e070126",
+      "recovery_reason": "The linked Publications Office resource cannot be specifically identified or read; the generic 2026 ENISA proposal is a different work and must not substitute for this October 2026 document.",
       "verification": {
-        "identity_verified": true,
+        "identity_verified": false,
         "evidence_depth": "identity_only_after_recovery",
         "retrieval_attempts": [
           {
             "step": "supplied_url",
             "outcome": "failed",
-            "note": "Opened reader-facing https://op.europa.eu/o/opportal-service/download-handler?identifier=ab289355-d3aa-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=; the document was blocked, inaccessible or returned only an error rather than substantive matching text."
+            "note": "Original Publications Office download https://op.europa.eu/o/opportal-service/download-handler?identifier=ab289355-d3aa-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part= led to an official 404 error page in the scanner; direct browser retrieval was unavailable."
           },
           {
             "step": "doi",
             "outcome": "not_applicable",
-            "note": "Council WK institutional document Council working document WK 16667/26 (ENISA Presidency presentation), 26–27 October 2026 has no journal DOI; document number used for retrieval instead."
+            "note": "This Council Publications Office identifier ab289355-d3aa-11f1-9458-01aa75ed71a1 is not a DOI; no DOI was supplied."
           },
           {
             "step": "exact_title",
             "outcome": "failed",
-            "note": "Searched quoted exact work title: \"Proposal for a Regulation\" \"Title II (ENISA)\" \"Presentation by the Presidency\"; no usable matching full publication or substantive first-party text returned."
+            "note": "Quoted search for the exact supplied ENISA regulation proposal heading returned related Council working texts, not the item with Cellar identifier ab289355-d3aa-11f1-9458-01aa75ed71a1."
           },
           {
             "step": "title_author_year",
             "outcome": "failed",
-            "note": "Searched title/author/date/document identifier: \"WK 16667/26\" Council Presidency 2026; identity leads were found but no substantive matching text was accessible."
+            "note": "Searched Council of the EU / ENISA 2026 proposed ICT supply-chain regulation and 2026-10-27; found 2026/0011(COD), not a title-and-identifier match."
           },
           {
             "step": "official_publisher_or_repository",
             "outcome": "failed",
-            "note": "Austrian Parliament https://www.parlament.gv.at/gegenstand/XXVIII/EU/100144 identifies WK 16667/26 LIMITE but publishes no substantive presentation; Council and Publications Office open document routes do not expose its slides."
+            "note": "Checked Publications Office record with UUID ab289355-d3aa-11f1-9458-01aa75ed71a1 and the Council / EUR-Lex procedure register for 2026/0011(COD): legislative proposal is real, but the claimed October item was not specifically identified."
           },
           {
             "step": "broader_identity_search",
             "outcome": "failed",
-            "note": "\"WK 16667/26\" filetype:pdf and site:consilium.europa.eu \"WK 16667\"; identified EP Votes https://epvotes.com/documents/wk-16667-2026 explicitly listing no files for this restricted Council working document."
+            "note": "Searched complete UUID ab289355-d3aa-11f1-9458-01aa75ed71a1, short UUID fragment, and Council compromise ENISA October 2026 variants; no independently confirmed record or matching document text was recovered."
           }
         ],
         "recovered_sources": [],
-        "verification_note": "The DOI or independent issuing-body bibliography confirms Council working document WK 16667/26 (ENISA Presidency presentation), 26–27 October 2026 but all six access and institutional recovery routes failed to supply enough primary body text. Admission deliberately deferred without fabricating findings."
+        "verification_note": "Original EU download points to a 404 in the package. Broad ENISA proposal COM(2026)11 and Council WK texts are authentic but none confirms UUID ab289355-d3aa-11f1-9458-01aa75ed71a1 or the claimed 2026-10-27 object. The claimed specific record remains unverified after the recovery ladder."
       },
       "recovery_history": [
         {
@@ -106237,6 +106236,50 @@
             "recovered_sources": [],
             "verification_note": "The DOI or independent issuing-body bibliography confirms Council working document WK 16667/26 (ENISA Presidency presentation), 26–27 October 2026 but all six access and institutional recovery routes failed to supply enough primary body text. Admission deliberately deferred without fabricating findings."
           }
+        },
+        {
+          "attempt": 2,
+          "package_id": "worker-a-20261102T160139Z-d0bc2e070126",
+          "at": "2026-11-02T16:42:49Z",
+          "reason": "The linked Publications Office resource cannot be specifically identified or read; the generic 2026 ENISA proposal is a different work and must not substitute for this October 2026 document.",
+          "verification": {
+            "identity_verified": false,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failed",
+                "note": "Original Publications Office download https://op.europa.eu/o/opportal-service/download-handler?identifier=ab289355-d3aa-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part= led to an official 404 error page in the scanner; direct browser retrieval was unavailable."
+              },
+              {
+                "step": "doi",
+                "outcome": "not_applicable",
+                "note": "This Council Publications Office identifier ab289355-d3aa-11f1-9458-01aa75ed71a1 is not a DOI; no DOI was supplied."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "failed",
+                "note": "Quoted search for the exact supplied ENISA regulation proposal heading returned related Council working texts, not the item with Cellar identifier ab289355-d3aa-11f1-9458-01aa75ed71a1."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "failed",
+                "note": "Searched Council of the EU / ENISA 2026 proposed ICT supply-chain regulation and 2026-10-27; found 2026/0011(COD), not a title-and-identifier match."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "failed",
+                "note": "Checked Publications Office record with UUID ab289355-d3aa-11f1-9458-01aa75ed71a1 and the Council / EUR-Lex procedure register for 2026/0011(COD): legislative proposal is real, but the claimed October item was not specifically identified."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "failed",
+                "note": "Searched complete UUID ab289355-d3aa-11f1-9458-01aa75ed71a1, short UUID fragment, and Council compromise ENISA October 2026 variants; no independently confirmed record or matching document text was recovered."
+              }
+            ],
+            "recovered_sources": [],
+            "verification_note": "Original EU download points to a 404 in the package. Broad ENISA proposal COM(2026)11 and Council WK texts are authentic but none confirms UUID ab289355-d3aa-11f1-9458-01aa75ed71a1 or the claimed 2026-10-27 object. The claimed specific record remains unverified after the recovery ladder."
+          }
         }
       ]
     },
@@ -106250,50 +106293,50 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-11-01T09:27:22Z",
-      "last_package_id": "worker-a-20261102T160139Z-d0bc2e070126",
-      "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-11-02T16:01:41Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-11-01T09:47:27Z",
-      "last_recovery_package_id": "worker-a-20261101T092722Z-b5e10cee9735",
-      "recovery_reason": "The exact document exists and identity is independently verifiable, but its substantive content remains inaccessible after recorded recovery attempts.",
+      "last_package_id": "worker-a-20261102T164352Z-3d63f772ea9d",
+      "scan_package_attempts": 4,
+      "last_scan_package_at": "2026-11-02T16:43:53Z",
+      "recovery_attempts": 2,
+      "last_recovery_at": "2026-11-02T16:42:49Z",
+      "last_recovery_package_id": "worker-a-20261102T160139Z-d0bc2e070126",
+      "recovery_reason": "The linked Publications Office resource cannot be specifically identified or read; the generic 2026 ENISA proposal is a different work and must not substitute for this October 2026 document.",
       "verification": {
-        "identity_verified": true,
+        "identity_verified": false,
         "evidence_depth": "identity_only_after_recovery",
         "retrieval_attempts": [
           {
             "step": "supplied_url",
             "outcome": "failed",
-            "note": "Opened reader-facing https://op.europa.eu/o/opportal-service/download-handler?identifier=edc102a9-d3b0-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=; the document was blocked, inaccessible or returned only an error rather than substantive matching text."
+            "note": "Original Publications Office download https://op.europa.eu/o/opportal-service/download-handler?identifier=edc102a9-d3b0-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part= led to an official 404 error page in the scanner; direct browser retrieval was unavailable."
           },
           {
             "step": "doi",
             "outcome": "not_applicable",
-            "note": "Council WK institutional document Council working document WK 16206/26 (ENISA Article 47 fees presentation), 19–20 October 2026 has no journal DOI; document number used for retrieval instead."
+            "note": "This Council Publications Office identifier edc102a9-d3b0-11f1-9458-01aa75ed71a1 is not a DOI; no DOI was supplied."
           },
           {
             "step": "exact_title",
             "outcome": "failed",
-            "note": "Searched quoted exact work title: \"Cybersecurity Act 2\" \"Title II (Fees)\" \"Articles 47\" \"Presentation by the Commission\"; no usable matching full publication or substantive first-party text returned."
+            "note": "Quoted search for the exact supplied ENISA regulation proposal heading returned related Council working texts, not the item with Cellar identifier edc102a9-d3b0-11f1-9458-01aa75ed71a1."
           },
           {
             "step": "title_author_year",
             "outcome": "failed",
-            "note": "Searched title/author/date/document identifier: \"WK 16206/26\" ENISA Commission 2026; identity leads were found but no substantive matching text was accessible."
+            "note": "Searched Council of the EU / ENISA 2026 proposed ICT supply-chain regulation and 2026-10-20; found 2026/0011(COD), not a title-and-identifier match."
           },
           {
             "step": "official_publisher_or_repository",
             "outcome": "failed",
-            "note": "Austrian Parliament https://www.parlament.gv.at/gegenstand/XXVIII/EU/98885 identifies WK 16206/26 LIMITE, without any public presentation file; publication-office access failed."
+            "note": "Checked Publications Office record with UUID edc102a9-d3b0-11f1-9458-01aa75ed71a1 and the Council / EUR-Lex procedure register for 2026/0011(COD): legislative proposal is real, but the claimed October item was not specifically identified."
           },
           {
             "step": "broader_identity_search",
             "outcome": "failed",
-            "note": "\"WK 16206/26\" filetype:pdf and site:consilium.europa.eu \"WK 16206\"; EP Votes https://epvotes.com/documents/wk-16206-2026 lists the record but no files."
+            "note": "Searched complete UUID edc102a9-d3b0-11f1-9458-01aa75ed71a1, short UUID fragment, and Council compromise ENISA October 2026 variants; no independently confirmed record or matching document text was recovered."
           }
         ],
         "recovered_sources": [],
-        "verification_note": "The DOI or independent issuing-body bibliography confirms Council working document WK 16206/26 (ENISA Article 47 fees presentation), 19–20 October 2026 but all six access and institutional recovery routes failed to supply enough primary body text. Admission deliberately deferred without fabricating findings."
+        "verification_note": "Original EU download points to a 404 in the package. Broad ENISA proposal COM(2026)11 and Council WK texts are authentic but none confirms UUID edc102a9-d3b0-11f1-9458-01aa75ed71a1 or the claimed 2026-10-20 object. The claimed specific record remains unverified after the recovery ladder."
       },
       "recovery_history": [
         {
@@ -106338,6 +106381,50 @@
             ],
             "recovered_sources": [],
             "verification_note": "The DOI or independent issuing-body bibliography confirms Council working document WK 16206/26 (ENISA Article 47 fees presentation), 19–20 October 2026 but all six access and institutional recovery routes failed to supply enough primary body text. Admission deliberately deferred without fabricating findings."
+          }
+        },
+        {
+          "attempt": 2,
+          "package_id": "worker-a-20261102T160139Z-d0bc2e070126",
+          "at": "2026-11-02T16:42:49Z",
+          "reason": "The linked Publications Office resource cannot be specifically identified or read; the generic 2026 ENISA proposal is a different work and must not substitute for this October 2026 document.",
+          "verification": {
+            "identity_verified": false,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failed",
+                "note": "Original Publications Office download https://op.europa.eu/o/opportal-service/download-handler?identifier=edc102a9-d3b0-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part= led to an official 404 error page in the scanner; direct browser retrieval was unavailable."
+              },
+              {
+                "step": "doi",
+                "outcome": "not_applicable",
+                "note": "This Council Publications Office identifier edc102a9-d3b0-11f1-9458-01aa75ed71a1 is not a DOI; no DOI was supplied."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "failed",
+                "note": "Quoted search for the exact supplied ENISA regulation proposal heading returned related Council working texts, not the item with Cellar identifier edc102a9-d3b0-11f1-9458-01aa75ed71a1."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "failed",
+                "note": "Searched Council of the EU / ENISA 2026 proposed ICT supply-chain regulation and 2026-10-20; found 2026/0011(COD), not a title-and-identifier match."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "failed",
+                "note": "Checked Publications Office record with UUID edc102a9-d3b0-11f1-9458-01aa75ed71a1 and the Council / EUR-Lex procedure register for 2026/0011(COD): legislative proposal is real, but the claimed October item was not specifically identified."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "failed",
+                "note": "Searched complete UUID edc102a9-d3b0-11f1-9458-01aa75ed71a1, short UUID fragment, and Council compromise ENISA October 2026 variants; no independently confirmed record or matching document text was recovered."
+              }
+            ],
+            "recovered_sources": [],
+            "verification_note": "Original EU download points to a 404 in the package. Broad ENISA proposal COM(2026)11 and Council WK texts are authentic but none confirms UUID edc102a9-d3b0-11f1-9458-01aa75ed71a1 or the claimed 2026-10-20 object. The claimed specific record remains unverified after the recovery ladder."
           }
         }
       ]
@@ -106527,13 +106614,13 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-11-01T09:27:22Z",
-      "last_package_id": "worker-a-20261102T160139Z-d0bc2e070126",
-      "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-11-02T16:01:41Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-11-01T09:47:30Z",
-      "last_recovery_package_id": "worker-a-20261101T092722Z-b5e10cee9735",
-      "recovery_reason": "The exact document exists and identity is independently verifiable, but its substantive content remains inaccessible after recorded recovery attempts.",
+      "last_package_id": "worker-a-20261102T164352Z-3d63f772ea9d",
+      "scan_package_attempts": 4,
+      "last_scan_package_at": "2026-11-02T16:43:53Z",
+      "recovery_attempts": 2,
+      "last_recovery_at": "2026-11-02T16:42:49Z",
+      "last_recovery_package_id": "worker-a-20261102T160139Z-d0bc2e070126",
+      "recovery_reason": "Bibliographic identity is supported by a DOI-matched index or author/publisher record, but the accessible text is insufficient for an authoritative substantive assessment of this exact study.",
       "verification": {
         "identity_verified": true,
         "evidence_depth": "identity_only_after_recovery",
@@ -106541,36 +106628,43 @@
           {
             "step": "supplied_url",
             "outcome": "failed",
-            "note": "Opened reader-facing https://doi.org/10.1080/03068374.2026.2740496; the document was blocked, inaccessible or returned only an error rather than substantive matching text."
+            "note": "Could not retrieve DOI-linked journal article directly: https://doi.org/10.1080/03068374.2026.2740496; publisher returned 403 or DOI resolver inaccessible."
           },
           {
             "step": "doi",
-            "outcome": "failed",
-            "note": "Tried resolving https://doi.org/10.1080/03068374.2026.2740496 and the publisher full article route; access denied or content unavailable."
+            "outcome": "success",
+            "note": "DOI publication identity checked via scanner-authenticated OpenAlex DOI resolution or matching institutional record for 10.1080/03068374.2026.2740496; this confirms metadata, not article conclusions."
           },
           {
             "step": "exact_title",
-            "outcome": "failed",
-            "note": "Searched quoted exact work title: \"THE MAGHREB AND THE MIDDLE KINGDOM: CHINA’S EV SUPPLY-CHAIN DIPLOMACY IN AN ERA OF GEOPOLITICAL RIVALRY\"; no usable matching full publication or substantive first-party text returned."
+            "outcome": "limited",
+            "note": "Searched quoted title \"The Maghreb and the Middle Kingdom: China’s EV supply-chain diplomacy in an era of geopolitical rivalry\"; publication-level content was not retrieved."
           },
           {
             "step": "title_author_year",
-            "outcome": "failed",
-            "note": "Searched title/author/date/document identifier: \"Maghreb\" \"Middle Kingdom\" Mordechai Chaziza 2026 Asian Affairs; identity leads were found but no substantive matching text was accessible."
+            "outcome": "limited",
+            "note": "Searched Mordechai Chaziza 2026 China Egypt Morocco electric-vehicle industrial diplomacy and Asian Affairs; surfaced related publications but no full matching article."
           },
           {
             "step": "official_publisher_or_repository",
-            "outcome": "failed",
-            "note": "Original Taylor & Francis https://www.tandfonline.com/doi/full/10.1080/03068374.2026.2740496 returned an access error/403; University of Haifa https://cris.haifa.ac.il/ author publications located earlier distinct EV papers but no verified text of this specific article."
+            "outcome": "limited",
+            "note": "Publisher route https://www.tandfonline.com/doi/full/10.1080/03068374.2026.2740496 blocked or shows insufficient material; institutional/repository route https://cris.haifa.ac.il/en/persons/mordechai-chaziza/ supports identity or researcher affiliation only."
           },
           {
             "step": "broader_identity_search",
-            "outcome": "failed",
-            "note": "\"2740496\" Chaziza and site:cris.haifa.ac.il \"Maghreb\" \"Middle Kingdom\"; unrelated search hits or author’s earlier separate 2024 papers, no matching primary text."
+            "outcome": "limited",
+            "note": "Broader search using DOI 10.1080/03068374.2026.2740496, abbreviated title and university/repository copies did not provide substantial matching original full text; related studies were not substituted."
           }
         ],
-        "recovered_sources": [],
-        "verification_note": "The DOI or independent issuing-body bibliography confirms Mordechai Chaziza, Asian Affairs 2026, DOI 10.1080/03068374.2026.2740496 but all six access and institutional recovery routes failed to supply enough primary body text. Admission deliberately deferred without fabricating findings."
+        "recovered_sources": [
+          {
+            "kind": "institutional_identity_only",
+            "url": "https://cris.haifa.ac.il/en/persons/mordechai-chaziza/",
+            "title": "THE MAGHREB AND THE MIDDLE KINGDOM: CHINA’S EV SUPPLY-CHAIN DIPLOMACY IN AN ERA OF GEOPOLITICAL RIVALRY",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "The scanner cites DOI-matched OpenAlex W7224310169, which supports provisional bibliographic identification, while the publisher full text was blocked and no substantial matching author copy was recovered. Full mandatory recovery steps were attempted; result is coordination-only, not a keep/drop admission."
       },
       "recovery_history": [
         {
@@ -106616,6 +106710,57 @@
             "recovered_sources": [],
             "verification_note": "The DOI or independent issuing-body bibliography confirms Mordechai Chaziza, Asian Affairs 2026, DOI 10.1080/03068374.2026.2740496 but all six access and institutional recovery routes failed to supply enough primary body text. Admission deliberately deferred without fabricating findings."
           }
+        },
+        {
+          "attempt": 2,
+          "package_id": "worker-a-20261102T160139Z-d0bc2e070126",
+          "at": "2026-11-02T16:42:49Z",
+          "reason": "Bibliographic identity is supported by a DOI-matched index or author/publisher record, but the accessible text is insufficient for an authoritative substantive assessment of this exact study.",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failed",
+                "note": "Could not retrieve DOI-linked journal article directly: https://doi.org/10.1080/03068374.2026.2740496; publisher returned 403 or DOI resolver inaccessible."
+              },
+              {
+                "step": "doi",
+                "outcome": "success",
+                "note": "DOI publication identity checked via scanner-authenticated OpenAlex DOI resolution or matching institutional record for 10.1080/03068374.2026.2740496; this confirms metadata, not article conclusions."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "limited",
+                "note": "Searched quoted title \"The Maghreb and the Middle Kingdom: China’s EV supply-chain diplomacy in an era of geopolitical rivalry\"; publication-level content was not retrieved."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "limited",
+                "note": "Searched Mordechai Chaziza 2026 China Egypt Morocco electric-vehicle industrial diplomacy and Asian Affairs; surfaced related publications but no full matching article."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "limited",
+                "note": "Publisher route https://www.tandfonline.com/doi/full/10.1080/03068374.2026.2740496 blocked or shows insufficient material; institutional/repository route https://cris.haifa.ac.il/en/persons/mordechai-chaziza/ supports identity or researcher affiliation only."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "limited",
+                "note": "Broader search using DOI 10.1080/03068374.2026.2740496, abbreviated title and university/repository copies did not provide substantial matching original full text; related studies were not substituted."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "institutional_identity_only",
+                "url": "https://cris.haifa.ac.il/en/persons/mordechai-chaziza/",
+                "title": "THE MAGHREB AND THE MIDDLE KINGDOM: CHINA’S EV SUPPLY-CHAIN DIPLOMACY IN AN ERA OF GEOPOLITICAL RIVALRY",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "The scanner cites DOI-matched OpenAlex W7224310169, which supports provisional bibliographic identification, while the publisher full text was blocked and no substantial matching author copy was recovered. Full mandatory recovery steps were attempted; result is coordination-only, not a keep/drop admission."
+          }
         }
       ]
     },
@@ -106626,7 +106771,7 @@
       "url": "https://doi.org/10.1016/j.respol.2026.105657",
       "corpus_scope": "main",
       "queue_priority": "strand_a",
-      "status": "assigned",
+      "status": "verified",
       "lane": "A",
       "assigned_at": "2026-11-01T09:27:22Z",
       "last_package_id": "worker-a-20261102T160139Z-d0bc2e070126",
@@ -106719,7 +106864,9 @@
             "verification_note": "The DOI or independent issuing-body bibliography confirms Berkhout, Rainville, Janssen and Frenken, Research Policy 2027 56(1) article 105657, DOI 10.1016/j.respol.2026.105657 but all six access and institutional recovery routes failed to supply enough primary body text. Admission deliberately deferred without fabricating findings."
           }
         }
-      ]
+      ],
+      "verified_at": "2026-11-02T16:42:50Z",
+      "verified_package_id": "worker-a-20261102T160139Z-d0bc2e070126"
     },
     "link:https://rhg.com/research/bessent-takes-a-big-swing-with-outbound-investment-controls/": {
       "title": "Bessent Takes a Big Swing with Outbound Investment Controls",
@@ -106811,13 +106958,13 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-11-01T09:27:22Z",
-      "last_package_id": "worker-a-20261102T160139Z-d0bc2e070126",
-      "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-11-02T16:01:41Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-11-01T09:47:31Z",
-      "last_recovery_package_id": "worker-a-20261101T092722Z-b5e10cee9735",
-      "recovery_reason": "The exact document exists and identity is independently verifiable, but its substantive content remains inaccessible after recorded recovery attempts.",
+      "last_package_id": "worker-a-20261102T164352Z-3d63f772ea9d",
+      "scan_package_attempts": 4,
+      "last_scan_package_at": "2026-11-02T16:43:53Z",
+      "recovery_attempts": 2,
+      "last_recovery_at": "2026-11-02T16:42:50Z",
+      "last_recovery_package_id": "worker-a-20261102T160139Z-d0bc2e070126",
+      "recovery_reason": "Bibliographic identity is supported by a DOI-matched index or author/publisher record, but the accessible text is insufficient for an authoritative substantive assessment of this exact study.",
       "verification": {
         "identity_verified": true,
         "evidence_depth": "identity_only_after_recovery",
@@ -106825,36 +106972,43 @@
           {
             "step": "supplied_url",
             "outcome": "failed",
-            "note": "Opened reader-facing https://doi.org/10.1080/13563467.2026.2751110; the document was blocked, inaccessible or returned only an error rather than substantive matching text."
+            "note": "Could not retrieve DOI-linked journal article directly: https://doi.org/10.1080/13563467.2026.2751110; publisher returned 403 or DOI resolver inaccessible."
           },
           {
             "step": "doi",
-            "outcome": "failed",
-            "note": "Tried resolving https://doi.org/10.1080/13563467.2026.2751110 and the publisher full article route; access denied or content unavailable."
+            "outcome": "success",
+            "note": "DOI publication identity checked via scanner-authenticated OpenAlex DOI resolution or matching institutional record for 10.1080/13563467.2026.2751110; this confirms metadata, not article conclusions."
           },
           {
             "step": "exact_title",
-            "outcome": "failed",
-            "note": "Searched quoted exact work title: \"The semi-periphery's ‘defence dividend’: redistribution of labour in Europe's defence industry\"; no usable matching full publication or substantive first-party text returned."
+            "outcome": "limited",
+            "note": "Quoted exact title search located the Taylor & Francis New Political Economy title entry, but only index/abstract-level materials were accessible."
           },
           {
             "step": "title_author_year",
-            "outcome": "failed",
-            "note": "Searched title/author/date/document identifier: \"defence dividend\" Chovančík Ilavská Krpec 2026; identity leads were found but no substantive matching text was accessible."
+            "outcome": "limited",
+            "note": "Searched Chovančík, Ilavská and Krpec October 2026 defence dividend and Masaryk University author listings; older related defence studies could not substitute for this article."
           },
           {
             "step": "official_publisher_or_repository",
-            "outcome": "failed",
-            "note": "Taylor & Francis full article https://www.tandfonline.com/doi/full/10.1080/13563467.2026.2751110 inaccessible; journal subject listing https://www.tandfonline.com/subjects/politics-and-international-relations?ContentItemType=research-article&content=standard&pageSize=50&startPage=&target=default verifies identity only."
+            "outcome": "limited",
+            "note": "Publisher route https://www.tandfonline.com/doi/full/10.1080/13563467.2026.2751110 blocked or shows insufficient material; institutional/repository route https://www.muni.cz/en/people/102878-martin-chovancik/publications supports identity or researcher affiliation only."
           },
           {
             "step": "broader_identity_search",
-            "outcome": "failed",
-            "note": "Distinctive title and author searches also showed paper-picnic.com/international_relations listing metadata but no verified first-party full article or substantial content."
+            "outcome": "limited",
+            "note": "Broader search using DOI 10.1080/13563467.2026.2751110, abbreviated title and university/repository copies did not provide substantial matching original full text; related studies were not substituted."
           }
         ],
-        "recovered_sources": [],
-        "verification_note": "The DOI or independent issuing-body bibliography confirms Chovancik, Ilavská and Krpec, New Political Economy, 28 Oct 2026, DOI 10.1080/13563467.2026.2751110 but all six access and institutional recovery routes failed to supply enough primary body text. Admission deliberately deferred without fabricating findings."
+        "recovered_sources": [
+          {
+            "kind": "institutional_identity_only",
+            "url": "https://www.muni.cz/en/people/102878-martin-chovancik/publications",
+            "title": "The semi-periphery's ‘defence dividend’: redistribution of labour in Europe's defence industry",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Taylor & Francis journal catalogue lists this exact work and its authors with online date 28 October 2026; a ResearchGate index hints at full text, but directly inspectable matching full paper was not recovered. Full mandatory recovery steps were attempted; result is coordination-only, not a keep/drop admission."
       },
       "recovery_history": [
         {
@@ -106900,6 +107054,57 @@
             "recovered_sources": [],
             "verification_note": "The DOI or independent issuing-body bibliography confirms Chovancik, Ilavská and Krpec, New Political Economy, 28 Oct 2026, DOI 10.1080/13563467.2026.2751110 but all six access and institutional recovery routes failed to supply enough primary body text. Admission deliberately deferred without fabricating findings."
           }
+        },
+        {
+          "attempt": 2,
+          "package_id": "worker-a-20261102T160139Z-d0bc2e070126",
+          "at": "2026-11-02T16:42:50Z",
+          "reason": "Bibliographic identity is supported by a DOI-matched index or author/publisher record, but the accessible text is insufficient for an authoritative substantive assessment of this exact study.",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failed",
+                "note": "Could not retrieve DOI-linked journal article directly: https://doi.org/10.1080/13563467.2026.2751110; publisher returned 403 or DOI resolver inaccessible."
+              },
+              {
+                "step": "doi",
+                "outcome": "success",
+                "note": "DOI publication identity checked via scanner-authenticated OpenAlex DOI resolution or matching institutional record for 10.1080/13563467.2026.2751110; this confirms metadata, not article conclusions."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "limited",
+                "note": "Quoted exact title search located the Taylor & Francis New Political Economy title entry, but only index/abstract-level materials were accessible."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "limited",
+                "note": "Searched Chovančík, Ilavská and Krpec October 2026 defence dividend and Masaryk University author listings; older related defence studies could not substitute for this article."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "limited",
+                "note": "Publisher route https://www.tandfonline.com/doi/full/10.1080/13563467.2026.2751110 blocked or shows insufficient material; institutional/repository route https://www.muni.cz/en/people/102878-martin-chovancik/publications supports identity or researcher affiliation only."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "limited",
+                "note": "Broader search using DOI 10.1080/13563467.2026.2751110, abbreviated title and university/repository copies did not provide substantial matching original full text; related studies were not substituted."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "institutional_identity_only",
+                "url": "https://www.muni.cz/en/people/102878-martin-chovancik/publications",
+                "title": "The semi-periphery's ‘defence dividend’: redistribution of labour in Europe's defence industry",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "Taylor & Francis journal catalogue lists this exact work and its authors with online date 28 October 2026; a ResearchGate index hints at full text, but directly inspectable matching full paper was not recovered. Full mandatory recovery steps were attempted; result is coordination-only, not a keep/drop admission."
+          }
         }
       ]
     },
@@ -106913,13 +107118,13 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-11-01T09:27:22Z",
-      "last_package_id": "worker-a-20261102T160139Z-d0bc2e070126",
-      "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-11-02T16:01:41Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-11-01T09:47:31Z",
-      "last_recovery_package_id": "worker-a-20261101T092722Z-b5e10cee9735",
-      "recovery_reason": "The exact document exists and identity is independently verifiable, but its substantive content remains inaccessible after recorded recovery attempts.",
+      "last_package_id": "worker-a-20261102T164352Z-3d63f772ea9d",
+      "scan_package_attempts": 4,
+      "last_scan_package_at": "2026-11-02T16:43:53Z",
+      "recovery_attempts": 2,
+      "last_recovery_at": "2026-11-02T16:42:50Z",
+      "last_recovery_package_id": "worker-a-20261102T160139Z-d0bc2e070126",
+      "recovery_reason": "Bibliographic identity is supported by a DOI-matched index or author/publisher record, but the accessible text is insufficient for an authoritative substantive assessment of this exact study.",
       "verification": {
         "identity_verified": true,
         "evidence_depth": "identity_only_after_recovery",
@@ -106927,36 +107132,43 @@
           {
             "step": "supplied_url",
             "outcome": "failed",
-            "note": "Opened reader-facing https://doi.org/10.1080/13563467.2026.2751102; the document was blocked, inaccessible or returned only an error rather than substantive matching text."
+            "note": "Could not retrieve DOI-linked journal article directly: https://doi.org/10.1080/13563467.2026.2751102; publisher returned 403 or DOI resolver inaccessible."
           },
           {
             "step": "doi",
-            "outcome": "failed",
-            "note": "Tried resolving https://doi.org/10.1080/13563467.2026.2751102 and the publisher full article route; access denied or content unavailable."
+            "outcome": "success",
+            "note": "DOI publication identity checked via scanner-authenticated OpenAlex DOI resolution or matching institutional record for 10.1080/13563467.2026.2751102; this confirms metadata, not article conclusions."
           },
           {
             "step": "exact_title",
-            "outcome": "failed",
-            "note": "Searched quoted exact work title: \"Globalization unravelling? ASML and the geopolitics of Europe-China tech decoupling\"; no usable matching full publication or substantive first-party text returned."
+            "outcome": "limited",
+            "note": "Exact-title search found the Vrije Universiteit Amsterdam journal record, which offers only the authors’ abstract, not a substantial article text."
           },
           {
             "step": "title_author_year",
-            "outcome": "failed",
-            "note": "Searched title/author/date/document identifier: \"ASML\" \"Nana de Graaff\" \"Jasa Veselinovic\" 2026; identity leads were found but no substantive matching text was accessible."
+            "outcome": "limited",
+            "note": "Found a matching SocArXiv preprint registered as 10.31235/osf.io/dgz2h_v1 and an OSF download link, but the PDF download was not accessible to this browser."
           },
           {
             "step": "official_publisher_or_repository",
-            "outcome": "failed",
-            "note": "Official VU Amsterdam https://research.vu.nl/en/publications/globalization-unravelling-asml-and-the-geopolitics-of-europe-chin/ includes author-supplied abstract and DOI but no accessible article body. Taylor & Francis full article DOI access unsuccessful."
+            "outcome": "limited",
+            "note": "Publisher route https://www.tandfonline.com/doi/full/10.1080/13563467.2026.2751102 blocked or shows insufficient material; institutional/repository route https://research.vu.nl/en/publications/globalization-unravelling-asml-and-the-geopolitics-of-europe-chin/ supports identity or researcher affiliation only."
           },
           {
             "step": "broader_identity_search",
-            "outcome": "failed",
-            "note": "Search DOI suffix 2751102, 2026 New Political Economy, open-access author copy and research.vu.nl author record; found a detailed primary abstract but not the substantive full publication, while abstract-only evidence is explicitly insufficient."
+            "outcome": "limited",
+            "note": "Broader search using DOI 10.1080/13563467.2026.2751102, abbreviated title and university/repository copies did not provide substantial matching original full text; related studies were not substituted."
           }
         ],
-        "recovered_sources": [],
-        "verification_note": "The DOI or independent issuing-body bibliography confirms de Graaff, Veselinovič and Tyler, New Political Economy article, DOI 10.1080/13563467.2026.2751102 (30 Oct 2026) but all six access and institutional recovery routes failed to supply enough primary body text. Admission deliberately deferred without fabricating findings."
+        "recovered_sources": [
+          {
+            "kind": "institutional_identity_only",
+            "url": "https://research.vu.nl/en/publications/globalization-unravelling-asml-and-the-geopolitics-of-europe-chin/",
+            "title": "Globalization unravelling? ASML and the geopolitics of Europe-China tech decoupling",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Vrije Universiteit Amsterdam confirms matching DOI, author names, New Political Economy and 30 October 2026 release; the author preprint SocArXiv dgz2h_v1 is discoverable but its full PDF could not be fetched. Full mandatory recovery steps were attempted; result is coordination-only, not a keep/drop admission."
       },
       "recovery_history": [
         {
@@ -107001,6 +107213,57 @@
             ],
             "recovered_sources": [],
             "verification_note": "The DOI or independent issuing-body bibliography confirms de Graaff, Veselinovič and Tyler, New Political Economy article, DOI 10.1080/13563467.2026.2751102 (30 Oct 2026) but all six access and institutional recovery routes failed to supply enough primary body text. Admission deliberately deferred without fabricating findings."
+          }
+        },
+        {
+          "attempt": 2,
+          "package_id": "worker-a-20261102T160139Z-d0bc2e070126",
+          "at": "2026-11-02T16:42:50Z",
+          "reason": "Bibliographic identity is supported by a DOI-matched index or author/publisher record, but the accessible text is insufficient for an authoritative substantive assessment of this exact study.",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failed",
+                "note": "Could not retrieve DOI-linked journal article directly: https://doi.org/10.1080/13563467.2026.2751102; publisher returned 403 or DOI resolver inaccessible."
+              },
+              {
+                "step": "doi",
+                "outcome": "success",
+                "note": "DOI publication identity checked via scanner-authenticated OpenAlex DOI resolution or matching institutional record for 10.1080/13563467.2026.2751102; this confirms metadata, not article conclusions."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "limited",
+                "note": "Exact-title search found the Vrije Universiteit Amsterdam journal record, which offers only the authors’ abstract, not a substantial article text."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "limited",
+                "note": "Found a matching SocArXiv preprint registered as 10.31235/osf.io/dgz2h_v1 and an OSF download link, but the PDF download was not accessible to this browser."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "limited",
+                "note": "Publisher route https://www.tandfonline.com/doi/full/10.1080/13563467.2026.2751102 blocked or shows insufficient material; institutional/repository route https://research.vu.nl/en/publications/globalization-unravelling-asml-and-the-geopolitics-of-europe-chin/ supports identity or researcher affiliation only."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "limited",
+                "note": "Broader search using DOI 10.1080/13563467.2026.2751102, abbreviated title and university/repository copies did not provide substantial matching original full text; related studies were not substituted."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "institutional_identity_only",
+                "url": "https://research.vu.nl/en/publications/globalization-unravelling-asml-and-the-geopolitics-of-europe-chin/",
+                "title": "Globalization unravelling? ASML and the geopolitics of Europe-China tech decoupling",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "Vrije Universiteit Amsterdam confirms matching DOI, author names, New Political Economy and 30 October 2026 release; the author preprint SocArXiv dgz2h_v1 is discoverable but its full PDF could not be fetched. Full mandatory recovery steps were attempted; result is coordination-only, not a keep/drop admission."
           }
         }
       ]
@@ -107047,13 +107310,13 @@
       "status": "assigned",
       "lane": "A",
       "assigned_at": "2026-11-01T09:27:22Z",
-      "last_package_id": "worker-a-20261102T160139Z-d0bc2e070126",
-      "scan_package_attempts": 3,
-      "last_scan_package_at": "2026-11-02T16:01:41Z",
-      "recovery_attempts": 1,
-      "last_recovery_at": "2026-11-01T09:47:31Z",
-      "last_recovery_package_id": "worker-a-20261101T092722Z-b5e10cee9735",
-      "recovery_reason": "The exact document exists and identity is independently verifiable, but its substantive content remains inaccessible after recorded recovery attempts.",
+      "last_package_id": "worker-a-20261102T164352Z-3d63f772ea9d",
+      "scan_package_attempts": 4,
+      "last_scan_package_at": "2026-11-02T16:43:53Z",
+      "recovery_attempts": 2,
+      "last_recovery_at": "2026-11-02T16:42:50Z",
+      "last_recovery_package_id": "worker-a-20261102T160139Z-d0bc2e070126",
+      "recovery_reason": "Bibliographic identity is supported by a DOI-matched index or author/publisher record, but the accessible text is insufficient for an authoritative substantive assessment of this exact study.",
       "verification": {
         "identity_verified": true,
         "evidence_depth": "identity_only_after_recovery",
@@ -107061,36 +107324,43 @@
           {
             "step": "supplied_url",
             "outcome": "failed",
-            "note": "Opened reader-facing https://doi.org/10.1016/j.erss.2026.105047; the document was blocked, inaccessible or returned only an error rather than substantive matching text."
+            "note": "Could not retrieve DOI-linked journal article directly: https://doi.org/10.1016/j.erss.2026.105047; publisher returned 403 or DOI resolver inaccessible."
           },
           {
             "step": "doi",
-            "outcome": "failed",
-            "note": "Tried resolving https://doi.org/10.1016/j.erss.2026.105047 and the publisher full article route; access denied or content unavailable."
+            "outcome": "success",
+            "note": "DOI publication identity checked via scanner-authenticated OpenAlex DOI resolution or matching institutional record for 10.1016/j.erss.2026.105047; this confirms metadata, not article conclusions."
           },
           {
             "step": "exact_title",
-            "outcome": "failed",
-            "note": "Searched quoted exact work title: \"Monopolising the green transition: China’s structural dominance and selective weaponisation of critical raw materials in Europe\"; no usable matching full publication or substantive first-party text returned."
+            "outcome": "limited",
+            "note": "Exact title search found the University of Helsinki research record with a shorter verified title but no original abstract or full text."
           },
           {
             "step": "title_author_year",
-            "outcome": "failed",
-            "note": "Searched title/author/date/document identifier: \"Monopolising the green transition\" Jirušek Nikoléniová Tynkkynen 2026; identity leads were found but no substantive matching text was accessible."
+            "outcome": "limited",
+            "note": "Looked for the full title with “in Europe”, alternative shorter title, authors’ names, and journal article number 105047; no matching readable full text was recovered."
           },
           {
             "step": "official_publisher_or_repository",
-            "outcome": "failed",
-            "note": "Elsevier DOI https://doi.org/10.1016/j.erss.2026.105047 inaccessible. University of Helsinki https://researchportal.helsinki.fi/en/publications/monopolising-the-green-transition-chinas-structural-dominance-and/ confirms accepted article and authors but displays no abstract or full manuscript."
+            "outcome": "limited",
+            "note": "Publisher route https://www.sciencedirect.com/science/article/doi/10.1016/j.erss.2026.105047 blocked or shows insufficient material; institutional/repository route https://researchportal.helsinki.fi/en/publications/monopolising-the-green-transition-chinas-structural-dominance-and/ supports identity or researcher affiliation only."
           },
           {
             "step": "broader_identity_search",
-            "outcome": "failed",
-            "note": "Search distinctive article title, authors, rare earth selectivity and article DOI fragments, plus Helsinki institutional project outputs; only bibliographic metadata emerged."
+            "outcome": "limited",
+            "note": "Broader search using DOI 10.1016/j.erss.2026.105047, abbreviated title and university/repository copies did not provide substantial matching original full text; related studies were not substituted."
           }
         ],
-        "recovered_sources": [],
-        "verification_note": "The DOI or independent issuing-body bibliography confirms Jirušek, Nikoléniová and Tynkkynen, Energy Research & Social Science, accepted Oct 2026, DOI 10.1016/j.erss.2026.105047 but all six access and institutional recovery routes failed to supply enough primary body text. Admission deliberately deferred without fabricating findings."
+        "recovered_sources": [
+          {
+            "kind": "institutional_identity_only",
+            "url": "https://researchportal.helsinki.fi/en/publications/monopolising-the-green-transition-chinas-structural-dominance-and/",
+            "title": "Monopolising the green transition: China's structural dominance and selective weaponisation of critical raw materials in Europe",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "University of Helsinki confirms an accepted/in-press article with authors Jirušek, Nikoléniová and Tynkkynen in Energy Research & Social Science (October 2026), but does not display a full article or substantive abstract; the supplied longer title and author order are not confirmed there. Full mandatory recovery steps were attempted; result is coordination-only, not a keep/drop admission."
       },
       "recovery_history": [
         {
@@ -107135,6 +107405,57 @@
             ],
             "recovered_sources": [],
             "verification_note": "The DOI or independent issuing-body bibliography confirms Jirušek, Nikoléniová and Tynkkynen, Energy Research & Social Science, accepted Oct 2026, DOI 10.1016/j.erss.2026.105047 but all six access and institutional recovery routes failed to supply enough primary body text. Admission deliberately deferred without fabricating findings."
+          }
+        },
+        {
+          "attempt": 2,
+          "package_id": "worker-a-20261102T160139Z-d0bc2e070126",
+          "at": "2026-11-02T16:42:50Z",
+          "reason": "Bibliographic identity is supported by a DOI-matched index or author/publisher record, but the accessible text is insufficient for an authoritative substantive assessment of this exact study.",
+          "verification": {
+            "identity_verified": true,
+            "evidence_depth": "identity_only_after_recovery",
+            "retrieval_attempts": [
+              {
+                "step": "supplied_url",
+                "outcome": "failed",
+                "note": "Could not retrieve DOI-linked journal article directly: https://doi.org/10.1016/j.erss.2026.105047; publisher returned 403 or DOI resolver inaccessible."
+              },
+              {
+                "step": "doi",
+                "outcome": "success",
+                "note": "DOI publication identity checked via scanner-authenticated OpenAlex DOI resolution or matching institutional record for 10.1016/j.erss.2026.105047; this confirms metadata, not article conclusions."
+              },
+              {
+                "step": "exact_title",
+                "outcome": "limited",
+                "note": "Exact title search found the University of Helsinki research record with a shorter verified title but no original abstract or full text."
+              },
+              {
+                "step": "title_author_year",
+                "outcome": "limited",
+                "note": "Looked for the full title with “in Europe”, alternative shorter title, authors’ names, and journal article number 105047; no matching readable full text was recovered."
+              },
+              {
+                "step": "official_publisher_or_repository",
+                "outcome": "limited",
+                "note": "Publisher route https://www.sciencedirect.com/science/article/doi/10.1016/j.erss.2026.105047 blocked or shows insufficient material; institutional/repository route https://researchportal.helsinki.fi/en/publications/monopolising-the-green-transition-chinas-structural-dominance-and/ supports identity or researcher affiliation only."
+              },
+              {
+                "step": "broader_identity_search",
+                "outcome": "limited",
+                "note": "Broader search using DOI 10.1016/j.erss.2026.105047, abbreviated title and university/repository copies did not provide substantial matching original full text; related studies were not substituted."
+              }
+            ],
+            "recovered_sources": [
+              {
+                "kind": "institutional_identity_only",
+                "url": "https://researchportal.helsinki.fi/en/publications/monopolising-the-green-transition-chinas-structural-dominance-and/",
+                "title": "Monopolising the green transition: China's structural dominance and selective weaponisation of critical raw materials in Europe",
+                "evidence_used": false
+              }
+            ],
+            "verification_note": "University of Helsinki confirms an accepted/in-press article with authors Jirušek, Nikoléniová and Tynkkynen in Energy Research & Social Science (October 2026), but does not display a full article or substantive abstract; the supplied longer title and author order are not confirmed there. Full mandatory recovery steps were attempted; result is coordination-only, not a keep/drop admission."
           }
         }
       ]
@@ -117368,6 +117689,18 @@
         "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=edc102a9-d3b0-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
         "link:https://doi.org/10.1080/03068374.2026.2740496",
         "link:https://doi.org/10.1016/j.respol.2026.105657",
+        "link:https://doi.org/10.1080/13563467.2026.2751110",
+        "link:https://doi.org/10.1080/13563467.2026.2751102",
+        "link:https://doi.org/10.1016/j.erss.2026.105047"
+      ]
+    },
+    "worker-a-20261102T164352Z-3d63f772ea9d": {
+      "lane": "A",
+      "created_at": "2026-11-02T16:43:53Z",
+      "record_keys": [
+        "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=ab289355-d3aa-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+        "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=edc102a9-d3b0-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+        "link:https://doi.org/10.1080/03068374.2026.2740496",
         "link:https://doi.org/10.1080/13563467.2026.2751110",
         "link:https://doi.org/10.1080/13563467.2026.2751102",
         "link:https://doi.org/10.1016/j.erss.2026.105047"
