@@ -1,0 +1,568 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-a-20261102T160139Z-d0bc2e070126",
+  "results": [
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=ab289355-d3aa-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "source_hash": "1321ba7f",
+      "identity_hash": "8ef5fbc7a264682a",
+      "verification": {
+        "identity_verified": false,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Original Publications Office download https://op.europa.eu/o/opportal-service/download-handler?identifier=ab289355-d3aa-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part= led to an official 404 error page in the scanner; direct browser retrieval was unavailable."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "This Council Publications Office identifier ab289355-d3aa-11f1-9458-01aa75ed71a1 is not a DOI; no DOI was supplied."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "failed",
+            "note": "Quoted search for the exact supplied ENISA regulation proposal heading returned related Council working texts, not the item with Cellar identifier ab289355-d3aa-11f1-9458-01aa75ed71a1."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "failed",
+            "note": "Searched Council of the EU / ENISA 2026 proposed ICT supply-chain regulation and 2026-10-27; found 2026/0011(COD), not a title-and-identifier match."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "failed",
+            "note": "Checked Publications Office record with UUID ab289355-d3aa-11f1-9458-01aa75ed71a1 and the Council / EUR-Lex procedure register for 2026/0011(COD): legislative proposal is real, but the claimed October item was not specifically identified."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "failed",
+            "note": "Searched complete UUID ab289355-d3aa-11f1-9458-01aa75ed71a1, short UUID fragment, and Council compromise ENISA October 2026 variants; no independently confirmed record or matching document text was recovered."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Original EU download points to a 404 in the package. Broad ENISA proposal COM(2026)11 and Council WK texts are authentic but none confirms UUID ab289355-d3aa-11f1-9458-01aa75ed71a1 or the claimed 2026-10-27 object. The claimed specific record remains unverified after the recovery ladder."
+      },
+      "admission": {
+        "decision": "drop_unverifiable",
+        "target_strand": "A",
+        "reason_code": "IDENTITY_NOT_VERIFIED",
+        "reason": "The linked Publications Office resource cannot be specifically identified or read; the generic 2026 ENISA proposal is a different work and must not substitute for this October 2026 document."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching same-work duplicates were supplied with this job."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=edc102a9-d3b0-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "source_hash": "4e7987b7",
+      "identity_hash": "66248dd5c079d1a8",
+      "verification": {
+        "identity_verified": false,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Original Publications Office download https://op.europa.eu/o/opportal-service/download-handler?identifier=edc102a9-d3b0-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part= led to an official 404 error page in the scanner; direct browser retrieval was unavailable."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "This Council Publications Office identifier edc102a9-d3b0-11f1-9458-01aa75ed71a1 is not a DOI; no DOI was supplied."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "failed",
+            "note": "Quoted search for the exact supplied ENISA regulation proposal heading returned related Council working texts, not the item with Cellar identifier edc102a9-d3b0-11f1-9458-01aa75ed71a1."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "failed",
+            "note": "Searched Council of the EU / ENISA 2026 proposed ICT supply-chain regulation and 2026-10-20; found 2026/0011(COD), not a title-and-identifier match."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "failed",
+            "note": "Checked Publications Office record with UUID edc102a9-d3b0-11f1-9458-01aa75ed71a1 and the Council / EUR-Lex procedure register for 2026/0011(COD): legislative proposal is real, but the claimed October item was not specifically identified."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "failed",
+            "note": "Searched complete UUID edc102a9-d3b0-11f1-9458-01aa75ed71a1, short UUID fragment, and Council compromise ENISA October 2026 variants; no independently confirmed record or matching document text was recovered."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Original EU download points to a 404 in the package. Broad ENISA proposal COM(2026)11 and Council WK texts are authentic but none confirms UUID edc102a9-d3b0-11f1-9458-01aa75ed71a1 or the claimed 2026-10-20 object. The claimed specific record remains unverified after the recovery ladder."
+      },
+      "admission": {
+        "decision": "drop_unverifiable",
+        "target_strand": "A",
+        "reason_code": "IDENTITY_NOT_VERIFIED",
+        "reason": "The linked Publications Office resource cannot be specifically identified or read; the generic 2026 ENISA proposal is a different work and must not substitute for this October 2026 document."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching same-work duplicates were supplied with this job."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/03068374.2026.2740496",
+      "source_hash": "70b7cfcd",
+      "identity_hash": "1afb038abfb72421",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Could not retrieve DOI-linked journal article directly: https://doi.org/10.1080/03068374.2026.2740496; publisher returned 403 or DOI resolver inaccessible."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI publication identity checked via scanner-authenticated OpenAlex DOI resolution or matching institutional record for 10.1080/03068374.2026.2740496; this confirms metadata, not article conclusions."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "limited",
+            "note": "Searched quoted title \"The Maghreb and the Middle Kingdom: China’s EV supply-chain diplomacy in an era of geopolitical rivalry\"; publication-level content was not retrieved."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "limited",
+            "note": "Searched Mordechai Chaziza 2026 China Egypt Morocco electric-vehicle industrial diplomacy and Asian Affairs; surfaced related publications but no full matching article."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "limited",
+            "note": "Publisher route https://www.tandfonline.com/doi/full/10.1080/03068374.2026.2740496 blocked or shows insufficient material; institutional/repository route https://cris.haifa.ac.il/en/persons/mordechai-chaziza/ supports identity or researcher affiliation only."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "limited",
+            "note": "Broader search using DOI 10.1080/03068374.2026.2740496, abbreviated title and university/repository copies did not provide substantial matching original full text; related studies were not substituted."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "institutional_identity_only",
+            "url": "https://cris.haifa.ac.il/en/persons/mordechai-chaziza/",
+            "title": "THE MAGHREB AND THE MIDDLE KINGDOM: CHINA’S EV SUPPLY-CHAIN DIPLOMACY IN AN ERA OF GEOPOLITICAL RIVALRY",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "The scanner cites DOI-matched OpenAlex W7224310169, which supports provisional bibliographic identification, while the publisher full text was blocked and no substantial matching author copy was recovered. Full mandatory recovery steps were attempted; result is coordination-only, not a keep/drop admission."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Bibliographic identity is supported by a DOI-matched index or author/publisher record, but the accessible text is insufficient for an authoritative substantive assessment of this exact study."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching same-work duplicates were supplied with this job."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.respol.2026.105657",
+      "source_hash": "8593fe6e",
+      "identity_hash": "9fc843aa4c62bf75",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "DOI resolver https://doi.org/10.1016/j.respol.2026.105657 could not be opened directly in this web session."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "The bundled full journal preproof obtained from authenticated DOI-linked OpenAlex W7224333197 identifies DOI 10.1016/j.respol.2026.105657, authors, Research Policy and methods."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Inspected substantial matching primary journal PDF cached at https://content.openalex.org/works/W7224333197.pdf; the preproof includes original introduction, method, and core outcomes."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_full_text_excerpt",
+            "url": "https://content.openalex.org/works/W7224333197.pdf",
+            "title": "The effects of national security assessments in public procurement on competition, sustainability, innovation, and critical technology procurement",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Primary Research Policy journal preproof and 1,613-procurement study text inspected from the package; DOI and title match. Data combine an EU-wide procurement survey with Tender Electronic Daily. The printed issue is 2027; online discovery occurred in October 2026."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_ECONOMIC_SECURITY_EVIDENCE",
+        "reason": "Verified empirical EU procurement study examines how security screening relates to critical-technology purchasing and innovation under domestic-versus-cross-border award conditions."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching same-work duplicates were supplied with this job."
+      },
+      "reader_title": "Security checks in EU public procurement",
+      "reader_what": "Security assessments were associated with more innovation and critical-technology purchases only where domestic suppliers won contracts.",
+      "reader_why": "National security screening may support domestic technology capacity while complicating cross-border EU market coordination.",
+      "reader_more": "The researchers link a survey of 1,613 procurement projects with European tender data and compare outcomes when buyers used security assessments. Innovation and critical-technology procurement were more favourable in contracts awarded domestically. They did not find clear changes in competition or environmental sustainability. The authors warn that inconsistent national security screening could distort the EU procurement market.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed empirical journal research",
+        "research_question": "How are national-security assessments in public procurement related to competition, innovation, sustainability and critical technologies in EU member states?",
+        "main_finding": "Security assessments were positively associated with innovation and purchases of critical technologies only when contracts were awarded to domestic suppliers; competition and sustainability effects were not established.",
+        "method_or_basis": "EU-wide survey of 1,613 procurement projects awarded in 2022 matched to EU Tender Electronic Daily data; regression comparisons by award characteristics.",
+        "qualification": "Observational comparisons across procurements do not establish that security assessments caused the improvements; innovation benefits were limited to domestic-award cases.",
+        "radar_relevance": "Economic-security trade-off between screening foreign suppliers, fostering domestic strategic technology capacity and sustaining the EU internal procurement market.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "digital.public_procurement",
+          "secondary_objects": [
+            "econsec.technology_security"
+          ],
+          "actor": {
+            "name": "Berkhout, Rainville, Janssen and Frenken",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-10-29",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Observational comparisons across procurements do not establish that security assessments caused the improvements; innovation benefits were limited to domestic-award cases.",
+          "text": "A pan-European study of 1,613 procurements associates security risk assessment with more innovation and critical technology procurement only for domestically awarded contracts.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/13563467.2026.2751110",
+      "source_hash": "59feef5d",
+      "identity_hash": "7dfd1c66c04fc271",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Could not retrieve DOI-linked journal article directly: https://doi.org/10.1080/13563467.2026.2751110; publisher returned 403 or DOI resolver inaccessible."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI publication identity checked via scanner-authenticated OpenAlex DOI resolution or matching institutional record for 10.1080/13563467.2026.2751110; this confirms metadata, not article conclusions."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "limited",
+            "note": "Quoted exact title search located the Taylor & Francis New Political Economy title entry, but only index/abstract-level materials were accessible."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "limited",
+            "note": "Searched Chovančík, Ilavská and Krpec October 2026 defence dividend and Masaryk University author listings; older related defence studies could not substitute for this article."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "limited",
+            "note": "Publisher route https://www.tandfonline.com/doi/full/10.1080/13563467.2026.2751110 blocked or shows insufficient material; institutional/repository route https://www.muni.cz/en/people/102878-martin-chovancik/publications supports identity or researcher affiliation only."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "limited",
+            "note": "Broader search using DOI 10.1080/13563467.2026.2751110, abbreviated title and university/repository copies did not provide substantial matching original full text; related studies were not substituted."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "institutional_identity_only",
+            "url": "https://www.muni.cz/en/people/102878-martin-chovancik/publications",
+            "title": "The semi-periphery's ‘defence dividend’: redistribution of labour in Europe's defence industry",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Taylor & Francis journal catalogue lists this exact work and its authors with online date 28 October 2026; a ResearchGate index hints at full text, but directly inspectable matching full paper was not recovered. Full mandatory recovery steps were attempted; result is coordination-only, not a keep/drop admission."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Bibliographic identity is supported by a DOI-matched index or author/publisher record, but the accessible text is insufficient for an authoritative substantive assessment of this exact study."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching same-work duplicates were supplied with this job."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/13563467.2026.2751102",
+      "source_hash": "3a7540be",
+      "identity_hash": "584b75491e5675c9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Could not retrieve DOI-linked journal article directly: https://doi.org/10.1080/13563467.2026.2751102; publisher returned 403 or DOI resolver inaccessible."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI publication identity checked via scanner-authenticated OpenAlex DOI resolution or matching institutional record for 10.1080/13563467.2026.2751102; this confirms metadata, not article conclusions."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "limited",
+            "note": "Exact-title search found the Vrije Universiteit Amsterdam journal record, which offers only the authors’ abstract, not a substantial article text."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "limited",
+            "note": "Found a matching SocArXiv preprint registered as 10.31235/osf.io/dgz2h_v1 and an OSF download link, but the PDF download was not accessible to this browser."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "limited",
+            "note": "Publisher route https://www.tandfonline.com/doi/full/10.1080/13563467.2026.2751102 blocked or shows insufficient material; institutional/repository route https://research.vu.nl/en/publications/globalization-unravelling-asml-and-the-geopolitics-of-europe-chin/ supports identity or researcher affiliation only."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "limited",
+            "note": "Broader search using DOI 10.1080/13563467.2026.2751102, abbreviated title and university/repository copies did not provide substantial matching original full text; related studies were not substituted."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "institutional_identity_only",
+            "url": "https://research.vu.nl/en/publications/globalization-unravelling-asml-and-the-geopolitics-of-europe-chin/",
+            "title": "Globalization unravelling? ASML and the geopolitics of Europe-China tech decoupling",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Vrije Universiteit Amsterdam confirms matching DOI, author names, New Political Economy and 30 October 2026 release; the author preprint SocArXiv dgz2h_v1 is discoverable but its full PDF could not be fetched. Full mandatory recovery steps were attempted; result is coordination-only, not a keep/drop admission."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Bibliographic identity is supported by a DOI-matched index or author/publisher record, but the accessible text is insufficient for an authoritative substantive assessment of this exact study."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching same-work duplicates were supplied with this job."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.erss.2026.105047",
+      "source_hash": "e8025799",
+      "identity_hash": "e68144a7b1021ed9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Could not retrieve DOI-linked journal article directly: https://doi.org/10.1016/j.erss.2026.105047; publisher returned 403 or DOI resolver inaccessible."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI publication identity checked via scanner-authenticated OpenAlex DOI resolution or matching institutional record for 10.1016/j.erss.2026.105047; this confirms metadata, not article conclusions."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "limited",
+            "note": "Exact title search found the University of Helsinki research record with a shorter verified title but no original abstract or full text."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "limited",
+            "note": "Looked for the full title with “in Europe”, alternative shorter title, authors’ names, and journal article number 105047; no matching readable full text was recovered."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "limited",
+            "note": "Publisher route https://www.sciencedirect.com/science/article/doi/10.1016/j.erss.2026.105047 blocked or shows insufficient material; institutional/repository route https://researchportal.helsinki.fi/en/publications/monopolising-the-green-transition-chinas-structural-dominance-and/ supports identity or researcher affiliation only."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "limited",
+            "note": "Broader search using DOI 10.1016/j.erss.2026.105047, abbreviated title and university/repository copies did not provide substantial matching original full text; related studies were not substituted."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "institutional_identity_only",
+            "url": "https://researchportal.helsinki.fi/en/publications/monopolising-the-green-transition-chinas-structural-dominance-and/",
+            "title": "Monopolising the green transition: China's structural dominance and selective weaponisation of critical raw materials in Europe",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "University of Helsinki confirms an accepted/in-press article with authors Jirušek, Nikoléniová and Tynkkynen in Energy Research & Social Science (October 2026), but does not display a full article or substantive abstract; the supplied longer title and author order are not confirmed there. Full mandatory recovery steps were attempted; result is coordination-only, not a keep/drop admission."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Bibliographic identity is supported by a DOI-matched index or author/publisher record, but the accessible text is insufficient for an authoritative substantive assessment of this exact study."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching same-work duplicates were supplied with this job."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    }
+  ]
+}
