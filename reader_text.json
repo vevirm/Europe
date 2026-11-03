@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-11-02T16:42:50Z",
+  "generated_at": "2026-11-03T09:01:55Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -221092,8 +221092,1055 @@
         }
       ],
       "claims_profile": "radar-claims-v1"
+    },
+    "link:https://rhg.com/wp-content/uploads/2026/11/Chinas-Chemicals-Capacity-Buildout.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "16d8fa09",
+      "identity_hash": "d181fd4bf4252528",
+      "reader_title": "China’s chemicals expansion challenges European producers",
+      "reader_what": "Chinese chemical overcapacity is depressing prices, displacing foreign producers and increasing trade pressure on Europe.",
+      "reader_why": "Europe faces persistent cost competition and difficult choices between industry protection and downstream supply chains.",
+      "reader_more": "The report documents China’s rapid capacity expansion and weakened domestic profitability. European chemical producers are especially exposed to global price and market-share pressures. It argues that bilateral tariffs alone cannot address embedded chemical inputs or third-market competition; broad safeguards create additional trade frictions.",
+      "deep_analysis": {
+        "work_kind": "Industrial trade and supply-chain policy report",
+        "research_question": "How is Chinese chemicals overcapacity changing global industry and trade policy?",
+        "main_finding": "China accounts for over 45 percent of global basic chemical and plastics-resin capacity, contributing to worldwide price pressure and European producer stress.",
+        "method_or_basis": "Rhodium analysis of China industrial policy, investment and chemical trade, with global and EU policy implications.",
+        "qualification": "The report analyses chemical-sector output, trade and price pressures, not a causal policy experiment.",
+        "radar_relevance": "European manufacturing capacity, import competition, input dependence and the EU safeguard tariff debate are central, qualifying via A routes 1 and 2.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Scanner retrieved and supplied multiple PDF pages from https://rhg.com/wp-content/uploads/2026/11/Chinas-Chemicals-Capacity-Buildout.pdf; inspected executive summary and policy analysis."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Publisher https://rhg.com/research/global-impacts-of-chinas-chemicals-buildout/ confirms report by Jeremy Smith on 2 November 2026 and provides substantive report text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://rhg.com/wp-content/uploads/2026/11/Chinas-Chemicals-Capacity-Buildout.pdf",
+            "title": "Global Impacts of China’s Chemicals Buildout — 2026 report PDF",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_substantive_report",
+            "url": "https://rhg.com/research/global-impacts-of-chinas-chemicals-buildout/",
+            "title": "Rhodium Group report and executive summary",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "PDF source text and Rhodium publication page both identify the same November 2026 report; title and issuer align. Scanner inaccurately treated the institution as personal author."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Primary Rhodium report directly assesses Chinese chemicals overcapacity, Europe’s industrial competitiveness and EU trade-defense options."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work duplicate identified in supplied possible-duplicate list."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-03T09:01:52Z",
+      "deep_scan_package_id": "worker-a-20261103T083240Z-99bf5fe41ff7",
+      "claims": [
+        {
+          "object": "trade.overcapacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Rhodium Group",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2026-11-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The report analyses chemical-sector output, trade and price pressures, not a causal policy experiment.",
+          "text": "Rhodium assesses that China’s chemicals capacity expansion is increasing competition for European producers and constraining conventional bilateral trade defenses.",
+          "confidence": "high",
+          "record_key": "link:https://rhg.com/wp-content/uploads/2026/11/Chinas-Chemicals-Capacity-Buildout.pdf",
+          "merit": 70,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:d181fd4bf4252528:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1057/s41278-026-00374-3": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "8d991110",
+      "identity_hash": "dc514fc319f51804",
+      "reader_title": "Smart ports create wider economic spillovers in Portugal",
+      "reader_what": "An input-output model estimates how Portuguese port digitalisation stimulates output and value added across 82 sectors.",
+      "reader_more": "The authors use Portugal’s 2017 national input-output table and model spillovers from investment in smarter ports. Their reported output effect is equivalent to 150.9% of initial spending, with value-added and remuneration effects also estimated. The analysis concerns broad productivity and industrial links, not strategic infrastructure risk, supply disruptions or cross-border coercion.",
+      "deep_analysis": {
+        "work_kind": "National economic input-output modelling article",
+        "research_question": "What are the cross-sector economic effects of Portuguese Smart Port investment?",
+        "main_finding": "Modelled port digitalisation investment increases wider Portuguese output, value added and wages through sectoral interdependence.",
+        "method_or_basis": "Published abstract presents 2017 input-output table spanning 82 industries and projected multipliers, not realized impacts.",
+        "qualification": "Input-output findings are estimates based on assumptions and an older table, not observed causal economic effects.",
+        "radar_relevance": "The European Union’s green and digital transition is context, but the study lacks a central economic-security subject; A routes not met.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Publisher page https://link.springer.com/article/10.1057/s41278-026-00374-3 provides matching title, authors, date and detailed methods and numerical results abstract."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_substantive_abstract",
+            "url": "https://link.springer.com/article/10.1057/s41278-026-00374-3",
+            "title": "Economic impact of Smart Ports on the national economy — Maritime Economics & Logistics",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publisher identifies all four authors and publication 26 October 2026; abstract gives numerical input-output multipliers. Full article is paywalled, but published substantive methods/findings suffice to determine scope."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_GENERIC_SECTOR_ECONOMY",
+        "reason": "The study models Portuguese port digitalisation spillovers but does not substantively assess security of supply, coercion, strategic dependencies or a European economic-security mechanism."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work duplicate identified in supplied possible-duplicate list."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-03T09:01:52Z",
+      "deep_scan_package_id": "worker-a-20261103T083240Z-99bf5fe41ff7",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1016/j.nbsj.2026.100386": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "4ada6f9b",
+      "identity_hash": "6c1d655fb137725f",
+      "reader_title": "Who supplies and demands nature-based solutions?",
+      "reader_what": "A European study maps public and private demand for ecosystem restoration and barriers to wider adoption.",
+      "reader_more": "The paper combines a literature review, eight cases and input-output modelling across six landscape types. It finds the public sector dominates both demand and supply and identifies challenges in mobilising private actors. These are sustainability-governance and market-development findings, not a study of strategic resource supply vulnerabilities.",
+      "deep_analysis": {
+        "work_kind": "Sustainability value-chain research",
+        "research_question": "What enables nature-based solutions to move into European economic value chains?",
+        "main_finding": "Public institutions act as the key coordinating node for many of the studied nature-based solutions; private uptake faces barriers.",
+        "method_or_basis": "Journal pre-proof reports literature review, eight case studies and economic modelling of landscape-specific value-chain links.",
+        "qualification": "Case study contexts and modeled sector links cannot establish EU-wide economic outcomes or economic-security mechanisms.",
+        "radar_relevance": "Europe is the study location, but a generic green-market value-chain analysis does not satisfy economic-security A routes.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI https://doi.org/10.1016/j.nbsj.2026.100386 identifies the study; scanner-recovered journal pre-proof PDF at https://content.openalex.org/works/W7124829049.pdf was read as matching first-party article content."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Publisher pre-proof is mirrored in OpenAlex full-text cache https://content.openalex.org/works/W7124829049.pdf and provides DOI, title, author names and accepted 30 October 2026."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_preproof_full_text",
+            "url": "https://content.openalex.org/works/W7124829049.pdf",
+            "title": "Lienhart et al. Nature-Based Solutions journal pre-proof, DOI 10.1016/j.nbsj.2026.100386",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The DOI, PII, author names and journal match exactly on the recovered publisher-branded pre-proof. It states acceptance 30 October 2026, inconsistent with scanner date 1 October."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NO_ECONOMIC_SECURITY_MECHANISM",
+        "reason": "Nature-based Solutions supply and demand are investigated as sustainability market uptake, not European strategic dependencies, industrial supply security or geoeconomic resilience."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work duplicate identified in supplied possible-duplicate list."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-03T09:01:52Z",
+      "deep_scan_package_id": "worker-a-20261103T083240Z-99bf5fe41ff7",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.48550/arxiv.2610.39573": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "9d457ef7",
+      "identity_hash": "7a91c806127bbf24",
+      "reader_title": "Cybersecurity gaps in Croatian industrial systems",
+      "reader_what": "Integrators report weak security awareness, reactive incident responses and unclear responsibilities around industrial control systems.",
+      "reader_why": "Weak industrial cybersecurity practices can expose essential energy and production infrastructure to disruption.",
+      "reader_more": "Three focus groups of Croatian industrial-system integrators covered energy, chemical, pharmaceutical and food processing clients. Participants described owner-side awareness gaps, unclear incident responsibilities, and limited dedicated industrial controls. They disagreed about whether NIS2 would drive substantive change or minimal compliance.",
+      "deep_analysis": {
+        "work_kind": "Qualitative industrial critical-infrastructure security study",
+        "research_question": "What cybersecurity practices and obstacles do Croatian industrial integrators report?",
+        "main_finding": "Participants described cybersecurity responsibilities as unclear and responses as reactive, with inconsistent use of industrial-specific safeguards.",
+        "method_or_basis": "Three focus groups of three or four system integrators, thematic qualitative analysis and illustrated participant quotations.",
+        "qualification": "Three small Croatian focus groups report integrators’ perceptions; results are not representative of all EU industrial operators.",
+        "radar_relevance": "Findings concern the resilience of critical European industrial and energy infrastructure and NIS2 implementation, meeting A route 2.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Author-submitted arXiv record https://arxiv.org/abs/2610.39573 and complete HTML manuscript https://arxiv.org/html/2610.39573v1 match title, names, date and findings."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "author_full_text",
+            "url": "https://arxiv.org/html/2610.39573v1",
+            "title": "Cybersecurity Practices in Industrial Automation and Control Systems — complete arXiv HTML",
+            "evidence_used": true
+          },
+          {
+            "kind": "repository_record",
+            "url": "https://arxiv.org/abs/2610.39573",
+            "title": "arXiv record and DOI for Croatian industrial cybersecurity research",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Full 2026 arXiv manuscript accessed and read, including focus group design and discussion. Critical infrastructure and NIS2 are explicit central themes."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_CRITICAL_INFRASTRUCTURE",
+        "reason": "Original full text investigates concrete cybersecurity weaknesses in Croatian critical industrial control systems, including energy and chemicals, under NIS2."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work duplicate identified in supplied possible-duplicate list."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-03T09:01:52Z",
+      "deep_scan_package_id": "worker-a-20261103T083240Z-99bf5fe41ff7",
+      "claims": [
+        {
+          "object": "critical_infrastructure.resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Croatian industrial system integrators",
+            "class": "company"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2026-10-29",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "HR"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "Three small Croatian focus groups report integrators’ perceptions; results are not representative of all EU industrial operators.",
+          "text": "Croatian industrial system integrators in three focus groups reported weak owner cybersecurity awareness, unclear incident responsibilities and reactive responses.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.48550/arxiv.2610.39573",
+          "merit": 60,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:7a91c806127bbf24:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1016/j.sftr.2026.101912": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "142c1195",
+      "identity_hash": "b2efadb77584e48c",
+      "reader_title": "Ranking potential European dry-port locations",
+      "reader_what": "Researchers rank twelve inland logistics locations, identifying Duisburg, Vienna and Belgrade as leading candidate hubs.",
+      "reader_more": "The study combines stakeholder weighting, a Delphi procedure and fuzzy multi-criteria scoring to compare a set of European dry-port locations. It prioritises sustainable connectivity and logistics efficiency. A ranking of potential sites does not establish strategic capacity constraints, supply-chain coercion, ownership vulnerability or a security-of-supply trajectory.",
+      "deep_analysis": {
+        "work_kind": "European transport infrastructure location modelling",
+        "research_question": "Which European candidate cities best meet sustainability and connectivity criteria for dry-port development?",
+        "main_finding": "Duisburg, Vienna and Belgrade lead the modelled ranking of twelve candidate inland transport hubs.",
+        "method_or_basis": "Author-hosted full paper and publisher abstract describe fuzzy multi-criteria ranking, expert judgements and candidate-city comparisons.",
+        "qualification": "Scores depend on selected alternatives, stakeholder weights and model assumptions; rankings are not investment commitments.",
+        "radar_relevance": "European transport and TEN-T context alone does not make this generic logistics optimisation a substantive economic-security study.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Original DOI redirects to Elsevier journal entry https://www.sciencedirect.com/science/article/pii/S2666188826002698; scanner obtained matching Chalmers institutional full text https://research.chalmers.se/publication/552238/file/552238_Fulltext.pdf."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Chalmers author archive https://research.chalmers.se/en/publication/552238 identifies original Sustainable Futures 11:101912 article and supplies full-text PDF."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "institutional_repository_full_text",
+            "url": "https://research.chalmers.se/publication/552238/file/552238_Fulltext.pdf",
+            "title": "Chalmers full text — Locating dry ports in the function of maritime logistics",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_substantive_abstract",
+            "url": "https://www.sciencedirect.com/science/article/pii/S2666188826002698",
+            "title": "Sustainable Futures article 101912 publisher abstract",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Chalmers repository front matter and Elsevier journal page match title, journal, year, 101912 and DOI. The suggested hubs are rankings, not built infrastructure."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_GENERIC_LOGISTICS_OPTIMIZATION",
+        "reason": "Despite European port connectivity relevance, the paper chiefly ranks candidate dry-port locations using sustainability and logistics criteria without a strategic economic-security risk or dependency analysis."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work duplicate identified in supplied possible-duplicate list."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-03T09:01:52Z",
+      "deep_scan_package_id": "worker-a-20261103T083240Z-99bf5fe41ff7",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.cer.eu/sites/default/files/EV_eu_gas_2.11.26.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "026cf552",
+      "identity_hash": "3b059c1a229f4d2f",
+      "reader_title": "EU gas shock exposes energy dependency",
+      "reader_what": "A new gas shock and low storage reveal Europe’s continued exposure to global fuel prices despite supply diversification.",
+      "reader_why": "Gas dependence transmits international supply shocks into European industry, power bills and public spending.",
+      "reader_more": "The analysis reports EU gas storage near 75% in late October 2026 amid Hormuz-related supply disruptions. It recommends targeted short-term support and stronger investment in electrification, grids, batteries and flexible demand. The author argues that diversifying LNG origins did not remove exposure to global gas prices.",
+      "deep_analysis": {
+        "work_kind": "Think-tank energy-security policy analysis",
+        "research_question": "How should EU governments respond to the Hormuz gas-price shock while reducing future exposure?",
+        "main_finding": "Low EU storage and higher global LNG prices increase winter energy-price risks despite diversification since 2022.",
+        "method_or_basis": "Published CER Insight backed by European gas storage observations, market analysis and EU policy proposals.",
+        "qualification": "This is a think-tank policy recommendation, not a binding EU decision; projections depend on gas-market conditions.",
+        "radar_relevance": "EU gas supply, price exposure, industrial costs and energy security are central; A routes 1, 2 and 3 apply.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Complete CER Insight PDF primary text supplied by scanner from https://www.cer.eu/sites/default/files/EV_eu_gas_2.11.26.pdf and read across report pages."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "CER report page https://www.cer.eu/insights/eu-must-make-hormuz-crisis-turning-point independently identifies article, writer Elise Viadere and 2 November 2026 publication."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.cer.eu/sites/default/files/EV_eu_gas_2.11.26.pdf",
+            "title": "Elise Viadere, The EU must make the Hormuz crisis a turning point — CER PDF",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.cer.eu/insights/eu-must-make-hormuz-crisis-turning-point",
+            "title": "Centre for European Reform policy insight web edition",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publisher web article and scanner-supplied PDF match, including date, title and recommendation; scanner attribution to organisation should be replaced by named author."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_EU_ENERGY_SECURITY",
+        "reason": "CER policy insight directly analyses EU gas-price vulnerability, low winter storage, LNG exposure and policy options for reducing energy dependence."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work duplicate identified in supplied possible-duplicate list."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-03T09:01:53Z",
+      "deep_scan_package_id": "worker-a-20261103T083240Z-99bf5fe41ff7",
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Centre for European Reform",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "contracts",
+          "status": "observation",
+          "status_date": "2026-11-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "This is a think-tank policy recommendation, not a binding EU decision; projections depend on gas-market conditions.",
+          "text": "The Centre for European Reform argues the EU should cut gas dependence with electrification, clean power, grids and targeted relief rather than blanket price subsidies.",
+          "confidence": "high",
+          "record_key": "link:https://www.cer.eu/sites/default/files/EV_eu_gas_2.11.26.pdf",
+          "merit": 69,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:3b059c1a229f4d2f:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.48550/arxiv.2610.40494": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "ae0a8c3d",
+      "identity_hash": "431d04bc2c62adee",
+      "reader_title": "European research infrastructure plans AI services",
+      "reader_what": "The EGI Federation describes its experience with scientific AI and plans for skills, trusted computing and federated tools.",
+      "reader_more": "EGI’s authors review AI applied to scientific projects and outline an organisational strategy for 2026–2030. Priorities include shared compute, data, human skills and trusted research services, coordinated with EuroHPC and research infrastructures. No substantive analysis concerns foreign control, supplier dependency, coercion, supply security or economic-security policy.",
+      "deep_analysis": {
+        "work_kind": "Research infrastructure strategy and experience paper",
+        "research_question": "How should the EGI scientific computing federation support AI research through 2030?",
+        "main_finding": "EGI proposes AI-ready data and computing services, domain skills and trust arrangements for research teams.",
+        "method_or_basis": "Complete arXiv manuscript reviews interTwin and iMagine projects and the federation’s stated 2026–2030 strategy.",
+        "qualification": "Strategy elements are prospective plans, not delivered industrial capacity or evidence of strategic autonomy outcomes.",
+        "radar_relevance": "European research service development is not inherently geoeconomic; A scope guard excludes this generic scientific infrastructure plan.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "arXiv official author manuscript https://arxiv.org/html/2610.40494v1 and abstract record https://arxiv.org/abs/2610.40494 match identifiers, title and authors."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "author_full_text",
+            "url": "https://arxiv.org/html/2610.40494v1",
+            "title": "AI in the EGI e-infrastructure — complete arXiv HTML",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Full 2026 preprint describes scientific computing services and EGI Federation strategy. It is not about EU strategic autonomy despite European programme names."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_RESEARCH_INFRASTRUCTURE_NOT_SECURITY",
+        "reason": "The article discusses AI-enabled scientific e-infrastructure and division of labour among research platforms, not economic-security dependencies or critical technology control."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work duplicate identified in supplied possible-duplicate list."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-03T09:01:53Z",
+      "deep_scan_package_id": "worker-a-20261103T083240Z-99bf5fe41ff7",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1007/s13563-026-00720-0": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "a52bb126",
+      "identity_hash": "f3d51da39436ab35",
+      "reader_title": "Europe’s rare-earth supply remains exposed",
+      "reader_what": "The study finds EU mining, refining and stockpiling underdeveloped while alternative rare-earth sources cannot quickly reduce dependence.",
+      "reader_why": "Refining gaps and import reliance leave strategic clean-energy and defence production vulnerable to supply shocks.",
+      "reader_more": "This review compares global geology, mining, refining and alternative sources against EU strategic demand. Coal ash, red mud, electronic waste and deep-sea options face obstacles to near-term scale. Authors advocate processing expansion, diversified partnerships and coordinated stockpiles under the Critical Raw Materials Act.",
+      "deep_analysis": {
+        "work_kind": "Peer-reviewed critical-minerals supply-security review",
+        "research_question": "Can the EU reduce rare-earth supply risk through existing capacity and alternative feedstocks?",
+        "main_finding": "EU extraction, refining and inventories lag major competitors; potential alternative rare-earth sources are unlikely to close short-term exposure.",
+        "method_or_basis": "Synthesis of peer-reviewed studies, industry reports and policies published through 2026.",
+        "qualification": "Review synthesises heterogeneous published sources; supply forecasts and alternatives are conditional, not measured future outcomes.",
+        "radar_relevance": "Rare-earth import concentration and European refining and stockpiling constraints centrally meet A route 2.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Publisher full-text Springer article at https://link.springer.com/article/10.1007/s13563-026-00720-0 provides abstract, introduction, synthesis, conclusions and bibliography."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1007/s13563-026-00720-0",
+            "title": "From global rare earth resources to the EU supply security — Mineral Economics 2026",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, three authors and 2 November 2026 publication verified on Springer Nature primary article. Read substantive analyses of reserves, processing and proposed strategies."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_CRITICAL_MINERAL_DEPENDENCE",
+        "reason": "Peer-reviewed open-access synthesis directly assesses EU rare-earth import dependence, underdeveloped processing capacity and supply-security policy options."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work duplicate identified in supplied possible-duplicate list."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-03T09:01:53Z",
+      "deep_scan_package_id": "worker-a-20261103T083240Z-99bf5fe41ff7",
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European rare-earth supply system",
+            "class": "european_system"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2026-11-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Review synthesises heterogeneous published sources; supply forecasts and alternatives are conditional, not measured future outcomes.",
+          "text": "The review finds EU rare-earth supply dependent on imports and domestic mining, processing and stockpiling capacity insufficient for near-term substitution.",
+          "confidence": "high",
+          "record_key": "link:https://doi.org/10.1007/s13563-026-00720-0",
+          "merit": 83,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:f3d51da39436ab35:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1016/j.telpol.2026.103334": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "8e1067b9",
+      "identity_hash": "98c0626626956ee6",
+      "reader_title": "Digital sovereignty exposes Europe’s technology gap",
+      "reader_what": "A cross-country index contrasts EU technology strength with the United States and China, using technology, governance and user measures.",
+      "reader_why": "Weak technology capabilities can constrain Europe’s ability to govern digital dependencies despite stronger regulatory institutions.",
+      "reader_more": "The earlier author manuscript constructs a digital sovereignty index for 123 countries. It scores the EU below the US and China overall and especially on technological sovereignty, while noting stronger regulatory dimensions. The later journal version has a changed title; results should be checked against the final version before using exact figures as canonical.",
+      "deep_analysis": {
+        "work_kind": "Cross-country digital sovereignty index study",
+        "research_question": "How do countries’ technology, state and citizen capabilities jointly shape digital sovereignty?",
+        "main_finding": "A 123-country framework finds EU institutional and regulatory strength paired with weaker global technology leadership.",
+        "method_or_basis": "Author-hosted prior conference paper and UPM institutional record contain full methodology, component scores and cross-country comparisons.",
+        "qualification": "The accessible repository manuscript is an earlier version with a different title; journal-version wording may have changed.",
+        "radar_relevance": "Digital autonomy, technology dependence and EU strategic capacity satisfy A route 1 or 2 in substance, but version equivalence needs review.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "DOI https://doi.org/10.1016/j.telpol.2026.103334 did not expose 2026 publisher full text; package OA UPM PDF redirect returned a browser anti-bot challenge."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Independent author-linked UPM repository listing https://oa.upm.es/92000/ points to an earlier manuscript at https://www.econstor.eu/bitstream/10419/331299/1/ITS-E-2025-54.pdf with same three authors and 123-country digital sovereignty index."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "author_preprint_full_text",
+            "url": "https://www.econstor.eu/bitstream/10419/331299/1/ITS-E-2025-54.pdf",
+            "title": "From concept to method: A framework for measuring digital sovereignty — 2025 ITS manuscript",
+            "evidence_used": true
+          },
+          {
+            "kind": "institutional_repository_record",
+            "url": "https://oa.upm.es/92000/",
+            "title": "UPM author repository record and data description of earlier manuscript",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Journal publication with DOI, title and authors is listed in Telecommunications Policy indexes; retrieved 2025 ITS manuscript is clearly an earlier author version rather than established identical journal text. Human check of version differences warranted."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_VERSION_VERIFICATION_REVIEW",
+        "reason": "Exact journal bibliographic identity is supported, and a matching earlier author preprint measures European digital sovereignty, but journal-version results are not independently full-text checked."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work duplicate identified in supplied possible-duplicate list."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-03T09:01:53Z",
+      "deep_scan_package_id": "worker-a-20261103T083240Z-99bf5fe41ff7",
+      "claims": [
+        {
+          "object": "digital.sovereignty",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Rodríguez Pita and coauthors",
+            "class": "university_group"
+          },
+          "mechanism": "measures",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-10-23",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The accessible repository manuscript is an earlier version with a different title; journal-version wording may have changed.",
+          "text": "An earlier version of the authors’ 123-country index places the EU below the US and China on technological sovereignty, despite relative regulatory strengths.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1016/j.telpol.2026.103334",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:98c0626626956ee6:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1093/eurpub/ckag169.2056": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "a2813dd1",
+      "identity_hash": "4fd22e0a1eed28f0",
+      "reader_title": "Wealth concentration and chronic disease in Europe",
+      "reader_what": "A cross-country study finds top-one-percent wealth concentration associated with chronic disease prevalence, with an uncertain borderline estimate.",
+      "reader_more": "Researchers compare EU national wealth concentration and noncommunicable disease prevalence over 2010–2019. They report a positive association for the top one percent but not the top ten percent. This is population-health inequality research, not a study of strategic economic dependencies, industrial supply or Europe’s security toolbox.",
+      "deep_analysis": {
+        "work_kind": "Public health conference research abstract",
+        "research_question": "Is concentrated wealth associated with chronic disease across European Union countries?",
+        "main_finding": "Higher top-one-percent wealth concentration is associated with disease prevalence after statistical adjustment; top-ten-percent concentration is not.",
+        "method_or_basis": "Cross-national panel regressions using World Inequality Database, WHO Europe, national income and year fixed effects.",
+        "qualification": "Observational association does not establish wealth concentration as a cause of disease; one interval reaches zero.",
+        "radar_relevance": "Social determinants of health are important but fail the current A guard for a central strategic economic-security mechanism.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Scanner obtained authoritative Oxford journal conference-abstract PDF text at https://content.openalex.org/works/W7223688725.pdf corresponding to https://doi.org/10.1093/eurpub/ckag169.2056; it includes background, methods, results and conclusion."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_conference_abstract",
+            "url": "https://content.openalex.org/works/W7223688725.pdf",
+            "title": "Cederström et al., European Journal of Public Health conference abstract ckag169.2056",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Oxford abstract clearly identifies three named authors, EU countries and 2010–2019 health models; it is conference abstract rather than full-length article."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_PUBLIC_HEALTH_OUT_OF_SCOPE",
+        "reason": "EU wealth concentration and chronic disease is an epidemiological inequality topic; “economic security” means household resources rather than strategic European economic security."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work duplicate identified in supplied possible-duplicate list."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-03T09:01:53Z",
+      "deep_scan_package_id": "worker-a-20261103T083240Z-99bf5fe41ff7",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1093/haschl/qxag303": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "8f7c58e6",
+      "identity_hash": "aaad5aa9f35eac3b",
+      "reader_title": "Europe trails major competitors on medicine launches",
+      "reader_what": "Comparative data show fewer European clinical trial starts and lower average medicine availability than in the United States.",
+      "reader_why": "Trials, innovation capacity and medicine access affect Europe’s strategic pharmaceutical position and health-system supply.",
+      "reader_more": "The study compares scientific and commercial conditions for pharmaceuticals in the EU, US, China and Japan. European Economic Area commercial clinical-trial starts fell from 1,253 to 920 between 2018 and 2023. It reports average country-level availability of 39% for globally launched medicines in Europe versus 85% in the US, without attributing gaps to any one policy.",
+      "deep_analysis": {
+        "work_kind": "Comparative pharmaceutical competitiveness analysis",
+        "research_question": "How do investment, development activity and launch availability compare among major pharmaceutical markets?",
+        "main_finding": "European clinical-trial starts fell in the comparison period, while medicine availability lagged US levels.",
+        "method_or_basis": "Published comparative indicators from public and industry sources covering trials, R&D investment, regulatory review and launches.",
+        "qualification": "The authors describe indicators, not causal attribution; prices and regulations cannot be isolated as causes of the observed shifts.",
+        "radar_relevance": "Industrial medicine capacity and relative medicine availability are substantive European economic-security trajectories, meeting A route 2.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Full publisher-branded open-access accepted article provided via OpenAlex PDF https://content.openalex.org/works/W7224083387.pdf; read reported methods and cross-market statistics."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Oxford publisher record https://academic.oup.com/healthaffairsscholar/advance-article/doi/10.1093/haschl/qxag303/9003323 confirms title, authors, 28 October 2026 and comparative statistics."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://content.openalex.org/works/W7224083387.pdf",
+            "title": "Adeyemo and Wilsdon, Tracking shifts in competitiveness — Oxford author accepted open-access PDF",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_substantive_abstract",
+            "url": "https://academic.oup.com/healthaffairsscholar/advance-article/doi/10.1093/haschl/qxag303/9003323",
+            "title": "Health Affairs Scholar publisher article record",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Oxford publisher record independently matches DOI and authors. Publication page says 28 October 2026, not scanner date 27 October. The analysis is descriptive."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_MEDICINE_SUPPLY_AND_COMPETITIVENESS",
+        "reason": "Article compares Europe with major industrial economies on drug R&D, trials and medicine availability, directly addressing strategic pharmaceutical capacity and access."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work duplicate identified in supplied possible-duplicate list."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-03T09:01:54Z",
+      "deep_scan_package_id": "worker-a-20261103T083240Z-99bf5fe41ff7",
+      "claims": [
+        {
+          "object": "medicines.critical_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Adeyemo and Wilsdon",
+            "class": "company"
+          },
+          "mechanism": "measures",
+          "direction": "contracts",
+          "status": "observation",
+          "status_date": "2026-10-28",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The authors describe indicators, not causal attribution; prices and regulations cannot be isolated as causes of the observed shifts.",
+          "text": "The analysis records fewer EEA commercial clinical-trial starts from 2018 to 2023 and lower average medicine availability than in the US.",
+          "confidence": "high",
+          "record_key": "link:https://doi.org/10.1093/haschl/qxag303",
+          "merit": 68,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:aaad5aa9f35eac3b:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1007/s12667-026-00840-0": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "65ea54b4",
+      "identity_hash": "0d3fb4a74dee87b0",
+      "reader_title": "Hydrogen storage may offset Europe’s battery constraints",
+      "reader_what": "A pan-European model finds hydrogen storage competitive only after major cost reductions and higher efficiency, especially with limited lithium batteries.",
+      "reader_why": "Alternative storage could reduce Europe’s reliance on battery materials while strengthening a renewable electricity system.",
+      "reader_more": "The model studies stochastic power-sector investment and technology sensitivity. Hydrogen becomes competitive under a modeled cost of 12.5% of current levels and 70% round-trip efficiency. In a constrained lithium-battery expansion scenario, hydrogen enters sooner; Germany and Italy are identified as key capacity locations. These are model conditions, not current capabilities.",
+      "deep_analysis": {
+        "work_kind": "European energy system modelling",
+        "research_question": "At what cost and efficiency would hydrogen storage enter a renewable European energy system?",
+        "main_finding": "Cost and efficiency improvements could allow hydrogen storage to substitute for some lithium batteries under modeled European supply constraints.",
+        "method_or_basis": "Stochastic power-system optimisation, cost and efficiency sensitivity tests and a limited-battery expansion scenario.",
+        "qualification": "Thresholds and lithium constraints are sensitivity scenarios, not real-world achieved costs or observed lithium shortages.",
+        "radar_relevance": "The paper explicitly studies a consequential European energy supply resilience trajectory amid possible battery mineral constraints, meeting A route 2.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Open access Springer primary full-text article https://link.springer.com/article/10.1007/s12667-026-00840-0 read, including model assumptions, scenarios and hydrogen cost/efficiency thresholds."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1007/s12667-026-00840-0",
+            "title": "When does hydrogen become competitive? — Energy Systems 2026 open-access article",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Title, authors and 31 October 2026 date match Springer. Scenario explicitly connects power-system flexibility with European lithium resource constraint."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_EU_ENERGY_SUPPLY_RESILIENCE",
+        "reason": "Pan-European electricity-system study evaluates hydrogen storage as a substitute when lithium battery supply may constrain European energy security and resilience."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work duplicate identified in supplied possible-duplicate list."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-03T09:01:54Z",
+      "deep_scan_package_id": "worker-a-20261103T083240Z-99bf5fe41ff7",
+      "claims": [
+        {
+          "object": "econsec.supply_resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Qu and coauthors",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_conditional",
+          "status": "observation",
+          "status_date": "2026-10-31",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Thresholds and lithium constraints are sensitivity scenarios, not real-world achieved costs or observed lithium shortages.",
+          "text": "The model finds hydrogen storage becomes competitive if costs drop sharply and efficiency rises, with earlier adoption under a constrained lithium-battery scenario.",
+          "confidence": "high",
+          "record_key": "link:https://doi.org/10.1007/s12667-026-00840-0",
+          "merit": 68,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:0d3fb4a74dee87b0:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.48550/arxiv.2610.38094": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "482dadf4",
+      "identity_hash": "a023a6e839836471",
+      "reader_title": "Could Libya export competitive hydrogen to Europe?",
+      "reader_what": "A Libya energy-system model compares hydrogen export technologies and costs under potential European demand and carbon pricing.",
+      "reader_why": "Libyan export pathways would influence Europe’s options for diversifying low-carbon energy imports, if investment materializes.",
+      "reader_more": "The author develops a national electricity and hydrogen optimisation model with a 70 TWh yearly export target to Europe. Scenarios compare green electrolysis with methane reforming and carbon capture, including a €100 per tonne carbon-price case. Simulated costs and project economics vary substantially with technology and tax assumptions; the paper does not document committed projects.",
+      "deep_analysis": {
+        "work_kind": "Energy-system modelling preprint",
+        "research_question": "What production and grid configurations could support Libyan hydrogen exports to Europe?",
+        "main_finding": "Some modeled methane-reforming-with-capture scenarios have lower hydrogen export costs than fully renewable electrolysis under stated assumptions.",
+        "method_or_basis": "PyPSA-based national electricity and hydrogen capacity-expansion model with scenario comparisons, 36-cluster spatial representation and financial analysis.",
+        "qualification": "Hydrogen exports are optimized hypothetical scenarios, not demonstrated contracts, financed infrastructure or observed EU supply.",
+        "radar_relevance": "European demand and cross-border energy supply are central to the model, giving a direct geoeconomic partnership link under A route 1.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Full author paper on arXiv HTML https://arxiv.org/html/2610.38094v1, with export scenarios and numerical results; repository identity in https://arxiv.org/abs/2610.38094."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "author_full_text",
+            "url": "https://arxiv.org/html/2610.38094v1",
+            "title": "PyPSA-Libya — full open-source model study and export scenarios",
+            "evidence_used": true
+          },
+          {
+            "kind": "repository_record",
+            "url": "https://arxiv.org/abs/2610.38094",
+            "title": "arXiv repository identity record for paper 2610.38094",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Author Mohamed Abuella, arXiv DOI and 28 October 2026 submission confirmed. Full manuscript, numerical tables and model assumptions read."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_EXTERNAL_ENERGY_PARTNERSHIP",
+        "reason": "Full preprint models prospective 70 TWh annual Libyan hydrogen exports to Europe, including technology costs and carbon-price conditions for a strategic energy partnership."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No same-work duplicate identified in supplied possible-duplicate list."
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-03T09:01:55Z",
+      "deep_scan_package_id": "worker-a-20261103T083240Z-99bf5fe41ff7",
+      "claims": [
+        {
+          "object": "supply_chain.diversification",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Mohamed Abuella",
+            "class": "other"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_conditional",
+          "status": "observation",
+          "status_date": "2026-10-28",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Hydrogen exports are optimized hypothetical scenarios, not demonstrated contracts, financed infrastructure or observed EU supply.",
+          "text": "A model of 70 TWh per year hydrogen exports from Libya to Europe finds cost competitiveness depends on production technology, carbon pricing and infrastructure assumptions.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.48550/arxiv.2610.38094",
+          "merit": 51,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:a023a6e839836471:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-11-02T16:42:50Z"
+  "claims_updated_at": "2026-11-03T09:01:55Z"
 }

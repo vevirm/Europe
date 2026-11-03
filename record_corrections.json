@@ -1,7 +1,7 @@
 {
   "version": 1,
   "profile": "radar-record-corrections-v1",
-  "updated_at": "2026-11-02T16:42:50Z",
+  "updated_at": "2026-11-03T09:01:55Z",
   "records": {
     "link:https://doi.org/10.1080/09662839.2026.2709844": {
       "fields": {
@@ -6117,6 +6117,69 @@
       ],
       "updated_at": "2026-11-02T15:49:09Z",
       "deep_scan_package_id": "worker-a-20261102T152113Z-2b1cc2661e2a"
+    },
+    "link:https://rhg.com/wp-content/uploads/2026/11/Chinas-Chemicals-Capacity-Buildout.pdf": {
+      "fields": {
+        "authors": "Jeremy Smith"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "The cover of the first-party report and publisher’s report page name Jeremy Smith as author, rather than Rhodium Group as a personal author.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "evidence": [
+        "https://rhg.com/wp-content/uploads/2026/11/Chinas-Chemicals-Capacity-Buildout.pdf",
+        "https://rhg.com/research/global-impacts-of-chinas-chemicals-buildout/"
+      ],
+      "updated_at": "2026-11-03T09:01:52Z",
+      "deep_scan_package_id": "worker-a-20261103T083240Z-99bf5fe41ff7"
+    },
+    "link:https://doi.org/10.1016/j.nbsj.2026.100386": {
+      "fields": {},
+      "unset": [
+        "date"
+      ],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Journal pre-proof identifies acceptance as 30 October 2026; therefore scanner publication date 1 October 2026 predates acceptance and is not reliable.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "evidence": [
+        "https://content.openalex.org/works/W7124829049.pdf"
+      ],
+      "updated_at": "2026-11-03T09:01:52Z",
+      "deep_scan_package_id": "worker-a-20261103T083240Z-99bf5fe41ff7"
+    },
+    "link:https://www.cer.eu/sites/default/files/EV_eu_gas_2.11.26.pdf": {
+      "fields": {
+        "authors": "Elise Viadere"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "First-party report PDF and official CER webpage name Elise Viadere as the report author.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "evidence": [
+        "https://www.cer.eu/sites/default/files/EV_eu_gas_2.11.26.pdf",
+        "https://www.cer.eu/insights/eu-must-make-hormuz-crisis-turning-point"
+      ],
+      "updated_at": "2026-11-03T09:01:53Z",
+      "deep_scan_package_id": "worker-a-20261103T083240Z-99bf5fe41ff7"
+    },
+    "link:https://doi.org/10.1093/haschl/qxag303": {
+      "fields": {
+        "date": "2026-10-28"
+      },
+      "unset": [],
+      "reason_code": "DEEP_SCAN_V2_METADATA_CORRECTION",
+      "reason": "Oxford Academic official article page gives publication date 28 October 2026 rather than the scanner’s 27 October 2026.",
+      "source": "deep_scan_v2",
+      "corpus_scope": "main",
+      "evidence": [
+        "https://content.openalex.org/works/W7224083387.pdf",
+        "https://academic.oup.com/healthaffairsscholar/advance-article/doi/10.1093/haschl/qxag303/9003323"
+      ],
+      "updated_at": "2026-11-03T09:01:54Z",
+      "deep_scan_package_id": "worker-a-20261103T083240Z-99bf5fe41ff7"
     }
   }
 }
