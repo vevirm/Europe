@@ -7,24 +7,27 @@ Scheduling policy: preserve active worker reservations; fill new slots with Main
 A validated unsuccessful recovery is one pass; packaging alone is not a pass. After **3** failed passes, close the work as **dropped**, keeping an audit. No work-by-hand loop.
 
 - Authoritative V2 verified: **2848** (Main **1193** + Historical **1655**)
-- Automatic queue still needing V2 verification: **7** (Main **6** + Historical **1**)
-- Currently assigned to workers: **7** (Main **6** + Historical **1**)
+- Automatic queue still needing V2 verification: **31** (Main **17** + Historical **14**)
+- Currently assigned to workers: **25** (Main **11** + Historical **14**)
 - Bounded access-recovery retries still eligible: **6**
 - Dropped after three failed recovery passes (archived): **185**
 - Legacy work-by-hand requiring reconciliation: **0**
-- Automatic queue pending and not yet assigned: **0**
+- Automatic queue pending and not yet assigned: **6**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261103T090315Z-3d63f772ea9d`
-- Assigned unresolved records: **6**
-  1. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=ab289355-d3aa-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU)2019/881 (The Cybersecurity Act 2) – Title II (ENISA) - Presentation by the Presidency - Publications Office of the EU — recovery attempt 3/3
-  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=edc102a9-d3b0-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) – Title II (Fees), Articles 47 - Presentation by the Commission - Publications Office of the EU — recovery attempt 3/3
-  3. `link:https://doi.org/10.1080/03068374.2026.2740496` — THE MAGHREB AND THE MIDDLE KINGDOM: CHINA’S EV SUPPLY-CHAIN DIPLOMACY IN AN ERA OF GEOPOLITICAL RIVALRY — recovery attempt 3/3
-  4. `link:https://doi.org/10.1080/13563467.2026.2751110` — The semi-periphery's ‘defence dividend’: redistribution of labour in Europe's defence industry — recovery attempt 3/3
-  5. `link:https://doi.org/10.1080/13563467.2026.2751102` — Globalization unravelling? ASML and the geopolitics of Europe-China tech decoupling — recovery attempt 3/3
-  6. `link:https://doi.org/10.1016/j.erss.2026.105047` — Monopolising the green transition: China's structural dominance and selective weaponisation of critical raw materials in Europe — recovery attempt 3/3
+- Current package: `worker-a-20261104T074951Z-597db88ec598`
+- Assigned unresolved records: **24**
+  1. `link:https://doi.org/10.1017/eis.2026.10099` — Europe, strategic constraint, and the politics of dependence: Rethinking strength, treaties, and the transatlantic bargain
+  2. `link:https://doi.org/10.1365/s43439-026-00177-5` — Enforcing the AI Act at the national level: Germany’s KI-MIG as a blueprint for AI market surveillance in Europe?
+  3. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=9d397d4a-d728-11f1-b0c5-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Regulation (EU) 2026/2382 of the European Parliament and of the Council of 21 October 2026 amending Regulations (EC) No 1907/2006, (EC) No 1272/2008, (EU) No 528/2012, (EU) 2019/1021 and (EU) 2021/697 as regards defence readiness and facilitating defence investments and conditions for defence industry - Publications Office of the EU
+  4. `link:https://doi.org/10.1016/j.sftr.2026.102267` — Energy dependence, industrial structure, and growth in the EU
+  5. `link:https://doi.org/10.1163/15718166-12340224` — Balancing National Security and Non-Refoulement: the Securitization of EU Migration Policies and the Crisis of Fundamental Rights
+  6. `link:https://ecfr.eu/wp-content/uploads/2026/11/Pulling-together-A-European-partnership-model-for-decarbonisation.pdf` — Pulling together: A European partnership model for decarbonisation – European Council on Foreign Relations
+  7. `link:https://doi.org/10.1111/jcms.70130` — Asymmetric Regulatory Embeddedness and Post‐Brexit Governance: Explaining Adaptive Convergence in the United Kingdom
+  8. `link:https://doi.org/10.1016/j.tfp.2026.101514` — Wood availability and export pressure associated with major forest disturbances: A comparative analysis of industrial roundwood flows in Slovenia and Czechia
+  - … plus 16 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-20261101T092736Z-c510784a458c`
