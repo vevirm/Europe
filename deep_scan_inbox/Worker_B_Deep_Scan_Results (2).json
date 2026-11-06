@@ -1,0 +1,1599 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-b-20261106T071728Z-5e45ec99a98a",
+  "results": [
+    {
+      "record_key": "historical:id:97e8139fb8c2279e",
+      "source_hash": "557cb1e4",
+      "identity_hash": "6d1437cc7b87c4e7",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Bruegel working-paper URL https://www.bruegel.org/working-paper/there-china-problem-and-how-can-world-trade-organization-address-it returned HTTP 403."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Bruegel-supplied working-paper catalog at https://ideas.repec.org/p/bre/wpaper/node_12608.html confirmed exact title, author, 2026 date and report identifier."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Located substantial author-attributed full article republication at https://finance21.net/is-there-a-china-problem-and-how-can-the-wto-address-it/; reviewed WTO rules, trade disputes and policy sections."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "author_article_republication",
+            "url": "https://finance21.net/is-there-a-china-problem-and-how-can-the-wto-address-it/",
+            "title": "Petros Mavroidis Bruegel working paper author-text republication",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_supplied_registry",
+            "url": "https://ideas.repec.org/p/bre/wpaper/node_12608.html",
+            "title": "Working Paper 30/2026 bibliographic identity",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 1 via the recovered sources; supplied item is Is there a ‘China problem’ and how can the World Trade Organization address it?. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Substantive EU-China trade defence and exposure analysis supported by identified research paper."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2026-10-15",
+          "authors": "Petros C. Mavroidis",
+          "title": "Is there a ‘China problem’ and how can the World Trade Organization address it?"
+        },
+        "unset": [],
+        "reason": "Bruegel Working Paper 30/2026 is dated 15 October 2026 by Petros C. Mavroidis, verified against RePEc publisher-supplied metadata and an author-text publication; historical scanner year was wrong."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "WTO limits in addressing China’s trade model",
+      "reader_what": "Mavroidis argues WTO rules can challenge Chinese subsidies but cannot by themselves correct underconsumption or currency imbalances.",
+      "reader_why": "Trade remedies can address some subsidies but leave macroeconomic vulnerabilities and export imbalances unresolved.",
+      "reader_more": "The 2026 Bruegel working paper distinguishes trade-law enforcement from macroeconomic coordination. It discusses EU trade exposure, WTO subsidy disciplines, transnational support and the need to involve the IMF. These are analytical conclusions and recommendations, not newly adopted WTO rules.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "WTO limits in addressing China’s trade model",
+        "main_finding": "WTO litigation alone does not resolve the EU’s wider trade vulnerability to China.",
+        "method_or_basis": "Full author-attributed paper text republished by finance21, plus Bruegel-supplied RePEc working-paper registry identity.",
+        "qualification": "Claims about potential WTO/IMF coordination are recommendations, not adopted measures.",
+        "radar_relevance": "Substantive EU-China trade defence and exposure analysis supported by identified research paper.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.wto_compatibility",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Petros C. Mavroidis",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-10-15",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Claims about potential WTO/IMF coordination are recommendations, not adopted measures.",
+          "text": "WTO litigation alone does not resolve the EU’s wider trade vulnerability to China.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:feabb1638e72f44a",
+      "source_hash": "8d205694",
+      "identity_hash": "78f0ed583cae11b4",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI https://doi.org/10.1111/twec.13735 resolves to Wiley open-access full article https://onlinelibrary.wiley.com/doi/full/10.1111/twec.13735, with authors, methods and results inspected."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/twec.13735",
+            "title": "Du, Shepotylo and Shi, The World Economy 2025 full journal article",
+            "evidence_used": true
+          },
+          {
+            "kind": "author_repository_full_text",
+            "url": "https://research.aston.ac.uk/files/204318633/World_Economy_-_2025_-_Du_-_Trade_Disintegration_and_Agri_Food_Trade_United_Kingdom_Exit_From_EU.pdf",
+            "title": "Aston University author-deposited full text",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 2 via the recovered sources; supplied item is Trade Disintegration and Agri‐Food Trade: <scp>United Kingdom</scp> Exit From <scp>EU</scp>. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Cross-border European market-access and trade fragmentation caused by Brexit."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "Trade Disintegration and Agri-Food Trade: United Kingdom Exit From EU",
+          "date": "2025-06-20"
+        },
+        "unset": [],
+        "reason": "Wiley records first online publication on 20 June 2025 and provides the plain-text bibliographic title without HTML scp markup."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Brexit reduced EU–UK agri-food trade",
+      "reader_what": "A difference-in-differences study estimates lower agri-food trade volumes and higher prices after the EU–UK Trade and Cooperation Agreement.",
+      "reader_why": "Non-tariff barriers altered EU–UK food market access and supply costs.",
+      "reader_more": "Du, Shepotylo and Shi analyze changes after replacement of single-market rules by the Trade and Cooperation Agreement. Their estimates report UK agri-food exports to the EU down 36.1% by value, with imports also falling. Simulated deeper sanitary and phytosanitary provisions could mitigate losses, but these are counterfactual estimates.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "Brexit reduced EU–UK agri-food trade",
+        "main_finding": "New border procedures impaired market access despite zero-tariff provisions for qualifying products.",
+        "method_or_basis": "Open-access 2025 Wiley full journal article using difference-in-differences and structural-gravity counterfactual analysis; matching full PDF in source_material.",
+        "qualification": "Causal estimates depend on comparison assumptions; improved-agreement outcomes are modelled, not observed.",
+        "radar_relevance": "Cross-border European market-access and trade fragmentation caused by Brexit.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Jun Du; Oleksandr Shepotylo; Yujie Shi",
+            "class": "university_group"
+          },
+          "mechanism": "evaluates",
+          "direction": "contracts",
+          "status": "observation",
+          "status_date": "2025-06-20",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "effect",
+          "qualification": "Causal estimates depend on comparison assumptions; improved-agreement outcomes are modelled, not observed.",
+          "text": "New border procedures impaired market access despite zero-tariff provisions for qualifying products.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:9e457378aa37000a",
+      "source_hash": "52faef9e",
+      "identity_hash": "6f6fb711f46b23f8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read Institut Montaigne original page https://www.institutmontaigne.org/en/publications/european-competitiveness-lessons-ira with source-authored substantive policy summary and report download links."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_institution_report_summary",
+            "url": "https://www.institutmontaigne.org/en/publications/european-competitiveness-lessons-ira",
+            "title": "European Competitiveness: Lessons from the IRA — original report",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 3 via the recovered sources; supplied item is European Competitiveness: Lessons from the IRA. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Evidence-led evaluation of European strategic industrial-policy instruments and dependency reduction."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Georgina Wright; Énora Morin",
+          "date": "2025-03"
+        },
+        "unset": [],
+        "reason": "Institut Montaigne publisher page identifies authors Wright and Morin and dates the explainer March 2025 rather than January 1."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Lessons from US industrial subsidies for European clean technology",
+      "reader_what": "Institut Montaigne contrasts US industrial subsidies with European investment, permitting and strategic supply-chain needs.",
+      "reader_why": "Industrial support design can influence Europe’s green manufacturing capacity and external dependencies.",
+      "reader_more": "Wright and Morin discuss the Inflation Reduction Act’s scale, accessibility and industrial incentives. They recommend reforming EU clean-tech funding, permitting and demand-side support rather than copying US policy exactly. The source is an explanatory comparative report, not evidence that reforms were enacted.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "Lessons from US industrial subsidies for European clean technology",
+        "main_finding": "The analysis argues that predictable incentives and manufacturing demand matter for EU clean-tech competitiveness.",
+        "method_or_basis": "Institut Montaigne publisher page and substantive 64-page explainer summary on US/EU industrial policy.",
+        "qualification": "Recommendations precede actual implementation and depend on fiscal and political constraints.",
+        "radar_relevance": "Evidence-led evaluation of European strategic industrial-policy instruments and dependency reduction.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Georgina Wright and Énora Morin",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2025-03",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Recommendations precede actual implementation and depend on fiscal and political constraints.",
+          "text": "The analysis argues that predictable incentives and manufacturing demand matter for EU clean-tech competitiveness.",
+          "confidence": "high",
+          "status_date_precision": "month"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:c6a3284f33fdfb8e",
+      "source_hash": "35060c04",
+      "identity_hash": "4fcf482bacc144a4",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Provided Bruegel PDF archive URL https://www.bruegel.org/sites/default/files/2026-04/europe-urgently-needs-a-common-strategy-on-russian-gas-10783.pdf was stored as failed/403 by scanner."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact title search found full Bruegel-attributed author article https://maritimes.gr/en/europe-urgently-needs-a-common-strategy-on-russian-gas/, which was substantively read."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Bruegel institutional post https://www.linkedin.com/posts/bruegel_europe-urgently-needs-a-common-strategy-on-activity-7313213700230795266-loTV corroborates identity and tariff recommendation."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "author_article_republication",
+            "url": "https://maritimes.gr/en/europe-urgently-needs-a-common-strategy-on-russian-gas/",
+            "title": "Bruegel article by Keliauskaitė, Tagliapietra and Zachmann, reprint",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 4 via the recovered sources; supplied item is Europe urgently needs a common strategy on Russian gas. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct analysis of Russian gas coercion, EU dependency and trade-policy tools."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2025-04-02",
+          "authors": "Ugnė Keliauskaitė; Simone Tagliapietra; Georg Zachmann"
+        },
+        "unset": [],
+        "reason": "Article’s own publication header states 2 April 2025 and names the three Bruegel authors, corroborated by Bruegel institutional social post."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Collective EU policy on remaining Russian gas",
+      "reader_what": "Bruegel authors favor coordinated EU tariffs over fragmented national decisions on continued Russian gas imports.",
+      "reader_why": "Russian supply contracts and infrastructure could reintroduce economic pressure on EU energy consumers.",
+      "reader_more": "Keliauskaitė, Tagliapietra and Zachmann compare embargoes, tariffs and quotas for remaining Russian gas supplies. They assess consequences for vulnerable member states and argue that tariffs could reduce Russia’s leverage while helping finance alternative sourcing. Their conclusion is a policy recommendation, not evidence that tariffs were adopted.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "Collective EU policy on remaining Russian gas",
+        "main_finding": "A fragmented return to Russian gas could renew supply dependence and political leverage.",
+        "method_or_basis": "Complete Bruegel-attributed author article preserved by a legitimate reprint outlet, cross-checked to Bruegel institutional announcement.",
+        "qualification": "Policy effects of tariffs versus quotas are economic arguments and scenarios, not observed EU outcomes.",
+        "radar_relevance": "Direct analysis of Russian gas coercion, EU dependency and trade-policy tools.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Ugnė Keliauskaitė; Simone Tagliapietra; Georg Zachmann",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2025-04-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Policy effects of tariffs versus quotas are economic arguments and scenarios, not observed EU outcomes.",
+          "text": "A fragmented return to Russian gas could renew supply dependence and political leverage.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:25b8d52a20196591",
+      "source_hash": "45e13807",
+      "identity_hash": "bdbb7be46ed68f14",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Bruegel direct PDF https://www.bruegel.org/sites/default/files/2024-09/PB%2020%202024_2.pdf was blocked by previously recorded source retrieval."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Read full Bruegel Policy Brief 20/2024 deposited at https://www.econstor.eu/bitstream/10419/306201/1/1906502056.pdf, including title page and policy evidence; Sitra https://www.sitra.fi/en/publications/a-european-circular-single-market-for-economic-security-and-competitiveness/ confirms sponsorship."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "full_text_repository_copy",
+            "url": "https://www.econstor.eu/bitstream/10419/306201/1/1906502056.pdf",
+            "title": "Grabbe and Léry Moffat Bruegel Policy Brief 20/2024",
+            "evidence_used": true
+          },
+          {
+            "kind": "funder_original_publication",
+            "url": "https://www.sitra.fi/en/publications/a-european-circular-single-market-for-economic-security-and-competitiveness/",
+            "title": "Sitra funded-report publication record",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 5 via the recovered sources; supplied item is A European circular single market for economic security and competitiveness. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct evidence-led EU economic-security and circular raw-materials strategy."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Heather Grabbe; Luca Léry Moffat",
+          "date": "2024-09"
+        },
+        "unset": [],
+        "reason": "Original Bruegel Policy Brief 20/2024 is dated September 2024, and full repository copy names both authors; scanner date of November was not original publication date."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Circular single market to reduce European raw-material dependence",
+      "reader_what": "Bruegel recommends an EU circular-products market to reduce strategic raw-material exposure and improve competitiveness.",
+      "reader_why": "Recovered materials reduce dependence on external inputs and volatile commodity chains.",
+      "reader_more": "Grabbe and Léry Moffat assess how resource efficiency, recycling standards and markets for secondary inputs could limit critical supply dependencies. Their policy brief links supply resilience, coercion risk and industrial competitiveness. This is a proposed policy approach, not an observed effect of a completed Circular Economy Act.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "Circular single market to reduce European raw-material dependence",
+        "main_finding": "Stronger secondary-material markets could lessen Europe’s exposure to scarce imported raw inputs.",
+        "method_or_basis": "Full Bruegel Policy Brief 20/2024 in EconStor institutional repository and commissioning partner Sitra description.",
+        "qualification": "The expected dependence reduction is policy analysis rather than measured implementation impact.",
+        "radar_relevance": "Direct evidence-led EU economic-security and circular raw-materials strategy.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "green.circular_economy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Heather Grabbe and Luca Léry Moffat",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2024-09",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The expected dependence reduction is policy analysis rather than measured implementation impact.",
+          "text": "Stronger secondary-material markets could lessen Europe’s exposure to scarce imported raw inputs.",
+          "confidence": "high",
+          "status_date_precision": "month"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:a9fdaa8f581dfd8a",
+      "source_hash": "b29c776a",
+      "identity_hash": "de7d7472c3a596fb",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Opened https://www.bruegel.org/opinion-piece/industrial-policy-economic-security; Bruegel returned HTTP 403."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Read complete Maria Demertzis article at https://cyprus-mail.com/2024/04/20/industrial-policy-for-economic-security (source noted as Bruegel republication)."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Article also available from author-affiliated Cyprus Economic Society at https://cypruseconomicsociety.org/industrial-policy-for-economic-security?action=genpdf&id=2318; author publication list https://mariademertzis.wixsite.com/site/opeds confirms title/date."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "author_opinion_full_text",
+            "url": "https://cyprus-mail.com/2024/04/20/industrial-policy-for-economic-security",
+            "title": "Industrial policy for economic security by Maria Demertzis",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 6 via the recovered sources; supplied item is Industrial policy for economic security. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Source is commentary, not qualifying evidence-led Strand A research."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Maria Demertzis",
+          "date": "2024-04-17",
+          "type": "opinion column"
+        },
+        "unset": [],
+        "reason": "Author’s publication list and third-party article reproduce her April 17, 2024 opinion; the scanner displayed September 4 instead."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Industrial-policy opinion on economic security",
+      "reader_what": "Demertzis argues that EU industrial policy should diversify dependencies and support strategic industries cautiously.",
+      "reader_why": "",
+      "reader_more": "This is a short opinion piece asserting the usefulness and risks of industrial policy for European economic security. It discusses import dependencies, scale and IMF guidelines, but presents no completed original evaluation, dataset or substantive evidence-led policy report. The source itself exists, but fails the completed evidence-product guard.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "Industrial-policy opinion on economic security",
+        "main_finding": "A commentary calls for prudent strategic EU support rather than establishing a tested policy effect.",
+        "method_or_basis": "Author-attributed full column reprinted by Cyprus Mail and the Cyprus Economic Society; original author identified.",
+        "qualification": "Opinion and policy recommendations are not completed empirical evidence products.",
+        "radar_relevance": "Source is commentary, not qualifying evidence-led Strand A research.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:6f623c4248d0ecb5",
+      "source_hash": "b0b51e5d",
+      "identity_hash": "411cec594ec6facd",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Attempted the assignment URL; direct source retrieval was blocked, moved or was not available as a complete full-text page."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Located original historic 2024 PDF with import table, authors and October publication. https://www.bruegel.org/sites/default/files/2024-10/the-end-of-russian-gas-transit-via-ukraine-and-options-for-the-eu-10390_0.pdf"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "thinktank_primary_full_pdf",
+            "url": "https://www.bruegel.org/sites/default/files/2024-10/the-end-of-russian-gas-transit-via-ukraine-and-options-for-the-eu-10390_0.pdf",
+            "title": "Bruegel original October 2024 gas transit analysis",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 7 via the recovered sources; supplied item is The end of Russian gas transit via Ukraine and options for the EU. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Foundational historical diagnosis of Russian gas dependence and EU supply substitution."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2024-10-17"
+        },
+        "unset": [],
+        "reason": "The original Bruegel PDF is explicitly dated 17 October 2024, rather than the scanner’s generic January date."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Ending Russian gas transit through Ukraine",
+      "reader_what": "Bruegel maps consequences of the December 2024 Ukraine–Russia gas-transit contract expiry for the EU.",
+      "reader_why": "Slovakia and neighbouring markets depended on the Ukrainian transit corridor for gas supply.",
+      "reader_more": "Keliauskaitė and Zachmann measure residual flows through Ukraine and alternative capacity for affected Eastern European countries. They assess the consequences of a transit stop for EU imports, Russian export revenues and Ukraine’s fees, and identify options for gas rerouting and demand adjustment. The analysis was prospective in October 2024.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "Ending Russian gas transit through Ukraine",
+        "main_finding": "Diversified gas routes and stronger demand flexibility limit Russia’s ability to pressure Europe.",
+        "method_or_basis": "First-party full 2024 Bruegel analysis with 2021–2024 flow tables and country infrastructure breakdown.",
+        "qualification": "The 2024 paper does not report what happened after the contract actually expired.",
+        "radar_relevance": "Foundational historical diagnosis of Russian gas dependence and EU supply substitution.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Ugnė Keliauskaitė and Georg Zachmann",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2024-10-17",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "The 2024 paper does not report what happened after the contract actually expired.",
+          "text": "Diversified gas routes and stronger demand flexibility limit Russia’s ability to pressure Europe.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:ec11ad9cfde22bbb",
+      "source_hash": "69d9f5c8",
+      "identity_hash": "72def805b9a00a55",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Attempted the assignment URL; direct source retrieval was blocked, moved or was not available as a complete full-text page."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching first-party Bruegel policy brief and substantial original executive-summary and analysis text. https://www.bruegel.org/system/files/2024-05/PB%2007%202024.pdf"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "thinktank_primary_full_pdf",
+            "url": "https://www.bruegel.org/system/files/2024-05/PB%2007%202024.pdf",
+            "title": "How to de-risk: Bruegel Policy Brief 07/2024",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 8 via the recovered sources; supplied item is How to de-risk: European economic security in a world of interdependence. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct historical synthesis of EU geoeconomic exposure, deterrence and risk policy."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2024-05"
+        },
+        "unset": [],
+        "reason": "Original Policy Brief is dated May 2024, not 1 January."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "European de-risking extends beyond imported products",
+      "reader_what": "Bruegel warns that product-by-product import screening misses export, financial and foreign-asset vulnerabilities.",
+      "reader_why": "EU firms can be pressured through lost exports, overseas investments and financial flows.",
+      "reader_more": "Pisani-Ferry, Weder di Mauro and Zettelmeyer critique simple critical-import lists and assess channels through which coercion travels. They propose narrow supply diversification for genuinely costly interruptions, stronger resilience through a deeper single market, and better protection against export and financial sanctions.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "European de-risking extends beyond imported products",
+        "main_finding": "Economic security requires managing interconnected trade and financial shocks, not just replacing suppliers.",
+        "method_or_basis": "Full Bruegel Policy Brief 07/2024 text, executive summary and sections on de-risking instruments.",
+        "qualification": "The paper offers analytical recommendations, not evidence that new counter-coercion tools succeeded.",
+        "radar_relevance": "Direct historical synthesis of EU geoeconomic exposure, deterrence and risk policy.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.risk_assessment",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Jean Pisani-Ferry; Beatrice Weder di Mauro; Jeromin Zettelmeyer",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2024-05",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The paper offers analytical recommendations, not evidence that new counter-coercion tools succeeded.",
+          "text": "Economic security requires managing interconnected trade and financial shocks, not just replacing suppliers.",
+          "confidence": "high",
+          "status_date_precision": "month"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:c37edac38b7af60a",
+      "source_hash": "38c12849",
+      "identity_hash": "475bb94c45d7a7e6",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Attempted the assignment URL; direct source retrieval was blocked, moved or was not available as a complete full-text page."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Located substantive Elcano-authored full comparative eurozone article in Eurasia Review. https://www.eurasiareview.com/18102024-above-pre-pandemic-levels-not-entirely-lessons-and-comparative-visual-analysis-of-the-eurozone/"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "institutional_analysis_republication",
+            "url": "https://www.eurasiareview.com/18102024-above-pre-pandemic-levels-not-entirely-lessons-and-comparative-visual-analysis-of-the-eurozone/",
+            "title": "Judith Arnal, Elcano macroeconomic analysis, full legitimate republication",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 9 via the recovered sources; supplied item is Above pre-pandemic levels? not entirely: analysis of the Eurozone. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Outside narrow economic-security criteria: generic macroeconomic comparison."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Judith Arnal",
+          "date": "2024-10"
+        },
+        "unset": [],
+        "reason": "Published Elcano-authorised article identifies author Judith Arnal and October 2024 publication."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Eurozone recovery compared with pre-pandemic output",
+      "reader_what": "Elcano compares the post-Covid macroeconomic performance of euro-area member states with their pre-2019 trajectories.",
+      "reader_why": "",
+      "reader_more": "Arnal compares GDP, investment and recovery trajectories in the eurozone, including Spain, Italy, France and Germany. This is an informative macroeconomic performance comparison. It does not analyse coercion, strategic supply dependence, critical technology control or cross-border economic-security exposure.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "Eurozone recovery compared with pre-pandemic output",
+        "main_finding": "The study identifies uneven recovery and growth across eurozone economies.",
+        "method_or_basis": "Full institutional author-credited Elcano piece legally republished with substantive comparative analysis.",
+        "qualification": "Weak economic performance by itself does not establish a specific strategic-security mechanism.",
+        "radar_relevance": "Outside narrow economic-security criteria: generic macroeconomic comparison.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:4d331f3e506a83b7",
+      "source_hash": "5bb958f5",
+      "identity_hash": "1c488b1aa5ef08fe",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Attempted the assignment URL; direct source retrieval was blocked, moved or was not available as a complete full-text page."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Recovered publisher index analysis identified via its precise title in Elcano institutional work catalog. https://www.realinstitutoelcano.org/en/analyses/a-new-era-in-globalisation-analysis-of-the-key-results-from-the-2024-edition-of-the-elcano-global-presence-index/"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "institutional_analytical_report_page",
+            "url": "https://www.realinstitutoelcano.org/en/analyses/a-new-era-in-globalisation-analysis-of-the-key-results-from-the-2024-edition-of-the-elcano-global-presence-index/",
+            "title": "Elcano 2024 Index analysis, official original page",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 10 via the recovered sources; supplied item is A new era in globalisation? Elcano Global Presence Index 2024. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Generic globalisation measurement does not meet the central Strand A guard."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Global presence rankings and European international position",
+      "reader_what": "The Elcano Global Presence Index describes international economic, military and cultural rankings across countries.",
+      "reader_why": "",
+      "reader_more": "The named analysis uses composite global-presence indicators to compare international projection after the pandemic, including several European economies. The index describes influence but does not directly investigate EU strategic dependencies, coercion or a specific economic-security mechanism. A later 2025 PDF must not be treated as the 2024 work.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "Global presence rankings and European international position",
+        "main_finding": "Global-presence rankings alone do not identify exploitable economic dependencies.",
+        "method_or_basis": "Identified the original Elcano index analytical series and distinguished separate 2024 and 2025 editions by publication title.",
+        "qualification": "The index measures international presence, not causal strategic exposure or supply resilience.",
+        "radar_relevance": "Generic globalisation measurement does not meet the central Strand A guard.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:e502858faf24a744",
+      "source_hash": "a750fc4a",
+      "identity_hash": "a100b0ccd95e5ace",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Attempted the assignment URL; direct source retrieval was blocked, moved or was not available as a complete full-text page."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Read substantive full original Bruegel-authored analysis, with scenarios reprinted on PubAffairs; Council library confirms provenance. https://www.pubaffairsbruxelles.eu/opinion-analysis/the-european-union-is-ready-for-the-2023-24-winter-gas-season/"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "author_analysis_republication",
+            "url": "https://www.pubaffairsbruxelles.eu/opinion-analysis/the-european-union-is-ready-for-the-2023-24-winter-gas-season/",
+            "title": "Bruegel October 2023 gas-season analysis, full author text",
+            "evidence_used": true
+          },
+          {
+            "kind": "eu_council_reference",
+            "url": "https://consilium-europa.libguides.com/EUenergycrisis/articles",
+            "title": "Council Secretariat bibliography confirms Bruegel authors and October 2023 date",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 11 via the recovered sources; supplied item is The European Union is ready for the 2023-24 winter gas season. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Historically salient EU gas supply security scenario evaluation."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2023-10-10"
+        },
+        "unset": [],
+        "reason": "Council Secretariat’s topical bibliography dates original Bruegel research 10 October 2023 and names all four authors."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "European natural-gas readiness for winter 2023–24",
+      "reader_what": "Bruegel estimated EU winter gas coverage after demand cuts, storage filling and new LNG capacity.",
+      "reader_why": "Storage and alternative LNG import capacity protect supply after Russian pipeline disruptions.",
+      "reader_more": "McWilliams, Sgaravatti, Tagliapietra and Zachmann modelled a sudden loss of remaining Russian gas and unusually cold weather. By autumn 2023, EU demand was 15% below historical norms, LNG capacity was up 20%, and gas storage exceeded the EU target. They forecast that even the adverse combination could leave usable stocks in spring.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "European natural-gas readiness for winter 2023–24",
+        "main_finding": "Diversified imports, lower demand and storage reduced exposure to a renewed Russian interruption.",
+        "method_or_basis": "Full Bruegel-attributed analytical article reprinted by PubAffairs, with dated scenarios and tables.",
+        "qualification": "Spring 2024 storage levels were forecasts in the October 2023 source, not facts observed then.",
+        "radar_relevance": "Historically salient EU gas supply security scenario evaluation.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Ben McWilliams; Giovanni Sgaravatti; Simone Tagliapietra; Georg Zachmann",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2023-10-10",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Spring 2024 storage levels were forecasts in the October 2023 source, not facts observed then.",
+          "text": "Diversified imports, lower demand and storage reduced exposure to a renewed Russian interruption.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:5906d38a150d711e",
+      "source_hash": "dbf63e63",
+      "identity_hash": "70fee3d2533f3e6e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Attempted the assignment URL; direct source retrieval was blocked, moved or was not available as a complete full-text page."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered Elcano original analysis PDF and university bibliographic author record. https://media.realinstitutoelcano.org/wp-content/uploads/2023/02/a-stellar-moment.-spain-strategy-and-european-space-daniel-fiott-elcano-royal-institute.pdf"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "thinktank_original_full_pdf",
+            "url": "https://media.realinstitutoelcano.org/wp-content/uploads/2023/02/a-stellar-moment.-spain-strategy-and-european-space-daniel-fiott-elcano-royal-institute.pdf",
+            "title": "Daniel Fiott, Elcano ARI 9/2023, 15 February 2023",
+            "evidence_used": true
+          },
+          {
+            "kind": "university_author_record",
+            "url": "https://researchportal.vub.be/en/publications/a-stellar-moment-spain-strategy-and-european-space/",
+            "title": "Daniel Fiott author affiliation and document metadata",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 12 via the recovered sources; supplied item is A stellar moment? Spain, strategy and European space. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Substantive EU critical-space infrastructure and defence-industrial technology capacity."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Daniel Fiott",
+          "date": "2023-02-15"
+        },
+        "unset": [],
+        "reason": "Elcano original PDF cover and VUB researcher repository confirm author, ARI issue and 15 February 2023 publication date."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Spain’s role in European strategic space capacity",
+      "reader_what": "Elcano analyses Spain’s involvement in EU satellite, surveillance and defence-technology projects.",
+      "reader_why": "European satellite positioning and imagery services reduce reliance on foreign space infrastructure.",
+      "reader_more": "Fiott documents the EU’s space-security agenda and Spanish contributions to Galileo, Copernicus, EU SatCen and EU Defence Fund/PESCO projects. The paper records circa €170 million in then-current EU defence-space projects and discusses investment coordination and supplier autonomy. It is 2023 context, not a record of current programme commitments.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "Spain’s role in European strategic space capacity",
+        "main_finding": "Secure space services and domestic industrial capability underpin Europe’s strategic technology control.",
+        "method_or_basis": "Original Elcano ARI 9/2023 complete analytical PDF plus author university bibliographic record.",
+        "qualification": "Planned EU space capabilities should not be confused with completed operational systems.",
+        "radar_relevance": "Substantive EU critical-space infrastructure and defence-industrial technology capacity.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "defence.production_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Daniel Fiott",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2023-02-15",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Planned EU space capabilities should not be confused with completed operational systems.",
+          "text": "Secure space services and domestic industrial capability underpin Europe’s strategic technology control.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:60850dfe2381dcdf",
+      "source_hash": "d844043b",
+      "identity_hash": "0651fd1b68a3d445",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Original DOI https://doi.org/10.54648/eerr2022009 was a restricted journal access route; recovered legal author copy."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Read matching 2022 peer-reviewed complete authorised full text at https://fiia.fi/wp-content/uploads/2022/04/intro_helwigsinkkonen_2022.pdf, with DOI and citation details."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "institutional_author_full_pdf",
+            "url": "https://fiia.fi/wp-content/uploads/2022/04/intro_helwigsinkkonen_2022.pdf",
+            "title": "Helwig and Sinkkonen, European Foreign Affairs Review 27 (2022)",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 13 via the recovered sources; supplied item is Strategic Autonomy and the EU as a Global Actor: The Evolution, Debate and Theory of a Conteste. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Foundational historical framework connecting EU economic interdependence to strategic policy capacity."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Niklas Helwig; Ville Sinkkonen"
+        },
+        "unset": [],
+        "reason": "FIIA publisher-permitted self-archived title page verifies both authors and DOI 10.54648/EERR2022009."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Strategic autonomy as a broad EU policy instrument",
+      "reader_what": "Helwig and Sinkkonen trace how EU strategic autonomy spread from defence to trade and economic governance.",
+      "reader_why": "How autonomy is defined changes which trade and industrial dependencies are prioritised.",
+      "reader_more": "The 2022 European Foreign Affairs Review article reviews the contested idea of EU strategic autonomy and its applications across foreign policy, technological capabilities and interdependence. It does not quantify a specific import dependency; rather, it clarifies the reasoning behind EU institutional economic-security instruments and strategic coordination.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "Strategic autonomy as a broad EU policy instrument",
+        "main_finding": "The competing meanings of autonomy influence the design of EU trade and technology policies.",
+        "method_or_basis": "Full peer-reviewed self-archived publisher article held by the Finnish Institute of International Affairs.",
+        "qualification": "Conceptual analysis does not establish effects of particular industrial-policy interventions.",
+        "radar_relevance": "Foundational historical framework connecting EU economic interdependence to strategic policy capacity.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "goal.strategic_autonomy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Niklas Helwig and Ville Sinkkonen",
+            "class": "university_group"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2022-04",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Conceptual analysis does not establish effects of particular industrial-policy interventions.",
+          "text": "The competing meanings of autonomy influence the design of EU trade and technology policies.",
+          "confidence": "high",
+          "status_date_precision": "month"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:8ec9f8dd95d5ce33",
+      "source_hash": "65cc944c",
+      "identity_hash": "cec844d0f7eee5b9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Original DOI https://doi.org/10.54648/eerr2022013 leads to a paywalled Kluwer journal page."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Inspected complete original 2022 author reprint https://fiia.fi/wp-content/uploads/2022/04/martinsinkkonen_2022.pdf with title, journal, pages and analytical argument."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "peer_reviewed_author_full_copy",
+            "url": "https://fiia.fi/wp-content/uploads/2022/04/martinsinkkonen_2022.pdf",
+            "title": "Garret Martin and Ville Sinkkonen, European Foreign Affairs Review 2022",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 14 via the recovered sources; supplied item is Past as Prologue? The United States and European Strategic Autonomy in the Biden Era. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Historical political-security context outside Strand A economic-security guard."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Garret Martin; Ville Sinkkonen",
+          "date": "2022-04"
+        },
+        "unset": [],
+        "reason": "Kluwer journal record and FIIA original reprint establish the two names and April 2022 special issue."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "US grand strategy and European strategic autonomy",
+      "reader_what": "Martin and Sinkkonen explain why Biden-era US foreign policy still constrained EU foreign-policy independence.",
+      "reader_why": "",
+      "reader_more": "The peer-reviewed article traces US strategic thinking, transatlantic primacy and security tensions after 2021. Its object is alliance politics and foreign/security grand strategy, rather than European industrial capacity, critical imports, trade controls or a concrete geoeconomic instrument.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "US grand strategy and European strategic autonomy",
+        "main_finding": "The article anticipates tension over who leads the transatlantic security relationship.",
+        "method_or_basis": "Complete 2022 peer-reviewed author copy in Finnish Institute of International Affairs repository and Kluwer publisher record.",
+        "qualification": "Defence-alliance strategy is not automatically a substantive European economic-security product.",
+        "radar_relevance": "Historical political-security context outside Strand A economic-security guard.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:4f967ffe7ec75c5c",
+      "source_hash": "89f63453",
+      "identity_hash": "54b198af97f61099",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Attempted the assignment URL; direct source retrieval was blocked, moved or was not available as a complete full-text page."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Located matching full Elcano research PDF and reviewed seven policy pitfalls. https://media.realinstitutoelcano.org/wp-content/uploads/2022/02/ari11-2022-korteweg-ortega-otero-a-spanish-dutch-view-on-open-european-strategic-autonomy.pdf"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_original_full_pdf",
+            "url": "https://media.realinstitutoelcano.org/wp-content/uploads/2022/02/ari11-2022-korteweg-ortega-otero-a-spanish-dutch-view-on-open-european-strategic-autonomy.pdf",
+            "title": "Korteweg, Ortega and Otero, Elcano ARI 11/2022",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 15 via the recovered sources; supplied item is Spanish-Dutch view on open European strategic autonomy. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct historical analysis of member-state alignment and economic-security trade-offs."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "A Spanish-Dutch view on open European strategic autonomy in trade, industry and digital policy: seven pitfalls to avoid",
+          "date": "2022-02-11"
+        },
+        "unset": [],
+        "reason": "Elcano original analysis cover dates ARI 11/2022 to 11 February and provides complete non-truncated report title."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Avoiding EU strategic-autonomy pitfalls in trade and industry",
+      "reader_what": "Elcano proposes open rather than protectionist autonomy across European trade, industrial and digital policy.",
+      "reader_why": "Trade openness and strategic diversification jointly influence Europe’s exposure to foreign suppliers.",
+      "reader_more": "Korteweg, Ortega and Otero compare Spanish and Dutch strategic-autonomy priorities. Their seven pitfalls warn against indiscriminate protectionism, ignoring strategic dependencies and uncoordinated national interventions. They favour diversification, domestic innovation, transparent supply-chain monitoring and EU-level governance.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "Avoiding EU strategic-autonomy pitfalls in trade and industry",
+        "main_finding": "Open strategic autonomy balances European strategic capacity against costly trade fragmentation.",
+        "method_or_basis": "Original Elcano ARI 11/2022 analysis full PDF from the issuing institute.",
+        "qualification": "Seven pitfalls are forward-looking policy recommendations, not evidence of enacted EU reforms.",
+        "radar_relevance": "Direct historical analysis of member-state alignment and economic-security trade-offs.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.member_state_alignment",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Rem Korteweg; Andrés Ortega; M. Otero-Iglesias",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2022-02-11",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Seven pitfalls are forward-looking policy recommendations, not evidence of enacted EU reforms.",
+          "text": "Open strategic autonomy balances European strategic capacity against costly trade fragmentation.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:fc713220b3e80729",
+      "source_hash": "a6cafdac",
+      "identity_hash": "72f94415a26f2f8e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Attempted the assignment URL; direct source retrieval was blocked, moved or was not available as a complete full-text page."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Located exact publication citation in EU Parliamentary Research Service Covid response bibliography and Elcano institutional listing. https://www.europarl.europa.eu/RegData/etudes/BRIE/2020/649391/EPRS_BRI%282020%29649391_EN.pdf"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_institutional_analysis",
+            "url": "https://www.realinstitutoelcano.org/en/analyses/a-coordinated-unlimited-and-flexible-insurance-policy-to-respond-to-the-pandemic/",
+            "title": "Elcano fiscal insurance commentary, cited in European Parliament EPRS review",
+            "evidence_used": true
+          },
+          {
+            "kind": "research_bibliography",
+            "url": "https://www.europarl.europa.eu/RegData/etudes/BRIE/2020/649391/EPRS_BRI%282020%29649391_EN.pdf",
+            "title": "European Parliament reference confirming work and timing",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 16 via the recovered sources; supplied item is Coordinated, unlimited & flexible insurance policy to pandemic respond. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Macro-fiscal pandemic response falls outside the required strategic external-exposure focus."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "A coordinated, unlimited and flexible insurance policy to respond to the pandemic",
+          "date": "2020-04"
+        },
+        "unset": [],
+        "reason": "Elcano title and European Parliament EPRS thematic reference identify April 2020 issue and original complete title."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Pandemic-era European macroeconomic insurance",
+      "reader_what": "Elcano urges EU countries to pool fiscal insurance against the economic damage of the Covid-19 pandemic.",
+      "reader_why": "",
+      "reader_more": "The 2020 analysis concerns emergency economic stabilisation, joint fiscal backstops and risk sharing during a health shock. It does not centre supply-chain coercion, strategic technologies, energy security or externally imposed trade vulnerabilities. The publisher’s identity is corroborated by the European Parliament research bibliography.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "Pandemic-era European macroeconomic insurance",
+        "main_finding": "Joint fiscal insurance was proposed to cushion unequal pandemic economic losses.",
+        "method_or_basis": "Elcano institutional analysis metadata and European Parliament research bibliography corroborate the work and its substantive fiscal-policy subject.",
+        "qualification": "A general crisis-insurance proposal is not automatically economic-security research.",
+        "radar_relevance": "Macro-fiscal pandemic response falls outside the required strategic external-exposure focus.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:3cb4d0024f700ec6",
+      "source_hash": "5c4f4b3f",
+      "identity_hash": "950f90868b899e3e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Attempted the assignment URL; direct source retrieval was blocked, moved or was not available as a complete full-text page."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered Elcano ARI 1/2020 full original policy analysis with dated title page. https://media.realinstitutoelcano.org/wp-content/uploads/2021/11/ari1-2020-simon-a-geopolitical-commission-beware-the-industrial-strategic-gap-in-eu-defence-policy.pdf"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "thinktank_original_full_pdf",
+            "url": "https://media.realinstitutoelcano.org/wp-content/uploads/2021/11/ari1-2020-simon-a-geopolitical-commission-beware-the-industrial-strategic-gap-in-eu-defence-policy.pdf",
+            "title": "Luis Simón, Elcano ARI 1/2020, original PDF",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 17 via the recovered sources; supplied item is A geopolitical Commission? Beware the gap in EU defence policy. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Substantive historical EU defence-industrial coordination and research investment governance."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Luis Simón",
+          "title": "A geopolitical Commission? Beware the industrial-strategic gap in EU defence policy",
+          "date": "2020-01-10"
+        },
+        "unset": [],
+        "reason": "The original PDF names Luis Simón, January 10 2020 and the exact substantive title."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU defence industry needs a shared strategic plan",
+      "reader_what": "Elcano argues that European Defence Fund allocations should follow joint strategic priorities rather than industrial lobbying alone.",
+      "reader_why": "Joint weapons development requires coordinated procurement priorities and reliable industrial funding.",
+      "reader_more": "Luis Simón evaluates the European Defence Fund and the gap between collaborative arms manufacturing and shared defence priorities. He recommends giving the EU High Representative a stronger say over fund-allocation decisions to align joint research and procurement with member-state strategy.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "EU defence industry needs a shared strategic plan",
+        "main_finding": "Poor coordination can waste EU funding without delivering needed defence-industrial capabilities.",
+        "method_or_basis": "Complete original Elcano ARI 1/2020 four-page analysis and ETH Zürich authorised full republication.",
+        "qualification": "A policy recommendation about defence-fund governance is not a documented reform.",
+        "radar_relevance": "Substantive historical EU defence-industrial coordination and research investment governance.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "defence.innovation_funding",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Luis Simón",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2020-01-10",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "A policy recommendation about defence-fund governance is not a documented reform.",
+          "text": "Poor coordination can waste EU funding without delivering needed defence-industrial capabilities.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:8373960310698629",
+      "source_hash": "22014d09",
+      "identity_hash": "6447df5f07cd5e77",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Attempted the assignment URL; direct source retrieval was blocked, moved or was not available as a complete full-text page."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Recovered ifo Institute publication with original Georg Zachmann contribution and exact citation of Bruegel report. https://www.ifo.de/en/publications/2018/article-journal/upheavals-energy-market-usa-opposes-nord-stream-2-path-american"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_authored_policy_analysis",
+            "url": "https://www.ifo.de/en/publications/2018/article-journal/upheavals-energy-market-usa-opposes-nord-stream-2-path-american",
+            "title": "ifo Institute 2018 Georg Zachmann original symposium contribution",
+            "evidence_used": true
+          },
+          {
+            "kind": "independent_citation",
+            "url": "https://www.ifo.de/en/publications/2018/article-journal/upheavals-energy-market-usa-opposes-nord-stream-2-path-american",
+            "title": "ifo publication identifies original 28 September Bruegel work",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 18 via the recovered sources; supplied item is LNG and Nord Stream 2 in the context of uncertain gas import demand from the EU. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Strong historical EU external energy dependence and cross-border infrastructure exposure."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Georg Zachmann",
+          "date": "2018-09-28"
+        },
+        "unset": [],
+        "reason": "The ifo publication cites Zachmann’s dated Bruegel article of 28 September 2018 and reproduces its analysis."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU gas demand uncertainty and Nord Stream 2",
+      "reader_what": "Zachmann argues LNG imports and the planned Nord Stream 2 pipeline should be assessed against uncertain EU gas demand.",
+      "reader_why": "Long-term Russian pipeline capacity may entrench import dependence when demand is uncertain.",
+      "reader_more": "His 2018 Bruegel discussion argues that increasing EU import demand might justify additional pipeline and LNG supplies, whereas declining demand weakens the case for Nord Stream 2. It also identifies Russian supply dependence and the strategic cost of irreversible infrastructure decisions. This is historical analysis, not a claim about the later pipeline’s operational fate.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "EU gas demand uncertainty and Nord Stream 2",
+        "main_finding": "Demand uncertainty makes long-lived Russian gas infrastructure a strategic lock-in risk.",
+        "method_or_basis": "2018 ifo Institute peer-authored symposium reproducing Zachmann’s analysis with explicit attribution to the named Bruegel publication.",
+        "qualification": "Conditional forecasts depend on 2018 assumptions; Nord Stream 2’s later history must not be projected backwards.",
+        "radar_relevance": "Strong historical EU external energy dependence and cross-border infrastructure exposure.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Georg Zachmann",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2018-09-28",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Conditional forecasts depend on 2018 assumptions; Nord Stream 2’s later history must not be projected backwards.",
+          "text": "Demand uncertainty makes long-lived Russian gas infrastructure a strategic lock-in risk.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:3907dfd7a835a051",
+      "source_hash": "96683ed3",
+      "identity_hash": "0f5e4b48d47bd825",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI https://doi.org/10.1007/978-3-319-77164-9_5 and provided matching substantive full chapter text confirm original scholarly work."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_abstract_and_full_chapter_text",
+            "url": "https://doi.org/10.1007/978-3-319-77164-9_5",
+            "title": "Springer book chapter, Geopolitics and Development in a Steady-State World",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 19 via the recovered sources; supplied item is Geopolitics and Development in a Steady-State World. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Non-European/global theoretical chapter fails European centrality condition."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Renewable-energy geopolitics in a steady-state world",
+      "reader_what": "A scholarly chapter explores how renewable transitions alter international development and geopolitics.",
+      "reader_why": "",
+      "reader_more": "The 2018 chapter examines resource politics, renewable technology, North–South relationships and economic development under a steady-state energy scenario. Europe is not the central geographical object and the text does not establish a specific EU strategic dependency, policy instrument or exposure to coercion.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "Renewable-energy geopolitics in a steady-state world",
+        "main_finding": "Energy transitions can redistribute geopolitical power between producers and consumers.",
+        "method_or_basis": "Full substantive chapter text recovered with matching Springer DOI and chapter title.",
+        "qualification": "General global geopolitics does not establish a Europe-specific economic-security mechanism.",
+        "radar_relevance": "Non-European/global theoretical chapter fails European centrality condition.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:9dcf2c235590ea75",
+      "source_hash": "86fa8d5f",
+      "identity_hash": "72ee58a9db74c561",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Attempted the assignment URL; direct source retrieval was blocked, moved or was not available as a complete full-text page."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Located Egmont original author publication page with complete research abstract, policy areas, journal and February publication. https://egmontinstitute.be/partnering-for-global-security-the-eu-its-strategic-partners-and-transnational-security-challenges/"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "institution_author_publication_record",
+            "url": "https://egmontinstitute.be/partnering-for-global-security-the-eu-its-strategic-partners-and-transnational-security-challenges/",
+            "title": "Thomas Renard, Egmont original author article record 2016",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Identity and source content checked for assignment 20 via the recovered sources; supplied item is Partnering for Global Security: The EU, Its Strategic Partners and Transnational Security Chall. No claimed observed effects are inferred from recommendations or forecasts."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE",
+        "reason": "Historical foreign-policy partnership analysis outside Strand A’s economic-security centre."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Thomas Renard",
+          "date": "2016-02-04"
+        },
+        "unset": [],
+        "reason": "Author’s institution published the paper on 4 February 2016 and verifies journal, title and author."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU strategic security partnerships beyond trade",
+      "reader_what": "Renard examines EU cooperation with ten partners on non-proliferation, terrorism, organised crime and cybercrime.",
+      "reader_why": "",
+      "reader_more": "The peer-reviewed 2016 article assesses foreign and security policy relationships and challenges among EU strategic partners. Its analytical scope is transnational security cooperation, not industrial supply, European trade and investment dependence, economic coercion or specific strategic economic capacity.",
+      "deep_analysis": {
+        "work_kind": "research work",
+        "research_question": "EU strategic security partnerships beyond trade",
+        "main_finding": "Partnership efficacy varies across different transnational security challenges.",
+        "method_or_basis": "Matching original Egmont Institute author publication and Kluwer journal metadata and substantive abstract.",
+        "qualification": "The institutional phrase “strategic partners” does not imply substantive economic-security coverage.",
+        "radar_relevance": "Historical foreign-policy partnership analysis outside Strand A’s economic-security centre.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    }
+  ]
+}
