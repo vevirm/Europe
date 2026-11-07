@@ -6,28 +6,24 @@ It shows what is verified, what each worker owns, and what is still eligible. Ex
 Scheduling policy: preserve active worker reservations; fill new slots with Main Radar first, then Historical Radar. Do not fill packages artificially at saturation.
 A validated unsuccessful recovery is one pass; packaging alone is not a pass. After **3** failed passes, close the work as **dropped**, keeping an audit. No work-by-hand loop.
 
-- Authoritative V2 verified: **2940** (Main **1228** + Historical **1712**)
-- Automatic queue still needing V2 verification: **50** (Main **33** + Historical **17**)
-- Currently assigned to workers: **14** (Main **11** + Historical **3**)
-- Bounded access-recovery retries still eligible: **13**
+- Authoritative V2 verified: **2971** (Main **1245** + Historical **1726**)
+- Automatic queue still needing V2 verification: **19** (Main **16** + Historical **3**)
+- Currently assigned to workers: **5** (Main **5** + Historical **0**)
+- Bounded access-recovery retries still eligible: **18**
 - Dropped after three failed recovery passes (archived): **185**
 - Legacy work-by-hand requiring reconciliation: **0**
-- Automatic queue pending and not yet assigned: **36**
+- Automatic queue pending and not yet assigned: **14**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261107T114402Z-3c1dc26c25d3`
-- Assigned unresolved records: **14**
-  1. `historical:id:8b6f795f74a8f736` — Trump's trade attack on China – who laughs last?
-  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=ab289355-d3aa-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU)2019/881 (The Cybersecurity Act 2) – Title II (ENISA) - Presentation by the Presidency - Publications Office of the EU — recovery attempt 3/3
-  3. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=edc102a9-d3b0-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) – Title II (Fees), Articles 47 - Presentation by the Commission - Publications Office of the EU — recovery attempt 3/3
-  4. `link:https://doi.org/10.1080/03068374.2026.2740496` — THE MAGHREB AND THE MIDDLE KINGDOM: CHINA’S EV SUPPLY-CHAIN DIPLOMACY IN AN ERA OF GEOPOLITICAL RIVALRY — recovery attempt 3/3
-  5. `link:https://doi.org/10.1080/13563467.2026.2751110` — The semi-periphery's ‘defence dividend’: redistribution of labour in Europe's defence industry — recovery attempt 3/3
-  6. `link:https://doi.org/10.1080/13563467.2026.2751102` — Globalization unravelling? ASML and the geopolitics of Europe-China tech decoupling — recovery attempt 3/3
-  7. `link:https://doi.org/10.1016/j.erss.2026.105047` — Monopolising the green transition: China's structural dominance and selective weaponisation of critical raw materials in Europe — recovery attempt 3/3
-  8. `link:https://doi.org/10.1163/15718166-12340224` — Balancing National Security and Non-Refoulement: the Securitization of EU Migration Policies and the Crisis of Fundamental Rights — recovery attempt 2/3
-  - … plus 6 more in the package manifest
+- Current package: `worker-a-20261107T115824Z-f02f4f8984ef`
+- Assigned unresolved records: **5**
+  1. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=dd4e8f89-d9bf-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2): Title IV: Security of ICT Supply Chains: Discussion paper - Publications Office of the EU — recovery attempt 2/3
+  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=c764aab8-d9bf-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Presidency second compromise text Title IV (Security of ICT Supply Chains) - Publications Office of the EU — recovery attempt 2/3
+  3. `link:https://doi.org/10.1080/08911916.2026.2743824` — Beyond the European Chips Act: Mobilizing Public Banks to Solve Europe’s Semiconductor Supply Chain Paradox — recovery attempt 2/3
+  4. `link:https://doi.org/10.1163/29505720-bja00020` — From CAI to De-Risking, Seven Years to Conclude, Four Months to Freeze — recovery attempt 2/3
+  5. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=bd116d80-da2f-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Presidency Flash for the Working Party on Competitiveness and Growth (Internal Market - Skills Portability) on 5 November 2026 - Publications Office of the EU — recovery attempt 2/3
 
 ### Worker B
 - Current package: `worker-b-20261107T111515Z-8d31efbfd461`
