@@ -6,41 +6,32 @@ It shows what is verified, what each worker owns, and what is still eligible. Ex
 Scheduling policy: preserve active worker reservations; fill new slots with Main Radar first, then Historical Radar. Do not fill packages artificially at saturation.
 A validated unsuccessful recovery is one pass; packaging alone is not a pass. After **3** failed passes, close the work as **dropped**, keeping an audit. No work-by-hand loop.
 
-- Authoritative V2 verified: **2921** (Main **1228** + Historical **1693**)
-- Automatic queue still needing V2 verification: **69** (Main **33** + Historical **36**)
-- Currently assigned to workers: **55** (Main **22** + Historical **33**)
+- Authoritative V2 verified: **2940** (Main **1228** + Historical **1712**)
+- Automatic queue still needing V2 verification: **50** (Main **33** + Historical **17**)
+- Currently assigned to workers: **14** (Main **11** + Historical **3**)
 - Bounded access-recovery retries still eligible: **13**
 - Dropped after three failed recovery passes (archived): **185**
 - Legacy work-by-hand requiring reconciliation: **0**
-- Automatic queue pending and not yet assigned: **14**
+- Automatic queue pending and not yet assigned: **36**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261107T111458Z-d011181d0b1a`
-- Assigned unresolved records: **36**
-  1. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=4f73242d-da2f-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — WORKING PARTY ON COMPETITIVENESS AND GROWTH (Internal Market) - Publications Office of the EU
-  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=dd4e8f89-d9bf-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2): Title IV: Security of ICT Supply Chains: Discussion paper - Publications Office of the EU
-  3. `link:https://egmontinstitute.be/india-eu-strategic-partnership-still-a-long-way-to-go/` — India-EU Strategic Partnership, Still A Long Way To Go - Egmont Institute
-  4. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=c764aab8-d9bf-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Presidency second compromise text Title IV (Security of ICT Supply Chains) - Publications Office of the EU
-  5. `link:https://doi.org/10.1080/08911916.2026.2743824` — Beyond the European Chips Act: Mobilizing Public Banks to Solve Europe’s Semiconductor Supply Chain Paradox
-  6. `link:https://doi.org/10.1787/58c3689d-en` — SME Policy Index for Western Balkans and Türkiye 2026 – Economy Profile for Serbia
-  7. `link:https://doi.org/10.1016/j.tranpol.2026.104526` — Spatial spillover effects in European dry bulk ports
-  8. `link:https://doi.org/10.1016/j.jmarsys.2026.104332` — Biological status and coastal resource management of Anadara tuberculosa in the Eastern Tropical Pacific
-  - … plus 28 more in the package manifest
+- Current package: `worker-a-20261107T114402Z-3c1dc26c25d3`
+- Assigned unresolved records: **14**
+  1. `historical:id:8b6f795f74a8f736` — Trump's trade attack on China – who laughs last?
+  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=ab289355-d3aa-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU)2019/881 (The Cybersecurity Act 2) – Title II (ENISA) - Presentation by the Presidency - Publications Office of the EU — recovery attempt 3/3
+  3. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=edc102a9-d3b0-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) – Title II (Fees), Articles 47 - Presentation by the Commission - Publications Office of the EU — recovery attempt 3/3
+  4. `link:https://doi.org/10.1080/03068374.2026.2740496` — THE MAGHREB AND THE MIDDLE KINGDOM: CHINA’S EV SUPPLY-CHAIN DIPLOMACY IN AN ERA OF GEOPOLITICAL RIVALRY — recovery attempt 3/3
+  5. `link:https://doi.org/10.1080/13563467.2026.2751110` — The semi-periphery's ‘defence dividend’: redistribution of labour in Europe's defence industry — recovery attempt 3/3
+  6. `link:https://doi.org/10.1080/13563467.2026.2751102` — Globalization unravelling? ASML and the geopolitics of Europe-China tech decoupling — recovery attempt 3/3
+  7. `link:https://doi.org/10.1016/j.erss.2026.105047` — Monopolising the green transition: China's structural dominance and selective weaponisation of critical raw materials in Europe — recovery attempt 3/3
+  8. `link:https://doi.org/10.1163/15718166-12340224` — Balancing National Security and Non-Refoulement: the Securitization of EU Migration Policies and the Crisis of Fundamental Rights — recovery attempt 2/3
+  - … plus 6 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-20261107T111515Z-8d31efbfd461`
-- Assigned unresolved records: **19**
-  1. `historical:id:df2bb6abfa96ee9d` — Europe’s economic security agenda needs far better techno-industrial intelligence
-  2. `historical:id:fbce8a99bb2b2a58` — European Union: Current Trends in FDI Screening and Guidance for Investors – Global Competition Review - CELIS Institute
-  3. `historical:id:852f535ffa5f4979` — Institut Jacques Delors - Climate, defence, sovereignty, competitiveness, purchasing power... Europeans in the middle of the road
-  4. `historical:id:622b33b802c2719c` — Shields Up: How China, Europe, Japan and the United States Shape the World through Economic Security - Institut Jacques Delors
-  5. `historical:id:672ded529bade43c` — Deciphering the EU-US Trade & Technology Council
-  6. `historical:id:fb7a7f8c98b16455` — Bring Europe rapidly back on track for growth with an ambitious and effective long-term competitiveness strategy
-  7. `historical:id:4703fe6176ca6a24` — Institut Jacques Delors - Building the strategic autonomy of Europe while global decoupling trends accelerate
-  8. `historical:id:200a25e881c352f2` — Inflation, Sanctions and Debt Distress: the Economic Face of the Russo-Ukrainian War
-  - … plus 11 more in the package manifest
+- Assigned unresolved records: **0**
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
