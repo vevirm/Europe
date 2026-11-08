@@ -1,0 +1,2533 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-a-20261108T094504Z-f060e1f433f8",
+  "results": [
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=93107309-d4af-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "source_hash": "99764d68",
+      "identity_hash": "6a00c9cac43228e9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "The supplied Publications Office download-handler URL returned a 404 in the package and offered no downloadable document."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "The matching Council document CM 4566/26 was recovered in full as a two-page official PDF at https://www.parlament.gv.at/dokument/XXVIII/EU/98737/imfname_11689320.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://www.parlament.gv.at/dokument/XXVIII/EU/98737/imfname_11689320.pdf",
+            "title": "Council document CM 4566/26: notice of meeting and provisional agenda",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Cross-matched the 19 October 2026 Council document identifier with the EU Publications Office metadata and inspected the Austrian parliamentary copy of the two-page agenda; it lists a discussion, not a policy adoption."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "C_AGENDA_ONLY",
+        "reason": "The Council document is only a two-page meeting notice and provisional agenda, not a substantive legislative development, evidence release or policy decision."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Council of the European Union",
+          "source": "Council of the European Union",
+          "type": "meeting notice and provisional agenda",
+          "title": "WORKING PARTY ON COMPETITIVENESS AND GROWTH (Industry) (Chips Act 2.0)"
+        },
+        "unset": [],
+        "reason": "The signed document names the Council of the European Union/General Secretariat as issuer and labels itself notice of meeting and provisional agenda, not a Publications Office-authored policy instrument."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Council schedules Chips Act 2.0 talks",
+      "reader_what": "The Council scheduled an examination of a presidency compromise text on 29–30 October 2026.",
+      "reader_why": "",
+      "reader_more": "The two-page document gives meeting logistics and a provisional agenda. It points to a separate presidency compromise text but does not state an adopted measure, outcome or analysis.",
+      "deep_analysis": {
+        "work_kind": "meeting notice and provisional agenda",
+        "research_question": "",
+        "main_finding": "A Council working party was scheduled to examine the Presidency compromise text on the Chips Act 2.0 proposal on 29 and 30 October 2026.",
+        "method_or_basis": "Primary two-page Council General Secretariat document CM 4566/26, dated 19 October 2026, recovered from the Austrian Parliament repository.",
+        "qualification": "A scheduled examination is not an adopted policy decision; the document contains no substantive findings or final outcome.",
+        "radar_relevance": "Chip industrial policy is relevant in topic, but this is only a procedural meeting agenda, excluded under Strand C.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.esr.2026.102389",
+      "source_hash": "b61cb9c1",
+      "identity_hash": "4ffe28487a7fcf9a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Direct resolution of https://doi.org/10.1016/j.esr.2026.102389 was inaccessible in the browser; the package had no journal text and OpenAlex found no work for this DOI."
+          },
+          {
+            "step": "doi",
+            "outcome": "failed",
+            "note": "Search for quoted DOI 10.1016/j.esr.2026.102389 found no matching Energy Strategy Reviews article; a different SSRN DOI, 10.2139/ssrn.6959342, identifies this manuscript."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search identified the same five-author 48-page June 17 2026 preprint at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6959342, but only the abstract could be read."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Giehl Kalz Mikulicz-Radecki Roger Pessoa 2026 returned their 2026 preprint on SSRN and ORCID records; no journal full text was available."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "failed",
+            "note": "Copenhagen Business School at https://research.cbs.dk/en/publications/reassessing-the-eus-lng-import-expansion/ hosts a 2025 three-page policy brief about the study, not the exact 48-page manuscript."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "failed",
+            "note": "Checked SSRN DOI 10.2139/ssrn.6959342 and the SSRN Delivery.cfm PDF link; the full paper request returned HTTP 403 and no freely accessible full manuscript was found."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Identity of the research manuscript is corroborated by author names, exact title and SSRN preprint, but not the purported journal DOI. No substantive matching full paper could be accessed; separately titled 2025 policy brief was not substituted."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The exact work and authors are documented as a June 2026 SSRN preprint, but its 48-page text could not be retrieved; the claimed Energy Strategy Reviews DOI remains uncorroborated."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/10168737.2026.2692699",
+      "source_hash": "b8f082a3",
+      "identity_hash": "e09720fc0fbcb95b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "https://doi.org/10.1080/10168737.2026.2692699 leads to Taylor & Francis; direct https://www.tandfonline.com/doi/full/10.1080/10168737.2026.2692699 returned HTTP 403."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1080/10168737.2026.2692699 appears in publisher article metadata, RePEc and the International Economic Journal issue 40(3), pp. 576–599."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact title located at https://ideas.repec.org/a/taf/intecj/v40y2026i3p576-599.html with Ewa Cieślik and matching publication details; only abstract available."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Search for European Manufacturing Exports Chinese ICT Cieślik 2026 located the journal site and the author’s ResearchGate work page, both without full text."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "failed",
+            "note": "Taylor & Francis permissions page says article access is restricted; RePEc explicitly says subscribers only and ResearchGate https://www.researchgate.net/publication/407698570_European_Manufacturing_Exports_and_Exposure_to_Chinese_ICT_Services says no full text."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "failed",
+            "note": "Search for title combined with PDF and university repository plus Crossref/author identifiers produced journal abstract copies and different earlier studies by the author, not an accessible matching manuscript."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Two separate bibliography signals confirm the exact DOI, author, journal, volume and pages. Abstract describes findings, but no full or substantive matching source could be inspected within legitimate access routes."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The publisher identifies the article and DOI, but its substantive full text is restricted and no legitimate matching open manuscript could be found."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/1540496x.2026.2755507",
+      "source_hash": "86343190",
+      "identity_hash": "6e3b345ecbca3f85",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "The supplied DOI https://doi.org/10.1080/1540496X.2026.2755507 was not fetchable; the package reported HTTP 403 at its Taylor & Francis full-article URL."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Identifying DOI 10.1080/1540496X.2026.2755507 matches the OpenAlex indexed article W7225329149 and title/author listing, but not text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "The exact-title search located the Emerging Markets Finance and Trade journal item, with all four authors and 5 November 2026 date, in https://jrnldaily.com/feed/?date_from=2026-10-09&lang=zh&page=8&scope=all&sort=date&subject_mode=any."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Search combining Wei He, Jiaxing Zhang, Haoyu Tian, Shuhong Zheng, 2026 and the article title identified the same journal record, not full text."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "failed",
+            "note": "Attempted Taylor & Francis https://www.tandfonline.com/doi/abs/10.1080/1540496X.2026.2755507 and the DOI publisher route; both inaccessible; no legitimate author repository manuscript identified."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "failed",
+            "note": "Broader searches with the distinctive phrase emerging technologies outflow China and DOI 2755507 returned journal contents metadata or unrelated works, not the article itself."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "The DOI, author sequence and journal publication date are consistent, but neither an accessible complete work nor substantive publisher text was recovered; scanner summary cannot alone justify admission."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Bibliographic identity is supported by the 5 November 2026 journal listing and DOI-linked records, but no substantive matching full text could be inspected."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.resourpol.2026.106086",
+      "source_hash": "d193604a",
+      "identity_hash": "4d2919b9e477a056",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "The reader URL https://doi.org/10.1016/j.resourpol.2026.106086 was not accessible in the browser, and the package did not contain substantive publisher text."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1016/j.resourpol.2026.106086 is listed with all three authors and Resources Policy publication in https://journalsworld.com/resources-policy/, consistent with OpenAlex W7168300024."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "The exact journal title was located in a 31 October 2026 journal feed at https://jrnldaily.com/feed/?date_from=2026-10-04&lang=zh&page=8&scope=all&sort=date&subject_mode=any, without full text."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searching Reisdorf Zacharias Kummer 2026 identified the journal item and authors’ earlier SSRN manuscript titled The Blurry Lines between Government and Companies."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "failed",
+            "note": "An SSRN preprint of 38 pages at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7116943 provides related author-produced metadata and abstract, but its Delivery.cfm PDF request was blocked (403) and the journal full text was not retrieved."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "failed",
+            "note": "Searched DOI 106086, hydropower competitiveness framework, and unique title fragments; the only substantive-looking alternative was an SSRN abstract with no inspectable complete study."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "The preprint is plausibly an earlier version, but its title differs and only an abstract was available. No substantive primary full text was verified; the substantive finding in the scanner cannot be silently promoted."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The journal article is identified, and a related author preprint exists under a materially different title; the full exact study remains unavailable for independent close reading."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1002/eet.70160",
+      "source_hash": "56c20db7",
+      "identity_hash": "1ff2abb0ceb3fb2f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "The direct DOI https://doi.org/10.1002/eet.70160 was not accessible to the live browser, but the scan package holds a matching PDF excerpt retrieved from the DOI through OpenAlex."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Inspected the 24,000-character OpenAlex-cached primary PDF excerpt supplied in this package, headed Environmental Policy and Governance and DOI 10.1002/eet.70160; the journal contents indexed the same author pair."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_pdf_cached",
+            "url": "https://doi.org/10.1002/eet.70160",
+            "title": "Discursive Alignment in EU Palm Oil Policy: How Securitisation Legitimises Ecological-Neocolonial Governance",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The first-party text identifies full-name authors Yusril Ihza Mahendra and Poppy Sulistyaning Winanti, DOI, publication and research design; the study analyses 21 primary documents across regulatory, advocacy, producer responses and trade disputes. The PDF excerpt was checked rather than relying on scanner prose."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The study substantively examines how EU deforestation and renewable-energy rules condition palm-oil market access and affect producer-country trade relations."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Yusril Ihza Mahendra, Poppy Sulistyaning Winanti"
+        },
+        "unset": [],
+        "reason": "The paper title page provides both authors’ full names; the scanner abbreviated them."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "How EU palm-oil rules shape market access",
+      "reader_what": "Authors find EU environmental-risk framing helped legitimize trade restrictions affecting palm-oil exporters.",
+      "reader_why": "EU sustainability classifications make market entry conditional on meeting EU-defined standards.",
+      "reader_more": "Using a 21-document critical discourse study, the authors trace framing through EU rules, advocacy, exporter responses and WTO disputes. They argue that technical environmental standards interact with unequal negotiating power. Their interpretation does not by itself establish discriminatory intent or measure economic harm.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed critical discourse analysis",
+        "research_question": "How did EU institutions frame palm oil as an environmental risk, and what power relationships shaped cross-border regulatory contestation?",
+        "main_finding": "The authors argue that EU palm-oil environmental-risk framing aligned scientific classifications and moral narratives, legitimising sustainability conditions for market access and generating contestation from exporters.",
+        "method_or_basis": "Discourse-Historical Approach to a 21-document corpus covering EU regulatory texts, advocacy, Indonesian/Malaysian producer-country responses and WTO trade proceedings.",
+        "qualification": "The authors analyse a 21-document corpus of EU regulatory, advocacy and producer-state material; their neocolonial interpretation is a contested discourse analysis, not a measured causal effect.",
+        "radar_relevance": "EU import market-access conditionality and exporter disputes are direct cross-border economic-security mechanisms under Strand A.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "conditions",
+          "direction": "becomes_conditional",
+          "status": "observation",
+          "status_date": "2026-11-05",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The authors analyse a 21-document corpus of EU regulatory, advocacy and producer-state material; their neocolonial interpretation is a contested discourse analysis, not a measured causal effect.",
+          "text": "The analysed EU palm-oil regulatory discourse connects environmental risk classifications to sustainability compliance as a condition of market access.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/09662839.2026.2749007",
+      "source_hash": "ca9408aa",
+      "identity_hash": "bf093e4821af1b8e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Attempted reader DOI https://doi.org/10.1080/09662839.2026.2749007; the Taylor & Francis full article route returned HTTP 403."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "DOI 10.1080/09662839.2026.2749007 and the exact title are indexed in publisher European Security latest-article list https://www.tandfonline.com/action/showAxaArticles?journalCode=feus20."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Quoted full-title search identified the publisher’s latest article entry by Guillem Colom-Piella, online 26 October 2026; no paper text was provided."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Guillem Colom-Piella publication announcement at https://es.linkedin.com/in/guillemcolom confirms title, affiliation, and that the study concerns the Spain-Israel procurement embargo, but only an author summary is displayed."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "failed",
+            "note": "Searched Taylor & Francis /doi/full and /doi/pdf routes and author/university repository for the exact 2026 article; official article page was blocked and a deposited copy was not located."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "failed",
+            "note": "Searched distinctive title fragments plus 2749007, Spike/MELLS SILAM Airbus normative decoupling, and filetype:pdf; found the authors’ descriptions but no complete study."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Article identity is supported by publisher metadata and author-written announcement; these do not replace inspectable arguments, source citations and case-study evidence. Recovery ladder exhausted without bypassing access controls."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The peer-reviewed article and author are verified, but no inspectable full article or research manuscript could be recovered to test its case evidence."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/14767724.2026.2758677",
+      "source_hash": "3c4b7696",
+      "identity_hash": "885e897d88f520f6",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Attempted DOI https://doi.org/10.1080/14767724.2026.2758677 and Taylor & Francis /doi/full; full text was not accessible from this environment."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "The publisher’s Globalisation, Societies and Education RSS item lists the exact title and DOI 10.1080/14767724.2026.2758677, also syndicated at https://aggrssive.ca.reclaim.cloud/tags/journal."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search reproduced the published journal item and authors Manuel V. Heitor, Afonso Amaral, Hugo Horta but not its body."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Author Hugo Horta describes the 1990–2024 co-authorship topic and publication in his own https://hk.linkedin.com/in/hugohorta post; no article body is contained there."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "failed",
+            "note": "Checked Taylor & Francis full-text routes; searched author university/IN+ and CESAER repositories for the exact 2026 article. The nearby Manuel Heitor hearing PDF at https://www.cesaer.org/content/6-representation/2026/20260226-hearing-fp10/mheitor-final-text-itre-26-feb-v24feb2026.pdf is a separate work."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "failed",
+            "note": "Searched fragments “global cooperation in S&T” “knowledge-based global order” and DOI suffix 2758677 with Heitor/Horta plus filetype:pdf; no inspectable matching research paper appeared."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Authors report that the article is open access, but actual full-text access could not be independently confirmed. A separate policy address and brief LinkedIn summary cannot be substituted for the source study."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The 2026 article and author collaboration are confirmed, but the substantive full open-access article could not be inspected through available routes."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/1540496x.2026.2755512",
+      "source_hash": "287ca7bd",
+      "identity_hash": "30cde54921c1e9b7",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Direct DOI route https://doi.org/10.1080/1540496x.2026.2755512 was inaccessible to the browser."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Retrieved and inspected the matching first-party 24,000-character PDF excerpt cached by source scanner from https://content.openalex.org/works/W7225311140.pdf; first two pages confirm author, journal and DOI 10.1080/1540496X.2026.2755512."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_pdf_cached",
+            "url": "https://content.openalex.org/works/W7225311140.pdf",
+            "title": "Pengfei Chang, FDI Functional Specialization and Upgrading Through Global Value Chains: Evidence from the Automotive Industry",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Original article PDF excerpt analyses Western Europe, Central and Eastern Europe and China automotive global value chains; distinguishes backward imported-input participation, forward domestic value contribution, foreign-investment functional specialization and technology upgrading."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_EU_INDUSTRIAL_CAPACITY",
+        "reason": "The original empirical study directly compares European automotive production networks and dependencies on foreign inputs, with direct industrial-capability implications."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Automotive supply-chain dependence varies across Europe",
+      "reader_what": "The study finds different links between imported inputs and domestic value contribution in Western and Central-Eastern European car industries.",
+      "reader_why": "Industrial upgrading depends on domestic capabilities as well as foreign investment and imported components.",
+      "reader_more": "Using comparative automotive value-chain and investment data, Pengfei Chang finds deeper backward integration associated with less forward participation in Western Europe. Central and Eastern Europe shows an initially positive relationship that weakens beyond a threshold. The analysis is associational and does not establish a universal threshold or causal effect.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed comparative quantitative industrial-economics study",
+        "research_question": "How do foreign investment functions and imported-input participation relate to domestic value creation in automotive supply chains across European regions and China?",
+        "main_finding": "Western European automotive industries show a negative association between backward and forward value-chain participation; Central/Eastern Europe shows a positive association below a threshold, and upgrading accompanies stronger forward participation.",
+        "method_or_basis": "Comparative quantitative global-value-chain study using automotive sector data for Western Europe, Central/Eastern Europe and China, with measures of functional specialisation and technology upgrading.",
+        "qualification": "Comparative statistical associations do not establish that imported inputs cause weaker domestic value addition; regions differ in industrial structure and investment patterns.",
+        "radar_relevance": "Europe-centric evidence about automotive value addition and exposure to imported intermediates meets Strand A route 2.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "industry.manufacturing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European automotive industry",
+            "class": "european_system"
+          },
+          "mechanism": "measures",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-05",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Comparative statistical associations do not establish that imported inputs cause weaker domestic value addition; regions differ in industrial structure and investment patterns.",
+          "text": "The study finds region-specific correlations between imported automotive intermediates and domestic value-added participation in European supply chains.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.36253/wep-21650",
+      "source_hash": "9aa53e6c",
+      "identity_hash": "9638384b870674d9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "The publisher reader URL https://oaj.fupress.net/index.php/wep/article/view/21650 provides journal title, issue status, author information, DOI and original abstract."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Followed publisher Just Accepted -> Download to full 33-page accepted manuscript https://oaj.fupress.net/index.php/wep/article/download/21650/15649/106327; read tariff exposure, importer shifts and survey methods."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_pdf",
+            "url": "https://oaj.fupress.net/index.php/wep/article/download/21650/15649/106327",
+            "title": "State of the International Wine Markets in 2025: Contracting Trade, Fading Premiumisation and the Reconfiguration of the United States Market",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Manuscript title page gives Simone Mueller Loose and Rafael del Rey; Table/sections 2.3.1 and 3.2 give the observed U.S. import decline, August 2025 tariff, and n=180 directly exposed exporter responses. The PDF title-page citation includes an unrelated draft working title but the paper’s main title and DOI are clear."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_EU_US_TRADE_EXPOSURE",
+        "reason": "The complete 33-page peer-reviewed manuscript directly studies EU wine export exposure to enacted U.S. tariffs and exporters’ trade diversifications."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Simone Mueller Loose, Rafael del Rey"
+        },
+        "unset": [],
+        "reason": "The journal article PDF first page gives Simone Mueller Loose and lowercase del Rey as author names, correcting the abbreviated and capitalised scanner form."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "U.S. tariffs reshape European wine exporters’ choices",
+      "reader_what": "Trade statistics and exporter surveys document declining U.S. wine imports after the 2025 EU tariff increase.",
+      "reader_why": "Tariffs, exchange rates and costly customer relationships constrain quick export diversification.",
+      "reader_more": "In a 33-page accepted manuscript, the authors combine trade statistics with a 1,002-person industry survey. Among 180 surveyed U.S.-market exporters, 15% had redirected shipments, while a larger share of all respondents expected diversification. They emphasise that shrinking demand is the broader pressure and that tariff effects cannot be separated cleanly from exchange rates or product mix.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed industry trade analysis with firm survey",
+        "research_question": "How did 2025 global wine trade decline, the 2025 U.S. tariff on EU wines and sector expectations interact?",
+        "main_finding": "Following the U.S. tariff increase in August 2025, declared EU-linked wine import values fell faster than volumes; 15% of surveyed exporters supplying the U.S. reported diverting shipments, while most industry experts emphasised weak global demand.",
+        "method_or_basis": "Original 33-page accepted manuscript analyses national international-trade statistics and ProWein 2026 survey (n=1,002; exposed U.S.-exporter subsample n=180).",
+        "qualification": "Trade and survey observations describe exposure and reported adjustments; exchange rates, weak demand and product mix prevent a clean causal estimate of tariff effects.",
+        "radar_relevance": "Direct measured EU-US tariff and market-access exposure for a substantial European export sector is Strand A route 1.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.tariffs_on_eu",
+          "secondary_objects": [],
+          "actor": {
+            "name": "United States",
+            "class": "third_country"
+          },
+          "mechanism": "restricts",
+          "direction": "becomes_conditional",
+          "status": "in_force",
+          "status_date": "2025-08-07",
+          "scope": {
+            "level": "third_country",
+            "countries": [
+              "United States"
+            ]
+          },
+          "kind": "action",
+          "qualification": "Trade and survey observations describe exposure and reported adjustments; exchange rates, weak demand and product mix prevent a clean causal estimate of tariff effects.",
+          "text": "The article documents a 15% U.S. tariff taking effect on EU wine in August 2025, tightening European exporters’ access to the U.S. market.",
+          "confidence": "high"
+        },
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European wine exporters",
+            "class": "european_system"
+          },
+          "mechanism": "measures",
+          "direction": "contracts",
+          "status": "observation",
+          "status_date": "2026-11-04",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "effect",
+          "qualification": "Trade and survey observations describe exposure and reported adjustments; exchange rates, weak demand and product mix prevent a clean causal estimate of tariff effects.",
+          "text": "Among 180 surveyed exporters supplying the U.S., 15% reported redirecting exports to other destinations after the tariff regime began.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1093/nsr/nwag354",
+      "source_hash": "1ba6d0a3",
+      "identity_hash": "d06fae942d19b3ad",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Verified journal DOI https://doi.org/10.1093/nsr/nwag354 and corresponding National Science Review original article, including its 11 June 2026 online publication date."
+          },
+          {
+            "step": "scanner_validation_route",
+            "outcome": "success",
+            "note": "Read 24,000-character original Oxford University Press PDF excerpt supplied with job at https://content.openalex.org/works/W4393482217.pdf, including model methods and scenario findings."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "journal_original_pdf",
+            "url": "https://content.openalex.org/works/W4393482217.pdf",
+            "title": "Ritter and coauthors, Alarming decline in the carbon sink of European forests driven by disturbances",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The author team combines country forestry inventory reports and remote sensing to model 2010–2030 biomass change, projected EU forest sink and emissions. The subject is forest carbon and climate policy, not European economic-security supply, trade, strategic industrial dependence or state capacity."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_CLIMATE_ONLY",
+        "reason": "The verified study projects EU forest carbon sink losses and climate-mitigation performance, but does not substantively analyse economic-security dependencies, cross-border trade, industrial capacity or supply resilience."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2026-06-11",
+          "authors": "François Ritter, Philippe Ciais, Cornelius Senf, Maurizio Santoro, Yidi Xu, Agnès Pelissier-Tanon, Martin Schwartz, Ibrahim Fayad, Nuno Carvalhais, Martin Brandt, Rasmus Fensholt, Simon Besnard, Valerio Avitabile"
+        },
+        "unset": [],
+        "reason": "The publisher manuscript specifies advance publication 11 June 2026 and supplies the full author sequence."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Forest disturbances threaten Europe’s carbon sink",
+      "reader_what": "A remote-sensing model projects a substantial decline in EU forest carbon absorption by 2030.",
+      "reader_why": "",
+      "reader_more": "The authors model forest biomass dynamics using national reporting and remote sensing. Their estimate of a 39% decline is a projection, not an observed 2030 outcome. The study supports EU climate-policy assessment but falls outside this economic-security radar.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed quantitative forest carbon model",
+        "research_question": "How will disturbance rates and regrowth change the EU forest carbon sink to 2030?",
+        "main_finding": "The authors project a 39% decline in the EU-27 forest carbon sink by 2030 relative to their baseline scenario.",
+        "method_or_basis": "2010–2030 spatial biomass model integrating national inventories, disturbance mapping and above-ground biomass satellite products.",
+        "qualification": "These are model projections conditional on disturbance and regrowth assumptions, not realised outcomes.",
+        "radar_relevance": "Climate mitigation and forest ecology do not independently satisfy the substantive economic-security test for Strand A.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1002/ppp3.70283",
+      "source_hash": "b00f1545",
+      "identity_hash": "b59dd31b255197a7",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Direct https://doi.org/10.1002/ppp3.70283 was inaccessible to the live web browser."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Inspected publisher-author PDF first-party excerpt supplied by scanner from https://content.openalex.org/works/W7225319510.pdf and checked title, DOI and methodology."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_pdf_cached",
+            "url": "https://content.openalex.org/works/W7225319510.pdf",
+            "title": "Action plan for controlling Amaranthus palmeri in maize fields of Aragón (Spain): An economic assessment under uncertainty",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The article tests three 10-year weed-control plans with six years of field experiments in Aragón, reporting farm profitability under weed uncertainty. “Economic security” in its summary refers to farm-level robustness, not the EU economy’s security of supply."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_LOCAL_AGRONOMY",
+        "reason": "The paper assesses local weed-control profitability for Spanish maize farmers, without a substantive European cross-border economic-security, strategic food dependency or trade mechanism."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Gabriel Pardo, Ana I. Marí, Inmaculada Villanúa, Alicia Cirujeda, Yolanda Martínez"
+        },
+        "unset": [],
+        "reason": "Original paper title page provides the five research authors’ used bylines rather than the scanner’s expanded/inconsistent name variants."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Spanish maize study evaluates costly weed control",
+      "reader_what": "Local field experiments assess three weed-control plans and farm profits under varying infestations.",
+      "reader_why": "",
+      "reader_more": "The paper uses six years of trial data and economic modelling in Aragón to compare ten-year weed-control plans. It is relevant to agricultural practice, but not a study of EU import security, industrial capacity, strategic dependencies or external coercion.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed local agronomic-economic case study",
+        "research_question": "Which control plans for Amaranthus palmeri maintain maize profitability in Aragón under uncertain infestations?",
+        "main_finding": "Profitability and economic stability vary with infestation and control effectiveness; shorter-cycle plans can be robust to control errors.",
+        "method_or_basis": "Six years of field trials extrapolated to three ten-year weed-control scenarios in a regional maize context.",
+        "qualification": "Results concern a regional farm-level weed-management problem rather than pan-European strategic supply security.",
+        "radar_relevance": "Local agronomic profitability alone does not satisfy Strand A substantive Europe-economic-security criteria.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:7bbe1f0e1e69ffbf",
+      "source_hash": "c09dc7cd",
+      "identity_hash": "c28e4f43cc6d3659",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the actual original publisher work at https://www.institutmontaigne.org/en/expressions/eu-ets-also-cornerstone-europes-emerging-industrial-policy and checked matching title and substantive text against package source material."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Opened original publisher material at https://www.institutmontaigne.org/en/expressions/eu-ets-also-cornerstone-europes-emerging-industrial-policy; Joseph Dellatte identifies EU ETS revenues, fragmented national support and Chinese/US production cost differentials; web page date is 10 July 2026."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_publisher_page",
+            "url": "https://www.institutmontaigne.org/en/expressions/eu-ets-also-cornerstone-europes-emerging-industrial-policy",
+            "title": "The EU ETS Is Also a Cornerstone of Europe’s Emerging Industrial Policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Joseph Dellatte identifies EU ETS revenues, fragmented national support and Chinese/US production cost differentials; web page date is 10 July 2026."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_POLICY_TOOLBOX_ANALYSIS",
+        "reason": "A substantive Institut Montaigne analysis of ETS auction finance, strategic clean-industry production and common EU competitiveness instruments."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2026-07-10",
+          "authors": "Joseph Dellatte",
+          "type": "think-tank policy analysis"
+        },
+        "unset": [],
+        "reason": "Original Institut Montaigne publisher page dated 10 July 2026 and credited to Joseph Dellatte rather than undated staff authorship."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Carbon revenue as European industrial finance",
+      "reader_what": "The author argues that EU emissions-auction revenue could help finance domestic clean-industry production and supply resilience.",
+      "reader_why": "Common EU support could reduce the unequal ability of member states to subsidise manufacturers.",
+      "reader_more": "Joseph Dellatte links ETS auction proceeds, current national spending and EU clean-industry competitiveness. He proposes common funds for operating-cost support in steel, chemicals, batteries and magnets. His proposal is a policy argument, not an enacted financing decision.",
+      "deep_analysis": {
+        "work_kind": "evidence-led think-tank industrial-policy analysis",
+        "research_question": "Can EU carbon-market revenues fund common clean-industrial capacity and reduce fragmented national subsidies?",
+        "main_finding": "The author finds existing ETS revenues underused for industrial decarbonisation and advocates directing a larger common share toward European operating-cost support and strategic production.",
+        "method_or_basis": "Financial and sector policy analysis referencing EU ETS auction revenues, national aid distribution and European industrial cost comparisons.",
+        "qualification": "This is an author policy argument using cited fiscal and industry figures, not proof that earmarked carbon-market funds would produce the predicted future capacity.",
+        "radar_relevance": "The EU economic-security toolbox and strategic industrial production are its direct substantive policy object, meeting Strand A route 3.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "finance.strategic_investment",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Institut Montaigne",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2026-07-10",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "This is an author policy argument using cited fiscal and industry figures, not proof that earmarked carbon-market funds would produce the predicted future capacity.",
+          "text": "The analysis recommends channeling more EU ETS auction revenue into EU-wide production support for strategic low-carbon industries.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:f1f4d75ad822abe1",
+      "source_hash": "2fc206a4",
+      "identity_hash": "7ab349b204e998e9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the actual original publisher work at https://institutmontaigne.org/en/expressions/more-allowances-more-revenue-industrial-policy-stakes-eu-ets-reform and checked matching title and substantive text against package source material."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Opened original publisher material at https://institutmontaigne.org/en/expressions/more-allowances-more-revenue-industrial-policy-stakes-eu-ets-reform; The original Institut Montaigne article dated 27 July 2026 is authored by Joseph Dellatte and has highlights/tables grounded in IMF-modelled carbon revenue. Cached PDF carries an anomalous September 2024 date, superseded by the publisher page."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_publisher_page",
+            "url": "https://institutmontaigne.org/en/expressions/more-allowances-more-revenue-industrial-policy-stakes-eu-ets-reform",
+            "title": "More Allowances, More Revenue? The Industrial-Policy Stakes of the EU ETS Reform",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The original Institut Montaigne article dated 27 July 2026 is authored by Joseph Dellatte and has highlights/tables grounded in IMF-modelled carbon revenue. Cached PDF carries an anomalous September 2024 date, superseded by the publisher page."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_FINANCIAL_INDUSTRIAL_POLICY",
+        "reason": "Analyses the EU ETS reform trade-off between auction revenue, free allowances and financing future European industrial capacity using modelled data."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Joseph Dellatte",
+          "date": "2026-07-27",
+          "type": "think-tank quantitative policy commentary"
+        },
+        "unset": [],
+        "reason": "The original Institut Montaigne dated publication identifies Joseph Dellatte and 27 July 2026, which is more authoritative than a contradictory cached-PDF cover date."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU carbon-market reform creates a funding trade-off",
+      "reader_what": "The analysis finds that giving away more carbon permits can reduce the auction revenues available for industrial support.",
+      "reader_why": "Scarce tradable emissions permits create both a carbon price and financing for domestic industrial transformation.",
+      "reader_more": "The author compares possible ETS reform outcomes using IMF-modelled revenue and EU national-allocation estimates. He argues that more free allowances can protect firms in the short term but leave fewer funds to develop competitive clean capacity. Results are scenarios and recommendations rather than enacted industrial spending.",
+      "deep_analysis": {
+        "work_kind": "quantitative policy commentary with modelled public-finance scenarios",
+        "research_question": "What do proposed changes to EU ETS free allocations imply for auction revenue, EU industrial investment and member-state distribution?",
+        "main_finding": "Modelling indicates EU carbon auction receipts and their distribution can vary greatly with permit allocation and price; the author warns free allocation could squeeze common industrial-support funds.",
+        "method_or_basis": "EU carbon-market policy review and revenue tables scaled from IMF-modelled ETS projections, checked against original Montaigne full article and scanner PDF excerpt.",
+        "qualification": "The revenue estimates are modelled and depend on carbon-price, cap and allocation assumptions; proposed free-allocation changes are not adopted outcomes.",
+        "radar_relevance": "Substantive assessment of EU industrial-support financing and external competitiveness is Strand A route 3.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "finance.strategic_investment",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Institut Montaigne",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "proposed",
+          "status_date": "2026-07-27",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The revenue estimates are modelled and depend on carbon-price, cap and allocation assumptions; proposed free-allocation changes are not adopted outcomes.",
+          "text": "The analysis warns that extending EU carbon-permit free allocation could reduce shared auction revenue for clean industrial investment.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:4c91665b1767439e",
+      "source_hash": "b1a2ad6e",
+      "identity_hash": "5be1211efdef6c19",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the actual original publisher work at https://institutmontaigne.org/en/expressions/weimar-triangle-should-lead-eu-industrial-policy and checked matching title and substantive text against package source material."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Opened original publisher material at https://institutmontaigne.org/en/expressions/weimar-triangle-should-lead-eu-industrial-policy; Original publisher confirms Joseph Dellatte, Lukas Hermwille and Aleksander Śniegocki with publication date 29 April 2024, and substantive EU industrial geopolitical recommendations."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_publisher_page",
+            "url": "https://institutmontaigne.org/en/expressions/weimar-triangle-should-lead-eu-industrial-policy",
+            "title": "The Weimar Triangle Should Lead on EU Industrial Policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Original publisher confirms Joseph Dellatte, Lukas Hermwille and Aleksander Śniegocki with publication date 29 April 2024, and substantive EU industrial geopolitical recommendations."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_EU_INDUSTRIAL_STRATEGY",
+        "reason": "The 2024 original article directly treats strategic European clean-industry production and competition with China and the US."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2024-04-29",
+          "authors": "Joseph Dellatte, Lukas Hermwille, Aleksander Śniegocki"
+        },
+        "unset": [],
+        "reason": "Original publisher dated April 29, 2024 lists the three named authors, which were omitted by historical scanner."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "France, Germany and Poland urged to lead industrial strategy",
+      "reader_what": "The authors propose coordinating EU industrial policy through the three-country Weimar Triangle to strengthen clean manufacturing.",
+      "reader_why": "Joint EU rules and financing could limit unequal subsidies across member states and strategic dependence on external suppliers.",
+      "reader_more": "The article places EU industry in competition with China and the United States while highlighting the Russia energy shock. It advocates coordinated production, investment and shared market rules, not national self-sufficiency. The argument is forward-looking and reflects the political setting of April 2024.",
+      "deep_analysis": {
+        "work_kind": "think-tank analytical industrial-policy proposal",
+        "research_question": "How could France, Germany and Poland coordinate an EU industrial policy able to support competitive strategic clean manufacturing?",
+        "main_finding": "The authors propose EU-level industrial coordination through the Weimar Triangle, linking green-tech capacity with reduced internal subsidy disparities and external competitive exposure.",
+        "method_or_basis": "Policy analysis of European state-aid differences, EU governance constraints, Russian energy shock and U.S./Chinese strategic industrial investment.",
+        "qualification": "This is an institutional and industrial-policy proposal, not evidence that a Weimar Triangle strategy was adopted or that capacity has already increased.",
+        "radar_relevance": "An evidence-grounded EU industrial-security strategy addressing foreign competition and EU production capacity meets Strand A route 3.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "econsec.member_state_alignment",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Joseph Dellatte, Lukas Hermwille and Aleksander Śniegocki",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2024-04-29",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "This is an institutional and industrial-policy proposal, not evidence that a Weimar Triangle strategy was adopted or that capacity has already increased.",
+          "text": "The authors propose France-Germany-Poland coordination to build common EU clean-industrial capacity in competition with Chinese and U.S. industrial policies.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:8aea26c43c25c5ec",
+      "source_hash": "003b02e0",
+      "identity_hash": "7ef407efe5c96f8e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the actual original publisher work at https://www.institutmontaigne.org/en/expressions/effective-deterrence-coming-european-anti-coercion-instrument and checked matching title and substantive text against package source material."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Opened original publisher material at https://www.institutmontaigne.org/en/expressions/effective-deterrence-coming-european-anti-coercion-instrument; Publisher confirms Mathieu Duchâtel, dated 2 December 2022, and complete analysis of instrument countermeasures, intra-EU disputes and external partner coordination."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_publisher_page",
+            "url": "https://www.institutmontaigne.org/en/expressions/effective-deterrence-coming-european-anti-coercion-instrument",
+            "title": "Effective Deterrence? The Coming European Anti-Coercion Instrument",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publisher confirms Mathieu Duchâtel, dated 2 December 2022, and complete analysis of instrument countermeasures, intra-EU disputes and external partner coordination."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_GEOECONOMIC_COERCION",
+        "reason": "Original 2022 essay analyses design, deterrence and third-country economic-coercion threats to EU trade autonomy."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Mathieu Duchâtel",
+          "date": "2022-12-02"
+        },
+        "unset": [],
+        "reason": "Publisher original identifies Mathieu Duchâtel and publication on 2 December 2022."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Designing Europe’s anti-coercion tool",
+      "reader_what": "A 2022 analysis evaluates whether proposed EU trade countermeasures could deter economic pressure from foreign governments.",
+      "reader_why": "Credible response powers and partner coordination may reduce the leverage created by trade dependencies.",
+      "reader_more": "Mathieu Duchâtel reviews negotiations for the proposed EU Anti-Coercion Instrument. He highlights credible countermeasures, escalation risks and cooperation with affected partners. The article captures the 2022 legislative debate, not the instrument’s later status or observed effectiveness.",
+      "deep_analysis": {
+        "work_kind": "think-tank EU trade-security policy analysis",
+        "research_question": "What design and partner coordination would make the proposed EU Anti-Coercion Instrument credible?",
+        "main_finding": "The author argues the instrument requires a credible set of countermeasures and external coordination to deter coercion while managing escalation risk.",
+        "method_or_basis": "Qualitative analysis of 2022 EU institutional negotiation, existing third-country coercion examples and trade-policy deterrence logic.",
+        "qualification": "The 2022 article discusses a still-negotiated future EU anti-coercion instrument and estimated deterrence dynamics; it is not evidence that countermeasures were used or effective.",
+        "radar_relevance": "Direct policy-toolbox analysis of EU trade coercion and leverage meets Strand A routes 1 and 3.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "econsec.trade_security",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Institut Montaigne",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2022-12-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "The 2022 article discusses a still-negotiated future EU anti-coercion instrument and estimated deterrence dynamics; it is not evidence that countermeasures were used or effective.",
+          "text": "The 2022 analysis advocates credible EU anti-coercion countermeasures and cooperation with partner economies to limit leverage from trade dependence.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:578d2c4025f15d85",
+      "source_hash": "8e40de87",
+      "identity_hash": "dbd2d91c9d03b386",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the actual original publisher work at https://www.institutmontaigne.org/en/expressions/green-deal-reloaded-towards-new-green-industrial-policy-europe and checked matching title and substantive text against package source material."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Opened original publisher material at https://www.institutmontaigne.org/en/expressions/green-deal-reloaded-towards-new-green-industrial-policy-europe; Original dated 17 March 2021 identifies Barbara Praetorius and discusses Green Deal instruments, public stimulus and industry decarbonisation."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_publisher_page",
+            "url": "https://www.institutmontaigne.org/en/expressions/green-deal-reloaded-towards-new-green-industrial-policy-europe",
+            "title": "Green Deal Reloaded - Towards a New Green Industrial Policy in Europe",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Original dated 17 March 2021 identifies Barbara Praetorius and discusses Green Deal instruments, public stimulus and industry decarbonisation."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_GENERIC_GREEN_POLICY",
+        "reason": "This 2021 article chiefly advocates climate-neutral industrial growth and green-taxonomy investment; its centre is decarbonisation rather than identifiable European strategic dependency or cross-border economic-security policy."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Barbara Praetorius",
+          "date": "2021-03-17"
+        },
+        "unset": [],
+        "reason": "Publisher identifies Barbara Praetorius as author and dates the original article 17 March 2021."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Green industrial policy for the European Green Deal",
+      "reader_what": "A 2021 essay recommends climate-focused incentives and EU-wide coordination of green industrial investment.",
+      "reader_why": "",
+      "reader_more": "Barbara Praetorius discusses investment cycles, carbon-pricing and sustainable spending after COVID-19. While it concerns European industry, the work does not substantively analyse a security-of-supply dependence, strategic cross-border exposure, coercion or industrial-security decision. It is preserved as a historical exclusion.",
+      "deep_analysis": {
+        "work_kind": "think-tank climate and green-industrial-policy commentary",
+        "research_question": "How should the European Green Deal align stimulus and industrial investment with climate neutrality?",
+        "main_finding": "The author argues that targeted harmonised industrial support and long-term investment could reinforce European decarbonisation.",
+        "method_or_basis": "Qualitative assessment of 2021 EU Green Deal, sustainable finance, taxonomies and member-state stimulus programmes.",
+        "qualification": "Policy recommendation without an economic-security supply or trade mechanism; its main aim is decarbonisation.",
+        "radar_relevance": "A generic green-industry programme is insufficient to establish substantive Strand A security content.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:50bf4a3f4abcdf59",
+      "source_hash": "13fa674b",
+      "identity_hash": "b986689f8dc3c7d7",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected the actual original publisher work at https://rhg.com/research/chinese-fdi-in-the-united-states-q3-2011-update/ and checked matching title and substantive text against package source material."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Opened original publisher material at https://rhg.com/research/chinese-fdi-in-the-united-states-q3-2011-update/; The original Rhodium Group historical article identifies Thilo Hanemann, dated 21 December 2011, and detailed U.S.–China flows and CFIUS screening."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_publisher_page",
+            "url": "https://rhg.com/research/chinese-fdi-in-the-united-states-q3-2011-update/",
+            "title": "Chinese FDI in the United States: Q3 2011 Update",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The original Rhodium Group historical article identifies Thilo Hanemann, dated 21 December 2011, and detailed U.S.–China flows and CFIUS screening."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NON_EU_CENTRAL_SUBJECT",
+        "reason": "The Rhodium Group report is centrally about Chinese investment in U.S. property, renewables and U.S. screening, with European investment negotiations only incidental."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Thilo Hanemann",
+          "date": "2011-12-21"
+        },
+        "unset": [],
+        "reason": "Publisher date of December 21, 2011 and named author Thilo Hanemann correct scanner’s 2015 placeholder and missing authorship."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Chinese investment in the United States in 2011",
+      "reader_what": "The original Rhodium Group report tracks Chinese acquisitions and new U.S. investment projects in 2011.",
+      "reader_why": "",
+      "reader_more": "The article documents 18 investment projects and about $1.03 billion invested in the United States during the third quarter of 2011. It briefly references EU-China treaty talks, but does not investigate European investment flows or strategic dependencies. The historical scanner date was four years late.",
+      "deep_analysis": {
+        "work_kind": "quantitative U.S.–China inbound-investment tracker",
+        "research_question": "What did Chinese direct investment in the United States look like in Q3 2011?",
+        "main_finding": "The report records $1.03 billion of Chinese investment across 9 new projects and 9 acquisitions in the United States during Q3 2011.",
+        "method_or_basis": "Rhodium Group deal-level investment tracker combined with qualitative U.S.-China bilateral policy discussion.",
+        "qualification": "European references are incidental; the central data, mechanisms and policy environment are U.S.-China specific.",
+        "radar_relevance": "Fails historical Strand A substantive Europe centrality test.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:8b6f795f74a8f736",
+      "source_hash": "4d1e5a1e",
+      "identity_hash": "052c216c60956f1a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "No reader URL was supplied for this historical job; scanner source_material was stored_only, so the direct package route had no document to inspect."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search recovered EconPol Policy Brief No.13 and its PDF at https://www.ifo.de/DocDL/EconPol_Policy_Brief_13_Trumps_Trade_War.pdf."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Read original 2019 ifo/EconPol full PDF and independently located a repository copy at https://www.econstor.eu/bitstream/10419/219535/1/econpol-pol-brief-13.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "institute_original_pdf",
+            "url": "https://www.ifo.de/DocDL/EconPol_Policy_Brief_13_Trumps_Trade_War.pdf",
+            "title": "Gabriel Felbermayr and Marina Steininger, Trump’s trade attack on China – who laughs last? EconPol Policy Brief 13",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The complete original ifo research brief from February 2019 models EU28 third-market trade diversion under tariff and retaliation alternatives; the publisher PDF cover supplies precise month and authors."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_EU_TARIFF_SPILLOVERS",
+        "reason": "Original EconPol quantitative report models trade-war effects on EU28 GDP, EU-US trade and cross-border value chains."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2019-02-01",
+          "authors": "Gabriel Felbermayr, Marina Steininger",
+          "source": "EconPol Europe / ifo Institute",
+          "type": "economic policy brief"
+        },
+        "unset": [],
+        "reason": "Original ifo PDF cover states February 2019, authors Gabriel Felbermayr and Marina Steininger and EconPol Policy Brief No.13, not simply unspecified January 2019."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Europe’s exposure to a U.S.–China tariff war",
+      "reader_what": "A 2019 model estimates that U.S.–China tariffs could divert trade and slightly raise EU economic output.",
+      "reader_why": "Tariffs on rival suppliers can redirect demand into European production and increase transatlantic trade tensions.",
+      "reader_more": "Gabriel Felbermayr and Marina Steininger model several actual and hypothetical 2019 tariff-and-retaliation settings. Their reference case estimates a €345 million EU28 real-income gain from trade diversion. This is a modelled historical scenario, not a realised GDP gain or a forecast for today.",
+      "deep_analysis": {
+        "work_kind": "quantitative general-equilibrium trade-war simulation",
+        "research_question": "How did U.S.-China tariff escalation scenarios affect EU28 GDP and bilateral trade links in the 2019 global production network?",
+        "main_finding": "The model estimates a €345 million EU28 gain for its 2019 tariff-and-countertariff baseline while U.S. and Chinese GDP lose; deeper escalation changes EU-US trade balances.",
+        "method_or_basis": "2019 general-equilibrium input-output trade model covering U.S., China, EU28 and third economies with multiple tariff and retaliatory scenarios.",
+        "qualification": "All reported EU figures are 2019 general-equilibrium scenario estimates, not observed economic changes; model conclusions depend on imposed tariff and input-output assumptions.",
+        "radar_relevance": "Direct, quantitatively estimated exposure of European trade networks to geopolitical tariff escalation qualifies historical Strand A route 1.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EU28 economies",
+            "class": "european_system"
+          },
+          "mechanism": "measures",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2019-02",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "All reported EU figures are 2019 general-equilibrium scenario estimates, not observed economic changes; model conclusions depend on imposed tariff and input-output assumptions.",
+          "text": "A 2019 trade model estimates an EU28 gain of €345 million in a U.S.–China tariff scenario from trade diversion, against losses to both warring economies.",
+          "confidence": "medium",
+          "status_date_precision": "month"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=ab289355-d3aa-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "source_hash": "1321ba7f",
+      "identity_hash": "8ef5fbc7a264682a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Original Publications Office download-handler PDF for ab289355-d3aa-11f1-9458-01aa75ed71a1 in uploaded scanner material failed (404); source material contains only brief catalogue title."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "WK 16667/26 is an EU Council working document, not a DOI-assigned journal article; searched by Council WK document number and publication UUID instead."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact WK 16667/26 title and original issuer independently located at https://www.parlament.gv.at/gegenstand/XXVIII/EU/100144, but Austrian Parliament record shows only catalogue metadata, no presentation file."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched WK 16667/26, Cybersecurity Act 2, ENISA, Presidency, 2026; Publications Office catalogue https://op.europa.eu/en/publication-detail/-/publication/ab289355-d3aa-11f1-9458-01aa75ed71a1/language-en confirms date and role, not presentation substance."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "failed",
+            "note": "Checked Publications Office official multilingual catalogue https://op.europa.eu/en/publication-detail/-/publication/ab289355-d3aa-11f1-9458-01aa75ed71a1/language-en, Council identification and Austrian Parliament EU document register https://www.parlament.gv.at/gegenstand/XXVIII/EU/100144; neither exposes an actual matching presentation file."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "failed",
+            "note": "Ran separate distinctive searches for WK 16667/26 ENISA presentation PDF and Cybersecurity Act 2 Title II Presidency document; checked EP Votes https://epvotes.com/documents/wk-16667-2026, listing no downloadable document. Other Council compromise and Commission proposal are different works."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Third-attempt hard-final pass completed for WK 16667/26: checked the original failed PDF, official EU Publications Office metadata, Austrian parliamentary archive, document ID variants, two distinct broader searches and EP Votes Cellar file listings. Identity corroborated from independent EU/Austrian records; exact presentation contents inaccessible. Do not substitute the draft regulation or Council meeting agenda."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Council working paper WK 16667/26 is independently registered, but no substantive copy of its specific Presidency presentation was located; contents cannot reliably be evaluated from its heading or a different legislative proposal."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=edc102a9-d3b0-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "source_hash": "4e7987b7",
+      "identity_hash": "66248dd5c079d1a8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Original Publications Office download-handler PDF for edc102a9-d3b0-11f1-9458-01aa75ed71a1 in uploaded scanner material failed (404); source material contains only brief catalogue title."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "WK 16206/26 is an EU Council working document, not a DOI-assigned journal article; searched by Council WK document number and publication UUID instead."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact WK 16206/26 title and original issuer independently located at https://www.parlament.gv.at/gegenstand/XXVIII/EU/98885, but Austrian Parliament record shows only catalogue metadata, no presentation file."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched WK 16206/26, Cybersecurity Act 2, ENISA, European Commission, 2026; Publications Office catalogue https://op.europa.eu/en/publication-detail/-/publication/edc102a9-d3b0-11f1-9458-01aa75ed71a1/language-en confirms date and role, not presentation substance."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "failed",
+            "note": "Checked Publications Office official multilingual catalogue https://op.europa.eu/en/publication-detail/-/publication/edc102a9-d3b0-11f1-9458-01aa75ed71a1/language-en, Council identification and Austrian Parliament EU document register https://www.parlament.gv.at/gegenstand/XXVIII/EU/98885; neither exposes an actual matching presentation file."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "failed",
+            "note": "Ran separate distinctive searches for WK 16206/26 ENISA presentation PDF and Cybersecurity Act 2 Title II fees Article 47 document; checked EP Votes https://epvotes.com/documents/wk-16206-2026, listing no downloadable document. Other Council compromise and Commission proposal are different works."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Third-attempt hard-final pass completed for WK 16206/26: checked the original failed PDF, official EU Publications Office metadata, Austrian parliamentary archive, document ID variants, two distinct broader searches and EP Votes Cellar file listings. Identity corroborated from independent EU/Austrian records; exact presentation contents inaccessible. Do not substitute the draft regulation or Council meeting agenda."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "Council working paper WK 16206/26 is independently registered, but no substantive copy of its specific European Commission presentation was located; contents cannot reliably be evaluated from its heading or a different legislative proposal."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/03068374.2026.2740496",
+      "source_hash": "70b7cfcd",
+      "identity_hash": "1afb038abfb72421",
+      "verification": {
+        "identity_verified": false,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Tried the supplied DOI https://doi.org/10.1080/03068374.2026.2740496; direct resolution was inaccessible and no matching article body appeared."
+          },
+          {
+            "step": "doi",
+            "outcome": "failed",
+            "note": "Searched exact DOI 10.1080/03068374.2026.2740496 and T&F Asian Affairs DOI variants; only unrelated journal articles and different DOIs surfaced."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "failed",
+            "note": "Searched the complete quoted title THE MAGHREB AND THE MIDDLE KINGDOM: CHINA’S EV SUPPLY-CHAIN DIPLOMACY IN AN ERA OF GEOPOLITICAL RIVALRY, plus the distinctive Maghreb Middle Kingdom title fragment; no exact publication page was found."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "failed",
+            "note": "Searched Mordechai Chaziza 2026 EV supply-chain diplomacy Morocco and Asian Affairs; found only separate verified 2024 study on Israeli EVs and 2025 GCC renewables, not this alleged work."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "failed",
+            "note": "Tried Taylor & Francis article route https://www.tandfonline.com/doi/full/10.1080/03068374.2026.2740496 (inaccessible), and author University of Haifa CRIS profile https://cris.haifa.ac.il/en/persons/mordechai-chaziza/ which lists his other work but not this title."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "failed",
+            "note": "Third hard-final challenge compared two different searches (Chaziza Maghreb EV supply chain diplomacy pdf and exact DOI in Asian Affairs), author-affiliation and research archive sources, plus alternative North Africa EV study results; no independently attested item or matching original manuscript."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Third-attempt hard-final pass completed: explored official journal, author institution, title/DOI variants, two broader searches and plausible repositories. The original supplied scanner record was bibliographic only; related Chaziza articles and an unrelated Stimson report cannot establish identity of this exact 2026 work. Unverifiable does not mean the article is proven nonexistent."
+      },
+      "admission": {
+        "decision": "drop_unverifiable",
+        "target_strand": "A",
+        "reason_code": "SOURCE_IDENTITY_UNCONFIRMED",
+        "reason": "Despite checking the supplied DOI, distinctive complete title and author institutional records, no independent record of this exact claimed 2026 Asian Affairs article could be verified; it must not enter the corpus on scanner metadata alone."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/13563467.2026.2751110",
+      "source_hash": "59feef5d",
+      "identity_hash": "7dfd1c66c04fc271",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "The Taylor & Francis DOI and direct /doi/full/10.1080/13563467.2026.2751110 article page returned an access/tool error and did not supply the article text."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Exact DOI 10.1080/13563467.2026.2751110 and 28 October 2026 publication appear on journal New Political Economy listings and the authors’ official institutional bibliography."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Matched the full work title and three authors on Masaryk University EDPT research group announcement https://mve.fss.muni.cz/en/news/a-productive-autumn-for-the-edpt-research-group-four-articles-in-european-security-and-new-political-economy."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Martin Chovančík Adriana Ilavská Oldřich Krpec 2026 research searches led to Masaryk University IIPS publications https://iips.cz/en/publications?page=8, identifying same research article."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Read Masaryk Faculty of Social Studies official 4 November research-group announcement, which specifically reports high-value-added defence export gains by domestic firms and their pre-2022 origin; this is direct author-affiliated institutional synthesis, not the full paper."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "failed",
+            "note": "Compared 2026 CEE high-value defence exports research group and preprint/manuscript PDF searches plus T&F journal table-of-contents and author institute; no freely available article PDF located, but institutional substantive summary sufficiently supports narrow admission."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_author_institution_summary",
+            "url": "https://mve.fss.muni.cz/en/news/a-productive-autumn-for-the-edpt-research-group-four-articles-in-european-security-and-new-political-economy",
+            "title": "Masaryk University EDPT research group, 4 November 2026: semi-periphery defence dividend",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_journal_listing",
+            "url": "https://www.tandfonline.com/subjects/politics-and-international-relations?ContentItemType=research-article&content=standard&pageSize=50&startPage=&target=default",
+            "title": "New Political Economy 28 October 2026 research article listing",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Third-attempt hard-final pass completed: DOI, academic publisher, official author-institution bibliography and author research-group substantive account checked; title-variant, institution repository and manuscript searches did not find full article. Findings below are deliberately limited to verified research-group synopsis."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_DEFENCE_INDUSTRIAL_CAPACITY",
+        "reason": "The authors’ university research-group report directly summarises the journal article’s central finding about CEE high-value defence manufacturing and exports within Europe."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Central European firms gain defence-export value",
+      "reader_what": "The authors’ research group reports greater high-value defence exports by domestic Central and Eastern European manufacturers.",
+      "reader_why": "The shift suggests evolving European defence supply capacity predating the 2022 invasion of Ukraine.",
+      "reader_more": "Masaryk University’s authors-affiliated defence-production research group specifically identifies a longer-term redistribution of labour across Europe’s defence industry. This source confirms the direction and prewar chronology, but not detailed figures or an experimentally identified cause. The complete journal article was not available for inspection.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed defence-industry political-economy study, accessed through original authors’ university summary",
+        "research_question": "How has the position of Central and Eastern European domestic firms changed within Europe’s defence-industry division of labour?",
+        "main_finding": "Authors’ university reports growing high-value defence-product exports from domestic firms in Central and Eastern European countries, with the change beginning before 2022.",
+        "method_or_basis": "Read the work-specific 4 November 2026 original Masaryk University research-group report and publisher/author institute identity records; the detailed journal empirical methodology was not accessible.",
+        "qualification": "The 4 November 2026 author-institution summary establishes direction and chronology, but does not provide the article’s full dataset, econometric identification or effect sizes; it supports a narrow claim only.",
+        "radar_relevance": "Substantive Europe-centred defence-industry manufacturing and high-value supply capacity meets Strand A route 2.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "defence.production_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Central and Eastern European defence firms",
+            "class": "european_system"
+          },
+          "mechanism": "measures",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2026-10-28",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The 4 November 2026 author-institution summary establishes direction and chronology, but does not provide the article’s full dataset, econometric identification or effect sizes; it supports a narrow claim only.",
+          "text": "The authors report increased high-value-added defence product exports by domestic CEE firms, a change already underway before the 2022 full-scale invasion.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/13563467.2026.2751102",
+      "source_hash": "3a7540be",
+      "identity_hash": "584b75491e5675c9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "DOI resolver https://doi.org/10.1080/13563467.2026.2751102 did not yield accessible browser article text."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Read first 24,000 characters of the actual 2026 Taylor & Francis open-access PDF extracted in job source material from https://content.openalex.org/works/W7221344873.pdf, including abstract, theory, case and policy discussion."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_open_access_pdf",
+            "url": "https://content.openalex.org/works/W7221344873.pdf",
+            "title": "Globalization unravelling? ASML and the geopolitics of Europe-China tech decoupling",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Original journal PDF clearly attributes work to Naná de Graaff, Jaša Veselinovič and Adam Tyler, accepted 14 October and published 30 October 2026. Read its abstract and substantive case analysis; authors argue Dutch restrictions on ASML exports followed U.S. technonationalist pressure, with potential conflict with ASML revenues and EU technological sovereignty."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_TECH_EXPORT_CONTROLS",
+        "reason": "Full original journal PDF excerpt directly analyses Dutch ASML semiconductor export controls and how U.S.–China rivalry reshapes European industrial autonomy."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Naná de Graaff, Jaša Veselinovič, Adam Tyler"
+        },
+        "unset": [],
+        "reason": "Original journal article title page and journal bibliographic record credit Adam Tyler, not the expanded Adam Geoffrey Tyler in the scanner."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "ASML becomes a test of European tech autonomy",
+      "reader_what": "A Dutch semiconductor export-control case study traces conflicting U.S. security demands and European industrial interests.",
+      "reader_why": "Restricting a European chip-equipment leader’s Chinese market access can have strategic costs alongside security aims.",
+      "reader_more": "The authors use ASML and Dutch semiconductor-equipment controls to examine US–China technology rivalry. They argue that strategic U.S. influence and Dutch security policy altered export restrictions even where corporate and long-term Dutch economic interests differ. These are interpreted geopolitical relationships, not a measured causal estimate of lost turnover.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed political-economy case study",
+        "research_question": "Why did the Netherlands tighten ASML semiconductor equipment export controls against China despite Dutch corporate and economic interests?",
+        "main_finding": "Authors trace Dutch ASML export restrictions to U.S. strategic pressure and competing corporate/state interests, arguing that European technological sovereignty may be undermined by the resulting decoupling.",
+        "method_or_basis": "Original publisher open-access article excerpt; case-study analysis of Dutch export-control regime, ASML interests, U.S. influence and the concept of technonationalism.",
+        "qualification": "The case-study interpretation traces policy influence and competing state/corporate interests, rather than providing a controlled causal estimate of U.S. pressure or proving that technology sovereignty must decline.",
+        "radar_relevance": "Direct EU member-state semiconductor export-control and security-autonomy mechanism meets Strand A route 1 and route 3.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.technology_security",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Netherlands",
+            "class": "member_state"
+          },
+          "mechanism": "restricts",
+          "direction": "becomes_conditional",
+          "status": "in_force",
+          "status_date": "2026-10-30",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "Netherlands"
+            ]
+          },
+          "kind": "action",
+          "qualification": "The case-study interpretation traces policy influence and competing state/corporate interests, rather than providing a controlled causal estimate of U.S. pressure or proving that technology sovereignty must decline.",
+          "text": "The case study finds that Dutch export controls on ASML semiconductor technologies tightened amid U.S. pressure to constrain China’s technological upgrading.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.erss.2026.105047",
+      "source_hash": "e8025799",
+      "identity_hash": "e68144a7b1021ed9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "DOI https://doi.org/10.1016/j.erss.2026.105047 failed to return a complete original article in web browser."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Inspected detailed first 24,000 characters of published Elsevier open-access PDF supplied in job from https://content.openalex.org/works/W7224499425.pdf; covers research question, comparative case method, four material cases and export policy examples."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_open_access_pdf",
+            "url": "https://content.openalex.org/works/W7224499425.pdf",
+            "title": "Monopolising the green transition: China’s structural dominance and selective weaponisation of critical raw materials in Europe",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Original journal PDF credits Simona Nikoléniová, Martin Jirušek and Veli-Pekka Tynkkynen, available online 29 October 2026. It compares gallium, magnesium, rare earth elements and vanadium (2013–February 2025), finds high risk for REEs and vanadium and no general overt weaponisation against EU."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_CRITICAL_MATERIAL_DEPENDENCY",
+        "reason": "Full original Elsevier journal excerpt compares Chinese control and selective export restrictions for four European energy-transition critical minerals."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "China’s mineral leverage is substantial but selective",
+      "reader_what": "A four-material study finds concentrated Chinese supply-chain control, with different export-control risks across minerals.",
+      "reader_why": "Europe’s clean technologies depend on raw materials whose production and processing can be restricted abroad.",
+      "reader_more": "The authors compare gallium, magnesium, rare-earth elements and vanadium using an interpretative 2013–February 2025 case design. Rare earths and vanadium show higher risk indicators than magnesium. The paper distinguishes Beijing’s structural coercive potential from the limited, selective use of that leverage against European customers.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed comparative critical-minerals geopolitical case study",
+        "research_question": "Has China weaponised dominance in four strategic mineral supply chains against EU energy-transition objectives?",
+        "main_finding": "Evidence of centralised Chinese state control and selective export restraints is most concerning for rare earths and vanadium; the authors find strategic restraint toward Europe despite bans targeting the United States.",
+        "method_or_basis": "Original 2026 Elsevier full-text excerpt; comparative interpretative case analysis of Chinese policy 2013–February 2025 for gallium, magnesium, rare earth elements and vanadium using multiple weaponisation indicators.",
+        "qualification": "The comparative case study establishes structural capacity and selective restrictions, not proof that China systematically imposed comprehensive critical-mineral embargoes on the EU; the observation period ends February 2025.",
+        "radar_relevance": "Direct evidence of EU import dependency, strategic-material supply control and potential third-country coercion meets Strand A routes 1 and 2.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "materials.critical_raw",
+          "secondary_objects": [],
+          "actor": {
+            "name": "China",
+            "class": "third_country"
+          },
+          "mechanism": "restricts",
+          "direction": "becomes_conditional",
+          "status": "observation",
+          "status_date": "2026-10-29",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The comparative case study establishes structural capacity and selective restrictions, not proof that China systematically imposed comprehensive critical-mineral embargoes on the EU; the observation period ends February 2025.",
+          "text": "The authors identify the strongest strategic weaponisation indicators in Chinese rare-earth and vanadium supply chains, while observing selective restraint in pressure directed at Europe.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1163/15718166-12340224",
+      "source_hash": "f05c57f0",
+      "identity_hash": "ca201f18e09d5b5a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "The original Brill article was blocked on publisher web routes, including the 2026 DOI and journal XML; scanner saved only a published abstract."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Exact DOI 10.1163/15718166-12340224 matches the 2026 article published in European Journal of Migration and Law."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Verified distinctive complete title and original substantive scholarly abstract reproduced under the author’s journal article on ResearchGate."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Georgios Athanasiou’s official University of Antwerp publication list independently confirms the article, year, journal and author."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "University of Antwerp author publication bibliography authenticates this exact source; read its work-specific published substantive original abstract through the author-linked scholarly listing."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Contrasted the work-specific three-part doctrinal argument on treaty security exceptions, non-refoulement and European court jurisprudence with EU economic-security mechanisms; no economic-security analysis occurs in its articulated research aims or findings."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "published_journal_abstract",
+            "url": "https://www.researchgate.net/publication/405386415_Balancing_National_Security_and_Non-Refoulement_the_Securitization_of_EU_Migration_Policies_and_the_Crisis_of_Fundamental_Rights",
+            "title": "Athanasiou original published journal abstract, 2026",
+            "evidence_used": true
+          },
+          {
+            "kind": "author_official_bibliography",
+            "url": "https://www.uantwerpen.be/nl/personeel/georgios-athanasiou_26997/publicaties/",
+            "title": "University of Antwerp author publications 2026",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified exact identity through the original author’s university bibliography and retrieved the work-specific detailed published abstract. Its three enumerated contributions analyse TEU and TFEU security exceptions, migration-refoulement shield concepts, and ECJ/ECtHR rights jurisprudence. These are legal-rights questions; security terminology alone is not economic security. Full journal PDF was not accessible; conclusion is limited to its specific stated scope."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OUT_OF_SCOPE_LEGAL_ASYLUM",
+        "reason": "The independently authenticated author’s article addresses EU asylum law, human rights and national-security exceptions to non-refoulement. It does not assess an economic-security instrument, strategic industry, supply chain or economic exposure."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU national-security claims and refugee rights",
+      "reader_what": "A legal article examines how security exceptions interact with European obligations not to return people to danger.",
+      "reader_why": "",
+      "reader_more": "Its legal analysis compares EU treaty security clauses, crisis or hybrid-threat justifications and European court cases. The author argues that interacting exceptions could weaken protection against refoulement. The article does not substantively analyse economic security, strategic trade or industrial supply capacity.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed European asylum and fundamental-rights legal analysis",
+        "research_question": "How may states use national-security clauses and crisis language to narrow non-refoulement duties under EU and European human-rights law?",
+        "main_finding": "The author proposes a doctrinal reading of Articles 4(2) TEU and 72 TFEU under Charter Article 52(1), and analyses security-based exceptions in European migration jurisprudence.",
+        "method_or_basis": "Work-specific original published scholarly abstract and official university author publication bibliography; publisher full text was not available.",
+        "qualification": "The conclusion about exclusion is based on the article’s explicit, specific published legal research scope; its full text could not be checked.",
+        "radar_relevance": "EU security and migration fundamental-rights jurisprudence does not meet Strand A’s substantive economic-security relevance test.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1111/jcms.70185",
+      "source_hash": "c9e00f19",
+      "identity_hash": "fe0d0ea591fe20a8",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Direct Wiley DOI landing at https://doi.org/10.1111/jcms.70185 did not expose complete publisher article to the web reader."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Read original Wiley JCMS article PDF excerpt authenticated through its DOI and OpenAlex W7225167301, including full abstract, interview research design and substantive analysis of economic interdependencies."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_academic_pdf",
+            "url": "https://content.openalex.org/works/W7225167301.pdf",
+            "title": "Lebanidze, The Limits of Geopolitical Power Europe: Why the EU’s Eastern Neighbours Keep Hedging, JCMS, 2026",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified first 24,000 text characters of matching original PDF with institution, abstract and sections describing three causal drivers (security vulnerabilities, economic interdependencies, regime survival) across Armenia, Azerbaijan, Belarus, Georgia, Moldova and Ukraine, based on 18 expert interviews. These factors can coexist; EU economic relations are neither the only nor an experimentally isolated cause."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_EU_EXTERNAL_ECONOMIC_DEPENDENCIES",
+        "reason": "Original academic PDF names economic interdependence, energy, remittances, trade and strategic imports as a primary mechanism behind Eastern neighbours’ balancing of EU and Russian relationships."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Why Eastern EU neighbours keep hedging",
+      "reader_what": "An interview-based study links neighbours’ shifting EU relations to security exposure, economic ties and regime survival.",
+      "reader_why": "Existing trade, energy and remittance dependencies can complicate the EU’s ability to build stable strategic partnerships.",
+      "reader_more": "The author analyses Armenia, Azerbaijan, Belarus, Georgia, Moldova and Ukraine through 18 interviews and case comparisons. Three recurrent factors explain mixed alignment: insecurity, economic dependencies and domestic regime interests. The EU offers investment and market regulation, while inherited links to Russia may remain economically important. Findings should not be read as identical behaviour by all six countries.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed qualitative comparative political economy study",
+        "research_question": "Why do six Eastern European neighbours continue to hedge despite more intensive EU geopolitical engagement?",
+        "main_finding": "Security vulnerabilities, continuing trade/energy/remittance economic interdependencies, and domestic regime survival jointly shape hedging and limit EU influence over neighbour alignment.",
+        "method_or_basis": "Original journal PDF academic analysis using 18 expert interviews and qualitative comparisons across Armenia, Azerbaijan, Belarus, Georgia, Moldova and Ukraine.",
+        "qualification": "Findings draw on 18 expert interviews across six different neighbours and are an interpretative account of motives; these do not establish uniform hedging by every government, or a quantified effect of EU policy.",
+        "radar_relevance": "Substantive European external economic interdependencies and strategic vulnerability of neighbouring states to Russia and the EU meet Strand A route 1.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "econsec.trade_security",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EU Eastern neighbourhood countries",
+            "class": "european_system"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2026-11-03",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Findings draw on 18 expert interviews across six different neighbours and are an interpretative account of motives; these do not establish uniform hedging by every government, or a quantified effect of EU policy.",
+          "text": "Six-neighbour comparative research identifies economic ties to Russia, including trade, energy and remittances, as one of three drivers of hedging between EU and rival strategic relationships.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://globaltradealert.org/reports/who-paid-for-the-first-hectare/",
+      "source_hash": "66787bcf",
+      "identity_hash": "5b828b8e373a45a6",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the complete original Global Trade Alert Zeitgeist Briefing 109 on its publisher page and compared with source text in the uploaded package."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Identified the briefing’s original author byline Fernando Martín Espejo and November 5, 2026 publication; the main analysis concerns Peruvian horticulture, irrigation, plant health, investment and export markets."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_publisher_full_text",
+            "url": "https://globaltradealert.org/reports/who-paid-for-the-first-hectare/",
+            "title": "Who paid for the first hectare? Global Trade Alert Zeitgeist Briefing #109",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Original primary briefing examined in full: discusses Peru’s agricultural public goods, crop-specific entrepreneurship and export expansion primarily to US and China. Passing EU trade-agreement mention is not material EU economic-security research."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_NON_EU_PERU_BLUEBERRIES",
+        "reason": "The complete Global Trade Alert research briefing investigates Peru’s blueberry development and market-access policy, with the EU mentioned only incidentally as one of several trade agreements."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Fernando Martín Espejo"
+        },
+        "unset": [],
+        "reason": "Original Global Trade Alert briefing identifies Fernando Martín Espejo as individual author; scanner incorrectly used the institutional publisher as author."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Peru’s blueberry boom and public investment",
+      "reader_what": "A Global Trade Alert briefing traces how irrigation, crop health and entrepreneurship built Peru’s blueberry exports.",
+      "reader_why": "",
+      "reader_more": "Trade agreements including one with the EU are mentioned, but the research is about the origins of Peru’s agricultural export industry and its investment ecosystem, not European strategic trade dependencies or supply resilience.",
+      "deep_analysis": {
+        "work_kind": "evidence-led industry development case study",
+        "research_question": "What public and private investments made Peru’s blueberry export sector feasible?",
+        "main_finding": "The author argues that pre-existing irrigation and plant-health public goods combined with entrepreneurial recognition of a seasonal export opportunity.",
+        "method_or_basis": "Original full briefing with historical public-investment, agricultural and export-trade details.",
+        "qualification": "EU appears only as a comparator among export trade agreements; no European economic-security mechanism is investigated.",
+        "radar_relevance": "Fails substantive Europe centrality for Strand A.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/23745118.2026.2758769",
+      "source_hash": "69bd4c14",
+      "identity_hash": "e375e95679e0bd71",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Direct provided DOI https://doi.org/10.1080/23745118.2026.2758769 and Taylor & Francis /doi/full path were inaccessible (403/tool error); package contains no article text."
+          },
+          {
+            "step": "doi",
+            "outcome": "success",
+            "note": "Exact DOI and 3 November 2026 date independently appear in European Politics and Society/Taylor & Francis journal contents."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Full distinctive title Governing readiness: anticipatory defence governance in EU defence policy after 2022 appears in publisher journal listing."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Publisher index credits Samet İşbilen in European Politics and Society (3 November 2026) to this article."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "failed",
+            "note": "Checked Taylor & Francis /doi/full direct, /doi/abs and journal listing; none returned matching article body, downloadable accessible manuscript or work-specific author account."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "failed",
+            "note": "Searched Samet İşbilen 2026 readiness defence EU manuscript PDF, title variants, DOI versions and academic repositories; only journal bibliography and unrelated EU institutional readiness proposals were recoverable."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Identity confirmed by publisher bibliography but full paper was inaccessible. Direct work-specific contents, rather than a generic EU defence white paper or secondary policy page, are required for this deep scan. All six source recovery routes exhausted in the current pass."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The 2026 defence-readiness article is bibliographically verified through the academic publisher, but no substantive matching article, author manuscript or author-led summary was accessible; the scanner’s abstract alone does not justify a full research classification."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.jclepro.2026.149847",
+      "source_hash": "6c04ac38",
+      "identity_hash": "5905bbee52597e0f",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Direct Elsevier DOI https://doi.org/10.1016/j.jclepro.2026.149847 did not provide a readable full article through web route."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Read 24,000-character first-party Elsevier Journal of Cleaner Production PDF excerpt authenticated through DOI/OpenAlex W7225270996, covering full abstract, highlighted findings and method and policy context."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_publisher_pdf",
+            "url": "https://content.openalex.org/works/W7225270996.pdf",
+            "title": "Future environmental impacts of EU permanent magnet demand: a combined prospective MFA-LCA assessment, Journal of Cleaner Production",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Original Elsevier PDF, published online 4 November 2026, reports prospective dynamic material-flow analysis and life-cycle assessment of EU permanent magnet demand, emphasising rare-earth supply concentration, critical-material vulnerability and potential recovery from end-of-life magnets. Only scenario assessments, not actual future recycling, are evidenced."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_EU_MAGNET_RARE_EARTH_RESILIENCE",
+        "reason": "The actual published journal PDF examines EU permanent magnet value chains and domestic recycling pathways that could diversify geographically concentrated rare-earth supply."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2026-11-04"
+        },
+        "unset": [],
+        "reason": "Original Journal of Cleaner Production PDF title page states available online 4 November 2026; the scanner used 1 November 2026."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Can Europe recycle its magnet materials?",
+      "reader_what": "A modelling study tests EU permanent-magnet supply and environmental outcomes under different future recycling scenarios.",
+      "reader_why": "Recovering rare earths from retired products could diversify Europe’s concentrated supply sources for strategic electric machinery.",
+      "reader_more": "The authors combine long-range material-flow projections and life-cycle assessment of permanent magnets, which rely on rare earths and feature in electric motors and other clean technologies. Greater collection and recycling could make retired equipment a meaningful domestic material source, although environmental outcomes depend on product performance, substitution and the type of production. These are modelled possibilities, not present-day recycling achievements.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed prospective material-flow and life-cycle modelling study",
+        "research_question": "How will alternative production, material-recycling and magnet-demand scenarios affect environmental burdens and EU critical-rare-earth flows?",
+        "main_finding": "Authors project that end-of-life magnet materials may meet a relevant portion of future EU demand under circular systems, while benefits depend on product magnetic performance and future manufacturing footprints.",
+        "method_or_basis": "Original Elsevier PDF; prospective material flow analysis combined with life-cycle assessment of EU permanent magnet supply-and-recycling scenarios.",
+        "qualification": "This is a prospective model of EU magnet-material flows and environmental impacts, not an observed measurement of achieved EU recycling volumes or proof that domestic recycling is already cost-competitive.",
+        "radar_relevance": "Direct analysis of EU permanent-magnet and rare-earth import concentration and potential domestic recycling substitution meets Strand A strategic material supply resilience route 2.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "materials.critical_raw",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union permanent magnet supply chain",
+            "class": "european_system"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2026-11-04",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "This is a prospective model of EU magnet-material flows and environmental impacts, not an observed measurement of achieved EU recycling volumes or proof that domestic recycling is already cost-competitive.",
+          "text": "Prospective EU magnet research estimates that end-of-life rare-earth magnet recovery could become a material alternative to geographically concentrated primary supply if circular recovery systems develop.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:4a462b89f4acd84a",
+      "source_hash": "0e1a1c07",
+      "identity_hash": "8282a672e912120e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Original European Commission JRC repository page identifies JRC145722, DOI 10.2760/7439991 and full analytical research question."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered and reviewed complete matching five-page European Commission JRC report PDF reproduced through euagenda.eu/publications/download/722024, including service GVC tables, 2010–2023 data, tariff vulnerability discussion and conclusions."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_institutional_repository",
+            "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC145722",
+            "title": "JRC145722: The increasing role of services in the EU’s integration into global value chains",
+            "evidence_used": true
+          },
+          {
+            "kind": "full_official_report_pdf_mirror",
+            "url": "https://euagenda.eu/publications/download/722024",
+            "title": "Complete European Commission JRC policy report, five pages, Catalán Piera and Rueda Cantuche",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Official JRC metadata and full five-page European Commission original-content report reviewed. Uses Eurostat FIGARO inter-country input-output model, 2010–2023; in 2023 intra-EU services contribute 42% backward and 64% forward service GVC index (not 42% and 64% of all trade), while the US value added and external tariff risk are discussed. The source dates to April 8, not Jan 1, 2026."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_EU_GVC_EXTERNAL_EXPOSURE",
+        "reason": "Original European Commission JRC research reports quantified growth in intra-EU service value chains and evaluates their exposure and resilience amid US tariff and geopolitical trade disruption."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2026-04-08",
+          "authors": "Alba Catalán Piera, José Manuel Rueda Cantuche"
+        },
+        "unset": [],
+        "reason": "Official European Commission JRC publication record dates JRC145722 8 April 2026; the scanner’s January 1 was a placeholder. Original report uses these authors’ full preferred names."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU services trade creates both links and resilience",
+      "reader_what": "An EU research report traces growing service inputs and re-exports within European and global production chains.",
+      "reader_why": "Internal EU service networks can reduce some external dependence while leaving trade vulnerable to international tariff disputes.",
+      "reader_more": "Using Eurostat 2010–2023 inter-country input-output tables, the European Commission’s Joint Research Centre tracks service-related participation in value chains. Intra-EU trade contributes 42% of the backward and 64% of the forward services participation indices in the report. It discusses the US role and warns that tariff shocks can propagate through trade links. These are accounting relationships, not proven outcomes of new trade barriers.",
+      "deep_analysis": {
+        "work_kind": "European Commission JRC quantitative global value-chain policy report",
+        "research_question": "How did intra-EU and global services production connections change from 2010 to 2023, and what do they imply for exposure to external shocks?",
+        "main_finding": "Intra-EU services make up 42% of the reported backward and 64% of forward services global-value-chain index contributions in 2023, strengthening EU internal links but not eliminating exposure to US trade and tariff shifts.",
+        "method_or_basis": "Eurostat FIGARO input-output tables 2010–2023, JRC five-page official report quantitative chart and discussion; full original report reviewed.",
+        "qualification": "The trade/value-chain figures are historical input-output accounting through 2023, not direct evidence that the EU would withstand an actual future tariff shock; internal services shares have specific index denominators.",
+        "radar_relevance": "European single-market value-chain resilience and potential tariff transmission via transatlantic supply links directly meet Strand A route 1.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "econsec.trade_security",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union services industries",
+            "class": "european_system"
+          },
+          "mechanism": "measures",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-04-08",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "The trade/value-chain figures are historical input-output accounting through 2023, not direct evidence that the EU would withstand an actual future tariff shock; internal services shares have specific index denominators.",
+          "text": "JRC analysis of 2010–2023 data attributes 42% of backward and 64% of forward EU services GVC index contributions to intra-EU trade, while identifying remaining exposure to US trade disruption.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:1dfeff75dbae49cf",
+      "source_hash": "d557f9e7",
+      "identity_hash": "e5bba00acd31ae80",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the official European Commission JRC147881 publication record and its work-specific substantive summary; validated correct publication date 16 October 2026."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Cross-checked JRC food-system monitoring framework implementation and dashboard methodology covering environmental, economic, social, governance and resilience indicators, plus the official Publications Office record."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "original_jrc_repository",
+            "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC147881",
+            "title": "EU food system monitoring framework — Extending the framework towards governance and resilience",
+            "evidence_used": true
+          },
+          {
+            "kind": "official_jrc_dashboard",
+            "url": "https://datam.jrc.ec.europa.eu/datam/mashup/EU_FOOD_SYSTEM_MONITORING/index.html",
+            "title": "JRC EU food-system monitoring dashboard methodology and indicators",
+            "evidence_used": true
+          },
+          {
+            "kind": "publications_office_listing",
+            "url": "https://op.europa.eu/en/publication-detail/-/publication/74816650-c906-11f1-97f3-01aa75ed71a1/language-en",
+            "title": "European Commission official catalog record for JRC food system monitoring",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Read official JRC report-specific substantive methodological description and the corresponding JRC dashboard categories. They organise system sustainability, governance and broad resilience indicators, not a study of identified EU strategic import bottlenecks, dependence on coercive suppliers or industrial policy response. The full separate PDF could not be retrieved. Journal source date corrected from placeholder to 16 October 2026."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_FOOD_SUSTAINABILITY_MONITORING_OUT_OF_SCOPE",
+        "reason": "The original European Commission JRC report documents a broad sustainability and governance indicator dashboard, not a specific strategic cross-border supply dependency, coercive vulnerability or economic-security policy mechanism."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2026-10-16"
+        },
+        "unset": [],
+        "reason": "Original EU Joint Research Centre publication repository lists 16 October 2026, not the scanner’s historical Jan 1 placeholder."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Tracking the sustainability of Europe’s food systems",
+      "reader_what": "The European Commission adds governance and resilience measures to a broad food-system sustainability dashboard.",
+      "reader_why": "",
+      "reader_more": "The report describes how policymakers can monitor agricultural production, diets, environmental impacts and food-system governance through grouped indicators. Although resilience is a monitoring dimension, the work does not present concrete findings on EU strategic import choke points, coercive foreign suppliers or trade-security instruments.",
+      "deep_analysis": {
+        "work_kind": "European Commission JRC food-system monitoring methods and indicator report",
+        "research_question": "How should EU food-system sustainability monitoring incorporate governance and resilience alongside environmental, economic and social outcomes?",
+        "main_finding": "The JRC extends a food-system monitoring framework with governance and resilience indicator categories to support evidence-based sustainability analysis and comparison across member states.",
+        "method_or_basis": "Detailed work-specific official JRC report description and operational EU Food System Monitoring Dashboard indicator and methodology documentation; standalone 5.51MB original PDF not accessible.",
+        "qualification": "Sustainability/governance resilience metrics are a broad methodological object, not a direct measured EU strategic supply-chain dependence or economic-coercion mechanism.",
+        "radar_relevance": "Fails the focused economic-security subject test for Strand A; subject is general food-system monitoring.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    }
+  ]
+}
