@@ -2,7 +2,7 @@
   "profile": "radar-deep-scan-dropped-index-v1",
   "rule": "After 3 recorded failed research passes, close as dropped; no hands-on queue. Package issuance alone is not a research pass.",
   "note": "The full retrieval notes and available recovery history remain in deep_scan_work_state.json. Some legacy records have fewer retained history entries than the recorded attempt counter; no missing attempts are invented.",
-  "count": 185,
+  "count": 188,
   "records": [
     {
       "record_key": "historical:id:02d0446b10283c5c",
@@ -1282,6 +1282,21 @@
       "reason": "Deep Scan return rejected: defer must not contain substantive deep_analysis claims"
     },
     {
+      "record_key": "link:https://doi.org/10.1080/03068374.2026.2740496",
+      "title": "THE MAGHREB AND THE MIDDLE KINGDOM: CHINA’S EV SUPPLY-CHAIN DIPLOMACY IN AN ERA OF GEOPOLITICAL RIVALRY",
+      "source": "Asian Affairs",
+      "url": "https://doi.org/10.1080/03068374.2026.2740496",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261101T092722Z-b5e10cee9735",
+        "worker-a-20261102T160139Z-d0bc2e070126",
+        "worker-a-20261108T094504Z-f060e1f433f8"
+      ],
+      "closed_at": "2026-11-08T10:55:31Z",
+      "reason": "Despite checking the supplied DOI, distinctive complete title and author institutional records, no independent record of this exact claimed 2026 Asian Affairs article could be verified; it must not enter the corpus on scanner metadata alone."
+    },
+    {
       "record_key": "link:https://doi.org/10.1080/07036337.2026.2715687",
       "title": "Connecting markets: business power and the EU Global Gateway",
       "source": "Journal of European Integration",
@@ -2557,6 +2572,21 @@
       "reason": "European Commission register lists COM(2026)545 about the EU–Mauritius agreement, but the supplied original PDF is inaccessible."
     },
     {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=ab289355-d3aa-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "title": "Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU)2019/881 (The Cybersecurity Act 2) – Title II (ENISA) - Presentation by the Presidency - Publications Office of the EU",
+      "source": "Publications Office of the EU",
+      "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=ab289355-d3aa-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261101T092722Z-b5e10cee9735",
+        "worker-a-20261102T160139Z-d0bc2e070126",
+        "worker-a-20261108T094504Z-f060e1f433f8"
+      ],
+      "closed_at": "2026-11-08T10:55:31Z",
+      "reason": "Council working paper WK 16667/26 is independently registered, but no substantive copy of its specific Presidency presentation was located; contents cannot reliably be evaluated from its heading or a different legislative proposal."
+    },
+    {
       "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=b9c73395-b33e-11f1-81de-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
       "title": "Working Party on Competitiveness and Growth (Public Procurement) (17 September am - attachés format - no interpretation) - Publications Office of the EU",
       "source": "Publications Office of the EU",
@@ -2569,6 +2599,21 @@
       ],
       "closed_at": "2026-10-07T09:57:11Z",
       "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year"
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=edc102a9-d3b0-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "title": "Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) – Title II (Fees), Articles 47 - Presentation by the Commission - Publications Office of the EU",
+      "source": "Publications Office of the EU",
+      "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=edc102a9-d3b0-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261101T092722Z-b5e10cee9735",
+        "worker-a-20261102T160139Z-d0bc2e070126",
+        "worker-a-20261108T094504Z-f060e1f433f8"
+      ],
+      "closed_at": "2026-11-08T10:55:31Z",
+      "reason": "Council working paper WK 16206/26 is independently registered, but no substantive copy of its specific European Commission presentation was located; contents cannot reliably be evaluated from its heading or a different legislative proposal."
     },
     {
       "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=f163e49d-d253-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
