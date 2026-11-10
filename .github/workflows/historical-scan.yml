@@ -1,19 +1,6 @@
 name: Historical Top-Tier Scan
 
 on:
-  # Historical code/config changes run immediately, but historical data commits do not
-  # retrigger themselves. The live radar explicitly ignores historical/** and this workflow.
-  push:
-    branches:
-      - main
-    paths:
-      - 'historical/config.json'
-      - 'historical/scan_historical.py'
-      - 'historical/index.html'
-      - 'historical/manual_evidence.json'
-      - 'historical/curated_seed_evidence.json'
-      - 'historical/tests/**'
-      - '.github/workflows/historical-scan.yml'
   schedule:
     - cron: '17 2 * * *'
   workflow_dispatch:
