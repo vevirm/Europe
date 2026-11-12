@@ -1,0 +1,2593 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-b-20261112T083933Z-0ed9895e9bb7",
+  "results": [
+    {
+      "record_key": "historical:id:2184954833889def",
+      "source_hash": "f327a5db",
+      "identity_hash": "d61668d81dd53712",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened original full article at https://celis.institute/eu_sanctions_and_arbitration_an_attempt_at_moving_the_goalposts/; verified author, date, legal analysis and referenced EU regulation."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://celis.institute/eu_sanctions_and_arbitration_an_attempt_at_moving_the_goalposts/",
+            "title": "Alexandros Bakos, EU Sanctions and Investment Arbitration (CELIS, 2026)",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked EU Sanctions and Investment Arbitration: An Attempt at Moving the Go against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Detailed legal analysis of an EU sanctions measure and its interaction with foreign investment arbitration."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Alexandros Bakos",
+          "date": "2026-05-27"
+        },
+        "unset": [],
+        "reason": "CELIS original page identifies author Alexandros Bakos and 27 May 2026, not 1 January 2026."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU sanctions and investor arbitration face competing legal logics",
+      "reader_what": "A legal scholar argues EU award-enforcement restrictions protect sanctions policy but risk conflict with investment-arbitration law.",
+      "reader_why": "The measure may shield sanctions from legal challenge while creating enforceability and legitimacy disputes.",
+      "reader_more": "Alexandros Bakos analyses the 2025 restrictions on recognising foreign arbitral awards favouring sanctioned Russian or Belarusian investors. He contrasts the New York Convention with obligations under ICSID and interprets the restriction through securitisation theory. His normative assessment is not a court holding and should not be reported as one.",
+      "deep_analysis": {
+        "work_kind": "expert legal policy commentary",
+        "research_question": "Can EU sanctions policy limit enforcement of investment arbitration awards without legal tensions?",
+        "main_finding": "Bakos argues the EU used a broad enforcement restriction that securitises investment arbitration and raises international-law concerns.",
+        "method_or_basis": "Original specialist legal analysis references Council Regulation (EU) 2025/1494 and arbitration treaty rules, with cited legal authorities.",
+        "qualification": "The purported conflict under ICSID is the author’s legal interpretation, not an adjudicated outcome.",
+        "radar_relevance": "Direct EU sanctions, arbitration, foreign-investment protection and geoeconomic trade-offs.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Alexandros Bakos",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2026-05-27",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The purported conflict under ICSID is the author’s legal interpretation, not an adjudicated outcome.",
+          "text": "Bakos argues the EU’s restrictions on enforcing certain arbitral awards create tension between sanctions protection and arbitration obligations.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:b6093870aea4eea5",
+      "source_hash": "1e002da9",
+      "identity_hash": "2400d2631de0892d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read official JRC https://publications.jrc.ec.europa.eu/repository/handle/JRC147034; full report metadata and abstract accessible, no body of Essential Brief on handle page."
+          },
+          {
+            "step": "doi",
+            "outcome": "limited",
+            "note": "Resolved listed DOI 10.2760/3785888 in JRC metadata; metadata confirms 2026 publication, not extractable full text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact title search matched JRC Publications official bibliographic page and EU Research and Innovation summary."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched Marelli, Trane, Borchardt, 2026 and JRC147034; confirmed the distinct Essential Brief identity."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "limited",
+            "note": "Attempted https://publications.jrc.ec.europa.eu/repository/bitstream/JRC147034/JRC147034_01.pdf; PDF retrieval exceeded browser content limit (17,437,799 bytes)."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "limited",
+            "note": "Searched EUR 40732, JRC147034, ISBN 978-92-68-39945-3 and DOI; found bibliographic descriptions but no readable full brief."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Official JRC record verifies 16 June 2026 date, complete author list and report ISBN; full Essential Brief PDF was too large to inspect, and the text held in the ZIP is only an abstract."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The work and its bibliographic identity are confirmed, but only a short abstract or listing is accessible; substantive evidence is insufficient for a defensible admission decision."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:5d0af4e6f227ccec",
+      "source_hash": "24d812f9",
+      "identity_hash": "972ba73c4b4396bf",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Resolved supplied DOI https://doi.org/10.1787/4fcb80c2-en to OECD official report and read the full PDF hosted by OECD."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_document",
+            "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/08/reinforcing-the-attractiveness-of-europe-s-eastern-border-regions_466f5273/4fcb80c2-en.pdf",
+            "title": "OECD Regional Development Papers 163: Eastern Border Regions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked Reinforcing the attractiveness of Europe’s Eastern Border Regions against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive OECD study connects Russia-Ukraine war exposure to EU frontier investment flows and resilience."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2025-09-01"
+        },
+        "unset": [],
+        "reason": "OECD official publication record gives 1 September 2025 rather than scanner 23 July 2025."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "War and structural weaknesses constrain Europe’s eastern border investment",
+      "reader_what": "OECD finds eastern EU border areas suffer investment shortfalls aggravated by Russia’s war and regional disruptions.",
+      "reader_why": "Geopolitical exposure and weak regional capacity can inhibit critical investment and dual-use infrastructure near the EU frontier.",
+      "reader_more": "The OECD uses its Regional Attractiveness Framework, quantitative indicators and local-authority input. Its analysis finds 2004–2023 greenfield FDI below EU regional averages in border areas and further investment strains after the invasion of Ukraine. Conditions vary substantially by region, including between Finnish border areas.",
+      "deep_analysis": {
+        "work_kind": "OECD regional-development empirical report",
+        "research_question": "How does war-related geopolitical risk affect investment and economic prospects at the EU eastern frontier?",
+        "main_finding": "EU eastern-border regions show structural investment and innovation gaps amplified by Ukraine-war disruptions and perceived risk.",
+        "method_or_basis": "OECD Regional Attractiveness Framework using 2004–2023 FDI data, regional indicators and local-authority questionnaires.",
+        "qualification": "Regional averages obscure substantial within-country variation; investment correlations are not a measured causal war effect.",
+        "radar_relevance": "Provides evidence on EU frontier investment exposure, resilience and security-linked economic development.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.inbound_flows",
+          "secondary_objects": [],
+          "actor": {
+            "name": "OECD",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "measures",
+          "direction": "contracts",
+          "status": "observation",
+          "status_date": "2025-09-01",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Regional averages obscure substantial within-country variation; investment correlations are not a measured causal war effect.",
+          "text": "OECD finds greenfield FDI in eastern EU border regions trailed EU regional averages during 2004–2023, with war-related strains worsening attractiveness.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:ab9facfe15150f32",
+      "source_hash": "2e292bc6",
+      "identity_hash": "63ed256b8124fd1e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened CELIS first-party specialist article https://celis.institute/towards-the-end-of-russian-oil-and-gas-in-europe/ and read policy chronology and legal clauses."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://celis.institute/towards-the-end-of-russian-oil-and-gas-in-europe/",
+            "title": "Edouard Gergondet, Towards the End of Russian Oil and Gas in Europe?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked Towards The End Of Russian Oil And Gas In Europe? - CELIS Institute against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive historical examination of EU economic-security dependence on Russian oil/gas and Commission phase-out proposals."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Edouard Gergondet"
+        },
+        "unset": [],
+        "reason": "CELIS original lists Edouard Gergondet as author."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU’s 2025 proposal to phase out Russian gas imports",
+      "reader_what": "Legal analysis maps proposed Russian-gas import prohibitions, contract exemptions and customs checks.",
+      "reader_why": "Breaking Russian gas dependence aims to reduce coercive exposure while allowing importers to adjust contracts and supply chains.",
+      "reader_more": "Gergondet explains the Commission’s June 2025 proposal following REPowerEU, including a 2028 long-term-contract transition and scrutiny of gas provenance. He distinguishes the proposal from existing oil sanctions and notes that some nuclear measures are separate. This is historical analysis of what was proposed in July 2025, not a claim about final 2026 law.",
+      "deep_analysis": {
+        "work_kind": "legal analysis of EU regulatory proposal",
+        "research_question": "How did the Commission propose to end EU imports of Russian gas?",
+        "main_finding": "The 2025 proposal targets Russian gas and LNG through planned bans, limited contract exemptions and origin reporting.",
+        "method_or_basis": "Close reading of the June 2025 proposed regulation, existing oil sanctions and REPowerEU policy documents.",
+        "qualification": "These deadlines and exemptions describe the June 2025 proposal; later adopted measures may differ.",
+        "radar_relevance": "Core economic-security questions are European gas dependence, sanctions and supply diversification.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "proposes",
+          "direction": "contracts",
+          "status": "proposed",
+          "status_date": "2025-06-17",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "These deadlines and exemptions describe the June 2025 proposal; later adopted measures may differ.",
+          "text": "The Commission proposed a phased prohibition on Russian pipeline gas and LNG imports with transition exemptions for older contracts.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:64e92926b0145efe",
+      "source_hash": "094cdbf4",
+      "identity_hash": "25f73bf33a11c3a3",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Publisher DOI https://doi.org/10.1016/j.enpol.2025.114626 matched open-access Energy Policy article; read substantive full source as package OpenAlex PDF."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_full_text",
+            "url": "https://content.openalex.org/works/W4409446231.pdf",
+            "title": "Zwickl-Bernhard et al., Strategic solar module stockpiling in the EU (Energy Policy)",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_record",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0301421525001338",
+            "title": "Energy Policy article open-access publisher abstract",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked Strategic solar module stockpiling in the EU: A scenario-based analy against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Energy-system study explicitly models European solar-module import dependencies and strategic supply reserves."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU solar-panel reserves help only under some import conditions",
+      "reader_what": "Energy-system modelling finds EU solar-module stockpiling cost-effective in eight of 36 scenarios.",
+      "reader_why": "Strategic reserves could buffer hostile or unstable import conditions but need not strengthen domestic manufacturing.",
+      "reader_more": "The open-access Energy Policy study optimises the energy system across 36 scenarios through 2050. Reserves are cost-effective mainly in adverse import conditions and can postpone investment in local manufacturing. The authors propose exploring stockpiles around three times annual additions in the early 2030s, conditioned on technology and import costs.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed energy-system modelling",
+        "research_question": "When would EU strategic solar-module reserves improve supply resilience cost-effectively?",
+        "main_finding": "EU solar-panel stockpiles are justified in eight modelled scenarios, chiefly adverse import scenarios; they can postpone local manufacturing.",
+        "method_or_basis": "Extended open-source energy-system optimisation with 36 cost/import scenarios to 2050, using documented model assumptions.",
+        "qualification": "Scenario outcomes are simulations, not observed impacts; recycling and manufacturing costs may change.",
+        "radar_relevance": "Direct evidence on EU import exposure, renewable industrial capacity and strategic stockpiling trade-offs.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "supply_chain.stockpile",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Zwickl-Bernhard and coauthors",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_conditional",
+          "status": "observation",
+          "status_date": "2025-08",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Scenario outcomes are simulations, not observed impacts; recycling and manufacturing costs may change.",
+          "text": "The authors find EU strategic solar-module stockpiles cost-effective in eight of 36 energy-system scenarios, mainly with adverse imports.",
+          "confidence": "high",
+          "status_date_precision": "month"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:ac58e8c462b015b7",
+      "source_hash": "d8862297",
+      "identity_hash": "4d6dc4c2f56ff432",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Original CELIS article reader URL https://celis.institute/transatlantic-insecurity-revaluation-of-economic-security-policys-business-impacts-amid-us-european-turbulence/ was not returned in text extraction."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Exact-title search recovered the article and full text at current CELIS URL https://www.celis.institute/celis-blog/transatlantic-insecurity-revaluation-of-economic-security-policys-business-impacts-amid-us-european-turbulence/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.celis.institute/celis-blog/transatlantic-insecurity-revaluation-of-economic-security-policys-business-impacts-amid-us-european-turbulence/",
+            "title": "John Kay, Transatlantic Insecurity (CELIS, 2025)",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked Transatlantic Insecurity: Revaluation of Economic Security Policy’s  against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Source-based European policy commentary directly assesses transatlantic investment-screening and critical-infrastructure dependencies."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "John Kay"
+        },
+        "unset": [],
+        "reason": "CELIS article credits John Kay; scanner has no author."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Transatlantic mistrust raises risks for strategic European investments",
+      "reader_what": "A 2025 policy commentary links transatlantic political tensions to tighter scrutiny of technology, defence and critical-infrastructure investment.",
+      "reader_why": "Potential reassessment of trusted suppliers could expose EU reliance on US cloud and defence companies.",
+      "reader_more": "John Kay describes growing EU concerns about US involvement in defence and technology supply and possible implications for investment screening and procurement. The evidence blends cited policy announcements and illustrative news cases with forward-looking judgement. It is useful as a historical assessment of policy risk, not verified proof that screening materially changed.",
+      "deep_analysis": {
+        "work_kind": "expert economic-security policy commentary",
+        "research_question": "How could 2025 US-European diplomatic tensions affect strategic investment and procurement?",
+        "main_finding": "Kay argues shifts in the security relationship may reshape European foreign-investment screening, defence procurement and digital reliance.",
+        "method_or_basis": "Substantive first-person expert commentary citing trade/investment evidence, 2025 policy announcements and high-profile procurement cases.",
+        "qualification": "Specific future screening and procurement changes were projections at publication, not observed outcomes.",
+        "radar_relevance": "European foreign ownership of critical infrastructure, defence capacity and geoeconomic partnerships are central.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "John Kay",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2025-03-18",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Specific future screening and procurement changes were projections at publication, not observed outcomes.",
+          "text": "Kay argues rising US-European mistrust may increase scrutiny of US suppliers and strategic investments in Europe.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:d4b334b725c426e9",
+      "source_hash": "676a014f",
+      "identity_hash": "da9231695b0c3b71",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the matching primary source at https://celis.institute/the-eus-evolving-approach-to-open-strategic-autonomy-a-critical-perspective-on-the-competitiveness-compass-for-the-eu-and-other-recent-policy-developments/ and the package-supplied substantive first-party material, where available."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://celis.institute/the-eus-evolving-approach-to-open-strategic-autonomy-a-critical-perspective-on-the-competitiveness-compass-for-the-eu-and-other-recent-policy-developments/",
+            "title": "EU autonomy policy increasingly favours economic de-risking",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked The EU’s Evolving Approach to Open Strategic Autonomy: a Critical Pe against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Original scholarly analysis of the EU economic-security policy toolbox and industrial-sovereignty trade-offs."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Sergio Mariotti"
+        },
+        "unset": [],
+        "reason": "CELIS first-party byline names Politecnico di Milano professor Sergio Mariotti."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU autonomy policy increasingly favours economic de-risking",
+      "reader_what": "Mariotti critiques how the 2025 Competitiveness Compass shifts European industrial policy toward strategic autonomy.",
+      "reader_why": "It maps policy trade-offs between trade openness, foreign investment screening and industrial self-sufficiency.",
+      "reader_more": "The analysis compares the Commission’s January 2025 Compass to the 2023 Economic Security Strategy, discussing tariffs, EU procurement preference, critical materials, inward/outward investment scrutiny and R&D. The argument that autonomy is prioritised over openness is an expert interpretation, not a measured result.",
+      "deep_analysis": {
+        "work_kind": "scholarly European policy-analysis essay",
+        "research_question": "How did the 2025 EU Compass rebalance openness and strategic protection?",
+        "main_finding": "Mariotti argues the Commission’s policy package increases emphasis on industrial autonomy, dependency reduction and screening.",
+        "method_or_basis": "Close comparison of original Commission policy communications and supporting academic debate.",
+        "qualification": "Interpretation of policy direction, not evidence of realized independence or adopted measures.",
+        "radar_relevance": "Original scholarly analysis of the EU economic-security policy toolbox and industrial-sovereignty trade-offs.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "goal.strategic_autonomy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Sergio Mariotti",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2025-02-25",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Interpretation of policy direction, not evidence of realized independence or adopted measures.",
+          "text": "Mariotti argues the Commission’s policy package increases emphasis on industrial autonomy, dependency reduction and screening.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:58bb36f2d81f883b",
+      "source_hash": "a5758008",
+      "identity_hash": "c11e31732c9e2755",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Opened original BusinessEurope gallery and verified 23 September 2025 date, eight photographs and absence of a substantive report."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.businesseurope.eu/photo-gallery/eu-mercosur-trade-agreement-now-is-the-time/",
+            "title": "BusinessEurope’s EU–Mercosur photo gallery",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked EU-Mercosur trade agreement: now is the time against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_RADAR_SCOPE",
+        "reason": "Photographs and event title contain no research findings or substantive policy measure; a separate policy paper cannot substitute for this recorded source."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2025-09-23"
+        },
+        "unset": [],
+        "reason": "Original gallery explicitly dated 23 September 2025, not the scanner’s first-of-year default."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "BusinessEurope’s EU–Mercosur photo gallery",
+      "reader_what": "A dated gallery presents photographs from a 23 September 2025 European Parliament networking event.",
+      "reader_why": "",
+      "reader_more": "The work has been checked for subject, evidence and geographic mechanism. Photographs and event title contain no research findings or substantive policy measure; a separate policy paper cannot substitute for this recorded source.",
+      "deep_analysis": {
+        "work_kind": "business-association event photo gallery",
+        "research_question": "Does the source establish a substantive European geoeconomic-security event or research finding?",
+        "main_finding": "A dated gallery presents photographs from a 23 September 2025 European Parliament networking event.",
+        "method_or_basis": "Inspected the substantive original article/publisher text and its research question, scope and findings.",
+        "qualification": "Scope and methodology do not establish the EU strategic connection required for Strand A.",
+        "radar_relevance": "Photographs and event title contain no research findings or substantive policy measure; a separate policy paper cannot substitute for this recorded source.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:cf15927e8e7f9b2e",
+      "source_hash": "eb93ff6c",
+      "identity_hash": "3b1564ac820eca7b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the matching primary source at https://celis.institute/wp-content/uploads/2025/10/Non_Paper_No_10_2025-2.pdf and the package-supplied substantive first-party material, where available."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_document",
+            "url": "https://celis.institute/wp-content/uploads/2025/10/Non_Paper_No_10_2025-2.pdf",
+            "title": "Strategic state investment funds can complement foreign-investment screening",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked CELIS Institute - Non-Paper No 10/2025: State Capital in the Age of  against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "EU industrial capacity, foreign ownership and strategic-investment governance are central topics."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Simon Sharghi-Erdmosa",
+          "date": "2025-10-21"
+        },
+        "unset": [],
+        "reason": "The CELIS non-paper cover identifies the author and publication series; October 2025 issue."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Strategic state investment funds can complement foreign-investment screening",
+      "reader_what": "A CELIS policy paper compares European state-backed investment funds and governance tools protecting sensitive firms.",
+      "reader_why": "Long-term trusted equity may preserve domestic control while screening foreign acquisitions and funding critical technologies.",
+      "reader_more": "Sharghi-Erdmosa compares Definvest in Italy, the UK National Security Strategic Investment Fund, Bpifrance and TechMet. Bpifrance’s minority role in the Opella transaction illustrates state-backed mitigation. The paper proposes credible governance and faster screening for trusted investors, rather than reporting tested policy effects.",
+      "deep_analysis": {
+        "work_kind": "twenty-page comparative legal and industrial-policy paper",
+        "research_question": "Can public strategic funds complement investment-screening prohibitions?",
+        "main_finding": "Trusted public equity vehicles can protect sensitive industrial assets while reducing reliance on deal blocking alone.",
+        "method_or_basis": "Comparative legal-institutional case studies and fund governance analysis across European and other examples.",
+        "qualification": "Institutional case comparisons and proposals do not demonstrate causal effects or a settled uniform EU approach.",
+        "radar_relevance": "EU industrial capacity, foreign ownership and strategic-investment governance are central topics.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "finance.strategic_investment",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Simon Sharghi-Erdmosa",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2025-10-21",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Institutional case comparisons and proposals do not demonstrate causal effects or a settled uniform EU approach.",
+          "text": "Trusted public equity vehicles can protect sensitive industrial assets while reducing reliance on deal blocking alone.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:e928e20cb4e3ed51",
+      "source_hash": "3d4504b2",
+      "identity_hash": "d01dd2d7eea0216b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the matching primary source at https://celis.institute/protecting-eu-sanctions-by-invoking-the-denial-of-benefits-clause-of-the-energy-charter-treaty/ and the package-supplied substantive first-party material, where available."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://celis.institute/protecting-eu-sanctions-by-invoking-the-denial-of-benefits-clause-of-the-energy-charter-treaty/",
+            "title": "EU invoked Energy Charter Treaty powers to protect Russian sanctions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked Protecting EU Sanctions by Invoking the Denial of Benefits Clause of against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "EU Russia sanctions, energy investment and regulatory control are the work’s core."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Johannes Tropper"
+        },
+        "unset": [],
+        "reason": "CELIS byline lists author Johannes Tropper."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU invoked Energy Charter Treaty powers to protect Russian sanctions",
+      "reader_what": "Tropper explains the EU’s 2024 treaty notice denying investor protections to Russian- and Belarusian-controlled entities.",
+      "reader_why": "It seeks to prevent sanctioned investors using energy arbitration to bypass EU restrictive measures.",
+      "reader_more": "The paper traces the EU and most member states’ September 2024 notice under ECT Article 17 after June 2024 Council decisions. It examines shell-company restructuring, litigation and the timing of denial of benefits. Hungary was not a signatory to the joint notification, so this was not a unanimous act.",
+      "deep_analysis": {
+        "work_kind": "legal analysis of treaty-based sanctions protection",
+        "research_question": "How could Energy Charter Treaty denial-of-benefits provisions buttress EU sanctions?",
+        "main_finding": "The EU and all member states except Hungary invoked Article 17 to exclude covered Russian/Belarusian investors from ECT benefits.",
+        "method_or_basis": "Authorial analysis of Council decisions, ECT Article 17, treaty practice and investor-state case law.",
+        "qualification": "Treaty denial-of-benefits may be contested in arbitration; notice is not proof all related claims fail.",
+        "radar_relevance": "EU Russia sanctions, energy investment and regulatory control are the work’s core.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.circumvention",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EU and participating member states",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "restricts",
+          "direction": "expands",
+          "status": "adopted",
+          "status_date": "2024-09-24",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Treaty denial-of-benefits may be contested in arbitration; notice is not proof all related claims fail.",
+          "text": "The EU and all member states except Hungary invoked Article 17 to exclude covered Russian/Belarusian investors from ECT benefits.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:ba76a2e00a198f90",
+      "source_hash": "75c4ec60",
+      "identity_hash": "2444c3607e14d279",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read CELIS first-party event recap dated 8 May 2024; it reports panels rather than a research output."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://celis.institute/ties-that-bind-a-transatlantic-approach-to-investment-screening-and-economic-security/",
+            "title": "CELIS transatlantic investment-screening conference recap",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked Ties that bind: A Transatlantic approach to investment screening and against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_RADAR_SCOPE",
+        "reason": "The publication reports attendance and discussion themes, not a new law, reproducible research finding or bounded strategic development."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "CELIS transatlantic investment-screening conference recap",
+      "reader_what": "A May 2024 CELIS note describes speakers and panels at a Washington transatlantic investment-screening event.",
+      "reader_why": "",
+      "reader_more": "The work has been checked for subject, evidence and geographic mechanism. The publication reports attendance and discussion themes, not a new law, reproducible research finding or bounded strategic development.",
+      "deep_analysis": {
+        "work_kind": "conference and event recap",
+        "research_question": "Does the source establish a substantive European geoeconomic-security event or research finding?",
+        "main_finding": "A May 2024 CELIS note describes speakers and panels at a Washington transatlantic investment-screening event.",
+        "method_or_basis": "Inspected the substantive original article/publisher text and its research question, scope and findings.",
+        "qualification": "Scope and methodology do not establish the EU strategic connection required for Strand A.",
+        "radar_relevance": "The publication reports attendance and discussion themes, not a new law, reproducible research finding or bounded strategic development.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:655dbae9c46c11c5",
+      "source_hash": "63f9ec2f",
+      "identity_hash": "ee9552f2800f7b76",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the matching primary source at https://www.institutmontaigne.org/en/publications/making-european-economic-security-reality and the package-supplied substantive first-party material, where available."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.institutmontaigne.org/en/publications/making-european-economic-security-reality",
+            "title": "European economic-security cooperation needs incremental steps",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked Making European Economic Security a Reality against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Direct high-quality study of EU economic-security institutions and their deployment."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "François Godement",
+          "date": "2024-03"
+        },
+        "unset": [],
+        "reason": "Institut Montaigne labels the publication a March 2024 policy paper by François Godement."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "European economic-security cooperation needs incremental steps",
+      "reader_what": "Godement argues EU members should pool defensive tools before pursuing resource-intensive strategic industrial projects.",
+      "reader_why": "Uneven national capacities and attitudes to EU financing hinder de-risking of Chinese technology and Russian supply dependence.",
+      "reader_more": "A 72-page Institut Montaigne policy paper draws on policymaker interviews to assess EU trade/investment defences, innovation, industrial policy and EU institutional divergence. It advocates coordination and partner diversification. Recommendations should not be mistaken for adopted EU measures.",
+      "deep_analysis": {
+        "work_kind": "policy paper with elite interviews",
+        "research_question": "How should EU institutions and member states operationalise economic-security de-risking?",
+        "main_finding": "Coordinating existing investment, trade and sanctions protections is more immediately feasible than large-scale industrial self-sufficiency.",
+        "method_or_basis": "Interview-based institutional policy analysis by François Godement, Institut Montaigne, March 2024.",
+        "qualification": "Normative institutional proposals, not an empirical test of subsequent implementation.",
+        "radar_relevance": "Direct high-quality study of EU economic-security institutions and their deployment.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "goal.strategic_autonomy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "François Godement",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_conditional",
+          "status": "observation",
+          "status_date": "2024-03",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Normative institutional proposals, not an empirical test of subsequent implementation.",
+          "text": "Coordinating existing investment, trade and sanctions protections is more immediately feasible than large-scale industrial self-sufficiency.",
+          "confidence": "high",
+          "status_date_precision": "month"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:fce2f55297e0c5e1",
+      "source_hash": "0c05feba",
+      "identity_hash": "ac085e4ec6bb263d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "substantive_primary_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "The PDF file was inaccessible to live browser, but exact first-party publication listing and indexed original-PDF sections were read."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Recovered CELIS publication page https://celis.institute/publications/cfis-24-background-paper-on-panel-preserving-the-battlefield-gap-in-the-area-of-technology-between-export-control-and-outbound-investment-screening/ and indexed matching 2024 PDF."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Publisher https://celis.institute/publications/cfis-24-background-paper-on-panel-preserving-the-battlefield-gap-in-the-area-of-technology-between-export-control-and-outbound-investment-screening/ confirms author, edition and links an identical original PDF."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI is assigned to this CELIS 2024 background paper."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "success",
+            "note": "Searched Simon Sharghi-Erdmosa CFIS 2024 Panel 4 background paper and found both 2024 CELIS listing and original-PDF indexed excerpts."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "success",
+            "note": "Searched distinctive phrase Preserving the Battlefield Gap export control outbound investment screening; identified original PDF indexed by CELIS and separated it from different 2025 non-paper."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_document",
+            "url": "https://celis.institute/wp-content/uploads/2024/11/20240830_Panel_4_TECHNOLOGY_Background-Paper_4.pdf",
+            "title": "Technology export controls versus outward investment screening",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked CFIS 24 Background Paper on Panel: Preserving the Battlefield Gap in against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive European policy-toolbox analysis of sensitive technology transfer and leakage."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Simon Sharghi-Erdmosa",
+          "date": "2024-11-25"
+        },
+        "unset": [],
+        "reason": "CELIS original paper page identifies author and 25 November 2024 publication date."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Technology export controls versus outward investment screening",
+      "reader_what": "A CELIS CFIS background paper maps technology-leakage risks and overlapping controls on foreign transfers.",
+      "reader_why": "European policymakers must balance restricting sensitive knowledge transfers with preserving international research and investment.",
+      "reader_more": "The 2024 paper was prepared before a CELIS conference panel and sets out policy options and risk-assessment issues for export controls and outbound investment screening. It is not the 2025 post-conference non-paper and not evidence that any particular control was implemented. The original publisher page confirms author and publication date.",
+      "deep_analysis": {
+        "work_kind": "pre-conference specialist policy background analysis",
+        "research_question": "How do export-control and outbound-screening instruments interact in sensitive technology?",
+        "main_finding": "The work frames trade-offs and coordination challenges across export controls, outbound investment screening and technology risk.",
+        "method_or_basis": "First-party CELIS background-paper PDF and its dated publisher record (25 November 2024), prepared by Simon Sharghi-Erdmosa.",
+        "qualification": "Mainly state-of-play and framing, not original measurement of screening effectiveness.",
+        "radar_relevance": "Substantive European policy-toolbox analysis of sensitive technology transfer and leakage.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "export_control.regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Simon Sharghi-Erdmosa",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2024-11-25",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Mainly state-of-play and framing, not original measurement of screening effectiveness.",
+          "text": "The work frames trade-offs and coordination challenges across export controls, outbound investment screening and technology risk.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:ef24815827fc1fe8",
+      "source_hash": "d3e8f9b6",
+      "identity_hash": "f92ad19725133184",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the matching primary source at https://www.institutmontaigne.org/en/publications/economic-security-missing-link-eu-japan-cooperation and the package-supplied substantive first-party material, where available."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.institutmontaigne.org/en/publications/economic-security-missing-link-eu-japan-cooperation",
+            "title": "EU–Japan economic-security cooperation offers a de-risking partnership",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked Economic Security: the Missing Link in EU-Japan Cooperation against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Direct geoeconomic-partnership and external-coercion analysis."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Mathieu Duchâtel"
+        },
+        "unset": [],
+        "reason": "The publisher’s byline identifies Mathieu Duchâtel as author."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU–Japan economic-security cooperation offers a de-risking partnership",
+      "reader_what": "Duchâtel proposes aligning EU and Japan on supply-chain resilience, advanced technologies and counter-coercion mechanisms.",
+      "reader_why": "Japan’s policy experience could help Europe reduce exposure to strategic Chinese trade and technology leverage.",
+      "reader_more": "This 2023 Institut Montaigne analysis examines Japan’s economic-security legislation and the EU’s emerging strategy, then considers coordination on sensitive technology, raw materials and supply chains. It is a policy assessment, not proof a bilateral pact was implemented.",
+      "deep_analysis": {
+        "work_kind": "European–Japanese economic-security policy paper",
+        "research_question": "How could Japan cooperate with the EU on de-risking and critical technology protection?",
+        "main_finding": "EU–Japan coordination is a plausible route to diversify strategic supplies and sharpen tools against economic coercion.",
+        "method_or_basis": "Primary Institut Montaigne specialist policy paper by Mathieu Duchâtel, with comparative analysis of strategies.",
+        "qualification": "Proposals predate later EU economic-security legislation and are not evidence of completed joint programs.",
+        "radar_relevance": "Direct geoeconomic-partnership and external-coercion analysis.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "eu_bilateral_agreements",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Mathieu Duchâtel",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "partners",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2023",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Proposals predate later EU economic-security legislation and are not evidence of completed joint programs.",
+          "text": "EU–Japan coordination is a plausible route to diversify strategic supplies and sharpen tools against economic coercion.",
+          "confidence": "high",
+          "status_date_precision": "year"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:27c62447bc77c499",
+      "source_hash": "8ffa0919",
+      "identity_hash": "242745c924f00756",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the first-party abstract_or_landing_page text supplied in the source package and corroborated identity at https://www.institutmontaigne.org/en/series/europe-and-economic-coercion."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.institutmontaigne.org/en/series/europe-and-economic-coercion",
+            "title": "Europe and Economic Coercion series landing page",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked Europe and Economic Coercion against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_RADAR_SCOPE",
+        "reason": "A short index page announcing a series is not the completed individual analyses nor a new EU legal act; it cannot stand as a substantive evidence record."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Europe and Economic Coercion series landing page",
+      "reader_what": "Institut Montaigne introduces a set of separate analysts’ articles on the EU anti-coercion proposal.",
+      "reader_why": "",
+      "reader_more": "The work has been checked for subject, evidence and geographic mechanism. A short index page announcing a series is not the completed individual analyses nor a new EU legal act; it cannot stand as a substantive evidence record.",
+      "deep_analysis": {
+        "work_kind": "institute publication-series landing page",
+        "research_question": "Does the source establish a substantive European geoeconomic-security event or research finding?",
+        "main_finding": "Institut Montaigne introduces a set of separate analysts’ articles on the EU anti-coercion proposal.",
+        "method_or_basis": "Inspected the substantive original article/publisher text and its research question, scope and findings.",
+        "qualification": "Scope and methodology do not establish the EU strategic connection required for Strand A.",
+        "radar_relevance": "A short index page announcing a series is not the completed individual analyses nor a new EU legal act; it cannot stand as a substantive evidence record.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:ba2bd1788f75ec38",
+      "source_hash": "14699966",
+      "identity_hash": "0acf077022d6e377",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "CELIS 6 July 2021 link was a secondary one-line pointer to JD Supra."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Recovered original Hogan Lovells author text at Mondaq, article 899456, dated 3 March 2020, with lawyer bylines."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.mondaq.com/germany/inward-foreign-investment/899456/industrial-policy-strikes-again-germany-announces-further-tightening-of-foreign-investment-control-rules",
+            "title": "Germany proposed wider foreign-investment control in 2020",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked Industrial policy strikes again: Germany announces further tightenin against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Direct national-security screening of investment, critical assets and foreign ownership in Germany."
+      },
+      "metadata_correction": {
+        "fields": {
+          "source": "Hogan Lovells",
+          "date": "2020-03-03",
+          "authors": "Falk Schöning; Lourdes Catrain; Stefan Kirwitzke"
+        },
+        "unset": [],
+        "reason": "Identified the original author firm and first publication on the verbatim syndicated legal text (3 March 2020), rather than the CELIS 2021 pointer."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Germany proposed wider foreign-investment control in 2020",
+      "reader_what": "Hogan Lovells lawyers describe a draft German foreign-investment-control reform that would broaden scrutiny over non-EU acquisitions.",
+      "reader_why": "The proposals could increase regulatory barriers to sensitive foreign ownership of German businesses and raise M&A compliance risk.",
+      "reader_more": "The original 3 March 2020 article distinguishes already binding screening procedures from draft EU-coordination and national changes, including an expanded national-security assessment and transaction closing restrictions. This is legal analysis of a legislative proposal, not evidence that every measure was enacted then.",
+      "deep_analysis": {
+        "work_kind": "specialist legal briefing",
+        "research_question": "How did Germany intend to tighten inward investment review during 2020?",
+        "main_finding": "Germany proposed tougher assessment and filing rules for sensitive inward acquisitions, reflecting EU-level FDI-screening alignment.",
+        "method_or_basis": "Hogan Lovells analysis of the federal legislative initiative, applicable FDI framework and EU Regulation 2019/452.",
+        "qualification": "The 2020 proposal was prospective; changes and consequences require later legal enactment evidence.",
+        "radar_relevance": "Direct national-security screening of investment, critical assets and foreign ownership in Germany.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "German Federal Government",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "proposes",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2020-03-03",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "Germany"
+            ]
+          },
+          "kind": "action",
+          "qualification": "The 2020 proposal was prospective; changes and consequences require later legal enactment evidence.",
+          "text": "Germany proposed tougher assessment and filing rules for sensitive inward acquisitions, reflecting EU-level FDI-screening alignment.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:e8e0451c296fe0fe",
+      "source_hash": "81fb883e",
+      "identity_hash": "d4800e4b57ce6683",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Attempted original CELIS syndicated link; fetch failed and scanner held only a link/title."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "Bloomberg newspaper article carries no DOI in CELIS item."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "limited",
+            "note": "Quoted search \"At NPC, China Lays Economic Plan, Strategy to Win Tech War With US\" did not identify an accessible original exact-title article."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "limited",
+            "note": "Searched Bloomberg, NPC, China, US tech war and 5 March 2021; found other March 2021 Bloomberg reports with different titles."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "limited",
+            "note": "Searched Bloomberg publisher and its Yahoo Finance syndication. https://finance.yahoo.com/news/china-pour-money-chips-ai-033042977.html discusses related policy but identity is not exact."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "limited",
+            "note": "Searched \"China Lays Economic Plan\" and \"Strategy to Win Tech War\" with Bloomberg/NPC; exact underlying article and original complete text not established."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Source is an authentic Bloomberg-attributed CELIS archive pointer but an exact matching original was not verified; related March 2021 Bloomberg articles must not be substituted."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The work and its bibliographic identity are confirmed, but only a short abstract or listing is accessible; substantive evidence is insufficient for a defensible admission decision."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:8dff26808854ee37",
+      "source_hash": "f26db87d",
+      "identity_hash": "0f66ea5432a92720",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "CELIS pointer led to Lexology article behind registration; its title/bylines were confirmed."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Found author firm BLOMSTEIN original full publication dated 27.01.2021: https://www.blomstein.com/en/news/the-draft-bill-of-the-17th-amendment-ordinance-of-the-awv-foreign-trade-and-payments-ordinance-a-first-analysis."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Read the complete firm publication and verified detailed sections on 55a AWV-E and 27 sensitive sectors."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.blomstein.com/en/news/the-draft-bill-of-the-17th-amendment-ordinance-of-the-awv-foreign-trade-and-payments-ordinance-a-first-analysis",
+            "title": "Germany’s draft 17th AWV ordinance expands FDI-sensitive sectors",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked The draft bill of the 17th Amendment Ordinance of the AWV (Foreign T against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "A direct German critical-technology FDI-screening change with EU security coordination."
+      },
+      "metadata_correction": {
+        "fields": {
+          "source": "BLOMSTEIN",
+          "date": "2021-01-27",
+          "authors": "Roland M. Stein; Leonard Freiherr von Rummel"
+        },
+        "unset": [],
+        "reason": "Recovered original BLOMSTEIN first-party full article dated 27 January 2021; Lexology and CELIS are later republication/pointer."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Germany’s draft 17th AWV ordinance expands FDI-sensitive sectors",
+      "reader_what": "BLOMSTEIN’s legal analysis examines a 2021 German draft covering quantum, chips, AI, robotics, cyber, aerospace and critical materials.",
+      "reader_why": "Wider notification and review of foreign acquisitions would affect Germany’s control over strategic technology and sensitive industrial assets.",
+      "reader_more": "The 27 January 2021 analysis explains that the draft expanded the catalogue of especially security-sensitive categories to 27, including dual-use and network technologies, secret patents and food security. The draft also addressed coordinated share purchases and ownership thresholds. Ministry workload estimates were expectations, not observed counts.",
+      "deep_analysis": {
+        "work_kind": "first-party specialist statutory analysis",
+        "research_question": "Which sectors and transactions would the proposed 17th AWV amendment bring into German screening?",
+        "main_finding": "The German draft significantly broadened the sectors in which foreign investors could be required to notify purchases and face security examination.",
+        "method_or_basis": "Detailed BLOMSTEIN examination of AWV-E section 55a, German investment-control law and EU FDI Screening Regulation.",
+        "qualification": "Document analyses a draft in January 2021; it is not proof that every clause was finally adopted in that form.",
+        "radar_relevance": "A direct German critical-technology FDI-screening change with EU security coordination.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "German Federal Ministry for Economic Affairs",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "proposes",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2021-01-27",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "Germany"
+            ]
+          },
+          "kind": "action",
+          "qualification": "Document analyses a draft in January 2021; it is not proof that every clause was finally adopted in that form.",
+          "text": "The German draft significantly broadened the sectors in which foreign investors could be required to notify purchases and face security examination.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:091131b58ed35bc0",
+      "source_hash": "12f9ed27",
+      "identity_hash": "0738d9255413d735",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "CELIS forwarded to The National Interest article."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Recovered full original publisher article https://nationalinterest.org/feature/transatlantic-awakening-why-europe-and-china-are-creating-comprehensive-agreement-investment dated 18 January 2021."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://nationalinterest.org/feature/transatlantic-awakening-why-europe-and-china-are-creating-comprehensive-agreement-investment",
+            "title": "EU–China investment pact drew early economic-security objections",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked Transatlantic Awakening: Why Europe and China are Creating a Compreh against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Substantive assessment of EU investment security, China exposure and strategic technology relations."
+      },
+      "metadata_correction": {
+        "fields": {
+          "source": "The National Interest",
+          "authors": "Joseph Vann; Valbona Zeneli",
+          "date": "2021-01-18"
+        },
+        "unset": [],
+        "reason": "Original National Interest publisher page gives 18 January 2021, the authors, and full text; CELIS reposted a link one day later."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU–China investment pact drew early economic-security objections",
+      "reader_what": "Zeneli and Vann criticised the EU–China investment agreement in principle, highlighting scrutiny of Chinese investment and EU technology-transfer exposure.",
+      "reader_why": "Their analysis argues that promised reciprocal market access needed stronger enforceability and transatlantic policy coordination.",
+      "reader_more": "This January 2021 opinion concerns the EU–China Comprehensive Agreement on Investment as provisionally negotiated, including foreign investment screening, sensitive technology access, state-owned enterprises and supply concentration. The argument is an advocacy interpretation, not evidence of CAI ratification or quantified causal effects; the 2021 draft subsequently did not become a ratified EU treaty.",
+      "deep_analysis": {
+        "work_kind": "attributed specialist geoeconomic-policy opinion",
+        "research_question": "What risks could accompany the EU–China investment agreement negotiated in 2020?",
+        "main_finding": "The authors argued the draft CAI could provide insufficient protection against technology transfer and unequal investment treatment, requiring more EU–US cooperation.",
+        "method_or_basis": "Published commentary citing Commission, MERICS and other investment estimates, with qualitative argument rather than original empirical identification.",
+        "qualification": "Normative and ideologically framed; some cited investment figures vary by scope and vintage, and treaty implementation was not established.",
+        "radar_relevance": "Substantive assessment of EU investment security, China exposure and strategic technology relations.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "eu_bilateral_agreements",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Valbona Zeneli and Joseph Vann",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2021-01-18",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Normative and ideologically framed; some cited investment figures vary by scope and vintage, and treaty implementation was not established.",
+          "text": "The authors argued the draft CAI could provide insufficient protection against technology transfer and unequal investment treatment, requiring more EU–US cooperation.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:d32e91c731a60194",
+      "source_hash": "c80aafaf",
+      "identity_hash": "d7b631d7cfa1bf2d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "error",
+            "note": "Tried the named CELIS link; browser returned an access error and source material was stored_only."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "Newspaper report has no DOI in the scanner identity."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "limited",
+            "note": "Exact search \"Beijing a buyer in Shell gas facilities\" did not recover the actual Australian publisher full text."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "limited",
+            "note": "Searched The Australian, Chinese buyer, Shell gas facilities and 23 December 2020; no reliable matching original article recovered."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "limited",
+            "note": "Looked for an official The Australian publication or legal archived copy; no substantive accessible text attributable to this exact work."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "limited",
+            "note": "Searched \"Shell gas facilities\" Chinese bidder December 2020 and alternate Australia energy acquisition phrasing; only unrelated Shell LNG material found."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "The original December 2020 report is identified by a CELIS title but paywalled/inaccessible; the Australia-only description suggests it is outside scope, but source evidence is insufficient to delete it definitively."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "A",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The work and its bibliographic identity are confirmed, but only a short abstract or listing is accessible; substantive evidence is insufficient for a defensible admission decision."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:c9dea185c30f8a3f",
+      "source_hash": "8e3652eb",
+      "identity_hash": "66216f17ba1aad50",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "CELIS article was a brief pointer."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Recovered and read https://thediplomat.com/2020/12/italys-china-card-in-eu-us-relations/ published 14 December 2020."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://thediplomat.com/2020/12/italys-china-card-in-eu-us-relations/",
+            "title": "Italy used China ties as a transatlantic bargaining factor",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked Italy’s China Card in EU-US Relations – The Diplomat - CELIS Institu against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Country-level EU foreign-investment screening, vendor restrictions and geoeconomic alignments."
+      },
+      "metadata_correction": {
+        "fields": {
+          "source": "The Diplomat",
+          "date": "2020-12-14",
+          "authors": "Mercy A. Kuo"
+        },
+        "unset": [],
+        "reason": "Full original The Diplomat interview published 14 December 2020, credited to Mercy A. Kuo; CELIS was only the pointer."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Italy used China ties as a transatlantic bargaining factor",
+      "reader_what": "A December 2020 interview with scholar Nicola Casarini traces Italy’s investment-screening and 5G choices amid EU, US and China competition.",
+      "reader_why": "It explains the interaction of Italian screening powers, Huawei restrictions and strategic-autonomy decisions.",
+      "reader_more": "The Diplomat interview reports Casarini’s assessment of Italy’s 2019 Belt and Road memorandum, COVID-era screening expansion and increasing caution around Chinese critical-infrastructure investment. This is attributed expert testimony, not a statistical evaluation or proof of a unilateral policy result.",
+      "deep_analysis": {
+        "work_kind": "specialist interview and comparative policy commentary",
+        "research_question": "How did Italy reconcile Chinese commercial engagement with EU–US security pressures in 2020?",
+        "main_finding": "The interviewed expert characterises Italy as combining China-facing economic diplomacy with stronger safeguards for strategic technologies and investment.",
+        "method_or_basis": "Interview by Mercy A. Kuo with researcher Nicola Casarini, referencing Italy’s Golden Power powers and emerging 5G policy.",
+        "qualification": "Interview responses reflect one analyst’s reading and cannot establish causation of investment decisions.",
+        "radar_relevance": "Country-level EU foreign-investment screening, vendor restrictions and geoeconomic alignments.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Italian Government",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2020-12-14",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "Italy"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "Interview responses reflect one analyst’s reading and cannot establish causation of investment decisions.",
+          "text": "The interviewed expert characterises Italy as combining China-facing economic diplomacy with stronger safeguards for strategic technologies and investment.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:03f52e6b051be9c7",
+      "source_hash": "40d15bfc",
+      "identity_hash": "34f44a4f892f6c06",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Checked the matching primary source at https://ecfr.eu/article/second-acts-how-europe-can-renew-the-transatlantic-partnership and the package-supplied substantive first-party material, where available."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://ecfr.eu/article/second-acts-how-europe-can-renew-the-transatlantic-partnership",
+            "title": "European strategic autonomy and renewed US cooperation can coexist",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked Second acts: How Europe can renew the transatlantic partnership – Eu against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "EU strategic autonomy, trade defence and technology security are examined substantively."
+      },
+      "metadata_correction": {
+        "fields": {
+          "source": "European Council on Foreign Relations",
+          "date": "2020-11-17",
+          "authors": "Susi Dennison; Ulrike Franke; Jonathan Hackenbroich; Rafael Loss; Tara Varma"
+        },
+        "unset": [],
+        "reason": "Original ECFR publisher supplies the authors and 17 November 2020 release date."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "European strategic autonomy and renewed US cooperation can coexist",
+      "reader_what": "ECFR authors propose a renewed transatlantic partnership that leaves Europe stronger in trade, industrial policy and technology controls.",
+      "reader_why": "They advocate independent European investment, sanctions and industrial capabilities alongside cooperation with Washington on China.",
+      "reader_more": "The November 2020 ECFR assessment, written during the US presidential transition, supports more European economic sovereignty and selective partner cooperation on digital standards, trade defence and China risks. This is prospective institutional analysis, not an implementation audit.",
+      "deep_analysis": {
+        "work_kind": "multiauthor policy analysis",
+        "research_question": "How could a renewed transatlantic relationship support stronger EU economic sovereignty?",
+        "main_finding": "ECFR researchers argue European economic capabilities need reinforcement without abandoning transatlantic cooperation and coordinated China policy.",
+        "method_or_basis": "Policy analysis of the 2020 EU–US baseline, strategic autonomy debates and national/institutional priorities.",
+        "qualification": "Recommendations were written before the Biden administration and cannot be interpreted as outcomes of its policies.",
+        "radar_relevance": "EU strategic autonomy, trade defence and technology security are examined substantively.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "goal.strategic_autonomy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "ECFR research team",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "evaluates",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2020-11-17",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Recommendations were written before the Biden administration and cannot be interpreted as outcomes of its policies.",
+          "text": "ECFR researchers argue European economic capabilities need reinforcement without abandoning transatlantic cooperation and coordinated China policy.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:f3a97c6b5d873034",
+      "source_hash": "57538af4",
+      "identity_hash": "9a6a6449dc3001e7",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "CELIS link pointed to the original Bloomberg Law publication."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Recovered publisher analysis from 16 November 2020 and confirmed it concerned financial-sector climate regulation."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://news.bloomberglaw.com/bloomberg-law-analysis/analysis-future-pressure-on-financial-sector-for-climate-action",
+            "title": "Climate-action pressure on financial institutions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked ANALYSIS: Future Pressure on Financial Sector for Climate Action – B against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_RADAR_SCOPE",
+        "reason": "This article treats climate finance/ESG compliance rather than external dependence, sanctions, strategic finance, geopolitical coercion or critical technology control in Europe."
+      },
+      "metadata_correction": {
+        "fields": {
+          "source": "Bloomberg Law",
+          "authors": "Sansanee Dhanasarnsombat"
+        },
+        "unset": [],
+        "reason": "Article is written/published by Bloomberg Law, not CELIS."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Climate-action pressure on financial institutions",
+      "reader_what": "Bloomberg Law analysis considers evolving climate disclosure and financial-sector pressure on emissions reduction.",
+      "reader_why": "",
+      "reader_more": "The work has been checked for subject, evidence and geographic mechanism. This article treats climate finance/ESG compliance rather than external dependence, sanctions, strategic finance, geopolitical coercion or critical technology control in Europe.",
+      "deep_analysis": {
+        "work_kind": "professional legal analysis",
+        "research_question": "Does the source establish a substantive European geoeconomic-security event or research finding?",
+        "main_finding": "Bloomberg Law analysis considers evolving climate disclosure and financial-sector pressure on emissions reduction.",
+        "method_or_basis": "Read original Bloomberg Law article by Sansanee Dhanasarnsombat dated 16 November 2020 and checked its thematic scope.",
+        "qualification": "Scope and methodology do not establish the EU strategic connection required for Strand A.",
+        "radar_relevance": "This article treats climate finance/ESG compliance rather than external dependence, sanctions, strategic finance, geopolitical coercion or critical technology control in Europe.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:2c89e8674e831e77",
+      "source_hash": "7576963d",
+      "identity_hash": "41cb3973273444c0",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read 22 October 2020 original MERICS briefing, including the discussion of China-US export control retaliation and dual-use rules."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://merics.org/en/briefing/chinas-new-export-control-law",
+            "title": "China’s 2020 export control law and US technology rivalry",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked China's new export control law against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_RADAR_SCOPE",
+        "reason": "Although extraterritorial Chinese export controls could affect other countries, this briefing does not develop a discrete EU economic-security exposure, firm impact or European policy response."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "China’s 2020 export control law and US technology rivalry",
+      "reader_what": "MERICS evaluates China’s first consolidated export-control law and the United States–China technology confrontation.",
+      "reader_why": "",
+      "reader_more": "The work has been checked for subject, evidence and geographic mechanism. Although extraterritorial Chinese export controls could affect other countries, this briefing does not develop a discrete EU economic-security exposure, firm impact or European policy response.",
+      "deep_analysis": {
+        "work_kind": "MERICS China policy briefing",
+        "research_question": "Does the source establish a substantive European geoeconomic-security event or research finding?",
+        "main_finding": "MERICS evaluates China’s first consolidated export-control law and the United States–China technology confrontation.",
+        "method_or_basis": "Inspected the substantive original article/publisher text and its research question, scope and findings.",
+        "qualification": "Scope and methodology do not establish the EU strategic connection required for Strand A.",
+        "radar_relevance": "Although extraterritorial Chinese export controls could affect other countries, this briefing does not develop a discrete EU economic-security exposure, firm impact or European policy response.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:8b2438af163d304a",
+      "source_hash": "c10c0b6a",
+      "identity_hash": "5bd475567f04d0e1",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the first-party pdf_excerpt text supplied in the source package and corroborated identity at https://doi.org/10.1093/jiel/jgaa001."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://doi.org/10.1093/jiel/jgaa001",
+            "title": "USMCA anti-non-market-economy trade clause",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked A Really Big Button That Doesn’t Do Anything? The Anti-NME Clause in against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_RADAR_SCOPE",
+        "reason": "The principal finding addresses legal leverage within a North American agreement; a passing reference to similar US negotiating objectives for EU agreements does not make Europe a studied case."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2020-03-18"
+        },
+        "unset": [],
+        "reason": "The journal full-text cover identifies advance access publication on 18 March 2020, rather than the 4 February 2020 scanner date."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "USMCA anti-non-market-economy trade clause",
+      "reader_what": "Geraldo Vidigal studies the legal/geoeconomic implications of the anti-NME clause in the United States–Mexico–Canada Agreement.",
+      "reader_why": "",
+      "reader_more": "The work has been checked for subject, evidence and geographic mechanism. The principal finding addresses legal leverage within a North American agreement; a passing reference to similar US negotiating objectives for EU agreements does not make Europe a studied case.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed international economic law article",
+        "research_question": "Does the source establish a substantive European geoeconomic-security event or research finding?",
+        "main_finding": "Geraldo Vidigal studies the legal/geoeconomic implications of the anti-NME clause in the United States–Mexico–Canada Agreement.",
+        "method_or_basis": "Read original scholarly article PDF through the archived source-material repository, including abstract, analysis and conclusions.",
+        "qualification": "Scope and methodology do not establish the EU strategic connection required for Strand A.",
+        "radar_relevance": "The principal finding addresses legal leverage within a North American agreement; a passing reference to similar US negotiating objectives for EU agreements does not make Europe a studied case.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:f7dce87ee1b796bb",
+      "source_hash": "4082e705",
+      "identity_hash": "192fd579e2a903ec",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "The official Publications Office page identifies the Part III country reports, corporate DG JUST publisher, national human-rights and environment/legal compliance contents; full PDF is listed but could not be rendered in browser."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Cross-checked report identifiers DOI 10.2838/703732 and ISBN 978-92-76-10593-0 against EU Publications Office metadata to establish subject and geographic scope."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered full 322-page authentic Commission report via author university repository https://research.unl.pt/ws/portalfiles/portal/86153433/Bright_C_study_on_due_diligence_requirements_through_the_supply.pdf; reviewed report table of contents and country legal sections."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_full_text",
+            "url": "https://research.unl.pt/ws/portalfiles/portal/86153433/Bright_C_study_on_due_diligence_requirements_through_the_supply.pdf",
+            "title": "European Commission DG JUST — Part III: Country Reports",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "The exact Part III full report was independently recovered in the NOVA university author repository and its original title, DOI, remit and human-rights/environmental due-diligence content verified."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_RADAR_SCOPE",
+        "reason": "Its principal subject is corporate liability and environmental/human-rights compliance, not strategic import concentration, military/technology security, coercive trading relationships or dependence mitigation."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2020-02-20"
+        },
+        "unset": [],
+        "reason": "The EU publisher identifies 20 February 2020 as its release date, rather than the scanner’s 1 February placeholder."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU human-rights supply-chain due-diligence country reports",
+      "reader_what": "The EU Commission commissioned a 2020 comparative compilation of national corporate human-rights and environmental due-diligence obligations.",
+      "reader_why": "",
+      "reader_more": "The work has been checked for subject, evidence and geographic mechanism. Its principal subject is corporate liability and environmental/human-rights compliance, not strategic import concentration, military/technology security, coercive trading relationships or dependence mitigation.",
+      "deep_analysis": {
+        "work_kind": "official comparative legal country reports",
+        "research_question": "Does the source establish a substantive European geoeconomic-security event or research finding?",
+        "main_finding": "The EU Commission commissioned a 2020 comparative compilation of national corporate human-rights and environmental due-diligence obligations.",
+        "method_or_basis": "Reviewed primary 322-page Commission-commissioned Part III national country-report legal surveys and their explicit business-and-human-rights due-diligence framework.",
+        "qualification": "Scope and methodology do not establish the EU strategic connection required for Strand A.",
+        "radar_relevance": "Its principal subject is corporate liability and environmental/human-rights compliance, not strategic import concentration, military/technology security, coercive trading relationships or dependence mitigation.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:9a9760d494089067",
+      "source_hash": "43b9abe3",
+      "identity_hash": "e91578447db0b424",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the complete first-party PDF https://wiiw.ac.at/capital-dynamics-global-value-chains-competitiveness-and-barriers-to-fdi-and-capital-accumulation-in-the-eu-dlp-5346.pdf, including executive-summary pages, econometric methodology and FDI/GVC conclusions."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_document",
+            "url": "https://wiiw.ac.at/capital-dynamics-global-value-chains-competitiveness-and-barriers-to-fdi-and-capital-accumulation-in-the-eu-dlp-5346.pdf",
+            "title": "EU research links strategic ICT investment to value-chain integration",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked Capital Dynamics, Global Value Chains, Competitiveness and Barriers  against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Bounded empirical evidence on European ICT industrial capacity, inward/outward FDI and external production dependencies; qualifies through a material European industrial trajectory, not merely the word competitiveness."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2020-06"
+        },
+        "unset": [],
+        "reason": "Original wiiw Research Report 446 cover establishes June 2020."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU research links strategic ICT investment to value-chain integration",
+      "reader_what": "A Commission-commissioned wiiw econometric report evaluates EU foreign investment, ICT capital and participation in global value chains.",
+      "reader_why": "It identifies capabilities and investment barriers affecting Europe’s digital-industrial competitiveness and position in international production networks.",
+      "reader_more": "Adarov and Stehrer combine EU KLEMS capital-stock data, bilateral investment statistics and sector/country econometric models. The study reports that inward FDI aligns with greater backward GVC integration, outward FDI with forward linkages, and software/database ICT capital with productivity. Its EU–peer comparisons find barriers to ICT investment and knowledge capital. These are historical associations and estimated relationships, not proof of a specific security risk or policy effectiveness.",
+      "deep_analysis": {
+        "work_kind": "commissioned 76-page cross-country/sector econometric research report",
+        "research_question": "How do ICT investment and inward/outward FDI shape European global-value-chain participation and industrial capacity?",
+        "main_finding": "Intangible ICT capital and foreign investment are associated with manufacturing productivity and value-chain integration, while EU capital-allocation bottlenecks persist.",
+        "method_or_basis": "Panel, gravity and sector regressions with EU KLEMS 2019, bilateral FDI/GVC datasets and comparison to US, Japan, China and Korea.",
+        "qualification": "Econometric evidence on competitiveness and FDI, not a measured coercion scenario; identifying causality is limited and the observations mainly predate 2020.",
+        "radar_relevance": "Bounded empirical evidence on European ICT industrial capacity, inward/outward FDI and external production dependencies; qualifies through a material European industrial trajectory, not merely the word competitiveness.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "fdi.inbound_flows",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Amat Adarov and Robert Stehrer",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "measures",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2020-06",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Econometric evidence on competitiveness and FDI, not a measured coercion scenario; identifying causality is limited and the observations mainly predate 2020.",
+          "text": "Intangible ICT capital and foreign investment are associated with manufacturing productivity and value-chain integration, while EU capital-allocation bottlenecks persist.",
+          "confidence": "medium",
+          "status_date_precision": "month"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:592b7c7772a9c9b2",
+      "source_hash": "fce6f398",
+      "identity_hash": "3885e9d91685214c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read substantive four-page first-party GMF PDF provided in worker package."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Checked full GMF web edition https://www.gmfus.org/news/transatlantic-trade-emergence-eu-geoeconomic-strategy, by Elisabeth Winter."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.gmfus.org/news/transatlantic-trade-emergence-eu-geoeconomic-strategy",
+            "title": "EU considered stronger geoeconomic trade defence against US pressure",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked Transatlantic Trade—the Emergence of an EU Geoeconomic Strategy? against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "EU trade coercion, external policy leverage, technological sovereignty and transatlantic partnerships are central."
+      },
+      "metadata_correction": {
+        "fields": {
+          "source": "German Marshall Fund",
+          "authors": "Elisabeth Winter",
+          "date": "2019-07"
+        },
+        "unset": [],
+        "reason": "Primary GMF essay explicitly looks back one year from the 25 July 2018 EU–US trade armistice, placing publication in July 2019, rather than 2018."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU considered stronger geoeconomic trade defence against US pressure",
+      "reader_what": "Elisabeth Winter analyses 2019 European trade-security strategy amid threatened US automotive tariffs and disagreement over China.",
+      "reader_why": "The EU’s willingness to retaliate against tariffs while defending strategic autonomy shows how commercial instruments can become external-policy leverage.",
+      "reader_more": "The July 2019 German Marshall Fund essay contrasts continued EU–US standards talks with stronger EU deterrence. It reports a stated EU willingness to retaliate against possible US auto tariffs with a €35 billion list, and advocates closer transatlantic cooperation in cybersecurity and emerging technologies. That is a conditional tariff threat, not tariffs that necessarily took effect.",
+      "deep_analysis": {
+        "work_kind": "geoeconomic foreign-policy analysis",
+        "research_question": "Was the 2019 EU response to US trade threats moving toward deliberate geoeconomic statecraft?",
+        "main_finding": "The article identifies more assertive EU trade-defence messaging in response to unilateral US tariffs alongside continued technology cooperation.",
+        "method_or_basis": "Close reading of Commission speeches, progress report on July 2018 EU–US statement, contemporaneous tariffs and trade-strategy policy arguments.",
+        "qualification": "Expert contemporary interpretation; the retaliation was threatened conditional on US action and not evidence of an enacted tariff round.",
+        "radar_relevance": "EU trade coercion, external policy leverage, technological sovereignty and transatlantic partnerships are central.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "econsec.trade_security",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2019-07",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Expert contemporary interpretation; the retaliation was threatened conditional on US action and not evidence of an enacted tariff round.",
+          "text": "The article identifies more assertive EU trade-defence messaging in response to unilateral US tariffs alongside continued technology cooperation.",
+          "confidence": "medium",
+          "status_date_precision": "month"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:76329b9c313a4d5c",
+      "source_hash": "e3741721",
+      "identity_hash": "37a36ab4b8f83a1c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Reviewed entire original 10 December 2018 BusinessEurope/Japanese association PDF declaration supplied in the package."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2018-12-10_joint_statement_on_ep_ratification_japan-20f-1.pdf",
+            "title": "EU and Japanese businesses lobbied for EPA ratification",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked Business calls on the European Parliament to ratify the EU-Japan Eco against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_RADAR_SCOPE",
+        "reason": "This is an advocacy petition for an ordinary trade treaty, not original evidence on EU strategic dependence, a newly adopted EU measure or an economic-security risk analysis."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2018-12-10"
+        },
+        "unset": [],
+        "reason": "Original signed declaration identifies 10 December 2018, not 1 January 2018."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU and Japanese businesses lobbied for EPA ratification",
+      "reader_what": "A December 2018 joint industry declaration urges the European Parliament to ratify the EU–Japan Economic Partnership Agreement.",
+      "reader_why": "",
+      "reader_more": "The work has been checked for subject, evidence and geographic mechanism. This is an advocacy petition for an ordinary trade treaty, not original evidence on EU strategic dependence, a newly adopted EU measure or an economic-security risk analysis.",
+      "deep_analysis": {
+        "work_kind": "BusinessEurope and Japanese corporate-association joint statement",
+        "research_question": "Does the source establish a substantive European geoeconomic-security event or research finding?",
+        "main_finding": "A December 2018 joint industry declaration urges the European Parliament to ratify the EU–Japan Economic Partnership Agreement.",
+        "method_or_basis": "Inspected the substantive original article/publisher text and its research question, scope and findings.",
+        "qualification": "Scope and methodology do not establish the EU strategic connection required for Strand A.",
+        "radar_relevance": "This is an advocacy petition for an ordinary trade treaty, not original evidence on EU strategic dependence, a newly adopted EU measure or an economic-security risk analysis.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:a5083b8b61d7727f",
+      "source_hash": "a2a035e4",
+      "identity_hash": "60c082191d92333b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read original BusinessEurope first-party brief event description; it describes only the meeting co-hosts and date."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.businesseurope.eu/photo-gallery/the-eu-vietnam-free-trade-agreement-whats-in-it-for-european-enterprises-and-vietnams-reform-process-7-september-brussels/",
+            "title": "EU–Vietnam trade conference gallery",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked The EU-Vietnam Free Trade Agreement: what’s in it for European enter against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_RADAR_SCOPE",
+        "reason": "This is an event photo-gallery title with no self-contained agreement implementation evidence, completed analytic work or strategic-security finding."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2017-09-07"
+        },
+        "unset": [],
+        "reason": "Photo-gallery event heading supplies 7 September; original year 2017 inferred from source’s 2017 dated index and scanner year."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU–Vietnam trade conference gallery",
+      "reader_what": "BusinessEurope archives a September 2017 event on the EU–Vietnam FTA and enterprise reform.",
+      "reader_why": "",
+      "reader_more": "The work has been checked for subject, evidence and geographic mechanism. This is an event photo-gallery title with no self-contained agreement implementation evidence, completed analytic work or strategic-security finding.",
+      "deep_analysis": {
+        "work_kind": "event photo-gallery notice",
+        "research_question": "Does the source establish a substantive European geoeconomic-security event or research finding?",
+        "main_finding": "BusinessEurope archives a September 2017 event on the EU–Vietnam FTA and enterprise reform.",
+        "method_or_basis": "Inspected the substantive original article/publisher text and its research question, scope and findings.",
+        "qualification": "Scope and methodology do not establish the EU strategic connection required for Strand A.",
+        "radar_relevance": "This is an event photo-gallery title with no self-contained agreement implementation evidence, completed analytic work or strategic-security finding.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:f66131923e768026",
+      "source_hash": "4526a8b7",
+      "identity_hash": "6c5b71d1721c2c4c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Original PIIE publisher page provides book abstract and full 2006 chapter list including Swiss relations with EU and gravity/CGE estimates."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.piie.com/bookstore/shape-swiss-us-free-trade-agreement",
+            "title": "Prospective Swiss–US bilateral free trade agreement",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked The Shape of a Swiss-US Free Trade Agreement against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_RADAR_SCOPE",
+        "reason": "The EU is a comparator in one chapter, not the object of a European economic-security mechanism; the central focus is normal Swiss–US trade liberalisation."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2006-02",
+          "authors": "Gary Clyde Hufbauer; Robert E. Baldwin"
+        },
+        "unset": [],
+        "reason": "Original PIIE book-data record gives February 2006 and the named authors; 2016-04-21 was a later webpage migration timestamp."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Prospective Swiss–US bilateral free trade agreement",
+      "reader_what": "A Peterson Institute 2006 edited study estimated possible gross domestic product gains from a Switzerland–United States free-trade agreement.",
+      "reader_why": "",
+      "reader_more": "The work has been checked for subject, evidence and geographic mechanism. The EU is a comparator in one chapter, not the object of a European economic-security mechanism; the central focus is normal Swiss–US trade liberalisation.",
+      "deep_analysis": {
+        "work_kind": "book-length economic trade-policy modelling study",
+        "research_question": "Does the source establish a substantive European geoeconomic-security event or research finding?",
+        "main_finding": "A Peterson Institute 2006 edited study estimated possible gross domestic product gains from a Switzerland–United States free-trade agreement.",
+        "method_or_basis": "Inspected the substantive original article/publisher text and its research question, scope and findings.",
+        "qualification": "Scope and methodology do not establish the EU strategic connection required for Strand A.",
+        "radar_relevance": "The EU is a comparator in one chapter, not the object of a European economic-security mechanism; the central focus is normal Swiss–US trade liberalisation.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:1614d0e13f082538",
+      "source_hash": "a2435c40",
+      "identity_hash": "f1d3b0890d78e115",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "The PIIE first-party book listing confirms the substantive US–Morocco FTA study scope and economic policy recommendations."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.piie.com/bookstore/capitalizing-morocco-us-free-trade-agreement-road-map-success",
+            "title": "Morocco–US FTA implementation and trade reform",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked Capitalizing on the Morocco-US Free Trade Agreement: A Road Map for  against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_RADAR_SCOPE",
+        "reason": "EU–Morocco trade is an ancillary comparator, not evidence of European strategic-sector supply, political coercion, foreign ownership controls or EU trade security."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2009-09",
+          "authors": "Gary Clyde Hufbauer; Claire Brunel"
+        },
+        "unset": [],
+        "reason": "Publisher book-data identifies the 2009 issue date and editors; 2016 scanner date is the website’s later publication date."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Morocco–US FTA implementation and trade reform",
+      "reader_what": "A Peterson Institute 2009 book reviews implementation of the US–Morocco trade agreement, modelling trade and recommending reforms.",
+      "reader_why": "",
+      "reader_more": "The work has been checked for subject, evidence and geographic mechanism. EU–Morocco trade is an ancillary comparator, not evidence of European strategic-sector supply, political coercion, foreign ownership controls or EU trade security.",
+      "deep_analysis": {
+        "work_kind": "edited empirical trade-development book",
+        "research_question": "Does the source establish a substantive European geoeconomic-security event or research finding?",
+        "main_finding": "A Peterson Institute 2009 book reviews implementation of the US–Morocco trade agreement, modelling trade and recommending reforms.",
+        "method_or_basis": "Reviewed original PIIE publisher description, original 2009 issue record and component-level study summary.",
+        "qualification": "Scope and methodology do not establish the EU strategic connection required for Strand A.",
+        "radar_relevance": "EU–Morocco trade is an ancillary comparator, not evidence of European strategic-sector supply, political coercion, foreign ownership controls or EU trade security.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:697834996729a007",
+      "source_hash": "36e594a9",
+      "identity_hash": "28aa7132b44c1e7e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Global Trade Alert policy-event record identifies 5 October 2011, PLN 925.6 million and the Świnoujście terminal."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Located original European Commission state-aid decision https://ec.europa.eu/competition/state_aid/cases/241631/241631_1267250_72_3.pdf and cross-checked official Polish UOKiK announcement https://archiwum.uokik.gov.pl/news.php?news_id=2984&news_page=142."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_document",
+            "url": "https://ec.europa.eu/competition/state_aid/cases/241631/241631_1267250_72_3.pdf",
+            "title": "Poland’s 2011 LNG terminal aid received EU approval",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Inspected European Commission decision C(2011) 7242 final, SA.31953, dated 5 October 2011, including proposed LNG capacity and aid amounts, and cross-checked Global Trade Alert record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONSEC",
+        "reason": "Direct EU-member-state strategic gas supply infrastructure and state industrial support."
+      },
+      "metadata_correction": {
+        "fields": {
+          "source": "European Commission",
+          "date": "2011-10-05"
+        },
+        "unset": [],
+        "reason": "Original EU state-aid approval (5 October 2011) and Polish competition-office release establish the event; Global Trade Alert archive date of 2016 is not the action date."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "Poland’s 2011 LNG terminal aid received EU approval",
+      "reader_what": "The European Commission approved approximately PLN 925.6 million of Polish state aid for building a Świnoujście liquefied-natural-gas import terminal.",
+      "reader_why": "The approved aid supported plans to create a seaborne import route and reduce reliance on constrained pipeline-gas supply.",
+      "reader_more": "The Global Trade Alert entry records a 5 October 2011 formal Commission aid approval. An original Polish competition-office communication corroborates the amount and purpose. This is permission to provide state aid, not proof that construction was complete on the decision date or that all planned diversification was realised.",
+      "deep_analysis": {
+        "work_kind": "formal European state-aid decision and official notification",
+        "research_question": "Did the EU approve public funding for Polish LNG import infrastructure?",
+        "main_finding": "The Commission ruled the proposed Polish aid compatible with EU internal-market rules; planned import capacity was 5 bcm/year, not a proven realised 2011 output.",
+        "method_or_basis": "Contemporaneous European Commission competition decision, Polish competition-office summary and corroborating Global Trade Alert policy-event record.",
+        "qualification": "The decision authorises aid; subsequent project commissioning, gas throughput and supplier diversity are separate outcomes.",
+        "radar_relevance": "Direct EU-member-state strategic gas supply infrastructure and state industrial support.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "energy.lng_imports",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "adopts",
+          "direction": "expands",
+          "status": "adopted",
+          "status_date": "2011-10-05",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "Poland"
+            ]
+          },
+          "kind": "action",
+          "qualification": "The decision authorises aid; subsequent project commissioning, gas throughput and supplier diversity are separate outcomes.",
+          "text": "Commission state-aid clearance authorised Polish public support for an LNG import terminal at Świnoujście in 2011.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:304dbbdd40b81284",
+      "source_hash": "f9f9c027",
+      "identity_hash": "8f5e051158ec9ca3",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read Egmont’s original first-party PDF text on South Korean aid mechanisms, recipient regions and EU development-cooperation compatibility."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://egmontinstitute.be/app/uploads/2014/11/PB_15_South_Korea_and_the_European_Union.pdf?type=pdf",
+            "title": "EU–South Korea development cooperation partnership",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked South Korea and the European Union: A promising partnership for deve against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_RADAR_SCOPE",
+        "reason": "Its principal mechanism is official development assistance and aid institutions, not investment screening, critical technology transfer, defence manufacturing or economic-security supply resilience."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "EU–South Korea development cooperation partnership",
+      "reader_what": "A 2015 Egmont policy brief analyses Korea’s development-donor transition and possibilities for EU–Korea aid coordination.",
+      "reader_why": "",
+      "reader_more": "The work has been checked for subject, evidence and geographic mechanism. Its principal mechanism is official development assistance and aid institutions, not investment screening, critical technology transfer, defence manufacturing or economic-security supply resilience.",
+      "deep_analysis": {
+        "work_kind": "development-cooperation policy brief",
+        "research_question": "Does the source establish a substantive European geoeconomic-security event or research finding?",
+        "main_finding": "A 2015 Egmont policy brief analyses Korea’s development-donor transition and possibilities for EU–Korea aid coordination.",
+        "method_or_basis": "Inspected the substantive original article/publisher text and its research question, scope and findings.",
+        "qualification": "Scope and methodology do not establish the EU strategic connection required for Strand A.",
+        "radar_relevance": "Its principal mechanism is official development assistance and aid institutions, not investment screening, critical technology transfer, defence manufacturing or economic-security supply resilience.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:413f7e273c775389",
+      "source_hash": "301de384",
+      "identity_hash": "908a4483bd3360c4",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the full original BusinessEurope 29 June 2015 declaration from the package, including signatories and requested cooperation measures."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2025/02/2015-00550-E-ed1-1.pdf",
+            "title": "2015 EU–China summit business declaration",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked 10th EU-China Business Summit \"Building a stronger partnership\", Bru against the publication metadata and substantive source; assessed the actual content and European economic-security scope."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_RADAR_SCOPE",
+        "reason": "The document is a joint lobbying statement and event communiqué, not an independently verified study of strategic dependencies or proof of policy adoption."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2015-06-29"
+        },
+        "unset": [],
+        "reason": "First-page document dates the summit declaration 29 June 2015; scanner defaulted to January 1."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "reader_title": "2015 EU–China summit business declaration",
+      "reader_what": "BusinessEurope and Chinese business groups issued a June 2015 declaration promoting deeper bilateral commercial partnership.",
+      "reader_why": "",
+      "reader_more": "The work has been checked for subject, evidence and geographic mechanism. The document is a joint lobbying statement and event communiqué, not an independently verified study of strategic dependencies or proof of policy adoption.",
+      "deep_analysis": {
+        "work_kind": "joint private-sector advocacy declaration",
+        "research_question": "Does the source establish a substantive European geoeconomic-security event or research finding?",
+        "main_finding": "BusinessEurope and Chinese business groups issued a June 2015 declaration promoting deeper bilateral commercial partnership.",
+        "method_or_basis": "Inspected the substantive original article/publisher text and its research question, scope and findings.",
+        "qualification": "Scope and methodology do not establish the EU strategic connection required for Strand A.",
+        "radar_relevance": "The document is a joint lobbying statement and event communiqué, not an independently verified study of strategic dependencies or proof of policy adoption.",
+        "why_supported": false,
+        "confidence": "high"
+      },
+      "claims": []
+    }
+  ]
+}
