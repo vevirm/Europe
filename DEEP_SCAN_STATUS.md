@@ -6,13 +6,13 @@ It shows what is verified, what each worker owns, and what is still eligible. Ex
 Scheduling policy: preserve active worker reservations; fill new slots with Main Radar first, then Historical Radar. Do not fill packages artificially at saturation.
 A validated unsuccessful recovery is one pass; packaging alone is not a pass. After **3** failed passes, close the work as **dropped**, keeping an audit. No work-by-hand loop.
 
-- Authoritative V2 verified: **3076** (Main **1295** + Historical **1781**)
-- Automatic queue still needing V2 verification: **54** (Main **47** + Historical **7**)
+- Authoritative V2 verified: **3112** (Main **1327** + Historical **1785**)
+- Automatic queue still needing V2 verification: **18** (Main **15** + Historical **3**)
 - Currently assigned to workers: **18** (Main **15** + Historical **3**)
 - Bounded access-recovery retries still eligible: **18**
 - Dropped after three failed recovery passes (archived): **188**
 - Legacy work-by-hand requiring reconciliation: **0**
-- Automatic queue pending and not yet assigned: **36**
+- Automatic queue pending and not yet assigned: **0**
 
 ## Worker lanes
 
