@@ -6,28 +6,21 @@ It shows what is verified, what each worker owns, and what is still eligible. Ex
 Scheduling policy: preserve active worker reservations; fill new slots with Main Radar first, then Historical Radar. Do not fill packages artificially at saturation.
 A validated unsuccessful recovery is one pass; packaging alone is not a pass. After **3** failed passes, close the work as **dropped**, keeping an audit. No work-by-hand loop.
 
-- Authoritative V2 verified: **3117** (Main **1327** + Historical **1790**)
-- Automatic queue still needing V2 verification: **54** (Main **39** + Historical **15**)
-- Currently assigned to workers: **18** (Main **15** + Historical **3**)
-- Bounded access-recovery retries still eligible: **18**
+- Authoritative V2 verified: **3151** (Main **1349** + Historical **1802**)
+- Automatic queue still needing V2 verification: **20** (Main **17** + Historical **3**)
+- Currently assigned to workers: **2** (Main **2** + Historical **0**)
+- Bounded access-recovery retries still eligible: **20**
 - Dropped after three failed recovery passes (archived): **188**
 - Legacy work-by-hand requiring reconciliation: **0**
-- Automatic queue pending and not yet assigned: **36**
+- Automatic queue pending and not yet assigned: **18**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261116T073134Z-6ad6a1b7644f`
-- Assigned unresolved records: **18**
-  1. `link:https://doi.org/10.1080/23745118.2026.2758769` — Governing readiness: anticipatory defence governance in EU defence policy after 2022 — recovery attempt 3/3
-  2. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=dd4e8f89-d9bf-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2): Title IV: Security of ICT Supply Chains: Discussion paper - Publications Office of the EU — recovery attempt 2/3
-  3. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=c764aab8-d9bf-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Presidency second compromise text Title IV (Security of ICT Supply Chains) - Publications Office of the EU — recovery attempt 2/3
-  4. `link:https://doi.org/10.1080/08911916.2026.2743824` — Beyond the European Chips Act: Mobilizing Public Banks to Solve Europe’s Semiconductor Supply Chain Paradox — recovery attempt 2/3
-  5. `link:https://doi.org/10.1163/29505720-bja00020` — From CAI to De-Risking, Seven Years to Conclude, Four Months to Freeze — recovery attempt 2/3
-  6. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=bd116d80-da2f-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Presidency Flash for the Working Party on Competitiveness and Growth (Internal Market - Skills Portability) on 5 November 2026 - Publications Office of the EU — recovery attempt 2/3
-  7. `link:https://doi.org/10.1016/j.esr.2026.102389` — Reassessing the EU’s LNG expansion strategy: Geopolitical dependencies, energy security, and climate goals after the Russian invasion of Ukraine — recovery attempt 2/3
-  8. `link:https://doi.org/10.1080/10168737.2026.2692699` — European Manufacturing Exports and Exposure to Chinese ICT Services — recovery attempt 2/3
-  - … plus 10 more in the package manifest
+- Current package: `worker-a-20261116T073451Z-6b6ee5452681`
+- Assigned unresolved records: **2**
+  1. `link:https://doi.org/10.1080/14683849.2026.2752280` — From customs-union asymmetry to bounded co-management? Strategic autonomy and the CETA-plus free trade agreement alternative in EU–Türkiye trade governance — recovery attempt 2/3
+  2. `link:https://data.consilium.europa.eu/doc/document/ST-13545-2026-INIT/en/pdf` — Changes in comparison to the Commission proposal, document ST 10094/26 + ADD1, are marked in bold for additions and in strikethrough for deletions. — recovery attempt 2/3
 
 ### Worker B
 - Current package: `worker-b-20261116T070207Z-162cd0dae8a9`
