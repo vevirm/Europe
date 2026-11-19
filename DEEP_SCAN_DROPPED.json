@@ -2,7 +2,7 @@
   "profile": "radar-deep-scan-dropped-index-v1",
   "rule": "After 3 recorded failed research passes, close as dropped; no hands-on queue. Package issuance alone is not a research pass.",
   "note": "The full retrieval notes and available recovery history remain in deep_scan_work_state.json. Some legacy records have fewer retained history entries than the recorded attempt counter; no missing attempts are invented.",
-  "count": 188,
+  "count": 189,
   "records": [
     {
       "record_key": "historical:id:02d0446b10283c5c",
@@ -1397,6 +1397,21 @@
       ],
       "closed_at": "2026-10-20T08:40:39Z",
       "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year"
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/23745118.2026.2758769",
+      "title": "Governing readiness: anticipatory defence governance in EU defence policy after 2022",
+      "source": "European Politics and Society",
+      "url": "https://doi.org/10.1080/23745118.2026.2758769",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261106T071712Z-c27611082ad8",
+        "worker-a-20261108T094504Z-f060e1f433f8",
+        "worker-b-20261119T111044Z-e17d78dfa9d6"
+      ],
+      "closed_at": "2026-11-19T12:40:58Z",
+      "reason": "Third-attempt hard-final pass: publisher title/DOI and author university identity match; publisher full-text access returned 403 and the university page exposes an abstract only. Separate DOI/title, author/university, and policy-instrument queries did not recover a full legitimate copy."
     },
     {
       "record_key": "link:https://doi.org/10.1093/jeclap/lpag053",
