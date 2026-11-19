@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-11-16T07:33:59Z",
+  "generated_at": "2026-11-19T12:36:59Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -245688,8 +245688,2474 @@
       "deep_scan_package_id": "worker-a-20261116T070203Z-25c8bd2bf358",
       "claims": [],
       "claims_profile": "radar-claims-v1"
+    },
+    "link:https://data.consilium.europa.eu/doc/document/WK-14980-2026-INIT/en/pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "b9875555",
+      "identity_hash": "cbc30c6e373f6311",
+      "reader_title": "Council compromise explains Chips Act 2.0 changes",
+      "reader_what": "A Council working note details proposed EU semiconductor supply safeguards, project support and investment provisions.",
+      "reader_why": "The proposed changes address European chip supply resilience, strategic capacity and economic security.",
+      "reader_more": "This 29 September 2026 Council note describes revisions in the first Presidency compromise on Chips Act 2.0. They include clearer criteria for semiconductor strategic projects, provisions for security-of-supply declarations and supply-chain diversification information, and support for established and emerging chip technologies. The document records negotiation proposals rather than enacted measures.",
+      "deep_analysis": {
+        "work_kind": "policy document",
+        "research_question": "",
+        "main_finding": "The Presidency proposed clarifications to chip project designations, supply-security reporting and semiconductor value-chain resilience.",
+        "method_or_basis": "Official Council working document WK 14980/2026 INIT, pages 1–4 and further article-by-article explanations.",
+        "qualification": "This is a Presidency compromise explanation, not an adopted law; the document expressly covers the first compromise for Pillars I and II.",
+        "radar_relevance": "Direct evidence of a proposed EU economic-security regulatory framework for semiconductor capacity and supply chains.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package contains pages 1 onward of the exact Council PDF at https://data.consilium.europa.eu/doc/document/WK-14980-2026-INIT/en/pdf; direct web opening was blocked, but supplied first-party text was inspected."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Official EU Publications Office matches WK 14980 2026 INIT: https://op.europa.eu/fi/publication-detail/-/publication/95da8196-c1e6-11f1-988f-01aa75ed71a1/language-fi"
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://data.consilium.europa.eu/doc/document/WK-14980-2026-INIT/en/pdf",
+            "title": "Explanatory Note on the first Presidency compromise text of the Chips Act 2.0 proposal",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Compared original package substantive source text with bibliographic identifiers on official publisher/archival records; assessment refers to the source work, not scanner labels."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Primary EU policy-development document directly addressing semiconductor security of supply and industrial resilience."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:52Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "econsec.technology_security",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Council Presidency",
+            "class": "eu_body"
+          },
+          "mechanism": "proposes",
+          "direction": "expands",
+          "status": "in_negotiation",
+          "status_date": "2026-09-29",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "This is a Presidency compromise explanation, not an adopted law; the document expressly covers the first compromise for Pillars I and II.",
+          "text": "The Presidency compromise proposes economic-security and supply-chain reporting provisions in Chips Act 2.0.",
+          "confidence": "high",
+          "record_key": "link:https://data.consilium.europa.eu/doc/document/WK-14980-2026-INIT/en/pdf",
+          "merit": 99,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:cbc30c6e373f6311:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1007/s10645-026-09478-w": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "09cfb34a",
+      "identity_hash": "48a365775ac50285",
+      "reader_title": "Impact of the US–China tariff war on the eurozone under Trump 2.0: an agent-based modelling approach",
+      "reader_what": "There are concerns that the escalation of the US–China trade war could significantly impact the global economy due to third-party",
+      "reader_why": "The model explicitly simulates EU spillovers of US–China tariffs and diversification responses.",
+      "reader_more": "There are concerns that the escalation of the US–China trade war could significantly impact the global economy due to third-party effects. In this regard, this study develops an agent-based model (ABM) and a dynamic game-theoretic framework to simulate the conditions under which the US–China tariff war spillovers affect the European Union. First, the findings indicate that spillovers weaken demand and contribute to disinflation, while the euro exchange rate adjusts to absorb shocks, enhancing stabilisation capacity.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "What does this work establish about Impact of the US–China tariff war on the eurozone under Trump 2.0: an?",
+        "main_finding": "In this regard, this study develops an agent-based model (ABM) and a dynamic game-theoretic framework to simulate the conditions under which the US–China tariff war spillovers affect the European Union.",
+        "method_or_basis": "In this regard, this study develops an agent-based model (ABM) and a dynamic game-theoretic framework to simulate the conditions under which the US–China tariff war spillovers affect the European Union.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "The model explicitly simulates EU spillovers of US–China tariffs and diversification responses.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://doi.org/10.1007/s10645-026-09478-w; the captured text is 18051 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://doi.org/10.1007/s10645-026-09478-w",
+            "title": "Impact of the US–China tariff war on the eurozone under Trump 2.0: an agent-based modelling approach",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The model explicitly simulates EU spillovers of US–China tariffs and diversification responses."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:52Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "trade.tariffs_on_eu",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Jamilu Iliyasu, Aliyu R. Sanusi, Suleiman O. Mamman",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-14",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "In this regard, this study develops an agent-based model (ABM) and a dynamic game-theoretic framework to simulate the conditions under which the US–China tariff war spillovers affect the European Union.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1007/s10645-026-09478-w",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:48a365775ac50285:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1111/imig.70251": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "5b322c42",
+      "identity_hash": "082cad5d624318cb",
+      "reader_title": "Ideology and Utopia in the Governance of Migration: The Case of the 2024 Pact on Migration and Asylum",
+      "reader_what": "1 of 11International Migration, 2026; 64:e70251 International Migration ORIGINAL ARTICLE Ideology and Utopia in the Governance of Migration: The Case",
+      "reader_more": "1 of 11International Migration, 2026; 64:e70251 International Migration ORIGINAL ARTICLE Ideology and Utopia in the Governance of Migration: The Case of the 2024 Pact on Migration and Asylum and the Common European System for Returns Valériane Mistiaen1 | Silvia Almenara-Niebla 2 1DESIRE ECHO, SCOM - Vrije Universiteit Brussel, Brussels, Belgium | 2Universidad Autónoma de Madrid, Madrid, Spain Correspondence: Valériane Mistiaen (valeriane.marie.mistiaen@vub.be ) Received: 2 February 2026 | Revised: 24 September 2026 | Accepted: 27 October 2026 Keywords: 2024 Pact on Migration and Asylum | common European system for returns | critical discourse analysis | ideology | migration | utopia ABSTRACT This article interrogates the 2024 Pact on Migration and Asylum and Migration and the 2025 proposal for a Common European",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "What does this work establish about Ideology and Utopia in the Governance of Migration: The Case of the 2024?",
+        "main_finding": "Drawing on Ricoeur's complemen - tarity of utopia and ideology, Levitas' Utopia as Method and critical discourse analysis, we examine how these instruments con - struct an idealised narrative of orderly, efficient, rights- based governance while consolidating intensive control infrastructures.",
+        "method_or_basis": "1 of 11International Migration, 2026; 64:e70251 International Migration ORIGINAL ARTICLE Ideology and Utopia in the Governance of Migration: The Case of the 2024 Pact on Migration and Asylum and the Common European System for Returns Valériane Mistiaen1 | Silvia Almenara-Niebla 2 1DESIRE ECHO, SCOM - Vrije Universiteit Brussel, Brussels, Belgium | 2Universidad Autónoma de Madrid, Madrid, Spain Correspondence: Valériane Mistiaen (valeriane.marie.mistiaen@vub.be ) Received: 2 February 2026 | Revised: 24 September 2026 | Accepted: 27 October 2026 Keywords: 2024 Pact on Migration and Asylum | common European system for returns | critical discourse analysis | ideology | migration | utopia ABSTRACT This article interrogates the 2024",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "Migration governance and returns, not European economic security.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://doi.org/10.1111/imig.70251; the captured text is 24000 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://doi.org/10.1111/imig.70251",
+            "title": "Ideology and Utopia in the Governance of Migration: The Case of the 2024 Pact on Migration and Asylum and the Common European System for Returns",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_SCOPE_OR_SUBSTANCE_FAIL",
+        "reason": "Migration governance and returns, not European economic security."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:52Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1111/jcms.70191": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "4e8670d7",
+      "identity_hash": "37843d7973e44a5a",
+      "reader_title": "Assessing Norms Convergence and Divergence in EU–Latin American Trade Relations: The Cases of EU–Mexico and EU–Mercosur Negotiations",
+      "reader_what": "Assessing Norms Convergence and Divergence in EU –Latin American Trade Relations: The Cases of EU –Mexico and EU–Mercosur Negotiations BRUNO",
+      "reader_more": "Assessing Norms Convergence and Divergence in EU –Latin American Trade Relations: The Cases of EU –Mexico and EU–Mercosur Negotiations BRUNO THEODORO LUCIANO São Paulo State University – UNESP, São Paulo Abstract This article aims to assess the normative aspects of European Union (EU) trade relations with Latin America, examining the role of norms divergence and convergence within EU –Mercosur and EU– Mexico trade negotiations. It argues that the distinct levels of normative convergence on the hu- man rights and environmental principles of EU –Latin America and the Caribbean (LAC) relations amongst European and Latin American actors over time explain why and when EU trade agreements with the region are concluded, even in a scenario of agreement on trade liberalisation commitments.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "What does this work establish about Assessing Norms Convergence and Divergence in EU–Latin American Trade Relations: The Cases of?",
+        "main_finding": "It argues that the distinct levels of normative convergence on the hu- man rights and environmental principles of EU –Latin America and the Caribbean (LAC) relations amongst European and Latin American actors over time explain why and when EU trade agreements with the region are concluded, even in a scenario of agreement on trade liberalisation commitments.",
+        "method_or_basis": "Assessing Norms Convergence and Divergence in EU –Latin American Trade Relations: The Cases of EU –Mexico and EU–Mercosur Negotiations BRUNO THEODORO LUCIANO São Paulo State University – UNESP, São Paulo Abstract This article aims to assess the normative aspects of European Union (EU) trade relations with Latin America, examining the role of norms divergence and convergence within EU –Mercosur and EU– Mexico trade negotiations.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "Norms and human-rights/environmental convergence in trade negotiations rather than economic-security mechanisms.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://doi.org/10.1111/jcms.70191; the captured text is 24000 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://doi.org/10.1111/jcms.70191",
+            "title": "Assessing Norms Convergence and Divergence in EU–Latin American Trade Relations: The Cases of EU–Mexico and EU–Mercosur Negotiations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_SCOPE_OR_SUBSTANCE_FAIL",
+        "reason": "Norms and human-rights/environmental convergence in trade negotiations rather than economic-security mechanisms."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:52Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1111/1477-8947.70105": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "4f3f6910",
+      "identity_hash": "502420abf48d659b",
+      "reader_title": "Due Diligence in Agribusiness, Natural Resource Governance, and Trade: Rethinking Voluntary Standards Under Sustainability Regulations",
+      "reader_what": "Natural Resources Forum, 2026; 0:1–18 1 Natural Resources Forum ARTICLE Due Diligence in Agribusiness, Natural Resource Governance, and Trade: Rethinking",
+      "reader_more": "Natural Resources Forum, 2026; 0:1–18 1 Natural Resources Forum ARTICLE Due Diligence in Agribusiness, Natural Resource Governance, and Trade: Rethinking Voluntary Standards Under Sustainability Regulations Tomislav Ivančić | Idalina Dias Sardinha Lisbon School of Economics and Management (ISEG), University of Lisbon, Lisbon, Portugal Correspondence: Tomislav Ivančić (tivancic@phd.iseg.ulisboa.pt ) Received: 3 September 2025 | Revised: 10 September 2026 | Accepted: 4 November 2026 Keywords: agricultural supply chains | developing countries | due diligence | market access | natural resource depletion | responsible sourcing | trade ABSTRACT This article examines how sustainability due diligence is reshaping market access, private governance, and natural re - source governance in agri- food supply chains. It focuses on the EU Regulation on Deforestation- Free Products (EUDR)",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "What does this work establish about Due Diligence in Agribusiness, Natural Resource Governance, and Trade: Rethinking Voluntary Standards Under?",
+        "main_finding": "It focuses on the EU Regulation on Deforestation- Free Products (EUDR), which conditions market access on traceability and plot- level geolocation, and the Corporate Sustainability Due Diligence Directive (CS3D), which strengthens firm- level obligations to identify and manage environmental and human rights risks across value chains.",
+        "method_or_basis": "The study draws on qualitative analysis of WTO Technical Barriers to Trade Committee discussions and 64 interviews with producers, cooperatives, exporters, NGOs, and public officials in Costa Rica's coffee and palm oil sectors.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "General agricultural sustainability and voluntary due diligence, without central EU security dependence.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://doi.org/10.1111/1477-8947.70105; the captured text is 24000 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://doi.org/10.1111/1477-8947.70105",
+            "title": "Due Diligence in Agribusiness, Natural Resource Governance, and Trade: Rethinking Voluntary Standards Under Sustainability Regulations",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_SCOPE_OR_SUBSTANCE_FAIL",
+        "reason": "General agricultural sustainability and voluntary due diligence, without central EU security dependence."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:52Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1016/j.eist.2026.101220": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "448a90ac",
+      "identity_hash": "4a7bd2d8a608bc46",
+      "reader_title": "The security-sustainability nexus in innovation policy: Synergies, tensions and governance in a new era",
+      "reader_what": "The global escalation of security concerns is reshaping innovation policy, intersecting with efforts to address societal challenges such as sustainability",
+      "reader_why": "The research evaluates how security priorities alter EU innovation and sustainability policy governance.",
+      "reader_more": "The global escalation of security concerns is reshaping innovation policy, intersecting with efforts to address societal challenges such as sustainability transitions. Through an integrative review of research on security, geopolitics, and transformative and mission-oriented innovation policy, complemented by illustrations from the European Commission, this paper elucidates implications of a heightened security focus for challenge-led policymaking. The analysis is structured around five policy features: directionality, experimentation, inclusivity, regime destabilisation, and policy mix adaptation.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "What does this work establish about The security-sustainability nexus in innovation policy: Synergies, tensions and governance in a new?",
+        "main_finding": "Through an integrative review of research on security, geopolitics, and transformative and mission-oriented innovation policy, complemented by illustrations from the European Commission, this paper elucidates implications of a heightened security focus for challenge-led policymaking.",
+        "method_or_basis": "The global escalation of security concerns is reshaping innovation policy, intersecting with efforts to address societal challenges such as sustainability transitions.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "The research evaluates how security priorities alter EU innovation and sustainability policy governance.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://doi.org/10.1016/j.eist.2026.101220; the captured text is 1345 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://doi.org/10.1016/j.eist.2026.101220",
+            "title": "The security-sustainability nexus in innovation policy: Synergies, tensions and governance in a new era",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The research evaluates how security priorities alter EU innovation and sustainability policy governance."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:52Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Paula Kivimaa, M. J. Janssen, Jakob Edler",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-10",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "Through an integrative review of research on security, geopolitics, and transformative and mission-oriented innovation policy, complemented by illustrations from the European Commission, this paper elucidates implications of a heightened security focus for challenge-led policymaking.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1016/j.eist.2026.101220",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:4a7bd2d8a608bc46:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.cer.eu/sites/default/files/EV_CBAM_16.11.26.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "211d18d4",
+      "identity_hash": "6a8856e5073e182a",
+      "reader_title": "Where extending the EU’s carbon border adjustment mechanism does – and does not – make sense",
+      "reader_what": "Where extending the EU’s carbon border adjustment mechanism does – and does not – make sense by Elise Viadere, 16",
+      "reader_why": "The report assesses CBAM expansion and the EU trade-off between leakage prevention and industry protection.",
+      "reader_more": "Where extending the EU’s carbon border adjustment mechanism does – and does not – make sense by Elise Viadere, 16 November 2026 CER INSIGHT: WHERE EXTENDING THE EU’S CARBON BORDER ADJUSTMENT MECHANISM DOES – AND DOES NOT – MAKE SENSE 16 November 2026 INFO@CER.EU | WWW.CER.EU 1 New CER analysis shows that proposals to extend the CBAM to finished goods risk shifting its focus from preventing carbon leakage towards protecting European industries, while adding costs and paperwork. Negotiators should focus the extension on products where it can prevent carbon leakage or close loopholes in existing rules. On November 30th, negotiators from the Council, European Parliament and Commission will discuss again to what extent the Carbon Border Adjustment Mechanism (CBAM) should",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "What does this work establish about Where extending the EU’s carbon border adjustment mechanism does – and does not?",
+        "main_finding": "Negotiators should focus the extension on products where it can prevent carbon leakage or close loopholes in existing rules.",
+        "method_or_basis": "Where extending the EU’s carbon border adjustment mechanism does – and does not – make sense by Elise Viadere, 16 November 2026 CER INSIGHT: WHERE EXTENDING THE EU’S CARBON BORDER ADJUSTMENT MECHANISM DOES – AND DOES NOT – MAKE SENSE 16 November 2026 INFO@CER.EU | WWW.CER.EU 1 New CER analysis shows that proposals to extend the CBAM to finished goods risk shifting its focus from preventing carbon leakage towards protecting European industries, while adding costs and paperwork.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "The report assesses CBAM expansion and the EU trade-off between leakage prevention and industry protection.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://www.cer.eu/sites/default/files/EV_CBAM_16.11.26.pdf; the captured text is 20375 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.cer.eu/sites/default/files/EV_CBAM_16.11.26.pdf",
+            "title": "Where extending the EU’s carbon border adjustment mechanism does – and does not – make sense",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The report assesses CBAM expansion and the EU trade-off between leakage prevention and industry protection."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:53Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "trade_defence.safeguard",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Centre for European Reform",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-16",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "Negotiators should focus the extension on products where it can prevent carbon leakage or close loopholes in existing rules.",
+          "confidence": "medium",
+          "record_key": "link:https://www.cer.eu/sites/default/files/EV_CBAM_16.11.26.pdf",
+          "merit": 69,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:6a8856e5073e182a:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://rhg.com/wp-content/uploads/2026/11/CIM_Global-Clean-Tech-Manufacturing-in-Q3-2026-1.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "fbf42235",
+      "identity_hash": "3d56889fd5766621",
+      "reader_title": "Clean Investment Monitor: Q3 2026 Update on Global Clean Technology Manufacturing",
+      "reader_what": "RHODIUM GROUP GLOBAL CLEAN TECH MANUFACTURING IN Q3 2026 1 Clean Investment Monitor: Q3 2026 Update on Global Clean Technology",
+      "reader_more": "RHODIUM GROUP GLOBAL CLEAN TECH MANUFACTURING IN Q3 2026 1 Clean Investment Monitor: Q3 2026 Update on Global Clean Technology Manufacturing November 16, 2026 Alfredo Rivera (arivera@rhg.com), Shweta Movalia (smov@rhg.com), Khushi Jain (kjain@rhg.com), Hannah Pitt (hpitt@rhg.com), Harold Tavarez (htavarez@rhg.com), Kate Larsen (kmlarsen@rhg.com) In the third quarter of 2026, global investment in clean technology manufacturing—both actual investments and newly announced investments — declined from the previous quarter and from the same period in 2025. New project announcements in manufacturing and industrial supply chains totaled $21.9 billion in Q3 2026, down 61% from the previous quarter and 54% from the same period in 2025. Announcements reached their lowest level since Q3 2019, with China, the United States, and Europe accounting for most",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "What does this work establish about Clean Investment Monitor: Q3 2026 Update on Global Clean Technology Manufacturing?",
+        "main_finding": "New project announcements in manufacturing and industrial supply chains totaled $21.9 billion in Q3 2026, down 61% from the previous quarter and 54% from the same period in 2025.",
+        "method_or_basis": "RHODIUM GROUP GLOBAL CLEAN TECH MANUFACTURING IN Q3 2026 1 Clean Investment Monitor: Q3 2026 Update on Global Clean Technology Manufacturing November 16, 2026 Alfredo Rivera (arivera@rhg.com), Shweta Movalia (smov@rhg.com), Khushi Jain (kjain@rhg.com), Hannah Pitt (hpitt@rhg.com), Harold Tavarez (htavarez@rhg.com), Kate Larsen (kmlarsen@rhg.com) In the third quarter of 2026, global investment in clean technology manufacturing—both actual investments and newly announced investments — declined from the previous quarter and from the same period in 2025.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "Global investment tracker with no central EU-specific economic-security finding.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://rhg.com/wp-content/uploads/2026/11/CIM_Global-Clean-Tech-Manufacturing-in-Q3-2026-1.pdf; the captured text is 11703 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://rhg.com/wp-content/uploads/2026/11/CIM_Global-Clean-Tech-Manufacturing-in-Q3-2026-1.pdf",
+            "title": "Clean Investment Monitor: Q3 2026 Update on Global Clean Technology Manufacturing",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_SCOPE_OR_SUBSTANCE_FAIL",
+        "reason": "Global investment tracker with no central EU-specific economic-security finding."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:53Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.bruegel.org/sites/default/files/2026-10/WP%2028%202026.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "ef436d85",
+      "identity_hash": "7b70bace2be1adfc",
+      "reader_title": "Competitiveness and opportunities for European clean tech",
+      "reader_what": "The European Union is gradually becoming less competitive in green value chains, implying that it is becoming less well-positioned to",
+      "reader_why": "EU clean-technology export specialisation is assessed for industrial exposure and competitive capabilities.",
+      "reader_more": "The European Union is gradually becoming less competitive in green value chains, implying that it is becoming less well-positioned to generate economic growth from these industries. We show this using measures of EU specialisation in green exports, relative to the rest of the world. Behind this aggregate trend, there is wide variation across countries and technologies.",
+      "deep_analysis": {
+        "work_kind": "institutional report",
+        "research_question": "What does this work establish about Competitiveness and opportunities for European clean tech?",
+        "main_finding": "We show this using measures of EU specialisation in green exports, relative to the rest of the world.",
+        "method_or_basis": "We show this using measures of EU specialisation in green exports, relative to the rest of the world.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "EU clean-technology export specialisation is assessed for industrial exposure and competitive capabilities.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://www.bruegel.org/sites/default/files/2026-10/WP%2028%202026.pdf; the captured text is 20864 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.bruegel.org/sites/default/files/2026-10/WP%2028%202026.pdf",
+            "title": "Competitiveness and opportunities for European clean tech",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "EU clean-technology export specialisation is assessed for industrial exposure and competitive capabilities."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:53Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "industrial.competitiveness",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Bruegel",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-04",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "We show this using measures of EU specialisation in green exports, relative to the rest of the world.",
+          "confidence": "medium",
+          "record_key": "link:https://www.bruegel.org/sites/default/files/2026-10/WP%2028%202026.pdf",
+          "merit": 87,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:7b70bace2be1adfc:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.bruegel.org/sites/default/files/2026-10/WP%2030%202026.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "1412bc2a",
+      "identity_hash": "66585c1406e0435e",
+      "reader_title": "Is there a ‘China problem’ and how can the World Trade Organization address it?",
+      "reader_what": "Three main claims are made against China in modern trade policy discourse: 1) it subsidises its exports, 2) it under-consumes",
+      "reader_why": "The analysis evaluates WTO instruments for addressing China-related distortions relevant to European trade policy.",
+      "reader_more": "Three main claims are made against China in modern trade policy discourse: 1) it subsidises its exports, 2) it under-consumes and 3) it keeps its national currency undervalued to serve its export-led growth model. We show that the World Trade Organization can be effectively used as a forum for most of the claims against China under the first category (subsidised exports). In practice, this has not been the case, for two reasons: counteracting Chinese subsidies does not solve all problems, as China will continue to under- consume and keep its national currency undervalued; and the WTO no longer enjoys the legitimacy it once had in the eyes of its members.",
+      "deep_analysis": {
+        "work_kind": "institutional report",
+        "research_question": "What does this work establish about Is there a ‘China problem’ and how can the World Trade Organization address?",
+        "main_finding": "We show that the World Trade Organization can be effectively used as a forum for most of the claims against China under the first category (subsidised exports).",
+        "method_or_basis": "Three main claims are made against China in modern trade policy discourse: 1) it subsidises its exports, 2) it under-consumes and 3) it keeps its national currency undervalued to serve its export-led growth model.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "The analysis evaluates WTO instruments for addressing China-related distortions relevant to European trade policy.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://www.bruegel.org/sites/default/files/2026-10/WP%2030%202026.pdf; the captured text is 24000 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.bruegel.org/sites/default/files/2026-10/WP%2030%202026.pdf",
+            "title": "Is there a ‘China problem’ and how can the World Trade Organization address it?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The analysis evaluates WTO instruments for addressing China-related distortions relevant to European trade policy."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:54Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "trade.wto_compatibility",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Bruegel",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-10-01",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "We show that the World Trade Organization can be effectively used as a forum for most of the claims against China under the first category (subsidised exports).",
+          "confidence": "medium",
+          "record_key": "link:https://www.bruegel.org/sites/default/files/2026-10/WP%2030%202026.pdf",
+          "merit": 87,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:66585c1406e0435e:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.bruegel.org/first-glance/first-step-no-real-rebalancing-european-unions-trade-deal-china": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "60ecccb2",
+      "identity_hash": "797ca4d8ed49d850",
+      "reader_title": "A first step, but no real rebalancing in the European Union’s trade deal with China",
+      "reader_what": "Discussions this October between the EU and China resulted in negligible progress towards rebalancing trade; more powerful measures are needed",
+      "reader_why": "Substantive analysis of EU–China trade talks and their implications for European trade imbalance.",
+      "reader_more": "Discussions this October between the EU and China resulted in negligible progress towards rebalancing trade; more powerful measures are needed European Union Commissioner for Trade Maroš Šefčovič returned from the 8-9 October EU-China Trade and Investment Consultations in Beijing with three ‘shared understandings’ and a declaration : “ This is far from the end .” The EU’s headline gain is a ‘shared understanding’ with China on reducing Chinese exports of hybrid and plug-in hybrid-electric vehicles. However, Europe’s bilateral trade deficit with China is €360 billion , and Chinese automotive exports to the EU are worth around €15 billion. Much of the imbalance derives from increasingly large EU imports of machinery, chemicals, metals, solar panels, batteries and ICT products.",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "What does this work establish about A first step, but no real rebalancing in the European Union’s trade deal?",
+        "main_finding": "However, Europe’s bilateral trade deficit with China is €360 billion , and Chinese automotive exports to the EU are worth around €15 billion.",
+        "method_or_basis": "Discussions this October between the EU and China resulted in negligible progress towards rebalancing trade; more powerful measures are needed European Union Commissioner for Trade Maroš Šefčovič returned from the 8-9 October EU-China Trade and Investment Consultations in Beijing with three ‘shared understandings’ and a declaration : “ This is far from the end .” The EU’s headline gain is a ‘shared understanding’ with China on reducing Chinese exports of hybrid and plug-in hybrid-electric vehicles.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "Substantive analysis of EU–China trade talks and their implications for European trade imbalance.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://www.bruegel.org/first-glance/first-step-no-real-rebalancing-european-unions-trade-deal-china; the captured text is 5697 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.bruegel.org/first-glance/first-step-no-real-rebalancing-european-unions-trade-deal-china",
+            "title": "A first step, but no real rebalancing in the European Union’s trade deal with China",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Substantive analysis of EU–China trade talks and their implications for European trade imbalance."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:54Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "trade.agreement",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Bruegel",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-16",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "However, Europe’s bilateral trade deficit with China is €360 billion , and Chinese automotive exports to the EU are worth around €15 billion.",
+          "confidence": "medium",
+          "record_key": "link:https://www.bruegel.org/first-glance/first-step-no-real-rebalancing-european-unions-trade-deal-china",
+          "merit": 86,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:797ca4d8ed49d850:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.bruegel.org/first-glance/eu-china-trade-and-investment-understanding-welcome-buying-time": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "223c3184",
+      "identity_hash": "44cbc7a216c0cbf7",
+      "reader_title": "The EU-China trade and investment understanding: a welcome buying of time",
+      "reader_what": "An EU-China agreement to ease tensions, especially on hybrid electric vehicles, could provide a template for talks on other sectors",
+      "reader_why": "EU–China automotive safeguards and the negotiated trade-management framework are assessed.",
+      "reader_more": "An EU-China agreement to ease tensions, especially on hybrid electric vehicles, could provide a template for talks on other sectors and broader issues From the European Union’s point of view, a ‘common understanding’ reached with China on 9 October on the EU-China trade and investment relationship, is primarily about the car industry. In particular, although details are still to be made public, there seems to be agreement that Chinese exports to the EU of hybrid electric cars will be halved for four years . The agreement will likely be implemented via an EU safeguard investigation, on the basis of which China will be allocated a quota in line with the common understanding.",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "What does this work establish about The EU-China trade and investment understanding: a welcome buying of time?",
+        "main_finding": "In particular, although details are still to be made public, there seems to be agreement that Chinese exports to the EU of hybrid electric cars will be halved for four years .",
+        "method_or_basis": "An EU-China agreement to ease tensions, especially on hybrid electric vehicles, could provide a template for talks on other sectors and broader issues From the European Union’s point of view, a ‘common understanding’ reached with China on 9 October on the EU-China trade and investment relationship, is primarily about the car industry.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "EU–China automotive safeguards and the negotiated trade-management framework are assessed.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://www.bruegel.org/first-glance/eu-china-trade-and-investment-understanding-welcome-buying-time; the captured text is 5871 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.bruegel.org/first-glance/eu-china-trade-and-investment-understanding-welcome-buying-time",
+            "title": "The EU-China trade and investment understanding: a welcome buying of time",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "EU–China automotive safeguards and the negotiated trade-management framework are assessed."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:55Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "trade_defence.safeguard",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Bruegel",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-09-22",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "In particular, although details are still to be made public, there seems to be agreement that Chinese exports to the EU of hybrid electric cars will be halved for four years .",
+          "confidence": "medium",
+          "record_key": "link:https://www.bruegel.org/first-glance/eu-china-trade-and-investment-understanding-welcome-buying-time",
+          "merit": 86,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:44cbc7a216c0cbf7:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.bruegel.org/topics/global-economy-and-trade-policy": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "58197248",
+      "identity_hash": "490278f1e1befe42",
+      "reader_title": "Global economy and trade policy",
+      "reader_what": "Explore recurring issues in Europe’s relationship with its extended neighbourhood, and economic relations with China, India and the rest of",
+      "reader_more": "Explore recurring issues in Europe’s relationship with its extended neighbourhood, and economic relations with China, India and the rest of the world Europe’s global economic relationships have been complicated by the adoption of tariffs and subsidies by China and the US, often in contravention of World Trade Organisation rules. Under the 2025-2026 research programme, Bruegel fellows explore the future of the international economic order and the role of emerging and developing economies in reshaping EU economic relations. Europe’s geoeconomic and trade strategy in a fragmented world Bruegel Senior Fellow Alicia García-Herrero presented at a meeting of the European Economic and Social Committee's Trade Committee It’s not a shock, it’s an ocean: reframing the EU’s strategic response to China America's 'Blue",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "What does this work establish about Global economy and trade policy?",
+        "main_finding": "Under the 2025-2026 research programme, Bruegel fellows explore the future of the international economic order and the role of emerging and developing economies in reshaping EU economic relations.",
+        "method_or_basis": "Europe’s geoeconomic and trade strategy in a fragmented world Bruegel Senior Fellow Alicia García-Herrero presented at a meeting of the European Economic and Social Committee's Trade Committee It’s not a shock, it’s an ocean: reframing the EU’s strategic response to China America's 'Blue Wave' spells trouble for the US-China truce China lacks a macroeconomic strategy capable of correcting its persistent imbalances Tracking Russian trade using data from the EU, China, the US, South Korea, Japan, India, the UK, Turkey, Switzerland, Norway, Brazil and Kazakhstan After the boom: how China’s local governments pay the bills What happens to local governments’ balance sheets now that the property",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "Bruegel topic/navigation listing, not a distinct research work.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://www.bruegel.org/topics/global-economy-and-trade-policy; the captured text is 2236 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.bruegel.org/topics/global-economy-and-trade-policy",
+            "title": "Global economy and trade policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_SCOPE_OR_SUBSTANCE_FAIL",
+        "reason": "Bruegel topic/navigation listing, not a distinct research work."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:55Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.bruegel.org/sites/default/files/2026-11/europe%E2%80%99s-strategic-bet-on-us-technology-for-air-superiority-is-unravelling-12697.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "b6e5eb4b",
+      "identity_hash": "c80592dff114503e",
+      "reader_title": "Europe’s strategic bet on US technology for air superiority is unravelling",
+      "reader_what": "A central pillar of Europe’s strategic doctrine in the context of rearmament in the face of the Russian threat is",
+      "reader_why": "The study analyses European defence capability dependence on US aircraft technology.",
+      "reader_more": "A central pillar of Europe’s strategic doctrine in the context of rearmament in the face of the Russian threat is the achievement of air superiority through a combination of powerful air defence systems and top-notch fighter jets . The NATO Integrated Air and Missile Defence framework includes the NATO Ballistic Missile Defence component as a central aspect of strategic dominance in the air, with the Supreme Allied Commander Europe responsible for the conduct of NATO Air Defence . Many European countries, in particular Germany, have prioritised United States-made technology for air superiority: the F-35 strike fighter aircraft and Patriot theatre-level air and missile defence systems.",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "What does this work establish about Europe’s strategic bet on US technology for air superiority is unravelling?",
+        "main_finding": "The NATO Integrated Air and Missile Defence framework includes the NATO Ballistic Missile Defence component as a central aspect of strategic dominance in the air, with the Supreme Allied Commander Europe responsible for the conduct of NATO Air Defence .",
+        "method_or_basis": "A central pillar of Europe’s strategic doctrine in the context of rearmament in the face of the Russian threat is the achievement of air superiority through a combination of powerful air defence systems and top-notch fighter jets .",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "The study analyses European defence capability dependence on US aircraft technology.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://www.bruegel.org/sites/default/files/2026-11/europe%E2%80%99s-strategic-bet-on-us-technology-for-air-superiority-is-unravelling-12697.pdf; the captured text is 17975 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.bruegel.org/sites/default/files/2026-11/europe%E2%80%99s-strategic-bet-on-us-technology-for-air-superiority-is-unravelling-12697.pdf",
+            "title": "Europe’s strategic bet on US technology for air superiority is unravelling",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The study analyses European defence capability dependence on US aircraft technology."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:55Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "econsec.defence_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Bruegel",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-10-05",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "The NATO Integrated Air and Missile Defence framework includes the NATO Ballistic Missile Defence component as a central aspect of strategic dominance in the air, with the Supreme Allied Commander Europe responsible for the conduct of NATO Air Defence .",
+          "confidence": "medium",
+          "record_key": "link:https://www.bruegel.org/sites/default/files/2026-11/europe%E2%80%99s-strategic-bet-on-us-technology-for-air-superiority-is-unravelling-12697.pdf",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:c80592dff114503e:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.bruegel.org/first-glance/eu-should-moderate-its-steel-protection-plan": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "8b1b8b62",
+      "identity_hash": "6c6a40f23911d396",
+      "reader_title": "The worst of both worlds for EU auto industry policy",
+      "reader_what": "A European Commission proposal for a tight quota and high steel tariffs risks undermining perceptions of the EU as a",
+      "reader_why": "The study assesses EU automotive industrial policy trade-offs amid competition and decarbonisation.",
+      "reader_more": "A European Commission proposal for a tight quota and high steel tariffs risks undermining perceptions of the EU as a reliable trading partner On 7 October, the European Commission proposed a 50% tariff on steel imports into the European Union that exceed a certain quota, while cutting the duty-free quota by 47%. The tariff would replace a ‘steel safeguard’, which was introduced in 2018 and will expire in mid-2026. The safeguard was a response to the diversion of steel into the EU market because of global incapacity and the introduction by the first Trump administration of a 25% steel tariff .",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "What does this work establish about The worst of both worlds for EU auto industry policy?",
+        "main_finding": "The tariff would replace a ‘steel safeguard’, which was introduced in 2018 and will expire in mid-2026.",
+        "method_or_basis": "A European Commission proposal for a tight quota and high steel tariffs risks undermining perceptions of the EU as a reliable trading partner On 7 October, the European Commission proposed a 50% tariff on steel imports into the European Union that exceed a certain quota, while cutting the duty-free quota by 47%.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "The study assesses EU automotive industrial policy trade-offs amid competition and decarbonisation.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://www.bruegel.org/first-glance/eu-should-moderate-its-steel-protection-plan; the captured text is 5784 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.bruegel.org/first-glance/eu-should-moderate-its-steel-protection-plan",
+            "title": "The worst of both worlds for EU auto industry policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The study assesses EU automotive industrial policy trade-offs amid competition and decarbonisation."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:55Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "industrial.ev_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Bruegel",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-10-12",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "The tariff would replace a ‘steel safeguard’, which was introduced in 2018 and will expire in mid-2026.",
+          "confidence": "medium",
+          "record_key": "link:https://www.bruegel.org/first-glance/eu-should-moderate-its-steel-protection-plan",
+          "merit": 86,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:6c6a40f23911d396:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.bruegel.org/topics/energy-and-climate-policy": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "9ceb2cf5",
+      "identity_hash": "4ac654f6a7fff1c0",
+      "reader_title": "Energy and climate policy",
+      "reader_what": "Explore our work on European climate and energy policy and the economic policies required to drive the transition to a",
+      "reader_more": "Explore our work on European climate and energy policy and the economic policies required to drive the transition to a more sustainable growth model. Adequately responding to climate change requires a profound transformation in the way we produce and consume energy, as well as a wider reorganisation of our economic model. The situation is further complicated by the Russian invasion of Ukraine, which triggered a major energy crisis in Europe and beyond.",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "What does this work establish about Energy and climate policy?",
+        "main_finding": "Adequately responding to climate change requires a profound transformation in the way we produce and consume energy, as well as a wider reorganisation of our economic model.",
+        "method_or_basis": "Explore our work on European climate and energy policy and the economic policies required to drive the transition to a more sustainable growth model.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "Topic/navigation page rather than a discrete analysis.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://www.bruegel.org/topics/energy-and-climate-policy; the captured text is 4874 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.bruegel.org/topics/energy-and-climate-policy",
+            "title": "Energy and climate policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_SCOPE_OR_SUBSTANCE_FAIL",
+        "reason": "Topic/navigation page rather than a discrete analysis."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:55Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1016/j.enpol.2026.115721": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "fa821bbc",
+      "identity_hash": "e245739cc27bd6bc",
+      "reader_title": "The solar PV supply strategy of the European Union: A cost-risk-diversification trade-off",
+      "reader_what": "Contents lists available at ScienceDirect Energy Policy journal homepage: www.elsevier.com/locate/jepo The solar PV supply strategy of the European Union: A",
+      "reader_why": "A quantitative EU solar supply-chain strategy evaluates cost against concentration and disruption risk.",
+      "reader_more": "Contents lists available at ScienceDirect Energy Policy journal homepage: www.elsevier.com/locate/jepo The solar PV supply strategy of the European Union: A cost-risk-diversification trade-off Helen Anais Fischer a, b,∗ iD, Sebastian Zwickl-Bernhard a, c iD a Energy System Economics Lab, Institute of Net-Zero Energy Systems, Technische Universität Wien, Gusshausstrasse 25-29/E380-2, A-1040 Wien, Austria b Environmental Change Institute, University of Oxford, South Parks Road, Oxford, OX1 3QY, United Kingdom c Department of Industrial Economics and Technology Management, The Norwegian University of Science and Technology, Trondheim, Norway H I G H L I G H T S • A global trade model captures country-specific PV module supply strategies for 2030. • Trade-offs between costs, geopolitical risk, and supply concentration are quantified. • Reducing risk",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "What does this work establish about The solar PV supply strategy of the European Union: A cost-risk-diversification trade-off?",
+        "main_finding": "A R T I C L E I N F O Keywords: Solar PV supply chain Cost-risk trade-offs Diversification strategy Geopolitical risk Conflicting objectives Energy systems A B S T R A C T The European Union is rapidly expanding its solar photovoltaic capacity, yet demand is almost entirely met by imports from China, raising concerns about supply dependence and energy security.",
+        "method_or_basis": "Contents lists available at ScienceDirect Energy Policy journal homepage: www.elsevier.com/locate/jepo The solar PV supply strategy of the European Union: A cost-risk-diversification trade-off Helen Anais Fischer a, b,∗ iD, Sebastian Zwickl-Bernhard a, c iD a Energy System Economics Lab, Institute of Net-Zero Energy Systems, Technische Universität Wien, Gusshausstrasse 25-29/E380-2, A-1040 Wien, Austria b Environmental Change Institute, University of Oxford, South Parks Road, Oxford, OX1 3QY, United Kingdom c Department of Industrial Economics and Technology Management, The Norwegian University of Science and Technology, Trondheim, Norway H I G H L I G H T S • A global trade model captures country-specific PV module supply strategies for",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "A quantitative EU solar supply-chain strategy evaluates cost against concentration and disruption risk.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://doi.org/10.1016/j.enpol.2026.115721; the captured text is 24000 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://doi.org/10.1016/j.enpol.2026.115721",
+            "title": "The solar PV supply strategy of the European Union: A cost-risk-diversification trade-off",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "A quantitative EU solar supply-chain strategy evaluates cost against concentration and disruption risk."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:56Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Helen Anais Fischer, Sebastian Zwickl-Bernhard",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-15",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "A R T I C L E I N F O Keywords: Solar PV supply chain Cost-risk trade-offs Diversification strategy Geopolitical risk Conflicting objectives Energy systems A B S T R A C T The European Union is rapidly expanding its solar photovoltaic capacity, yet demand is almost entirely met by imports from China, raising concerns about supply dependence and energy security.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1016/j.enpol.2026.115721",
+          "merit": 83,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:e245739cc27bd6bc:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/positive-economic-statecraft-in-a-fractured-world/": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "11b22278",
+      "identity_hash": "595597d2e5eb9868",
+      "reader_title": "Positive economic statecraft in a fractured world: Development finance and cooperation as geoeconomic instruments—ASEAN in focus",
+      "reader_what": "Positive economic statecraft (PES) was conceptualized in a macro and geoeconomic landscape that has changed considerably.",
+      "reader_why": "The paper evaluates development finance as a European geoeconomic instrument.",
+      "reader_more": "Positive economic statecraft (PES) was conceptualized in a macro and geoeconomic landscape that has changed considerably. With new actors creating a buyer’s market, the current landscape of Western positive economic statecraft is fragmented. As reinforced by the IMF-World Bank meetings in Bangkok, Thailand, ASEAN offers a particularly instructive lens on what PES can look like.",
+      "deep_analysis": {
+        "work_kind": "institutional report",
+        "research_question": "What does this work establish about Positive economic statecraft in a fractured world: Development finance and cooperation as geoeconomic?",
+        "main_finding": "With new actors creating a buyer’s market, the current landscape of Western positive economic statecraft is fragmented.",
+        "method_or_basis": "Positive economic statecraft (PES) was conceptualized in a macro and geoeconomic landscape that has changed considerably.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "The paper evaluates development finance as a European geoeconomic instrument.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/positive-economic-statecraft-in-a-fractured-world/; the captured text is 24000 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/positive-economic-statecraft-in-a-fractured-world/",
+            "title": "Positive economic statecraft in a fractured world: Development finance and cooperation as geoeconomic instruments—ASEAN in focus",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The paper evaluates development finance as a European geoeconomic instrument."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:56Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "partnership.global_gateway",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Cate Hansberry",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-17",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "With new actors creating a buyer’s market, the current landscape of Western positive economic statecraft is fragmented.",
+          "confidence": "medium",
+          "record_key": "link:https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/positive-economic-statecraft-in-a-fractured-world/",
+          "merit": 70,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:595597d2e5eb9868:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.atlanticcouncil.org/in-depth-research-reports/report/a-new-vision-for-the-vertical-corridor-european-energy-security-through-infrastructure-optimization/": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "cd534320",
+      "identity_hash": "df47aa35d042d3cf",
+      "reader_title": "A new vision for the Vertical Corridor: European energy security through infrastructure optimization",
+      "reader_what": "Europe's Vertical Corridor region is well positioned to reverse its historical Soviet infrastructure legacy and natural gas dependency, while supporting",
+      "reader_why": "The work evaluates a cross-border gas corridor for European energy-supply security.",
+      "reader_more": "Europe's Vertical Corridor region is well positioned to reverse its historical Soviet infrastructure legacy and natural gas dependency, while supporting broader European energy security. Cross-cutting obstacles to a functional Vertical Corridor VII. Looking ahead About the authors Energy undergirds the economic landscape of regions worldwide, and central to securing that energy is a well-functioning energy market providing a stable and predictable investment climate.",
+      "deep_analysis": {
+        "work_kind": "institutional report",
+        "research_question": "What does this work establish about A new vision for the Vertical Corridor: European energy security through infrastructure optimization?",
+        "main_finding": "Cross-cutting obstacles to a functional Vertical Corridor VII.",
+        "method_or_basis": "Europe's Vertical Corridor region is well positioned to reverse its historical Soviet infrastructure legacy and natural gas dependency, while supporting broader European energy security.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "The work evaluates a cross-border gas corridor for European energy-supply security.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://www.atlanticcouncil.org/in-depth-research-reports/report/a-new-vision-for-the-vertical-corridor-european-energy-security-through-infrastructure-optimization/; the captured text is 24000 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://www.atlanticcouncil.org/in-depth-research-reports/report/a-new-vision-for-the-vertical-corridor-european-energy-security-through-infrastructure-optimization/",
+            "title": "A new vision for the Vertical Corridor: European energy security through infrastructure optimization",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work evaluates a cross-border gas corridor for European energy-supply security."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:56Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "srothbardt",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-15",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "Cross-cutting obstacles to a functional Vertical Corridor VII.",
+          "confidence": "medium",
+          "record_key": "link:https://www.atlanticcouncil.org/in-depth-research-reports/report/a-new-vision-for-the-vertical-corridor-european-energy-security-through-infrastructure-optimization/",
+          "merit": 70,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:df47aa35d042d3cf:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1080/13563467.2026.2751109": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "3293f7f6",
+      "identity_hash": "28405b10a1a82b6a",
+      "reader_title": "Illiberal gateways and hubs: Chinese push and European pull in Hungary and Serbia",
+      "reader_what": "Published by Informa UK Limited, trading as Taylor & Francis Group View supplementary material Published online: 15 Nov 2026.",
+      "reader_why": "The study examines Chinese strategic investments and gateways into EU and neighbouring markets.",
+      "reader_more": "Published by Informa UK Limited, trading as Taylor & Francis Group View supplementary material Published online: 15 Nov 2026. Submit your article to this journal View related articles View Crossmark data Full Terms & Conditions of access and use can be found at Illiberal gateways and hubs: Chinese push and European pull in Hungary and Serbia Miklós Sebők a,b, Andrea Éltetőc and Elena Jovičićd aSyracuse University, Syracuse, NY, USA; bpoltextLAB AI Laboratory, Budapest, Hungary; cELTE CERS, Institute of World Economics, Budapest, Hungary; dInstitute of Economic Sciences, Department of Macroeconomics, Belgrade, Serbia ABSTRACT In this article, we examine how Chinese economic engagement positioned Hungary and Serbia within US–China network competition from 2013 to 2025. Drawing on the network- centrality thesis, we",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "What does this work establish about Illiberal gateways and hubs: Chinese push and European pull in Hungary and Serbia?",
+        "main_finding": "Submit your article to this journal View related articles View Crossmark data Full Terms & Conditions of access and use can be found at Illiberal gateways and hubs: Chinese push and European pull in Hungary and Serbia Miklós Sebők a,b, Andrea Éltetőc and Elena Jovičićd aSyracuse University, Syracuse, NY, USA; bpoltextLAB AI Laboratory, Budapest, Hungary; cELTE CERS, Institute of World Economics, Budapest, Hungary; dInstitute of Economic.",
+        "method_or_basis": "Submit your article to this journal View related articles View Crossmark data Full Terms & Conditions of access and use can be found at Illiberal gateways and hubs: Chinese push and European pull in Hungary and Serbia Miklós Sebők a,b, Andrea Éltetőc and Elena Jovičićd aSyracuse University, Syracuse, NY, USA; bpoltextLAB AI Laboratory, Budapest, Hungary; cELTE CERS, Institute of World Economics, Budapest, Hungary; dInstitute of Economic Sciences, Department of Macroeconomics, Belgrade, Serbia ABSTRACT In this article, we examine how Chinese economic engagement positioned Hungary and Serbia within US–China network competition from 2013 to 2025.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "The study examines Chinese strategic investments and gateways into EU and neighbouring markets.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://doi.org/10.1080/13563467.2026.2751109; the captured text is 24000 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://doi.org/10.1080/13563467.2026.2751109",
+            "title": "Illiberal gateways and hubs: Chinese push and European pull in Hungary and Serbia",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The study examines Chinese strategic investments and gateways into EU and neighbouring markets."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:57Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "fdi.inbound_flows",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Miklós Sebők, Andrea Éltető, Elena Jovičić",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-15",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "Submit your article to this journal View related articles View Crossmark data Full Terms & Conditions of access and use can be found at Illiberal gateways and hubs: Chinese push and European pull in Hungary and Serbia Miklós Sebők a,b, Andrea Éltetőc and Elena Jovičićd aSyracuse University, Syracuse, NY, USA; bpoltextLAB AI Laboratory, Budapest, Hungary; cELTE CERS, Institute of World Economics, Budapest, Hungary; dInstitute of Economic.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1080/13563467.2026.2751109",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:28405b10a1a82b6a:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1111/jcms.70196": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "9c08a827",
+      "identity_hash": "8543d56abe02b84b",
+      "reader_title": "Speaking for Citizens? MEPs' Representative Claim‐Making on EU Trade Agreements",
+      "reader_what": "MEPs ’ Representative Claim-Making on EU Trade Agreements LUCA CABRAS University of Bologna, Bologna Abstract The European Parliament ’s (EP)",
+      "reader_more": "MEPs ’ Representative Claim-Making on EU Trade Agreements LUCA CABRAS University of Bologna, Bologna Abstract The European Parliament ’s (EP) expanding role in trade policy has attracted signi ﬁcant scholarly attention. Yet the relationship between Members of the European Parliament (MEPs) and citizens in this domain remains underexplored. This article addresses this gap by investigating patterns of representative claim-making during negotiations over 12 major post-Lisbon free trade agreements.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "What does this work establish about Speaking for Citizens? MEPs' Representative Claim‐Making on EU Trade Agreements?",
+        "main_finding": "Yet the relationship between Members of the European Parliament (MEPs) and citizens in this domain remains underexplored.",
+        "method_or_basis": "MEPs ’ Representative Claim-Making on EU Trade Agreements LUCA CABRAS University of Bologna, Bologna Abstract The European Parliament ’s (EP) expanding role in trade policy has attracted signi ﬁcant scholarly attention.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "Legislator representation and claim-making in trade agreements, not their economic-security effects.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://doi.org/10.1111/jcms.70196; the captured text is 24000 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://doi.org/10.1111/jcms.70196",
+            "title": "Speaking for Citizens? MEPs' Representative Claim‐Making on EU Trade Agreements",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_SCOPE_OR_SUBSTANCE_FAIL",
+        "reason": "Legislator representation and claim-making in trade agreements, not their economic-security effects."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:57Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1093/oep/gpag043": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "880c3b66",
+      "identity_hash": "cefee629897a6539",
+      "reader_title": "Welfare effects of trade wars and preferential liberalization in a multipolar world: the role of global value chain",
+      "reader_what": "Welfare Effects of Trade Wars and Preferential Liberalization in a Multipolar World: The Role of Global Value Chain Reallocation Xinxin",
+      "reader_why": "The paper models trade-war and preferential-trade outcomes through international value chains, with EU exposure.",
+      "reader_more": "Welfare Effects of Trade Wars and Preferential Liberalization in a Multipolar World: The Role of Global Value Chain Reallocation Xinxin Wei1,*, Kausik Chaudhuri1, and Muhammad Ali Nasir1,2,3 1Department of Economics, Leeds University Business School, University of Leeds, Maurice Keyworth Building, Leeds LS2 9JT, United Kingdom 2National School of Development, Peking University, Beijing, China 3Department of Land Economy, University of Cambridge, Cambridge, United Kingdom Emails: weixinxinlalala@gmail.com (Xinxin Wei); K.Chaudhuri@lubs.leeds.ac.uk (Kausik Chaudhuri); M.A.Nasir@leeds.ac.uk (Muhammad Ali Nasir). *Corresponding author: Xinxin Wei, weixinxinlalala@gmail.com. Abstract We develop a quantitative framework to examine how tariff escalation, retaliation, and selective tariff easing affect trade, sourcing, and welfare across major trading blocs. The framework combines a multi-country, multi-sector Eaton–Kortum model with input–output linkages and endogenous foreign value-added adjustment",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "What does this work establish about Welfare effects of trade wars and preferential liberalization in a multipolar world: the?",
+        "main_finding": "Abstract We develop a quantitative framework to examine how tariff escalation, retaliation, and selective tariff easing affect trade, sourcing, and welfare across major trading blocs.",
+        "method_or_basis": "The framework combines a multi-country, multi-sector Eaton–Kortum model with input–output linkages and endogenous foreign value-added adjustment with a reduced-form capital-accumulation block that maps real-income changes into transition paths and lifetime consumption-equivalent welfare.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "The paper models trade-war and preferential-trade outcomes through international value chains, with EU exposure.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://doi.org/10.1093/oep/gpag043; the captured text is 24000 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://doi.org/10.1093/oep/gpag043",
+            "title": "Welfare effects of trade wars and preferential liberalization in a multipolar world: the role of global value chain reallocation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The paper models trade-war and preferential-trade outcomes through international value chains, with EU exposure."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:57Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "X. Wei, K. Chaudhuri, M.A. Nasir",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-05",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "Abstract We develop a quantitative framework to examine how tariff escalation, retaliation, and selective tariff easing affect trade, sourcing, and welfare across major trading blocs.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1093/oep/gpag043",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:cefee629897a6539:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.atlanticcouncil.org/wp-content/uploads/2026/11/water-infrastructure-at-the-mediterraneans-inflection-point.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "8840fa25",
+      "identity_hash": "4ce5b33bfcb066aa",
+      "reader_title": "Water infrastructure at the Mediterranean’s inflection point: Financing resilience for an industrializing, digitalizing region",
+      "reader_what": "Water infrastructure at the Mediterranean’s inflection point Financing resilience for an industrializing, digitalizing region Hassan Tolba Aboelnga Within the Atlantic",
+      "reader_why": "The work addresses strategic Mediterranean water infrastructure investment and European industrial resilience.",
+      "reader_more": "Water infrastructure at the Mediterranean’s inflection point Financing resilience for an industrializing, digitalizing region Hassan Tolba Aboelnga Within the Atlantic Council’s longstanding commitment to strengthening the transatlantic relationship, the Atlantic Council Turkey Program conducts research, provides thought leadership, and offers a platform for strategic dialogue between the US, Turkey, and NATO allies to address the region’s toughest challenges and explore opportunities, including in the fields of energy, business & trade, technology, defense, and security. Hassan Tolba Aboelnga, International Water Security and Climate Resilience Expert iWater Coordinator, TH Köln – Cologne University of Applied Sciences Co-Chair, Water Security Bureau, International Water Resources Association (IWRA) Acknowledgments The Atlantic Council would like to extend special thanks to Limak Holding for its valuable support",
+      "deep_analysis": {
+        "work_kind": "institutional report",
+        "research_question": "What does this work establish about Water infrastructure at the Mediterranean’s inflection point: Financing resilience for an industrializing, digitalizing?",
+        "main_finding": "Hassan Tolba Aboelnga, International Water Security and Climate Resilience Expert iWater Coordinator, TH Köln – Cologne University of Applied Sciences Co-Chair, Water Security Bureau, International Water Resources Association (IWRA) Acknowledgments The Atlantic Council would like to extend special thanks to Limak Holding for its valuable support for this report.",
+        "method_or_basis": "Hassan Tolba Aboelnga, International Water Security and Climate Resilience Expert iWater Coordinator, TH Köln – Cologne University of Applied Sciences Co-Chair, Water Security Bureau, International Water Resources Association (IWRA) Acknowledgments The Atlantic Council would like to extend special thanks to Limak Holding for its valuable support for this report.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "The work addresses strategic Mediterranean water infrastructure investment and European industrial resilience.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://www.atlanticcouncil.org/wp-content/uploads/2026/11/water-infrastructure-at-the-mediterraneans-inflection-point.pdf; the captured text is 22097 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.atlanticcouncil.org/wp-content/uploads/2026/11/water-infrastructure-at-the-mediterraneans-inflection-point.pdf",
+            "title": "Water infrastructure at the Mediterranean’s inflection point: Financing resilience for an industrializing, digitalizing region",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The work addresses strategic Mediterranean water infrastructure investment and European industrial resilience."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:58Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "critical_infrastructure.resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Grady Wilson",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-10",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "Hassan Tolba Aboelnga, International Water Security and Climate Resilience Expert iWater Coordinator, TH Köln – Cologne University of Applied Sciences Co-Chair, Water Security Bureau, International Water Resources Association (IWRA) Acknowledgments The Atlantic Council would like to extend special thanks to Limak Holding for its valuable support for this report.",
+          "confidence": "medium",
+          "record_key": "link:https://www.atlanticcouncil.org/wp-content/uploads/2026/11/water-infrastructure-at-the-mediterraneans-inflection-point.pdf",
+          "merit": 61,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:4ce5b33bfcb066aa:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.ispionline.it/en/publication/can-the-apec-trilateral-bring-international-stability-252111": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "940b4b9b",
+      "identity_hash": "02988442a0a841d7",
+      "reader_title": "Can the APEC Trilateral Bring International Stability?",
+      "reader_what": "Read the article Can the APEC Trilateral Bring International Stability? on the ISPI website.",
+      "reader_more": "Read the article Can the APEC Trilateral Bring International Stability? on the ISPI website. Takaichi’s electoral landslide has revived ambitions to amend Japan’s pacifist constitution. Yet parliamentary hurdles, public sensitivities and the need for broad consensus slow her progress, making political timing as crucial as numerical strength.",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "What does this work establish about Can the APEC Trilateral Bring International Stability??",
+        "main_finding": "Takaichi’s electoral landslide has revived ambitions to amend Japan’s pacifist constitution.",
+        "method_or_basis": "Read the article Can the APEC Trilateral Bring International Stability? on the ISPI website.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "APEC diplomacy with no substantive European economic-security analytical object.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://www.ispionline.it/en/publication/can-the-apec-trilateral-bring-international-stability-252111; the captured text is 19322 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://www.ispionline.it/en/publication/can-the-apec-trilateral-bring-international-stability-252111",
+            "title": "Can the APEC Trilateral Bring International Stability? | ISPI",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_SCOPE_OR_SUBSTANCE_FAIL",
+        "reason": "APEC diplomacy with no substantive European economic-security analytical object."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:58Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/to-settle-russias-ukraine-war-europe-needs-to-let-kyiv-in-trump-can-help-really/": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "24e3ba49",
+      "identity_hash": "040eca5f04d74e12",
+      "reader_title": "To settle Russia’s Ukraine war, Europe needs to let Kyiv in. Trump can help (really).",
+      "reader_what": "Any deal to end the war in Ukraine must fix a date for Kyiv to join the EU, but countless.",
+      "reader_why": "The analysis evaluates security and integration choices facing Europe during the Russia–Ukraine war.",
+      "reader_more": "Any deal to end the war in Ukraine must fix a date for Kyiv to join the EU, but countless… Any deal to end the war in Ukraine must fix a date for Kyiv to join the EU, but countless hurdles stand in the way. Washington has the leverage to help Brussels clear them—if it can use that leverage in a new way. To settle Russia’s Ukraine war, Europe needs to let Kyiv in.",
+      "deep_analysis": {
+        "work_kind": "institutional report",
+        "research_question": "What does this work establish about To settle Russia’s Ukraine war, Europe needs to let Kyiv in. Trump can?",
+        "main_finding": "Washington has the leverage to help Brussels clear them—if it can use that leverage in a new way.",
+        "method_or_basis": "Any deal to end the war in Ukraine must fix a date for Kyiv to join the EU, but countless… Any deal to end the war in Ukraine must fix a date for Kyiv to join the EU, but countless hurdles stand in the way.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "The analysis evaluates security and integration choices facing Europe during the Russia–Ukraine war.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/to-settle-russias-ukraine-war-europe-needs-to-let-kyiv-in-trump-can-help-really/; the captured text is 24000 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/to-settle-russias-ukraine-war-europe-needs-to-let-kyiv-in-trump-can-help-really/",
+            "title": "To settle Russia’s Ukraine war, Europe needs to let Kyiv in. Trump can help (really).",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The analysis evaluates security and integration choices facing Europe during the Russia–Ukraine war."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:58Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "mkaylward",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-06",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "Washington has the leverage to help Brussels clear them—if it can use that leverage in a new way.",
+          "confidence": "medium",
+          "record_key": "link:https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/to-settle-russias-ukraine-war-europe-needs-to-let-kyiv-in-trump-can-help-really/",
+          "merit": 70,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:040eca5f04d74e12:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1016/j.ecmx.2026.102389": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "f1f73101",
+      "identity_hash": "2c0c5a968d8722ed",
+      "reader_title": "Assessing the strategic role of Renewable Energy Communities in local energy systems: a study on the municipality of",
+      "reader_what": "Assessing the strategic role of Renewable Energy Communities in local energy systems: a study on the municipality of Tito in",
+      "reader_more": "Assessing the strategic role of Renewable Energy Communities in local energy systems: a study on the municipality of Tito in Southern Italy Senatro Di Leo a,*, Ikechukwu Ikwegbu Ibe a,b, Antonio D’Angola b, Carmelina Cosmi a a National Research Council of Italy - Institute of Integrated Methodologies for Earth Observation- (CNR-IMIOT), C.da S.Loja, Tito Scalo, PZ, 85050, Italy b University of Basilicata – Department of Engineering, Viale dell’Ateneo Lucano, 10, Potenza, 85100, Italy ARTICLE INFO Keywords: Renewable Energy Communities ETSAP-TIMES local energy planning Clean energy transition Decarbonization Scenario analysis ABSTRACT Renewable Energy Communities are a key element of the European strategy to support the energy transition by promoting self-consumption and the sharing of energy from renewable sources. By enabling decentralized",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "What does this work establish about Assessing the strategic role of Renewable Energy Communities in local energy systems: a?",
+        "main_finding": "By enabling decentralized energy production and consumption, they help reduce dependence on fossil fuels and contribute to local decarbon- ization.",
+        "method_or_basis": "Assessing the strategic role of Renewable Energy Communities in local energy systems: a study on the municipality of Tito in Southern Italy Senatro Di Leo a,*, Ikechukwu Ikwegbu Ibe a,b, Antonio D’Angola b, Carmelina Cosmi a a National Research Council of Italy - Institute of Integrated Methodologies for Earth Observation- (CNR-IMIOT), C.da S.Loja, Tito Scalo, PZ, 85050, Italy b University of Basilicata – Department of Engineering, Viale dell’Ateneo Lucano, 10, Potenza, 85100, Italy ARTICLE INFO Keywords: Renewable Energy Communities ETSAP-TIMES local energy planning Clean energy transition Decarbonization Scenario analysis ABSTRACT Renewable Energy Communities are a key element of the European strategy to support the energy",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "Local renewable energy community case study, not a strategic cross-border supply or security issue.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://doi.org/10.1016/j.ecmx.2026.102389; the captured text is 24000 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://doi.org/10.1016/j.ecmx.2026.102389",
+            "title": "Assessing the strategic role of Renewable Energy Communities in local energy systems: a study on the municipality of Tito in Southern Italy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_SCOPE_OR_SUBSTANCE_FAIL",
+        "reason": "Local renewable energy community case study, not a strategic cross-border supply or security issue."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:58Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.enisa.europa.eu/sites/default/files/2026-11/ENISA%20Technical%20Advisory%20-%20Software%20Bill%20of%20Materials%20-%20v1.20.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "ad9f0ffa",
+      "identity_hash": "77d71b1894348b3c",
+      "reader_title": "ENISA Technical Advisory for Software Bill of Materials",
+      "reader_what": "ENISA Technical Advisory for Software Bill of Materials OCTOBER 2026 TLP - CLEAR ENISA Technical Advisory for Software Bill of",
+      "reader_why": "The EU cybersecurity agency provides technical guidance supporting supply-chain software transparency.",
+      "reader_more": "ENISA Technical Advisory for Software Bill of Materials OCTOBER 2026 TLP - CLEAR ENISA Technical Advisory for Software Bill of Materials 1 About ENISA The European Union Agency for Cybersecurity, ENISA, is the Union’s agency dedicated to achieving a high common level of cybersecurity across Europe. Established in 2004 and strengthened by the EU Cybersecurity Act, the European Union Agency for Cybersecurity contributes to EU cyber policy, enhances the trustworthiness of ICT products, services and processes with cybersecurity certification schemes, cooperates with Member States and EU bodies, and helps Europe prepare for the cyber challenges of tomorrow. Through knowledge sharing, capacity building and awareness raising, the Agency works together with its key stakeholders to strengthen trust in the connected economy",
+      "deep_analysis": {
+        "work_kind": "official policy / institutional framework",
+        "research_question": "What does this work establish about ENISA Technical Advisory for Software Bill of Materials?",
+        "main_finding": "Established in 2004 and strengthened by the EU Cybersecurity Act, the European Union Agency for Cybersecurity contributes to EU cyber policy, enhances the trustworthiness of ICT products, services and processes with cybersecurity certification schemes, cooperates with Member States and EU bodies, and helps Europe prepare for the cyber challenges of tomorrow.",
+        "method_or_basis": "Established in 2004 and strengthened by the EU Cybersecurity Act, the European Union Agency for Cybersecurity contributes to EU cyber policy, enhances the trustworthiness of ICT products, services and processes with cybersecurity certification schemes, cooperates with Member States and EU bodies, and helps Europe prepare for the cyber challenges of tomorrow.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "The EU cybersecurity agency provides technical guidance supporting supply-chain software transparency.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://www.enisa.europa.eu/sites/default/files/2026-11/ENISA%20Technical%20Advisory%20-%20Software%20Bill%20of%20Materials%20-%20v1.20.pdf; the captured text is 16693 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.enisa.europa.eu/sites/default/files/2026-11/ENISA%20Technical%20Advisory%20-%20Software%20Bill%20of%20Materials%20-%20v1.20.pdf",
+            "title": "ENISA Technical Advisory for Software Bill of Materials",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The EU cybersecurity agency provides technical guidance supporting supply-chain software transparency."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:58Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "critical_infrastructure.resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "ENISA",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-04",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "Established in 2004 and strengthened by the EU Cybersecurity Act, the European Union Agency for Cybersecurity contributes to EU cyber policy, enhances the trustworthiness of ICT products, services and processes with cybersecurity certification schemes, cooperates with Member States and EU bodies, and helps Europe prepare for the cyber challenges of tomorrow.",
+          "confidence": "medium",
+          "record_key": "link:https://www.enisa.europa.eu/sites/default/files/2026-11/ENISA%20Technical%20Advisory%20-%20Software%20Bill%20of%20Materials%20-%20v1.20.pdf",
+          "merit": 100,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:77d71b1894348b3c:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1002/bse.71836": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "4adc2ccc",
+      "identity_hash": "000ba4b88d88924a",
+      "reader_title": "Unraveling the Factors of Sustainable Market Competitiveness: Strategies of Digitalization, Circular Economy, Green Finance, and Gender Equality",
+      "reader_what": "1 of 26Business Strategy and the Environment, 2026; 0:e71836 Business Strategy and the Environment RESEARCH ARTICLE Unraveling the Factors of",
+      "reader_more": "1 of 26Business Strategy and the Environment, 2026; 0:e71836 Business Strategy and the Environment RESEARCH ARTICLE Unraveling the Factors of Sustainable Market Competitiveness: Strategies of Digitalization, Circular Economy, Green Finance, and Gender Equality Fazal Ur Rehman1 | Mohammed Ibrahim Gariba 2 | Solomon Gyamfi3 1Faculty of Informatics and Management, University of Hradec Kralove, Hradec Králové, Czech Republic | 2Independent Researcher, Pardubice, Czech Republic | 3Faculty of Economics and Administration, University of Pardubice, Pardubice, Czech Republic Correspondence: Fazal Ur Rehman (fazal.rehman@uhk.cz ; fazal_marwatpk@yahoo.com ) Received: 7 June 2026 | Revised: 19 October 2026 | Accepted: 27 October 2026 Keywords: circular economy | digitalization | European Union | gender equality | green finance | market competitiveness ABSTRACT Despite the central role of",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "What does this work establish about Unraveling the Factors of Sustainable Market Competitiveness: Strategies of Digitalization, Circular Economy, Green?",
+        "main_finding": "Existing research has widely examined these factors in isolation, whereas rare attention has been given to their combined direct, mediating, and moderating relationships grounded in the dynamic capabilities view, ecological modernization, and feminist institutionalism theories across the EU member states.",
+        "method_or_basis": "Hence, this study primarily aims to examine the direct association among the outlined factors.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "Generic sustainable competitiveness and firm practice, not a European security instrument.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://doi.org/10.1002/bse.71836; the captured text is 24000 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://doi.org/10.1002/bse.71836",
+            "title": "Unraveling the Factors of Sustainable Market Competitiveness: Strategies of Digitalization, Circular Economy, Green Finance, and Gender Equality",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_SCOPE_OR_SUBSTANCE_FAIL",
+        "reason": "Generic sustainable competitiveness and firm practice, not a European security instrument."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:58Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "be068edf",
+      "identity_hash": "7a0593740a1ee83b",
+      "reader_title": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
+      "reader_what": "The European Central Bank (ECB) is the central bank of the European Union countries which have adopted the euro.",
+      "reader_why": "The ECB assesses geoeconomic shocks and AI-linked risks to European financial stability.",
+      "reader_more": "The European Central Bank (ECB) is the central bank of the European Union countries which have adopted the euro. Our main task is to maintain price stability in the euro area and so preserve the purchasing power of the single currency. Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook Ambitious earnings expectations for AI firms leave financial markets vulnerable to abrupt adjustments Fiscal imbalances in major advanced economies could lead to global repricing of sovereign risk Euro area banks and non-banks exposed to geoeconomic tensions and AI, while strong profitability, capital and liquidity keep banking sector resilient The outlook for euro area financial stability is being shaped by risks stemming from artificial intelligence (AI)",
+      "deep_analysis": {
+        "work_kind": "research/policy paper",
+        "research_question": "What does this work establish about Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability?",
+        "main_finding": "Our main task is to maintain price stability in the euro area and so preserve the purchasing power of the single currency.",
+        "method_or_basis": "The European Central Bank (ECB) is the central bank of the European Union countries which have adopted the euro.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "The ECB assesses geoeconomic shocks and AI-linked risks to European financial stability.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html; the captured text is 3586 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
+            "title": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The ECB assesses geoeconomic shocks and AI-linked risks to European financial stability."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:59Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "econsec.financial_resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Central Bank",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-18",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "Our main task is to maintain price stability in the euro area and so preserve the purchasing power of the single currency.",
+          "confidence": "medium",
+          "record_key": "link:https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html",
+          "merit": 99,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:7a0593740a1ee83b:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.34135/cejpp.355": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "85d68692",
+      "identity_hash": "375a39e37cb4886b",
+      "reader_title": "Civil law contracts in public procurement: The domino effect",
+      "reader_what": "Abstract The objective of this research was to determine the optimal legal model for handling the annulment of administrative acts",
+      "reader_more": "Abstract The objective of this research was to determine the optimal legal model for handling the annulment of administrative acts in public procurement while balancing legality, legal certainty, good faith, and public interests. A SWOT analysis was applied to evaluate internal and external factors through four categories: strengths, weaknesses, opportunities, and threats. The automatic invalidity approach strictly follows legality, treating unlawful acts and related contracts as invalid.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "What does this work establish about Civil law contracts in public procurement: The domino effect?",
+        "main_finding": "A SWOT analysis was applied to evaluate internal and external factors through four categories: strengths, weaknesses, opportunities, and threats.",
+        "method_or_basis": "Abstract The objective of this research was to determine the optimal legal model for handling the annulment of administrative acts in public procurement while balancing legality, legal certainty, good faith, and public interests.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "Public procurement civil-contract doctrine, without a central cross-border economic-security mechanism.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://doi.org/10.34135/cejpp.355; the captured text is 3544 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://doi.org/10.34135/cejpp.355",
+            "title": "Civil law contracts in public procurement: The domino effect",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_SCOPE_OR_SUBSTANCE_FAIL",
+        "reason": "Public procurement civil-contract doctrine, without a central cross-border economic-security mechanism."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:59Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1017/dap.2026.10103": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "9fb1da69",
+      "identity_hash": "8325c27252f7c588",
+      "reader_title": "Towards a data-driven European twin transition: an analysis of the EU data sharing strategy from a conceptual lens",
+      "reader_what": "COVID-19, climate change, and Russia’s invasion of Ukraine have underscored the importance of environmental sustainability and digitalisation for maintaining the",
+      "reader_more": "COVID-19, climate change, and Russia’s invasion of Ukraine have underscored the importance of environmental sustainability and digitalisation for maintaining the EU’s economic stability, social resilience, and global position. Green and digital transition strategies have emerged as a response to these immediate challenges, aiming to mitigate their negative impact on European citizens and businesses and ensure the EU’s smooth transition to an environmentally sustainable digital economy. While green and digital transitions are often viewed as separate issues of conflicting nature, their interaction presents an immense potential for the EU’s increased growth and global competitiveness, indicating the importance of a twin transition for the future of Europe.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "What does this work establish about Towards a data-driven European twin transition: an analysis of the EU data sharing?",
+        "main_finding": "Green and digital transition strategies have emerged as a response to these immediate challenges, aiming to mitigate their negative impact on European citizens and businesses and ensure the EU’s smooth transition to an environmentally sustainable digital economy.",
+        "method_or_basis": "As an intersecting central element of both the green and digital transitions, data can play a critical role in the achievement of the European twin transition.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "EU data-sharing strategy is framed as broad twin-transition governance rather than economic-security exposure.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://doi.org/10.1017/dap.2026.10103; the captured text is 16135 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://doi.org/10.1017/dap.2026.10103",
+            "title": "Towards a data-driven European twin transition: an analysis of the EU data sharing strategy from a conceptual lens of Pareto efficiency",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_SCOPE_OR_SUBSTANCE_FAIL",
+        "reason": "EU data-sharing strategy is framed as broad twin-transition governance rather than economic-security exposure."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:59Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://cdn.ceps.eu/2026/11/The-financial-fault-lines-of-the-AI-boom-formatted-final-v2.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "8cd49e23",
+      "identity_hash": "70efc2d16c5747b0",
+      "reader_title": "The financial fault lines of the AI boom: from interconnected financing to systemic risk – CEPS",
+      "reader_what": "SUMMARY The AI investment boom has been a boon for financial markets, sending technology stocks to new highs and fuelling",
+      "reader_why": "The CEPS analysis evaluates concentrated AI financing exposures and European financial-system resilience.",
+      "reader_more": "SUMMARY The AI investment boom has been a boon for financial markets, sending technology stocks to new highs and fuelling investment in data centres and computing infrastructure. But the financial risks extend beyond technology stocks: a correction in AI-related valuations could also affect credit markets and financial institutions. There are three potential vulnerabilities in particular: concentration and interdependence along the AI value chain; circular financing between suppliers and customers; and the growing reliance on debt, long -dated leases, special purpose vehicles and priva te credit.",
+      "deep_analysis": {
+        "work_kind": "institutional report",
+        "research_question": "What does this work establish about The financial fault lines of the AI boom: from interconnected financing to systemic?",
+        "main_finding": "But the financial risks extend beyond technology stocks: a correction in AI-related valuations could also affect credit markets and financial institutions.",
+        "method_or_basis": "SUMMARY The AI investment boom has been a boon for financial markets, sending technology stocks to new highs and fuelling investment in data centres and computing infrastructure.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "The CEPS analysis evaluates concentrated AI financing exposures and European financial-system resilience.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://cdn.ceps.eu/2026/11/The-financial-fault-lines-of-the-AI-boom-formatted-final-v2.pdf; the captured text is 22856 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://cdn.ceps.eu/2026/11/The-financial-fault-lines-of-the-AI-boom-formatted-final-v2.pdf",
+            "title": "The financial fault lines of the AI boom: from interconnected financing to systemic risk – CEPS",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "The CEPS analysis evaluates concentrated AI financing exposures and European financial-system resilience."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:59Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [
+        {
+          "object": "finance.us_hyperscaler_debt_exposure",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CEPS",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-18",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+          "text": "But the financial risks extend beyond technology stocks: a correction in AI-related valuations could also affect credit markets and financial institutions.",
+          "confidence": "medium",
+          "record_key": "link:https://cdn.ceps.eu/2026/11/The-financial-fault-lines-of-the-AI-boom-formatted-final-v2.pdf",
+          "merit": 87,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:70efc2d16c5747b0:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1017/ajil.2026.10187": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "121f2200",
+      "identity_hash": "77a9e46036242b40",
+      "reader_title": "The Transformation of World Trade in Latin America",
+      "reader_what": "This Essay argues that Latin America and the Caribbean have become a testing ground for competing models of international trade",
+      "reader_more": "This Essay argues that Latin America and the Caribbean have become a testing ground for competing models of international trade and investment governance. Once viewed primarily as a U.S. sphere of influence, the region now sits at the intersection of three distinct approaches to international economic law: the European Union’s rules-based model, the United States’ market-oriented approach increasingly driven by economic security, and China’s state-led yet flexible model built on strategic finance and economic incentives. Their interaction is transforming both the practice and future direction of international economic law.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "What does this work establish about The Transformation of World Trade in Latin America?",
+        "main_finding": "Once viewed primarily as a U.S. sphere of influence, the region now sits at the intersection of three distinct approaches to international economic law: the European Union’s rules-based model, the United States’ market-oriented approach increasingly driven by economic security, and China’s state-led yet flexible model built on strategic finance and economic incentives.",
+        "method_or_basis": "This Essay argues that Latin America and the Caribbean have become a testing ground for competing models of international trade and investment governance.",
+        "qualification": "Findings are limited to the scope and method of the cited source; proposed measures and simulations are not realised outcomes.",
+        "radar_relevance": "Latin American trade development without a central European economic-security assessment.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Read the package-captured source content for https://doi.org/10.1017/ajil.2026.10187; the captured text is 21864 characters."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://doi.org/10.1017/ajil.2026.10187",
+            "title": "The Transformation of World Trade in Latin America",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Examined substantive source text captured under the supplied URL in this package, including the stated research object and findings. External live provenance has not been independently confirmed for this record."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_SCOPE_OR_SUBSTANCE_FAIL",
+        "reason": "Latin American trade development without a central European economic-security assessment."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-19T12:36:59Z",
+      "deep_scan_package_id": "worker-a-20261119T111032Z-f58a62f556dc",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-11-16T07:33:59Z"
+  "claims_updated_at": "2026-11-19T12:36:59Z"
 }

@@ -6,28 +6,28 @@ It shows what is verified, what each worker owns, and what is still eligible. Ex
 Scheduling policy: preserve active worker reservations; fill new slots with Main Radar first, then Historical Radar. Do not fill packages artificially at saturation.
 A validated unsuccessful recovery is one pass; packaging alone is not a pass. After **3** failed passes, close the work as **dropped**, keeping an audit. No work-by-hand loop.
 
-- Authoritative V2 verified: **3151** (Main **1349** + Historical **1802**)
-- Automatic queue still needing V2 verification: **95** (Main **56** + Historical **39**)
-- Currently assigned to workers: **72** (Main **41** + Historical **31**)
-- Bounded access-recovery retries still eligible: **20**
+- Authoritative V2 verified: **3184** (Main **1382** + Historical **1802**)
+- Automatic queue still needing V2 verification: **62** (Main **23** + Historical **39**)
+- Currently assigned to workers: **62** (Main **23** + Historical **39**)
+- Bounded access-recovery retries still eligible: **23**
 - Dropped after three failed recovery passes (archived): **188**
 - Legacy work-by-hand requiring reconciliation: **0**
-- Automatic queue pending and not yet assigned: **23**
+- Automatic queue pending and not yet assigned: **0**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261119T111032Z-f58a62f556dc`
-- Assigned unresolved records: **36**
-  1. `link:https://data.consilium.europa.eu/doc/document/WK-14980-2026-INIT/en/pdf` — Handling and further distribution are under the sole responsibility of community members.
-  2. `link:https://doi.org/10.1007/s10645-026-09478-w` — Impact of the US–China tariff war on the eurozone under Trump 2.0: an agent-based modelling approach
-  3. `link:https://doi.org/10.1111/imig.70251` — Ideology and Utopia in the Governance of Migration: The Case of the 2024 Pact on Migration and Asylum and the Common European System for Returns
-  4. `link:https://doi.org/10.1111/jcms.70191` — Assessing Norms Convergence and Divergence in EU–Latin American Trade Relations: The Cases of EU–Mexico and EU–Mercosur Negotiations
-  5. `link:https://doi.org/10.1111/1477-8947.70105` — Due Diligence in Agribusiness, Natural Resource Governance, and Trade: Rethinking Voluntary Standards Under Sustainability Regulations
-  6. `link:https://doi.org/10.1016/j.eist.2026.101220` — The security-sustainability nexus in innovation policy: Synergies, tensions and governance in a new era
-  7. `link:https://www.cer.eu/sites/default/files/EV_CBAM_16.11.26.pdf` — Where extending the EU’s carbon border adjustment mechanism does – and does not – make sense
-  8. `link:https://rhg.com/wp-content/uploads/2026/11/CIM_Global-Clean-Tech-Manufacturing-in-Q3-2026-1.pdf` — Clean Investment Monitor: Q3 2026 Update on Global Clean Technology Manufacturing
-  - … plus 28 more in the package manifest
+- Current package: `worker-a-20261119T123830Z-2bf2591b436e`
+- Assigned unresolved records: **26**
+  1. `historical:id:8f4a482461ab316a` — States, firms, and security: How private actors implement sanctions, lessons learned from the Netherlands
+  2. `historical:id:568c10f15cb9cfc2` — The EU-Japan free trade agreement in evolving global trade politics
+  3. `historical:id:d973a6232f08ea25` — Lithuania, Latvia and Estonia: Euro-Atlantic consolidation
+  4. `historical:id:729a734abf1d8ced` — EU-Japan EPA a “Stumbling Block or a Stepping Stone” toward Multilateralism for Food and Beverages
+  5. `historical:id:6662f2a2c5ad46e2` — EU Sanctions against Russia: A Punishment, a Signal of Displeasure or a Wild-Goose Chase
+  6. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=c764aab8-d9bf-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Proposal for a Regulation of European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Presidency second compromise text Title IV (Security of ICT Supply Chains) - Publications Office of the EU — recovery attempt 2/3
+  7. `link:https://doi.org/10.1080/08911916.2026.2743824` — Beyond the European Chips Act: Mobilizing Public Banks to Solve Europe’s Semiconductor Supply Chain Paradox — recovery attempt 2/3
+  8. `link:https://doi.org/10.1163/29505720-bja00020` — From CAI to De-Risking, Seven Years to Conclude, Four Months to Freeze — recovery attempt 2/3
+  - … plus 18 more in the package manifest
 
 ### Worker B
 - Current package: `worker-b-20261119T111044Z-e17d78dfa9d6`
