@@ -1,0 +1,2312 @@
+{
+  "format": "radar-deep-scan-results-v2",
+  "claims_format": "radar-claims-v1",
+  "package_id": "worker-b-20261121T065040Z-ec94ffae757a",
+  "results": [
+    {
+      "record_key": "historical:id:d7c4465bd4ccf392",
+      "source_hash": "e32dbb10",
+      "identity_hash": "ebd5f61b3d4e9bb9",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Original DOI resolves to the 2024 European Security journal article by Eva Michaels and Monika Sus; the matching 24k-character PDF excerpt is in package."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.tandfonline.com/doi/full/10.1080/09662839.2024.2376603",
+            "title": "Michaels and Sus, European Security (2024)",
+            "evidence_used": true
+          },
+          {
+            "kind": "institutional_article_copy",
+            "url": "https://content.openalex.org/works/W4402716553.pdf",
+            "title": "Repository-backed matching article, publisher version",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matching original peer-reviewed international-security article reviewed against the scanner record; identity and scope confirmed. Bibliographic provenance and substantive content agree except for the documented corrections, where applicable."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_DEFENCE_DIPLOMACY_ONLY",
+        "reason": "Verified academic article concerns security and defence policy maturation, without substantive strategic-economic policy or industrial-capacity findings."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching duplicate is specified for this assignment."
+      },
+      "reader_title": "EU security autonomy study concerns defence and diplomacy, not economic security",
+      "reader_what": "Interviews examine how EU member states define strategic autonomy in foreign and defence policy.",
+      "reader_why": "",
+      "reader_more": "The article studies the maturation of the EU as a security and defence actor, based on member-state positions and interviews. Its core findings concern political identity, strategic culture and EU defence-policy institutions. Economic-security instruments and European cross-border industrial dependencies are not central objects of the article.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed international-security article",
+        "research_question": "How the EU’s security and defence strategic-autonomy ambitions evolved and how member states interpret them.",
+        "main_finding": "Authors identify changing phases of EU security-autonomy discourse and persistent differences in member-state strategic cultures.",
+        "method_or_basis": "Qualitative research using policy history and elite interviews of stakeholders in EU security and defence.",
+        "qualification": "Defence-industrial supply analysis could qualify as economic security, but that is not the central contribution of this source.",
+        "radar_relevance": "Defence diplomacy is an adjacent field, but the article lacks a central European economic-security mechanism or defence-industrial capacity analysis.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:ac2f3945b30838ca",
+      "source_hash": "59139376",
+      "identity_hash": "c3bd04b33f787130",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI 10.1017/S1474745624000132 resolves to Cambridge World Trade Review; the package contains substantive matching journal full text."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Cambridge full journal record lists Sasmal, Dongzhe Zhang, Emily Lydgate and Winters; publication 13 May 2024."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.cambridge.org/core/journals/world-trade-review/article/exempting-least-developed-countries-from-border-carbon-adjustments-simple-economically-but-complex-legally/A7A335ED1F374D925AA4867FC823DE38",
+            "title": "Sasmal et al., World Trade Review 23(3), 2024",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matching original peer-reviewed economic and trade-law study reviewed against the scanner record; identity and scope confirmed. Bibliographic provenance and substantive content agree except for the documented corrections, where applicable."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_EU_TRADE_ACCESS",
+        "reason": "Published peer-reviewed study directly evaluates EU carbon border trade measures and legal constraints affecting the bloc’s partners."
+      },
+      "metadata_correction": {
+        "fields": {
+          "authors": "Sunayana Sasmal; Dongzhe Zhang; Emily Lydgate; L. Alan Winters"
+        },
+        "unset": [],
+        "reason": "Original World Trade Review PDF and publisher article name Dongzhe Zhang and Emily Lydgate, correcting scanner variants Dantong Zhang and Emily Barrett Lydgate."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching duplicate is specified for this assignment."
+      },
+      "reader_title": "Exempting poorest exporters from EU carbon border charges raises WTO obstacles",
+      "reader_what": "Trade-law researchers calculate limited aggregate climate costs of exemptions but identify difficult WTO compatibility questions.",
+      "reader_why": "Trade exemptions may ease pressure on vulnerable partners without weakening climate goals, but preferential rules face legal limits.",
+      "reader_more": "Sasmal, Zhang, Lydgate and Winters combine EU and UK trade data with analysis of WTO legal rules. The study argues that small import volumes from least-developed countries make a limited carbon border adjustment exemption economically feasible. It also finds legal difficulties under non-discrimination and special-and-differential-treatment provisions.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed economic and trade-law study",
+        "research_question": "Can EU or UK carbon border adjustment instruments exempt least-developed exporters without undermining climate goals or breaching WTO rules.",
+        "main_finding": "The paper finds limited aggregate effects on the environmental effectiveness of border adjustments from LDC exemptions, while concluding the WTO-law pathways are complex.",
+        "method_or_basis": "EU and UK product-trade evidence coupled with doctrinal analysis of WTO law, exceptions and special/differential treatment.",
+        "qualification": "Small aggregate trade volumes do not prove negligible effects for individual exporters, and WTO legality is analysed rather than judicially determined.",
+        "radar_relevance": "Direct evidence about EU trade-barrier design, market access and restrictions on international economic partnerships.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.wto_compatibility",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Sasmal, Zhang, Lydgate and Winters",
+            "class": "university_group"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2024-05-13",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Small aggregate trade volumes do not prove negligible effects for individual exporters, and WTO legality is analysed rather than judicially determined.",
+          "text": "Trade and WTO-law analysis finds that carbon border adjustment exemptions for least-developed countries have limited aggregate trade effects but complex legal obstacles.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:42e7201c0b2af893",
+      "source_hash": "413148cb",
+      "identity_hash": "984436450d4ab2df",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Book DOI 10.1007/978-3-031-75488-3 resolves to Springer’s open-access Isabell Burmester monograph."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Open-access Springer chapter on coercion addresses EU and Russian economic influence over Moldova and Armenia in detail."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_open_access_book",
+            "url": "https://link.springer.com/book/10.1007/978-3-031-75488-3",
+            "title": "Burmester, EU and Russian Hegemony in the Shared Neighbourhood",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_full_text_chapter",
+            "url": "https://link.springer.com/chapter/10.1007/978-3-031-75488-3_3",
+            "title": "EU and Russian Coercion: Manipulating the Cost-Benefit Calculations of Moldovan and Armenian Governments",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matching original open-access academic monograph reviewed against the scanner record; identity and scope confirmed. Bibliographic provenance and substantive content agree except for the documented corrections, where applicable."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_HISTORICAL_GEOECONOMIC_COERCION",
+        "reason": "Open-access Springer monograph investigates concrete EU–Russian geoeconomic influence through trade, conditionality and coercion over neighbouring states."
+      },
+      "metadata_correction": {
+        "fields": {
+          "source": "Springer Nature"
+        },
+        "unset": [],
+        "reason": "The matching DOI is for an open-access Springer monograph, not a journal article in International Affairs as recorded by the scanner."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching duplicate is specified for this assignment."
+      },
+      "reader_title": "EU and Russian economic coercion in Moldova and Armenia",
+      "reader_what": "An open-access book compares how the EU and Russia apply coercion, conditionality and persuasion in their shared neighbourhood.",
+      "reader_why": "Trade dependence and access conditions shape how smaller neighbours respond to competing European and Russian pressure.",
+      "reader_more": "Burmester develops a comparative framework of coercion, prescription and co-optation, then applies it to Moldova and Armenia since the 2000s. The chapters detail EU association and free-trade incentives alongside Russian restrictions and pressure during countries’ alignment choices. This is a historical comparative study, not a new 2026 policy event.",
+      "deep_analysis": {
+        "work_kind": "open-access academic monograph",
+        "research_question": "How the EU and Russia exercise different forms of hegemonic influence over Moldova and Armenia.",
+        "main_finding": "The cases show that competing EU and Russian economic relationships affect neighbours’ policy choices; coercive tools and their institutionalisation differ by actor.",
+        "method_or_basis": "Theory-led, longitudinal comparative case studies of Moldova and Armenia using EU-Russian neighbourhood policy and local perceptions.",
+        "qualification": "Findings are comparative historical interpretations of Moldova and Armenia, not quantified causal effects for every Eastern Partnership state.",
+        "radar_relevance": "Historically important evidence on European market access, trade dependence, economic conditionality and Russian coercion in the shared neighbourhood.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "coercion.incident",
+          "secondary_objects": [],
+          "actor": {
+            "name": "EU and Russia",
+            "class": "other"
+          },
+          "mechanism": "coerces",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2024",
+          "scope": {
+            "level": "europe",
+            "countries": [
+              "Moldova",
+              "Armenia"
+            ]
+          },
+          "kind": "evidence",
+          "qualification": "Findings are comparative historical interpretations of Moldova and Armenia, not quantified causal effects for every Eastern Partnership state.",
+          "text": "Burmester documents how European association and trade incentives and Russian economic pressure shaped policy choices in Moldova and Armenia.",
+          "confidence": "medium",
+          "status_date_precision": "year"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:8f4a482461ab316a",
+      "source_hash": "3bb678b6",
+      "identity_hash": "9fa73f4ca0409f30",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI 10.1017/eis.2020.21 resolves to a full Cambridge University Press research article with matching title, authors and evidence."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Cambridge journal metadata confirms European Journal of International Security volume 6 issue 2, January 2021."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.cambridge.org/core/journals/european-journal-of-international-security/article/states-firms-and-security-how-private-actors-implement-sanctions-lessons-learned-from-the-netherlands/2D74ECCB8252B534F2B36C2375BA88F1",
+            "title": "Giumelli and Onderco, European Journal of International Security (2021)",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matching original peer-reviewed interview-based research article reviewed against the scanner record; identity and scope confirmed. Bibliographic provenance and substantive content agree except for the documented corrections, where applicable."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SANCTIONS_FIRM_EXPOSURE",
+        "reason": "Original journal article provides substantive Netherlands evidence on how private-sector sanctions compliance changes real commercial exposure."
+      },
+      "metadata_correction": {
+        "fields": {
+          "source": "European Journal of International Security"
+        },
+        "unset": [],
+        "reason": "Cambridge’s original article and issue listing identify the publication as European Journal of International Security, not International Security."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching duplicate is specified for this assignment."
+      },
+      "reader_title": "Dutch firms often implement sanctions more broadly than intended",
+      "reader_what": "Researchers examine how private companies interpret targeted sanctions and comply with restrictions in the Netherlands.",
+      "reader_why": "Firms avoiding financial or reputational risk can extend sanctions’ practical effects beyond their official targets.",
+      "reader_more": "Giumelli and Onderco interview for-profit actors about sanctions compliance and interactions with public authorities. They find firms often make risk-averse decisions about trade and payments and, except for the largest businesses, rarely consult officials before sanctions are imposed. The study shows how implementation can broaden sanctions’ commercial footprint.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed interview-based research article",
+        "research_question": "How Dutch businesses translate targeted international sanctions into actual restrictions on transactions and commercial activity.",
+        "main_finding": "Private implementation practices can magnify the disruption of targeted sanctions, while many firms engage weakly with authorities before adoption.",
+        "method_or_basis": "Qualitative Netherlands case research based on interviews and analysis of business compliance and sanctions enforcement.",
+        "qualification": "Dutch qualitative interviews do not quantify effects across the entire EU and cannot attribute every affected transaction to the legal sanctions alone.",
+        "radar_relevance": "Direct historical evidence about European sanctions enforcement, exposure of firms and how private compliance shapes economic coercion in practice.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "sanctions.secondary_exposure",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Dutch private businesses",
+            "class": "company"
+          },
+          "mechanism": "restricts",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2021-01-07",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "Netherlands"
+            ]
+          },
+          "kind": "evidence",
+          "qualification": "Dutch qualitative interviews do not quantify effects across the entire EU and cannot attribute every affected transaction to the legal sanctions alone.",
+          "text": "Dutch firm interviews show that risk-sensitive implementation of targeted sanctions can restrict transactions more widely than the legal target list alone implies.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:568c10f15cb9cfc2",
+      "source_hash": "aaf14cb3",
+      "identity_hash": "859c0269a4d6009b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI 10.1007/s10308-019-00545-3 resolves to the Springer article by Hidetaka Yoshimatsu; substantial matching article text is included in the package."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Author institution and journal index confirm Asia Europe Journal 18(4), pages 429–443 in 2020."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://link.springer.com/article/10.1007/s10308-019-00545-3",
+            "title": "Yoshimatsu, Asia Europe Journal 18(4), 2020",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matching original peer-reviewed international political economy article reviewed against the scanner record; identity and scope confirmed. Bibliographic provenance and substantive content agree except for the documented corrections, where applicable."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_HISTORICAL_TRADE_PARTNERSHIP",
+        "reason": "Peer-reviewed research directly explains how an EU international trade partnership formed amid changes in global trade rules."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No matching duplicate is specified for this assignment."
+      },
+      "reader_title": "EU–Japan free trade agreement as a response to shifting global trade politics",
+      "reader_what": "A 2020 study traces how existing agreements and opposition to multilateralism influenced the EU–Japan trade deal.",
+      "reader_why": "Major trade agreements can reinforce European partnerships and market access when other trade relationships become uncertain.",
+      "reader_more": "Yoshimatsu analyses the path from EU–Japan negotiations beginning in 2013 to the agreement’s signature in July 2018. The article argues interconnected free-trade negotiations and political reactions to anti-multilateralism helped bring the agreement about. It examines negotiation dynamics, not measured post-implementation trade gains.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed international political economy article",
+        "research_question": "What explains the development and July 2018 signature of the EU–Japan free trade agreement amid changing multilateral trade politics.",
+        "main_finding": "Interlinked free-trade negotiations and leaders’ strategic responses to anti-multilateralism helped explain the completion of the EU–Japan deal.",
+        "method_or_basis": "Qualitative analysis of the sequence of EU–Japan trade negotiations, other mega-regional agreements and leaders’ positions.",
+        "qualification": "The article explains negotiation dynamics and does not measure the agreement’s later market, resilience or strategic-autonomy outcomes.",
+        "radar_relevance": "Historical basis for understanding EU economic partnerships and market-access strategy amid shifting global trade relationships.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "trade.agreement",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union and Japan",
+            "class": "other"
+          },
+          "mechanism": "partners",
+          "direction": "expands",
+          "status": "adopted",
+          "status_date": "2018-07",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "The article explains negotiation dynamics and does not measure the agreement’s later market, resilience or strategic-autonomy outcomes.",
+          "text": "Yoshimatsu traces the EU–Japan agreement signed in July 2018 to interlinked trade negotiations and political responses to anti-multilateralism.",
+          "confidence": "medium",
+          "status_date_precision": "month"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:d973a6232f08ea25",
+      "source_hash": "d051efe5",
+      "identity_hash": "a22c0f0d69fc6918",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://www.realinstitutoelcano.org/en/analyses/lithuania-latvia-and-estonia-the-euro-atlantic-consolidation-of-the-baltic-region/; package retrieved 0 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered document-specific matching primary source at https://media.realinstitutoelcano.org/wp-content/uploads/2018/07/ari89-2018-espona-lituania-letonia-estonia-consolidacion-euroatlantica-regional-baltico.pdf; identity and material checked against Lithuania, Latvia and Estonia: Euro-Atlantic consolidation."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "matching_primary_source",
+            "url": "https://media.realinstitutoelcano.org/wp-content/uploads/2018/07/ari89-2018-espona-lituania-letonia-estonia-consolidacion-euroatlantica-regional-baltico.pdf",
+            "title": "Lithuania, Latvia and Estonia: Euro-Atlantic consolidation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and work type checked against https://media.realinstitutoelcano.org/wp-content/uploads/2018/07/ari89-2018-espona-lituania-letonia-estonia-consolidacion-euroatlantica-regional-baltico.pdf. Matching original institution/publisher source or full official act was recovered and examined. This is historical planning context; later completion or performance cannot be assumed from a 2018 source."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "These concrete cross-border infrastructure projects address Baltic energy isolation and dependence within the EU market. This is historical planning context; later completion or performance cannot be assumed from a 2018 source."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "Lithuania, Latvia and Estonia: Euro-Atlantic consolidation",
+      "reader_what": "The 2018 Elcano analysis identifies the Baltic states’ electricity synchronisation and interconnectors with Poland and Sweden and gas links to",
+      "reader_why": "These concrete cross-border infrastructure projects address Baltic energy isolation and dependence within the EU market",
+      "reader_more": "The 2018 Elcano analysis identifies the Baltic states’ electricity synchronisation and interconnectors with Poland and Sweden and gas links to Poland and Finland as security priorities. These concrete cross-border infrastructure projects address Baltic energy isolation and dependence within the EU market. This is historical planning context; later completion or performance cannot be assumed from a 2018 source.",
+      "deep_analysis": {
+        "work_kind": "publisher or institution primary analysis",
+        "research_question": "What does the identified publisher or institution primary analysis establish about Lithuania, Latvia and Estonia: Euro-Atlantic consolidation?",
+        "main_finding": "The 2018 Elcano analysis identifies the Baltic states’ electricity synchronisation and interconnectors with Poland and Sweden and gas links to Poland and Finland as security priorities.",
+        "method_or_basis": "Substantive first-party publication and its stated research or policy evidence; no substituted source used.",
+        "qualification": "This is historical planning context; later completion or performance cannot be assumed from a 2018 source.",
+        "radar_relevance": "These concrete cross-border infrastructure projects address Baltic energy isolation and dependence within the EU market.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "energy.grid",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Elcano Royal Institute",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "integrates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2018",
+          "scope": {
+            "level": "europe",
+            "countries": [
+              "Estonia",
+              "Latvia",
+              "Lithuania"
+            ]
+          },
+          "kind": "evidence",
+          "qualification": "This is historical planning context; later completion or performance cannot be assumed from a 2018 source.",
+          "text": "The 2018 Elcano analysis identifies the Baltic states’ electricity synchronisation and interconnectors with Poland and Sweden and gas links to Poland and Finland as security priorities.",
+          "confidence": "medium",
+          "status_date_precision": "year"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:729a734abf1d8ced",
+      "source_hash": "da983e9e",
+      "identity_hash": "133564c879cda9dc",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://iris.unive.it/handle/10278/3710610; package retrieved 1629 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered document-specific matching primary source at https://iris.unive.it/retrieve/e4239ddd-08d2-7180-e053-3705fe0a3322/EU-Japan.pdf; identity and material checked against EU-Japan EPA a “Stumbling Block or a Stepping Stone” toward Multilateralism for."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "matching_primary_source",
+            "url": "https://iris.unive.it/retrieve/e4239ddd-08d2-7180-e053-3705fe0a3322/EU-Japan.pdf",
+            "title": "EU-Japan EPA a “Stumbling Block or a Stepping Stone” toward Multilateralism for Food and Beverages",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and work type checked against https://iris.unive.it/retrieve/e4239ddd-08d2-7180-e053-3705fe0a3322/EU-Japan.pdf. Matching original institution/publisher source or full official act was recovered and examined. The study considers negotiated commitments and opportunities, not conclusively demonstrated long-run export effects."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "EU food exporters’ protected denominations and Japanese market-access commitments are concrete bilateral economic partnership mechanisms. The study considers negotiated commitments and opportunities, not conclusively demonstrated long-run export effects."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2019-02-12",
+          "source": "Journal of Global Policy and Governance"
+        },
+        "unset": [],
+        "reason": "Primary journal publication metadata dates the article February 2019 and identifies its actual journal."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "EU-Japan EPA a “Stumbling Block or a Stepping Stone” toward Multilateralism for Food and Beverages",
+      "reader_what": "Mazzarolo, Zolin and Kimura examine how the EU–Japan EPA changes agricultural food and beverages trade, including geographical indications and regulatory",
+      "reader_why": "EU food exporters’ protected denominations and Japanese market-access commitments are concrete bilateral economic partnership mechanisms",
+      "reader_more": "Mazzarolo, Zolin and Kimura examine how the EU–Japan EPA changes agricultural food and beverages trade, including geographical indications and regulatory market access. EU food exporters’ protected denominations and Japanese market-access commitments are concrete bilateral economic partnership mechanisms. The study considers negotiated commitments and opportunities, not conclusively demonstrated long-run export effects.",
+      "deep_analysis": {
+        "work_kind": "publisher or institution primary analysis",
+        "research_question": "What does the identified publisher or institution primary analysis establish about EU-Japan EPA a “Stumbling Block or a Stepping Stone” toward?",
+        "main_finding": "Mazzarolo, Zolin and Kimura examine how the EU–Japan EPA changes agricultural food and beverages trade, including geographical indications and regulatory market access.",
+        "method_or_basis": "Substantive first-party publication and its stated research or policy evidence; no substituted source used.",
+        "qualification": "The study considers negotiated commitments and opportunities, not conclusively demonstrated long-run export effects.",
+        "radar_relevance": "EU food exporters’ protected denominations and Japanese market-access commitments are concrete bilateral economic partnership mechanisms.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Mazzarolo, Zolin and Kimura",
+            "class": "university_group"
+          },
+          "mechanism": "partners",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2019-02-12",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "The study considers negotiated commitments and opportunities, not conclusively demonstrated long-run export effects.",
+          "text": "Mazzarolo, Zolin and Kimura examine how the EU–Japan EPA changes agricultural food and beverages trade, including geographical indications and regulatory market access.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:6662f2a2c5ad46e2",
+      "source_hash": "fa6ba638",
+      "identity_hash": "6ef5d4795c7e2ddf",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied https://www.iiste.org/Journals/index.php/IAGS/article/download/37392/38472; package retrieved 24000 characters of matching primary/official text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "matching_primary_source",
+            "url": "https://www.iiste.org/Journals/index.php/IAGS/article/download/37392/38472",
+            "title": "EU Sanctions against Russia: A Punishment, a Signal of Displeasure or a Wild-Goose Chase",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and work type checked against https://www.iiste.org/Journals/index.php/IAGS/article/download/37392/38472. The exact package excerpt matches the source and supplies substantive text. This assessment rejects the article as a reliable basis for asserting measurable sanctions effectiveness."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_EUROPEAN_ECONSEC_SCOPE_FAIL",
+        "reason": "Its treatment of sanctions outcomes does not provide a sufficiently robust or independently substantiated research contribution for this evidence-focused archive. This assessment rejects the article as a reliable basis for asserting measurable sanctions effectiveness."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "EU Sanctions against Russia: A Punishment, a Signal of Displeasure or a Wild-Goose Chase",
+      "reader_what": "The 2017 paper describes EU sanctions on Russia as signals, punishments and instruments of diplomatic pressure, relying heavily on secondary",
+      "reader_why": "",
+      "reader_more": "The 2017 paper describes EU sanctions on Russia as signals, punishments and instruments of diplomatic pressure, relying heavily on secondary normative discussion. Its treatment of sanctions outcomes does not provide a sufficiently robust or independently substantiated research contribution for this evidence-focused archive. This assessment rejects the article as a reliable basis for asserting measurable sanctions effectiveness.",
+      "deep_analysis": {
+        "work_kind": "original peer-reviewed journal article",
+        "research_question": "What does the identified original peer-reviewed journal article establish about EU Sanctions against Russia: A Punishment, a Signal of Displeasure?",
+        "main_finding": "The 2017 paper describes EU sanctions on Russia as signals, punishments and instruments of diplomatic pressure, relying heavily on secondary normative discussion.",
+        "method_or_basis": "Substantive first-party publication and its stated research or policy evidence; no substituted source used.",
+        "qualification": "This assessment rejects the article as a reliable basis for asserting measurable sanctions effectiveness.",
+        "radar_relevance": "Its treatment of sanctions outcomes does not provide a sufficiently robust or independently substantiated research contribution for this evidence-focused archive.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=c764aab8-d9bf-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "source_hash": "3040f879",
+      "identity_hash": "f5077b5f401fd4d7",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://op.europa.eu/o/opportal-service/download-handler?identifier=c764aab8-d9bf-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=; package retrieved 255 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI supplied for Proposal for a Regulation of European Parliament and of the Council on the European; DOI resolver search not applicable to this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "found",
+            "note": "Searched exact title \"Proposal for a Regulation of European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification\"; bibliographic results or the named publisher appeared, but no usable original substantive version."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "found",
+            "note": "Searched \"Proposal for a Regulation of European Parliament and of the Council on the\" with Publications Office of the EU and 2026; recovered identity pointers rather than full matching article/doc."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "found",
+            "note": "Inspected official/publisher or institutional index at https://op.europa.eu/en/publication-detail/-/publication/c764aab8-d9bf-11f1-8501-01aa75ed71a1/language-en; title identity is corroborated but substantive access remains limited."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Queried distinctive keywords Proposal for a Regulation of European Parliament and plus Publications Office of the EU; no matching accessible complete work or permissible original manuscript was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_identity_record",
+            "url": "https://op.europa.eu/en/publication-detail/-/publication/c764aab8-d9bf-11f1-8501-01aa75ed71a1/language-en",
+            "title": "Proposal for a Regulation of European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Work identity or official document registry located, but the complete mandatory source-recovery pass did not produce substantive matching original evidence. An EU publications registry identifies the October 2026 Council compromise text on Cybersecurity Act 2 ICT supply-chain security, but the supplied download yields an error page. Do not substitute the Commission’s initial Cybersecurity Act proposal for this precise Presidency compromise."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The underlying compromise may be relevant to high-risk vendors, yet the exact marked Council text was not recovered. Do not substitute the Commission’s initial Cybersecurity Act proposal for this precise Presidency compromise."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/08911916.2026.2743824",
+      "source_hash": "9d9ba59c",
+      "identity_hash": "a17904d11d5bb28b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Original https://doi.org/10.1080/08911916.2026.2743824 was inspected; 20,303-character OpenAlex excerpt is an unrelated MOSFET textbook chapter."
+          },
+          {
+            "step": "doi",
+            "outcome": "found",
+            "note": "Resolved/searched DOI https://doi.org/10.1080/08911916.2026.2743824; found publication identity where indexed, not matching accessible full research text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "found",
+            "note": "Searched exact title \"Beyond the European Chips Act: Mobilizing Public Banks to Solve Europe’s Semiconductor Supply Chain Paradox\"; bibliographic results or the named publisher appeared, but no usable original substantive version."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "found",
+            "note": "Searched \"Beyond the European Chips Act: Mobilizing Public Banks to Solve Europe’s Semiconductor Supply\" with Thibault Laurentjoye and 2026; recovered identity pointers rather than full matching article/doc."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "found",
+            "note": "Inspected official/publisher or institutional index at https://www.tandfonline.com/doi/abs/10.1080/08911916.2026.2743824; title identity is corroborated but substantive access remains limited."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Queried distinctive keywords Beyond the European Chips Act: Mobilizing Public Banks plus 10.1080/08911916.2026.2743824; no matching accessible complete work or permissible original manuscript was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_identity_record",
+            "url": "https://www.tandfonline.com/doi/abs/10.1080/08911916.2026.2743824",
+            "title": "Beyond the European Chips Act: Mobilizing Public Banks to Solve Europe’s Semiconductor Supply Chain Paradox",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Work identity or official document registry located, but the complete mandatory source-recovery pass did not produce substantive matching original evidence. The journal lists Laurentjoye’s 2026 public-banking and semiconductor-supply-chain article, while the package excerpt is from an unrelated MOSFET textbook chapter. Treat the OpenAlex source-body mix-up as a hard source mismatch, not as a reason to hallucinate conclusions."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The DOI and journal identity can be matched, but the supplied technical chapter is not evidence about public bank finance. Treat the OpenAlex source-body mix-up as a hard source mismatch, not as a reason to hallucinate conclusions."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1163/29505720-bja00020",
+      "source_hash": "9537e9c2",
+      "identity_hash": "5b6b1fcfe1eff5d6",
+      "verification": {
+        "identity_verified": false,
+        "evidence_depth": "identity_unverified_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://doi.org/10.1163/29505720-bja00020; package retrieved 0 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "doi",
+            "outcome": "no_match",
+            "note": "Searched supplied identifier https://doi.org/10.1163/29505720-bja00020; no independently retrievable metadata record for the claimed Francesca Ghiretti 2026 paper."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "no_match",
+            "note": "Exact quoted title search for From CAI to De-Risking, Seven Years to Conclude, Four Months to Freeze found related EU-China commentary but no matching Brill article."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "no_match",
+            "note": "Search for Francesca Ghiretti, 2026, CAI freeze and Law & Geoeconomics produced no corresponding byline-title match."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "no_match",
+            "note": "Brill Law & Geoeconomics journal and DOI records inspected; other papers were discoverable but not this title/DOI."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Broader CAI-to-de-risking keyword and DOI-fragment searches found related publications by other authors, no claimed object."
+          }
+        ],
+        "recovered_sources": [],
+        "verification_note": "Work identity or official document registry located, but the complete mandatory source-recovery pass did not produce substantive matching original evidence. The claimed 2026 Francesca Ghiretti article on the CAI freeze and EU de-risking could not be matched to an independently indexed Brill journal publication. Related EU-China research is not a substitute for this unverified bibliographic object."
+      },
+      "admission": {
+        "decision": "drop_unverifiable",
+        "target_strand": "",
+        "reason_code": "SOURCE_IDENTITY_UNVERIFIABLE",
+        "reason": "The title, claimed DOI and author do not produce a corroborated publisher identity, so the cited work itself cannot be established. Related EU-China research is not a substitute for this unverified bibliographic object."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=bd116d80-da2f-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "source_hash": "9ad8e917",
+      "identity_hash": "be5c2fa77f546f7d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://op.europa.eu/o/opportal-service/download-handler?identifier=bd116d80-da2f-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=; package retrieved 255 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI supplied for Presidency Flash for the Working Party on Competitiveness and Growth (Internal Market - Skills; DOI resolver search not applicable to this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "found",
+            "note": "Searched exact title \"Presidency Flash for the Working Party on Competitiveness and Growth (Internal Market - Skills Portability) on 5 November 2026 - Publications Office of\"; bibliographic results or the named publisher appeared, but no usable original substantive version."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "found",
+            "note": "Searched \"Presidency Flash for the Working Party on Competitiveness and Growth (Internal Market -\" with Publications Office of the EU and 2026; recovered identity pointers rather than full matching article/doc."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "found",
+            "note": "Inspected official/publisher or institutional index at https://op.europa.eu/en/publication-detail/-/publication/bd116d80-da2f-11f1-8501-01aa75ed71a1/language-en; title identity is corroborated but substantive access remains limited."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Queried distinctive keywords Presidency Flash for the Working Party on Competitiveness plus Publications Office of the EU; no matching accessible complete work or permissible original manuscript was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_identity_record",
+            "url": "https://op.europa.eu/en/publication-detail/-/publication/bd116d80-da2f-11f1-8501-01aa75ed71a1/language-en",
+            "title": "Presidency Flash for the Working Party on Competitiveness and Growth (Internal Market - Skills Portability) on 5 November 2026 - Publications Office",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Work identity or official document registry located, but the complete mandatory source-recovery pass did not produce substantive matching original evidence. The EU Publications Office lists an October 2026 Working Party Presidency Flash on skills portability, but its download is a 404 page. Related Commission professional-qualification proposals are distinct documents and cannot replace this flash."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The document identity is clear, but the meeting note’s contents and potential economic-security relevance are inaccessible. Related Commission professional-qualification proposals are distinct documents and cannot replace this flash."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.esr.2026.102389",
+      "source_hash": "71195e32",
+      "identity_hash": "4ffe28487a7fcf9a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://doi.org/10.1016/j.esr.2026.102389; package retrieved 0 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "doi",
+            "outcome": "found",
+            "note": "Resolved/searched DOI https://doi.org/10.1016/j.esr.2026.102389; found publication identity where indexed, not matching accessible full research text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "found",
+            "note": "Searched exact title \"Reassessing the EU’s LNG expansion strategy: Geopolitical dependencies, energy security, and climate goals after the Russian invasion of Ukraine\"; bibliographic results or the named publisher appeared, but no usable original substantive version."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "found",
+            "note": "Searched \"Reassessing the EU’s LNG expansion strategy: Geopolitical dependencies, energy security, and climate goals\" with Johannes Giehl, Maike Kalz, Flora v. Mikulicz-Radeck and 2026; recovered identity pointers rather than full matching article/doc."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "found",
+            "note": "Inspected official/publisher or institutional index at https://www.sciencedirect.com/science/article/pii/S2211467X26003561; title identity is corroborated but substantive access remains limited."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Queried distinctive keywords Reassessing the EU’s LNG expansion strategy: Geopolitical dependencies plus 10.1016/j.esr.2026.102389; no matching accessible complete work or permissible original manuscript was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_identity_record",
+            "url": "https://www.sciencedirect.com/science/article/pii/S2211467X26003561",
+            "title": "Reassessing the EU’s LNG expansion strategy: Geopolitical dependencies, energy security, and climate goals after the Russian invasion of Ukraine",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Work identity or official document registry located, but the complete mandatory source-recovery pass did not produce substantive matching original evidence. Elsevier identifies a 2026 article testing the necessity and economic-security trade-offs of EU LNG import expansion, but the full journal version was not recovered. The journal abstract and earlier brief do not satisfy the complete-source decision gate for the 2026 work."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "An earlier author policy brief on a similar project is available, yet is not interchangeable with the published study. The journal abstract and earlier brief do not satisfy the complete-source decision gate for the 2026 work."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/10168737.2026.2692699",
+      "source_hash": "b8f082a3",
+      "identity_hash": "e09720fc0fbcb95b",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://doi.org/10.1080/10168737.2026.2692699; package retrieved 0 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "doi",
+            "outcome": "found",
+            "note": "Resolved/searched DOI https://doi.org/10.1080/10168737.2026.2692699; found publication identity where indexed, not matching accessible full research text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "found",
+            "note": "Searched exact title \"European Manufacturing Exports and Exposure to Chinese ICT Services\"; bibliographic results or the named publisher appeared, but no usable original substantive version."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "found",
+            "note": "Searched \"European Manufacturing Exports and Exposure to Chinese ICT Services\" with Ewa Cieślik and 2026; recovered identity pointers rather than full matching article/doc."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "found",
+            "note": "Inspected official/publisher or institutional index at https://www.tandfonline.com/doi/abs/10.1080/10168737.2026.2692699; title identity is corroborated but substantive access remains limited."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Queried distinctive keywords European Manufacturing Exports and Exposure to Chinese ICT plus 10.1080/10168737.2026.2692699; no matching accessible complete work or permissible original manuscript was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_identity_record",
+            "url": "https://www.tandfonline.com/doi/abs/10.1080/10168737.2026.2692699",
+            "title": "European Manufacturing Exports and Exposure to Chinese ICT Services",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Work identity or official document registry located, but the complete mandatory source-recovery pass did not produce substantive matching original evidence. Taylor & Francis identifies Ewa Cieślik’s paper measuring China-origin ICT services embodied in European manufacturing exports for 1995–2018. The existence of a substantial EU-China services dependency question is not proof of the paper’s quantitative findings."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The publisher abstract confirms the topic and author but does not expose the analysis, tables and caveats needed for assessment. The existence of a substantial EU-China services dependency question is not proof of the paper’s quantitative findings."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/1540496x.2026.2755507",
+      "source_hash": "86343190",
+      "identity_hash": "6e3b345ecbca3f85",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://doi.org/10.1080/1540496x.2026.2755507; package retrieved 0 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "doi",
+            "outcome": "found",
+            "note": "Resolved/searched DOI https://doi.org/10.1080/1540496x.2026.2755507; found publication identity where indexed, not matching accessible full research text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "found",
+            "note": "Searched exact title \"How the EU Regulates the Outflow of Emerging Technologies: A Perspective from China\"; bibliographic results or the named publisher appeared, but no usable original substantive version."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "found",
+            "note": "Searched \"How the EU Regulates the Outflow of Emerging Technologies: A Perspective from China\" with Wei He, Jiaxing Zhang, Haoyu Tian, Shuhong Zheng and 2026; recovered identity pointers rather than full matching article/doc."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "found",
+            "note": "Inspected official/publisher or institutional index at https://doi.org/10.1080/1540496X.2026.2755507; title identity is corroborated but substantive access remains limited."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Queried distinctive keywords How the EU Regulates the Outflow of Emerging plus 10.1080/1540496x.2026.2755507; no matching accessible complete work or permissible original manuscript was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_identity_record",
+            "url": "https://doi.org/10.1080/1540496X.2026.2755507",
+            "title": "How the EU Regulates the Outflow of Emerging Technologies: A Perspective from China",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Work identity or official document registry located, but the complete mandatory source-recovery pass did not produce substantive matching original evidence. Taylor & Francis lists the 2026 Wei He and colleagues article on EU controls of outbound emerging technologies from a Chinese perspective. A search-result abstract is not an adequate substitute for the full work’s treatment of screening and export controls."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The title and authors are indexed, while the underlying paper’s substantive legal and policy argument remains unavailable. A search-result abstract is not an adequate substitute for the full work’s treatment of screening and export controls."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.resourpol.2026.106086",
+      "source_hash": "d193604a",
+      "identity_hash": "4d2919b9e477a056",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://doi.org/10.1016/j.resourpol.2026.106086; package retrieved 0 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "doi",
+            "outcome": "found",
+            "note": "Resolved/searched DOI https://doi.org/10.1016/j.resourpol.2026.106086; found publication identity where indexed, not matching accessible full research text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "found",
+            "note": "Searched exact title \"Blurred lines between governments and firms: A competitiveness framework for critical raw material dependent industries\"; bibliographic results or the named publisher appeared, but no usable original substantive version."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "found",
+            "note": "Searched \"Blurred lines between governments and firms: A competitiveness framework for critical raw material\" with Andrea R. Reisdorf, Leon Zacharias, Sebastian Kummer and 2026; recovered identity pointers rather than full matching article/doc."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "found",
+            "note": "Inspected official/publisher or institutional index at https://www.sciencedirect.com/science/article/pii/S0301420726002588; title identity is corroborated but substantive access remains limited."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Queried distinctive keywords Blurred lines between governments and firms: A competitiveness plus 10.1016/j.resourpol.2026.106086; no matching accessible complete work or permissible original manuscript was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_identity_record",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0301420726002588",
+            "title": "Blurred lines between governments and firms: A competitiveness framework for critical raw material dependent industries",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Work identity or official document registry located, but the complete mandatory source-recovery pass did not produce substantive matching original evidence. Elsevier identifies a Reisdorf et al. 2026 article on the European hydropower industry’s critical-material dependence and regulatory disadvantages. Do not treat the publisher highlights as independent verification of the paper’s complete argument."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The accessible publisher extract establishes context but not the framework and supporting evidence in the full paper. Do not treat the publisher highlights as independent verification of the paper’s complete argument."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/09662839.2026.2749007",
+      "source_hash": "ca9408aa",
+      "identity_hash": "bf093e4821af1b8e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://doi.org/10.1080/09662839.2026.2749007; package retrieved 0 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "doi",
+            "outcome": "found",
+            "note": "Resolved/searched DOI https://doi.org/10.1080/09662839.2026.2749007; found publication identity where indexed, not matching accessible full research text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "found",
+            "note": "Searched exact title \"When arms embargoes become procurement problems: Spain, Israel and normative decoupling in defence acquisition\"; bibliographic results or the named publisher appeared, but no usable original substantive version."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "found",
+            "note": "Searched \"When arms embargoes become procurement problems: Spain, Israel and normative decoupling in defence\" with Guillem Colom Piella and 2026; recovered identity pointers rather than full matching article/doc."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "found",
+            "note": "Inspected official/publisher or institutional index at https://produccioncientifica.ugr.es/documentos/6aee70160194e4db8cfecb46?lang=es; title identity is corroborated but substantive access remains limited."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Queried distinctive keywords When arms embargoes become procurement problems: Spain, Israel plus 10.1080/09662839.2026.2749007; no matching accessible complete work or permissible original manuscript was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_identity_record",
+            "url": "https://produccioncientifica.ugr.es/documentos/6aee70160194e4db8cfecb46?lang=es",
+            "title": "When arms embargoes become procurement problems: Spain, Israel and normative decoupling in defence acquisition",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Work identity or official document registry located, but the complete mandatory source-recovery pass did not produce substantive matching original evidence. A University of Granada research record identifies a paper on Spain’s arms embargo and procurement ties to Israeli defence suppliers. Secondary commentary on particular defence purchases cannot replace the paper’s argument and cited evidence."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The full article’s case analyses and evidence are not accessible from the supplied DOI or repository record. Secondary commentary on particular defence purchases cannot replace the paper’s argument and cited evidence."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/14767724.2026.2758677",
+      "source_hash": "3c4b7696",
+      "identity_hash": "885e897d88f520f6",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied https://doi.org/10.1080/14767724.2026.2758677; package retrieved 24000 characters of matching primary/official text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "matching_primary_source",
+            "url": "https://content.openalex.org/works/W7225417941.pdf",
+            "title": "Will Europe be able to align and accelerate global cooperation in S&T to foster a new knowledge-based global order ?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and work type checked against https://content.openalex.org/works/W7225417941.pdf. The exact package excerpt matches the source and supplies substantive text. Field-level bibliometrics identify association and reallocation, not independent causal effects of each specific government restriction."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "Collaboration in lithography, quantum and dual-use technology contracts while renewable-energy research ties remain more resilient, informing European knowledge-security strategy. Field-level bibliometrics identify association and reallocation, not independent causal effects of each specific government restriction."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "Will Europe be able to align and accelerate global cooperation in S&T to foster a new knowledge-based global",
+      "reader_what": "Heitor, Amaral and Horta use 1990–2024 co-authorship data to show research-security restrictions shifting EU–China and EU–US collaboration differently by technological",
+      "reader_why": "Collaboration in lithography, quantum and dual-use technology contracts while renewable-energy research ties remain more resilient, informing European knowledge-security strategy",
+      "reader_more": "Heitor, Amaral and Horta use 1990–2024 co-authorship data to show research-security restrictions shifting EU–China and EU–US collaboration differently by technological field. Collaboration in lithography, quantum and dual-use technology contracts while renewable-energy research ties remain more resilient, informing European knowledge-security strategy. Field-level bibliometrics identify association and reallocation, not independent causal effects of each specific government restriction.",
+      "deep_analysis": {
+        "work_kind": "original peer-reviewed journal article",
+        "research_question": "What does the identified original peer-reviewed journal article establish about Will Europe be able to align and accelerate global cooperation?",
+        "main_finding": "Heitor, Amaral and Horta use 1990–2024 co-authorship data to show research-security restrictions shifting EU–China and EU–US collaboration differently by technological field.",
+        "method_or_basis": "Substantive first-party publication and its stated research or policy evidence; no substituted source used.",
+        "qualification": "Field-level bibliometrics identify association and reallocation, not independent causal effects of each specific government restriction.",
+        "radar_relevance": "Collaboration in lithography, quantum and dual-use technology contracts while renewable-energy research ties remain more resilient, informing European knowledge-security strategy.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "research.collaboration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Heitor, Amaral and Horta",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-05",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Field-level bibliometrics identify association and reallocation, not independent causal effects of each specific government restriction.",
+          "text": "Heitor, Amaral and Horta use 1990–2024 co-authorship data to show research-security restrictions shifting EU–China and EU–US collaboration differently by technological field.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1017/nie.2026.10107",
+      "source_hash": "3016d959",
+      "identity_hash": "ffcb8f30350a939c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied https://doi.org/10.1017/nie.2026.10107; package retrieved 3435 characters of matching primary/official text."
+          },
+          {
+            "step": "doi",
+            "outcome": "found",
+            "note": "Resolved/searched DOI https://doi.org/10.1017/nie.2026.10107; found publication identity where indexed, not matching accessible full research text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "found",
+            "note": "Searched exact title \"ECONOMIC SECURITY STRATEGY AS A COMPONENT OF THE NATIONAL SECURITY STRATEGY: OBJECTIVES, INDICATORS AND INSTRUMENTS OF IMPLEMENTATION\"; bibliographic results or the named publisher appeared, but no usable original substantive version."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "found",
+            "note": "Searched \"ECONOMIC SECURITY STRATEGY AS A COMPONENT OF THE NATIONAL SECURITY STRATEGY: OBJECTIVES, INDICATORS\" with Karlis Ketners and 2026; recovered identity pointers rather than full matching article/doc."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "found",
+            "note": "Inspected official/publisher or institutional index at https://doi.org/10.1017/nie.2026.10107; title identity is corroborated but substantive access remains limited."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Queried distinctive keywords ECONOMIC SECURITY STRATEGY AS A COMPONENT OF THE plus 10.1017/nie.2026.10107; no matching accessible complete work or permissible original manuscript was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_identity_record",
+            "url": "https://doi.org/10.1017/nie.2026.10107",
+            "title": "ECONOMIC SECURITY STRATEGY AS A COMPONENT OF THE NATIONAL SECURITY STRATEGY: OBJECTIVES, INDICATORS AND INSTRUMENTS OF IMPLEMENTATION",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Work identity or official document registry located, but the complete mandatory source-recovery pass did not produce substantive matching original evidence. Cambridge lists Ketners’ comparison of economic-security strategies in Latvia, Lithuania, Estonia, Finland and Poland, but the available page contains only an abstract. Do not infer detailed country-level effects from the summary-level description."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The defined indicators include energy, trade, investment and cyber resilience, yet the source’s analysis and evidence base remain unavailable. Do not infer detailed country-level effects from the summary-level description."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=1d08d46d-dc23-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "source_hash": "aef27e8a",
+      "identity_hash": "e12451f7fbe85548",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://op.europa.eu/o/opportal-service/download-handler?identifier=1d08d46d-dc23-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=; package retrieved 255 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI supplied for Proposal for a Regulation on establishing a framework of measures for accelerating industrial capacity; DOI resolver search not applicable to this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "found",
+            "note": "Searched exact title \"Proposal for a Regulation on establishing a framework of measures for accelerating industrial capacity and decarbonisation in strategic sectors (Industrial Accelerator Act) -Guidance\"; bibliographic results or the named publisher appeared, but no usable original substantive version."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "found",
+            "note": "Searched \"Proposal for a Regulation on establishing a framework of measures for accelerating industrial\" with Publications Office of the EU and 2026; recovered identity pointers rather than full matching article/doc."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "found",
+            "note": "Inspected official/publisher or institutional index at https://op.europa.eu/en/publication-detail/-/publication/1d08d46d-dc23-11f1-8501-01aa75ed71a1/language-en; title identity is corroborated but substantive access remains limited."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Queried distinctive keywords Proposal for a Regulation on establishing a framework plus Publications Office of the EU; no matching accessible complete work or permissible original manuscript was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_identity_record",
+            "url": "https://op.europa.eu/en/publication-detail/-/publication/1d08d46d-dc23-11f1-8501-01aa75ed71a1/language-en",
+            "title": "Proposal for a Regulation on establishing a framework of measures for accelerating industrial capacity and decarbonisation in strategic sectors (Industrial Accelerator Act)",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Work identity or official document registry located, but the complete mandatory source-recovery pass did not produce substantive matching original evidence. The EU publications registry identifies the November 2026 Industrial Accelerator Act guidance note, while the supplied download failed. No claim is made about the negotiating guidance’s exact amendments or policy outcome."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The original Commission Act is substantive but is not the same document as this particular Council working guidance. No claim is made about the negotiating guidance’s exact amendments or policy outcome."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://www.enisa.europa.eu/enisa-nis360-2026",
+      "source_hash": "4cf76ed6",
+      "identity_hash": "c8938ea5ea99382c",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied https://www.enisa.europa.eu/enisa-nis360-2026; package retrieved 2818 characters of matching primary/official text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "matching_primary_source",
+            "url": "https://www.cybersecitalia.it/wp-content/uploads/2026/11/ENISA_Art18_2026_Condensed.pdf",
+            "title": "2026 Report on the State of Cybersecurity in the Union",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and work type checked against https://www.cybersecitalia.it/wp-content/uploads/2026/11/ENISA_Art18_2026_Condensed.pdf. Matching original institution/publisher source or full official act was recovered and examined. The package points to a different ENISA NIS360 report and an incorrect May date; the recovered report must be treated as a separate publication."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "The authoritative assessment documents systemic weaknesses in digital infrastructure and critical-service resilience relevant to European economic security. The package points to a different ENISA NIS360 report and an incorrect May date; the recovered report must be treated as a separate publication."
+      },
+      "metadata_correction": {
+        "fields": {
+          "date": "2026-11-10",
+          "source": "ENISA"
+        },
+        "unset": [],
+        "reason": "The State of Cybersecurity report was released in November 2026; the scanner date and NIS360 link reference a different product."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "2026 Report on the State of Cybersecurity in the Union",
+      "reader_what": "ENISA’s November 2026 State of Cybersecurity report assesses Union-level cyber resilience, critical sectors, incident readiness and gaps in implementation",
+      "reader_why": "The authoritative assessment documents systemic weaknesses in digital infrastructure and critical-service resilience relevant to European economic security",
+      "reader_more": "ENISA’s November 2026 State of Cybersecurity report assesses Union-level cyber resilience, critical sectors, incident readiness and gaps in implementation. The authoritative assessment documents systemic weaknesses in digital infrastructure and critical-service resilience relevant to European economic security. The package points to a different ENISA NIS360 report and an incorrect May date; the recovered report must be treated as a separate publication.",
+      "deep_analysis": {
+        "work_kind": "publisher or institution primary analysis",
+        "research_question": "What does the identified publisher or institution primary analysis establish about 2026 Report on the State of Cybersecurity in the Union?",
+        "main_finding": "ENISA’s November 2026 State of Cybersecurity report assesses Union-level cyber resilience, critical sectors, incident readiness and gaps in implementation.",
+        "method_or_basis": "Substantive first-party publication and its stated research or policy evidence; no substituted source used.",
+        "qualification": "The package points to a different ENISA NIS360 report and an incorrect May date; the recovered report must be treated as a separate publication.",
+        "radar_relevance": "The authoritative assessment documents systemic weaknesses in digital infrastructure and critical-service resilience relevant to European economic security.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "critical_infrastructure.resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union Agency for Cybersecurity",
+            "class": "eu_body"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-10",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "The package points to a different ENISA NIS360 report and an incorrect May date; the recovered report must be treated as a separate publication.",
+          "text": "ENISA’s November 2026 State of Cybersecurity report assesses Union-level cyber resilience, critical sectors, incident readiness and gaps in implementation.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/14683849.2026.2752280",
+      "source_hash": "9e9acfa3",
+      "identity_hash": "a2b9b951c2828837",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://doi.org/10.1080/14683849.2026.2752280; package retrieved 0 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "doi",
+            "outcome": "found",
+            "note": "Resolved/searched DOI https://doi.org/10.1080/14683849.2026.2752280; found publication identity where indexed, not matching accessible full research text."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "found",
+            "note": "Searched exact title \"From customs-union asymmetry to bounded co-management? Strategic autonomy and the CETA-plus free trade agreement alternative in EU–Türkiye trade governance\"; bibliographic results or the named publisher appeared, but no usable original substantive version."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "found",
+            "note": "Searched \"From customs-union asymmetry to bounded co-management? Strategic autonomy and the CETA-plus free trade\" with Serdar Altay and 2026; recovered identity pointers rather than full matching article/doc."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "found",
+            "note": "Inspected official/publisher or institutional index at https://doi.org/10.1080/14683849.2026.2752280; title identity is corroborated but substantive access remains limited."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Queried distinctive keywords From customs-union asymmetry to bounded co-management? Strategic autonomy plus 10.1080/14683849.2026.2752280; no matching accessible complete work or permissible original manuscript was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_identity_record",
+            "url": "https://doi.org/10.1080/14683849.2026.2752280",
+            "title": "From customs-union asymmetry to bounded co-management? Strategic autonomy and the CETA-plus free trade agreement alternative in EU–Türkiye trade governance",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Work identity or official document registry located, but the complete mandatory source-recovery pass did not produce substantive matching original evidence. Taylor & Francis identifies Altay’s 2026 study of EU–Türkiye customs-union asymmetry and a proposed bounded co-management alternative. The CETA-plus model is a proposed analytical alternative, not an EU–Türkiye negotiated agreement."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The publisher overview supports the existence of a cross-border trade-governance question but not the full paper’s analysis. The CETA-plus model is a proposed analytical alternative, not an EU–Türkiye negotiated agreement."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://data.consilium.europa.eu/doc/document/ST-13545-2026-INIT/en/pdf",
+      "source_hash": "0022bf99",
+      "identity_hash": "af9038caa3078654",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Inspected supplied https://data.consilium.europa.eu/doc/document/ST-13545-2026-INIT/en/pdf; package retrieved 14087 characters of matching primary/official text."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_full_document",
+            "url": "https://data.consilium.europa.eu/doc/document/ST-13545-2026-INIT/en/pdf",
+            "title": "Changes in comparison to the Commission proposal, document ST 10094/26 + ADD1, are marked in bold for additions and in strikethrough for deletions",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and work type checked against https://data.consilium.europa.eu/doc/document/ST-13545-2026-INIT/en/pdf. The exact package excerpt matches the source and supplies substantive text. This is a September 2026 Council draft, not an adopted amendment, and its scanner title is a markup instruction."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "The draft addresses advanced-chip supply dependence and the EU’s capacity to coordinate strategic semiconductor investment and production. This is a September 2026 Council draft, not an adopted amendment, and its scanner title is a markup instruction."
+      },
+      "metadata_correction": {
+        "fields": {
+          "title": "EU Chips Act 2 — Council Presidency compromise text (ST 13545/26)"
+        },
+        "unset": [],
+        "reason": "Official Council document header supplies the instrument title, rather than the scanner’s formatting legend."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "Presidency compromise on EU strategic industrial or semiconductor capacity",
+      "reader_what": "Council document ST 13545/26 is a Presidency compromise on EU Chips Act 2.0, revising industrial measures to strengthen European semiconductor",
+      "reader_why": "The draft addresses advanced-chip supply dependence and the EU’s capacity to coordinate strategic semiconductor investment and production",
+      "reader_more": "Council document ST 13545/26 is a Presidency compromise on EU Chips Act 2.0, revising industrial measures to strengthen European semiconductor technology capacity. The draft addresses advanced-chip supply dependence and the EU’s capacity to coordinate strategic semiconductor investment and production. This is a September 2026 Council draft, not an adopted amendment, and its scanner title is a markup instruction.",
+      "deep_analysis": {
+        "work_kind": "Council/EU legal or policy instrument",
+        "research_question": "What does the identified Council/EU legal or policy instrument establish about Presidency compromise on EU strategic industrial or semiconductor capacity?",
+        "main_finding": "Council document ST 13545/26 is a Presidency compromise on EU Chips Act 2.0, revising industrial measures to strengthen European semiconductor technology capacity.",
+        "method_or_basis": "Official Council or EU measure examined in its original text",
+        "qualification": "This is a September 2026 Council draft, not an adopted amendment, and its scanner title is a markup instruction.",
+        "radar_relevance": "The draft addresses advanced-chip supply dependence and the EU’s capacity to coordinate strategic semiconductor investment and production.",
+        "why_supported": true,
+        "confidence": "high"
+      },
+      "claims": [
+        {
+          "object": "chips.fab",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Council of the European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "proposes",
+          "direction": "expands",
+          "status": "in_negotiation",
+          "status_date": "2026-09-29",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "This is a September 2026 Council draft, not an adopted amendment, and its scanner title is a markup instruction.",
+          "text": "Council document ST 13545/26 is a Presidency compromise on EU Chips Act 2.0, revising industrial measures to strengthen European semiconductor technology capacity.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=bf5d1730-e2ab-11f1-aefc-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "source_hash": "9862e05d",
+      "identity_hash": "0a1ed76a92b4482e",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://op.europa.eu/o/opportal-service/download-handler?identifier=bf5d1730-e2ab-11f1-aefc-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=; package retrieved 255 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered document-specific matching primary source at https://data.consilium.europa.eu/doc/document/ST-15211-2026-INIT/en/pdf; identity and material checked against Preparation of the Competitiveness Council (Internal Market, Industry, Research, and Space) on."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "matching_primary_source",
+            "url": "https://data.consilium.europa.eu/doc/document/ST-15211-2026-INIT/en/pdf",
+            "title": "Preparation of the Competitiveness Council (Internal Market, Industry, Research, and Space) on 3 December 2026: Regulation on public contracts and concessions (Public Procurement Act) -",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and work type checked against https://data.consilium.europa.eu/doc/document/ST-15211-2026-INIT/en/pdf. Matching original institution/publisher source or full official act was recovered and examined. Proposed debate questions and references to European preference should not be portrayed as operative law."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "",
+        "reason_code": "A_EUROPEAN_ECONSEC_SCOPE_FAIL",
+        "reason": "It is a scheduled discussion note, rather than an adopted procurement requirement or substantive empirical report about a concrete economic-security development. Proposed debate questions and references to European preference should not be portrayed as operative law."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "Preparation of the Competitiveness Council (Internal Market, Industry, Research, and Space) on 3 December 2026: Regulation on public",
+      "reader_what": "Council document ST 15211/26 prepares the 3 December public-procurement policy debate and frames strategic questions about EU supply resilience",
+      "reader_why": "",
+      "reader_more": "Council document ST 15211/26 prepares the 3 December public-procurement policy debate and frames strategic questions about EU supply resilience. It is a scheduled discussion note, rather than an adopted procurement requirement or substantive empirical report about a concrete economic-security development. Proposed debate questions and references to European preference should not be portrayed as operative law.",
+      "deep_analysis": {
+        "work_kind": "publisher or institution primary analysis",
+        "research_question": "What does the identified publisher or institution primary analysis establish about Preparation of the Competitiveness Council (Internal Market, Industry, Research, and?",
+        "main_finding": "Council document ST 15211/26 prepares the 3 December public-procurement policy debate and frames strategic questions about EU supply resilience.",
+        "method_or_basis": "Substantive first-party publication and its stated research or policy evidence; no substituted source used.",
+        "qualification": "Proposed debate questions and references to European preference should not be portrayed as operative law.",
+        "radar_relevance": "It is a scheduled discussion note, rather than an adopted procurement requirement or substantive empirical report about a concrete economic-security development.",
+        "why_supported": false,
+        "confidence": "medium"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=fd119899-e26c-11f1-aefc-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "source_hash": "5eaf226f",
+      "identity_hash": "eb81c59903f3010a",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://op.europa.eu/o/opportal-service/download-handler?identifier=fd119899-e26c-11f1-aefc-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=; package retrieved 255 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI supplied for Proposal for a Regulation of the European Parliament and of the Council on the; DOI resolver search not applicable to this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "found",
+            "note": "Searched exact title \"Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity\"; bibliographic results or the named publisher appeared, but no usable original substantive version."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "found",
+            "note": "Searched \"Proposal for a Regulation of the European Parliament and of the Council on\" with Publications Office of the EU and 2026; recovered identity pointers rather than full matching article/doc."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "found",
+            "note": "Inspected official/publisher or institutional index at https://www.parlament.gv.at/gegenstand/XXVIII/EU/102340; title identity is corroborated but substantive access remains limited."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Queried distinctive keywords Proposal for a Regulation of the European Parliament plus Publications Office of the EU; no matching accessible complete work or permissible original manuscript was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_identity_record",
+            "url": "https://www.parlament.gv.at/gegenstand/XXVIII/EU/102340",
+            "title": "Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Work identity or official document registry located, but the complete mandatory source-recovery pass did not produce substantive matching original evidence. An official registry lists the fourth November 2026 Presidency compromise on Cybersecurity Act 2 Title II covering ENISA, but its exact text was not recovered. Do not present negotiating positions as approved certification or ICT supply-chain rules."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The accessible base Act and institutional news cannot establish which wording this specific compromise uses. Do not present negotiating positions as approved certification or ICT supply-chain rules."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "link:https://doi.org/10.1177/20539517261506931",
+      "source_hash": "bab12bb2",
+      "identity_hash": "fc258cb9e7f25cad",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://doi.org/10.1177/20539517261506931; package retrieved 0 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered document-specific matching primary source at https://journals.sagepub.com/doi/10.1177/20539517261506931; identity and material checked against Collaborative data spaces vs. centralized digital platforms: The role of Catena-X in."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "matching_primary_source",
+            "url": "https://journals.sagepub.com/doi/10.1177/20539517261506931",
+            "title": "Collaborative data spaces vs. centralized digital platforms: The role of Catena-X in managing regulatory complexity in the automotive sector",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bibliographic identity and work type checked against https://journals.sagepub.com/doi/10.1177/20539517261506931. Matching original institution/publisher source or full official act was recovered and examined. The research identifies governance tensions and organisational constraints, not a demonstrated economy-wide sovereignty gain."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ECONOMIC_SECURITY",
+        "reason": "EU automotive firms’ ability to govern industrial data and reduce platform dependence affects European digital and industrial sovereignty. The research identifies governance tensions and organisational constraints, not a demonstrated economy-wide sovereignty gain."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "Collaborative data spaces vs. centralized digital platforms: The role of Catena-X in managing regulatory complexity in the automotive",
+      "reader_what": "Stefanov and Schwabe examine Catena-X automotive data-space governance using field evidence and show tensions between collaborative data sharing and platform-centred",
+      "reader_why": "EU automotive firms’ ability to govern industrial data and reduce platform dependence affects European digital and industrial sovereignty",
+      "reader_more": "Stefanov and Schwabe examine Catena-X automotive data-space governance using field evidence and show tensions between collaborative data sharing and platform-centred control. EU automotive firms’ ability to govern industrial data and reduce platform dependence affects European digital and industrial sovereignty. The research identifies governance tensions and organisational constraints, not a demonstrated economy-wide sovereignty gain.",
+      "deep_analysis": {
+        "work_kind": "original peer-reviewed journal article",
+        "research_question": "What does the identified original peer-reviewed journal article establish about Collaborative data spaces vs. centralized digital platforms: The role of?",
+        "main_finding": "Stefanov and Schwabe examine Catena-X automotive data-space governance using field evidence and show tensions between collaborative data sharing and platform-centred control.",
+        "method_or_basis": "Substantive first-party publication and its stated research or policy evidence; no substituted source used.",
+        "qualification": "The research identifies governance tensions and organisational constraints, not a demonstrated economy-wide sovereignty gain.",
+        "radar_relevance": "EU automotive firms’ ability to govern industrial data and reduce platform dependence affects European digital and industrial sovereignty.",
+        "why_supported": true,
+        "confidence": "medium"
+      },
+      "claims": [
+        {
+          "object": "digital.governance",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Alexandra Stefanov and Julian Schwabe",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-17",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "The research identifies governance tensions and organisational constraints, not a demonstrated economy-wide sovereignty gain.",
+          "text": "Stefanov and Schwabe examine Catena-X automotive data-space governance using field evidence and show tensions between collaborative data sharing and platform-centred control.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "record_key": "historical:id:b6093870aea4eea5",
+      "source_hash": "1e002da9",
+      "identity_hash": "2400d2631de0892d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://publications.jrc.ec.europa.eu/repository/handle/JRC147034; package retrieved 1517 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI supplied for A pathway to Europe's Competitiveness: the clean transition. The essential brief; DOI resolver search not applicable to this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "found",
+            "note": "Searched exact title \"A pathway to Europe's Competitiveness: the clean transition. The essential brief\"; bibliographic results or the named publisher appeared, but no usable original substantive version."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "found",
+            "note": "Searched \"A pathway to Europe's Competitiveness: the clean transition. The essential brief\" with Marelli Luisa; TRANE Matteo; Steve Borchardt; GASTAL and 2026; recovered identity pointers rather than full matching article/doc."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "found",
+            "note": "Inspected official/publisher or institutional index at https://publications.jrc.ec.europa.eu/repository/handle/JRC147034; title identity is corroborated but substantive access remains limited."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Queried distinctive keywords A pathway to Europe's Competitiveness: the clean transition plus Marelli Luisa; TRANE Matteo; Steve Borch; no matching accessible complete work or permissible original manuscript was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_identity_record",
+            "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC147034",
+            "title": "A pathway to Europe's Competitiveness: the clean transition. The essential brief",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Work identity or official document registry located, but the complete mandatory source-recovery pass did not produce substantive matching original evidence. A June 2026 JRC Essential Brief on Europe’s competitive clean transition is verified in the institutional repository, but only its summary was accessible. Do not substitute a longer companion JRC report for the separately titled Essential Brief."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The summary mentions public investment, clean-energy transition and resilience without sufficient underlying report content to evaluate its specific evidence claims. Do not substitute a longer companion JRC report for the separately titled Essential Brief."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:e8e0451c296fe0fe",
+      "source_hash": "81fb883e",
+      "identity_hash": "d4800e4b57ce6683",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://celis.institute/at-npc-china-lays-economic-plan-strategy-to-win-tech-war-with-us-bloomberg-2/; package retrieved 615 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI supplied for At NPC, China Lays Economic Plan, Strategy to Win Tech War With US –; DOI resolver search not applicable to this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "found",
+            "note": "Searched exact title \"At NPC, China Lays Economic Plan, Strategy to Win Tech War With US – Bloomberg - CELIS Institute\"; bibliographic results or the named publisher appeared, but no usable original substantive version."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "found",
+            "note": "Searched \"At NPC, China Lays Economic Plan, Strategy to Win Tech War With US\" with CELIS Institute and 2021; recovered identity pointers rather than full matching article/doc."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "found",
+            "note": "Inspected official/publisher or institutional index at https://celis.institute/at-npc-china-lays-economic-plan-strategy-to-win-tech-war-with-us-bloomberg/; title identity is corroborated but substantive access remains limited."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Queried distinctive keywords At NPC, China Lays Economic Plan, Strategy to plus CELIS Institute; no matching accessible complete work or permissible original manuscript was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_identity_record",
+            "url": "https://celis.institute/at-npc-china-lays-economic-plan-strategy-to-win-tech-war-with-us-bloomberg/",
+            "title": "At NPC, China Lays Economic Plan, Strategy to Win Tech War With US – Bloomberg - CELIS Institute",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Work identity or official document registry located, but the complete mandatory source-recovery pass did not produce substantive matching original evidence. The CELIS page is a short 2021 link post pointing to a Bloomberg US–China technology-war story, without the underlying report. A US–China headline and a link-aggregation page cannot support a European admission decision."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The post itself does not establish whether the original story contains substantive European economic-security analysis. A US–China headline and a link-aggregation page cannot support a European admission decision."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    },
+    {
+      "record_key": "historical:id:d32e91c731a60194",
+      "source_hash": "c80aafaf",
+      "identity_hash": "d7b631d7cfa1bf2d",
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "identity_only_after_recovery",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Inspected supplied https://celis.institute/beijing-a-buyer-in-shell-gas-facilities-the-australian/; package retrieved 571 characters but the page was empty, an error, or mismatched to the requested work."
+          },
+          {
+            "step": "doi",
+            "outcome": "not_applicable",
+            "note": "No DOI supplied for Beijing a buyer in Shell gas facilities – The Australian - CELIS Institute; DOI resolver search not applicable to this record."
+          },
+          {
+            "step": "exact_title",
+            "outcome": "found",
+            "note": "Searched exact title \"Beijing a buyer in Shell gas facilities – The Australian - CELIS Institute\"; bibliographic results or the named publisher appeared, but no usable original substantive version."
+          },
+          {
+            "step": "title_author_year",
+            "outcome": "found",
+            "note": "Searched \"Beijing a buyer in Shell gas facilities – The Australian - CELIS Institute\" with CELIS Institute and 2020; recovered identity pointers rather than full matching article/doc."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "found",
+            "note": "Inspected official/publisher or institutional index at https://celis.institute/beijing-a-buyer-in-shell-gas-facilities-the-australian/; title identity is corroborated but substantive access remains limited."
+          },
+          {
+            "step": "broader_identity_search",
+            "outcome": "no_match",
+            "note": "Queried distinctive keywords Beijing a buyer in Shell gas facilities – plus CELIS Institute; no matching accessible complete work or permissible original manuscript was recovered."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_identity_record",
+            "url": "https://celis.institute/beijing-a-buyer-in-shell-gas-facilities-the-australian/",
+            "title": "Beijing a buyer in Shell gas facilities – The Australian - CELIS Institute",
+            "evidence_used": false
+          }
+        ],
+        "verification_note": "Work identity or official document registry located, but the complete mandatory source-recovery pass did not produce substantive matching original evidence. The CELIS page is a short 2020 link post to an Australian report about China’s interest in Shell-linked gas facilities. Shell’s European corporate origin does not itself make an Australian transaction a European economic-security study."
+      },
+      "admission": {
+        "decision": "defer",
+        "target_strand": "",
+        "reason_code": "EVIDENCE_ACCESS_LIMITED",
+        "reason": "The underlying original story was not recovered in sufficient detail to verify any European ownership or security mechanism. Shell’s European corporate origin does not itself make an Australian transaction a European economic-security study."
+      },
+      "metadata_correction": {
+        "fields": {},
+        "unset": [],
+        "reason": ""
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": "No supplied duplicate key matches a confirmed canonical identity; distinct assignment retained."
+      },
+      "reader_title": "",
+      "reader_what": "",
+      "reader_why": "",
+      "reader_more": "",
+      "deep_analysis": {
+        "work_kind": "",
+        "research_question": "",
+        "main_finding": "",
+        "method_or_basis": "",
+        "qualification": "",
+        "radar_relevance": "",
+        "why_supported": false,
+        "confidence": "low"
+      },
+      "claims": []
+    }
+  ]
+}
