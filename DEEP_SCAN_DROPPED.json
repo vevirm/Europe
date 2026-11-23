@@ -2,7 +2,7 @@
   "profile": "radar-deep-scan-dropped-index-v1",
   "rule": "After 3 recorded failed research passes, close as dropped; no hands-on queue. Package issuance alone is not a research pass.",
   "note": "The full retrieval notes and available recovery history remain in deep_scan_work_state.json. Some legacy records have fewer retained history entries than the recorded attempt counter; no missing attempts are invented.",
-  "count": 203,
+  "count": 204,
   "records": [
     {
       "record_key": "historical:id:02d0446b10283c5c",
@@ -2809,6 +2809,21 @@
       ],
       "closed_at": "2026-11-23T07:23:10Z",
       "reason": "Official EU registry and parliamentary indices confirm the 23 October 2026 second Presidency Cybersecurity Act Title IV compromise identity, but the substantive text was not accessible; the cached extract is solely a 404 page."
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=dd4e8f89-d9bf-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "title": "Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2): Title IV: Security of ICT Supply Chains: Discussion paper - Publications Office of the EU",
+      "source": "Publications Office of the EU",
+      "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=dd4e8f89-d9bf-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261107T111458Z-d011181d0b1a",
+        "worker-b-20261119T111044Z-e17d78dfa9d6",
+        "worker-a-20261123T060941Z-804b42fa0413"
+      ],
+      "closed_at": "2026-11-23T07:27:01Z",
+      "reason": "The 28 October 2026 Council cybersecurity-supply-chain discussion document is identifiable in the Publications Office, but the actual document cannot be inspected from its broken delivery handler; no position on proposed measures is fabricated."
     },
     {
       "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=edc102a9-d3b0-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",

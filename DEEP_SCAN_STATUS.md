@@ -6,23 +6,26 @@ It shows what is verified, what each worker owns, and what is still eligible. Ex
 Scheduling policy: preserve active worker reservations; fill new slots with Main Radar first, then Historical Radar. Do not fill packages artificially at saturation.
 A validated unsuccessful recovery is one pass; packaging alone is not a pass. After **3** failed passes, close the work as **dropped**, keeping an audit. No work-by-hand loop.
 
-- Authoritative V2 verified: **3277** (Main **1420** + Historical **1857**)
-- Automatic queue still needing V2 verification: **40** (Main **19** + Historical **21**)
-- Currently assigned to workers: **4** (Main **3** + Historical **1**)
-- Bounded access-recovery retries still eligible: **5**
-- Dropped after three failed recovery passes (archived): **203**
+- Authoritative V2 verified: **3305** (Main **1432** + Historical **1873**)
+- Automatic queue still needing V2 verification: **11** (Main **6** + Historical **5**)
+- Currently assigned to workers: **7** (Main **3** + Historical **4**)
+- Bounded access-recovery retries still eligible: **11**
+- Dropped after three failed recovery passes (archived): **204**
 - Legacy work-by-hand requiring reconciliation: **0**
-- Automatic queue pending and not yet assigned: **36**
+- Automatic queue pending and not yet assigned: **4**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261123T072413Z-018848806ee4`
-- Assigned unresolved records: **4**
-  1. `link:https://news.google.com/rss/articles/CBMitgFBVV95cUxPQkxzUWdBcFpHVy01Y3hvOURnd0drNUZuWW9rWC1QQk5GQVV0blFhU0ZnZVFpY2JWaVZrUlVhZ0pOV2hkVmNtUUZ0ODIyVGtxUWx6RU9LNWhJcDJNTjhCYVlvODk2eWYwRHRnbnE0NFAwOGdaQ1BsTFdSWUVFSFBzaHJaVWxDc3NSRF9ZRFVqTk1TdzZTWmNCUDhqLUJsN19YUTl1YUNPMEY0MTNnenN2aHNUeklwdw?oc=5` — Europe tightens sanctions on Russia. America loosens them — recovery attempt 2/3
-  2. `link:https://doi.org/10.1596/45855` — Bulgaria Country Climate and Development Report — recovery attempt 2/3
-  3. `link:https://doi.org/10.1093/jaenfo/jnag017` — The CNMC’s role in public procurement: key actions and technological developments — recovery attempt 2/3
-  4. `historical:id:5f46c9393ab7729b` — In brief: foreign investment review procedure in Austria – Lexology - CELIS Institute — recovery attempt 2/3
+- Current package: `worker-a-20261123T072800Z-c35a7db7a44f`
+- Assigned unresolved records: **7**
+  1. `link:https://doi.org/10.1016/j.enpol.2026.115733` — Strategic autonomy and the energy transition: Rethinking Europe's geopolitical alignment — recovery attempt 2/3
+  2. `link:https://doi.org/10.1080/09692290.2026.2762334` — Strategic regulatory engagement in multipolar value chains: contesting the EU Deforestation regulation in the Global South — recovery attempt 2/3
+  3. `link:https://doi.org/10.1596/45879` — Closing the Energy Efficiency Gap: Unlocking Private-Sector Investment in Poland and Romania — recovery attempt 2/3
+  4. `historical:id:0533a12327b52abd` — Financing Europe’s satellite infrastructure — recovery attempt 2/3
+  5. `historical:id:9992a36ef024056b` — Macroeconomic policy and governance — recovery attempt 2/3
+  6. `historical:id:d8ef449c89b45ea0` — Global economy and trade policy — recovery attempt 2/3
+  7. `historical:id:e894b0783402fd6c` — Foreign Direct Investment Regimes Laws and Regulations Report 2025 Germany – ICLG.com - CELIS Institute — recovery attempt 2/3
 
 ### Worker B
 - Current package: `worker-b-20261123T060949Z-6a4deb5cb704`
