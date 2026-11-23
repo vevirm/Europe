@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-11-21T07:43:04Z",
+  "generated_at": "2026-11-23T07:23:11Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -253926,8 +253926,1241 @@
       "deep_scan_package_id": "worker-a-20261121T065030Z-fc8aa073eb5d",
       "claims": [],
       "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:2ec10a872ec0f56b": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "e2cb22ce",
+      "identity_hash": "55c82af9ca7378d6",
+      "reader_title": "Serbia: gas diversification as protection from Russian leverage",
+      "reader_what": "Serbian dependence on Russian gas is argued to constrain its energy security and EU integration.",
+      "reader_why": "Gas supplier diversification could weaken external political leverage over Serbia’s energy decisions.",
+      "reader_more": "Životić and Obradović discuss diversification using Shannon-Wiener and energy-security indices and Serbian official records. They propose an energy-security effect and linkage to EU foreign-policy negotiation chapters. Their abstract frames the proposition as a hypothesis, not a quantified causal outcome.",
+      "deep_analysis": {
+        "work_kind": "energy security study",
+        "research_question": "Can diversification reduce Serbian exposure to Russian gas dominance?",
+        "main_finding": "The authors argue Serbian gas diversification could reduce dependence on Russia and associated political leverage while supporting energy security.",
+        "method_or_basis": "Energy security index framework, Serbian official documents and discussion of Russia-related supply dependence.",
+        "qualification": "The abstract describes the analysis as a hypothesis and should not be treated as proof of a realized diversification effect.",
+        "radar_relevance": "A source-grounded European energy-dependence and geopolitical leverage relationship with EU integration implications.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI 10.37458/ssj.4.2.7 matches publisher journal article; repository hrcak.srce.hr/349516 reproduces authors and substantive research abstract."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_abstract",
+            "url": "https://www.securityscience.edu.rs/index.php/journal-security-science/article/view/103",
+            "title": "Gas diversification as a way of strengthening the national security of the Republic of Serbia",
+            "evidence_used": true
+          },
+          {
+            "kind": "repository_article",
+            "url": "https://hrcak.srce.hr/349516",
+            "title": "Security Science Journal 4(2), pp. 132–150, gas diversification in Serbia",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified the work against matching primary material, checked its bibliography and evaluated its specific European economic-security relevance."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ENERGY",
+        "reason": "Serbia is a European economy, and the paper directly examines Russian energy dependence, diversification and links to EU integration."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-23T07:23:07Z",
+      "deep_scan_package_id": "worker-b-20261123T060949Z-6a4deb5cb704",
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Ilija Životić and Darko Obradović",
+            "class": "university_group"
+          },
+          "mechanism": "diversifies",
+          "direction": "becomes_conditional",
+          "status": "observation",
+          "status_date": "2023",
+          "scope": {
+            "level": "europe",
+            "countries": [
+              "Serbia"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "The abstract describes the analysis as a hypothesis and should not be treated as proof of a realized diversification effect.",
+          "text": "The authors argue Serbian gas diversification could reduce dependence on Russia and associated political leverage while supporting energy security.",
+          "confidence": "medium",
+          "status_date_precision": "year",
+          "record_key": "historical:id:2ec10a872ec0f56b",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:55c82af9ca7378d6:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:23dfa06482ad51ac": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "3d280109",
+      "identity_hash": "3ba71cdd0ae50ca5",
+      "reader_title": "Austria: the 2024 foreign-investment screening regime",
+      "reader_what": "Austria’s 2024 foreign-investment rules screened sensitive non-EU acquisitions, including critical infrastructure and technologies.",
+      "reader_why": "The national-security test directly governs foreign ownership and control of strategically important Austrian assets.",
+      "reader_more": "Weiss and Schulz explain the Investment Control Act’s notification thresholds, sensitive-sector coverage, procedures and security test. Its coverage includes defence technology, energy, digital infrastructure and critical resources. The text reports the rules in force in the 2024 edition and is not advice about the 2026 legal position.",
+      "deep_analysis": {
+        "work_kind": "legal reference chapter",
+        "research_question": "What investments triggered Austria’s security review under the 2024 regime?",
+        "main_finding": "The 2024 legal chapter describes mandatory Austrian security screening of non-EU investments in sectors including energy, digital infrastructure and defence.",
+        "method_or_basis": "2024 legal-practitioner Q&A chapter tracing Austrian investment-control legislation and EU screening rules.",
+        "qualification": "Legal snapshot for the 2024 edition; enforcement and legislation can have changed after publication.",
+        "radar_relevance": "Direct evidence on member-state foreign-investment screening, strategic asset control and EU regulatory alignment.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "CELIS listing https://celis.institute/foreign-direct-investment-regimes-laws-and-regulations-report-2024-austria-iclg-com/ exposed a promotional forwarding page, not the chapter."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered full Austrian 2024 chapter by Volker Weiss and Sascha Schulz on their law firm publication site, https://www.schoenherr.eu/media/eaokosnt/fdi24-chapter-3_austria.pdf; inspected text and first-page PDF."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "author_deposited_copy",
+            "url": "https://www.schoenherr.eu/media/eaokosnt/fdi24-chapter-3_austria.pdf",
+            "title": "Austria chapter in ICLG Foreign Direct Investment Regimes 2024",
+            "evidence_used": true
+          },
+          {
+            "kind": "author_publication_page",
+            "url": "https://www.schoenherr.eu/content/the-international-comparative-legal-guide-foreign-direct-investment-regimes-2024",
+            "title": "Schoenherr authorship and publication notice for ICLG FDI Regimes 2024",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified the work against matching primary material, checked its bibliography and evaluated its specific European economic-security relevance."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_FDI",
+        "reason": "The exact 2024 Austrian chapter has been recovered from its authors; its substantive object is national-security screening of strategic incoming investment."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-23T07:23:08Z",
+      "deep_scan_package_id": "worker-b-20261123T060949Z-6a4deb5cb704",
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Austrian Federal Ministry for Labour and Economy",
+            "class": "member_state"
+          },
+          "mechanism": "screens",
+          "direction": "becomes_conditional",
+          "status": "in_force",
+          "status_date": "2023",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "Austria"
+            ]
+          },
+          "kind": "evidence",
+          "qualification": "Legal snapshot for the 2024 edition; enforcement and legislation can have changed after publication.",
+          "text": "The 2024 legal chapter describes mandatory Austrian security screening of non-EU investments in sectors including energy, digital infrastructure and defence.",
+          "confidence": "high",
+          "status_date_precision": "year",
+          "record_key": "historical:id:23dfa06482ad51ac",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:3ba71cdd0ae50ca5:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:2962cffa7cd6c8fb": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "57cea771",
+      "identity_hash": "4e78145d833132be",
+      "reader_title": "EU industrial policy turns towards geoeconomic intervention",
+      "reader_what": "The EU’s industrial and trade policy has shifted from market openness toward strategic intervention.",
+      "reader_why": "Economic-security tools make control over critical supply chains and geopolitics part of EU market governance.",
+      "reader_more": "Kathleen McNamara traces EU industrial-policy changes and the political consequences of geoeconomic intervention. The article presents a theoretical framework and research agenda about the EU’s evolving authority. It is a documented interpretation, not proof that interventions have met their objectives.",
+      "deep_analysis": {
+        "work_kind": "scholarly policy analysis",
+        "research_question": "How does the EU industrial-policy turn reshape geopolitical and institutional authority?",
+        "main_finding": "McNamara argues the EU has moved toward interventionist industrial, trade and investment tools to reduce supply-chain vulnerability and project geopolitical influence.",
+        "method_or_basis": "Theory-building political economy review of EU industrial, trade and investment policy instruments.",
+        "qualification": "Research agenda and institutional interpretation rather than policy-impact evaluation.",
+        "radar_relevance": "Direct Route 3 study of the EU’s economic-security toolkit, industrial policy and strategic autonomy.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_repository_copy",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI article bibliographic identity confirmed against 24,000-character PDF excerpt in package (journal, author, early publication date), also indexed on publisher."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "repository_full_text",
+            "url": "https://content.openalex.org/works/W4383342899.pdf",
+            "title": "Transforming Europe? The EU’s industrial policy and geopolitical turn",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_article",
+            "url": "https://www.tandfonline.com/doi/full/10.1080/13501763.2023.2230247",
+            "title": "Journal of European Public Policy article title and DOI",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified the work against matching primary material, checked its bibliography and evaluated its specific European economic-security relevance."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_POLICY",
+        "reason": "A scholarly analysis explicitly centred on the EU’s strategic industrial policy, external economic vulnerabilities and institutional transformation."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-23T07:23:08Z",
+      "deep_scan_package_id": "worker-b-20261123T060949Z-6a4deb5cb704",
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Kathleen R. McNamara",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2023-07-06",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Research agenda and institutional interpretation rather than policy-impact evaluation.",
+          "text": "McNamara argues the EU has moved toward interventionist industrial, trade and investment tools to reduce supply-chain vulnerability and project geopolitical influence.",
+          "confidence": "high",
+          "record_key": "historical:id:2962cffa7cd6c8fb",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:4e78145d833132be:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:5c55c26d9349072e": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "954efafc",
+      "identity_hash": "db5622d1f3f9d1e2",
+      "reader_title": "EU cybersecurity definitions: outside economic-security admission",
+      "reader_what": "The article reviews how EU security strategies define and institutionalise cybersecurity.",
+      "reader_more": "Using scholarly literature and EU normative documents, the author describes cybersecurity as an emerging security-policy concept. The paper is not an analysis of critical infrastructure ownership, trade restrictions, strategic dependencies or European economic-security instruments.",
+      "deep_analysis": {
+        "work_kind": "conceptual cybersecurity article",
+        "research_question": "",
+        "main_finding": "EU strategies increasingly identify cybersecurity as a security agenda, raising definitional questions.",
+        "method_or_basis": "Conceptual literature survey and EU security strategy document analysis.",
+        "qualification": "Conceptual essay, not observed evidence about economic-security outcomes.",
+        "radar_relevance": "A general cybersecurity definition study does not satisfy substantive economic-security Route 1, 2 or 3.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI 10.37458/ssj.3.2.7 and Hrčak article record confirm Petar Djukic 2022 in Security Science Journal; publisher contains substantive abstract and method."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_abstract",
+            "url": "https://www.securityscience.edu.rs/index.php/journal-security-science/article/view/83",
+            "title": "(Re)conceptualization of cybersecurity in the EU’s security policy",
+            "evidence_used": true
+          },
+          {
+            "kind": "repository_article",
+            "url": "https://hrcak.srce.hr/349239",
+            "title": "Security Science Journal 3(2) article on EU cybersecurity",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified the work against matching primary material, checked its bibliography and evaluated its specific European economic-security relevance."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "A_OFF_SCOPE_CYBER_CONCEPT",
+        "reason": "An academic concept and document review of EU cybersecurity security language, without a material economic-security mechanism or strategic infrastructure analysis."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-23T07:23:08Z",
+      "deep_scan_package_id": "worker-b-20261123T060949Z-6a4deb5cb704",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:48dc51e33256eed0": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "f06170ee",
+      "identity_hash": "6cc9448c91bcf2c3",
+      "reader_title": "EU–Russia gas dependence as a security dispute",
+      "reader_what": "Political and security discourse reframed EU–Russia gas interdependence as a mutual security concern.",
+      "reader_why": "The case shows how energy supply exposure can be translated into geopolitical leverage and policy conflict.",
+      "reader_more": "The article examines the political language surrounding European and Russian energy relations around the Ukraine crisis. It argues both sides treated interdependent energy trade as a security problem. Discourse findings do not quantify supply disruptions or prove a single causal mechanism.",
+      "deep_analysis": {
+        "work_kind": "political-economy energy study",
+        "research_question": "",
+        "main_finding": "Ababakr argues that EU–Russia gas interdependence became heavily securitised by both parties, turning energy trade into a political-security dispute.",
+        "method_or_basis": "Interpretive security-discourse and EU–Russia energy relationship analysis.",
+        "qualification": "Discourse-focused argument; not a numerical estimate of dependence or policy effectiveness.",
+        "radar_relevance": "Historical context on European external energy dependencies and economic coercion risks.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "DOI 10.37458/ssj.3.1.1 and institutional publisher page confirm Amer Ababakr, Security Science Journal, 2022 and substantive analysis."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_abstract",
+            "url": "https://www.securityscience.edu.rs/index.php/journal-security-science/article/view/65",
+            "title": "The securitized energy relationship: the EU and Russia",
+            "evidence_used": true
+          },
+          {
+            "kind": "repository_article",
+            "url": "https://hrcak.srce.hr/349057",
+            "title": "Security Science Journal 2022 EU and Russia energy discourses",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified the work against matching primary material, checked its bibliography and evaluated its specific European economic-security relevance."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ENERGY",
+        "reason": "The work focuses on the EU–Russia energy relationship, dependence and geoeconomic-security framing."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-23T07:23:08Z",
+      "deep_scan_package_id": "worker-b-20261123T060949Z-6a4deb5cb704",
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Amer Ababakr",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2022",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Discourse-focused argument; not a numerical estimate of dependence or policy effectiveness.",
+          "text": "Ababakr argues that EU–Russia gas interdependence became heavily securitised by both parties, turning energy trade into a political-security dispute.",
+          "confidence": "medium",
+          "status_date_precision": "year",
+          "record_key": "historical:id:48dc51e33256eed0",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:6cc9448c91bcf2c3:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:16422698d5ae0f33": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "c38f2096",
+      "identity_hash": "05b2c90208d5a354",
+      "reader_title": "EU–US cooperation on trade and secure supply chains",
+      "reader_what": "The brief urges the EU and US to coordinate supply-chain security while managing subsidy and trade tensions.",
+      "reader_why": "Cooperation could reduce rival subsidy schemes and strengthen transatlantic access to critical technologies and raw materials.",
+      "reader_more": "Published around the December 2022 Trade and Technology Council meeting, this brief identifies Inflation Reduction Act tensions and calls for coordination. It outlines proposals for mapping, operational cooperation, dispute settlement, deeper trade and like-minded partners. These were policy recommendations, not already delivered outcomes.",
+      "deep_analysis": {
+        "work_kind": "policy brief",
+        "research_question": "How should the EU and US reconcile trade disputes while securing supply chains?",
+        "main_finding": "Lichfield and Riekeles propose closer EU–US cooperation on supply chains, subsidy disputes and trade to address economic-security vulnerabilities.",
+        "method_or_basis": "Policy brief identifying EU–US subsidy disagreements, shared supply dependencies and five TTC cooperation priorities.",
+        "qualification": "Proposed cooperation rather than documented implementation or effectiveness.",
+        "radar_relevance": "Substantive geoeconomic trade partnership and supply-chain resilience agenda.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "EPC publisher page gives full 2022-12-05 brief with authors Charles Lichfield and Georg Riekeles and five proposed TTC tests."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://epc.eu/publication/How-the-EU-and-the-US-should-overcome-their-trade-and-supply-chain-dis-4cfcfc/",
+            "title": "How the EU and the US should overcome their trade and supply chain disputes",
+            "evidence_used": true
+          },
+          {
+            "kind": "issuing_partner_article",
+            "url": "https://www.atlanticcouncil.org/blogs/new-atlanticist/policy-memo-how-the-eu-and-us-should-overcome-their-trade-and-supply-chain-disputes/",
+            "title": "Atlantic Council project briefing",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified the work against matching primary material, checked its bibliography and evaluated its specific European economic-security relevance."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_TRADE",
+        "reason": "The EPC/Atlantic Council policy brief directly concerns EU–US economic security, supply-chain collaboration and transatlantic trade-policy conflict."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-23T07:23:08Z",
+      "deep_scan_package_id": "worker-b-20261123T060949Z-6a4deb5cb704",
+      "claims": [
+        {
+          "object": "supply_chain.diversification",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Policy Centre and Atlantic Council",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2022-12-05",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Proposed cooperation rather than documented implementation or effectiveness.",
+          "text": "Lichfield and Riekeles propose closer EU–US cooperation on supply chains, subsidy disputes and trade to address economic-security vulnerabilities.",
+          "confidence": "high",
+          "record_key": "historical:id:16422698d5ae0f33",
+          "merit": 74,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:05b2c90208d5a354:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:d4cfe81ac08169ff": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "e15cf953",
+      "identity_hash": "9355137b82f787f9",
+      "reader_title": "2019 warning over Russian gas transit through Ukraine",
+      "reader_what": "A 2019 warning described possible shortages if the Russia–Ukraine gas transit agreement expired.",
+      "reader_why": "Gas transit dependence, storage and LNG access exposed uneven European energy-security risks.",
+      "reader_more": "Riley details the Brotherhood transit route, proposed gas-volume guarantees, storage and regional vulnerability and discusses the potential political consequences for the EU. The article was a forward-looking December 2019 warning; its forecast cannot be reported as an event that actually occurred.",
+      "deep_analysis": {
+        "work_kind": "think-tank energy analysis",
+        "research_question": "What would a failed Russia–Ukraine gas transit deal mean for EU supply security?",
+        "main_finding": "Writing in December 2019, Alan Riley warned that expiry of the Russia–Ukraine gas-transit agreement could threaten some European gas supply routes in early 2020; this was a contemporaneous scenario, not an observed 2020 crisis.",
+        "method_or_basis": "EPC historical commentary drawing on transit contracts, interconnector capacity and gas infrastructure.",
+        "qualification": "Contemporaneous risk scenario rather than observed January 2020 supply failure.",
+        "radar_relevance": "Direct historic European external energy-supply vulnerability and diversification case.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "The 2019 article was supplied as a title without source body."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Located and read complete historical European Policy Centre original dated 17 December 2019, with Alan Riley byline and gas-transit figures."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.epc.eu/publication/The-looming-third-European-gas-crisis-2db720/",
+            "title": "The looming third European gas crisis",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified the work against matching primary material, checked its bibliography and evaluated its specific European economic-security relevance."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ENERGY",
+        "reason": "Direct historical analysis of European gas imports through Ukraine, Russian transit dependence, storage and LNG alternative supply."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-23T07:23:09Z",
+      "deep_scan_package_id": "worker-b-20261123T060949Z-6a4deb5cb704",
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Alan Riley",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2019-12-17",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Contemporaneous risk scenario rather than observed January 2020 supply failure.",
+          "text": "Writing in December 2019, Alan Riley warned that expiry of the Russia–Ukraine gas-transit agreement could threaten some European gas supply routes in early 2020; this was a contemporaneous scenario, not an observed 2020 crisis.",
+          "confidence": "high",
+          "record_key": "historical:id:d4cfe81ac08169ff",
+          "merit": 74,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:9355137b82f787f9:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:93b1883c8208cc7e": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "7fff479d",
+      "identity_hash": "87faf55be8437503",
+      "reader_title": "Historical China–EU investment trends need methodology review",
+      "reader_what": "The author compares historical EU–China imports, exports and inward investment patterns through 2014.",
+      "reader_why": "Cross-border Chinese investment in Europe is potentially relevant to economic exposure, but the paper’s extrapolations are weak.",
+      "reader_more": "Vitkovic reports GDP, EU trade and US/Chinese outward FDI series across 1995–2014, then speculates on China’s rising political influence in Europe. The underlying descriptive trends are dated; large forward-looking conclusions should not be treated as realised facts.",
+      "deep_analysis": {
+        "work_kind": "historical journal analysis",
+        "research_question": "Does historical Chinese outward investment materially change EU investment exposure?",
+        "main_finding": "The study reports rising Chinese investment alongside changes in EU–China trade relationships in the historical series.",
+        "method_or_basis": "Descriptive macroeconomic time-series comparisons using EU, US and Chinese aggregate indicators to 2014.",
+        "qualification": "Correlation and long-range political forecasts not established; descriptive comparisons do not identify coercion or strategic sectors.",
+        "radar_relevance": "Cross-border EU investment exposure is relevant, but analytical reliability and economic-security specificity require review.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Original package contains 9,798-character publisher article body from the Ocerint journal endpoint; exact title, author and 2018 journal issue cross-checked via Ocerint and DergiPark PDF index."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_article",
+            "url": "https://ijasos.ocerintjournals.org/en/pub/article/455670",
+            "title": "Scott Vitkovic 2018 paper in International E-Journal of Advances in Social Sciences",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_full_text",
+            "url": "https://dergipark.org.tr/en/download/article-file/527772",
+            "title": "2018 publisher-hosted article PDF",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified the work against matching primary material, checked its bibliography and evaluated its specific European economic-security relevance."
+      },
+      "admission": {
+        "decision": "review",
+        "target_strand": "A",
+        "reason_code": "A_BORDERLINE_STUDY_QUALITY",
+        "reason": "The exact journal article analyses EU–China import, export and FDI patterns, but claims broad geopolitical trajectories from old descriptive series, and publication quality plus date-sensitive interpretations need human assessment."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-23T07:23:09Z",
+      "deep_scan_package_id": "worker-b-20261123T060949Z-6a4deb5cb704",
+      "claims": [
+        {
+          "object": "fdi.inbound_flows",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Scott Vitkovic",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2018-08-27",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Correlation and long-range political forecasts not established; descriptive comparisons do not identify coercion or strategic sectors.",
+          "text": "The article reports historical growth in Chinese investment directed towards European markets during the studied period.",
+          "confidence": "medium",
+          "record_key": "historical:id:93b1883c8208cc7e",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:87faf55be8437503:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:de0a2b6e9ddf014c": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "c649677c",
+      "identity_hash": "9d78c301efae4171",
+      "reader_title": "US LNG trade versus EU gas-supply security in 2017",
+      "reader_what": "The 2017 commentary contrasts US LNG commercial promotion with EU gas diversification and cohesion.",
+      "reader_why": "External LNG supply options could reduce Russian supplier exposure but also create transatlantic conflicts.",
+      "reader_more": "Giuli discusses US energy export advocacy, Nord Stream 2 sanctions and Central European gas interconnection. He warns that treating US LNG sales as an alliance test could undermine market integration and solidarity; the risk is an analysis, not documented policy impact.",
+      "deep_analysis": {
+        "work_kind": "think-tank energy policy commentary",
+        "research_question": "How could US energy-export priorities affect EU diversification?",
+        "main_finding": "Marco Giuli cautioned in 2017 that a US shift from allied energy diversification goals to commercial LNG promotion could intensify divisions among EU member states.",
+        "method_or_basis": "EPC think-tank analysis of speeches, EU energy-market context and proposed US pipeline sanctions.",
+        "qualification": "2017 policy interpretation, not evidence of current US energy policy.",
+        "radar_relevance": "Historical source-led EU gas-supply diversification and external energy policy.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Scanner stored only a bibliography entry; linked full text had to be recovered."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Read complete EPC original with Marco Giuli byline and 26 July 2017 date; covers US LNG, sanctions and Eastern European security of supply."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.epc.eu/publication/Trumps-gas-doctrine-What-doe-1d888c/",
+            "title": "Trump’s gas doctrine: What does it mean for the EU?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified the work against matching primary material, checked its bibliography and evaluated its specific European economic-security relevance."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_ENERGY",
+        "reason": "Substantive policy analysis of EU–US energy-security partnership, US LNG, Gazprom dominance and pipeline sanctions."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-23T07:23:09Z",
+      "deep_scan_package_id": "worker-b-20261123T060949Z-6a4deb5cb704",
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Marco Giuli",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2017-07-26",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "2017 policy interpretation, not evidence of current US energy policy.",
+          "text": "Marco Giuli cautioned in 2017 that a US shift from allied energy diversification goals to commercial LNG promotion could intensify divisions among EU member states.",
+          "confidence": "high",
+          "record_key": "historical:id:de0a2b6e9ddf014c",
+          "merit": 74,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:9d78c301efae4171:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:fd2dc0b35404ec2a": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "de324d5a",
+      "identity_hash": "890828120742c402",
+      "reader_title": "2016 EU gas-security package: strengths and gaps",
+      "reader_what": "The 2016 analysis reviews EU gas-security proposals for storage, infrastructure and cross-border solidarity.",
+      "reader_why": "EU gas import vulnerability and divergent national choices require coordinated supply-security safeguards.",
+      "reader_more": "Giuli evaluates the February 2016 Commission package, including LNG access, intergovernmental agreements and the security-of-supply regulation. The argument warns about stranded infrastructure from supply-only planning; it evaluates a 2016 proposal rather than today’s legal position.",
+      "deep_analysis": {
+        "work_kind": "think-tank policy commentary",
+        "research_question": "Did the 2016 Energy Union package materially improve gas security?",
+        "main_finding": "Marco Giuli argued in 2016 that the EU energy-security package would strengthen gas-market solidarity and scrutiny of intergovernmental gas deals but relied too heavily on supply diversification rather than demand reduction.",
+        "method_or_basis": "Contemporaneous legal/policy analysis of the Commission’s February 2016 Energy Union package.",
+        "qualification": "Analysis of draft laws; does not demonstrate adoption of all proposals or current applicability.",
+        "radar_relevance": "Direct historical EU external-supply security and institutional policy-toolbox analysis.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Source body absent from package, original EPC URL was not provided as full text."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Read full EPC original dated 24 February 2016 with Marco Giuli byline; examined policy measures, LNG/storage and EU security-of-supply rules."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://epc.eu/publication/The-energy-security-package-s-1d1b2c/",
+            "title": "The energy security package: Significant overhaul or business as usual?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified the work against matching primary material, checked its bibliography and evaluated its specific European economic-security relevance."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_POLICY",
+        "reason": "First-party policy analysis of EU gas-security legislation, import reliance, infrastructure choices and the Energy Union."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-23T07:23:10Z",
+      "deep_scan_package_id": "worker-b-20261123T060949Z-6a4deb5cb704",
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Marco Giuli",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2016-02-24",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Analysis of draft laws; does not demonstrate adoption of all proposals or current applicability.",
+          "text": "Marco Giuli argued in 2016 that the EU energy-security package would strengthen gas-market solidarity and scrutiny of intergovernmental gas deals but relied too heavily on supply diversification rather than demand reduction.",
+          "confidence": "high",
+          "record_key": "historical:id:fd2dc0b35404ec2a",
+          "merit": 74,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:890828120742c402:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:088452dcfbfac769": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "4773b360",
+      "identity_hash": "e386a3cf10f9c974",
+      "reader_title": "Energy Union as a response to EU supply dependence",
+      "reader_what": "A 2015 EPC analysis assessed whether an Energy Union could reduce Europe’s external energy vulnerabilities.",
+      "reader_why": "Europe’s reliance on imported energy gave suppliers geopolitical leverage and exposed consumers to disruption.",
+      "reader_more": "Hedberg frames Energy Union governance as a response to fragmented national energy choices, supply dependence and weak integration. Proposed coordination and efficiency are prescriptions from 2015, not outcomes established by the paper.",
+      "deep_analysis": {
+        "work_kind": "policy analysis",
+        "research_question": "How should an EU Energy Union respond to energy dependence and geopolitical vulnerabilities?",
+        "main_finding": "An EPC policy analysis asked whether a common European Energy Union would adequately address EU supply security and external-energy dependence in January 2015.",
+        "method_or_basis": "Original EPC policy analysis and its institutional reform recommendations.",
+        "qualification": "2015 policy analysis, not evidence that the Energy Union later achieved these goals or that recommendations were enacted.",
+        "radar_relevance": "Historical EU energy-security strategy evidence; direct Europe-specific dependency and response.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Recovered EPC original dated 28 January 2015, authored by Annika Hedberg, with full policy commentary and proposed Energy Union recommendations."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_full_text",
+            "url": "https://www.epc.eu/publication/Europes-energy-security-is-1cd6d0/",
+            "title": "Annika Hedberg, Europe energy security—Is the Energy Union the answer?, EPC 28 January 2015",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified the work against matching primary material, checked its bibliography and evaluated its specific European economic-security relevance."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_ENERGY_SECURITY",
+        "reason": "Historical EPC analysis substantively addresses EU dependence on external fuels and Energy Union institutional solutions."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-23T07:23:10Z",
+      "deep_scan_package_id": "worker-b-20261123T060949Z-6a4deb5cb704",
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Policy Centre",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_contested",
+          "status": "observation",
+          "status_date": "2015-01-28",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "2015 policy analysis, not evidence that the Energy Union later achieved these goals or that recommendations were enacted.",
+          "text": "An EPC policy analysis asked whether a common European Energy Union would adequately address EU supply security and external-energy dependence in January 2015.",
+          "confidence": "high",
+          "record_key": "historical:id:088452dcfbfac769",
+          "merit": 74,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:e386a3cf10f9c974:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1017/nie.2026.10107": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "3016d959",
+      "identity_hash": "ffcb8f30350a939c",
+      "reader_title": "Economic-security strategy differs across five EU member states",
+      "reader_what": "Baltic states emphasise preventive economic security, while Finland and Poland give comparatively greater weight to developmental measures.",
+      "reader_why": "Different economic-security policy objectives affect how states design indicators, investment decisions and controls on critical dependencies.",
+      "reader_more": "The author compares national strategies in five EU countries using document and system analysis. The publisher abstract classifies energy dependence, foreign trade, investment, digital security and regional value chains as policy indicators and argues for linking strategy goals to measurable instruments. It is a comparative strategy analysis, not proof of effectiveness.",
+      "deep_analysis": {
+        "work_kind": "comparative policy article",
+        "research_question": "How do the five EU countries structure economic-security goals, indicators and instruments?",
+        "main_finding": "Karlis Ketners compares strategic documents from Latvia, Lithuania, Estonia, Finland and Poland and identifies differences in economic-security strategy objectives and measurement.",
+        "method_or_basis": "Authenticated Cambridge University Press scholarly abstract with original comparative method and distinct findings.",
+        "qualification": "Comparative document analysis is reported in the publisher abstract, but full article body was not obtained; do not overstate methodological detail or infer policy effectiveness.",
+        "radar_relevance": "Direct EU-state economic-security strategy and monitoring architecture.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Attached 3,435-character original Cambridge Core abstract, method and key comparative results match DOI and author; current Cambridge original publisher page confirms identity, date and countries."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "publisher_abstract",
+            "url": "https://www.cambridge.org/core/journals/national-institute-economic-review/article/abs/economic-security-strategy-as-a-component-of-the-national-security-strategy-objectives-indicators-and-instruments-of-implementation/A7E2E41C1E99EBA1BAAFA5388AA4D412",
+            "title": "Cambridge National Institute Economic Review Karlis Ketners original publisher abstract 9 November 2026",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified the work against matching primary material, checked its bibliography and evaluated its specific European economic-security relevance."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "B_EU_MEMBERSTATE_ECONSEC_STRATEGIES",
+        "reason": "Authenticated Cambridge-published original abstract includes countries, comparative method, specific indicator categories and differences; substantive EU-state economic-security governance work."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-23T07:23:10Z",
+      "deep_scan_package_id": "worker-b-20261123T060949Z-6a4deb5cb704",
+      "claims": [
+        {
+          "object": "econsec.toolbox_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Karlis Ketners",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-09",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "Latvia",
+              "Lithuania",
+              "Estonia",
+              "Finland",
+              "Poland"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "Comparative document analysis is reported in the publisher abstract, but full article body was not obtained; do not overstate methodological detail or infer policy effectiveness.",
+          "text": "Karlis Ketners compares strategic documents from Latvia, Lithuania, Estonia, Finland and Poland and identifies differences in economic-security strategy objectives and measurement.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1017/nie.2026.10107",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:ffcb8f30350a939c:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:b6093870aea4eea5": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "1e002da9",
+      "identity_hash": "2400d2631de0892d",
+      "reader_title": "Broad JRC clean-transition brief is outside Radar economic-security core",
+      "reader_what": "JRC maps drivers of Europe’s clean transition in energy, mobility, ecosystems, agriculture and innovation.",
+      "reader_more": "The JRC Essential Brief summarises conditions for EU climate and environmental competitiveness, focusing on wide-ranging transitions and horizontal investments, data and education. It refers to strategic materials and supply-chain vulnerabilities but contains no distinct substantive analysis of the particular supply-dependency mechanism in the supplied abstract.",
+      "deep_analysis": {
+        "work_kind": "official JRC strategic overview",
+        "research_question": "Is EU economic-security dependence central to this clean-transition summary?",
+        "main_finding": "A JRC Essential Brief surveys the EU clean transition and its enabling conditions, mentioning critical raw materials and supply-chain exposure as only one element of a much wider sustainability programme.",
+        "method_or_basis": "Original European Commission JRC publication summary, identifier, DOI and broad thematic chapter listing.",
+        "qualification": "Publisher provides summary of a broad cross-sector clean-transition document rather than a discrete security-of-supply assessment; do not claim JRC found particular dependency risk values from this summary.",
+        "radar_relevance": "European climate-industrial competitiveness generally, with isolated supply-chain references; does not meet Radar centrality threshold.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Original JRC repository 1517-character first-party description matched title, 11 authors, JRC147034 and release date 16 June 2026; broad report areas and source scope established."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "official_summary",
+            "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC147034",
+            "title": "EU Joint Research Centre JRC147034 original executive summary 16 June 2026",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified the work against matching primary material, checked its bibliography and evaluated its specific European economic-security relevance."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "B_OFF_SCOPE_BROAD_GREEN_TRANSITION",
+        "reason": "The official EU JRC original briefing is an extensive cross-sector climate, food, circular economy and innovation overview. Economic-security dependencies are a subsidiary mention, not the central analytic object required by Radar."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-23T07:23:10Z",
+      "deep_scan_package_id": "worker-b-20261123T060949Z-6a4deb5cb704",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "historical:id:b717036206691a04": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "A",
+      "corpus_scope": "historical",
+      "source_hash": "0695fd2d",
+      "identity_hash": "6c5fa54e376cb353",
+      "reader_title": "EU clearing and SWIFT access as geopolitical infrastructure levers",
+      "reader_what": "SWIFT sanctions and EU market-access equivalence can become foreign-policy and economic-security instruments.",
+      "reader_why": "European financial-market authorities can condition cross-border access to clearing and transaction infrastructure through recognition rules.",
+      "reader_more": "Saguato studies how technocratic financial market infrastructures are used to exert geopolitical leverage. Case studies include SWIFT sanctions, the EU–UK post-Brexit euro-clearing equivalence dispute and EU withdrawal of recognition of foreign counterparties. The article characterises equivalence as a geopolitical policy lever, not a routine technical permission alone.",
+      "deep_analysis": {
+        "work_kind": "scholarly international financial-law article",
+        "research_question": "How can EU market-infrastructure recognition and equivalence become geoeconomic leverage?",
+        "main_finding": "Paolo Saguato identifies how access to market infrastructure is used for cross-border geopolitical economic statecraft, including SWIFT sanctions and EU clearing-equivalence conflicts.",
+        "method_or_basis": "Author first-party university detailed three-case abstract plus Oxford publication DOI; full journal body not accessible.",
+        "qualification": "Original author-hosted abstract supplies specific case studies, but the full Oxford journal article and author SSRN paper were blocked; legal argument is not evidence of measured macroeconomic impacts.",
+        "radar_relevance": "Historical EU financial-infrastructure access control and coercion mechanism.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Journal DOI 10.1093/jiel/jgaf042 redirected to Oxford article; text/PDF were not accessible at the publisher."
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "George Mason Scalia Law original Paolo Saguato university research page identifies October 2025 full study and provides detailed abstract naming SWIFT, EU–UK post-Brexit equivalence and EU FMI recognition withdrawal."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "institutional_abstract",
+            "url": "https://www.law.gmu.edu/pubs/papers/2513",
+            "title": "George Mason University Paolo Saguato first-party research abstract and paper listing October 2025",
+            "evidence_used": true
+          },
+          {
+            "kind": "publisher_abstract",
+            "url": "https://academic.oup.com/jiel/article/28/4/647/8342092",
+            "title": "Oxford Journal of International Economic Law original publication",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Verified the work against matching primary material, checked its bibliography and evaluated its specific European economic-security relevance."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "B_EU_FINANCIAL_INFRASTR_STATECRAFT",
+        "reason": "The first-party George Mason law-school author record gives a substantial research abstract with three concrete EU financial-infrastructure cases and legal mechanism."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-23T07:23:11Z",
+      "deep_scan_package_id": "worker-b-20261123T060949Z-6a4deb5cb704",
+      "claims": [
+        {
+          "object": "trade.market_access",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Paolo Saguato",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "becomes_conditional",
+          "status": "observation",
+          "status_date": "2025-12",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Original author-hosted abstract supplies specific case studies, but the full Oxford journal article and author SSRN paper were blocked; legal argument is not evidence of measured macroeconomic impacts.",
+          "text": "Paolo Saguato identifies how access to market infrastructure is used for cross-border geopolitical economic statecraft, including SWIFT sanctions and EU clearing-equivalence conflicts.",
+          "confidence": "medium",
+          "status_date_precision": "month",
+          "record_key": "historical:id:b717036206691a04",
+          "merit": 57,
+          "origin": "deep_scan",
+          "era": "historical",
+          "provisional": false,
+          "claim_id": "c:6c5fa54e376cb353:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-11-21T07:43:04Z"
+  "claims_updated_at": "2026-11-23T07:23:11Z"
 }

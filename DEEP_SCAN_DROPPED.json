@@ -2,7 +2,7 @@
   "profile": "radar-deep-scan-dropped-index-v1",
   "rule": "After 3 recorded failed research passes, close as dropped; no hands-on queue. Package issuance alone is not a research pass.",
   "note": "The full retrieval notes and available recovery history remain in deep_scan_work_state.json. Some legacy records have fewer retained history entries than the recorded attempt counter; no missing attempts are invented.",
-  "count": 189,
+  "count": 203,
   "records": [
     {
       "record_key": "historical:id:02d0446b10283c5c",
@@ -655,6 +655,21 @@
       "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year"
     },
     {
+      "record_key": "historical:id:d32e91c731a60194",
+      "title": "Beijing a buyer in Shell gas facilities – The Australian - CELIS Institute",
+      "source": "CELIS Institute",
+      "url": "https://celis.institute/beijing-a-buyer-in-shell-gas-facilities-the-australian/",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-b-20261112T083933Z-0ed9895e9bb7",
+        "worker-b-20261121T065040Z-ec94ffae757a",
+        "worker-b-20261123T060949Z-6a4deb5cb704"
+      ],
+      "closed_at": "2026-11-23T07:23:11Z",
+      "reason": "Original Australian newspaper story could not be independently matched and read; only a CELIS forwarding headline and contemporaneous, but different, reports on Shell LNG assets in Australia were available."
+    },
+    {
       "record_key": "historical:id:d597546d450546cb",
       "title": "Definitive anti-dumping measures on imports of Korean heavyweight thermal paper",
       "source": "European External Action Service",
@@ -765,6 +780,21 @@
       ],
       "closed_at": "2026-10-27T17:50:55Z",
       "reason": "Primary publisher and EU-submitted AGRIS metadata verify this 2026 biotechnology report, but Commission-level access prevents reading its findings. No claims are made from an abstract."
+    },
+    {
+      "record_key": "historical:id:e8e0451c296fe0fe",
+      "title": "At NPC, China Lays Economic Plan, Strategy to Win Tech War With US – Bloomberg - CELIS Institute",
+      "source": "CELIS Institute",
+      "url": "https://celis.institute/at-npc-china-lays-economic-plan-strategy-to-win-tech-war-with-us-bloomberg-2/",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-b-20261112T083933Z-0ed9895e9bb7",
+        "worker-b-20261121T065040Z-ec94ffae757a",
+        "worker-b-20261123T060949Z-6a4deb5cb704"
+      ],
+      "closed_at": "2026-11-23T07:23:11Z",
+      "reason": "CELIS links a 5 March 2021 Bloomberg story about China’s National People’s Congress and technology competition with the United States, but the original exact Bloomberg work is not available for source-level assessment. Different same-day Bloomberg articles cannot safely be equated."
     },
     {
       "record_key": "historical:id:f1a78ad8ec19a12b",
@@ -1142,6 +1172,21 @@
       "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,exact_title,title_author_year"
     },
     {
+      "record_key": "link:https://doi.org/10.1016/j.esr.2026.102389",
+      "title": "Reassessing the EU’s LNG expansion strategy: Geopolitical dependencies, energy security, and climate goals after the Russian invasion of Ukraine",
+      "source": "Energy Strategy Reviews",
+      "url": "https://doi.org/10.1016/j.esr.2026.102389",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261108T094504Z-f060e1f433f8",
+        "worker-b-20261121T065040Z-ec94ffae757a",
+        "worker-b-20261123T060949Z-6a4deb5cb704"
+      ],
+      "closed_at": "2026-11-23T07:23:10Z",
+      "reason": "The exact 2026 journal study is confirmed by the original Elsevier publication and DOI, but its full text and author-posted SSRN manuscripts deny access; an accessible 2025 Copenhagen Business School policy brief is related, not the same five-author journal work."
+    },
+    {
       "record_key": "link:https://doi.org/10.1016/j.exis.2026.101955",
       "title": "“Agroextractivism meets Toxic Coloniality”: EU pesticide exports and soy-driven pollution in the Amazon",
       "source": "The Extractive Industries and Society",
@@ -1212,6 +1257,21 @@
       ],
       "closed_at": "2026-10-04T09:21:45Z",
       "reason": "Deep Scan return rejected: defer must not contain substantive deep_analysis claims"
+    },
+    {
+      "record_key": "link:https://doi.org/10.1016/j.resourpol.2026.106086",
+      "title": "Blurred lines between governments and firms: A competitiveness framework for critical raw material dependent industries",
+      "source": "Resources Policy",
+      "url": "https://doi.org/10.1016/j.resourpol.2026.106086",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261108T094504Z-f060e1f433f8",
+        "worker-b-20261121T065040Z-ec94ffae757a",
+        "worker-b-20261123T060949Z-6a4deb5cb704"
+      ],
+      "closed_at": "2026-11-23T07:23:10Z",
+      "reason": "Elsevier original paper is real and its published highlights describe the European hydropower sector, but the original full study and accessible institutional version were unavailable after hard-final searches."
     },
     {
       "record_key": "link:https://doi.org/10.1016/j.sftr.2026.101880",
@@ -1326,6 +1386,21 @@
       "reason": "Substantive document not independently recoverable after completed source-verification ladder; retain original bibliographic and scanner evidence in the historical audit."
     },
     {
+      "record_key": "link:https://doi.org/10.1080/08911916.2026.2743824",
+      "title": "Beyond the European Chips Act: Mobilizing Public Banks to Solve Europe’s Semiconductor Supply Chain Paradox",
+      "source": "International Journal of Political Economy",
+      "url": "https://doi.org/10.1080/08911916.2026.2743824",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261107T111458Z-d011181d0b1a",
+        "worker-b-20261121T065040Z-ec94ffae757a",
+        "worker-b-20261123T060949Z-6a4deb5cb704"
+      ],
+      "closed_at": "2026-11-23T07:23:10Z",
+      "reason": "The article is bibliographically real, but its cached 20,303-character PDF extract is from an unrelated 2009 MOSFET textbook; the claimed study body could not be accessed via publisher or repositories."
+    },
+    {
       "record_key": "link:https://doi.org/10.1080/09662839.2026.2718107",
       "title": "The Commission’s 2025 intelligence cell proposal: from intelligence sharing to supranational intelligence?",
       "source": "European Security",
@@ -1341,6 +1416,21 @@
       "reason": "Bibliographic identity confirmed, but substantive original work is not accessible despite documented recovery attempts; no scientific/admission assessment made."
     },
     {
+      "record_key": "link:https://doi.org/10.1080/09662839.2026.2749007",
+      "title": "When arms embargoes become procurement problems: Spain, Israel and normative decoupling in defence acquisition",
+      "source": "European Security",
+      "url": "https://doi.org/10.1080/09662839.2026.2749007",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261108T094504Z-f060e1f433f8",
+        "worker-b-20261121T065040Z-ec94ffae757a",
+        "worker-b-20261123T060949Z-6a4deb5cb704"
+      ],
+      "closed_at": "2026-11-23T07:23:10Z",
+      "reason": "The original European Security paper is identifiable and the University of Granada corroborates author and DOI, but Taylor & Francis blocks the article and the author portal holds metadata only."
+    },
+    {
       "record_key": "link:https://doi.org/10.1080/09692290.2026.2745879",
       "title": "Europe’s new geoeconomic cleavages: from capitalist diversity to international vulnerability in European political economy",
       "source": "Review of International Political Economy",
@@ -1354,6 +1444,21 @@
       ],
       "closed_at": "2026-10-24T14:20:03Z",
       "reason": "Publication identity is corroborated, but the complete underlying work remains inaccessible or available evidence is insufficient for an authoritative admission decision."
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/10168737.2026.2692699",
+      "title": "European Manufacturing Exports and Exposure to Chinese ICT Services",
+      "source": "International Economic Journal",
+      "url": "https://doi.org/10.1080/10168737.2026.2692699",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261108T094504Z-f060e1f433f8",
+        "worker-b-20261121T065040Z-ec94ffae757a",
+        "worker-b-20261123T060949Z-6a4deb5cb704"
+      ],
+      "closed_at": "2026-11-23T07:23:10Z",
+      "reason": "The journal study’s exact bibliographic identity and methods/findings are visible in indexed publisher material, but the original Taylor & Francis article full text and an authenticated author manuscript remained inaccessible."
     },
     {
       "record_key": "link:https://doi.org/10.1080/13563467.2026.2751104",
@@ -1384,6 +1489,36 @@
       ],
       "closed_at": "2026-10-29T14:23:10Z",
       "reason": "Substantive document not independently recoverable after completed source-verification ladder; retain original bibliographic and scanner evidence in the historical audit."
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/14683849.2026.2752280",
+      "title": "From customs-union asymmetry to bounded co-management? Strategic autonomy and the CETA-plus free trade agreement alternative in EU–Türkiye trade governance",
+      "source": "Turkish Studies",
+      "url": "https://doi.org/10.1080/14683849.2026.2752280",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261116T070203Z-25c8bd2bf358",
+        "worker-b-20261121T065040Z-ec94ffae757a",
+        "worker-b-20261123T060949Z-6a4deb5cb704"
+      ],
+      "closed_at": "2026-11-23T07:23:10Z",
+      "reason": "The original November 2026 EU–Türkiye governance study is real and DOI verifiable, but original Taylor & Francis article text remained blocked, with no accessible university version."
+    },
+    {
+      "record_key": "link:https://doi.org/10.1080/1540496x.2026.2755507",
+      "title": "How the EU Regulates the Outflow of Emerging Technologies: A Perspective from China",
+      "source": "Emerging Markets Finance and Trade",
+      "url": "https://doi.org/10.1080/1540496x.2026.2755507",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261108T094504Z-f060e1f433f8",
+        "worker-b-20261121T065040Z-ec94ffae757a",
+        "worker-b-20261123T060949Z-6a4deb5cb704"
+      ],
+      "closed_at": "2026-11-23T07:23:10Z",
+      "reason": "Article DOI and original Taylor & Francis journal listing are authenticated, but primary article text was blocked; an OpenAlex/third-party copied abstract is not a replacement for verified full analysis."
     },
     {
       "record_key": "link:https://doi.org/10.1080/23745118.2026.2720570",
@@ -1584,6 +1719,21 @@
       ],
       "closed_at": "2026-10-22T07:23:14Z",
       "reason": "Bibliographic identity confirmed, but substantive original work is not accessible despite documented recovery attempts; no scientific/admission assessment made."
+    },
+    {
+      "record_key": "link:https://doi.org/10.1163/29505720-bja00020",
+      "title": "From CAI to De-Risking, Seven Years to Conclude, Four Months to Freeze",
+      "source": "Law & Geoeconomics",
+      "url": "https://doi.org/10.1163/29505720-bja00020",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261107T111458Z-d011181d0b1a",
+        "worker-b-20261121T065040Z-ec94ffae757a",
+        "worker-b-20261123T060949Z-6a4deb5cb704"
+      ],
+      "closed_at": "2026-11-23T07:23:10Z",
+      "reason": "Neither the claimed Brill article nor the exact DOI could be corroborated from an authoritative publisher, Crossref-like index or author repository after all recovery steps; a related older article by the author is a different work."
     },
     {
       "record_key": "link:https://doi.org/10.1177/00208523261468315",
@@ -2486,6 +2636,21 @@
       "reason": "Deep Scan return rejected: defer must not contain substantive deep_analysis claims"
     },
     {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=1d08d46d-dc23-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "title": "Proposal for a Regulation on establishing a framework of measures for accelerating industrial capacity and decarbonisation in strategic sectors (Industrial Accelerator Act) -Guidance for further work - Publications Office of the EU",
+      "source": "Publications Office of the EU",
+      "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=1d08d46d-dc23-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261112T083924Z-f892969a7165",
+        "worker-b-20261121T065040Z-ec94ffae757a",
+        "worker-b-20261123T060949Z-6a4deb5cb704"
+      ],
+      "closed_at": "2026-11-23T07:23:10Z",
+      "reason": "The 5 November Council Industrial Accelerator Act guidance note is authenticated as ST 15309/26, but Publications Office explicitly lists no document for download; Austrian Parliament and Council agendas confirm only existence and scheduled discussion, not substantive guidance."
+    },
+    {
       "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=1f2d15aa-c979-11f1-8b4c-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
       "title": "- AMENDMENT - 1005 - Draft report - Markéta Gregorová - (PE792.222v01-00) - European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Proposal for a regulation - (COM2026/0011 - C10-0015/2026 - 2026/0011(COD)) - Publications Office of the EU",
       "source": "Publications Office of the EU",
@@ -2616,6 +2781,36 @@
       "reason": "Deep Scan return rejected: substantive_primary_after_recovery requires the full retrieval ladder: broader_identity_search,doi,title_author_year"
     },
     {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=bd116d80-da2f-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "title": "Presidency Flash for the Working Party on Competitiveness and Growth (Internal Market - Skills Portability) on 5 November 2026 - Publications Office of the EU",
+      "source": "Publications Office of the EU",
+      "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=bd116d80-da2f-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261107T111458Z-d011181d0b1a",
+        "worker-b-20261121T065040Z-ec94ffae757a",
+        "worker-b-20261123T060949Z-6a4deb5cb704"
+      ],
+      "closed_at": "2026-11-23T07:23:10Z",
+      "reason": "Official EU registry and parliamentary indices confirm the 30 October 2026 Presidency Flash Skills Portability identity, but the substantive text was not accessible; the cached extract is solely a 404 page."
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=c764aab8-d9bf-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "title": "Proposal for a Regulation of European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Presidency second compromise text Title IV (Security of ICT Supply Chains) - Publications Office of the EU",
+      "source": "Publications Office of the EU",
+      "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=c764aab8-d9bf-11f1-8501-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261107T111458Z-d011181d0b1a",
+        "worker-b-20261121T065040Z-ec94ffae757a",
+        "worker-b-20261123T060949Z-6a4deb5cb704"
+      ],
+      "closed_at": "2026-11-23T07:23:10Z",
+      "reason": "Official EU registry and parliamentary indices confirm the 23 October 2026 second Presidency Cybersecurity Act Title IV compromise identity, but the substantive text was not accessible; the cached extract is solely a 404 page."
+    },
+    {
       "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=edc102a9-d3b0-11f1-9458-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
       "title": "Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) – Title II (Fees), Articles 47 - Presentation by the Commission - Publications Office of the EU",
       "source": "Publications Office of the EU",
@@ -2658,6 +2853,21 @@
       ],
       "closed_at": "2026-10-19T06:05:25Z",
       "reason": "Deep Scan return rejected: evidence depth must be one of the authoritative recovered-source levels"
+    },
+    {
+      "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=fd119899-e26c-11f1-aefc-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "title": "Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2) - Presidency fourth compromise text Title II (ENISA) - Publications Office of the EU",
+      "source": "Publications Office of the EU",
+      "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=fd119899-e26c-11f1-aefc-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+      "recovery_attempts_recorded": 3,
+      "recovery_history_entries_retained": 3,
+      "history_package_ids": [
+        "worker-a-20261119T111032Z-f58a62f556dc",
+        "worker-b-20261121T065040Z-ec94ffae757a",
+        "worker-b-20261123T060949Z-6a4deb5cb704"
+      ],
+      "closed_at": "2026-11-23T07:23:10Z",
+      "reason": "The Presidency fourth cybersecurity compromise on ENISA Title II is confirmed as Council WK 17268/26 but not substantively retrievable; official meeting agenda is not the fourth draft."
     }
   ]
 }
