@@ -6,10 +6,10 @@ It shows what is verified, what each worker owns, and what is still eligible. Ex
 Scheduling policy: preserve active worker reservations; fill new slots with Main Radar first, then Historical Radar. Do not fill packages artificially at saturation.
 A validated unsuccessful recovery is one pass; packaging alone is not a pass. After **3** failed passes, close the work as **dropped**, keeping an audit. No work-by-hand loop.
 
-- Authoritative V2 verified: **3335** (Main **1462** + Historical **1873**)
-- Automatic queue still needing V2 verification: **73** (Main **16** + Historical **57**)
-- Currently assigned to workers: **37** (Main **10** + Historical **27**)
-- Bounded access-recovery retries still eligible: **17**
+- Authoritative V2 verified: **3370** (Main **1468** + Historical **1902**)
+- Automatic queue still needing V2 verification: **38** (Main **10** + Historical **28**)
+- Currently assigned to workers: **2** (Main **1** + Historical **1**)
+- Bounded access-recovery retries still eligible: **16**
 - Dropped after three failed recovery passes (archived): **204**
 - Legacy work-by-hand requiring reconciliation: **0**
 - Automatic queue pending and not yet assigned: **36**
@@ -17,17 +17,9 @@ A validated unsuccessful recovery is one pass; packaging alone is not a pass. Af
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261125T115439Z-51684bd091f2`
-- Assigned unresolved records: **36**
-  1. `historical:id:4d3c6bfb26c04bac` — Energy security of the Slovak Republic in the context of the ongoing conflict in Ukraine
-  2. `historical:id:58350f2d94b3ceb6` — Presentation of the report "The Road to a New European Automotive Strategy" - Institut Jacques Delors
-  3. `historical:id:33f7cf5dcb286705` — Institut Jacques Delors - The EU support to Ukraine: from the sanction strategy to a strategic alliance?
-  4. `historical:id:16fc2eedbfcd1124` — Commission proposes 2-year extension to EU Gas Storage Regulation
-  5. `historical:id:afaca5d628a05c72` — A theory of economic coercion and fragmentation | Bank for International Settlements
-  6. `historical:id:a555fa099057ec24` — Institut Jacques Delors - [FR] Euroquestions #55 | European foreign and defence policy put to the test by the war in Ukraine
-  7. `historical:id:2998bd0bcb969fad` — GHG emissions, trade balance, and carbon leakage: Insights from modeling thirty-one European decarbonization pathways towards 2050
-  8. `historical:id:599307ab190216a4` — Beyond Foreign Policy? EU Sanctions at the Intersection of Development, Trade, and CFSP
-  - … plus 28 more in the package manifest
+- Current package: `worker-a-20261125T120016Z-88d37e55ab59`
+- Assigned unresolved records: **1**
+  1. `historical:id:9f4d7ac5ea0babd5` — FDI screening mechanism will lead to “bedlam”, EU lawyers say – Global Competition Review - CELIS Institute — recovery attempt 2/3
 
 ### Worker B
 - Current package: `worker-b-20261125T115449Z-8ef714219d30`
