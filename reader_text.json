@@ -1,7 +1,7 @@
 {
   "version": 3,
   "profile": "deep-reader-v2-authoritative",
-  "generated_at": "2026-11-23T07:27:02Z",
+  "generated_at": "2026-11-25T11:53:37Z",
   "records": {
     "link:https://ecipe.org/publications/from-periphery-to-power/#_ftnref1": {
       "profile": "deep-reader-v2-authoritative",
@@ -257559,8 +257559,2524 @@
         }
       ],
       "claims_profile": "radar-claims-v1"
+    },
+    "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=89ee2aa7-e82f-11f1-b745-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "1b68674d",
+      "identity_hash": "13ac9b86fc8fe085",
+      "reader_title": "Council working party meeting notice",
+      "reader_what": "The document schedules examination of proposed professional qualification recognition rules.",
+      "reader_more": "The two-page provisional agenda concerns digitalisation and recognition of qualifications issued outside the EU. It records neither an adopted decision nor substantive economic-security analysis.",
+      "deep_analysis": {
+        "work_kind": "meeting agenda",
+        "research_question": "",
+        "main_finding": "The two-page provisional agenda concerns digitalisation and recognition of qualifications issued outside the EU. It records neither an adopted decision nor substantive economic-security analysis.",
+        "method_or_basis": "Council agenda CM 5046/1/26 REV 1, both pages inspected.",
+        "qualification": "Meeting notice, not an outcome.",
+        "radar_relevance": "Routine agenda without a substantive economic-security finding or new policy decision.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Package source route https://op.europa.eu/o/opportal-service/download-handler?identifier=89ee2aa7-e82f-11f1-b745-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=: retrieved via reader-facing URL; strongest available package material was abstract_or_landing_page"
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Publications Office route returned 404 in package; Council register document CM 5046/1/26 REV 1 dated 20 November 2026 recovered and both pages read."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://data.consilium.europa.eu/doc/document/CM-5046-2026-REV-1/en/pdf",
+            "title": "WORKING PARTY ON COMPETITIVENESS AND GROWTH (Internal Market) - Publications Office of the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publications Office route returned 404 in package; Council register document CM 5046/1/26 REV 1 dated 20 November 2026 recovered and both pages read."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "Routine agenda without a substantive economic-security finding or new policy decision."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:30Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.34135/sjps.260103": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "caef9289",
+      "identity_hash": "d52b32fb75975ec4",
+      "reader_title": "Gas diversification shifts Europe’s energy vulnerabilities",
+      "reader_what": "Reduced Russian gas dependence has brought new exposure to LNG prices, infrastructure lock-in and uneven fiscal capacity.",
+      "reader_why": "Diversifying sources alone does not eliminate vulnerability to international prices or unequal national adjustment capacity.",
+      "reader_more": "The study compares EU energy policy and national implementation in 2022–2024. It argues that substitution of Russian gas has redistributed vulnerabilities rather than eliminated them.",
+      "deep_analysis": {
+        "work_kind": "qualitative research article",
+        "research_question": "",
+        "main_finding": "The study compares EU energy policy and national implementation in 2022–2024. It argues that substitution of Russian gas has redistributed vulnerabilities rather than eliminated them.",
+        "method_or_basis": "Publisher abstract contains specific gas-share and LNG capacity findings, structured qualitative policy and market-data analysis, and national comparison.",
+        "qualification": "Author’s qualitative diagnosis, not a causal estimate of future insecurity.",
+        "radar_relevance": "Direct analysis of European energy supply diversification and newly emerging dependencies.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package source route https://doi.org/10.34135/sjps.260103: matching primary text inspected."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://sjps.fsvucm.sk/index.php/sjps/article/view/642",
+            "title": "Energy Security After Diversification: Is The European Union Entering A Post-Crisis Vulnerability Trap?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publisher page matches DOI 10.34135/sjps.260103, Elmir Badalov, 27 August 2026; detailed abstract with method and findings inspected. No article PDF link exposed on page."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct analysis of European energy supply diversification and newly emerging dependencies."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:30Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "energy.gas_supply",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union",
+            "class": "european_system"
+          },
+          "mechanism": "diversifies",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-08-27",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Author’s qualitative diagnosis, not a causal estimate of future insecurity.",
+          "text": "The study finds that EU gas diversification reduced Russian dependence while introducing LNG price exposure and infrastructure lock-in.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.34135/sjps.260103",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:d52b32fb75975ec4:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=823056c0-e6de-11f1-b745-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "447dfec7",
+      "identity_hash": "966fe4ae26f7df81",
+      "reader_title": "EU opens Indonesian fatty-acid duty review",
+      "reader_what": "The Commission initiated recalculation of anti-dumping duties following WTO dispute DS622.",
+      "reader_why": "The review concerns conformity of EU trade defence with WTO rules and could change duties.",
+      "reader_more": "The WTO panel found errors in exchange-rate conversion for a sampled exporter and consequent duty calculations. The Commission opened a review covering that exporter and other Indonesian producers affected by the calculations.",
+      "deep_analysis": {
+        "work_kind": "official trade measure",
+        "research_question": "",
+        "main_finding": "The WTO panel found errors in exchange-rate conversion for a sampled exporter and consequent duty calculations. The Commission opened a review covering that exporter and other Indonesian producers affected by the calculations.",
+        "method_or_basis": "Package official notice C/2026/6056, pages with scope and procedural requirements read; ELI and document number printed in notice.",
+        "qualification": "Review initiated; revised duties have not been established by this notice.",
+        "radar_relevance": "Concrete EU trade defence procedural development following WTO rulings.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package source route https://op.europa.eu/o/opportal-service/download-handler?identifier=823056c0-e6de-11f1-b745-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=: matching primary text inspected."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=823056c0-e6de-11f1-b745-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+            "title": "Notice of initiation of a review of the anti-dumping measures applicable to imports of fatty acid originating in Indonesia, following the recommendations and rulings adopted by the Dispute Settlement Body of the World Trade Organisation in the European Union – Anti-Dumping Measures on Imports of Fatty Acid from Indonesia dispute (DS622) - Publications Office of the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://op.europa.eu/o/opportal-service/download-handler?identifier=823056c0-e6de-11f1-b745-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=; Package official notice C/2026/6056, pages with scope and procedural requirements read; ELI and document number printed in notice."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+        "reason": "Concrete EU trade defence procedural development following WTO rulings."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:30Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "trade_defence.anti_dumping",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "evaluates",
+          "direction": "becomes_contested",
+          "status": "operating",
+          "status_date": "2026-11-23",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "Indonesia"
+            ]
+          },
+          "kind": "action",
+          "qualification": "Review initiated; revised duties have not been established by this notice.",
+          "text": "The Commission opened a review of Indonesian fatty-acid anti-dumping duties to implement WTO dispute DS622 rulings.",
+          "confidence": "high",
+          "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=823056c0-e6de-11f1-b745-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+          "merit": 99,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:966fe4ae26f7df81:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=75c13ec6-e74e-11f1-b745-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_c",
+      "corpus_scope": "main",
+      "source_hash": "ef3b1daf",
+      "identity_hash": "ba6f8215f06d30c8",
+      "reader_title": "Council reports progress on EU Space Act",
+      "reader_what": "The Irish Presidency revised the proposed common space-services rules, including scope and third-country operator verification.",
+      "reader_why": "Common requirements could affect access to the European space-services market and its resilience.",
+      "reader_more": "The Council progress report describes amendments to the draft regulation after working-party discussions. Member states maintained scrutiny reservations; it is a legislative progress report, not enacted law.",
+      "deep_analysis": {
+        "work_kind": "legislative progress report",
+        "research_question": "",
+        "main_finding": "The Council progress report describes amendments to the draft regulation after working-party discussions. Member states maintained scrutiny reservations; it is a legislative progress report, not enacted law.",
+        "method_or_basis": "Package Council document 15547/1/26 REV 1, dated 23 November 2026; draft changes and Council state of play inspected.",
+        "qualification": "Negotiations continue; no final regulatory requirements are established here.",
+        "radar_relevance": "Substantive legislative development governing resilient space infrastructure and third-country market access.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "official_full_document",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package source route https://op.europa.eu/o/opportal-service/download-handler?identifier=75c13ec6-e74e-11f1-b745-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=: matching primary text inspected."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=75c13ec6-e74e-11f1-b745-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+            "title": "Preparation of the Meeting of the Council (Competitiveness (Internal Market, Industry, Research and Space)) on 3-4 December 2026 Regulation on the safety, resilience and sustainability of space activities in the Union (EU Space Act) - Progress Report - Publications Office of the EU",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://op.europa.eu/o/opportal-service/download-handler?identifier=75c13ec6-e74e-11f1-b745-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=; Package Council document 15547/1/26 REV 1, dated 23 November 2026; draft changes and Council state of play inspected."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+        "reason": "Substantive legislative development governing resilient space infrastructure and third-country market access."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:31Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "critical_infrastructure.resilience",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Council of the European Union",
+            "class": "eu_body"
+          },
+          "mechanism": "harmonises",
+          "direction": "becomes_conditional",
+          "status": "in_negotiation",
+          "status_date": "2026-11-23",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Negotiations continue; no final regulatory requirements are established here.",
+          "text": "The Council presidency revised draft harmonised space-activity safety and resilience rules, including verification of third-country operators.",
+          "confidence": "high",
+          "record_key": "link:https://op.europa.eu/o/opportal-service/download-handler?identifier=75c13ec6-e74e-11f1-b745-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+          "merit": 99,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:ba6f8215f06d30c8:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/797050/EPRS_BRI(2026)797050_EN.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "611eb235",
+      "identity_hash": "5382f9c14cba7ebf",
+      "reader_title": "Integrating Ukrainian and EU defence industries",
+      "reader_what": "The briefing identifies financing, procurement and regulatory barriers to deeper European-Ukrainian industrial integration.",
+      "reader_why": "Joint industrial cooperation could combine Ukrainian expertise with European manufacturing and investment capacity.",
+      "reader_more": "The briefing traces EU support through funding instruments, procurement and partnerships. It identifies fragmented demand and financing, regulatory and intellectual-property obstacles to lasting integration.",
+      "deep_analysis": {
+        "work_kind": "policy analysis",
+        "research_question": "",
+        "main_finding": "The briefing traces EU support through funding instruments, procurement and partnerships. It identifies fragmented demand and financing, regulatory and intellectual-property obstacles to lasting integration.",
+        "method_or_basis": "EPRS briefing 797050 by Sebastian Clapp, substantive official HTML version with sections on capacity, integration and barriers.",
+        "qualification": "Potential benefits depend on implementation; not evidence that integration has already delivered them.",
+        "radar_relevance": "Evidence-led analysis of European defence industrial capacity, external dependencies and partnerships.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Package source route https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/797050/EPRS_BRI(2026)797050_EN.pdf: reader-facing URL: source retrieval failed: Stream has ended unexpectedly"
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "PDF blocked by JavaScript challenge; exact title located via Global Eye link to matching full EPRS HTML, 20 November 2026."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://research.europarl.europa.eu/EPRS_BRI(2026)797050",
+            "title": "Integrating Ukraine's defence industry into the EU defence industrial base",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "PDF blocked by JavaScript challenge; exact title located via Global Eye link to matching full EPRS HTML, 20 November 2026."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Evidence-led analysis of European defence industrial capacity, external dependencies and partnerships."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:31Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "defence.production_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Union and Ukraine",
+            "class": "european_system"
+          },
+          "mechanism": "integrates",
+          "direction": "expands",
+          "status": "observation",
+          "status_date": "2026-11-20",
+          "scope": {
+            "level": "europe",
+            "countries": [
+              "Ukraine"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "Potential benefits depend on implementation; not evidence that integration has already delivered them.",
+          "text": "EPRS identifies EU funding, joint procurement and industrial cooperation as integration routes, with financing and regulatory barriers remaining.",
+          "confidence": "high",
+          "record_key": "link:https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/797050/EPRS_BRI(2026)797050_EN.pdf",
+          "merit": 100,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:5382f9c14cba7ebf:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.bruegel.org/first-glance/made-eu-coalition-willing-economic-security-and-decarbonisation": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "c1a73eb3",
+      "identity_hash": "00723c55ceeef85a",
+      "reader_title": "Economic-security partnerships beyond EU-only procurement",
+      "reader_what": "Bruegel authors propose admitting trade partners to EU industrial incentives subject to climate, reciprocity and security criteria.",
+      "reader_why": "Excluding partners could undermine alternative supply chains and trust with economies needed for diversification.",
+      "reader_more": "The authors contrast strict EU-origin preferences with a cooperative approach. They propose shared decarbonisation, reciprocal market access and supply diversification commitments as eligibility criteria.",
+      "deep_analysis": {
+        "work_kind": "policy analysis",
+        "research_question": "",
+        "main_finding": "The authors contrast strict EU-origin preferences with a cooperative approach. They propose shared decarbonisation, reciprocal market access and supply diversification commitments as eligibility criteria.",
+        "method_or_basis": "Matching author text republished by WITA with Bruegel attribution and direct original link; specific policy alternatives and trade commitments analysed.",
+        "qualification": "Policy recommendation, not agreed eligibility rules or measured impacts.",
+        "radar_relevance": "Direct analysis of EU economic-security toolbox, procurement and diversification trade-offs.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Package source route https://www.bruegel.org/first-glance/made-eu-coalition-willing-economic-security-and-decarbonisation: reader-facing URL: source retrieval failed: 403 Client Error: Forbidden for url: https://www.bruegel.org/first-glance/made-eu-coalition-willing-economic-security-and-decarbonisation"
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Bruegel URL returned 403; exact title recovered as attributed Bruegel article at WITA (17 November 2026)."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://www.wita.org/made-in-eu-coalition-of-the-willing/",
+            "title": "From ‘Made in EU’ to a coalition of the willing on economic security and decarbonisation",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Bruegel URL returned 403; exact title recovered as attributed Bruegel article at WITA (17 November 2026)."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct analysis of EU economic-security toolbox, procurement and diversification trade-offs."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:31Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "industry.european_preference",
+          "secondary_objects": [],
+          "actor": {
+            "name": "García Bercero, Tagliapietra and Zettelmeyer",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "becomes_conditional",
+          "status": "proposed",
+          "status_date": "2026-11-17",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Policy recommendation, not agreed eligibility rules or measured impacts.",
+          "text": "The authors recommend extending EU industrial preferences to partners meeting climate, reciprocity and economic-security criteria.",
+          "confidence": "high",
+          "record_key": "link:https://www.bruegel.org/first-glance/made-eu-coalition-willing-economic-security-and-decarbonisation",
+          "merit": 86,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:00723c55ceeef85a:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1111/jcms.70197": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "cc009da0",
+      "identity_hash": "eb975ff2af3d72ed",
+      "reader_title": "External geopolitical pressure tests European integration",
+      "reader_what": "The annual review editorial argues external pressure can stimulate collective adaptation, but only through political and institutional mediation.",
+      "reader_why": "Common recognition of external dependencies does not automatically produce coordinated European economic-security action.",
+      "reader_more": "The editorial applies failing-forward and externalism perspectives to 2025 and selected 2026 developments, linking trade coercion, industrial competition and external dependencies to conditional European adaptation.",
+      "deep_analysis": {
+        "work_kind": "annual review editorial",
+        "research_question": "",
+        "main_finding": "The editorial applies failing-forward and externalism perspectives to 2025 and selected 2026 developments, linking trade coercion, industrial competition and external dependencies to conditional European adaptation.",
+        "method_or_basis": "Matching packaged JCMS publisher PDF excerpt, DOI 10.1111/jcms.70197, title, authors and editorial argument checked; Wiley issue listing corroborates identity.",
+        "qualification": "Conceptual editorial synthesis, not a causal empirical test of crisis-induced integration.",
+        "radar_relevance": "Directly addresses European economic-security dependencies and the conditions for common policy responses.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Package source route https://doi.org/10.1111/jcms.70197: OpenAlex authenticated DOI lookup matched W7236811990; retrieved via OpenAlex cached full-text PDF"
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Matching publisher PDF excerpt recovered via authenticated OpenAlex DOI route; Wiley direct DOI access blocked but issue listing corroborates DOI and title."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://content.openalex.org/works/W7236811990.pdf",
+            "title": "From Transatlantic Crisis to European Adaptation? The European Union's Geopolitical Stress Test in 2025",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matching publisher PDF excerpt recovered via authenticated OpenAlex DOI route; Wiley direct DOI access blocked but issue listing corroborates DOI and title."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Directly addresses European economic-security dependencies and the conditions for common policy responses."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:32Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "econsec.member_state_alignment",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Baldini, Baracani and Soare",
+            "class": "university_group"
+          },
+          "mechanism": "shapes",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-18",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Conceptual editorial synthesis, not a causal empirical test of crisis-induced integration.",
+          "text": "The authors argue external dependencies stimulate collective responses only when EU actors translate pressures into common priorities and possess suitable instruments.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1111/jcms.70197",
+          "merit": 86,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:eb975ff2af3d72ed:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/797051/EPRS_BRI(2026)797051_EN.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "f0598c97",
+      "identity_hash": "b7f6247f92c706e9",
+      "reader_title": "Household asset allocation constrains EU investment mobilisation",
+      "reader_what": "EPRS finds household asset portfolios remain stable over time but differ substantially between member states.",
+      "reader_why": "The evidence informs the EU effort to mobilise domestic capital for innovation and strategic competitiveness.",
+      "reader_more": "Eurostat data show deposits and currency represented about 30% of household financial wealth in 2024, with country-specific financial structures and portfolio differences. The briefing links asset allocation to the Savings and Investments Union and availability of equity for firms.",
+      "deep_analysis": {
+        "work_kind": "policy analysis",
+        "research_question": "",
+        "main_finding": "Eurostat data show deposits and currency represented about 30% of household financial wealth in 2024, with country-specific financial structures and portfolio differences. The briefing links asset allocation to the Savings and Investments Union and availability of equity for firms.",
+        "method_or_basis": "Official EPRS HTML briefing 797051, Eurostat financial balance sheets and country comparison 2006–2024, including charts and commentary.",
+        "qualification": "Descriptive data do not demonstrate that reallocating deposits will necessarily finance strategic projects or improve innovation.",
+        "radar_relevance": "Direct evidence on domestic investment mobilisation and the financing conditions of EU strategic competitiveness.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Package source route https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/797051/EPRS_BRI(2026)797051_EN.pdf: reader-facing URL: source retrieval failed: Stream has ended unexpectedly"
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Scanner PDF unavailable; matching full official EPRS HTML version recovered, dated 20 November 2026, authored by Issam Hallak with Celso Esteves Fuinhas."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://research.europarl.europa.eu/EPRS_BRI(2026)797051",
+            "title": "EU households' savings and investments",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Scanner PDF unavailable; matching full official EPRS HTML version recovered, dated 20 November 2026, authored by Issam Hallak with Celso Esteves Fuinhas."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct evidence on domestic investment mobilisation and the financing conditions of EU strategic competitiveness."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:32Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "finance.strategic_investment",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Parliament Research Service",
+            "class": "eu_body"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-20",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "evidence",
+          "qualification": "Descriptive data do not demonstrate that reallocating deposits will necessarily finance strategic projects or improve innovation.",
+          "text": "EPRS finds persistent differences in household financial portfolios across EU countries, relevant to the Savings and Investments Union’s domestic capital mobilisation objective.",
+          "confidence": "high",
+          "record_key": "link:https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/797051/EPRS_BRI(2026)797051_EN.pdf",
+          "merit": 100,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:b7f6247f92c706e9:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://media.realinstitutoelcano.org/wp-content/uploads/2026/11/cidob-a-new-strategy-for-another-europe.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "5cd1a988",
+      "identity_hash": "40ddaa43c6f6cda2",
+      "reader_title": "Southern European proposal for an integrated security strategy",
+      "reader_what": "Nine think tanks propose incorporating strategic flows and societal resilience into the European Security Strategy.",
+      "reader_why": "Economic interdependence and continuity of essential flows become explicit priorities in a wider security strategy.",
+      "reader_more": "The paper argues that security priorities should be connected to responsibilities, financing and regular review, drawing on Southern European perspectives and the interdependence of territorial security, flows and societal resilience.",
+      "deep_analysis": {
+        "work_kind": "policy analysis",
+        "research_question": "",
+        "main_finding": "The paper argues that security priorities should be connected to responsibilities, financing and regular review, drawing on Southern European perspectives and the interdependence of territorial security, flows and societal resilience.",
+        "method_or_basis": "CIDOB Notes Internacionals 346, October 2026, DOI 10.24241/NotesInt.2026/346/en; seminar-based collective analysis, matching packaged PDF.",
+        "qualification": "Policy recommendations from participating experts, not adopted EU strategy.",
+        "radar_relevance": "Explicit economic security governance and resilience of strategic flows.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package source route https://media.realinstitutoelcano.org/wp-content/uploads/2026/11/cidob-a-new-strategy-for-another-europe.pdf: matching primary text inspected."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://media.realinstitutoelcano.org/wp-content/uploads/2026/11/cidob-a-new-strategy-for-another-europe.pdf",
+            "title": "A new strategy for another Europe: a Southern European contribution to the European Security Strategy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://media.realinstitutoelcano.org/wp-content/uploads/2026/11/cidob-a-new-strategy-for-another-europe.pdf; CIDOB Notes Internacionals 346, October 2026, DOI 10.24241/NotesInt.2026/346/en; seminar-based collective analysis, matching packaged PDF."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Explicit economic security governance and resilience of strategic flows."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:32Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "econsec.strategy",
+          "secondary_objects": [],
+          "actor": {
+            "name": "CIDOB-led think tank group",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2026-10",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Policy recommendations from participating experts, not adopted EU strategy.",
+          "text": "The report recommends integrating resilience of strategic flows and societies with European security governance and financing.",
+          "confidence": "medium",
+          "status_date_precision": "month",
+          "record_key": "link:https://media.realinstitutoelcano.org/wp-content/uploads/2026/11/cidob-a-new-strategy-for-another-europe.pdf",
+          "merit": 70,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:40ddaa43c6f6cda2:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.bruegel.org/first-glance/freyja-and-making-european-defence-industry": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "80de536e",
+      "identity_hash": "331e10df368b1e0c",
+      "reader_title": "Europe–Ukraine industrial cooperation needs durable financing",
+      "reader_what": "The authors identify fragmented financing and institutional constraints on sustained Europe–Ukraine industrial partnerships.",
+      "reader_why": "Industrial cooperation depends on predictable financing and institutions rather than isolated partnerships.",
+      "reader_more": "The commentary draws on KSE partnership data and discusses limitations of existing European funding arrangements. It advocates durable arrangements for investment and cross-border industrial cooperation.",
+      "deep_analysis": {
+        "work_kind": "policy analysis",
+        "research_question": "",
+        "main_finding": "The commentary draws on KSE partnership data and discusses limitations of existing European funding arrangements. It advocates durable arrangements for investment and cross-border industrial cooperation.",
+        "method_or_basis": "Matching author commentary at PIIE and Bruegel publication announcement.",
+        "qualification": "Policy analysis; expected industrial benefits are not yet demonstrated.",
+        "radar_relevance": "Direct European industrial integration and financing analysis.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Package source route https://www.bruegel.org/first-glance/freyja-and-making-european-defence-industry: reader-facing URL: source retrieval failed: 403 Client Error: Forbidden for url: https://www.bruegel.org/first-glance/freyja-and-making-european-defence-industry"
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Original Bruegel article unavailable; matching PIIE author version read and original Bruegel announcement confirms identity and 1 October publication."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://www.piie.com/blogs/realtime-economics/2026/freyja-and-making-european-defense-industry",
+            "title": "Freyja and the making of a European defence industry",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Original Bruegel article unavailable; matching PIIE author version read and original Bruegel announcement confirms identity and 1 October publication."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct European industrial integration and financing analysis."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:33Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "finance.strategic_investment",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Ribakova, Shapoval and Wolff",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2026-10-01",
+          "scope": {
+            "level": "europe",
+            "countries": [
+              "Ukraine"
+            ]
+          },
+          "kind": "advocacy",
+          "qualification": "Policy analysis; expected industrial benefits are not yet demonstrated.",
+          "text": "The authors recommend more predictable funding arrangements for European-Ukrainian industrial partnerships.",
+          "confidence": "high",
+          "record_key": "link:https://www.bruegel.org/first-glance/freyja-and-making-european-defence-industry",
+          "merit": 86,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:331e10df368b1e0c:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1016/j.apenergy.2026.129305": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "a02517a8",
+      "identity_hash": "3022378a4aa97461",
+      "reader_title": "Green iron imports could lower European steelmaking costs",
+      "reader_what": "Scenario modelling compares domestic hydrogen-based steelmaking with green iron imported from renewable-rich countries.",
+      "reader_why": "The analysis shows how future steel competitiveness depends on energy costs and international supply relationships.",
+      "reader_more": "The study models levelised costs and life-cycle emissions for 2030 and 2040, comparing German steel production using domestic or imported green iron. Lower hydrogen costs in exporting countries can offset transport costs under model assumptions.",
+      "deep_analysis": {
+        "work_kind": "policy analysis",
+        "research_question": "",
+        "main_finding": "The study models levelised costs and life-cycle emissions for 2030 and 2040, comparing German steel production using domestic or imported green iron. Lower hydrogen costs in exporting countries can offset transport costs under model assumptions.",
+        "method_or_basis": "Applied Energy DOI 10.1016/j.apenergy.2026.129305; matching packaged publisher PDF, abstract, highlights and model description.",
+        "qualification": "Scenario estimates, not established trade routes or achieved cost parity; sensitive to hydrogen and carbon prices.",
+        "radar_relevance": "Direct quantitative evidence on German industrial competitiveness, energy import dependence and prospective supply diversification.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Package source route https://doi.org/10.1016/j.apenergy.2026.129305: OpenAlex authenticated DOI lookup matched W7238476847; retrieved via OpenAlex cached full-text PDF"
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Publisher PDF excerpt from OpenAlex matched title, authors, DOI and online date; ScienceDirect article identity corroborated."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://content.openalex.org/works/W7238476847.pdf",
+            "title": "Hydrogen-based green steel corridors: cost saving and emission reduction potentials of emerging trade routes",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publisher PDF excerpt from OpenAlex matched title, authors, DOI and online date; ScienceDirect article identity corroborated."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct quantitative evidence on German industrial competitiveness, energy import dependence and prospective supply diversification."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:33Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "supply_chain.diversification",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Scheffler et al.",
+            "class": "university_group"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-22",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "Germany"
+            ]
+          },
+          "kind": "evidence",
+          "qualification": "Scenario estimates, not established trade routes or achieved cost parity; sensitive to hydrogen and carbon prices.",
+          "text": "Modelling indicates that importing green iron from low-cost renewable energy locations could lower German steelmaking costs in selected future scenarios.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1016/j.apenergy.2026.129305",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:3022378a4aa97461:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://cdn.ceps.eu/2026/11/Bouncing-forward-REUNIR-_formatted-WEB.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "33c1258d",
+      "identity_hash": "10e5778e6cdf3dde",
+      "reader_title": "Economic security as part of EU enlargement policy",
+      "reader_what": "The REUNIR white paper proposes integrating economic-security frameworks and resilience into EU accession support.",
+      "reader_why": "Candidate-country dependencies can affect the resilience of a wider EU.",
+      "reader_more": "The authors assess threats, uncertainties, foresight to 2035 and policy gaps. They propose durable finance, energy integration, supply-chain resilience and investment-screening alignment as parts of pre-accession support.",
+      "deep_analysis": {
+        "work_kind": "policy analysis",
+        "research_question": "",
+        "main_finding": "The authors assess threats, uncertainties, foresight to 2035 and policy gaps. They propose durable finance, energy integration, supply-chain resilience and investment-screening alignment as parts of pre-accession support.",
+        "method_or_basis": "Matching CEPS and REUNIR white paper D8.1, packaged first-party PDF and project publication page.",
+        "qualification": "Recommendations and foresight assessments, not adopted accession rules or measured outcomes.",
+        "radar_relevance": "Explicit proposals for European economic-security policy coordination with candidate countries.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package source route https://cdn.ceps.eu/2026/11/Bouncing-forward-REUNIR-_formatted-WEB.pdf: matching primary text inspected."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://cdn.ceps.eu/2026/11/Bouncing-forward-REUNIR-_formatted-WEB.pdf",
+            "title": "Bouncing forward on the accession track – CEPS",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://cdn.ceps.eu/2026/11/Bouncing-forward-REUNIR-_formatted-WEB.pdf; Matching CEPS and REUNIR white paper D8.1, packaged first-party PDF and project publication page."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Explicit proposals for European economic-security policy coordination with candidate countries."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:33Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "econsec.toolbox_coordination",
+          "secondary_objects": [],
+          "actor": {
+            "name": "REUNIR project authors",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "advocates",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2026-11-23",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Recommendations and foresight assessments, not adopted accession rules or measured outcomes.",
+          "text": "The white paper advocates incorporating supply-chain resilience, critical infrastructure and investment screening into EU enlargement policy.",
+          "confidence": "medium",
+          "record_key": "link:https://cdn.ceps.eu/2026/11/Bouncing-forward-REUNIR-_formatted-WEB.pdf",
+          "merit": 87,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:10e5778e6cdf3dde:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.atlanticcouncil.org/region/europe-eurasia/": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "b3a1b247",
+      "identity_hash": "755deb705fc9954a",
+      "reader_title": "Atlantic Council Europe and Eurasia regional index",
+      "reader_what": "The link is a regional collection of news, analysis, programmes and staff profiles.",
+      "reader_more": "The source contains many distinct articles, programme descriptions and links rather than a single research or policy publication.",
+      "deep_analysis": {
+        "work_kind": "regional index",
+        "research_question": "",
+        "main_finding": "The source contains many distinct articles, programme descriptions and links rather than a single research or policy publication.",
+        "method_or_basis": "Package substantive web text from the Atlantic Council regional URL.",
+        "qualification": "Individual linked publications may merit separate assessment.",
+        "radar_relevance": "Navigation page rather than an identifiable substantive work.",
+        "confidence": "high",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package source route https://www.atlanticcouncil.org/region/europe-eurasia/: matching primary text inspected."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://www.atlanticcouncil.org/region/europe-eurasia/",
+            "title": "Europe & Eurasia",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://www.atlanticcouncil.org/region/europe-eurasia/; Package substantive web text from the Atlantic Council regional URL."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "Navigation page rather than an identifiable substantive work."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:33Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1080/09662839.2026.2750174": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "d23f928d",
+      "identity_hash": "da031e43164f6523",
+      "reader_title": "Small states frame digital sovereignty as shared capacity",
+      "reader_what": "A Danish and Czech media-discourse study identifies digital sovereignty as a negotiated capacity-building project rather than exclusively rule-making.",
+      "reader_why": "Small member states also shape European digital sovereignty through their preferences and capabilities.",
+      "reader_more": "The authors compare national debates in Denmark and Czechia during 2024–25, showing heterogeneous views of external technology partners alongside shared European capacity-building aspirations.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "",
+        "main_finding": "The authors compare national debates in Denmark and Czechia during 2024–25, showing heterogeneous views of external technology partners alongside shared European capacity-building aspirations.",
+        "method_or_basis": "Substantive author preprint abstract in SSRN 6028875, exact journal publication identity and author description of the final study checked.",
+        "qualification": "The accessible preprint has a different title; the version of record was inaccessible. Discourse analysis does not establish actual technological autonomy.",
+        "radar_relevance": "Direct research on European digital sovereignty, external technology dependence and national political preferences.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Package source route https://doi.org/10.1080/09662839.2026.2750174: reader-facing URL: source retrieval failed: 403 Client Error: Forbidden for url: https://www.tandfonline.com/doi/full/10.1080/09662839.2026.2750174; OpenAlex authenticated DOI lookup matched W7236496196; no substantive OpenAlex-assisted source recovered"
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Publisher DOI blocked; recovered substantive related author preprint and corroborating author description of final published study. Version-of-record text not inspected."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6028875",
+            "title": "Small states, big tech: exploring small states' role in enacting European digital sovereignty",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Publisher DOI blocked; recovered substantive related author preprint and corroborating author description of final published study. Version-of-record text not inspected."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct research on European digital sovereignty, external technology dependence and national political preferences."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:33Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "digital.sovereignty",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Liebetrau, Monsees and Švec",
+            "class": "university_group"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-17",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "Denmark",
+              "Czechia"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "The accessible preprint has a different title; the version of record was inaccessible. Discourse analysis does not establish actual technological autonomy.",
+          "text": "The study interprets small-state digital sovereignty discourse as shared and negotiated capacity-building, with different views of external partners.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1080/09662839.2026.2750174",
+          "merit": 91,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:da031e43164f6523:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.2478/ers-2026-0027": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "6afe537f",
+      "identity_hash": "955faf2114d5a045",
+      "reader_title": "Agricultural productivity in the EU, 2007–2023",
+      "reader_what": "The study decomposes changes in agricultural productivity into efficiency and technological progress and examines CAP reforms.",
+      "reader_more": "Technological progress is identified as an important driver of productivity, with national variation and a complementary role for agricultural policy.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "",
+        "main_finding": "Technological progress is identified as an important driver of productivity, with national variation and a complementary role for agricultural policy.",
+        "method_or_basis": "Matching publisher structured abstract and DOI 10.2478/ers-2026-0027.",
+        "qualification": "The abstract does not establish geopolitical supply dependence or targeted economic-security measures.",
+        "radar_relevance": "General agricultural productivity and CAP evaluation, not a substantive economic-security mechanism.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package source route https://doi.org/10.2478/ers-2026-0027: matching primary text inspected."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://reference-global.com/article/10.2478/ers-2026-0027",
+            "title": "Sources of Agricultural Productivity Growth in the European Union (2007-2023): Decomposition of the Malmquist Index and Impact of Common Agricultural Policy Reforms",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://reference-global.com/article/10.2478/ers-2026-0027; Matching publisher structured abstract and DOI 10.2478/ers-2026-0027."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "General agricultural productivity and CAP evaluation, not a substantive economic-security mechanism."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:33Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.2196/93760": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "208376bb",
+      "identity_hash": "ca43406d93cc1283",
+      "reader_title": "Clinical interoperability gaps in European electronic health records",
+      "reader_what": "The authors assess alignment with the European Electronic Health Record Exchange Format across clinical data categories.",
+      "reader_more": "Survey and gap analysis finds uneven implementation and fragmented coding and standards across participating healthcare systems.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "",
+        "main_finding": "Survey and gap analysis finds uneven implementation and fragmented coding and standards across participating healthcare systems.",
+        "method_or_basis": "Matching publisher PDF excerpt, DOI 10.2196/93760, 30 survey responses and five demonstrators.",
+        "qualification": "Clinical interoperability findings are not evidence of geopolitical exposure or economic-security policy.",
+        "radar_relevance": "The study concerns clinical data exchange and implementation rather than strategic supply, external dependencies or economic-security measures.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Package source route https://doi.org/10.2196/93760: OpenAlex authenticated DOI lookup matched W7133495890; retrieved via OpenAlex cached full-text PDF"
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Matching publisher PDF recovered via OpenAlex; title and author list verified."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://content.openalex.org/works/W7133495890.pdf",
+            "title": "Level of Practice and Alignment With the European Electronic Health Record Exchange Format: Cross-Sectional Survey and Gap Analysis",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Matching publisher PDF recovered via OpenAlex; title and author list verified."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "The study concerns clinical data exchange and implementation rather than strategic supply, external dependencies or economic-security measures."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:33Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.businesseurope.eu/wp-content/uploads/2026/06/2026-11-24-Industrial-Accelerator-Act_BusinessEurope-Comments_for-web.pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "37f314ff",
+      "identity_hash": "be3e9ac22f6aa137",
+      "reader_title": "BusinessEurope calls for targeted industrial preferences and coherent FDI rules",
+      "reader_what": "BusinessEurope responds to the proposed Industrial Accelerator Act, supporting industrial resilience while warning against duplicative investment controls.",
+      "reader_why": "The position exposes a policy trade-off between retaining strategic manufacturing and maintaining European attractiveness to foreign investment.",
+      "reader_more": "The organisation supports carefully targeted European preference provisions, calls for workable trade measures and asks that proposed FDI provisions avoid duplicating the screening framework.",
+      "deep_analysis": {
+        "work_kind": "stakeholder position paper",
+        "research_question": "",
+        "main_finding": "The organisation supports carefully targeted European preference provisions, calls for workable trade measures and asks that proposed FDI provisions avoid duplicating the screening framework.",
+        "method_or_basis": "Matching BusinessEurope November 2026 position paper, packaged PDF excerpt.",
+        "qualification": "Industry association advocacy regarding a proposal; neither adopted regulation nor independently demonstrated economic effect.",
+        "radar_relevance": "Direct stakeholder position on European industrial policy, strategic dependencies and inward investment regulation.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package source route https://www.businesseurope.eu/wp-content/uploads/2026/06/2026-11-24-Industrial-Accelerator-Act_BusinessEurope-Comments_for-web.pdf: matching primary text inspected."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://www.businesseurope.eu/wp-content/uploads/2026/06/2026-11-24-Industrial-Accelerator-Act_BusinessEurope-Comments_for-web.pdf",
+            "title": "The Industrial Accelerator Act (IAA) - BusinessEurope comments",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://www.businesseurope.eu/wp-content/uploads/2026/06/2026-11-24-Industrial-Accelerator-Act_BusinessEurope-Comments_for-web.pdf; Matching BusinessEurope November 2026 position paper, packaged PDF excerpt."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct stakeholder position on European industrial policy, strategic dependencies and inward investment regulation."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:34Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "industry.european_preference",
+          "secondary_objects": [],
+          "actor": {
+            "name": "BusinessEurope",
+            "class": "other"
+          },
+          "mechanism": "advocates",
+          "direction": "becomes_conditional",
+          "status": "proposed",
+          "status_date": "2026-11-24",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "advocacy",
+          "qualification": "Industry association advocacy regarding a proposal; neither adopted regulation nor independently demonstrated economic effect.",
+          "text": "BusinessEurope advocates targeted European preference provisions and coherent investment rules, rather than broad restrictions that deter investment.",
+          "confidence": "medium",
+          "record_key": "link:https://www.businesseurope.eu/wp-content/uploads/2026/06/2026-11-24-Industrial-Accelerator-Act_BusinessEurope-Comments_for-web.pdf",
+          "merit": 81,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:be3e9ac22f6aa137:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1093/scipol/scag085": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "3712582d",
+      "identity_hash": "853e04cca0ad3db0",
+      "reader_title": "Regulatory timing hinders German phosphorus recovery",
+      "reader_what": "The authors examine why mandated phosphorus recovery progresses slowly in Germany despite strategic and circular-economy objectives.",
+      "reader_why": "Institutional timing constrains phosphorus recovery as a route to reducing dependence on imported critical raw materials.",
+      "reader_more": "Drawing on 37 interviews, the authors analyse temporal misalignments between regulation, wastewater infrastructure and fertilizer-industry development that constrain implementation.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "",
+        "main_finding": "Drawing on 37 interviews, the authors analyse temporal misalignments between regulation, wastewater infrastructure and fertilizer-industry development that constrain implementation.",
+        "method_or_basis": "Matching Lund University repository author abstract, DOI 10.1093/scipol/scag085; substantive methodological and analytical summary.",
+        "qualification": "Repository abstract rather than full version of record; qualitative case analysis does not quantify EU-wide reduction in import dependence.",
+        "radar_relevance": "Direct study of domestic recovery capacity for a critical raw material and the conditions for EU strategic autonomy.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Package source route https://doi.org/10.1093/scipol/scag085: reader-facing URL: source retrieval failed: 403 Client Error: Forbidden for url: https://academic.oup.com/spp/advance-article/doi/10.1093/scipol/scag085/9017770; OpenAlex authenticated DOI lookup matched W7225394185; no substantive OpenAlex-assisted source recovered"
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive source at https://portal.research.lu.se/en/publications/a-matter-of-timing-temporal-misalignments-opportunity-spaces-and-/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://portal.research.lu.se/en/publications/a-matter-of-timing-temporal-misalignments-opportunity-spaces-and-/",
+            "title": "A matter of timing: temporal misalignments, opportunity spaces, and the rescaling of the fertilizer industry",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://portal.research.lu.se/en/publications/a-matter-of-timing-temporal-misalignments-opportunity-spaces-and-/; Matching Lund University repository author abstract, DOI 10.1093/scipol/scag085; substantive methodological and analytical summary."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct study of domestic recovery capacity for a critical raw material and the conditions for EU strategic autonomy."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:34Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "materials.processing_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Friedrich, Stihl and Grillitsch",
+            "class": "university_group"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-06",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "Germany"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "Repository abstract rather than full version of record; qualitative case analysis does not quantify EU-wide reduction in import dependence.",
+          "text": "The study identifies regulatory and industrial timing misalignments as constraints on implementing German phosphorus recovery.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1093/scipol/scag085",
+          "merit": 91,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:853e04cca0ad3db0:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://globaltradealert.org/reports/Subsidies-and-the-money-to-capability-step-in-Chinese-industrial-policy/": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "2038505b",
+      "identity_hash": "a55aad2d6c4a1da3",
+      "reader_title": "Chinese industrial market share does not guarantee durable profitability",
+      "reader_what": "Global Trade Alert compares Chinese firms’ economic profit with EU import-market share across nine sectors.",
+      "reader_why": "Import concentration and supplier financial viability are distinct aspects of European exposure to Chinese industrial capacity.",
+      "reader_more": "EU import-share gains are concentrated in solar, batteries and electric vehicles; profitability varies across sectors and firms, even where Chinese market shares remain very high.",
+      "deep_analysis": {
+        "work_kind": "empirical policy report",
+        "research_question": "",
+        "main_finding": "EU import-share gains are concentrated in solar, batteries and electric vehicles; profitability varies across sectors and firms, even where Chinese market shares remain very high.",
+        "method_or_basis": "Matching first-party report text, EU customs data 2017–25 and economic-profit data from Chinese listed firms 2015–25.",
+        "qualification": "Descriptive comparisons do not identify a causal effect of subsidies. Market share is a share of extra-EU imports, not total European consumption.",
+        "radar_relevance": "Direct empirical evidence about concentrated import exposure and industrial competition.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package source route https://globaltradealert.org/reports/Subsidies-and-the-money-to-capability-step-in-Chinese-industrial-policy/: matching primary text inspected."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://globaltradealert.org/reports/Subsidies-and-the-money-to-capability-step-in-Chinese-industrial-policy/",
+            "title": "Share without profit? - Global Trade Alert",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://globaltradealert.org/reports/Subsidies-and-the-money-to-capability-step-in-Chinese-industrial-policy/; Matching first-party report text, EU customs data 2017–25 and economic-profit data from Chinese listed firms 2015–25."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct empirical evidence about concentrated import exposure and industrial competition."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:34Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "dependency.import_concentration",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Global Trade Alert",
+            "class": "ngo_thinktank"
+          },
+          "mechanism": "measures",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-24",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "China"
+            ]
+          },
+          "kind": "evidence",
+          "qualification": "Descriptive comparisons do not identify a causal effect of subsidies. Market share is a share of extra-EU imports, not total European consumption.",
+          "text": "The report finds high Chinese shares of extra-EU solar and battery imports alongside divergent economic-profit performance across Chinese firms and sectors.",
+          "confidence": "high",
+          "record_key": "link:https://globaltradealert.org/reports/Subsidies-and-the-money-to-capability-step-in-Chinese-industrial-policy/",
+          "merit": 70,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:a55aad2d6c4a1da3:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1002/maco.70305": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "ce0a7fbe",
+      "identity_hash": "f583b0b556772616",
+      "reader_title": "Corrosion defects in South African vehicle exports",
+      "reader_what": "The engineering study identifies causes of premature chassis corrosion in vehicles exported to Europe.",
+      "reader_more": "Warranty and quality records, supplier audits and materials tests identify coating, preparation, material compatibility and process-control problems.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "",
+        "main_finding": "Warranty and quality records, supplier audits and materials tests identify coating, preparation, material compatibility and process-control problems.",
+        "method_or_basis": "Matching Wiley PDF excerpt, DOI 10.1002/maco.70305.",
+        "qualification": "Single manufacturer process problem, not evidence of strategic supply exposure.",
+        "radar_relevance": "Routine product-quality and reliability research outside the economic-security remit.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Package source route https://doi.org/10.1002/maco.70305: OpenAlex authenticated DOI lookup matched W7238856572; retrieved via OpenAlex cached full-text PDF"
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive source at https://content.openalex.org/works/W7238856572.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://content.openalex.org/works/W7238856572.pdf",
+            "title": "Investigation of Root Causes and Supply Chain Factors Associated With Premature Chassis Rusting in South African Vehicles Exported to Europe",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://content.openalex.org/works/W7238856572.pdf; Matching Wiley PDF excerpt, DOI 10.1002/maco.70305."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "Routine product-quality and reliability research outside the economic-security remit."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:34Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://www.eib.org/en/stories/europe-space-investment-finance-institutions-podcast-economy": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "a0c5bcdf",
+      "identity_hash": "d19ab08e3de0fc2b",
+      "reader_title": "European space financing rises but exit markets remain weak",
+      "reader_what": "EIB’s space-finance interviews identify record investment alongside structural barriers to scaling European companies.",
+      "reader_why": "Capital mobilisation and viable exits matter for retaining European space capabilities and autonomy.",
+      "reader_more": "The ESPI interview identifies 2026 as a record investment year and stresses slow financing and weak exit markets; EIB and ESA interviewees describe public financing and private capital coordination.",
+      "deep_analysis": {
+        "work_kind": "institutional interview synthesis",
+        "research_question": "",
+        "main_finding": "The ESPI interview identifies 2026 as a record investment year and stresses slow financing and weak exit markets; EIB and ESA interviewees describe public financing and private capital coordination.",
+        "method_or_basis": "Matching EIB article summarising three institutional interviews; not an independent quantitative study.",
+        "qualification": "The article reports expert observations rather than providing a complete investment dataset or causal evaluation.",
+        "radar_relevance": "Direct institutional evidence on strategic space-industry financing and capital-market gaps.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package source route https://www.eib.org/en/stories/europe-space-investment-finance-institutions-podcast-economy: matching primary text inspected."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://www.eib.org/en/stories/europe-space-investment-finance-institutions-podcast-economy",
+            "title": "How well is Europe financing its space economy?",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://www.eib.org/en/stories/europe-space-investment-finance-institutions-podcast-economy; Matching EIB article summarising three institutional interviews; not an independent quantitative study."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct institutional evidence on strategic space-industry financing and capital-market gaps."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:35Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "finance.strategic_investment",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Investment Bank",
+            "class": "eu_body"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-24",
+          "scope": {
+            "level": "europe",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "The article reports expert observations rather than providing a complete investment dataset or causal evaluation.",
+          "text": "EIB’s interviews identify increased European space investment alongside weak exit opportunities and a need for quicker financing.",
+          "confidence": "high",
+          "record_key": "link:https://www.eib.org/en/stories/europe-space-investment-finance-institutions-podcast-economy",
+          "merit": 100,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:d19ab08e3de0fc2b:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://celis.institute/fdi-facelift-how-the-planned-ipg-will-change-deal-practice-in-germany/": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "7fe727af",
+      "identity_hash": "c161566c8d6305f7",
+      "reader_title": "Germany prepares changes to investment screening",
+      "reader_what": "Legal analysts describe draft changes to Germany’s foreign investment screening framework.",
+      "reader_why": "Changes in notification scope and review requirements could alter conditions for investment in German strategic sectors.",
+      "reader_more": "The authors identify revised thresholds, expanded case groups and additional acquisition situations that could become subject to screening under the proposed IPG.",
+      "deep_analysis": {
+        "work_kind": "legal commentary",
+        "research_question": "",
+        "main_finding": "The authors identify revised thresholds, expanded case groups and additional acquisition situations that could become subject to screening under the proposed IPG.",
+        "method_or_basis": "Matching full CELIS legal commentary by Roland M. Stein, Leonard von Rummel and Elisa Steinhöfel.",
+        "qualification": "Describes a draft rather than enacted law; practical implications are legal analysis, not observed outcomes.",
+        "radar_relevance": "Direct legal analysis of national investment screening reform.",
+        "confidence": "high",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package source route https://celis.institute/fdi-facelift-how-the-planned-ipg-will-change-deal-practice-in-germany/: matching primary text inspected."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://celis.institute/fdi-facelift-how-the-planned-ipg-will-change-deal-practice-in-germany/",
+            "title": "FDI Facelift: How the Planned IPG Will Change Deal Practice in Germany - CELIS Institute",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://celis.institute/fdi-facelift-how-the-planned-ipg-will-change-deal-practice-in-germany/; Matching full CELIS legal commentary by Roland M. Stein, Leonard von Rummel and Elisa Steinhöfel."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct legal analysis of national investment screening reform."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:35Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "fdi.screening_regulation",
+          "secondary_objects": [],
+          "actor": {
+            "name": "German Federal Ministry for Economic Affairs and Energy",
+            "class": "member_state"
+          },
+          "mechanism": "proposes",
+          "direction": "becomes_conditional",
+          "status": "proposed",
+          "status_date": "2026-11-24",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "Germany"
+            ]
+          },
+          "kind": "action",
+          "qualification": "Describes a draft rather than enacted law; practical implications are legal analysis, not observed outcomes.",
+          "text": "Germany is preparing an investment screening law that would alter screening thresholds and acquisition categories, according to CELIS legal analysis.",
+          "confidence": "high",
+          "record_key": "link:https://celis.institute/fdi-facelift-how-the-planned-ipg-will-change-deal-practice-in-germany/",
+          "merit": 60,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:c161566c8d6305f7:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1080/10242694.2026.2767900": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "47f52619",
+      "identity_hash": "a31648bd7171857d",
+      "reader_title": "Central and Eastern European defence industries follow different ownership models",
+      "reader_what": "The study distinguishes ownership and industrial governance trajectories in five European countries since 1990.",
+      "reader_why": "National industrial ownership structures shape participation in common European industrial initiatives.",
+      "reader_more": "Masaryk University’s substantive publication summary identifies differing approaches in Poland, Hungary, Czechia, Slovakia and Lithuania, and reports that private firms predominate in participation in European initiatives outside Poland.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "",
+        "main_finding": "Masaryk University’s substantive publication summary identifies differing approaches in Poland, Hungary, Czechia, Slovakia and Lithuania, and reports that private firms predominate in participation in European initiatives outside Poland.",
+        "method_or_basis": "Exact title, authors and DOI corroborated by the author’s university department summary dated 24 November 2026.",
+        "qualification": "University summary, not full version of record; no operational or technical defence detail inferred.",
+        "radar_relevance": "Historical comparative research on ownership and industrial governance relevant to EU economic security.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Package source route https://doi.org/10.1080/10242694.2026.2767900: reader-facing URL: source retrieval failed: 403 Client Error: Forbidden for url: https://www.tandfonline.com/doi/full/10.1080/10242694.2026.2767900; OpenAlex authenticated DOI lookup matched W7238497022; no substantive OpenAlex-assisted source recovered"
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive source at https://mve.fss.muni.cz/novinky/novy-clanek-bohuslava-pernici-v-casopise-defence-and-peace-economics."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://mve.fss.muni.cz/novinky/novy-clanek-bohuslava-pernici-v-casopise-defence-and-peace-economics",
+            "title": "Power of geopolitics: state-owned defence industry in Central and Eastern Europe",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://mve.fss.muni.cz/novinky/novy-clanek-bohuslava-pernici-v-casopise-defence-and-peace-economics; Exact title, authors and DOI corroborated by the author’s university department summary dated 24 November 2026."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Historical comparative research on ownership and industrial governance relevant to EU economic security."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:35Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "econsec.defence_capacity",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Pernica, Dvořák and Taksás",
+            "class": "university_group"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-22",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "Poland",
+              "Hungary",
+              "Czechia",
+              "Slovakia",
+              "Lithuania"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "University summary, not full version of record; no operational or technical defence detail inferred.",
+          "text": "The study finds differing national public/private ownership trajectories in defence industries and heterogeneous participation in European industrial initiatives.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1080/10242694.2026.2767900",
+          "merit": 68,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:a31648bd7171857d:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1080/08120099.2026.2751514": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "d24a87ec",
+      "identity_hash": "37986e3125decd69",
+      "reader_title": "Greek bauxite residues offer a potential secondary rare-earth resource",
+      "reader_what": "Geological mapping and chemical analysis identify rare-earth-bearing bauxite residue in the Gulf of Corinth.",
+      "reader_why": "Secondary European critical-material resources could diversify supply, if recovery proves viable.",
+      "reader_more": "The study estimates approximately 5.49 million tonnes of residue, with total rare-earth concentrations of 484–771 mg/kg. Mineralogical findings show complex associations; recovery remains technically challenging.",
+      "deep_analysis": {
+        "work_kind": "peer-reviewed article",
+        "research_question": "",
+        "main_finding": "The study estimates approximately 5.49 million tonnes of residue, with total rare-earth concentrations of 484–771 mg/kg. Mineralogical findings show complex associations; recovery remains technically challenging.",
+        "method_or_basis": "Matching journal PDF excerpt with mapping, mineralogical and geochemical analyses, DOI 10.1080/08120099.2026.2751514.",
+        "qualification": "Resource potential is not an economically recoverable reserve or an operating source of supply.",
+        "radar_relevance": "Direct empirical study of potential European secondary critical raw materials.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "limited",
+            "note": "Package source route https://doi.org/10.1080/08120099.2026.2751514: OpenAlex authenticated DOI lookup matched W7238219711; retrieved via OpenAlex cached full-text PDF"
+          },
+          {
+            "step": "official_publisher_or_repository",
+            "outcome": "success",
+            "note": "Recovered matching substantive source at https://content.openalex.org/works/W7238219711.pdf."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://content.openalex.org/works/W7238219711.pdf",
+            "title": "Bauxite residue deposition in Corinth Gulf, Greece: a potential REE resource",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://content.openalex.org/works/W7238219711.pdf; Matching journal PDF excerpt with mapping, mineralogical and geochemical analyses, DOI 10.1080/08120099.2026.2751514."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct empirical study of potential European secondary critical raw materials."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:36Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "materials.rare_earths",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Ntouros and co-authors",
+            "class": "university_group"
+          },
+          "mechanism": "assesses",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-22",
+          "scope": {
+            "level": "member_state",
+            "countries": [
+              "Greece"
+            ]
+          },
+          "kind": "evidence",
+          "qualification": "Resource potential is not an economically recoverable reserve or an operating source of supply.",
+          "text": "The study identifies rare-earth-bearing bauxite residues in Greece as a possible secondary resource, with technically challenging recovery.",
+          "confidence": "medium",
+          "record_key": "link:https://doi.org/10.1080/08120099.2026.2751514",
+          "merit": 77,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:37986e3125decd69:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://doi.org/10.1093/eurpub/ckag169.366": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "2dc50376",
+      "identity_hash": "1c5c0ef6b11d1e8c",
+      "reader_title": "European nursing workforce intelligence roundtable",
+      "reader_what": "The conference abstract describes a WHO Europe initiative to improve nursing workforce intelligence and retention.",
+      "reader_more": "The planned roundtable draws on education-market analyses across 21 countries to address workforce shortages and conditions.",
+      "deep_analysis": {
+        "work_kind": "conference abstract",
+        "research_question": "",
+        "main_finding": "The planned roundtable draws on education-market analyses across 21 countries to address workforce shortages and conditions.",
+        "method_or_basis": "Matching conference abstract supplement, DOI 10.1093/eurpub/ckag169.366.",
+        "qualification": "Programme description rather than a completed study of strategic external dependency.",
+        "radar_relevance": "General health workforce planning, without a specific economic-security exposure or instrument.",
+        "confidence": "medium",
+        "why_supported": false
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package source route https://doi.org/10.1093/eurpub/ckag169.366: matching primary text inspected."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://doi.org/10.1093/eurpub/ckag169.366",
+            "title": "N.6. Round Table: Strengthening Nursing Workforce Intelligence in Europe: Lessons from Education Market Analyses in 21",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://doi.org/10.1093/eurpub/ckag169.366; Matching conference abstract supplement, DOI 10.1093/eurpub/ckag169.366."
+      },
+      "admission": {
+        "decision": "drop",
+        "target_strand": "A",
+        "reason_code": "OUT_OF_SCOPE",
+        "reason": "General health workforce planning, without a specific economic-security exposure or instrument."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:36Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://data.consilium.europa.eu/doc/document/ST-14141-2026-INIT/en/pdf": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_a",
+      "corpus_scope": "main",
+      "source_hash": "f1b9b0f3",
+      "identity_hash": "d6bc3f0683c62418",
+      "reader_title": "Commission proposes modernising European standardisation",
+      "reader_what": "The Commission proposes replacing the existing European standardisation regulation to address delays, participation, financing and international influence.",
+      "reader_why": "Standard-setting capacity is explicitly identified as a strategic industrial policy tool for emerging technologies and economic security.",
+      "reader_more": "COM(2026) 780 final identifies slow harmonised standards, unbalanced participation, financial sustainability issues and declining international influence, proposing reform of the standardisation framework.",
+      "deep_analysis": {
+        "work_kind": "legislative proposal",
+        "research_question": "",
+        "main_finding": "COM(2026) 780 final identifies slow harmonised standards, unbalanced participation, financial sustainability issues and declining international influence, proposing reform of the standardisation framework.",
+        "method_or_basis": "Official Council-transmitted Commission proposal ST 14141/26, explanatory memorandum dated 6 October 2026.",
+        "qualification": "Legislative proposal, not adoption; expected benefits are Commission objectives, not observed outcomes.",
+        "radar_relevance": "Direct proposed EU economic-security policy mechanism supporting strategic technology standardisation.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package source route https://data.consilium.europa.eu/doc/document/ST-14141-2026-INIT/en/pdf: matching primary text inspected."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://data.consilium.europa.eu/doc/document/ST-14141-2026-INIT/en/pdf",
+            "title": "CONTEXT OF THE PROPOSAL • Reasons for and objectives of the proposal",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://data.consilium.europa.eu/doc/document/ST-14141-2026-INIT/en/pdf; Official Council-transmitted Commission proposal ST 14141/26, explanatory memorandum dated 6 October 2026."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "A",
+        "reason_code": "A_SUBSTANTIVE_EU_RI",
+        "reason": "Direct proposed EU economic-security policy mechanism supporting strategic technology standardisation."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:36Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "econsec.technology_security",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "proposes",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2026-10-06",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Legislative proposal, not adoption; expected benefits are Commission objectives, not observed outcomes.",
+          "text": "The Commission proposes modernising European standardisation to address delays, stakeholder participation and declining global influence in strategic technologies.",
+          "confidence": "medium",
+          "record_key": "link:https://data.consilium.europa.eu/doc/document/ST-14141-2026-INIT/en/pdf",
+          "merit": 99,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:d6bc3f0683c62418:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://news.google.com/rss/articles/CBMipwFBVV95cUxPb0MzcWRmZGdxakxaM0VVWVZkRkducWNKZDhCRDhIVnpha1d3eUVDVUJoSnpFTklsTE15a1NYajhPa2RaQ1lXeWJOdndmb0NvRkF5dHN3ZTFLZ3c2ejhvWGtEelRGQ2szNWVSVEdHcnJTZ0NuaEx1ZjdhY09jMGpnRUhINnM5dU9LSHc2WTZWaFh6RUlSQ2p6ZmZENXdhc3Mwbk15ZkZpVQ?oc=5": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_c",
+      "corpus_scope": "main",
+      "source_hash": "cbc6bba9",
+      "identity_hash": "bca2786b90639d80",
+      "reader_title": "Commission proposes further Russia sanctions",
+      "reader_what": "The Commission announced a package targeting additional financial institutions, payment networks and other Russian interests.",
+      "reader_why": "The proposal seeks to strengthen economic restrictions and their enforcement.",
+      "reader_more": "The proposed 22nd package would extend financial restrictions to additional banks and payment networks, and address third-country circumvention. Adoption is not established.",
+      "deep_analysis": {
+        "work_kind": "reported policy proposal",
+        "research_question": "",
+        "main_finding": "The proposed 22nd package would extend financial restrictions to additional banks and payment networks, and address third-country circumvention. Adoption is not established.",
+        "method_or_basis": "Matching Politico attributed text reproduced by Daily Guardian Europe; matching announcement described by To Vima.",
+        "qualification": "Proposed measures, not adopted law or observed effects.",
+        "radar_relevance": "Concrete proposed extension of EU sanctions and enforcement.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Package source route https://news.google.com/rss/articles/CBMipwFBVV95cUxPb0MzcWRmZGdxakxaM0VVWVZkRkducWNKZDhCRDhIVnpha1d3eUVDVUJoSnpFTklsTE15a1NYajhPa2RaQ1lXeWJOdndmb0NvRkF5dHN3ZTFLZ3c2ejhvWGtEelRGQ2szNWVSVEdHcnJTZ0NuaEx1ZjdhY09jMGpnRUhINnM5dU9LSHc2WTZWaFh6RUlSQ2p6ZmZENXdhc3Mwbk15ZkZpVQ?oc=5: reader-facing URL: no substantive text"
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Recovered matching substantive source at https://dailyguardian.eu/eu-targets-russian-ex-soldiers-banks-and-sports-in-new-sanctions-push-politico/."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://dailyguardian.eu/eu-targets-russian-ex-soldiers-banks-and-sports-in-new-sanctions-push-politico/",
+            "title": "EU targets Russian ex-soldiers, banks and sports in new sanctions push",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://dailyguardian.eu/eu-targets-russian-ex-soldiers-banks-and-sports-in-new-sanctions-push-politico/; Matching Politico attributed text reproduced by Daily Guardian Europe; matching announcement described by To Vima."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+        "reason": "Concrete proposed extension of EU sanctions and enforcement."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:36Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "sanctions.package",
+          "secondary_objects": [],
+          "actor": {
+            "name": "European Commission",
+            "class": "eu_body"
+          },
+          "mechanism": "proposes",
+          "direction": "expands",
+          "status": "proposed",
+          "status_date": "2026-11-23",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "action",
+          "qualification": "Proposed measures, not adopted law or observed effects.",
+          "text": "The proposed 22nd package would extend financial restrictions to additional banks and payment networks, and address third-country circumvention. Adoption is not established.",
+          "confidence": "medium",
+          "record_key": "link:https://news.google.com/rss/articles/CBMipwFBVV95cUxPb0MzcWRmZGdxakxaM0VVWVZkRkducWNKZDhCRDhIVnpha1d3eUVDVUJoSnpFTklsTE15a1NYajhPa2RaQ1lXeWJOdndmb0NvRkF5dHN3ZTFLZ3c2ejhvWGtEelRGQ2szNWVSVEdHcnJTZ0NuaEx1ZjdhY09jMGpnRUhINnM5dU9LSHc2WTZWaFh6RUlSQ2p6ZmZENXdhc3Mwbk15ZkZpVQ?oc=5",
+          "merit": 61,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:bca2786b90639d80:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://news.google.com/rss/articles/CBMihgJBVV95cUxOZ2NSZEhCMS1HWUd5Tm94Wm1ZdWh1RkQ4NE1Kd3ByWDhLV2NGZ29xRnVGWC1RYWVid2F5UTltWFZpc3UxWmNVLTBuekZ0VFRDQ25uSUN2ZEZFWmNFNm9UNG1EdUd2WkttNnRZb1M3a2ltWjdwZjVsVXNlSnQ2d05xN1lOdVNod2FESW0yd2NJelNGVjdEbzdtZ2pWOGd4Szh4NnlBV3NMT2VEelhSN1M5NEtDYlVwd3dURk9nR2FIMTlnRDlJNkdJc0J1Z1hqQmJMOXJHZXNLT2NUOTF4blhBYWU0cnl6eWM0Tjh2MkpLSjZGQTVPQzFPUU1LbFJOTE15djJqUTdn?oc=5": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_c",
+      "corpus_scope": "main",
+      "source_hash": "caf9c40d",
+      "identity_hash": "6ce25427c4412931",
+      "reader_title": "Romanian citizenship fraud raises sanctions-enforcement concerns",
+      "reader_what": "A cross-border investigation identifies suspected fraudulent citizenship cases involving Russian nationals.",
+      "reader_why": "The investigation highlights weaknesses in the enforcement of nationality-linked financial restrictions.",
+      "reader_more": "Le Monde and partner journalists examined Romanian court records and documented cases of suspected fraudulent citizenship, including people connected to sanctioned networks. Authorities are investigating; not all allegations are established.",
+      "deep_analysis": {
+        "work_kind": "investigative reporting",
+        "research_question": "",
+        "main_finding": "Le Monde and partner journalists examined Romanian court records and documented cases of suspected fraudulent citizenship, including people connected to sanctioned networks. Authorities are investigating; not all allegations are established.",
+        "method_or_basis": "Matching Le Monde investigative article, court records and interviews.",
+        "qualification": "Allegations and investigations do not establish guilt or the aggregate scale of sanctions evasion.",
+        "radar_relevance": "Direct evidence of enforcement vulnerabilities, without operational detail.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Package source route https://news.google.com/rss/articles/CBMihgJBVV95cUxOZ2NSZEhCMS1HWUd5Tm94Wm1ZdWh1RkQ4NE1Kd3ByWDhLV2NGZ29xRnVGWC1RYWVid2F5UTltWFZpc3UxWmNVLTBuekZ0VFRDQ25uSUN2ZEZFWmNFNm9UNG1EdUd2WkttNnRZb1M3a2ltWjdwZjVsVXNlSnQ2d05xN1lOdVNod2FESW0yd2NJelNGVjdEbzdtZ2pWOGd4Szh4NnlBV3NMT2VEelhSN1M5NEtDYlVwd3dURk9nR2FIMTlnRDlJNkdJc0J1Z1hqQmJMOXJHZXNLT2NUOTF4blhBYWU0cnl6eWM0Tjh2MkpLSjZGQTVPQzFPUU1LbFJOTE15djJqUTdn?oc=5: reader-facing URL: no substantive text"
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Recovered matching substantive source at https://www.lemonde.fr/en/international/article/2026/11/23/criminals-and-russians-under-sanctions-may-have-operated-in-europe-using-forged-romanian-citizenships_6787324_4.html."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://www.lemonde.fr/en/international/article/2026/11/23/criminals-and-russians-under-sanctions-may-have-operated-in-europe-using-forged-romanian-citizenships_6787324_4.html",
+            "title": "Criminals and Russians under sanctions may have operated in Europe using forged Romanian citizenships - Le Monde.fr",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://www.lemonde.fr/en/international/article/2026/11/23/criminals-and-russians-under-sanctions-may-have-operated-in-europe-using-forged-romanian-citizenships_6787324_4.html; Matching Le Monde investigative article, court records and interviews."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+        "reason": "Direct evidence of enforcement vulnerabilities, without operational detail."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:37Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "sanctions.circumvention",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Le Monde and investigative partners",
+            "class": "other"
+          },
+          "mechanism": "detects",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-23",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "Romania"
+            ]
+          },
+          "kind": "diagnosis",
+          "qualification": "Allegations and investigations do not establish guilt or the aggregate scale of sanctions evasion.",
+          "text": "Le Monde and partner journalists examined Romanian court records and documented cases of suspected fraudulent citizenship, including people connected to sanctioned networks. Authorities are investigating; not all allegations are established.",
+          "confidence": "medium",
+          "record_key": "link:https://news.google.com/rss/articles/CBMihgJBVV95cUxOZ2NSZEhCMS1HWUd5Tm94Wm1ZdWh1RkQ4NE1Kd3ByWDhLV2NGZ29xRnVGWC1RYWVid2F5UTltWFZpc3UxWmNVLTBuekZ0VFRDQ25uSUN2ZEZFWmNFNm9UNG1EdUd2WkttNnRZb1M3a2ltWjdwZjVsVXNlSnQ2d05xN1lOdVNod2FESW0yd2NJelNGVjdEbzdtZ2pWOGd4Szh4NnlBV3NMT2VEelhSN1M5NEtDYlVwd3dURk9nR2FIMTlnRDlJNkdJc0J1Z1hqQmJMOXJHZXNLT2NUOTF4blhBYWU0cnl6eWM0Tjh2MkpLSjZGQTVPQzFPUU1LbFJOTE15djJqUTdn?oc=5",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:6ce25427c4412931:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://news.google.com/rss/articles/CBMixwFBVV95cUxPdUQxaGUwa0xZUXg3ZGRoZkp4dnJfVDhZUGo4Q0V4QlJGeXZNZjIzLU5YT0NMeW5KOUJfVG1wRk1fS2pzc2JIZW01TzBaaXZ4cjhyRlVDMmxpN1JuNERqNVUwQmpjd0pQWUFGb0RMdUxkYVdCZUxIYVBxUmpDeG1mUGdWMkw4a25pdXE2UjRlZXl3Q3hub2VZdEZPSEhGQ1BrZDdFSGFjR095LTBDU1BENkVRczNVOXJZRzNPM2RjZXVySHhNMXJF?oc=5": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_c",
+      "corpus_scope": "main",
+      "source_hash": "0508621b",
+      "identity_hash": "75e7853bc93ce76b",
+      "reader_title": "European cloud sovereignty demand rises but switching remains slow",
+      "reader_what": "Reuters reports rising demand for European-controlled cloud services, with relatively few large-scale migrations.",
+      "reader_why": "Dependence on incumbent US providers remains a constraint on European digital autonomy.",
+      "reader_more": "Interviews describe increased demand and procurement interest, but migration costs and installed software constrain switching. A Commission draft cited by Reuters places the three largest US providers above 70% of the European market.",
+      "deep_analysis": {
+        "work_kind": "reported market analysis",
+        "research_question": "",
+        "main_finding": "Interviews describe increased demand and procurement interest, but migration costs and installed software constrain switching. A Commission draft cited by Reuters places the three largest US providers above 70% of the European market.",
+        "method_or_basis": "Matching Reuters reporting syndicated in MarketScreener; company interviews and Commission draft figures.",
+        "qualification": "Company-reported demand is not realized market-share change; draft figures are attributed.",
+        "radar_relevance": "Specific evidence of cloud dependency and barriers to diversification.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "failed",
+            "note": "Package source route https://news.google.com/rss/articles/CBMixwFBVV95cUxPdUQxaGUwa0xZUXg3ZGRoZkp4dnJfVDhZUGo4Q0V4QlJGeXZNZjIzLU5YT0NMeW5KOUJfVG1wRk1fS2pzc2JIZW01TzBaaXZ4cjhyRlVDMmxpN1JuNERqNVUwQmpjd0pQWUFGb0RMdUxkYVdCZUxIYVBxUmpDeG1mUGdWMkw4a25pdXE2UjRlZXl3Q3hub2VZdEZPSEhGQ1BrZDdFSGFjR095LTBDU1BENkVRczNVOXJZRzNPM2RjZXVySHhNMXJF?oc=5: reader-facing URL: no substantive text"
+          },
+          {
+            "step": "exact_title",
+            "outcome": "success",
+            "note": "Recovered matching substantive source at https://ca.marketscreener.com/news/europe-s-cloud-sovereignty-push-gains-ground-but-us-hyperscalers-remain-dominant-ce785ed3d08bf622."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://ca.marketscreener.com/news/europe-s-cloud-sovereignty-push-gains-ground-but-us-hyperscalers-remain-dominant-ce785ed3d08bf622",
+            "title": "Europe's cloud sovereignty push gains ground, but US hyperscalers remain dominant",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://ca.marketscreener.com/news/europe-s-cloud-sovereignty-push-gains-ground-but-us-hyperscalers-remain-dominant-ce785ed3d08bf622; Matching Reuters reporting syndicated in MarketScreener; company interviews and Commission draft figures."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+        "reason": "Specific evidence of cloud dependency and barriers to diversification."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:37Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "digital.sovereignty",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Reuters interviewed cloud providers",
+            "class": "other"
+          },
+          "mechanism": "evaluates",
+          "direction": "mixed",
+          "status": "observation",
+          "status_date": "2026-11-23",
+          "scope": {
+            "level": "eu",
+            "countries": []
+          },
+          "kind": "diagnosis",
+          "qualification": "Company-reported demand is not realized market-share change; draft figures are attributed.",
+          "text": "Interviews describe increased demand and procurement interest, but migration costs and installed software constrain switching. A Commission draft cited by Reuters places the three largest US providers above 70% of the European market.",
+          "confidence": "medium",
+          "record_key": "link:https://news.google.com/rss/articles/CBMixwFBVV95cUxPdUQxaGUwa0xZUXg3ZGRoZkp4dnJfVDhZUGo4Q0V4QlJGeXZNZjIzLU5YT0NMeW5KOUJfVG1wRk1fS2pzc2JIZW01TzBaaXZ4cjhyRlVDMmxpN1JuNERqNVUwQmpjd0pQWUFGb0RMdUxkYVdCZUxIYVBxUmpDeG1mUGdWMkw4a25pdXE2UjRlZXl3Q3hub2VZdEZPSEhGQ1BrZDdFSGFjR095LTBDU1BENkVRczNVOXJZRzNPM2RjZXVySHhNMXJF?oc=5",
+          "merit": 54,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:75e7853bc93ce76b:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
+    },
+    "link:https://borderlex.net/2026/11/24/brazils-eu-ambassador-urges-cooperation-as-eu-deadlines-pile-up/": {
+      "profile": "deep-reader-v2-authoritative",
+      "strand": "strand_c",
+      "corpus_scope": "main",
+      "source_hash": "85f65261",
+      "identity_hash": "e062dc4f90b7d303",
+      "reader_title": "Brazil urges cooperation over unilateral EU trade measures",
+      "reader_what": "Brazil’s ambassador advocates cooperation and recognition of Brazilian standards ahead of EU trade-rule deadlines.",
+      "reader_why": "Partner acceptance of EU trade measures affects the durability of strategic trade relationships.",
+      "reader_more": "The ambassador argues that regulatory equivalence and cooperation could ease disputes over EU deforestation rules and other trade measures. The comments were made at an ODI Europe study launch.",
+      "deep_analysis": {
+        "work_kind": "reported diplomatic statement",
+        "research_question": "",
+        "main_finding": "The ambassador argues that regulatory equivalence and cooperation could ease disputes over EU deforestation rules and other trade measures. The comments were made at an ODI Europe study launch.",
+        "method_or_basis": "Substantial matching Borderlex article in package, including attributed remarks and policy context.",
+        "qualification": "Diplomatic advocacy, not an agreement or change in EU rules.",
+        "radar_relevance": "Specific partner response to EU trade conditions and partnership strategy.",
+        "confidence": "medium",
+        "why_supported": true
+      },
+      "verification": {
+        "identity_verified": true,
+        "evidence_depth": "full_text_or_substantive_primary",
+        "retrieval_attempts": [
+          {
+            "step": "supplied_url",
+            "outcome": "success",
+            "note": "Package source route https://borderlex.net/2026/11/24/brazils-eu-ambassador-urges-cooperation-as-eu-deadlines-pile-up/: matching primary text inspected."
+          }
+        ],
+        "recovered_sources": [
+          {
+            "kind": "primary_source",
+            "url": "https://borderlex.net/2026/11/24/brazils-eu-ambassador-urges-cooperation-as-eu-deadlines-pile-up/",
+            "title": "Brazil's EU ambassador urges cooperation as EU deadlines pile up - Borderlex - European trade policy",
+            "evidence_used": true
+          }
+        ],
+        "verification_note": "Checked source identity and substantive content at https://borderlex.net/2026/11/24/brazils-eu-ambassador-urges-cooperation-as-eu-deadlines-pile-up/; Substantial matching Borderlex article in package, including attributed remarks and policy context."
+      },
+      "admission": {
+        "decision": "keep",
+        "target_strand": "C",
+        "reason_code": "C_SUBSTANTIVE_DEVELOPMENT",
+        "reason": "Specific partner response to EU trade conditions and partnership strategy."
+      },
+      "duplicate": {
+        "status": "unique",
+        "duplicate_of": "",
+        "reason": ""
+      },
+      "deep_read_mode": "offline_llm_package_v2",
+      "reader_text_model": "user-provided-llm-subscription",
+      "reader_text_written_at": "2026-11-25T11:53:37Z",
+      "deep_scan_package_id": "worker-a-20261125T101325Z-b0caa28d28ac",
+      "claims": [
+        {
+          "object": "econsec.trade_security",
+          "secondary_objects": [],
+          "actor": {
+            "name": "Brazilian ambassador to the EU",
+            "class": "third_country"
+          },
+          "mechanism": "advocates",
+          "direction": "becomes_contested",
+          "status": "intention",
+          "status_date": "2026-11-23",
+          "scope": {
+            "level": "eu",
+            "countries": [
+              "Brazil"
+            ]
+          },
+          "kind": "advocacy",
+          "qualification": "Diplomatic advocacy, not an agreement or change in EU rules.",
+          "text": "The ambassador argues that regulatory equivalence and cooperation could ease disputes over EU deforestation rules and other trade measures. The comments were made at an ODI Europe study launch.",
+          "confidence": "medium",
+          "record_key": "link:https://borderlex.net/2026/11/24/brazils-eu-ambassador-urges-cooperation-as-eu-deadlines-pile-up/",
+          "merit": 61,
+          "origin": "deep_scan",
+          "era": "current",
+          "provisional": false,
+          "claim_id": "c:e062dc4f90b7d303:1",
+          "attributes": {}
+        }
+      ],
+      "claims_profile": "radar-claims-v1"
     }
   },
   "claims_profile": "radar-claims-v1",
-  "claims_updated_at": "2026-11-23T07:27:02Z"
+  "claims_updated_at": "2026-11-25T11:53:37Z"
 }
