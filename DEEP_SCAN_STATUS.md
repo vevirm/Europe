@@ -6,28 +6,22 @@ It shows what is verified, what each worker owns, and what is still eligible. Ex
 Scheduling policy: preserve active worker reservations; fill new slots with Main Radar first, then Historical Radar. Do not fill packages artificially at saturation.
 A validated unsuccessful recovery is one pass; packaging alone is not a pass. After **3** failed passes, close the work as **dropped**, keeping an audit. No work-by-hand loop.
 
-- Authoritative V2 verified: **3370** (Main **1468** + Historical **1902**)
-- Automatic queue still needing V2 verification: **55** (Main **27** + Historical **28**)
-- Currently assigned to workers: **53** (Main **26** + Historical **27**)
+- Authoritative V2 verified: **3405** (Main **1485** + Historical **1920**)
+- Automatic queue still needing V2 verification: **20** (Main **10** + Historical **10**)
+- Currently assigned to workers: **20** (Main **10** + Historical **10**)
 - Bounded access-recovery retries still eligible: **16**
 - Dropped after three failed recovery passes (archived): **204**
 - Legacy work-by-hand requiring reconciliation: **0**
-- Automatic queue pending and not yet assigned: **2**
+- Automatic queue pending and not yet assigned: **0**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261126T094434Z-5be00d3d1887`
-- Assigned unresolved records: **36**
-  1. `link:https://ecfr.eu/wp-content/uploads/2026/11/Cleaner-together-Why-energy-cooperation-is-vital-for-a-fossil-free-Europe.pdf` — Cleaner together: Why energy cooperation is vital for a fossil-free Europe – European Council on Foreign Relations
-  2. `link:https://cdn.ceps.eu/2026/11/2027-17-ERCC-Offshore-solar.pdf` — Unlocking Europe’s offshore solar potential – CEPS
-  3. `link:https://doi.org/10.1007/s10100-026-01046-6` — Ranking of EU member states based on sectoral adoption of artificial intelligence
-  4. `link:https://doi.org/10.69473/iasr.2026.29.3.245` — European Union’s Strategic Posture in a Competitive World: Rethinking the Common Security and Defence Policy (CSDP) in the Age of Global Rivalry
-  5. `link:https://doi.org/10.1080/10220461.2026.2761629` — EU role adaptation in Africa amid partner expectations: The Global Gateway in Angola, Cabo Verde and Mozambique
-  6. `link:https://www.delorscentre.eu/en/policy-areas/security-foreign-policy-and-geo-economics` — Security, foreign policy, and geo-economics | Jacques Delors Centre
-  7. `link:https://digital-strategy.ec.europa.eu/en/library/eu-action-plan-cybersecurity-and-artificial-intelligence` — EU Action Plan on Cybersecurity and Artificial Intelligence
-  8. `link:https://rhg.com/wp-content/uploads/2026/11/Growing-Global-Demand-for-Sustainable-Aviation-Fuels.pdf` — Growing Global Demand for Sustainable Aviation Fuels
-  - … plus 28 more in the package manifest
+- Current package: `worker-a-20261126T101915Z-8e1f435941d0`
+- Assigned unresolved records: **3**
+  1. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=b20bca19-e82f-11f1-b745-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Presidency Flash for the Working Party on Competitiveness and Growth (Internal Market) on 24-25 November 2026 - Publications Office of the EU — recovery attempt 2/3
+  2. `historical:id:9f4d7ac5ea0babd5` — FDI screening mechanism will lead to “bedlam”, EU lawyers say – Global Competition Review - CELIS Institute — recovery attempt 2/3
+  3. `link:https://news.google.com/rss/articles/CBMihAFBVV95cUxQbkF3U1dUMGY4ZkV6NDUtOUNQTXloME80UXFxTmg5cnd6c0ctRVhaQ25MZ1pzZHZSclZGWjN2WW1vNEZnZUlIamJMbWViZTM1WXF2VEltWFZEcVhvNVpISjhibm53Snc4NjNSZDhfb3BCMzAxcmtuZ3B2OGhndk9UbGVNYkc?oc=5` — European arms makers race to untangle supply chains from China and US — recovery attempt 2/3
 
 ### Worker B
 - Current package: `worker-b-20261126T094455Z-b9e9dbd3f47a`
