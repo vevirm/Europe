@@ -6,35 +6,31 @@ It shows what is verified, what each worker owns, and what is still eligible. Ex
 Scheduling policy: preserve active worker reservations; fill new slots with Main Radar first, then Historical Radar. Do not fill packages artificially at saturation.
 A validated unsuccessful recovery is one pass; packaging alone is not a pass. After **3** failed passes, close the work as **dropped**, keeping an audit. No work-by-hand loop.
 
-- Authoritative V2 verified: **3405** (Main **1485** + Historical **1920**)
-- Automatic queue still needing V2 verification: **20** (Main **10** + Historical **10**)
-- Currently assigned to workers: **20** (Main **10** + Historical **10**)
-- Bounded access-recovery retries still eligible: **16**
+- Authoritative V2 verified: **3414** (Main **1488** + Historical **1926**)
+- Automatic queue still needing V2 verification: **11** (Main **7** + Historical **4**)
+- Currently assigned to workers: **8** (Main **5** + Historical **3**)
+- Bounded access-recovery retries still eligible: **11**
 - Dropped after three failed recovery passes (archived): **204**
 - Legacy work-by-hand requiring reconciliation: **0**
-- Automatic queue pending and not yet assigned: **0**
+- Automatic queue pending and not yet assigned: **3**
 
 ## Worker lanes
 
 ### Worker A
-- Current package: `worker-a-20261126T101915Z-8e1f435941d0`
-- Assigned unresolved records: **3**
-  1. `link:https://op.europa.eu/o/opportal-service/download-handler?identifier=b20bca19-e82f-11f1-b745-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=` — Presidency Flash for the Working Party on Competitiveness and Growth (Internal Market) on 24-25 November 2026 - Publications Office of the EU — recovery attempt 2/3
-  2. `historical:id:9f4d7ac5ea0babd5` — FDI screening mechanism will lead to “bedlam”, EU lawyers say – Global Competition Review - CELIS Institute — recovery attempt 2/3
-  3. `link:https://news.google.com/rss/articles/CBMihAFBVV95cUxQbkF3U1dUMGY4ZkV6NDUtOUNQTXloME80UXFxTmg5cnd6c0ctRVhaQ25MZ1pzZHZSclZGWjN2WW1vNEZnZUlIamJMbWViZTM1WXF2VEltWFZEcVhvNVpISjhibm53Snc4NjNSZDhfb3BCMzAxcmtuZ3B2OGhndk9UbGVNYkc?oc=5` — European arms makers race to untangle supply chains from China and US — recovery attempt 2/3
+- Current package: `worker-a-20261126T103925Z-4ba35afb15ec`
+- Assigned unresolved records: **8**
+  1. `link:https://doi.org/10.1016/j.enpol.2026.115733` — Strategic autonomy and the energy transition: Rethinking Europe's geopolitical alignment — recovery attempt 3/3
+  2. `link:https://doi.org/10.1596/45879` — Closing the Energy Efficiency Gap: Unlocking Private-Sector Investment in Poland and Romania — recovery attempt 3/3
+  3. `link:https://www.bruegel.org/sites/default/files/2026-11/WP%2031%202026.pdf` — Financing Europe’s satellite infrastructure — recovery attempt 3/3
+  4. `link:https://news.google.com/rss/articles/CBMitgFBVV95cUxNT3ZFdlhYd2h1RFFxTHFXTnp2T3dnbDFSU19ib1hMVFVRaEVfXzBTT1RudWFSbFN0ZDdnMTAycjFqQmhrVkplN1MzMVcyaXdhNTREeURXZFVhdmpfNWM3dUFRTmxlZnkybXZIdkdIdjBxRGtoSGl1Ujl3MUdfSXBPbG5uZmlTOUwzWHRRNUhIYWpaMEM5QUhsdWhSM3dTZW5PU2dibFlJNV90bDVXclRUY1lra0dqdw?oc=5` — Germany Eyes EU Sanctions to Bar Russia From Hockey Championship — recovery attempt 3/3
+  5. `link:https://www.bruegel.org/first-glance/moving-closer-eu-uk-economic-and-security-relationship` — Moving closer: the EU-UK economic and security relationship — recovery attempt 3/3
+  6. `historical:id:0533a12327b52abd` — Financing Europe’s satellite infrastructure — recovery attempt 3/3
+  7. `historical:id:9992a36ef024056b` — Macroeconomic policy and governance — recovery attempt 3/3
+  8. `historical:id:d8ef449c89b45ea0` — Global economy and trade policy — recovery attempt 3/3
 
 ### Worker B
 - Current package: `worker-b-20261126T094455Z-b9e9dbd3f47a`
-- Assigned unresolved records: **17**
-  1. `historical:id:96158653b03a8479` — Why the EU will have an industrial policy - but not necessarily a good one
-  2. `historical:id:8b019b94f9f2adac` — Irish Diplomacy in a Time of Crisis and the Evolution of a ‘European’ Diplomatic Service
-  3. `historical:id:7cb90c9504537d1f` — The Transatlantic Trade and Investment Partnership - A long hard road to multilateralism?
-  4. `historical:id:8de6f8561b6f52ef` — Lamfalussy was right - independence and interdependence in a monetary union | Bank for International Settlements
-  5. `link:https://doi.org/10.1016/j.enpol.2026.115733` — Strategic autonomy and the energy transition: Rethinking Europe's geopolitical alignment — recovery attempt 2/3
-  6. `link:https://doi.org/10.1080/09692290.2026.2762334` — Strategic regulatory engagement in multipolar value chains: contesting the EU Deforestation regulation in the Global South — recovery attempt 2/3
-  7. `link:https://doi.org/10.1596/45879` — Closing the Energy Efficiency Gap: Unlocking Private-Sector Investment in Poland and Romania — recovery attempt 2/3
-  8. `link:https://www.bruegel.org/sites/default/files/2026-11/WP%2031%202026.pdf` — Financing Europe’s satellite infrastructure — recovery attempt 2/3
-  - … plus 9 more in the package manifest
+- Assigned unresolved records: **0**
 
 ### Worker SINGLE
 - Current package: `20260925T114333Z-23119bacb823`
